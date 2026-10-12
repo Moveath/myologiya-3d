@@ -142,5 +142,5 @@ MODEL_RESEARCH = [
     {'name':'SPL Inner Ear Atlas',
      'url':'https://www.openanatomy.org/atlas-pages/atlas-spl-inner-ear.html',
      'license':'3D Slicer License, section B',
-     'status':'Кандидат отдельной подробной модели; не использован как источник конкретных координат.'},
+     'status':'Выборочно скачаны и просмотрены 15 моделей; отдельный препарат с обрезанными краями. Не опубликованы и не использованы как источник координат BodyParts3D. Ограничения и лицензия: research/head-supplemental-ear-review.json.'},
 ]
