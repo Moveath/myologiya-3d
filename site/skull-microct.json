@@ -1,0 +1,50 @@
+{
+  "title": "Микро-КТ черепа, Halle",
+  "source": "https://zenodo.org/records/6108435",
+  "paper": "https://arxiv.org/abs/2202.11519",
+  "author": "Thomas Kirchner, Martin-Luther-Universität Halle-Wittenberg",
+  "license": "CC BY 4.0",
+  "source_md5": "md5:7ae22945a353069bdb695b63fa2f20bd",
+  "original_voxel_mm": 0.125,
+  "surface_sampling_mm": 0.25,
+  "original_surface_triangles": 37849334,
+  "browser_triangles": 5258448,
+  "browser_vertices": 2603850,
+  "bounds_m": [
+    [
+      0.002875000238418579,
+      0.005625000223517418,
+      0.0023750001564621925
+    ],
+    [
+      0.14350000023841858,
+      0.17212501168251038,
+      0.21112501621246338
+    ]
+  ],
+  "processing": [
+    "Проверена контрольная сумма исходной сегментации.",
+    "Выборка бинарной маски с шагом 0.25 мм; marching cubes, уровень 0,5.",
+    "Упрощение meshoptimizer по блокам с заблокированными граничными вершинами; щели между блоками не создаются намеренно.",
+    "Целевая доля треугольников 0.035; предел ошибки алгоритма 0.001 от размера блока. Это не оценка анатомической точности.",
+    "Мелкие детали могут быть потеряны при выборке и упрощении."
+  ],
+  "limitations": [
+    "Отдельный препарат без нижней челюсти, не совмещён с BodyParts3D.",
+    "На препарате есть подготовительный распил и небольшое трепанационное отверстие, описанные автором.",
+    "Исходная маска не разделена на отдельные кости и не задаёт названия всех каналов.",
+    "Открытая плоскость среза в просмотрщике — сечение оболочки, а не изображение плотности КТ."
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "geometry": {
+    "file": "skull-microct.glb",
+    "bytes": 16929092,
+    "sha256": "9d44b028eb29be563a499473935bc8b825a6daf724a8eb444532e534f62dd1e1"
+  },
+  "orientation": {
+    "array_to_three": "[i,j,k] -> [i,k,j], metres",
+    "header_discrepancy": "NRRD declares LPS; sagittal projection and independent TUBA processing identify +j as anterior (LAS).",
+    "reference": "https://github.com/pinton-lab/tuba/blob/main/src/tuba/species/human.py",
+    "laterality": "Not independently certified by matching the described parietal defect; lateral views intentionally unnamed."
+  }
+}

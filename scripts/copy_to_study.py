@@ -25,7 +25,7 @@ else:
     destination.mkdir(exist_ok=False)
 relative_paths=[p for p in subprocess.check_output(['git','-C',str(root),'ls-files','-z']).decode('utf-8').split('\0') if p]
 relative_paths+=['build_head/head_hi.glb','build_head/head.glb','build_head/head_q.glb','build_head/meta.json']
-relative_paths += [str(p.relative_to(root)) for directory in ['stl_head','shots/head'] for p in (root/directory).rglob('*') if p.is_file()]
+relative_paths += [str(p.relative_to(root)) for directory in ['stl_head','shots/head','shots/head-detail'] for p in (root/directory).rglob('*') if p.is_file()]
 for relative in relative_paths:
     source=(root/relative).resolve()
     source.relative_to(root)

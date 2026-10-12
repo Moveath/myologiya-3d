@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-10-12T17:37:28.339761+00:00",
+  "status": "passed",
+  "test_command": "node tools/verify-skull-detail.mjs",
+  "execution_note": "Результаты сведены из фактически выполненных локальных qhead_color/verify-detail.mjs и qhead_color/verify-microct.mjs после окончательной правки кадрирования; их проверки объединены в tools/verify-skull-detail.mjs. Объединённый файл повторно целиком не запускался.",
+  "cases": [
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "status": "passed",
+      "z_bones": 22,
+      "z_cavities": 8,
+      "z_visibility_selection_isolation_reset": true,
+      "z_clipping": true,
+      "microct_load": true,
+      "microct_clipping": [
+        "sagittal",
+        "coronal",
+        "axial"
+      ],
+      "microct_reverse_cut": true,
+      "microct_neutral_lateral_labels": true,
+      "load_failure_recovery": true,
+      "microct_load_and_front_screenshot_ms": 3846,
+      "page_errors": [],
+      "screenshots": [
+        "detail-390-light-bones.png",
+        "detail-390-light-cavities.png",
+        "detail-390-light-cut.png",
+        "detail-390-light-inferior.png",
+        "microct-390-light-front.png",
+        "microct-390-light-sagittal.png",
+        "microct-390-light-coronal.png",
+        "microct-390-light-axial.png"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "status": "passed",
+      "z_bones": 22,
+      "z_cavities": 8,
+      "z_visibility_selection_isolation_reset": true,
+      "z_clipping": true,
+      "microct_load": true,
+      "microct_clipping": [
+        "sagittal",
+        "coronal",
+        "axial"
+      ],
+      "microct_reverse_cut": true,
+      "microct_neutral_lateral_labels": true,
+      "load_failure_recovery": true,
+      "microct_load_and_front_screenshot_ms": 3741,
+      "page_errors": [],
+      "screenshots": [
+        "detail-390-dark-bones.png",
+        "detail-390-dark-cavities.png",
+        "detail-390-dark-cut.png",
+        "detail-390-dark-inferior.png",
+        "microct-390-dark-front.png",
+        "microct-390-dark-sagittal.png",
+        "microct-390-dark-coronal.png",
+        "microct-390-dark-axial.png"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 860,
+      "theme": "light",
+      "status": "passed",
+      "z_bones": 22,
+      "z_cavities": 8,
+      "z_visibility_selection_isolation_reset": true,
+      "z_clipping": true,
+      "microct_load": true,
+      "microct_clipping": [
+        "sagittal",
+        "coronal",
+        "axial"
+      ],
+      "microct_reverse_cut": true,
+      "microct_neutral_lateral_labels": true,
+      "load_failure_recovery": true,
+      "microct_load_and_front_screenshot_ms": 3808,
+      "page_errors": [],
+      "screenshots": [
+        "detail-1280-light-bones.png",
+        "detail-1280-light-cavities.png",
+        "detail-1280-light-cut.png",
+        "detail-1280-light-inferior.png",
+        "microct-1280-light-front.png",
+        "microct-1280-light-sagittal.png",
+        "microct-1280-light-coronal.png",
+        "microct-1280-light-axial.png"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 860,
+      "theme": "dark",
+      "status": "passed",
+      "z_bones": 22,
+      "z_cavities": 8,
+      "z_visibility_selection_isolation_reset": true,
+      "z_clipping": true,
+      "microct_load": true,
+      "microct_clipping": [
+        "sagittal",
+        "coronal",
+        "axial"
+      ],
+      "microct_reverse_cut": true,
+      "microct_neutral_lateral_labels": true,
+      "load_failure_recovery": true,
+      "microct_load_and_front_screenshot_ms": 3759,
+      "page_errors": [],
+      "screenshots": [
+        "detail-1280-dark-bones.png",
+        "detail-1280-dark-cavities.png",
+        "detail-1280-dark-cut.png",
+        "detail-1280-dark-inferior.png",
+        "microct-1280-dark-front.png",
+        "microct-1280-dark-sagittal.png",
+        "microct-1280-dark-coronal.png",
+        "microct-1280-dark-axial.png"
+      ]
+    }
+  ],
+  "limitations": [
+    "Проверка интерфейса и загрузки не подтверждает анатомическую точность геометрии.",
+    "Время измерено на локальном сервере в headless Chromium с программным WebGL; это не скорость загрузки по интернету и не тест реального телефона.",
+    "Латеральность микро-КТ независимо не подтверждена; боковые виды имеют нейтральные названия."
+  ]
+}

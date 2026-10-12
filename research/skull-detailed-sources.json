@@ -1,0 +1,123 @@
+{
+  "review_date": "2026-10-12",
+  "purpose": "Поиск открытой мелкой геометрии черепа. Доступность просмотра, возможность скачать файл, лицензия и анатомическая полнота проверяются отдельно.",
+  "sources": [
+    {
+      "id": "halle_microct",
+      "title": "A micro-CT of a human skull — Thomas Kirchner, 2022",
+      "url": "https://zenodo.org/records/6108435",
+      "description_url": "https://arxiv.org/html/2202.11519v1",
+      "license": "CC BY 4.0",
+      "license_evidence": "Поле metadata.license.id = cc-by-4.0 в официальном API Zenodo.",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "downloadable": true,
+      "files": [
+        {"name": "halle_skull_segmented.nrrd", "bytes": 37249251, "md5": "7ae22945a353069bdb695b63fa2f20bd"},
+        {"name": "etc.zip", "bytes": 25244, "md5": "6acde7b071b308c0f7dc39e870491fe7"}
+      ],
+      "geometry_source": "Полуавтоматическая бинарная сегментация костной ткани: фиксированный порог совместно с порогом Sauvola, затем ручная очистка в MITK. Это одна маска, а не разметка 22 отдельных костей.",
+      "sampling": "Шаг исходного объёма 0,125 мм по всем осям; 1150 × 1700 × 1400 вокселей. Шаг вокселя не равен гарантированной точности поверхности и не доказывает видимость всех терминов TA98.",
+      "specimen_limitations": [
+        "Один препарат мужчины 70 лет; индивидуальная форма не является универсальным стандартом.",
+        "Нижняя челюсть не сканировалась.",
+        "Препарат имеет разрез свода и небольшую трепанацию правой теменной кости с окружающими кальцификациями. Эти искусственные/индивидуальные изменения нельзя обозначать как нормальные отверстия и швы.",
+        "Костная маска не реконструирует мягкие ткани, содержимое отверстий и каналов.",
+        "Без отдельной проверки каждого образования нельзя объявлять все 521 термина геометрически восстановленными.",
+        "Сглаживание, разрежение объёма и упрощение сетки должны быть явно описаны; они могут закрывать или удалять малые просветы."
+      ],
+      "orientation": {
+        "nrrd_declaration": "space: left-posterior-superior; directions: (0.125,0,0) (0,0.125,0) (0,0,0.125); origin: (0,0,0)",
+        "discrepancy": "Декларация LPS не соответствует переднезаднему направлению видимой анатомии: нос направлен вдоль увеличения второго индекса j.",
+        "local_visual_evidence": "research/cache/skull-source-review/sagittal-native.png — сагиттальный слой i=565…584, толщина 2,5 мм; справа увеличение j, вверх увеличение k. Передняя часть лица расположена справа, свод сверху. Следовательно, +j соответствует A, +k соответствует S.",
+        "independent_processing_reference": "https://github.com/pinton-lab/tuba/blob/main/src/tuba/species/human.py",
+        "independent_processing_observation": "TUBA прямо описывает хранение LAS при ошибочном теге LPS и применяет к координатам вокселей affine_to_ras = diag(-vox, +vox, +vox). Это независимое наблюдение разработчиков, а не исправленный заголовок от автора набора.",
+        "left_right_status": "Перед обозначением правой/левой стороны требуется сверка с описанной автором правой теменной трепанацией; один заголовок файла недостаточен."
+      },
+      "status": "Подходит для отдельного подробного просмотра реального препарата при сохранении ограничений и проверке ориентации. Не зарегистрирован к BodyParts3D; его нельзя механически использовать для замены отдельных костей или переноса маркеров."
+    },
+    {
+      "id": "iemap",
+      "title": "IE-Map — Ahmadi, Raiser, Rühl, Flanagin, zu Eulenburg, 2021",
+      "url": "https://github.com/pydsgz/IEMap",
+      "paper": "https://doi.org/10.1038/s41598-021-82716-0",
+      "open_paper": "https://epub.ub.uni-muenchen.de/76472/1/s41598-021-82716-0.pdf",
+      "license": "CC BY 4.0",
+      "downloadable": true,
+      "download_pattern": "https://media.githubusercontent.com/media/pydsgz/IEMap/master/data/<filename>.vtk",
+      "local_assets": "research/cache/iemap/",
+      "acquired": "Доступные VTK-поверхности из каталога data и MRML-сцена скачаны напрямую из официального репозитория. Файлы в Git LFS доступны через media.githubusercontent.com.",
+      "scope": "Внутреннее ухо: шаблон по МРТ 126 ушей и перенесённые поверхности микрокТ Ariadne. Не является моделью целого черепа или височной кости.",
+      "orientation": "В статье, Methods — Template building: левые уши отражены в сагиттальной плоскости к ориентации правого. Figure 1: праволатеральный вид правого внутреннего уха. Шаблон ориентирован по плоскости Рида.",
+      "provenance": [
+        "ls_Hsapiens_* и mesh_david_* — источник David et al., 2016, https://doi.org/10.1038/srep32772, CC BY 4.0, с последующей деформацией в пространство IE-Map.",
+        "Шаблон КТ/микрокТ использует Wimmer et al., 2019, https://doi.org/10.1016/j.dib.2019.104782, CC BY 4.0."
+      ],
+      "limitations": "МРТ-шаблон с шагом 0,2 мм не разрешает все микроструктуры; например, орган Корти не показан. Не совмещён с текущим черепом, слуховые косточки и полный костный блок здесь отсутствуют.",
+      "status": "Сохранён для возможного будущего отдельного раздела внутреннего уха; в текущую геометрию черепа не добавлен."
+    },
+    {
+      "id": "ohio_visible_human",
+      "title": "Ohio University Visible Interactive Human — OUVC 10503",
+      "url": "https://people.ohio.edu/witmerl/3D_human.htm",
+      "downloadable": true,
+      "format": "3D PDF, несколько разрешений до 45 МБ",
+      "scope": "По описанию автора: отдельные кости, околоносовые пазухи, сосцевидные ячейки, эндокаст и лабиринт.",
+      "license": "На странице разрешены образовательные и исследовательские цели; коммерческое использование требует разрешения L. M. Witmer и других правообладателей. Открытая CC BY/CC BY-SA лицензия не указана.",
+      "status": "Не извлекали и не распространяли геометрию. Свободное скачивание 3D PDF само по себе не подтверждает совместимую лицензию на модификацию и публикацию мешей."
+    },
+    {
+      "id": "sgu_foramina",
+      "title": "Human Skull: Foramen of the Cranial Floor — SGU",
+      "url": "https://sketchfab.com/3d-models/human-skull-foramen-of-the-cranial-floor-dcfa3cf1eab34e3bacf32bf59ccd048e",
+      "api": "https://api.sketchfab.com/v3/models/dcfa3cf1eab34e3bacf32bf59ccd048e",
+      "downloadable": false,
+      "license": "Публичный API: license = {}, isDownloadable = false. В описании атрибутирован BodyParts3D, но разрешение на скачивание данной переработки не предоставлено.",
+      "status": "Модель не извлекалась. Указание исходника BodyParts3D не позволяет обходить отключённую загрузку."
+    },
+    {
+      "id": "dundee_foramina",
+      "title": "Cranial Nerves and Foramina — University of Dundee, CAHID; Sophia Lappe",
+      "url": "https://sketchfab.com/3d-models/cranial-nerves-and-foramina-a9358ee7a6dd4ea18a3622114405a4c7",
+      "api": "https://api.sketchfab.com/v3/models/a9358ee7a6dd4ea18a3622114405a4c7",
+      "downloadable": false,
+      "license": "Публичный API: license = {}, isDownloadable = false. Описание указывает производную BodyParts3D; утверждения сторонних сайтов о CC BY 4.0 не подтверждены первоисточником.",
+      "status": "Модель не извлекалась и не публиковалась."
+    },
+    {
+      "id": "aist_dry_skulls",
+      "title": "CT images and STL data of human dry skull specimens — Juli Yamashita, AIST",
+      "url": "https://github.com/yamashita-juli/Dry-skulls-CT-and-STL",
+      "license": "CC BY 4.0",
+      "downloadable": false,
+      "scope": "В репозитории доступны лишь отдельные DICOM и снимки; полный набор автор предлагает запрашивать для передачи на DVD. Указан шаг 0,1180232 мм.",
+      "status": "Подходящая лицензия, но сам полный набор непосредственно не получен. Письмо автору не отправлялось."
+    },
+    {
+      "id": "openwater",
+      "title": "Openwater reference meshes",
+      "url": "https://github.com/OpenwaterHealth/openwater-reference-meshes",
+      "license": "CC BY 4.0 для мешей",
+      "downloadable": false,
+      "status": "Каталог meshes/skull содержит только .gitkeep. Описание обещает класс данных, но пригодного меша черепа на момент осмотра нет."
+    },
+    {
+      "id": "visible_ear_print",
+      "title": "Visible Ear Simulator — prepared temporal bone STL files",
+      "url": "https://visibleearsimulator.com/3d-printable-temporal-bone-model-files/",
+      "license": "CC BY-NC 4.0 для подготовленных файлов; исходный OpenEar имеет отдельную CC BY 4.0",
+      "downloadable": true,
+      "status": "Подготовленные STL не скачивались и не объединялись с текущей моделью. Не следует подменять их собственную лицензию лицензией исходного OpenEar."
+    },
+    {
+      "id": "spl_inner_ear",
+      "title": "SPL Inner Ear Atlas",
+      "url": "https://www.openanatomy.org/atlas-pages/atlas-spl-inner-ear.html",
+      "license": "3D Slicer License, Part B",
+      "downloadable": true,
+      "local_assets": "research/cache/temporal/spl-ear/",
+      "status": "15 VTK и исследовательский GLB сохранены ранее. MRML задаёт spacing 0.3125 0.3125 0.4; сторона препарата и соответствие физических размеров не подтверждены. Это не замена целой височной кости.",
+      "related_review": "research/head-supplemental-ear-review.json"
+    }
+  ],
+  "conclusion": "Не найден готовый совместимо лицензированный набор, в котором доказана геометрическая полнота всех 521 маркеров TA98 на 22 раздельных костях. Получены реальные дополнительные данные, пригодные для отдельных подробных просмотров при указании их пределов. Полнота каталога и полнота поверхности остаются разными свойствами."
+}

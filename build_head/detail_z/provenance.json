@@ -1,0 +1,819 @@
+{
+  "source": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+  "license": "CC BY-SA 4.0",
+  "source_blend_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "export_method": "evaluated_get / to_mesh; existing modifiers only",
+  "coordinate_transform": "[x,y,z] -> [x,z,-y], metres; not registered to BodyParts3D",
+  "excluded_assets": [
+    "Inner ear",
+    "Kidney",
+    "Nerves",
+    "All non-skull structures"
+  ],
+  "meshes": [
+    {
+      "id": "frontal",
+      "name": "Frontal bone",
+      "kind": "bone",
+      "file": "frontal.json",
+      "raw_vertices": 3902,
+      "vertices": 3902,
+      "triangles": 7776,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ],
+      "watertight": false,
+      "components": 1
+    },
+    {
+      "id": "occipital",
+      "name": "Occipital bone",
+      "kind": "bone",
+      "file": "occipital.json",
+      "raw_vertices": 3757,
+      "vertices": 3757,
+      "triangles": 7531,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ],
+      "watertight": false,
+      "components": 24
+    },
+    {
+      "id": "sphenoid",
+      "name": "Sphenoid bone",
+      "kind": "bone",
+      "file": "sphenoid.json",
+      "raw_vertices": 3650,
+      "vertices": 3650,
+      "triangles": 7308,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ],
+      "watertight": false,
+      "components": 1
+    },
+    {
+      "id": "ethmoid",
+      "name": "Ethmoid bone",
+      "kind": "bone",
+      "file": "ethmoid.json",
+      "raw_vertices": 2108,
+      "vertices": 5082,
+      "triangles": 10130,
+      "modifiers": [
+        {
+          "name": "BTool_Anterior cells of ethmoid bone.l",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Anterior cells of ethmoid bone.l"
+        },
+        {
+          "name": "BTool_Anterior cells of ethmoid bone.r",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Anterior cells of ethmoid bone.r"
+        },
+        {
+          "name": "BTool_Middle cells of ethmoid bone.l",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Middle cells of ethmoid bone.l"
+        },
+        {
+          "name": "BTool_Middle cells of ethmoid bone.r",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Middle cells of ethmoid bone.r"
+        },
+        {
+          "name": "BTool_Posterior cells of ethmoid bone.l",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Posterior cells of ethmoid bone.l"
+        },
+        {
+          "name": "BTool_Posterior cells of ethmoid bone.r",
+          "type": "BOOLEAN",
+          "enabled": true,
+          "operation": "DIFFERENCE",
+          "operand": "Posterior cells of ethmoid bone.r"
+        }
+      ],
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ],
+      "watertight": false,
+      "components": 24
+    },
+    {
+      "id": "vomer",
+      "name": "Vomer",
+      "kind": "bone",
+      "file": "vomer.json",
+      "raw_vertices": 514,
+      "vertices": 514,
+      "triangles": 1022,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "mandible",
+      "name": "Mandible",
+      "kind": "bone",
+      "file": "mandible.json",
+      "raw_vertices": 9388,
+      "vertices": 9388,
+      "triangles": 18838,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "watertight": false,
+      "components": 19
+    },
+    {
+      "id": "parietal_left",
+      "name": "Parietal bone.l",
+      "kind": "bone",
+      "file": "parietal_left.json",
+      "raw_vertices": 3443,
+      "vertices": 3443,
+      "triangles": 6886,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "parietal_right",
+      "name": "Parietal bone.r",
+      "kind": "bone",
+      "file": "parietal_right.json",
+      "raw_vertices": 3386,
+      "vertices": 3386,
+      "triangles": 6780,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "temporal_left",
+      "name": "Temporal bone.l",
+      "kind": "bone",
+      "file": "temporal_left.json",
+      "raw_vertices": 7051,
+      "vertices": 7051,
+      "triangles": 14094,
+      "modifiers": [],
+      "bounds": [
+        [
+          0.009648576378822327,
+          1.5487265586853027,
+          -0.05156397819519043
+        ],
+        [
+          0.07242035865783691,
+          1.623145580291748,
+          0.0447830855846405
+        ]
+      ],
+      "watertight": true,
+      "components": 3
+    },
+    {
+      "id": "temporal_right",
+      "name": "Temporal bone.r",
+      "kind": "bone",
+      "file": "temporal_right.json",
+      "raw_vertices": 7051,
+      "vertices": 7051,
+      "triangles": 14094,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.07242035865783691,
+          1.5487265586853027,
+          -0.05156397819519043
+        ],
+        [
+          -0.009648576378822327,
+          1.623145580291748,
+          0.0447830855846405
+        ]
+      ],
+      "watertight": true,
+      "components": 3
+    },
+    {
+      "id": "maxilla_left",
+      "name": "Maxilla.l",
+      "kind": "bone",
+      "file": "maxilla_left.json",
+      "raw_vertices": 2399,
+      "vertices": 2399,
+      "triangles": 4798,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "maxilla_right",
+      "name": "Maxilla.r",
+      "kind": "bone",
+      "file": "maxilla_right.json",
+      "raw_vertices": 2399,
+      "vertices": 2399,
+      "triangles": 4798,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "zygomatic_left",
+      "name": "Zygomatic bone.l",
+      "kind": "bone",
+      "file": "zygomatic_left.json",
+      "raw_vertices": 666,
+      "vertices": 666,
+      "triangles": 1328,
+      "modifiers": [],
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "zygomatic_right",
+      "name": "Zygomatic bone.r",
+      "kind": "bone",
+      "file": "zygomatic_right.json",
+      "raw_vertices": 666,
+      "vertices": 666,
+      "triangles": 1328,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "palatine_left",
+      "name": "Palatine bone.l",
+      "kind": "bone",
+      "file": "palatine_left.json",
+      "raw_vertices": 732,
+      "vertices": 732,
+      "triangles": 1460,
+      "modifiers": [],
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "palatine_right",
+      "name": "Palatine bone.r",
+      "kind": "bone",
+      "file": "palatine_right.json",
+      "raw_vertices": 732,
+      "vertices": 732,
+      "triangles": 1460,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "nasal_left",
+      "name": "Nasal bone.l",
+      "kind": "bone",
+      "file": "nasal_left.json",
+      "raw_vertices": 148,
+      "vertices": 148,
+      "triangles": 292,
+      "modifiers": [],
+      "bounds": [
+        [
+          1.7462298274040222e-08,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "nasal_right",
+      "name": "Nasal bone.r",
+      "kind": "bone",
+      "file": "nasal_right.json",
+      "raw_vertices": 148,
+      "vertices": 148,
+      "triangles": 292,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-08,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "lacrimal_left",
+      "name": "Lacrimal bone.l",
+      "kind": "bone",
+      "file": "lacrimal_left.json",
+      "raw_vertices": 296,
+      "vertices": 296,
+      "triangles": 588,
+      "modifiers": [],
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "lacrimal_right",
+      "name": "Lacrimal bone.r",
+      "kind": "bone",
+      "file": "lacrimal_right.json",
+      "raw_vertices": 296,
+      "vertices": 296,
+      "triangles": 588,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "inferior_concha_left",
+      "name": "Inferior nasal concha bone.l",
+      "kind": "bone",
+      "file": "inferior_concha_left.json",
+      "raw_vertices": 238,
+      "vertices": 238,
+      "triangles": 476,
+      "modifiers": [],
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "inferior_concha_right",
+      "name": "Inferior nasal concha bone.r",
+      "kind": "bone",
+      "file": "inferior_concha_right.json",
+      "raw_vertices": 238,
+      "vertices": 238,
+      "triangles": 476,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "id": "frontal_sinus",
+      "name": "Sinus of frontal bone",
+      "kind": "cavity",
+      "file": "frontal_sinus.json",
+      "raw_vertices": 770,
+      "vertices": 770,
+      "triangles": 1504,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.025192933157086372,
+          1.601379632949829,
+          0.07443621754646301
+        ],
+        [
+          0.025192929431796074,
+          1.6326141357421875,
+          0.08605808764696121
+        ]
+      ],
+      "watertight": false,
+      "components": 2
+    },
+    {
+      "id": "sphenoidal_sinus",
+      "name": "Sinus of sphenoid bone",
+      "kind": "cavity",
+      "file": "sphenoidal_sinus.json",
+      "raw_vertices": 210,
+      "vertices": 210,
+      "triangles": 384,
+      "modifiers": [],
+      "bounds": [
+        [
+          -0.014118671417236328,
+          1.5833040475845337,
+          0.022104350849986076
+        ],
+        [
+          0.01411866769194603,
+          1.6049859523773193,
+          0.03970877081155777
+        ]
+      ],
+      "watertight": false,
+      "components": 2
+    },
+    {
+      "id": "ethmoid_cells_anterior_left",
+      "name": "Anterior cells of ethmoid bone.l",
+      "kind": "cavity",
+      "file": "ethmoid_cells_anterior_left.json",
+      "raw_vertices": 72,
+      "vertices": 372,
+      "triangles": 736,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          0.005374100524932146,
+          1.5810766220092773,
+          0.05503186583518982
+        ],
+        [
+          0.012563861906528473,
+          1.5952621698379517,
+          0.06269374489784241
+        ]
+      ],
+      "watertight": true,
+      "components": 2
+    },
+    {
+      "id": "ethmoid_cells_anterior_right",
+      "name": "Anterior cells of ethmoid bone.r",
+      "kind": "cavity",
+      "file": "ethmoid_cells_anterior_right.json",
+      "raw_vertices": 72,
+      "vertices": 372,
+      "triangles": 736,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          -0.012563861906528473,
+          1.5810766220092773,
+          0.05503186583518982
+        ],
+        [
+          -0.005374100524932146,
+          1.5952621698379517,
+          0.06269374489784241
+        ]
+      ],
+      "watertight": true,
+      "components": 2
+    },
+    {
+      "id": "ethmoid_cells_middle_left",
+      "name": "Middle cells of ethmoid bone.l",
+      "kind": "cavity",
+      "file": "ethmoid_cells_middle_left.json",
+      "raw_vertices": 84,
+      "vertices": 484,
+      "triangles": 960,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          0.005267007276415825,
+          1.5810697078704834,
+          0.047334976494312286
+        ],
+        [
+          0.014302384108304977,
+          1.5944095849990845,
+          0.05570102483034134
+        ]
+      ],
+      "watertight": true,
+      "components": 2
+    },
+    {
+      "id": "ethmoid_cells_middle_right",
+      "name": "Middle cells of ethmoid bone.r",
+      "kind": "cavity",
+      "file": "ethmoid_cells_middle_right.json",
+      "raw_vertices": 84,
+      "vertices": 484,
+      "triangles": 960,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          -0.014302384108304977,
+          1.5810697078704834,
+          0.047334976494312286
+        ],
+        [
+          -0.005267007276415825,
+          1.5944095849990845,
+          0.05570102483034134
+        ]
+      ],
+      "watertight": true,
+      "components": 2
+    },
+    {
+      "id": "ethmoid_cells_posterior_left",
+      "name": "Posterior cells of ethmoid bone.l",
+      "kind": "cavity",
+      "file": "ethmoid_cells_posterior_left.json",
+      "raw_vertices": 114,
+      "vertices": 614,
+      "triangles": 1216,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          0.004375799559056759,
+          1.5818384885787964,
+          0.03954710066318512
+        ],
+        [
+          0.013940117321908474,
+          1.5941206216812134,
+          0.04797394201159477
+        ]
+      ],
+      "watertight": true,
+      "components": 3
+    },
+    {
+      "id": "ethmoid_cells_posterior_right",
+      "name": "Posterior cells of ethmoid bone.r",
+      "kind": "cavity",
+      "file": "ethmoid_cells_posterior_right.json",
+      "raw_vertices": 114,
+      "vertices": 614,
+      "triangles": 1216,
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "enabled": true
+        }
+      ],
+      "bounds": [
+        [
+          -0.013940117321908474,
+          1.5818384885787964,
+          0.03954710066318512
+        ],
+        [
+          -0.004375799559056759,
+          1.5941206216812134,
+          0.04797394201159477
+        ]
+      ],
+      "watertight": true,
+      "components": 3
+    }
+  ],
+  "output": {
+    "file": "skull-z-detail.glb",
+    "bytes": 2596720,
+    "sha256": "b2f6c5e31ca81820200810772627553afff2e9cfdf73a9ca6d83bce32005ebe2"
+  }
+}

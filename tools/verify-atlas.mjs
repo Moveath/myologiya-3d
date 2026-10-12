@@ -37,6 +37,17 @@ try {
     await page.waitForFunction(()=>window.__atlas.state.sec==='head' && document.querySelector('#veil').hidden);
     await page.screenshot({path:path.join(out,`${width}-${theme}-muscles.png`)});
     await page.locator('[data-peel="3"]').click();
+    assert.equal(await page.evaluate(()=>window.__atlas.state.boneColors),true);
+    await page.screenshot({path:path.join(out,`${width}-${theme}-colored-skull.png`)});
+    await page.locator('#bBoneLegend').click();
+    assert.equal(await page.locator('[data-bone-type]').count(),14);
+    assert.equal(await page.locator('[data-color-bone]').count(),22);
+    await page.screenshot({path:path.join(out,`${width}-${theme}-color-legend.png`)});
+    await page.locator('[data-color-bone="frontal"]').click();
+    assert.equal(await page.evaluate(()=>window.__atlas.state.sel),'frontal');
+    await page.locator('#bBoneColors').click();
+    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('myo3d')).boneColors),false);
+    await page.locator('#bBoneColors').click();
     await page.evaluate(()=>window.__atlas.goTo('frontal'));
     await page.waitForFunction(()=>document.querySelector('#sheet .name')?.textContent==='Лобная кость');
     if(await page.locator('#bMore').isVisible() && await page.locator('#bMore').textContent()==='Подробнее') await page.locator('#bMore').click();
@@ -76,6 +87,7 @@ try {
     await page.locator('#bCloseList').click();
     await page.locator('#bQuiz').click();
     assert.equal(await page.evaluate(()=>window.__atlas.state.mode),'quiz');
+    assert.equal(await page.locator('#bBoneColors').getAttribute('aria-pressed'),'false');
     assert.ok(await page.evaluate(()=>window.__atlas.state.quiz.options.length>=2));
     assert.equal(await page.locator('[data-scope="neurocranium"]').count(),0);
     await page.locator('[data-scope="mastication"]').click();
@@ -83,9 +95,10 @@ try {
     assert.ok(await page.evaluate(()=>window.__atlas.state.quiz.options.length>=2));
     await page.screenshot({path:path.join(out,`${width}-${theme}-quiz.png`)});
     await page.locator('#bQuiz').click();
+    assert.equal(await page.locator('#bBoneColors').getAttribute('aria-pressed'),'true');
     const overflow = await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
     assert.equal(overflow,false,'Horizontal page overflow');
-    for(const sec of ['arm','leg']){assert.equal(await page.evaluate(id=>window.__atlas.enterSection(id),sec),true);}
+    for(const sec of ['arm','leg']){assert.equal(await page.evaluate(id=>window.__atlas.enterSection(id),sec),true);assert.equal(await page.locator('#bBoneColors').isVisible(),false);}
     assert.deepEqual(errors,[]);
     report.push({width,theme,errors,overflow,status:'passed'});
     await context.close();

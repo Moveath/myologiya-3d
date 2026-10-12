@@ -102,6 +102,9 @@ button { cursor: pointer; }
 .subs .chip[aria-pressed="true"]::before { content: none; }
 .restore { display: none; }
 .restore.on { display: inline-flex; }
+.chip:disabled { cursor: default; opacity: 0.6; }
+.palette-icon { width: 15px; height: 15px; flex: none; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15);
+  background: conic-gradient(#e8c04c 0 25%, #b488c9 25% 50%, #689ddd 50% 75%, #a4bf71 75%); }
 
 /* landmark pins over the model */
 #pinLayer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
@@ -247,6 +250,14 @@ dt .term { text-decoration-color: var(--ink-2); }
 .item.sub::before { content: ""; position: absolute; left: 17px; top: 7px; bottom: 7px; width: 2px; border-radius: 2px; background: var(--rule); }
 .item.sub b { font-weight: 400; }
 .empty { color: var(--ink-2); margin-top: 18px; }
+.bone-legend .dhead h2 { flex: 1; margin: 0; font-size: 18px; }
+.bone-legend .hint { margin-bottom: 16px; font-size: 13px; }
+.bone-color-item { display: grid; grid-template-columns: 18px minmax(0,1fr); gap: 10px; padding-block: 10px; border-bottom: 1px solid var(--rule); }
+.bone-color-dot { display: inline-block; width: 16px; height: 16px; flex: none; margin-top: 3px; border-radius: 5px; background: var(--bone-color); border: 1px solid rgba(0,0,0,0.2); }
+.bone-color-item b { display: block; font-weight: 600; }
+.bone-color-item i { display: block; font: italic 400 14px var(--f-lat); color: var(--ink-2); }
+.bone-color-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.bone-color-actions .chip { min-height: 36px; height: auto; padding-block: 5px; }
 
 /* body map (start screen) */
 .home { position: absolute; inset: 0; z-index: 9; overflow-y: auto; overscroll-behavior: contain;
@@ -382,6 +393,9 @@ dt .term { text-decoration-color: var(--ink-2); }
         <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span id="viewLabel">Повернуть</span>
       </button>
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
+      <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
+      <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
+      <button class="chip nocheck" id="bHeadDetail" hidden>Подробная модель</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
     </div>
   </div>
@@ -396,6 +410,14 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="x" id="bCloseList" aria-label="Закрыть список"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="dlist" id="dlist"></div>
+  </aside>
+
+  <aside class="drawer bone-legend" id="boneLegend" hidden role="dialog" aria-modal="true" aria-labelledby="boneLegendTitle">
+    <div class="dhead">
+      <h2 id="boneLegendTitle">Цвета костей черепа</h2>
+      <button class="x" id="bCloseBoneLegend" aria-label="Закрыть легенду"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="dlist" id="boneLegendList"></div>
   </aside>
 
   <div class="home" id="home">
@@ -447,6 +469,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
+      <p>В голове по умолчанию включены «Цвета костей»: у каждой кости свой учебный цвет, одинаковый справа и слева. Это условная раскраска для запоминания. Кнопка «Легенда» показывает названия и позволяет выбрать кость. Чтобы увидеть весь цветной череп, выбери слой «Кости». Настройка цвета сохраняется; во время теста раскраска временно отключается.</p>
       <h3>Словарик</h3>
       <dl class="glosslist" id="glosslist"></dl>
       <h3>Откуда модели</h3>
@@ -631,6 +654,7 @@ const state = {
   trunk: !!prefs.trunk,
   sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
+  boneColors: prefs.boneColors !== false,
   mode: 'study', viewIdx: -1,
   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
 };
@@ -715,6 +739,31 @@ const BONE = new THREE.Color('#e9dfc5');
 const SOFT = new THREE.Color('#b7cad4');
 const GHOST = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.14, depthWrite: false });
 const XRAY = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.2, depthWrite: false, side: THREE.DoubleSide });
+
+// A learning palette, not tissue colour. The same key serves both sides of a paired bone.
+const HEAD_BONE_PALETTE = {
+  frontal: '#e8c04c', parietal: '#b488c9', occipital: '#4fa7a1', temporal: '#689ddd',
+  sphenoid: '#e88762', ethmoid: '#91b95b', nasal: '#86ced8', lacrimal: '#cfa847',
+  zygomatic: '#e99c4a', maxilla: '#d988b0', palatine: '#8674ad', inferior_concha: '#959fe0',
+  vomer: '#b98665', mandible: '#a4bf71'
+};
+const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
+const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
+const WHITE = new THREE.Color('#ffffff');
+const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
+  const material = GHOST.clone(); material.color.copy(color); return [id, material];
+}));
+const boneColorsActive = () => state.sec === 'head' && state.boneColors && state.mode !== 'quiz';
+const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
+function updateBoneColorControls() {
+  const head = state.sec === 'head', quiz = state.mode === 'quiz';
+  $('#bBoneColors').hidden = !head;
+  $('#bBoneColors').disabled = quiz;
+  $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
+  $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
+  $('#bBoneLegend').hidden = !head || quiz || !state.boneColors;
+  $('#bHeadDetail').hidden = !head || quiz;
+}
 
 function muscleColor(id) {
   let h = 2166136261;
@@ -807,12 +856,14 @@ const isVisible = (s) => visState(s) === 2;
 let pickables = [];
 function applyVisibility() {
   pickables = [];
+  XRAY.color.copy(state.xrayBone ? boneColor(state.xrayBone) : BONE);
   for (const s of structs.values()) {
     const v = visState(s);
     for (const m of s.meshes) {
       m.visible = v > 0;
       const xray = s.id === state.xrayBone && s.kind === 'b';
-      m.material = v === 1 ? GHOST : xray ? XRAY : m.userData.mat;
+      const ghost = s.kind === 'b' && boneColorsActive() ? headBoneGhosts[headBoneKey(s.id)] || GHOST : GHOST;
+      m.material = v === 1 ? ghost : xray ? XRAY : m.userData.mat;
       m.renderOrder = v === 1 || xray ? 2 : m.userData.order;
       if (v === 2 && s.kind !== 'c') pickables.push(m);
     }
@@ -821,6 +872,7 @@ function applyVisibility() {
   $('#bTrunk').setAttribute('aria-pressed', String(state.trunk));
   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
+  updateBoneColorControls();
   paint();
   buildPins();
   requestAnimationFrame(resize);
@@ -833,10 +885,12 @@ function paint() {
     const on = q ? s.id === q : s.id === state.sel;
     const hov = !on && s.id === state.hover;
     for (const m of s.meshes) {
-      const mat = m.userData.mat, base = m.userData.base;
+      const mat = m.userData.mat, base = s.kind === 'b' ? boneColor(s.id) : m.userData.base;
+      const coloredBone = s.kind === 'b' && boneColorsActive() && headBoneColors[headBoneKey(s.id)];
       // a chosen part glows fully; the rest of the same muscle gets a faint tint
       const full = !selPart || m.userData.part === selPart;
-      if (on) { mat.color.copy(base).lerp(HL, full ? 0.62 : 0.2); mat.emissive.copy(HL).multiplyScalar(full ? 0.28 : 0.03); }
+      if (on && coloredBone) { mat.color.copy(base).lerp(WHITE, 0.12); mat.emissive.copy(base).multiplyScalar(0.16); }
+      else if (on) { mat.color.copy(base).lerp(HL, full ? 0.62 : 0.2); mat.emissive.copy(HL).multiplyScalar(full ? 0.28 : 0.03); }
       else if (hov) { mat.color.copy(base); mat.emissive.setRGB(0.09, 0.09, 0.09); }
       else { mat.color.copy(base); mat.emissive.setRGB(0, 0, 0); }
     }
@@ -1272,7 +1326,7 @@ function renderSheet() {
     <button class="grab togglemore" aria-label="${sheet.dataset.state === 'open' ? 'Свернуть карточку' : 'Развернуть карточку'}"></button>
     <div class="head">
       <div class="t">
-        <div class="kicker">${noModel ? '' : '<span class="swatch" aria-hidden="true"></span>'}<span>${kicker}</span></div>
+        <div class="kicker">${noModel ? '' : `<span class="swatch" aria-hidden="true"${!isMuscle && boneColorsActive() && HEAD_BONE_PALETTE[headBoneKey(id)] ? ` style="background:${HEAD_BONE_PALETTE[headBoneKey(id)]}"` : ''}></span>`}<span>${kicker}</span></div>
         <h2 class="name">${esc(d.ru)}</h2>
         <p class="lat">${esc(d.lat)}</p>
       </div>
@@ -1508,6 +1562,7 @@ function renderQuiz() {
     </div>
     <div class="score">Верно ${q.right} из ${q.total} · серия ${q.streak} · рекорд ${q.best}</div>
     <div class="scopes" role="group" aria-label="Область теста">${scopes}</div>
+    ${state.sec === 'head' && state.boneColors ? '<p class="hint">Цвета костей временно отключены на время теста.</p>' : ''}
     ${body}`;
   sheet.querySelectorAll('[data-scope]').forEach(b => b.addEventListener('click', () => {
     q.scope = b.dataset.scope;
@@ -1530,6 +1585,7 @@ function renderQuiz() {
 }
 function setMode(m) {
   if (!state.sec) return;
+  closeBoneLegend(false);
   state.mode = m;
   $('#bQuiz').setAttribute('aria-pressed', String(m === 'quiz'));
   hideTip(); hideGloss();
@@ -1594,11 +1650,56 @@ function renderList() {
     goTo(b.dataset.id, b.dataset.part || null, b.dataset.pinjump || null);
   }));
 }
-function openList() { drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
+function openList() { closeBoneLegend(false); drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
 function closeList() { drawer.hidden = true; }
 $('#q').addEventListener('input', renderList);
 $('#bList').addEventListener('click', () => (drawer.hidden ? openList() : closeList()));
 $('#bCloseList').addEventListener('click', closeList);
+
+// ---------- bone colour legend ----------
+const boneLegend = $('#boneLegend');
+function renderBoneLegend() {
+  let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
+  for (const group of A.boneGroups.filter(g => g.sec === 'head' && !isSoft(g.id))) {
+    const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)]);
+    if (!bones.length) continue;
+    html += `<h3>${esc(group.title)}</h3>`;
+    const keys = [...new Set(bones.map(([id]) => headBoneKey(id)))];
+    for (const key of keys) {
+      const entries = bones.filter(([id]) => headBoneKey(id) === key), d = entries[0][1];
+      const name = d.ru.replace(/ · (?:правая|левая)$/, '');
+      html += `<div class="bone-color-item" data-bone-type="${key}"><span class="bone-color-dot" style="--bone-color:${HEAD_BONE_PALETTE[key]}" aria-hidden="true"></span><div><b>${esc(name)}</b><i>${esc(d.lat)}</i><div class="bone-color-actions">${entries.map(([id, data]) => `<button class="chip" data-color-bone="${id}" aria-label="${esc(data.ru)}" aria-pressed="${state.sel === id}">${entries.length > 1 ? id.endsWith('_right') ? 'Правая' : 'Левая' : 'Показать кость'}</button>`).join('')}</div></div></div>`;
+    }
+  }
+  $('#boneLegendList').innerHTML = html;
+}
+function closeBoneLegend(restoreFocus = true) {
+  const wasOpen = !$('#boneLegend').hidden;
+  $('#boneLegend').hidden = true;
+  $('#bBoneLegend').setAttribute('aria-expanded', 'false');
+  if (wasOpen && restoreFocus) $('#bBoneLegend').focus();
+}
+$('#bBoneLegend').addEventListener('click', () => {
+  if (!boneColorsActive()) return;
+  closeList(); hideGloss(); renderBoneLegend();
+  boneLegend.hidden = false;
+  $('#bBoneLegend').setAttribute('aria-expanded', 'true');
+  $('#bCloseBoneLegend').focus();
+});
+$('#bCloseBoneLegend').addEventListener('click', () => closeBoneLegend());
+boneLegend.addEventListener('click', event => {
+  const button = event.target.closest('[data-color-bone]');
+  if (!button) return;
+  closeBoneLegend(false);
+  goTo(button.dataset.colorBone).then(() => $('#bDeselect')?.focus());
+});
+boneLegend.addEventListener('keydown', event => {
+  if (event.key !== 'Tab') return;
+  const buttons = [...boneLegend.querySelectorAll('button:not(:disabled)')];
+  const first = buttons[0], last = buttons[buttons.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
 
 // ---------- body map + sections ----------
 const home = $('#home');
@@ -1711,6 +1812,7 @@ home.addEventListener('click', (e) => {
 function showHome() {
   if (state.mode === 'quiz') setMode('study');
   closeList(); hideGloss();
+  closeBoneLegend(false);
   renderHome();
   home.hidden = false;
   home.scrollTop = 0;
@@ -1719,6 +1821,7 @@ function showHome() {
 async function enterSection(id, opts = {}) {
   const S = SEC[id];
   if (!S || !S.ready) return false;
+  closeBoneLegend(false);
   hideGloss();
   if (!models[id]) {
     const veil = $('#veil');
@@ -1787,6 +1890,15 @@ $('#bTrunk').addEventListener('click', () => {
   if (state.mode === 'quiz') nextQuestion(); else renderSheet();
 });
 $('#bRestore').addEventListener('click', () => { state.isolate = null; state.hidden.clear(); applyVisibility(); renderSheet(); });
+$('#bBoneColors').addEventListener('click', () => {
+  if (state.sec !== 'head' || state.mode === 'quiz') return;
+  state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
+  closeBoneLegend(false); applyVisibility(); renderSheet();
+});
+$('#bHeadDetail').addEventListener('click', () => {
+  const theme = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  location.href = `skull-detail.html?theme=${encodeURIComponent(theme)}`;
+});
 $('#bQuiz').addEventListener('click', () => setMode(state.mode === 'quiz' ? 'study' : 'quiz'));
 $('#bHome').addEventListener('click', showHome);
 $('#bBrand').addEventListener('click', showHome);
@@ -1795,7 +1907,8 @@ $('#bCloseAbout').addEventListener('click', () => { $('#about').hidden = true; }
 $('#about').addEventListener('click', e => { if (e.target.id === 'about') $('#about').hidden = true; });
 addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
-  if (!gloss.hidden) hideGloss();
+  if (!boneLegend.hidden) closeBoneLegend();
+  else if (!gloss.hidden) hideGloss();
   else if (!$('#about').hidden) $('#about').hidden = true;
   else if (!home.hidden) { if (state.sec) home.hidden = true; }
   else if (!drawer.hidden) closeList();
