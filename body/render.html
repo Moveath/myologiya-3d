@@ -1,0 +1,113 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#777}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const W = +(new URLSearchParams(location.search).get('w') || 560), H = +(new URLSearchParams(location.search).get('h') || 1240);
+let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H); renderer.setClearColor(0x000000, 0);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const cam = new THREE.PerspectiveCamera(16, W / H, 0.1, 50);
+scene.add(cam);
+const hemi = new THREE.HemisphereLight(0xffffff, 0x8a8170, 1.15); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xffffff, 2.1); key.position.set(-0.9, 1.4, 1.6); cam.add(key); key.target.position.set(0, 0, -1); cam.add(key.target);
+const rim = new THREE.DirectionalLight(0xdfefff, 0.9); rim.position.set(1.2, 0.4, -0.2); cam.add(rim); rim.target.position.set(0, 0, -1); cam.add(rim.target);
+const fillL = new THREE.DirectionalLight(0xfff4e6, 0.55); fillL.position.set(0.6, -0.6, 1); cam.add(fillL); fillL.target.position.set(0, 0, -1); cam.add(fillL.target);
+
+const bones = [], byRegion = {};
+let skin = null;
+const BONE_MAT = new THREE.MeshStandardMaterial({ color: 0xece2cb, roughness: 0.62, metalness: 0 });
+const DISC_MAT = new THREE.MeshStandardMaterial({ color: 0xc9d8de, roughness: 0.5, metalness: 0 });
+const TOOTH_MAT = new THREE.MeshStandardMaterial({ color: 0xf6f2e6, roughness: 0.35, metalness: 0 });
+const DEPTH_ONLY = new THREE.MeshBasicMaterial({ colorWrite: false });
+const HL_MAT = new THREE.MeshStandardMaterial({ color: 0x3fb3a8, roughness: 0.55, metalness: 0, emissive: 0x0d6a65, emissiveIntensity: 0.35 });
+const REGION_COLORS = { head: 0xff0000, neck: 0x00ff00, trunk: 0x0000ff, arm: 0xffff00, leg: 0xff00ff };
+
+function rimMaterial(color, alpha, pow) {
+  return new THREE.ShaderMaterial({
+    uniforms: { uColor: { value: new THREE.Color(color) }, uAlpha: { value: alpha }, uPow: { value: pow } },
+    vertexShader: `varying vec3 vN; varying vec3 vV;
+      void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.0); vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
+    fragmentShader: `uniform vec3 uColor; uniform float uAlpha; uniform float uPow; varying vec3 vN; varying vec3 vV;
+      void main(){ float f = 1.0 - abs(dot(normalize(vN), normalize(vV))); float a = clamp(pow(f, uPow) * uAlpha + 0.035 * uAlpha, 0.0, 1.0); gl_FragColor = vec4(uColor, a); }`,
+    transparent: true, depthWrite: false, side: THREE.FrontSide
+  });
+}
+
+function setMode(mode, arg) {
+  for (const b of bones) {
+    b.visible = true;
+    if (mode === 'bones') b.material = b.userData.mat;
+    else if (mode === 'hl') b.material = b.userData.region === arg ? HL_MAT : DEPTH_ONLY;
+    else if (mode === 'id') b.material = new THREE.MeshBasicMaterial({ color: REGION_COLORS[b.userData.region] });
+    else if (mode === 'skin' || mode === 'mask') b.visible = false;
+  }
+  if (skin) {
+    skin.visible = mode === 'skin' || mode === 'mask';
+    if (mode === 'skin') skin.material = rimMaterial(arg.color, arg.alpha, arg.pow);
+    if (mode === 'mask') skin.material = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
+  }
+}
+function setAA(on) {
+  // the region map must not blend colours at the edges
+  const old = renderer.domElement;
+  renderer.dispose();
+  renderer = new THREE.WebGLRenderer({ antialias: on, alpha: true, preserveDrawingBuffer: true });
+  renderer.setPixelRatio(1); renderer.setSize(W, H); renderer.setClearColor(0x000000, 0);
+  renderer.outputColorSpace = on ? THREE.SRGBColorSpace : THREE.LinearSRGBColorSpace;
+  old.replaceWith(renderer.domElement);
+}
+window.shot = (mode, arg) => {
+  if (mode === 'id' || mode === 'mask') setAA(false); else if (renderer.getContext().getContextAttributes().antialias === false) setAA(true);
+  setMode(mode, arg);
+  renderer.render(scene, cam);
+  return renderer.domElement.toDataURL('image/png');
+};
+// normalized image coordinates of a few anatomical anchors, for the label lines
+window.anchors = () => {
+  const out = {};
+  const proj = (v) => { const p = v.clone().project(cam); return [+(((p.x + 1) / 2)).toFixed(4), +((1 - p.y) / 2).toFixed(4)]; };
+  for (const [r, list] of Object.entries(byRegion)) {
+    const b = new THREE.Box3(); list.forEach(m => b.expandByObject(m));
+    out[r] = { box: [proj(new THREE.Vector3(b.min.x, b.max.y, b.max.z)), proj(new THREE.Vector3(b.max.x, b.min.y, b.max.z))] };
+  }
+  const byName = (re) => bones.filter(m => re.test(m.userData.fid));
+  const center = (list) => { const b = new THREE.Box3(); list.forEach(m => b.expandByObject(m)); return b.getCenter(new THREE.Vector3()); };
+  out.points = {
+    head: proj(center(byName(/^FMA52734$/))),                // frontal bone
+    neck: proj(center(byName(/^FMA1252[2-5]$/))),            // C4-C7
+    trunk: proj(center(byName(/^FMA748[67]$/))),             // sternum
+    arm: proj(center(byName(/^FMA23130$/))),                 // right humerus
+    leg: proj(center(byName(/^FMA24474$/)))                  // right femur
+  };
+  return JSON.stringify(out);
+};
+
+new GLTFLoader().load('body.glb', g => {
+  scene.add(g.scene);
+  g.scene.traverse(o => {
+    if (!o.isMesh) return;
+    let n = o; while (n && !/^[rs]\|/.test(n.name)) n = n.parent;
+    if (!n) return;
+    const p = n.name.split('|');
+    if (p[0] === 's') { skin = o; return; }
+    const fid = p[2];
+    o.userData = { region: p[1], fid };
+    o.userData.mat = p[3] === 'tooth' ? TOOTH_MAT : (p[3] === 'disc' ? DISC_MAT : BONE_MAT);
+    bones.push(o);
+    (byRegion[p[1]] = byRegion[p[1]] || []).push(o);
+  });
+  const box = new THREE.Box3(); bones.forEach(b => box.expandByObject(b));
+  if (skin) box.expandByObject(skin);
+  const c = box.getCenter(new THREE.Vector3()), s = box.getSize(new THREE.Vector3());
+  const fov = THREE.MathUtils.degToRad(cam.fov);
+  const dist = Math.max(s.y / 2 / Math.tan(fov / 2), s.x / 2 / Math.tan(fov / 2) / cam.aspect) * 1.04 + s.z / 2;
+  cam.position.set(c.x, c.y, c.z + dist); cam.lookAt(c); cam.updateMatrixWorld();
+  window.__ready = true;
+});
+</script></body></html>
