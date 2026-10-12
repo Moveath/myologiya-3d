@@ -1,0 +1,1926 @@
+{
+  "review_date": "2026-10-12",
+  "scope": [
+    "frontal",
+    "occipital",
+    "sphenoid",
+    "ethmoid",
+    "parietal_left",
+    "parietal_right"
+  ],
+  "summary": "Проверены источники мелкой геометрии, единое совмещение Z-Anatomy, восемь полостей и альтернативная решётчатая кость BodyParts3D 4.3. Ни один projection/variant автоматически не переименован в подтверждённый рельеф.",
+  "pending_counts": {
+    "variant": 9,
+    "projection": 45
+  },
+  "source_inventory": {
+    "file": "build_head/complete_cranial/z-object-inventory.json",
+    "finding": "Имена зрительного, крыловидного, мыщелкового и подъязычного каналов, мелких отверстий и борозд представлены аннотационными объектами из двух вершин без граней. Дополнительные поверхности — только уже экспортированные восемь пазух/групп ячеек; скрытых сеток каналов не найдено."
+  },
+  "registration": {
+    "method": "Single robust orientation-preserving similarity; sampled nearest surfaces; trimmed 20% during fit; all samples in reported residuals",
+    "transform_z_to_bp": [
+      [
+        0.9694890682785757,
+        0.0040245881031705805,
+        -0.004041655088106905,
+        -0.007252368216096764
+      ],
+      [
+        -0.004009642068333184,
+        0.9694909189424457,
+        0.0035870120613291936,
+        -0.015004349831273966
+      ],
+      [
+        0.00405648317329869,
+        -0.0035702346763323892,
+        0.9694907860137366,
+        0.10370519429047136
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "distances": [
+      {
+        "bone": "frontal",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.0028,
+          "0.25": 0.2632,
+          "0.5": 0.3818,
+          "0.75": 0.5327,
+          "0.9": 0.7508,
+          "0.95": 1.0479,
+          "0.99": 1.7811,
+          "1": 3.3861
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0044,
+          "0.25": 0.2671,
+          "0.5": 0.3844,
+          "0.75": 0.538,
+          "0.9": 0.7582,
+          "0.95": 1.0736,
+          "0.99": 1.8388,
+          "1": 3.2916
+        },
+        "bp_vertices": 16531,
+        "z_vertices": 3902
+      },
+      {
+        "bone": "occipital",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.0133,
+          "0.25": 0.2457,
+          "0.5": 0.3492,
+          "0.75": 0.4699,
+          "0.9": 0.5974,
+          "0.95": 0.6885,
+          "0.99": 1.1368,
+          "1": 4.3686
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0071,
+          "0.25": 0.2477,
+          "0.5": 0.3504,
+          "0.75": 0.4728,
+          "0.9": 0.5964,
+          "0.95": 0.6853,
+          "0.99": 0.9512,
+          "1": 2.9513
+        },
+        "bp_vertices": 13904,
+        "z_vertices": 3757
+      },
+      {
+        "bone": "sphenoid",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.0083,
+          "0.25": 0.2454,
+          "0.5": 0.3557,
+          "0.75": 0.5223,
+          "0.9": 0.897,
+          "0.95": 1.4215,
+          "0.99": 3.6818,
+          "1": 6.0708
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0158,
+          "0.25": 0.2454,
+          "0.5": 0.3516,
+          "0.75": 0.5032,
+          "0.9": 0.8094,
+          "0.95": 1.2323,
+          "0.99": 2.9645,
+          "1": 7.6556
+        },
+        "bp_vertices": 7647,
+        "z_vertices": 3650
+      },
+      {
+        "bone": "ethmoid",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.0091,
+          "0.25": 0.5355,
+          "0.5": 1.07,
+          "0.75": 2.4429,
+          "0.9": 4.1202,
+          "0.95": 4.9657,
+          "0.99": 6.3269,
+          "1": 9.8254
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0066,
+          "0.25": 0.3327,
+          "0.5": 0.5984,
+          "0.75": 0.8927,
+          "0.9": 1.1522,
+          "0.95": 1.4548,
+          "0.99": 2.1501,
+          "1": 4.1186
+        },
+        "bp_vertices": 3887,
+        "z_vertices": 5082
+      },
+      {
+        "bone": "parietal_left",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.0073,
+          "0.25": 0.229,
+          "0.5": 0.3279,
+          "0.75": 0.4407,
+          "0.9": 0.5532,
+          "0.95": 0.6248,
+          "0.99": 0.7609,
+          "1": 1.2116
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0118,
+          "0.25": 0.2286,
+          "0.5": 0.3286,
+          "0.75": 0.4422,
+          "0.9": 0.5537,
+          "0.95": 0.625,
+          "0.99": 0.7694,
+          "1": 2.2046
+        },
+        "bp_vertices": 15123,
+        "z_vertices": 3443
+      },
+      {
+        "bone": "parietal_right",
+        "z_to_bp_sampled_distance_mm": {
+          "0": 0.005,
+          "0.25": 0.2242,
+          "0.5": 0.322,
+          "0.75": 0.4351,
+          "0.9": 0.5446,
+          "0.95": 0.6126,
+          "0.99": 0.756,
+          "1": 1.2039
+        },
+        "bp_to_z_sampled_distance_mm": {
+          "0": 0.0061,
+          "0.25": 0.2232,
+          "0.5": 0.3222,
+          "0.75": 0.4355,
+          "0.9": 0.5488,
+          "0.95": 0.622,
+          "0.99": 0.7679,
+          "1": 1.1234
+        },
+        "bp_vertices": 14863,
+        "z_vertices": 3386
+      }
+    ],
+    "anchors": [
+      {
+        "bone": "frontal",
+        "view": "ant",
+        "uv": [
+          0.495,
+          0.865
+        ],
+        "label": "nasal spine",
+        "code": "A02.1.03.020",
+        "bp": {
+          "p": [
+            -0.00133,
+            1.53228,
+            0.17577
+          ],
+          "n": [
+            -0.738,
+            -0.594,
+            0.32
+          ]
+        },
+        "z": {
+          "p": [
+            -0.00145,
+            1.5323,
+            0.17595
+          ],
+          "n": [
+            -0.332,
+            -0.818,
+            0.47
+          ]
+        },
+        "distance_mm": 0.21725560982398406,
+        "ru": "Носовая ость",
+        "lat": "spina nasalis",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+            "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+          },
+          {
+            "title": "TeachMeAnatomy — The Frontal Bone",
+            "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+            "locator": "Squamous Part; Orbital Part; Nasal Part."
+          }
+        ]
+      },
+      {
+        "bone": "occipital",
+        "view": "sup",
+        "uv": [
+          0.5,
+          0.783
+        ],
+        "label": "foramen magnum anterior rim",
+        "code": "A02.1.04.003",
+        "bp": {
+          "p": [
+            -0.00067,
+            1.50557,
+            0.09074
+          ],
+          "n": [
+            0.067,
+            0.521,
+            -0.851
+          ]
+        },
+        "z": {
+          "p": [
+            -0.00058,
+            1.50453,
+            0.09056
+          ],
+          "n": [
+            0.013,
+            0.471,
+            -0.882
+          ]
+        },
+        "distance_mm": 1.059292216529658,
+        "ru": "Базион",
+        "lat": "basion",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray (1918) — Exterior of the Skull",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=153",
+            "locator": "Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173."
+          },
+          {
+            "title": "Académie nationale de médecine — Basion",
+            "url": "https://academie-medecine.fr/le-dictionnaire/index.php?q=basion",
+            "locator": "Point médian du bord antérieur du foramen magnum."
+          }
+        ]
+      },
+      {
+        "bone": "sphenoid",
+        "view": "sup",
+        "uv": [
+          0.302,
+          0.351
+        ],
+        "label": "foramen ovale posterior rim right",
+        "code": "A02.1.05.036",
+        "bp": {
+          "p": [
+            -0.024,
+            1.51499,
+            0.10834
+          ],
+          "n": [
+            0.089,
+            0.547,
+            0.832
+          ]
+        },
+        "z": {
+          "p": [
+            -0.02428,
+            1.51432,
+            0.10846
+          ],
+          "n": [
+            0.029,
+            0.53,
+            0.847
+          ]
+        },
+        "distance_mm": 0.7360027173862399,
+        "ru": "Овальное отверстие",
+        "lat": "foramen ovale",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+          }
+        ]
+      },
+      {
+        "bone": "sphenoid",
+        "view": "sup",
+        "uv": [
+          0.69,
+          0.351
+        ],
+        "label": "foramen ovale posterior rim left",
+        "code": "A02.1.05.036",
+        "bp": {
+          "p": [
+            0.02176,
+            1.51495,
+            0.10834
+          ],
+          "n": [
+            0.068,
+            0.522,
+            0.851
+          ]
+        },
+        "z": {
+          "p": [
+            0.02157,
+            1.51439,
+            0.10846
+          ],
+          "n": [
+            -0.032,
+            0.53,
+            0.847
+          ]
+        },
+        "distance_mm": 0.6034069936619311,
+        "ru": "Овальное отверстие",
+        "lat": "foramen ovale",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+          }
+        ]
+      },
+      {
+        "bone": "frontal",
+        "view": "ant",
+        "uv": [
+          0.135,
+          0.775
+        ],
+        "label": "zygomatic process right",
+        "code": "A02.1.03.014",
+        "bp": {
+          "p": [
+            -0.04908,
+            1.54421,
+            0.15778
+          ],
+          "n": [
+            0.16,
+            -0.954,
+            0.252
+          ]
+        },
+        "z": {
+          "p": [
+            -0.04929,
+            1.54426,
+            0.15638
+          ],
+          "n": [
+            -0.04,
+            -0.988,
+            0.152
+          ]
+        },
+        "distance_mm": 1.416545092822683,
+        "ru": "Скуловой отросток",
+        "lat": "processus zygomaticus",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+            "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+          },
+          {
+            "title": "Anatomy Standard — лобная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+            "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+          }
+        ]
+      },
+      {
+        "bone": "frontal",
+        "view": "ant",
+        "uv": [
+          0.865,
+          0.775
+        ],
+        "label": "zygomatic process left",
+        "code": "A02.1.03.014",
+        "bp": {
+          "p": [
+            0.04774,
+            1.54421,
+            0.15778
+          ],
+          "n": [
+            -0.159,
+            -0.942,
+            0.294
+          ]
+        },
+        "z": {
+          "p": [
+            0.04771,
+            1.54426,
+            0.1591
+          ],
+          "n": [
+            0.47,
+            -0.834,
+            0.29
+          ]
+        },
+        "distance_mm": 1.321287251130486,
+        "ru": "Скуловой отросток",
+        "lat": "processus zygomaticus",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+            "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+          },
+          {
+            "title": "Anatomy Standard — лобная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+            "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+          }
+        ]
+      },
+      {
+        "bone": "occipital",
+        "view": "sup",
+        "uv": [
+          0.5,
+          0.48
+        ],
+        "label": "foramen magnum posterior rim",
+        "code": "A02.1.04.004",
+        "bp": {
+          "p": [
+            -0.00067,
+            1.49494,
+            0.05139
+          ],
+          "n": [
+            -0.015,
+            0.679,
+            0.734
+          ]
+        },
+        "z": {
+          "p": [
+            -0.00058,
+            1.49503,
+            0.05133
+          ],
+          "n": [
+            -0.007,
+            0.701,
+            0.713
+          ]
+        },
+        "distance_mm": 0.14071247279479493,
+        "ru": "Опистион",
+        "lat": "opisthion",
+        "method": "Ручной выбор лучом участка одноимённого крупного ориентира на двух отдельно осмотренных сетках; экранные координаты и нормали сохранены. Это проверка общей топографии, не определение точной морфометрической вершины.",
+        "refs": [
+          {
+            "title": "Gray (1918) — Exterior of the Skull",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=153",
+            "locator": "Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173."
+          },
+          {
+            "title": "Immersive Surgical Anatomy of the Craniometric Points (2020)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7366040/",
+            "locator": "Craniometric points, Fig.4B: opisthion and basion."
+          }
+        ]
+      }
+    ],
+    "claim": "Приблизительное совмещение по крупной топографии. Оно не устанавливает тождество образцов и не подтверждает анатомию каждой мелкой структуры."
+  },
+  "cavity_containment": [
+    {
+      "bone": "frontal",
+      "cavity": "frontal_sinus",
+      "inside_fraction": 0.984,
+      "outside_distance_quantiles_mm": [
+        0.8607790523384984,
+        1.501095659049556,
+        1.5127510187158413,
+        1.6184484836942294
+      ]
+    },
+    {
+      "bone": "sphenoid",
+      "cavity": "sphenoidal_sinus",
+      "inside_fraction": 0.745,
+      "outside_distance_quantiles_mm": [
+        1.2719885386246066,
+        2.401354159446688,
+        2.681707444062455,
+        3.5395677824494802
+      ]
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_anterior_left",
+      "inside_fraction": 0.898,
+      "outside_distance_quantiles_mm": [
+        0.6456392617120594,
+        1.2225911698274858,
+        1.2947923920479718,
+        1.4842538977428295
+      ]
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_anterior_right",
+      "inside_fraction": 0.968,
+      "outside_distance_quantiles_mm": [
+        0.3470385769960961,
+        0.9880483639107935,
+        1.1046896018784675,
+        1.186219746154363
+      ]
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_middle_left",
+      "inside_fraction": 0.8766666666666667,
+      "outside_distance_quantiles_mm": [
+        0.43553447807182344,
+        0.6750180482123043,
+        0.7027031778541573,
+        0.7290808427368982
+      ]
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_middle_right",
+      "inside_fraction": 1.0,
+      "outside_distance_quantiles_mm": []
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_posterior_left",
+      "inside_fraction": 0.8493333333333334,
+      "outside_distance_quantiles_mm": [
+        0.8305899884101275,
+        1.6106531776923958,
+        1.8051502368053212,
+        2.155197229056777
+      ]
+    },
+    {
+      "bone": "ethmoid",
+      "cavity": "ethmoid_cells_posterior_right",
+      "inside_fraction": 0.7683333333333333,
+      "outside_distance_quantiles_mm": [
+        0.7138682024807225,
+        1.7550305353361226,
+        2.1609413760508502,
+        2.7919804199340805
+      ]
+    }
+  ],
+  "cavity_asset": {
+    "file": "build_head/complete_cranial/head-cavities.glb",
+    "metadata": "build_head/complete_cranial/head-cavities.json",
+    "status": "rejected_for_main_integration",
+    "decision": "Не добавлять в основной BodyParts3D: пользователь выбрал только подтверждённую исходными моделями/сканами геометрию. Исходные полости сохраняются в независимом просмотрщике Z-Anatomy с их собственной геометрией и координатами.",
+    "use": "Исследовательский результат оценки совмещения; не применять как основу для измерений, автоматического вычитания из основной кости или изменения статуса маркеров."
+  },
+  "bp43": {
+    "source": "https://github.com/olivercase/body_parts_3d_api",
+    "files": [
+      {
+        "file": "FJ6309.obj",
+        "sha256": "ba08d5c389906c2dc7c5d956b32a5986f154fa692d10017b886b543a06b9475c"
+      },
+      {
+        "file": "FJ6412.obj",
+        "sha256": "c4a40512b568a86e2d7cffdcc660920f8f7e0a5c423b3fdafc89bafe44bed1e3"
+      }
+    ],
+    "observation": "FJ6309 содержит 22348 граней, отдельная перпендикулярная пластинка FJ6412 — 4856. Видны четыре гладких углубления верхних отделов лабиринта, но многочисленные решётчатые отверстия не разрешены. Медиальные образования не удаётся однозначно подтвердить ни в 3.0, ни в 4.3 после осмотра половин кости.",
+    "registration": {
+      "transform": [
+        [
+          0.9999260185197999,
+          0.006584144902203173,
+          0.010227733035618271,
+          -0.01264300278692602
+        ],
+        [
+          -0.0074525780174308125,
+          0.9961512643825886,
+          0.08733337019642247,
+          0.002203268693599769
+        ],
+        [
+          -0.009613353631027862,
+          -0.0874031321228141,
+          0.9961266364911076,
+          0.13781048107680532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sampled_residual_quantiles": [
+        0.6400340716738485,
+        1.3485907838043876,
+        2.626639461433737,
+        4.18286430965595,
+        5.056615269771966,
+        6.699890761282986
+      ]
+    },
+    "decision": "Не заменять основную кость автоматически: иные пропорции и положение, остаточные расхождения до нескольких миллиметров; увеличение количества граней не равно полноте анатомии."
+  },
+  "pending": [
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.007",
+      "ru": "Лобный шов; метопический шов",
+      "lat": "sutura frontalis persistens; sutura metopica",
+      "current_status": "variant",
+      "modelNote": "Показана срединная линия возможного сохраняющегося лобного шва. Сам шов на этой модели не различим; маркер не означает его наличие.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.009",
+      "ru": "Надглазничное отверстие; надглазничная вырезка",
+      "lat": "foramen supraorbitale; incisura supraorbitalis",
+      "current_status": "projection",
+      "modelNote": "Маркер на надглазничном крае показывает область надглазничной вырезки. Отдельный просвет или контур вырезки в сглаженной сетке не различим.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Haładaj et al. (2019) — Supraorbital and supratrochlear nerves",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6647930/",
+          "locator": "Materials and Methods: границы supraorbital notch и frontal notch на надглазничном крае; Fig.3–4."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.010",
+      "ru": "Лобная вырезка; лобное отверстие",
+      "lat": "incisura frontalis; foramen frontale",
+      "current_status": "projection",
+      "modelNote": "Показана область лобной вырезки медиальнее надглазничной, у медиального конца надглазничного края. Её собственный край на сетке не отделяется уверенно.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Haładaj et al. (2019) — Supraorbital and supratrochlear nerves",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6647930/",
+          "locator": "Materials and Methods: границы supraorbital notch и frontal notch на надглазничном крае; Fig.3–4."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.018",
+      "ru": "Слепое отверстие",
+      "lat": "foramen caecum",
+      "current_status": "projection",
+      "modelNote": "Показана область у нижнего конца лобного гребня. Просвет слепого отверстия на сетке не различим.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.024",
+      "ru": "Блоковая ость",
+      "lat": "spina trochlearis",
+      "current_status": "variant",
+      "modelNote": "Показана переднемедиальная область глазничной поверхности, где может располагаться блоковая ость. Отдельная ость на данной модели не различима.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Radiological anatomy of the trochlear spine (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13179243/",
+          "locator": "Introduction; Results; Fig.1–3: superomedial anterior orbit; fovea and spine."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.025",
+      "ru": "Блоковая ямка",
+      "lat": "fovea trochlearis",
+      "current_status": "projection",
+      "modelNote": "Показана переднемедиальная область глазничной поверхности. Небольшая блоковая ямка не отделяется от сглаженной сетки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Radiological anatomy of the trochlear spine (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13179243/",
+          "locator": "Introduction; Results; Fig.1–3: superomedial anterior orbit; fovea and spine."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.029",
+      "ru": "Лобная пазуха",
+      "lat": "sinus frontalis",
+      "current_status": "projection",
+      "modelNote": "Проекция лобной пазухи на переднюю стенку над медиальной частью глазницы. Внутренний объём пазухи в этой сетке не выделен.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "Доступна отдельная авторская поверхность полости Z-Anatomy. Приблизительное совмещение позволяет учебное сравнение, но не доказывает эту полость в основном образце."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.030",
+      "ru": "Апертура лобной пазухи",
+      "lat": "apertura sinus frontalis",
+      "current_status": "projection",
+      "modelNote": "Показана область отверстия пазухи впереди решётчатой вырезки. Ход оттока и стенки отверстия не реконструированы.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.031",
+      "ru": "Перегородка лобной пазухи",
+      "lat": "septum sinuum frontalium",
+      "current_status": "projection",
+      "modelNote": "Проекция перегородки лобных пазух на срединную область. Внутренняя перегородка в сетке не выделена; её индивидуальное отклонение не моделируется.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.003",
+      "ru": "Борозда сигмовидного синуса",
+      "lat": "sulcus sinus sigmoidei",
+      "current_status": "projection",
+      "modelNote": "Показана внутренняя сторона сосцевидного угла, где проходит борозда сигмовидного синуса. Отдельный контур борозды на этой сетке неразличим.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Parietal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=82",
+          "locator": "Surfaces, Borders, Angles, pp.133–134. Электронная перепечатка Saylor: начиная со страницы PDF 82."
+        },
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.008",
+      "ru": "Верхняя височная линия",
+      "lat": "linea temporalis superior",
+      "current_status": "projection",
+      "modelNote": "Показана область верхней височной линии на наружной поверхности. Две отдельные линии в сглаженной сетке не прослеживаются; это топографическая проекция.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.009",
+      "ru": "Нижняя височная линия",
+      "lat": "linea temporalis inferior",
+      "current_status": "projection",
+      "modelNote": "Показана область нижней височной линии ниже верхней. Отдельный непрерывный гребень на сетке не различим.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.019",
+      "ru": "Теменное отверстие",
+      "lat": "foramen parietale",
+      "current_status": "projection",
+      "modelNote": "Показана задняя область у сагиттального края. Небольшое теменное отверстие на выбранной сетке не различимо; его наличие не утверждается.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.003",
+      "ru": "Борозда сигмовидного синуса",
+      "lat": "sulcus sinus sigmoidei",
+      "current_status": "projection",
+      "modelNote": "Показана внутренняя сторона сосцевидного угла, где проходит борозда сигмовидного синуса. Отдельный контур борозды на этой сетке неразличим.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Parietal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=82",
+          "locator": "Surfaces, Borders, Angles, pp.133–134. Электронная перепечатка Saylor: начиная со страницы PDF 82."
+        },
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.008",
+      "ru": "Верхняя височная линия",
+      "lat": "linea temporalis superior",
+      "current_status": "projection",
+      "modelNote": "Показана область верхней височной линии на наружной поверхности. Две отдельные линии в сглаженной сетке не прослеживаются; это топографическая проекция.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.009",
+      "ru": "Нижняя височная линия",
+      "lat": "linea temporalis inferior",
+      "current_status": "projection",
+      "modelNote": "Показана область нижней височной линии ниже верхней. Отдельный непрерывный гребень на сетке не различим.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.019",
+      "ru": "Теменное отверстие",
+      "lat": "foramen parietale",
+      "current_status": "projection",
+      "modelNote": "Показана задняя область у сагиттального края. Небольшое теменное отверстие на выбранной сетке не различимо; его наличие не утверждается.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.007",
+      "ru": "Глоточный бугорок",
+      "lat": "tuberculum pharyngeum",
+      "current_status": "projection",
+      "modelNote": "Показана срединная область нижней поверхности базилярной части. Глоточный бугорок на сглаженной сетке выражен недостаточно для точного контура.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.008",
+      "ru": "Борозда нижнего каменистого синуса",
+      "lat": "sulcus sinus petrosi inferioris",
+      "current_status": "projection",
+      "modelNote": "Маркер у бокового края базилярной части. Тонкая борозда нижнего каменистого синуса здесь отдельно не выделена.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.013",
+      "ru": "Межтеменная кость",
+      "lat": "os interparietale",
+      "current_status": "variant",
+      "modelNote": "Показана верхняя область затылочной чешуи, соответствующая межтеменной кости при её отдельном сохранении. Отдельной кости и разделяющего шва на модели нет.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Bergman et al. — Variations of the Occipital Bone",
+          "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
+          "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.015",
+      "ru": "Мыщелковый канал",
+      "lat": "canalis condylaris",
+      "current_status": "projection",
+      "modelNote": "Проекция отверстия мыщелкового канала в области мыщелковой ямки. Сквозной ход канала в модели не выделен.",
+      "refs": [
+        {
+          "title": "Gray (1918) — Exterior of the Skull",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=153",
+          "locator": "Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.016",
+      "ru": "Канал подъязычного нерва",
+      "lat": "canalis nervi hypoglossi",
+      "current_status": "projection",
+      "modelNote": "Показана область канала подъязычного нерва у основания мыщелка. Сам короткий канал на сетке не прослеживается.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.021",
+      "ru": "Внутрияремный отросток",
+      "lat": "processus intrajugularis",
+      "current_status": "projection",
+      "modelNote": "Показана переднемедиальная часть яремной вырезки. Отдельный внутрияремный отросток в сетке не различим.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Complete morphometric analysis of jugular foramen (2016)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5111328/",
+          "locator": "Methods: endocranial aspect, Fig.1 — peak of intrajugular process of occipital bone."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.024",
+      "ru": "Наивысшая выйная линия",
+      "lat": "linea nuchalis suprema",
+      "current_status": "projection",
+      "modelNote": "Показана область наивысшей выйной линии выше верхней выйной линии. Её собственный гребень на сетке не отделяется.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.033",
+      "ru": "Борозда затылочного синуса",
+      "lat": "sulcus sinus occipitalis",
+      "current_status": "projection",
+      "modelNote": "Показан срединный путь у внутреннего затылочного гребня. Борозда затылочного синуса на сетке не отделена от гребня.",
+      "refs": [
+        {
+          "title": "Píšová et al. (2017) — Craniovascular traits",
+          "url": "https://www.isita-org.com/Jass/Contents/2017vol95/Pisova/28190005.pdf",
+          "locator": "Fig.6 and text: внутренний затылочный гребень, затылочный и краевой синусы вокруг большого отверстия."
+        },
+        {
+          "title": "Kenhub — occipital bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-occipital-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.034",
+      "ru": "Борозда краевого синуса",
+      "lat": "sulcus sinus marginalis",
+      "current_status": "projection",
+      "modelNote": "Показана внутричерепная область у края большого отверстия. Отдельная борозда краевого синуса на сетке не различима.",
+      "refs": [
+        {
+          "title": "Píšová et al. (2017) — Craniovascular traits",
+          "url": "https://www.isita-org.com/Jass/Contents/2017vol95/Pisova/28190005.pdf",
+          "locator": "Fig.6 and text: внутренний затылочный гребень, затылочный и краевой синусы вокруг большого отверстия."
+        },
+        {
+          "title": "Kenhub — occipital bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-occipital-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.035",
+      "ru": "Околососцевидный отросток",
+      "lat": "processus paramastoideus",
+      "current_status": "variant",
+      "modelNote": "Показано место возможного околососцевидного отростка на нижней поверхности яремного отростка. Удлинённого самостоятельного отростка здесь не видно.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Bergman et al. — Variations of the Occipital Bone",
+          "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
+          "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.008",
+      "ru": "Средний наклонённый отросток",
+      "lat": "processus clinoideus medius",
+      "current_status": "variant",
+      "modelNote": "Показана область среднего наклонённого отростка у латерального края бугорка седла. Отдельный выступ на этой сетке не различим.",
+      "refs": [
+        {
+          "title": "The Prevalence of the Middle Clinoid Process (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11226267/",
+          "locator": "Introduction and Fig.1–3: основание у переднелатерального края седла, вариабельность."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.013",
+      "ru": "Клиновидный язычок",
+      "lat": "lingula sphenoidalis",
+      "current_status": "projection",
+      "modelNote": "Показана область костного язычка у заднелатерального края сонной борозды. Его небольшой самостоятельный гребень не различим.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.016",
+      "ru": "Клиновидная пазуха",
+      "lat": "sinus sphenoidalis",
+      "current_status": "projection",
+      "modelNote": "Проекция пазухи на переднюю стенку тела. Внутренняя полость и её границы в этой модели не отделены.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — sphenoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-sphenoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "Доступна отдельная авторская поверхность полости Z-Anatomy. Приблизительное совмещение позволяет учебное сравнение, но не доказывает эту полость в основном образце."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.017",
+      "ru": "Перегородка клиновидных пазух",
+      "lat": "septum sinuum sphenoidalium",
+      "current_status": "projection",
+      "modelNote": "Срединная проекция перегородки клиновидных пазух. Внутренняя перегородка в модели не выделена.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        },
+        {
+          "title": "Kenhub — sphenoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-sphenoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.018",
+      "ru": "Апертура клиновидной пазухи",
+      "lat": "apertura sinus sphenoidalis",
+      "current_status": "projection",
+      "modelNote": "Показана область отверстия клиновидной пазухи на передней поверхности тела. Отдельный просвет в сетке не виден.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.019",
+      "ru": "Клиновидная раковина",
+      "lat": "concha sphenoidalis",
+      "current_status": "projection",
+      "modelNote": "Показана область тонкой передненижней стенки пазухи. Клиновидная раковина не выделена отдельной геометрией.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.021",
+      "ru": "Зрительный канал",
+      "lat": "canalis opticus",
+      "current_status": "projection",
+      "modelNote": "Показана область зрительного канала у корня малого крыла. Его узкий просвет не прослеживается; не следует путать маркер с верхней глазничной щелью.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.037",
+      "ru": "Венозное отверстие",
+      "lat": "foramen venosum",
+      "current_status": "variant",
+      "modelNote": "Показана область возможного венозного отверстия медиальнее овального. Самостоятельное отверстие здесь не видно; его наличие не утверждается.",
+      "refs": [
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        },
+        {
+          "title": "Correlation Analysis on Accessory Foramina in the Sphenoid Bone (2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/",
+          "locator": "Canaliculus innominatus, Fig.3: между foramen spinosum и foramen ovale."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.038",
+      "ru": "Остистое отверстие",
+      "lat": "foramen spinosum",
+      "current_status": "projection",
+      "modelNote": "Показана область остистого отверстия позади и латеральнее овального. Малый просвет на сетке не выделен.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.039",
+      "ru": "Каменистое отверстие",
+      "lat": "foramen petrosum",
+      "current_status": "variant",
+      "modelNote": "Показана область возможного каменистого отверстия между овальным и остистым. Отдельного просвета на данной сетке не видно.",
+      "refs": [
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        },
+        {
+          "title": "Correlation Analysis on Accessory Foramina in the Sphenoid Bone (2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/",
+          "locator": "Canaliculus innominatus, Fig.3: между foramen spinosum и foramen ovale."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.041",
+      "ru": "Борозда слуховой трубы",
+      "lat": "sulcus tubae auditivae; sulcus tubae auditoriae",
+      "current_status": "projection",
+      "modelNote": "Показана нижняя бороздчатая область между остью клиновидной кости и корнем медиальной крыловидной пластинки. Узкая борозда слуховой трубы отдельно не прослеживается.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.048",
+      "ru": "Влагалищный отросток",
+      "lat": "processus vaginalis",
+      "current_status": "projection",
+      "modelNote": "Показана область медиального расширения у основания медиальной крыловидной пластинки. Тонкий влагалищный отросток не обособлен.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Visualisation of the vomerovaginal canal (2019)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6637440/",
+          "locator": "Osteological study and endoscopic dissection: vomer, vaginal process, palatine; differences between VVC and PVC."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.049",
+      "ru": "Нёбно-влагалищная борозда",
+      "lat": "sulcus palatovaginalis",
+      "current_status": "projection",
+      "modelNote": "Проекция нёбно-влагалищной борозды на нижнюю поверхность области влагалищного отростка. Канал с нёбной костью отдельно не построен.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Simultaneous observation of palatovaginal and vomerovaginal canals (2015)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658943/",
+          "locator": "Discussion and Fig.2–3: различение нёбно-влагалищного и сошниково-влагалищного каналов."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.050",
+      "ru": "Сошниково-влагалищная борозда",
+      "lat": "sulcus vomerovaginalis",
+      "current_status": "projection",
+      "modelNote": "Показана область сошниково-влагалищной борозды медиальнее нёбно-влагалищной. Мелкий канал с крылом сошника не выделен.",
+      "refs": [
+        {
+          "title": "Visualisation of the vomerovaginal canal (2019)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6637440/",
+          "locator": "Osteological study and endoscopic dissection: vomer, vaginal process, palatine; differences between VVC and PVC."
+        },
+        {
+          "title": "Simultaneous observation of palatovaginal and vomerovaginal canals (2015)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658943/",
+          "locator": "Discussion and Fig.2–3: различение нёбно-влагалищного и сошниково-влагалищного каналов."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.052",
+      "ru": "Борозда крыловидного крючка",
+      "lat": "sulcus hamuli pterygoidei",
+      "current_status": "projection",
+      "modelNote": "Показана наружная сторона крыловидного крючка. Тонкая борозда для сухожилия на сглаженной поверхности не различима.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.053",
+      "ru": "Крыловидный канал",
+      "lat": "canalis pterygoideus",
+      "current_status": "projection",
+      "modelNote": "Показана область переднего отверстия крыловидного канала у основания крыловидного отростка, ниже и медиальнее круглого отверстия. Сквозной канал не выделен.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.054",
+      "ru": "Крыловидно-остистый отросток",
+      "lat": "processus pterygospinosus",
+      "current_status": "variant",
+      "modelNote": "Показана область возможного крыловидно-остистого выступа на заднем крае латеральной пластинки. Самостоятельный выступ или костная перемычка здесь не различимы.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Morphological study of sphenoid ligaments ossification (2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10587028/",
+          "locator": "Introduction and anatomy of pterygospinous ligament: posterior margin of lateral plate, sphenoid spine."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.003",
+      "ru": "Решётчатые отверстия",
+      "lat": "foramina cribrosa",
+      "current_status": "projection",
+      "modelNote": "Показан участок решётчатой пластинки латеральнее петушиного гребня. Многочисленные мелкие отверстия в сетке закрыты или не различимы.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — ethmoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-ethmoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки",
+      "lat": "cellulae ethmoidales anteriores",
+      "current_status": "projection",
+      "modelNote": "Проекция передней группы решётчатых ячеек на наружную стенку лабиринта. Их внутренние полости на модели не обособлены.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "Доступна отдельная авторская поверхность полости Z-Anatomy. Приблизительное совмещение позволяет учебное сравнение, но не доказывает эту полость в основном образце."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки",
+      "lat": "cellulae ethmoidales mediae",
+      "current_status": "projection",
+      "modelNote": "Проекция средней группы решётчатых ячеек на стенку лабиринта. Индивидуальные камеры и их границы не реконструированы.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "Доступна отдельная авторская поверхность полости Z-Anatomy. Приблизительное совмещение позволяет учебное сравнение, но не доказывает эту полость в основном образце."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки",
+      "lat": "cellulae ethmoidales posteriores",
+      "current_status": "projection",
+      "modelNote": "Проекция задней группы решётчатых ячеек на стенку лабиринта. Внутренние полости не выделены.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "Доступна отдельная авторская поверхность полости Z-Anatomy. Приблизительное совмещение позволяет учебное сравнение, но не доказывает эту полость в основном образце."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.012",
+      "ru": "Наивысшая носовая раковина",
+      "lat": "concha nasalis suprema",
+      "current_status": "variant",
+      "modelNote": "Показана область возможной наивысшей носовой раковины над верхней. Самостоятельной раковины на этой модели не видно.",
+      "refs": [
+        {
+          "title": "Orhan et al. — A surgical view of the superior nasal turbinate (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20012078/",
+          "locator": "Cadaveric study: наличие и варианты supreme nasal turbinate, relation to superior turbinate."
+        },
+        {
+          "title": "Supreme Nasal Turbinate as an Additional Surgical Landmark (2020)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7294892/",
+          "locator": "Endoscopic case and figures: supreme turbinate above superior turbinate."
+        }
+      ],
+      "status_after_review": "variant",
+      "result": "Вариант не обязан присутствовать в каждом черепе; наличие в данном образце не подтверждено."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.013",
+      "ru": "Верхняя носовая раковина",
+      "lat": "concha nasalis superior",
+      "current_status": "projection",
+      "modelNote": "Показана область верхней носовой раковины на медиальной стороне заднего отдела лабиринта. Её край в сглаженной модели не отделяется уверенно.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.015",
+      "ru": "Решётчатый пузырёк",
+      "lat": "bulla ethmoidalis",
+      "current_status": "projection",
+      "modelNote": "Проекция решётчатого пузырька на нижнюю область боковой стенки лабиринта. Медиально расположенный пузырёк закрыт наружной стенкой и не имеет отдельного контура в этой сетке.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.016",
+      "ru": "Крючковидный отросток",
+      "lat": "processus uncinatus",
+      "current_status": "projection",
+      "modelNote": "Проекция крючковидного отростка на передненижний участок лабиринта. Его тонкая самостоятельная пластинка в этой сетке не отделена от соседних стенок.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.017",
+      "ru": "Решётчатая воронка",
+      "lat": "infundibulum ethmoidale",
+      "current_status": "projection",
+      "modelNote": "Проекция решётчатой воронки на боковую стенку переднего отдела лабиринта. Узкий внутренний ход латеральнее крючковидного отростка здесь не реконструирован.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.018",
+      "ru": "Полулунная расщелина",
+      "lat": "hiatus semilunaris",
+      "current_status": "projection",
+      "modelNote": "Проекция области между пузырьком и крючковидным отростком на боковую стенку лабиринта. Медиальная полулунная расщелина скрыта стенкой; её просвет в модели не выделен.",
+      "refs": [
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        },
+        {
+          "title": "Kenhub — ethmoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-ethmoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "status_after_review": "projection",
+      "result": "На осмотренных сетках нет надёжно различимого самостоятельного рельефа или просвета, позволяющего снять ограничение. Именованная линия Z-Anatomy не считается геометрией образования."
+    }
+  ],
+  "screenshots": [
+    "shots/cranial-completion/anchor_review_bp_frontal.png",
+    "shots/cranial-completion/anchor_review_bp_occipital.png",
+    "shots/cranial-completion/anchor_review_bp_sphenoid.png",
+    "shots/cranial-completion/anchor_review_z_frontal.png",
+    "shots/cranial-completion/anchor_review_z_occipital.png",
+    "shots/cranial-completion/anchor_review_z_sphenoid.png",
+    "shots/cranial-completion/cavity_frontal_ant.png",
+    "shots/cranial-completion/cavity_frontal_sup.png",
+    "shots/cranial-completion/cavity_frontal_lat.png",
+    "shots/cranial-completion/cavity_frontal_post.png",
+    "shots/cranial-completion/cavity_sphenoid_ant.png",
+    "shots/cranial-completion/cavity_sphenoid_sup.png",
+    "shots/cranial-completion/cavity_sphenoid_lat.png",
+    "shots/cranial-completion/cavity_sphenoid_post.png",
+    "shots/cranial-completion/cavity_ethmoid_ant.png",
+    "shots/cranial-completion/cavity_ethmoid_sup.png",
+    "shots/cranial-completion/cavity_ethmoid_lat.png",
+    "shots/cranial-completion/cavity_ethmoid_post.png",
+    "shots/cranial-completion/bp43_ethmoid_sup.png",
+    "shots/cranial-completion/bp43_ethmoid_ant.png",
+    "shots/cranial-completion/bp43_ethmoid_lat.png",
+    "shots/cranial-completion/bp43_ethmoid_perpendicular_lat.png",
+    "shots/cranial-completion/bp_ethmoid_sup.png",
+    "shots/cranial-completion/bp_ethmoid_right_half_double.png",
+    "shots/cranial-completion/bp_ethmoid_left_half_double.png"
+  ],
+  "additional_source_review": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170943/",
+      "title": "Nowinski & Thaung (2018), A 3D stereotactic atlas of the adult human skull base",
+      "result": "Статья описывает детально обработанные каналы и отверстия; её лицензия CC BY 4.0 относится к публикации. Отдельная совместимая лицензия на файлы атласа не подтверждена, геометрия не извлекалась."
+    },
+    {
+      "url": "https://3d.nih.gov/entries/3dpx-012260",
+      "title": "NIH 3D — Visible Human Male Skull",
+      "result": "Найдена дополнительная модель целого черепа; покостная сегментация, совместимая лицензия конкретного файла и полнота мелких каналов не подтверждены. Не использована вместо основного набора."
+    }
+  ]
+}

@@ -105,6 +105,17 @@ button { cursor: pointer; }
 .chip:disabled { cursor: default; opacity: 0.6; }
 .palette-icon { width: 15px; height: 15px; flex: none; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15);
   background: conic-gradient(#e8c04c 0 25%, #b488c9 25% 50%, #689ddd 50% 75%, #a4bf71 75%); }
+.cut-controls { margin-inline:16px; padding:10px 12px; border:1px solid var(--rule); border-radius:12px; background:var(--paper-glass); pointer-events:auto; display:flex; align-items:center; flex-wrap:wrap; gap:8px 14px; max-width:620px; }
+.cut-controls label { display:flex; align-items:center; gap:8px; font-size:12px; }
+.cut-controls select { color:var(--ink); background:var(--paper); border:1px solid var(--rule); border-radius:8px; padding:7px; max-width:205px; font:inherit; }
+.cut-controls input { width:100%; accent-color:var(--teal); }
+.cut-controls .cut-position { flex:1; min-width:140px; }
+.cut-controls .hint { flex-basis:100%; font-size:11px; margin:0; }
+#headDetailDialog { width:100vw; height:100dvh; max-width:100vw; max-height:100dvh; padding:0; margin:0; border:0; background:var(--drape); }
+#headDetailFrame { border:0; display:block; width:100%; height:100%; }
+#headDetailDialog[open] { display:flex; flex-direction:column; }
+#headDetailDialog .detail-header { display:flex; justify-content:flex-end; padding:6px 12px; flex:none; }
+#headDetailFrame { flex:1; min-height:0; }
 
 /* landmark pins over the model */
 #pinLayer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
@@ -396,7 +407,14 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
       <button class="chip nocheck" id="bHeadDetail" hidden>Подробная модель</button>
+      <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
+    </div>
+    <div class="cut-controls" id="headCutControls" hidden>
+      <label>Плоскость <select id="headCutAxis" aria-label="Плоскость среза"><option value="y">Горизонтальная</option><option value="x">Сагиттальная</option><option value="z">Фронтальная</option></select></label>
+      <label class="cut-position">Срез <input id="headCutPosition" type="range" min="0" max="100" value="50" aria-label="Положение среза"><output id="headCutValue">50%</output></label>
+      <button class="chip" id="headCutFlip" aria-pressed="false">Другая сторона</button>
+      <p class="hint">Срез открывает поверхность модели. Цвета сохраняют принадлежность к костям.</p>
     </div>
   </div>
 
@@ -412,6 +430,7 @@ dt .term { text-decoration-color: var(--ink-2); }
     <div class="dlist" id="dlist"></div>
   </aside>
 
+  <dialog id="headDetailDialog" aria-label="Внутреннее строение черепа"><div class="detail-header"><button class="chip nocheck" id="closeHeadDetail">Вернуться к атласу ✕</button></div><iframe id="headDetailFrame" title="Подробные структуры черепа"></iframe></dialog>
   <aside class="drawer bone-legend" id="boneLegend" hidden role="dialog" aria-modal="true" aria-labelledby="boneLegendTitle">
     <div class="dhead">
       <h2 id="boneLegendTitle">Цвета костей черепа</h2>
@@ -470,6 +489,8 @@ dt .term { text-decoration-color: var(--ink-2); }
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
       <p>В голове по умолчанию включены «Цвета костей»: у каждой кости свой учебный цвет, одинаковый справа и слева. Это условная раскраска для запоминания. Кнопка «Легенда» показывает названия и позволяет выбрать кость. Чтобы увидеть весь цветной череп, выбери слой «Кости». Настройка цвета сохраняется; во время теста раскраска временно отключается.</p>
+      <p>«Срез черепа» позволяет убрать часть модели в одной из трёх плоскостей и рассмотреть внутреннюю поверхность. Ползунок перемещает срез; «Другая сторона» меняет оставленную половину. Срез показывает существующую геометрию модели.</p>
+      <p>«Подробная модель» открывается внутри атласа: здесь доступны кости и пазухи Z-Anatomy, поверхность микро-КТ и 13 структур препарата OpenEar. Выбирай структуры в списке, скрывай костный блок или делай его прозрачным. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. «Вернуться к атласу» сохраняет прежний выбор. Ссылки на отдельно проверенные образования есть и в их карточках.</p>
       <h3>Словарик</h3>
       <dl class="glosslist" id="glosslist"></dl>
       <h3>Откуда модели</h3>
@@ -655,6 +676,7 @@ const state = {
   sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
   boneColors: prefs.boneColors !== false,
+  headCut: { active: false, axis: 'y', value: 50, flip: false },
   mode: 'study', viewIdx: -1,
   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
 };
@@ -750,6 +772,41 @@ const HEAD_BONE_PALETTE = {
 const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
 const WHITE = new THREE.Color('#ffffff');
+const headCutPlane = new THREE.Plane();
+function pointClipped(point) {
+  return state.sec === 'head' && state.mode === 'study' && state.headCut.active && headCutPlane.distanceToPoint(point) < -1e-7;
+}
+function updateHeadCut() {
+  const enabled = state.sec === 'head' && state.mode === 'study' && state.headCut.active;
+  $('#bHeadCut').hidden = state.sec !== 'head' || state.mode !== 'study';
+  $('#bHeadCut').setAttribute('aria-pressed', String(enabled));
+  $('#headCutControls').hidden = !enabled;
+  $('#headCutAxis').value = state.headCut.axis;
+  $('#headCutPosition').value = state.headCut.value;
+  $('#headCutValue').textContent = `${state.headCut.value}%`;
+  $('#headCutFlip').setAttribute('aria-pressed', String(state.headCut.flip));
+  if (enabled) {
+    const box = new THREE.Box3();
+    for (const s of structs.values()) if (s.kind === 'b') for (const mesh of s.meshes) box.expandByObject(mesh);
+    const axis = state.headCut.axis, sign = state.headCut.flip ? 1 : -1;
+    const coordinate = THREE.MathUtils.lerp(box.min[axis], box.max[axis], state.headCut.value / 100);
+    headCutPlane.normal.set(0, 0, 0); headCutPlane.normal[axis] = sign;
+    headCutPlane.constant = -coordinate * sign;
+  }
+  renderer.clippingPlanes = enabled ? [headCutPlane] : [];
+  // Sections expose the inside of existing surfaces; no capping geometry is invented.
+  for (const s of structs.values()) for (const mesh of s.meshes) {
+    const material = mesh.userData.mat;
+    const side = enabled ? THREE.DoubleSide : THREE.FrontSide;
+    if (material.side !== side) { material.side = side; material.needsUpdate = true; }
+  }
+  for (const material of [GHOST, ...Object.values(headBoneGhosts)]) {
+    const side = enabled ? THREE.DoubleSide : THREE.FrontSide;
+    if (material.side !== side) { material.side = side; material.needsUpdate = true; }
+  }
+  occDirty = true;
+  requestRender();
+}
 const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
   const material = GHOST.clone(); material.color.copy(color); return [id, material];
 }));
@@ -873,6 +930,7 @@ function applyVisibility() {
   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
   updateBoneColorControls();
+  updateHeadCut();
   paint();
   buildPins();
   requestAnimationFrame(resize);
@@ -1003,7 +1061,7 @@ function hitAt(clientX, clientY) {
   const r = canvas.getBoundingClientRect();
   const ndc = new THREE.Vector2(((clientX - r.left) / r.width) * 2 - 1, -((clientY - r.top) / r.height) * 2 + 1);
   ray.setFromCamera(ndc, camera);
-  const hit = ray.intersectObjects(pickables, false)[0];
+  const hit = ray.intersectObjects(pickables, false).find(h => !pointClipped(h.point));
   return hit ? hit.object.userData : null;
 }
 let down = null;
@@ -1080,7 +1138,7 @@ function positionPins() {
     _pv.copy(pe.v).project(camera);
     pe.x = (_pv.x + 1) / 2 * W; pe.y = (1 - _pv.y) / 2 * H;
     // keep pins out from under the controls on top and the card below
-    const off = _pv.z > 1 || pe.y < inset.top - 6 || pe.y > H - inset.bottom + 4 || pe.x < -10 || pe.x > W - inset.right + 4;
+    const off = pointClipped(pe.v) || _pv.z > 1 || pe.y < inset.top - 6 || pe.y > H - inset.bottom + 4 || pe.x < -10 || pe.x > W - inset.right + 4;
     pe.el.hidden = off;
     pe.el.style.transform = `translate(${pe.x.toFixed(1)}px, ${pe.y.toFixed(1)}px)`;
     pe.el.classList.toggle('behind', pe.occ);
@@ -1111,7 +1169,7 @@ function computeOcclusion() {
     const dist = d.length();
     occRay.set(cp, d.normalize());
     occRay.near = 0; occRay.far = Math.max(0, dist - 0.0025);
-    pe.occ = occRay.intersectObjects(targets, false).length > 0;
+    pe.occ = occRay.intersectObjects(targets, false).some(hit => !pointClipped(hit.point));
   }
 }
 function flyToPin(p) {
@@ -1125,6 +1183,7 @@ function flyToPin(p) {
 function activatePin(id, fly) {
   state.pin = id;
   const active = id ? pinById[id] : null;
+  if (active?.p && fly && pointClipped(new THREE.Vector3(...active.p))) state.headCut.active = false;
   if (active && active.loc === 'internal') state.xrayBone = active.b;
   else if (active && active.b !== state.xrayBone) state.xrayBone = null;
   if (id && state.pinGroup && (pinById[id] || {}).g !== state.pinGroup) state.pinGroup = null;
@@ -1301,6 +1360,7 @@ function renderSheet() {
       </div>
       <p>${glossify(esc(ap.x), used)}</p>
       ${ap.modelNote ? `<div class="note">${esc(ap.modelNote)}</div>` : ''}
+      ${detailLinks(ap)}
       ${sourceLinks(ap.refs)}
       ${muscleChips(ap, isMuscle ? id : null)}
       ${isMuscle ? `<div class="linkrow"><button class="chip" data-gobone="${ap.b}">Открыть кость: ${esc(boneName.toLowerCase())}</button></div>` : ''}
@@ -1337,6 +1397,7 @@ function renderSheet() {
       <button class="act primary togglemore" id="bMore">${sheet.dataset.state === 'open' ? 'Свернуть' : 'Подробнее'}</button>
       ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : 'Только эта'}</button>` : ''}
       ${!noModel && !isMuscle && state.sec === 'head' ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
+      ${!isMuscle && /^temporal_(left|right)$/.test(id) ? '<button class="act" data-detail-mode="openear">Внутри височной кости</button>' : ''}
       ${!noModel ? `<button class="act" id="bHide">Скрыть</button>` : ''}
       ${!noModel ? `<button class="act icon" id="bFocus" aria-label="Приблизить" title="Приблизить"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 8v5M8 10.5h5"/></svg></button>` : ''}
       ${hasPins ? `<button class="act icon" id="bPins" aria-pressed="${state.pinsOn}" aria-label="Точки на костях" title="Точки на костях"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg></button>` : ''}
@@ -1363,6 +1424,13 @@ function sourceLinks(refs) {
 }
 function localizationLabel(p) {
   return ({surface: 'На поверхности', projection: 'Анатомическая проекция', internal: 'Внутренний ориентир · схема', variant: 'Вариант строения · проекция'})[p.loc] || '';
+}
+function detailLinks(p) {
+  if(state.sec!=='head')return '';
+  const cavities={'A02.1.03.029':['frontal_sinus'],'A02.1.05.016':['sphenoidal_sinus'],'A02.1.07.008':['ethmoid_cells_anterior_left','ethmoid_cells_anterior_right'],'A02.1.07.009':['ethmoid_cells_middle_left','ethmoid_cells_middle_right'],'A02.1.07.010':['ethmoid_cells_posterior_left','ethmoid_cells_posterior_right']};
+  if(p.c==='A02.1.15.031')return '<p class="lead">На другой исходной модели виден рельеф этой борозды:</p><div class="linkrow"><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_right">Борозда справа · Z-Anatomy</button><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_left">Борозда слева · Z-Anatomy</button></div>';
+  const ids=cavities[p.c];
+  return ids?`<p class="lead">Объём полости в отдельной модели Z-Anatomy:</p><div class="linkrow">${ids.map(id=>`<button class="chip" data-detail-mode="z" data-detail-part="${id}">Открыть в 3D${ids.length>1?(id.endsWith('left')?' · слева':' · справа'):''}</button>`).join('')}</div>`:'';
 }
 function pinMeta(p) {
   if (p.t === 'ta') return `<span class="tacode">TA98 ${esc(p.c)}${p.g ? ' · ' + esc(p.g) : ''}${p.sh ? ' · общее для запястья' : ''}${p.inc ? ' <span class="tag">непостоянное</span>' : ''}${p.taParen ? ' <span class="tag">в скобках в IFAA</span>' : ''}${p.loc ? ` <span class="tag">${localizationLabel(p)}</span>` : ''}${!p.p ? ' <span class="tag">Расположение уточняется</span>' : ''}</span>`;
@@ -1406,6 +1474,7 @@ function bonePinSect(id, d) {
   return html;
 }
 function afterSheet() {
+  sheet.querySelectorAll('[data-detail-mode]').forEach(b=>b.addEventListener('click',()=>openHeadDetail(b.dataset.detailMode,b.dataset.detailPart,b.dataset.detailMarker)));
   sheet.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => select(b.dataset.go, null, true)));
   sheet.querySelectorAll('[data-part]').forEach(b => b.addEventListener('click', () => {
     state.selPart = b.dataset.part || null;
@@ -1895,10 +1964,33 @@ $('#bBoneColors').addEventListener('click', () => {
   state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
   closeBoneLegend(false); applyVisibility(); renderSheet();
 });
-$('#bHeadDetail').addEventListener('click', () => {
+function openHeadDetail(mode = 'z', part = null, marker = null) {
   const theme = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  location.href = `skull-detail.html?theme=${encodeURIComponent(theme)}`;
+  const query = new URLSearchParams({theme, mode, embed:'1'});
+  if (part) query.set('part', part);
+  if (marker) query.set('marker', marker);
+  $('#headDetailFrame').src = `skull-detail.html?${query}`;
+  $('#headDetailDialog').showModal();
+}
+function closeHeadDetail() {
+  $('#headDetailDialog').close();
+  $('#headDetailFrame').src = 'about:blank';
+  $('#bHeadDetail').focus();
+}
+$('#bHeadDetail').addEventListener('click', () => openHeadDetail());
+$('#closeHeadDetail').addEventListener('click', closeHeadDetail);
+$('#headDetailDialog').addEventListener('cancel', event => { event.preventDefault(); closeHeadDetail(); });
+addEventListener('message', event => {
+  if (event.origin === location.origin && event.source === $('#headDetailFrame').contentWindow && event.data?.type === 'atlas-close-detail') closeHeadDetail();
 });
+$('#bHeadCut').addEventListener('click', () => {
+  state.headCut.active = !state.headCut.active;
+  applyVisibility();
+  resize();frame(shownIds(),null,true);
+});
+$('#headCutAxis').addEventListener('change', e => { state.headCut.axis = e.target.value; updateHeadCut(); });
+$('#headCutPosition').addEventListener('input', e => { state.headCut.value = +e.target.value; updateHeadCut(); });
+$('#headCutFlip').addEventListener('click', () => { state.headCut.flip = !state.headCut.flip; updateHeadCut(); });
 $('#bQuiz').addEventListener('click', () => setMode(state.mode === 'quiz' ? 'study' : 'quiz'));
 $('#bHome').addEventListener('click', showHome);
 $('#bBrand').addEventListener('click', showHome);
@@ -1907,6 +1999,7 @@ $('#bCloseAbout').addEventListener('click', () => { $('#about').hidden = true; }
 $('#about').addEventListener('click', e => { if (e.target.id === 'about') $('#about').hidden = true; });
 addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
+  if ($('#headDetailDialog').open) return;
   if (!boneLegend.hidden) closeBoneLegend();
   else if (!gloss.hidden) hideGloss();
   else if (!$('#about').hidden) $('#about').hidden = true;

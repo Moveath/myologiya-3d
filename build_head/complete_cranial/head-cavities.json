@@ -1,0 +1,442 @@
+{
+  "title": "Воздушные полости · учебное совмещение",
+  "file": "head-cavities.glb",
+  "source": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attributions": [
+      {
+        "title": "Z-Anatomy — Gauthier Kervyn и соавторы",
+        "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy"
+      },
+      {
+        "title": "BodyParts3D — The Database Center for Life Science; CC BY-SA 2.1 Japan",
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/"
+      },
+      {
+        "title": "University of Dundee, CAHID — Sophia Lappe, Cranial Nerves and Foramina; CC BY 4.0 (источник, указанный Z-Anatomy)",
+        "url": "https://sketchfab.com/3d-models/cranial-nerves-and-foramina-a9358ee7a6dd4ea18a3622114405a4c7"
+      }
+    ],
+    "sourceLicense": "https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt",
+    "notice": "Исследовательский GLB содержит только восемь авторских поверхностей пазух/групп решётчатых ячеек, извлечённых из Z-Anatomy. Кости, модели внутреннего уха и почки не включены. Геометрия распространяется по CC BY-SA 4.0 с сохранением исходных атрибуций.",
+    "changes": "Извлечение объектов черепа; вычисление существующих авторских модификаторов решётчатой кости и ячеек; компенсация отражённых преобразований в порядке вершин треугольников; смена осей; конвертация в GLB. Новые отверстия не создавались. Выполнено приблизительное единое совмещение с черепом BodyParts3D; исходные поверхности полостей не деформированы."
+  },
+  "cavities": [
+    {
+      "id": "frontal_sinus",
+      "node": "o|frontal_sinus",
+      "bone": "frontal",
+      "c": "A02.1.03.029",
+      "ru": "Лобная пазуха",
+      "lat": "sinus frontalis",
+      "side": "both",
+      "x": "Воздухоносная полость внутри лобной кости над глазницей.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "bounds": [
+        [
+          -0.025469359102732722,
+          1.5377629163942428,
+          0.17012346647079923
+        ],
+        [
+          0.023379183872975266,
+          1.5681398883595117,
+          0.1813488081337633
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "frontal",
+        "cavity": "frontal_sinus",
+        "inside_fraction": 0.984,
+        "outside_distance_quantiles_mm": [
+          0.8607790523384984,
+          1.501095659049556,
+          1.5127510187158413,
+          1.6184484836942294
+        ]
+      }
+    },
+    {
+      "id": "sphenoidal_sinus",
+      "node": "o|sphenoidal_sinus",
+      "bone": "sphenoid",
+      "c": "A02.1.05.016",
+      "ru": "Клиновидная пазуха",
+      "lat": "sinus sphenoidalis",
+      "side": "both",
+      "x": "Воздухоносная полость внутри тела клиновидной кости.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body: sphenoidal sinuses within the body; printed pp.147–149; PDF pp.102–104."
+        }
+      ],
+      "bounds": [
+        [
+          -0.014634561866910178,
+          1.5200869336702123,
+          0.11942863212445967
+        ],
+        [
+          0.012741229716717213,
+          1.541136527102814,
+          0.1365231017205291
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "sphenoid",
+        "cavity": "sphenoidal_sinus",
+        "inside_fraction": 0.745,
+        "outside_distance_quantiles_mm": [
+          1.2719885386246066,
+          2.401354159446688,
+          2.681707444062455,
+          3.5395677824494802
+        ]
+      }
+    },
+    {
+      "id": "ethmoid_cells_anterior_left",
+      "node": "o|ethmoid_cells_anterior_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales anteriores",
+      "side": "left",
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.004097942561480149,
+          1.518008853117514,
+          0.15143107357481028
+        ],
+        [
+          0.011066573074807521,
+          1.5317611216598574,
+          0.15886242259077338
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_anterior_left",
+        "inside_fraction": 0.898,
+        "outside_distance_quantiles_mm": [
+          0.6456392617120594,
+          1.2225911698274858,
+          1.2947923920479718,
+          1.4842538977428295
+        ]
+      }
+    },
+    {
+      "id": "ethmoid_cells_anterior_right",
+      "node": "o|ethmoid_cells_anterior_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales anteriores",
+      "side": "right",
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.013303105086057646,
+          1.5180815948184385,
+          0.15136468917082102
+        ],
+        [
+          -0.006322320860023592,
+          1.5318333641710136,
+          0.15879139383991725
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_anterior_right",
+        "inside_fraction": 0.968,
+        "outside_distance_quantiles_mm": [
+          0.3470385769960961,
+          0.9880483639107935,
+          1.1046896018784675,
+          1.186219746154363
+        ]
+      }
+    },
+    {
+      "id": "ethmoid_cells_middle_left",
+      "node": "o|ethmoid_cells_middle_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales mediae",
+      "side": "left",
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.0040300019380829725,
+          1.5179778489554454,
+          0.14396519766621574
+        ],
+        [
+          0.01278841769958762,
+          1.5309182026561483,
+          0.15206947788180192
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_middle_left",
+        "inside_fraction": 0.8766666666666667,
+        "outside_distance_quantiles_mm": [
+          0.43553447807182344,
+          0.6750180482123043,
+          0.7027031778541573,
+          0.7290808427368982
+        ]
+      }
+    },
+    {
+      "id": "ethmoid_cells_middle_right",
+      "node": "o|ethmoid_cells_middle_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales mediae",
+      "side": "right",
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.01494359238705818,
+          1.5180412174291131,
+          0.14387261394267897
+        ],
+        [
+          -0.0061826100159747405,
+          1.530982161151972,
+          0.1519781171608924
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_middle_right",
+        "inside_fraction": 1.0,
+        "outside_distance_quantiles_mm": []
+      }
+    },
+    {
+      "id": "ethmoid_cells_posterior_left",
+      "node": "o|ethmoid_cells_posterior_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales posteriores",
+      "side": "left",
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.003198290101973266,
+          1.5187032350194627,
+          0.13640764297178515
+        ],
+        [
+          0.01245362891493413,
+          1.5306177377727475,
+          0.14460783075225705
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_posterior_left",
+        "inside_fraction": 0.8493333333333334,
+        "outside_distance_quantiles_mm": [
+          0.8305899884101275,
+          1.6106531776923958,
+          1.8051502368053212,
+          2.155197229056777
+        ]
+      }
+    },
+    {
+      "id": "ethmoid_cells_posterior_right",
+      "node": "o|ethmoid_cells_posterior_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales posteriores",
+      "side": "right",
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.014575953793288032,
+          1.5187628934733066,
+          0.1363534667200603
+        ],
+        [
+          -0.0052862895729942115,
+          1.5306742855608646,
+          0.14451446466835666
+        ]
+      ],
+      "modelNote": "Учебная форма воздушной полости из Z-Anatomy приблизительно совмещена с основным черепом по общим костным поверхностям. Она не является сегментацией этого же образца BodyParts3D; мелкие сообщения, стенки и индивидуальная форма не подтверждены. Цвет обозначает воздушное пространство, не ткань.",
+      "localizationStatus": "educational_composite",
+      "containmentReview": {
+        "bone": "ethmoid",
+        "cavity": "ethmoid_cells_posterior_right",
+        "inside_fraction": 0.7683333333333333,
+        "outside_distance_quantiles_mm": [
+          0.7138682024807225,
+          1.7550305353361226,
+          2.1609413760508502,
+          2.7919804199340805
+        ]
+      }
+    }
+  ],
+  "coordinateFrame": {
+    "units": "metres",
+    "base": "BodyParts3D main atlas",
+    "registration": "Approximate global cranial similarity, not specimen-specific registration",
+    "transform": [
+      [
+        0.9694890682785757,
+        0.0040245881031705805,
+        -0.004041655088106905,
+        -0.007252368216096764
+      ],
+      [
+        -0.004009642068333184,
+        0.9694909189424457,
+        0.0035870120613291936,
+        -0.015004349831273966
+      ],
+      [
+        0.00405648317329869,
+        -0.0035702346763323892,
+        0.9694907860137366,
+        0.10370519429047136
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "geometry": {
+    "bytes": 145008,
+    "sha256": "0d4a6933efcdd7367bf798fd33a0c1dea2d3d2150f64ea4452e7b36beb9cc20c"
+  },
+  "limitations": [
+    "Совмещение проверено по основным костным поверхностям и отдельным крупным ориентирам; оно не подтверждает индивидуальные стенки пазух.",
+    "Часть поверхностей полостей выходит за оболочку основной кости: до 1,62 мм для лобной пазухи, до 3,54 мм для клиновидной пазухи и до 2,80 мм для решётчатых ячеек в выполненной выборочной проверке.",
+    "Не использовать как инструмент измерения или как основание для автоматического перевода маркеров projection в internal.",
+    "Исходные стенки пазух имеют открытые края; отверстия и пути оттока отдельно не реконструированы."
+  ],
+  "review": "research/cranial-completion-registration.json",
+  "publicationStatus": "Research only; rejected for integration into the main BodyParts3D model."
+}

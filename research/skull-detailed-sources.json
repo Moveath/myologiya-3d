@@ -12,8 +12,16 @@
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "downloadable": true,
       "files": [
-        {"name": "halle_skull_segmented.nrrd", "bytes": 37249251, "md5": "7ae22945a353069bdb695b63fa2f20bd"},
-        {"name": "etc.zip", "bytes": 25244, "md5": "6acde7b071b308c0f7dc39e870491fe7"}
+        {
+          "name": "halle_skull_segmented.nrrd",
+          "bytes": 37249251,
+          "md5": "7ae22945a353069bdb695b63fa2f20bd"
+        },
+        {
+          "name": "etc.zip",
+          "bytes": 25244,
+          "md5": "6acde7b071b308c0f7dc39e870491fe7"
+        }
       ],
       "geometry_source": "Полуавтоматическая бинарная сегментация костной ткани: фиксированный порог совместно с порогом Sauvola, затем ручная очистка в MITK. Это одна маска, а не разметка 22 отдельных костей.",
       "sampling": "Шаг исходного объёма 0,125 мм по всем осям; 1150 × 1700 × 1400 вокселей. Шаг вокселя не равен гарантированной точности поверхности и не доказывает видимость всех терминов TA98.",
@@ -34,6 +42,65 @@
         "left_right_status": "Перед обозначением правой/левой стороны требуется сверка с описанной автором правой теменной трепанацией; один заголовок файла недостаточен."
       },
       "status": "Подходит для отдельного подробного просмотра реального препарата при сохранении ограничений и проверке ориентации. Не зарегистрирован к BodyParts3D; его нельзя механически использовать для замены отдельных костей или переноса маркеров."
+    },
+    {
+      "id": "openear_zeta",
+      "title": "OpenEar — ZETA, Sieber et al. (2019)",
+      "url": "https://zenodo.org/records/1473724",
+      "paper": "https://doi.org/10.1038/sdata.2018.297",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Лицензия оригинального набора Zenodo 1473724; данные получены непосредственно из ZETA.zip, а не из производных файлов Visible Ear Simulator с ограничением NC.",
+      "authors": [
+        {
+          "title": "Sieber, Daniel Manuel; Erfurt, Peter; John, Samuel; Ribeiro dos Santos, Gabriel; Schurzig, Daniel; Sørensen, Mads Sølvsten; Lenarz, Thomas",
+          "url": "https://doi.org/10.1038/sdata.2018.297"
+        }
+      ],
+      "downloadable": true,
+      "published_assets": true,
+      "assets": [
+        "site/skull-openear.glb",
+        "site/skull-openear.json"
+      ],
+      "acquisition": "HTTP byte ranges; selected ZIP members; each member CRC32 checked",
+      "original_archive_bytes": 3868308936,
+      "archive_md5_verified": false,
+      "member_crc32_verified": true,
+      "geometry_source": "12 авторских PLY и поверхность костного блока из авторской Bone.nrrd при исходном шаге 0,125 мм. Без разрежения и децимации; meshopt с 16-битным квантованием координат.",
+      "object_count": 13,
+      "triangles": 7359594,
+      "geometry": {
+        "bytes": 21262492,
+        "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+        "changes": [
+          "12 author PLY meshes retained without anatomical remodeling.",
+          "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+          "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
+          "Meshopt compression with 16-bit position quantization; no decimation in this build."
+        ],
+        "sampling_mm": 0.125,
+        "frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+        "registrationToBodyParts3D": false
+      },
+      "specimen": {
+        "id": "ZETA",
+        "title": "Препарат OpenEar ZETA",
+        "side": "right",
+        "sideEvidence": "Имена исходных DICOM-каталогов 01_CBCT_Unembedded/DICOM_rechts_20150826_* в оригинальном архиве; геометрия не отражалась.",
+        "frameNote": "Исходные оси RAS повёрнуты для просмотра: X влево, Y вверх, Z вперёд. Положение отдельных структур друг относительно друга сохранено."
+      },
+      "limitations": [
+        "Один правый препарат, а не обе височные кости основного черепа; целая кость обрезана при получении препарата.",
+        "Модель не зарегистрирована к BodyParts3D. Маркеры основного черепа на неё автоматически не переносятся.",
+        "Шаг исходной маски 0,125 мм и сжатие поверхности не являются гарантией точности любого малого образования.",
+        "Два исходных объекта объединяют несколько структур: Scala Vestibuli и Sinus Dura. Границы отдельных компонентов не сегментированы.",
+        "Нервы и сосуды показывают сегментированные ткани, а не доказывают форму стенок соответствующих костных каналов.",
+        "Индивидуальные особенности препарата и возможные ошибки исходной сегментации сохранены. Все 77 терминов височной кости не объявляются доказанными этой моделью."
+      ],
+      "anatomical_labels": "Русский и латинский текст, TA98, два анатомических источника и локаторы на каждый объект находятся в site/skull-openear.json. Составные Scala Vestibuli и Sinus Dura не выдаются за полностью разделённые образования.",
+      "review": "research/temporal-completion-review.json",
+      "status": "Опубликован как независимый просмотр. Нет регистрации к BodyParts3D, нет переноса его маркеров и автоматического подтверждения всех 77 терминов височной кости."
     },
     {
       "id": "iemap",
@@ -117,7 +184,44 @@
       "local_assets": "research/cache/temporal/spl-ear/",
       "status": "15 VTK и исследовательский GLB сохранены ранее. MRML задаёт spacing 0.3125 0.3125 0.4; сторона препарата и соответствие физических размеров не подтверждены. Это не замена целой височной кости.",
       "related_review": "research/head-supplemental-ear-review.json"
+    },
+    {
+      "id": "bodyparts43_ethmoid",
+      "title": "BodyParts3D 4.3 — решётчатая кость и перпендикулярная пластинка",
+      "url": "https://github.com/olivercase/body_parts_3d_api",
+      "license": "CC BY-SA 2.1 Japan",
+      "downloadable": true,
+      "published_assets": false,
+      "files": [
+        {
+          "file": "FJ6309_BP23248_FMA52740_Ethmoid.obj",
+          "triangles": 22348
+        },
+        {
+          "file": "FJ6412_BP29766_FMA52891_Perpendicular plate of ethmoid.obj",
+          "triangles": 4856
+        }
+      ],
+      "review": "research/cranial-completion-registration.json",
+      "status": "Осмотрены поверхности и срезы. Дополнительные грани не подтверждают все мелкие просветы; форма отличается от основной модели 3.0. Не приняты как автоматическая замена, статусы маркеров не изменены."
     }
   ],
-  "conclusion": "Не найден готовый совместимо лицензированный набор, в котором доказана геометрическая полнота всех 521 маркеров TA98 на 22 раздельных костях. Получены реальные дополнительные данные, пригодные для отдельных подробных просмотров при указании их пределов. Полнота каталога и полнота поверхности остаются разными свойствами."
+  "conclusion": "Не найден готовый совместимо лицензированный набор, в котором доказана геометрическая полнота всех 521 маркеров TA98 на 22 раздельных костях. Z-Anatomy, Halle и оригинальный OpenEar опубликованы как независимые дополнительные просмотры с сохранением ограничений. В основной BodyParts3D подтверждены шесть новых участков существующего рельефа; итог 319 surface, 188 projection, 14 variant. Два отдельных маркера Z-Anatomy и 13 объектов OpenEar не превращают оставшиеся проекции или варианты в подтверждённую геометрию основной модели. У девяти карточек мышц нет отдельной сетки.",
+  "registration_audit": {
+    "source": "research/cranial-completion-registration.json",
+    "status": "Совмещённые Z-Anatomy полости остаются исследовательским результатом и не публикуются в основной модели.",
+    "reason": "Глобальное совпадение поверхностей не подтверждает анатомию мелких деталей. Семь ручных ориентиров дают расхождения до 1,42 мм; часть авторских полостей выходит за поверхность BodyParts3D. Пользователь выбрал исходную/сканированную геометрию без предположительного достраивания."
+  },
+  "main_atlas_status": {
+    "completion_claim": false,
+    "markers": {
+      "total": 521,
+      "surface": 319,
+      "projection": 188,
+      "variant": 14,
+      "internal": 0
+    },
+    "missing_muscle_geometry": 9,
+    "registry": "research/skull-completion-status.json"
+  }
 }

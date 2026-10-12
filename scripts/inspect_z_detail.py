@@ -65,7 +65,13 @@ for key, (kind, name) in NAMES.items():
     for vertex in mesh.vertices:
         x, y, z = evaluated.matrix_world @ vertex.co
         vertices.append([x, z, -y])
-    faces = [list(t.vertices) for t in mesh.loop_triangles]
+    # Paired left source objects use a reflected world transform. The vertex
+    # transform changes handedness; preserve outward normals by reversing the
+    # triangle winding as well. The [x,z,-y] axis conversion has determinant +1.
+    world_determinant = evaluated.matrix_world.to_3x3().determinant()
+    reflected = world_determinant < 0
+    faces = [list(t.vertices)[::-1] if reflected else list(t.vertices)
+             for t in mesh.loop_triangles]
     payload = {'vertices': vertices, 'faces': faces}
     filename = key + '.json'
     (OUT / filename).write_text(json.dumps(payload), encoding='utf-8')
@@ -77,7 +83,9 @@ for key, (kind, name) in NAMES.items():
         modifiers.append(row)
     rows.append({'id': key, 'name': name, 'kind': kind, 'file': filename,
                  'raw_vertices': len(obj.data.vertices), 'vertices': len(vertices),
-                 'triangles': len(faces), 'modifiers': modifiers})
+                 'triangles': len(faces), 'modifiers': modifiers,
+                 'world_transform_determinant': world_determinant,
+                 'reversed_winding_for_reflection': reflected})
     evaluated.to_mesh_clear()
 report = {'source': 'https://github.com/Z-Anatomy/Models-of-human-anatomy',
           'license': 'CC BY-SA 4.0',

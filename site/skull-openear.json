@@ -1,0 +1,898 @@
+{
+  "id": "openear",
+  "title": "Внутри височной кости",
+  "file": "skull-openear.glb",
+  "description": "Три слуховые косточки, пространства лабиринта, нервы, перепонка и сосудистые структуры внутри одного препарата OpenEar ZETA.",
+  "modelNote": "Опубликованные сегментации OpenEar: 12 исходных поверхностей PLY и костный блок из маски с шагом 0,125 мм. Сетки не упрощены; при упаковке координаты квантованы до 16 бит. Это отдельный препарат в общей системе координат, не зарегистрированный к основному черепу BodyParts3D.",
+  "specimen": {
+    "id": "ZETA",
+    "title": "Препарат OpenEar ZETA",
+    "side": "right",
+    "sideEvidence": "Имена исходных DICOM-каталогов 01_CBCT_Unembedded/DICOM_rechts_20150826_* в оригинальном архиве; геометрия не отражалась.",
+    "frameNote": "Исходные оси RAS повёрнуты для просмотра: X влево, Y вверх, Z вперёд. Положение отдельных структур друг относительно друга сохранено."
+  },
+  "source": {
+    "title": "OpenEar — Sieber et al. (2019), ZETA",
+    "url": "https://zenodo.org/records/1473724",
+    "paper": "https://doi.org/10.1038/sdata.2018.297"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attributions": [
+      {
+        "title": "Sieber, Daniel Manuel; Erfurt, Peter; John, Samuel; Ribeiro dos Santos, Gabriel; Schurzig, Daniel; Sørensen, Mads Sølvsten; Lenarz, Thomas",
+        "url": "https://doi.org/10.1038/sdata.2018.297"
+      }
+    ]
+  },
+  "geometry": {
+    "bytes": 21262492,
+    "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+    "changes": [
+      "12 author PLY meshes retained without anatomical remodeling.",
+      "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+      "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
+      "Meshopt compression with 16-bit position quantization; no decimation in this build."
+    ],
+    "sampling_mm": 0.125,
+    "frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+    "registrationToBodyParts3D": false
+  },
+  "defaults": {
+    "hidden": [],
+    "translucentContext": true,
+    "view": "antlat"
+  },
+  "limitations": [
+    "Один правый препарат, а не обе височные кости основного черепа; целая кость обрезана при получении препарата.",
+    "Модель не зарегистрирована к BodyParts3D. Маркеры основного черепа на неё автоматически не переносятся.",
+    "Шаг исходной маски 0,125 мм и сжатие поверхности не являются гарантией точности любого малого образования.",
+    "Два исходных объекта объединяют несколько структур: Scala Vestibuli и Sinus Dura. Границы отдельных компонентов не сегментированы.",
+    "Нервы и сосуды показывают сегментированные ткани, а не доказывают форму стенок соответствующих костных каналов.",
+    "Индивидуальные особенности препарата и возможные ошибки исходной сегментации сохранены. Все 77 терминов височной кости не объявляются доказанными этой моделью."
+  ],
+  "structures": [
+    {
+      "id": "temporal_bone",
+      "node": "openear|temporal_bone",
+      "kind": "bone",
+      "ru": "Височная кость — костный блок",
+      "title": "Височная кость — костный блок",
+      "lat": "os temporale",
+      "c": "A02.1.06.001",
+      "ta": [
+        "A02.1.06.001"
+      ],
+      "x": "Височная кость содержит полости среднего и внутреннего уха.",
+      "modelNote": "Поверхность костной ткани построена из исходной бинарной маски OpenEar ZETA с шагом 0,125 мм. Это выпиленный препарат, а не целая кость; плоскости отсечения препарата не являются анатомическими границами. Мелкие канальцы не объявляются подтверждёнными только по числу треугольников.",
+      "color": "#d8cab0",
+      "context": true,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Рис. 913: полости и костные стенки среднего уха",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_781.png",
+          "locator": "Рис. 781: положение лабиринтов в височных костях",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "Раздел 02.1.06, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "Bone.nrrd",
+      "relatedTA": [],
+      "bounds_m": [
+        [
+          -0.06275559997558594,
+          -0.00017323005199432374,
+          -0.007432730197906494
+        ],
+        [
+          0.01736940002441406,
+          0.05920177078247071,
+          0.06494226837158203
+        ]
+      ],
+      "vertices": 3560974,
+      "triangles": 7130496
+    },
+    {
+      "id": "malleus",
+      "node": "openear|malleus",
+      "kind": "bone",
+      "ru": "Молоточек",
+      "title": "Молоточек",
+      "lat": "malleus",
+      "c": "A15.3.02.043",
+      "ta": [
+        "A15.3.02.043"
+      ],
+      "x": "Слуховая косточка с головкой, шейкой и рукояткой.",
+      "modelNote": "Самостоятельная исходная сегментация одной слуховой косточки. Видна её реальная поверхность; отдельные микроструктуры и все прикрепляющиеся связки этой сеткой не реконструированы.",
+      "color": "#e8ac54",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка, рукоятка и отростки молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: молоточек и его части",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.02, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "03_Malleus.ply",
+      "relatedTA": [
+        "A02.1.06.051"
+      ],
+      "bounds_m": [
+        [
+          -0.02813392448425293,
+          0.030205650329589846,
+          0.016957693099975586
+        ],
+        [
+          -0.02464630699157715,
+          0.0334199104309082,
+          0.02513374900817871
+        ]
+      ],
+      "vertices": 2000,
+      "triangles": 3996
+    },
+    {
+      "id": "incus",
+      "node": "openear|incus",
+      "kind": "bone",
+      "ru": "Наковальня",
+      "title": "Наковальня",
+      "lat": "incus",
+      "c": "A15.3.02.038",
+      "ta": [
+        "A15.3.02.038"
+      ],
+      "x": "Слуховая косточка с телом, длинной и короткой ножками.",
+      "modelNote": "Самостоятельная исходная сегментация наковальни. Контакт с соседней косточкой в сетке не заменяет отдельной модели суставной щели, капсулы или связок.",
+      "color": "#83b977",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: наковальня и её суставные области",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.02, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "04_Incus.ply",
+      "relatedTA": [
+        "A02.1.06.051"
+      ],
+      "bounds_m": [
+        [
+          -0.026897993087768555,
+          0.027393606185913088,
+          0.01690006446838379
+        ],
+        [
+          -0.022930910110473633,
+          0.03216648864746094,
+          0.022744369506835938
+        ]
+      ],
+      "vertices": 2000,
+      "triangles": 3996
+    },
+    {
+      "id": "stapes",
+      "node": "openear|stapes",
+      "kind": "bone",
+      "ru": "Стремя",
+      "title": "Стремя",
+      "lat": "stapes",
+      "c": "A15.3.02.033",
+      "ta": [
+        "A15.3.02.033"
+      ],
+      "x": "Слуховая косточка с головкой, двумя ножками и основанием.",
+      "modelNote": "В исходной сетке непосредственно виден просвет между ножками. Кольцевая связка и стременная мышца в этом наборе отдельно не сегментированы.",
+      "color": "#c67ca8",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: стремя с двумя ножками и основанием",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.02, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "05_Stapes.ply",
+      "relatedTA": [
+        "A02.1.06.051"
+      ],
+      "bounds_m": [
+        [
+          -0.023129596710205078,
+          0.031685585021972655,
+          0.020116249084472657
+        ],
+        [
+          -0.01970088577270508,
+          0.03568913650512695,
+          0.022438419342041015
+        ]
+      ],
+      "vertices": 1000,
+      "triangles": 2000
+    },
+    {
+      "id": "scala_tympani",
+      "node": "openear|scala_tympani",
+      "kind": "cavity",
+      "ru": "Барабанная лестница",
+      "title": "Барабанная лестница",
+      "lat": "scala tympani",
+      "c": "A15.3.03.045",
+      "ta": [
+        "A15.3.03.045"
+      ],
+      "x": "Одно из спиральных пространств улитки.",
+      "modelNote": "Цветная форма обозначает сегментированный объём пространства, а не костную стенку и не отдельный сосуд. Микроскопические мембраны и рецепторы здесь не представлены.",
+      "color": "#63c6e8",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray923.png",
+          "locator": "Рис. 923: костный лабиринт и улитка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1911)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1911_775.png",
+          "locator": "Рис. 775: срез улитки и барабанная лестница",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.03%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.03, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "01_Scala Tympani.ply",
+      "relatedTA": [],
+      "bounds_m": [
+        [
+          -0.024511680603027344,
+          0.03444888305664062,
+          0.01921343994140625
+        ],
+        [
+          -0.019460241317749025,
+          0.042931732177734376,
+          0.026023880004882812
+        ]
+      ],
+      "vertices": 8000,
+      "triangles": 15996
+    },
+    {
+      "id": "vestibular_space",
+      "node": "openear|vestibular_space",
+      "kind": "cavity",
+      "ru": "Лестница преддверия, преддверие и полукружные каналы",
+      "title": "Лестница преддверия, преддверие и полукружные каналы",
+      "lat": "scala vestibuli; vestibulum; canales semicirculares",
+      "c": "A15.3.03.043; A15.3.03.004; A15.3.03.015",
+      "ta": [
+        "A15.3.03.043",
+        "A15.3.03.004",
+        "A15.3.03.015"
+      ],
+      "x": "Пространства костного лабиринта включают преддверие, полукружные каналы и улитковую часть.",
+      "modelNote": "Автор назвал единый файл «Scala Vestibuli», но меш содержит также преддверие и петли полукружных каналов. Они не выделены в отдельные сегменты. Цвет показывает объём пространства, а не мембранозные протоки или костную ткань.",
+      "color": "#5c92de",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray923.png",
+          "locator": "Рис. 923: полукружные каналы, преддверие и улитка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_781.png",
+          "locator": "Рис. 781: костные лабиринты и три полукружных канала",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.03%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.03, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "02_Scala Vestibuli.ply",
+      "relatedTA": [],
+      "bounds_m": [
+        [
+          -0.02489572906494141,
+          0.0278431339263916,
+          0.011672273635864257
+        ],
+        [
+          -0.012726767539978028,
+          0.042962860107421875,
+          0.026290767669677736
+        ]
+      ],
+      "vertices": 10000,
+      "triangles": 20008
+    },
+    {
+      "id": "facial_nerve",
+      "node": "openear|facial_nerve",
+      "kind": "nerve",
+      "ru": "Лицевой нерв — участок в височной кости",
+      "title": "Лицевой нерв — участок в височной кости",
+      "lat": "nervus facialis [VII]",
+      "c": "A14.2.01.099",
+      "ta": [
+        "A14.2.01.099"
+      ],
+      "x": "Лицевой нерв проходит в височной кости по лицевому каналу.",
+      "modelNote": "Показана авторская сегментация нерва, а не стенок канала. По описанию OpenEar мягкие ткани могли измениться при подготовке препарата; нерв может не заполнять просвет канала.",
+      "color": "#e9d258",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray789.png",
+          "locator": "Рис. 789: лицевой нерв в височной кости",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Gest & Schlesinger, Anatomy Tables — Ear, TTUHSC El Paso",
+          "url": "https://anatomy.ttuhscep.edu/schemes/ear_tables.html",
+          "locator": "Osteology: facial canal; Nerves: facial (ход нерва через лицевой канал)",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/14.2.01%20TA98%20EN.htm",
+          "locator": "Раздел 14.2.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "06_Facial Nerve.ply",
+      "relatedTA": [
+        "A02.1.06.009",
+        "A02.1.06.010"
+      ],
+      "bounds_m": [
+        [
+          -0.02539275932312012,
+          0.025804080963134766,
+          0.017223207473754883
+        ],
+        [
+          -0.01671837615966797,
+          0.04103694152832031,
+          0.035933597564697266
+        ]
+      ],
+      "vertices": 10000,
+      "triangles": 19996
+    },
+    {
+      "id": "chorda_tympani",
+      "node": "openear|chorda_tympani",
+      "kind": "nerve",
+      "ru": "Барабанная струна",
+      "title": "Барабанная струна",
+      "lat": "chorda tympani",
+      "c": "A14.2.01.118",
+      "ta": [
+        "A14.2.01.118"
+      ],
+      "x": "Ветвь лицевого нерва, проходящая через барабанную полость.",
+      "modelNote": "Показан сегментированный нерв. Его узкая поверхность не является моделью стенок канальца барабанной струны.",
+      "color": "#ddbd55",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray788.png",
+          "locator": "Рис. 788: барабанная струна как ветвь лицевого нерва",
+          "scope": "anatomy"
+        },
+        {
+          "title": "McManus et al. (2012), Surgical anatomy of the chorda tympani: a micro-CT study",
+          "url": "https://ourarchive.otago.ac.nz/esploro/outputs/journalArticle/Surgical-anatomy-of-the-chorda-tympani/9926558676201891",
+          "locator": "Ход барабанной струны в височной кости и барабанной полости",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/14.2.01%20TA98%20EN.htm",
+          "locator": "Раздел 14.2.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "07_Chorda Tympani.ply",
+      "relatedTA": [
+        "A02.1.06.011"
+      ],
+      "bounds_m": [
+        [
+          -0.02678529167175293,
+          0.025685354232788088,
+          0.02042727279663086
+        ],
+        [
+          -0.01790115547180176,
+          0.03474739074707031,
+          0.03192169380187988
+        ]
+      ],
+      "vertices": 3000,
+      "triangles": 5996
+    },
+    {
+      "id": "vestibulocochlear_nerve",
+      "node": "openear|vestibulocochlear_nerve",
+      "kind": "nerve",
+      "ru": "Преддверно-улитковый нерв — участок у внутреннего уха",
+      "title": "Преддверно-улитковый нерв — участок у внутреннего уха",
+      "lat": "nervus vestibulocochlearis [VIII]",
+      "c": "A14.2.01.121",
+      "ta": [
+        "A14.2.01.121"
+      ],
+      "x": "Нерв подходит к внутреннему уху через внутренний слуховой проход.",
+      "modelNote": "В исходном файле Cochleovestibular Nerve объединён сегмент нерва; отдельные волокна и полный просвет внутреннего слухового прохода не выделены.",
+      "color": "#bfad5d",
+      "context": false,
+      "refs": [
+        {
+          "title": "Altdorfer & Somogyi, Connections of the skull, Semmelweis University",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf#page=5",
+          "locator": "С. 5: Internal acoustic meatus, содержимое — Vestibulocochlear n. (VIII)",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_781.png",
+          "locator": "Рис. 781: слуховой проход, улитковый и преддверный нервы",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/14.2.01%20TA98%20EN.htm",
+          "locator": "Раздел 14.2.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "08_Cochleovestibular Nerve.ply",
+      "relatedTA": [
+        "A02.1.06.033"
+      ],
+      "bounds_m": [
+        [
+          -0.023194797515869142,
+          0.035494129180908204,
+          0.01685695457458496
+        ],
+        [
+          -0.010116247177124024,
+          0.05325688171386719,
+          0.024770923614501953
+        ]
+      ],
+      "vertices": 8003,
+      "triangles": 16018
+    },
+    {
+      "id": "tympanic_membrane",
+      "node": "openear|tympanic_membrane",
+      "kind": "membrane",
+      "ru": "Барабанная перепонка",
+      "title": "Барабанная перепонка",
+      "lat": "membrana tympanica",
+      "c": "A15.3.01.052",
+      "ta": [
+        "A15.3.01.052"
+      ],
+      "x": "На внутренней поверхности барабанной перепонки закрепляется рукоятка молоточка.",
+      "modelNote": "Это сегментированная поверхность перепонки с условным учебным цветом. Слои перепонки, натянутая и ненатянутая части отдельно не размечены.",
+      "color": "#acb5cd",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray919.png",
+          "locator": "Рис. 919: барабанная перепонка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Gest & Schlesinger, Anatomy Tables — Ear, TTUHSC El Paso",
+          "url": "https://anatomy.ttuhscep.edu/schemes/ear_tables.html",
+          "locator": "Osteology: malleus (рукоятка и внутренняя поверхность перепонки)",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.01%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "09_Tympanic Membrane.ply",
+      "relatedTA": [
+        "A02.1.06.051",
+        "A02.1.06.053",
+        "A02.1.06.058"
+      ],
+      "bounds_m": [
+        [
+          -0.02912441062927246,
+          0.02744065856933594,
+          0.020588342666625976
+        ],
+        [
+          -0.021437170028686524,
+          0.035706226348876956,
+          0.03011317253112793
+        ]
+      ],
+      "vertices": 4000,
+      "triangles": 7996
+    },
+    {
+      "id": "external_acoustic_meatus",
+      "node": "openear|external_acoustic_meatus",
+      "kind": "cavity",
+      "ru": "Наружный слуховой проход — объём",
+      "title": "Наружный слуховой проход — объём",
+      "lat": "meatus acusticus externus",
+      "c": "A15.3.01.045",
+      "ta": [
+        "A15.3.01.045"
+      ],
+      "x": "Проход, который ведёт снаружи к барабанной перепонке.",
+      "modelNote": "Показан объём сегментированного прохода; цветная поверхность не является костной тканью. Костная и хрящевая части не разделены на самостоятельные объекты.",
+      "color": "#72c6bb",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray139.png",
+          "locator": "Рис. 139: наружный слуховой проход в разрезе",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_59.png",
+          "locator": "Рис. 59: барабанная часть и наружный слуховой проход",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.01%20TA98%20EN.htm",
+          "locator": "Раздел 15.3.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "10_External Auditory Canal.ply",
+      "relatedTA": [
+        "A02.1.06.054",
+        "A02.1.06.055"
+      ],
+      "bounds_m": [
+        [
+          -0.03542580795288086,
+          0.0131069917678833,
+          0.019424640655517578
+        ],
+        [
+          -0.022045900344848633,
+          0.03561516189575195,
+          0.030711841583251954
+        ]
+      ],
+      "vertices": 8000,
+      "triangles": 15996
+    },
+    {
+      "id": "internal_carotid_artery",
+      "node": "openear|internal_carotid_artery",
+      "kind": "artery",
+      "ru": "Внутренняя сонная артерия — участок у височной кости",
+      "title": "Внутренняя сонная артерия — участок у височной кости",
+      "lat": "arteria carotis interna",
+      "c": "A12.2.06.001",
+      "ta": [
+        "A12.2.06.001"
+      ],
+      "x": "Внутренняя сонная артерия проходит через сонный канал височной кости.",
+      "modelNote": "Авторская сегментация участка артерии. Она показывает содержимое канала; это не отдельная реконструкция его костных стенок и обеих апертур.",
+      "color": "#d56e6f",
+      "context": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray513.png",
+          "locator": "Рис. 513: внутренняя сонная артерия и её ход у основания черепа",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Altdorfer & Somogyi, Connections of the skull, Semmelweis University",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf#page=4",
+          "locator": "С. 4 и 6: сонный канал и внутренняя сонная артерия",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/12.2.06%20TA98%20EN.htm",
+          "locator": "Раздел 12.2.06, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "12_Carotis Interna.ply",
+      "relatedTA": [
+        "A02.1.06.013",
+        "A02.1.06.014",
+        "A02.1.06.015"
+      ],
+      "bounds_m": [
+        [
+          -0.029789300918579103,
+          0.04107164764404297,
+          0.025908123016357424
+        ],
+        [
+          -0.020819791793823244,
+          0.052378753662109374,
+          0.037665351867675785
+        ]
+      ],
+      "vertices": 8000,
+      "triangles": 15996
+    },
+    {
+      "id": "sinus_dura",
+      "node": "openear|sinus_dura",
+      "kind": "context",
+      "ru": "Сигмовидный синус и твёрдая оболочка — общий сегмент",
+      "title": "Сигмовидный синус и твёрдая оболочка — общий сегмент",
+      "lat": "sinus sigmoideus; dura mater cranialis",
+      "c": "A12.3.05.108; A14.1.01.102",
+      "ta": [
+        "A12.3.05.108",
+        "A14.1.01.102"
+      ],
+      "x": "Сигмовидный синус проходит у внутренней стороны сосцевидной области височной кости.",
+      "modelNote": "Автор объединил синус и прилежащую твёрдую оболочку в файле Sinus Dura. Общая поверхность не позволяет выбрать их по отдельности и не является отдельной сеткой костной борозды.",
+      "color": "#9a7fae",
+      "context": true,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Рис. 138: борозда сигмовидного синуса",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Рис. 56: сигмовидная борозда внутренней стороны височной кости",
+          "scope": "anatomy"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/12.3.05%20TA98%20EN.htm",
+          "locator": "Раздел 12.3.05, коды перечислены в карточке",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/14.1.01%20TA98%20EN.htm",
+          "locator": "Раздел 14.1.01, коды перечислены в карточке",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library",
+          "url": "https://doi.org/10.1038/sdata.2018.297",
+          "locator": "Data Records; Table 1 (методы сегментации); Table 2 (состав исходных файлов)",
+          "scope": "geometry"
+        }
+      ],
+      "sourceFile": "11_Sinus Dura.ply",
+      "relatedTA": [
+        "A02.1.06.006"
+      ],
+      "bounds_m": [
+        [
+          -0.057235713958740234,
+          0.00827651596069336,
+          -0.006295866966247558
+        ],
+        [
+          0.01309769344329834,
+          0.049685741424560545,
+          0.0401388053894043
+        ]
+      ],
+      "vertices": 50603,
+      "triangles": 101104
+    }
+  ]
+}

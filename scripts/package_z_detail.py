@@ -27,12 +27,14 @@ for row in report['meshes']:
         metallicFactor=0, roughnessFactor=0.75, doubleSided=True))
     row['bounds'] = mesh.bounds.tolist()
     row['watertight'] = bool(mesh.is_watertight)
+    if mesh.is_watertight and mesh.volume <= 0:
+        raise ValueError(f"Closed source mesh has inward winding: {row['id']}")
     row['components'] = int(len(mesh.split(only_watertight=False, repair=False)))
     name = ('b|' if row['kind'] == 'bone' else 'o|') + row['id']
     scene.add_geometry(mesh, node_name=name, geom_name=name)
 scene.metadata.update(license='CC BY-SA 4.0', source=report['source'],
     attribution='Z-Anatomy, Gauthier Kervyn et al.; BodyParts3D, The Database Center for Life Science',
-    modifications='Skull objects extracted; author modifiers evaluated; axis conversion; GLB conversion.',
+    modifications='Skull objects extracted; author modifiers evaluated; reflected world transforms compensated in winding; axis conversion; GLB conversion.',
     frame='Independent Z-Anatomy source frame, not registered to the main atlas.')
 destination = OUT / 'skull-z-detail.glb'
 destination.write_bytes(scene.export(file_type='glb'))
@@ -82,7 +84,7 @@ metadata = {
             {'title': 'University of Dundee, CAHID — Sophia Lappe, Cranial Nerves and Foramina; CC BY 4.0 (источник, указанный Z-Anatomy)', 'url': 'https://sketchfab.com/3d-models/cranial-nerves-and-foramina-a9358ee7a6dd4ea18a3622114405a4c7'}],
         'sourceLicense': 'https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt',
         'notice': 'Из исходного проекта извлечены только перечисленные 22 кости и 8 объектов пазух. Модели внутреннего уха и почки с ограничением NC не включены. Производная геометрия этого GLB распространяется по CC BY-SA 4.0.',
-        'changes': 'Извлечение объектов черепа; вычисление существующих авторских модификаторов решётчатой кости и ячеек; смена осей; конвертация в GLB. Новые отверстия не создавались.'},
+        'changes': 'Извлечение объектов черепа; вычисление существующих авторских модификаторов решётчатой кости и ячеек; компенсация отражённых преобразований в порядке вершин треугольников; смена осей; конвертация в GLB. Новые отверстия не создавались.'},
     'coordinateFrame': {'units': 'metres', 'x': 'left', 'y': 'superior', 'z': 'anterior',
         'registeredToMainAtlas': False, 'transform': report['coordinate_transform']},
     'bones': [{'id': r['id'], 'node': 'b|' + r['id'], 'bounds': r['bounds']} for r in report['meshes'] if r['kind'] == 'bone'],
@@ -102,4 +104,8 @@ for bone in metadata['bones']:
     bone.update(ru=BONES[base]['ru'], lat=BONES[base]['lat'], c=BONES[base]['code'])
     if bone['id'].endswith(('_right', '_left')):
         bone['ru'] += ' · ' + ('правая' if bone['id'].endswith('_right') else 'левая')
+metadata['markers'] = json.loads((site.parent / 'research/face-completion-z-markers.json').read_text(encoding='utf-8'))
+for marker in metadata['markers']:
+    assert marker['b'] in {b['id'] for b in metadata['bones']}
+    assert len(marker['refs']) >= 2 and marker['evidence'].get('method')
 (site / 'skull-z-detail.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')

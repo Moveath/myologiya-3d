@@ -1,0 +1,768 @@
+{
+  "date": "2026-10-12",
+  "source": "https://zenodo.org/records/1473724",
+  "paper": "https://doi.org/10.1038/sdata.2018.297",
+  "license": "CC BY 4.0",
+  "specimen": "ZETA",
+  "actual_assets_acquired": true,
+  "asset": {
+    "file": "skull-openear.glb",
+    "bytes": 21262492,
+    "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+    "structures": 13,
+    "bone_triangles": 7130496,
+    "total_triangles": 7359594
+  },
+  "review": {
+    "screenshots": [
+      "build_head/complete_temporal/jobs/00-colors.png",
+      "build_head/complete_temporal/jobs/bone-ant.png",
+      "build_head/complete_temporal/jobs/bone-inf.png",
+      "build_head/complete_temporal/jobs/bone-lat.png",
+      "build_head/complete_temporal/jobs/bone-med.png",
+      "build_head/complete_temporal/jobs/bone-post.png",
+      "build_head/complete_temporal/jobs/bone-sup.png",
+      "build_head/complete_temporal/jobs/canal-cut.png",
+      "build_head/complete_temporal/jobs/inner.png",
+      "build_head/complete_temporal/jobs/ossicles.png",
+      "build_head/complete_temporal/jobs/transparent.png",
+      "build_head/complete_temporal/jobs/rotated-internals.png",
+      "build_head/complete_temporal/jobs/rotated-bone-cut.png"
+    ],
+    "observations": [
+      "Стремя имеет видимый просвет между ножками.",
+      "Три слуховые косточки представлены самостоятельными авторскими сегментами.",
+      "В объединённом сегменте Scala Vestibuli видны петли полукружных каналов, преддверная и спиральная части; авторский файл нельзя подписать только как лестницу преддверия.",
+      "Сохранено совместное положение авторских PLY; костная маска LPS переведена в RAS, совпадение проверено совместным и послойным просмотром.",
+      "Костный блок обрезан при подготовке препарата, его плоские границы не подписываются как анатомические образования.",
+      "Нерв и артерия не заменяют стенки лицевого и сонного каналов.",
+      "После единой ротации RAS→[-x,z,y] повторно просмотрены внутренние сегменты и костный блок со срезом Y=34 мм: взаимное положение сохранено."
+    ],
+    "registration_to_bodyparts3d": false,
+    "primary_pin_upgrades": 0
+  },
+  "remaining_primary_temporal_markers": [
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.007",
+      "ru": "Борозда затылочной артерии",
+      "lat": "sulcus arteriae occipitalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.008",
+      "ru": "Сосцевидное отверстие",
+      "lat": "foramen mastoideum",
+      "status": "variant",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.009",
+      "ru": "Канал лицевого нерва",
+      "lat": "canalis nervi facialis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.010",
+      "ru": "Коленце лицевого канала",
+      "lat": "geniculum canalis nervi facialis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.011",
+      "ru": "Каналец барабанной струны",
+      "lat": "canaliculus chordae tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.013",
+      "ru": "Сонный канал",
+      "lat": "canalis caroticus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.014",
+      "ru": "Наружная апертура сонного канала",
+      "lat": "apertura externa canalis carotici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.015",
+      "ru": "Внутренняя апертура сонного канала",
+      "lat": "apertura interna canalis carotici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.016",
+      "ru": "Сонно-барабанные канальцы",
+      "lat": "canaliculi caroticotympanici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.017",
+      "ru": "Мышечно-трубный канал",
+      "lat": "canalis musculotubarius",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.018",
+      "ru": "Полуканал мышцы, напрягающей барабанную перепонку",
+      "lat": "semicanalis musculi tensoris tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.019",
+      "ru": "Полуканал слуховой трубы",
+      "lat": "semicanalis tubae auditivae; semicanalis tubae auditoriae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.020",
+      "ru": "Перегородка мышечно-трубного канала",
+      "lat": "septum canalis musculotubarii",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.024",
+      "ru": "Расщелина канала большого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi majoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.025",
+      "ru": "Борозда большого каменистого нерва",
+      "lat": "sulcus nervi petrosi majoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.026",
+      "ru": "Расщелина канала малого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi minoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.027",
+      "ru": "Борозда малого каменистого нерва",
+      "lat": "sulcus nervi petrosi minoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.030",
+      "ru": "Борозда верхнего каменистого синуса",
+      "lat": "sulcus sinus petrosi superioris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.033",
+      "ru": "Внутренний слуховой проход",
+      "lat": "meatus acusticus internus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.034",
+      "ru": "Поддуговая ямка",
+      "lat": "fossa subarcuata",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.035",
+      "ru": "Каналец преддверия",
+      "lat": "canaliculus vestibuli",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.036",
+      "ru": "Апертура канальца преддверия",
+      "lat": "apertura canaliculi vestibuli",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.038",
+      "ru": "Борозда нижнего каменистого синуса",
+      "lat": "sulcus sinus petrosi inferioris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.042",
+      "ru": "Каналец улитки",
+      "lat": "canaliculus cochleae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.043",
+      "ru": "Апертура канальца улитки",
+      "lat": "apertura canaliculi cochleae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.044",
+      "ru": "Сосцевидный каналец",
+      "lat": "canaliculus mastoideus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.046",
+      "ru": "Внутрияремный отросток",
+      "lat": "processus intrajugularis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.048",
+      "ru": "Шилососцевидное отверстие",
+      "lat": "foramen stylomastoideum",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.049",
+      "ru": "Барабанный каналец",
+      "lat": "canaliculus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.050",
+      "ru": "Каменистая ямочка",
+      "lat": "fossula petrosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.051",
+      "ru": "Барабанная полость",
+      "lat": "cavitas tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.053",
+      "ru": "Барабанное кольцо",
+      "lat": "anulus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.055",
+      "ru": "Наружный слуховой проход",
+      "lat": "meatus acusticus externus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.056",
+      "ru": "Большая барабанная ость",
+      "lat": "spina tympanica major",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.057",
+      "ru": "Малая барабанная ость",
+      "lat": "spina tympanica minor",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.058",
+      "ru": "Барабанная борозда",
+      "lat": "sulcus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.059",
+      "ru": "Барабанная вырезка",
+      "lat": "incisura tympanica",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.066",
+      "ru": "Борозда средней височной артерии",
+      "lat": "sulcus arteriae temporalis mediae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.069",
+      "ru": "Надпроходная ямочка",
+      "lat": "foveola suprameatica; foveola suprameatalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.070",
+      "ru": "Надпроходная ость",
+      "lat": "spina suprameatica; spina suprameatalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.074",
+      "ru": "Каменисто-барабанная щель",
+      "lat": "fissura petrotympanica",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.075",
+      "ru": "Каменисто-чешуйчатая щель",
+      "lat": "fissura petrosquamosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.076",
+      "ru": "Барабанно-чешуйчатая щель",
+      "lat": "fissura tympanosquamosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_right",
+      "c": "A02.1.06.077",
+      "ru": "Барабанно-сосцевидная щель",
+      "lat": "fissura tympanomastoidea",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.007",
+      "ru": "Борозда затылочной артерии",
+      "lat": "sulcus arteriae occipitalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.008",
+      "ru": "Сосцевидное отверстие",
+      "lat": "foramen mastoideum",
+      "status": "variant",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.009",
+      "ru": "Канал лицевого нерва",
+      "lat": "canalis nervi facialis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.010",
+      "ru": "Коленце лицевого канала",
+      "lat": "geniculum canalis nervi facialis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.011",
+      "ru": "Каналец барабанной струны",
+      "lat": "canaliculus chordae tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.013",
+      "ru": "Сонный канал",
+      "lat": "canalis caroticus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.014",
+      "ru": "Наружная апертура сонного канала",
+      "lat": "apertura externa canalis carotici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.015",
+      "ru": "Внутренняя апертура сонного канала",
+      "lat": "apertura interna canalis carotici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.016",
+      "ru": "Сонно-барабанные канальцы",
+      "lat": "canaliculi caroticotympanici",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.017",
+      "ru": "Мышечно-трубный канал",
+      "lat": "canalis musculotubarius",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.018",
+      "ru": "Полуканал мышцы, напрягающей барабанную перепонку",
+      "lat": "semicanalis musculi tensoris tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.019",
+      "ru": "Полуканал слуховой трубы",
+      "lat": "semicanalis tubae auditivae; semicanalis tubae auditoriae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.020",
+      "ru": "Перегородка мышечно-трубного канала",
+      "lat": "septum canalis musculotubarii",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.024",
+      "ru": "Расщелина канала большого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi majoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.025",
+      "ru": "Борозда большого каменистого нерва",
+      "lat": "sulcus nervi petrosi majoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.026",
+      "ru": "Расщелина канала малого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi minoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.027",
+      "ru": "Борозда малого каменистого нерва",
+      "lat": "sulcus nervi petrosi minoris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.030",
+      "ru": "Борозда верхнего каменистого синуса",
+      "lat": "sulcus sinus petrosi superioris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.033",
+      "ru": "Внутренний слуховой проход",
+      "lat": "meatus acusticus internus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.034",
+      "ru": "Поддуговая ямка",
+      "lat": "fossa subarcuata",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.035",
+      "ru": "Каналец преддверия",
+      "lat": "canaliculus vestibuli",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.036",
+      "ru": "Апертура канальца преддверия",
+      "lat": "apertura canaliculi vestibuli",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.038",
+      "ru": "Борозда нижнего каменистого синуса",
+      "lat": "sulcus sinus petrosi inferioris",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.042",
+      "ru": "Каналец улитки",
+      "lat": "canaliculus cochleae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.043",
+      "ru": "Апертура канальца улитки",
+      "lat": "apertura canaliculi cochleae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.044",
+      "ru": "Сосцевидный каналец",
+      "lat": "canaliculus mastoideus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.046",
+      "ru": "Внутрияремный отросток",
+      "lat": "processus intrajugularis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.048",
+      "ru": "Шилососцевидное отверстие",
+      "lat": "foramen stylomastoideum",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.049",
+      "ru": "Барабанный каналец",
+      "lat": "canaliculus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.050",
+      "ru": "Каменистая ямочка",
+      "lat": "fossula petrosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.051",
+      "ru": "Барабанная полость",
+      "lat": "cavitas tympani",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.053",
+      "ru": "Барабанное кольцо",
+      "lat": "anulus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.055",
+      "ru": "Наружный слуховой проход",
+      "lat": "meatus acusticus externus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.056",
+      "ru": "Большая барабанная ость",
+      "lat": "spina tympanica major",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.057",
+      "ru": "Малая барабанная ость",
+      "lat": "spina tympanica minor",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.058",
+      "ru": "Барабанная борозда",
+      "lat": "sulcus tympanicus",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.059",
+      "ru": "Барабанная вырезка",
+      "lat": "incisura tympanica",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.066",
+      "ru": "Борозда средней височной артерии",
+      "lat": "sulcus arteriae temporalis mediae",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.069",
+      "ru": "Надпроходная ямочка",
+      "lat": "foveola suprameatica; foveola suprameatalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.070",
+      "ru": "Надпроходная ость",
+      "lat": "spina suprameatica; spina suprameatalis",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.074",
+      "ru": "Каменисто-барабанная щель",
+      "lat": "fissura petrotympanica",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.075",
+      "ru": "Каменисто-чешуйчатая щель",
+      "lat": "fissura petrosquamosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.076",
+      "ru": "Барабанно-чешуйчатая щель",
+      "lat": "fissura tympanosquamosa",
+      "status": "projection",
+      "changed": false
+    },
+    {
+      "bone": "temporal_left",
+      "c": "A02.1.06.077",
+      "ru": "Барабанно-сосцевидная щель",
+      "lat": "fissura tympanomastoidea",
+      "status": "projection",
+      "changed": false
+    }
+  ],
+  "coordinate_frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+  "changes": [
+    "12 author PLY meshes retained without anatomical remodeling.",
+    "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+    "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
+    "Meshopt compression with 16-bit position quantization; no decimation in this build."
+  ],
+  "metadata": "build_head/complete_temporal/skull-openear.json",
+  "anatomical_references_per_record": 2,
+  "selected_source_members_crc32_verified": true,
+  "full_archive_md5_verified": false,
+  "original_bone_sampling_mm": 0.125,
+  "internal_scans_sampling_mm": [
+    0.05,
+    0.05,
+    0.15
+  ],
+  "localization_status_note": "Эта независимая геометрия не изменяет классификацию 86 проекций и двух типичных мест вариантов в основном наборе височных костей."
+}

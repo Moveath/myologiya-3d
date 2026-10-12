@@ -10,6 +10,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 PARTS = ('face', 'cranial', 'temporal')
+SUPPLEMENTS = [f'pins_head/{name}-extra.json' for name in PARTS] + ['pins_head/face-completion.json']
 KINDS = {'surface', 'projection', 'internal', 'variant'}
 
 
@@ -32,8 +33,7 @@ def positions():
             continue
         merged[row['bone'], row['code']] = {**row, 'localization': 'surface',
                                           'source_file': 'pins_head/ta.json'}
-    for name in PARTS:
-        filename = f'pins_head/{name}-extra.json'
+    for filename in SUPPLEMENTS:
         rows = json.loads((ROOT/filename).read_text(encoding='utf-8'))
         seen = set()
         for row in rows:

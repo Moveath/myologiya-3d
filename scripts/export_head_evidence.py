@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 from head_terms import T, DESCRIPTIONS, BONES, BOOK_URL, IFAA_URL, TERM_NOTES
 from head_muscles import EVIDENCE, MUSCLE_TEMPLATES
-from head_localization import descriptions, positions
+from head_localization import descriptions, positions, SUPPLEMENTS
 
 feature_descriptions = {**DESCRIPTIONS, **descriptions()}
 landmarks = positions()
@@ -23,7 +23,7 @@ record={
                      for code,data in feature_descriptions.items()},
     'muscles':{key:{**entry,'published_fields':{f:MUSCLE_TEMPLATES[key][f] for f in ('o','i','a','n','s')}} for key,entry in EVIDENCE.items()},
     'localization':{'baseline':'pins_head/ta.json',
-                    'supplements':['pins_head/face-extra.json','pins_head/cranial-extra.json','pins_head/temporal-extra.json'],
+                    'supplements':SUPPLEMENTS,
                     'method':'Индивидуальный осмотр модели, сопоставление с указанными анатомическими источниками. Поверхность и топографическая проекция учитываются раздельно.',
                     'kinds':{'surface':'Участок видимой поверхности или край образования',
                              'projection':'Проекция анатомического расположения; собственная форма не подтверждается геометрией',

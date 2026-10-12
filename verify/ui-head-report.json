@@ -7,6 +7,13 @@
       "theme": "light",
       "errors": [],
       "overflow": false,
+      "head_cuts": [
+        "y",
+        "x",
+        "z"
+      ],
+      "head_cut_reverse": true,
+      "head_cut_quiz_hidden": true,
       "status": "passed"
     },
     {
@@ -14,6 +21,13 @@
       "theme": "dark",
       "errors": [],
       "overflow": false,
+      "head_cuts": [
+        "y",
+        "x",
+        "z"
+      ],
+      "head_cut_reverse": true,
+      "head_cut_quiz_hidden": true,
       "status": "passed"
     },
     {
@@ -21,6 +35,13 @@
       "theme": "light",
       "errors": [],
       "overflow": false,
+      "head_cuts": [
+        "y",
+        "x",
+        "z"
+      ],
+      "head_cut_reverse": true,
+      "head_cut_quiz_hidden": true,
       "status": "passed"
     },
     {
@@ -28,6 +49,13 @@
       "theme": "dark",
       "errors": [],
       "overflow": false,
+      "head_cuts": [
+        "y",
+        "x",
+        "z"
+      ],
+      "head_cut_reverse": true,
+      "head_cut_quiz_hidden": true,
       "status": "passed"
     },
     {
@@ -53,7 +81,10 @@
     "Цветной череп по умолчанию и отключение раскраски",
     "Легенда: 14 типов, 22 выбираемые кости",
     "Сохранение настройки и временное отключение цветов во время теста",
-    "Цветовые инструменты скрыты в разделах руки и ноги"
+    "Цветовые инструменты скрыты в разделах руки и ноги",
+    "Срез основного черепа в трёх плоскостях и смена оставленной стороны",
+    "Инструменты среза скрыты во время теста"
   ],
-  "visual_review": "Снимки головы, костей и карточек просмотрены на 390 и 1280 px в светлой и тёмной темах. Анатомическая полнота не является результатом UI-тестов."
+  "visual_review": "Снимки головы, костей и карточек просмотрены на 390 и 1280 px в светлой и тёмной темах. Анатомическая полнота не является результатом UI-тестов.",
+  "detailed_model_suite": "verify/ui-skull-detail-report.json"
 }

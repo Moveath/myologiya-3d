@@ -1,8 +1,7 @@
 {
-  "generated_at": "2026-10-12T17:37:28.339761+00:00",
+  "generated_at": "2026-10-12T18:29:27.551Z",
   "status": "passed",
   "test_command": "node tools/verify-skull-detail.mjs",
-  "execution_note": "Результаты сведены из фактически выполненных локальных qhead_color/verify-detail.mjs и qhead_color/verify-microct.mjs после окончательной правки кадрирования; их проверки объединены в tools/verify-skull-detail.mjs. Объединённый файл повторно целиком не запускался.",
   "cases": [
     {
       "width": 390,
@@ -13,6 +12,11 @@
       "z_cavities": 8,
       "z_visibility_selection_isolation_reset": true,
       "z_clipping": true,
+      "z_markers": [
+        "mandible_mylohyoid_groove_right",
+        "mandible_mylohyoid_groove_left"
+      ],
+      "z_markers_visible_and_clipped": true,
       "microct_load": true,
       "microct_clipping": [
         "sagittal",
@@ -21,18 +25,32 @@
       ],
       "microct_reverse_cut": true,
       "microct_neutral_lateral_labels": true,
+      "openear_parts": 13,
+      "openear_stapes_selection_isolation_reset": true,
+      "openear_context_visibility_transparency": true,
+      "openear_clipping": true,
+      "embedded_parent_navigation_preserved": true,
+      "embedded_child_back_closes": true,
+      "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3846,
+      "microct_load_and_front_screenshot_ms": 3789,
       "page_errors": [],
       "screenshots": [
         "detail-390-light-bones.png",
         "detail-390-light-cavities.png",
         "detail-390-light-cut.png",
         "detail-390-light-inferior.png",
+        "detail-390-light-mandible_mylohyoid_groove_right.png",
+        "detail-390-light-mandible_mylohyoid_groove_left.png",
         "microct-390-light-front.png",
         "microct-390-light-sagittal.png",
         "microct-390-light-coronal.png",
-        "microct-390-light-axial.png"
+        "microct-390-light-axial.png",
+        "openear-390-light-context.png",
+        "openear-390-light-stapes.png",
+        "openear-390-light-cut.png",
+        "embedded-390-light-detail.png",
+        "embedded-390-light-failed-child.png"
       ]
     },
     {
@@ -44,6 +62,11 @@
       "z_cavities": 8,
       "z_visibility_selection_isolation_reset": true,
       "z_clipping": true,
+      "z_markers": [
+        "mandible_mylohyoid_groove_right",
+        "mandible_mylohyoid_groove_left"
+      ],
+      "z_markers_visible_and_clipped": true,
       "microct_load": true,
       "microct_clipping": [
         "sagittal",
@@ -52,18 +75,32 @@
       ],
       "microct_reverse_cut": true,
       "microct_neutral_lateral_labels": true,
+      "openear_parts": 13,
+      "openear_stapes_selection_isolation_reset": true,
+      "openear_context_visibility_transparency": true,
+      "openear_clipping": true,
+      "embedded_parent_navigation_preserved": true,
+      "embedded_child_back_closes": true,
+      "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3741,
+      "microct_load_and_front_screenshot_ms": 3809,
       "page_errors": [],
       "screenshots": [
         "detail-390-dark-bones.png",
         "detail-390-dark-cavities.png",
         "detail-390-dark-cut.png",
         "detail-390-dark-inferior.png",
+        "detail-390-dark-mandible_mylohyoid_groove_right.png",
+        "detail-390-dark-mandible_mylohyoid_groove_left.png",
         "microct-390-dark-front.png",
         "microct-390-dark-sagittal.png",
         "microct-390-dark-coronal.png",
-        "microct-390-dark-axial.png"
+        "microct-390-dark-axial.png",
+        "openear-390-dark-context.png",
+        "openear-390-dark-stapes.png",
+        "openear-390-dark-cut.png",
+        "embedded-390-dark-detail.png",
+        "embedded-390-dark-failed-child.png"
       ]
     },
     {
@@ -75,6 +112,11 @@
       "z_cavities": 8,
       "z_visibility_selection_isolation_reset": true,
       "z_clipping": true,
+      "z_markers": [
+        "mandible_mylohyoid_groove_right",
+        "mandible_mylohyoid_groove_left"
+      ],
+      "z_markers_visible_and_clipped": true,
       "microct_load": true,
       "microct_clipping": [
         "sagittal",
@@ -83,18 +125,32 @@
       ],
       "microct_reverse_cut": true,
       "microct_neutral_lateral_labels": true,
+      "openear_parts": 13,
+      "openear_stapes_selection_isolation_reset": true,
+      "openear_context_visibility_transparency": true,
+      "openear_clipping": true,
+      "embedded_parent_navigation_preserved": true,
+      "embedded_child_back_closes": true,
+      "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3808,
+      "microct_load_and_front_screenshot_ms": 3901,
       "page_errors": [],
       "screenshots": [
         "detail-1280-light-bones.png",
         "detail-1280-light-cavities.png",
         "detail-1280-light-cut.png",
         "detail-1280-light-inferior.png",
+        "detail-1280-light-mandible_mylohyoid_groove_right.png",
+        "detail-1280-light-mandible_mylohyoid_groove_left.png",
         "microct-1280-light-front.png",
         "microct-1280-light-sagittal.png",
         "microct-1280-light-coronal.png",
-        "microct-1280-light-axial.png"
+        "microct-1280-light-axial.png",
+        "openear-1280-light-context.png",
+        "openear-1280-light-stapes.png",
+        "openear-1280-light-cut.png",
+        "embedded-1280-light-detail.png",
+        "embedded-1280-light-failed-child.png"
       ]
     },
     {
@@ -106,6 +162,11 @@
       "z_cavities": 8,
       "z_visibility_selection_isolation_reset": true,
       "z_clipping": true,
+      "z_markers": [
+        "mandible_mylohyoid_groove_right",
+        "mandible_mylohyoid_groove_left"
+      ],
+      "z_markers_visible_and_clipped": true,
       "microct_load": true,
       "microct_clipping": [
         "sagittal",
@@ -114,18 +175,32 @@
       ],
       "microct_reverse_cut": true,
       "microct_neutral_lateral_labels": true,
+      "openear_parts": 13,
+      "openear_stapes_selection_isolation_reset": true,
+      "openear_context_visibility_transparency": true,
+      "openear_clipping": true,
+      "embedded_parent_navigation_preserved": true,
+      "embedded_child_back_closes": true,
+      "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3759,
+      "microct_load_and_front_screenshot_ms": 3856,
       "page_errors": [],
       "screenshots": [
         "detail-1280-dark-bones.png",
         "detail-1280-dark-cavities.png",
         "detail-1280-dark-cut.png",
         "detail-1280-dark-inferior.png",
+        "detail-1280-dark-mandible_mylohyoid_groove_right.png",
+        "detail-1280-dark-mandible_mylohyoid_groove_left.png",
         "microct-1280-dark-front.png",
         "microct-1280-dark-sagittal.png",
         "microct-1280-dark-coronal.png",
-        "microct-1280-dark-axial.png"
+        "microct-1280-dark-axial.png",
+        "openear-1280-dark-context.png",
+        "openear-1280-dark-stapes.png",
+        "openear-1280-dark-cut.png",
+        "embedded-1280-dark-detail.png",
+        "embedded-1280-dark-failed-child.png"
       ]
     }
   ],
@@ -133,5 +208,116 @@
     "Проверка интерфейса и загрузки не подтверждает анатомическую точность геометрии.",
     "Время измерено на локальном сервере в headless Chromium с программным WebGL; это не скорость загрузки по интернету и не тест реального телефона.",
     "Латеральность микро-КТ независимо не подтверждена; боковые виды имеют нейтральные названия."
-  ]
+  ],
+  "local_navigation_round_trip": "embedded dialog preserves the atlas document and selection in all four layouts",
+  "marker_controls_postfix_smoke": {
+    "generated_at": "2026-10-12T18:36:05.229Z",
+    "status": "passed",
+    "cases": [
+      {
+        "width": 390,
+        "theme": "light",
+        "status": "passed",
+        "markers": [
+          {
+            "id": "mandible_mylohyoid_groove_right",
+            "view": "left",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          },
+          {
+            "id": "mandible_mylohyoid_groove_left",
+            "view": "right",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "width": 390,
+        "theme": "dark",
+        "status": "passed",
+        "markers": [
+          {
+            "id": "mandible_mylohyoid_groove_right",
+            "view": "left",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          },
+          {
+            "id": "mandible_mylohyoid_groove_left",
+            "view": "right",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "width": 1280,
+        "theme": "light",
+        "status": "passed",
+        "markers": [
+          {
+            "id": "mandible_mylohyoid_groove_right",
+            "view": "left",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          },
+          {
+            "id": "mandible_mylohyoid_groove_left",
+            "view": "right",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          }
+        ],
+        "page_errors": []
+      },
+      {
+        "width": 1280,
+        "theme": "dark",
+        "status": "passed",
+        "markers": [
+          {
+            "id": "mandible_mylohyoid_groove_right",
+            "view": "left",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          },
+          {
+            "id": "mandible_mylohyoid_groove_left",
+            "view": "right",
+            "view_label": true,
+            "hide_button_clears_marker": true,
+            "visibility_checkbox_clears_marker": true
+          }
+        ],
+        "page_errors": []
+      }
+    ]
+  },
+  "visual_review": {
+    "status": "passed",
+    "layouts": [
+      "390 light",
+      "390 dark",
+      "1280 light",
+      "1280 dark"
+    ],
+    "reviewed": [
+      "OpenEar transparent bone context",
+      "OpenEar isolated stapes",
+      "Z marker location and clipping",
+      "embedded viewer and parent close after failed child"
+    ],
+    "notes": "Screenshots checked manually; no overflow or obscured model controls observed."
+  }
 }

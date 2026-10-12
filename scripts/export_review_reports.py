@@ -2,7 +2,7 @@
 from pathlib import Path
 from collections import Counter
 import json
-from head_localization import positions
+from head_localization import positions, SUPPLEMENTS
 
 root=Path(__file__).resolve().parents[1]
 old=json.loads((root/'pins_head/candidates-initial.json').read_text(encoding='utf-8'))
@@ -29,7 +29,7 @@ record={'method':'Осмотр исходной сетки в шести орт�
         'markers':len(current), 'localization_counts':dict(Counter(p['localization'] for p in current.values())),
         'initial_review':{'retained':len(baseline),'removed_candidates':removed,
                          'note':'История первоначального отбора. Эти термины теперь размечены заново в дополнительных файлах; прежние отклонённые координаты не восстановлены автоматически.'},
-        'inputs':['pins_head/ta.json','pins_head/face-extra.json','pins_head/cranial-extra.json','pins_head/temporal-extra.json'],
+        'inputs':['pins_head/ta.json',*SUPPLEMENTS],
         'corrections':['Сосцевидный отросток: маркер перенесён на задненижний выступ с обеих сторон.','Скат затылочной кости: маркер перенесён на внутричерепную поверхность базилярной части.','Проверены отдельно левая и правая стороны; исправлены зубные альвеолы верхних челюстей, клиновидные вырезки нёбных костей и задние слёзные гребни.','Нижнечелюстные ямки и суставные бугорки обеих височных костей дополнительно сопоставлены независимо с несколькими ракурсами.'],
         'geometry_check':'verify/head-position-geometry.json',
         'limitations':'Маркеры обозначают отдельный участок, край или явно подписанную проекцию. Проекции не доказывают наличие отверстия, канала, полости или варианта в сетке. Это проверка разметки по источникам и снимкам, а не независимое врачебное рецензирование.'}
@@ -42,5 +42,8 @@ record['coverage'] += ['Цветной череп по умолчанию и о�
                        'Легенда: 14 типов, 22 выбираемые кости',
                        'Сохранение настройки и временное отключение цветов во время теста',
                        'Цветовые инструменты скрыты в разделах руки и ноги']
+record['coverage'] += ['Срез основного черепа в трёх плоскостях и смена оставленной стороны',
+                       'Инструменты среза скрыты во время теста']
+record['detailed_model_suite'] = 'verify/ui-skull-detail-report.json'
 (root/'verify/ui-head-report.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Review reports exported')

@@ -39,6 +39,18 @@ try {
     await page.locator('[data-peel="3"]').click();
     assert.equal(await page.evaluate(()=>window.__atlas.state.boneColors),true);
     await page.screenshot({path:path.join(out,`${width}-${theme}-colored-skull.png`)});
+    await page.locator('#bHeadCut').click();
+    assert.ok(await page.locator('#headCutControls').isVisible());
+    for(const axis of ['y','x','z']) {
+      await page.locator('#headCutAxis').selectOption(axis);
+      await page.locator('#headCutPosition').fill('48');
+      assert.equal(await page.evaluate(()=>window.__atlas.state.headCut.axis),axis);
+      await page.screenshot({path:path.join(out,`${width}-${theme}-skull-cut-${axis}.png`)});
+    }
+    await page.locator('#headCutFlip').click();
+    assert.equal(await page.locator('#headCutFlip').getAttribute('aria-pressed'),'true');
+    await page.locator('#bHeadCut').click();
+    assert.ok(!(await page.locator('#headCutControls').isVisible()));
     await page.locator('#bBoneLegend').click();
     assert.equal(await page.locator('[data-bone-type]').count(),14);
     assert.equal(await page.locator('[data-color-bone]').count(),22);
@@ -87,6 +99,7 @@ try {
     await page.locator('#bCloseList').click();
     await page.locator('#bQuiz').click();
     assert.equal(await page.evaluate(()=>window.__atlas.state.mode),'quiz');
+    assert.ok(!(await page.locator('#bHeadCut').isVisible()));
     assert.equal(await page.locator('#bBoneColors').getAttribute('aria-pressed'),'false');
     assert.ok(await page.evaluate(()=>window.__atlas.state.quiz.options.length>=2));
     assert.equal(await page.locator('[data-scope="neurocranium"]').count(),0);
@@ -100,7 +113,7 @@ try {
     assert.equal(overflow,false,'Horizontal page overflow');
     for(const sec of ['arm','leg']){assert.equal(await page.evaluate(id=>window.__atlas.enterSection(id),sec),true);assert.equal(await page.locator('#bBoneColors').isVisible(),false);}
     assert.deepEqual(errors,[]);
-    report.push({width,theme,errors,overflow,status:'passed'});
+    report.push({width,theme,errors,overflow,head_cuts:['y','x','z'],head_cut_reverse:true,head_cut_quiz_hidden:true,status:'passed'});
     await context.close();
     console.log('Passed',width,theme);
   }

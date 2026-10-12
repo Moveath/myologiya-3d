@@ -3,32 +3,108 @@
   "models": [
     {
       "name": "BodyParts3D",
-      "role": "Основная геометрия, все координаты маркеров относятся к ней",
+      "role": "Основная геометрия; 521 маркер основного каталога относится только к ней.",
       "source": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/",
-      "license": "CC BY-SA 2.1 Japan"
+      "license": "CC BY-SA 2.1 Japan",
+      "version": "3.0",
+      "processing": "Кости сохранены без дополнительного упрощения исходных STL; исходные файлы уже содержат упрощённые поверхности. Мышцы дополнительно упрощены для браузера.",
+      "markers": {
+        "total": 521,
+        "surface": 319,
+        "projection": 188,
+        "variant": 14,
+        "internal": 0
+      },
+      "verified_surface_updates": {
+        "count": 6,
+        "source": "pins_head/face-completion.json",
+        "review": "research/face-completion-review.json",
+        "scope": "Верхнечелюстной отросток нижней носовой раковины, слёзная борозда слёзной кости и раковинный гребень нёбной кости, каждый с обеих сторон. Повторная разметка существующего рельефа без изменения сеток."
+      },
+      "missing_muscle_geometry": 9
     },
     {
       "name": "Z-Anatomy",
-      "role": "Дополнительная учебная геометрия в отдельном просмотрщике: 22 кости и 8 объектов воздушных полостей; аннотации BodyParts3D не перенесены.",
+      "role": "Независимый дополнительный просмотр: 22 кости, 8 объектов воздушных полостей и 2 отдельно проверенных маркера; координаты BodyParts3D не перенесены.",
       "source": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
       "license": "CC BY-SA 4.0; сторонние компоненты имеют отдельные лицензии",
-      "inspected": "Извлечены 22 кости черепа; визуально осмотрены шесть видов лобной, клиновидной, решётчатой и правой височной кости. Для публикации вычислены исходные авторские модификаторы решётчатой кости и ячеек; новые отверстия не создавались.",
+      "inspected": "Применены исходные авторские модификаторы решётчатой кости и ячеек. В полном Startup.blend дополнительные названные отверстия и каналы оказались аннотационными линиями без граней, а не скрытыми сетками стенок. Нижняя челюсть проверена с обеих сторон; челюстно-подъязычная борозда различима на Z-Anatomy.",
       "published_assets": true,
       "archive_sha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
-      "limitations": "Модель имеет другую систему координат и переработанную геометрию; грубая регистрация не используется как основание точной анатомической разметки.",
+      "limitations": "Собственная система координат, учебная переработанная геометрия; полное воспроизведение мелких отверстий и каналов не подтверждено. Исследовательское совмещение с BodyParts3D отклонено: остаточные расхождения и несовпадения полостей не позволяют считать его точной реконструкцией того же образца.",
       "assets": [
         "site/skull-z-detail.glb",
         "site/skull-z-detail.json"
       ],
-      "provenance": "build_head/detail_z/provenance.json"
+      "provenance": "build_head/detail_z/provenance.json",
+      "changes": "Извлечение объектов черепа; вычисление существующих авторских модификаторов решётчатой кости и ячеек; компенсация отражённых преобразований в порядке вершин треугольников; смена осей; конвертация в GLB. Новые отверстия не создавались.",
+      "separate_markers": [
+        {
+          "id": "mandible_mylohyoid_groove_right",
+          "code": "A02.1.15.031",
+          "bone": "mandible"
+        },
+        {
+          "id": "mandible_mylohyoid_groove_left",
+          "code": "A02.1.15.031",
+          "bone": "mandible"
+        }
+      ],
+      "coordinate_frame": {
+        "units": "metres",
+        "x": "left",
+        "y": "superior",
+        "z": "anterior",
+        "registeredToMainAtlas": false,
+        "transform": "[x,y,z] -> [x,z,-y], metres; not registered to BodyParts3D"
+      },
+      "registration_review": "research/cranial-completion-registration.json"
     },
     {
       "name": "OpenEar",
-      "role": "Исследован как дополнительный открытый источник микроструктуры височной кости",
+      "role": "Независимый подробный просмотр внутреннего строения правого препарата ZETA: 12 авторских PLY и поверхность костной маски Bone.nrrd.",
       "source": "https://zenodo.org/records/1473724",
-      "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6326113/",
+      "paper": "https://doi.org/10.1038/sdata.2018.297",
       "license": "CC BY 4.0",
-      "published_assets": false
+      "published_assets": true,
+      "assets": [
+        "site/skull-openear.glb",
+        "site/skull-openear.json"
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": [
+        {
+          "title": "Sieber, Daniel Manuel; Erfurt, Peter; John, Samuel; Ribeiro dos Santos, Gabriel; Schurzig, Daniel; Sørensen, Mads Sølvsten; Lenarz, Thomas",
+          "url": "https://doi.org/10.1038/sdata.2018.297"
+        }
+      ],
+      "geometry": {
+        "bytes": 21262492,
+        "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+        "changes": [
+          "12 author PLY meshes retained without anatomical remodeling.",
+          "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+          "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
+          "Meshopt compression with 16-bit position quantization; no decimation in this build."
+        ],
+        "sampling_mm": 0.125,
+        "frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+        "registrationToBodyParts3D": false
+      },
+      "object_count": 13,
+      "triangles": 7359594,
+      "source_acquisition": "HTTP byte ranges; selected ZIP members; each member CRC32 checked",
+      "source_checksum_note": "Проверен CRC32 каждого загруженного члена ZIP. Контрольная сумма полного частично полученного ZETA.zip не заявляется проверенной.",
+      "limitations": [
+        "Один правый препарат, а не обе височные кости основного черепа; целая кость обрезана при получении препарата.",
+        "Модель не зарегистрирована к BodyParts3D. Маркеры основного черепа на неё автоматически не переносятся.",
+        "Шаг исходной маски 0,125 мм и сжатие поверхности не являются гарантией точности любого малого образования.",
+        "Два исходных объекта объединяют несколько структур: Scala Vestibuli и Sinus Dura. Границы отдельных компонентов не сегментированы.",
+        "Нервы и сосуды показывают сегментированные ткани, а не доказывают форму стенок соответствующих костных каналов.",
+        "Индивидуальные особенности препарата и возможные ошибки исходной сегментации сохранены. Все 77 терминов височной кости не объявляются доказанными этой моделью."
+      ],
+      "provenance": "build_head/complete_temporal/geometry-report.json",
+      "review": "research/temporal-completion-review.json"
     },
     {
       "name": "Halle micro-CT",
@@ -43,8 +119,41 @@
         "site/skull-microct.json"
       ],
       "limitations": "Отдельный препарат без нижней челюсти, с подготовительным распилом и трепанационным дефектом. Кости не разделены, точки основного атласа не перенесены. Выборка 0,25 мм и упрощение могут удалять мелкие детали; полнота 521 образования не заявляется."
+    },
+    {
+      "name": "BodyParts3D 4.3 — ethmoid comparison",
+      "role": "Исследовательское сравнение; не заменяет основную решётчатую кость.",
+      "source": "https://github.com/olivercase/body_parts_3d_api",
+      "license": "CC BY-SA 2.1 Japan",
+      "published_assets": false,
+      "source_files": [
+        {
+          "file": "FJ6309_BP23248_FMA52740_Ethmoid.obj",
+          "triangles": 22348
+        },
+        {
+          "file": "FJ6412_BP29766_FMA52891_Perpendicular plate of ethmoid.obj",
+          "triangles": 4856
+        }
+      ],
+      "limitations": "Больше граней не означает доказанные решётчатые отверстия: видны сглаженные углубления, но просветы не подтверждены. Форма и положение отличаются от 3.0; автоматический перенос точек неприемлем.",
+      "review": "research/cranial-completion-registration.json"
     }
   ],
   "note": "Проверка формы на 3D-моделях дополняет, но не подменяет два независимых анатомических источника для каждого термина.",
-  "detailed_source_search": "research/skull-detailed-sources.json"
+  "detailed_source_search": "research/skull-detailed-sources.json",
+  "current_status": {
+    "completion_claim": false,
+    "main_markers": {
+      "total": 521,
+      "surface": 319,
+      "projection": 188,
+      "variant": 14,
+      "internal": 0
+    },
+    "missing_muscle_geometry": 9,
+    "additional_models_do_not_upgrade_main_markers": true,
+    "status_registry": "research/skull-completion-status.json",
+    "ui": "В основной модели доступны три плоскости среза с согласованным выбором/перекрытием. Дополнительный просмотр открывается во встроенном окне и сохраняет состояние основного атласа."
+  }
 }

@@ -7800,7 +7800,8 @@
     "supplements": [
       "pins_head/face-extra.json",
       "pins_head/cranial-extra.json",
-      "pins_head/temporal-extra.json"
+      "pins_head/temporal-extra.json",
+      "pins_head/face-completion.json"
     ],
     "method": "Индивидуальный осмотр модели, сопоставление с указанными анатомическими источниками. Поверхность и топографическая проекция учитываются раздельно.",
     "kinds": {
@@ -14311,33 +14312,22 @@
         "bone": "inferior_concha_left",
         "code": "A02.1.08.003",
         "p": [
-          0.00621,
-          1.50001,
-          0.1561
+          0.01196,
+          1.50449,
+          0.15728
         ],
         "n": [
-          0.839,
-          0.48,
-          0.256
+          0.236,
+          0.572,
+          -0.786
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "med",
-          "uv": [
-            0.521,
-            0.515
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на видимой отогнутой пластинке верхнего края нижней носовой раковины. Её положение проверено отдельно справа и слева; точка обозначает участок поверхности отростка, а не всю его границу.",
         "refs": [
           {
             "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-169/",
-            "locator": "с. 169, maxillary process curves downward and lateralward"
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=136",
+            "locator": "PDF pp.135–137, inferior nasal concha: maxillary process; Fig.172 lateral surface."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -14345,7 +14335,19 @@
             "locator": "The Inferior Nasal Conchse: maxillary process folded downwards and outwards"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.49,
+            0.397
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_inferior_concha_left.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "inferior_concha_left",
@@ -14431,33 +14433,22 @@
         "bone": "inferior_concha_right",
         "code": "A02.1.08.003",
         "p": [
-          -0.01395,
-          1.50013,
-          0.15336
+          -0.01342,
+          1.50332,
+          0.15415
         ],
         "n": [
-          -0.835,
-          -0.133,
-          0.534
+          -0.432,
+          0.586,
+          -0.685
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "lat",
-          "uv": [
-            0.479,
-            0.515
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на видимой отогнутой пластинке верхнего края нижней носовой раковины. Её положение проверено отдельно справа и слева; точка обозначает участок поверхности отростка, а не всю его границу.",
         "refs": [
           {
             "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-169/",
-            "locator": "с. 169, maxillary process curves downward and lateralward"
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=136",
+            "locator": "PDF pp.135–137, inferior nasal concha: maxillary process; Fig.172 lateral surface."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -14465,7 +14456,19 @@
             "locator": "The Inferior Nasal Conchse: maxillary process folded downwards and outwards"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.5,
+            0.43
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_inferior_concha_right.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "inferior_concha_right",
@@ -14511,28 +14514,17 @@
         "bone": "lacrimal_left",
         "code": "A02.1.09.003",
         "p": [
-          0.01201,
-          1.52067,
-          0.16821
+          0.01208,
+          1.52063,
+          0.16716
         ],
         "n": [
-          0.995,
-          0.019,
-          0.099
+          0.999,
+          0.004,
+          0.046
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "med",
-          "uv": [
-            0.356,
-            0.519
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на продольном углублении впереди заднего слёзного гребня. Это поверхность открытой борозды; она не означает реконструкцию всего носослёзного канала.",
         "refs": [
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -14540,12 +14532,24 @@
             "locator": "The Lacrimal Bones: lateral surface: anterior division and lacrimal groove"
           },
           {
-            "title": "Kenhub, Lacrimal bone",
-            "url": "https://www.kenhub.com/en/library/anatomy/the-lacrimal-bone",
-            "locator": "Lateral surface: groove anterior to posterior lacrimal crest"
+            "title": "Anatomy Standard — Os lacrimale",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-lacrimale.html",
+            "locator": "Lateral aspect of right lacrimal bone: posterior lacrimal crest and lacrimal sulcus."
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.39,
+            0.52
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_lacrimal_left.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "lacrimal_left",
@@ -14591,28 +14595,17 @@
         "bone": "lacrimal_right",
         "code": "A02.1.09.003",
         "p": [
-          -0.01218,
-          1.52178,
-          0.16849
+          -0.01225,
+          1.52175,
+          0.16783
         ],
         "n": [
-          -0.988,
-          -0.136,
-          0.077
+          -0.991,
+          -0.036,
+          0.127
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "lat",
-          "uv": [
-            0.644,
-            0.519
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на продольном углублении впереди заднего слёзного гребня. Это поверхность открытой борозды; она не означает реконструкцию всего носослёзного канала.",
         "refs": [
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -14620,12 +14613,24 @@
             "locator": "The Lacrimal Bones: lateral surface: anterior division and lacrimal groove"
           },
           {
-            "title": "Kenhub, Lacrimal bone",
-            "url": "https://www.kenhub.com/en/library/anatomy/the-lacrimal-bone",
-            "locator": "Lateral surface: groove anterior to posterior lacrimal crest"
+            "title": "Anatomy Standard — Os lacrimale",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-lacrimale.html",
+            "locator": "Lateral aspect of right lacrimal bone: posterior lacrimal crest and lacrimal sulcus."
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.62,
+            0.52
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_lacrimal_right.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "lacrimal_right",
@@ -17271,33 +17276,22 @@
         "bone": "palatine_left",
         "code": "A02.1.13.009",
         "p": [
-          0.00854,
-          1.49249,
-          0.14299
+          0.00856,
+          1.4947,
+          0.14455
         ],
         "n": [
-          -0.894,
-          0.448,
-          0.013
+          -0.951,
+          -0.254,
+          0.177
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "lat",
-          "uv": [
-            0.602,
-            0.677
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на нижнем поперечном возвышении носовой поверхности перпендикулярной пластинки. Обе стороны осмотрены отдельно; точка обозначает участок гребня.",
         "refs": [
           {
             "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
-            "locator": "с. 167, nasal surface: conchal crest"
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=134",
+            "locator": "PDF p.134, vertical part: nasal surface; lower conchal crest below middle meatus."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -17305,7 +17299,19 @@
             "locator": "The Palatine Bone: medial surface: lower conchal crest"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.638,
+            0.626
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_palatine_left.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "palatine_left",
@@ -17631,33 +17637,22 @@
         "bone": "palatine_right",
         "code": "A02.1.13.009",
         "p": [
-          -0.01435,
-          1.49365,
-          0.14335
+          -0.01272,
+          1.49526,
+          0.14326
         ],
         "n": [
-          0.81,
-          -0.581,
-          0.079
+          0.925,
+          -0.368,
+          -0.098
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "med",
-          "uv": [
-            0.398,
-            0.677
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Маркер выбран на нижнем поперечном возвышении носовой поверхности перпендикулярной пластинки. Обе стороны осмотрены отдельно; точка обозначает участок гребня.",
         "refs": [
           {
             "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
-            "locator": "с. 167, nasal surface: conchal crest"
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=134",
+            "locator": "PDF p.134, vertical part: nasal surface; lower conchal crest below middle meatus."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -17665,7 +17660,19 @@
             "locator": "The Palatine Bone: medial surface: lower conchal crest"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-visible-relief-review-and-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.4,
+            0.64
+          ],
+          "source": "build_head/complete_face/review-picks.js",
+          "review": "Отдельный осмотр BodyParts3D обеих сторон в шести ракурсах; сопоставление видимого образования с указанными источниками. Попадание луча использовано только для записи уже выбранного участка.",
+          "screenshot": "build_head/complete_face/candidate_palatine_right.png",
+          "coordinateFrame": "BodyParts3D atlas metres"
+        },
+        "source_file": "pins_head/face-completion.json"
       },
       {
         "bone": "palatine_right",
