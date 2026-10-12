@@ -165,10 +165,11 @@ import {regionById} from './skull-regions.js';
 const $ = s => document.querySelector(s);
 const initialQuery = new URLSearchParams(location.search);
 const region=regionById(initialQuery.get('region'));
+const fromFeatures=initialQuery.get('from')==='features';
 let currentPreset=null;
-function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');return 'skull-study.html?'+p;}
+function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');if(fromFeatures)p.set('code',initialQuery.get('code')||'');return 'skull-study.html?'+p;}
 if (initialQuery.get('embed') === '1' && parent !== window) {
-  $('.back').addEventListener('click', event => { if(region){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
+  $('.back').addEventListener('click', event => { if(region||fromFeatures){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
   addEventListener('keydown', event => { if(event.key==='Escape') parent.postMessage({type:'atlas-close-detail'},location.origin); });
 }
 // The local launcher uses the full wrapper; hosted deployments use the directory index.
@@ -177,6 +178,7 @@ try {
   if(referrer.origin===location.origin&&referrer.pathname.endsWith('/local.html')) $('.back').href='local.html#head';
 } catch (_) {}
 if(initialQuery.get('entry')==='local')$('.back').href='local.html#head';
+if(fromFeatures){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Подробные ориентиры');$('.back').title='Подробные ориентиры';}
 if(region){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Все учебные группы');$('.back').title='Все учебные группы';$('h1').textContent=region.ru;$('.brand p').textContent='Череп по областям · '+(region.mode==='openear'?'OpenEar ZETA · отдельный препарат':'Z-Anatomy · отдельная модель');$('.modebar').hidden=true;}
 const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const PALETTE = {frontal:'#e8c04c',parietal:'#b488c9',occipital:'#4fa7a1',temporal:'#689ddd',sphenoid:'#e88762',ethmoid:'#91b95b',nasal:'#86ced8',lacrimal:'#cfa847',zygomatic:'#e99c4a',maxilla:'#d988b0',palatine:'#8674ad',inferior_concha:'#959fe0',vomer:'#b98665',mandible:'#a4bf71'};
@@ -230,6 +232,7 @@ function frame(view=$('#view').value,partId=null) {
   const center=box.getCenter(new THREE.Vector3());
   const v=THREE.MathUtils.degToRad(camera.fov)/2,h=Math.atan(Math.tan(v)*camera.aspect);
   if(view==='preset')view=currentPreset?.view||'antlat';
+  if(view==='marker')view=active.metadata.markers?.find(m=>m.id===state.marker)?.view||'antlat';
   camera.up.set(...(typeof view==='object'?view.up||[0,1,0]:[0,1,0]));if(view==='sup')camera.up.set(0,0,-1);if(view==='inf')camera.up.set(0,0,1);
   const direction=new THREE.Vector3(...(typeof view==='object'?view.d:views[view]||views.antlat)).normalize();
   const right=new THREE.Vector3().crossVectors(camera.up,direction).normalize(),up=new THREE.Vector3().crossVectors(direction,right).normalize();
@@ -278,6 +281,7 @@ function renderParts() {
 function selectPart(id,zoom=false) {
   if(!active||id&&!active.parts.has(id))return;
   state.marker=null;$('#markerSelection').hidden=true;
+  if($('#view').value==='marker')$('#view').value='antlat';
   state.selected=id;
   if(id){state.hidden.delete(id);if(state.only&&state.only!==id)state.only=null;const p=active.parts.get(id);if(p.kind==='cavity'){state.cavities=true;state.translucent=true;}}
   apply();renderSelection();renderParts();if(zoom)frame($('#view').value,id);$('#panel').scrollTop=0;
@@ -285,18 +289,23 @@ function selectPart(id,zoom=false) {
 function selectMarker(id) {
   const marker=active?.metadata.markers?.find(m=>m.id===id);
   if(!marker)return false;
-  selectPart(marker.b);state.marker=id;state.only=marker.b;
+  selectPart(marker.b);state.marker=id;state.only=marker.b;state.translucent=false;
   if(marker.cut)setCut(marker.cut.plane,marker.cut.value,marker.cut.reverse);
   else setCut('off');
   if(typeof marker.view==='string')$('#view').value=marker.view;
+  else{if(!$('#view option[value="marker"]'))$('#view').insertAdjacentHTML('afterbegin','<option value="marker">Ракурс ориентира</option>');$('#view').value='marker';}
   const p=new THREE.Vector3(...marker.p),direction=new THREE.Vector3(...(typeof marker.view==='string'?views[marker.view]:marker.view?.d||marker.n)).normalize();
   camera.up.set(...(marker.view?.up||[0,1,0]));camera.position.copy(p).addScaledVector(direction,marker.view?.distance||.085);controls.target.copy(p);controls.update();
   $('#markerSelection').hidden=false;
-  $('#markerSelection').innerHTML=`<div class="notice"><b>${esc(marker.ru)}</b><p class="latin">${esc(marker.lat)}</p><p class="hint">TA98 ${esc(marker.c)} · точка на модели ${state.mode==='openear'?'OpenEar ZETA':'Z-Anatomy'}</p><p>${esc(marker.x)}</p><p class="hint">${esc(marker.modelNote)}</p>${linkList(marker.refs)}</div>`;
+  $('#selection').before($('#markerSelection'));$('#panel').scrollTop=0;
+  $('#markerSelection').innerHTML=`<div class="notice"><b>${esc(marker.ru)}</b><p class="latin">${esc(marker.lat)}</p><p class="hint">TA98 ${esc(marker.c)} · ${esc(marker.specimen||({openear:'OpenEar ZETA',z:'Z-Anatomy',microct:'Halle · микро-КТ'}[state.mode]))}</p><p>${esc(marker.x)}</p><p class="hint">${esc(marker.modelNote)}</p>${linkList(marker.refs)}</div>`;
   apply();renderParts();return true;
 }
+let pinPositionKey='';
 function positionMarker(){
   const el=$('#detailPin'),marker=active?.metadata.markers?.find(m=>m.id===state.marker);
+  const key=JSON.stringify([state.mode,state.marker,state.clip,state.cut,state.reverse,state.only,[...state.hidden],state.cavities,camera.position.toArray(),camera.quaternion.toArray(),camera.fov,camera.aspect,canvas.clientWidth,canvas.clientHeight]);
+  if(key===pinPositionKey)return;pinPositionKey=key;
   el.hidden=true;if(!marker||!visible(active.parts.get(marker.b)))return;
   const p=new THREE.Vector3(...marker.p);
   if(state.clip!=='off'&&clipPlane.distanceToPoint(p)<-1e-6)return;
@@ -325,7 +334,7 @@ function register(gltf,metadata,mode) {
   gltf.scene.traverse(mesh=>{
     if(!mesh.isMesh)return;
     let n=mesh;while(n&&!records.has(n.name))n=n.parent;
-    const d=mode==='microct'?{id:'microct_surface',kind:'bone',ru:'Череп · поверхность микро-КТ',modelNote:'Единая сегментированная поверхность одного препарата. Отдельные кости и точки TA98 здесь не выделены.'}:n?records.get(n.name):null;
+    const d=mode==='microct'?{id:'microct_surface',kind:'bone',ru:'Череп · поверхность микро-КТ',modelNote:'Единая сегментированная поверхность одного препарата. Отдельные кости здесь не выделены.'}:n?records.get(n.name):null;
     if(!d)throw new Error(`В описании модели отсутствует структура ${mesh.name}`);
     if(!mesh.geometry.attributes.normal)mesh.geometry.computeVertexNormals();
     mesh.material=new THREE.MeshStandardMaterial({color:bone,roughness:.72,metalness:0,side:THREE.DoubleSide});
@@ -340,7 +349,7 @@ async function loadModel(mode,onProgress) {
   const loader=new GLTFLoader();await MeshoptDecoder.ready;loader.setMeshoptDecoder(MeshoptDecoder);
   const stem={z:'skull-z-detail',microct:'skull-microct',openear:'skull-openear'}[mode];
   const filename=stem+'.glb';
-  const metadataPromise=fetch(stem+'.json').then(r=>{if(!r.ok)throw new Error(`Описание модели: ${r.status}`);return r.json();}).then(async metadata=>{if(mode==='openear'){const response=await fetch('skull-openear-landmarks.json');if(!response.ok)throw Error('Не удалось загрузить ориентиры OpenEar');const native=await response.json();metadata.markers=native.markers;}return metadata;});
+  const metadataPromise=fetch(stem+'.json').then(r=>{if(!r.ok)throw new Error(`Описание модели: ${r.status}`);return r.json();}).then(async metadata=>{const response=await fetch('skull-native-features.json');if(!response.ok)throw Error('Не удалось загрузить проверенные ориентиры');const native=await response.json();metadata.markers=native.markers[mode]||[];return metadata;});
   const gltfPromise=new Promise((resolve,reject)=>loader.load(filename,resolve,onProgress,reject));
   const [metadata,gltf]=await Promise.all([metadataPromise,gltfPromise]);return register(gltf,metadata,mode);
 }
