@@ -3,6 +3,10 @@ from pathlib import Path
 import json
 from head_terms import T, DESCRIPTIONS, BONES, BOOK_URL, IFAA_URL, TERM_NOTES
 from head_muscles import EVIDENCE, MUSCLE_TEMPLATES
+from head_localization import descriptions, positions
+
+feature_descriptions = {**DESCRIPTIONS, **descriptions()}
+landmarks = positions()
 
 root=Path(__file__).resolve().parents[1]
 out=root/'research'
@@ -14,15 +18,24 @@ record={
                    'sources':[IFAA_URL,BOOK_URL],
                    'independence_note':'Два издания одной номенклатуры подтверждают названия, но не считаются двумя независимыми источниками анатомических фактов.'},
     'bone_cards':BONES,
-    'bone_features':{code:{'latin':T[code][0],'russian':T[code][1],**data} for code,data in DESCRIPTIONS.items()},
+    'bone_features':{code:{'latin':T[code][0],'russian':T[code][1],**data,
+                          **({'terminology_note':TERM_NOTES[code]} if code in TERM_NOTES else {})}
+                     for code,data in feature_descriptions.items()},
     'muscles':{key:{**entry,'published_fields':{f:MUSCLE_TEMPLATES[key][f] for f in ('o','i','a','n','s')}} for key,entry in EVIDENCE.items()},
-    'localization':'pins_head/ta.json: только отмеченные на поверхности ориентиры; остальные термины остаются без координат.',
+    'localization':{'baseline':'pins_head/ta.json',
+                    'supplements':['pins_head/face-extra.json','pins_head/cranial-extra.json','pins_head/temporal-extra.json'],
+                    'method':'Индивидуальный осмотр модели, сопоставление с указанными анатомическими источниками. Поверхность и топографическая проекция учитываются раздельно.',
+                    'kinds':{'surface':'Участок видимой поверхности или край образования',
+                             'projection':'Проекция анатомического расположения; собственная форма не подтверждается геометрией',
+                             'internal':'Схематический внутренний ориентир',
+                             'variant':'Проекция варианта строения, который не представлен как отдельное образование на данной модели'},
+                    'records':[{'bone':bone,'code':code,**row} for (bone,code),row in landmarks.items()]},
     'limitations':[
-        'Для большинства костных образований подготовлена номенклатурная карточка, а не развёрнутое топографическое описание.',
+        'У поверхностей и краёв маркер указывает один выбранный участок, а не весь объект. Для каналов один маркер не изображает их ход.',
         'Функция и конкретное кровоснабжение поперечной мышцы подбородка не подтверждены двумя независимыми источниками и не заполнены как установленные факты.',
-        'Ряд терминов TA98 обозначает внутренние каналы или элементы, которые не удалось уверенно локализовать на этой сетке.',
+        'Проекции и внутренние схемы не являются измеренными границами образования и не доказывают его наличие в геометрии BodyParts3D.',
         'Автоматические проверки проверяют структуру данных и комплектность. Они не заменяют анатомическую экспертизу.'
     ]
 }
 (out/'head-evidence.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('Evidence inventory:',len(DESCRIPTIONS),'bone features;',len(EVIDENCE),'muscle templates')
+print('Evidence inventory:',len(feature_descriptions),'bone features;',len(EVIDENCE),'muscle templates')

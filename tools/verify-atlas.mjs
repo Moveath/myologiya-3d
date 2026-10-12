@@ -47,9 +47,19 @@ try {
     await page.evaluate(id=>window.__atlas.activatePin(id,true),pin);
     await page.waitForFunction(id=>window.__atlas.state.pin===id,pin);
     assert.ok(await page.locator('.pinbox').isVisible());
-    const noPoint = await page.evaluate(()=>ATLAS.pins.find(p=>p.b==='frontal'&&!p.p)?.id);
-    if(noPoint){await page.evaluate(id=>window.__atlas.activatePin(id,true),noPoint);const details=await page.locator('.pinbox').innerText();assert.ok(details.toLowerCase().includes('без 3d-точки'),JSON.stringify({noPoint,details,errors}));}
+    const projection = await page.evaluate(()=>ATLAS.pins.find(p=>p.b==='frontal'&&p.loc==='projection')?.id);
+    assert.ok(projection, 'Projection needs an explicit UI distinction');
+    await page.evaluate(id=>window.__atlas.activatePin(id,true),projection);
+    assert.ok((await page.locator('.pinbox').textContent()).includes('Анатомическая проекция'));
+    assert.ok(await page.locator('.pin.on[data-loc="projection"]').count());
+    await page.locator('#bBoneXray').click();
+    assert.equal(await page.evaluate(()=>window.__atlas.state.xrayBone),'frontal');
+    await page.screenshot({path:path.join(out,`${width}-${theme}-projection-xray.png`)});
+    await page.locator('#bBoneXray').click();
+    assert.equal(await page.evaluate(()=>window.__atlas.state.xrayBone),null);
+    assert.equal(await page.evaluate(()=>ATLAS.pins.filter(p=>p.id.startsWith('head_')&&!p.p).length),0);
     await page.evaluate(()=>window.__atlas.goTo('masseter_right'));
+    assert.equal(await page.evaluate(()=>window.__atlas.state.xrayBone),null);
     await page.locator('[data-part="deep"]').click();
     assert.equal(await page.evaluate(()=>window.__atlas.state.selPart),'deep');
     await page.screenshot({path:path.join(out,`${width}-${theme}-parts.png`)});

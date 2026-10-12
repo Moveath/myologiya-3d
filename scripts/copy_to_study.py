@@ -1,19 +1,28 @@
-"""Create a new portable project folder in the user's existing study directory.
+"""Create or explicitly update the portable atlas in the study directory.
 
-No existing folder is replaced. Dependencies and cached third-party publications
+--update copies project-owned files into an existing atlas; unrelated files stay.
+Dependencies and cached third-party publications
 are excluded; tracked sources, distributable assets and downloaded head models
 are included. No credentials or .git directory are copied.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import shutil
 import subprocess
 
 root=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser()
+parser.add_argument('--update',action='store_true',help='Update the previously created atlas folder without deleting files')
+args=parser.parse_args()
 study=root.parent/'учеба'
 destination=study/'Миология 3D'
 study.mkdir(exist_ok=True)
-destination.mkdir(exist_ok=False)
+if args.update and destination.exists():
+    assert (destination/'scripts/package_site.py').is_file(), 'Destination is not the existing atlas copy'
+    assert (destination/'README.md').read_text(encoding='utf-8').startswith('# Миология 3D'), 'Unexpected destination'
+else:
+    destination.mkdir(exist_ok=False)
 relative_paths=[p for p in subprocess.check_output(['git','-C',str(root),'ls-files','-z']).decode('utf-8').split('\0') if p]
 relative_paths+=['build_head/head_hi.glb','build_head/head.glb','build_head/head_q.glb','build_head/meta.json']
 relative_paths += [str(p.relative_to(root)) for directory in ['stl_head','shots/head'] for p in (root/directory).rglob('*') if p.is_file()]

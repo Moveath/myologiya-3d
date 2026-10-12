@@ -8,6 +8,15 @@ sys.path.insert(0,str(root/'scripts'))
 import manifest_head as manifest
 from ta98 import BONE,T
 from head_muscles import MUSCLE_TEMPLATES,EVIDENCE
+from head_localization import positions, descriptions, KINDS
+
+landmark_rows = positions()
+location_texts = descriptions()
+required = {(bone, code) for bone in manifest.BONES for code in BONE[bone]}
+assert set(landmark_rows) == required, ('Incomplete landmark map', required-set(landmark_rows))
+assert set(location_texts) == {code for _,code in required}, 'Incomplete anatomical evidence'
+for entry in location_texts.values():
+    assert len({r if isinstance(r,str) else r['url'] for r in entry['refs']}) >= 2
 
 muscle_ref={r['code']:r['lat'] for r in json.loads((root/'verify/ifaa-head-muscles.json').read_text(encoding='utf-8'))}
 # Printed TA98 corrections, documented in the relevant cards.
@@ -37,6 +46,8 @@ for filename in ['head-glb.txt','head-q-glb.txt']:
     assert len([n for n in names if n.startswith('c|')])==len(manifest.CONTEXT)
 
 raw=(root/'site/pins-head.js').read_text(encoding='utf-8')
+for broken in ('\ufffd','Рџ','Рµ','РЅ','СЃ','С‚','СЏ'):
+    assert broken not in raw, ('Corrupted UTF-8 content', broken)
 pins=json.loads(raw.split('push(...',1)[1].rsplit(');',1)[0])
 assert len({p['id'] for p in pins})==len(pins)
 for bone in manifest.BONES:
@@ -45,11 +56,12 @@ for bone in manifest.BONES:
     for p in subset:
         assert p['lat']==T[p['c']][0].split(';')[0].strip()
         assert len(p['refs'])>=2
+        assert p.get('loc') in KINDS and p.get('modelNote'), p['id']
+        assert 'p' in p and 'n' in p, ('Missing landmark',p['id'])
         if 'p' in p:
             assert len(p['p'])==len(p['n'])==3
             assert all(math.isfinite(n) for n in p['p']+p['n'])
             assert -.1 < p['p'][0] < .1 and 1.4 < p['p'][1] < 1.7 and -.02 < p['p'][2] < .22
-        else: assert 'не подтверждено' in p['modelNote']
         for mu,role,*part in p['m']:
             base=mu.removesuffix('_right').removesuffix('_left')
             assert base in MUSCLE_TEMPLATES and role in ['o','i']
@@ -60,4 +72,4 @@ for key,entry in EVIDENCE.items():
         if f not in entry.get('unconfirmed',[]): assert len(set(refs))>=2,(key,f)
 assert len(manifest.BONES)==22 and len(manifest.MUSCLES)==43
 assert len(pins)==521
-print(f'Head integrity passed: 22 bones, 43 modeled muscle instances, {len(pins)} TA98 records, {sum("p" in p for p in pins)} positions')
+print(f'Head integrity passed: 22 bones, 43 modeled muscle instances, {len(pins)} TA98 records/markers; kinds: {dict(Counter(p["loc"] for p in pins))}')

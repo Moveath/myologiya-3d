@@ -1,11 +1,14 @@
 """Store the completed local UI and geometry review results, without source images."""
 from pathlib import Path
+from collections import Counter
 import json
+from head_localization import positions
 
 root=Path(__file__).resolve().parents[1]
 old=json.loads((root/'pins_head/candidates-initial.json').read_text(encoding='utf-8'))
-current=json.loads((root/'pins_head/ta.json').read_text(encoding='utf-8'))
-keep={(p['bone'],p['code']) for p in current}
+baseline=json.loads((root/'pins_head/ta.json').read_text(encoding='utf-8'))
+keep={(p['bone'],p['code']) for p in baseline}
+current=positions()
 reasons={
  'A02.1.03.028':'Луч прошёл сквозь вырезку и попал на свод лобной кости.',
  'A02.1.04.003':'Положение точного краниометрического ориентира на краю не подтверждено.',
@@ -23,13 +26,17 @@ reasons={
 }
 removed=[{'bone':p['bone'],'code':p['code'],'reason':reasons.get(p['code'],'Мелкий ориентир или точная граница не подтверждены при осмотре; координаты исключены.')} for p in old if (p['bone'],p['code']) not in keep]
 record={'method':'Осмотр исходной сетки в шести ортографических ракурсах. Левые кости просмотрены отдельно. Попадание луча само по себе не считается анатомической проверкой.',
-        'retained':len(current),'removed_candidates':removed,
-        'corrections':['Сосцевидный отросток: маркер перенесён на задненижний выступ с обеих сторон.','Скат затылочной кости: маркер перенесён на внутричерепную поверхность базилярной части.'],
-        'limitations':'Отмечены участки поверхностей и края отверстий. Точное положение остальных терминов не заявлено. Не является независимым врачебным рецензированием.'}
+        'markers':len(current), 'localization_counts':dict(Counter(p['localization'] for p in current.values())),
+        'initial_review':{'retained':len(baseline),'removed_candidates':removed,
+                         'note':'История первоначального отбора. Эти термины теперь размечены заново в дополнительных файлах; прежние отклонённые координаты не восстановлены автоматически.'},
+        'inputs':['pins_head/ta.json','pins_head/face-extra.json','pins_head/cranial-extra.json','pins_head/temporal-extra.json'],
+        'corrections':['Сосцевидный отросток: маркер перенесён на задненижний выступ с обеих сторон.','Скат затылочной кости: маркер перенесён на внутричерепную поверхность базилярной части.','Проверены отдельно левая и правая стороны; исправлены зубные альвеолы верхних челюстей, клиновидные вырезки нёбных костей и задние слёзные гребни.','Нижнечелюстные ямки и суставные бугорки обеих височных костей дополнительно сопоставлены независимо с несколькими ракурсами.'],
+        'geometry_check':'verify/head-position-geometry.json',
+        'limitations':'Маркеры обозначают отдельный участок, край или явно подписанную проекцию. Проекции не доказывают наличие отверстия, канала, полости или варианта в сетке. Это проверка разметки по источникам и снимкам, а не независимое врачебное рецензирование.'}
 (root/'research/head-landmark-review.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-record={'suite':'tools/verify-atlas.mjs .pages index.html','browser':'Chromium headless shell 1228, Playwright 1.63.0',
+record={'suite':'tools/verify-atlas.mjs','browser':'Chromium headless shell 1228, Playwright 1.63.0',
         'checks':json.loads((root/'shots/head/report.json').read_text(encoding='utf-8')),
-        'coverage':['Вход в голову кнопкой главного экрана','Карточка кости и локализованная точка','Номенклатурная карточка без координат','Переключение частей мышцы','Карточка части без отдельной геометрии','Карточка мышцы без модели','Поиск на русском и латыни','Тест по жевательным мышцам','Отсутствие горизонтального переполнения','Отсутствие ошибок JavaScript','Загрузка руки и ноги','Резервный GLB при недоступности основного'],
+        'coverage':['Вход в голову кнопкой главного экрана','Карточка кости и локализованная точка','Явная подпись анатомической проекции и пунктирный маркер','Просвечивание выбранной кости и возврат непрозрачности','Отсутствие записей черепа без координат','Переключение частей мышцы','Карточка части без отдельной геометрии','Карточка мышцы без модели','Поиск на русском и латыни','Тест по жевательным мышцам','Отсутствие горизонтального переполнения','Отсутствие ошибок JavaScript','Загрузка руки и ноги','Резервный GLB при недоступности основного'],
         'visual_review':'Снимки головы, костей и карточек просмотрены на 390 и 1280 px в светлой и тёмной темах. Анатомическая полнота не является результатом UI-тестов.'}
 (root/'verify/ui-head-report.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Review reports exported')

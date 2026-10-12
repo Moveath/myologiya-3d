@@ -142,7 +142,7 @@ window.verts = (key) => {
   for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(m.matrixWorld); out.push([v.x, v.y, v.z]); }
   return out;
 };
-new GLTFLoader().load('head_hi.glb', g => {
+new GLTFLoader().load(new URLSearchParams(location.search).get('f') || 'head_hi.glb', g => {
   scene.add(g.scene);
   g.scene.traverse(o => {
     if (!o.isMesh) return;
@@ -150,6 +150,7 @@ new GLTFLoader().load('head_hi.glb', g => {
     if (!n) return;
     const [kind, key] = n.name.split('|');
     if (kind === 'b' || kind === 'o') {
+      if (!o.geometry.attributes.normal) o.geometry.computeVertexNormals();
       o.material = new THREE.MeshStandardMaterial({ color: 0xe8dcc0, roughness: 0.7 });
       meshes[key] = o;
     } else o.visible = false;
