@@ -39,6 +39,7 @@ try{
     const shot=async(name)=>{screenshots.push(name);await page.screenshot({path:path.join(output,name),timeout:120000});};
     const ready=()=>page.waitForFunction(()=>window.__detail?.state.ready||window.__detail?.state.error,{},{timeout:120000});
     await page.goto(`${base}/skull-detail.html?theme=${theme}`);
+    assert.equal(await page.locator('.back').getAttribute('href'),'./#head');
     await ready();
     assert.equal(await page.evaluate(()=>window.__detail.state.error),null);
     assert.deepEqual(await page.evaluate(()=>window.__detail.counts()),{parts:30,bones:22,cavities:8,visible:22});
@@ -100,6 +101,21 @@ try{
     console.log(`${width} ${theme}: passed; micro-CT load + screenshot ${microctLoadAndScreenshotMs} ms`);
     await context.close();
   }
+  // The local launcher's wrapper must survive the round trip through the detail page.
+  const navigationContext=await browser.newContext({viewport:{width:390,height:844}});
+  const navigationPage=await navigationContext.newPage();
+  await navigationPage.route('https://cdn.jsdelivr.net/npm/**',route=>route.fulfill({path:path.join(root,'tools/node_modules',route.request().url().split('/npm/')[1].replace('three@0.170.0/','three/')),contentType:'text/javascript'}));
+  await navigationPage.route('https://fonts.googleapis.com/**',route=>route.fulfill({body:'',contentType:'text/css'}));
+  await navigationPage.goto(`${base}/local.html#head`);
+  await navigationPage.waitForFunction(()=>window.__atlas?.state.sec==='head'&&document.querySelector('#veil').hidden);
+  await navigationPage.locator('#bHeadDetail').click();
+  await navigationPage.waitForFunction(()=>!!window.__detail);
+  assert.equal(await navigationPage.locator('.back').getAttribute('href'),'local.html#head');
+  await navigationPage.locator('.back').click();
+  await navigationPage.waitForURL(`${base}/local.html#head`);
+  await navigationPage.waitForFunction(()=>window.__atlas?.state.sec==='head'&&document.querySelector('#veil').hidden);
+  report.local_navigation_round_trip='passed';
+  await navigationContext.close();
   report.status='passed';
 }catch(error){report.status='failed';report.error=String(error?.stack||error);throw error;}
 finally{

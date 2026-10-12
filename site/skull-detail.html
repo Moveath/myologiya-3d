@@ -153,6 +153,11 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 const $ = s => document.querySelector(s);
+// The local launcher uses the full wrapper; hosted deployments use the directory index.
+try {
+  const referrer=new URL(document.referrer);
+  if(referrer.origin===location.origin&&referrer.pathname.endsWith('/local.html')) $('.back').href='local.html#head';
+} catch (_) {}
 const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const PALETTE = {frontal:'#e8c04c',parietal:'#b488c9',occipital:'#4fa7a1',temporal:'#689ddd',sphenoid:'#e88762',ethmoid:'#91b95b',nasal:'#86ced8',lacrimal:'#cfa847',zygomatic:'#e99c4a',maxilla:'#d988b0',palatine:'#8674ad',inferior_concha:'#959fe0',vomer:'#b98665',mandible:'#a4bf71'};
 const boneKey = id => id.replace(/_(?:right|left)$/,'');
