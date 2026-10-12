@@ -1,0 +1,1090 @@
+{
+  "date": "2026-10-13",
+  "source": "Z-Anatomy",
+  "registeredToBodyParts3D": false,
+  "completeGeometryClaim": false,
+  "markers": [
+    {
+      "id": "z_frontal_sinus",
+      "b": "frontal_sinus",
+      "c": "A02.1.03.029",
+      "ru": "Лобная пазуха",
+      "lat": "sinus frontalis",
+      "p": [
+        -0.00959,
+        1.62151,
+        0.08534
+      ],
+      "n": [
+        0.044,
+        -0.065,
+        0.997
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.16
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Orbital or Horizontal Part and structure; printed pp.136–137, PDF pp.87–89: frontal air sinuses within the frontal bone."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Bottom aspect, labelled apertura sinus frontalis; anterior view locates the surrounding frontal bone."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part: frontal sinuses within the squamous part, above the orbits on either side of the midline."
+        }
+      ],
+      "x": "Воздухоносная полость внутри лобной кости над глазницей.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|frontal_sinus",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.33,
+          0.42
+        ],
+        "zoomBox": null,
+        "faceIndex": 1000,
+        "rawTriangleNormal": [
+          -0.044,
+          0.065,
+          -0.997
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/frontal_sinus-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      }
+    },
+    {
+      "id": "z_sphenoidal_sinus",
+      "b": "sphenoidal_sinus",
+      "c": "A02.1.05.016",
+      "ru": "Клиновидная пазуха",
+      "lat": "sinus sphenoidalis",
+      "p": [
+        -0.00538,
+        1.59573,
+        0.03887
+      ],
+      "n": [
+        0.233,
+        -0.465,
+        0.854
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.075
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body, printed pp.147–149, PDF pp.103–105: sphenoidal air sinuses in the body."
+        },
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Oblique frontal view: labels sinus sphenoidalis and apertura sinus sphenoidalis."
+        }
+      ],
+      "x": "Воздухоносная полость внутри тела клиновидной кости.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|sphenoidal_sinus",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.33,
+          0.45
+        ],
+        "zoomBox": null,
+        "faceIndex": 99,
+        "rawTriangleNormal": [
+          -0.233,
+          0.465,
+          -0.854
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/sphenoidal_sinus-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      }
+    },
+    {
+      "id": "z_ethmoid_cells_anterior_left",
+      "b": "ethmoid_cells_anterior_left",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки · слева",
+      "lat": "cellulae ethmoidales anteriores",
+      "p": [
+        0.00881,
+        1.59166,
+        0.06208
+      ],
+      "n": [
+        0.218,
+        0.254,
+        0.942
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_anterior_left",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.49,
+          0.28
+        ],
+        "zoomBox": null,
+        "faceIndex": 189,
+        "rawTriangleNormal": [
+          0.218,
+          0.254,
+          0.942
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_anterior_left-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "left"
+    },
+    {
+      "id": "z_ethmoid_cells_anterior_right",
+      "b": "ethmoid_cells_anterior_right",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки · справа",
+      "lat": "cellulae ethmoidales anteriores",
+      "p": [
+        -0.00913,
+        1.59151,
+        0.06204
+      ],
+      "n": [
+        -0.257,
+        0.266,
+        0.929
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_anterior_right",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.49,
+          0.29
+        ],
+        "zoomBox": null,
+        "faceIndex": 188,
+        "rawTriangleNormal": [
+          -0.257,
+          0.266,
+          0.929
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_anterior_right-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "right"
+    },
+    {
+      "id": "z_ethmoid_cells_middle_left",
+      "b": "ethmoid_cells_middle_left",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки · слева",
+      "lat": "cellulae ethmoidales mediae",
+      "p": [
+        0.00724,
+        1.58849,
+        0.05491
+      ],
+      "n": [
+        -0.223,
+        -0.001,
+        0.975
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_middle_left",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.33,
+          0.45
+        ],
+        "zoomBox": null,
+        "faceIndex": 273,
+        "rawTriangleNormal": [
+          -0.223,
+          -0.001,
+          0.975
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_middle_left-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "left"
+    },
+    {
+      "id": "z_ethmoid_cells_middle_right",
+      "b": "ethmoid_cells_middle_right",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки · справа",
+      "lat": "cellulae ethmoidales mediae",
+      "p": [
+        -0.01218,
+        1.58804,
+        0.05513
+      ],
+      "n": [
+        -0.277,
+        -0.114,
+        0.954
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_middle_right",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.34,
+          0.48
+        ],
+        "zoomBox": null,
+        "faceIndex": 834,
+        "rawTriangleNormal": [
+          -0.277,
+          -0.114,
+          0.954
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_middle_right-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "right"
+    },
+    {
+      "id": "z_ethmoid_cells_posterior_left",
+      "b": "ethmoid_cells_posterior_left",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки · слева",
+      "lat": "cellulae ethmoidales posteriores",
+      "p": [
+        0.00641,
+        1.58936,
+        0.04749
+      ],
+      "n": [
+        -0.268,
+        0.038,
+        0.963
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_posterior_left",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.3,
+          0.4
+        ],
+        "zoomBox": null,
+        "faceIndex": 275,
+        "rawTriangleNormal": [
+          -0.268,
+          0.038,
+          0.963
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_posterior_left-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "left"
+    },
+    {
+      "id": "z_ethmoid_cells_posterior_right",
+      "b": "ethmoid_cells_posterior_right",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки · справа",
+      "lat": "cellulae ethmoidales posteriores",
+      "p": [
+        -0.00709,
+        1.58936,
+        0.04756
+      ],
+      "n": [
+        -0.109,
+        -0.071,
+        0.991
+      ],
+      "loc": "surface",
+      "scope": "airspace",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+        },
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+        }
+      ],
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "o|ethmoid_cells_posterior_right",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.65,
+          0.4
+        ],
+        "zoomBox": null,
+        "faceIndex": 276,
+        "rawTriangleNormal": [
+          -0.109,
+          -0.071,
+          0.991
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_posterior_right-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "right"
+    },
+    {
+      "id": "z_spinosum_right",
+      "b": "sphenoid",
+      "c": "A02.1.05.038",
+      "ru": "Остистое отверстие · справа",
+      "lat": "foramen spinosum",
+      "p": [
+        -0.02988,
+        1.5772,
+        0.00804
+      ],
+      "n": [
+        0.922,
+        0.336,
+        0.194
+      ],
+      "loc": "surface",
+      "scope": "aperture",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Greater Wings, printed pp.149–150; PDF p.106: foramen spinosum in the posterior angle, near the spine, and the infratemporal surface."
+        },
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Inferior aspect, labelled foramen spinosum; compare the position posterior-lateral to foramen ovale."
+        }
+      ],
+      "x": "Небольшое отверстие большого крыла позади и латеральнее овального.",
+      "modelNote": "Отмечен видимый край внутричерепной апертуры остистого отверстия на исходной сетке Z-Anatomy. Просмотр края не доказывает полную проходимость или точность всего хода через кость; весь ход отдельно не подтверждён. Основной череп BodyParts3D сохраняет статус проекции.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "b|sphenoid",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.55,
+          0.1
+        ],
+        "zoomBox": [
+          [
+            -0.04,
+            1.57,
+            0.007
+          ],
+          [
+            -0.022,
+            1.595,
+            0.027
+          ]
+        ],
+        "faceIndex": 6236,
+        "rawTriangleNormal": [
+          0.922,
+          0.336,
+          0.194
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/sphenoid-spinosum-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "right"
+    },
+    {
+      "id": "z_spinosum_left",
+      "b": "sphenoid",
+      "c": "A02.1.05.038",
+      "ru": "Остистое отверстие · слева",
+      "lat": "foramen spinosum",
+      "p": [
+        0.02988,
+        1.5772,
+        0.00804
+      ],
+      "n": [
+        -0.922,
+        0.336,
+        0.194
+      ],
+      "loc": "surface",
+      "scope": "aperture",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Greater Wings, printed pp.149–150; PDF p.106: foramen spinosum in the posterior angle, near the spine, and the infratemporal surface."
+        },
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Inferior aspect, labelled foramen spinosum; compare the position posterior-lateral to foramen ovale."
+        }
+      ],
+      "x": "Небольшое отверстие большого крыла позади и латеральнее овального.",
+      "modelNote": "Отмечен видимый край внутричерепной апертуры остистого отверстия на исходной сетке Z-Anatomy. Просмотр края не доказывает полную проходимость или точность всего хода через кость; весь ход отдельно не подтверждён. Основной череп BodyParts3D сохраняет статус проекции.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "b|sphenoid",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.45,
+          0.1
+        ],
+        "zoomBox": [
+          [
+            0.022,
+            1.57,
+            0.007
+          ],
+          [
+            0.04,
+            1.595,
+            0.027
+          ]
+        ],
+        "faceIndex": 1611,
+        "rawTriangleNormal": [
+          -0.922,
+          0.336,
+          0.194
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/spinosum-left-pick.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "left"
+    },
+    {
+      "id": "z_pterygoid_right",
+      "b": "sphenoid",
+      "c": "A02.1.05.053",
+      "ru": "Крыловидный канал · справа",
+      "lat": "canalis pterygoideus",
+      "p": [
+        -0.01426,
+        1.58613,
+        0.02994
+      ],
+      "n": [
+        -0.098,
+        -0.952,
+        0.289
+      ],
+      "loc": "surface",
+      "scope": "aperture",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Pterygoid Processes, printed pp.150–151; PDF p.107: anterior surface of the process near its root presents the anterior orifice of the pterygoid canal."
+        },
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Dorsal aspect: labelled canalis pterygoideus; the accompanying text identifies its pathway to the pterygopalatine fossa. This labelled figure is a posterior view, not an anterior-opening diagram."
+        }
+      ],
+      "x": "Канал у основания крыловидного отростка, открывающийся впереди в крылонёбную ямку.",
+      "modelNote": "Отмечен край переднего отверстия крыловидного канала у основания крыловидного отростка на исходной сетке Z-Anatomy. Полная внутренняя стенка, задний выход и непрерывность всего канала здесь не подтверждены. Это самостоятельный ориентир апертуры, не полная реконструкция канала.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "b|sphenoid",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.383,
+          0.493
+        ],
+        "zoomBox": null,
+        "faceIndex": 4564,
+        "rawTriangleNormal": [
+          -0.098,
+          -0.952,
+          0.289
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/sphenoid-anterior-openings.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "right"
+    },
+    {
+      "id": "z_pterygoid_left",
+      "b": "sphenoid",
+      "c": "A02.1.05.053",
+      "ru": "Крыловидный канал · слева",
+      "lat": "canalis pterygoideus",
+      "p": [
+        0.01414,
+        1.58613,
+        0.02998
+      ],
+      "n": [
+        0.098,
+        -0.952,
+        0.289
+      ],
+      "loc": "surface",
+      "scope": "aperture",
+      "mode": "z",
+      "source": "Z-Anatomy",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.04
+      },
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Pterygoid Processes, printed pp.150–151; PDF p.107: anterior surface of the process near its root presents the anterior orifice of the pterygoid canal."
+        },
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Dorsal aspect: labelled canalis pterygoideus; the accompanying text identifies its pathway to the pterygopalatine fossa. This labelled figure is a posterior view, not an anterior-opening diagram."
+        }
+      ],
+      "x": "Канал у основания крыловидного отростка, открывающийся впереди в крылонёбную ямку.",
+      "modelNote": "Отмечен край переднего отверстия крыловидного канала у основания крыловидного отростка на исходной сетке Z-Anatomy. Полная внутренняя стенка, задний выход и непрерывность всего канала здесь не подтверждены. Это самостоятельный ориентир апертуры, не полная реконструкция канала.",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — Models of human anatomy",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "b|sphenoid",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-structure-review-and-surface-raycast",
+        "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.616,
+          0.493
+        ],
+        "zoomBox": null,
+        "faceIndex": 6141,
+        "rawTriangleNormal": [
+          0.098,
+          -0.952,
+          0.289
+        ],
+        "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+        "screenshot": "build_head/cranial_features/jobs/sphenoid-anterior-openings.png",
+        "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+        "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+      },
+      "side": "left"
+    }
+  ],
+  "scope": "8 independently marked source airspace objects (5 TA98 terms), plus 4 aperture-rim landmarks (2 TA98 terms). Airspaces and aperture rims are not treated as full bony channel geometry."
+}

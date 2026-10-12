@@ -1,0 +1,621 @@
+{
+  "source": "OpenEar",
+  "specimen": "ZETA",
+  "mode": "openear",
+  "side": "right",
+  "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+  "complete": false,
+  "scope": "Подтверждённые локальные участки геометрии; полнота каналов и всей височной кости не заявляется.",
+  "markers": [
+    {
+      "id": "openear_temporal_internal_acoustic_meatus",
+      "b": "temporal_bone",
+      "mode": "openear",
+      "c": "A02.1.06.033",
+      "ru": "Внутренний слуховой проход",
+      "lat": "meatus acusticus internus",
+      "p": [
+        -0.01738016284266001,
+        0.04628292859556755,
+        0.020414756953218198
+      ],
+      "n": [
+        1,
+        0,
+        0
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          0.6,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.045
+      },
+      "x": "Внутренний слуховой проход направляется от внутреннего слухового отверстия в толщу каменистой части. Здесь отмечен видимый участок его костной стенки.",
+      "modelNote": "Подтверждён отдельный участок стенки прохода на исходной маске и зарегистрированной КТ OpenEar ZETA. Разметка не утверждает, что отдельно проверены все поля дна, отверстия и мелкие ответвления. Сегмент нерва VIII использован только для топографического сопоставления; он не заменяет костную стенку.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray140.png",
+          "locator": "Рис. 140: внутренний слуховой проход в рассечённой пирамиде",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_781.png",
+          "locator": "Рис. 781: внутренний слуховой проход рядом с лабиринтом",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryScope": "channel_wall_segment",
+      "scope": "channel_wall_segment",
+      "completeFeatureGeometry": false,
+      "geometryRefs": [
+        {
+          "title": "Sieber et al., OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+          "scope": "geometry"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "A02.1.06.033",
+          "scope": "nomenclature"
+        }
+      ],
+      "evidence": {
+        "method": "native-multiview-surface-inspection-plus-source-cbct",
+        "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+        "faceIndex": 6851074,
+        "view": {
+          "d": [
+            0.6,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.34,
+          0.45
+        ],
+        "zoomBox": [
+          [
+            -0.02,
+            0.038,
+            0.015
+          ],
+          [
+            -0.007,
+            0.054,
+            0.028
+          ]
+        ],
+        "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+        "screenshot": "build_head/temporal_features/internal_acoustic_meatus-review.png",
+        "crossView": {
+          "d": [
+            1,
+            1,
+            0.25
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "crossScreenshot": "build_head/temporal_features/internal_acoustic_meatus-cross-review.png",
+        "scanScreenshot": "build_head/temporal_features/internal_acoustic_meatus-cbct.png",
+        "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+        "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+      }
+    },
+    {
+      "id": "openear_temporal_external_acoustic_meatus",
+      "b": "temporal_bone",
+      "mode": "openear",
+      "c": "A02.1.06.055",
+      "ru": "Наружный слуховой проход",
+      "lat": "meatus acusticus externus",
+      "p": [
+        -0.031489448008787224,
+        0.02293517330404482,
+        0.025724116671627193
+      ],
+      "n": [
+        0.5773502691896257,
+        -0.5773502691896257,
+        -0.5773502691896257
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          -0.3,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.045
+      },
+      "x": "Наружный слуховой проход ведёт от наружного слухового отверстия к барабанной перепонке. Маркер расположен на видимом участке его костной стенки.",
+      "modelNote": "Выбран участок костной стенки, совпадающий с границей кости на зарегистрированной КТ ZETA. Это не маркер барабанной перепонки и не маркер полного кожного канала. Полная протяжённость прохода и все детали барабанного кольца отдельно не заявлены.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+          "locator": "Рис. 137: наружное слуховое отверстие и костная часть прохода",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_55.png",
+          "locator": "Рис. 55: наружный слуховой проход и барабанная часть",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryScope": "channel_wall_segment",
+      "scope": "channel_wall_segment",
+      "completeFeatureGeometry": false,
+      "geometryRefs": [
+        {
+          "title": "Sieber et al., OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+          "scope": "geometry"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "A02.1.06.055",
+          "scope": "nomenclature"
+        }
+      ],
+      "evidence": {
+        "method": "native-multiview-surface-inspection-plus-source-cbct",
+        "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+        "faceIndex": 4221789,
+        "view": {
+          "d": [
+            -0.3,
+            -1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.6,
+          0.53
+        ],
+        "zoomBox": [
+          [
+            -0.036,
+            0.012,
+            0.016
+          ],
+          [
+            -0.021,
+            0.037,
+            0.034
+          ]
+        ],
+        "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+        "screenshot": "build_head/temporal_features/external_acoustic_meatus-review.png",
+        "crossView": {
+          "d": [
+            -0.8,
+            -1,
+            0.3
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "crossScreenshot": "build_head/temporal_features/external_acoustic_meatus-cross-review.png",
+        "scanScreenshot": "build_head/temporal_features/external_acoustic_meatus-cbct.png",
+        "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+        "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+      }
+    },
+    {
+      "id": "openear_temporal_carotid_external_aperture",
+      "b": "temporal_bone",
+      "mode": "openear",
+      "c": "A02.1.06.014",
+      "ru": "Наружная апертура сонного канала",
+      "lat": "apertura externa canalis carotici",
+      "p": [
+        -0.027469599999999997,
+        0.04947759999999999,
+        0.03531772150788
+      ],
+      "n": [
+        0,
+        0,
+        1
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.045
+      },
+      "x": "Наружная апертура сонного канала находится на нижней поверхности каменистой части, впереди яремной ямки. Отмечен участок её костного края.",
+      "modelNote": "Костный край проверен на исходной маске и зарегистрированной КТ полного препарата ZETA. В подготовленном embedded-скане часть этой области уже обрезана, поэтому для подтверждения использован full-specimen CBCT. Маркер края не подтверждает весь внутрикостный ход сонного канала; модель артерии не заменяет его стенки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Рис. 141: наружный вход сонного канала перед яремной ямкой",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис. 58: наружная апертура сонного канала на нижней поверхности",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryScope": "aperture_rim",
+      "scope": "aperture_rim",
+      "completeFeatureGeometry": false,
+      "geometryRefs": [
+        {
+          "title": "Sieber et al., OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd",
+          "scope": "geometry"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "A02.1.06.014",
+          "scope": "nomenclature"
+        }
+      ],
+      "evidence": {
+        "method": "native-multiview-surface-inspection-plus-source-cbct",
+        "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+        "faceIndex": 6966141,
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.54,
+          0.365
+        ],
+        "zoomBox": [
+          [
+            -0.04,
+            0.037,
+            0.022
+          ],
+          [
+            -0.017,
+            0.055,
+            0.045
+          ]
+        ],
+        "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+        "screenshot": "build_head/temporal_features/carotid_external_aperture-review.png",
+        "crossView": {
+          "d": [
+            0.3,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "crossScreenshot": "build_head/temporal_features/carotid_external_aperture-cross-review.png",
+        "scanScreenshot": "build_head/temporal_features/carotid_external_aperture-cbct-full.png",
+        "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+        "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+      }
+    },
+    {
+      "id": "openear_temporal_stylomastoid_foramen",
+      "b": "temporal_bone",
+      "mode": "openear",
+      "c": "A02.1.06.048",
+      "ru": "Шилососцевидное отверстие",
+      "lat": "foramen stylomastoideum",
+      "p": [
+        -0.018841919999999998,
+        0.02724032,
+        0.03521620545854244
+      ],
+      "n": [
+        0.7139382485962431,
+        0,
+        0.7002086668924692
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.045
+      },
+      "x": "Шилососцевидное отверстие расположено между шиловидным и сосцевидным отростками. Здесь отмечен видимый костный край наружного окончания лицевого канала.",
+      "modelNote": "Край отверстия сопоставлен с костной маской и исходной КТ полного препарата ZETA. Для этой области подготовленный embedded-скан обрезан и не использовался как подтверждение сохранности края. Выход авторского сегмента лицевого нерва служит топографическим контекстом, а подтверждение кости получено отдельно. Полный лицевой канал этим маркером не объявляется проверенным.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Рис. 141: шилососцевидное отверстие между двумя отростками",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис. 58: шилососцевидное отверстие возле основания шиловидного отростка",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryScope": "aperture_rim",
+      "scope": "aperture_rim",
+      "completeFeatureGeometry": false,
+      "geometryRefs": [
+        {
+          "title": "Sieber et al., OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd",
+          "scope": "geometry"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "A02.1.06.048",
+          "scope": "nomenclature"
+        }
+      ],
+      "evidence": {
+        "method": "native-multiview-surface-inspection-plus-source-cbct",
+        "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+        "faceIndex": 4782828,
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.547,
+          0.612
+        ],
+        "zoomBox": [
+          [
+            -0.03,
+            0.019,
+            0.025
+          ],
+          [
+            -0.01,
+            0.041,
+            0.043
+          ]
+        ],
+        "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+        "screenshot": "build_head/temporal_features/stylomastoid_foramen-review.png",
+        "crossView": {
+          "d": [
+            0.3,
+            0.15,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "crossScreenshot": "build_head/temporal_features/stylomastoid_foramen-cross-review.png",
+        "scanScreenshot": "build_head/temporal_features/stylomastoid_foramen-cbct-full.png",
+        "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+        "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+      }
+    },
+    {
+      "id": "openear_temporal_tympanic_cavity",
+      "b": "temporal_bone",
+      "mode": "openear",
+      "c": "A02.1.06.051",
+      "ru": "Барабанная полость",
+      "lat": "cavitas tympani",
+      "p": [
+        -0.02238429729306056,
+        0.033892799999999994,
+        0.024456000000000002
+      ],
+      "n": [
+        -0.7071067811865476,
+        -0.7071067811865476,
+        0
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.045
+      },
+      "x": "Барабанная полость находится в височной кости медиальнее барабанной перепонки. Здесь показан участок её костной стенки в области, доступной после экранного среза.",
+      "modelNote": "Участок стенки подтверждён на костной маске и исходной КТ OpenEar ZETA. Срез только убирает закрывающую его часть существующей сетки; новых стенок не создаёт. Одна точка не означает отдельную сегментацию всей полости и не завершает список всех её образований.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Рис. 913: вскрытая барабанная полость и её медиальная костная стенка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_59.png",
+          "locator": "Рис. 59: вскрытая височная кость: полость и окно преддверия",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryScope": "cavity_wall_segment",
+      "scope": "cavity_wall_segment",
+      "completeFeatureGeometry": false,
+      "geometryRefs": [
+        {
+          "title": "Sieber et al., OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+          "scope": "geometry"
+        }
+      ],
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+          "locator": "A02.1.06.051",
+          "scope": "nomenclature"
+        }
+      ],
+      "evidence": {
+        "method": "native-multiview-surface-inspection-plus-source-cbct",
+        "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+        "faceIndex": 5829683,
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.565,
+          0.55
+        ],
+        "zoomBox": [
+          [
+            -0.031,
+            0.022,
+            0.01
+          ],
+          [
+            -0.014,
+            0.042,
+            0.036
+          ]
+        ],
+        "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+        "screenshot": "build_head/temporal_features/tympanic_cavity-review.png",
+        "crossView": {
+          "d": [
+            -1,
+            0.2,
+            0.1
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "crossScreenshot": "build_head/temporal_features/tympanic_cavity-cross-review.png",
+        "scanScreenshot": "build_head/temporal_features/tympanic_cavity-cbct.png",
+        "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+        "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+      },
+      "cut": {
+        "plane": "sagittal",
+        "value": 0.45872821317957285,
+        "reverse": false
+      }
+    }
+  ]
+}

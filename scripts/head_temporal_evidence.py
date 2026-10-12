@@ -118,11 +118,15 @@ DESCRIPTIONS = {
 }
 assert set(_ROWS)==set(range(2,79)), 'Temporal evidence must cover the complete TA98 list'
 
+DESCRIPTIONS['A02.1.06.008']['refs'][0]['locator'] = 'Рис.138: внутренняя поверхность левой височной кости; подпись Mastoid foramen у заднего края сосцевидной области.'
+DESCRIPTIONS['A02.1.06.008']['refs'][1]['locator'] = 'Рис.58 атласа: образование Foramen mastoideum.'
 DESCRIPTIONS['A02.1.06.008']['refs'] += [
     {'title':'Mastoid emissary foramina: an anatomical morphological study (2014)',
-     'url':'https://pmc.ncbi.nlm.nih.gov/articles/PMC4178196/'},
+     'url':'https://pmc.ncbi.nlm.nih.gov/articles/PMC4178196/',
+     'locator':'Introduction; Materials and Methods; Results: положение относительно затылочно-сосцевидного шва и изменчивость числа отверстий.'},
     {'title':'Variations of Mastoid Foramen in North Indian Population — исследование 71 черепа',
-     'url':'https://nicpd.ac.in/ojs-/index.php/njirm/article/view/828'},
+     'url':'https://nicpd.ac.in/ojs-/index.php/njirm/article/view/828',
+     'locator':'Abstract — Materials and Methods, Results; печатные с.49–52: шовное и вне шва расположение, варианты числа и отсутствие отверстия.'},
 ]
 
 # Do not silently treat web-teaching slips as facts.

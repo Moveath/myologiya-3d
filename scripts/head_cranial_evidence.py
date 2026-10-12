@@ -46,9 +46,14 @@ MCP=ref('The Prevalence of the Middle Clinoid Process (2024)','https://pmc.ncbi.
 LIMBUS=ref('IMAIOS — Limbus of sphenoid (открытое определение)','https://www.imaios.cn/en/e-anatomy/anatomical-structures/limbus-of-sphenoid-129992','Definition: задняя граница jugum, передняя граница sulcus prechiasmaticus.')
 CANALS=ref('Visualisation of the vomerovaginal canal (2019)','https://pmc.ncbi.nlm.nih.gov/articles/PMC6637440/','Osteological study and endoscopic dissection: vomer, vaginal process, palatine; differences between VVC and PVC.')
 CANALS2=ref('Simultaneous observation of palatovaginal and vomerovaginal canals (2015)','https://pmc.ncbi.nlm.nih.gov/articles/PMC4658943/','Discussion and Fig.2–3: различение нёбно-влагалищного и сошниково-влагалищного каналов.')
-PETROSUM=ref('Correlation Analysis on Accessory Foramina in the Sphenoid Bone (2023)','https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/','Canaliculus innominatus, Fig.3: между foramen spinosum и foramen ovale.')
+VENOSUM=ref('Palamenghi et al. (2023) — Correlation Analysis on Accessory Foramina in the Sphenoid Bone','https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/','Introduction, абзац о foramen of Vesalius; Fig.2: отверстие в большом крыле медиальнее foramen ovale.')
+PETROSUM=ref('Palamenghi et al. (2023) — Correlation Analysis on Accessory Foramina in the Sphenoid Bone','https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/','Introduction, абзац о canaliculus innominatus (синоним foramen petrosum); Fig.3: между foramen spinosum и foramen ovale.')
+MCF_VENOSUM={**MCF,'locator':'Middle fossa foramina — Foramen Vesalius; Fig.4B,E: непостоянное отверстие кпереди и медиальнее foramen ovale.'}
+MCF_PETROSUM={**MCF,'locator':'Middle fossa foramina — Canaliculus innominatus; Fig.4C: foramen petrosum между foramen spinosum и foramen ovale.'}
 PTERYGO=ref('Morphological study of sphenoid ligaments ossification (2023)','https://pmc.ncbi.nlm.nih.gov/articles/PMC10587028/','Introduction and anatomy of pterygospinous ligament: posterior margin of lateral plate, sphenoid spine.')
 VAR_OCC=ref('Bergman et al. — Variations of the Occipital Bone','https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml','Interparietal/Inca bone; paramastoid process; variations around foramen magnum.')
+PACE=ref('J. L. Pace — The Paramastoid Process: A survey of 890 Maltese skulls','https://www.um.edu.mt/library/oar/bitstream/123456789/13690/1/Paramastoid%20Process.pdf','Печатная с.34 (PDF с.1), Summary и первые абзацы: нижняя сторона яремного отростка; paracondylar как синоним paramastoid. С.35 (PDF с.2): варианты сочленения с поперечным отростком атланта.')
+PARAMASTOID_SYNONYMS=ref('Schumacher et al. (2018) — Paramastoid Process: Literature Review of Its Anatomy and Clinical Implications','https://pubmed.ncbi.nlm.nih.gov/29929028/','Открытый Abstract: paramastoid, paraoccipital, paracondylar, parajugular как названия варианта нижней стороны яремного отростка; возможное сочленение с атлантом.')
 CRANIO=ref('Gray (1918) — Exterior of the Skull',GRAY_PDF+'#page=153','Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173.')
 SINUS_GROOVES=ref('Píšová et al. (2017) — Craniovascular traits','https://www.isita-org.com/Jass/Contents/2017vol95/Pisova/28190005.pdf','Fig.6 and text: внутренний затылочный гребень, затылочный и краевой синусы вокруг большого отверстия.')
 GALLI=ref('Académie nationale de médecine — Aile de la crista galli','https://academie-medecine.fr/le-dictionnaire/index.php?q=aile+de+la+crista+galli','Две боковые пластинки у переднего края crista galli, соединение с лобной костью.')
@@ -110,7 +115,7 @@ add('04',[
  (32,'Венозная борозда верхней стороны яремного отростка, продолжающаяся к яремной вырезке.'),
  (33,'Борозда в области внутреннего затылочного гребня.',[SINUS_GROOVES,KEN['occipital']]),
  (34,'Борозда вдоль внутричерепного края большого отверстия.',[SINUS_GROOVES,KEN['occipital']]),
- (35,'Вариабельный выступ нижней стороны яремного отростка.',[GRAY['occipital'],VAR_OCC]),
+ (35,'Вариабельный выступ нижней стороны яремного отростка.',[GRAY['occipital'],VAR_OCC,PACE,PARAMASTOID_SYNONYMS]),
 ], [AS['occipital'],GRAY['occipital']])
 
 add('05',[
@@ -130,9 +135,9 @@ add('05',[
  (28,'Гребень на границе височной и подвисочной поверхностей большого крыла.'),
  (33,'Верхний край большого крыла, соединяющийся с теменной костью.'),
  (35,'Отверстие у основания большого крыла, ведущее в крылонёбную ямку.',[AS['sphenoid'],MCF]),
- (37,'Вариабельное отверстие большого крыла, расположенное медиальнее овального.',[MCF,PETROSUM]),
+ (37,'Вариабельное отверстие большого крыла, расположенное медиальнее овального.',[MCF_VENOSUM,VENOSUM]),
  (38,'Небольшое отверстие большого крыла позади и латеральнее овального.',[AS['sphenoid'],MCF]),
- (39,'Вариабельное небольшое отверстие между овальным и остистым отверстиями.',[MCF,PETROSUM]),
+ (39,'Вариабельное небольшое отверстие между овальным и остистым отверстиями.',[MCF_PETROSUM,PETROSUM]),
  (40,'Костный выступ заднелатерального участка большого крыла.'),
  (41,'Борозда между областью ости клиновидной кости и корнем медиальной крыловидной пластинки.'),
  (45,'Нижняя вырезка между латеральной и медиальной крыловидными пластинками.'),

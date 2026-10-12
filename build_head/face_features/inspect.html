@@ -1,0 +1,163 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#1d2524}#wrap{position:relative;width:800px;height:800px}canvas{position:absolute;left:0;top:0}</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body><div id="wrap"><canvas id="gl" width="800" height="800"></canvas><canvas id="ov" width="800" height="800"></canvas></div>
+<script type="module">
+import * as THREE from 'three';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+window.THREE = THREE;
+// Landmark picking tool: orthographic views of one bone with a u/v grid; pick() raycasts onto the bone.
+const W = 800;
+const r = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true });
+r.setSize(W, W, false);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x1d2524);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x445555, 1.3));
+const cam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.001, 50);
+scene.add(cam);
+const dl = new THREE.DirectionalLight(0xffffff, 2.2); dl.position.set(-0.4, 0.8, 1); cam.add(dl); dl.target.position.set(0, 0, -1); cam.add(dl.target);
+const ov = document.getElementById('ov').getContext('2d');
+const meshes = {};
+const VIEWS = {
+  ant: { d: [0, 0, 1], up: [0, 1, 0], hint: 'СПЕРЕДИ · вправо=медиально' },
+  post: { d: [0, 0, -1], up: [0, 1, 0], hint: 'СЗАДИ · вправо=латерально' },
+  lat: { d: [-1, 0, 0], up: [0, 1, 0], hint: 'СНАРУЖИ · вправо=вперёд' },
+  med: { d: [1, 0, 0], up: [0, 1, 0], hint: 'ИЗНУТРИ · вправо=назад' },
+  sup: { d: [0, 1, 0], up: [0, 0, -1], hint: 'СВЕРХУ · вверх=назад, вправо=медиально' },
+  inf: { d: [0, -1, 0], up: [0, 0, 1], hint: 'СНИЗУ · вверх=вперёд, вправо=медиально' }
+};
+let cur = null;
+function basis(view) {
+  const v = typeof view === 'string' ? VIEWS[view] : view;
+  const d = new THREE.Vector3(...v.d).normalize(), up0 = new THREE.Vector3(...v.up);
+  const right = new THREE.Vector3().crossVectors(up0, d).normalize();
+  const up = new THREE.Vector3().crossVectors(d, right).normalize();
+  return { d, right, up };
+}
+function setup(keys, view, zoomBox) {
+  for (const [k, m] of Object.entries(meshes)) m.visible = keys.includes(k);
+  const box = new THREE.Box3();
+  if (zoomBox) box.set(new THREE.Vector3(...zoomBox[0]), new THREE.Vector3(...zoomBox[1]));
+  else keys.forEach(k => box.expandByObject(meshes[k]));
+  const c = box.getCenter(new THREE.Vector3());
+  const { d, right, up } = basis(view);
+  let ext = 0;
+  for (let i = 0; i < 8; i++) {
+    const p = new THREE.Vector3(i & 1 ? box.max.x : box.min.x, i & 2 ? box.max.y : box.min.y, i & 4 ? box.max.z : box.min.z).sub(c);
+    ext = Math.max(ext, Math.abs(p.dot(right)), Math.abs(p.dot(up)));
+  }
+  ext *= 1.12;
+  cam.left = -ext; cam.right = ext; cam.top = ext; cam.bottom = -ext;
+  cam.position.copy(c).addScaledVector(d, 5); cam.up.copy(up); cam.lookAt(c);
+  cam.updateProjectionMatrix(); cam.updateMatrixWorld();
+  cur = { keys, view, c, ext, d, right, up };
+}
+function grid(label) {
+  ov.clearRect(0, 0, W, W);
+  ov.lineWidth = 1;
+  for (let i = 0; i <= 20; i++) {
+    const t = i / 20 * W;
+    ov.strokeStyle = i % 2 === 0 ? 'rgba(120,220,255,0.45)' : 'rgba(120,220,255,0.15)';
+    ov.beginPath(); ov.moveTo(t, 0); ov.lineTo(t, W); ov.stroke();
+    ov.beginPath(); ov.moveTo(0, t); ov.lineTo(W, t); ov.stroke();
+    if (i % 2 === 0) {
+      ov.fillStyle = '#7fe0ff'; ov.font = '13px monospace';
+      ov.fillText((i / 20).toFixed(1), t + 2, 12); ov.fillText((i / 20).toFixed(1), 2, t - 2);
+    }
+  }
+  ov.fillStyle = '#ffd34d'; ov.font = 'bold 16px sans-serif'; ov.fillText(label || '', 60, W - 14);
+}
+function toScreen(p) {
+  const v = new THREE.Vector3(...p).project(cam);
+  return [(v.x + 1) / 2 * W, (1 - v.y) / 2 * W];
+}
+window.show = (keys, view, label, zoomBox) => {
+  keys = [].concat(keys); setup(keys, view, zoomBox); r.render(scene, cam);
+  grid((label || keys.join(',')) + ' · ' + (typeof view === 'string' ? VIEWS[view].hint : (view.hint || ''))); return true;
+};
+window.pick = (key, view, u, v, zoomBox) => {
+  setup([key], view, zoomBox);
+  const o = cur.c.clone().addScaledVector(cur.right, (u * 2 - 1) * cur.ext).addScaledVector(cur.up, (1 - v * 2) * cur.ext).addScaledVector(cur.d, 5);
+  const ray = new THREE.Raycaster(o, cur.d.clone().negate());
+  const hit = ray.intersectObject(meshes[key], true)[0];
+  if (!hit) return null;
+  const n = hit.face.normal.clone().transformDirection(hit.object.matrixWorld);
+  const f = (x) => Math.round(x * 100000) / 100000;
+  return { p: hit.point.toArray().map(f), n: n.toArray().map(x => Math.round(x * 1000) / 1000) };
+};
+// draw numbered pins (world points) over the current view; hollow if hidden behind the bone
+window.pins = (list) => {
+  const ray = new THREE.Raycaster();
+  list.forEach((it, i) => {
+    const [x, y] = toScreen(it.p);
+    const p = new THREE.Vector3(...it.p);
+    const o = p.clone().addScaledVector(cur.d, 5);
+    ray.set(o, cur.d.clone().negate());
+    const hits = ray.intersectObjects(cur.keys.map(k => meshes[k]), true);
+    const front = !hits.length || hits[0].distance > 5 - 0.002;
+    ov.beginPath(); ov.arc(x, y, 7, 0, Math.PI * 2);
+    ov.fillStyle = front ? '#ffcc00' : 'rgba(0,0,0,0)'; ov.fill();
+    ov.lineWidth = 2; ov.strokeStyle = front ? '#000' : '#ffcc00'; ov.stroke();
+    ov.font = 'bold 14px sans-serif'; ov.fillStyle = front ? '#fff' : '#ffcc00';
+    ov.strokeStyle = '#000'; ov.lineWidth = 3; ov.strokeText(it.t || String(i + 1), x + 9, y - 6); ov.fillText(it.t || String(i + 1), x + 9, y - 6);
+  });
+  return list.length;
+};
+window.runLM = async () => {
+  await import('./landmarks.js?v=' + Date.now());
+  const miss = window.__pins.filter(p => p.missing).map(p => p.id);
+  return JSON.stringify({ n: window.__pins.length, miss });
+};
+window.runTA = async () => {
+  await import('./landmarks_ta.js?v=' + Date.now());
+  const miss = window.__ta.filter(p => p.missing).map(p => p.id);
+  return JSON.stringify({ n: window.__ta.length, miss });
+};
+// draw TA pins (and optionally old ones by id) over a view
+window.showTA = (keys, view, zoomBox, only, extra) => {
+  keys = [].concat(keys);
+  window.show(keys, view, keys.join(','), zoomBox);
+  const list = window.__ta.filter(p => keys.includes(p.bone) && !p.missing && (!only || only.includes(p.id)))
+    .concat((extra || []).map(id => window.__pins.find(p => p.id === id)).filter(Boolean));
+  window.pins(list.map(p => ({ p: p.p, t: p.id })));
+  return list.length;
+};
+window.showPins = (keys, view, zoomBox, only) => {
+  keys = [].concat(keys);
+  window.show(keys, view, keys.join(','), zoomBox);
+  const list = window.__pins.filter(p => keys.includes(p.bone) && !p.missing && (!only || only.includes(p.id)));
+  window.pins(list.map(p => ({ p: p.p, t: p.id })));
+  return list.length;
+};
+window.rayAt = (keys, view, u, v, zb) => {
+  setup([].concat(keys), view, zb);
+  const o = cur.c.clone().addScaledVector(cur.right, (u * 2 - 1) * cur.ext).addScaledVector(cur.up, (1 - v * 2) * cur.ext).addScaledVector(cur.d, 5);
+  return { o: o.toArray(), dir: cur.d.clone().negate().toArray() };
+};
+window.uv = (keys, view, pts, zb) => { setup([].concat(keys), view, zb); return pts.map(p => toScreen(p).map(x => +(x / W).toFixed(3))); };
+window.bbox = (key) => { const b = new THREE.Box3().setFromObject(meshes[key]); return [b.min.toArray(), b.max.toArray()]; };
+window.verts = (key) => {
+  const m = meshes[key]; const pos = m.geometry.attributes.position; const out = [];
+  const v = new THREE.Vector3();
+  for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(m.matrixWorld); out.push([v.x, v.y, v.z]); }
+  return out;
+};
+new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).load(new URLSearchParams(location.search).get('f') || 'head_hi.glb', g => {
+  scene.add(g.scene);
+  g.scene.traverse(o => {
+    if (!o.isMesh) return;
+    let n = o; while (n && !/^(?:[mboc]|specimen)\|/.test(n.name)) n = n.parent;
+    if (!n) return;
+    const [kind, key] = n.name.split('|');
+    if (kind === 'b' || kind === 'o' || kind === 'specimen') {
+      if (!o.geometry.attributes.normal) o.geometry.computeVertexNormals();
+      o.material = new THREE.MeshStandardMaterial({ color: 0xe8dcc0, roughness: 0.7, side:THREE.DoubleSide });
+      meshes[key] = o;
+    } else o.visible = false;
+  });
+  g.scene.updateMatrixWorld(true);
+  const h=new THREE.Group(); for(const [key,o] of Object.entries(meshes))if(key.startsWith('halle_')){h.attach(o);delete meshes[key];} if(h.children.length){scene.add(h);meshes.skull=h;} window.__meshes = meshes; window._scene=scene;window._renderer=r;window._cam=cam;
+  window.__ready = true;
+});
+</script></body></html>

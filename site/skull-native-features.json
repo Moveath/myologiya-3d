@@ -1,0 +1,2902 @@
+{
+  "complete_geometry_claim": false,
+  "markers": {
+    "z": [
+      {
+        "id": "mandible_mylohyoid_groove_right",
+        "b": "mandible",
+        "c": "A02.1.15.031",
+        "ru": "Челюстно-подъязычная борозда · справа",
+        "lat": "sulcus mylohyoideus",
+        "p": [
+          -0.03174,
+          1.53194,
+          0.0291
+        ],
+        "n": [
+          0.705,
+          -0.045,
+          -0.708
+        ],
+        "x": "Борозда, идущая от области отверстия вперёд и вниз.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body, 1918",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=142",
+            "locator": "PDF p.142, ramus: mylohyoid groove from lower back margin of mandibular foramen, downward and forward."
+          },
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Mandible: mylo-hyoid groove"
+          }
+        ],
+        "modelNote": "Отмечен видимый участок линии борозды на авторской сетке Z-Anatomy. Это отдельная учебная модель; координаты и подтверждение рельефа не перенесены на BodyParts3D. Полный внутрикостный нижнечелюстной канал этим маркером не подтверждается.",
+        "loc": "surface",
+        "source": "Z-Anatomy",
+        "side": "right",
+        "view": "left",
+        "cut": {
+          "plane": "sagittal",
+          "value": 0.5,
+          "reverse": true
+        },
+        "evidence": {
+          "method": "manual-medial-surface-review-and-raycast",
+          "view": "med",
+          "uv": [
+            0.648,
+            0.56
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "opposite_half_hidden": true,
+          "source": "build_head/complete_face/review-picks.js",
+          "screenshot": "build_head/complete_face/z_groove_right.png",
+          "review": "Обе половины исходной нижней челюсти осмотрены отдельно, без противоположной ветви в луче. Видимая линия прослежена от области нижнечелюстного отверстия вниз и вперёд. Мелкие изолированные артефакты исходной сетки не использованы как ориентиры."
+        },
+        "mode": "z",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "mandible_mylohyoid_groove_left",
+        "b": "mandible",
+        "c": "A02.1.15.031",
+        "ru": "Челюстно-подъязычная борозда · слева",
+        "lat": "sulcus mylohyoideus",
+        "p": [
+          0.03174,
+          1.53194,
+          0.0291
+        ],
+        "n": [
+          -0.705,
+          -0.045,
+          -0.708
+        ],
+        "x": "Борозда, идущая от области отверстия вперёд и вниз.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body, 1918",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=142",
+            "locator": "PDF p.142, ramus: mylohyoid groove from lower back margin of mandibular foramen, downward and forward."
+          },
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Mandible: mylo-hyoid groove"
+          }
+        ],
+        "modelNote": "Отмечен видимый участок линии борозды на авторской сетке Z-Anatomy. Это отдельная учебная модель; координаты и подтверждение рельефа не перенесены на BodyParts3D. Полный внутрикостный нижнечелюстной канал этим маркером не подтверждается.",
+        "loc": "surface",
+        "source": "Z-Anatomy",
+        "side": "left",
+        "view": "right",
+        "cut": {
+          "plane": "sagittal",
+          "value": 0.5,
+          "reverse": false
+        },
+        "evidence": {
+          "method": "manual-medial-surface-review-and-raycast",
+          "view": "lat",
+          "uv": [
+            0.352,
+            0.56
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "opposite_half_hidden": true,
+          "source": "build_head/complete_face/review-picks.js",
+          "screenshot": "build_head/complete_face/z_groove_left.png",
+          "review": "Обе половины исходной нижней челюсти осмотрены отдельно, без противоположной ветви в луче. Видимая линия прослежена от области нижнечелюстного отверстия вниз и вперёд. Мелкие изолированные артефакты исходной сетки не использованы как ориентиры."
+        },
+        "mode": "z",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_face_maxilla_right_A02_1_12_031",
+        "b": "maxilla_right",
+        "c": "A02.1.12.031",
+        "ru": "Резцовая кость",
+        "lat": "os incisivum",
+        "p": [
+          -0.00735,
+          1.54476,
+          0.08671
+        ],
+        "n": [
+          -0.377,
+          0.539,
+          0.753
+        ],
+        "loc": "surface",
+        "scope": "surface",
+        "mode": "z",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.08
+        },
+        "x": "Передняя резцовая часть верхней челюсти, содержащая альвеолы резцов.",
+        "refs": [
+          {
+            "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+            "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+          },
+          {
+            "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+            "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+          },
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+          }
+        ],
+        "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+        "source": "Z-Anatomy",
+        "side": "right",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — исходная модель",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+          }
+        ],
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "ant",
+          "uv": [
+            0.705,
+            0.85
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "source": "build_head/face_features/z-pick-specs.json",
+          "screenshot": "build_head/face_features/z_maxilla_right_031.png",
+          "screenshot_sha256": "fe535a3636472640d965ddb552be2d3c3398f9405b251a568da115501ed2443c",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_face_maxilla_left_A02_1_12_031",
+        "b": "maxilla_left",
+        "c": "A02.1.12.031",
+        "ru": "Резцовая кость",
+        "lat": "os incisivum",
+        "p": [
+          0.00697,
+          1.54416,
+          0.08734
+        ],
+        "n": [
+          0.377,
+          0.539,
+          0.753
+        ],
+        "loc": "surface",
+        "scope": "surface",
+        "mode": "z",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.08
+        },
+        "x": "Передняя резцовая часть верхней челюсти, содержащая альвеолы резцов.",
+        "refs": [
+          {
+            "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+            "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+          },
+          {
+            "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+            "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+          },
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+          }
+        ],
+        "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+        "source": "Z-Anatomy",
+        "side": "left",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — исходная модель",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+          }
+        ],
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "ant",
+          "uv": [
+            0.29,
+            0.858
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "source": "build_head/face_features/z-pick-specs.json",
+          "screenshot": "build_head/face_features/z_maxilla_left_031.png",
+          "screenshot_sha256": "ae3a32bd0194c32f362b3ec33fdabb6960208f76518ad540bac7edf5389feb91",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_face_maxilla_right_A02_1_12_026",
+        "b": "maxilla_right",
+        "c": "A02.1.12.026",
+        "ru": "Слёзная вырезка",
+        "lat": "incisura lacrimalis",
+        "p": [
+          -0.01803,
+          1.57338,
+          0.07008
+        ],
+        "n": [
+          0.822,
+          0.349,
+          0.451
+        ],
+        "loc": "surface",
+        "scope": "surface",
+        "mode": "z",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.08
+        },
+        "x": "Вырезка в переднем отделе медиального края глазничной поверхности.",
+        "refs": [
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+          },
+          {
+            "title": "Anatomy Standard, Maxilla",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+            "locator": "Medial view: Incisura lacrimalis"
+          }
+        ],
+        "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+        "source": "Z-Anatomy",
+        "side": "right",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — исходная модель",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+          }
+        ],
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.459,
+            0.473
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "source": "build_head/face_features/z-pick-specs.json",
+          "screenshot": "build_head/face_features/z_maxilla_right_026.png",
+          "screenshot_sha256": "3a47b375b15e795ff5525a8ad262b74f0cf0d98b1bac82a11edb4d1df51a14fc",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_face_maxilla_left_A02_1_12_026",
+        "b": "maxilla_left",
+        "c": "A02.1.12.026",
+        "ru": "Слёзная вырезка",
+        "lat": "incisura lacrimalis",
+        "p": [
+          0.01803,
+          1.57338,
+          0.07008
+        ],
+        "n": [
+          -0.822,
+          0.349,
+          0.451
+        ],
+        "loc": "surface",
+        "scope": "surface",
+        "mode": "z",
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.08
+        },
+        "x": "Вырезка в переднем отделе медиального края глазничной поверхности.",
+        "refs": [
+          {
+            "title": "Buchanan, Manual of Anatomy",
+            "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+            "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+          },
+          {
+            "title": "Anatomy Standard, Maxilla",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+            "locator": "Medial view: Incisura lacrimalis"
+          }
+        ],
+        "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+        "source": "Z-Anatomy",
+        "side": "left",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — исходная модель",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+          }
+        ],
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.541,
+            0.473
+          ],
+          "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+          "source": "build_head/face_features/z-pick-specs.json",
+          "screenshot": "build_head/face_features/z_maxilla_left_026.png",
+          "screenshot_sha256": "428c9e66d4f2e24f925a1c052d966f4640e3b5885fb3647cda93a9ea4d9c5653",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_frontal_sinus",
+        "b": "frontal_sinus",
+        "c": "A02.1.03.029",
+        "ru": "Лобная пазуха",
+        "lat": "sinus frontalis",
+        "p": [
+          -0.00959,
+          1.62151,
+          0.08534
+        ],
+        "n": [
+          0.044,
+          -0.065,
+          0.997
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.16
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+            "locator": "Orbital or Horizontal Part and structure; printed pp.136–137, PDF pp.87–89: frontal air sinuses within the frontal bone."
+          },
+          {
+            "title": "Anatomy Standard — лобная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+            "locator": "Bottom aspect, labelled apertura sinus frontalis; anterior view locates the surrounding frontal bone."
+          },
+          {
+            "title": "TeachMeAnatomy — The Frontal Bone",
+            "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+            "locator": "Squamous Part: frontal sinuses within the squamous part, above the orbits on either side of the midline."
+          }
+        ],
+        "x": "Воздухоносная полость внутри лобной кости над глазницей.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|frontal_sinus",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.33,
+            0.42
+          ],
+          "zoomBox": null,
+          "faceIndex": 1000,
+          "rawTriangleNormal": [
+            -0.044,
+            0.065,
+            -0.997
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/frontal_sinus-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_sphenoidal_sinus",
+        "b": "sphenoidal_sinus",
+        "c": "A02.1.05.016",
+        "ru": "Клиновидная пазуха",
+        "lat": "sinus sphenoidalis",
+        "p": [
+          -0.00538,
+          1.59573,
+          0.03887
+        ],
+        "n": [
+          0.233,
+          -0.465,
+          0.854
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.075
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Body, printed pp.147–149, PDF pp.103–105: sphenoidal air sinuses in the body."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Oblique frontal view: labels sinus sphenoidalis and apertura sinus sphenoidalis."
+          }
+        ],
+        "x": "Воздухоносная полость внутри тела клиновидной кости.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|sphenoidal_sinus",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.33,
+            0.45
+          ],
+          "zoomBox": null,
+          "faceIndex": 99,
+          "rawTriangleNormal": [
+            -0.233,
+            0.465,
+            -0.854
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/sphenoidal_sinus-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_anterior_left",
+        "b": "ethmoid_cells_anterior_left",
+        "c": "A02.1.07.008",
+        "ru": "Передние решётчатые ячейки · слева",
+        "lat": "cellulae ethmoidales anteriores",
+        "p": [
+          0.00881,
+          1.59166,
+          0.06208
+        ],
+        "n": [
+          0.218,
+          0.254,
+          0.942
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_anterior_left",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.49,
+            0.28
+          ],
+          "zoomBox": null,
+          "faceIndex": 189,
+          "rawTriangleNormal": [
+            0.218,
+            0.254,
+            0.942
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_anterior_left-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "left",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_anterior_right",
+        "b": "ethmoid_cells_anterior_right",
+        "c": "A02.1.07.008",
+        "ru": "Передние решётчатые ячейки · справа",
+        "lat": "cellulae ethmoidales anteriores",
+        "p": [
+          -0.00913,
+          1.59151,
+          0.06204
+        ],
+        "n": [
+          -0.257,
+          0.266,
+          0.929
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_anterior_right",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.49,
+            0.29
+          ],
+          "zoomBox": null,
+          "faceIndex": 188,
+          "rawTriangleNormal": [
+            -0.257,
+            0.266,
+            0.929
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_anterior_right-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "right",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_middle_left",
+        "b": "ethmoid_cells_middle_left",
+        "c": "A02.1.07.009",
+        "ru": "Средние решётчатые ячейки · слева",
+        "lat": "cellulae ethmoidales mediae",
+        "p": [
+          0.00724,
+          1.58849,
+          0.05491
+        ],
+        "n": [
+          -0.223,
+          -0.001,
+          0.975
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Средняя группа ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_middle_left",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.33,
+            0.45
+          ],
+          "zoomBox": null,
+          "faceIndex": 273,
+          "rawTriangleNormal": [
+            -0.223,
+            -0.001,
+            0.975
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_middle_left-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "left",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_middle_right",
+        "b": "ethmoid_cells_middle_right",
+        "c": "A02.1.07.009",
+        "ru": "Средние решётчатые ячейки · справа",
+        "lat": "cellulae ethmoidales mediae",
+        "p": [
+          -0.01218,
+          1.58804,
+          0.05513
+        ],
+        "n": [
+          -0.277,
+          -0.114,
+          0.954
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Средняя группа ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_middle_right",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.34,
+            0.48
+          ],
+          "zoomBox": null,
+          "faceIndex": 834,
+          "rawTriangleNormal": [
+            -0.277,
+            -0.114,
+            0.954
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_middle_right-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "right",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_posterior_left",
+        "b": "ethmoid_cells_posterior_left",
+        "c": "A02.1.07.010",
+        "ru": "Задние решётчатые ячейки · слева",
+        "lat": "cellulae ethmoidales posteriores",
+        "p": [
+          0.00641,
+          1.58936,
+          0.04749
+        ],
+        "n": [
+          -0.268,
+          0.038,
+          0.963
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_posterior_left",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.3,
+            0.4
+          ],
+          "zoomBox": null,
+          "faceIndex": 275,
+          "rawTriangleNormal": [
+            -0.268,
+            0.038,
+            0.963
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_posterior_left-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "left",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_ethmoid_cells_posterior_right",
+        "b": "ethmoid_cells_posterior_right",
+        "c": "A02.1.07.010",
+        "ru": "Задние решётчатые ячейки · справа",
+        "lat": "cellulae ethmoidales posteriores",
+        "p": [
+          -0.00709,
+          1.58936,
+          0.04756
+        ],
+        "n": [
+          -0.109,
+          -0.071,
+          0.991
+        ],
+        "loc": "surface",
+        "scope": "airspace",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+            "locator": "Labyrinth or Lateral Mass, printed pp.154–155; PDF p.112: anterior, middle and posterior groups of ethmoidal cells."
+          },
+          {
+            "title": "Anatomy Standard — решётчатая кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+            "locator": "Inferior ventral labelled view: cellulae ethmoidales anteriores, mediae, posteriores; top view of the labyrinth."
+          }
+        ],
+        "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+        "modelNote": "Отмечена поверхность отдельного авторского объёма воздухоносной полости Z-Anatomy. Это учебная форма пространства, не костная ткань и не подтверждение всех её костных стенок, сообщений или вариантов. Маркер не изменяет статус проекции на основном черепе.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "o|ethmoid_cells_posterior_right",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.65,
+            0.4
+          ],
+          "zoomBox": null,
+          "faceIndex": 276,
+          "rawTriangleNormal": [
+            -0.109,
+            -0.071,
+            0.991
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/ethmoid_cells_posterior_right-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "right",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_spinosum_right",
+        "b": "sphenoid",
+        "c": "A02.1.05.038",
+        "ru": "Остистое отверстие · справа",
+        "lat": "foramen spinosum",
+        "p": [
+          -0.02988,
+          1.5772,
+          0.00804
+        ],
+        "n": [
+          0.922,
+          0.336,
+          0.194
+        ],
+        "loc": "surface",
+        "scope": "aperture",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Greater Wings, printed pp.149–150; PDF p.106: foramen spinosum in the posterior angle, near the spine, and the infratemporal surface."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Inferior aspect, labelled foramen spinosum; compare the position posterior-lateral to foramen ovale."
+          }
+        ],
+        "x": "Небольшое отверстие большого крыла позади и латеральнее овального.",
+        "modelNote": "Отмечен видимый край внутричерепной апертуры остистого отверстия на исходной сетке Z-Anatomy. Просмотр края не доказывает полную проходимость или точность всего хода через кость; весь ход отдельно не подтверждён. Основной череп BodyParts3D сохраняет статус проекции.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "b|sphenoid",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              1,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.55,
+            0.1
+          ],
+          "zoomBox": [
+            [
+              -0.04,
+              1.57,
+              0.007
+            ],
+            [
+              -0.022,
+              1.595,
+              0.027
+            ]
+          ],
+          "faceIndex": 6236,
+          "rawTriangleNormal": [
+            0.922,
+            0.336,
+            0.194
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/sphenoid-spinosum-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "right",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_spinosum_left",
+        "b": "sphenoid",
+        "c": "A02.1.05.038",
+        "ru": "Остистое отверстие · слева",
+        "lat": "foramen spinosum",
+        "p": [
+          0.02988,
+          1.5772,
+          0.00804
+        ],
+        "n": [
+          -0.922,
+          0.336,
+          0.194
+        ],
+        "loc": "surface",
+        "scope": "aperture",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Greater Wings, printed pp.149–150; PDF p.106: foramen spinosum in the posterior angle, near the spine, and the infratemporal surface."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Inferior aspect, labelled foramen spinosum; compare the position posterior-lateral to foramen ovale."
+          }
+        ],
+        "x": "Небольшое отверстие большого крыла позади и латеральнее овального.",
+        "modelNote": "Отмечен видимый край внутричерепной апертуры остистого отверстия на исходной сетке Z-Anatomy. Просмотр края не доказывает полную проходимость или точность всего хода через кость; весь ход отдельно не подтверждён. Основной череп BodyParts3D сохраняет статус проекции.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "b|sphenoid",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              1,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.45,
+            0.1
+          ],
+          "zoomBox": [
+            [
+              0.022,
+              1.57,
+              0.007
+            ],
+            [
+              0.04,
+              1.595,
+              0.027
+            ]
+          ],
+          "faceIndex": 1611,
+          "rawTriangleNormal": [
+            -0.922,
+            0.336,
+            0.194
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/spinosum-left-pick.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "left",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_pterygoid_right",
+        "b": "sphenoid",
+        "c": "A02.1.05.053",
+        "ru": "Крыловидный канал · справа",
+        "lat": "canalis pterygoideus",
+        "p": [
+          -0.01426,
+          1.58613,
+          0.02994
+        ],
+        "n": [
+          -0.098,
+          -0.952,
+          0.289
+        ],
+        "loc": "surface",
+        "scope": "aperture",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Pterygoid Processes, printed pp.150–151; PDF p.107: anterior surface of the process near its root presents the anterior orifice of the pterygoid canal."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Dorsal aspect: labelled canalis pterygoideus; the accompanying text identifies its pathway to the pterygopalatine fossa. This labelled figure is a posterior view, not an anterior-opening diagram."
+          }
+        ],
+        "x": "Канал у основания крыловидного отростка, открывающийся впереди в крылонёбную ямку.",
+        "modelNote": "Отмечен край переднего отверстия крыловидного канала у основания крыловидного отростка на исходной сетке Z-Anatomy. Полная внутренняя стенка, задний выход и непрерывность всего канала здесь не подтверждены. Это самостоятельный ориентир апертуры, не полная реконструкция канала.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "b|sphenoid",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.383,
+            0.493
+          ],
+          "zoomBox": null,
+          "faceIndex": 4564,
+          "rawTriangleNormal": [
+            -0.098,
+            -0.952,
+            0.289
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/sphenoid-anterior-openings.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "right",
+        "specimen": "Z-Anatomy"
+      },
+      {
+        "id": "z_pterygoid_left",
+        "b": "sphenoid",
+        "c": "A02.1.05.053",
+        "ru": "Крыловидный канал · слева",
+        "lat": "canalis pterygoideus",
+        "p": [
+          0.01414,
+          1.58613,
+          0.02998
+        ],
+        "n": [
+          0.098,
+          -0.952,
+          0.289
+        ],
+        "loc": "surface",
+        "scope": "aperture",
+        "mode": "z",
+        "source": "Z-Anatomy",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.04
+        },
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+            "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+            "locator": "Pterygoid Processes, printed pp.150–151; PDF p.107: anterior surface of the process near its root presents the anterior orifice of the pterygoid canal."
+          },
+          {
+            "title": "Anatomy Standard — клиновидная кость",
+            "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+            "locator": "Dorsal aspect: labelled canalis pterygoideus; the accompanying text identifies its pathway to the pterygopalatine fossa. This labelled figure is a posterior view, not an anterior-opening diagram."
+          }
+        ],
+        "x": "Канал у основания крыловидного отростка, открывающийся впереди в крылонёбную ямку.",
+        "modelNote": "Отмечен край переднего отверстия крыловидного канала у основания крыловидного отростка на исходной сетке Z-Anatomy. Полная внутренняя стенка, задний выход и непрерывность всего канала здесь не подтверждены. Это самостоятельный ориентир апертуры, не полная реконструкция канала.",
+        "geometryRefs": [
+          {
+            "title": "Z-Anatomy — Models of human anatomy",
+            "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+            "locator": "b|sphenoid",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-structure-review-and-surface-raycast",
+          "coordinateFrame": "Published skull-z-detail.glb, metres; independent Z-Anatomy frame; no registration to BodyParts3D.",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.616,
+            0.493
+          ],
+          "zoomBox": null,
+          "faceIndex": 6141,
+          "rawTriangleNormal": [
+            0.098,
+            -0.952,
+            0.289
+          ],
+          "normalOrientation": "Face normal oriented toward the inspection camera for marker rendering.",
+          "screenshot": "build_head/cranial_features/jobs/sphenoid-anterior-openings.png",
+          "sourceGeometrySHA256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+          "review": "Форма и расположение осмотрены с нескольких сторон; отдельные координаты выбраны на уже распознанной поверхности. Луч фиксирует координату и не является доказательством анатомического названия."
+        },
+        "side": "left",
+        "specimen": "Z-Anatomy"
+      }
+    ],
+    "openear": [
+      {
+        "id": "openear_malleus_head",
+        "b": "malleus",
+        "c": "A15.3.02.045",
+        "ru": "Головка молоточка",
+        "lat": "caput mallei",
+        "p": [
+          -0.025554795931204938,
+          0.03144631091813562,
+          0.018298317409392237
+        ],
+        "n": [
+          0.9998854316559326,
+          0.002724483465002541,
+          0.014889618936641794
+        ],
+        "x": "Расширенная часть молоточка над его шейкой.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+            "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+            "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.045",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.045; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "03_Malleus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.54,
+            0.2
+          ],
+          "faceIndex": 3297,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_malleus_neck",
+        "b": "malleus",
+        "c": "A15.3.02.046",
+        "ru": "Шейка молоточка",
+        "lat": "collum mallei",
+        "p": [
+          -0.025925007177162687,
+          0.03135474283927703,
+          0.020541735341427746
+        ],
+        "n": [
+          0.925956501763295,
+          0.37382002623390564,
+          0.05350836223211616
+        ],
+        "x": "Суженный участок между головкой и основанием рукоятки молоточка.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+            "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+            "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.046",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.046; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "03_Malleus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.55,
+            0.445
+          ],
+          "faceIndex": 1849,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_malleus_handle",
+        "b": "malleus",
+        "c": "A15.3.02.044",
+        "ru": "Рукоятка молоточка",
+        "lat": "manubrium mallei",
+        "p": [
+          -0.025178455225361572,
+          0.032407775746150835,
+          0.023242993667756208
+        ],
+        "n": [
+          0.8967795382803012,
+          -0.09112335883016374,
+          -0.4329930636826402
+        ],
+        "x": "Удлинённая часть молоточка ниже его шейки.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+            "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+            "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.044",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.044; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "03_Malleus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.435,
+            0.74
+          ],
+          "faceIndex": 904,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_incus_body",
+        "b": "incus",
+        "c": "A15.3.02.039",
+        "ru": "Тело наковальни",
+        "lat": "corpus incudis",
+        "p": [
+          -0.024504700954401652,
+          0.030107235600722395,
+          0.018054843034487036
+        ],
+        "n": [
+          0.869319369936702,
+          0.23750928601170643,
+          -0.43344338974203406
+        ],
+        "x": "Основная расширенная часть наковальни, от которой отходят её ножки.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+            "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+            "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.039",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.039; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "04_Incus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.45,
+            0.23
+          ],
+          "faceIndex": 1155,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/incus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_incus_long_limb",
+        "b": "incus",
+        "c": "A15.3.02.040",
+        "ru": "Длинная ножка наковальни",
+        "lat": "crus longum",
+        "p": [
+          -0.023678661472829335,
+          0.031416329116332,
+          0.0211312127961696
+        ],
+        "n": [
+          0.9462923468042947,
+          -0.08748377639657261,
+          -0.3112513184663076
+        ],
+        "x": "Длинный отросток, отходящий от тела наковальни.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+            "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+            "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.040",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.040; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "04_Incus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.25,
+            0.7
+          ],
+          "faceIndex": 630,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/incus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_incus_short_limb",
+        "b": "incus",
+        "c": "A15.3.02.042",
+        "ru": "Короткая ножка наковальни",
+        "lat": "crus breve",
+        "p": [
+          -0.023274104106106697,
+          0.028078140651527514,
+          0.018774844468072316
+        ],
+        "n": [
+          0.95382026444806,
+          0.27397811098028624,
+          -0.12313771896501498
+        ],
+        "x": "Короткий отросток, отходящий от тела наковальни.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+            "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+            "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.042",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.042; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "04_Incus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.76,
+            0.34
+          ],
+          "faceIndex": 2026,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/incus-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_stapes_head",
+        "b": "stapes",
+        "c": "A15.3.02.034",
+        "ru": "Головка стремени",
+        "lat": "caput stapedis",
+        "p": [
+          -0.02253625907313961,
+          0.03225285004508131,
+          0.022423737404148734
+        ],
+        "n": [
+          0.14724116650482988,
+          -0.04167202825608393,
+          0.9882223843585617
+        ],
+        "x": "Расширенная часть стремени со стороны схождения двух ножек.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+            "locator": "Рис. 918: головка, ножки и основание стремени",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+            "locator": "Рис. 798: головка, ножки и основание стремени",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            -1,
+            -2,
+            0
+          ],
+          "distance": 0.012
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.034",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.034; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "05_Stapes.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.25,
+            0.82
+          ],
+          "faceIndex": 175,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/stapes-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_stapes_base",
+        "b": "stapes",
+        "c": "A15.3.02.037",
+        "ru": "Основание стремени",
+        "lat": "basis stapedis",
+        "p": [
+          -0.02119128872687208,
+          0.03503245542736752,
+          0.021266208912751355
+        ],
+        "n": [
+          -0.4626605190250877,
+          -0.8146582522452592,
+          0.3496815353777432
+        ],
+        "x": "Пластинка, соединяющая концы двух ножек стремени.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+            "locator": "Рис. 918: головка, ножки и основание стремени",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+            "locator": "Рис. 798: головка, ножки и основание стремени",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "distance": 0.012
+        },
+        "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.037",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.037; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "05_Stapes.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.55,
+            0.2
+          ],
+          "faceIndex": 807,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks/picks.json",
+          "screenshot": "build_head/openear_landmarks/stapes-markers.png",
+          "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+        },
+        "mode": "openear"
+      },
+      {
+        "id": "openear_temporal_internal_acoustic_meatus",
+        "b": "temporal_bone",
+        "mode": "openear",
+        "c": "A02.1.06.033",
+        "ru": "Внутренний слуховой проход",
+        "lat": "meatus acusticus internus",
+        "p": [
+          -0.01738016284266001,
+          0.04628292859556755,
+          0.020414756953218198
+        ],
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0.6,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.045
+        },
+        "x": "Внутренний слуховой проход направляется от внутреннего слухового отверстия в толщу каменистой части. Здесь отмечен видимый участок его костной стенки.",
+        "modelNote": "Подтверждён отдельный участок стенки прохода на исходной маске и зарегистрированной КТ OpenEar ZETA. Разметка не утверждает, что отдельно проверены все поля дна, отверстия и мелкие ответвления. Сегмент нерва VIII использован только для топографического сопоставления; он не заменяет костную стенку.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray140.png",
+            "locator": "Рис. 140: внутренний слуховой проход в рассечённой пирамиде",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_781.png",
+            "locator": "Рис. 781: внутренний слуховой проход рядом с лабиринтом",
+            "scope": "anatomy"
+          }
+        ],
+        "geometryScope": "channel_wall_segment",
+        "scope": "channel_wall_segment",
+        "completeFeatureGeometry": false,
+        "geometryRefs": [
+          {
+            "title": "Sieber et al., OpenEar ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+            "scope": "geometry"
+          }
+        ],
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+            "locator": "A02.1.06.033",
+            "scope": "nomenclature"
+          }
+        ],
+        "evidence": {
+          "method": "native-multiview-surface-inspection-plus-source-cbct",
+          "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+          "faceIndex": 6851074,
+          "view": {
+            "d": [
+              0.6,
+              1,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.34,
+            0.45
+          ],
+          "zoomBox": [
+            [
+              -0.02,
+              0.038,
+              0.015
+            ],
+            [
+              -0.007,
+              0.054,
+              0.028
+            ]
+          ],
+          "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+          "screenshot": "build_head/temporal_features/internal_acoustic_meatus-review.png",
+          "crossView": {
+            "d": [
+              1,
+              1,
+              0.25
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "crossScreenshot": "build_head/temporal_features/internal_acoustic_meatus-cross-review.png",
+          "scanScreenshot": "build_head/temporal_features/internal_acoustic_meatus-cbct.png",
+          "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+          "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+        }
+      },
+      {
+        "id": "openear_temporal_external_acoustic_meatus",
+        "b": "temporal_bone",
+        "mode": "openear",
+        "c": "A02.1.06.055",
+        "ru": "Наружный слуховой проход",
+        "lat": "meatus acusticus externus",
+        "p": [
+          -0.031489448008787224,
+          0.02293517330404482,
+          0.025724116671627193
+        ],
+        "n": [
+          0.5773502691896257,
+          -0.5773502691896257,
+          -0.5773502691896257
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            -0.3,
+            -1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.045
+        },
+        "x": "Наружный слуховой проход ведёт от наружного слухового отверстия к барабанной перепонке. Маркер расположен на видимом участке его костной стенки.",
+        "modelNote": "Выбран участок костной стенки, совпадающий с границей кости на зарегистрированной КТ ZETA. Это не маркер барабанной перепонки и не маркер полного кожного канала. Полная протяжённость прохода и все детали барабанного кольца отдельно не заявлены.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+            "locator": "Рис. 137: наружное слуховое отверстие и костная часть прохода",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_55.png",
+            "locator": "Рис. 55: наружный слуховой проход и барабанная часть",
+            "scope": "anatomy"
+          }
+        ],
+        "geometryScope": "channel_wall_segment",
+        "scope": "channel_wall_segment",
+        "completeFeatureGeometry": false,
+        "geometryRefs": [
+          {
+            "title": "Sieber et al., OpenEar ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+            "scope": "geometry"
+          }
+        ],
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+            "locator": "A02.1.06.055",
+            "scope": "nomenclature"
+          }
+        ],
+        "evidence": {
+          "method": "native-multiview-surface-inspection-plus-source-cbct",
+          "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+          "faceIndex": 4221789,
+          "view": {
+            "d": [
+              -0.3,
+              -1,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.6,
+            0.53
+          ],
+          "zoomBox": [
+            [
+              -0.036,
+              0.012,
+              0.016
+            ],
+            [
+              -0.021,
+              0.037,
+              0.034
+            ]
+          ],
+          "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+          "screenshot": "build_head/temporal_features/external_acoustic_meatus-review.png",
+          "crossView": {
+            "d": [
+              -0.8,
+              -1,
+              0.3
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "crossScreenshot": "build_head/temporal_features/external_acoustic_meatus-cross-review.png",
+          "scanScreenshot": "build_head/temporal_features/external_acoustic_meatus-cbct.png",
+          "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+          "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+        }
+      },
+      {
+        "id": "openear_temporal_carotid_external_aperture",
+        "b": "temporal_bone",
+        "mode": "openear",
+        "c": "A02.1.06.014",
+        "ru": "Наружная апертура сонного канала",
+        "lat": "apertura externa canalis carotici",
+        "p": [
+          -0.027469599999999997,
+          0.04947759999999999,
+          0.03531772150788
+        ],
+        "n": [
+          0,
+          0,
+          1
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.045
+        },
+        "x": "Наружная апертура сонного канала находится на нижней поверхности каменистой части, впереди яремной ямки. Отмечен участок её костного края.",
+        "modelNote": "Костный край проверен на исходной маске и зарегистрированной КТ полного препарата ZETA. В подготовленном embedded-скане часть этой области уже обрезана, поэтому для подтверждения использован full-specimen CBCT. Маркер края не подтверждает весь внутрикостный ход сонного канала; модель артерии не заменяет его стенки.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+            "locator": "Рис. 141: наружный вход сонного канала перед яремной ямкой",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+            "locator": "Рис. 58: наружная апертура сонного канала на нижней поверхности",
+            "scope": "anatomy"
+          }
+        ],
+        "geometryScope": "aperture_rim",
+        "scope": "aperture_rim",
+        "completeFeatureGeometry": false,
+        "geometryRefs": [
+          {
+            "title": "Sieber et al., OpenEar ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd",
+            "scope": "geometry"
+          }
+        ],
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+            "locator": "A02.1.06.014",
+            "scope": "nomenclature"
+          }
+        ],
+        "evidence": {
+          "method": "native-multiview-surface-inspection-plus-source-cbct",
+          "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+          "faceIndex": 6966141,
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.54,
+            0.365
+          ],
+          "zoomBox": [
+            [
+              -0.04,
+              0.037,
+              0.022
+            ],
+            [
+              -0.017,
+              0.055,
+              0.045
+            ]
+          ],
+          "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+          "screenshot": "build_head/temporal_features/carotid_external_aperture-review.png",
+          "crossView": {
+            "d": [
+              0.3,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "crossScreenshot": "build_head/temporal_features/carotid_external_aperture-cross-review.png",
+          "scanScreenshot": "build_head/temporal_features/carotid_external_aperture-cbct-full.png",
+          "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+          "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+        }
+      },
+      {
+        "id": "openear_temporal_stylomastoid_foramen",
+        "b": "temporal_bone",
+        "mode": "openear",
+        "c": "A02.1.06.048",
+        "ru": "Шилососцевидное отверстие",
+        "lat": "foramen stylomastoideum",
+        "p": [
+          -0.018841919999999998,
+          0.02724032,
+          0.03521620545854244
+        ],
+        "n": [
+          0.7139382485962431,
+          0,
+          0.7002086668924692
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.045
+        },
+        "x": "Шилососцевидное отверстие расположено между шиловидным и сосцевидным отростками. Здесь отмечен видимый костный край наружного окончания лицевого канала.",
+        "modelNote": "Край отверстия сопоставлен с костной маской и исходной КТ полного препарата ZETA. Для этой области подготовленный embedded-скан обрезан и не использовался как подтверждение сохранности края. Выход авторского сегмента лицевого нерва служит топографическим контекстом, а подтверждение кости получено отдельно. Полный лицевой канал этим маркером не объявляется проверенным.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+            "locator": "Рис. 141: шилососцевидное отверстие между двумя отростками",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+            "locator": "Рис. 58: шилососцевидное отверстие возле основания шиловидного отростка",
+            "scope": "anatomy"
+          }
+        ],
+        "geometryScope": "aperture_rim",
+        "scope": "aperture_rim",
+        "completeFeatureGeometry": false,
+        "geometryRefs": [
+          {
+            "title": "Sieber et al., OpenEar ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd",
+            "scope": "geometry"
+          }
+        ],
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+            "locator": "A02.1.06.048",
+            "scope": "nomenclature"
+          }
+        ],
+        "evidence": {
+          "method": "native-multiview-surface-inspection-plus-source-cbct",
+          "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+          "faceIndex": 4782828,
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.547,
+            0.612
+          ],
+          "zoomBox": [
+            [
+              -0.03,
+              0.019,
+              0.025
+            ],
+            [
+              -0.01,
+              0.041,
+              0.043
+            ]
+          ],
+          "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+          "screenshot": "build_head/temporal_features/stylomastoid_foramen-review.png",
+          "crossView": {
+            "d": [
+              0.3,
+              0.15,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "crossScreenshot": "build_head/temporal_features/stylomastoid_foramen-cross-review.png",
+          "scanScreenshot": "build_head/temporal_features/stylomastoid_foramen-cbct-full.png",
+          "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+          "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+        }
+      },
+      {
+        "id": "openear_temporal_tympanic_cavity",
+        "b": "temporal_bone",
+        "mode": "openear",
+        "c": "A02.1.06.051",
+        "ru": "Барабанная полость",
+        "lat": "cavitas tympani",
+        "p": [
+          -0.02238429729306056,
+          0.033892799999999994,
+          0.024456000000000002
+        ],
+        "n": [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.045
+        },
+        "x": "Барабанная полость находится в височной кости медиальнее барабанной перепонки. Здесь показан участок её костной стенки в области, доступной после экранного среза.",
+        "modelNote": "Участок стенки подтверждён на костной маске и исходной КТ OpenEar ZETA. Срез только убирает закрывающую его часть существующей сетки; новых стенок не создаёт. Одна точка не означает отдельную сегментацию всей полости и не завершает список всех её образований.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+            "locator": "Рис. 913: вскрытая барабанная полость и её медиальная костная стенка",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_59.png",
+            "locator": "Рис. 59: вскрытая височная кость: полость и окно преддверия",
+            "scope": "anatomy"
+          }
+        ],
+        "geometryScope": "cavity_wall_segment",
+        "scope": "cavity_wall_segment",
+        "completeFeatureGeometry": false,
+        "geometryRefs": [
+          {
+            "title": "Sieber et al., OpenEar ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Embedded.nrrd",
+            "scope": "geometry"
+          }
+        ],
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.06%20TA98%20EN.htm",
+            "locator": "A02.1.06.051",
+            "scope": "nomenclature"
+          }
+        ],
+        "evidence": {
+          "method": "native-multiview-surface-inspection-plus-source-cbct",
+          "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+          "faceIndex": 5829683,
+          "view": {
+            "d": [
+              -1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.565,
+            0.55
+          ],
+          "zoomBox": [
+            [
+              -0.031,
+              0.022,
+              0.01
+            ],
+            [
+              -0.014,
+              0.042,
+              0.036
+            ]
+          ],
+          "coordinateFrame": "OpenEar ZETA author RAS → [-RASx,RASz,RASy], metres; no registration to BodyParts3D.",
+          "screenshot": "build_head/temporal_features/tympanic_cavity-review.png",
+          "crossView": {
+            "d": [
+              -1,
+              0.2,
+              0.1
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "crossScreenshot": "build_head/temporal_features/tympanic_cavity-cross-review.png",
+          "scanScreenshot": "build_head/temporal_features/tympanic_cavity-cbct.png",
+          "scanProof": "Исходный зарегистрированный CBCT, три координатных сечения через выбранный участок; сопоставлена костная граница и авторская маска, проверены соседние структуры.",
+          "review": "Выбор координаты выполнен после визуального сопоставления с двумя независимыми атласами. Это не внешняя экспертная рецензия."
+        },
+        "cut": {
+          "plane": "sagittal",
+          "value": 0.45872821317957285,
+          "reverse": false
+        }
+      }
+    ],
+    "microct": []
+  },
+  "counts": {
+    "z": 18,
+    "openear": 13,
+    "microct": 0
+  }
+}

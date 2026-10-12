@@ -522,6 +522,7 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="pins.js"></script>
 <script src="pins-leg.js"></script>
 <script src="pins-head.js"></script>
+<script src="skull-evidence-index.js"></script>
 <script src="bodymap.js"></script>
 <script type="module">
 import * as THREE from 'three';
@@ -1427,6 +1428,7 @@ function localizationLabel(p) {
 }
 function detailLinks(p) {
   if(state.sec!=='head')return '';
+  if(A.headEvidence?.includes(p.c))return `<div class="linkrow"><button class="chip" data-detail-mode="study" data-detail-marker="${esc(p.c)}">Проверенные подробные виды и примеры ↗</button></div>`;
   const cavities={'A02.1.03.029':['frontal_sinus'],'A02.1.05.016':['sphenoidal_sinus'],'A02.1.07.008':['ethmoid_cells_anterior_left','ethmoid_cells_anterior_right'],'A02.1.07.009':['ethmoid_cells_middle_left','ethmoid_cells_middle_right'],'A02.1.07.010':['ethmoid_cells_posterior_left','ethmoid_cells_posterior_right']};
   if(p.c==='A02.1.15.031')return '<p class="lead">На другой исходной модели виден рельеф этой борозды:</p><div class="linkrow"><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_right">Борозда справа · Z-Anatomy</button><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_left">Борозда слева · Z-Anatomy</button></div>';
   const ids=cavities[p.c];
@@ -1969,7 +1971,7 @@ function openHeadDetail(mode = 'study', part = null, marker = null) {
   const query = new URLSearchParams({theme, mode, embed:'1'});
   if (location.pathname.endsWith('/local.html')) query.set('entry','local');
   if (part) query.set('part', part);
-  if (marker) query.set('marker', marker);
+  if (marker) query.set(mode==='study'?'code':'marker', marker);
   $('#headDetailFrame').src = `${mode === 'study' ? 'skull-study' : 'skull-detail'}.html?${query}`;
   $('#headDetailDialog').showModal();
 }

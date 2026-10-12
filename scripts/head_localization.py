@@ -10,7 +10,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 PARTS = ('face', 'cranial', 'temporal')
-SUPPLEMENTS = [f'pins_head/{name}-extra.json' for name in PARTS] + ['pins_head/face-completion.json']
+SUPPLEMENTS = [f'pins_head/{name}-extra.json' for name in PARTS] + ['pins_head/face-completion.json', 'pins_head/face-features-bp.json']
 KINDS = {'surface', 'projection', 'internal', 'variant'}
 
 

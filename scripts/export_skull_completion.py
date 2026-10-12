@@ -13,6 +13,15 @@ counts = Counter(p['localization'] for p in rows.values())
 z = json.loads((ROOT/'site/skull-z-detail.json').read_text(encoding='utf-8'))
 ear = json.loads((ROOT/'site/skull-openear.json').read_text(encoding='utf-8'))
 ear_landmarks = json.loads((ROOT/'site/skull-openear-landmarks.json').read_text(encoding='utf-8'))
+native = json.loads((ROOT/'site/skull-native-features.json').read_text(encoding='utf-8'))
+catalogue = json.loads((ROOT/'site/skull-feature-catalogue.json').read_text(encoding='utf-8'))
+examples = json.loads((ROOT/'site/skull-variant-examples.json').read_text(encoding='utf-8'))['examples']
+native_by_code = {}
+for mode, markers in native['markers'].items():
+    for marker in markers:
+        native_by_code.setdefault(marker['c'], []).append({
+            'mode': mode, 'id': marker['id'], 'scope': marker.get('scope', 'surface'),
+            'modelNote': marker['modelNote'], 'specimen': marker['specimen']})
 missing_muscles, missing_parts = inventory()
 region_file = ROOT/'site/skull-regions.js'
 study_regions = [{'id': key, 'ru': title} for key, title in re.findall(
@@ -35,7 +44,7 @@ report = {
     'policy': 'Только геометрия, подтверждённая опубликованными сканами или исходными моделями; без вымышленных реконструкций.',
     'complete_skull_geometry_claim': False,
     'main_atlas': {'markers': len(rows), 'localization_counts': dict(counts),
-                   'newly_reviewed_surface_anchors': 6,
+                   'newly_reviewed_surface_anchors': 12,
                    'note': 'Поверхностный маркер отмечает участок рельефа, а не доказывает полную геометрию образования.'},
     'muscle_geometry': {
         'cards': len(MUSCLES) + len(missing_muscles), 'modeled_instances': len(MUSCLES),
@@ -51,20 +60,30 @@ report = {
         'coordinate_policy': 'Учебные группы используют независимые исходные системы координат. Обязательное совмещение всех образцов с BodyParts3D не требуется; каждый ориентир подтверждается на той сетке, на которой он показан.',
         'variant_catalogue': {'file': 'site/skull-study-variants.json', 'entries': len(variants),
                              'confirmed_variant_meshes': 0,
-                             'note': 'Повторно используются проверенные карточки типичных мест вариантов; отдельная геометрия вариантов не добавлена.'}},
+                             'published_image_examples': len(examples),
+                             'unique_TA98_terms_with_examples': len({e['c'] for e in examples}),
+                             'note': 'Каждому из 12 разных терминов соответствует опубликованная фотография или КТ другого препарата. 14 карточек включают парные места. Изображения не считаются интерактивной геометрией.'}},
     'separate_models': {
         'z_anatomy': {'bones': len(z['bones']), 'cavities': len(z['cavities']),
-                     'independently_placed_markers': len(z['markers']),
+                     'independently_placed_markers': len(native['markers']['z']),
                      'metadata': 'site/skull-z-detail.json'},
         'openear': {'structures': len(ear['structures']), 'metadata': 'site/skull-openear.json',
-                    'independently_placed_markers': len(ear_landmarks['markers']),
-                    'marker_localization_counts': dict(Counter(p['loc'] for p in ear_landmarks['markers'])),
-                    'marker_metadata': 'site/skull-openear-landmarks.json',
+                    'independently_placed_markers': len(native['markers']['openear']),
+                    'marker_localization_counts': dict(Counter(p['loc'] for p in native['markers']['openear'])),
+                    'marker_metadata': 'site/skull-native-features.json',
                     'marker_source': 'pins_head/openear-native.json',
                     'complete_ossicle_landmark_catalogue_claim': False,
                     'registered_to_main_atlas': False},
         'halle_microct': {'metadata': 'site/skull-microct.json', 'registered_to_main_atlas': False}},
     'remaining_primary_markers': remaining,
+    'cross_source_evidence': {
+        'catalogue': 'site/skull-feature-catalogue.json',
+        'terms_with_supplemental_material': len(catalogue['features']),
+        'native_marker_counts': native['counts'],
+        'native_unique_terms': len(native_by_code),
+        'main_projection_unique_terms': len({c for (b,c),r in rows.items() if r['localization']=='projection'}),
+        'terms': native_by_code,
+        'policy': 'Счётчики основного образца и дополнительных материалов независимы. Поверхностный участок, апертура, объём воздуха, полный канал и изображение другого препарата не складываются в процент полной геометрии.'},
     'other_remaining_limitations': [
         'Девять карточек мышц не имеют отдельной геометрии в проверенных совместимых наборах.',
         'Десять экземпляров частей мышц не выделены в исходных сетках: глубокая часть и ресничный пучок круговой мышцы глаза с двух сторон, две части носовой мышцы с двух сторон, две части круговой мышцы рта.',
@@ -76,6 +95,9 @@ report = {
                 'research/temporal-completion-review.json', 'research/openear-landmark-review.json',
                 'research/new-muscle-source-audit.json', 'research/new-skull-source-audit.json', 'verify/ui-head-report.json',
                 'verify/ui-skull-detail-report.json', 'verify/ui-skull-study-report.json',
-                'verify/ui-skull-study-navigation-report.json']}
+                'verify/ui-skull-study-navigation-report.json',
+                'research/face-feature-review.json', 'research/cranial-feature-review.json',
+                'research/temporal-feature-review.json', 'research/variant-example-review.json',
+                'verify/ui-skull-features-report.json']}
 (ROOT/'research/skull-completion-status.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 print('Skull status:', dict(counts), '— complete geometry is not claimed')

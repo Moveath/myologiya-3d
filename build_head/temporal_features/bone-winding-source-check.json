@@ -1,0 +1,92 @@
+{
+  "method": "Compare triangle face normals against original binary volume at +/- 0.25 mm.",
+  "source": "OpenEar ZETA, Bone.nrrd",
+  "checks": [
+    {
+      "id": "internal_acoustic_meatus",
+      "faceIndexBeforeWindingFix": 6962066,
+      "p": [
+        -0.01738016284266001,
+        0.04628292859556755,
+        0.020414756953218198
+      ],
+      "normalBeforeWindingFix": [
+        -1,
+        0,
+        0
+      ],
+      "mask_minus_0_25mm": 0,
+      "mask_plus_0_25mm": 1,
+      "inward_before_fix": true
+    },
+    {
+      "id": "external_acoustic_meatus",
+      "faceIndexBeforeWindingFix": 3804622,
+      "p": [
+        -0.031489448008787224,
+        0.02293517330404482,
+        0.025724116671627193
+      ],
+      "normalBeforeWindingFix": [
+        -0.5773502691896257,
+        0.5773502691896257,
+        0.5773502691896257
+      ],
+      "mask_minus_0_25mm": 0,
+      "mask_plus_0_25mm": 1,
+      "inward_before_fix": true
+    },
+    {
+      "id": "carotid_external_aperture",
+      "faceIndexBeforeWindingFix": 6698232,
+      "p": [
+        -0.027469599999999997,
+        0.04947759999999999,
+        0.03531772150788
+      ],
+      "normalBeforeWindingFix": [
+        0,
+        0,
+        -1
+      ],
+      "mask_minus_0_25mm": 0,
+      "mask_plus_0_25mm": 1,
+      "inward_before_fix": true
+    },
+    {
+      "id": "stylomastoid_foramen",
+      "faceIndexBeforeWindingFix": 4071504,
+      "p": [
+        -0.018841919999999998,
+        0.02724032,
+        0.03521620545854244
+      ],
+      "normalBeforeWindingFix": [
+        -0.7139382485962431,
+        0,
+        -0.7002086668924692
+      ],
+      "mask_minus_0_25mm": 0,
+      "mask_plus_0_25mm": 1,
+      "inward_before_fix": true
+    },
+    {
+      "id": "tympanic_cavity",
+      "faceIndexBeforeWindingFix": 5639636,
+      "p": [
+        -0.02238429729306056,
+        0.033892799999999994,
+        0.024456000000000002
+      ],
+      "normalBeforeWindingFix": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "mask_minus_0_25mm": 0,
+      "mask_plus_0_25mm": 1,
+      "inward_before_fix": true
+    }
+  ],
+  "inward_count": 5
+}

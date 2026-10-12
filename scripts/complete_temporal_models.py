@@ -67,7 +67,10 @@ def bone_mask():
         v += origin * np.array([-1, -1, 1])
         v = (v @ RAS_TO_VIEWER.T) * .001  # Proper rotation; no reflection or registration.
         vertices.append(v)
-        faces.append(f[:, [0, 2, 1]] + offset)  # axis permutation changes handedness.
+        # skimage's default descent winding points into the foreground. The
+        # z/y/x -> x/y/z permutation reverses it, yielding outward faces here.
+        # Reversing the face indices a second time would make bone normals inward.
+        faces.append(f + offset)
         offset += len(v)
         print('Bone slab', first, last, len(v), len(f), flush=True)
     mesh = trimesh.Trimesh(vertices=np.vstack(vertices), faces=np.vstack(faces), process=False)
@@ -106,10 +109,14 @@ def main():
                'file': output.name, 'bytes': output.stat().st_size,
                'sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
                'bone_header': header,
-               'coordinate_frame': 'Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.',
+               'coordinate_frame': 'Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. These are specimen coordinates; its arbitrary scanner pose does not establish anatomical views. No registration to BodyParts3D.',
+               'bone_source_cbct_sampling_mm': .250,
+               'bone_mask_grid_sampling_mm': .125,
                'ras_to_viewer_matrix': RAS_TO_VIEWER.tolist(),
                'changes': ['12 author PLY meshes retained without anatomical remodeling.',
                            'Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.',
+                           'Bone mask grid is 0.125 mm; author bone segmentation derives from the original 0.250 mm full-specimen CBCT (paper Methods and Table 1). Grid spacing does not establish anatomical accuracy.',
+                           'Corrected inward bone face winding; vertex coordinates and connectivity are unchanged. Author PLY winding is retained.',
                            'LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.',
                            'Meshopt compression with 16-bit position quantization; no decimation in this build.'],
                'structures': report}

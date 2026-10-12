@@ -1,0 +1,1795 @@
+{
+  "date": "2026-10-13",
+  "scope": "57 ранее не подтверждённых записей лицевого черепа; 32 разных термина TA98.",
+  "counts": {
+    "model-not-resolved": 50,
+    "verified-separate-surface-only": 1,
+    "verified-primary-surface": 6
+  },
+  "primary_surface_proposals": "pins_head/face-features-bp.json",
+  "source_native_markers": "pins_head/face-native-features.json",
+  "records": [
+    {
+      "bone": "lacrimal_left",
+      "code": "A02.1.09.004",
+      "ru": "Слёзный крючок",
+      "lat": "hamulus lacrimalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Lacrimal Bones: lacrimal crest terminates in lacrimal hamulus"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o8",
+          "locator": "OS LACRIMALE: hamulus lacrimalis"
+        }
+      ],
+      "geometry_observation": "Слёзный крючок: закруглённый нижний конец гребня есть, но отдельный направленный вперёд крючок не выделен достоверно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/lacrimal_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "lacrimal_right",
+      "code": "A02.1.09.004",
+      "ru": "Слёзный крючок",
+      "lat": "hamulus lacrimalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Lacrimal Bones: lacrimal crest terminates in lacrimal hamulus"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o8",
+          "locator": "OS LACRIMALE: hamulus lacrimalis"
+        }
+      ],
+      "geometry_observation": "Слёзный крючок: закруглённый нижний конец гребня есть, но отдельный направленный вперёд крючок не выделен достоверно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/lacrimal_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "mandible",
+      "code": "A02.1.15.010",
+      "ru": "Верхняя подбородочная ость",
+      "lat": "spina mentalis superior; spina geni superior",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-172/",
+          "locator": "с. 172, internal surface: upper mental spines"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Mandible: medial surface: upper genial tubercles"
+        }
+      ],
+      "geometry_observation": "Верхняя подбородочная ость: на срединной внутренней поверхности нет уверенно отделимой верхней ости.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/mandible_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "Halle не содержит нижней челюсти; этот источник не проверяет данный термин."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "mandible",
+      "code": "A02.1.15.011",
+      "ru": "Нижняя подбородочная ость",
+      "lat": "spina mentalis inferior; spina geni inferior",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-172/",
+          "locator": "с. 172, internal surface: lower spines or median ridge"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Mandible: medial surface: lower genial tubercles"
+        }
+      ],
+      "geometry_observation": "Нижняя подбородочная ость: невозможно отделить нижний элемент от общего сглаженного срединного рельефа.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/mandible_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "Halle не содержит нижней челюсти; этот источник не проверяет данный термин."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "mandible",
+      "code": "A02.1.15.030",
+      "ru": "Канал нижней челюсти",
+      "lat": "canalis mandibulae",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-173/",
+          "locator": "с. 173, mandibular canal"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Mandible: mandibular canal traverses bone towards symphysis"
+        }
+      ],
+      "geometry_observation": "Нижнечелюстной канал: наличие входной области и подбородочного отверстия не подтверждает непрерывные внутрикостные стенки и ход.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/mandible_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "Halle не содержит нижней челюсти; этот источник не проверяет данный термин."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "mandible",
+      "code": "A02.1.15.031",
+      "ru": "Челюстно-подъязычная борозда",
+      "lat": "sulcus mylohyoideus",
+      "baseline_localization": "projection",
+      "result": "verified-separate-surface-only",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=142",
+          "locator": "PDF p.142, ramus: mylohyoid groove from lower back margin of mandibular foramen, downward and forward."
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Mandible: mylo-hyoid groove"
+        }
+      ],
+      "geometry_observation": "Челюстно-подъязычная борозда: BP сглажен; в Z подтверждён отдельный видимый участок с обеих сторон, записаны собственные координаты.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/mandible_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "Halle не содержит нижней челюсти; этот источник не проверяет данный термин."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.00.061",
+      "ru": "Резцовые каналы",
+      "lat": "canales incisivi",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, incisive canals in incisive foramen"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: palatine process: incisive fossa and incisive canals"
+        }
+      ],
+      "geometry_observation": "Резцовые каналы: не прослежен непрерывный внутрикостный просвет от нёба к носовой поверхности.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.00.062",
+      "ru": "Резцовые отверстия",
+      "lat": "foramina incisiva",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, incisive foramen and orifices of lateral canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: palatine process: incisive fossa"
+        }
+      ],
+      "geometry_observation": "Резцовые отверстия: срединный край доступен, но отдельные замкнутые края просветов достоверно не отделены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.004",
+      "ru": "Подглазничный канал",
+      "lat": "canalis infraorbitalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: orbital surface; infra-orbital canal"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: facies orbitalis, sulcus infraorbitalis → canalis infraorbitalis"
+        }
+      ],
+      "geometry_observation": "Подглазничный канал: наружное подглазничное отверстие не доказывает внутреннюю траекторию и стенки канала.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.005",
+      "ru": "Подглазничная борозда",
+      "lat": "sulcus infraorbitalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: orbital plate; groove running forwards"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Anterior and lateral aspects: Sulcus infraorbitalis"
+        }
+      ],
+      "geometry_observation": "Подглазничная борозда: глазничная поверхность в моделях сглажена, отчётливое дно и края борозды не подтверждены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.014",
+      "ru": "Альвеолярные отверстия",
+      "lat": "foramina alveolaria",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-158/",
+          "locator": "с. 158, infratemporal surface: apertures of alveolar canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: posterior surface: posterior dental canals"
+        }
+      ],
+      "geometry_observation": "Альвеолярные отверстия: на бугре не различимы отдельные входы задних альвеолярных каналов.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.015",
+      "ru": "Альвеолярные каналы",
+      "lat": "canales alveolares",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-158/",
+          "locator": "с. 158, infratemporal surface: alveolar canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: posterior dental canals leading to molar sockets"
+        }
+      ],
+      "geometry_observation": "Альвеолярные каналы: исходные сетки не дают проверенной системы внутренних ветвящихся просветов.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.019",
+      "ru": "Раковинный гребень",
+      "lat": "crista conchalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-160/",
+          "locator": "с. 160, conchal crest"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: crista conchalis"
+        }
+      ],
+      "geometry_observation": "Раковинный гребень верхней челюсти: переходы носовой поверхности видны, но конкретный гребень не отделён уверенно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.022",
+      "ru": "Большая нёбная борозда",
+      "lat": "sulcus palatinus major",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-160/",
+          "locator": "с. 160, nasal surface, oblique groove behind aperture"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: nasal surface: greater palatine canal groove"
+        }
+      ],
+      "geometry_observation": "Большая нёбная борозда верхней челюсти: на заднемедиальной поверхности нет уверенно прослеживаемого отдельного дна.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.026",
+      "ru": "Слёзная вырезка",
+      "lat": "incisura lacrimalis",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Incisura lacrimalis"
+        }
+      ],
+      "geometry_observation": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "lat",
+        "uv": [
+          0.56,
+          0.46
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_left_026.png",
+        "screenshot_sha256": "8e9ac69ac09a7cf496296c644fc90f3c4cdbfd8ab3563164a5d9eabeeb8512f8",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.027",
+      "ru": "Решётчатый гребень",
+      "lat": "crista ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: crista ethmoidalis"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Crista ethmoidalis"
+        }
+      ],
+      "geometry_observation": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "lat",
+        "uv": [
+          0.648,
+          0.165
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_left_027.png",
+        "screenshot_sha256": "19fa6caa03b61db86171c267e434742d8fb23c28da6ce26ddd3e528b567dcf3c",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.031",
+      "ru": "Резцовая кость",
+      "lat": "os incisivum; premaxilla",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+          "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+        },
+        {
+          "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+          "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+        }
+      ],
+      "geometry_observation": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "ant",
+        "uv": [
+          0.29,
+          0.86
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_left_031.png",
+        "screenshot_sha256": "a11a2f5a6ebd00ec57158b2a8363edb10bfc3e4f495ef97af3c8a5c1a7a4b9b9",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.033",
+      "ru": "Нёбные ости",
+      "lat": "spinae palatinae",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Alkhani и соавт., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421211/",
+          "locator": "Introduction; Figure 2: palatine spines and grooves"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Bottom view: Spinae palatinae"
+        }
+      ],
+      "geometry_observation": "Нёбные ости: нижняя поверхность нёбного отростка сглажена, отдельные выступы не различимы.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_left",
+      "code": "A02.1.12.034",
+      "ru": "Нёбные борозды",
+      "lat": "sulci palatini",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Alkhani и соавт., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421211/",
+          "locator": "Introduction; Figure 2: palatine spines and grooves"
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, inferior surface: groove at posterior lateral border"
+        }
+      ],
+      "geometry_observation": "Нёбные борозды: мелкие ветвящиеся борозды на нёбной поверхности не прослежены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.00.061",
+      "ru": "Резцовые каналы",
+      "lat": "canales incisivi",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, incisive canals in incisive foramen"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: palatine process: incisive fossa and incisive canals"
+        }
+      ],
+      "geometry_observation": "Резцовые каналы: не прослежен непрерывный внутрикостный просвет от нёба к носовой поверхности.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.00.062",
+      "ru": "Резцовые отверстия",
+      "lat": "foramina incisiva",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, incisive foramen and orifices of lateral canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: palatine process: incisive fossa"
+        }
+      ],
+      "geometry_observation": "Резцовые отверстия: срединный край доступен, но отдельные замкнутые края просветов достоверно не отделены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.004",
+      "ru": "Подглазничный канал",
+      "lat": "canalis infraorbitalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: orbital surface; infra-orbital canal"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: facies orbitalis, sulcus infraorbitalis → canalis infraorbitalis"
+        }
+      ],
+      "geometry_observation": "Подглазничный канал: наружное подглазничное отверстие не доказывает внутреннюю траекторию и стенки канала.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.005",
+      "ru": "Подглазничная борозда",
+      "lat": "sulcus infraorbitalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: orbital plate; groove running forwards"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Anterior and lateral aspects: Sulcus infraorbitalis"
+        }
+      ],
+      "geometry_observation": "Подглазничная борозда: глазничная поверхность в моделях сглажена, отчётливое дно и края борозды не подтверждены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.014",
+      "ru": "Альвеолярные отверстия",
+      "lat": "foramina alveolaria",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-158/",
+          "locator": "с. 158, infratemporal surface: apertures of alveolar canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: posterior surface: posterior dental canals"
+        }
+      ],
+      "geometry_observation": "Альвеолярные отверстия: на бугре не различимы отдельные входы задних альвеолярных каналов.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.015",
+      "ru": "Альвеолярные каналы",
+      "lat": "canales alveolares",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-158/",
+          "locator": "с. 158, infratemporal surface: alveolar canals"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: posterior dental canals leading to molar sockets"
+        }
+      ],
+      "geometry_observation": "Альвеолярные каналы: исходные сетки не дают проверенной системы внутренних ветвящихся просветов.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.019",
+      "ru": "Раковинный гребень",
+      "lat": "crista conchalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-160/",
+          "locator": "с. 160, conchal crest"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: crista conchalis"
+        }
+      ],
+      "geometry_observation": "Раковинный гребень верхней челюсти: переходы носовой поверхности видны, но конкретный гребень не отделён уверенно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.022",
+      "ru": "Большая нёбная борозда",
+      "lat": "sulcus palatinus major",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-160/",
+          "locator": "с. 160, nasal surface, oblique groove behind aperture"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: nasal surface: greater palatine canal groove"
+        }
+      ],
+      "geometry_observation": "Большая нёбная борозда верхней челюсти: на заднемедиальной поверхности нет уверенно прослеживаемого отдельного дна.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.026",
+      "ru": "Слёзная вырезка",
+      "lat": "incisura lacrimalis",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Incisura lacrimalis"
+        }
+      ],
+      "geometry_observation": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "med",
+        "uv": [
+          0.455,
+          0.47
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_right_026.png",
+        "screenshot_sha256": "f33592bec41d49685f6e10d438097ad4e5046eaff564a6419c126cef8aa8e66e",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.027",
+      "ru": "Решётчатый гребень",
+      "lat": "crista ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+          "locator": "MAXILLA: crista ethmoidalis"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Crista ethmoidalis"
+        }
+      ],
+      "geometry_observation": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "med",
+        "uv": [
+          0.35,
+          0.165
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_right_027.png",
+        "screenshot_sha256": "1288b9d72fb9b60f4292200a9192da53127473422c3b8a661f4077657ebb8810",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.031",
+      "ru": "Резцовая кость",
+      "lat": "os incisivum; premaxilla",
+      "baseline_localization": "projection",
+      "result": "verified-primary-surface",
+      "current_primary_localization_proposal": "surface",
+      "anatomical_sources": [
+        {
+          "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+          "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+        },
+        {
+          "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+          "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+        }
+      ],
+      "geometry_observation": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "ant",
+        "uv": [
+          0.71,
+          0.86
+        ],
+        "coordinateFrame": "BodyParts3D atlas metres",
+        "source": "build_head/face_features/bp-candidate-specs.json",
+        "screenshot": "build_head/face_features/maxilla_right_031.png",
+        "screenshot_sha256": "6e78956280678cf293116d1d8dc883862bdd98ca68148e21bb20ddf19da05ec6",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      },
+      "next_requirement": null
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.033",
+      "ru": "Нёбные ости",
+      "lat": "spinae palatinae",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Alkhani и соавт., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421211/",
+          "locator": "Introduction; Figure 2: palatine spines and grooves"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Bottom view: Spinae palatinae"
+        }
+      ],
+      "geometry_observation": "Нёбные ости: нижняя поверхность нёбного отростка сглажена, отдельные выступы не различимы.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "maxilla_right",
+      "code": "A02.1.12.034",
+      "ru": "Нёбные борозды",
+      "lat": "sulci palatini",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Alkhani и соавт., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421211/",
+          "locator": "Introduction; Figure 2: palatine spines and grooves"
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
+          "locator": "с. 162, inferior surface: groove at posterior lateral border"
+        }
+      ],
+      "geometry_observation": "Нёбные борозды: мелкие ветвящиеся борозды на нёбной поверхности не прослежены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/maxilla_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих верхних челюстей в передних, медиальных, нижних и косых видах; конкретные подтверждённые участки вынесены в отдельные записи.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "nasal_left",
+      "code": "A02.1.10.002",
+      "ru": "Решётчатая борозда",
+      "lat": "sulcus ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Nasal Bones: posterior surface: ethmoidal sulcus"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o9",
+          "locator": "OS NASALE: sulcus ethmoidalis"
+        }
+      ],
+      "geometry_observation": "Решётчатая борозда носовой кости: внутренняя поверхность есть, но отдельная продольная сосудисто-нервная борозда не подтверждена.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/nasal_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "nasal_left",
+      "code": "A02.1.10.003",
+      "ru": "Носовые отверстия",
+      "lat": "foramina nasalia",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Nasal Bones: anterior surface: minute foramen near centre"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o9",
+          "locator": "OS NASALE: foramina nasalia"
+        }
+      ],
+      "geometry_observation": "Носовые отверстия: пластинка не показывает достоверно отдельные сквозные просветы.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/nasal_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "nasal_right",
+      "code": "A02.1.10.002",
+      "ru": "Решётчатая борозда",
+      "lat": "sulcus ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Nasal Bones: posterior surface: ethmoidal sulcus"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o9",
+          "locator": "OS NASALE: sulcus ethmoidalis"
+        }
+      ],
+      "geometry_observation": "Решётчатая борозда носовой кости: внутренняя поверхность есть, но отдельная продольная сосудисто-нервная борозда не подтверждена.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/nasal_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "nasal_right",
+      "code": "A02.1.10.003",
+      "ru": "Носовые отверстия",
+      "lat": "foramina nasalia",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Nasal Bones: anterior surface: minute foramen near centre"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o9",
+          "locator": "OS NASALE: foramina nasalia"
+        }
+      ],
+      "geometry_observation": "Носовые отверстия: пластинка не показывает достоверно отдельные сквозные просветы.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/nasal_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_left",
+      "code": "A02.1.13.008",
+      "ru": "Малые нёбные каналы",
+      "lat": "canales palatini minores",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-168/",
+          "locator": "с. 168, pyramidal process: lesser palatine foramina"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: tubercle: palatine canals and inferior openings"
+        }
+      ],
+      "geometry_observation": "Малые нёбные каналы: непрерывные внутрикостные просветы в пирамидальном отростке не прослежены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_left",
+      "code": "A02.1.13.010",
+      "ru": "Решётчатый гребень",
+      "lat": "crista ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
+          "locator": "с. 167, nasal surface: ethmoidal crest"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: medial surface: upper ethmoidal crest"
+        }
+      ],
+      "geometry_observation": "Решётчатый гребень нёбной кости: верхний переход поверхности у корней отростков не имеет уверенно отдельной линии гребня.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_left",
+      "code": "A02.1.13.016",
+      "ru": "Малые нёбные отверстия",
+      "lat": "foramina palatina minora",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-168/",
+          "locator": "с. 168, base of pyramidal process: lesser palatine foramina"
+        },
+        {
+          "title": "Kenhub, Palatine bone",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-palatine-bone",
+          "locator": "Processes: pyramidal process, inferior surface"
+        }
+      ],
+      "geometry_observation": "Малые нёбные отверстия: мелкие выходные просветы пирамидального отростка не подтверждены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_left",
+      "code": "A02.1.13.019",
+      "ru": "Нёбный гребень",
+      "lat": "crista palatina",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
+          "locator": "с. 167, inferior surface: transverse ridge near posterior margin"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: horizontal plate: inferior surface, posterior short crest"
+        }
+      ],
+      "geometry_observation": "Нёбный гребень: задняя поверхность горизонтальной пластинки доступна, но отдельный поперечный гребень не различим уверенно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_right",
+      "code": "A02.1.13.008",
+      "ru": "Малые нёбные каналы",
+      "lat": "canales palatini minores",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-168/",
+          "locator": "с. 168, pyramidal process: lesser palatine foramina"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: tubercle: palatine canals and inferior openings"
+        }
+      ],
+      "geometry_observation": "Малые нёбные каналы: непрерывные внутрикостные просветы в пирамидальном отростке не прослежены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_right",
+      "code": "A02.1.13.010",
+      "ru": "Решётчатый гребень",
+      "lat": "crista ethmoidalis",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
+          "locator": "с. 167, nasal surface: ethmoidal crest"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: medial surface: upper ethmoidal crest"
+        }
+      ],
+      "geometry_observation": "Решётчатый гребень нёбной кости: верхний переход поверхности у корней отростков не имеет уверенно отдельной линии гребня.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_right",
+      "code": "A02.1.13.016",
+      "ru": "Малые нёбные отверстия",
+      "lat": "foramina palatina minora",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-168/",
+          "locator": "с. 168, base of pyramidal process: lesser palatine foramina"
+        },
+        {
+          "title": "Kenhub, Palatine bone",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-palatine-bone",
+          "locator": "Processes: pyramidal process, inferior surface"
+        }
+      ],
+      "geometry_observation": "Малые нёбные отверстия: мелкие выходные просветы пирамидального отростка не подтверждены.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "palatine_right",
+      "code": "A02.1.13.019",
+      "ru": "Нёбный гребень",
+      "lat": "crista palatina",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-167/",
+          "locator": "с. 167, inferior surface: transverse ridge near posterior margin"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Palatine Bone: horizontal plate: inferior surface, posterior short crest"
+        }
+      ],
+      "geometry_observation": "Нёбный гребень: задняя поверхность горизонтальной пластинки доступна, но отдельный поперечный гребень не различим уверенно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/palatine_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр медиальных поверхностей обеих нёбных костей; уверенная отдельная верхняя линия гребня или просветы малых каналов не получены.",
+        "additional_scan_review": "Halle: нёбная область осмотрена при исходном шаге 0,125 мм без упрощения; снимки build_head/face_features/roi_{palate,incisive,grooves}.png. Разрывы и пористость не позволяют надёжно отделить мелкие именованные каналы/борозды от ограничений маски."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "vomer",
+      "code": "A02.1.11.003",
+      "ru": "Борозда сошника",
+      "lat": "sulcus vomeris",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Vomer: lateral surface: groove forwards and downwards"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o7",
+          "locator": "VOMER: sulcus vomeris"
+        }
+      ],
+      "geometry_observation": "Борозда сошника: боковые пластинки сглажены, отдельный косой ход борозды не подтверждён.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/vomer_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "vomer",
+      "code": "A02.1.11.004",
+      "ru": "Хоанный гребень сошника",
+      "lat": "crista choanalis vomeris",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Marušić, Vinter, Krmpotić-Nemanić, 2006",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-casopis/140366",
+          "locator": "Lost and found anatomical terms: Crista choanalis vomeris, abstract"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o7",
+          "locator": "VOMER: crista choanalis"
+        }
+      ],
+      "geometry_observation": "Хоанный гребень сошника: видимая граница не подтверждена; дополнительно сохранено расхождение определения в источниках.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/vomer_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "vomer",
+      "code": "A02.1.11.005",
+      "ru": "Клиновидная часть сошника",
+      "lat": "pars cuneiformis vomeris",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Marušić, Vinter, Krmpotić-Nemanić, 2006",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-casopis/140366",
+          "locator": "Lost and found anatomical terms: Crista choanalis vomeris, abstract"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o7",
+          "locator": "VOMER: pars cuneiformis"
+        }
+      ],
+      "geometry_observation": "Клиновидная часть сошника: ожидаемая область доступна, но граница части в геометрии не отделяется.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/vomer_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Сохранён предыдущий индивидуальный обзор; новых собственных координат в этом проходе не подтверждено.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.007",
+      "ru": "Глазничный бугорок",
+      "lat": "tuberculum orbitale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gayretli и соавт., 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37133786/",
+          "locator": "Abstract: Whitnall tubercle, orbital rim and frontozygomatic suture"
+        },
+        {
+          "title": "Американская академия офтальмологии, EyeWiki",
+          "url": "https://eyewiki.aao.org/Bony_Anatomy_of_the_Orbit",
+          "locator": "Lateral Wall: Whitnall tubercle"
+        }
+      ],
+      "geometry_observation": "Глазничный бугорок: отдельный небольшой выступ на глазничной поверхности не определён достоверно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.008",
+      "ru": "Краевой бугорок",
+      "lat": "tuberculum marginale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: temporal border: marginal tubercle"
+        },
+        {
+          "title": "Anatomical study of marginal tubercle, 2017",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5234273/",
+          "locator": "Introduction: posterior border of frontal process"
+        }
+      ],
+      "geometry_observation": "Краевой бугорок: общий край лобного отростка есть, отдельный краевой выступ не подтверждён.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.009",
+      "ru": "Скулоглазничное отверстие",
+      "lat": "foramen zygomaticoorbitale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-165/",
+          "locator": "с. 165, orbital process: zygomatico-orbital foramina"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: orbital process: superior/orbital surface openings"
+        }
+      ],
+      "geometry_observation": "Скулоглазничное отверстие: на глазничной поверхности не подтверждён отдельный входной просвет.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.010",
+      "ru": "Скулолицевое отверстие",
+      "lat": "foramen zygomaticofaciale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: lateral surface: zygomatic foramen"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o3",
+          "locator": "OS ZYGOMATICUM: facies lateralis / foramen zygomaticofaciale"
+        }
+      ],
+      "geometry_observation": "Скулолицевое отверстие: наружная поверхность гладкая, отдельный выходной просвет не различим.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.011",
+      "ru": "Скуловисочное отверстие",
+      "lat": "foramen zygomaticotemporale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: zygomatico-temporal canal opening on temporal surface"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o3",
+          "locator": "OS ZYGOMATICUM: facies temporalis / foramen zygomaticotemporale"
+        }
+      ],
+      "geometry_observation": "Скуловисочное отверстие: внутренняя височная поверхность не даёт уверенного отдельного просвета.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_left_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.007",
+      "ru": "Глазничный бугорок",
+      "lat": "tuberculum orbitale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gayretli и соавт., 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37133786/",
+          "locator": "Abstract: Whitnall tubercle, orbital rim and frontozygomatic suture"
+        },
+        {
+          "title": "Американская академия офтальмологии, EyeWiki",
+          "url": "https://eyewiki.aao.org/Bony_Anatomy_of_the_Orbit",
+          "locator": "Lateral Wall: Whitnall tubercle"
+        }
+      ],
+      "geometry_observation": "Глазничный бугорок: отдельный небольшой выступ на глазничной поверхности не определён достоверно.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.008",
+      "ru": "Краевой бугорок",
+      "lat": "tuberculum marginale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: temporal border: marginal tubercle"
+        },
+        {
+          "title": "Anatomical study of marginal tubercle, 2017",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5234273/",
+          "locator": "Introduction: posterior border of frontal process"
+        }
+      ],
+      "geometry_observation": "Краевой бугорок: общий край лобного отростка есть, отдельный краевой выступ не подтверждён.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.009",
+      "ru": "Скулоглазничное отверстие",
+      "lat": "foramen zygomaticoorbitale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body, 1918",
+          "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-165/",
+          "locator": "с. 165, orbital process: zygomatico-orbital foramina"
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: orbital process: superior/orbital surface openings"
+        }
+      ],
+      "geometry_observation": "Скулоглазничное отверстие: на глазничной поверхности не подтверждён отдельный входной просвет.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.010",
+      "ru": "Скулолицевое отверстие",
+      "lat": "foramen zygomaticofaciale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: lateral surface: zygomatic foramen"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o3",
+          "locator": "OS ZYGOMATICUM: facies lateralis / foramen zygomaticofaciale"
+        }
+      ],
+      "geometry_observation": "Скулолицевое отверстие: наружная поверхность гладкая, отдельный выходной просвет не различим.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    },
+    {
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.011",
+      "ru": "Скуловисочное отверстие",
+      "lat": "foramen zygomaticotemporale",
+      "baseline_localization": "projection",
+      "result": "model-not-resolved",
+      "current_primary_localization_proposal": "projection",
+      "anatomical_sources": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Zygomatic Bones: zygomatico-temporal canal opening on temporal surface"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o3",
+          "locator": "OS ZYGOMATICUM: facies temporalis / foramen zygomaticotemporale"
+        }
+      ],
+      "geometry_observation": "Скуловисочное отверстие: внутренняя височная поверхность не даёт уверенного отдельного просвета.",
+      "evidence": {
+        "prior_review_image": "build_head/complete_face/zygomatic_right_comparison.png",
+        "prior_review": "research/face-completion-review.json",
+        "prior_review_scope": "Предыдущий раздельный осмотр этой кости в BodyParts3D и Z-Anatomy; вывод сохранён, а не выдан за новую независимую проверку.",
+        "current_pass": "Повторный осмотр обеих скуловых костей в медиальном, латеральном и заднем ракурсах; отдельный краевой бугорок не отделён уверенно от общей формы края.",
+        "additional_scan_review": "В новом ROI Halle эта кость не осмотрена полностью по данному образованию; подтверждения или вывода об отсутствии по этому скану нет."
+      },
+      "next_requirement": "Для полной формы требуется исходная геометрия с различимыми границами именно этого образования; название или общий анатомический источник не заменяют эту проверку."
+    }
+  ],
+  "methods": [
+    "Повторный осмотр медиальных, передних и нижних поверхностей обеих верхних челюстей; дополнительные косые виды справа и слева.",
+    "Сравнение с подписанным медиальным изображением Anatomy Standard, независимым учебником Buchanan и университетским атласом Палацкого.",
+    "Отдельная проверка значения pars incisiva по двум независимым исследованиям: сращение у взрослого не отменяет часть, несущую альвеолы резцов.",
+    "Повторный осмотр скуловых костей с медиальной и латеральной сторон; общий край не объявлен отдельным краевым бугорком без однозначной границы.",
+    "Осмотр опубликованной сетки Halle в переднем, нижнем и двух увеличенных видах. Случайные мелкие разрывы и пористость не приняты за именованные отверстия.",
+    "Дополнительно построен лицевой ROI из той же исходной маски Halle при шаге 0,125 мм без разрежения, сглаживания и децимации: 14 147 957 треугольников. Осмотрены нижний, передний, верхний виды, область резцового отверстия и латеральная часть нёба. Новые уверенные лицевые ориентиры не получены."
+  ],
+  "additional_model_observations": {
+    "Halle": "В опубликованной поверхности и в новом ROI из исходной бинарной маски при 0,125 мм заметны открытые, пористые участки переднего нёба и альвеол. Увеличение детализации сохраняет эти разрывы: в резцовой области видна неровная ямка, но отдельные просветы и непрерывные стенки канала этим осмотром не подтверждены; на латеральном нёбе общий изгиб поверхности не выдан за сосудистую борозду. Это ограничение данного осмотра, а не доказательство отсутствия образования в исходном скане. Полная повторная сегментация исходных томографических интенсивностей и экспертная идентификация каналов не выполнялись. Нижней челюсти в препарате нет. Новая сетка используется только локально и не публикуется как завершённая модель.",
+    "Z-Anatomy": "Большинство лицевых поверхностей производны от BodyParts3D и упрощены. Четыре новые координаты записаны независимо; они не увеличивают число разных образований, уже подтверждённых этой же проверкой на BP.",
+    "variants": "Torus mandibularis и парный резцовый шов на BodyParts3D/Z не подтверждены этой проверкой. Фотографии иных препаратов не меняют статус этих сеток."
+  },
+  "complete_face_geometry_claim": false
+}

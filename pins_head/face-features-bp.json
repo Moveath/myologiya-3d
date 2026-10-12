@@ -1,0 +1,270 @@
+[
+  {
+    "bone": "maxilla_right",
+    "code": "A02.1.12.031",
+    "p": [
+      -0.00714,
+      1.48193,
+      0.18262
+    ],
+    "n": [
+      -0.367,
+      0.549,
+      0.751
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
+    "refs": [
+      {
+        "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+        "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+      },
+      {
+        "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+        "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+      },
+      {
+        "title": "Buchanan, Manual of Anatomy",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+        "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "ant",
+      "uv": [
+        0.71,
+        0.86
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_right_031.png",
+      "screenshot_sha256": "6e78956280678cf293116d1d8dc883862bdd98ca68148e21bb20ddf19da05ec6",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  },
+  {
+    "bone": "maxilla_left",
+    "code": "A02.1.12.031",
+    "p": [
+      0.0045,
+      1.48185,
+      0.18293
+    ],
+    "n": [
+      0.011,
+      0.68,
+      0.733
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
+    "refs": [
+      {
+        "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+        "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+      },
+      {
+        "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+        "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+      },
+      {
+        "title": "Buchanan, Manual of Anatomy",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+        "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "ant",
+      "uv": [
+        0.29,
+        0.86
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_left_031.png",
+      "screenshot_sha256": "a11a2f5a6ebd00ec57158b2a8363edb10bfc3e4f495ef97af3c8a5c1a7a4b9b9",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  },
+  {
+    "bone": "maxilla_right",
+    "code": "A02.1.12.026",
+    "p": [
+      -0.0183,
+      1.51061,
+      0.16603
+    ],
+    "n": [
+      0.875,
+      0.378,
+      0.303
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
+    "refs": [
+      {
+        "title": "Buchanan, Manual of Anatomy",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+        "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+      },
+      {
+        "title": "Anatomy Standard, Maxilla",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+        "locator": "Medial view: Incisura lacrimalis"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "med",
+      "uv": [
+        0.455,
+        0.47
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_right_026.png",
+      "screenshot_sha256": "f33592bec41d49685f6e10d438097ad4e5046eaff564a6419c126cef8aa8e66e",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  },
+  {
+    "bone": "maxilla_left",
+    "code": "A02.1.12.026",
+    "p": [
+      0.01708,
+      1.51131,
+      0.16539
+    ],
+    "n": [
+      -0.485,
+      0.738,
+      0.469
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
+    "refs": [
+      {
+        "title": "Buchanan, Manual of Anatomy",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+        "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+      },
+      {
+        "title": "Anatomy Standard, Maxilla",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+        "locator": "Medial view: Incisura lacrimalis"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "lat",
+      "uv": [
+        0.56,
+        0.46
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_left_026.png",
+      "screenshot_sha256": "8e9ac69ac09a7cf496296c644fc90f3c4cdbfd8ab3563164a5d9eabeeb8512f8",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  },
+  {
+    "bone": "maxilla_right",
+    "code": "A02.1.12.027",
+    "p": [
+      -0.00143,
+      1.53303,
+      0.17375
+    ],
+    "n": [
+      0.63,
+      -0.664,
+      -0.404
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
+    "refs": [
+      {
+        "title": "Университет Палацкого, Libor Luňáček",
+        "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+        "locator": "MAXILLA: crista ethmoidalis"
+      },
+      {
+        "title": "Anatomy Standard, Maxilla",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+        "locator": "Medial view: Crista ethmoidalis"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "med",
+      "uv": [
+        0.35,
+        0.165
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_right_027.png",
+      "screenshot_sha256": "1288b9d72fb9b60f4292200a9192da53127473422c3b8a661f4077657ebb8810",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  },
+  {
+    "bone": "maxilla_left",
+    "code": "A02.1.12.027",
+    "p": [
+      0.00278,
+      1.53303,
+      0.17187
+    ],
+    "n": [
+      -0.543,
+      -0.223,
+      -0.809
+    ],
+    "localization": "surface",
+    "modelNote": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
+    "refs": [
+      {
+        "title": "Университет Палацкого, Libor Luňáček",
+        "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020115.html#o2",
+        "locator": "MAXILLA: crista ethmoidalis"
+      },
+      {
+        "title": "Anatomy Standard, Maxilla",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+        "locator": "Medial view: Crista ethmoidalis"
+      }
+    ],
+    "evidence": {
+      "method": "manual-anatomical-image-review-then-orthographic-raycast",
+      "view": "lat",
+      "uv": [
+        0.648,
+        0.165
+      ],
+      "coordinateFrame": "BodyParts3D atlas metres",
+      "source": "build_head/face_features/bp-candidate-specs.json",
+      "screenshot": "build_head/face_features/maxilla_left_027.png",
+      "screenshot_sha256": "19fa6caa03b61db86171c267e434742d8fb23c28da6ce26ddd3e528b567dcf3c",
+      "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+      "boundary_segmentation": false,
+      "external_expert_review": false
+    }
+  }
+]

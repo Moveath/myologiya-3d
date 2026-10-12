@@ -1,0 +1,1433 @@
+{
+  "date": "2026-10-13",
+  "projectionRecords": 45,
+  "uniqueTA98Terms": 41,
+  "summary": {
+    "not-confirmed": 38,
+    "source-airspace-only": 5,
+    "source-aperture-only": 2
+  },
+  "completeGeometryClaim": false,
+  "nativeMarkers": 12,
+  "uniqueNativeMarkerTerms": 7,
+  "notes": [
+    "12 новых собственных маркеров относятся к 7 терминам; 8 объёмов полостей соответствуют только 5 разным терминам.",
+    "Ни один из 45 статусов BodyParts3D не изменён. Частичное подтверждение апертуры и учебная модель пространства не считаются полным костным каналом.",
+    "Неподтверждённый статус означает недостаточность выполненной проверки, не доказанное отсутствие образования у человека или во всех доступных источниках."
+  ],
+  "halleSourceROI": {
+    "originalSource": "https://zenodo.org/records/6108435",
+    "sourceMD5": "7ae22945a353069bdb695b63fa2f20bd",
+    "sampling_mm": 0.125,
+    "processing": "Binary source mask at its original resolution; ROI, marching cubes 0.5; no smoothing, filling or invented geometry.",
+    "provenance": "build_head/cranial_features/halle-roi-provenance.json",
+    "published": false,
+    "reason": "The source mask ROI does not resolve the distinction between true fine foramina and segmentation/preparation defects with sufficient confidence; publishing it would not close the target feature list."
+  },
+  "rows": [
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.009",
+      "ru": "Надглазничное отверстие; надглазничная вырезка",
+      "lat": "foramen supraorbitale; incisura supraorbitalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Haładaj et al. (2019) — Supraorbital and supratrochlear nerves",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6647930/",
+          "locator": "Materials and Methods: границы supraorbital notch и frontal notch на надглазничном крае; Fig.3–4."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "В Z-Anatomy надглазничный край сглажен; на переднем и нижнем видах не выделен достоверный отдельный просвет или чёткая вырезка. Приближение орбит Halle не сняло неоднозначность мелкого рельефа.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.010",
+      "ru": "Лобная вырезка; лобное отверстие",
+      "lat": "incisura frontalis; foramen frontale",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Haładaj et al. (2019) — Supraorbital and supratrochlear nerves",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6647930/",
+          "locator": "Materials and Methods: границы supraorbital notch и frontal notch на надглазничном крае; Fig.3–4."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Медиальный надглазничный край осмотрен в Z-Anatomy и Halle. Отдельная лобная вырезка/апертура, отличимая от соседнего края и дефектов сетки, не подтверждена.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.018",
+      "ru": "Слепое отверстие",
+      "lat": "foramen caecum",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На заднем виде Z-Anatomy прослеживается лобный гребень; отдельный канал или замкнутый край слепого отверстия у его нижнего конца не установлен.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.025",
+      "ru": "Блоковая ямка",
+      "lat": "fovea trochlearis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Radiological anatomy of the trochlear spine (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13179243/",
+          "locator": "Introduction; Results; Fig.1–3: superomedial anterior orbit; fovea and spine."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На нижнем виде Z-Anatomy видна глазничная поверхность, но отдельная блоковая ямка в переднемедиальной области не распознана с достаточной уверенностью.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.029",
+      "ru": "Лобная пазуха",
+      "lat": "sinus frontalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "geometryStatus": "source-airspace-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_frontal_sinus"
+      ],
+      "observation": "Авторский отдельный объект frontal_sinus осмотрен спереди и сзади; добавлен собственный маркер на его поверхности. Подтверждена форма учебного объёма полости, не все костные стенки и соустья.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.030",
+      "ru": "Апертура лобной пазухи",
+      "lat": "apertura sinus frontalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Нижние края отдельного объёма frontal_sinus не приняты автоматически за апертуру пазухи. На самой лобной кости не подтверждён полный костный контур сообщения.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "frontal",
+      "code": "A02.1.03.031",
+      "ru": "Перегородка лобной пазухи",
+      "lat": "septum sinuum frontalium",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Разрыв между двумя долями объёма frontal_sinus не является самостоятельной костной сеткой перегородки; толщина и целостность костной перегородки отдельно не подтверждены.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/frontal-ant.png",
+        "build_head/cranial_features/jobs/frontal-inf.png",
+        "build_head/cranial_features/jobs/frontal-posterior.png",
+        "build_head/cranial_features/jobs_ct/frontal-orbits.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.003",
+      "ru": "Борозда сигмовидного синуса",
+      "lat": "sulcus sinus sigmoidei",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Parietal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=82",
+          "locator": "Surfaces, Borders, Angles, pp.133–134. Электронная перепечатка Saylor: начиная со страницы PDF 82."
+        },
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Медиальная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно. В области сосцевидного угла не выделен убедительный самостоятельный участок сигмовидной борозды.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_right-lat.png",
+        "build_head/cranial_features/jobs/parietal_right-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.008",
+      "ru": "Верхняя височная линия",
+      "lat": "linea temporalis superior",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Наружная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно; две самостоятельные височные линии на сглаженном рельефе не различены.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_right-lat.png",
+        "build_head/cranial_features/jobs/parietal_right-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.009",
+      "ru": "Нижняя височная линия",
+      "lat": "linea temporalis inferior",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Наружная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно; нижняя линия не отделена достоверно от общей кривизны кости.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_right-lat.png",
+        "build_head/cranial_features/jobs/parietal_right-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_right",
+      "code": "A02.1.02.019",
+      "ru": "Теменное отверстие",
+      "lat": "foramen parietale",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На Z-Anatomy не установлен чёткий просвет у заднего сагиттального края. Видимый крупный дефект Halle не принят за теменное отверстие: автор описывает подготовительный трепанационный дефект.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_right-lat.png",
+        "build_head/cranial_features/jobs/parietal_right-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.003",
+      "ru": "Борозда сигмовидного синуса",
+      "lat": "sulcus sinus sigmoidei",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Parietal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=82",
+          "locator": "Surfaces, Borders, Angles, pp.133–134. Электронная перепечатка Saylor: начиная со страницы PDF 82."
+        },
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Медиальная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно. В области сосцевидного угла не выделен убедительный самостоятельный участок сигмовидной борозды.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_left-lat.png",
+        "build_head/cranial_features/jobs/parietal_left-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.008",
+      "ru": "Верхняя височная линия",
+      "lat": "linea temporalis superior",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Наружная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно; две самостоятельные височные линии на сглаженном рельефе не различены.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_left-lat.png",
+        "build_head/cranial_features/jobs/parietal_left-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.009",
+      "ru": "Нижняя височная линия",
+      "lat": "linea temporalis inferior",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Наружная поверхность соответствующей теменной кости Z-Anatomy осмотрена отдельно; нижняя линия не отделена достоверно от общей кривизны кости.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_left-lat.png",
+        "build_head/cranial_features/jobs/parietal_left-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "parietal_left",
+      "code": "A02.1.02.019",
+      "ru": "Теменное отверстие",
+      "lat": "foramen parietale",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На Z-Anatomy не установлен чёткий просвет у заднего сагиттального края. Видимый крупный дефект Halle не принят за теменное отверстие: автор описывает подготовительный трепанационный дефект.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/parietal_left-lat.png",
+        "build_head/cranial_features/jobs/parietal_left-med.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.007",
+      "ru": "Глоточный бугорок",
+      "lat": "tuberculum pharyngeum",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Нижняя базилярная поверхность Z-Anatomy и Halle осмотрена. Срединный бугорок не отделён уверенно от сглаженного/неполного рельефа поверхности.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.008",
+      "ru": "Борозда нижнего каменистого синуса",
+      "lat": "sulcus sinus petrosi inferioris",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Боковой край базилярной части Z-Anatomy рассмотрен с обеих сторон. Продольный желоб не прослежен достаточно отчётливо для отдельного подтверждения.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.015",
+      "ru": "Мыщелковый канал",
+      "lat": "canalis condylaris",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray (1918) — Exterior of the Skull",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=153",
+          "locator": "Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Мыщелковые ямки и боковые виды Z-Anatomy рассмотрены; апертуры и непрерывность мыщелкового канала не подтверждены. Подозрительная полость не размечена как канал.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.016",
+      "ru": "Канал подъязычного нерва",
+      "lat": "canalis nervi hypoglossi",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На боковых видах Z-Anatomy есть небольшие углубления в ожидаемой области. Они не приняты за полный подъязычный канал без подтверждения обеих апертур и стенок; внутренняя область Halle также имеет неоднозначные дефекты сегментации.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.021",
+      "ru": "Внутрияремный отросток",
+      "lat": "processus intrajugularis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Complete morphometric analysis of jugular foramen (2016)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5111328/",
+          "locator": "Methods: endocranial aspect, Fig.1 — peak of intrajugular process of occipital bone."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Яремные вырезки Z-Anatomy осмотрены; отдельный внутряремный отросток не отделён от соседнего рельефа уверенно.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.024",
+      "ru": "Наивысшая выйная линия",
+      "lat": "linea nuchalis suprema",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Наружная чешуя Z-Anatomy и Halle рассмотрена; отдельная наивысшая линия не прослежена независимо от верхней выйной линии.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.033",
+      "ru": "Борозда затылочного синуса",
+      "lat": "sulcus sinus occipitalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Píšová et al. (2017) — Craniovascular traits",
+          "url": "https://www.isita-org.com/Jass/Contents/2017vol95/Pisova/28190005.pdf",
+          "locator": "Fig.6 and text: внутренний затылочный гребень, затылочный и краевой синусы вокруг большого отверстия."
+        },
+        {
+          "title": "Kenhub — occipital bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-occipital-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "На внутренней чешуе Z-Anatomy виден срединный рельеф; отдельная борозда затылочного синуса на гребне не установлена.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "occipital",
+      "code": "A02.1.04.034",
+      "ru": "Борозда краевого синуса",
+      "lat": "sulcus sinus marginalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Píšová et al. (2017) — Craniovascular traits",
+          "url": "https://www.isita-org.com/Jass/Contents/2017vol95/Pisova/28190005.pdf",
+          "locator": "Fig.6 and text: внутренний затылочный гребень, затылочный и краевой синусы вокруг большого отверстия."
+        },
+        {
+          "title": "Kenhub — occipital bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-occipital-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Внутренний край большого отверстия просмотрен; непрерывная борозда краевого синуса, отличимая от общего края и дефектов, не подтверждена.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/occipital-inf.png",
+        "build_head/cranial_features/jobs/occipital-internal.png",
+        "build_head/cranial_features/jobs/occipital-channel-left.png",
+        "build_head/cranial_features/jobs/occipital-channel-right.png",
+        "build_head/cranial_features/jobs_ct/occipital-base.png",
+        "build_head/cranial_features/jobs_ct/occipital-internal-oblique.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.013",
+      "ru": "Клиновидный язычок",
+      "lat": "lingula sphenoidalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Бок тела Z-Anatomy рассмотрен с косых переднего и заднего направлений; самостоятельный клиновидный язычок в конце сонной борозды не выделен уверенно.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.016",
+      "ru": "Клиновидная пазуха",
+      "lat": "sinus sphenoidalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — sphenoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-sphenoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "source-airspace-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_sphenoidal_sinus"
+      ],
+      "observation": "Авторский отдельный объект sphenoidal_sinus осмотрен спереди и сзади; добавлен маркер. Подтверждён учебный объём пространства, а не все костные стенки и сообщения.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.017",
+      "ru": "Перегородка клиновидных пазух",
+      "lat": "septum sinuum sphenoidalium",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        },
+        {
+          "title": "Kenhub — sphenoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-sphenoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Срединный зазор между частями объёма sphenoidal_sinus не принят за отдельную костную перегородку. Её собственная костная поверхность не подтверждена.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.018",
+      "ru": "Апертура клиновидной пазухи",
+      "lat": "apertura sinus sphenoidalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Передняя стенка тела Z-Anatomy рассмотрена; апертура пазухи не отделена уверенно от соседних контуров. Форма отдельного объёма пазухи не заменяет эту проверку.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.019",
+      "ru": "Клиновидная раковина",
+      "lat": "concha sphenoidalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Передненижняя область тела Z-Anatomy рассмотрена с нескольких сторон; тонкая клиновидная раковина не выделена как самостоятельное распознаваемое образование.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.021",
+      "ru": "Зрительный канал",
+      "lat": "canalis opticus",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Задние, верхние и косые виды корня малого крыла Z-Anatomy рассмотрены. Цельный просвет зрительного канала и обе апертуры не подтверждены; аналогичный участок Halle требует отдельного разбора по исходным данным плотности.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.038",
+      "ru": "Остистое отверстие",
+      "lat": "foramen spinosum",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "geometryStatus": "source-aperture-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_spinosum_right",
+        "z_spinosum_left"
+      ],
+      "observation": "На обеих сторонах Z-Anatomy распознаны края небольших внутричерепных апертур позадилатерально от овальных отверстий. Добавлены два собственных маркера. Полный сквозной ход не заявлен.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.041",
+      "ru": "Борозда слуховой трубы",
+      "lat": "sulcus tubae auditivae; sulcus tubae auditoriae",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Задненижний край большого крыла осмотрен в Z-Anatomy. Борозда для слуховой трубы не прослежена как уверенно выделяемый самостоятельный желоб.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.048",
+      "ru": "Влагалищный отросток",
+      "lat": "processus vaginalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Visualisation of the vomerovaginal canal (2019)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6637440/",
+          "locator": "Osteological study and endoscopic dissection: vomer, vaginal process, palatine; differences between VVC and PVC."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Нижняя поверхность тела и основание медиальной пластинки осмотрены. Отдельная тонкая пластинка влагалищного отростка не распознана уверенно.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.049",
+      "ru": "Нёбно-влагалищная борозда",
+      "lat": "sulcus palatovaginalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Simultaneous observation of palatovaginal and vomerovaginal canals (2015)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658943/",
+          "locator": "Discussion and Fig.2–3: различение нёбно-влагалищного и сошниково-влагалищного каналов."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Осмотрена нижняя поверхность основания крыловидного отростка Z-Anatomy. Нёбно-влагалищная борозда не отделена достоверно от соседних углублений.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.050",
+      "ru": "Сошниково-влагалищная борозда",
+      "lat": "sulcus vomerovaginalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Visualisation of the vomerovaginal canal (2019)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6637440/",
+          "locator": "Osteological study and endoscopic dissection: vomer, vaginal process, palatine; differences between VVC and PVC."
+        },
+        {
+          "title": "Simultaneous observation of palatovaginal and vomerovaginal canals (2015)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658943/",
+          "locator": "Discussion and Fig.2–3: различение нёбно-влагалищного и сошниково-влагалищного каналов."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Осмотрена область контакта с крылом сошника. Отдельная сошниково-влагалищная борозда не подтверждена; её название не перенесено на ближайший желоб автоматически.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.052",
+      "ru": "Борозда крыловидного крючка",
+      "lat": "sulcus hamuli pterygoidei",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body; Great Wings; Small Wings; Pterygoid Processes; Sphenoidal Conchae, pp.147–152. Электронная перепечатка Saylor: начиная со страницы PDF 102."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Крыловидный крючок существует в Z-Anatomy, но его собственная борозда не различена уверенно на сохранённой поверхности.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "sphenoid",
+      "code": "A02.1.05.053",
+      "ru": "Крыловидный канал",
+      "lat": "canalis pterygoideus",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
+          "url": "https://doi.org/10.3389/fsurg.2023.1132774",
+          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+        }
+      ],
+      "geometryStatus": "source-aperture-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_pterygoid_right",
+        "z_pterygoid_left"
+      ],
+      "observation": "Передние небольшие апертуры у основания крыловидных отростков Z-Anatomy рассмотрены и размечены независимо справа и слева. Непрерывность внутреннего хода и задние апертуры не подтверждены.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/sphenoid-sup.png",
+        "build_head/cranial_features/jobs/sphenoid-inf.png",
+        "build_head/cranial_features/jobs/sphenoid-ant.png",
+        "build_head/cranial_features/jobs/sphenoid-pterygoid-back.png",
+        "build_head/cranial_features/jobs/sphenoid-optic-oblique.png",
+        "build_head/cranial_features/jobs/sphenoid-ant-medial.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.003",
+      "ru": "Решётчатые отверстия",
+      "lat": "foramina cribrosa",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — ethmoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-ethmoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Решётчатая пластинка Z-Anatomy осмотрена сверху. Halle дополнительно изучен в ROI исходной бинарной маски 0,125 мм без сглаживания: тонкая центральная область содержит дефекты и разрывы, которые не размечены как анатомические решётчатые отверстия без проверки их происхождения.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки",
+      "lat": "cellulae ethmoidales anteriores",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "geometryStatus": "source-airspace-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_ethmoid_cells_anterior_left",
+        "z_ethmoid_cells_anterior_right"
+      ],
+      "observation": "Оба авторских объёма передних ячеек Z-Anatomy осмотрены спереди и сзади; размечены независимо. Это представление пространства группы ячеек, не отдельная сегментация всех костных стенок.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки",
+      "lat": "cellulae ethmoidales mediae",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "geometryStatus": "source-airspace-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_ethmoid_cells_middle_left",
+        "z_ethmoid_cells_middle_right"
+      ],
+      "observation": "Оба авторских объёма средних ячеек Z-Anatomy осмотрены спереди и сзади; размечены независимо. Внешняя форма объёма не доказывает каждое соустье или стенку.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки",
+      "lat": "cellulae ethmoidales posteriores",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "geometryStatus": "source-airspace-only",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [
+        "z_ethmoid_cells_posterior_left",
+        "z_ethmoid_cells_posterior_right"
+      ],
+      "observation": "Оба авторских объёма задних ячеек Z-Anatomy осмотрены спереди и сзади; размечены независимо. Все сообщения и индивидуальные варианты не подтверждены.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.013",
+      "ru": "Верхняя носовая раковина",
+      "lat": "concha nasalis superior",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Медиальная область лабиринта осмотрена с отсечением противоположной половины. Самостоятельная верхняя раковина не выделена достоверно из сглаженного сложного рельефа.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.015",
+      "ru": "Решётчатый пузырёк",
+      "lat": "bulla ethmoidalis",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Боковая область решётчатого лабиринта Z-Anatomy осмотрена; отдельный костный выступ bulla не подтверждён. Объём средних ячеек не подменяет костный пузырёк.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.016",
+      "ru": "Крючковидный отросток",
+      "lat": "processus uncinatus",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Боковые и косые виды Z-Anatomy просмотрены; тонкая пластинка крючковидного отростка не отделена уверенно от нижних краёв лабиринта. Дефекты ROI Halle не приняты за её границы.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.017",
+      "ru": "Решётчатая воронка",
+      "lat": "infundibulum ethmoidale",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Достоверная пространственная граница воронки между соответствующими костными пластинками не подтверждена. Наличие объёмов ячеек не подтверждает их путь дренирования.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    },
+    {
+      "bone": "ethmoid",
+      "code": "A02.1.07.018",
+      "ru": "Полулунная расщелина",
+      "lat": "hiatus semilunaris",
+      "primaryLocalization": "projection",
+      "anatomicalFactReferences": [
+        {
+          "title": "Whyte & Boeddinghaus (2019) — Maxillary sinus imaging anatomy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951102/",
+          "locator": "Infundibulum: uncinate process medial, lamina papyracea lateral; basal lamella separates anterior/posterior ethmoid."
+        },
+        {
+          "title": "Kenhub — ethmoid bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-ethmoid-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        }
+      ],
+      "geometryStatus": "not-confirmed",
+      "fullBonyGeometryConfirmed": false,
+      "nativeMarkerIds": [],
+      "observation": "Дуга полулунной расщелины между пузырьком и крючковидным отростком не подтверждена как самостоятельный целый просвет. Случайные разрывы сетки не размечены этим названием.",
+      "reviewImages": [
+        "build_head/cranial_features/jobs/ethmoid-sup.png",
+        "build_head/cranial_features/jobs/ethmoid-lat.png",
+        "build_head/cranial_features/jobs/ethmoid-med.png",
+        "build_head/cranial_features/jobs_roi/sup.png",
+        "build_head/cranial_features/jobs_roi/ant.png"
+      ],
+      "requiredNextEvidence": "For a channel: both openings and continuous native walls; for relief: a recognizable original surface; for an airspace: independently verified bounding bone and communications. Regional inspection is not a complete voxel-by-voxel review."
+    }
+  ]
+}

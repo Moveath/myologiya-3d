@@ -29,6 +29,6 @@ export const REGIONS = [
     {id:'nerves',ru:'Нервы',parts:['facial_nerve','chorda_tympani','vestibulocochlear_nerve'],view:earView},
     {id:'context',ru:'Весь препарат',cavities:true,translucent:true,view:earView}]},
   {id:'muscles',ru:'Мышцы головы',hint:'Мимические и жевательные мышцы: слои и карточки.',action:'muscles',badge:'Основной атлас'},
-  {id:'variants',ru:'Варианты строения',hint:'Отдельный каталог с объяснением каждого маркера.',action:'variants',badge:'Геометрия не подтверждена'}
+  {id:'variants',ru:'Варианты строения',hint:'Реальные примеры, КТ и пояснения к каждому термину.',action:'variants',badge:'12 терминов · 14 карточек'}
 ];
 export const regionById = id => REGIONS.find(region=>region.id===id);

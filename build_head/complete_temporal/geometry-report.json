@@ -120,10 +120,12 @@
     ]
   },
   "file": "skull-openear.glb",
-  "bytes": 21262492,
-  "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+  "bytes": 21270896,
+  "sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
   "bone_header": "NRRD0004\n# Complete NRRD file format specification at:\n# http://teem.sourceforge.net/nrrd/format.html\ntype: short\ndimension: 3\nspace: left-posterior-superior\nsizes: 668 587 625\nspace directions: (-0.125,0,0) (0,-0.125,0) (0,0,0.125)\nkinds: domain domain domain\nendian: little\nencoding: gzip\nspace origin: (19.806900024414063,7.7452301979064941,-1.7357300519943237)\n\n",
-  "coordinate_frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+  "coordinate_frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. These are specimen coordinates; its arbitrary scanner pose does not establish anatomical views. No registration to BodyParts3D.",
+  "bone_source_cbct_sampling_mm": 0.25,
+  "bone_mask_grid_sampling_mm": 0.125,
   "ras_to_viewer_matrix": [
     [
       -1.0,
@@ -144,6 +146,8 @@
   "changes": [
     "12 author PLY meshes retained without anatomical remodeling.",
     "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+    "Bone mask grid is 0.125 mm; author bone segmentation derives from the original 0.250 mm full-specimen CBCT (paper Methods and Table 1). Grid spacing does not establish anatomical accuracy.",
+    "Corrected inward bone face winding; vertex coordinates and connectivity are unchanged. Author PLY winding is retained.",
     "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
     "Meshopt compression with 16-bit position quantization; no decimation in this build."
   ],

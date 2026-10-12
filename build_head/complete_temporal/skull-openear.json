@@ -3,7 +3,7 @@
   "title": "Внутри височной кости",
   "file": "skull-openear.glb",
   "description": "Три слуховые косточки, пространства лабиринта, нервы, перепонка и сосудистые структуры внутри одного препарата OpenEar ZETA.",
-  "modelNote": "Опубликованные сегментации OpenEar: 12 исходных поверхностей PLY и костный блок из маски с шагом 0,125 мм. Сетки не упрощены; при упаковке координаты квантованы до 16 бит. Это отдельный препарат в общей системе координат, не зарегистрированный к основному черепу BodyParts3D.",
+  "modelNote": "Опубликованные сегментации OpenEar: 12 исходных поверхностей PLY и костный блок из маски на сетке 0,125 мм. Для кости использована КТ полного препарата, исходно с шагом 0,25 мм. Сетки не упрощены; при упаковке координаты квантованы до 16 бит. Это отдельный препарат в общей системе координат, не зарегистрированный к основному черепу BodyParts3D.",
   "specimen": {
     "id": "ZETA",
     "title": "Препарат OpenEar ZETA",
@@ -27,16 +27,20 @@
     ]
   },
   "geometry": {
-    "bytes": 21262492,
-    "sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+    "bytes": 21270896,
+    "sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
     "changes": [
       "12 author PLY meshes retained without anatomical remodeling.",
       "Bone surface generated from author binary mask at level 0.5 and original 0.125 mm sampling.",
+      "Bone mask grid is 0.125 mm; author bone segmentation derives from the original 0.250 mm full-specimen CBCT (paper Methods and Table 1). Grid spacing does not establish anatomical accuracy.",
+      "Corrected inward bone face winding; vertex coordinates and connectivity are unchanged. Author PLY winding is retained.",
       "LPS bone coordinates converted to RAS to match author PLY; common proper rotation [-RASx,RASz,RASy] and mm to metres.",
       "Meshopt compression with 16-bit position quantization; no decimation in this build."
     ],
     "sampling_mm": 0.125,
-    "frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. Renderer X left, Y superior, Z anterior according to source axes. No registration to BodyParts3D.",
+    "bone_source_cbct_sampling_mm": 0.25,
+    "bone_mask_grid_sampling_mm": 0.125,
+    "frame": "Author PLY in RAS; NRRD LPS converted to matching RAS, then all vertices [RASx,RASy,RASz] → [-RASx,RASz,RASy] and mm → m. These are specimen coordinates; its arbitrary scanner pose does not establish anatomical views. No registration to BodyParts3D.",
     "registrationToBodyParts3D": false
   },
   "defaults": {
@@ -47,7 +51,7 @@
   "limitations": [
     "Один правый препарат, а не обе височные кости основного черепа; целая кость обрезана при получении препарата.",
     "Модель не зарегистрирована к BodyParts3D. Маркеры основного черепа на неё автоматически не переносятся.",
-    "Шаг исходной маски 0,125 мм и сжатие поверхности не являются гарантией точности любого малого образования.",
+    "Кость сегментирована по КТ полного препарата с исходным шагом 0,25 мм и записана на сетке 0,125 мм. Шаг маски и сжатие поверхности не являются гарантией точности любого малого образования.",
     "Два исходных объекта объединяют несколько структур: Scala Vestibuli и Sinus Dura. Границы отдельных компонентов не сегментированы.",
     "Нервы и сосуды показывают сегментированные ткани, а не доказывают форму стенок соответствующих костных каналов.",
     "Индивидуальные особенности препарата и возможные ошибки исходной сегментации сохранены. Все 77 терминов височной кости не объявляются доказанными этой моделью."
@@ -65,7 +69,7 @@
         "A02.1.06.001"
       ],
       "x": "Височная кость содержит полости среднего и внутреннего уха.",
-      "modelNote": "Поверхность костной ткани построена из исходной бинарной маски OpenEar ZETA с шагом 0,125 мм. Это выпиленный препарат, а не целая кость; плоскости отсечения препарата не являются анатомическими границами. Мелкие канальцы не объявляются подтверждёнными только по числу треугольников.",
+      "modelNote": "Поверхность построена из авторской бинарной маски OpenEar ZETA на сетке 0,125 мм. Согласно статье, кость сегментирована по КТ полного препарата, исходно полученной с шагом 0,25 мм; более мелкая сетка маски не добавляет новых измеренных деталей. Это выпиленный препарат, а не целая кость; подготовительные срезы не являются анатомическими границами. Мелкие канальцы не объявляются подтверждёнными только по числу треугольников.",
       "color": "#d8cab0",
       "context": true,
       "refs": [

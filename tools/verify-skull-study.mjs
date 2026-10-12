@@ -30,7 +30,7 @@ try{
   await page.goto(`${base}/skull-study.html?theme=${theme}`);await page.locator('[data-group="ear"]').waitFor();assert.equal(await page.locator('[data-group]').count(),8);
   await page.screenshot({path:path.join(shots,`groups-${width}-${theme}.png`),fullPage:true});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-  await page.locator('[data-group="variants"]').click();await page.locator('.variant').first().waitFor();assert.equal(await page.locator('.variant').count(),14);assert.equal(await page.locator('.variant .sources').count(),14);assert.ok((await page.locator('#subpage').innerText()).includes('не подтверждено'));await page.locator('#back').click();
+  await page.locator('[data-group="variants"]').click();await page.locator('.variant').first().waitFor();assert.equal(await page.locator('.variant').count(),14);assert.equal(await page.locator('.variant > details > .sources').count(),14);assert.equal(await page.locator('.variant .example').count(),14);assert.ok((await page.locator('#subpage').innerText()).includes('не подтверждено'));await page.locator('#back').click();
   await page.locator('[data-group="muscles"]').click();assert.equal(await page.locator('[data-sub]').count(),2);await page.locator('#back').click();
   for(const [group,presets] of Object.entries(cases)){
    await page.locator(`[data-group="${group}"]`).click();await ready(page);assert.equal(await page.evaluate(()=>window.__detail.state.error),null);

@@ -1,0 +1,306 @@
+{
+  "source": "Z-Anatomy",
+  "date": "2026-10-13",
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+  "note": "Четыре маркера добавлены по отдельным осмотрам. Модель Z-Anatomy производна от BodyParts3D и не считается независимым анатомическим подтверждением исходной сетки.",
+  "markers": [
+    {
+      "id": "z_face_maxilla_right_A02_1_12_031",
+      "b": "maxilla_right",
+      "c": "A02.1.12.031",
+      "ru": "Резцовая кость",
+      "lat": "os incisivum",
+      "p": [
+        -0.00735,
+        1.54476,
+        0.08671
+      ],
+      "n": [
+        -0.377,
+        0.539,
+        0.753
+      ],
+      "loc": "surface",
+      "scope": "surface",
+      "mode": "z",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.08
+      },
+      "x": "Передняя резцовая часть верхней челюсти, содержащая альвеолы резцов.",
+      "refs": [
+        {
+          "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+          "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+        },
+        {
+          "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+          "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+        }
+      ],
+      "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+      "source": "Z-Anatomy",
+      "side": "right",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — исходная модель",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+        }
+      ],
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "ant",
+        "uv": [
+          0.705,
+          0.85
+        ],
+        "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+        "source": "build_head/face_features/z-pick-specs.json",
+        "screenshot": "build_head/face_features/z_maxilla_right_031.png",
+        "screenshot_sha256": "fe535a3636472640d965ddb552be2d3c3398f9405b251a568da115501ed2443c",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      }
+    },
+    {
+      "id": "z_face_maxilla_left_A02_1_12_031",
+      "b": "maxilla_left",
+      "c": "A02.1.12.031",
+      "ru": "Резцовая кость",
+      "lat": "os incisivum",
+      "p": [
+        0.00697,
+        1.54416,
+        0.08734
+      ],
+      "n": [
+        0.377,
+        0.539,
+        0.753
+      ],
+      "loc": "surface",
+      "scope": "surface",
+      "mode": "z",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.08
+      },
+      "x": "Передняя резцовая часть верхней челюсти, содержащая альвеолы резцов.",
+      "refs": [
+        {
+          "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+          "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+        },
+        {
+          "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+          "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
+        },
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
+        }
+      ],
+      "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+      "source": "Z-Anatomy",
+      "side": "left",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — исходная модель",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+        }
+      ],
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "ant",
+        "uv": [
+          0.29,
+          0.858
+        ],
+        "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+        "source": "build_head/face_features/z-pick-specs.json",
+        "screenshot": "build_head/face_features/z_maxilla_left_031.png",
+        "screenshot_sha256": "ae3a32bd0194c32f362b3ec33fdabb6960208f76518ad540bac7edf5389feb91",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      }
+    },
+    {
+      "id": "z_face_maxilla_right_A02_1_12_026",
+      "b": "maxilla_right",
+      "c": "A02.1.12.026",
+      "ru": "Слёзная вырезка",
+      "lat": "incisura lacrimalis",
+      "p": [
+        -0.01803,
+        1.57338,
+        0.07008
+      ],
+      "n": [
+        0.822,
+        0.349,
+        0.451
+      ],
+      "loc": "surface",
+      "scope": "surface",
+      "mode": "z",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.08
+      },
+      "x": "Вырезка в переднем отделе медиального края глазничной поверхности.",
+      "refs": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Incisura lacrimalis"
+        }
+      ],
+      "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+      "source": "Z-Anatomy",
+      "side": "right",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — исходная модель",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+        }
+      ],
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "med",
+        "uv": [
+          0.459,
+          0.473
+        ],
+        "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+        "source": "build_head/face_features/z-pick-specs.json",
+        "screenshot": "build_head/face_features/z_maxilla_right_026.png",
+        "screenshot_sha256": "3a47b375b15e795ff5525a8ad262b74f0cf0d98b1bac82a11edb4d1df51a14fc",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      }
+    },
+    {
+      "id": "z_face_maxilla_left_A02_1_12_026",
+      "b": "maxilla_left",
+      "c": "A02.1.12.026",
+      "ru": "Слёзная вырезка",
+      "lat": "incisura lacrimalis",
+      "p": [
+        0.01803,
+        1.57338,
+        0.07008
+      ],
+      "n": [
+        -0.822,
+        0.349,
+        0.451
+      ],
+      "loc": "surface",
+      "scope": "surface",
+      "mode": "z",
+      "view": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.08
+      },
+      "x": "Вырезка в переднем отделе медиального края глазничной поверхности.",
+      "refs": [
+        {
+          "title": "Buchanan, Manual of Anatomy",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_5",
+          "locator": "The Maxillae: medial border of orbital plate: lacrimal notch"
+        },
+        {
+          "title": "Anatomy Standard, Maxilla",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/maxilla.html",
+          "locator": "Medial view: Incisura lacrimalis"
+        }
+      ],
+      "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала. Это собственный маркер отдельной модели Z-Anatomy; её координаты не перенесены на BodyParts3D.",
+      "source": "Z-Anatomy",
+      "side": "left",
+      "geometryRefs": [
+        {
+          "title": "Z-Anatomy — исходная модель",
+          "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+          "locator": "Startup.blend: Maxilla.r / Maxilla.l; extraction provenance build_head/detail_z/provenance.json"
+        }
+      ],
+      "evidence": {
+        "method": "manual-anatomical-image-review-then-orthographic-raycast",
+        "view": "lat",
+        "uv": [
+          0.541,
+          0.473
+        ],
+        "coordinateFrame": "Z-Anatomy [x,z,-y], metres; not registered to BodyParts3D",
+        "source": "build_head/face_features/z-pick-specs.json",
+        "screenshot": "build_head/face_features/z_maxilla_left_026.png",
+        "screenshot_sha256": "428c9e66d4f2e24f925a1c052d966f4640e3b5885fb3647cda93a9ea4d9c5653",
+        "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+        "boundary_segmentation": false,
+        "external_expert_review": false
+      }
+    }
+  ]
+}

@@ -1631,6 +1631,16 @@
           "title": "Bergman et al. — Variations of the Occipital Bone",
           "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
           "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        },
+        {
+          "title": "J. L. Pace — The Paramastoid Process: A survey of 890 Maltese skulls",
+          "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/13690/1/Paramastoid%20Process.pdf",
+          "locator": "Печатная с.34 (PDF с.1), Summary и первые абзацы: нижняя сторона яремного отростка; paracondylar как синоним paramastoid. С.35 (PDF с.2): варианты сочленения с поперечным отростком атланта."
+        },
+        {
+          "title": "Schumacher et al. (2018) — Paramastoid Process: Literature Review of Its Anatomy and Clinical Implications",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29929028/",
+          "locator": "Открытый Abstract: paramastoid, paraoccipital, paracondylar, parajugular как названия варианта нижней стороны яремного отростка; возможное сочленение с атлантом."
         }
       ],
       "scope": "anatomy",
@@ -2314,12 +2324,12 @@
         {
           "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
           "url": "https://doi.org/10.3389/fsurg.2023.1132774",
-          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+          "locator": "Middle fossa foramina — Foramen Vesalius; Fig.4B,E: непостоянное отверстие кпереди и медиальнее foramen ovale."
         },
         {
-          "title": "Correlation Analysis on Accessory Foramina in the Sphenoid Bone (2023)",
+          "title": "Palamenghi et al. (2023) — Correlation Analysis on Accessory Foramina in the Sphenoid Bone",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/",
-          "locator": "Canaliculus innominatus, Fig.3: между foramen spinosum и foramen ovale."
+          "locator": "Introduction, абзац о foramen of Vesalius; Fig.2: отверстие в большом крыле медиальнее foramen ovale."
         }
       ],
       "scope": "anatomy",
@@ -2351,12 +2361,12 @@
         {
           "title": "Tayebi Meybodi et al. (2023) — Middle cranial fossa, part I",
           "url": "https://doi.org/10.3389/fsurg.2023.1132774",
-          "locator": "Bony anatomy: sphenoid body, clinoid processes and sphenoid foramina; Fig.2–4."
+          "locator": "Middle fossa foramina — Canaliculus innominatus; Fig.4C: foramen petrosum между foramen spinosum и foramen ovale."
         },
         {
-          "title": "Correlation Analysis on Accessory Foramina in the Sphenoid Bone (2023)",
+          "title": "Palamenghi et al. (2023) — Correlation Analysis on Accessory Foramina in the Sphenoid Bone",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/",
-          "locator": "Canaliculus innominatus, Fig.3: между foramen spinosum и foramen ovale."
+          "locator": "Introduction, абзац о canaliculus innominatus (синоним foramen petrosum); Fig.3: между foramen spinosum и foramen ovale."
         }
       ],
       "scope": "anatomy",
@@ -2741,19 +2751,23 @@
       "refs": [
         {
           "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
-          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png"
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Рис.138: внутренняя поверхность левой височной кости; подпись Mastoid foramen у заднего края сосцевидной области."
         },
         {
           "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
-          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png"
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис.58 атласа: образование Foramen mastoideum."
         },
         {
           "title": "Mastoid emissary foramina: an anatomical morphological study (2014)",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178196/"
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178196/",
+          "locator": "Introduction; Materials and Methods; Results: положение относительно затылочно-сосцевидного шва и изменчивость числа отверстий."
         },
         {
           "title": "Variations of Mastoid Foramen in North Indian Population — исследование 71 черепа",
-          "url": "https://nicpd.ac.in/ojs-/index.php/njirm/article/view/828"
+          "url": "https://nicpd.ac.in/ojs-/index.php/njirm/article/view/828",
+          "locator": "Abstract — Materials and Methods, Results; печатные с.49–52: шовное и вне шва расположение, варианты числа и отсутствие отверстия."
         }
       ],
       "scope": "anatomy",
@@ -7801,7 +7815,8 @@
       "pins_head/face-extra.json",
       "pins_head/cranial-extra.json",
       "pins_head/temporal-extra.json",
-      "pins_head/face-completion.json"
+      "pins_head/face-completion.json",
+      "pins_head/face-features-bp.json"
     ],
     "method": "Индивидуальный осмотр модели, сопоставление с указанными анатомическими источниками. Поверхность и топографическая проекция учитываются раздельно.",
     "kinds": {
@@ -15916,28 +15931,17 @@
         "bone": "maxilla_left",
         "code": "A02.1.12.026",
         "p": [
-          0.01257,
-          1.51418,
-          0.16872
+          0.01708,
+          1.51131,
+          0.16539
         ],
         "n": [
-          0.639,
-          0.24,
-          -0.731
+          -0.485,
+          0.738,
+          0.469
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "sup",
-          "uv": [
-            0.376,
-            0.63
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
         "refs": [
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -15950,34 +15954,38 @@
             "locator": "Medial view: Incisura lacrimalis"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.56,
+            0.46
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_left_026.png",
+          "screenshot_sha256": "8e9ac69ac09a7cf496296c644fc90f3c4cdbfd8ab3563164a5d9eabeeb8512f8",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_left",
         "code": "A02.1.12.027",
         "p": [
-          0.0049,
-          1.52154,
-          0.17496
+          0.00278,
+          1.53303,
+          0.17187
         ],
         "n": [
-          -0.829,
-          -0.542,
-          -0.139
+          -0.543,
+          -0.223,
+          -0.809
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "lat",
-          "uv": [
-            0.69,
-            0.321
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
         "refs": [
           {
             "title": "Университет Палацкого, Libor Luňáček",
@@ -15990,39 +15998,48 @@
             "locator": "Medial view: Crista ethmoidalis"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "lat",
+          "uv": [
+            0.648,
+            0.165
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_left_027.png",
+          "screenshot_sha256": "19fa6caa03b61db86171c267e434742d8fb23c28da6ce26ddd3e528b567dcf3c",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_left",
         "code": "A02.1.12.031",
         "p": [
-          0.00368,
-          1.47848,
-          0.17594
+          0.0045,
+          1.48185,
+          0.18293
         ],
         "n": [
-          -0.041,
-          -0.813,
-          -0.581
+          0.011,
+          0.68,
+          0.733
         ],
-        "localization": "projection",
-        "modelNote": "Маркер обозначает резцовую часть верхней челюсти. Отдельная резцовая кость и её самостоятельные границы на этой взрослой модели не выделены.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "inf",
-          "uv": [
-            0.22699999999999998,
-            0.249
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
         "refs": [
           {
-            "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
-            "locator": "с. 162, premaxilla / os incisivum"
+            "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+            "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+          },
+          {
+            "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+            "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -16030,7 +16047,22 @@
             "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "ant",
+          "uv": [
+            0.29,
+            0.86
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_left_031.png",
+          "screenshot_sha256": "a11a2f5a6ebd00ec57158b2a8363edb10bfc3e4f495ef97af3c8a5c1a7a4b9b9",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_left",
@@ -16716,28 +16748,17 @@
         "bone": "maxilla_right",
         "code": "A02.1.12.026",
         "p": [
-          -0.01534,
-          1.51619,
-          0.17031
+          -0.0183,
+          1.51061,
+          0.16603
         ],
         "n": [
-          -0.62,
-          0.74,
-          -0.261
+          0.875,
+          0.378,
+          0.303
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "sup",
-          "uv": [
-            0.624,
-            0.63
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечен участок вогнутого медиального края глазничной поверхности непосредственно позади лобного отростка. Он сопоставлен со слёзной вырезкой на подписанном медиальном виде и её описанием в независимом учебнике. Маркер не изображает всю вырезку и не подтверждает просвет носослёзного канала.",
         "refs": [
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -16750,34 +16771,38 @@
             "locator": "Medial view: Incisura lacrimalis"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.455,
+            0.47
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_right_026.png",
+          "screenshot_sha256": "f33592bec41d49685f6e10d438097ad4e5046eaff564a6419c126cef8aa8e66e",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_right",
         "code": "A02.1.12.027",
         "p": [
-          -0.00596,
-          1.52156,
-          0.17669
+          -0.00143,
+          1.53303,
+          0.17375
         ],
         "n": [
-          0.824,
-          -0.557,
-          -0.103
+          0.63,
+          -0.664,
+          -0.404
         ],
-        "localization": "projection",
-        "modelNote": "Показана анатомическая область по источникам. Мелкий рельеф или просвет этого образования на сетке BodyParts3D достоверно не различим; это ориентировочная проекция, а не подтверждение его формы.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "med",
-          "uv": [
-            0.31,
-            0.321
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечен видимый поперечный выступ в верхнем отделе носовой поверхности лобного отростка. Обе стороны осмотрены независимо в медиальном и косых ракурсах. Отмечен участок гребня; его точный контур и место соединения со средней раковиной отдельно не сегментированы.",
         "refs": [
           {
             "title": "Университет Палацкого, Libor Luňáček",
@@ -16790,39 +16815,48 @@
             "locator": "Medial view: Crista ethmoidalis"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "med",
+          "uv": [
+            0.35,
+            0.165
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_right_027.png",
+          "screenshot_sha256": "1288b9d72fb9b60f4292200a9192da53127473422c3b8a661f4077657ebb8810",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_right",
         "code": "A02.1.12.031",
         "p": [
-          -0.00665,
-          1.47699,
-          0.17737
+          -0.00714,
+          1.48193,
+          0.18262
         ],
         "n": [
-          -0.045,
-          -0.812,
-          -0.582
+          -0.367,
+          0.549,
+          0.751
         ],
-        "localization": "projection",
-        "modelNote": "Маркер обозначает резцовую часть верхней челюсти. Отдельная резцовая кость и её самостоятельные границы на этой взрослой модели не выделены.",
-        "evidence": {
-          "method": "orthographic-raycast",
-          "view": "inf",
-          "uv": [
-            0.773,
-            0.249
-          ],
-          "half": false,
-          "source": "build_head/landmarks_face_extra.js",
-          "review": "Осмотр шести ортографических ракурсов каждой стороны; медиальная поверхность правой ветви нижней челюсти дополнительно осмотрена с временно скрытой противоположной половиной."
-        },
+        "localization": "surface",
+        "modelNote": "Отмечена видимая передняя часть верхней челюсти у альвеол резцов. У взрослого она может быть сращена с остальной костью; отсутствие отдельной линии шва не означает отсутствия резцовой части. Маркер не задаёт все её границы и не подтверждает сохранённый резцовый шов.",
         "refs": [
           {
-            "title": "Gray, Anatomy of the Human Body, 1918",
-            "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/pages-162/",
-            "locator": "с. 162, premaxilla / os incisivum"
+            "title": "Trevizan и соавт., 2018 — исследование 1138 черепов",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6340201/",
+            "locator": "Introduction: premaxilla bears maxillary incisors; body continuous with maxilla. Discussion: fusion can remove the facial suture."
+          },
+          {
+            "title": "Hovorakova и соавт., 2018 — Early development of the human dentition revisited",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6036925/",
+            "locator": "The dual origin of the upper lateral incisor: adult premaxilla carries two central and two lateral incisors."
           },
           {
             "title": "Buchanan, Manual of Anatomy",
@@ -16830,7 +16864,22 @@
             "locator": "The Maxillae: intermaxillary portion bearing central and lateral incisors"
           }
         ],
-        "source_file": "pins_head/face-extra.json"
+        "evidence": {
+          "method": "manual-anatomical-image-review-then-orthographic-raycast",
+          "view": "ant",
+          "uv": [
+            0.71,
+            0.86
+          ],
+          "coordinateFrame": "BodyParts3D atlas metres",
+          "source": "build_head/face_features/bp-candidate-specs.json",
+          "screenshot": "build_head/face_features/maxilla_right_031.png",
+          "screenshot_sha256": "6e78956280678cf293116d1d8dc883862bdd98ca68148e21bb20ddf19da05ec6",
+          "review": "Каждая сторона и каждый источник осмотрены отдельно. Координаты получены лучом после визуального выбора образования, а не отражением другой стороны или расчётом из ограничивающего параллелепипеда.",
+          "boundary_segmentation": false,
+          "external_expert_review": false
+        },
+        "source_file": "pins_head/face-features-bp.json"
       },
       {
         "bone": "maxilla_right",

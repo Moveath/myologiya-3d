@@ -1,0 +1,69 @@
+{
+  "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+  "sample_count": 1000,
+  "offset_mm": 0.25,
+  "outward": 966,
+  "inward": 0,
+  "ambiguous_thin_or_aliased": 34,
+  "same_published_coordinates": [
+    {
+      "id": "internal_acoustic_meatus",
+      "position_change_mm": 0.0,
+      "normal_reversed": true,
+      "newFaceIndex": 6851074
+    },
+    {
+      "id": "external_acoustic_meatus",
+      "position_change_mm": 0.0,
+      "normal_reversed": true,
+      "newFaceIndex": 4221789
+    },
+    {
+      "id": "carotid_external_aperture",
+      "position_change_mm": 0.0,
+      "normal_reversed": true,
+      "newFaceIndex": 6966141
+    },
+    {
+      "id": "stylomastoid_foramen",
+      "position_change_mm": 0.0,
+      "normal_reversed": true,
+      "newFaceIndex": 4782828
+    },
+    {
+      "id": "tympanic_cavity",
+      "position_change_mm": 0.0,
+      "normal_reversed": true,
+      "newFaceIndex": 5829683
+    }
+  ],
+  "native_marker_checks": [
+    {
+      "id": "openear_temporal_internal_acoustic_meatus",
+      "distance_to_triangle_mm": 0.0,
+      "within_triangle": true
+    },
+    {
+      "id": "openear_temporal_external_acoustic_meatus",
+      "distance_to_triangle_mm": 4.427441215298228e-13,
+      "within_triangle": true
+    },
+    {
+      "id": "openear_temporal_carotid_external_aperture",
+      "distance_to_triangle_mm": 0.0,
+      "within_triangle": true
+    },
+    {
+      "id": "openear_temporal_stylomastoid_foramen",
+      "distance_to_triangle_mm": 7.1696256787393e-14,
+      "within_triangle": true
+    },
+    {
+      "id": "openear_temporal_tympanic_cavity",
+      "distance_to_triangle_mm": 3.925218440212208e-13,
+      "within_triangle": true
+    }
+  ],
+  "anatomical_identity_proven_by_this_test": false,
+  "method": "Final GLB triangle normals compared to original bone mask, +/-0.25 mm; unchanged ray coordinates before and after face winding correction."
+}
