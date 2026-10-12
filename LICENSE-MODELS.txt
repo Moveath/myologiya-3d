@@ -1,5 +1,10 @@
 Миология 3D — авторство и лицензия моделей
 
+Разные наборы ниже имеют собственные лицензии и собственные координаты.
+Дополнительные модели не зарегистрированы к основному атласу BodyParts3D.
+
+1. Основной атлас: BodyParts3D
+
 BodyParts3D, © The Database Center for Life Science (DBCLS).
 Источник: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
 STL-зеркало: https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
@@ -7,7 +12,7 @@ STL-зеркало: https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
 anatomical concepts. Nucleic Acids Research, 2009.
 https://pubmed.ncbi.nlm.nih.gov/18835852/
 
-Лицензия исходных и производных моделей:
+Лицензия исходных и производных моделей основного атласа:
 Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP).
 https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
 
@@ -16,6 +21,83 @@ https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
 подготовка изображений скелета. Файлы *-glb.txt содержат GLB в base64.
 Производные модели и изображения скелета распространяются на тех же
 условиях CC BY-SA 2.1 Japan. Сохраняйте это уведомление при распространении.
+
+Кости сохранены без дополнительного упрощения исходных STL BodyParts3D 3.0;
+исходные поверхности уже имеют ограниченную детализацию. Уточнение шести
+маркеров черепа не изменяло эти костные сетки.
+
+2. Дополнительный набор Z-Anatomy
+
+Файл: skull-z-detail.glb; описание и ссылки: skull-z-detail.json.
+Источник: Z-Anatomy — Gauthier Kervyn и соавторы.
+https://github.com/Z-Anatomy/Models-of-human-anatomy
+Лицензия: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
+https://creativecommons.org/licenses/by-sa/4.0/
+Исходное уведомление:
+https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt
+
+Сохранённые атрибуции первоисточника:
+- BodyParts3D, The Database Center for Life Science (DBCLS), CC BY-SA 2.1 Japan.
+  https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
+- University of Dundee, CAHID — Sophia Lappe, Cranial Nerves and Foramina,
+  CC BY 4.0 согласно уведомлению Z-Anatomy.
+  https://sketchfab.com/3d-models/cranial-nerves-and-foramina-a9358ee7a6dd4ea18a3622114405a4c7
+  Файлы со страницы Sketchfab отдельно не извлекались.
+
+Изменения: извлечены 22 кости и 8 авторских объектов воздушных полостей;
+вычислены существующие авторские модификаторы решётчатой кости и ячеек;
+исправлен порядок вершин граней при отражённых преобразованиях объектов;
+оси [x,y,z] переведены в [x,z,-y], выполнена конвертация в GLB.
+Новые отверстия или каналы не моделировались. Модели внутреннего уха и почки
+с ограничением NC не включены. Два собственных маркера челюстно-подъязычной
+борозды добавлены в метаданные после отдельного осмотра каждой стороны;
+точки BodyParts3D на этот набор не переносились.
+Производная геометрия skull-z-detail.glb распространяется по CC BY-SA 4.0.
+
+3. Микро-КТ черепа Halle
+
+Файл: skull-microct.glb; описание и параметры: skull-microct.json.
+Автор: Thomas Kirchner, Martin-Luther-Universität Halle-Wittenberg.
+A micro-CT of a human skull (2022).
+Данные: https://zenodo.org/records/6108435
+Описание: https://arxiv.org/abs/2202.11519
+Лицензия: Creative Commons Attribution 4.0 (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Изменения: поверхность извлечена из опубликованной бинарной сегментации;
+исходный шаг 0,125 мм, выборка для браузера 0,25 мм; упрощение meshoptimizer,
+смена осей, перевод в метры и упаковка GLB. Исходная сегментация не разделена
+на отдельные кости. Параметры обработки не гарантируют анатомическую точность.
+Особенности отдельного препарата, включая подготовительный распил,
+трепанационный дефект и отсутствие нижней челюсти, не исправлялись.
+
+4. OpenEar — образец ZETA
+
+Файл: skull-openear.glb; названия, источники и параметры: skull-openear.json.
+Авторы: Daniel Manuel Sieber; Peter Erfurt; Samuel John;
+Gabriel Ribeiro dos Santos; Daniel Schurzig; Mads Sølvsten Sørensen;
+Thomas Lenarz.
+The OpenEar library (2019).
+Данные: https://zenodo.org/records/1473724
+Статья: https://doi.org/10.1038/sdata.2018.297
+Лицензия: Creative Commons Attribution 4.0 (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Использован оригинальный ZETA.zip: 12 авторских PLY и Bone.nrrd.
+13 объектов одного препарата включают составные авторские сегменты;
+это не 13 полностью раздельных анатомических образований.
+Изменения: из костной маски извлечена поверхность при исходном шаге
+0,125 мм, без разрежения объёма и без децимации сетки. Координаты костной
+маски LPS переведены в RAS авторских PLY; затем ко всем объектам применены
+общая ротация [-RASx,RASz,RASy] и перевод из мм в метры. Упаковка meshopt
+использует 16-битное квантование координат. Геометрия PLY анатомически
+не достраивалась. Файл содержит 7 359 594 треугольника, 21 262 492 байта.
+Каждый загруженный член исходного ZIP проверен по CRC32; контрольная сумма
+полного частично полученного архива не выдаётся за проверенную.
+Отдельный правый препарат не зарегистрирован к BodyParts3D. Нервы и сосуды
+не подменяют модели стенок костных каналов; подготовленные границы блока
+не являются анатомическими образованиями. Подготовленные производные STL
+Visible Ear Simulator с лицензией CC BY-NC 4.0 здесь не использованы.
 
 Карточки написаны для этого проекта. Ссылки в карточках служат для проверки
 фактов; тексты, изображения и платные материалы сторонних атласов не включены.
