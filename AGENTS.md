@@ -84,3 +84,16 @@
 3. Запись в `SECTIONS` (id, ru, hint, `ready: true`, `file`, `subs`, `tries`) и, если нужно, новые группы в `register`/`visState`.
 4. Образования по TA98 — дописать коды и русские термины в `scripts/ta98.py`, требуемые списки — в `BONE`, позиции — через pintool, описания — в новом `make_pins_<раздел>.py`.
 5. Обновить «Как пользоваться» (диалог `#about`) и счётчики, проверить на телефоне и в тёмной теме.
+
+## Добавленный раздел головы
+
+- `scripts/manifest_head.py` — исходные STL обеих сторон: 22 кости, 43 моделируемых экземпляра мышц, сухожильный шлем и зубы-контекст.
+- `scripts/head_muscles.py` — 27 шаблонов / 52 карточки и ссылки по полям. Генератор `scripts/make_head_data.py` создаёт `site/data-head.js`; этот файл не редактировать вручную.
+- `scripts/head_terms.py` расширяет `T` и `BONE` в `ta98.py`. Три различия редакций черепа проверяются по печатному TA98 отдельно, до проверки трёх известных расхождений ноги. Не убирать проверку исходных значений IFAA.
+- `scripts/make_pins_head.py` создаёт `site/pins-head.js` и `verify/head-coverage.json`. Координаты — `pins_head/ta.json`, исходные экранные выборки — `build_head/landmarks_ta.js`.
+- Каталог содержит все 521 записи для 22 костей; координаты подтверждены у 191. **Требование полной 3D-разметки ещё не выполнено.** Не генерировать фиктивные позиции, не превращать отсутствие координат в утверждение об отсутствии анатомического образования. У остальных записей поля `p`/`n` отсутствуют, интерфейс показывает «без точки».
+- `taParen` отражает скобки электронной номенклатуры и не используется как автоматическое доказательство непостоянства.
+- `scripts/export_head_evidence.py` обновляет `research/head-evidence.json`. В реестре явно разделены анатомические сведения и номенклатурные карточки. Кэш книг и сторонних статей не публикуется.
+- После изменений: `python scripts/make_head_data.py`, `python scripts/make_pins_head.py`, `python scripts/export_head_evidence.py`, `python verify/verify_ta98.py`, `python verify/verify_head.py`, `python scripts/make_local.py site/index.html site/local.html`, `node tools/verify-atlas.mjs`.
+- Для расстановки: `node tools/head-review.mjs` запускает локальный pintool на порту 8774. Он исполняет файлы `qhead/*.job`, сохраняет JSON и снимки; `qhead/_STOP` завершает процесс. Это локальный инструмент разработчика, не публичный сервер.
+- Публикация: источник `site/index.html` остаётся фрагментом. `python scripts/package_site.py dist` формирует обычный `dist/index.html`. Репозиторий: `Moveath/myologiya-3d`, сайт: `https://moveath.github.io/myologiya-3d/`.

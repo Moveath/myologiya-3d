@@ -401,3 +401,13 @@ for i in range(1, 6):
         BONE[dist] = [f"A{pre}.006", f"A{pre}.007", f"A{pre}.008", f"A{pre}.005"]
 # carpal terms that belong to the carpus as a whole (shown with every carpal bone, counted once)
 CARPUS_SHARED = ["A02.4.08.014", "A02.4.08.002"]
+
+# Skull source tables are maintained separately, but participate in the same contract.
+from head_terms import T as HEAD_TERMS, BONE_CODES as HEAD_BONE_CODES
+from manifest_head import SINGLE_BONES as HEAD_SINGLE, PAIRED_BONES as HEAD_PAIRED
+T.update(HEAD_TERMS)
+for _bone in HEAD_SINGLE:
+    BONE[_bone] = list(HEAD_BONE_CODES[_bone])
+for _bone in HEAD_PAIRED:
+    for _side in ('right', 'left'):
+        BONE[f'{_bone}_{_side}'] = list(HEAD_BONE_CODES[_bone])

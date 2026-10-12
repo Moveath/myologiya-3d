@@ -4,13 +4,15 @@ For any other host (local server, GitHub Pages, Netlify) wrap it into a full doc
 usage: python3 scripts/make_local.py site/index.html site/local.html
 """
 import sys
+import re
 
 src, dst = sys.argv[1], sys.argv[2]
 body = open(src, encoding="utf-8").read()
+body = re.sub(r'<title>.*?</title>\s*', '', body, count=1, flags=re.S)
 head = ('<!doctype html><html lang="ru"><head><meta charset="utf-8">'
         '<title>Миология 3D — учебный атлас анатомии</title>'
         '<meta name="description" content="Учебный 3D-атлас анатомии: кости, мышцы и образования по TA98. Русские и латинские названия.">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<style>body{margin:0}[hidden]{display:none!important}</style></head><body>')
-open(dst, "w", encoding="utf-8").write(head + body + "</body></html>\n")
+open(dst, "w", encoding="utf-8", newline="\n").write(head + body + "</body></html>\n")
 print("written", dst)
