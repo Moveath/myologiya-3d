@@ -1,0 +1,55 @@
+{
+  "tolerance_mm": 0.003,
+  "comparison_units": "millimetres, to avoid metre-scale near-degeneracy tolerance in trimesh triangle projection",
+  "anatomical_validity_not_proved_by_distance": true,
+  "checks": [
+    {
+      "id": "openear_malleus_head",
+      "original_ply": "03_Malleus.ply",
+      "distance_to_original_surface_mm": 0.0002275621809370328,
+      "nearest_original_triangle": 2958
+    },
+    {
+      "id": "openear_malleus_neck",
+      "original_ply": "03_Malleus.ply",
+      "distance_to_original_surface_mm": 0.00026296843340744414,
+      "nearest_original_triangle": 1097
+    },
+    {
+      "id": "openear_malleus_handle",
+      "original_ply": "03_Malleus.ply",
+      "distance_to_original_surface_mm": 0.00015897709635715788,
+      "nearest_original_triangle": 1715
+    },
+    {
+      "id": "openear_incus_body",
+      "original_ply": "04_Incus.ply",
+      "distance_to_original_surface_mm": 0.0002699539621953179,
+      "nearest_original_triangle": 2340
+    },
+    {
+      "id": "openear_incus_long_limb",
+      "original_ply": "04_Incus.ply",
+      "distance_to_original_surface_mm": 0.00016699013115177073,
+      "nearest_original_triangle": 1516
+    },
+    {
+      "id": "openear_incus_short_limb",
+      "original_ply": "04_Incus.ply",
+      "distance_to_original_surface_mm": 0.00016366618211007062,
+      "nearest_original_triangle": 3829
+    },
+    {
+      "id": "openear_stapes_head",
+      "original_ply": "05_Stapes.ply",
+      "distance_to_original_surface_mm": 2.591011818854282e-05,
+      "nearest_original_triangle": 534
+    },
+    {
+      "id": "openear_stapes_base",
+      "original_ply": "05_Stapes.ply",
+      "distance_to_original_surface_mm": 0.00017274757902333728,
+      "nearest_original_triangle": 1204
+    }
+  ]
+}

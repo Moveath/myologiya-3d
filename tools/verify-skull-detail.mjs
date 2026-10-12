@@ -31,6 +31,9 @@ const report={generated_at:new Date().toISOString(),status:'running',test_comman
 try{
   const zMetadata=JSON.parse(await fs.readFile(path.join(site,'skull-z-detail.json'),'utf8'));
   const earMetadata=JSON.parse(await fs.readFile(path.join(site,'skull-openear.json'),'utf8'));
+  const earLandmarks=JSON.parse(await fs.readFile(path.join(site,'skull-openear-landmarks.json'),'utf8'));
+  assert.equal(earLandmarks.markers.length,8,'OpenEar must expose eight independently reviewed native landmarks');
+  assert.equal(earLandmarks.complete,false,'The supplemental set must not claim anatomical completeness');
   const testedMarkers=['mandible_mylohyoid_groove_right','mandible_mylohyoid_groove_left'];
   for(const id of testedMarkers)assert.ok(zMetadata.markers?.some(marker=>marker.id===id),`Missing reviewed Z marker ${id}`);
   assert.equal(earMetadata.structures.length,13,'OpenEar must expose all thirteen authored structures');
@@ -157,6 +160,10 @@ try{
     await ready();
     assert.equal(await page.evaluate(()=>window.__detail.state.error),null);
     assert.equal(await page.evaluate(()=>window.__detail.state.mode),'openear');
+    for(const [value,label] of Object.entries({ant:'Осевой вид 1',post:'Осевой вид 2',right:'Осевой вид 3',left:'Осевой вид 4',sup:'Осевой вид 5',inf:'Осевой вид 6'}))
+      assert.equal(await page.locator(`#view option[value="${value}"]`).textContent(),label);
+    for(const [value,label] of Object.entries({sagittal:'Плоскость 1',coronal:'Плоскость 2',axial:'Плоскость 3'}))
+      assert.equal(await page.locator(`#cutPlane option[value="${value}"]`).textContent(),label);
     assert.equal(await page.evaluate(()=>window.__detail.counts().parts),13);
     assert.equal(await page.evaluate(()=>window.__detail.counts().visible),13);
     assert.ok(await page.locator('#earTranslucent').isChecked());
@@ -191,10 +198,40 @@ try{
     assert.equal(await page.evaluate(()=>window.__detail.state.clip),'off');
     assert.equal(await page.evaluate(()=>window.__detail.state.reverse),false);
     assert.ok(await page.locator('#detailPin').isHidden());
+    // These markers identify surfaces of the native ossicle meshes, using
+    // custom specimen views rather than assumed anatomical scanner axes.
+    const nativeMarkersTested=[];
+    if(width===390&&theme==='light')for(const marker of earLandmarks.markers){
+      await page.evaluate(id=>window.__detail.selectPart(id,true),marker.b);
+      await page.locator(`[data-marker="${marker.id}"]`).click();
+      await page.waitForFunction(()=>!document.querySelector('#detailPin').hidden);
+      assert.equal(await page.evaluate(()=>window.__detail.state.marker),marker.id);
+      assert.equal(await page.evaluate(()=>window.__detail.state.only),marker.b);
+      assert.equal(await page.evaluate(()=>window.__detail.counts().visible),1);
+      assert.equal(await page.evaluate(()=>window.__detail.state.clip),'off');
+      const text=await page.locator('#markerSelection').innerText();
+      for(const expected of [marker.ru,marker.lat,marker.c,'OpenEar ZETA'])assert.ok(text.includes(expected),`${marker.id}: card must include ${expected}`);
+      const links=await page.locator('#markerSelection a').evaluateAll(nodes=>nodes.map(node=>node.href));
+      assert.ok(marker.refs.length>=2);
+      for(const ref of marker.refs){assert.ok(ref.locator,`${marker.id}: each source needs a locator`);assert.ok(links.includes(ref.url),`${marker.id}: anatomical source must be displayed`);}
+      assert.ok(await page.evaluate(()=>{
+        const pin=document.querySelector('#detailPin').getBoundingClientRect(),stage=document.querySelector('#stage').getBoundingClientRect();
+        return pin.width>0&&pin.height>0&&pin.left>=stage.left&&pin.right<=stage.right&&pin.top>=stage.top&&pin.bottom<=stage.bottom;
+      }),`${marker.id}: native marker must be visibly inside the stage`);
+      await shot(`openear-${width}-${theme}-${marker.id}.png`);
+      await page.locator('#hidePart').click();
+      assert.equal(await page.evaluate(()=>window.__detail.state.marker),null);
+      await page.waitForFunction(()=>document.querySelector('#detailPin').hidden);
+      assert.ok(await page.locator('#detailPin').isHidden());
+      assert.ok(await page.locator('#markerSelection').isHidden());
+      await page.locator('#reset').click();
+      nativeMarkersTested.push(marker.id);
+    }
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Viewer must fit the viewport without horizontal scrolling');
 
     // Opening details must preserve the parent atlas document, selection and
-    // URL. The child back action closes the dialog rather than navigating it.
+    // URL. The overview leads to a region viewer; back returns to the overview,
+    // and the next back action closes the embedded dialog.
     await page.goto(`${base}/local.html#head`);
     await page.waitForFunction(()=>window.__atlas?.state.sec==='head'&&document.querySelector('#veil').hidden);
     await page.evaluate(()=>{window.__embeddedRegressionToken='parent-remains-loaded';window.__atlas.select('frontal');});
@@ -203,6 +240,9 @@ try{
     await page.waitForFunction(()=>document.querySelector('#headDetailDialog').open);
     const child=await page.locator('#headDetailFrame').elementHandle().then(handle=>handle.contentFrame());
     assert.ok(child,'Detail iframe must have its own browsing context');
+    await child.waitForFunction(()=>!!window.__study);
+    assert.ok(new URL(child.url()).pathname.endsWith('/skull-study.html'));
+    await child.locator('[data-group="whole"]').click();
     await child.waitForFunction(()=>window.__detail?.state.ready||window.__detail?.state.error,{},{timeout:120000});
     assert.equal(await child.evaluate(()=>window.__detail.state.error),null);
     assert.equal(new URL(child.url()).searchParams.get('embed'),'1');
@@ -210,6 +250,11 @@ try{
     assert.equal(await page.evaluate(()=>window.__embeddedRegressionToken),'parent-remains-loaded');
     await shot(`embedded-${width}-${theme}-detail.png`);
     await child.locator('.back').click();
+    await child.waitForFunction(()=>!!window.__study);
+    assert.ok(await child.locator('[data-group="whole"]').isVisible());
+    assert.ok(await page.evaluate(()=>document.querySelector('#headDetailDialog').open));
+    assert.equal(await page.evaluate(()=>window.__embeddedRegressionToken),'parent-remains-loaded');
+    await child.locator('#back').click();
     await page.waitForFunction(()=>!document.querySelector('#headDetailDialog').open&&document.querySelector('#headDetailFrame').getAttribute('src')==='about:blank');
     assert.equal(page.url(),atlasUrl);
     assert.equal(await page.evaluate(()=>window.__atlas.state.sel),atlasSelection);
@@ -217,7 +262,7 @@ try{
 
     // Even if the entire child document fails before its JavaScript starts,
     // the parent's persistent close button must remain reachable and work.
-    const failedChild='**/skull-detail.html?*';
+    const failedChild='**/skull-study.html?*';
     await page.route(failedChild,route=>route.fulfill({status:503,contentType:'text/html; charset=utf-8',body:'<!doctype html><meta charset="utf-8"><p>Модель временно недоступна</p>'}));
     await page.locator('#bHeadDetail').click();
     await page.frameLocator('#headDetailFrame').getByText('Модель временно недоступна').waitFor();
@@ -230,7 +275,7 @@ try{
     assert.equal(await page.evaluate(()=>window.__atlas.state.sel),atlasSelection);
     await page.unroute(failedChild);
     assert.deepEqual(errors,[]);
-    report.cases.push({width,height,theme,status:'passed',z_bones:22,z_cavities:8,z_visibility_selection_isolation_reset:true,z_clipping:true,z_markers:testedMarkers,z_markers_visible_and_clipped:true,microct_load:true,microct_clipping:['sagittal','coronal','axial'],microct_reverse_cut:true,microct_neutral_lateral_labels:true,openear_parts:13,openear_stapes_selection_isolation_reset:true,openear_context_visibility_transparency:true,openear_clipping:true,embedded_parent_navigation_preserved:true,embedded_child_back_closes:true,embedded_parent_close_after_child_failure:true,load_failure_recovery:true,microct_load_and_front_screenshot_ms:microctLoadAndScreenshotMs,page_errors:errors,screenshots});
+    report.cases.push({width,height,theme,status:'passed',z_bones:22,z_cavities:8,z_visibility_selection_isolation_reset:true,z_clipping:true,z_markers:testedMarkers,z_markers_visible_and_clipped:true,microct_load:true,microct_clipping:['sagittal','coronal','axial'],microct_reverse_cut:true,microct_neutral_lateral_labels:true,openear_parts:13,openear_stapes_selection_isolation_reset:true,openear_context_visibility_transparency:true,openear_clipping:true,openear_neutral_views_and_planes:true,openear_native_markers:nativeMarkersTested,openear_native_marker_sources_and_visibility:nativeMarkersTested.length===8?true:null,embedded_parent_navigation_preserved:true,embedded_region_back_to_overview:true,embedded_overview_back_closes:true,embedded_parent_close_after_child_failure:true,load_failure_recovery:true,microct_load_and_front_screenshot_ms:microctLoadAndScreenshotMs,page_errors:errors,screenshots});
     console.log(`${width} ${theme}: passed; micro-CT load + screenshot ${microctLoadAndScreenshotMs} ms`);
     await context.close();
   }

@@ -407,7 +407,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
-      <button class="chip nocheck" id="bHeadDetail" hidden>Подробная модель</button>
+      <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
       <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
     </div>
@@ -491,7 +491,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
       <p>В голове по умолчанию включены «Цвета костей»: у каждой кости свой учебный цвет, одинаковый справа и слева. Это условная раскраска для запоминания. Кнопка «Легенда» показывает названия и позволяет выбрать кость. Чтобы увидеть весь цветной череп, выбери слой «Кости». Настройка цвета сохраняется; во время теста раскраска временно отключается.</p>
       <p>«Срез черепа» позволяет убрать часть модели в одной из трёх плоскостей и рассмотреть внутреннюю поверхность. Ползунок перемещает срез; «Другая сторона» меняет оставленную половину. Срез показывает существующую геометрию модели.</p>
-      <p>«Подробная модель» открывается внутри атласа: здесь доступны кости и пазухи Z-Anatomy, поверхность микро-КТ и 13 структур препарата OpenEar. Выбирай структуры в списке, скрывай костный блок или делай его прозрачным. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. «Вернуться к атласу» сохраняет прежний выбор. Ссылки на отдельно проверенные образования есть и в их карточках.</p>
+      <p>«Учебные группы» открывают восемь направлений: кости, основание черепа, глазницы и полость носа, пазухи, челюсти, ухо, мышцы и варианты строения. Переключай готовые виды и выбирай структуры, чтобы открыть карточки. Для костей доступны модели Z-Anatomy и микро-КТ, для уха — отдельный препарат OpenEar с восемью проверенными ориентирами слуховых косточек. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. Каталог вариантов показывает типичные места без подтверждённой геометрии вариантов. «Вернуться к атласу» сохраняет прежний выбор.</p>
       <h3>Словарик</h3>
       <dl class="glosslist" id="glosslist"></dl>
       <h3>Откуда модели</h3>
@@ -1965,12 +1965,13 @@ $('#bBoneColors').addEventListener('click', () => {
   state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
   closeBoneLegend(false); applyVisibility(); renderSheet();
 });
-function openHeadDetail(mode = 'z', part = null, marker = null) {
+function openHeadDetail(mode = 'study', part = null, marker = null) {
   const theme = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   const query = new URLSearchParams({theme, mode, embed:'1'});
+  if (location.pathname.endsWith('/local.html')) query.set('entry','local');
   if (part) query.set('part', part);
   if (marker) query.set('marker', marker);
-  $('#headDetailFrame').src = `skull-detail.html?${query}`;
+  $('#headDetailFrame').src = `${mode === 'study' ? 'skull-study' : 'skull-detail'}.html?${query}`;
   $('#headDetailDialog').showModal();
 }
 function closeHeadDetail() {
@@ -1982,8 +1983,20 @@ $('#bHeadDetail').addEventListener('click', () => openHeadDetail());
 $('#closeHeadDetail').addEventListener('click', closeHeadDetail);
 $('#headDetailDialog').addEventListener('cancel', event => { event.preventDefault(); closeHeadDetail(); });
 addEventListener('message', event => {
-  if (event.origin === location.origin && event.source === $('#headDetailFrame').contentWindow && event.data?.type === 'atlas-close-detail') closeHeadDetail();
+  if (event.origin !== location.origin || event.source !== $('#headDetailFrame').contentWindow) return;
+  if (event.data?.type === 'atlas-close-detail') closeHeadDetail();
+  if (event.data?.type === 'atlas-study-action' && validStudyAction(event.data.action,event.data.value)) {
+    closeHeadDetail(); applyStudyAction(event.data.action,event.data.value);
+  }
 });
+function validStudyAction(action,value) {
+  return action==='sub'&&['mimetic','mastication'].includes(value) || action==='pin'&&pinById[value]?.loc==='variant'&&pinById[value]?.id.startsWith('head_');
+}
+function applyStudyAction(action,value) {
+  if(!validStudyAction(action,value))return;
+  if(action==='sub'){state.peel=0;state.hidden.clear();state.headCut.active=false;state.sel=null;state.selPart=null;state.pin=null;setSub(value);}
+  else {const p=pinById[value];goTo(p.b,null,value);}
+}
 $('#bHeadCut').addEventListener('click', () => {
   state.headCut.active = !state.headCut.active;
   applyVisibility();
@@ -2017,7 +2030,7 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutFigu
 resize();
 requestAnimationFrame(loop);
 const deep = location.hash.replace('#', '');
-if (SEC[deep] && SEC[deep].ready) enterSection(deep);
+if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
 else {
   // fetch the last used section quietly while the body map is on screen
   const warm = SEC[prefs.sec] && SEC[prefs.sec].ready ? prefs.sec : 'arm';

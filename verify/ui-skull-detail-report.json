@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:29:27.551Z",
+  "generated_at": "2026-10-12T19:04:30.644Z",
   "status": "passed",
   "test_command": "node tools/verify-skull-detail.mjs",
   "cases": [
@@ -29,11 +29,24 @@
       "openear_stapes_selection_isolation_reset": true,
       "openear_context_visibility_transparency": true,
       "openear_clipping": true,
+      "openear_neutral_views_and_planes": true,
+      "openear_native_markers": [
+        "openear_malleus_head",
+        "openear_malleus_neck",
+        "openear_malleus_handle",
+        "openear_incus_body",
+        "openear_incus_long_limb",
+        "openear_incus_short_limb",
+        "openear_stapes_head",
+        "openear_stapes_base"
+      ],
+      "openear_native_marker_sources_and_visibility": true,
       "embedded_parent_navigation_preserved": true,
-      "embedded_child_back_closes": true,
+      "embedded_region_back_to_overview": true,
+      "embedded_overview_back_closes": true,
       "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3789,
+      "microct_load_and_front_screenshot_ms": 3782,
       "page_errors": [],
       "screenshots": [
         "detail-390-light-bones.png",
@@ -49,6 +62,14 @@
         "openear-390-light-context.png",
         "openear-390-light-stapes.png",
         "openear-390-light-cut.png",
+        "openear-390-light-openear_malleus_head.png",
+        "openear-390-light-openear_malleus_neck.png",
+        "openear-390-light-openear_malleus_handle.png",
+        "openear-390-light-openear_incus_body.png",
+        "openear-390-light-openear_incus_long_limb.png",
+        "openear-390-light-openear_incus_short_limb.png",
+        "openear-390-light-openear_stapes_head.png",
+        "openear-390-light-openear_stapes_base.png",
         "embedded-390-light-detail.png",
         "embedded-390-light-failed-child.png"
       ]
@@ -79,11 +100,15 @@
       "openear_stapes_selection_isolation_reset": true,
       "openear_context_visibility_transparency": true,
       "openear_clipping": true,
+      "openear_neutral_views_and_planes": true,
+      "openear_native_markers": [],
+      "openear_native_marker_sources_and_visibility": null,
       "embedded_parent_navigation_preserved": true,
-      "embedded_child_back_closes": true,
+      "embedded_region_back_to_overview": true,
+      "embedded_overview_back_closes": true,
       "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3809,
+      "microct_load_and_front_screenshot_ms": 4428,
       "page_errors": [],
       "screenshots": [
         "detail-390-dark-bones.png",
@@ -129,11 +154,15 @@
       "openear_stapes_selection_isolation_reset": true,
       "openear_context_visibility_transparency": true,
       "openear_clipping": true,
+      "openear_neutral_views_and_planes": true,
+      "openear_native_markers": [],
+      "openear_native_marker_sources_and_visibility": null,
       "embedded_parent_navigation_preserved": true,
-      "embedded_child_back_closes": true,
+      "embedded_region_back_to_overview": true,
+      "embedded_overview_back_closes": true,
       "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3901,
+      "microct_load_and_front_screenshot_ms": 3893,
       "page_errors": [],
       "screenshots": [
         "detail-1280-light-bones.png",
@@ -179,11 +208,15 @@
       "openear_stapes_selection_isolation_reset": true,
       "openear_context_visibility_transparency": true,
       "openear_clipping": true,
+      "openear_neutral_views_and_planes": true,
+      "openear_native_markers": [],
+      "openear_native_marker_sources_and_visibility": null,
       "embedded_parent_navigation_preserved": true,
-      "embedded_child_back_closes": true,
+      "embedded_region_back_to_overview": true,
+      "embedded_overview_back_closes": true,
       "embedded_parent_close_after_child_failure": true,
       "load_failure_recovery": true,
-      "microct_load_and_front_screenshot_ms": 3856,
+      "microct_load_and_front_screenshot_ms": 3726,
       "page_errors": [],
       "screenshots": [
         "detail-1280-dark-bones.png",
@@ -209,115 +242,5 @@
     "Время измерено на локальном сервере в headless Chromium с программным WebGL; это не скорость загрузки по интернету и не тест реального телефона.",
     "Латеральность микро-КТ независимо не подтверждена; боковые виды имеют нейтральные названия."
   ],
-  "local_navigation_round_trip": "embedded dialog preserves the atlas document and selection in all four layouts",
-  "marker_controls_postfix_smoke": {
-    "generated_at": "2026-10-12T18:36:05.229Z",
-    "status": "passed",
-    "cases": [
-      {
-        "width": 390,
-        "theme": "light",
-        "status": "passed",
-        "markers": [
-          {
-            "id": "mandible_mylohyoid_groove_right",
-            "view": "left",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          },
-          {
-            "id": "mandible_mylohyoid_groove_left",
-            "view": "right",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          }
-        ],
-        "page_errors": []
-      },
-      {
-        "width": 390,
-        "theme": "dark",
-        "status": "passed",
-        "markers": [
-          {
-            "id": "mandible_mylohyoid_groove_right",
-            "view": "left",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          },
-          {
-            "id": "mandible_mylohyoid_groove_left",
-            "view": "right",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          }
-        ],
-        "page_errors": []
-      },
-      {
-        "width": 1280,
-        "theme": "light",
-        "status": "passed",
-        "markers": [
-          {
-            "id": "mandible_mylohyoid_groove_right",
-            "view": "left",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          },
-          {
-            "id": "mandible_mylohyoid_groove_left",
-            "view": "right",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          }
-        ],
-        "page_errors": []
-      },
-      {
-        "width": 1280,
-        "theme": "dark",
-        "status": "passed",
-        "markers": [
-          {
-            "id": "mandible_mylohyoid_groove_right",
-            "view": "left",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          },
-          {
-            "id": "mandible_mylohyoid_groove_left",
-            "view": "right",
-            "view_label": true,
-            "hide_button_clears_marker": true,
-            "visibility_checkbox_clears_marker": true
-          }
-        ],
-        "page_errors": []
-      }
-    ]
-  },
-  "visual_review": {
-    "status": "passed",
-    "layouts": [
-      "390 light",
-      "390 dark",
-      "1280 light",
-      "1280 dark"
-    ],
-    "reviewed": [
-      "OpenEar transparent bone context",
-      "OpenEar isolated stapes",
-      "Z marker location and clipping",
-      "embedded viewer and parent close after failed child"
-    ],
-    "notes": "Screenshots checked manually; no overflow or obscured model controls observed."
-  }
+  "local_navigation_round_trip": "embedded dialog preserves the atlas document and selection in all four layouts"
 }

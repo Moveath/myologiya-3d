@@ -38,6 +38,9 @@ h1 { margin:0; font-size:18px; line-height:1.2; }
 .chip { border-radius:999px; }
 .chip[aria-pressed="true"],.btn[aria-pressed="true"] { border-color:var(--teal); background:var(--teal-soft); }
 .modebar { display:flex; gap:8px; padding:0 16px 10px; flex:none; }
+.regionbar { padding:0 16px 10px; display:flex; gap:7px; flex-wrap:wrap; flex:none; }
+.regionbar .btn { border-radius:999px; }
+.group-back { font-size:12px; text-decoration:none; white-space:nowrap; }
 .modebar .chip[aria-pressed="true"] { background:var(--teal); color:var(--on-teal); }
 .layout { display:grid; grid-template-columns:minmax(0,1fr) 360px; min-height:0; flex:1; gap:12px; padding:0 16px 16px; }
 .viewer { min-width:0; min-height:0; position:relative; overflow:hidden; border-radius:18px; }
@@ -116,6 +119,7 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
     <button class="chip" data-mode="microct" aria-pressed="false">Микро-КТ</button>
     <button class="chip" data-mode="openear" aria-pressed="false">Височная кость</button>
   </nav>
+  <nav class="regionbar" id="regionbar" aria-label="Готовые учебные виды" hidden></nav>
   <main class="layout">
     <section class="viewer" aria-label="Просмотр 3D-модели">
       <canvas id="stage" aria-label="Череп: вращай, приближай и выбирай структуры"></canvas>
@@ -157,10 +161,14 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {regionById} from './skull-regions.js';
 const $ = s => document.querySelector(s);
 const initialQuery = new URLSearchParams(location.search);
+const region=regionById(initialQuery.get('region'));
+let currentPreset=null;
+function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');return 'skull-study.html?'+p;}
 if (initialQuery.get('embed') === '1' && parent !== window) {
-  $('.back').addEventListener('click', event => { event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
+  $('.back').addEventListener('click', event => { if(region){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
   addEventListener('keydown', event => { if(event.key==='Escape') parent.postMessage({type:'atlas-close-detail'},location.origin); });
 }
 // The local launcher uses the full wrapper; hosted deployments use the directory index.
@@ -168,6 +176,8 @@ try {
   const referrer=new URL(document.referrer);
   if(referrer.origin===location.origin&&referrer.pathname.endsWith('/local.html')) $('.back').href='local.html#head';
 } catch (_) {}
+if(initialQuery.get('entry')==='local')$('.back').href='local.html#head';
+if(region){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Все учебные группы');$('.back').title='Все учебные группы';$('h1').textContent=region.ru;$('.brand p').textContent='Череп по областям · '+(region.mode==='openear'?'OpenEar ZETA · отдельный препарат':'Z-Anatomy · отдельная модель');$('.modebar').hidden=true;}
 const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const PALETTE = {frontal:'#e8c04c',parietal:'#b488c9',occipital:'#4fa7a1',temporal:'#689ddd',sphenoid:'#e88762',ethmoid:'#91b95b',nasal:'#86ced8',lacrimal:'#cfa847',zygomatic:'#e99c4a',maxilla:'#d988b0',palatine:'#8674ad',inferior_concha:'#959fe0',vomer:'#b98665',mandible:'#a4bf71'};
 const boneKey = id => id.replace(/_(?:right|left)$/,'');
@@ -219,8 +229,9 @@ function frame(view=$('#view').value,partId=null) {
   if(box.isEmpty())box.copy(active.bounds);
   const center=box.getCenter(new THREE.Vector3());
   const v=THREE.MathUtils.degToRad(camera.fov)/2,h=Math.atan(Math.tan(v)*camera.aspect);
-  camera.up.set(0,1,0);if(view==='sup')camera.up.set(0,0,-1);if(view==='inf')camera.up.set(0,0,1);
-  const direction=new THREE.Vector3(...(views[view]||views.antlat)).normalize();
+  if(view==='preset')view=currentPreset?.view||'antlat';
+  camera.up.set(...(typeof view==='object'?view.up||[0,1,0]:[0,1,0]));if(view==='sup')camera.up.set(0,0,-1);if(view==='inf')camera.up.set(0,0,1);
+  const direction=new THREE.Vector3(...(typeof view==='object'?view.d:views[view]||views.antlat)).normalize();
   const right=new THREE.Vector3().crossVectors(camera.up,direction).normalize(),up=new THREE.Vector3().crossVectors(direction,right).normalize();
   let distance=.008;
   for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){
@@ -232,6 +243,7 @@ function frame(view=$('#view').value,partId=null) {
 function renderSelection() {
   const part=active?.parts.get(state.selected);
   if(!part) {
+    if(region&&state.mode===region.mode){$('#selection').innerHTML=`<p class="eyebrow">${state.mode==='openear'?'OpenEar ZETA · отдельный препарат':'Z-Anatomy · отдельная модель'}</p><h2>${esc(currentPreset?.ru||region.ru)}</h2><p class="description">${esc(region.hint)} Нажми на структуру, чтобы открыть карточку.</p><p class="hint">«Сбросить» возвращает начальный вид выбранной группы. Другие структуры доступны в составе модели ниже.</p>${state.mode==='openear'?'<p class="hint">Препарат ориентирован для осмотра, поэтому осевые виды и срезы обозначены номерами. Нерв не заменяет геометрию костного канала.</p>':''}`;return;}
     if(state.mode==='openear') {
       $('#selection').innerHTML='<p class="eyebrow">OpenEar · отдельный препарат</p><h2>Внутри височной кости</h2><p class="description">Выбери слуховую косточку или другую структуру в списке. Костный блок можно скрыть, сделать прозрачным или рассмотреть на срезе.</p><p class="hint">Это самостоятельный образец со своей геометрией. Нерв показан отдельно от стенок костного канала.</p>';
       return;
@@ -280,7 +292,7 @@ function selectMarker(id) {
   const p=new THREE.Vector3(...marker.p),direction=new THREE.Vector3(...(typeof marker.view==='string'?views[marker.view]:marker.view?.d||marker.n)).normalize();
   camera.up.set(...(marker.view?.up||[0,1,0]));camera.position.copy(p).addScaledVector(direction,marker.view?.distance||.085);controls.target.copy(p);controls.update();
   $('#markerSelection').hidden=false;
-  $('#markerSelection').innerHTML=`<div class="notice"><b>${esc(marker.ru)}</b><p class="latin">${esc(marker.lat)}</p><p class="hint">TA98 ${esc(marker.c)} · точка на модели Z-Anatomy</p><p>${esc(marker.x)}</p><p class="hint">${esc(marker.modelNote)}</p>${linkList(marker.refs)}</div>`;
+  $('#markerSelection').innerHTML=`<div class="notice"><b>${esc(marker.ru)}</b><p class="latin">${esc(marker.lat)}</p><p class="hint">TA98 ${esc(marker.c)} · точка на модели ${state.mode==='openear'?'OpenEar ZETA':'Z-Anatomy'}</p><p>${esc(marker.x)}</p><p class="hint">${esc(marker.modelNote)}</p>${linkList(marker.refs)}</div>`;
   apply();renderParts();return true;
 }
 function positionMarker(){
@@ -328,7 +340,7 @@ async function loadModel(mode,onProgress) {
   const loader=new GLTFLoader();await MeshoptDecoder.ready;loader.setMeshoptDecoder(MeshoptDecoder);
   const stem={z:'skull-z-detail',microct:'skull-microct',openear:'skull-openear'}[mode];
   const filename=stem+'.glb';
-  const metadataPromise=fetch(stem+'.json').then(r=>{if(!r.ok)throw new Error(`Описание модели: ${r.status}`);return r.json();});
+  const metadataPromise=fetch(stem+'.json').then(r=>{if(!r.ok)throw new Error(`Описание модели: ${r.status}`);return r.json();}).then(async metadata=>{if(mode==='openear'){const response=await fetch('skull-openear-landmarks.json');if(!response.ok)throw Error('Не удалось загрузить ориентиры OpenEar');const native=await response.json();metadata.markers=native.markers;}return metadata;});
   const gltfPromise=new Promise((resolve,reject)=>loader.load(filename,resolve,onProgress,reject));
   const [metadata,gltf]=await Promise.all([metadataPromise,gltfPromise]);return register(gltf,metadata,mode);
 }
@@ -340,19 +352,32 @@ async function setMode(mode) {
   $('#view option[value="right"]').textContent=mode!=='z'?'Боковой вид 1':'Справа';
   $('#view option[value="left"]').textContent=mode!=='z'?'Боковой вид 2':'Слева';
   $('#cutPlane option[value="sagittal"]').textContent=mode!=='z'?'Сагиттальная — боковой срез':'Сагиттальная — справа / слева';
+  for(const [id,label] of Object.entries({ant:'Спереди',post:'Сзади',sup:'Сверху',inf:'Снизу'}))$('#view option[value="'+id+'"]').textContent=mode==='openear'?'Осевой вид '+({ant:1,post:2,sup:5,inf:6}[id]):label;
+  if(mode==='openear'){ $('#view option[value="right"]').textContent='Осевой вид 3';$('#view option[value="left"]').textContent='Осевой вид 4'; }
+  for(const [id,label] of Object.entries({sagittal:mode==='microct'?'Сагиттальная — боковой срез':'Сагиттальная — справа / слева',coronal:'Фронтальная — спереди / сзади',axial:'Горизонтальная — сверху / снизу'}))$('#cutPlane option[value="'+id+'"]').textContent=mode==='openear'?'Плоскость '+({sagittal:1,coronal:2,axial:3}[id]):label;
   $('#zSwitches').hidden=mode!=='z';$('#earSwitches').hidden=mode!=='openear';$('#load').hidden=false;$('#retry').hidden=true;$('#loadProgress').hidden=false;$('#loadProgress').removeAttribute('value');$('#loadTitle').textContent='Загружаю модель…';$('#loadText').textContent='Подготовка просмотра';$('#parts').innerHTML='';$('#modelInfo').innerHTML='';$('#partCount').textContent='';renderSelection();dirty=true;
   try {
     let model=cache.get(mode);
     if(!model){model=await loadModel(mode,event=>{if(current!==ticket)return;const received=(event.loaded/1048576).toFixed(1);if(event.lengthComputable&&event.total){$('#loadProgress').value=event.loaded/event.total;$('#loadText').textContent=`Загружено ${Math.round(100*event.loaded/event.total)}%`;}else $('#loadText').textContent=`Загружено ${received} МБ`;});cache.set(mode,model);}
     if(current!==ticket)return false;
-    active=model;scene.add(active.group);state.translucent=mode==='openear';state.cavities=mode==='openear';state.ready=true;state.loading=false;$('#load').hidden=true;$('#view').value='antlat';apply();renderSelection();renderParts();renderInfo();resize();frame('antlat');return true;
+    active=model;scene.add(active.group);state.translucent=mode==='openear';state.cavities=mode==='openear';state.ready=true;state.loading=false;$('#load').hidden=true;$('#view').value='antlat';apply();renderSelection();renderParts();renderInfo();resize();if(region&&mode===region.mode)setPreset(region.presets[0].id);else frame('antlat');return true;
   } catch(error) {
     if(current!==ticket)return false;
     state.loading=false;state.error=String(error?.message||error);$('#loadTitle').textContent='Модель не загрузилась';$('#loadText').textContent='Проверь соединение и повтори загрузку. Можно выбрать другую модель.';$('#loadProgress').hidden=true;$('#retry').hidden=false;return false;
   }
 }
 function setCut(plane,value=state.cut,reverse=state.reverse){if(!['off','sagittal','coronal','axial'].includes(plane))return;state.clip=plane;state.cut=Math.max(0,Math.min(1,Number(value)));state.reverse=!!reverse;apply();}
-function reset() {state.hidden.clear();state.only=null;state.selected=null;state.marker=null;$('#markerSelection').hidden=true;state.cavities=state.mode==='openear';state.translucent=state.mode==='openear';state.clip='off';state.cut=.5;state.reverse=false;$('#view').value='antlat';apply();renderSelection();renderParts();frame('antlat');}
+function setPreset(id){
+  if(!active||!region||state.mode!==region.mode)return false;
+  const preset=region.presets.find(p=>p.id===id);if(!preset)return false;currentPreset=preset;state.preset=id;
+  const allowed=preset.parts?new Set(preset.parts):null;
+  state.hidden=new Set([...active.parts.values()].filter(p=>allowed&&!allowed.has(p.id)&&!(preset.includeCavities&&p.kind==='cavity')).map(p=>p.id));
+  state.only=null;state.selected=null;state.marker=null;$('#markerSelection').hidden=true;state.cavities=!!preset.cavities;state.translucent=!!preset.translucent;state.clip=preset.cut?.plane||'off';state.cut=preset.cut?.value??.5;state.reverse=!!preset.cut?.reverse;
+  $('#regionbar').hidden=false;$('#regionbar').innerHTML=region.presets.map(p=>`<button class="btn" data-preset="${p.id}" aria-pressed="${p.id===id}">${esc(p.ru)}</button>`).join('');$('#regionbar').querySelectorAll('button').forEach(b=>b.onclick=()=>setPreset(b.dataset.preset));
+  if(!$('#view option[value="preset"]'))$('#view').insertAdjacentHTML('afterbegin','<option value="preset">Учебный ракурс</option>');$('#view').value='preset';
+  apply();renderSelection();renderParts();resize();frame(preset.view);$('#panel').scrollTop=0;return true;
+}
+function reset() {if(region&&state.mode===region.mode){setPreset(region.presets[0].id);return;}state.hidden.clear();state.only=null;state.selected=null;state.marker=null;$('#markerSelection').hidden=true;state.cavities=state.mode==='openear';state.translucent=state.mode==='openear';state.clip='off';state.cut=.5;state.reverse=false;$('#view').value='antlat';apply();renderSelection();renderParts();frame('antlat');}
 $('#view').onchange=()=>frame();$('#fit').onclick=()=>frame();$('#reset').onclick=reset;$('#retry').onclick=()=>setMode(state.mode);
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
 $('#cutPlane').onchange=()=>setCut($('#cutPlane').value);$('#cutPosition').oninput=()=>setCut(state.clip,+$('#cutPosition').value/100);$('#reverseCut').onchange=()=>setCut(state.clip,state.cut,$('#reverseCut').checked);
@@ -372,8 +397,8 @@ canvas.addEventListener('pointerup',e=>{
   if(hit)selectPart(hit.object.userData.detailId);
 });
 canvas.addEventListener('pointercancel',()=>{down=null;});
-window.__detail={state,setMode,setCut,selectPart,selectMarker,reset,frame,counts:()=>active?{parts:active.parts.size,bones:[...active.parts.values()].filter(p=>p.kind==='bone').length,cavities:[...active.parts.values()].filter(p=>p.kind==='cavity').length,visible:[...active.parts.values()].filter(visible).length}:null};
-window.__ready=true;resize();setMode(initialQuery.get('mode')||'z').then(ok=>{if(!ok)return;if(initialQuery.has('marker'))selectMarker(initialQuery.get('marker'));else if(initialQuery.has('part'))selectPart(initialQuery.get('part'),true);});
+window.__detail={state,setMode,setCut,setPreset,selectPart,selectMarker,reset,frame,counts:()=>active?{parts:active.parts.size,bones:[...active.parts.values()].filter(p=>p.kind==='bone').length,cavities:[...active.parts.values()].filter(p=>p.kind==='cavity').length,visible:[...active.parts.values()].filter(visible).length}:null};
+window.__ready=true;resize();setMode(region?.mode||initialQuery.get('mode')||'z').then(ok=>{if(!ok)return;if(initialQuery.has('marker'))selectMarker(initialQuery.get('marker'));else if(initialQuery.has('part'))selectPart(initialQuery.get('part'),true);});
 </script>
 </body>
 </html>

@@ -1,0 +1,591 @@
+{
+  "date": "2026-10-13",
+  "scope": "Новые источники для костей, каналов и вариантов черепа. Предыдущие BodyParts3D, Z-Anatomy, Halle и OpenEar повторно не выдаются за новые находки.",
+  "policy": "Только подтверждённая исходная или сканированная геометрия; без предположительных достроений и изменения статусов маркеров ради полноты.",
+  "complete_skull_geometry_claim": false,
+  "primary_atlas_marker_changes": 0,
+  "sources": [
+    {
+      "id": "bonehub_visible_human",
+      "title": "Visible Human Full-Skeleton 3D Bone Models",
+      "authors": [
+        "Seyed Hamidreza Alavi",
+        "Malte Asseln"
+      ],
+      "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+      "institution_record": "https://research.utwente.nl/en/datasets/visible-human-full-skeleton-3d-bone-models/",
+      "doi": "https://doi.org/10.57967/hf/10464",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "downloadable": true,
+      "local_assets": [
+        {
+          "file": "research/cache/new-skull/bonehub-01_Male-SKULL_CRANIAL_MAXILLA.stl",
+          "bytes": 30333084,
+          "sha256": "02d01572797e0ea71a8d18b2f5c98c5a006c42e467422550027cc62d8f8d354e",
+          "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models/resolve/main/visible_human_3d_models/CT/Mesh/01_Male/SKULL/SKULL_CRANIAL_MAXILLA.stl",
+          "source": "bonehub",
+          "license": "CC BY 4.0",
+          "hash_checked_against": "Hugging Face Git LFS SHA256",
+          "geometry": {
+            "vertices": 303029,
+            "triangles": 606660,
+            "bounds_native": [
+              [
+                181.3060302734375,
+                101.13629150390625,
+                1691.7293701171875
+              ],
+              [
+                318.98382568359375,
+                306.2125549316406,
+                1865.4049072265625
+              ]
+            ],
+            "watertight": false,
+            "units": "STL has no unit metadata; author export expected millimetres, not independently confirmed"
+          },
+          "review_node": "01_male-cranial_maxilla"
+        },
+        {
+          "file": "research/cache/new-skull/bonehub-01_Male-SKULL_MANDIBLE.stl",
+          "bytes": 3508084,
+          "sha256": "eea0eb49f92db5ca8a7d3475f7a8244f09eb555c146e9d5fdb149a3515ffbf09",
+          "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models/resolve/main/visible_human_3d_models/CT/Mesh/01_Male/SKULL/SKULL_MANDIBLE.stl",
+          "source": "bonehub",
+          "license": "CC BY 4.0",
+          "hash_checked_against": "Hugging Face Git LFS SHA256",
+          "geometry": {
+            "vertices": 35069,
+            "triangles": 70160,
+            "bounds_native": [
+              [
+                186.27340698242188,
+                106.87516784667969,
+                1583.000244140625
+              ],
+              [
+                307.8687744140625,
+                204.10116577148438,
+                1747.7076416015625
+              ]
+            ],
+            "watertight": false,
+            "units": "STL has no unit metadata; author export expected millimetres, not independently confirmed"
+          },
+          "review_node": "01_male-mandible"
+        },
+        {
+          "file": "research/cache/new-skull/bonehub-02_Female-SKULL_CRANIAL_MAXILLA.stl",
+          "bytes": 41564484,
+          "sha256": "4fa5023f7b3f2dc10f1a5c45d58f58b7b17f1160c78899e9a4bd0fd85dec1e2f",
+          "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models/resolve/main/visible_human_3d_models/CT/Mesh/02_Female/SKULL/SKULL_CRANIAL_MAXILLA.stl",
+          "source": "bonehub",
+          "license": "CC BY 4.0",
+          "hash_checked_against": "Hugging Face Git LFS SHA256",
+          "geometry": {
+            "vertices": 415457,
+            "triangles": 831288,
+            "bounds_native": [
+              [
+                166.47909545898438,
+                126.41311645507812,
+                1562.6531982421875
+              ],
+              [
+                307.37353515625,
+                316.2377014160156,
+                1723.7093505859375
+              ]
+            ],
+            "watertight": false,
+            "units": "STL has no unit metadata; author export expected millimetres, not independently confirmed"
+          },
+          "review_node": "02_female-cranial_maxilla"
+        },
+        {
+          "file": "research/cache/new-skull/bonehub-02_Female-SKULL_MANDIBLE.stl",
+          "bytes": 3797284,
+          "sha256": "1507a95eb5a26470a1b98de94df691862525d942ba5d3111db317fc2b36545b9",
+          "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models/resolve/main/visible_human_3d_models/CT/Mesh/02_Female/SKULL/SKULL_MANDIBLE.stl",
+          "source": "bonehub",
+          "license": "CC BY 4.0",
+          "hash_checked_against": "Hugging Face Git LFS SHA256",
+          "geometry": {
+            "vertices": 37926,
+            "triangles": 75944,
+            "bounds_native": [
+              [
+                178.78208923339844,
+                134.14498901367188,
+                1515.3995361328125
+              ],
+              [
+                298.79638671875,
+                224.0627899169922,
+                1596.66064453125
+              ]
+            ],
+            "watertight": false,
+            "units": "STL has no unit metadata; author export expected millimetres, not independently confirmed"
+          },
+          "review_node": "02_female-mandible"
+        }
+      ],
+      "evidence": "Авторский README, Dataset Summary; How This Dataset Was Created; Known Issues & Limitations; Licensing & Attribution. Четыре STL скачаны напрямую, SHA256 совпал с Git LFS.",
+      "limitations": [
+        "142/143 индивидуальные костные метки относятся ко всему скелету. Для черепа авторы прямо указывают лишь SKULL_CRANIAL_MAXILLA и SKULL_MANDIBLE: 22 кости черепа не разделены.",
+        "Сегментация выполнена nnInteractive с участием двух обученных разметчиков; экспорт использует сглаживание 0.5, статистики согласованности разметчиков не приведены.",
+        "Осмотр обеих моделей выявил сглаженные стенки лицевых костей и нижней челюсти. Не подтверждена геометрия полного перечня TA98 или каких-либо из 14 вариантов.",
+        "Локальный просмотр меняет только оси и масштаб. Не совмещён с BodyParts3D, маркеры не перенесены."
+      ],
+      "review_images": [
+        "research/cache/new-skull/queue/01_male-cranial_maxilla-oblique.png",
+        "research/cache/new-skull/queue/02_female-cranial_maxilla-oblique.png",
+        "research/cache/new-skull/queue/01_male-mandible-oblique.png",
+        "research/cache/new-skull/queue/02_female-mandible-inner.png"
+      ],
+      "status": "Сохранён для исследования; не принят как полная замена основного черепа."
+    },
+    {
+      "id": "nih_002448",
+      "title": "Skull — NIH 3D, 3DPX-002448",
+      "author": "nevitdilmen",
+      "url": "https://3d.nih.gov/entries/3DPX-002448",
+      "license": "CC BY 4.0",
+      "license_evidence": "Официальная страница содержит ссылку https://creativecommons.org/licenses/by/4.0/ и metadata.license=CC-BY.",
+      "downloadable": true,
+      "local_assets": [
+        {
+          "file": "research/cache/new-skull/nih-002448.stl",
+          "bytes": 65189284,
+          "sha256": "66828cc9a39bb43338ee40bc995d2bce3a5b68f84f5bb304b33da26498fa9f18",
+          "url": "https://3d.nih.gov/api/submissions/31677/runs/f5bf57f4-c5ad-4d0c-bf09-62033800b3d7/output-files/862730",
+          "source": "nih_002448",
+          "license": "CC BY 4.0",
+          "hash_checked_against": "NIH workflow output ETag (single MD5)",
+          "geometry": {
+            "vertices": 651256,
+            "triangles": 1303784,
+            "bounds_native": [
+              [
+                -71.42842102050781,
+                -95.14912414550781,
+                -105.92828369140625
+              ],
+              [
+                72.31129455566406,
+                107.14668273925781,
+                124.62895202636719
+              ]
+            ],
+            "watertight": true,
+            "units": "STL has no unit metadata; author export expected millimetres, not independently confirmed"
+          },
+          "review_node": "nih-002448"
+        }
+      ],
+      "description": "Сканированный череп с выраженным перекрытием зубных рядов, исходная публикация 2015. Скачан текущий публичный STL-выход NIH workflow; MD5 сверена с опубликованным ETag.",
+      "paper": "https://doi.org/10.1002/ase.2434",
+      "paper_locator": "Barger, Edwards (2024), Methods — Digital 3D model production, General model repair and Compromise changes.",
+      "limitations": [
+        "Собственный осмотр подтверждает утраты тонких стенок орбит и решётчатой области. Целостность STL и 1 303 784 треугольника не означают анатомическую полноту.",
+        "Статья описывает последующую печатную переработку исходника с ручным восстановлением решётчатой пластинки и заменой ряда ходов цилиндрическими полостями. Эта переработка не скачивалась и не принимается за исходную КТ-геометрию.",
+        "Отдельные 22 кости не размечены. Нет подтверждения всех каналов, 14 вариантов или регистрации к BodyParts3D."
+      ],
+      "review_images": [
+        "research/cache/new-skull/queue/nih-002448-oblique.png",
+        "research/cache/new-skull/queue/nih-002448-base-cut.png"
+      ],
+      "status": "Полезный независимый клинический пример, но не закрывает полный список недостающей микрогеометрии."
+    },
+    {
+      "id": "mug500",
+      "title": "MUG500+ Repository",
+      "url": "https://figshare.com/articles/dataset/MUG500_Repository/9616319",
+      "doi": "https://doi.org/10.6084/m9.figshare.9616319",
+      "paper": "https://doi.org/10.1016/j.dib.2021.107524",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "downloadable": true,
+      "download_method": "Оригинальный A0001-A0020.zip, только 20 NRRD-членов по HTTP byte ranges; CRC32 каждого члена проверена. MD5 полного архива не проверялась.",
+      "mask_count_downloaded": 20,
+      "masks": [
+        {
+          "specimen": "A0011",
+          "spacing_mm": [
+            0.505859375,
+            0.505859375,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0011.nrrd",
+          "sha256": "fd48b1bdaf4db052a9653d0d15cf4339983c7dab5caf12fea6cdc71662ed28cf",
+          "zip_crc32": "e4eb203c"
+        },
+        {
+          "specimen": "A0012",
+          "spacing_mm": [
+            0.53515625,
+            0.53515625,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0012.nrrd",
+          "sha256": "e55977b2098f2e68092b6156695ab6d09d04819bf032cfc034ffc9e8a08480fe",
+          "zip_crc32": "063d1361"
+        },
+        {
+          "specimen": "A0013",
+          "spacing_mm": [
+            0.43359375,
+            0.43359375,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0013.nrrd",
+          "sha256": "62b8ebdd15be91e9515f35f3fbb734f81cfae4844a47aadf5f4a360bd0a305f2",
+          "zip_crc32": "c59bd693"
+        },
+        {
+          "specimen": "A0014",
+          "spacing_mm": [
+            0.42187500000000006,
+            0.42187500000000006,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0014.nrrd",
+          "sha256": "36d41468075654e80d9d3f8aaf0a4c0c98b01bfbc578f23f156e123cdec331a0",
+          "zip_crc32": "fca16f19"
+        },
+        {
+          "specimen": "A0015",
+          "spacing_mm": [
+            0.505859375,
+            0.505859375,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0015.nrrd",
+          "sha256": "503a5481663ce8ae34f35465a75cfb790e0de168b0b4a7e22caa941df2f5c711",
+          "zip_crc32": "15a3ab9f"
+        },
+        {
+          "specimen": "A0016",
+          "spacing_mm": [
+            0.5078125,
+            0.5078125,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0016.nrrd",
+          "sha256": "96e356e51c8fa9273574c3d10299283f285d412d18769ee41617025c9729c5ed",
+          "zip_crc32": "3d270abc"
+        },
+        {
+          "specimen": "A0017",
+          "spacing_mm": [
+            0.52734375,
+            0.52734375,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0017.nrrd",
+          "sha256": "0f7d1730f87d38f27288b009ca99eb2ac6b1b14c59a5a78f0e7e5af73442222d",
+          "zip_crc32": "04c82dc1"
+        },
+        {
+          "specimen": "A0018",
+          "spacing_mm": [
+            0.572265625,
+            0.572265625,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0018.nrrd",
+          "sha256": "b25420dd30557a7f1d6083ad6cbf1044eb7753a647ff54e7ae7be685954aa61c",
+          "zip_crc32": "97f62131"
+        },
+        {
+          "specimen": "A0019",
+          "spacing_mm": [
+            0.4628906250000001,
+            0.4628906250000001,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0019.nrrd",
+          "sha256": "78151a32c2ffaa668528a6feb76e4233d7c99b43ada28443a5b09f7ac94a14df",
+          "zip_crc32": "f6849cd7"
+        },
+        {
+          "specimen": "A0020",
+          "spacing_mm": [
+            0.4609375,
+            0.4609375,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0020.nrrd",
+          "sha256": "759c816b9416875e7d3c6d5114adfc27b3f63f1a5ebb4dcc3c0dfb8bc55c5b74",
+          "zip_crc32": "05db5d7a"
+        },
+        {
+          "specimen": "A0001",
+          "spacing_mm": [
+            0.505859375,
+            0.505859375,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0001.nrrd",
+          "sha256": "269837b6347d27dcad3acc22f4e4c0fdfa19232630177a32d93d1dec785a73a2",
+          "zip_crc32": "f692e423"
+        },
+        {
+          "specimen": "A0002",
+          "spacing_mm": [
+            0.513671875,
+            0.513671875,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0002.nrrd",
+          "sha256": "2429de792774bd790675d60d4462d3314d5184f7a1a5267619c9a4cd5f8e9fa6",
+          "zip_crc32": "39287a62"
+        },
+        {
+          "specimen": "A0003",
+          "spacing_mm": [
+            0.4765624999999999,
+            0.4765624999999999,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0003.nrrd",
+          "sha256": "220270adc3a5cfde12c9b661ee1c163002165f0201cd3a690a12a7f70196095a",
+          "zip_crc32": "32463c33"
+        },
+        {
+          "specimen": "A0004",
+          "spacing_mm": [
+            0.455078125,
+            0.455078125,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0004.nrrd",
+          "sha256": "372767458270c6fe2c0f6d41324abda685aa8797381bf97ff71e239ec921447d",
+          "zip_crc32": "c4f0e365"
+        },
+        {
+          "specimen": "A0005",
+          "spacing_mm": [
+            0.5078125,
+            0.5078125,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0005.nrrd",
+          "sha256": "04c87c52c9e1e6dcc102eae7d9eb2d30f2f3aca1ae2cc33d9af03c27db06c2eb",
+          "zip_crc32": "3f1cfb73"
+        },
+        {
+          "specimen": "A0006",
+          "spacing_mm": [
+            0.611328125,
+            0.611328125,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0006.nrrd",
+          "sha256": "71245e0daa41a1f7af6ba2af0dcd31ce5260b92fc1625801d126609b937ecf0c",
+          "zip_crc32": "5e77bfc4"
+        },
+        {
+          "specimen": "A0007",
+          "spacing_mm": [
+            0.45703124999999994,
+            0.45703124999999994,
+            0.7500000000000001
+          ],
+          "file": "research/cache/new-skull/mug500/A0007.nrrd",
+          "sha256": "4f36debdcab0a29574e409414e7a14e5f89cfaea04afa34f3f606d29e2777e41",
+          "zip_crc32": "fabf1b85"
+        },
+        {
+          "specimen": "A0008",
+          "spacing_mm": [
+            0.5078125,
+            0.5078125,
+            0.75
+          ],
+          "file": "research/cache/new-skull/mug500/A0008.nrrd",
+          "sha256": "24da0f69557c1a514a42f834642b41b1bd0450e5003a83e2bb8858a701ebd9a8",
+          "zip_crc32": "a2809361"
+        },
+        {
+          "specimen": "A0009",
+          "spacing_mm": [
+            0.46484375,
+            0.46484375,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0009.nrrd",
+          "sha256": "01ec7186b70c882749c593a2fc193ceee5031438563b6280664580be507eb2ce",
+          "zip_crc32": "a305287c"
+        },
+        {
+          "specimen": "A0010",
+          "spacing_mm": [
+            0.43164062500000006,
+            0.43164062500000006,
+            0.7500000000000002
+          ],
+          "file": "research/cache/new-skull/mug500/A0010.nrrd",
+          "sha256": "2106a0d57b9a59ccabdcc5ae8f75da25a4b73197346d31c7caaec82a942649af",
+          "zip_crc32": "e31b95af"
+        }
+      ],
+      "review": {
+        "specimen": "A0014",
+        "source": "research/cache/new-skull/mug500/A0014.nrrd",
+        "header": {
+          "type": "short",
+          "dimension": "3",
+          "space": "left-posterior-superior",
+          "sizes": "374 512 287",
+          "space directions": "(0.42187500000000006,0,0) (0,0.42187500000000006,0) (0,0,0.75000000000000011)",
+          "kinds": "domain domain domain",
+          "endian": "little",
+          "encoding": "gzip",
+          "space origin": "(-77.835937500000043,-107.78906249999999,-107.25)"
+        },
+        "voxel_values": {
+          "0": 50544813,
+          "1": 4412243
+        },
+        "triangles": 4085434,
+        "vertices": 2034091,
+        "bounds_m": [
+          [
+            -0.07256250000000004,
+            -0.10725,
+            -0.10251562500000004
+          ],
+          [
+            0.07889062499999999,
+            0.10725000000000003,
+            0.08859374999999999
+          ]
+        ],
+        "changes": [
+          "Marching cubes level 0.5 at all original samples",
+          "LPS -> [L,S,-P], mm -> m",
+          "No smoothing, decimation or anatomical remodeling"
+        ],
+        "independent_anatomical_landmarks_verified": 0,
+        "registration_to_bodyparts3d": false
+      },
+      "limitations": [
+        "Авторские маски костной ткани не разделяют 22 кости. В просмотренных заголовках шаг XY 0.421875–0.611328125 мм, Z 0.75 мм.",
+        "Одна маска A0014 преобразована в поверхность при исходной выборке; сглаживание и децимация не выполнялись. Это не реконструкция отсутствующих в маске тонких стенок.",
+        "Наличие конкретных 14 вариантов в этих 20 случаях не проверено и не утверждается. Скачивание коллекции не является анатомической верификацией.",
+        "Исследовательские поверхности и исходные NRRD пока не опубликованы; статусы точек основного атласа не менялись."
+      ],
+      "status": "Новый открытый набор отдельных клинических черепов для дальнейшего сравнения. Полная микрогеометрия TA98 не доказана.",
+      "review_images": [
+        "research/cache/new-skull/mug-queue/a-oblique.png",
+        "research/cache/new-skull/mug-queue/b-base-cut.png"
+      ]
+    },
+    {
+      "id": "montpellier_m3_1152",
+      "title": "A human head micro-CT dataset: skull and soft tissues",
+      "authors": [
+        "Guillaume Captier",
+        "Valentin Favier",
+        "Renaud Lebrun"
+      ],
+      "url": "https://www.morphomuseum.com/articles/view/195",
+      "doi": "https://doi.org/10.18563/m3.sf.1152",
+      "license": "CC BY-NC 4.0",
+      "license_evidence": "https://morphomuseum.com/faq — How should I cite 3D data found on MorphoMuseuM in scientific publications?",
+      "downloadable": true,
+      "file_bytes": 705945398,
+      "download_url": "https://www.morphomuseum.com/specimenfiles/send-file-specimenfile/1152",
+      "sampling_mm": 0.145,
+      "description": "Микро-КТ головы взрослого донора; лицевая кожа маскирована авторами.",
+      "status": "Проверены описание, лицензия и HEAD оригинального ZIP. Не скачан и не включён в совместимую открытую сборку из-за NC; право использования другой лицензии не запрашивалось."
+    },
+    {
+      "id": "cambridge_grimes",
+      "title": "Variations in Human Trigeminal and Facial Nerve Branches and Foramina Identified by Dissection and Microcomputed Tomography",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ca.24288",
+      "license": "В статье заявлена будущая публикация набора по CC BY",
+      "locator": "Disclosure; Supporting Information",
+      "status": "Статья обещает загрузку полного микро-КТ набора в Apollo, но проверенный текст не содержит DOI/ссылки набора, приложение — FigureS1.pptx. Геометрия не получена; обещание публикации не считается доступным набором."
+    },
+    {
+      "id": "nih_003378",
+      "title": "Male N.A. Skull from CT scan, showing cranial fossae",
+      "url": "https://3d.nih.gov/entries/3DPX-003378",
+      "license": "CC BY-NC-SA (иконка и metadata официальной страницы)",
+      "downloadable": true,
+      "status": "Не скачан и не использован для совместимой открытой сборки. Авторская клиническая КТ; нет обещания полной TA98-геометрии."
+    },
+    {
+      "id": "nih_020626",
+      "title": "CT Skull for new research method",
+      "url": "https://3d.nih.gov/entries/3DPX-020626",
+      "license": "Public domain (официальная страница)",
+      "downloadable": true,
+      "status": "Проверена запись и открытые метаданные. В описании нет подтверждения полного набора мелких структур; 77 292 полигона в mesh output. Не выбран для замены уже более подробного Halle."
+    },
+    {
+      "id": "hannah_newey_skull",
+      "title": "The Anatomy of the Human Skull",
+      "url": "https://sketchfab.com/3d-models/the-anatomy-of-the-human-skull-baf6ac7b781a46218dca2b59dee58817",
+      "api": "https://api.sketchfab.com/v3/models/baf6ac7b781a46218dca2b59dee58817",
+      "downloadable": false,
+      "license": null,
+      "status": "API isDownloadable=false, license={}. Описание сообщает о ручной переработке зубов после КТ. Старое приглашение скачать в описании не заменяет текущие разрешения; модель не извлекалась."
+    },
+    {
+      "id": "vienna_cranium",
+      "title": "CT-Scan Cranium Homo sapiens",
+      "url": "https://www.virtual-anthropology.com/3d-data/free-data/download-1/",
+      "license": "CC BY-NC-ND 4.0",
+      "sampling_mm": 0.7,
+      "status": "Несовместимое ограничение ND на производную геометрию и NC. Форма запрашивает имя, организацию и почту; не заполнялась, данные не получены."
+    },
+    {
+      "id": "sketchfab_variants",
+      "title": "Реальные варианты черепа — публичные записи музеев и авторов",
+      "records": [
+        {
+          "title": "Human skull #217 — SMA-UniGe",
+          "url": "https://sketchfab.com/3d-models/f134dc490e82476bab7b7ebae823c382",
+          "api": "https://api.sketchfab.com/v3/models/f134dc490e82476bab7b7ebae823c382",
+          "description": "В описании автора указаны метопический шов и крупное правое сосцевидное отверстие.",
+          "downloadable": false,
+          "license": null
+        },
+        {
+          "title": "os interparietale",
+          "url": "https://sketchfab.com/3d-models/1f780746798c43a19263573a60215201",
+          "api": "https://api.sketchfab.com/v3/models/1f780746798c43a19263573a60215201",
+          "downloadable": false,
+          "license": null
+        },
+        {
+          "title": "Os incae completum",
+          "url": "https://sketchfab.com/3d-models/828f7cd18dab4a26af38805c84c87f6c",
+          "api": "https://api.sketchfab.com/v3/models/828f7cd18dab4a26af38805c84c87f6c",
+          "downloadable": false,
+          "license": null
+        },
+        {
+          "title": "Os incae incompletum",
+          "url": "https://sketchfab.com/3d-models/d6f6cff207184f6fa7ed24bccb9ae5ad",
+          "api": "https://api.sketchfab.com/v3/models/d6f6cff207184f6fa7ed24bccb9ae5ad",
+          "downloadable": false,
+          "license": null
+        }
+      ],
+      "status": "Найдены целевые препараты для вариантов, но публичный API не предоставляет загрузку/лицензию. Не извлекались. Автору не писали; обхода отключённой загрузки нет."
+    }
+  ],
+  "conclusion": "Получены 5 новых поверхностных файлов и 20 авторских костных масок с проверкой контрольных сумм. Это расширяет исследовательскую базу, но не доказывает геометрию всех 521 терминов или 14 вариантов и не обосновывает снятие оставшихся ограничений. Нет доказательства, что подходящие ресурсы нигде не существуют; вывод ограничен перечисленными проверенными источниками.",
+  "reproduce": [
+    "python scripts/new_skull_sources.py --download --inspect",
+    "python scripts/new_skull_sources.py --mug500-masks",
+    "python scripts/new_skull_mug_review.py A0014"
+  ],
+  "publication": "Только этот обзор и собственные скрипты. research/cache/new-skull/ не включать в публикацию автоматически."
+}

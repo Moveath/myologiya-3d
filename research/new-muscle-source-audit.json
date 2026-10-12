@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-12",
+  "scope": "Only actual source models or segmentations; no speculative educational reconstructions.",
+  "missing_whole_muscle_instances": [
+    {
+      "id": "auricularis_anterior_right",
+      "ru": "Передняя ушная мышца",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020"
+    },
+    {
+      "id": "auricularis_anterior_left",
+      "ru": "Передняя ушная мышца",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020"
+    },
+    {
+      "id": "auricularis_superior_right",
+      "ru": "Верхняя ушная мышца",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021"
+    },
+    {
+      "id": "auricularis_superior_left",
+      "ru": "Верхняя ушная мышца",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021"
+    },
+    {
+      "id": "auricularis_posterior_right",
+      "ru": "Задняя ушная мышца",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022"
+    },
+    {
+      "id": "auricularis_posterior_left",
+      "ru": "Задняя ушная мышца",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022"
+    },
+    {
+      "id": "depressor_supercilii_right",
+      "ru": "Мышца, опускающая бровь",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019"
+    },
+    {
+      "id": "depressor_supercilii_left",
+      "ru": "Мышца, опускающая бровь",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019"
+    },
+    {
+      "id": "transversus_menti",
+      "ru": "Поперечная мышца подбородка",
+      "lat": "m. transversus menti",
+      "ta98": "A04.1.03.027"
+    }
+  ],
+  "missing_individual_part_instances": [
+    {
+      "muscle": "orbicularis_oculi_right",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016"
+    },
+    {
+      "muscle": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015"
+    },
+    {
+      "muscle": "orbicularis_oculi_left",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016"
+    },
+    {
+      "muscle": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015"
+    },
+    {
+      "muscle": "nasalis_right",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010"
+    },
+    {
+      "muscle": "nasalis_right",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011"
+    },
+    {
+      "muscle": "nasalis_left",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010"
+    },
+    {
+      "muscle": "nasalis_left",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011"
+    },
+    {
+      "muscle": "orbicularis_oris",
+      "part": "marginal",
+      "ru": "Краевая часть",
+      "lat": "pars marginalis",
+      "ta98": "A04.1.03.024"
+    },
+    {
+      "muscle": "orbicularis_oris",
+      "part": "labial",
+      "ru": "Губная часть",
+      "lat": "pars labialis",
+      "ta98": "A04.1.03.025"
+    }
+  ],
+  "new_geometry_integrated": 0,
+  "completion_claim": false,
+  "candidates": [
+    {
+      "id": "visible_ape_human_head",
+      "author": "José Saúl Martín / Visible Ape Project",
+      "primary_project_url": "https://www.visibleapeproject.com/3d-human-head-and-neck",
+      "type": "Existing artist-authored anatomical source model, not a scan-derived donor segmentation",
+      "relevance": "The author's numbered human muscle list names depressor supercilii (5) and two masseter heads (12a/12b). Auricularis and transversus menti are not listed.",
+      "status": "Source license and availability confirmed; source-file delivery requires Sketchfab authentication, mesh contents and bilateral coverage remain unverified.",
+      "files": [
+        {
+          "uid": "22dbb37977304b5aab9db083b51026d2",
+          "title": "Modern Human Head & Neck Model",
+          "metadata_url": "https://api.sketchfab.com/v3/models/22dbb37977304b5aab9db083b51026d2",
+          "url": "https://sketchfab.com/3d-models/modern-human-head-neck-model-22dbb37977304b5aab9db083b51026d2",
+          "license": {
+            "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution",
+            "fullName": "Creative Commons Attribution",
+            "requirements": "Author must be credited. Commercial use is allowed.",
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "slug": "by"
+          },
+          "downloadable_declared_by_publisher": true,
+          "vertices_reported_by_publisher": 706034,
+          "triangles_reported_by_publisher": 1411994,
+          "local_source_mesh_obtained": false,
+          "download_check": {
+            "url": "https://api.sketchfab.com/v3/models/22dbb37977304b5aab9db083b51026d2/download",
+            "date": "2026-10-12",
+            "http_status": 401,
+            "reason": "Official download API requires authenticated access. No viewer assets were extracted to bypass this requirement."
+          }
+        },
+        {
+          "uid": "e454a6e1c3f14982b0597f34a236dc85",
+          "title": "Labeled Modern Human Head & Neck Reconstruction",
+          "metadata_url": "https://api.sketchfab.com/v3/models/e454a6e1c3f14982b0597f34a236dc85",
+          "url": "https://sketchfab.com/3d-models/labeled-modern-human-head-neck-reconstruction-e454a6e1c3f14982b0597f34a236dc85",
+          "license": {
+            "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution",
+            "fullName": "Creative Commons Attribution",
+            "requirements": "Author must be credited. Commercial use is allowed.",
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "slug": "by"
+          },
+          "downloadable_declared_by_publisher": true,
+          "vertices_reported_by_publisher": 706034,
+          "triangles_reported_by_publisher": 1411994,
+          "local_source_mesh_obtained": false,
+          "download_check": {
+            "url": "https://api.sketchfab.com/v3/models/e454a6e1c3f14982b0597f34a236dc85/download",
+            "date": "2026-10-12",
+            "http_status": 401,
+            "reason": "Official download API requires authenticated access. No viewer assets were extracted to bypass this requirement."
+          }
+        }
+      ],
+      "acceptance_requirements": [
+        "Obtain the source using the publisher's authorized download workflow.",
+        "Inspect actual objects and left/right geometry; the title and annotation list do not prove separate meshes.",
+        "Verify named muscle surfaces against two anatomical sources before integration.",
+        "Keep specimen/source coordinates distinct unless registration is independently checked."
+      ]
+    },
+    {
+      "id": "jena_3d_face",
+      "title": "Body donor dataset for mimic muscles",
+      "url": "https://doi.org/10.6084/m9.figshare.32324658",
+      "license": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "primary_paper": "https://doi.org/10.3390/jimaging12090459",
+      "status": "Real publicly downloadable muscle/bone segmentation masks acquired and inspected; not separately labeled missing muscles.",
+      "limitation": "The authors deliberately segmented muscle groups and did not assign traditional individual facial-muscle boundaries. Raw CT/MRI intensities are not freely distributed. Group masks cannot prove the geometry of the nine missing muscle instances or ten missing part instances.",
+      "method_locator": "Paper section 2.4 Segmentation and Figshare dataset description",
+      "file_count": 14,
+      "total_bytes": 222242352,
+      "example": {
+        "name": "01.zip",
+        "download_url": "https://ndownloader.figshare.com/files/64705569",
+        "bytes": 20213126,
+        "publisher_md5": "c4637acff67d3903f3bac9de542ff469",
+        "verified_md5": "c4637acff67d3903f3bac9de542ff469",
+        "ct_shape": [
+          512,
+          512,
+          378
+        ],
+        "ct_spacing_mm": [
+          0.4877011179924011,
+          0.4877011179924011,
+          0.4877011179924011
+        ],
+        "ct_bone1_labels": {
+          "0": 96602334,
+          "1": 2488098
+        },
+        "ct_bone2_labels": {
+          "0": 83726012,
+          "1": 1550495,
+          "2": 2923317,
+          "3": 10890608
+        },
+        "ct_label_caution": "These are not individual skull-bone labels. The two stored sform matrices differ in axis signs; do not overlay without registration review.",
+        "mri_muscle_shape": [
+          704,
+          704,
+          640
+        ],
+        "mri_muscle_spacing_mm": [
+          0.31818199157714844,
+          0.31818199157714844,
+          0.3200000524520874
+        ]
+      }
+    },
+    {
+      "id": "li_toronto_2015",
+      "title": "Functional Analysis of the Architecture of the Oro-facial and Hyoid Musculature: A Comparative 3D Modelling Study",
+      "author": "Zhi Li, University of Toronto, 2015",
+      "url": "https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/OTU/TC-OTU-69552.pdf",
+      "locator": "Table 5.1, thesis page 54; limitations page 124",
+      "relevance": "Cadaveric digitizer study reports transversus menti and a right auricularis among reconstructed muscles.",
+      "status": "Thesis located, but no reusable source mesh dataset or open geometry redistribution license found.",
+      "license": "Thesis title page: copyright Zhi Li 2015; not a license to redistribute the underlying 3D model.",
+      "limitation": "A figure, measured fibre count or 2D projection cannot reconstruct the unpublished 3D geometry. Auricularis is not resolved into all three required external-ear muscles by the table."
+    },
+    {
+      "id": "mida",
+      "url": "https://itis.swiss/virtual-population/regional-human-models/mida-model",
+      "primary_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4406723/",
+      "locator": "Table 1",
+      "status": "No separately named target muscles in the published segmentation list.",
+      "limitation": "The list contains many facial muscles but no auricularis anterior/superior/posterior, depressor supercilii or transversus menti. Ear auricular cartilage is not ear muscle."
+    },
+    {
+      "id": "faceforge",
+      "url": "https://github.com/gddickinson/FaceForge",
+      "locator": "assets/config/muscles/expression_muscles.json and jaw_muscles.json",
+      "status": "Same BodyParts3D-derived facial structures; no new target muscles or missing named parts.",
+      "limitation": "Software animation and its simulated MRI/CT displays are not acquired imaging evidence."
+    },
+    {
+      "id": "anatomytool_open3d",
+      "url": "https://anatomytool.org/sites/default/files/2025-01-03%20NAV%20Workshop%20Open%203D%20anatomie%20incl%20Open%203D%20model%20No%20video.pdf",
+      "locator": "Project activities / status 1-1-2025 table",
+      "status": "Published roadmap lists no head/neck muscle models at that date. This historical snapshot does not establish the current absence of all future updates."
+    },
+    {
+      "id": "dundee_pharynx",
+      "url": "https://sketchfab.com/3d-models/pharynx-and-floor-of-mouth-b262c70bf9bd49c2a5428581b754f24b",
+      "author": "Eve Laws / University of Dundee; anatomical approval Luke Reid",
+      "license": "CC BY-NC-SA 4.0",
+      "status": "Different anatomical scope and NC-restricted source; not exported into the open atlas."
+    },
+    {
+      "id": "nonhuman_dicect",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7304424/",
+      "locator": "Methods: scanning and segmentation; Table 1",
+      "status": "Rejected as substitute for human geometry: segmented facial/auricular muscles belong to Eulemur flavifrons.",
+      "limitation": "Homologous names do not permit transplanting an animal's muscle geometry into a human atlas."
+    }
+  ]
+}

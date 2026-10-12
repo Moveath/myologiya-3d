@@ -1,0 +1,848 @@
+{
+  "source": "OpenEar",
+  "specimen": "ZETA",
+  "side": "right",
+  "geometry_sha256": "1caeb84a3f37a8f7d17ba2b764fcd169f44353790d8e7cd529b9181198797529",
+  "complete": false,
+  "scope": "Восемь отдельно проверенных поверхностных ориентиров слуховых косточек. Это не полный список образований среднего уха и не замена 521 маркеру основного черепа.",
+  "markers": [
+    {
+      "id": "openear_malleus_head",
+      "b": "malleus",
+      "c": "A15.3.02.045",
+      "ru": "Головка молоточка",
+      "lat": "caput mallei",
+      "p": [
+        -0.025554795931204938,
+        0.03144631091813562,
+        0.018298317409392237
+      ],
+      "n": [
+        0.9998854316559326,
+        0.002724483465002541,
+        0.014889618936641794
+      ],
+      "x": "Расширенная часть молоточка над его шейкой.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.045",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.045; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "03_Malleus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.54,
+          0.2
+        ],
+        "faceIndex": 3297,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_malleus_neck",
+      "b": "malleus",
+      "c": "A15.3.02.046",
+      "ru": "Шейка молоточка",
+      "lat": "collum mallei",
+      "p": [
+        -0.025925007177162687,
+        0.03135474283927703,
+        0.020541735341427746
+      ],
+      "n": [
+        0.925956501763295,
+        0.37382002623390564,
+        0.05350836223211616
+      ],
+      "x": "Суженный участок между головкой и основанием рукоятки молоточка.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.046",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.046; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "03_Malleus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.55,
+          0.445
+        ],
+        "faceIndex": 1849,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_malleus_handle",
+      "b": "malleus",
+      "c": "A15.3.02.044",
+      "ru": "Рукоятка молоточка",
+      "lat": "manubrium mallei",
+      "p": [
+        -0.025178455225361572,
+        0.032407775746150835,
+        0.023242993667756208
+      ],
+      "n": [
+        0.8967795382803012,
+        -0.09112335883016374,
+        -0.4329930636826402
+      ],
+      "x": "Удлинённая часть молоточка ниже его шейки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.044",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.044; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "03_Malleus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.435,
+          0.74
+        ],
+        "faceIndex": 904,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/malleus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_incus_body",
+      "b": "incus",
+      "c": "A15.3.02.039",
+      "ru": "Тело наковальни",
+      "lat": "corpus incudis",
+      "p": [
+        -0.024504700954401652,
+        0.030107235600722395,
+        0.018054843034487036
+      ],
+      "n": [
+        0.869319369936702,
+        0.23750928601170643,
+        -0.43344338974203406
+      ],
+      "x": "Основная расширенная часть наковальни, от которой отходят её ножки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.039",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.039; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "04_Incus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.45,
+          0.23
+        ],
+        "faceIndex": 1155,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/incus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_incus_long_limb",
+      "b": "incus",
+      "c": "A15.3.02.040",
+      "ru": "Длинная ножка наковальни",
+      "lat": "crus longum",
+      "p": [
+        -0.023678661472829335,
+        0.031416329116332,
+        0.0211312127961696
+      ],
+      "n": [
+        0.9462923468042947,
+        -0.08748377639657261,
+        -0.3112513184663076
+      ],
+      "x": "Длинный отросток, отходящий от тела наковальни.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.040",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.040; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "04_Incus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.25,
+          0.7
+        ],
+        "faceIndex": 630,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/incus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_incus_short_limb",
+      "b": "incus",
+      "c": "A15.3.02.042",
+      "ru": "Короткая ножка наковальни",
+      "lat": "crus breve",
+      "p": [
+        -0.023274104106106697,
+        0.028078140651527514,
+        0.018774844468072316
+      ],
+      "n": [
+        0.95382026444806,
+        0.27397811098028624,
+        -0.12313771896501498
+      ],
+      "x": "Короткий отросток, отходящий от тела наковальни.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.042",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.042; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "04_Incus.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "uv": [
+          0.76,
+          0.34
+        ],
+        "faceIndex": 2026,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/incus-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_stapes_head",
+      "b": "stapes",
+      "c": "A15.3.02.034",
+      "ru": "Головка стремени",
+      "lat": "caput stapedis",
+      "p": [
+        -0.02253625907313961,
+        0.03225285004508131,
+        0.022423737404148734
+      ],
+      "n": [
+        0.14724116650482988,
+        -0.04167202825608393,
+        0.9882223843585617
+      ],
+      "x": "Расширенная часть стремени со стороны схождения двух ножек.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          -1,
+          -2,
+          0
+        ],
+        "distance": 0.012
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.034",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.034; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "05_Stapes.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.25,
+          0.82
+        ],
+        "faceIndex": 175,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/stapes-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    },
+    {
+      "id": "openear_stapes_base",
+      "b": "stapes",
+      "c": "A15.3.02.037",
+      "ru": "Основание стремени",
+      "lat": "basis stapedis",
+      "p": [
+        -0.02119128872687208,
+        0.03503245542736752,
+        0.021266208912751355
+      ],
+      "n": [
+        -0.4626605190250877,
+        -0.8146582522452592,
+        0.3496815353777432
+      ],
+      "x": "Пластинка, соединяющая концы двух ножек стремени.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        }
+      ],
+      "loc": "surface",
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "view": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "distance": 0.012
+      },
+      "modelNote": "Отмечен видимый участок исходной поверхности слуховой косточки OpenEar ZETA. Это отдельный правый препарат; точка не перенесена на BodyParts3D и не означает отдельную сегментацию всей части косточки.",
+      "nomenclature": [
+        {
+          "title": "Terminologia Anatomica (TA98), IFAA",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+          "locator": "A15.3.02.037",
+          "scope": "nomenclature"
+        },
+        {
+          "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+          "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+          "locator": "Печатная с. 196, A15.3.02.037; для ножек добавлено название кости для однозначности карточки.",
+          "scope": "nomenclature"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "05_Stapes.ply",
+          "scope": "geometry"
+        }
+      ],
+      "evidence": {
+        "method": "manual-multiview-surface-review-and-raycast",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "uv": [
+          0.55,
+          0.2
+        ],
+        "faceIndex": 807,
+        "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+        "source": "build_head/openear_landmarks/picks.json",
+        "screenshot": "build_head/openear_landmarks/stapes-markers.png",
+        "review": "Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой."
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "ossicles",
+      "ru": "Слуховые косточки",
+      "parts": [
+        "malleus",
+        "incus",
+        "stapes"
+      ],
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.029
+      },
+      "screenshot": "build_head/openear_landmarks/ossicles-group.png"
+    },
+    {
+      "id": "labyrinth",
+      "ru": "Пространства лабиринта",
+      "parts": [
+        "scala_tympani",
+        "vestibular_space"
+      ],
+      "view": {
+        "d": [
+          1,
+          0.4,
+          0.5
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.045
+      },
+      "screenshot": "build_head/openear_landmarks/labyrinth-group.png"
+    },
+    {
+      "id": "nerves",
+      "ru": "Нервы",
+      "parts": [
+        "facial_nerve",
+        "chorda_tympani",
+        "vestibulocochlear_nerve"
+      ],
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.075
+      },
+      "screenshot": "build_head/openear_landmarks/nerves-group.png"
+    }
+  ]
+}

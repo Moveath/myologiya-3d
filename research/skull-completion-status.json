@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "policy": "Только геометрия, подтверждённая опубликованными сканами или исходными моделями; без вымышленных реконструкций.",
   "complete_skull_geometry_claim": false,
   "main_atlas": {
@@ -12,6 +12,187 @@
     "newly_reviewed_surface_anchors": 6,
     "note": "Поверхностный маркер отмечает участок рельефа, а не доказывает полную геометрию образования."
   },
+  "muscle_geometry": {
+    "cards": 52,
+    "modeled_instances": 43,
+    "missing_whole_instances_count": 9,
+    "missing_whole_instances": [
+      {
+        "id": "auricularis_anterior_right",
+        "ru": "Передняя ушная мышца",
+        "lat": "m. auricularis anterior",
+        "ta98": "A04.1.03.020"
+      },
+      {
+        "id": "auricularis_anterior_left",
+        "ru": "Передняя ушная мышца",
+        "lat": "m. auricularis anterior",
+        "ta98": "A04.1.03.020"
+      },
+      {
+        "id": "auricularis_superior_right",
+        "ru": "Верхняя ушная мышца",
+        "lat": "m. auricularis superior",
+        "ta98": "A04.1.03.021"
+      },
+      {
+        "id": "auricularis_superior_left",
+        "ru": "Верхняя ушная мышца",
+        "lat": "m. auricularis superior",
+        "ta98": "A04.1.03.021"
+      },
+      {
+        "id": "auricularis_posterior_right",
+        "ru": "Задняя ушная мышца",
+        "lat": "m. auricularis posterior",
+        "ta98": "A04.1.03.022"
+      },
+      {
+        "id": "auricularis_posterior_left",
+        "ru": "Задняя ушная мышца",
+        "lat": "m. auricularis posterior",
+        "ta98": "A04.1.03.022"
+      },
+      {
+        "id": "depressor_supercilii_right",
+        "ru": "Мышца, опускающая бровь",
+        "lat": "m. depressor supercilii",
+        "ta98": "A04.1.03.019"
+      },
+      {
+        "id": "depressor_supercilii_left",
+        "ru": "Мышца, опускающая бровь",
+        "lat": "m. depressor supercilii",
+        "ta98": "A04.1.03.019"
+      },
+      {
+        "id": "transversus_menti",
+        "ru": "Поперечная мышца подбородка",
+        "lat": "m. transversus menti",
+        "ta98": "A04.1.03.027"
+      }
+    ],
+    "missing_part_instances_count": 10,
+    "missing_part_instances": [
+      {
+        "muscle": "orbicularis_oculi_right",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "ta98": "A04.1.03.016"
+      },
+      {
+        "muscle": "orbicularis_oculi_right",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "ta98": "A04.1.03.015"
+      },
+      {
+        "muscle": "orbicularis_oculi_left",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "ta98": "A04.1.03.016"
+      },
+      {
+        "muscle": "orbicularis_oculi_left",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "ta98": "A04.1.03.015"
+      },
+      {
+        "muscle": "nasalis_right",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "ta98": "A04.1.03.010"
+      },
+      {
+        "muscle": "nasalis_right",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "ta98": "A04.1.03.011"
+      },
+      {
+        "muscle": "nasalis_left",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "ta98": "A04.1.03.010"
+      },
+      {
+        "muscle": "nasalis_left",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "ta98": "A04.1.03.011"
+      },
+      {
+        "muscle": "orbicularis_oris",
+        "part": "marginal",
+        "ru": "Краевая часть",
+        "lat": "pars marginalis",
+        "ta98": "A04.1.03.024"
+      },
+      {
+        "muscle": "orbicularis_oris",
+        "part": "labial",
+        "ru": "Губная часть",
+        "lat": "pars labialis",
+        "ta98": "A04.1.03.025"
+      }
+    ],
+    "source_audit": "research/new-muscle-source-audit.json",
+    "note": "Парные экземпляры считаются отдельно. Отсутствующие части не являются дополнительными целыми мышцами."
+  },
+  "study_groups": {
+    "page": "site/skull-study.html",
+    "definitions": "site/skull-regions.js",
+    "groups": [
+      {
+        "id": "whole",
+        "ru": "Кости черепа"
+      },
+      {
+        "id": "base",
+        "ru": "Основание черепа"
+      },
+      {
+        "id": "face",
+        "ru": "Глазницы и полость носа"
+      },
+      {
+        "id": "sinuses",
+        "ru": "Пазухи и ячейки"
+      },
+      {
+        "id": "jaws",
+        "ru": "Челюсти"
+      },
+      {
+        "id": "ear",
+        "ru": "Ухо и височная кость"
+      },
+      {
+        "id": "muscles",
+        "ru": "Мышцы головы"
+      },
+      {
+        "id": "variants",
+        "ru": "Варианты строения"
+      }
+    ],
+    "coordinate_policy": "Учебные группы используют независимые исходные системы координат. Обязательное совмещение всех образцов с BodyParts3D не требуется; каждый ориентир подтверждается на той сетке, на которой он показан.",
+    "variant_catalogue": {
+      "file": "site/skull-study-variants.json",
+      "entries": 14,
+      "confirmed_variant_meshes": 0,
+      "note": "Повторно используются проверенные карточки типичных мест вариантов; отдельная геометрия вариантов не добавлена."
+    }
+  },
   "separate_models": {
     "z_anatomy": {
       "bones": 22,
@@ -22,6 +203,13 @@
     "openear": {
       "structures": 13,
       "metadata": "site/skull-openear.json",
+      "independently_placed_markers": 8,
+      "marker_localization_counts": {
+        "surface": 8
+      },
+      "marker_metadata": "site/skull-openear-landmarks.json",
+      "marker_source": "pins_head/openear-native.json",
+      "complete_ossicle_landmark_catalogue_claim": false,
       "registered_to_main_atlas": false
     },
     "halle_microct": {
@@ -1083,16 +1271,22 @@
   },
   "other_remaining_limitations": [
     "Девять карточек мышц не имеют отдельной геометрии в проверенных совместимых наборах.",
-    "Части некоторых мышц не выделены в исходных сетках; список и ограничения сохранены в карточках.",
+    "Десять экземпляров частей мышц не выделены в исходных сетках: глубокая часть и ресничный пучок круговой мышцы глаза с двух сторон, две части носовой мышцы с двух сторон, две части круговой мышцы рта.",
     "Внутренние структуры OpenEar относятся к одному препарату и не подтверждают автоматически проекции на BodyParts3D.",
     "Варианты строения не обязаны присутствовать у конкретного человека. Их типичная область не заменяет обнаруженный вариант.",
+    "Новые исходники BoneHub Visible Human, NIH 3D и MUG500+ исследованы отдельно; они пока не подтверждают полный перечень мелких образований или 14 вариантов и не заменили опубликованные модели.",
     "Полная геометрия всех отверстий, стенок каналов и их сообщений не подтверждена выбранными источниками."
   ],
   "reviews": [
     "research/face-completion-review.json",
     "research/cranial-completion-registration.json",
     "research/temporal-completion-review.json",
+    "research/openear-landmark-review.json",
+    "research/new-muscle-source-audit.json",
+    "research/new-skull-source-audit.json",
     "verify/ui-head-report.json",
-    "verify/ui-skull-detail-report.json"
+    "verify/ui-skull-detail-report.json",
+    "verify/ui-skull-study-report.json",
+    "verify/ui-skull-study-navigation-report.json"
   ]
 }
