@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Череп: подробные модели · Миология 3D</title>
+<meta name="description" content="Сравнение открытой учебной модели черепа и поверхности по микро-КТ. Кости, объёмы пазух и просмотр со срезом.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=PT+Serif:ital,wght@1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<script>
+try {
+  const theme = new URLSearchParams(location.search).get('theme');
+  if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+} catch (_) {}
+</script>
+<style>
+:root { --drape:#dde7e4; --drape-deep:#c6d6d1; --paper:#f7faf9; --glass:rgba(247,250,249,.9); --ink:#122220; --muted:#4f625e; --rule:#c5d3cf; --teal:#0d6a65; --teal-soft:#d3e7e3; --on-teal:#fff; --shade:rgba(16,44,41,.16); color-scheme:light; --ui:"Golos Text","Segoe UI",Arial,sans-serif; --lat:"PT Serif",Georgia,serif; --mono:"IBM Plex Mono",Consolas,monospace; }
+@media(prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --drape:#0f1918; --drape-deep:#081110; --paper:#15211f; --glass:rgba(21,33,31,.9); --ink:#e3ede9; --muted:#93a8a3; --rule:#293b38; --teal:#45b8ad; --teal-soft:#173836; --on-teal:#04201d; --shade:rgba(0,0,0,.45); color-scheme:dark; } }
+:root[data-theme="dark"] { --drape:#0f1918; --drape-deep:#081110; --paper:#15211f; --glass:rgba(21,33,31,.9); --ink:#e3ede9; --muted:#93a8a3; --rule:#293b38; --teal:#45b8ad; --teal-soft:#173836; --on-teal:#04201d; --shade:rgba(0,0,0,.45); color-scheme:dark; }
+* { box-sizing:border-box; }
+[hidden] { display:none!important; }
+html,body { height:100%; margin:0; }
+body { font:14px/1.45 var(--ui); color:var(--ink); background:var(--drape); overflow:hidden; }
+button,input,select { font:inherit; color:inherit; }
+button,select,label,input { -webkit-tap-highlight-color:transparent; }
+button { cursor:pointer; }
+button:disabled { cursor:default; opacity:.55; }
+a { color:var(--teal); }
+:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+#app { height:100%; display:flex; flex-direction:column; background:radial-gradient(120% 90% at 35% 35%,var(--drape) 55%,var(--drape-deep)); }
+.top { display:flex; align-items:center; gap:12px; padding:12px 16px 8px; flex:none; }
+.back { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; flex:none; border:1px solid var(--rule); border-radius:10px; text-decoration:none; font-size:24px; color:var(--ink); background:var(--glass); }
+.brand { min-width:0; flex:1; }
+h1 { margin:0; font-size:18px; line-height:1.2; }
+.brand p { margin:3px 0 0; font-size:12px; color:var(--muted); }
+.btn,.chip { display:inline-flex; align-items:center; justify-content:center; gap:6px; min-height:36px; padding:6px 12px; border:1px solid var(--rule); border-radius:10px; background:var(--glass); font-size:13px; font-weight:500; }
+.chip { border-radius:999px; }
+.chip[aria-pressed="true"],.btn[aria-pressed="true"] { border-color:var(--teal); background:var(--teal-soft); }
+.modebar { display:flex; gap:8px; padding:0 16px 10px; flex:none; }
+.modebar .chip[aria-pressed="true"] { background:var(--teal); color:var(--on-teal); }
+.layout { display:grid; grid-template-columns:minmax(0,1fr) 360px; min-height:0; flex:1; gap:12px; padding:0 16px 16px; }
+.viewer { min-width:0; min-height:0; position:relative; overflow:hidden; border-radius:18px; }
+#stage { width:100%; height:100%; display:block; touch-action:none; }
+.view-tools { position:absolute; z-index:2; top:0; left:0; right:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; pointer-events:none; }
+.view-tools>* { pointer-events:auto; }
+.view-tools select { background:var(--glass); }
+.viewer-caption { position:absolute; left:8px; right:8px; bottom:10px; font-size:12px; text-align:center; color:var(--muted); pointer-events:none; text-shadow:0 1px 4px var(--drape); }
+.panel { min-height:0; overflow:auto; overscroll-behavior:contain; background:var(--paper); padding:18px; border:1px solid var(--rule); border-radius:18px; box-shadow:0 10px 30px var(--shade); }
+.eyebrow { margin:0 0 6px; font:500 10px/1.4 var(--mono); text-transform:uppercase; letter-spacing:.07em; color:var(--muted); }
+h2 { margin:0; font-size:21px; line-height:1.2; }
+.latin { margin:4px 0 0; font:italic 400 17px/1.3 var(--lat); color:var(--muted); }
+.description { margin:10px 0 0; }
+.hint { font-size:12px; color:var(--muted); margin:7px 0 0; }
+.notice { padding:10px 12px; border-radius:10px; background:var(--teal-soft); font-size:13px; margin:12px 0; }
+.actions { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+.switches { display:grid; gap:8px; margin:16px 0; }
+.check { display:flex; align-items:center; gap:9px; min-height:30px; cursor:pointer; }
+.check input { width:17px; height:17px; accent-color:var(--teal); flex:none; }
+details { margin-top:14px; padding-top:12px; border-top:1px solid var(--rule); }
+summary { cursor:pointer; font-weight:600; min-height:28px; }
+.control { display:grid; gap:6px; margin-top:9px; }
+.control select { width:100%; border:1px solid var(--rule); border-radius:10px; padding:8px 10px; background:var(--drape); }
+.cut-range { display:grid; gap:8px; margin-top:12px; }
+.cut-range input[type="range"] { width:100%; accent-color:var(--teal); }
+.range-label { display:flex; justify-content:space-between; gap:12px; font-size:12px; color:var(--muted); }
+.parts { margin-top:8px; display:grid; gap:3px; }
+.part { display:flex; align-items:center; gap:8px; padding:4px 0; }
+.part input { width:17px; height:17px; accent-color:var(--teal); flex:none; }
+.part button { display:flex; gap:8px; align-items:center; flex:1; min-width:0; min-height:36px; border:0; background:transparent; padding:5px 3px; text-align:left; border-radius:7px; font-size:13px; }
+.part button[aria-pressed="true"] { background:var(--teal-soft); font-weight:600; }
+.dot { display:inline-block; width:12px; height:12px; border-radius:4px; background:var(--color); border:1px solid rgba(0,0,0,.2); flex:none; }
+.sources { margin:8px 0 0; padding-left:18px; font-size:12px; }
+.sources li { margin:6px 0; overflow-wrap:anywhere; }
+.sources a { text-decoration-thickness:1px; text-underline-offset:2px; }
+.source-locator { display:block; color:var(--muted); }
+.load { position:absolute; inset:0; z-index:3; display:grid; place-items:center; padding:20px; background:var(--glass); }
+.load-box { text-align:center; max-width:330px; }
+.load strong { display:block; font-size:17px; }
+.load progress { width:100%; margin-top:12px; height:7px; accent-color:var(--teal); }
+.load p { color:var(--muted); margin:8px 0 12px; font-size:13px; }
+.empty-message { font-size:13px; margin:8px 0 0; color:var(--muted); }
+@media(max-width:899px) {
+  .top { padding:10px 12px 8px; gap:10px; }
+  h1 { font-size:16px; }
+  .brand p { font-size:11px; }
+  .modebar { padding:0 12px 8px; }
+  .modebar .chip { flex:1; }
+  .layout { display:flex; flex-direction:column; gap:0; padding:0; }
+  .viewer { flex:1; min-height:190px; border-radius:0; }
+  .view-tools { padding-inline:12px; gap:6px; }
+  .panel { flex:none; max-height:36%; border-radius:18px 18px 0 0; padding:14px 16px calc(16px + env(safe-area-inset-bottom,0px)); border-bottom:0; }
+  h2 { font-size:19px; }
+  .viewer-caption { bottom:7px; font-size:11px; }
+  .btn,.chip { padding-inline:10px; }
+  .panel .notice { margin-block:10px; }
+}
+@media(max-height:600px) and (max-width:899px) {
+  .panel { max-height:32%; }
+  .viewer { min-height:140px; }
+  .brand p,.viewer-caption { display:none; }
+}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <a class="back" href="./#head" aria-label="Вернуться в атлас" title="Вернуться в атлас">‹</a>
+    <div class="brand"><h1>Череп: подробные модели</h1><p>Миология 3D · открытые источники</p></div>
+    <button class="btn" id="themeButton" aria-label="Переключить светлую и тёмную тему">Тема</button>
+  </header>
+  <nav class="modebar" aria-label="Выбор модели">
+    <button class="chip" data-mode="z" aria-pressed="true">Кости и пазухи</button>
+    <button class="chip" data-mode="microct" aria-pressed="false">Микро-КТ</button>
+  </nav>
+  <main class="layout">
+    <section class="viewer" aria-label="Просмотр 3D-модели">
+      <canvas id="stage" aria-label="Череп: вращай, приближай и выбирай структуры"></canvas>
+      <div class="view-tools">
+        <select class="btn" id="view" aria-label="Ракурс модели">
+          <option value="antlat">Общий вид</option><option value="ant">Спереди</option><option value="post">Сзади</option><option value="right">Справа</option><option value="left">Слева</option><option value="sup">Сверху</option><option value="inf">Снизу</option>
+        </select>
+        <button class="btn" id="fit">Вписать</button>
+        <button class="btn" id="reset">Сбросить</button>
+      </div>
+      <div class="viewer-caption" id="viewerCaption">Один палец — вращение · два — приближение</div>
+      <div class="load" id="load" role="status" aria-live="polite">
+        <div class="load-box"><strong id="loadTitle">Загружаю модель…</strong><progress id="loadProgress"></progress><p id="loadText">Подготовка просмотра</p><button class="btn" id="retry" hidden>Попробовать снова</button></div>
+      </div>
+    </section>
+    <aside class="panel" id="panel" aria-label="Структуры и настройки модели">
+      <div id="selection" aria-live="polite"></div>
+      <div class="switches" id="zSwitches">
+        <label class="check"><input id="boneColors" type="checkbox" checked>Цвета костей</label>
+        <label class="check"><input id="showCavities" type="checkbox">Показать объёмы пазух и ячеек</label>
+        <label class="check"><input id="translucent" type="checkbox">Прозрачные кости</label>
+      </div>
+      <details open id="cutDetails">
+        <summary>Рассмотреть внутри</summary>
+        <label class="control" for="cutPlane">Плоскость среза<select id="cutPlane"><option value="off">Без среза</option><option value="sagittal">Сагиттальная — справа / слева</option><option value="coronal">Фронтальная — спереди / сзади</option><option value="axial">Горизонтальная — сверху / снизу</option></select></label>
+        <div class="cut-range" id="cutRange" hidden><label for="cutPosition" class="range-label"><span>Положение среза</span><output id="cutValue">50%</output></label><input id="cutPosition" type="range" min="0" max="100" value="50" step="1"><label class="check"><input id="reverseCut" type="checkbox">Оставить другую сторону</label></div>
+        <p class="hint">Срез убирает часть поверхности. Это просмотр 3D-сетки, а не томографический снимок.</p>
+      </details>
+      <details id="partsDetails"><summary>Состав модели <span id="partCount"></span></summary><div class="parts" id="parts"></div></details>
+      <details id="modelDetails"><summary>О модели и источниках</summary><div id="modelInfo"></div></details>
+    </aside>
+  </main>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PALETTE = {frontal:'#e8c04c',parietal:'#b488c9',occipital:'#4fa7a1',temporal:'#689ddd',sphenoid:'#e88762',ethmoid:'#91b95b',nasal:'#86ced8',lacrimal:'#cfa847',zygomatic:'#e99c4a',maxilla:'#d988b0',palatine:'#8674ad',inferior_concha:'#959fe0',vomer:'#b98665',mandible:'#a4bf71'};
+const boneKey = id => id.replace(/_(?:right|left)$/,'');
+let prefs = {}; try { prefs=JSON.parse(localStorage.getItem('myo3d')||'{}'); } catch (_) {}
+const state = {mode:'z',ready:false,loading:false,error:null,colors:prefs.boneColors!==false,cavities:false,translucent:false,clip:'off',cut:.5,reverse:false,selected:null,hidden:new Set(),only:null};
+const cache = new Map(); let active=null, ticket=0;
+const canvas=$('#stage');
+let renderer;
+try { renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true}); }
+catch(error) { $('#loadTitle').textContent='Не удалось включить 3D'; $('#loadText').textContent='Для просмотра нужен браузер с поддержкой WebGL.'; $('#loadProgress').hidden=true; throw error; }
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,2)); renderer.setClearColor(0,0); renderer.localClippingEnabled=true;
+const scene=new THREE.Scene(), camera=new THREE.PerspectiveCamera(34,1,.001,30);
+scene.add(camera); scene.add(new THREE.HemisphereLight(0xf2fbf9,0x26302e,1.3));
+const key=new THREE.DirectionalLight(0xffffff,2.3); key.position.set(-.7,1,.9); camera.add(key);key.target.position.set(0,0,-1);camera.add(key.target);
+const fill=new THREE.DirectionalLight(0xd9ecff,.7);fill.position.set(.9,-.3,.5);camera.add(fill);fill.target.position.set(0,0,-1);camera.add(fill.target);
+const controls=new OrbitControls(camera,canvas);controls.enableDamping=true;controls.dampingFactor=.1;controls.rotateSpeed=.8;controls.screenSpacePanning=true;controls.minDistance=.015;controls.maxDistance=3;
+const clipPlane=new THREE.Plane(), white=new THREE.Color('#fff'), bone=new THREE.Color('#e9dfc5');
+let dirty=true; controls.addEventListener('change',()=>{dirty=true;});
+function resize() { const w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();dirty=true; }
+new ResizeObserver(resize).observe($('.viewer'));
+function animate(){requestAnimationFrame(animate);controls.update();if(dirty){renderer.render(scene,camera);dirty=false;}}
+requestAnimationFrame(animate);
+function linkList(refs) { return `<ul class="sources">${(refs||[]).filter(r=>/^https:\/\//.test(r.url||'')).map(r=>`<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title||r.url)}</a>${r.locator?`<span class="source-locator">${esc(r.locator)}</span>`:''}</li>`).join('')}</ul>`; }
+function cavityColor(id) { return id.startsWith('frontal')?'#27a8c8':id.startsWith('sphenoid')?'#e079a5':id.includes('anterior')?'#7aaf52':id.includes('middle')?'#dfab41':'#9875c6'; }
+function baseColor(part) { return part.kind==='cavity'?new THREE.Color(cavityColor(part.id)):state.mode==='z'&&state.colors?new THREE.Color(PALETTE[boneKey(part.id)]||'#e9dfc5'):bone; }
+function visible(part) { return !state.hidden.has(part.id)&&(!state.only||state.only===part.id)&&(part.kind!=='cavity'||state.cavities); }
+function apply() {
+  if(!active)return;
+  if(state.clip!=='off') {
+    const axis=state.clip==='sagittal'?'x':state.clip==='coronal'?'z':'y';
+    const point=active.bounds.getCenter(new THREE.Vector3());point[axis]=THREE.MathUtils.lerp(active.bounds.min[axis],active.bounds.max[axis],state.cut);
+    const normal=new THREE.Vector3();normal[axis]=state.reverse?-1:1;clipPlane.setFromNormalAndCoplanarPoint(normal,point);
+  }
+  for(const part of active.parts.values())for(const mesh of part.meshes){
+    mesh.visible=visible(part);const mat=mesh.material,base=baseColor(part);mat.color.copy(base);mat.emissive.setRGB(0,0,0);
+    if(part.id===state.selected){mat.color.lerp(white,.12);mat.emissive.copy(base).multiplyScalar(.13);}
+    const ghost=state.mode==='z'&&part.kind==='bone'&&state.translucent;
+    mat.transparent=ghost;mat.opacity=ghost?.2:1;mat.depthWrite=!ghost;mat.clippingPlanes=state.clip==='off'?[]:[clipPlane];mat.needsUpdate=true;mesh.renderOrder=ghost?2:0;
+  }
+  $('#boneColors').checked=state.colors;$('#showCavities').checked=state.cavities;$('#translucent').checked=state.translucent;
+  $('#cutPlane').value=state.clip;$('#cutRange').hidden=state.clip==='off';$('#cutPosition').value=String(Math.round(state.cut*100));$('#cutValue').value=`${Math.round(state.cut*100)}%`;$('#reverseCut').checked=state.reverse;
+  dirty=true;
+}
+const views={antlat:[-.8,.25,1],ant:[0,0,1],post:[0,0,-1],right:[-1,0,0],left:[1,0,0],sup:[0,1,.001],inf:[0,-1,.001]};
+function frame(view=$('#view').value,partId=null) {
+  if(!active)return; const box=new THREE.Box3();
+  const parts=partId?[active.parts.get(partId)].filter(Boolean):[...active.parts.values()].filter(visible);
+  for(const part of parts)for(const mesh of part.meshes)box.expandByObject(mesh);
+  if(box.isEmpty())box.copy(active.bounds);
+  const center=box.getCenter(new THREE.Vector3());
+  const v=THREE.MathUtils.degToRad(camera.fov)/2,h=Math.atan(Math.tan(v)*camera.aspect);
+  camera.up.set(0,1,0);if(view==='sup')camera.up.set(0,0,-1);if(view==='inf')camera.up.set(0,0,1);
+  const direction=new THREE.Vector3(...(views[view]||views.antlat)).normalize();
+  const right=new THREE.Vector3().crossVectors(camera.up,direction).normalize(),up=new THREE.Vector3().crossVectors(direction,right).normalize();
+  let distance=.075;
+  for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){
+    const corner=new THREE.Vector3(x,y,z).sub(center);
+    distance=Math.max(distance,corner.dot(direction)+Math.max(Math.abs(corner.dot(right))/Math.tan(h),Math.abs(corner.dot(up))/Math.tan(v)));
+  }
+  camera.position.copy(center).add(direction.multiplyScalar(distance*1.14));controls.target.copy(center);controls.update();dirty=true;
+}
+function renderSelection() {
+  const part=active?.parts.get(state.selected);
+  if(!part) {
+    $('#selection').innerHTML=state.mode==='z'?'<p class="eyebrow">Z-Anatomy · учебная модель</p><h2>Кости и воздушные полости</h2><p class="description">Нажми на кость или выбери её в составе модели. Включи объёмы пазух и ячеек, чтобы рассмотреть их отдельно.</p><p class="hint">Это отдельная модель. Точки TA98 основного атласа на неё не перенесены.</p>':'<p class="eyebrow">Halle · поверхность по микро-КТ</p><h2>Череп реального образца</h2><p class="description">Поверхность получена из сегментации микро-КТ. Используй срез, чтобы рассмотреть внутренний рельеф.</p><div class="notice">Без нижней челюсти. По описанию автора, у препарата есть фронтальный распил и небольшой трепанационный дефект справа в теменной области.</div><p class="hint">Единая поверхность: отдельные кости здесь не разделены. Точки основного атласа не перенесены.</p>';
+    return;
+  }
+  const d=part.data;
+  $('#selection').innerHTML=`<p class="eyebrow">${part.kind==='cavity'?'Объём воздушной полости':state.mode==='microct'?'Поверхность микро-КТ':'Кость черепа'}</p><h2>${esc(d.ru||part.id)}</h2>${d.lat?`<p class="latin">${esc(d.lat)}</p>`:''}${d.x?`<p class="description">${esc(d.x)}</p>`:''}${d.modelNote?`<div class="notice">${esc(d.modelNote)}</div>`:''}<div class="actions"><button class="btn" id="onlyPart">${state.only===part.id?'Показать все':'Только эта структура'}</button><button class="btn" id="hidePart">Скрыть</button><button class="btn" id="clearPart">Снять выбор</button></div>${linkList(d.refs)}`;
+  $('#onlyPart').onclick=()=>{state.only=state.only===part.id?null:part.id;apply();renderSelection();renderParts();frame();};
+  $('#hidePart').onclick=()=>{state.hidden.add(part.id);state.selected=null;if(state.only===part.id)state.only=null;apply();renderSelection();renderParts();};
+  $('#clearPart').onclick=()=>selectPart(null);
+}
+function renderParts() {
+  if(!active)return;
+  const parts=[...active.parts.values()];$('#partCount').textContent=`· ${parts.length}`;
+  if(state.mode==='microct'){$('#parts').innerHTML='<p class="empty-message">В этой сегментации кости объединены в одну поверхность. Их нельзя независимо скрыть или раскрасить.</p>';return;}
+  $('#parts').innerHTML=parts.map(part=>`<div class="part"><input type="checkbox" data-visible="${esc(part.id)}" aria-label="Показать: ${esc(part.data.ru||part.id)}" ${visible(part)?'checked':''}><button data-part="${esc(part.id)}" aria-pressed="${state.selected===part.id}"><span class="dot" style="--color:${part.kind==='cavity'?cavityColor(part.id):state.colors?PALETTE[boneKey(part.id)]||'#e9dfc5':'#e9dfc5'}" aria-hidden="true"></span><span>${esc(part.data.ru||part.id)}</span></button></div>`).join('');
+  $('#parts').querySelectorAll('[data-visible]').forEach(input=>input.onchange=()=>{
+    const id=input.dataset.visible,part=active.parts.get(id);state.only=null;
+    if(input.checked){state.hidden.delete(id);if(part.kind==='cavity'){state.cavities=true;state.translucent=true;}}
+    else{state.hidden.add(id);if(state.selected===id)state.selected=null;}
+    apply();renderParts();renderSelection();
+  });
+  $('#parts').querySelectorAll('[data-part]').forEach(button=>button.onclick=()=>selectPart(button.dataset.part,true));
+}
+function selectPart(id,zoom=false) {
+  if(!active||id&&!active.parts.has(id))return;
+  state.selected=id;
+  if(id){state.hidden.delete(id);if(state.only&&state.only!==id)state.only=null;const p=active.parts.get(id);if(p.kind==='cavity'){state.cavities=true;state.translucent=true;}}
+  apply();renderSelection();renderParts();if(zoom)frame($('#view').value,id);$('#panel').scrollTop=0;
+}
+function renderInfo() {
+  if(!active)return;
+  if(state.mode==='z') {
+    const m=active.metadata,license=m.license||{},attributions=license.attributions||[];
+    $('#modelInfo').innerHTML=`<p class="description">${esc(m.description||'Открытая авторская учебная модель Z-Anatomy.')}</p><div class="notice">${esc(m.modelNote||'Объёмы пазух и ячеек показывают воздушные пространства, а не отдельные кости. Учебная модель не гарантирует воспроизведение всех мелких отверстий и каналов TA98.')}</div>${(m.limitations||[]).map(t=>`<p class="hint">${esc(t)}</p>`).join('')}<p class="hint">Геометрия преобразована для браузера. Лицензия: ${esc(license.name||'CC BY-SA 4.0')}.</p>${linkList([{title:'Исходные модели Z-Anatomy',url:typeof m.source==='string'?m.source:m.source?.url||'https://github.com/Z-Anatomy/Models-of-human-anatomy'},{title:license.name||'CC BY-SA 4.0',url:license.url||'https://creativecommons.org/licenses/by-sa/4.0/'},...attributions])}`;
+  } else {
+    const m=active.metadata;
+    const decimal=value=>String(value).replace('.',',');
+    $('#modelInfo').innerHTML=`<p class="description">Thomas Kirchner, Martin-Luther-Universität Halle-Wittenberg: «A micro-CT of a human skull», 2022. Использована опубликованная сегментация костной ткани.</p><p class="hint">Шаг исходных данных — ${decimal(m.original_voxel_mm||.125)} мм. Поверхность для браузера пересчитана с шагом ${decimal(m.surface_sampling_mm||.25)} мм и упрощена с помощью meshoptimizer. Параметры обработки не гарантируют анатомическую точность; самые мелкие детали могут быть потеряны.</p><div class="notice">По описанию автора, у препарата отсутствует нижняя челюсть, есть фронтальный распил и небольшой трепанационный дефект в правой теменной кости. Эти особенности не следует запоминать как обычные анатомические отверстия.</div><p class="hint">Это поверхность одного образца, а не полный каталог образований TA98. Положение и масштаб независимы от основной модели BodyParts3D. Названия «справа» и «слева» для этой поверхности пока не используются: стороны требуют дополнительной независимой проверки.</p>${linkList([{title:'Описание данных и особенностей препарата',url:'https://arxiv.org/html/2202.11519v1'},{title:'Исходный набор: Zenodo 6108435',url:'https://doi.org/10.5281/zenodo.6108435'},{title:'Лицензия CC BY 4.0',url:'https://creativecommons.org/licenses/by/4.0/'}])}<p class="hint"><a href="skull-microct.json" target="_blank" rel="noopener">Параметры подготовки геометрии</a></p>`;
+  }
+}
+function register(gltf,metadata,mode) {
+  const parts=new Map(),records=new Map();
+  for(const d of metadata.bones||[])records.set(d.node||`b|${d.id}`,{...d,kind:'bone'});
+  for(const d of metadata.cavities||[])records.set(d.node||`o|${d.id}`,{...d,kind:'cavity'});
+  gltf.scene.traverse(mesh=>{
+    if(!mesh.isMesh)return;
+    let n=mesh;while(n&&!records.has(n.name))n=n.parent;
+    const d=mode==='microct'?{id:'microct_surface',kind:'bone',ru:'Череп · поверхность микро-КТ',modelNote:'Единая сегментированная поверхность одного препарата. Отдельные кости и точки TA98 здесь не выделены.'}:n?records.get(n.name):null;
+    if(!d)throw new Error(`В описании модели отсутствует структура ${mesh.name}`);
+    if(!mesh.geometry.attributes.normal)mesh.geometry.computeVertexNormals();
+    mesh.material=new THREE.MeshStandardMaterial({color:bone,roughness:.72,metalness:0,side:THREE.DoubleSide});
+    let part=parts.get(d.id);if(!part){part={id:d.id,kind:d.kind,data:d,meshes:[]};parts.set(d.id,part);}part.meshes.push(mesh);mesh.userData.detailId=d.id;
+  });
+  if(!parts.size)throw new Error('В файле не найдена поверхность модели');
+  if(mode==='z'&&parts.size!==records.size)throw new Error('Состав модели и описание не совпадают');
+  gltf.scene.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(gltf.scene);
+  return {group:gltf.scene,parts,bounds,metadata};
+}
+async function loadModel(mode,onProgress) {
+  const loader=new GLTFLoader();await MeshoptDecoder.ready;loader.setMeshoptDecoder(MeshoptDecoder);
+  const filename=mode==='z'?'skull-z-detail.glb':'skull-microct.glb';
+  const metadataPromise=fetch(mode==='z'?'skull-z-detail.json':'skull-microct.json').then(r=>{if(!r.ok)throw new Error(`Описание модели: ${r.status}`);return r.json();});
+  const gltfPromise=new Promise((resolve,reject)=>loader.load(filename,resolve,onProgress,reject));
+  const [metadata,gltf]=await Promise.all([metadataPromise,gltfPromise]);return register(gltf,metadata,mode);
+}
+async function setMode(mode) {
+  if(!['z','microct'].includes(mode))return false;
+  const current=++ticket;state.mode=mode;state.ready=false;state.loading=true;state.error=null;state.selected=null;state.hidden.clear();state.only=null;state.clip='off';state.cut=.5;state.reverse=false;state.cavities=false;state.translucent=false;
+  if(active)scene.remove(active.group);active=null;
+  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  $('#view option[value="right"]').textContent=mode==='microct'?'Боковой вид 1':'Справа';
+  $('#view option[value="left"]').textContent=mode==='microct'?'Боковой вид 2':'Слева';
+  $('#cutPlane option[value="sagittal"]').textContent=mode==='microct'?'Сагиттальная — боковой срез':'Сагиттальная — справа / слева';
+  $('#zSwitches').hidden=mode!=='z';$('#load').hidden=false;$('#retry').hidden=true;$('#loadProgress').hidden=false;$('#loadProgress').removeAttribute('value');$('#loadTitle').textContent='Загружаю модель…';$('#loadText').textContent='Подготовка просмотра';$('#parts').innerHTML='';$('#modelInfo').innerHTML='';$('#partCount').textContent='';renderSelection();dirty=true;
+  try {
+    let model=cache.get(mode);
+    if(!model){model=await loadModel(mode,event=>{if(current!==ticket)return;const received=(event.loaded/1048576).toFixed(1);if(event.lengthComputable&&event.total){$('#loadProgress').value=event.loaded/event.total;$('#loadText').textContent=`Загружено ${Math.round(100*event.loaded/event.total)}%`;}else $('#loadText').textContent=`Загружено ${received} МБ`;});cache.set(mode,model);}
+    if(current!==ticket)return false;
+    active=model;scene.add(active.group);state.ready=true;state.loading=false;$('#load').hidden=true;$('#view').value='antlat';apply();renderSelection();renderParts();renderInfo();resize();frame('antlat');return true;
+  } catch(error) {
+    if(current!==ticket)return false;
+    state.loading=false;state.error=String(error?.message||error);$('#loadTitle').textContent='Модель не загрузилась';$('#loadText').textContent='Проверь соединение и повтори загрузку. Можно выбрать другую модель.';$('#loadProgress').hidden=true;$('#retry').hidden=false;return false;
+  }
+}
+function setCut(plane,value=state.cut,reverse=state.reverse){if(!['off','sagittal','coronal','axial'].includes(plane))return;state.clip=plane;state.cut=Math.max(0,Math.min(1,Number(value)));state.reverse=!!reverse;apply();}
+function reset() {state.hidden.clear();state.only=null;state.selected=null;state.cavities=false;state.translucent=false;state.clip='off';state.cut=.5;state.reverse=false;$('#view').value='antlat';apply();renderSelection();renderParts();frame('antlat');}
+$('#view').onchange=()=>frame();$('#fit').onclick=()=>frame();$('#reset').onclick=reset;$('#retry').onclick=()=>setMode(state.mode);
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+$('#cutPlane').onchange=()=>setCut($('#cutPlane').value);$('#cutPosition').oninput=()=>setCut(state.clip,+$('#cutPosition').value/100);$('#reverseCut').onchange=()=>setCut(state.clip,state.cut,$('#reverseCut').checked);
+$('#boneColors').onchange=()=>{state.colors=$('#boneColors').checked;prefs.boneColors=state.colors;try{localStorage.setItem('myo3d',JSON.stringify(prefs));}catch(_){}apply();renderParts();};
+$('#showCavities').onchange=()=>{state.cavities=$('#showCavities').checked;if(state.cavities)state.translucent=true;else if(active?.parts.get(state.selected)?.kind==='cavity')state.selected=null;state.only=null;apply();renderParts();renderSelection();};
+$('#translucent').onchange=()=>{state.translucent=$('#translucent').checked;apply();};
+$('#themeButton').onclick=()=>{const dark=document.documentElement.dataset.theme==='dark'||!document.documentElement.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.dataset.theme=dark?'light':'dark';const url=new URL(location.href);url.searchParams.set('theme',dark?'light':'dark');history.replaceState(null,'',url);dirty=true;};
+const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let down=null;
+canvas.addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY];});
+canvas.addEventListener('pointerup',e=>{
+  if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6||!active)return;down=null;
+  const rect=canvas.getBoundingClientRect();pointer.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(pointer,camera);
+  const targets=[...active.parts.values()].filter(visible).flatMap(p=>p.meshes);
+  const hits=raycaster.intersectObjects(targets,false).filter(h=>state.clip==='off'||clipPlane.distanceToPoint(h.point)>=-.000001);
+  const hit=state.translucent&&state.cavities?hits.find(h=>active.parts.get(h.object.userData.detailId)?.kind==='cavity')||hits[0]:hits[0];
+  if(hit)selectPart(hit.object.userData.detailId);
+});
+canvas.addEventListener('pointercancel',()=>{down=null;});
+window.__detail={state,setMode,setCut,selectPart,reset,frame,counts:()=>active?{parts:active.parts.size,bones:[...active.parts.values()].filter(p=>p.kind==='bone').length,cavities:[...active.parts.values()].filter(p=>p.kind==='cavity').length,visible:[...active.parts.values()].filter(visible).length}:null};
+window.__ready=true;resize();setMode('z');
+</script>
+</body>
+</html>

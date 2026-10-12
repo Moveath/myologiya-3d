@@ -1,0 +1,755 @@
+{
+  "title": "Кости и околоносовые пазухи · Z-Anatomy",
+  "file": "skull-z-detail.glb",
+  "description": "Отдельная учебная модель: 22 кости и 8 объектов воздухоносных полостей.",
+  "modelNote": "Эта модель показывает дополнительную геометрию и объёмы пазух. Она не заменяет проверку всех 521 ориентиров и не содержит полного набора мелких каналов.",
+  "source": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attributions": [
+      {
+        "title": "Z-Anatomy — Gauthier Kervyn и соавторы",
+        "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy"
+      },
+      {
+        "title": "BodyParts3D — The Database Center for Life Science; CC BY-SA 2.1 Japan",
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/"
+      },
+      {
+        "title": "University of Dundee, CAHID — Sophia Lappe, Cranial Nerves and Foramina; CC BY 4.0 (источник, указанный Z-Anatomy)",
+        "url": "https://sketchfab.com/3d-models/cranial-nerves-and-foramina-a9358ee7a6dd4ea18a3622114405a4c7"
+      }
+    ],
+    "sourceLicense": "https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/master/License.txt",
+    "notice": "Из исходного проекта извлечены только перечисленные 22 кости и 8 объектов пазух. Модели внутреннего уха и почки с ограничением NC не включены. Производная геометрия этого GLB распространяется по CC BY-SA 4.0.",
+    "changes": "Извлечение объектов черепа; вычисление существующих авторских модификаторов решётчатой кости и ячеек; смена осей; конвертация в GLB. Новые отверстия не создавались."
+  },
+  "coordinateFrame": {
+    "units": "metres",
+    "x": "left",
+    "y": "superior",
+    "z": "anterior",
+    "registeredToMainAtlas": false,
+    "transform": "[x,y,z] -> [x,z,-y], metres; not registered to BodyParts3D"
+  },
+  "bones": [
+    {
+      "id": "frontal",
+      "node": "b|frontal",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ],
+      "ru": "Лобная кость",
+      "lat": "os frontale",
+      "c": "A02.1.03.001"
+    },
+    {
+      "id": "occipital",
+      "node": "b|occipital",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ],
+      "ru": "Затылочная кость",
+      "lat": "os occipitale",
+      "c": "A02.1.04.001"
+    },
+    {
+      "id": "sphenoid",
+      "node": "b|sphenoid",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ],
+      "ru": "Клиновидная кость",
+      "lat": "os sphenoidale",
+      "c": "A02.1.05.001"
+    },
+    {
+      "id": "ethmoid",
+      "node": "b|ethmoid",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ],
+      "ru": "Решётчатая кость",
+      "lat": "os ethmoidale",
+      "c": "A02.1.07.001"
+    },
+    {
+      "id": "vomer",
+      "node": "b|vomer",
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "ru": "Сошник",
+      "lat": "vomer",
+      "c": "A02.1.11.001"
+    },
+    {
+      "id": "mandible",
+      "node": "b|mandible",
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "ru": "Нижняя челюсть",
+      "lat": "mandibula",
+      "c": "A02.1.15.001"
+    },
+    {
+      "id": "parietal_left",
+      "node": "b|parietal_left",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ],
+      "ru": "Теменная кость · левая",
+      "lat": "os parietale",
+      "c": "A02.1.02.001"
+    },
+    {
+      "id": "parietal_right",
+      "node": "b|parietal_right",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ],
+      "ru": "Теменная кость · правая",
+      "lat": "os parietale",
+      "c": "A02.1.02.001"
+    },
+    {
+      "id": "temporal_left",
+      "node": "b|temporal_left",
+      "bounds": [
+        [
+          0.009648576378822327,
+          1.5487265586853027,
+          -0.05156397819519043
+        ],
+        [
+          0.07242035865783691,
+          1.623145580291748,
+          0.0447830855846405
+        ]
+      ],
+      "ru": "Височная кость · левая",
+      "lat": "os temporale",
+      "c": "A02.1.06.001"
+    },
+    {
+      "id": "temporal_right",
+      "node": "b|temporal_right",
+      "bounds": [
+        [
+          -0.07242035865783691,
+          1.5487265586853027,
+          -0.05156397819519043
+        ],
+        [
+          -0.009648576378822327,
+          1.623145580291748,
+          0.0447830855846405
+        ]
+      ],
+      "ru": "Височная кость · правая",
+      "lat": "os temporale",
+      "c": "A02.1.06.001"
+    },
+    {
+      "id": "maxilla_left",
+      "node": "b|maxilla_left",
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "ru": "Верхняя челюсть · левая",
+      "lat": "maxilla",
+      "c": "A02.1.12.001"
+    },
+    {
+      "id": "maxilla_right",
+      "node": "b|maxilla_right",
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "ru": "Верхняя челюсть · правая",
+      "lat": "maxilla",
+      "c": "A02.1.12.001"
+    },
+    {
+      "id": "zygomatic_left",
+      "node": "b|zygomatic_left",
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "ru": "Скуловая кость · левая",
+      "lat": "os zygomaticum",
+      "c": "A02.1.14.001"
+    },
+    {
+      "id": "zygomatic_right",
+      "node": "b|zygomatic_right",
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "ru": "Скуловая кость · правая",
+      "lat": "os zygomaticum",
+      "c": "A02.1.14.001"
+    },
+    {
+      "id": "palatine_left",
+      "node": "b|palatine_left",
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "ru": "Нёбная кость · левая",
+      "lat": "os palatinum",
+      "c": "A02.1.13.001"
+    },
+    {
+      "id": "palatine_right",
+      "node": "b|palatine_right",
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "ru": "Нёбная кость · правая",
+      "lat": "os palatinum",
+      "c": "A02.1.13.001"
+    },
+    {
+      "id": "nasal_left",
+      "node": "b|nasal_left",
+      "bounds": [
+        [
+          1.7462298274040222e-08,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "ru": "Носовая кость · левая",
+      "lat": "os nasale",
+      "c": "A02.1.10.001"
+    },
+    {
+      "id": "nasal_right",
+      "node": "b|nasal_right",
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-08,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "ru": "Носовая кость · правая",
+      "lat": "os nasale",
+      "c": "A02.1.10.001"
+    },
+    {
+      "id": "lacrimal_left",
+      "node": "b|lacrimal_left",
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "ru": "Слёзная кость · левая",
+      "lat": "os lacrimale",
+      "c": "A02.1.09.001"
+    },
+    {
+      "id": "lacrimal_right",
+      "node": "b|lacrimal_right",
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "ru": "Слёзная кость · правая",
+      "lat": "os lacrimale",
+      "c": "A02.1.09.001"
+    },
+    {
+      "id": "inferior_concha_left",
+      "node": "b|inferior_concha_left",
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "ru": "Нижняя носовая раковина · левая",
+      "lat": "concha nasalis inferior",
+      "c": "A02.1.08.001"
+    },
+    {
+      "id": "inferior_concha_right",
+      "node": "b|inferior_concha_right",
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "ru": "Нижняя носовая раковина · правая",
+      "lat": "concha nasalis inferior",
+      "c": "A02.1.08.001"
+    }
+  ],
+  "cavities": [
+    {
+      "id": "frontal_sinus",
+      "node": "o|frontal_sinus",
+      "bone": "frontal",
+      "c": "A02.1.03.029",
+      "ru": "Лобная пазуха",
+      "lat": "sinus frontalis",
+      "side": "both",
+      "x": "Воздухоносная полость внутри лобной кости над глазницей.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "TeachMeAnatomy — The Frontal Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/",
+          "locator": "Squamous Part; Orbital Part; Nasal Part."
+        }
+      ],
+      "bounds": [
+        [
+          -0.025192933157086372,
+          1.601379632949829,
+          0.07443621754646301
+        ],
+        [
+          0.025192929431796074,
+          1.6326141357421875,
+          0.08605808764696121
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "sphenoidal_sinus",
+      "node": "o|sphenoidal_sinus",
+      "bone": "sphenoid",
+      "c": "A02.1.05.016",
+      "ru": "Клиновидная пазуха",
+      "lat": "sinus sphenoidalis",
+      "side": "both",
+      "x": "Воздухоносная полость внутри тела клиновидной кости.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — клиновидная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-sphenoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Sphenoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+          "locator": "Body: sphenoidal sinuses within the body; printed pp.147–149; PDF pp.102–104."
+        }
+      ],
+      "bounds": [
+        [
+          -0.014118671417236328,
+          1.5833040475845337,
+          0.022104350849986076
+        ],
+        [
+          0.01411866769194603,
+          1.6049859523773193,
+          0.03970877081155777
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_anterior_left",
+      "node": "o|ethmoid_cells_anterior_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales anteriores",
+      "side": "left",
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.005374100524932146,
+          1.5810766220092773,
+          0.05503186583518982
+        ],
+        [
+          0.012563861906528473,
+          1.5952621698379517,
+          0.06269374489784241
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_anterior_right",
+      "node": "o|ethmoid_cells_anterior_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.008",
+      "ru": "Передние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales anteriores",
+      "side": "right",
+      "x": "Передняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.012563861906528473,
+          1.5810766220092773,
+          0.05503186583518982
+        ],
+        [
+          -0.005374100524932146,
+          1.5952621698379517,
+          0.06269374489784241
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_middle_left",
+      "node": "o|ethmoid_cells_middle_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales mediae",
+      "side": "left",
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.005267007276415825,
+          1.5810697078704834,
+          0.047334976494312286
+        ],
+        [
+          0.014302384108304977,
+          1.5944095849990845,
+          0.05570102483034134
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_middle_right",
+      "node": "o|ethmoid_cells_middle_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.009",
+      "ru": "Средние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales mediae",
+      "side": "right",
+      "x": "Средняя группа ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.014302384108304977,
+          1.5810697078704834,
+          0.047334976494312286
+        ],
+        [
+          -0.005267007276415825,
+          1.5944095849990845,
+          0.05570102483034134
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_posterior_left",
+      "node": "o|ethmoid_cells_posterior_left",
+      "bone": "ethmoid",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки — слева",
+      "lat": "cellulae ethmoidales posteriores",
+      "side": "left",
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          0.004375799559056759,
+          1.5818384885787964,
+          0.03954710066318512
+        ],
+        [
+          0.013940117321908474,
+          1.5941206216812134,
+          0.04797394201159477
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    },
+    {
+      "id": "ethmoid_cells_posterior_right",
+      "node": "o|ethmoid_cells_posterior_right",
+      "bone": "ethmoid",
+      "c": "A02.1.07.010",
+      "ru": "Задние решётчатые ячейки — справа",
+      "lat": "cellulae ethmoidales posteriores",
+      "side": "right",
+      "x": "Задняя группа воздухоносных ячеек решётчатого лабиринта.",
+      "refs": [
+        {
+          "title": "Anatomy Standard — решётчатая кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-ethmoidale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — Ethmoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=110",
+          "locator": "Cribriform Plate; Perpendicular Plate; Labyrinth, pp.153–155. Электронная перепечатка Saylor: начиная со страницы PDF 110."
+        }
+      ],
+      "bounds": [
+        [
+          -0.013940117321908474,
+          1.5818384885787964,
+          0.03954710066318512
+        ],
+        [
+          -0.004375799559056759,
+          1.5941206216812134,
+          0.04797394201159477
+        ]
+      ],
+      "modelNote": "Цветная форма обозначает объём воздухоносной полости в учебной модели Z-Anatomy. Это не отдельная кость и не ткань, заполняющая пазуху. Мелкие сообщения и все индивидуальные варианты не воспроизведены."
+    }
+  ],
+  "limitations": [
+    "Пазухи представлены авторскими учебными поверхностями и объёмами, а не новой сегментацией КТ.",
+    "У решётчатой кости применены шесть исходных операций вычитания ячеек. В сетке остаются мелкие изолированные фрагменты и незамкнутые участки; они не обозначаются как самостоятельные анатомические образования.",
+    "Сетки пазух содержат открытые края; показатель watertight в техническом отчёте не равнозначен наличию или отсутствию анатомического отверстия.",
+    "Модель имеет собственную систему координат. Маркеры из основной модели BodyParts3D на неё не переносятся.",
+    "Полнота мелких отверстий, каналов, слуховых косточек и вариантов строения не заявляется."
+  ],
+  "geometry": {
+    "file": "skull-z-detail.glb",
+    "bytes": 2596720,
+    "sha256": "b2f6c5e31ca81820200810772627553afff2e9cfdf73a9ca6d83bce32005ebe2"
+  },
+  "provenance": {
+    "archive_sha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "source_blend_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+    "exporter": "scripts/inspect_z_detail.py + scripts/package_z_detail.py"
+  }
+}
