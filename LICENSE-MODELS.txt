@@ -131,3 +131,31 @@ skull-example-* — отдельные целые рисунки из откры
 источники, номера рисунков, лицензии и изменения перечислены
 в LICENSE-SKULL-EXAMPLES.txt и skull-variant-examples.json. Эти изображения
 не являются подтверждением геометрии основного образца BodyParts3D.
+
+=== OpenEar: selected channel walls and CT reslices ===
+Daniel Manuel Sieber, Peter Erfurt, Samuel John, Gabriel Ribeiro dos Santos,
+Daniel Schurzig, Mads Sølvsten Sørensen, Thomas Lenarz: OpenEar (2019), ZETA.
+Source: https://zenodo.org/records/1473724
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Files: skull-temporal-channels*.glb/json, skull-temporal-channel-slices.json,
+skull-channel-facial-slices-*.png, skull-channel-carotid-slices-*.png.
+Changes: selected existing triangles of the published Bone.nrrd surface;
+coordinate conversion; mesh compression; cropped surrounding bone without
+added caps; oblique resampling and windowing of registered source CBCT;
+optional source-mask outline and lumen-region overlays. No invented walls.
+These are reviewed wall segments, not complete channels or a normative skull.
+The acquisition step belongs to each frame: CBCT_Unembedded 0.25 mm or
+CBCT_Embedded 0.125 mm. Registered grid 0.125 mm is not an accuracy guarantee.
+
+=== Halle: hypoglossal canal bone and source CT ===
+Thomas Kirchner, Martin-Luther-Universität Halle-Wittenberg (2022).
+Source: https://zenodo.org/records/6108435
+License: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+Files: skull-cranial-channels*.glb/json, skull-cranial-channel-slices*.png/json.
+Changes: isosurface of the author's binary bone mask, cropped around the
+hypoglossal canal at0.125mm; wider context at0.25mm; axes/metres conversion;
+triangle orientation correction; meshopt compression without coordinate
+quantization; oblique nearest-voxel CT slices and source-mask overlays.
+No invented walls, smoothing, added caps or filled segmentation holes.
+The continuous lumen and both apertures were reviewed in this specimen;
+complete fine-wall geometry is not claimed. Laterality is unassigned.

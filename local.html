@@ -1,0 +1,2043 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Миология 3D — учебный атлас анатомии</title><meta name="description" content="Учебный 3D-атлас анатомии: кости, мышцы и образования по TA98. Русские и латинские названия."><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style></head><body><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=PT+Serif:ital,wght@1,400;1,700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a body map opens the atlas; each section is a full-bleed specimen stage on a surgical-drape ground,
+   controls float over it, and the specimen label rises from below on phones or sits at the side on wide screens. */
+:root {
+  --drape: #dde7e4;
+  --drape-deep: #c6d6d1;
+  --paper: #f7faf9;
+  --paper-glass: rgba(247, 250, 249, 0.86);
+  --ink: #122220;
+  --ink-2: #4f625e;
+  --rule: #c5d3cf;
+  --teal: #0d6a65;
+  --teal-soft: #d3e7e3;
+  --on-teal: #ffffff;
+  --mark: #e5a01a;
+  --ok: #1f7d4c;
+  --ok-soft: #d7eedf;
+  --bad: #bf3f2b;
+  --bad-soft: #f6dcd6;
+  --shade: rgba(16, 44, 41, 0.16);
+  --orig: #0d6a65;
+  --ins: #7446c2;
+  --ol-light: block;
+  --ol-dark: none;
+  --f-ui: "Golos Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-lat: "PT Serif", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r-ctl: 10px;
+  --r-panel: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --drape: #0f1918; --drape-deep: #081110; --paper: #15211f; --paper-glass: rgba(21, 33, 31, 0.88);
+    --ink: #e3ede9; --ink-2: #93a8a3; --rule: #293b38; --teal: #45b8ad; --teal-soft: #173836; --on-teal: #04201d;
+    --mark: #ffbf3c; --ok: #4cc184; --ok-soft: #15372a; --bad: #f2705b; --bad-soft: #3d1d18; --shade: rgba(0, 0, 0, 0.45);
+    --orig: #45b8ad; --ins: #b897ff; --ol-light: none; --ol-dark: block;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --drape: #0f1918; --drape-deep: #081110; --paper: #15211f; --paper-glass: rgba(21, 33, 31, 0.88);
+  --ink: #e3ede9; --ink-2: #93a8a3; --rule: #293b38; --teal: #45b8ad; --teal-soft: #173836; --on-teal: #04201d;
+  --mark: #ffbf3c; --ok: #4cc184; --ok-soft: #15372a; --bad: #f2705b; --bad-soft: #3d1d18; --shade: rgba(0, 0, 0, 0.45);
+  --orig: #45b8ad; --ins: #b897ff; --ol-light: none; --ol-dark: block;
+  color-scheme: dark;
+}
+
+html { height: 100%; box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  height: 100%; margin: 0; overflow: hidden;
+  background: var(--drape); color: var(--ink);
+  font: 15px/1.45 var(--f-ui);
+  -webkit-tap-highlight-color: transparent;
+}
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+#app { position: relative; height: 100%; overflow: hidden;
+  background: radial-gradient(120% 90% at 40% 35%, var(--drape) 55%, var(--drape-deep) 100%); }
+#stage { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; outline: none; }
+.fade { position: absolute; left: 0; right: 0; top: 0; height: 170px; pointer-events: none;
+  background: linear-gradient(to bottom, var(--drape) 40%, transparent); opacity: 0.92; }
+
+/* top bar */
+.bar { position: absolute; z-index: 5; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 8px;
+  padding: 12px 16px 6px; pointer-events: none; }
+.bar > * { pointer-events: auto; }
+.brand { flex: 1 1 auto; min-width: 0; border: 0; background: transparent; padding: 0; text-align: left; }
+.brand h1 { margin: 0; font-size: 17px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.brand p { margin: 2px 0 0; font-size: 12px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 40px; padding: 0 14px; flex: none;
+  border: 1px solid var(--rule); border-radius: var(--r-ctl); background: var(--paper-glass);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); font-weight: 600; font-size: 14px; }
+.btn.icon { width: 40px; padding: 0; }
+.btn svg, .chip svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn[aria-pressed="true"] { background: var(--teal); color: var(--on-teal); border-color: var(--teal); }
+
+/* subsection + layer controls */
+.tools { position: absolute; z-index: 5; top: 62px; left: 0; right: 0; display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; pointer-events: auto; padding-inline: 16px; }
+.subs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-block: 1px; }
+.subs::-webkit-scrollbar { display: none; }
+.subs .chip { flex: none; }
+.seg { display: inline-flex; align-items: stretch; border: 1px solid var(--rule); border-radius: var(--r-ctl);
+  background: var(--paper-glass); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); overflow: hidden; }
+.seg .cap { display: flex; align-items: center; padding: 0 8px 0 10px; font: 500 10px/1 var(--f-mono);
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.seg button { border: 0; background: transparent; padding: 0 9px; height: 34px; font-size: 13px; font-weight: 500;
+  border-left: 1px solid var(--rule); white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--teal); color: var(--on-teal); }
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-glass);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); font-size: 13px; font-weight: 500; white-space: nowrap; }
+.chip svg { width: 16px; height: 16px; }
+.chip[aria-pressed="true"] { background: var(--teal-soft); border-color: var(--teal); color: var(--ink); }
+.chip[aria-pressed="true"]:not(.nocheck)::before { content: "✓"; color: var(--teal); font-weight: 700; }
+.subs .chip[aria-pressed="true"] { background: var(--teal); border-color: var(--teal); color: var(--on-teal); }
+.subs .chip[aria-pressed="true"]::before { content: none; }
+.restore { display: none; }
+.restore.on { display: inline-flex; }
+.chip:disabled { cursor: default; opacity: 0.6; }
+.palette-icon { width: 15px; height: 15px; flex: none; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15);
+  background: conic-gradient(#e8c04c 0 25%, #b488c9 25% 50%, #689ddd 50% 75%, #a4bf71 75%); }
+.cut-controls { margin-inline:16px; padding:10px 12px; border:1px solid var(--rule); border-radius:12px; background:var(--paper-glass); pointer-events:auto; display:flex; align-items:center; flex-wrap:wrap; gap:8px 14px; max-width:620px; }
+.cut-controls label { display:flex; align-items:center; gap:8px; font-size:12px; }
+.cut-controls select { color:var(--ink); background:var(--paper); border:1px solid var(--rule); border-radius:8px; padding:7px; max-width:205px; font:inherit; }
+.cut-controls input { width:100%; accent-color:var(--teal); }
+.cut-controls .cut-position { flex:1; min-width:140px; }
+.cut-controls .hint { flex-basis:100%; font-size:11px; margin:0; }
+#headDetailDialog { width:100vw; height:100dvh; max-width:100vw; max-height:100dvh; padding:0; margin:0; border:0; background:var(--drape); }
+#headDetailFrame { border:0; display:block; width:100%; height:100%; }
+#headDetailDialog[open] { display:flex; flex-direction:column; }
+#headDetailDialog .detail-header { display:flex; justify-content:flex-end; padding:6px 12px; flex:none; }
+#headDetailFrame { flex:1; min-height:0; }
+
+/* landmark pins over the model */
+#pinLayer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
+.pin { position: absolute; left: 0; top: 0; width: 30px; height: 30px; margin: -15px 0 0 -15px; padding: 0; border: 0;
+  background: transparent; pointer-events: auto; display: grid; place-items: center; }
+.pin i { width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2.5px solid var(--teal);
+  box-shadow: 0 1px 4px var(--shade); transition: transform 0.15s; }
+.pin[data-role="o"] i { background: var(--orig); border-color: var(--paper); }
+.pin[data-role="i"] i { background: var(--ins); border-color: var(--paper); }
+.pin.on i { transform: scale(1.45); background: var(--teal); border-color: var(--paper); }
+.pin.on[data-role="i"] i { background: var(--ins); }
+.pin[data-loc="projection"] i, .pin[data-loc="variant"] i, .pin[data-loc="internal"] i { border-style: dashed; border-color: var(--orig); }
+.pin[data-loc="internal"] i { border-radius: 3px; }
+.pin.on[data-loc="projection"] i, .pin.on[data-loc="variant"] i, .pin.on[data-loc="internal"] i { background: var(--orig); border-color: var(--paper); }
+.pin.behind { opacity: 0.38; }
+.pin:focus-visible { outline: none; }
+.pin:focus-visible i { outline: 2px solid var(--teal); outline-offset: 2px; }
+.pinlabel { position: absolute; left: 0; top: 0; pointer-events: auto; max-width: 230px; padding: 6px 10px; border-radius: 10px;
+  border: 1px solid var(--rule); background: var(--paper); box-shadow: 0 6px 18px var(--shade); font-size: 13px; line-height: 1.3;
+  text-align: left; display: grid; gap: 1px; }
+.pinlabel b { font-weight: 600; }
+.pinlabel i { font: italic 400 13px var(--f-lat); color: var(--ink-2); }
+.pinbox { margin-top: 12px; padding: 12px; border-radius: 12px; border: 1px solid var(--rule); background: var(--drape); }
+.pinhead { display: flex; align-items: flex-start; gap: 10px; }
+.pinhead .t { flex: 1 1 auto; min-width: 0; }
+.pinhead b { font-size: 16px; }
+.pinhead i { display: block; font: italic 400 14px var(--f-lat); color: var(--ink-2); }
+.pinhead i.nolat { font: 400 12px var(--f-ui); font-style: normal; }
+.pinbox p { margin: 8px 0 0; max-width: 62ch; }
+.pinbox .x { width: 30px; height: 30px; }
+.pdot { display: inline-block; vertical-align: -1px; width: 12px; height: 12px; margin-top: 5px; border-radius: 50%; flex: none; border: 2.5px solid var(--teal); background: var(--paper); }
+.pdot[data-role="o"] { background: var(--orig); border-color: var(--orig); }
+.pdot[data-role="i"] { background: var(--ins); border-color: var(--ins); }
+.role { display: inline-block; margin-top: 6px; font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; }
+.role[data-role="o"] { color: var(--orig); }
+.role[data-role="i"] { color: var(--ins); }
+.linkrow { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.linkrow .chip { height: auto; min-height: 32px; padding: 5px 11px; white-space: normal; text-align: left; line-height: 1.25; }
+.sect { margin-top: 16px; }
+.sect h3 { margin: 0 0 6px; font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.sect .linkrow { margin-top: 0; }
+.pinbox .role { margin-top: 10px; }
+.linkrow.tight { margin-top: 4px; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 8px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .pdot { margin: 0; }
+.chip .pdot { width: 10px; height: 10px; margin: 0; border-width: 2px; }
+.chip .tag, .tacode .tag { font: 500 10px/1 var(--f-mono); letter-spacing: 0.04em; padding: 3px 5px; border-radius: 4px; background: var(--drape); color: var(--ink-2); text-transform: uppercase; }
+.tacode { display: block; margin-top: 6px; font: 500 11px/1.4 var(--f-mono); letter-spacing: 0.04em; color: var(--ink-2); }
+.grp { display: flex; align-items: center; gap: 8px; width: 100%; margin: 12px 0 6px; padding: 0; border: 0; background: transparent;
+  font: 600 13px/1.3 var(--f-ui); color: var(--ink); text-align: left; }
+.grp .n { font: 500 11px var(--f-mono); color: var(--ink-2); }
+.grp .f { margin-left: auto; font: 500 11px var(--f-mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--teal); }
+.grp[aria-pressed="true"] .f { color: var(--ink); }
+.sect .lead { margin: 0 0 8px; font-size: 13px; color: var(--ink-2); max-width: 62ch; }
+.pin[data-role="a"] i { border-style: dashed; }
+.act[aria-pressed="true"] { background: var(--teal-soft); border-color: var(--teal); }
+
+/* hover label (mouse only) */
+#tip { position: absolute; z-index: 5; pointer-events: none; padding: 5px 9px; border-radius: 8px; background: var(--paper);
+  border: 1px solid var(--rule); box-shadow: 0 4px 14px var(--shade); font-size: 13px; font-weight: 500; white-space: nowrap; }
+
+/* specimen label sheet */
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; max-height: 66%; overflow-y: auto; overscroll-behavior: contain;
+  background: var(--paper); border-top: 1px solid var(--rule); border-radius: var(--r-panel) var(--r-panel) 0 0;
+  box-shadow: 0 -8px 30px var(--shade); padding: 6px 16px calc(16px + env(safe-area-inset-bottom, 0px)); }
+.grab { display: block; width: 100%; height: 18px; border: 0; background: transparent; padding: 0; }
+.grab::before { content: ""; display: block; width: 40px; height: 4px; margin: 6px auto 0; border-radius: 4px; background: var(--rule); }
+.sheet[data-state="peek"] .more { display: none; }
+.kicker { display: flex; align-items: flex-start; gap: 8px; font: 500 11px/1.35 var(--f-mono); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink-2); }
+.kicker > span:last-child { min-width: 0; }
+.swatch { width: 10px; height: 10px; margin-top: 2px; border-radius: 3px; background: var(--mark); flex: none; }
+.head { display: flex; align-items: flex-start; gap: 12px; }
+.head .t { flex: 1 1 auto; min-width: 0; }
+.name { margin: 6px 0 0; font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.lat { margin: 2px 0 0; font: italic 400 18px/1.3 var(--f-lat); color: var(--ink-2); }
+.x { flex: none; width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 50%; background: transparent; display: grid; place-items: center; }
+.x svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; stroke-linecap: round; fill: none; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.act { height: 36px; padding: 0 10px; border: 1px solid var(--rule); border-radius: var(--r-ctl); background: transparent; font-size: 13px; font-weight: 600; }
+.act.primary { background: var(--teal); border-color: var(--teal); color: var(--on-teal); }
+.act.icon { width: 36px; padding: 0; display: inline-grid; place-items: center; }
+.act.icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.facts { margin: 14px 0 0; display: grid; gap: 12px; }
+.facts div { display: grid; gap: 2px; }
+.facts dt { display: flex; align-items: baseline; gap: 8px; font-size: 12px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.05em; }
+.facts dt i { font: italic 400 13px var(--f-lat); text-transform: none; letter-spacing: 0; }
+.facts dd { margin: 0; max-width: 62ch; }
+.facts .tag { font: 500 10px/1 var(--f-mono); letter-spacing: 0.06em; padding: 3px 5px; border-radius: 4px; background: var(--drape); color: var(--ink-2); text-transform: uppercase; }
+.note { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: var(--teal-soft); font-size: 14px; max-width: 62ch; }
+.hint { margin: 10px 0 0; color: var(--ink-2); font-size: 14px; }
+.tryrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.parts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.parts .chip { height: 32px; padding: 0 11px; }
+.pname { margin: 14px 0 0; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+.pname i { font: italic 400 15px var(--f-lat); color: var(--ink-2); }
+
+/* glossary terms */
+.term { all: unset; cursor: pointer; text-decoration: underline dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px;
+  text-decoration-color: var(--teal); border-radius: 3px; }
+.term:hover { background: var(--teal-soft); }
+.term:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
+dt .term { text-decoration-color: var(--ink-2); }
+#gloss { position: absolute; z-index: 12; left: 0; top: 0; width: min(300px, calc(100% - 32px)); padding: 10px 12px; border-radius: 12px;
+  background: var(--ink); color: var(--paper); box-shadow: 0 10px 30px var(--shade); font-size: 14px; line-height: 1.4; }
+#gloss b { display: block; margin-bottom: 3px; font-size: 15px; }
+
+/* quiz */
+.qtop { display: flex; align-items: center; gap: 10px; }
+.qtop h2 { margin: 0; font-size: 18px; flex: 1 1 auto; }
+.score { margin-top: 2px; font: 500 13px var(--f-mono); color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.scopes { display: flex; gap: 6px; margin-top: 10px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.scopes .chip { height: 32px; flex: none; }
+.ask { margin: 12px 0 8px; font-weight: 600; }
+.opts { display: grid; gap: 8px; }
+.opt { text-align: left; padding: 7px 12px; border: 1px solid var(--rule); border-radius: var(--r-ctl); background: transparent; display: grid; gap: 1px; }
+.opt b { font-weight: 600; }
+.opt i { font: italic 400 14px var(--f-lat); color: var(--ink-2); }
+.opt.ok { background: var(--ok-soft); border-color: var(--ok); }
+.opt.bad { background: var(--bad-soft); border-color: var(--bad); }
+.opt:disabled { cursor: default; color: var(--ink); }
+.verdict { margin-top: 12px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--rule); }
+.verdict strong.good { color: var(--ok); }
+.verdict strong.wrong { color: var(--bad); }
+.verdict p { margin: 4px 0 0; }
+
+/* list drawer */
+.drawer { position: absolute; inset: 0; z-index: 8; display: flex; flex-direction: column; background: var(--paper); }
+.dhead { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--rule); }
+.dhead input { flex: 1 1 auto; min-width: 0; height: 42px; padding: 0 12px; border: 1px solid var(--rule); border-radius: var(--r-ctl); background: var(--drape); font-size: 16px; }
+.dlist { flex: 1 1 auto; overflow-y: auto; padding: 4px 16px 24px; }
+.dlist h2 { margin: 22px 0 0; font-size: 16px; }
+.dlist h2 small { font-weight: 400; color: var(--ink-2); font-size: 13px; }
+.dlist h3 { margin: 14px 0 6px; font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.item { display: grid; width: 100%; text-align: left; gap: 1px; padding: 8px 10px; margin: 0 -10px; border: 0; border-radius: 8px; background: transparent; }
+.item:hover { background: var(--drape); }
+.item b { font-weight: 500; }
+.item i { font: italic 400 14px var(--f-lat); color: var(--ink-2); }
+.item .tag { font: 500 10px var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.item.cur b { color: var(--teal); font-weight: 700; }
+.item.sub { position: relative; padding-left: 32px; }
+.item.sub::before { content: ""; position: absolute; left: 17px; top: 7px; bottom: 7px; width: 2px; border-radius: 2px; background: var(--rule); }
+.item.sub b { font-weight: 400; }
+.empty { color: var(--ink-2); margin-top: 18px; }
+.bone-legend .dhead h2 { flex: 1; margin: 0; font-size: 18px; }
+.bone-legend .hint { margin-bottom: 16px; font-size: 13px; }
+.bone-color-item { display: grid; grid-template-columns: 18px minmax(0,1fr); gap: 10px; padding-block: 10px; border-bottom: 1px solid var(--rule); }
+.bone-color-dot { display: inline-block; width: 16px; height: 16px; flex: none; margin-top: 3px; border-radius: 5px; background: var(--bone-color); border: 1px solid rgba(0,0,0,0.2); }
+.bone-color-item b { display: block; font-weight: 600; }
+.bone-color-item i { display: block; font: italic 400 14px var(--f-lat); color: var(--ink-2); }
+.bone-color-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+.bone-color-actions .chip { min-height: 36px; height: auto; padding-block: 5px; }
+
+/* body map (start screen) */
+.home { position: absolute; inset: 0; z-index: 9; overflow-y: auto; overscroll-behavior: contain;
+  background: radial-gradient(120% 80% at 30% 20%, var(--drape) 50%, var(--drape-deep) 100%);
+  padding-block: 20px 32px; padding-inline: 16px; }
+.home-in { max-width: 940px; margin: 0 auto; display: grid; gap: 16px; }
+.home-head h1 { margin: 0; font-size: 26px; line-height: 1.15; letter-spacing: -0.015em; }
+.home-head p { margin: 6px 0 0; color: var(--ink-2); max-width: 52ch; }
+.home-grid { display: grid; gap: 16px; grid-template-columns: 1fr; align-items: start; }
+.figure { display: grid; justify-items: center; gap: 8px; min-width: 0; }
+.figwrap { position: relative; width: 100%; max-width: 460px; height: clamp(330px, 54vh, 430px); }
+.figimg { position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); aspect-ratio: 560 / 1240; height: 100%; cursor: default; touch-action: manipulation; }
+.figimg.pointer { cursor: pointer; }
+.figimg img { position: absolute; inset: 0; width: 100%; height: 100%; user-select: none; -webkit-user-select: none; -webkit-user-drag: none; pointer-events: none; }
+.figimg .ol-light { display: var(--ol-light); }
+.figimg .ol-dark { display: var(--ol-dark); }
+.figimg .hl { opacity: 0; transition: opacity 0.18s; }
+.figimg .hl.on { opacity: 1; }
+.leaders { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.leaders path { fill: none; stroke: var(--ink-2); stroke-opacity: 0.55; stroke-width: 1; }
+.leaders circle { fill: var(--paper); stroke: var(--ink-2); stroke-width: 1.5; }
+.leaders .hot path { stroke: var(--teal); stroke-opacity: 1; stroke-width: 1.6; }
+.leaders .hot circle { fill: var(--teal); stroke: var(--teal); }
+.flabel { position: absolute; left: 0; top: 0; display: grid; gap: 1px; padding: 4px 6px; border: 0; border-radius: 8px; background: transparent; text-align: left; max-width: 110px; }
+.flabel[data-side="l"] { text-align: right; justify-items: end; }
+.flabel b { font-size: 14px; line-height: 1.15; }
+.flabel span { font: 500 10.5px/1.25 var(--f-mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--teal); }
+.flabel.soon span { color: var(--ink-2); }
+.flabel.soon b { color: var(--ink-2); font-weight: 600; }
+.flabel.hot { background: var(--paper-glass); }
+.flabel.hot b { color: var(--teal); }
+.figure .cap { font: 500 10.5px/1.35 var(--f-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); text-align: center; max-width: 36ch; }
+.seclist { display: grid; gap: 10px; }
+.seccard { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 12px; text-align: left; padding: 14px 16px;
+  border: 1px solid var(--rule); border-radius: 14px; background: var(--paper); box-shadow: 0 1px 0 var(--shade); }
+.seccard b { font-size: 17px; }
+.seccard .h { grid-column: 1; color: var(--ink-2); font-size: 14px; }
+.seccard .m { grid-column: 1; font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal); }
+.seccard .go { grid-column: 2; grid-row: 1 / span 3; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--teal); color: var(--on-teal); }
+.seccard .go svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.seccard.soon { background: transparent; box-shadow: none; border-style: dashed; cursor: default; }
+.seccard.soon .m { color: var(--ink-2); }
+.seccard.soon .go { background: transparent; color: var(--ink-2); border: 1px dashed var(--rule); }
+.seccard.hot:not(.soon) { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal); }
+.home-note { color: var(--ink-2); font-size: 13px; max-width: 62ch; }
+.toast { position: absolute; z-index: 13; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  width: max-content; max-width: calc(100% - 32px); padding: 10px 14px; border-radius: 12px; background: var(--ink); color: var(--paper);
+  box-shadow: 0 8px 24px var(--shade); font-size: 14px; }
+
+/* loading + about */
+.veil { position: absolute; inset: 0; z-index: 10; display: grid; place-items: center; padding: 16px; background: var(--drape); }
+.veil .box { width: min(320px, 100%); display: grid; gap: 10px; text-align: center; }
+.meter { height: 4px; border-radius: 4px; background: var(--rule); overflow: hidden; }
+.meter i { display: block; height: 100%; width: 0; background: var(--teal); transition: width 0.2s; }
+.about { position: absolute; inset: 0; z-index: 11; display: grid; place-items: center; padding: 16px; background: var(--shade); }
+.about .card { width: min(560px, 100%); max-height: 100%; overflow-y: auto; background: var(--paper); border: 1px solid var(--rule);
+  border-radius: var(--r-panel); padding: 18px 18px 20px; box-shadow: 0 12px 40px var(--shade); }
+.about h2 { margin: 0; font-size: 19px; }
+.about h3 { margin: 18px 0 6px; font-size: 15px; }
+.about p { margin: 0 0 8px; max-width: 62ch; }
+.about a { color: var(--teal); }
+.glosslist { margin: 0; display: grid; gap: 8px; }
+.glosslist div { display: grid; gap: 1px; }
+.glosslist dt { font-weight: 600; }
+.glosslist dd { margin: 0; color: var(--ink-2); font-size: 14px; }
+.muted { color: var(--ink-2); font-size: 13px; }
+
+@media (min-width: 760px) {
+  .home { padding-block: 40px 40px; }
+  .home-grid { grid-template-columns: minmax(380px, 460px) 1fr; gap: 28px; }
+  .figwrap { height: min(560px, 74vh); }
+  .home-head h1 { font-size: 32px; }
+}
+@media (min-width: 900px) {
+  .sheet { left: auto; top: 16px; right: 16px; bottom: 16px; width: 380px; max-height: none; border: 1px solid var(--rule);
+    border-radius: var(--r-panel); padding: 16px 20px 20px; box-shadow: 0 10px 34px var(--shade); }
+  .sheet[data-state="peek"] .more { display: block; }
+  .grab, .togglemore { display: none !important; }
+  .bar, .tools { right: 412px; }
+  .drawer { right: auto; width: 380px; border-right: 1px solid var(--rule); box-shadow: 8px 0 30px var(--shade); }
+  .scopes { flex-wrap: wrap; overflow: visible; }
+}
+@media (max-width: 380px) {
+  .seg button { padding: 0 7px; font-size: 12.5px; }
+  .seg .cap { padding: 0 6px 0 8px; }
+  .chip { padding: 0 10px; font-size: 12.5px; }
+  .btn { padding: 0 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .meter i, .figimg .hl, .pin i { transition: none; } }
+</style>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+
+<div id="app">
+  <canvas id="stage" aria-label="3D-модель"></canvas>
+  <div class="fade" aria-hidden="true"></div>
+  <div id="pinLayer"></div>
+
+  <header class="bar">
+    <button class="btn icon" id="bHome" aria-label="Все разделы тела" title="Все разделы тела">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="4.6" r="2.2"/><path d="M12 7.5v7M7 10.2l5-1.2 5 1.2M9.6 21l2.4-6.5 2.4 6.5"/></svg>
+    </button>
+    <button class="brand" id="bBrand" title="Все разделы тела">
+      <h1 id="secTitle">Миология 3D</h1>
+      <p id="secSub">Выбери раздел</p>
+    </button>
+    <button class="btn icon" id="bList" aria-label="Список и поиск" title="Список и поиск">
+      <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+    </button>
+    <button class="btn" id="bQuiz" aria-pressed="false">Тест</button>
+    <button class="btn icon" id="bAbout" aria-label="Как пользоваться и словарик" title="Как пользоваться и словарик">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
+    </button>
+  </header>
+
+  <div class="tools">
+    <div class="row subs" id="subs" role="group" aria-label="Подраздел"></div>
+    <div class="row">
+      <div class="seg" role="group" aria-label="Слои мышц">
+        <span class="cap">Слои</span>
+        <button data-peel="0" aria-pressed="true" title="Все мышцы">Все</button>
+        <button data-peel="1" aria-pressed="false" title="Снять поверхностный слой">−1</button>
+        <button data-peel="2" aria-pressed="false" title="Снять два слоя">−2</button>
+        <button data-peel="3" aria-pressed="false" title="Только кости">Кости</button>
+      </div>
+      <button class="chip nocheck" id="bView" title="Повернуть модель другой стороной">
+        <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span id="viewLabel">Повернуть</span>
+      </button>
+      <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
+      <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
+      <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
+      <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
+      <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
+      <button class="chip restore" id="bRestore">Вернуть все</button>
+    </div>
+    <div class="cut-controls" id="headCutControls" hidden>
+      <label>Плоскость <select id="headCutAxis" aria-label="Плоскость среза"><option value="y">Горизонтальная</option><option value="x">Сагиттальная</option><option value="z">Фронтальная</option></select></label>
+      <label class="cut-position">Срез <input id="headCutPosition" type="range" min="0" max="100" value="50" aria-label="Положение среза"><output id="headCutValue">50%</output></label>
+      <button class="chip" id="headCutFlip" aria-pressed="false">Другая сторона</button>
+      <p class="hint">Срез открывает поверхность модели. Цвета сохраняют принадлежность к костям.</p>
+    </div>
+  </div>
+
+  <div id="tip" hidden></div>
+
+  <section class="sheet" id="sheet" data-state="peek" aria-live="polite"></section>
+
+  <aside class="drawer" id="drawer" hidden aria-label="Список структур">
+    <div class="dhead">
+      <input id="q" type="search" placeholder="Мышца, кость или образование кости, по-русски или по-латыни" autocomplete="off" aria-label="Поиск">
+      <button class="x" id="bCloseList" aria-label="Закрыть список"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="dlist" id="dlist"></div>
+  </aside>
+
+  <dialog id="headDetailDialog" aria-label="Внутреннее строение черепа"><div class="detail-header"><button class="chip nocheck" id="closeHeadDetail">Вернуться к атласу ✕</button></div><iframe id="headDetailFrame" title="Подробные структуры черепа"></iframe></dialog>
+  <aside class="drawer bone-legend" id="boneLegend" hidden role="dialog" aria-modal="true" aria-labelledby="boneLegendTitle">
+    <div class="dhead">
+      <h2 id="boneLegendTitle">Цвета костей черепа</h2>
+      <button class="x" id="bCloseBoneLegend" aria-label="Закрыть легенду"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="dlist" id="boneLegendList"></div>
+  </aside>
+
+  <div class="home" id="home">
+    <div class="home-in">
+      <div class="home-head">
+        <h1>Миология 3D</h1>
+        <p>Атлас мышц и костей. Выбери часть тела на фигуре или в списке. Внутри раздела можно открыть подразделы и нажать на любую мышцу, кость или точку на кости.</p>
+      </div>
+      <div class="home-grid">
+        <div class="figure">
+          <div class="figwrap" id="figwrap">
+            <div class="figimg" id="figimg">
+              <img class="ol ol-light" src="body-outline-light.webp" alt="" draggable="false">
+              <img class="ol ol-dark" src="body-outline-dark.webp" alt="" draggable="false">
+              <img class="bones" src="body-bones.webp" alt="Скелет человека в контуре тела, вид спереди" draggable="false">
+              <img class="hl" data-hl="head" src="body-hl-head.webp" alt="" draggable="false">
+              <img class="hl" data-hl="neck" src="body-hl-neck.webp" alt="" draggable="false">
+              <img class="hl" data-hl="trunk" src="body-hl-trunk.webp" alt="" draggable="false">
+              <img class="hl" data-hl="arm" src="body-hl-arm.webp" alt="" draggable="false">
+              <img class="hl" data-hl="leg" src="body-hl-leg.webp" alt="" draggable="false">
+            </div>
+            <svg class="leaders" id="leaders" aria-hidden="true"></svg>
+            <div id="flabels"></div>
+          </div>
+          <span class="cap">Скелет из научной базы BodyParts3D · фигура обращена к тебе лицом</span>
+        </div>
+        <div class="seclist" id="seclist"></div>
+      </div>
+      <p class="home-note">Модели показывают правую сторону тела. Разделы с пометкой «скоро» появятся позже.</p>
+    </div>
+  </div>
+
+  <div class="veil" id="veil" hidden>
+    <div class="box">
+      <strong id="veilText">Загружаю 3D-модель…</strong>
+      <div class="meter"><i id="meter"></i></div>
+      <span class="muted" id="veilSub">Около 2 МБ</span>
+    </div>
+  </div>
+
+  <div class="about" id="about" hidden>
+    <div class="card" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+      <div class="head">
+        <div class="t"><h2 id="aboutTitle">Как пользоваться</h2></div>
+        <button class="x" id="bCloseAbout" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <p>Кнопка с человечком слева вверху возвращает к схеме тела, где выбираются разделы. Под заголовком раздела — подразделы: например, у руки это плечевой пояс, плечо, предплечье и кисть. В подразделе остаются только его мышцы, а остальные кости видны бледно, чтобы было понятно, где ты находишься.</p>
+      <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
+      <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
+      <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
+      <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
+      <p>В голове по умолчанию включены «Цвета костей»: у каждой кости свой учебный цвет, одинаковый справа и слева. Это условная раскраска для запоминания. Кнопка «Легенда» показывает названия и позволяет выбрать кость. Чтобы увидеть весь цветной череп, выбери слой «Кости». Настройка цвета сохраняется; во время теста раскраска временно отключается.</p>
+      <p>«Срез черепа» позволяет убрать часть модели в одной из трёх плоскостей и рассмотреть внутреннюю поверхность. Ползунок перемещает срез; «Другая сторона» меняет оставленную половину. Срез показывает существующую геометрию модели.</p>
+      <p>«Учебные группы» открывают восемь направлений: кости, основание черепа, глазницы и полость носа, пазухи, челюсти, ухо, мышцы и варианты строения. Переключай готовые виды и выбирай структуры, чтобы открыть карточки. Для костей доступны модели Z-Anatomy и микро-КТ, для уха — отдельный препарат OpenEar с восемью проверенными ориентирами слуховых косточек. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. Каталог вариантов показывает типичные места без подтверждённой геометрии вариантов. «Вернуться к атласу» сохраняет прежний выбор.</p>
+      <h3>Словарик</h3>
+      <dl class="glosslist" id="glosslist"></dl>
+      <h3>Откуда модели</h3>
+      <p>3D-модели и скелет на стартовом экране: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener">BodyParts3D</a>, © The Database Center for Life Science, лицензия <a href="https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en" target="_blank" rel="noopener">CC BY-SA 2.1 Japan</a>. Модели мышц упрощены, структуры сгруппированы и преобразованы в GLB для браузера. Производные модели этого атласа распространяются по той же лицензии. <a href="https://pubmed.ncbi.nlm.nih.gov/18835852/" target="_blank" rel="noopener">Статья о базе</a>.</p>
+      <h3>Раздел «Голова»</h3>
+      <p>Показаны 22 кости мозгового и лицевого черепа, мимические и жевательные мышцы обеих сторон, сухожильный шлем. Зубы служат ориентиром. Слуховые косточки, мышцы глазного яблока, языка и глотки в этот раздел пока не входят.</p>
+      <p>У девяти карточек мышц нет отдельной модели: это ушные мышцы, мышцы, опускающие бровь, и поперечная мышца подбородка. Некоторые части мышц доступны только как карточки. Такое ограничение указано рядом с описанием.</p>
+      <p>У каждого образования черепа из списка TA98 есть маркер и описание со ссылками. Сплошная обводка обозначает участок поверхности, пунктирная — анатомическую проекцию или вариант строения: мелкое образование может быть не прорисовано в самой модели. Один маркер не показывает всю поверхность или ход канала. Различие объяснено в карточке. Кнопка «Просвечивать кость» помогает увидеть ориентиры с внутренней стороны.</p>
+      <h3>Как проверены тексты</h3>
+      <p>Для исходных разделов руки и ноги использованы сводная таблица мышц по Gray's Anatomy (<a href="https://en.wikipedia.org/wiki/List_of_skeletal_muscles_of_the_human_body" target="_blank" rel="noopener">Wikipedia</a>) и <a href="https://teachmeanatomy.info/" target="_blank" rel="noopener">TeachMeAnatomy</a>. В новых карточках головы приведены ссылки на использованные открытые учебные статьи, таблицы Loyola University и DEGUM, а для спорных вопросов — анатомические исследования. Неподтверждённые сведения не заполнены догадками.</p>
+      <p>Где русские и англоязычные учебники расходятся, это написано прямо в карточке: большая и малая грудные мышцы, подключичная, плечелучевая и локтевая мышцы, наружная запирательная мышца, короткий сгибатель большого пальца стопы.</p>
+      <p>Латинские названия даны по международной анатомической терминологии (Terminologia Anatomica, TA98).</p>
+      <h3>Сколько точек на каждой кости</h3>
+      <p>Полнота перечня терминов проверяется отдельно от положения 3D-точек. Основа — Terminologia Anatomica (1998) и русское издание под ред. Л. Л. Колесникова (2003). Карточка каждой кости содержит полный предусмотренный для неё перечень и коды TA98. Для черепа дополнительно указано, сколько образований отмечено на модели. Расхождения между печатным TA98 и электронной таблицей IFAA пояснены в соответствующих карточках.</p>
+      <p>Примеры: тазовая кость — 46 образований (8 общих, 21 у подвздошной части, 5 у седалищной, 12 у лобковой), бедренная — 28, большеберцовая — 23, лопатка — 22, плечевая — 28, лучевая — 19, локтевая — 16. У каждой фаланги 4: основание, тело, головка и блок (у дистальной вместо блока — бугристость). У некоторых костей (полулунная, трёхгранная, клиновидные) в списке нет ни одного отдельного образования — так и написано в их карточках.</p>
+      <p>Непостоянные образования (бывают не у всех людей, в списке они в скобках) помечены «непост.»: надмыщелковый отросток плечевой кости, третий вертел, задний запирательный бугорок, центральная и треугольная кости. Места прикрепления мышц, у которых нет своего термина, показаны отдельно и в счёт не входят. Списки сверены с электронной версией TA98 на сайте IFAA: <a href="https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm" target="_blank" rel="noopener">кости руки</a>, <a href="https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm" target="_blank" rel="noopener">кости ноги</a>, <a href="https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH769%20A2F%20EN.htm" target="_blank" rel="noopener">крестец и копчик</a>. В этой электронной версии одна строка таранной кости (A02.5.10.015) показана с ошибкой «ERR1»; по карточке термина это facies malleolaris medialis. Там же два термина с длинным сгибателем большого пальца записаны с непривычным порядком слов (musculi longi flexoris hallucis); в атласе оставлена форма musculi flexoris hallucis longi — как в названии самой мышцы.</p>
+      <p>Перед экзаменом всё равно сверяйся с учебником своей кафедры: в мелочах учебники могут отличаться.</p>
+      <p class="muted">Короткой ладонной мышцы в модели нет, у неё только карточка.</p>
+    </div>
+  </div>
+
+  <div id="gloss" hidden role="tooltip"></div>
+  <div class="toast" id="toast" hidden></div>
+</div>
+
+<script src="data.js"></script>
+<script src="data-leg.js"></script>
+<script src="data-head.js"></script>
+<script src="pins.js"></script>
+<script src="pins-leg.js"></script>
+<script src="pins-head.js"></script>
+<script src="skull-evidence-index.js"></script>
+<script src="bodymap.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+const A = window.ATLAS;
+const $ = (s) => document.querySelector(s);
+const groupById = Object.fromEntries(A.groups.concat(A.boneGroups).map(g => [g.id, g]));
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+const wide = () => innerWidth >= 900;
+const IC_X = '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+const IC_GO = '<svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>';
+
+const VIEWS = {
+  ant: [0, 0.12, 1], post: [0, 0.12, -1], lat: [-1, 0.12, 0.12], med: [1, 0.12, 0.2],
+  antlat: [-0.7, 0.1, 0.7], antmed: [0.6, 0.1, 0.8], postlat: [-0.7, 0.1, -0.7], medpost: [0.75, 0.1, -0.7],
+  suppost: [-0.25, 0.85, -0.55], dorsum: [-0.2, 1, 0.45], plantar: [-0.15, -1, 0.3], pelvsup: [0, 1, 0.55],
+  footv: [-0.55, 0.6, 0.65], cranSup: [0, 1, 0.01], cranInf: [0, -1, 0.01]
+};
+const VIEW_ORDER = [['ant', 'Спереди'], ['lat', 'Снаружи'], ['post', 'Сзади'], ['med', 'Изнутри']];
+const HEAD_VIEW_ORDER = [['ant', 'Спереди'], ['lat', 'Справа'], ['post', 'Сзади'], ['med', 'Слева'], ['cranSup', 'Сверху'], ['cranInf', 'Снизу']];
+
+// ---------- sections of the body ----------
+const SECTIONS = [
+  { id: 'head', ru: 'Голова', short: 'Голова', hint: 'Череп, мимические и жевательные мышцы с обеих сторон', ready: true, file: 'head',
+    tries: ['frontal', 'masseter_right', 'temporalis_right'],
+    subs: [
+      { id: 'all', ru: 'Вся голова', hint: 'Череп и мышцы головы', v: 'antlat' },
+      { id: 'neurocranium', ru: 'Мозговой череп', hint: 'Кости мозгового черепа', v: 'antlat' },
+      { id: 'viscerocranium', ru: 'Лицевой череп', hint: 'Кости лицевого черепа', v: 'antlat' },
+      { id: 'mimetic', ru: 'Мимические мышцы', hint: 'Мышцы лица и свода черепа', v: 'ant' },
+      { id: 'mastication', ru: 'Жевательные мышцы', hint: 'Жевательная, височная и крыловидные мышцы', v: 'antlat' }
+    ] },
+  { id: 'neck', ru: 'Шея', hint: 'Мышцы шеи, подъязычная кость, шейные позвонки', ready: false },
+  { id: 'trunk', ru: 'Туловище', hint: 'Грудная клетка, позвоночник, мышцы спины и живота', ready: false },
+  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Правая рука: плечевой пояс, плечо, предплечье и кисть', ready: true, file: 'arm',
+    tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
+    subs: [
+      { id: 'all', ru: 'Вся рука', hint: 'Вся правая верхняя конечность', v: 'antlat' },
+      { id: 'shoulder', ru: 'Плечевой пояс', hint: 'Лопатка, ключица и мышцы вокруг плечевого сустава', v: 'antlat' },
+      { id: 'arm', ru: 'Плечо', hint: 'От плечевого сустава до локтя', v: 'antlat' },
+      { id: 'forearm', ru: 'Предплечье', hint: 'От локтя до запястья', v: 'ant' },
+      { id: 'hand', ru: 'Кисть', hint: 'Запястье, ладонь и пальцы', v: 'ant' }
+    ] },
+  { id: 'leg', ru: 'Таз и нижняя конечность', short: 'Таз и нога', hint: 'Тазовые кости, ягодицы, бедро, голень и стопа', ready: true, file: 'leg',
+    tries: ['gluteus_maximus', 'quadriceps_femoris', 'triceps_surae'],
+    subs: [
+      { id: 'all', ru: 'Вся нога', hint: 'Таз и вся правая нижняя конечность', v: 'antlat' },
+      { id: 'pelvis', ru: 'Таз', hint: 'Тазовые кости, крестец, ягодичные мышцы и дно таза', v: 'antlat' },
+      { id: 'thigh', ru: 'Бедро', hint: 'От тазобедренного сустава до колена', v: 'ant' },
+      { id: 'shank', ru: 'Голень', hint: 'От колена до лодыжек', v: 'antlat' },
+      { id: 'foot', ru: 'Стопа', hint: 'Пятка, свод и пальцы', v: 'footv' }
+    ] }
+];
+const SEC = Object.fromEntries(SECTIONS.map(s => [s.id, s]));
+const secOf = (id) => {
+  const d = A.muscles[id] || A.bones[id];
+  return d ? groupById[d.g].sec : null;
+};
+const regionOf = (id) => groupById[A.muscles[id].g].region;
+// which subsection a structure belongs to (arm muscles of the chest and back live with the shoulder girdle)
+function subOf(id) {
+  if (A.muscles[id]) { const r = regionOf(id); return r === 'trunk' ? 'shoulder' : r; }
+  return A.bones[id] ? A.bones[id].sub : null;
+}
+const isSoft = (g) => g === 'b_soft' || g === 'b_soft_leg' || g === 'b_soft_head';
+function secCounts(sec) {
+  const m = Object.keys(A.muscles).filter(k => secOf(k) === sec && !A.muscles[k].noModel).length;
+  const b = Object.keys(A.bones).filter(k => secOf(k) === sec && !isSoft(A.bones[k].g)).length;
+  const p = PINS.filter(q => q.t === 'ta' && !q.part && secOf(q.b) === sec).length;
+  return { m, b, p };
+}
+// soft structures that cover muscles and should go with the superficial layer
+const SOFT_DEPTH = { flexor_retinaculum: 1, iliotibial_tract: 1, calcaneal_tendon: 1, epicranial_aponeurosis: 1 };
+
+// ---------- glossary ----------
+const GLOSS = [
+  { k: 'Начало', d: 'Место, где мышца начинается. Обычно это менее подвижная кость.', head: true },
+  { k: 'Прикрепление', d: 'Место, куда мышца прикрепляется. Обычно это кость, которую мышца двигает.', head: true },
+  { k: 'Функция', d: 'Какие движения выполняет мышца, когда сокращается.', head: true },
+  { k: 'Иннервация', d: 'Какой нерв управляет мышцей. Если нерв повреждён, мышца перестаёт работать.', head: true },
+  { k: 'Кровоснабжение', d: 'Какие артерии приносят к мышце кровь.', head: true },
+  { re: 'латеральн', k: 'Латеральный', d: 'Расположенный дальше от средней линии тела, то есть снаружи. Большой палец находится на латеральной стороне кисти.' },
+  { re: 'медиальн', k: 'Медиальный', d: 'Расположенный ближе к средней линии тела, то есть внутри. Мизинец находится на медиальной стороне кисти.' },
+  { re: 'проксимальн', k: 'Проксимальный', d: 'Ближе к туловищу или к началу конечности. Плечо проксимальнее предплечья.' },
+  { re: 'дистальн', k: 'Дистальный', d: 'Дальше от туловища. Пальцы — самая дистальная часть руки.' },
+  { re: '(?:дорсальн|тыльн)', k: 'Тыльный (дорсальный)', d: 'Задний. У кисти — сторона, где ногти, у стопы — её верхняя сторона.' },
+  { re: 'подошвенн', k: 'Подошвенный', d: 'Со стороны подошвы. Подошвенное сгибание стопы — подъём на носки.' },
+  { re: 'супин', k: 'Супинация', d: 'Поворот предплечья ладонью вверх, как будто держишь на ладони тарелку. Для стопы — подъём её внутреннего края.' },
+  { re: '(?:прониру|пронац|пронатор)', k: 'Пронация', d: 'Поворот предплечья ладонью вниз. Для стопы — подъём её наружного края.' },
+  { re: '(?:отвод|отведен)', k: 'Отведение', d: 'Движение в сторону от средней линии тела, например подъём руки вбок.' },
+  { re: '(?:привод|приведен)', k: 'Приведение', d: 'Движение к средней линии тела, например опускание поднятой вбок руки.' },
+  { re: 'сгиб', k: 'Сгибание', d: 'Уменьшение угла в суставе, например согнуть локоть. Тыльное сгибание стопы — подъём носка, подошвенное — подъём на носки.' },
+  { re: 'разгиб', k: 'Разгибание', d: 'Увеличение угла в суставе, выпрямление.' },
+  { re: 'надмыщел', k: 'Надмыщелок', d: 'Костный выступ над мыщелком. К нему крепятся мышцы и связки.' },
+  { re: 'мыщел', k: 'Мыщелок', d: 'Утолщённый округлый конец кости, обычно с суставной поверхностью.' },
+  { re: 'бугрист', k: 'Бугристость', d: 'Шероховатое возвышение на кости, к которому крепится мышца или связка.' },
+  { re: 'бугор', k: 'Бугор, бугорок', d: 'Возвышение на кости, место прикрепления мышц и связок.' },
+  { re: 'апоневроз', k: 'Апоневроз', d: 'Широкое плоское сухожилие в виде пластинки.' },
+  { re: 'фасци', k: 'Фасция', d: 'Плотная соединительнотканная оболочка вокруг мышц.' },
+  { re: 'сухожил', k: 'Сухожилие', d: 'Прочный тяж, которым мышца крепится к кости.' },
+  { re: 'сесамовидн', k: 'Сесамовидная кость', d: 'Маленькая кость внутри сухожилия. Самая крупная — надколенник.' },
+  { re: 'ост(?:ь|и|ью|ей)(?![а-яёА-ЯЁ])', k: 'Ость', d: 'Острый костный выступ.' },
+  { re: '(?:гребен|гребн)', k: 'Гребень', d: 'Вытянутый узкий выступ на кости.' },
+  { re: 'вырезк', k: 'Вырезка', d: 'Выемка на краю кости.' },
+  { re: 'ямк', k: 'Ямка', d: 'Углубление на поверхности кости.' },
+  { re: 'сплетени', k: 'Нервное сплетение', d: 'Сеть нервов, из которой выходят нервы к конечности: плечевое — к руке, поясничное и крестцовое — к ноге.' },
+  { re: 'влагалищ', k: 'Влагалище мышцы или сухожилия', d: 'В анатомии так называют оболочку-футляр, в которой лежит мышца или сухожилие.' },
+  { re: 'синдесмоз', k: 'Синдесмоз', d: 'Соединение костей плотной связкой без суставной щели.' },
+  { re: 'мениск', k: 'Мениск', d: 'Хрящевая прокладка внутри коленного сустава.' },
+  { re: 'симфиз', k: 'Симфиз', d: 'Соединение костей через хрящевой диск, например лобковый симфиз.' },
+  { re: 'капсул', k: 'Суставная капсула', d: 'Оболочка, которая окружает сустав и удерживает в нём суставную жидкость.' },
+  { re: 'вертел', k: 'Вертел', d: 'Крупный выступ на верхнем конце бедренной кости для прикрепления мышц.' },
+  { re: 'лодыжк', k: 'Лодыжка', d: 'Выступ по бокам голеностопного сустава: внутренняя — на большеберцовой кости, наружная — на малоберцовой.' },
+  { re: 'предплюсн', k: 'Предплюсна', d: 'Семь костей задней части стопы: таранная, пяточная, ладьевидная, кубовидная и три клиновидные.' },
+  { re: 'плюсн', k: 'Плюсна', d: 'Пять длинных костей средней части стопы, как пясть на кисти.' },
+  { re: 'запяст', k: 'Запястье', d: 'Восемь мелких костей между предплечьем и пястью.' },
+  { re: 'пястн', k: 'Пясть', d: 'Пять костей ладони между запястьем и пальцами.' }
+];
+GLOSS.forEach((g, i) => { g.i = i; if (g.re) g.rx = new RegExp(`(?<![а-яёА-ЯЁ])(${g.re}[а-яёА-ЯЁ]*)`, 'iu'); });
+const headTerm = (k) => GLOSS.find(g => g.head && g.k === k);
+// underline the first use of each glossary term in a card; text is already escaped
+function glossify(text, used) {
+  const parts = text.split(/(<button[^>]*>.*?<\/button>)/);
+  for (const g of GLOSS) {
+    if (!g.rx || used.has(g.i)) continue;
+    for (let j = 0; j < parts.length; j += 2) {
+      const m = parts[j].match(g.rx);
+      if (!m) continue;
+      const at = m.index;
+      const btn = `<button class="term" data-g="${g.i}">${m[1]}</button>`;
+      parts.splice(j, 1, parts[j].slice(0, at), btn, parts[j].slice(at + m[1].length));
+      used.add(g.i);
+      break;
+    }
+  }
+  return parts.join('');
+}
+
+// ---------- preferences ----------
+const prefs = (() => { try { return JSON.parse(localStorage.getItem('myo3d') || '{}'); } catch (e) { return {}; } })();
+const savePrefs = () => { try { localStorage.setItem('myo3d', JSON.stringify(prefs)); } catch (e) { /* storage unavailable */ } };
+
+const state = {
+  sec: null, subs: Object.assign({}, prefs.subs || {}),
+  peel: [0, 1, 2, 3].includes(prefs.peel) ? prefs.peel : 0,
+  trunk: !!prefs.trunk,
+  sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
+  pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
+  boneColors: prefs.boneColors !== false,
+  headCut: { active: false, axis: 'y', value: 50, flip: false },
+  mode: 'study', viewIdx: -1,
+  quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
+};
+const curSub = () => (state.sec && state.subs[state.sec]) || 'all';
+
+// ---------- landmark pins (data) ----------
+const PINS = A.pins || [];
+const pinById = Object.fromEntries(PINS.map(p => [p.id, p]));
+const pinsByBone = {};
+const pinsByMuscle = {};
+for (const p of PINS) {
+  // a term of the carpus as a whole (p.sh) is listed with every carpal bone
+  for (const b of p.sh || [p.b]) (pinsByBone[b] = pinsByBone[b] || []).push(p);
+  for (const [mu, role, part] of p.m) (pinsByMuscle[mu] = pinsByMuscle[mu] || []).push({ pin: p, role, part: part || null });
+}
+// official TA98 features of one bone: its own terms, without the bone parts themselves (e.g. the coccyx)
+const taOf = (id) => (pinsByBone[id] || []).filter(p => p.t === 'ta' && !p.sh && !p.part);
+
+// ---------- three.js ----------
+const canvas = $('#stage');
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+} catch (e) {
+  $('#veil').hidden = false;
+  $('#veilText').textContent = 'Браузер не поддерживает WebGL';
+  $('#veilSub').textContent = 'Открой страницу в Chrome, Safari или Firefox с включённым аппаратным ускорением.';
+  throw e;
+}
+renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+renderer.setClearColor(0x000000, 0);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(32, 1, 0.01, 30);
+scene.add(camera);
+scene.add(new THREE.HemisphereLight(0xf2fbf9, 0x26302e, 1.25));
+const key = new THREE.DirectionalLight(0xffffff, 2.3);
+key.position.set(-0.7, 1.0, 0.9); camera.add(key); key.target.position.set(0, 0, -1); camera.add(key.target);
+const fill = new THREE.DirectionalLight(0xd9ecff, 0.7);
+fill.position.set(0.9, -0.3, 0.5); camera.add(fill); fill.target.position.set(0, 0, -1); camera.add(fill.target);
+
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.09; controls.rotateSpeed = 0.85;
+controls.minDistance = 0.06; controls.maxDistance = 3.5; controls.screenSpacePanning = true;
+
+let needsRender = true;
+let tween = null;
+const requestRender = () => { needsRender = true; };
+controls.addEventListener('change', requestRender);
+controls.addEventListener('start', () => { tween = null; resetView(); hideTip(); hideGloss(); });
+
+// screen insets so framing avoids the controls on top and the sheet below
+let inset = { top: 0, bottom: 0, right: 0 };
+let freeArea = { w: 1, h: 1, W: 1, H: 1 };
+function measureInsets() {
+  const app = $('#app').getBoundingClientRect();
+  const tools = document.querySelector('.tools').getBoundingClientRect();
+  const sheet = $('#sheet').getBoundingClientRect();
+  if (wide()) inset = { top: Math.max(0, tools.bottom - app.top + 6), bottom: 0, right: app.right - sheet.left + 8 };
+  else inset = { top: Math.max(0, tools.bottom - app.top + 6), bottom: Math.max(0, app.bottom - sheet.top), right: 0 };
+}
+function resize() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (!w || !h) return;
+  renderer.setSize(w, h, false);
+  measureInsets();
+  const vw = w - inset.right, vh = h - inset.top - inset.bottom;
+  // shift the projection so the scene centre sits in the free area between the controls and the sheet
+  camera.aspect = w / h;
+  camera.setViewOffset(w, h, inset.right / 2, (inset.bottom - inset.top) / 2, w, h);
+  camera.updateProjectionMatrix();
+  freeArea = { w: Math.max(vw, 120), h: Math.max(vh, 120), W: w, H: h };
+  requestRender();
+}
+new ResizeObserver(resize).observe($('#app'));
+
+// ---------- models (one per section, loaded on demand) ----------
+let structs = new Map();
+const models = {};
+const loading = {};
+const HL = new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--mark').trim() || '#e5a01a');
+const BONE = new THREE.Color('#e9dfc5');
+const SOFT = new THREE.Color('#b7cad4');
+const GHOST = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.14, depthWrite: false });
+const XRAY = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.2, depthWrite: false, side: THREE.DoubleSide });
+
+// A learning palette, not tissue colour. The same key serves both sides of a paired bone.
+const HEAD_BONE_PALETTE = {
+  frontal: '#e8c04c', parietal: '#b488c9', occipital: '#4fa7a1', temporal: '#689ddd',
+  sphenoid: '#e88762', ethmoid: '#91b95b', nasal: '#86ced8', lacrimal: '#cfa847',
+  zygomatic: '#e99c4a', maxilla: '#d988b0', palatine: '#8674ad', inferior_concha: '#959fe0',
+  vomer: '#b98665', mandible: '#a4bf71'
+};
+const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
+const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
+const WHITE = new THREE.Color('#ffffff');
+const headCutPlane = new THREE.Plane();
+function pointClipped(point) {
+  return state.sec === 'head' && state.mode === 'study' && state.headCut.active && headCutPlane.distanceToPoint(point) < -1e-7;
+}
+function updateHeadCut() {
+  const enabled = state.sec === 'head' && state.mode === 'study' && state.headCut.active;
+  $('#bHeadCut').hidden = state.sec !== 'head' || state.mode !== 'study';
+  $('#bHeadCut').setAttribute('aria-pressed', String(enabled));
+  $('#headCutControls').hidden = !enabled;
+  $('#headCutAxis').value = state.headCut.axis;
+  $('#headCutPosition').value = state.headCut.value;
+  $('#headCutValue').textContent = `${state.headCut.value}%`;
+  $('#headCutFlip').setAttribute('aria-pressed', String(state.headCut.flip));
+  if (enabled) {
+    const box = new THREE.Box3();
+    for (const s of structs.values()) if (s.kind === 'b') for (const mesh of s.meshes) box.expandByObject(mesh);
+    const axis = state.headCut.axis, sign = state.headCut.flip ? 1 : -1;
+    const coordinate = THREE.MathUtils.lerp(box.min[axis], box.max[axis], state.headCut.value / 100);
+    headCutPlane.normal.set(0, 0, 0); headCutPlane.normal[axis] = sign;
+    headCutPlane.constant = -coordinate * sign;
+  }
+  renderer.clippingPlanes = enabled ? [headCutPlane] : [];
+  // Sections expose the inside of existing surfaces; no capping geometry is invented.
+  for (const s of structs.values()) for (const mesh of s.meshes) {
+    const material = mesh.userData.mat;
+    const side = enabled ? THREE.DoubleSide : THREE.FrontSide;
+    if (material.side !== side) { material.side = side; material.needsUpdate = true; }
+  }
+  for (const material of [GHOST, ...Object.values(headBoneGhosts)]) {
+    const side = enabled ? THREE.DoubleSide : THREE.FrontSide;
+    if (material.side !== side) { material.side = side; material.needsUpdate = true; }
+  }
+  occDirty = true;
+  requestRender();
+}
+const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
+  const material = GHOST.clone(); material.color.copy(color); return [id, material];
+}));
+const boneColorsActive = () => state.sec === 'head' && state.boneColors && state.mode !== 'quiz';
+const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
+function updateBoneColorControls() {
+  const head = state.sec === 'head', quiz = state.mode === 'quiz';
+  $('#bBoneColors').hidden = !head;
+  $('#bBoneColors').disabled = quiz;
+  $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
+  $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
+  $('#bBoneLegend').hidden = !head || quiz || !state.boneColors;
+  $('#bHeadDetail').hidden = !head || quiz;
+}
+
+function muscleColor(id) {
+  let h = 2166136261;
+  for (const ch of id) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  const a = (h & 1023) / 1023, b = ((h >>> 10) & 1023) / 1023, c = ((h >>> 20) & 1023) / 1023;
+  return new THREE.Color().setHSL(0.006 + a * 0.026, 0.50 + b * 0.14, 0.38 + c * 0.09);
+}
+// models ship as base64 text, because artifacts serve text and images but not .glb files
+function b64ToBuffer(text) {
+  const bin = atob(text.trim());
+  const out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out.buffer;
+}
+let progressSink = null;
+async function fetchModel(file) {
+  const loader = new GLTFLoader();
+  const files = new THREE.FileLoader();
+  files.setResponseType('text');
+  const onProgress = (e) => {
+    if (!progressSink) return;
+    const total = e.lengthComputable ? e.total : 2.2e6;
+    progressSink(Math.min(98, Math.round(100 * e.loaded / total)));
+  };
+  const fetchText = (url) => new Promise((res, rej) => files.load(url, res, onProgress, rej));
+  const parse = (buf) => new Promise((res, rej) => loader.parse(buf, '', res, rej));
+  try {
+    await MeshoptDecoder.ready;
+    loader.setMeshoptDecoder(MeshoptDecoder);
+    return await parse(b64ToBuffer(await fetchText(`${file}-glb.txt`)));
+  } catch (e) {
+    return await parse(b64ToBuffer(await fetchText(`${file}-q-glb.txt`)));
+  }
+}
+function register(gltf) {
+  const map = new Map();
+  gltf.scene.traverse(o => {
+    if (!o.isMesh) return;
+    let n = o;
+    while (n && !/^[mboc]\|/.test(n.name)) n = n.parent;
+    if (!n) return;
+    const [kind, key, part] = n.name.split('|');
+    const id = kind === 'c' ? 'context' : key;
+    let s = map.get(id);
+    if (!s) {
+      s = { id, kind, meshes: [], data: kind === 'm' ? A.muscles[key] : (A.bones[key] || null) };
+      map.set(id, s);
+    }
+    let mat;
+    if (kind === 'm') mat = new THREE.MeshStandardMaterial({ color: muscleColor(id), roughness: 0.5, metalness: 0 });
+    else if (kind === 'b') mat = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.72, metalness: 0 });
+    else if (kind === 'o') mat = new THREE.MeshStandardMaterial({ color: SOFT, roughness: 0.45, metalness: 0, transparent: true, opacity: 0.85 });
+    else mat = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.24, depthWrite: false });
+    o.material = mat;
+    o.userData = { sid: id, part: part || null, base: mat.color.clone(), mat, order: kind === 'c' ? 2 : 0 };
+    o.renderOrder = o.userData.order;
+    s.meshes.push(o);
+  });
+  return { group: gltf.scene, structs: map };
+}
+function loadSection(id) {
+  if (models[id]) return Promise.resolve(models[id]);
+  if (!loading[id]) loading[id] = fetchModel(SEC[id].file).then(g => (models[id] = register(g))).catch(e => { loading[id] = null; throw e; });
+  return loading[id];
+}
+
+// ---------- visibility, highlight ----------
+// in the quiz each question peels down to the target's own layer; otherwise the user's setting applies
+const effPeel = () => (state.mode === 'quiz' && state.quiz.target ? state.quiz.peel : state.peel);
+// 2 = shown, 1 = faint context (bones outside the subsection), 0 = hidden
+function visState(s) {
+  const iso = state.isolate ? structs.get(state.isolate) : null;
+  if (iso && iso.kind !== 'm') return s.id === iso.id ? 2 : 0; // an isolated bone is shown on its own
+  const sub = curSub();
+  const S = SEC[state.sec];
+  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
+  const inSub = sub === 'all' || subOf(s.id) === sub;
+  if (s.kind === 'm') {
+    if (iso) return s.id === iso.id ? 2 : 0;
+    if (state.hidden.has(s.id)) return 0;
+    if (s.data.g === 'trunk' && !state.trunk) return 0;
+    if (!inSub) return 0;
+    return s.data.d > effPeel() ? 2 : 0;
+  }
+  if (state.hidden.has(s.id)) return 0;
+  if (SOFT_DEPTH[s.id] && (effPeel() >= SOFT_DEPTH[s.id] || iso)) return 0;
+  return inSub ? 2 : 1;
+}
+const isVisible = (s) => visState(s) === 2;
+let pickables = [];
+function applyVisibility() {
+  pickables = [];
+  XRAY.color.copy(state.xrayBone ? boneColor(state.xrayBone) : BONE);
+  for (const s of structs.values()) {
+    const v = visState(s);
+    for (const m of s.meshes) {
+      m.visible = v > 0;
+      const xray = s.id === state.xrayBone && s.kind === 'b';
+      const ghost = s.kind === 'b' && boneColorsActive() ? headBoneGhosts[headBoneKey(s.id)] || GHOST : GHOST;
+      m.material = v === 1 ? ghost : xray ? XRAY : m.userData.mat;
+      m.renderOrder = v === 1 || xray ? 2 : m.userData.order;
+      if (v === 2 && s.kind !== 'c') pickables.push(m);
+    }
+  }
+  document.querySelectorAll('[data-peel]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.peel === state.peel)));
+  $('#bTrunk').setAttribute('aria-pressed', String(state.trunk));
+  $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
+  $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
+  updateBoneColorControls();
+  updateHeadCut();
+  paint();
+  buildPins();
+  requestAnimationFrame(resize);
+}
+function paint() {
+  const q = state.mode === 'quiz' ? state.quiz.target : null;
+  const selPart = q ? null : state.selPart;
+  for (const s of structs.values()) {
+    if (s.kind === 'c') continue;
+    const on = q ? s.id === q : s.id === state.sel;
+    const hov = !on && s.id === state.hover;
+    for (const m of s.meshes) {
+      const mat = m.userData.mat, base = s.kind === 'b' ? boneColor(s.id) : m.userData.base;
+      const coloredBone = s.kind === 'b' && boneColorsActive() && headBoneColors[headBoneKey(s.id)];
+      // a chosen part glows fully; the rest of the same muscle gets a faint tint
+      const full = !selPart || m.userData.part === selPart;
+      if (on && coloredBone) { mat.color.copy(base).lerp(WHITE, 0.12); mat.emissive.copy(base).multiplyScalar(0.16); }
+      else if (on) { mat.color.copy(base).lerp(HL, full ? 0.62 : 0.2); mat.emissive.copy(HL).multiplyScalar(full ? 0.28 : 0.03); }
+      else if (hov) { mat.color.copy(base); mat.emissive.setRGB(0.09, 0.09, 0.09); }
+      else { mat.color.copy(base); mat.emissive.setRGB(0, 0, 0); }
+    }
+  }
+  requestRender();
+}
+
+// ---------- camera framing ----------
+function boxOf(ids) {
+  const box = new THREE.Box3();
+  for (const id of ids) { const s = structs.get(id); if (s) for (const m of s.meshes) box.expandByObject(m); }
+  return box;
+}
+// minSize (m): keep some surrounding anatomy in view when framing a small structure
+function frame(ids, viewKey, instant, minSize = 0) {
+  const box = boxOf(ids);
+  if (box.isEmpty()) return;
+  frameBox(box, viewKey, instant, minSize);
+}
+function frameBox(box, viewKey, instant, minSize = 0) {
+  const center = box.getCenter(new THREE.Vector3());
+  if (minSize) {
+    const size = box.getSize(new THREE.Vector3());
+    const half = new THREE.Vector3(Math.max(size.x, minSize), Math.max(size.y, minSize), Math.max(size.z, minSize)).multiplyScalar(0.5);
+    box.set(center.clone().sub(half), center.clone().add(half));
+  }
+  const dir = viewKey instanceof THREE.Vector3 ? viewKey.clone().normalize()
+    : viewKey ? new THREE.Vector3(...VIEWS[viewKey]).normalize()
+    : camera.position.clone().sub(controls.target).normalize();
+  // fit the box's projected extent into the free part of the screen
+  const right = new THREE.Vector3().crossVectors(new THREE.Vector3(0, 1, 0), dir).normalize();
+  const up = new THREE.Vector3().crossVectors(dir, right).normalize();
+  const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  const tanY = tanV * freeArea.h / freeArea.H, tanX = tanV * freeArea.w / freeArea.H;
+  let dist = 0;
+  const c = new THREE.Vector3();
+  for (let i = 0; i < 8; i++) {
+    c.set(i & 1 ? box.max.x : box.min.x, i & 2 ? box.max.y : box.min.y, i & 4 ? box.max.z : box.min.z).sub(center);
+    const z = c.dot(dir);
+    dist = Math.max(dist, z + Math.abs(c.dot(right)) / tanX, z + Math.abs(c.dot(up)) / tanY);
+  }
+  dist = Math.min(Math.max(dist * 1.08, 0.1), controls.maxDistance);
+  const toTarget = center.clone();
+  const toPos = center.clone().addScaledVector(dir, dist);
+  if (instant || reduceMotion) {
+    tween = null;
+    controls.target.copy(toTarget); camera.position.copy(toPos); controls.update(); requestRender(); occDirty = true; return;
+  }
+  tween = { t0: performance.now(), dur: 650, fromT: controls.target.clone(), fromP: camera.position.clone(), toT: toTarget, toP: toPos };
+}
+// how much context to keep around a structure when flying to it (small bones of the hand and foot get a close view)
+const smallFrame = (id) => {
+  if (secOf(id) === 'head') return A.muscles[id] ? 0.07 : 0.05;
+  if (A.muscles[id]) return ['hand', 'foot'].includes(regionOf(id)) ? 0.12 : 0.22;
+  const b = A.bones[id];
+  return b && (b.sub === 'hand' || b.sub === 'foot') ? 0.08 : 0.22;
+};
+// look at a muscle from the side where the chosen part lies, keeping the whole muscle in frame
+function framePart(id, part) {
+  const s = structs.get(id);
+  if (!s) return;
+  const base = new THREE.Vector3(...VIEWS[s.data.v || 'ant']).normalize();
+  let dir = base;
+  if (part) {
+    const pm = s.meshes.filter(m => m.userData.part === part);
+    if (!pm.length) { frame([id], s.data.v || 'ant', false, smallFrame(id)); return; }
+    const pc = new THREE.Box3(), mc = new THREE.Box3();
+    pm.forEach(m => pc.expandByObject(m)); s.meshes.forEach(m => mc.expandByObject(m));
+    const off = pc.getCenter(new THREE.Vector3()).sub(mc.getCenter(new THREE.Vector3()));
+    off.y = 0;
+    if (off.length() > 0.004) dir = base.clone().multiplyScalar(0.45).add(off.normalize().multiplyScalar(0.55)).normalize();
+  }
+  if (Math.abs(dir.y) < 0.95) dir.y = Math.max(dir.y, 0.1);
+  frame([id], dir, false, smallFrame(id));
+  resetView();
+}
+const shownIds = () => [...structs.values()].filter(s => s.kind !== 'c' && visState(s) === 2).map(s => s.id);
+function frameSub(instant) {
+  const S = SEC[state.sec];
+  const def = S.subs.find(x => x.id === curSub()) || S.subs[0];
+  frame(shownIds(), def.v, instant);
+  resetView();
+}
+function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Повернуть'; }
+
+// ---------- loop ----------
+function loop(now) {
+  requestAnimationFrame(loop);
+  if (tween) {
+    const k = Math.min(1, (now - tween.t0) / tween.dur);
+    const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+    controls.target.lerpVectors(tween.fromT, tween.toT, e);
+    camera.position.lerpVectors(tween.fromP, tween.toP, e);
+    if (k >= 1) { tween = null; occDirty = true; }
+    needsRender = true;
+  }
+  if (controls.update()) needsRender = true;
+  if (needsRender) {
+    renderer.render(scene, camera); needsRender = false;
+    if (pinEls.length) {
+      if (!tween && (occDirty || now - occAt > 300)) { computeOcclusion(); occAt = now; occDirty = false; }
+      positionPins();
+    }
+  } else if (occDirty && pinEls.length && !tween) { computeOcclusion(); occDirty = false; positionPins(); }
+}
+
+// ---------- picking ----------
+const ray = new THREE.Raycaster();
+function hitAt(clientX, clientY) {
+  const r = canvas.getBoundingClientRect();
+  const ndc = new THREE.Vector2(((clientX - r.left) / r.width) * 2 - 1, -((clientY - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  const hit = ray.intersectObjects(pickables, false).find(h => !pointClipped(h.point));
+  return hit ? hit.object.userData : null;
+}
+let down = null;
+canvas.addEventListener('pointerdown', e => { down = { x: e.clientX, y: e.clientY, t: performance.now() }; });
+canvas.addEventListener('pointerup', e => {
+  if (!down) return;
+  const moved = Math.hypot(e.clientX - down.x, e.clientY - down.y);
+  const quick = performance.now() - down.t < 450;
+  down = null;
+  if (moved > 7 || !quick || state.mode === 'quiz') return;
+  const u = hitAt(e.clientX, e.clientY);
+  if (u) select(u.sid, u.part, false);
+  else select(null);
+});
+canvas.addEventListener('pointercancel', () => { down = null; });
+
+// ---------- landmark pins (overlay) ----------
+const pinLayer = $('#pinLayer');
+let pinEls = [], occDirty = false, occAt = 0, pinLabel = null;
+const occRay = new THREE.Raycaster();
+const _pv = new THREE.Vector3();
+controls.addEventListener('end', () => { occDirty = true; });
+// pins for the current selection: a bone shows its landmarks, a muscle shows where it attaches
+function currentPins() {
+  if (!state.pinsOn || state.mode === 'quiz' || !state.sel || !state.sec) return [];
+  const s = structs.get(state.sel);
+  if (!s || !isVisible(s)) return [];
+  if (s.kind === 'm') {
+    const seen = new Set(), out = [];
+    for (const e of pinsByMuscle[s.id] || []) {
+      if (state.selPart && e.part && e.part !== state.selPart) continue;
+      if (!e.pin.p || seen.has(e.pin.id)) continue;
+      seen.add(e.pin.id); out.push({ pin: e.pin, role: e.role });
+    }
+    return out;
+  }
+  // a bone shows its TA98 terms (optionally one group of them); an attachment area only when it is opened
+  const list = (pinsByBone[s.id] || []).filter(p => p.t !== 'att' && (!state.pinGroup || p.g === state.pinGroup));
+  const ap = state.pin ? pinById[state.pin] : null;
+  if (ap && !list.includes(ap) && (ap.sh || [ap.b]).includes(s.id)) list.push(ap);
+  return list.filter(p => p.p).map(p => ({ pin: p, role: p.t === 'att' ? 'a' : 'b' }));
+}
+function buildPins() {
+  const list = currentPins();
+  pinLayer.textContent = '';
+  pinLabel = null;
+  pinEls = list.map(({ pin, role }) => {
+    const el = document.createElement('button');
+    el.className = 'pin'; el.dataset.role = role; el.dataset.loc = pin.loc || 'surface';
+    el.setAttribute('aria-label', pin.ru + (pin.loc && pin.loc !== 'surface' ? ' · ' + localizationLabel(pin) : ''));
+    el.innerHTML = '<i></i>';
+    el.addEventListener('click', (e) => { e.stopPropagation(); activatePin(state.pin === pin.id ? null : pin.id, false); });
+    pinLayer.appendChild(el);
+    return { el, pin, role, v: new THREE.Vector3(...pin.p), occ: false, x: 0, y: 0 };
+  });
+  if (state.pin && !pinById[state.pin]) state.pin = null;
+  if (state.pin && pinById[state.pin].p) {
+    const p = pinById[state.pin];
+    pinLabel = document.createElement('button');
+    pinLabel.className = 'pinlabel';
+    pinLabel.innerHTML = `<b>${esc(p.ru)}</b>${p.lat ? `<i>${esc(p.lat)}</i>` : ''}${p.loc && p.loc !== 'surface' ? `<span class="tag">${localizationLabel(p)}</span>` : ''}`;
+    pinLabel.addEventListener('click', () => { sheet.dataset.state = 'open'; renderSheet(); });
+    pinLayer.appendChild(pinLabel);
+  }
+  occDirty = true;
+  positionPins();
+  requestRender();
+}
+function positionPins() {
+  if (!pinEls.length) return;
+  const W = canvas.clientWidth, H = canvas.clientHeight;
+  let act = null;
+  for (const pe of pinEls) {
+    _pv.copy(pe.v).project(camera);
+    pe.x = (_pv.x + 1) / 2 * W; pe.y = (1 - _pv.y) / 2 * H;
+    // keep pins out from under the controls on top and the card below
+    const off = pointClipped(pe.v) || _pv.z > 1 || pe.y < inset.top - 6 || pe.y > H - inset.bottom + 4 || pe.x < -10 || pe.x > W - inset.right + 4;
+    pe.el.hidden = off;
+    pe.el.style.transform = `translate(${pe.x.toFixed(1)}px, ${pe.y.toFixed(1)}px)`;
+    pe.el.classList.toggle('behind', pe.occ);
+    const on = state.pin === pe.pin.id;
+    pe.el.classList.toggle('on', on);
+    if (on) act = pe;
+  }
+  if (!pinLabel) return;
+  if (!act || act.el.hidden) { pinLabel.hidden = true; return; }
+  pinLabel.hidden = false;
+  const w = pinLabel.offsetWidth, h = pinLabel.offsetHeight;
+  const x = Math.min(Math.max(act.x - w / 2, 8), W - inset.right - w - 8);
+  const minY = inset.top + 8, maxY = H - inset.bottom - h - 8;
+  if (maxY < minY) { pinLabel.hidden = true; return; }
+  let y = act.y - h - 16;
+  if (y < minY) y = act.y + 18;
+  y = Math.max(minY, Math.min(y, maxY));
+  pinLabel.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+}
+// a pin is "behind" when something visible lies between it and the camera (a muscle's own pins ignore that muscle)
+function computeOcclusion() {
+  const s = state.sel ? structs.get(state.sel) : null;
+  const own = s && s.kind === 'm' ? new Set(s.meshes) : null;
+  const targets = pickables.filter(m => (!own || !own.has(m)) && m.material !== XRAY);
+  const cp = camera.position;
+  for (const pe of pinEls) {
+    const d = pe.v.clone().sub(cp);
+    const dist = d.length();
+    occRay.set(cp, d.normalize());
+    occRay.near = 0; occRay.far = Math.max(0, dist - 0.0025);
+    pe.occ = occRay.intersectObjects(targets, false).some(hit => !pointClipped(hit.point));
+  }
+}
+function flyToPin(p) {
+  if (!p || !p.p || !p.n) return;
+  const c = new THREE.Vector3(...p.p);
+  const dir = new THREE.Vector3(...p.n); dir.y += 0.15; dir.normalize();
+  const h = 0.035;
+  frameBox(new THREE.Box3(c.clone().subScalar(h), c.clone().addScalar(h)), dir, false);
+  resetView();
+}
+function activatePin(id, fly) {
+  state.pin = id;
+  const active = id ? pinById[id] : null;
+  if (active?.p && fly && pointClipped(new THREE.Vector3(...active.p))) state.headCut.active = false;
+  if (active && active.loc === 'internal') state.xrayBone = active.b;
+  else if (active && active.b !== state.xrayBone) state.xrayBone = null;
+  if (id && state.pinGroup && (pinById[id] || {}).g !== state.pinGroup) state.pinGroup = null;
+  applyVisibility();
+  if (id && fly) flyToPin(pinById[id]);
+  renderSheet();
+}
+
+const tip = $('#tip');
+function hideTip() { tip.hidden = true; if (state.hover) { state.hover = null; paint(); } }
+if (finePointer) {
+  let pending = null;
+  canvas.addEventListener('pointermove', e => {
+    if (e.buttons) return;
+    pending = e;
+    requestAnimationFrame(() => {
+      if (!pending) return;
+      const ev = pending; pending = null;
+      const u = state.mode === 'quiz' ? null : hitAt(ev.clientX, ev.clientY);
+      const id = u ? u.sid : null;
+      if (id !== state.hover) { state.hover = id; paint(); }
+      if (!id) { tip.hidden = true; canvas.style.cursor = ''; return; }
+      const s = structs.get(id);
+      const part = u.part && s.data && s.data.parts && s.data.parts[u.part] ? ' · ' + s.data.parts[u.part].ru : '';
+      tip.textContent = (s.data ? s.data.ru : id) + part;
+      const r = $('#app').getBoundingClientRect();
+      tip.style.left = (ev.clientX - r.left + 14) + 'px';
+      tip.style.top = (ev.clientY - r.top + 14) + 'px';
+      tip.hidden = false; canvas.style.cursor = 'pointer';
+    });
+  });
+  canvas.addEventListener('pointerleave', hideTip);
+}
+
+// ---------- subsections ----------
+function renderSubs() {
+  const S = SEC[state.sec];
+  const box = $('#subs');
+  if (!S) { box.innerHTML = ''; return; }
+  box.innerHTML = S.subs.map(x => `<button class="chip" data-sub="${x.id}" aria-pressed="${curSub() === x.id}" title="${esc(x.hint)}">${esc(x.ru)}</button>`).join('');
+  box.querySelectorAll('[data-sub]').forEach(b => b.addEventListener('click', () => setSub(b.dataset.sub)));
+  const def = S.subs.find(x => x.id === curSub()) || S.subs[0];
+  $('#secTitle').textContent = S.ru;
+  $('#secSub').textContent = curSub() === 'all' ? S.hint : `${def.ru}: ${def.hint.charAt(0).toLowerCase()}${def.hint.slice(1)}`;
+  const cur = box.querySelector('[aria-pressed="true"]');
+  if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+}
+function setSub(sub, opts = {}) {
+  if (!state.sec) return;
+  state.subs[state.sec] = sub;
+  prefs.subs = Object.assign({}, prefs.subs || {}, { [state.sec]: sub }); savePrefs();
+  state.isolate = null;
+  if (!opts.keepSel && state.sel && structs.has(state.sel) && sub !== 'all' && subOf(state.sel) !== sub) { state.sel = null; state.selPart = null; state.pin = null; }
+  renderSubs();
+  applyVisibility();
+  if (!opts.noFrame) frameSub(false);
+  if (state.mode === 'quiz' && !opts.fromQuiz) { state.quiz.scope = sub; nextQuestion(); }
+  else if (!opts.silent) renderSheet();
+}
+
+// ---------- selection + card ----------
+const sheet = $('#sheet');
+// reveal: also peel away the layers above a deep muscle (used when navigating from the list)
+function makeVisible(id, reveal) {
+  const s = structs.get(id);
+  if (!s) return;
+  if (state.isolate && state.isolate !== id) state.isolate = null;
+  state.hidden.delete(id);
+  const sub = subOf(id);
+  if (curSub() !== 'all' && sub && sub !== curSub()) setSub(sub, { noFrame: true, keepSel: true, silent: true, fromQuiz: true });
+  const setPeel = (p) => { state.peel = p; prefs.peel = p; savePrefs(); };
+  if (s.kind === 'm') {
+    if (s.data.g === 'trunk' && !state.trunk) { state.trunk = true; prefs.trunk = true; savePrefs(); }
+    if (reveal || s.data.d <= state.peel) setPeel(s.data.d - 1);
+  } else if (SOFT_DEPTH[id]) { if (state.peel >= SOFT_DEPTH[id]) setPeel(0); }
+  else if (reveal) setPeel(3);
+  applyVisibility();
+}
+function select(id, part, fly, keepPin) {
+  if (!keepPin) state.pin = null;
+  if (id !== state.sel) state.xrayBone = null;
+  if (id !== state.sel) state.pinGroup = null;
+  state.sel = id;
+  hideGloss();
+  const d0 = id ? (structs.get(id) || {}).data || A.muscles[id] : null;
+  state.selPart = part && d0 && d0.parts && d0.parts[part] ? part : null;
+  if (id && structs.has(id)) {
+    makeVisible(id, fly);
+    if (fly && state.selPart) framePart(id, state.selPart);
+    else if (fly) { const d = structs.get(id).data; frame([id], d && d.v ? d.v : 'ant', false, smallFrame(id)); resetView(); }
+  }
+  paint();
+  buildPins();
+  renderSheet();
+}
+// open any structure, switching section when it lives elsewhere
+async function goTo(id, part, pinId) {
+  const sec = secOf(id);
+  if (sec && sec !== state.sec) { const ok = await enterSection(sec, { noFrame: true }); if (!ok) return; }
+  if (state.mode === 'quiz') setMode('study');
+  select(id, part || null, true);
+  if (pinId) {
+    if (!state.pinsOn) { state.pinsOn = true; prefs.pins = true; savePrefs(); }
+    activatePin(pinId, true);
+  }
+}
+const roleWord = (r) => (r === 'o' ? 'начало' : 'прикрепление');
+// chips for the muscles attached at a pin (skipping the muscle already on screen)
+function muscleChips(ap, skipId) {
+  const items = ap.m.filter(([mu]) => mu !== skipId);
+  if (!items.length) return '';
+  const chip = ([mu, r, part]) => {
+    const M = A.muscles[mu];
+    const pr = part && M.parts && M.parts[part] ? ' · ' + M.parts[part].ru.toLowerCase() : '';
+    return `<button class="chip" data-gom="${mu}" data-gpart="${part || ''}"><span class="pdot" data-role="${r}"></span>${esc(M.ru)}${esc(pr)}</button>`;
+  };
+  return ['o', 'i'].map(r => {
+    const g = items.filter(x => x[1] === r);
+    return g.length ? `<span class="role" data-role="${r}">${r === 'o' ? 'Здесь начинаются' : 'Здесь прикрепляются'}</span><div class="linkrow tight">${g.map(chip).join('')}</div>` : '';
+  }).join('');
+}
+
+function renderSheet() {
+  if (!state.sec) { sheet.innerHTML = ''; return; }
+  if (state.mode === 'quiz') return renderQuiz();
+  const S = SEC[state.sec];
+  const id = state.sel;
+  const s = id ? structs.get(id) : null;
+  const d = s ? s.data : (id && A.muscles[id]) || null;
+  if (!d) {
+    sheet.dataset.state = 'peek';
+    const c = secCounts(state.sec);
+    const subDef = S.subs.find(x => x.id === curSub());
+    const tries = S.tries.filter(t => curSub() === 'all' || subOf(t) === curSub());
+    const tryIds = tries.length ? tries : [...structs.values()].filter(x => x.kind === 'm' && isVisible(x)).slice(0, 3).map(x => x.id);
+    sheet.innerHTML = `
+      <button class="grab" aria-hidden="true" tabindex="-1"></button>
+      <div class="kicker">${esc(S.short || S.ru)} · ${plural(c.m, 'мышца', 'мышцы', 'мышц')} · ${plural(c.b, 'кость', 'кости', 'костей')} · ${plural(c.p, 'образование', 'образования', 'образований')} костей (TA98)</div>
+      <p class="name">Нажми на мышцу или кость</p>
+      <p class="hint">${curSub() === 'all' ? 'Выбери подраздел вверху, чтобы остались только его мышцы.' : `Сейчас открыт подраздел «${esc(subDef.ru)}».`} Карточка покажет начало, прикрепление, функцию, иннервацию и кровоснабжение.</p>
+      <div class="tryrow">${tryIds.map(t => `<button class="chip" data-go="${t}">${esc((A.muscles[t] || A.bones[t]).ru)}</button>`).join('')}</div>`;
+    afterSheet(); return;
+  }
+  const isMuscle = !!A.muscles[id];
+  const g = groupById[d.g];
+  const p = state.selPart && d.parts ? d.parts[state.selPart] : null;
+  const noModel = d.noModel || !s;
+  const kicker = isMuscle ? `${esc(g.title)}${d.L ? ' · ' + esc(d.L) : ''}` : esc(g.title);
+  // with a part chosen, its own data replaces the muscle's; shared fields are marked
+  const facts = isMuscle ? [
+    ['Начало', 'origo', p && p.o ? p.o : d.o, p && !p.o ? 'общее' : ''],
+    ['Прикрепление', 'insertio', p && p.i ? p.i : d.i, p && !p.i ? 'общее' : ''],
+    ['Функция', 'functio', p && p.a ? p.a : d.a, p && !p.a ? 'всей мышцы' : ''],
+    ['Иннервация', 'innervatio', p && p.n ? p.n : d.n, ''],
+    ['Кровоснабжение', 'vascularisatio', d.s, '']
+  ] : [['Ориентиры и описание', '', d.x, '']];
+  const note = p && p.x ? p.x : d.note;
+  const used = new Set();
+  // landmark pins: the active one, a bone's list, a muscle's attachment sites
+  const hasPins = !noModel && (isMuscle ? (pinsByMuscle[id] || []).length > 0 : (pinsByBone[id] || []).length > 0);
+  const ap = state.pin ? pinById[state.pin] : null;
+  let pinBox = '';
+  if (ap) {
+    const ctx = isMuscle ? (pinsByMuscle[id] || []).filter(e => e.pin.id === ap.id && (!state.selPart || !e.part || e.part === state.selPart)) : [];
+    const role = ctx[0] ? ctx[0].role : 'b';
+    const boneName = A.bones[ap.b] ? A.bones[ap.b].ru : '';
+    const roleTxt = ctx.map(e => roleWord(e.role) + (e.part && d.parts && d.parts[e.part] ? ' (' + d.parts[e.part].ru.toLowerCase() + ')' : ''))
+      .filter((t, i, a) => a.indexOf(t) === i).join(', ');
+    pinBox = `<div class="pinbox">
+      <div class="pinhead">
+        <span class="pdot" data-role="${role}"></span>
+        <div class="t"><b>${esc(ap.ru)}</b>${ap.lat ? `<i>${esc(ap.lat)}</i>` : ''}${pinMeta(ap)}${isMuscle && roleTxt ? `<span class="role" data-role="${role}">${esc(roleTxt)} · ${esc(boneName.toLowerCase())}</span>` : ''}</div>
+        <button class="x" id="bPinClose" aria-label="Закрыть точку">${IC_X}</button>
+      </div>
+      <p>${glossify(esc(ap.x), used)}</p>
+      ${ap.modelNote ? `<div class="note">${esc(ap.modelNote)}</div>` : ''}
+      ${detailLinks(ap)}
+      ${sourceLinks(ap.refs)}
+      ${muscleChips(ap, isMuscle ? id : null)}
+      ${isMuscle ? `<div class="linkrow"><button class="chip" data-gobone="${ap.b}">Открыть кость: ${esc(boneName.toLowerCase())}</button></div>` : ''}
+    </div>`;
+  }
+  let pinSect = '';
+  if (!isMuscle && !noModel) pinSect = bonePinSect(id, d);
+  else if (isMuscle && hasPins) {
+    const seen = new Set();
+    const list = (pinsByMuscle[id] || []).filter(e => (!state.selPart || !e.part || e.part === state.selPart) && !seen.has(e.pin.id + e.role) && seen.add(e.pin.id + e.role));
+    if (list.length) pinSect = `<div class="sect"><h3>Где крепится на костях</h3>
+      <div class="legend"><span><i class="pdot" data-role="o"></i>начало</span><span><i class="pdot" data-role="i"></i>прикрепление</span></div>
+      <div class="linkrow">${list.map(e => `<button class="chip" data-pinid="${e.pin.id}" aria-pressed="${state.pin === e.pin.id}"><span class="pdot" data-role="${e.role}"></span>${esc(e.pin.ru)} · ${esc(A.bones[e.pin.b].ru.toLowerCase())}</button>`).join('')}</div></div>`;
+  }
+  const partsRow = isMuscle && d.parts ? `
+    <div class="parts" role="group" aria-label="Части мышцы">
+      <button class="chip" data-part="" aria-pressed="${!p}">Вся мышца</button>
+      ${Object.entries(d.parts).map(([k, v]) => `<button class="chip" data-part="${k}" aria-pressed="${state.selPart === k}">${esc(v.ru)}</button>`).join('')}
+    </div>` : '';
+  const dtLabel = (t) => { const h = headTerm(t); return h ? `<button class="term" data-g="${h.i}">${t}</button>` : t; };
+  const factHtml = facts.map(([t, l, v, tag]) => `<div><dt>${dtLabel(t)}${l ? ` <i>${l}</i>` : ''}${tag ? ` <span class="tag">${tag}</span>` : ''}</dt><dd>${glossify(esc(v), used)}</dd></div>`).join('');
+  sheet.innerHTML = `
+    <button class="grab togglemore" aria-label="${sheet.dataset.state === 'open' ? 'Свернуть карточку' : 'Развернуть карточку'}"></button>
+    <div class="head">
+      <div class="t">
+        <div class="kicker">${noModel ? '' : `<span class="swatch" aria-hidden="true"${!isMuscle && boneColorsActive() && HEAD_BONE_PALETTE[headBoneKey(id)] ? ` style="background:${HEAD_BONE_PALETTE[headBoneKey(id)]}"` : ''}></span>`}<span>${kicker}</span></div>
+        <h2 class="name">${esc(d.ru)}</h2>
+        <p class="lat">${esc(d.lat)}</p>
+      </div>
+      <button class="x" id="bDeselect" aria-label="Закрыть карточку">${IC_X}</button>
+    </div>
+    ${partsRow}
+    <div class="actions">
+      <button class="act primary togglemore" id="bMore">${sheet.dataset.state === 'open' ? 'Свернуть' : 'Подробнее'}</button>
+      ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : 'Только эта'}</button>` : ''}
+      ${!noModel && !isMuscle && state.sec === 'head' ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
+      ${!isMuscle && /^temporal_(left|right)$/.test(id) ? '<button class="act" data-detail-mode="openear">Внутри височной кости</button>' : ''}
+      ${!noModel ? `<button class="act" id="bHide">Скрыть</button>` : ''}
+      ${!noModel ? `<button class="act icon" id="bFocus" aria-label="Приблизить" title="Приблизить"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 8v5M8 10.5h5"/></svg></button>` : ''}
+      ${hasPins ? `<button class="act icon" id="bPins" aria-pressed="${state.pinsOn}" aria-label="Точки на костях" title="Точки на костях"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg></button>` : ''}
+    </div>
+    ${pinBox}
+    <div class="more">
+      ${p ? `<p class="pname"><b>${esc(p.ru)}</b> <i>${esc(p.lat)}</i></p>` : ''}
+      <dl class="facts">${factHtml}</dl>
+      ${noModel ? '<div class="note">Для этой структуры нет отдельной 3D-модели в используемом наборе BodyParts3D.</div>' : ''}
+      ${p && p.noModel ? '<div class="note">Эта часть описана в карточке, но не выделена отдельной геометрией в исходной модели.</div>' : ''}
+      ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
+      ${pinSect}
+      ${sourceLinks(d.refs)}
+    </div>`;
+  afterSheet();
+}
+// TA98 code, group and constancy of a point
+function sourceLinks(refs) {
+  if (!refs || !refs.length) return '';
+  return `<div class="sect"><h3>Источники</h3><div class="linkrow">${refs.map((ref, i) => {
+    const source = typeof ref === 'string' ? {url: ref, title: `Источник ${i + 1}`} : ref;
+    return /^https:\/\//.test(source.url || '') ? `<a class="chip" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title || `Источник ${i + 1}`)}</a>` : '';
+  }).join('')}</div></div>`;
+}
+function localizationLabel(p) {
+  return ({surface: 'На поверхности', projection: 'Анатомическая проекция', internal: 'Внутренний ориентир · схема', variant: 'Вариант строения · проекция'})[p.loc] || '';
+}
+function detailLinks(p) {
+  if(state.sec!=='head')return '';
+  if(A.headEvidence?.includes(p.c))return `<div class="linkrow"><button class="chip" data-detail-mode="study" data-detail-marker="${esc(p.c)}">Проверенные подробные виды и примеры ↗</button></div>`;
+  const cavities={'A02.1.03.029':['frontal_sinus'],'A02.1.05.016':['sphenoidal_sinus'],'A02.1.07.008':['ethmoid_cells_anterior_left','ethmoid_cells_anterior_right'],'A02.1.07.009':['ethmoid_cells_middle_left','ethmoid_cells_middle_right'],'A02.1.07.010':['ethmoid_cells_posterior_left','ethmoid_cells_posterior_right']};
+  if(p.c==='A02.1.15.031')return '<p class="lead">На другой исходной модели виден рельеф этой борозды:</p><div class="linkrow"><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_right">Борозда справа · Z-Anatomy</button><button class="chip" data-detail-mode="z" data-detail-marker="mandible_mylohyoid_groove_left">Борозда слева · Z-Anatomy</button></div>';
+  const ids=cavities[p.c];
+  return ids?`<p class="lead">Объём полости в отдельной модели Z-Anatomy:</p><div class="linkrow">${ids.map(id=>`<button class="chip" data-detail-mode="z" data-detail-part="${id}">Открыть в 3D${ids.length>1?(id.endsWith('left')?' · слева':' · справа'):''}</button>`).join('')}</div>`:'';
+}
+function pinMeta(p) {
+  if (p.t === 'ta') return `<span class="tacode">TA98 ${esc(p.c)}${p.g ? ' · ' + esc(p.g) : ''}${p.sh ? ' · общее для запястья' : ''}${p.inc ? ' <span class="tag">непостоянное</span>' : ''}${p.taParen ? ' <span class="tag">в скобках в IFAA</span>' : ''}${p.loc ? ` <span class="tag">${localizationLabel(p)}</span>` : ''}${!p.p ? ' <span class="tag">Расположение уточняется</span>' : ''}</span>`;
+  if (p.t === 'att') return '<span class="tacode">Место прикрепления мышцы · отдельного термина в TA98 нет</span>';
+  return '';
+}
+const pinChip = (q) => `<button class="chip" data-pinid="${q.id}" aria-pressed="${state.pin === q.id}">${esc(q.ru)}${q.inc ? ' <span class="tag">непост.</span>' : ''}${q.loc && q.loc !== 'surface' ? ` <span class="tag">${q.loc === 'internal' ? 'внутри · схема' : q.loc === 'variant' ? 'вариант · проекция' : 'проекция'}</span>` : ''}${!q.p ? ' <span class="tag">уточняется</span>' : ''}</button>`;
+// the bone card lists exactly the official TA98 terms of the bone, then attachment areas that have no term
+function bonePinSect(id, d) {
+  const all = pinsByBone[id] || [];
+  if (isSoft(d.g)) {
+    const soft = all.filter(p => p.t === 'soft');
+    return soft.length ? `<div class="sect"><h3>Где начинаются мышцы</h3><div class="linkrow">${soft.map(pinChip).join('')}</div></div>` : '';
+  }
+  const own = all.filter(p => p.t === 'ta' && !p.sh);
+  const feats = own.filter(p => !p.part);
+  const shared = all.filter(p => p.t === 'ta' && p.sh);
+  const atts = all.filter(p => p.t === 'att');
+  const inc = feats.filter(p => p.inc).length;
+  let html = `<div class="sect"><h3>Образования кости по TA98 · ${feats.length}</h3>`;
+  const unlocated = feats.filter(p => !p.p).length;
+  if (unlocated) html += `<p class="lead">Полный перечень терминов: ${feats.length}. На модели отмечено ${feats.length - unlocated}. Для остальных положение не подтверждено на этой сетке: открой термин, чтобы прочитать пояснение.</p>`;
+  const projected = feats.filter(p => p.p && p.loc && p.loc !== 'surface').length;
+  if (projected) html += `<p class="lead">Маркеры: ${feats.length - unlocated - projected} на поверхности, ${projected} анатомических проекций и внутренних схем. Пунктирный маркер показывает расположение по источникам; форма самого образования может быть не прорисована на этой модели. Пояснение — в карточке каждого ориентира.</p>`;
+  if (!feats.length) html += `<p class="lead">В международной анатомической терминологии (TA98) у этой кости нет отдельно названных образований.</p>`;
+  const groups = [];
+  for (const p of own) { const g = p.g || ''; let G = groups.find(x => x.g === g); if (!G) groups.push(G = { g, list: [] }); G.list.push(p); }
+  const byPart = groups.length > 1;
+  if (feats.length) html += `<p class="lead">Ровно столько терминов в официальном списке Terminologia Anatomica (TA98)${byPart ? ', по частям — ниже' : ' для этой кости'}${inc ? `; ${plural(inc, 'непостоянное', 'непостоянных', 'непостоянных')} (бывает не у всех людей) ${inc === 1 ? 'отмечено' : 'отмечены'} «непост.»` : ''}.</p>`;
+  if (groups.length > 1 || (groups[0] && groups[0].g)) {
+    for (const G of groups) {
+      const n = G.list.filter(p => !p.part).length;
+      const on = state.pinGroup === G.g;
+      html += `<button class="grp" data-pingroup="${esc(G.g)}" aria-pressed="${on}">${esc(G.g)} <span class="n">${n}</span><span class="f">${on ? 'показать все' : 'только эти'}</span></button>`;
+      html += `<div class="linkrow">${G.list.map(pinChip).join('')}</div>`;
+    }
+  } else if (feats.length) html += `<div class="linkrow">${feats.map(pinChip).join('')}</div>`;
+  html += '</div>';
+  if (shared.length) html += `<div class="sect"><h3>Общее для всех костей запястья · ${shared.length}</h3><div class="linkrow">${shared.map(pinChip).join('')}</div></div>`;
+  if (atts.length) html += `<div class="sect"><h3>Места прикрепления мышц · ${atts.length}</h3><p class="lead">Своего термина в TA98 у этих мест нет, поэтому в счёт образований они не входят.</p><div class="linkrow">${atts.map(pinChip).join('')}</div></div>`;
+  return html;
+}
+function afterSheet() {
+  sheet.querySelectorAll('[data-detail-mode]').forEach(b=>b.addEventListener('click',()=>openHeadDetail(b.dataset.detailMode,b.dataset.detailPart,b.dataset.detailMarker)));
+  sheet.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => select(b.dataset.go, null, true)));
+  sheet.querySelectorAll('[data-part]').forEach(b => b.addEventListener('click', () => {
+    state.selPart = b.dataset.part || null;
+    paint(); buildPins(); renderSheet();
+    framePart(state.sel, state.selPart);
+  }));
+  sheet.querySelectorAll('.togglemore').forEach(b => b.addEventListener('click', () => {
+    sheet.dataset.state = sheet.dataset.state === 'open' ? 'peek' : 'open';
+    renderSheet();
+  }));
+  sheet.querySelectorAll('[data-pinid]').forEach(b => b.addEventListener('click', () => {
+    if (!state.pinsOn) { state.pinsOn = true; prefs.pins = true; savePrefs(); }
+    activatePin(b.dataset.pinid, true);
+  }));
+  sheet.querySelectorAll('[data-pingroup]').forEach(b => b.addEventListener('click', () => {
+    const g = b.dataset.pingroup;
+    state.pinGroup = state.pinGroup === g ? null : g;
+    if (state.pin && state.pinGroup && (pinById[state.pin] || {}).g !== state.pinGroup) state.pin = null;
+    if (!state.pinsOn) { state.pinsOn = true; prefs.pins = true; savePrefs(); }
+    buildPins(); renderSheet();
+  }));
+  sheet.querySelectorAll('[data-gom]').forEach(b => b.addEventListener('click', () => select(b.dataset.gom, b.dataset.gpart || null, true, true)));
+  sheet.querySelectorAll('[data-gobone]').forEach(b => b.addEventListener('click', () => {
+    const pid = state.pin;
+    select(b.dataset.gobone, null, true, true);
+    if (pid) flyToPin(pinById[pid]);
+  }));
+  const on = (sel, fn) => { const el = sheet.querySelector(sel); if (el) el.addEventListener('click', fn); };
+  on('#bDeselect', () => { sheet.dataset.state = 'peek'; select(null); });
+  on('#bPinClose', () => activatePin(null));
+  on('#bPins', () => {
+    state.pinsOn = !state.pinsOn; prefs.pins = state.pinsOn; savePrefs();
+    if (!state.pinsOn) state.pin = null;
+    buildPins(); renderSheet();
+  });
+  on('#bIso', () => {
+    state.isolate = state.isolate === state.sel ? null : state.sel;
+    applyVisibility(); renderSheet();
+    if (state.isolate) frame([state.isolate], null, false, 0.12);
+  });
+  on('#bBoneXray', () => {
+    state.xrayBone = state.xrayBone === state.sel ? null : state.sel;
+    applyVisibility(); renderSheet();
+  });
+  on('#bHide', () => { state.hidden.add(state.sel); state.sel = null; state.pin = null; sheet.dataset.state = 'peek'; applyVisibility(); renderSheet(); });
+  on('#bFocus', () => {
+    if (state.pin) return flyToPin(pinById[state.pin]);
+    if (state.selPart) return framePart(state.sel, state.selPart);
+    const d = structs.get(state.sel).data; frame([state.sel], d && d.v ? d.v : null, false, 0.12); resetView();
+  });
+  requestAnimationFrame(() => { const before = freeArea.h; resize(); if (Math.abs(before - freeArea.h) > 1) requestRender(); });
+}
+function plural(n, one, few, many) {
+  const a = n % 10, b = n % 100;
+  const w = a === 1 && b !== 11 ? one : a >= 2 && a <= 4 && (b < 12 || b > 14) ? few : many;
+  return `${n} ${w}`;
+}
+
+// ---------- glossary popover ----------
+const gloss = $('#gloss');
+let glossFor = null;
+function showGloss(btn) {
+  const g = GLOSS[+btn.dataset.g];
+  if (!g) return;
+  if (glossFor === btn && !gloss.hidden) { hideGloss(); return; }
+  glossFor = btn;
+  gloss.innerHTML = `<b>${esc(g.k)}</b>${esc(g.d)}`;
+  gloss.hidden = false;
+  const app = $('#app').getBoundingClientRect(), r = btn.getBoundingClientRect();
+  const w = gloss.offsetWidth, h = gloss.offsetHeight;
+  const x = Math.min(Math.max(r.left - app.left + r.width / 2 - w / 2, 16), app.width - w - 16);
+  let y = r.top - app.top - h - 8;
+  if (y < 8) y = r.bottom - app.top + 8;
+  gloss.style.transform = `translate(${x}px, ${y}px)`;
+}
+function hideGloss() { gloss.hidden = true; glossFor = null; }
+$('#app').addEventListener('click', (e) => {
+  const t = e.target.closest('.term');
+  if (t) { e.preventDefault(); e.stopPropagation(); showGloss(t); return; }
+  if (!e.target.closest('#gloss')) hideGloss();
+}, true);
+sheet.addEventListener('scroll', hideGloss, { passive: true });
+$('#glosslist').innerHTML = GLOSS.map(g => `<div><dt>${esc(g.k)}</dt><dd>${esc(g.d)}</dd></div>`).join('');
+
+// ---------- quiz ----------
+function quizScopes() {
+  const S = SEC[state.sec];
+  const out = S.subs.filter(x => state.sec !== 'head' || ['all','mimetic','mastication'].includes(x.id))
+    .map(x => ({ id: x.id, t: x.id === 'all' ? 'Всё' : x.ru }));
+  if (state.sec === 'arm' && state.trunk) out.push({ id: 'trunk', t: 'Грудь и спина' });
+  return out;
+}
+// pool: muscles in the chosen area that are not hidden and lie at or below the user's layer setting
+function quizPool() {
+  const q = state.quiz;
+  return [...structs.values()]
+    .filter(s => s.kind === 'm' && !state.hidden.has(s.id) && (s.data.g !== 'trunk' || state.trunk)
+      && s.data.d > state.peel && (q.scope === 'all' || regionOf(s.id) === q.scope))
+    .map(s => s.id);
+}
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+function nextQuestion() {
+  const q = state.quiz;
+  const pool = quizPool();
+  q.answered = null;
+  if (pool.length < 2) { q.target = null; q.options = []; applyVisibility(); renderSheet(); return; }
+  let cands = pool.filter(id => !q.recent.includes(id));
+  if (!cands.length) cands = pool;
+  const target = cands[Math.floor(Math.random() * cands.length)];
+  q.recent = [target].concat(q.recent).slice(0, Math.min(4, pool.length - 1));
+  const mine = Object.keys(A.muscles).filter(id => id !== target && secOf(id) === state.sec);
+  const same = shuffle(mine.filter(id => regionOf(id) === regionOf(target)));
+  const other = shuffle(mine.filter(id => regionOf(id) !== regionOf(target)));
+  q.target = target;
+  q.peel = A.muscles[target].d - 1;
+  q.options = shuffle([target].concat(same.concat(other).slice(0, 3)));
+  applyVisibility();
+  frame([target], A.muscles[target].v || 'ant', false, state.sec === 'head' ? 0.08 : ['hand', 'foot'].includes(regionOf(target)) ? 0.15 : 0.3);
+  resetView();
+  renderSheet();
+}
+function renderQuiz() {
+  const q = state.quiz;
+  sheet.dataset.state = 'open';
+  const scopes = quizScopes().map(s => `<button class="chip" data-scope="${s.id}" aria-pressed="${q.scope === s.id}">${esc(s.t)}</button>`).join('');
+  let body;
+  if (!q.target) {
+    body = `<p class="hint">Для теста не хватает видимых мышц. Верни слои кнопкой «Все» или выбери другую область.</p>`;
+  } else {
+    // after answering keep only the right option and the wrong pick, so the model stays in view
+    const shown = q.answered ? q.options.filter(id => id === q.target || id === q.answered) : q.options;
+    const opts = shown.map(id => {
+      const m = A.muscles[id];
+      let cls = '';
+      if (q.answered) { if (id === q.target) cls = 'ok'; else if (id === q.answered) cls = 'bad'; }
+      return `<button class="opt ${cls}" data-ans="${id}" ${q.answered ? 'disabled' : ''}><b>${esc(m.ru)}</b><i>${esc(m.lat)}</i></button>`;
+    }).join('');
+    let verdict = '';
+    if (q.answered) {
+      const t = A.muscles[q.target];
+      const good = q.answered === q.target;
+      verdict = `<div class="verdict">
+        <strong class="${good ? 'good' : 'wrong'}">${good ? 'Верно' : 'Неверно'}</strong>
+        <p><b>Функция.</b> ${glossify(esc(t.a), new Set())}</p>
+        <div class="actions"><button class="act primary" id="bNext">Следующая</button><button class="act" id="bCard">Открыть карточку</button></div>
+      </div>`;
+    }
+    body = `<p class="ask">Что это за подсвеченная мышца?</p><div class="opts">${opts}</div>${verdict}`;
+  }
+  sheet.innerHTML = `
+    <div class="qtop">
+      <h2>Самопроверка</h2>
+      <button class="x" id="bQuitQuiz" aria-label="Выйти из теста">${IC_X}</button>
+    </div>
+    <div class="score">Верно ${q.right} из ${q.total} · серия ${q.streak} · рекорд ${q.best}</div>
+    <div class="scopes" role="group" aria-label="Область теста">${scopes}</div>
+    ${state.sec === 'head' && state.boneColors ? '<p class="hint">Цвета костей временно отключены на время теста.</p>' : ''}
+    ${body}`;
+  sheet.querySelectorAll('[data-scope]').forEach(b => b.addEventListener('click', () => {
+    q.scope = b.dataset.scope;
+    const sub = q.scope === 'trunk' ? 'shoulder' : q.scope;
+    if (sub !== curSub()) setSub(sub, { noFrame: true, fromQuiz: true, silent: true });
+    nextQuestion();
+  }));
+  sheet.querySelectorAll('[data-ans]').forEach(b => b.addEventListener('click', () => {
+    if (q.answered) return;
+    q.answered = b.dataset.ans; q.total++;
+    if (q.answered === q.target) { q.right++; q.streak++; if (q.streak > q.best) { q.best = q.streak; prefs.best = q.best; savePrefs(); } }
+    else q.streak = 0;
+    renderSheet();
+  }));
+  const on = (sel, fn) => { const el = sheet.querySelector(sel); if (el) el.addEventListener('click', fn); };
+  on('#bNext', nextQuestion);
+  on('#bCard', () => { const t = q.target; setMode('study'); sheet.dataset.state = 'open'; select(t, null, true); });
+  on('#bQuitQuiz', () => setMode('study'));
+  requestAnimationFrame(resize);
+}
+function setMode(m) {
+  if (!state.sec) return;
+  closeBoneLegend(false);
+  state.mode = m;
+  $('#bQuiz').setAttribute('aria-pressed', String(m === 'quiz'));
+  hideTip(); hideGloss();
+  if (m === 'quiz') {
+    state.isolate = null; state.sel = null; state.pin = null;
+    // a bones-only view leaves nothing to ask about
+    if (state.peel === 3) { state.peel = 0; prefs.peel = 0; savePrefs(); }
+    state.quiz.answered = null;
+    state.quiz.scope = curSub();
+    if (!quizScopes().some(s => s.id === state.quiz.scope)) state.quiz.scope = 'all';
+    nextQuestion();
+  } else {
+    state.quiz.target = null; sheet.dataset.state = 'peek'; applyVisibility(); renderSheet();
+  }
+}
+
+// ---------- list drawer ----------
+const drawer = $('#drawer');
+const norm = (s) => s.toLowerCase().replace(/ё/g, 'е');
+function renderList() {
+  const term = norm($('#q').value.trim());
+  const match = (d) => !term || norm(d.ru).includes(term) || norm(d.lat).includes(term);
+  let html = '', n = 0;
+  // the open section first, then the others
+  const order = SECTIONS.filter(S => S.ready).sort((a, b) => (b.id === state.sec) - (a.id === state.sec));
+  for (const S of order) {
+    let sec = '';
+    for (const g of A.groups.filter(g => g.sec === S.id)) {
+      const items = Object.entries(A.muscles).filter(([, d]) => d.g === g.id).map(([id, d]) => {
+        const own = match(d);
+        const parts = d.parts ? Object.entries(d.parts).filter(([, p]) => own || match(p)) : [];
+        return { id, d, parts, show: own || parts.length > 0 };
+      }).filter(x => x.show);
+      if (!items.length) continue;
+      sec += `<h3>${esc(g.title)}</h3>`;
+      for (const { id, d, parts } of items) {
+        n++;
+        const tag = d.noModel ? '<span class="tag">только карточка</span>' : '';
+        sec += `<button class="item ${id === state.sel && !state.selPart ? 'cur' : ''}" data-id="${id}"><b>${esc(d.ru)}</b><i>${esc(d.lat)}</i>${tag}</button>`;
+        for (const [pk, p] of parts) sec += `<button class="item sub ${id === state.sel && state.selPart === pk ? 'cur' : ''}" data-id="${id}" data-part="${pk}"><b>${esc(p.ru)}</b><i>${esc(p.lat)}</i></button>`;
+      }
+    }
+    for (const g of A.boneGroups.filter(g => g.sec === S.id)) {
+      // landmarks are listed under their bone only when the search matches them
+      const items = Object.entries(A.bones).filter(([, d]) => d.g === g.id).map(([id, d]) => {
+        const pins = term ? (pinsByBone[id] || []).filter(q => q.b === id && match(q)) : [];
+        return { id, d, pins, show: match(d) || pins.length > 0 };
+      }).filter(x => x.show);
+      if (!items.length) continue;
+      sec += `<h3>${esc(g.title)}</h3>`;
+      for (const { id, d, pins } of items) {
+        n++;
+        sec += `<button class="item ${id === state.sel && !state.pin ? 'cur' : ''}" data-id="${id}"><b>${esc(d.ru)}</b><i>${esc(d.lat)}</i></button>`;
+        for (const q of pins) sec += `<button class="item sub ${state.pin === q.id ? 'cur' : ''}" data-id="${id}" data-pinjump="${q.id}"><b>${esc(q.ru)}</b>${q.lat ? `<i>${esc(q.lat)}</i>` : ''}<span class="tag">${q.t === 'ta' ? 'TA98' : 'мышца'}</span></button>`;
+      }
+    }
+    if (sec) html += `<h2>${esc(S.ru)}${S.id === state.sec ? ' <small>· открыт сейчас</small>' : ''}</h2>${sec}`;
+  }
+  $('#dlist').innerHTML = n ? html : `<p class="empty">Ничего не нашлось. Попробуй часть слова: «сгиб», «flexor», «бугор».</p>`;
+  $('#dlist').querySelectorAll('[data-id]').forEach(b => b.addEventListener('click', () => {
+    closeList();
+    goTo(b.dataset.id, b.dataset.part || null, b.dataset.pinjump || null);
+  }));
+}
+function openList() { closeBoneLegend(false); drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
+function closeList() { drawer.hidden = true; }
+$('#q').addEventListener('input', renderList);
+$('#bList').addEventListener('click', () => (drawer.hidden ? openList() : closeList()));
+$('#bCloseList').addEventListener('click', closeList);
+
+// ---------- bone colour legend ----------
+const boneLegend = $('#boneLegend');
+function renderBoneLegend() {
+  let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
+  for (const group of A.boneGroups.filter(g => g.sec === 'head' && !isSoft(g.id))) {
+    const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)]);
+    if (!bones.length) continue;
+    html += `<h3>${esc(group.title)}</h3>`;
+    const keys = [...new Set(bones.map(([id]) => headBoneKey(id)))];
+    for (const key of keys) {
+      const entries = bones.filter(([id]) => headBoneKey(id) === key), d = entries[0][1];
+      const name = d.ru.replace(/ · (?:правая|левая)$/, '');
+      html += `<div class="bone-color-item" data-bone-type="${key}"><span class="bone-color-dot" style="--bone-color:${HEAD_BONE_PALETTE[key]}" aria-hidden="true"></span><div><b>${esc(name)}</b><i>${esc(d.lat)}</i><div class="bone-color-actions">${entries.map(([id, data]) => `<button class="chip" data-color-bone="${id}" aria-label="${esc(data.ru)}" aria-pressed="${state.sel === id}">${entries.length > 1 ? id.endsWith('_right') ? 'Правая' : 'Левая' : 'Показать кость'}</button>`).join('')}</div></div></div>`;
+    }
+  }
+  $('#boneLegendList').innerHTML = html;
+}
+function closeBoneLegend(restoreFocus = true) {
+  const wasOpen = !$('#boneLegend').hidden;
+  $('#boneLegend').hidden = true;
+  $('#bBoneLegend').setAttribute('aria-expanded', 'false');
+  if (wasOpen && restoreFocus) $('#bBoneLegend').focus();
+}
+$('#bBoneLegend').addEventListener('click', () => {
+  if (!boneColorsActive()) return;
+  closeList(); hideGloss(); renderBoneLegend();
+  boneLegend.hidden = false;
+  $('#bBoneLegend').setAttribute('aria-expanded', 'true');
+  $('#bCloseBoneLegend').focus();
+});
+$('#bCloseBoneLegend').addEventListener('click', () => closeBoneLegend());
+boneLegend.addEventListener('click', event => {
+  const button = event.target.closest('[data-color-bone]');
+  if (!button) return;
+  closeBoneLegend(false);
+  goTo(button.dataset.colorBone).then(() => $('#bDeselect')?.focus());
+});
+boneLegend.addEventListener('keydown', event => {
+  if (event.key !== 'Tab') return;
+  const buttons = [...boneLegend.querySelectorAll('button:not(:disabled)')];
+  const first = buttons[0], last = buttons[buttons.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
+
+// ---------- body map + sections ----------
+const home = $('#home');
+let toastT = 0;
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 2600);
+}
+function renderHome() {
+  // ready sections first, so they are on screen without scrolling
+  $('#seclist').innerHTML = SECTIONS.slice().sort((a, b) => b.ready - a.ready).map(S => {
+    let meta;
+    if (S.ready) { const c = secCounts(S.id); meta = `${plural(c.m, 'мышца', 'мышцы', 'мышц')} · ${plural(c.b, 'кость', 'кости', 'костей')} · ${plural(c.p, 'образование', 'образования', 'образований')} костей по TA98`; }
+    else meta = 'Скоро';
+    return `<button class="seccard ${S.ready ? '' : 'soon'}" data-sec="${S.id}" ${S.ready ? '' : 'aria-disabled="true"'}>
+      <b>${esc(S.ru)}</b><span class="h">${esc(S.hint)}</span><span class="m">${meta}</span><span class="go" aria-hidden="true">${S.ready ? IC_GO : '…'}</span></button>`;
+  }).join('');
+  renderFigure();
+}
+
+// ---------- skeleton figure: labels, leader lines, hover map ----------
+const BM = window.BODYMAP;
+const REGION_OF = { h: 'head', n: 'neck', t: 'trunk', a: 'arm', l: 'leg' };
+const bmGrid = (() => {
+  const g = new Uint8Array(BM.w * BM.h);
+  const codes = { '.': 0, h: 1, n: 2, t: 3, a: 4, l: 5 };
+  let i = 0;
+  for (const m of BM.rle.matchAll(/([.hntal])(\d+)/g)) { g.fill(codes[m[1]], i, i + +m[2]); i += +m[2]; }
+  return g;
+})();
+const BM_KEYS = [null, 'head', 'neck', 'trunk', 'arm', 'leg'];
+// anchor points (fractions of the image) and which side the label sits on; the figure faces the viewer,
+// so the person's right arm and leg are on the viewer's left
+const FIG_LABELS = [
+  { sec: 'head', side: 'r', ru: 'Голова', at: [BM.anchors.head[0] + 0.06, BM.anchors.head[1] + 0.004] },
+  { sec: 'neck', side: 'r', ru: 'Шея', at: [BM.anchors.neck[0] + 0.03, BM.anchors.neck[1]] },
+  { sec: 'trunk', side: 'r', ru: 'Туловище', at: [BM.anchors.trunk[0] + 0.12, BM.anchors.trunk[1] + 0.035] },
+  { sec: 'arm', side: 'l', ru: 'Рука', at: BM.anchors.arm },
+  { sec: 'leg', side: 'l', ru: 'Таз и нога', at: BM.anchors.leg }
+];
+function renderFigure() {
+  $('#flabels').innerHTML = FIG_LABELS.map(L => {
+    const S = SEC[L.sec];
+    const meta = S.ready ? plural(secCounts(L.sec).m, 'мышца', 'мышцы', 'мышц') : 'скоро';
+    return `<button class="flabel ${S.ready ? '' : 'soon'}" data-sec="${L.sec}" data-side="${L.side}"><b>${esc(L.ru)}</b><span>${meta}</span></button>`;
+  }).join('');
+  requestAnimationFrame(layoutFigure);
+}
+function layoutFigure() {
+  const wrap = $('#figwrap'), img = $('#figimg');
+  if (!wrap || home.hidden) return;
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const iw = img.clientWidth, il = (W - iw) / 2;
+  const colW = Math.max(60, il - 10);
+  let paths = '';
+  const placed = { l: [], r: [] };
+  for (const L of FIG_LABELS) {
+    const el = $(`.flabel[data-sec="${L.sec}"]`);
+    el.style.maxWidth = colW + 'px';
+    const ax = il + L.at[0] * iw, ay = L.at[1] * H;
+    const h = el.offsetHeight, w = el.offsetWidth;
+    let y = Math.max(0, ay - h / 2);
+    // keep labels on one side from overlapping
+    for (const p of placed[L.side]) if (y < p + 4) y = p + 4;
+    placed[L.side].push(y + h);
+    const x = L.side === 'l' ? Math.max(0, il - 10 - w) : Math.min(W - w, il + iw + 10);
+    el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+    const ex = L.side === 'l' ? x + w + 2 : x - 2, ey = y + h / 2;
+    const kx = L.side === 'l' ? il + 4 : il + iw - 4;
+    paths += `<g data-sec="${L.sec}"><path d="M${ex.toFixed(1)} ${ey.toFixed(1)} H${kx.toFixed(1)} L${ax.toFixed(1)} ${ay.toFixed(1)}"/><circle cx="${ax.toFixed(1)}" cy="${ay.toFixed(1)}" r="3.2"/></g>`;
+  }
+  $('#leaders').innerHTML = paths;
+}
+new ResizeObserver(() => layoutFigure()).observe($('#figwrap'));
+function regionAt(e) {
+  const r = $('#figimg').getBoundingClientRect();
+  const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
+  if (fx < 0 || fy < 0 || fx >= 1 || fy >= 1) return null;
+  return BM_KEYS[bmGrid[Math.floor(fy * BM.h) * BM.w + Math.floor(fx * BM.w)]];
+}
+let figHot = null;
+function setFigHot(sec) {
+  if (sec === figHot) return;
+  if (figHot) hot(figHot, false);
+  figHot = sec;
+  if (sec) hot(sec, true);
+  $('#figimg').classList.toggle('pointer', !!sec);
+}
+$('#figimg').addEventListener('pointermove', (e) => setFigHot(regionAt(e)));
+$('#figimg').addEventListener('pointerleave', () => setFigHot(null));
+$('#figimg').addEventListener('click', (e) => { const sec = regionAt(e); if (sec) pickSection(sec); });
+
+function hot(sec, on) {
+  document.querySelectorAll(`[data-sec="${sec}"]`).forEach(el => el.classList.toggle('hot', on));
+  const hl = document.querySelector(`.figimg .hl[data-hl="${sec}"]`);
+  if (hl) hl.classList.toggle('on', on);
+}
+function pickSection(sec) {
+  const S = SEC[sec];
+  if (!S) return;
+  if (!S.ready) { toast(`Раздел «${S.ru}» ещё в работе.`); return; }
+  enterSection(sec);
+}
+home.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-sec]');
+  if (el && !el.closest('#figimg') && !el.closest('.leaders')) pickSection(el.dataset.sec);
+});
+['pointerover', 'focusin'].forEach(t => home.addEventListener(t, (e) => { const el = e.target.closest('.seccard, .flabel'); if (el) hot(el.dataset.sec, true); }));
+['pointerout', 'focusout'].forEach(t => home.addEventListener(t, (e) => { const el = e.target.closest('.seccard, .flabel'); if (el) hot(el.dataset.sec, false); }));
+function showHome() {
+  if (state.mode === 'quiz') setMode('study');
+  closeList(); hideGloss();
+  closeBoneLegend(false);
+  renderHome();
+  home.hidden = false;
+  home.scrollTop = 0;
+  requestAnimationFrame(layoutFigure);
+}
+async function enterSection(id, opts = {}) {
+  const S = SEC[id];
+  if (!S || !S.ready) return false;
+  closeBoneLegend(false);
+  hideGloss();
+  if (!models[id]) {
+    const veil = $('#veil');
+    $('#veilText').textContent = `Загружаю раздел «${S.ru}»…`;
+    $('#veilSub').textContent = 'Около 2 МБ, это нужно только один раз';
+    $('#meter').style.width = '0%';
+    veil.hidden = false;
+    progressSink = (v) => { $('#meter').style.width = v + '%'; };
+    try { await loadSection(id); }
+    catch (e) {
+      $('#veilText').textContent = 'Не удалось загрузить 3D-модель';
+      $('#veilSub').textContent = 'Проверь интернет и попробуй ещё раз.';
+      setTimeout(() => { veil.hidden = true; }, 2500);
+      progressSink = null;
+      return false;
+    }
+    progressSink = null;
+    veil.hidden = true;
+  }
+  if (state.sec && models[state.sec]) scene.remove(models[state.sec].group);
+  scene.add(models[id].group);
+  structs = models[id].structs;
+  const changed = state.sec !== id;
+  state.sec = id; prefs.sec = id; savePrefs();
+  if (changed) {
+    state.sel = null; state.selPart = null; state.pin = null; state.isolate = null; state.xrayBone = null; state.hidden.clear();
+    state.mode = 'study'; state.quiz.target = null; state.quiz.recent = []; state.quiz.scope = 'all';
+    $('#bQuiz').setAttribute('aria-pressed', 'false');
+  }
+  if (!state.subs[id]) state.subs[id] = 'all';
+  $('#bTrunk').hidden = id !== 'arm';
+  canvas.setAttribute('aria-label', `3D-модель: ${S.ru.toLowerCase()}`);
+  home.hidden = true;
+  renderSubs();
+  applyVisibility();
+  sheet.dataset.state = 'peek';
+  renderSheet();
+  resize();
+  if (!opts.noFrame && (changed || !opts.keepCamera)) frameSub(true);
+  // warm up the other ready section in the background
+  SECTIONS.filter(x => x.ready && x.id !== id && !models[x.id]).forEach(x => loadSection(x.id).catch(() => {}));
+  return true;
+}
+
+// ---------- controls wiring ----------
+$('#bView').addEventListener('click', () => {
+  if (!state.sec) return;
+  const order = state.sec === 'head' ? HEAD_VIEW_ORDER : VIEW_ORDER;
+  state.viewIdx = (state.viewIdx + 1) % order.length;
+  const [v, label] = order[state.viewIdx];
+  const ids = state.sel && structs.has(state.sel) && isVisible(structs.get(state.sel)) && state.isolate ? [state.sel] : shownIds();
+  frame(ids, v, false);
+  $('#viewLabel').textContent = label;
+});
+document.querySelectorAll('[data-peel]').forEach(b => b.addEventListener('click', () => {
+  state.peel = +b.dataset.peel; state.isolate = null; prefs.peel = state.peel; savePrefs();
+  if (state.sel && structs.has(state.sel) && !isVisible(structs.get(state.sel))) { state.sel = null; state.pin = null; }
+  applyVisibility();
+  if (state.mode === 'quiz') nextQuestion(); else renderSheet();
+}));
+$('#bTrunk').addEventListener('click', () => {
+  state.trunk = !state.trunk; prefs.trunk = state.trunk; savePrefs();
+  if (!state.trunk && state.sel && A.muscles[state.sel] && A.muscles[state.sel].g === 'trunk') { state.sel = null; state.pin = null; }
+  if (!state.trunk && state.quiz.scope === 'trunk') state.quiz.scope = 'all';
+  applyVisibility();
+  if (state.mode === 'quiz') nextQuestion(); else renderSheet();
+});
+$('#bRestore').addEventListener('click', () => { state.isolate = null; state.hidden.clear(); applyVisibility(); renderSheet(); });
+$('#bBoneColors').addEventListener('click', () => {
+  if (state.sec !== 'head' || state.mode === 'quiz') return;
+  state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
+  closeBoneLegend(false); applyVisibility(); renderSheet();
+});
+function openHeadDetail(mode = 'study', part = null, marker = null) {
+  const theme = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const query = new URLSearchParams({theme, mode, embed:'1'});
+  if (location.pathname.endsWith('/local.html')) query.set('entry','local');
+  if (part) query.set('part', part);
+  if (marker) query.set(mode==='study'?'code':'marker', marker);
+  $('#headDetailFrame').src = `${mode === 'study' ? 'skull-study' : 'skull-detail'}.html?${query}`;
+  $('#headDetailDialog').showModal();
+}
+function closeHeadDetail() {
+  $('#headDetailDialog').close();
+  $('#headDetailFrame').src = 'about:blank';
+  $('#bHeadDetail').focus();
+}
+$('#bHeadDetail').addEventListener('click', () => openHeadDetail());
+$('#closeHeadDetail').addEventListener('click', closeHeadDetail);
+$('#headDetailDialog').addEventListener('cancel', event => { event.preventDefault(); closeHeadDetail(); });
+addEventListener('message', event => {
+  if (event.origin !== location.origin || event.source !== $('#headDetailFrame').contentWindow) return;
+  if (event.data?.type === 'atlas-close-detail') closeHeadDetail();
+  if (event.data?.type === 'atlas-study-action' && validStudyAction(event.data.action,event.data.value)) {
+    closeHeadDetail(); applyStudyAction(event.data.action,event.data.value);
+  }
+});
+function validStudyAction(action,value) {
+  return action==='sub'&&['mimetic','mastication'].includes(value) || action==='pin'&&pinById[value]?.loc==='variant'&&pinById[value]?.id.startsWith('head_');
+}
+function applyStudyAction(action,value) {
+  if(!validStudyAction(action,value))return;
+  if(action==='sub'){state.peel=0;state.hidden.clear();state.headCut.active=false;state.sel=null;state.selPart=null;state.pin=null;setSub(value);}
+  else {const p=pinById[value];goTo(p.b,null,value);}
+}
+$('#bHeadCut').addEventListener('click', () => {
+  state.headCut.active = !state.headCut.active;
+  applyVisibility();
+  resize();frame(shownIds(),null,true);
+});
+$('#headCutAxis').addEventListener('change', e => { state.headCut.axis = e.target.value; updateHeadCut(); });
+$('#headCutPosition').addEventListener('input', e => { state.headCut.value = +e.target.value; updateHeadCut(); });
+$('#headCutFlip').addEventListener('click', () => { state.headCut.flip = !state.headCut.flip; updateHeadCut(); });
+$('#bQuiz').addEventListener('click', () => setMode(state.mode === 'quiz' ? 'study' : 'quiz'));
+$('#bHome').addEventListener('click', showHome);
+$('#bBrand').addEventListener('click', showHome);
+$('#bAbout').addEventListener('click', () => { $('#about').hidden = false; $('#bCloseAbout').focus(); });
+$('#bCloseAbout').addEventListener('click', () => { $('#about').hidden = true; });
+$('#about').addEventListener('click', e => { if (e.target.id === 'about') $('#about').hidden = true; });
+addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if ($('#headDetailDialog').open) return;
+  if (!boneLegend.hidden) closeBoneLegend();
+  else if (!gloss.hidden) hideGloss();
+  else if (!$('#about').hidden) $('#about').hidden = true;
+  else if (!home.hidden) { if (state.sec) home.hidden = true; }
+  else if (!drawer.hidden) closeList();
+  else if (state.pin) activatePin(null);
+  else if (state.mode === 'quiz') setMode('study');
+  else if (state.sel) select(null);
+});
+
+// ---------- start ----------
+renderHome();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutFigure);
+resize();
+requestAnimationFrame(loop);
+const deep = location.hash.replace('#', '');
+if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
+else {
+  // fetch the last used section quietly while the body map is on screen
+  const warm = SEC[prefs.sec] && SEC[prefs.sec].ready ? prefs.sec : 'arm';
+  loadSection(warm).catch(() => {});
+}
+window.__atlas = { enterSection, setSub, select, goTo, activatePin, showHome, state };
+window.__ready = true;
+</script>
+</body></html>
