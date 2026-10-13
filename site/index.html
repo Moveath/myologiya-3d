@@ -1370,6 +1370,7 @@ function renderSheet() {
       <p>${glossify(esc(ap.x), used)}</p>
       ${ap.modelNote ? `<div class="note">${esc(ap.modelNote)}</div>` : ''}
       ${geometryReviewLink(ap)}${detailLinks(ap)}
+      ${state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="${esc(ap.b+':'+ap.c)}">Учебная схема и объяснение ограничений ↗</button></div>`:''}
       ${sourceLinks(ap.refs)}
       ${muscleChips(ap, isMuscle ? id : null)}
       ${isMuscle ? `<div class="linkrow"><button class="chip" data-gobone="${ap.b}">Открыть кость: ${esc(boneName.toLowerCase())}</button></div>` : ''}
@@ -1425,6 +1426,7 @@ function renderSheet() {
       <dl class="facts">${factHtml}</dl>
       ${noModel ? '<div class="note">Для этой структуры нет отдельной 3D-модели в используемом наборе BodyParts3D.</div>' : ''}
       ${p && p.noModel ? '<div class="note">Эта часть описана в карточке, но не выделена отдельной геометрией в исходной модели.</div>' : ''}
+      ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебная схема и ограничения модели ↗</button>`:''}</div>`:''}
       ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
       ${pinSect}
       ${sourceLinks(d.refs)}
@@ -1994,7 +1996,8 @@ function openHeadDetail(mode = 'study', part = null, marker = null) {
   if (part) query.set('part', part);
   if (marker) query.set(['study','geometry'].includes(mode)?'code':'marker', marker);
   if(mode==='geometry'){query.set('from','geometry');if(part)query.set('bone',part);}
-  $('#headDetailFrame').src = `${['study','geometry'].includes(mode) ? 'skull-study' : 'skull-detail'}.html?${query}`;
+  if(mode==='education'&&part)query.set('id',part);
+  $('#headDetailFrame').src = `${mode==='education'?'skull-education':['study','geometry'].includes(mode) ? 'skull-study' : 'skull-detail'}.html?${query}`;
   $('#headDetailDialog').showModal();
 }
 function closeHeadDetail() {

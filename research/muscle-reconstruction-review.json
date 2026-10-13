@@ -1,0 +1,2086 @@
+{
+  "date": "2026-10-13",
+  "status": "literature_and_mesh_checks_complete",
+  "counts": {
+    "whole": 9,
+    "parts": 10,
+    "educational_reconstruction": 16,
+    "explanation": 3
+  },
+  "authorization": "User authorized source-based labelled reconstructions and explicit explanations where reconstruction is unsupported.",
+  "boundaries": "Independent dimensionless diagrams only; no donor-model overlay, no measured volumes, no anatomical expert certification.",
+  "source_meshes_inspected": "Existing manifest_head identifies absent objects. No source mesh contains the missing structures as separately verified objects; no bounding-box location was used.",
+  "geometry_checks": {
+    "nodes": 80,
+    "vertices": 89232,
+    "triangles": 177504,
+    "finite": true,
+    "watertight": true,
+    "winding_consistent": true,
+    "nondegenerate": true,
+    "sha256": "e2e34a9f932f6213d926a8aea6d8de89e053d87bb3e3d24ed7112b879974dc24"
+  },
+  "entries": [
+    {
+      "id": "auricularis_anterior_right",
+      "muscle": "auricularis_anterior_right",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи височной фасциальной области с передней областью завитка ушной раковины.",
+      "demonstrates": [
+        "Переднее положение мышцы относительно раковины.",
+        "Общее направление от височной фасциальной области к раковине."
+      ],
+      "unknown": [
+        "Точная ширина, толщина, протяжённость начала и индивидуальные ответвления в исходном наборе отсутствуют."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "auricularis_anterior_left",
+      "muscle": "auricularis_anterior_left",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи височной фасциальной области с передней областью завитка ушной раковины.",
+      "demonstrates": [
+        "Переднее положение мышцы относительно раковины.",
+        "Общее направление от височной фасциальной области к раковине."
+      ],
+      "unknown": [
+        "Точная ширина, толщина, протяжённость начала и индивидуальные ответвления в исходном наборе отсутствуют."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "auricularis_superior_right",
+      "muscle": "auricularis_superior_right",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи сухожильного шлема с верхней областью ушной раковины.",
+      "demonstrates": [
+        "Верхнее положение относительно раковины.",
+        "Схождение направлений к верхней области раковины."
+      ],
+      "unknown": [
+        "Площадь апоневротического начала и индивидуальное распределение пучков не измерены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "auricularis_superior_left",
+      "muscle": "auricularis_superior_left",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи сухожильного шлема с верхней областью ушной раковины.",
+      "demonstrates": [
+        "Верхнее положение относительно раковины.",
+        "Схождение направлений к верхней области раковины."
+      ],
+      "unknown": [
+        "Площадь апоневротического начала и индивидуальное распределение пучков не измерены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "auricularis_posterior_right",
+      "muscle": "auricularis_posterior_right",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи сосцевидной области с задней поверхностью ушной раковины.",
+      "demonstrates": [
+        "Заднее положение мышцы.",
+        "Связь с задней поверхностью раковины в области её выпуклости."
+      ],
+      "unknown": [
+        "Число брюшек и их точные границы изменчивы; на схеме число лент не обозначает число брюшек."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "auricularis_posterior_left",
+      "muscle": "auricularis_posterior_left",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема связи сосцевидной области с задней поверхностью ушной раковины.",
+      "demonstrates": [
+        "Заднее положение мышцы.",
+        "Связь с задней поверхностью раковины в области её выпуклости."
+      ],
+      "unknown": [
+        "Число брюшек и их точные границы изменчивы; на схеме число лент не обозначает число брюшек."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "depressor_supercilii_right",
+      "muscle": "depressor_supercilii_right",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Условная восходящая связь верхнечелюстного начала с кожей медиальной части брови.",
+      "demonstrates": [
+        "Положение у медиального участка брови.",
+        "Общее направление между костным началом и кожным прикреплением."
+      ],
+      "unknown": [
+        "Границы и число головок не восстановлены; возможные соединения с соседними мышцами не показаны."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "В таблице DEGUM началом названа лобная кость; в исследованиях Cook и Hur — лобный отросток верхней челюсти. Схема следует двум исследованиям, расхождение сохранено."
+      ],
+      "refs": [
+        {
+          "title": "Cook, Lucarelli, Lemke, 2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11766019/",
+          "locator": "Abstract, Results: frontal process of maxilla; dermal insertion above medial canthal tendon. Вариабельность числа головок.",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "title": "Hur и соавт., 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац с DS; Results; Fig. 1: верхнечелюстное начало, медиальная часть брови и неодинаковые связи с соседними мышцами.",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "depressor_supercilii_left",
+      "muscle": "depressor_supercilii_left",
+      "part": null,
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Условная восходящая связь верхнечелюстного начала с кожей медиальной части брови.",
+      "demonstrates": [
+        "Положение у медиального участка брови.",
+        "Общее направление между костным началом и кожным прикреплением."
+      ],
+      "unknown": [
+        "Границы и число головок не восстановлены; возможные соединения с соседними мышцами не показаны."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "В таблице DEGUM началом названа лобная кость; в исследованиях Cook и Hur — лобный отросток верхней челюсти. Схема следует двум исследованиям, расхождение сохранено."
+      ],
+      "refs": [
+        {
+          "title": "Cook, Lucarelli, Lemke, 2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11766019/",
+          "locator": "Abstract, Results: frontal process of maxilla; dermal insertion above medial canthal tendon. Вариабельность числа головок.",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "title": "Hur и соавт., 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац с DS; Results; Fig. 1: верхнечелюстное начало, медиальная часть брови и неодинаковые связи с соседними мышцами.",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "transversus_menti",
+      "muscle": "transversus_menti",
+      "part": null,
+      "status": "explanation",
+      "representation": "explanation",
+      "summary": "Непостоянный поперечный пучок описан в литературе; отдельной подтверждённой формы в исходных моделях нет.",
+      "demonstrates": [
+        "Карточка сохраняет сведения и разногласия источников.",
+        "Реконструкция постоянной мышцы могла бы создать ошибочное представление о норме."
+      ],
+      "unknown": [
+        "Границы пучка и его выраженность у данного человека неизвестны.",
+        "Отдельная функция не подтверждена двумя независимыми исследованиями.",
+        "Источники расходятся в конкретных питающих ветвях; общий сосуд не выбран произвольно."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "refs": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Depressor anguli oris / Origin and insertion: абзац о пересечении средней линии и transversus menti",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Discussion: предполагаемое действие, с отсылкой к Weaver (1978)",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Action",
+          "independentSource": "imaios-javaid-definition"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Blood supply",
+          "independentSource": "imaios-javaid-definition"
+        }
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oculi_right__deep",
+      "muscle": "orbicularis_oculi_right",
+      "part": "deep",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема глубокого хода от заднего слёзного гребня к медиальной области век.",
+      "demonstrates": [
+        "Медиальное глубокое положение.",
+        "Направление от гребня латерально к тканям век."
+      ],
+      "unknown": [
+        "Точное окружение слёзных канальцев, границы пучков и взаимоотношения всех связочных слоёв не восстановлены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Верхняя и нижняя ленты обозначают направления к векам; это не сегментация отдельных брюшек и не полная модель слёзного насоса."
+      ],
+      "refs": [
+        {
+          "title": "Kakizaki и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20719297/",
+          "locator": "Abstract, Results: начало мышцы Horner от заднего слёзного гребня и передней области медиальной стенки глазницы.",
+          "independentSource": "kakizaki-2010"
+        },
+        {
+          "title": "Location and tension of the medial palpebral ligament, 2013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24220420/",
+          "locator": "Abstract: от заднего слёзного гребня латерально к хрящу века, глубже поверхностного слоя медиальной связки.",
+          "independentSource": "mpl-location-2013"
+        },
+        {
+          "title": "DEGUM: слёзная часть круговой мышцы глаза",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 4: M. orbicularis oculi / Pars lacrimalis, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oculi_right__ciliary",
+      "muscle": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "status": "educational_reconstruction",
+      "representation": "educational_region",
+      "summary": "Условно выделена краевая область век, соответствующая ресничному пучку.",
+      "demonstrates": [
+        "Положение пучка у края века.",
+        "Региональная принадлежность к круговой мышце глаза."
+      ],
+      "unknown": [
+        "Не показаны отдельные волокна вокруг железистых протоков, ресничных фолликулов и микроскопические границы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Цветная лента — обозначение области, а не сплошной изолированный цилиндр мышцы. Название fasciculus ciliaris относится к TA98; в исследованиях используется имя Riolan."
+      ],
+      "refs": [
+        {
+          "title": "Lipham, Tawfik, Dutton, 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11897949/",
+          "locator": "Abstract, Purpose / Results / Conclusions: histologic relations of Riolan muscle in the eyelid margin.",
+          "independentSource": "lipham-tawfik-dutton-2002"
+        },
+        {
+          "title": "Wulc и соавт., 1987: Where is the gray line?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3632419/",
+          "locator": "Abstract: гистологическое соответствие серой линии поверхностной части orbicularis / Riolan.",
+          "independentSource": "wulc-1987"
+        },
+        {
+          "title": "Knop и соавт., 2011: анатомия мейбомиевых желёз",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21450915/",
+          "locator": "Fig. 5–6, гистологические срезы свободного края века: краевые волокна Riolan.",
+          "independentSource": "knop-workshop-2011"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "nasalis_right__transverse",
+      "muscle": "nasalis_right",
+      "part": "transverse",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Направление поперечной части от верхней челюсти к апоневрозу над спинкой носа.",
+      "demonstrates": [
+        "Восходящее и медиальное направление от боковой области основания носа.",
+        "Продолжение к апоневрозу спинки носа."
+      ],
+      "unknown": [
+        "Границы апоневроза и соединения с соседними мышцами индивидуальны и здесь не сегментированы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars transversa, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Anderson, Henneberg, Norris, 2008: Anatomy of the nasal profile",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526105/",
+          "locator": "Results, раздел мышц; Fig. 3b и Fig. 4: начало на верхней челюсти, поперечное продолжение над носом, индивидуальная изменчивость.",
+          "independentSource": "anderson-henneberg-norris-2008"
+        },
+        {
+          "title": "Hur и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20512646/",
+          "locator": "Abstract, Results: transverse nasalis от maxilla восходит; описаны варианты двух брюшек и соединений.",
+          "independentSource": "hur-nasalis-2010"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "nasalis_right__alar",
+      "muscle": "nasalis_right",
+      "part": "alar",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Направление крыльной части от верхнечелюстной области к тканям крыла носа.",
+      "demonstrates": [
+        "Положение у основания крыла носа.",
+        "Связь верхнечелюстной области с крылом."
+      ],
+      "unknown": [
+        "Дополнительные волокна к соседним мышцам и коже изменчивы; они не добавлены как обязательная норма."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars alaris, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Park, Hur, 2024: крыльная часть носовой мышцы",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39136748/",
+          "locator": "Abstract, Results / Conclusion: верхнечелюстное начало; область крыла; дополнительные волокна к соседним мышцам присутствуют не во всех препаратах.",
+          "independentSource": "park-hur-2024"
+        },
+        {
+          "title": "Sonoanatomy of the Nasal Ala, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152086/",
+          "locator": "Fig. 2B caption и Fig. 4: maxilla — alar facial crease / deeper external ala skin. Fig. 2 переработана по Hur и не считается третьим независимым наблюдением границ.",
+          "independentSource": "nasal-ala-ultrasound-2025"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oculi_left__deep",
+      "muscle": "orbicularis_oculi_left",
+      "part": "deep",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Схема глубокого хода от заднего слёзного гребня к медиальной области век.",
+      "demonstrates": [
+        "Медиальное глубокое положение.",
+        "Направление от гребня латерально к тканям век."
+      ],
+      "unknown": [
+        "Точное окружение слёзных канальцев, границы пучков и взаимоотношения всех связочных слоёв не восстановлены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Верхняя и нижняя ленты обозначают направления к векам; это не сегментация отдельных брюшек и не полная модель слёзного насоса."
+      ],
+      "refs": [
+        {
+          "title": "Kakizaki и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20719297/",
+          "locator": "Abstract, Results: начало мышцы Horner от заднего слёзного гребня и передней области медиальной стенки глазницы.",
+          "independentSource": "kakizaki-2010"
+        },
+        {
+          "title": "Location and tension of the medial palpebral ligament, 2013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24220420/",
+          "locator": "Abstract: от заднего слёзного гребня латерально к хрящу века, глубже поверхностного слоя медиальной связки.",
+          "independentSource": "mpl-location-2013"
+        },
+        {
+          "title": "DEGUM: слёзная часть круговой мышцы глаза",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 4: M. orbicularis oculi / Pars lacrimalis, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oculi_left__ciliary",
+      "muscle": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "status": "educational_reconstruction",
+      "representation": "educational_region",
+      "summary": "Условно выделена краевая область век, соответствующая ресничному пучку.",
+      "demonstrates": [
+        "Положение пучка у края века.",
+        "Региональная принадлежность к круговой мышце глаза."
+      ],
+      "unknown": [
+        "Не показаны отдельные волокна вокруг железистых протоков, ресничных фолликулов и микроскопические границы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Цветная лента — обозначение области, а не сплошной изолированный цилиндр мышцы. Название fasciculus ciliaris относится к TA98; в исследованиях используется имя Riolan."
+      ],
+      "refs": [
+        {
+          "title": "Lipham, Tawfik, Dutton, 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11897949/",
+          "locator": "Abstract, Purpose / Results / Conclusions: histologic relations of Riolan muscle in the eyelid margin.",
+          "independentSource": "lipham-tawfik-dutton-2002"
+        },
+        {
+          "title": "Wulc и соавт., 1987: Where is the gray line?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3632419/",
+          "locator": "Abstract: гистологическое соответствие серой линии поверхностной части orbicularis / Riolan.",
+          "independentSource": "wulc-1987"
+        },
+        {
+          "title": "Knop и соавт., 2011: анатомия мейбомиевых желёз",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21450915/",
+          "locator": "Fig. 5–6, гистологические срезы свободного края века: краевые волокна Riolan.",
+          "independentSource": "knop-workshop-2011"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "nasalis_left__transverse",
+      "muscle": "nasalis_left",
+      "part": "transverse",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Направление поперечной части от верхней челюсти к апоневрозу над спинкой носа.",
+      "demonstrates": [
+        "Восходящее и медиальное направление от боковой области основания носа.",
+        "Продолжение к апоневрозу спинки носа."
+      ],
+      "unknown": [
+        "Границы апоневроза и соединения с соседними мышцами индивидуальны и здесь не сегментированы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars transversa, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Anderson, Henneberg, Norris, 2008: Anatomy of the nasal profile",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526105/",
+          "locator": "Results, раздел мышц; Fig. 3b и Fig. 4: начало на верхней челюсти, поперечное продолжение над носом, индивидуальная изменчивость.",
+          "independentSource": "anderson-henneberg-norris-2008"
+        },
+        {
+          "title": "Hur и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20512646/",
+          "locator": "Abstract, Results: transverse nasalis от maxilla восходит; описаны варианты двух брюшек и соединений.",
+          "independentSource": "hur-nasalis-2010"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "nasalis_left__alar",
+      "muscle": "nasalis_left",
+      "part": "alar",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "summary": "Направление крыльной части от верхнечелюстной области к тканям крыла носа.",
+      "demonstrates": [
+        "Положение у основания крыла носа.",
+        "Связь верхнечелюстной области с крылом."
+      ],
+      "unknown": [
+        "Дополнительные волокна к соседним мышцам и коже изменчивы; они не добавлены как обязательная норма."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars alaris, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Park, Hur, 2024: крыльная часть носовой мышцы",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39136748/",
+          "locator": "Abstract, Results / Conclusion: верхнечелюстное начало; область крыла; дополнительные волокна к соседним мышцам присутствуют не во всех препаратах.",
+          "independentSource": "park-hur-2024"
+        },
+        {
+          "title": "Sonoanatomy of the Nasal Ala, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152086/",
+          "locator": "Fig. 2B caption и Fig. 4: maxilla — alar facial crease / deeper external ala skin. Fig. 2 переработана по Hur и не считается третьим независимым наблюдением границ.",
+          "independentSource": "nasal-ala-ultrasound-2025"
+        }
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oris__marginal",
+      "muscle": "orbicularis_oris",
+      "part": "marginal",
+      "status": "explanation",
+      "representation": "explanation",
+      "summary": "Название части сохранено по TA98. Однозначная пространственная граница этой части на исходной сетке не установлена.",
+      "demonstrates": [
+        "Вся круговая мышца рта доступна в основном атласе.",
+        "Описание целой мышцы не выдано за отдельные доказанные прикрепления этой части."
+      ],
+      "unknown": [
+        "В исследованиях применяются разные пары названий: marginalis / peripheralis, superficial / deep; они не приравнены автоматически к TA98 marginalis / labialis.",
+        "Нет размеченного исходного образца, связывающего границы именно этой части с принятым термином TA98."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "refs": [
+        {
+          "title": "TA98: части круговой мышцы рта",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1673%20A2F%20EN.htm",
+          "locator": "A04.1.03.024 Pars marginalis; A04.1.03.025 Pars labialis — номенклатура, не геометрия.",
+          "independentSource": "ifaa-ta98"
+        },
+        {
+          "title": "DEGUM: круговая мышца рта",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. orbicularis oris, перечислены pars marginalis и pars labialis; пространственная граница не задана.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Rogers и соавт., 2009: микроанатомия orbicularis oris",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631558/",
+          "locator": "Results / Discussion: исследование различает marginalis и peripheralis; эти слова нельзя автоматически приравнять к паре TA98 marginalis / labialis.",
+          "independentSource": "rogers-2009"
+        },
+        {
+          "title": "Anatomy, Head and Neck, Orbicularis Oris Muscle",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545169/",
+          "locator": "Muscles: авторы перечисляют несколько разных систем названий слоёв; точной карты к паре TA98 здесь нет.",
+          "independentSource": "statpearls-oris"
+        }
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    },
+    {
+      "id": "orbicularis_oris__labial",
+      "muscle": "orbicularis_oris",
+      "part": "labial",
+      "status": "explanation",
+      "representation": "explanation",
+      "summary": "Название части сохранено по TA98. Однозначная пространственная граница этой части на исходной сетке не установлена.",
+      "demonstrates": [
+        "Вся круговая мышца рта доступна в основном атласе.",
+        "Описание целой мышцы не выдано за отдельные доказанные прикрепления этой части."
+      ],
+      "unknown": [
+        "В исследованиях применяются разные пары названий: marginalis / peripheralis, superficial / deep; они не приравнены автоматически к TA98 marginalis / labialis.",
+        "Нет размеченного исходного образца, связывающего границы именно этой части с принятым термином TA98."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "refs": [
+        {
+          "title": "TA98: части круговой мышцы рта",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1673%20A2F%20EN.htm",
+          "locator": "A04.1.03.024 Pars marginalis; A04.1.03.025 Pars labialis — номенклатура, не геометрия.",
+          "independentSource": "ifaa-ta98"
+        },
+        {
+          "title": "DEGUM: круговая мышца рта",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. orbicularis oris, перечислены pars marginalis и pars labialis; пространственная граница не задана.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Rogers и соавт., 2009: микроанатомия orbicularis oris",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631558/",
+          "locator": "Results / Discussion: исследование различает marginalis и peripheralis; эти слова нельзя автоматически приравнять к паре TA98 marginalis / labialis.",
+          "independentSource": "rogers-2009"
+        },
+        {
+          "title": "Anatomy, Head and Neck, Orbicularis Oris Muscle",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545169/",
+          "locator": "Muscles: авторы перечисляют несколько разных систем названий слоёв; точной карты к паре TA98 здесь нет.",
+          "independentSource": "statpearls-oris"
+        }
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "reviewed_schematic_rendering",
+    "views": 32,
+    "entries": 16,
+    "method": "All 16 independent entries rendered from saved and alternate camera. Isolated node sets, nonzero triangles, no page errors. Screenshots are developer artifacts; not source anatomy or external validation.",
+    "cases": [
+      {
+        "id": "auricularis_anterior_right",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_anterior_right.png",
+        "sha256": "ccc38aeb748e6da814819ab53432a43d42d807aed4d8aed1b6d514a7a5647bcf",
+        "visible": [
+          "auricularis_anterior_right__muscle",
+          "auricularis_anterior_right__auricle_outline",
+          "auricularis_anterior_right__auricle_context",
+          "auricularis_anterior_right__origin",
+          "auricularis_anterior_right__insertion"
+        ],
+        "triangles": 13392
+      },
+      {
+        "id": "auricularis_anterior_right",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_anterior_right-alternate.png",
+        "sha256": "ca36b5989e6c7038811c646eb7d249c7f586d329a42805a1c0d5b3a8b22b0932",
+        "visible": [
+          "auricularis_anterior_right__muscle",
+          "auricularis_anterior_right__auricle_outline",
+          "auricularis_anterior_right__auricle_context",
+          "auricularis_anterior_right__origin",
+          "auricularis_anterior_right__insertion"
+        ],
+        "triangles": 13392
+      },
+      {
+        "id": "auricularis_anterior_left",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_anterior_left.png",
+        "sha256": "80d95432b90718f3411a11613a54277dc87bf2ebdd4fd8c34c446b0bcfa49fc4",
+        "visible": [
+          "auricularis_anterior_left__muscle",
+          "auricularis_anterior_left__auricle_outline",
+          "auricularis_anterior_left__auricle_context",
+          "auricularis_anterior_left__origin",
+          "auricularis_anterior_left__insertion"
+        ],
+        "triangles": 13392
+      },
+      {
+        "id": "auricularis_anterior_left",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_anterior_left-alternate.png",
+        "sha256": "ad1d7e9c921157742131e3e57bb5795ca716ac7df0aa87be7e0bca2dd3f584dc",
+        "visible": [
+          "auricularis_anterior_left__muscle",
+          "auricularis_anterior_left__auricle_outline",
+          "auricularis_anterior_left__auricle_context",
+          "auricularis_anterior_left__origin",
+          "auricularis_anterior_left__insertion"
+        ],
+        "triangles": 13392
+      },
+      {
+        "id": "auricularis_superior_right",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_superior_right.png",
+        "sha256": "229e414f86bdf42b28b24239a1c724abd9ff32c66cdfff02642146f3a3e7df63",
+        "visible": [
+          "auricularis_superior_right__muscle",
+          "auricularis_superior_right__auricle_outline",
+          "auricularis_superior_right__auricle_context",
+          "auricularis_superior_right__origin",
+          "auricularis_superior_right__insertion"
+        ],
+        "triangles": 16464
+      },
+      {
+        "id": "auricularis_superior_right",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_superior_right-alternate.png",
+        "sha256": "29d6ae58791d1a6c30dfbfd8f807d25c483877e7b92221cc2451b2d2dbdf6ee1",
+        "visible": [
+          "auricularis_superior_right__muscle",
+          "auricularis_superior_right__auricle_outline",
+          "auricularis_superior_right__auricle_context",
+          "auricularis_superior_right__origin",
+          "auricularis_superior_right__insertion"
+        ],
+        "triangles": 16464
+      },
+      {
+        "id": "auricularis_superior_left",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_superior_left.png",
+        "sha256": "6f2f6437ff8417e17f1709913cc8d4c8214ab5a5423a31c5eddcdb85d6f033e3",
+        "visible": [
+          "auricularis_superior_left__muscle",
+          "auricularis_superior_left__auricle_outline",
+          "auricularis_superior_left__auricle_context",
+          "auricularis_superior_left__origin",
+          "auricularis_superior_left__insertion"
+        ],
+        "triangles": 16464
+      },
+      {
+        "id": "auricularis_superior_left",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_superior_left-alternate.png",
+        "sha256": "e6da7fc53cefe71e81a65e62525de4d853fa03e683aed58d7275cff6a519c880",
+        "visible": [
+          "auricularis_superior_left__muscle",
+          "auricularis_superior_left__auricle_outline",
+          "auricularis_superior_left__auricle_context",
+          "auricularis_superior_left__origin",
+          "auricularis_superior_left__insertion"
+        ],
+        "triangles": 16464
+      },
+      {
+        "id": "auricularis_posterior_right",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_posterior_right.png",
+        "sha256": "799b28f7d49725e8dd2da0ef848c0b2f4219c2d8474b608a9ee48a2676ec5060",
+        "visible": [
+          "auricularis_posterior_right__muscle",
+          "auricularis_posterior_right__auricle_outline",
+          "auricularis_posterior_right__auricle_context",
+          "auricularis_posterior_right__origin",
+          "auricularis_posterior_right__insertion"
+        ],
+        "triangles": 8784
+      },
+      {
+        "id": "auricularis_posterior_right",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_posterior_right-alternate.png",
+        "sha256": "603b6d7f32a19000e49ca8343f8b0059761f48aefe735d15485b080146918cea",
+        "visible": [
+          "auricularis_posterior_right__muscle",
+          "auricularis_posterior_right__auricle_outline",
+          "auricularis_posterior_right__auricle_context",
+          "auricularis_posterior_right__origin",
+          "auricularis_posterior_right__insertion"
+        ],
+        "triangles": 8784
+      },
+      {
+        "id": "auricularis_posterior_left",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_posterior_left.png",
+        "sha256": "006793f7291ac58639d3eeb5d55dc9d04f97424564ef60457e45c24993c386d6",
+        "visible": [
+          "auricularis_posterior_left__muscle",
+          "auricularis_posterior_left__auricle_outline",
+          "auricularis_posterior_left__auricle_context",
+          "auricularis_posterior_left__origin",
+          "auricularis_posterior_left__insertion"
+        ],
+        "triangles": 8784
+      },
+      {
+        "id": "auricularis_posterior_left",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/auricularis_posterior_left-alternate.png",
+        "sha256": "5f0fdbe13dd4ed50a7b2f79e45502ea0884f1020d670ce3be5ac855b9c52c566",
+        "visible": [
+          "auricularis_posterior_left__muscle",
+          "auricularis_posterior_left__auricle_outline",
+          "auricularis_posterior_left__auricle_context",
+          "auricularis_posterior_left__origin",
+          "auricularis_posterior_left__insertion"
+        ],
+        "triangles": 8784
+      },
+      {
+        "id": "depressor_supercilii_right",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/depressor_supercilii_right.png",
+        "sha256": "6c9058ee3e126221bae9b43a44ebcc8eba91c09c2b5c72e6df7cafab29c06e5c",
+        "visible": [
+          "depressor_supercilii_right__muscle",
+          "depressor_supercilii_right__lid_1",
+          "depressor_supercilii_right__lid_-1",
+          "depressor_supercilii_right__brow",
+          "depressor_supercilii_right__origin",
+          "depressor_supercilii_right__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "depressor_supercilii_right",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/depressor_supercilii_right-alternate.png",
+        "sha256": "92f06c3c840c39f02040ec34b5e0eafa49c0092dd91c4d07a5ec23e447eee3bb",
+        "visible": [
+          "depressor_supercilii_right__muscle",
+          "depressor_supercilii_right__lid_1",
+          "depressor_supercilii_right__lid_-1",
+          "depressor_supercilii_right__brow",
+          "depressor_supercilii_right__origin",
+          "depressor_supercilii_right__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "depressor_supercilii_left",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/depressor_supercilii_left.png",
+        "sha256": "5f3a6fbcb3da9566843ecc73b5a3931b4d88c184cdce59aade50feb638328663",
+        "visible": [
+          "depressor_supercilii_left__muscle",
+          "depressor_supercilii_left__lid_1",
+          "depressor_supercilii_left__lid_-1",
+          "depressor_supercilii_left__brow",
+          "depressor_supercilii_left__origin",
+          "depressor_supercilii_left__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "depressor_supercilii_left",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/depressor_supercilii_left-alternate.png",
+        "sha256": "4ae575a52515d597ac4d9bb04e6c768bb2153162cac35ec990470a7c88c8baad",
+        "visible": [
+          "depressor_supercilii_left__muscle",
+          "depressor_supercilii_left__lid_1",
+          "depressor_supercilii_left__lid_-1",
+          "depressor_supercilii_left__brow",
+          "depressor_supercilii_left__origin",
+          "depressor_supercilii_left__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "orbicularis_oculi_right__deep",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_right__deep.png",
+        "sha256": "9f5801f0c1ac33396683fb7c1888cef5881ab40ae309d9a8419b1abd5e1c7549",
+        "visible": [
+          "orbicularis_oculi_right__deep__muscle",
+          "orbicularis_oculi_right__deep__lid_1",
+          "orbicularis_oculi_right__deep__lid_-1",
+          "orbicularis_oculi_right__deep__posterior_crest"
+        ],
+        "triangles": 11232
+      },
+      {
+        "id": "orbicularis_oculi_right__deep",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_right__deep-alternate.png",
+        "sha256": "f27bee362b665ef4a0e82fdced3623a67140f31eadf17e1e09bce34a65b7d1db",
+        "visible": [
+          "orbicularis_oculi_right__deep__muscle",
+          "orbicularis_oculi_right__deep__lid_1",
+          "orbicularis_oculi_right__deep__lid_-1",
+          "orbicularis_oculi_right__deep__posterior_crest"
+        ],
+        "triangles": 11232
+      },
+      {
+        "id": "orbicularis_oculi_right__ciliary",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_right__ciliary.png",
+        "sha256": "38f4dce04dc4b2de348b52358e924b4f9bd4566234d9ba1c84e772ad0fbe3b0c",
+        "visible": [
+          "orbicularis_oculi_right__ciliary__margin_region",
+          "orbicularis_oculi_right__ciliary__lid_1",
+          "orbicularis_oculi_right__ciliary__lid_-1"
+        ],
+        "triangles": 3936
+      },
+      {
+        "id": "orbicularis_oculi_right__ciliary",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_right__ciliary-alternate.png",
+        "sha256": "683da3a10aadb45fd1408d29364cc088978e56e060a5dd0fa4e8b2b1bf7c3292",
+        "visible": [
+          "orbicularis_oculi_right__ciliary__margin_region",
+          "orbicularis_oculi_right__ciliary__lid_1",
+          "orbicularis_oculi_right__ciliary__lid_-1"
+        ],
+        "triangles": 3936
+      },
+      {
+        "id": "nasalis_right__transverse",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_right__transverse.png",
+        "sha256": "34e643dbb8d9ee03819519bfaab31ace2d176b6295b3f50fbe58425ec3d6ed38",
+        "visible": [
+          "nasalis_right__transverse__muscle",
+          "nasalis_right__transverse__dorsum_context",
+          "nasalis_right__transverse__ala_context_-1",
+          "nasalis_right__transverse__ala_context_1",
+          "nasalis_right__transverse__origin",
+          "nasalis_right__transverse__insertion"
+        ],
+        "triangles": 13696
+      },
+      {
+        "id": "nasalis_right__transverse",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_right__transverse-alternate.png",
+        "sha256": "82f7c5aa9edc64e4baa9c2fb9c42db4eb85d6ebc2f7a89253253f46db9843f07",
+        "visible": [
+          "nasalis_right__transverse__muscle",
+          "nasalis_right__transverse__dorsum_context",
+          "nasalis_right__transverse__ala_context_-1",
+          "nasalis_right__transverse__ala_context_1",
+          "nasalis_right__transverse__origin",
+          "nasalis_right__transverse__insertion"
+        ],
+        "triangles": 13696
+      },
+      {
+        "id": "nasalis_right__alar",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_right__alar.png",
+        "sha256": "125f29d99922be2d0d849ab8b5bb0c1d091549707ada688547e0d056053e5c08",
+        "visible": [
+          "nasalis_right__alar__muscle",
+          "nasalis_right__alar__dorsum_context",
+          "nasalis_right__alar__ala_context_-1",
+          "nasalis_right__alar__ala_context_1",
+          "nasalis_right__alar__origin",
+          "nasalis_right__alar__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "nasalis_right__alar",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_right__alar-alternate.png",
+        "sha256": "34ebb5d95ba3f9658a79722b6e518e769b07d2401f67a490ed03372d41b52c52",
+        "visible": [
+          "nasalis_right__alar__muscle",
+          "nasalis_right__alar__dorsum_context",
+          "nasalis_right__alar__ala_context_-1",
+          "nasalis_right__alar__ala_context_1",
+          "nasalis_right__alar__origin",
+          "nasalis_right__alar__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "orbicularis_oculi_left__deep",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_left__deep.png",
+        "sha256": "8a3fb4aed378e287214a9ffb4b2bed3507d69a9ac552db7f0fa70ce2b0ad1afb",
+        "visible": [
+          "orbicularis_oculi_left__deep__muscle",
+          "orbicularis_oculi_left__deep__lid_1",
+          "orbicularis_oculi_left__deep__lid_-1",
+          "orbicularis_oculi_left__deep__posterior_crest"
+        ],
+        "triangles": 11232
+      },
+      {
+        "id": "orbicularis_oculi_left__deep",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_left__deep-alternate.png",
+        "sha256": "c37e4052a15170b53cd8ce051a3f92f15f93e75906e434867668f55d7a4765c8",
+        "visible": [
+          "orbicularis_oculi_left__deep__muscle",
+          "orbicularis_oculi_left__deep__lid_1",
+          "orbicularis_oculi_left__deep__lid_-1",
+          "orbicularis_oculi_left__deep__posterior_crest"
+        ],
+        "triangles": 11232
+      },
+      {
+        "id": "orbicularis_oculi_left__ciliary",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_left__ciliary.png",
+        "sha256": "3ade3e091b4cb34192a45de4df99379f8e8201ccf5110c3520bb247c2f117737",
+        "visible": [
+          "orbicularis_oculi_left__ciliary__margin_region",
+          "orbicularis_oculi_left__ciliary__lid_1",
+          "orbicularis_oculi_left__ciliary__lid_-1"
+        ],
+        "triangles": 3936
+      },
+      {
+        "id": "orbicularis_oculi_left__ciliary",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/orbicularis_oculi_left__ciliary-alternate.png",
+        "sha256": "6c2d0c2c4bd297c0c183eaab9bfb1fe4b939c82115048c03ec106c11d696a671",
+        "visible": [
+          "orbicularis_oculi_left__ciliary__margin_region",
+          "orbicularis_oculi_left__ciliary__lid_1",
+          "orbicularis_oculi_left__ciliary__lid_-1"
+        ],
+        "triangles": 3936
+      },
+      {
+        "id": "nasalis_left__transverse",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_left__transverse.png",
+        "sha256": "02b1427a96ea9e90e130f27b71eee25fc2f1577356b5b97d23e17bab12b08b33",
+        "visible": [
+          "nasalis_left__transverse__muscle",
+          "nasalis_left__transverse__dorsum_context",
+          "nasalis_left__transverse__ala_context_-1",
+          "nasalis_left__transverse__ala_context_1",
+          "nasalis_left__transverse__origin",
+          "nasalis_left__transverse__insertion"
+        ],
+        "triangles": 13696
+      },
+      {
+        "id": "nasalis_left__transverse",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_left__transverse-alternate.png",
+        "sha256": "c932c0af5e2a0f9c03817653088607f128f5e3595e6c58479fcc6a8ef9ffa07a",
+        "visible": [
+          "nasalis_left__transverse__muscle",
+          "nasalis_left__transverse__dorsum_context",
+          "nasalis_left__transverse__ala_context_-1",
+          "nasalis_left__transverse__ala_context_1",
+          "nasalis_left__transverse__origin",
+          "nasalis_left__transverse__insertion"
+        ],
+        "triangles": 13696
+      },
+      {
+        "id": "nasalis_left__alar",
+        "alternate": false,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_left__alar.png",
+        "sha256": "fd8435f93198d7838b8b8c816bc60145a8b662d58ef82db97dfd7520c7c67154",
+        "visible": [
+          "nasalis_left__alar__muscle",
+          "nasalis_left__alar__dorsum_context",
+          "nasalis_left__alar__ala_context_-1",
+          "nasalis_left__alar__ala_context_1",
+          "nasalis_left__alar__origin",
+          "nasalis_left__alar__insertion"
+        ],
+        "triangles": 10624
+      },
+      {
+        "id": "nasalis_left__alar",
+        "alternate": true,
+        "screenshot": "qhead_muscle_reconstructions/nasalis_left__alar-alternate.png",
+        "sha256": "98d65cd2bf9d7a38bc84f16fe9714ccaf9bd84bee9fbeebd3158f0f827ed43ca",
+        "visible": [
+          "nasalis_left__alar__muscle",
+          "nasalis_left__alar__dorsum_context",
+          "nasalis_left__alar__ala_context_-1",
+          "nasalis_left__alar__ala_context_1",
+          "nasalis_left__alar__origin",
+          "nasalis_left__alar__insertion"
+        ],
+        "triangles": 10624
+      }
+    ]
+  },
+  "shared_ui_review": {
+    "status": "reviewed_schematic_rendering",
+    "cases": [
+      {
+        "id": "muscle:auricularis_anterior_right",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_anterior_right.png",
+        "visibleNodes": [
+          "auricularis_anterior_right__auricle_outline",
+          "auricularis_anterior_right__auricle_context",
+          "auricularis_anterior_right__muscle",
+          "auricularis_anterior_right__origin",
+          "auricularis_anterior_right__insertion"
+        ],
+        "sha256": "7e5aae31c7f090ba1b81a788d8648b7ba44e245d2aed531c63cb887db86c3b78"
+      },
+      {
+        "id": "muscle:auricularis_anterior_left",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_anterior_left.png",
+        "visibleNodes": [
+          "auricularis_anterior_left__auricle_outline",
+          "auricularis_anterior_left__auricle_context",
+          "auricularis_anterior_left__muscle",
+          "auricularis_anterior_left__origin",
+          "auricularis_anterior_left__insertion"
+        ],
+        "sha256": "58d0f4715c7c021473d30e313e81ff510ef669527f8829ece5a01eed23ff6d67"
+      },
+      {
+        "id": "muscle:auricularis_superior_right",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_superior_right.png",
+        "visibleNodes": [
+          "auricularis_superior_right__auricle_outline",
+          "auricularis_superior_right__auricle_context",
+          "auricularis_superior_right__muscle",
+          "auricularis_superior_right__origin",
+          "auricularis_superior_right__insertion"
+        ],
+        "sha256": "032e81c961aca8f3e050f65a5557be5d2a0ce7e25440dbfcaeedcd7c0ca0527a"
+      },
+      {
+        "id": "muscle:auricularis_superior_left",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_superior_left.png",
+        "visibleNodes": [
+          "auricularis_superior_left__auricle_outline",
+          "auricularis_superior_left__auricle_context",
+          "auricularis_superior_left__muscle",
+          "auricularis_superior_left__origin",
+          "auricularis_superior_left__insertion"
+        ],
+        "sha256": "ac9e957e379920b7f5399c8340e9838bb61b8dd59282cb5cced7e52f3b86815e"
+      },
+      {
+        "id": "muscle:auricularis_posterior_right",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_posterior_right.png",
+        "visibleNodes": [
+          "auricularis_posterior_right__auricle_outline",
+          "auricularis_posterior_right__auricle_context",
+          "auricularis_posterior_right__muscle",
+          "auricularis_posterior_right__origin",
+          "auricularis_posterior_right__insertion"
+        ],
+        "sha256": "72ffe4e67f0c5f83d5e2fefa33f66ca3be200f2ed692a32fa60ed5bca4822850"
+      },
+      {
+        "id": "muscle:auricularis_posterior_left",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_auricularis_posterior_left.png",
+        "visibleNodes": [
+          "auricularis_posterior_left__auricle_outline",
+          "auricularis_posterior_left__auricle_context",
+          "auricularis_posterior_left__muscle",
+          "auricularis_posterior_left__origin",
+          "auricularis_posterior_left__insertion"
+        ],
+        "sha256": "63600bd0e050d74181245fc4df1a47f245f0a450e7765aa65c90c8ea4d3abe15"
+      },
+      {
+        "id": "muscle:depressor_supercilii_right",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_depressor_supercilii_right.png",
+        "visibleNodes": [
+          "depressor_supercilii_right__lid_1",
+          "depressor_supercilii_right__lid_-1",
+          "depressor_supercilii_right__brow",
+          "depressor_supercilii_right__muscle",
+          "depressor_supercilii_right__origin",
+          "depressor_supercilii_right__insertion"
+        ],
+        "sha256": "96e7d19f713419567666ddcb42c3cd170aa32b6bc40ab1e4a26b2c4093dc020e"
+      },
+      {
+        "id": "muscle:depressor_supercilii_left",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_depressor_supercilii_left.png",
+        "visibleNodes": [
+          "depressor_supercilii_left__lid_1",
+          "depressor_supercilii_left__lid_-1",
+          "depressor_supercilii_left__brow",
+          "depressor_supercilii_left__muscle",
+          "depressor_supercilii_left__origin",
+          "depressor_supercilii_left__insertion"
+        ],
+        "sha256": "d3492cacebeec60e025d503424a5d84fec1c94181acf207677e01d7126c9e2d3"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_right:deep",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_orbicularis_oculi_right_deep.png",
+        "visibleNodes": [
+          "orbicularis_oculi_right__deep__lid_1",
+          "orbicularis_oculi_right__deep__lid_-1",
+          "orbicularis_oculi_right__deep__posterior_crest",
+          "orbicularis_oculi_right__deep__muscle"
+        ],
+        "sha256": "723779fe664f37197a9824db102aa07bac921f562e4736ccb2c6e26ade1dd9fe"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_right:ciliary",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_orbicularis_oculi_right_ciliary.png",
+        "visibleNodes": [
+          "orbicularis_oculi_right__ciliary__lid_1",
+          "orbicularis_oculi_right__ciliary__lid_-1",
+          "orbicularis_oculi_right__ciliary__margin_region"
+        ],
+        "sha256": "a7b4467ffb695ad17c61c49ef715cf2a5c40c1c6a73205cb996d3ecea635d14e"
+      },
+      {
+        "id": "muscle:nasalis_right:transverse",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_nasalis_right_transverse.png",
+        "visibleNodes": [
+          "nasalis_right__transverse__dorsum_context",
+          "nasalis_right__transverse__ala_context_-1",
+          "nasalis_right__transverse__ala_context_1",
+          "nasalis_right__transverse__muscle",
+          "nasalis_right__transverse__origin",
+          "nasalis_right__transverse__insertion"
+        ],
+        "sha256": "150bb12d4573d9707a9c1022230e2209e83b4705487cb114336123281dc94822"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_left:deep",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_orbicularis_oculi_left_deep.png",
+        "visibleNodes": [
+          "orbicularis_oculi_left__deep__lid_1",
+          "orbicularis_oculi_left__deep__lid_-1",
+          "orbicularis_oculi_left__deep__posterior_crest",
+          "orbicularis_oculi_left__deep__muscle"
+        ],
+        "sha256": "fb7da354c05f09fc44fba754d7f254a297deba3ef865744b58999ebecfd332ea"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_left:ciliary",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_orbicularis_oculi_left_ciliary.png",
+        "visibleNodes": [
+          "orbicularis_oculi_left__ciliary__lid_1",
+          "orbicularis_oculi_left__ciliary__lid_-1",
+          "orbicularis_oculi_left__ciliary__margin_region"
+        ],
+        "sha256": "772c8b68f1abe5d20a5c2824b5008999c74881aaa30a16f28d8e8649cdaaa092"
+      },
+      {
+        "id": "muscle:nasalis_left:transverse",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_nasalis_left_transverse.png",
+        "visibleNodes": [
+          "nasalis_left__transverse__dorsum_context",
+          "nasalis_left__transverse__ala_context_-1",
+          "nasalis_left__transverse__ala_context_1",
+          "nasalis_left__transverse__muscle",
+          "nasalis_left__transverse__origin",
+          "nasalis_left__transverse__insertion"
+        ],
+        "sha256": "6000417f4f4fceac3b4bde70f38a06d52752c1b03f3b474d0480d9e74c9c82ad"
+      },
+      {
+        "id": "muscle:auricularis_anterior_right",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_anterior_right.png",
+        "visibleNodes": [
+          "auricularis_anterior_right__auricle_outline",
+          "auricularis_anterior_right__auricle_context",
+          "auricularis_anterior_right__muscle",
+          "auricularis_anterior_right__origin",
+          "auricularis_anterior_right__insertion"
+        ],
+        "sha256": "f6f1b4f744a707cda2bf537073640d4a9c072d7ec579c74915cc21f9588586bb"
+      },
+      {
+        "id": "muscle:auricularis_anterior_left",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_anterior_left.png",
+        "visibleNodes": [
+          "auricularis_anterior_left__auricle_outline",
+          "auricularis_anterior_left__auricle_context",
+          "auricularis_anterior_left__muscle",
+          "auricularis_anterior_left__origin",
+          "auricularis_anterior_left__insertion"
+        ],
+        "sha256": "b679e39deae0e82113f13fb2d13aa5f9c00f7131601629da53909e432344e3d6"
+      },
+      {
+        "id": "muscle:auricularis_superior_right",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_superior_right.png",
+        "visibleNodes": [
+          "auricularis_superior_right__auricle_outline",
+          "auricularis_superior_right__auricle_context",
+          "auricularis_superior_right__muscle",
+          "auricularis_superior_right__origin",
+          "auricularis_superior_right__insertion"
+        ],
+        "sha256": "47fbe8447e6133aa249fe60e52f5e90953ab129067a706b894bb36e9e222822f"
+      },
+      {
+        "id": "muscle:auricularis_superior_left",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_superior_left.png",
+        "visibleNodes": [
+          "auricularis_superior_left__auricle_outline",
+          "auricularis_superior_left__auricle_context",
+          "auricularis_superior_left__muscle",
+          "auricularis_superior_left__origin",
+          "auricularis_superior_left__insertion"
+        ],
+        "sha256": "4e4eba6216860a443ca280fc19a5d0576dba5ac6449551a485b57d19ab1f7ef0"
+      },
+      {
+        "id": "muscle:auricularis_posterior_right",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_posterior_right.png",
+        "visibleNodes": [
+          "auricularis_posterior_right__auricle_outline",
+          "auricularis_posterior_right__auricle_context",
+          "auricularis_posterior_right__muscle",
+          "auricularis_posterior_right__origin",
+          "auricularis_posterior_right__insertion"
+        ],
+        "sha256": "bdcdc75d235caeb8b035de6b6fd81009e2882e275dd975fe4d39aa1f6ca4f22c"
+      },
+      {
+        "id": "muscle:auricularis_posterior_left",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_auricularis_posterior_left.png",
+        "visibleNodes": [
+          "auricularis_posterior_left__auricle_outline",
+          "auricularis_posterior_left__auricle_context",
+          "auricularis_posterior_left__muscle",
+          "auricularis_posterior_left__origin",
+          "auricularis_posterior_left__insertion"
+        ],
+        "sha256": "5ea16167a6df7da70b6914f9cf61a7776997a5b4d971cbb9c28ec68974a62e80"
+      },
+      {
+        "id": "muscle:depressor_supercilii_right",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_depressor_supercilii_right.png",
+        "visibleNodes": [
+          "depressor_supercilii_right__lid_1",
+          "depressor_supercilii_right__lid_-1",
+          "depressor_supercilii_right__brow",
+          "depressor_supercilii_right__muscle",
+          "depressor_supercilii_right__origin",
+          "depressor_supercilii_right__insertion"
+        ],
+        "sha256": "5d71be2133c2311515b5436a7c87cee72bc417f91f66fb32cb8c1e003eb500e9"
+      },
+      {
+        "id": "muscle:depressor_supercilii_left",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_depressor_supercilii_left.png",
+        "visibleNodes": [
+          "depressor_supercilii_left__lid_1",
+          "depressor_supercilii_left__lid_-1",
+          "depressor_supercilii_left__brow",
+          "depressor_supercilii_left__muscle",
+          "depressor_supercilii_left__origin",
+          "depressor_supercilii_left__insertion"
+        ],
+        "sha256": "24856da8d0f7fbe5a5d9ceeb763e33c968ccf8039026b2d99656fee937a4bd01"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_right:deep",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_orbicularis_oculi_right_deep.png",
+        "visibleNodes": [
+          "orbicularis_oculi_right__deep__lid_1",
+          "orbicularis_oculi_right__deep__lid_-1",
+          "orbicularis_oculi_right__deep__posterior_crest",
+          "orbicularis_oculi_right__deep__muscle"
+        ],
+        "sha256": "3fc3a0ed791087960f9f0c3f6ed6706fe759fb317ff12a8f53fb6574eb7e5d08"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_right:ciliary",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_orbicularis_oculi_right_ciliary.png",
+        "visibleNodes": [
+          "orbicularis_oculi_right__ciliary__lid_1",
+          "orbicularis_oculi_right__ciliary__lid_-1",
+          "orbicularis_oculi_right__ciliary__margin_region"
+        ],
+        "sha256": "b5bc982074edc4d578cd4b72e231dab2de34d43276516c9cbcf182426c452564"
+      },
+      {
+        "id": "muscle:nasalis_right:transverse",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_nasalis_right_transverse.png",
+        "visibleNodes": [
+          "nasalis_right__transverse__dorsum_context",
+          "nasalis_right__transverse__ala_context_-1",
+          "nasalis_right__transverse__ala_context_1",
+          "nasalis_right__transverse__muscle",
+          "nasalis_right__transverse__origin",
+          "nasalis_right__transverse__insertion"
+        ],
+        "sha256": "82f39e04a260fc475b4eacdfa4b8ffee4dd757ea77b01290fed0f8ff75cb0a60"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_left:deep",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_orbicularis_oculi_left_deep.png",
+        "visibleNodes": [
+          "orbicularis_oculi_left__deep__lid_1",
+          "orbicularis_oculi_left__deep__lid_-1",
+          "orbicularis_oculi_left__deep__posterior_crest",
+          "orbicularis_oculi_left__deep__muscle"
+        ],
+        "sha256": "581512939be970ae6f0f835ec0a09db11c68ec0efee1e1f43a8a7a4c442d0179"
+      },
+      {
+        "id": "muscle:orbicularis_oculi_left:ciliary",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_orbicularis_oculi_left_ciliary.png",
+        "visibleNodes": [
+          "orbicularis_oculi_left__ciliary__lid_1",
+          "orbicularis_oculi_left__ciliary__lid_-1",
+          "orbicularis_oculi_left__ciliary__margin_region"
+        ],
+        "sha256": "19add1317ced587bf356daec9603d051fe31928f8ddbe36fc6d9337ff838624f"
+      },
+      {
+        "id": "muscle:nasalis_left:transverse",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_nasalis_left_transverse.png",
+        "visibleNodes": [
+          "nasalis_left__transverse__dorsum_context",
+          "nasalis_left__transverse__ala_context_-1",
+          "nasalis_left__transverse__ala_context_1",
+          "nasalis_left__transverse__muscle",
+          "nasalis_left__transverse__origin",
+          "nasalis_left__transverse__insertion"
+        ],
+        "sha256": "c3575c7f5c226be96412798fdf29c07e02f6cf28b2d5ff521441ae78941c7f8a"
+      },
+      {
+        "id": "muscle:nasalis_right:alar",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_nasalis_right_alar.png",
+        "visibleNodes": [
+          "nasalis_right__alar__dorsum_context",
+          "nasalis_right__alar__ala_context_-1",
+          "nasalis_right__alar__ala_context_1",
+          "nasalis_right__alar__muscle",
+          "nasalis_right__alar__origin",
+          "nasalis_right__alar__insertion"
+        ],
+        "sha256": "38d3c8de4e3b115e50d96799adfad5609905a3369970b569032b1df6162edb63"
+      },
+      {
+        "id": "muscle:nasalis_left:alar",
+        "width": 1280,
+        "theme": "light",
+        "screenshot": "qhead_muscle_reconstructions/shared-1280-light-muscle_nasalis_left_alar.png",
+        "visibleNodes": [
+          "nasalis_left__alar__dorsum_context",
+          "nasalis_left__alar__ala_context_-1",
+          "nasalis_left__alar__ala_context_1",
+          "nasalis_left__alar__muscle",
+          "nasalis_left__alar__origin",
+          "nasalis_left__alar__insertion"
+        ],
+        "sha256": "e7954b44712c49e96bb67d72891c9322fa4d1696e202c0335bcdd1275054a825"
+      },
+      {
+        "id": "muscle:nasalis_right:alar",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_nasalis_right_alar.png",
+        "visibleNodes": [
+          "nasalis_right__alar__dorsum_context",
+          "nasalis_right__alar__ala_context_-1",
+          "nasalis_right__alar__ala_context_1",
+          "nasalis_right__alar__muscle",
+          "nasalis_right__alar__origin",
+          "nasalis_right__alar__insertion"
+        ],
+        "sha256": "1ec4256aec91eb617e9b758de8ba57d642af29e7e98f8c30625ea47c44a75a13"
+      },
+      {
+        "id": "muscle:nasalis_left:alar",
+        "width": 390,
+        "theme": "dark",
+        "screenshot": "qhead_muscle_reconstructions/shared-390-dark-muscle_nasalis_left_alar.png",
+        "visibleNodes": [
+          "nasalis_left__alar__dorsum_context",
+          "nasalis_left__alar__ala_context_-1",
+          "nasalis_left__alar__ala_context_1",
+          "nasalis_left__alar__muscle",
+          "nasalis_left__alar__origin",
+          "nasalis_left__alar__insertion"
+        ],
+        "sha256": "8a8c863f33fc6879d26c25bafe7fcff63c033d0303b89f3882086ed896c9ee97"
+      }
+    ]
+  },
+  "visual_inspection": {
+    "date": "2026-10-13",
+    "reviewer": "Codex internal visual review",
+    "all_16_independent_scenes_inspected": true,
+    "native_views": 32,
+    "shared_ui_views": 32,
+    "viewports": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "findings": [
+      "Each intended relation is visible in its independent diagram.",
+      "No unrelated node set or horizontal page overflow in shared UI.",
+      "Removed redundant ala context label that overlapped the insertion label; both sides rechecked in shared UI at desktop light and mobile dark."
+    ],
+    "boundary": "Dimensionless schematic relationships only. No measured attachment areas, donor geometry, physical-phone or independent-anatomist validation."
+  }
+}

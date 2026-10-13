@@ -181,13 +181,14 @@ const scanViewer=createScanViewer($('#scanPanel'),showScanPlane);
 const initialQuery = new URLSearchParams(location.search);
 const region=regionById(initialQuery.get('region'));
 const fromGeometry=initialQuery.get('from')==='geometry';let geometryRecord=null;
+const fromEducation=initialQuery.get('returnEducation');
 const fromWhole=initialQuery.get('from')==='whole';let wholeRecord=null;
 const fromFeatures=initialQuery.get('from')==='features';
 const fromStudy=initialQuery.get('from')==='study';
 let currentPreset=null;
-function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');if(fromFeatures||fromWhole||fromGeometry)p.set('code',initialQuery.get('code')||'');if(fromWhole)p.set('from','whole');if(fromGeometry){p.set('from','geometry');p.set('bone',initialQuery.get('bone')||'');}return 'skull-study.html?'+p;}
+function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');if(fromEducation){p.set('id',fromEducation);return 'skull-education.html?'+p;}if(fromFeatures||fromWhole||fromGeometry)p.set('code',initialQuery.get('code')||'');if(fromWhole)p.set('from','whole');if(fromGeometry){p.set('from','geometry');p.set('bone',initialQuery.get('bone')||'');}return 'skull-study.html?'+p;}
 if (initialQuery.get('embed') === '1' && parent !== window) {
-  $('.back').addEventListener('click', event => { if(region||fromFeatures||fromStudy||fromWhole||fromGeometry){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
+  $('.back').addEventListener('click', event => { if(region||fromFeatures||fromStudy||fromWhole||fromGeometry||fromEducation){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
   addEventListener('keydown', event => { if(event.key==='Escape') parent.postMessage({type:'atlas-close-detail'},location.origin); });
 }
 // The local launcher uses the full wrapper; hosted deployments use the directory index.
@@ -197,6 +198,7 @@ try {
 } catch (_) {}
 if(initialQuery.get('entry')==='local')$('.back').href='local.html#head';
 if(fromStudy){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Все учебные группы');}
+if(fromEducation){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Модели и объяснения');}
 if(fromGeometry){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Проверка формы');$('.back').title='Проверка формы';}
 if(fromWhole){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Череп как целое');$('.back').title='Череп как целое';}
 if(fromFeatures){$('.back').href=studyUrl();$('.back').setAttribute('aria-label','Подробные ориентиры');$('.back').title='Подробные ориентиры';}

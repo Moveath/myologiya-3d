@@ -57,7 +57,7 @@ for (bone, code), row in rows.items():
                                                'modelNote': row['modelNote']})
 report = {
     'date': '2026-10-13',
-    'policy': 'Только геометрия, подтверждённая опубликованными сканами или исходными моделями; без вымышленных реконструкций.',
+    'policy': 'Исходная геометрия сохраняется отдельно. По разрешению пользователя от 13 октября 2026 добавлены обозначенные учебные схемы по источникам; если форма не обоснована, дано явное объяснение ограничений. Схемы не меняют статусы исходных моделей.',
     'complete_skull_geometry_claim': False,
     'main_atlas': {'markers': len(rows), 'localization_counts': dict(counts),
                    'newly_reviewed_surface_anchors': 12,
@@ -131,5 +131,10 @@ report = {
                 'research/temporal-variant-geometry-review.json', 'research/cranial-variant-geometry-search.json',
                 'research/cranial-orbital-variant-review.json',
                 'verify/ui-atlas-touch-report.json']}
+education=ROOT/'research/skull-educational-release.json'
+if education.exists():
+    release=json.loads(education.read_text(encoding='utf8'))
+    report['educational_release']={k:release[k] for k in ('counts','educationalDispositionComplete','completeSkullGeometry','independentAnatomistReview','physicalDeviceTests','meaning')}
+    report['educational_release']['page']='site/skull-education.html'
 (ROOT/'research/skull-completion-status.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 print('Skull status:', dict(counts), '— complete geometry is not claimed')

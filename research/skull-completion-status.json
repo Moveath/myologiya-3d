@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "policy": "Только геометрия, подтверждённая опубликованными сканами или исходными моделями; без вымышленных реконструкций.",
+  "policy": "Исходная геометрия сохраняется отдельно. По разрешению пользователя от 13 октября 2026 добавлены обозначенные учебные схемы по источникам; если форма не обоснована, дано явное объяснение ограничений. Схемы не меняют статусы исходных моделей.",
   "complete_skull_geometry_claim": false,
   "main_atlas": {
     "markers": 521,
@@ -1675,5 +1675,34 @@
     "research/cranial-variant-geometry-search.json",
     "research/cranial-orbital-variant-review.json",
     "verify/ui-atlas-touch-report.json"
-  ]
+  ],
+  "educational_release": {
+    "counts": {
+      "total": 728,
+      "categories": {
+        "bones": 507,
+        "variants": 14,
+        "whole": 97,
+        "muscles": 19,
+        "attachments": 78,
+        "ossicles": 13
+      },
+      "status": {
+        "explanation": 313,
+        "source_model": 255,
+        "educational_reconstruction": 74,
+        "future_scope": 8,
+        "documented_attachment": 78
+      },
+      "unique3DDiagrams": 44,
+      "recordsWithDiagrams": 76,
+      "attachmentFields": 156
+    },
+    "educationalDispositionComplete": true,
+    "completeSkullGeometry": false,
+    "independentAnatomistReview": false,
+    "physicalDeviceTests": false,
+    "meaning": "Каждая запись получила материал и объяснение в принятом учебном объёме. Это не процент точной анатомической геометрии и не заключение специалиста.",
+    "page": "site/skull-education.html"
+  }
 }

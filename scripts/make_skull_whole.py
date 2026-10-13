@@ -136,8 +136,14 @@ def main():
         elif number in (34, 35, 36, 37):
             scope = 'bone_microstructure'
             note = 'Наружная сетка Z-Anatomy не разделяет компактные пластинки, диплоэ и его каналы. Для этой карточки требуется отдельно проверенная КТ или костный срез; общий вид поверхности не выдан за их геометрию.'
-        if number in range(57, 67) or number in (79, 80, 85, 92, 97):
+        # A contiguous numeric range also contains the incisive fossa (60) and
+        # palatine torus (63); neither should inherit a channel-lumen claim.
+        if number in (57, 61, 64, 65, 66, 85):
             note += ' Костные стенки и непрерывность просвета этой структуры в данном обзоре не подтверждены.'
+        elif number in (58, 59, 62, 79, 80, 92, 97):
+            note += ' Отдельный контур отверстия в этом обзоре не размечен; полнота его краёв здесь не проверена.'
+        elif number == 60:
+            note += ' Границы и рельеф дна ямки отдельно не выделены.'
         if target and status == 'context_view':
             if number in (38, 39, 42):
                 note += ' Выбран обзор внутренней стороны двух теменных костей; другие участки свода в этом виде скрыты.'

@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-13",
+  "generator": "scripts/skull_attachment_education.py",
+  "counts": {
+    "records": 78,
+    "wholeMuscles": 52,
+    "parts": 26,
+    "fields": 156,
+    "sourceLinkedFields": 156,
+    "explainedLimits": 156,
+    "relationDiagrams": 78,
+    "inheritedPartFields": 12,
+    "sourceMeasuredAttachmentAreas": 0,
+    "new3DAttachmentAreas": 0,
+    "changedSourcePins": 0
+  },
+  "source": "site/skull-muscle-attachments.json",
+  "sourceSha256": "38b9c3571645660a3a31f639ee79f23dfc2fe13508f61dbbbf32ea2569a50fdb",
+  "output": "site/skull-attachment-education.json",
+  "outputSha256": "862bdd439cdc87c89ecd08ecdd75a46bfa33d6504c90520530208c9846fcb571",
+  "sourceTextChanged": false,
+  "geometryCreated": false,
+  "sourcePinsChanged": false,
+  "externalExpertReviewCompleted": false,
+  "fieldStatusCounts": {
+    "supported": 156
+  },
+  "validation": {
+    "allFieldsHaveTwoIndependentSourcesAndLocators": true,
+    "allFieldsHaveKnownUnknownReasonAndGuidance": true,
+    "inheritedFieldsRemainParentScoped": true,
+    "noMeshBoundariesInferredFromPointsOrBoundingBoxes": true
+  },
+  "acceptanceFindings": {
+    "reviewType": "internal_educational_disposition_audit_not_external_anatomical_acceptance",
+    "ruleChange": "Пользователь разрешил явно обозначенные реконструкции и объяснение того, что не удалось подтвердить. Это позволяет завершить учебную обработку конечного перечня без объявления всей геометрии подтверждённой.",
+    "preserveClaims": {
+      "completeSkullGeometry": false,
+      "completeAttachmentAreas": false,
+      "externalExpertReviewCompleted": false,
+      "physicalPhoneReviewCompleted": false
+    },
+    "requiredDisposition": [
+      {
+        "scope": "521 запись костных образований",
+        "requirement": "У каждой сохранить исходную локализацию, результат проверки полной протяжённости и конкретное ограничение. Реконструкция или схема не переводит исходную projection в surface.",
+        "currentCounts": {
+          "surface": 325,
+          "projection": 182,
+          "variant": 14
+        }
+      },
+      {
+        "scope": "97 строк «череп как целое»",
+        "requirement": "Сохранить 89 текущих и 8 будущих строк. У контекстного вида объяснить, какие границы он показывает и чего не подтверждает. У микроструктур и вариантов без геометрии нужен собственный текст пробела.",
+        "currentCounts": {
+          "requirementTypes": {
+            "group": 14,
+            "view": 5,
+            "landmark": 76,
+            "variant": 2
+          },
+          "geometryStatuses": {
+            "verified_composition": 3,
+            "verified_view": 5,
+            "future_module": 8,
+            "context_view": 75,
+            "not_available": 4,
+            "variant_not_verified": 2
+          },
+          "launchTargets": 83
+        }
+      },
+      {
+        "scope": "13 ориентиров слуховых косточек",
+        "requirement": "Разделять наличие ориентира и полную форму. У чечевицеобразного отростка наковальни (A15.3.02.041) отдельно указать неразделённые ножку и край пластинки; у переднего отростка молоточка (A15.3.02.048) — неподтверждённое тонкое продолжение. Правый препарат не объявлять двумя сторонами."
+      },
+      {
+        "scope": "156 полей начал и прикреплений",
+        "requirement": "Все поля содержат известное, источник с локатором, неизвестное в данном наборе и способ чтения схемы. 12 унаследованных полей частей не повышать до собственной анатомической разметки."
+      },
+      {
+        "scope": "Факты и внешняя приёмка",
+        "requirement": "Функция и конкретное кровоснабжение transversus menti сохраняют неопределённость. Автотесты не являются независимой анатомической рецензией или проверкой физического телефона."
+      },
+      {
+        "scope": "Публикация",
+        "requirement": "Различать завершённую обработку учебного перечня и полную геометрическую/экспертную приёмку. Не оставлять обещания «все поверхности подтверждены», если применены объяснённые ограничения."
+      }
+    ]
+  }
+}

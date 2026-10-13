@@ -1,0 +1,23 @@
+{
+  "createdUtc": "2026-10-13T09:15:17.240785+00:00",
+  "reviewType": "browser_attachment_scope_readthrough",
+  "sourceCommit": "ddb2c99",
+  "status": "passed",
+  "browserScopeReview": {
+    "records": 78,
+    "fields": 156,
+    "failures": [],
+    "width": 390,
+    "theme": "dark",
+    "emulationOnly": true
+  },
+  "sourceFilesSha256": {
+    "skull-attachment-education.json": "862bdd439cdc87c89ecd08ecdd75a46bfa33d6504c90520530208c9846fcb571",
+    "skull-muscle-attachments.json": "38b9c3571645660a3a31f639ee79f23dfc2fe13508f61dbbbf32ea2569a50fdb",
+    "skull-education.js": "673cb069cc9ae018b9babdecbeea901f02211ded677df254b2196cf555f01304"
+  },
+  "limitations": [
+    "Focused 390px dark Chromium emulation read-through of all 78 attachment cards; not physical-device testing or external anatomical review.",
+    "Extracted unchanged from committed cross-review to retain browser evidence independently from later structural-only reruns."
+  ]
+}
