@@ -1,5 +1,7 @@
 # AGENTS.md — как устроен проект и как его менять
 
+- Мобильная панель подробных моделей: `site/skull-detail.html`, `setDetailPanel/layoutDetail/syncDetailMobile`. При ширине до 899 px карточка закрыта, ракурс и выбор не меняются при открытии/закрытии. Сохранять переходы region/entry/theme/embed и доступ к КТ/источникам. Проверять `node tools/verify-skull-detail-mobile.mjs` (включая iframe и Escape) и `node tools/verify-skull-detail.mjs` (настольные темы и исходные маркеры).
+
 Сначала прочитай README.md (цель, правила точности, бэклог). Здесь — техника.
 
 ## Грудной костно-мышечный раздел

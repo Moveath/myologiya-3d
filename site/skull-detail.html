@@ -28,7 +28,7 @@ button { cursor:pointer; }
 button:disabled { cursor:default; opacity:.55; }
 a { color:var(--teal); }
 :focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
-#app { height:100%; display:flex; flex-direction:column; background:radial-gradient(120% 90% at 35% 35%,var(--drape) 55%,var(--drape-deep)); }
+#app { height:100%; height:100dvh; display:flex; flex-direction:column; background:radial-gradient(120% 90% at 35% 35%,var(--drape) 55%,var(--drape-deep)); }
 .top { display:flex; align-items:center; gap:12px; padding:12px 16px 8px; flex:none; }
 .back { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; flex:none; border:1px solid var(--rule); border-radius:10px; text-decoration:none; font-size:24px; color:var(--ink); background:var(--glass); }
 .brand { min-width:0; flex:1; }
@@ -91,25 +91,42 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
 .scan-expanded .panel { max-height:100%; flex:1; }
 .scan-expanded #scanPanel canvas { max-width:520px; }
 .empty-message { font-size:13px; margin:8px 0 0; color:var(--muted); }
+.mobile-only { display:none; }
 @media(max-width:899px) {
   .top { padding:10px 12px 8px; gap:10px; }
   h1 { font-size:16px; }
-  .brand p { font-size:11px; }
-  .modebar { padding:0 12px 8px; }
-  .modebar .chip { flex:1; }
+  .brand p,.modebar,.regionbar,.viewer-caption { display:none; }
+  .mobile-only { display:flex; }
+  .back,.btn,.chip { min-height:44px; }
+  .back { width:44px; }
+  #detailMenu { width:44px; font-size:22px; }
+  #detailToolbar { gap:8px; padding:0 12px 8px; flex:none; }
+  #detailChoice { flex:1; min-width:0; text-overflow:ellipsis; background:var(--paper); }
   .layout { display:flex; flex-direction:column; gap:0; padding:0; }
-  .viewer { flex:1; min-height:190px; border-radius:0; }
-  .view-tools { padding-inline:12px; gap:6px; }
-  .panel { flex:none; max-height:36%; border-radius:18px 18px 0 0; padding:14px 16px calc(16px + env(safe-area-inset-bottom,0px)); border-bottom:0; }
+  .viewer { flex:1; min-height:0; border-radius:0; }
+  .view-tools { display:none; }
+  .panel { display:none; position:fixed; z-index:8; inset:0 0 0 auto; width:min(100%,440px); max-height:none; border-radius:0; padding:0 16px calc(16px + env(safe-area-inset-bottom,0px)); }
+  #app[data-panel-open="true"] .panel { display:block; }
+  #detailPanelHead { position:sticky; top:0; z-index:2; align-items:center; justify-content:space-between; gap:8px; background:var(--paper); padding:12px 0; margin-bottom:12px; border-bottom:1px solid var(--rule); }
+  #detailPanelTools { flex-wrap:wrap; gap:8px; padding-bottom:16px; }
+  #detailPanelTools #view { width:100%; min-width:0; }
+  #detailDock { margin:6px 12px calc(10px + env(safe-area-inset-bottom,0px)); padding:10px 14px; min-height:48px; gap:12px; justify-content:space-between; flex:none; text-align:left; }
+  #detailDock span { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #detailDock strong { color:var(--teal); white-space:nowrap; font-size:13px; }
+  #detailScrim { position:fixed; inset:0; z-index:7; border:0; border-radius:0; background:rgba(0,0,0,.3); }
+  #app[data-panel-open="true"] #detailScrim { display:block; }
+  #detailScrim { display:none; }
+  .scan-expanded .viewer { display:block; }
+  .scan-expanded .panel { max-height:none; }
+  .check,.part button,summary { min-height:44px; }
   h2 { font-size:19px; }
-  .viewer-caption { bottom:7px; font-size:11px; }
   .btn,.chip { padding-inline:10px; }
   .panel .notice { margin-block:10px; }
 }
 @media(max-height:600px) and (max-width:899px) {
-  .panel { max-height:32%; }
-  .viewer { min-height:140px; }
-  .brand p,.viewer-caption { display:none; }
+  .top { padding-top:4px; padding-bottom:4px; }
+  #detailToolbar { padding-bottom:4px; }
+  #detailDock { margin-top:0; margin-bottom:4px; }
 }
 </style>
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
@@ -120,6 +137,7 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
     <a class="back" href="./#head" aria-label="Вернуться в атлас" title="Вернуться в атлас">‹</a>
     <div class="brand"><h1>Череп: подробные модели</h1><p>Миология 3D · открытые источники</p></div>
     <button class="btn" id="themeButton" aria-label="Переключить светлую и тёмную тему">Тема</button>
+    <button class="btn mobile-only" id="detailMenu" aria-label="Описание и настройки" aria-controls="panel" aria-expanded="false">☰</button>
   </header>
   <nav class="modebar" aria-label="Выбор модели">
     <button class="chip" data-mode="z" aria-pressed="true">Кости и пазухи</button>
@@ -128,6 +146,7 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
     <button class="chip" data-mode="channels" aria-pressed="false">Каналы · КТ</button>
   </nav>
   <nav class="regionbar" id="regionbar" aria-label="Готовые учебные виды" hidden></nav>
+  <div class="mobile-only" id="detailToolbar"><select class="btn" id="detailChoice" aria-label="Учебный вид или модель"></select></div>
   <main class="layout">
     <section class="viewer" aria-label="Просмотр 3D-модели">
       <canvas id="stage" aria-label="Череп: вращай, приближай и выбирай структуры"></canvas>
@@ -145,6 +164,9 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
       </div>
     </section>
     <aside class="panel" id="panel" aria-label="Структуры и настройки модели">
+      <div class="mobile-only" id="detailPanelHead"><strong>Описание и настройки</strong><button class="btn" id="detailClose">К модели ✕</button></div>
+      <div class="mobile-only" id="detailPanelTools"></div>
+      <div class="mobile-only actions" id="detailRegionLinks"></div>
       <div id="selection" aria-live="polite"></div>
       <section id="markerSelection" hidden aria-live="polite"></section>
       <div class="switches" id="zSwitches">
@@ -165,6 +187,8 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
       <details id="modelDetails"><summary>О модели и источниках</summary><div id="modelInfo"></div></details>
     </aside>
   </main>
+  <button class="btn mobile-only" id="detailDock" aria-controls="panel" aria-expanded="false"><span id="detailName">Выбери структуру</span><strong>Описание ↗</strong></button>
+  <button class="mobile-only" id="detailScrim" aria-label="Закрыть описание" tabindex="-1"></button>
 </div>
 <script src="atlas-runtime.js"></script>
 <script type="module" onerror="window.__atlasRuntime?.fail('module')">
@@ -190,7 +214,7 @@ let currentPreset=null;
 function studyUrl(){const p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});if(initialQuery.get('embed')==='1')p.set('embed','1');if(initialQuery.get('entry')==='local')p.set('entry','local');if(fromEducation){p.set('id',fromEducation);return 'skull-education.html?'+p;}if(fromFeatures||fromWhole||fromGeometry)p.set('code',initialQuery.get('code')||'');if(fromWhole)p.set('from','whole');if(fromGeometry){p.set('from','geometry');p.set('bone',initialQuery.get('bone')||'');}return 'skull-study.html?'+p;}
 if (initialQuery.get('embed') === '1' && parent !== window) {
   $('.back').addEventListener('click', event => { if(region||fromFeatures||fromStudy||fromWhole||fromGeometry||fromEducation){event.preventDefault();location.href=studyUrl();return;}event.preventDefault(); parent.postMessage({type:'atlas-close-detail'},location.origin); });
-  addEventListener('keydown', event => { if(event.key==='Escape') parent.postMessage({type:'atlas-close-detail'},location.origin); });
+  addEventListener('keydown', event => { if(event.key==='Escape'&&!event.defaultPrevented) parent.postMessage({type:'atlas-close-detail'},location.origin); });
 }
 // The local launcher uses the full wrapper; hosted deployments use the directory index.
 try {
@@ -209,6 +233,50 @@ const PALETTE = {frontal:'#e8c04c',parietal:'#b488c9',occipital:'#4fa7a1',tempor
 const boneKey = id => id.replace(/_(?:right|left)$/,'');
 let prefs = {}; try { prefs=JSON.parse(localStorage.getItem('myo3d')||'{}'); } catch (_) {}
 const state = {mode:'z',ready:false,loading:false,error:null,colors:prefs.boneColors!==false,cavities:false,translucent:false,clip:'off',cut:.5,reverse:false,selected:null,marker:null,hidden:new Set(),only:null};
+const mobileLayout=matchMedia('(max-width:899px)');
+let panelReturn=null;
+function setDetailPanel(open){
+  open=!!open&&mobileLayout.matches;
+  if(open)panelReturn=document.activeElement;
+  $('#app').dataset.panelOpen=String(open);
+  for(const id of ['#detailMenu','#detailDock'])$(id).setAttribute('aria-expanded',String(open));
+  if(open){$('#panel').setAttribute('role','dialog');$('#panel').setAttribute('aria-modal','true');}
+  else{$('#panel').removeAttribute('role');$('#panel').removeAttribute('aria-modal');}
+  for(const e of [$('.top'),$('#detailToolbar'),$('.viewer'),$('#detailDock')])e.inert=open;
+  if(!open&&document.body.classList.contains('scan-expanded'))$('#scanPanel [data-expand]').click();
+  if(open)$('#detailClose').focus();else if(panelReturn?.isConnected)panelReturn.focus({preventScroll:true});
+}
+$('#detailMenu').onclick=$('#detailDock').onclick=()=>setDetailPanel(true);
+$('#detailClose').onclick=$('#detailScrim').onclick=()=>setDetailPanel(false);
+addEventListener('keydown',event=>{
+  if(!mobileLayout.matches||$('#app').dataset.panelOpen!=='true')return;
+  if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();setDetailPanel(false);return;}
+  if(event.key==='Tab'){
+    const items=[...$('#panel').querySelectorAll('button,a[href],select,input,summary,[tabindex="0"]')].filter(e=>!e.disabled&&e.getClientRects().length);
+    const first=items[0],last=items.at(-1);
+    if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+  }
+},true);
+const movable=['#themeButton','#view','#reset','#fit'].map(selector=>{const node=$(selector),slot=document.createComment(selector);node.before(slot);return {node,slot};});
+function layoutDetail(){
+  setDetailPanel(false);
+  for(const {node,slot} of movable){if(mobileLayout.matches)$(node.id==='fit'?'#detailToolbar':'#detailPanelTools').append(node);else slot.after(node);}
+}
+mobileLayout.addEventListener('change',layoutDetail);layoutDetail();
+function syncDetailMobile(){
+  $('#detailName').textContent=(!$('#markerSelection').hidden?$('#markerSelection b')?.textContent:null)||$('#selection h2')?.textContent||$('h1').textContent;
+  const presets=region&&state.mode===region.mode?region.presets:null;
+  const choices=presets?presets.map(p=>[p.id,p.ru]):[...document.querySelectorAll('[data-mode]')].map(b=>[b.dataset.mode,b.textContent]);
+  if(!presets&&state.mode==='cranial_channels')choices.push(['cranial_channels','Основание черепа · КТ']);
+  $('#detailChoice').innerHTML=choices.map(([id,title])=>`<option value="${esc(id)}">${esc(title)}</option>`).join('');
+  $('#detailChoice').value=presets?state.preset||presets[0].id:state.mode;
+  $('#detailRegionLinks').replaceChildren(...[...$('#regionbar').querySelectorAll('a')].map(a=>a.cloneNode(true)));
+}
+$('#detailChoice').onchange=()=>{if(region&&state.mode===region.mode)setPreset($('#detailChoice').value);else setMode($('#detailChoice').value);};
+const detailObserver=new MutationObserver(syncDetailMobile);
+for(const selector of ['#selection','#markerSelection','#regionbar','.modebar'])detailObserver.observe($(selector),{childList:true,subtree:true,attributes:true,attributeFilter:['aria-pressed','hidden']});
+syncDetailMobile();
 function isChannels(mode=state.mode){return mode==='channels'||mode==='cranial_channels';}
 function contextId(){return active?.metadata.context?.id||'temporal_context';}
 const cache = new Map(); let active=null, ticket=0;
@@ -313,7 +381,7 @@ function renderSelection() {
   }
   const d=part.data;
   $('#selection').innerHTML=`<p class="eyebrow">${isChannels()?'Костная стенка · '+active.metadata.source:state.mode==='openear'?'Внутреннее строение · OpenEar':part.kind==='cavity'?'Объём воздушной полости':state.mode==='microct'?'Поверхность микро-КТ':'Кость черепа'}</p><h2>${esc(d.ru||part.id)}</h2>${d.lat?`<p class="latin">${esc(d.lat)}</p>`:''}${d.c?`<p class="hint">TA98 ${esc(d.c)}</p>`:''}${d.x?`<p class="description">${esc(d.x)}</p>`:''}${d.modelNote?`<div class="notice">${esc(d.modelNote)}</div>`:''}<div class="actions"><button class="btn" id="onlyPart">${state.only===part.id?'Показать все':'Только эта структура'}</button><button class="btn" id="hidePart">Скрыть</button><button class="btn" id="clearPart">Снять выбор</button></div>${linkList(d.refs)}`;
-  $('#onlyPart').onclick=()=>{state.only=state.only===part.id?null:part.id;apply();renderSelection();renderParts();frame();};
+  $('#onlyPart').onclick=()=>{state.only=state.only===part.id?null:part.id;apply();renderSelection();renderParts();frame();setDetailPanel(false);};
   $('#hidePart').onclick=()=>{state.hidden.add(part.id);if(state.only===part.id)state.only=null;selectPart(null);};
   $('#clearPart').onclick=()=>selectPart(null);
   if(d.views?.length){$('#selection').insertAdjacentHTML('beforeend',`<div class="actions">${d.views.map((v,i)=>`<button class="btn" data-part-view="${i}">${esc(v.ru)}</button>`).join('')}</div>`);$('#selection').querySelectorAll('[data-part-view]').forEach(b=>b.onclick=()=>frame(d.views[Number(b.dataset.partView)],part.id));}
@@ -450,7 +518,7 @@ function setPreset(id){
   apply();renderSelection();renderParts();resize();frame(preset.view);$('#panel').scrollTop=0;return true;
 }
 function reset() {if(geometryRecord&&state.mode===geometryRecord.assessment.viewer.mode){applyGeometry();return;}if(wholeRecord&&state.mode===wholeRecord.launch.mode){applyWhole();return;}if(isChannels()){state.hidden=new Set([contextId()]);state.only=null;state.selected=null;state.clip='off';state.translucent=true;apply();renderSelection();renderParts();frame('antlat');return;}if(region&&state.mode===region.mode){setPreset(region.presets[0].id);return;}state.hidden.clear();state.only=null;state.selected=null;state.marker=null;$('#markerSelection').hidden=true;state.cavities=state.mode==='openear';state.translucent=(state.mode==='openear'||isChannels());state.clip='off';state.cut=.5;state.reverse=false;$('#view').value='antlat';apply();renderSelection();renderParts();frame('antlat');}
-$('#view').onchange=()=>frame();$('#fit').onclick=()=>frame();$('#reset').onclick=reset;
+$('#view').onchange=()=>{frame();setDetailPanel(false);};$('#fit').onclick=()=>frame();$('#reset').onclick=()=>{reset();setDetailPanel(false);};
 $('#retry').onclick=async()=>{const mode=state.mode;if(await setMode(mode))restoreRequestedLaunch();};
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
 $('#cutPlane').onchange=()=>setCut($('#cutPlane').value);$('#cutPosition').oninput=()=>setCut(state.clip,+$('#cutPosition').value/100);$('#reverseCut').onchange=()=>setCut(state.clip,state.cut,$('#reverseCut').checked);

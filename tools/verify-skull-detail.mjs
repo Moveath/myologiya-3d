@@ -32,7 +32,7 @@ try{
   const zMetadata=JSON.parse(await fs.readFile(path.join(site,'skull-z-detail.json'),'utf8'));
   const earMetadata=JSON.parse(await fs.readFile(path.join(site,'skull-openear.json'),'utf8'));
   const earLandmarks=JSON.parse(await fs.readFile(path.join(site,'skull-openear-landmarks.json'),'utf8'));
-  assert.equal(earLandmarks.markers.length,8,'OpenEar must expose eight independently reviewed native landmarks');
+  assert.equal(earLandmarks.markers.length,13,'OpenEar must expose the current thirteen native landmarks');
   assert.equal(earLandmarks.complete,false,'The supplemental set must not claim anatomical completeness');
   const testedMarkers=['mandible_mylohyoid_groove_right','mandible_mylohyoid_groove_left'];
   for(const id of testedMarkers)assert.ok(zMetadata.markers?.some(marker=>marker.id===id),`Missing reviewed Z marker ${id}`);
@@ -41,7 +41,8 @@ try{
   const earContext=earMetadata.structures.find(part=>part.context);
   assert.ok(stapes,'OpenEar stapes metadata must be present');
   assert.ok(earContext,'OpenEar must identify the surrounding specimen as context');
-  for(const width of [390,1280])for(const theme of ['light','dark']){
+  // Mobile panels and all source modes are covered by verify-skull-detail-mobile.mjs.
+  for(const width of [1280])for(const theme of ['light','dark']){
     const height=width===390?844:860;
     const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1,colorScheme:theme,reducedMotion:'reduce'});
     const page=await context.newPage(),errors=[],screenshots=[];
@@ -201,7 +202,7 @@ try{
     // These markers identify surfaces of the native ossicle meshes, using
     // custom specimen views rather than assumed anatomical scanner axes.
     const nativeMarkersTested=[];
-    if(width===390&&theme==='light')for(const marker of earLandmarks.markers){
+    if(width===1280&&theme==='light')for(const marker of earLandmarks.markers){
       await page.evaluate(id=>window.__detail.selectPart(id,true),marker.b);
       await page.locator(`[data-marker="${marker.id}"]`).click();
       await page.waitForFunction(()=>!document.querySelector('#detailPin').hidden);
@@ -275,11 +276,11 @@ try{
     assert.equal(await page.evaluate(()=>window.__atlas.state.sel),atlasSelection);
     await page.unroute(failedChild);
     assert.deepEqual(errors,[]);
-    report.cases.push({width,height,theme,status:'passed',z_bones:22,z_cavities:8,z_visibility_selection_isolation_reset:true,z_clipping:true,z_markers:testedMarkers,z_markers_visible_and_clipped:true,microct_load:true,microct_clipping:['sagittal','coronal','axial'],microct_reverse_cut:true,microct_neutral_lateral_labels:true,openear_parts:13,openear_stapes_selection_isolation_reset:true,openear_context_visibility_transparency:true,openear_clipping:true,openear_neutral_views_and_planes:true,openear_native_markers:nativeMarkersTested,openear_native_marker_sources_and_visibility:nativeMarkersTested.length===8?true:null,embedded_parent_navigation_preserved:true,embedded_region_back_to_overview:true,embedded_overview_back_closes:true,embedded_parent_close_after_child_failure:true,load_failure_recovery:true,microct_load_and_front_screenshot_ms:microctLoadAndScreenshotMs,page_errors:errors,screenshots});
+    report.cases.push({width,height,theme,status:'passed',z_bones:22,z_cavities:8,z_visibility_selection_isolation_reset:true,z_clipping:true,z_markers:testedMarkers,z_markers_visible_and_clipped:true,microct_load:true,microct_clipping:['sagittal','coronal','axial'],microct_reverse_cut:true,microct_neutral_lateral_labels:true,openear_parts:13,openear_stapes_selection_isolation_reset:true,openear_context_visibility_transparency:true,openear_clipping:true,openear_neutral_views_and_planes:true,openear_native_markers:nativeMarkersTested,openear_native_marker_sources_and_visibility:nativeMarkersTested.length===13?true:null,embedded_parent_navigation_preserved:true,embedded_region_back_to_overview:true,embedded_overview_back_closes:true,embedded_parent_close_after_child_failure:true,load_failure_recovery:true,microct_load_and_front_screenshot_ms:microctLoadAndScreenshotMs,page_errors:errors,screenshots});
     console.log(`${width} ${theme}: passed; micro-CT load + screenshot ${microctLoadAndScreenshotMs} ms`);
     await context.close();
   }
-  report.local_navigation_round_trip='embedded dialog preserves the atlas document and selection in all four layouts';
+  report.local_navigation_round_trip='embedded dialog preserves the atlas document and selection in both desktop themes; mobile layouts have a separate suite';
   report.status='passed';
 }catch(error){report.status='failed';report.error=String(error?.stack||error);throw error;}
 finally{
