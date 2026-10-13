@@ -25,7 +25,118 @@ Object.assign(A.muscles,{
         "o": "Кожа бровей и волокна соседних мимических мышц.",
         "i": "Сухожильный шлем.",
         "a": "Поднимает брови, образует складки кожи лба.",
-        "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII)."
+        "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
+        "s": "Ветви глазной и поверхностной височной артерий.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: origin; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln02.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+              "locator": "M. occipitofrontalis: U (Ursprung); venter frontalis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: insertion; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Function; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Function; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "title": "UNSW, ANAT2521: учебное руководство, 2017",
+              "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis; venter frontalis",
+              "independentSource": "university-new-south-wales"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Innervation; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Blood supply; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "specific",
+          "s": "specific"
+        }
       },
       "occipital": {
         "ru": "Затылочное брюшко",
@@ -34,7 +145,111 @@ Object.assign(A.muscles,{
         "o": "Затылочная кость в области выйных линий; различие источников пояснено в примечании.",
         "i": "Сухожильный шлем.",
         "a": "Смещает кожу головы назад.",
-        "n": "Задний ушной нерв (n. auricularis posterior), ветвь лицевого нерва (VII)."
+        "n": "Задний ушной нерв (n. auricularis posterior), ветвь лицевого нерва (VII).",
+        "s": "Затылочная артерия (a. occipitalis).",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: origin; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: insertion; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Function; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "title": "UNSW, ANAT2521: учебное руководство, 2017",
+              "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis; venter occipitalis",
+              "independentSource": "university-new-south-wales"
+            },
+            {
+              "sourceId": "elsevier-open-summary:18733",
+              "title": "Elsevier: открытая справочная страница",
+              "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+              "locator": "Quick Facts / Action; venter occipitalis",
+              "independentSource": "elsevier-open-summary"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Innervation; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Blood supply; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "specific",
+          "s": "specific"
+        }
       }
     },
     "refs": [
@@ -57,8 +272,144 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+        "title": "UNSW, ANAT2521: учебное руководство, 2017"
+      },
+      {
+        "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+        "title": "Elsevier: открытая справочная страница"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "university-zurich:KopfMuskeln02.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+          "locator": "M. occipitofrontalis: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:fron.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/fron.htm",
+          "locator": "occipitofrontalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+          "title": "UNSW, ANAT2521: учебное руководство, 2017",
+          "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+          "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis",
+          "independentSource": "university-new-south-wales"
+        },
+        {
+          "sourceId": "elsevier-open-summary:18733",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+          "locator": "Quick Facts / Action",
+          "independentSource": "elsevier-open-summary"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:fron.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/fron.htm",
+          "locator": "occipitofrontalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "occipitofrontalis_left": {
@@ -83,7 +434,118 @@ Object.assign(A.muscles,{
         "o": "Кожа бровей и волокна соседних мимических мышц.",
         "i": "Сухожильный шлем.",
         "a": "Поднимает брови, образует складки кожи лба.",
-        "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII)."
+        "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
+        "s": "Ветви глазной и поверхностной височной артерий.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: origin; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln02.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+              "locator": "M. occipitofrontalis: U (Ursprung); venter frontalis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: insertion; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Function; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Function; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "title": "UNSW, ANAT2521: учебное руководство, 2017",
+              "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis; venter frontalis",
+              "independentSource": "university-new-south-wales"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Innervation; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Blood supply; venter frontalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply; venter frontalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "specific",
+          "s": "specific"
+        }
       },
       "occipital": {
         "ru": "Затылочное брюшко",
@@ -92,7 +554,111 @@ Object.assign(A.muscles,{
         "o": "Затылочная кость в области выйных линий; различие источников пояснено в примечании.",
         "i": "Сухожильный шлем.",
         "a": "Смещает кожу головы назад.",
-        "n": "Задний ушной нерв (n. auricularis posterior), ветвь лицевого нерва (VII)."
+        "n": "Задний ушной нерв (n. auricularis posterior), ветвь лицевого нерва (VII).",
+        "s": "Затылочная артерия (a. occipitalis).",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: origin; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Origin and insertion: insertion; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Function; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "title": "UNSW, ANAT2521: учебное руководство, 2017",
+              "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+              "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis; venter occipitalis",
+              "independentSource": "university-new-south-wales"
+            },
+            {
+              "sourceId": "elsevier-open-summary:18733",
+              "title": "Elsevier: открытая справочная страница",
+              "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+              "locator": "Quick Facts / Action; venter occipitalis",
+              "independentSource": "elsevier-open-summary"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Innervation; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+              "locator": "Blood supply; venter occipitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply; venter occipitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "specific",
+          "s": "specific"
+        }
       }
     },
     "refs": [
@@ -115,8 +681,144 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+        "title": "UNSW, ANAT2521: учебное руководство, 2017"
+      },
+      {
+        "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+        "title": "Elsevier: открытая справочная страница"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "university-zurich:KopfMuskeln02.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln02.html",
+          "locator": "M. occipitofrontalis: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:fron.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/fron.htm",
+          "locator": "occipitofrontalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-new-south-wales:ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+          "title": "UNSW, ANAT2521: учебное руководство, 2017",
+          "url": "https://medicalsciences.med.unsw.edu.au/sites/default/files/soms/page/Undergrad/ANAT2521%20Evolution%20of%20Human%20Structure%20-%20Student%20Manual%202017.pdf",
+          "locator": "PDF с. 67: Facial muscles, абзац о frontalis и occipitalis",
+          "independentSource": "university-new-south-wales"
+        },
+        {
+          "sourceId": "elsevier-open-summary:18733",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/occipitalis-muscle/18733",
+          "locator": "Quick Facts / Action",
+          "independentSource": "elsevier-open-summary"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:fron.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/fron.htm",
+          "locator": "occipitofrontalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:occipitofrontalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/occipitofrontalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. occipitofrontalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "temporoparietalis_right": {
@@ -155,6 +857,130 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Funktion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "temporoparietalis_left": {
@@ -193,6 +1019,130 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Funktion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:tepa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/tepa.htm",
+          "locator": "temporoparietalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. temporoparietalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:musculus-temporoparietalis",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/de/library/anatomie/musculus-temporoparietalis",
+          "locator": "Verlauf und Versorgung",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "orbicularis_oculi_right": {
@@ -214,20 +1164,342 @@ Object.assign(A.muscles,{
         "ru": "Глазничная часть",
         "lat": "pars orbitalis",
         "code": "A04.1.03.017",
-        "a": "Сильно смыкает веки."
+        "a": "Сильно смыкает веки.",
+        "o": "Медиальный край глазницы в области слёзного гребня и лобного отростка верхней челюсти.",
+        "i": "Кожа и мягкие ткани вокруг края глазницы.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars orbitalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: U (Ursprung); pars orbitalis",
+              "independentSource": "university-zurich"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars orbitalis",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion; pars orbitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: A (Ansatz); pars orbitalis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars orbitalis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars orbitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "palpebral": {
         "ru": "Вековая часть",
         "lat": "pars palpebralis",
         "code": "A04.1.03.014",
-        "a": "Мягко смыкает веки при мигании."
+        "a": "Мягко смыкает веки при мигании.",
+        "o": "Медиальная связка века (lig. palpebrale mediale).",
+        "i": "Латеральный шов век (raphe palpebralis lateralis); в источниках также назван латеральной связкой века.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars palpebralis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion; pars palpebralis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Approach; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars palpebralis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "deep": {
         "ru": "Глубокая часть",
         "lat": "pars profunda",
         "code": "A04.1.03.016",
         "a": "Участвует в отведении слёз.",
-        "x": "В учебниках также называется слёзной частью; в TA98 — pars profunda.",
+        "x": "В учебниках также называется слёзной частью; в TA98 — pars profunda. DEGUM и Цюрихский университет описывают переход в вековую часть у медиального угла; Kenhub отдельно перечисляет хрящи век и латеральную связку. Краткое поле прикрепления не является исчерпывающей картой всех волокон.",
+        "o": "Слёзная кость в области слёзного гребня.",
+        "i": "Волокна вековой части в медиальной области век.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Approach; pars profunda",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: A (Ansatz); pars profunda",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars profunda",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       },
       "ciliary": {
@@ -235,6 +1507,116 @@ Object.assign(A.muscles,{
         "lat": "fasciculus ciliaris",
         "code": "A04.1.03.015",
         "x": "Термин TA98 для пучка вековой части. Отдельной геометрии в этой модели нет.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Attachments: origin",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Attachments: insertion",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "whole_muscle",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       }
     },
@@ -258,8 +1640,126 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+        "title": "Kenhub: открытая анатомическая статья"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+        "title": "Цюрихский университет: анатомия"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oculi",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oculi",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:ooc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+          "locator": "orbicularis oculi: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:ooc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+          "locator": "orbicularis oculi: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "orbicularis_oculi_left": {
@@ -281,20 +1781,342 @@ Object.assign(A.muscles,{
         "ru": "Глазничная часть",
         "lat": "pars orbitalis",
         "code": "A04.1.03.017",
-        "a": "Сильно смыкает веки."
+        "a": "Сильно смыкает веки.",
+        "o": "Медиальный край глазницы в области слёзного гребня и лобного отростка верхней челюсти.",
+        "i": "Кожа и мягкие ткани вокруг края глазницы.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars orbitalis",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: U (Ursprung); pars orbitalis",
+              "independentSource": "university-zurich"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars orbitalis",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion; pars orbitalis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: A (Ansatz); pars orbitalis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars orbitalis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars orbitalis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "palpebral": {
         "ru": "Вековая часть",
         "lat": "pars palpebralis",
         "code": "A04.1.03.014",
-        "a": "Мягко смыкает веки при мигании."
+        "a": "Мягко смыкает веки при мигании.",
+        "o": "Медиальная связка века (lig. palpebrale mediale).",
+        "i": "Латеральный шов век (raphe palpebralis lateralis); в источниках также назван латеральной связкой века.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars palpebralis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion; pars palpebralis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Approach; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars palpebralis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars palpebralis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "deep": {
         "ru": "Глубокая часть",
         "lat": "pars profunda",
         "code": "A04.1.03.016",
         "a": "Участвует в отведении слёз.",
-        "x": "В учебниках также называется слёзной частью; в TA98 — pars profunda.",
+        "x": "В учебниках также называется слёзной частью; в TA98 — pars profunda. DEGUM и Цюрихский университет описывают переход в вековую часть у медиального угла; Kenhub отдельно перечисляет хрящи век и латеральную связку. Краткое поле прикрепления не является исчерпывающей картой всех волокон.",
+        "o": "Слёзная кость в области слёзного гребня.",
+        "i": "Волокна вековой части в медиальной области век.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Origin; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Approach; pars profunda",
+              "independentSource": "degum-zilles-table"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln03.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+              "locator": "M. orbicularis oculi: A (Ansatz); pars profunda",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions; pars profunda",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       },
       "ciliary": {
@@ -302,6 +2124,116 @@ Object.assign(A.muscles,{
         "lat": "fasciculus ciliaris",
         "code": "A04.1.03.015",
         "x": "Термин TA98 для пучка вековой части. Отдельной геометрии в этой модели нет.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Attachments: origin",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: origin",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Attachments: insertion",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oculi",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:ooc.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+              "locator": "orbicularis oculi: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+              "title": "TeachMeAnatomy: orbicularis oculi",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+              "independentSource": "degum-zilles-table"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "whole_muscle",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       }
     },
@@ -325,8 +2257,126 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+        "title": "Kenhub: открытая анатомическая статья"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln03.html",
+        "title": "Цюрихский университет: анатомия"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oculi",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oculi",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oculi",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:ooc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+          "locator": "orbicularis oculi: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:ooc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ooc.htm",
+          "locator": "orbicularis oculi: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oculi",
+          "title": "TeachMeAnatomy: orbicularis oculi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oculi/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. orbicularis oculi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "corrugator_supercilii_right": {
@@ -365,6 +2415,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:crr.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/crr.htm",
+          "locator": "corrugator supercilii: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:crr.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/crr.htm",
+          "locator": "corrugator supercilii: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "corrugator_supercilii_left": {
@@ -403,6 +2563,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:crr.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/crr.htm",
+          "locator": "corrugator supercilii: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:crr.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/crr.htm",
+          "locator": "corrugator supercilii: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:corrugator-supercilii",
+          "title": "TeachMeAnatomy: corrugator supercilii",
+          "url": "https://teachmeanatomy.info/encyclopaedia/c/corrugator-supercilii/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:corrugator-supercilii-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/corrugator-supercilii-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "procerus_right": {
@@ -441,6 +2711,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "procerus_left": {
@@ -479,6 +2859,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:pro.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/pro.htm",
+          "locator": "procerus: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:procerus",
+          "title": "TeachMeAnatomy: procerus",
+          "url": "https://teachmeanatomy.info/encyclopaedia/p/procerus/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:procerus-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/procerus-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "nasalis_right": {
@@ -502,6 +2992,103 @@ Object.assign(A.muscles,{
         "code": "A04.1.03.010",
         "i": "Апоневроз спинки носа.",
         "a": "Суживает ноздри.",
+        "o": "Верхняя челюсть сбоку от основания носа.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: origin; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: origin; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: insertion; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: insertion; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Actions; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Function; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       },
       "alar": {
@@ -510,6 +3097,103 @@ Object.assign(A.muscles,{
         "code": "A04.1.03.011",
         "i": "Ткани крыла носа.",
         "a": "Расширяет ноздри.",
+        "o": "Верхняя челюсть над латеральным резцом.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: origin; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: origin; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: insertion; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: insertion; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Actions; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Function; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       }
     },
@@ -531,6 +3215,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "nasalis_left": {
@@ -554,6 +3334,103 @@ Object.assign(A.muscles,{
         "code": "A04.1.03.010",
         "i": "Апоневроз спинки носа.",
         "a": "Суживает ноздри.",
+        "o": "Верхняя челюсть сбоку от основания носа.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: origin; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: origin; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: insertion; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: insertion; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Actions; pars transversa",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Function; pars transversa",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       },
       "alar": {
@@ -562,6 +3439,103 @@ Object.assign(A.muscles,{
         "code": "A04.1.03.011",
         "i": "Ткани крыла носа.",
         "a": "Расширяет ноздри.",
+        "o": "Верхняя челюсть над латеральным резцом.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: origin; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: origin; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Attachments: insertion; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Origin and insertion: insertion; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Actions; pars alaris",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Function; pars alaris",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:nasalis",
+              "title": "TeachMeAnatomy: nasalis",
+              "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:nasalis-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "specific",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       }
     },
@@ -583,6 +3557,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:nasalis",
+          "title": "TeachMeAnatomy: nasalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/n/nasalis/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:nasalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/nasalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_septi_nasi_right": {
@@ -617,6 +3687,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_septi_nasi_left": {
@@ -651,6 +3817,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:depressor-septi-nasi",
+          "title": "TeachMeAnatomy: depressor septi nasi",
+          "url": "https://teachmeanatomy.info/encyclopaedia/d/depressor-septi-nasi/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. depressor septi nasi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "orbicularis_oris": {
@@ -673,6 +3935,116 @@ Object.assign(A.muscles,{
         "lat": "pars marginalis",
         "code": "A04.1.03.024",
         "x": "Часть названа по TA98; отдельной геометрии в BodyParts3D нет.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:oor.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+              "locator": "orbicularis oris: ORIGIN",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Origin and insertion: origin",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Attachments: origin",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Attachments: insertion",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:oor.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+              "locator": "orbicularis oris: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln06.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+              "locator": "M. orbicularis oris: F (Funktion)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "whole_muscle",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       },
       "labial": {
@@ -680,6 +4052,116 @@ Object.assign(A.muscles,{
         "lat": "pars labialis",
         "code": "A04.1.03.025",
         "x": "Часть названа по TA98; отдельной геометрии в BodyParts3D нет.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:oor.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+              "locator": "orbicularis oris: ORIGIN",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Origin and insertion: origin",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Attachments: origin",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Attachments: insertion",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:oor.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+              "locator": "orbicularis oris: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:KopfMuskeln06.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+              "locator": "M. orbicularis oris: F (Funktion)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Innervation",
+              "independentSource": "teachmeanatomy-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+              "title": "TeachMeAnatomy: orbicularis oris",
+              "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "whole_muscle",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        },
         "noModel": true
       }
     },
@@ -703,8 +4185,122 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+        "title": "Цюрихский университет: анатомия"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:oor.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+          "locator": "orbicularis oris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+          "title": "TeachMeAnatomy: orbicularis oris",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+          "title": "TeachMeAnatomy: orbicularis oris",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:oor.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/oor.htm",
+          "locator": "orbicularis oris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:KopfMuskeln06.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+          "locator": "M. orbicularis oris: F (Funktion)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+          "title": "TeachMeAnatomy: orbicularis oris",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:orbicularis-oris",
+          "title": "TeachMeAnatomy: orbicularis oris",
+          "url": "https://teachmeanatomy.info/encyclopaedia/o/orbicularis-oris/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:orbicularis-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/orbicularis-oris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_anguli_oris_right": {
@@ -743,6 +4339,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor anguli oris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_anguli_oris_left": {
@@ -781,6 +4473,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:dao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dao.htm",
+          "locator": "depressor anguli oris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor anguli oris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_labii_inferioris_right": {
@@ -819,6 +4607,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "depressor_labii_inferioris_left": {
@@ -857,6 +4755,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:dli.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/dli.htm",
+          "locator": "depressor labii inferioris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:depressor-labii-inferioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-labii-inferioris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. depressor labii inferioris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "mentalis_right": {
@@ -895,6 +4903,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. mentalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "mentalis_left": {
@@ -933,6 +5037,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:men.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/men.htm",
+          "locator": "mentalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:mentalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/mentalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. mentalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "risorius_right": {
@@ -971,6 +5171,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. risorius, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "risorius_left": {
@@ -1009,6 +5305,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:ris.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/ris.htm",
+          "locator": "risorius: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:risorius-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/risorius-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. risorius, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "zygomaticus_major_right": {
@@ -1047,6 +5439,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. zygomaticus major, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "zygomaticus_major_left": {
@@ -1085,6 +5573,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:zmj.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmj.htm",
+          "locator": "zygomaticus major: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-major-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-major-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. zygomaticus major, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "zygomaticus_minor_right": {
@@ -1123,6 +5707,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. zygomaticus minor, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "zygomaticus_minor_left": {
@@ -1161,6 +5841,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:zmn.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/zmn.htm",
+          "locator": "zygomaticus minor: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:zygomaticus-minor-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/zygomaticus-minor-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. zygomaticus minor, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_labii_superioris_right": {
@@ -1199,6 +5975,130 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_labii_superioris_left": {
@@ -1237,6 +6137,130 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Function",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lls.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lls.htm",
+          "locator": "levator labii superioris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:levator-labii-superioris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-labii-superioris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator labii superioris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_nasolabialis_right": {
@@ -1273,8 +6297,129 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+        "title": "Hur и соавт., PLOS ONE, 2022"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац о LLSAN; Fig. 4: подъём верхней губы и крыла носа",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_nasolabialis_left": {
@@ -1311,8 +6456,129 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+        "title": "Hur и соавт., PLOS ONE, 2022"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Origin",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац о LLSAN; Fig. 4: подъём верхней губы и крыла носа",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:llsa.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/llsa.htm",
+          "locator": "levator nasolabialis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Innervation",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Levator labii superioris alaeque nasi muscle: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 5, раздел 5 (мимические мышцы), строка m. levator labii superioris alaeque nasi, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_anguli_oris_right": {
@@ -1349,8 +6615,108 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+        "title": "Цюрихский университет: анатомия"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:KopfMuskeln06.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+          "locator": "M. levator anguli oris: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator anguli oris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "levator_anguli_oris_left": {
@@ -1387,8 +6753,108 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+        "title": "Цюрихский университет: анатомия"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:KopfMuskeln06.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Topographie/topo_HTML/kopf/KopfMuskeln06.html",
+          "locator": "M. levator anguli oris: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lao.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lao.htm",
+          "locator": "levator anguli oris: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:levator-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/levator-anguli-oris-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. levator anguli oris, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "buccinator_right": {
@@ -1427,6 +6893,123 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "buccinator_left": {
@@ -1465,6 +7048,123 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:buc.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/buc.htm",
+          "locator": "buccinator: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:buccinator-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/buccinator-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:buccinator",
+          "title": "TeachMeAnatomy: buccinator",
+          "url": "https://teachmeanatomy.info/encyclopaedia/b/buccinator/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "masseter_right": {
@@ -1480,19 +7180,234 @@ Object.assign(A.muscles,{
     "a": "Поднимает нижнюю челюсть, закрывая рот.",
     "n": "Жевательный нерв (n. massetericus), ветвь нижнечелюстного нерва (V3).",
     "s": "Жевательная артерия (a. masseterica), ветвь верхнечелюстной артерии.",
-    "note": "",
+    "note": "Границы начала глубокой части в источниках описываются неодинаково: Цюрихский университет и таблица Kenhub указывают заднюю треть скуловой дуги, основной текст той же статьи Kenhub — всю длину её нижнего края. Здесь дана область начала, без точной границы на модели.",
     "parts": {
       "superficial": {
         "ru": "Поверхностная часть",
         "lat": "pars superficialis",
         "code": "A04.1.04.003",
-        "o": "Передний отдел скуловой дуги и верхнечелюстной отросток скуловой кости."
+        "o": "Передний отдел скуловой дуги и верхнечелюстной отросток скуловой кости.",
+        "i": "Наружная поверхность угла и нижней части ветви нижней челюсти, жевательная бугристость.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: origin; pars superficialis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Attachments: origin; pars superficialis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: U (Ursprung); pars superficialis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: insertion; pars superficialis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. masseter, Approach; pars superficialis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:mass.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+              "locator": "masseter: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: N (Nerven)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "deep": {
         "ru": "Глубокая часть",
         "lat": "pars profunda",
         "code": "A04.1.04.004",
-        "o": "Глубокая поверхность заднего отдела скуловой дуги."
+        "o": "Глубокая поверхность заднего отдела скуловой дуги.",
+        "i": "Наружная поверхность ветви нижней челюсти, выше прикрепления поверхностной части.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: origin; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: U (Ursprung); pars profunda",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: insertion; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. masseter, Approach; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:mass.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+              "locator": "masseter: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: N (Nerven)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       }
     },
     "refs": [
@@ -1515,8 +7430,133 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+        "title": "DEGUM, Volk / Sauer: таблица мышц"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:wirMlehr49.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+          "locator": "M. masseter: N (Nerven)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "masseter_left": {
@@ -1532,19 +7572,234 @@ Object.assign(A.muscles,{
     "a": "Поднимает нижнюю челюсть, закрывая рот.",
     "n": "Жевательный нерв (n. massetericus), ветвь нижнечелюстного нерва (V3).",
     "s": "Жевательная артерия (a. masseterica), ветвь верхнечелюстной артерии.",
-    "note": "",
+    "note": "Границы начала глубокой части в источниках описываются неодинаково: Цюрихский университет и таблица Kenhub указывают заднюю треть скуловой дуги, основной текст той же статьи Kenhub — всю длину её нижнего края. Здесь дана область начала, без точной границы на модели.",
     "parts": {
       "superficial": {
         "ru": "Поверхностная часть",
         "lat": "pars superficialis",
         "code": "A04.1.04.003",
-        "o": "Передний отдел скуловой дуги и верхнечелюстной отросток скуловой кости."
+        "o": "Передний отдел скуловой дуги и верхнечелюстной отросток скуловой кости.",
+        "i": "Наружная поверхность угла и нижней части ветви нижней челюсти, жевательная бугристость.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: origin; pars superficialis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Attachments: origin; pars superficialis",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: U (Ursprung); pars superficialis",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: insertion; pars superficialis",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. masseter, Approach; pars superficialis",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:mass.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+              "locator": "masseter: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: N (Nerven)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "deep": {
         "ru": "Глубокая часть",
         "lat": "pars profunda",
         "code": "A04.1.04.004",
-        "o": "Глубокая поверхность заднего отдела скуловой дуги."
+        "o": "Глубокая поверхность заднего отдела скуловой дуги.",
+        "i": "Наружная поверхность ветви нижней челюсти, выше прикрепления поверхностной части.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: origin; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: U (Ursprung); pars profunda",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Origin and insertion: insertion; pars profunda",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "title": "DEGUM, Volk / Sauer: таблица мышц",
+              "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+              "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. masseter, Approach; pars profunda",
+              "independentSource": "degum-zilles-table"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "loyola-lumen:mass.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+              "locator": "masseter: ACTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            },
+            {
+              "sourceId": "university-zurich:wirMlehr49.html",
+              "title": "Цюрихский университет: анатомия",
+              "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+              "locator": "M. masseter: N (Nerven)",
+              "independentSource": "university-zurich"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:masseter",
+              "title": "TeachMeAnatomy: masseter",
+              "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:masseter-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "specific",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       }
     },
     "refs": [
@@ -1567,8 +7822,133 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+        "title": "DEGUM, Volk / Sauer: таблица мышц"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:mass.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mass.htm",
+          "locator": "masseter: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:wirMlehr49.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+          "locator": "M. masseter: N (Nerven)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:masseter",
+          "title": "TeachMeAnatomy: masseter",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/masseter/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:masseter-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/masseter-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "temporalis_right": {
@@ -1605,8 +7985,133 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+        "title": "DEGUM, Volk / Sauer: таблица мышц"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:wirMlehr49.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+          "locator": "M. temporalis: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. temporalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "temporalis_left": {
@@ -1643,8 +8148,133 @@ Object.assign(A.muscles,{
       {
         "title": "Колесников, 2003: с. 43–44",
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+      },
+      {
+        "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+        "title": "Цюрихский университет: анатомия"
+      },
+      {
+        "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+        "title": "DEGUM, Volk / Sauer: таблица мышц"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "university-zurich:wirMlehr49.html",
+          "title": "Цюрихский университет: анатомия",
+          "url": "https://e-learn.anatomy.uzh.ch/anatomie/Bewegungsapparat/bewapp_HTML/wirbel/wirMlehr49.html",
+          "locator": "M. temporalis: U (Ursprung)",
+          "independentSource": "university-zurich"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:temp.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/temp.htm",
+          "locator": "temporalis: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:temporalis",
+          "title": "TeachMeAnatomy: temporalis",
+          "url": "https://teachmeanatomy.info/encyclopaedia/t/temporalis/",
+          "locator": "Innervation",
+          "independentSource": "teachmeanatomy-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "kenhub-editorial:temporalis-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 7, раздел 6 (жевательные мышцы), строка m. temporalis, Blood supply",
+          "independentSource": "degum-zilles-table"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "lateral_pterygoid_right": {
@@ -1666,13 +8296,205 @@ Object.assign(A.muscles,{
         "ru": "Верхняя головка",
         "lat": "caput superius",
         "code": "A04.1.04.007",
-        "o": "Подвисочная поверхность большого крыла клиновидной кости."
+        "o": "Подвисочная поверхность большого крыла клиновидной кости.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: ORIGIN; caput superius",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: origin; caput superius",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: INSERTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "lower": {
         "ru": "Нижняя головка",
         "lat": "caput inferius",
         "code": "A04.1.04.008",
-        "o": "Наружная поверхность латеральной пластинки крыловидного отростка клиновидной кости."
+        "o": "Наружная поверхность латеральной пластинки крыловидного отростка клиновидной кости.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: ORIGIN; caput inferius",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: origin; caput inferius",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: INSERTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       }
     },
     "refs": [
@@ -1697,6 +8519,109 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "lateral_pterygoid_left": {
@@ -1718,13 +8643,205 @@ Object.assign(A.muscles,{
         "ru": "Верхняя головка",
         "lat": "caput superius",
         "code": "A04.1.04.007",
-        "o": "Подвисочная поверхность большого крыла клиновидной кости."
+        "o": "Подвисочная поверхность большого крыла клиновидной кости.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: ORIGIN; caput superius",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: origin; caput superius",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: INSERTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       },
       "lower": {
         "ru": "Нижняя головка",
         "lat": "caput inferius",
         "code": "A04.1.04.008",
-        "o": "Наружная поверхность латеральной пластинки крыловидного отростка клиновидной кости."
+        "o": "Наружная поверхность латеральной пластинки крыловидного отростка клиновидной кости.",
+        "fieldRefs": {
+          "o": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: ORIGIN; caput inferius",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: origin; caput inferius",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "i": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: INSERTION",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Origin and insertion: insertion",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "a": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Actions",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Function",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "n": [
+            {
+              "sourceId": "loyola-lumen:lpte.htm",
+              "title": "Loyola University, LUMEN",
+              "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+              "locator": "lateral pterygoid: NERVE",
+              "independentSource": "loyola-lumen"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Innervation",
+              "independentSource": "kenhub-editorial"
+            }
+          ],
+          "s": [
+            {
+              "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+              "title": "TeachMeAnatomy: lateral pterygoid",
+              "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+              "locator": "Blood Supply",
+              "independentSource": "teachmeanatomy-editorial"
+            },
+            {
+              "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+              "title": "Kenhub: открытая анатомическая статья",
+              "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+              "locator": "Blood supply",
+              "independentSource": "kenhub-editorial"
+            }
+          ]
+        },
+        "fieldStatus": {
+          "o": "supported",
+          "i": "supported",
+          "a": "supported",
+          "n": "supported",
+          "s": "supported"
+        },
+        "fieldScope": {
+          "o": "specific",
+          "i": "whole_muscle",
+          "a": "whole_muscle",
+          "n": "whole_muscle",
+          "s": "whole_muscle"
+        }
       }
     },
     "refs": [
@@ -1749,6 +8866,109 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Actions",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:lpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/lpte.htm",
+          "locator": "lateral pterygoid: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:lateral-pterygoid",
+          "title": "TeachMeAnatomy: lateral pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/l/lateral-pterygoid/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:lateral-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/lateral-pterygoid-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "medial_pterygoid_right": {
@@ -1787,6 +9007,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "medial_pterygoid_left": {
@@ -1825,6 +9155,116 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: ORIGIN",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Attachments: origin",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Origin and insertion: origin",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: INSERTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Attachments: insertion",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Origin and insertion: insertion",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: ACTION",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Function",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "loyola-lumen:mpte.htm",
+          "title": "Loyola University, LUMEN",
+          "url": "https://www.meddean.luc.edu/lumen/meded/grossanatomy/dissector/mml/mpte.htm",
+          "locator": "medial pterygoid: NERVE",
+          "independentSource": "loyola-lumen"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Innervation",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "teachmeanatomy-editorial:medial-pterygoid",
+          "title": "TeachMeAnatomy: medial pterygoid",
+          "url": "https://teachmeanatomy.info/encyclopaedia/m/medial-pterygoid/",
+          "locator": "Blood Supply",
+          "independentSource": "teachmeanatomy-editorial"
+        },
+        {
+          "sourceId": "kenhub-editorial:medial-pterygoid-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/medial-pterygoid-muscle",
+          "locator": "Blood supply",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": false
   },
   "auricularis_anterior_right": {
@@ -1840,7 +9280,7 @@ Object.assign(A.muscles,{
     "a": "Слабо тянет ушную раковину вперёд.",
     "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
     "s": "Ветви поверхностной височной артерии (a. temporalis superficialis).",
-    "note": "",
+    "note": "DEGUM и Kenhub указывают височные ветви лицевого нерва; открытая страница Elsevier дополнительно перечисляет задний ушной нерв. Для кровоснабжения приведена ветвь, указанная в DEGUM и Elsevier; это не исчерпывающий список сосудов.",
     "refs": [
       {
         "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
@@ -1863,6 +9303,109 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Arterial Supply",
+          "independentSource": "elsevier-open-summary"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "auricularis_anterior_left": {
@@ -1878,7 +9421,7 @@ Object.assign(A.muscles,{
     "a": "Слабо тянет ушную раковину вперёд.",
     "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
     "s": "Ветви поверхностной височной артерии (a. temporalis superficialis).",
-    "note": "",
+    "note": "DEGUM и Kenhub указывают височные ветви лицевого нерва; открытая страница Elsevier дополнительно перечисляет задний ушной нерв. Для кровоснабжения приведена ветвь, указанная в DEGUM и Elsevier; это не исчерпывающий список сосудов.",
     "refs": [
       {
         "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
@@ -1901,6 +9444,109 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Arterial Supply",
+          "independentSource": "elsevier-open-summary"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "auricularis_superior_right": {
@@ -1916,7 +9562,7 @@ Object.assign(A.muscles,{
     "a": "Слабо тянет ушную раковину вверх.",
     "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
     "s": "Задняя ушная артерия (a. auricularis posterior).",
-    "note": "",
+    "note": "Височные ветви лицевого нерва указаны в обоих источниках; таблица DEGUM дополнительно называет задний ушной нерв. Поле иннервации содержит общий подтверждённый уровень ветвей, а не исключительный перечень.",
     "refs": [
       {
         "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
@@ -1939,6 +9585,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "auricularis_superior_left": {
@@ -1954,7 +9696,7 @@ Object.assign(A.muscles,{
     "a": "Слабо тянет ушную раковину вверх.",
     "n": "Височные ветви лицевого нерва (rr. temporales n. facialis, VII).",
     "s": "Задняя ушная артерия (a. auricularis posterior).",
-    "note": "",
+    "note": "Височные ветви лицевого нерва указаны в обоих источниках; таблица DEGUM дополнительно называет задний ушной нерв. Поле иннервации содержит общий подтверждённый уровень ветвей, а не исключительный перечень.",
     "refs": [
       {
         "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
@@ -1977,6 +9719,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "auricularis_posterior_right": {
@@ -2015,6 +9853,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "auricularis_posterior_left": {
@@ -2053,6 +9987,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Function",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «функция»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «иннервация»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «кровоснабжение»",
+          "independentSource": "kenhub-editorial"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "depressor_supercilii_right": {
@@ -2095,6 +10125,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Results",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац о DS: origin from the frontal process of the maxilla; Fig. 1",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Results",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Discussion",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Abstract и Discussion, Fig. 4: downward pull of medial eyebrow",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, первый абзац: mimetic muscles — facial nerve",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "elsevier-open-summary:21131",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/depressor-supercilii/21131",
+          "locator": "Quick Facts / Arterial Supply",
+          "independentSource": "elsevier-open-summary"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "depressor_supercilii_left": {
@@ -2137,6 +10263,102 @@ Object.assign(A.muscles,{
         "url": "https://gmpb2.ru/images/lektsii/lektsii-ophtal/%D0%9A%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%9B.%D0%9B.%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Results",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац о DS: origin from the frontal process of the maxilla; Fig. 1",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Results",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Approach",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "cook-lucarelli-lemke:074880680001700402",
+          "title": "Cook, Lucarelli, Lemke, 2000: depressor supercilii",
+          "url": "https://journals.sagepub.com/doi/10.1177/074880680001700402",
+          "locator": "Открытый Abstract, Discussion",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Abstract и Discussion, Fig. 4: downward pull of medial eyebrow",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Innervation",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "hur-lee-jung-schneider-2022:journal.pone.0264148",
+          "title": "Hur и соавт., PLOS ONE, 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, первый абзац: mimetic muscles — facial nerve",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 4, раздел 5 (мимические мышцы), строка m. depressor supercilii, Blood supply",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "elsevier-open-summary:21131",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/depressor-supercilii/21131",
+          "locator": "Quick Facts / Arterial Supply",
+          "independentSource": "elsevier-open-summary"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "supported",
+      "n": "supported",
+      "s": "supported"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "whole_muscle",
+      "n": "whole_muscle",
+      "s": "whole_muscle"
+    },
     "noModel": true
   },
   "transversus_menti": {
@@ -2151,8 +10373,8 @@ Object.assign(A.muscles,{
     "i": "Соответствующие волокна противоположной стороны в области подбородка.",
     "a": "Отдельная функция не установлена двумя независимыми источниками; в тест по функции не включена.",
     "n": "Лицевой нерв (n. facialis, VII).",
-    "s": "Конкретная питающая ветвь не подтверждена двумя независимыми источниками.",
-    "note": "Непостоянный поперечный пучок. В исследовании 2013 года описано питание ветвями подподбородочной артерии; это наблюдение одного исследования не выдано за подтверждённую общую норму.",
+    "s": "Конкретная питающая ветвь не подтверждена: источники описывают разные сосуды; см. примечание.",
+    "note": "Непостоянный поперечный пучок. В исследовании 2013 года в одном препарате описаны ветви подподбородочной артерии; открытое определение IMAIOS указывает нижнюю губную и подбородочную артерии. Единую питающую ветвь эти источники не подтверждают. Предположения о функции восходят, в частности, к Weaver (1978) и не приняты здесь за две независимые функциональные проверки.",
     "refs": [
       {
         "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
@@ -2175,6 +10397,102 @@ Object.assign(A.muscles,{
         "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192"
       }
     ],
+    "fieldRefs": {
+      "o": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Depressor anguli oris / Origin and insertion: абзац о пересечении средней линии и transversus menti",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "i": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Depressor anguli oris / Origin and insertion: абзац о пересечении средней линии и transversus menti",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "a": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Discussion: предполагаемое действие, с отсылкой к Weaver (1978)",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Action",
+          "independentSource": "imaios-javaid-definition"
+        }
+      ],
+      "n": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Innervation",
+          "independentSource": "imaios-javaid-definition"
+        }
+      ],
+      "s": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Blood supply",
+          "independentSource": "imaios-javaid-definition"
+        }
+      ]
+    },
+    "fieldStatus": {
+      "o": "supported",
+      "i": "supported",
+      "a": "unconfirmed",
+      "n": "supported",
+      "s": "unconfirmed"
+    },
+    "fieldScope": {
+      "o": "whole_muscle",
+      "i": "whole_muscle",
+      "a": "unconfirmed",
+      "n": "whole_muscle",
+      "s": "unconfirmed"
+    },
     "noModel": true
   }
 });

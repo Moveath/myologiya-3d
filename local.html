@@ -359,12 +359,14 @@ dt .term { text-decoration-color: var(--ink-2); }
   .btn { padding: 0 11px; }
 }
 @media (prefers-reduced-motion: reduce) { .meter i, .figimg .hl, .pin i { transition: none; } }
+.field-sources{font-size:12px;margin-top:8px}.field-sources summary{cursor:pointer;color:var(--muted)}.field-sources ul{padding-left:18px}.field-sources li{margin:8px 0}.field-sources a{color:inherit}.source-locator{display:block;color:var(--muted);overflow-wrap:anywhere}
 </style>
 
+<script>{const theme=new URLSearchParams(location.search).get("theme");if(["light","dark"].includes(theme))document.documentElement.dataset.theme=theme;}</script>
 <script type="importmap">
 { "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  "three": "./vendor/three/build/three.module.js",
+  "three/addons/": "./vendor/three/examples/jsm/"
 } }
 </script>
 
@@ -490,7 +492,8 @@ dt .term { text-decoration-color: var(--ink-2); }
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
       <p>В голове по умолчанию включены «Цвета костей»: у каждой кости свой учебный цвет, одинаковый справа и слева. Это условная раскраска для запоминания. Кнопка «Легенда» показывает названия и позволяет выбрать кость. Чтобы увидеть весь цветной череп, выбери слой «Кости». Настройка цвета сохраняется; во время теста раскраска временно отключается.</p>
       <p>«Срез черепа» позволяет убрать часть модели в одной из трёх плоскостей и рассмотреть внутреннюю поверхность. Ползунок перемещает срез; «Другая сторона» меняет оставленную половину. Срез показывает существующую геометрию модели.</p>
-      <p>«Учебные группы» открывают восемь направлений: кости, основание черепа, глазницы и полость носа, пазухи, челюсти, ухо, мышцы и варианты строения. Переключай готовые виды и выбирай структуры, чтобы открыть карточки. Для костей доступны модели Z-Anatomy и микро-КТ, для уха — отдельный препарат OpenEar с восемью проверенными ориентирами слуховых косточек. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. Каталог вариантов показывает типичные места без подтверждённой геометрии вариантов. «Вернуться к атласу» сохраняет прежний выбор.</p>
+      <p>«Учебные группы» открывают восемь направлений: кости, основание черепа, глазницы и полость носа, пазухи, челюсти, ухо, мышцы и варианты строения. Переключай готовые виды и выбирай структуры, чтобы открыть карточки. Для костей доступны модели Z-Anatomy и микро-КТ, для уха — отдельный препарат OpenEar с 13 ориентирами слуховых косточек. Каждый источник имеет собственную геометрию; координаты точек между моделями не переносятся. Каталог вариантов показывает типичные места без подтверждённой геометрии вариантов. «Вернуться к атласу» сохраняет прежний выбор.</p>
+      <p>«Череп как целое» содержит все 97 терминов отдельной главы TA98: области, составные образования и виды. «Проверка формы» показывает результаты осмотра всех 521 костных записей: что видно целиком в указанном объёме, что частично, а что не подтверждено. Эта проверка отделена от наличия точки. В группе мышц есть перечень начал и прикреплений; сведения всей мышцы в карточке её части подписаны отдельно. Источники каждого утверждения раскрываются вместе с точным местом в тексте.</p>
       <h3>Словарик</h3>
       <dl class="glosslist" id="glosslist"></dl>
       <h3>Откуда модели</h3>
@@ -523,8 +526,10 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="pins-leg.js"></script>
 <script src="pins-head.js"></script>
 <script src="skull-evidence-index.js"></script>
+<script src="skull-geometry-index.js"></script>
 <script src="bodymap.js"></script>
-<script type="module">
+<script src="atlas-runtime.js"></script>
+<script type="module" onerror="window.__atlasRuntime?.fail('module')">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -704,7 +709,7 @@ try {
 } catch (e) {
   $('#veil').hidden = false;
   $('#veilText').textContent = 'Браузер не поддерживает WebGL';
-  $('#veilSub').textContent = 'Открой страницу в Chrome, Safari или Firefox с включённым аппаратным ускорением.';
+  $('#veilSub').textContent = 'Открой страницу в Chrome, Safari или Firefox с включённым аппаратным ускорением.';window.__atlasRuntime.fail('webgl');
   throw e;
 }
 renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
@@ -1036,8 +1041,10 @@ function frameSub(instant) {
 function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Повернуть'; }
 
 // ---------- loop ----------
+window.__atlasRuntime.watch(canvas,()=>{needsRender=true;resize();});
 function loop(now) {
   requestAnimationFrame(loop);
+  if(renderer.getContext().isContextLost())return;
   if (tween) {
     const k = Math.min(1, (now - tween.t0) / tween.dur);
     const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
@@ -1335,13 +1342,13 @@ function renderSheet() {
   const kicker = isMuscle ? `${esc(g.title)}${d.L ? ' · ' + esc(d.L) : ''}` : esc(g.title);
   // with a part chosen, its own data replaces the muscle's; shared fields are marked
   const facts = isMuscle ? [
-    ['Начало', 'origo', p && p.o ? p.o : d.o, p && !p.o ? 'общее' : ''],
-    ['Прикрепление', 'insertio', p && p.i ? p.i : d.i, p && !p.i ? 'общее' : ''],
+    ['Начало', 'origo', p && p.o ? p.o : d.o, p && !p.o ? 'всей мышцы' : ''],
+    ['Прикрепление', 'insertio', p && p.i ? p.i : d.i, p && !p.i ? 'всей мышцы' : ''],
     ['Функция', 'functio', p && p.a ? p.a : d.a, p && !p.a ? 'всей мышцы' : ''],
-    ['Иннервация', 'innervatio', p && p.n ? p.n : d.n, ''],
-    ['Кровоснабжение', 'vascularisatio', d.s, '']
+    ['Иннервация', 'innervatio', p && p.n ? p.n : d.n, p && !p.n ? 'всей мышцы' : ''],
+    ['Кровоснабжение', 'vascularisatio', p && p.s ? p.s : d.s, p && !p.s ? 'всей мышцы' : '']
   ] : [['Ориентиры и описание', '', d.x, '']];
-  const note = p && p.x ? p.x : d.note;
+  const note = [...new Set([d.note,p?.x].filter(Boolean))].join(' ');
   const used = new Set();
   // landmark pins: the active one, a bone's list, a muscle's attachment sites
   const hasPins = !noModel && (isMuscle ? (pinsByMuscle[id] || []).length > 0 : (pinsByBone[id] || []).length > 0);
@@ -1361,7 +1368,7 @@ function renderSheet() {
       </div>
       <p>${glossify(esc(ap.x), used)}</p>
       ${ap.modelNote ? `<div class="note">${esc(ap.modelNote)}</div>` : ''}
-      ${detailLinks(ap)}
+      ${geometryReviewLink(ap)}${detailLinks(ap)}
       ${sourceLinks(ap.refs)}
       ${muscleChips(ap, isMuscle ? id : null)}
       ${isMuscle ? `<div class="linkrow"><button class="chip" data-gobone="${ap.b}">Открыть кость: ${esc(boneName.toLowerCase())}</button></div>` : ''}
@@ -1372,7 +1379,7 @@ function renderSheet() {
   else if (isMuscle && hasPins) {
     const seen = new Set();
     const list = (pinsByMuscle[id] || []).filter(e => (!state.selPart || !e.part || e.part === state.selPart) && !seen.has(e.pin.id + e.role) && seen.add(e.pin.id + e.role));
-    if (list.length) pinSect = `<div class="sect"><h3>Где крепится на костях</h3>
+    if (list.length) pinSect = `<div class="sect"><h3>Ориентиры прикреплений на костях</h3><p class="hint">Выборочные точки помогают найти область. Они не обозначают всю площадь начала или прикрепления мышцы.</p>
       <div class="legend"><span><i class="pdot" data-role="o"></i>начало</span><span><i class="pdot" data-role="i"></i>прикрепление</span></div>
       <div class="linkrow">${list.map(e => `<button class="chip" data-pinid="${e.pin.id}" aria-pressed="${state.pin === e.pin.id}"><span class="pdot" data-role="${e.role}"></span>${esc(e.pin.ru)} · ${esc(A.bones[e.pin.b].ru.toLowerCase())}</button>`).join('')}</div></div>`;
   }
@@ -1382,7 +1389,15 @@ function renderSheet() {
       ${Object.entries(d.parts).map(([k, v]) => `<button class="chip" data-part="${k}" aria-pressed="${state.selPart === k}">${esc(v.ru)}</button>`).join('')}
     </div>` : '';
   const dtLabel = (t) => { const h = headTerm(t); return h ? `<button class="term" data-g="${h.i}">${t}</button>` : t; };
-  const factHtml = facts.map(([t, l, v, tag]) => `<div><dt>${dtLabel(t)}${l ? ` <i>${l}</i>` : ''}${tag ? ` <span class="tag">${tag}</span>` : ''}</dt><dd>${glossify(esc(v), used)}</dd></div>`).join('');
+  const factHtml = facts.map(([t,l,v,tag],index)=>{
+    const field=isMuscle?['o','i','a','n','s'][index]:null;
+    const scope=p?.fieldScope?.[field]||(!p&&d.fieldScope?.[field])||(p&&!p[field]?'whole_muscle':'specific');
+    if(p&&scope==='whole_muscle')tag='всей мышцы';
+    const status=(p?.fieldStatus?.[field]||((!p||scope==='whole_muscle')?d.fieldStatus?.[field]:null));
+    const refs=p?.fieldRefs?.[field]||(!p||scope==='whole_muscle'?d.fieldRefs?.[field]:null);
+    const sources=refs?.length?`<details class="field-sources"><summary>Источники этого утверждения</summary><ul>${refs.filter(r=>/^https:\/\//.test(r.url||'')).map(r=>`<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${r.locator?`<span class="source-locator">${esc(r.locator)}</span>`:''}</li>`).join('')}</ul></details>`:'';
+    return `<div${field?` data-field="${field}" data-scope="${scope}"`:''}><dt>${dtLabel(t)}${l?` <i>${l}</i>`:''}${tag?` <span class="tag">${esc(tag)}</span>`:''}${status==='unconfirmed'||scope==='unconfirmed'?' <span class="tag">Не подтверждено</span>':''}</dt><dd>${glossify(esc(v),used)}${sources}</dd></div>`;
+  }).join('');
   sheet.innerHTML = `
     <button class="grab togglemore" aria-label="${sheet.dataset.state === 'open' ? 'Свернуть карточку' : 'Развернуть карточку'}"></button>
     <div class="head">
@@ -1421,10 +1436,15 @@ function sourceLinks(refs) {
   return `<div class="sect"><h3>Источники</h3><div class="linkrow">${refs.map((ref, i) => {
     const source = typeof ref === 'string' ? {url: ref, title: `Источник ${i + 1}`} : ref;
     return /^https:\/\//.test(source.url || '') ? `<a class="chip" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title || `Источник ${i + 1}`)}</a>` : '';
-  }).join('')}</div></div>`;
+  }).join('')}</div>${refs.some(ref=>typeof ref==='object'&&ref.locator)?`<details class="field-sources"><summary>Точные места в источниках</summary><ul>${refs.filter(ref=>typeof ref==='object'&&ref.locator).map(ref=>`<li><b>${esc(ref.title||'Источник')}</b><span class="source-locator">${esc(ref.locator)}</span></li>`).join('')}</ul></details>`:''}</div>`;
 }
 function localizationLabel(p) {
   return ({surface: 'На поверхности', projection: 'Анатомическая проекция', internal: 'Внутренний ориентир · схема', variant: 'Вариант строения · проекция'})[p.loc] || '';
+}
+function geometryReviewLink(p){
+  const status=A.headGeometry?.[p.b+':'+p.c];if(!status)return '';
+  const label={complete:'Форма прослежена в указанном объёме',partial:'Форма подтверждена частично',not_demonstrated:'Полная форма не подтверждена',not_inspected:'Проверка формы не завершена'}[status];
+  return `<p class="lead">${esc(label)} на проверенных исходных моделях.</p><div class="linkrow"><button class="chip" data-detail-mode="geometry" data-detail-part="${esc(p.b)}" data-detail-marker="${esc(p.c)}">Результат проверки формы ↗</button></div>`;
 }
 function detailLinks(p) {
   if(state.sec!=='head')return '';
@@ -1971,8 +1991,9 @@ function openHeadDetail(mode = 'study', part = null, marker = null) {
   const query = new URLSearchParams({theme, mode, embed:'1'});
   if (location.pathname.endsWith('/local.html')) query.set('entry','local');
   if (part) query.set('part', part);
-  if (marker) query.set(mode==='study'?'code':'marker', marker);
-  $('#headDetailFrame').src = `${mode === 'study' ? 'skull-study' : 'skull-detail'}.html?${query}`;
+  if (marker) query.set(['study','geometry'].includes(mode)?'code':'marker', marker);
+  if(mode==='geometry'){query.set('from','geometry');if(part)query.set('bone',part);}
+  $('#headDetailFrame').src = `${['study','geometry'].includes(mode) ? 'skull-study' : 'skull-detail'}.html?${query}`;
   $('#headDetailDialog').showModal();
 }
 function closeHeadDetail() {
@@ -1991,11 +2012,14 @@ addEventListener('message', event => {
   }
 });
 function validStudyAction(action,value) {
+  if(action==='landmark')return typeof value==='string'&&pinById[value]?.id.startsWith('head_')&&!!A.headGeometry?.[pinById[value].b+':'+pinById[value].c];
+  if(action==='muscle'&&typeof value==='string'){const [id,part,...rest]=value.split(':');return !rest.length&&secOf(id)==='head'&&!!A.muscles[id]&&(!part||!!A.muscles[id].parts?.[part]);}
   return action==='sub'&&['mimetic','mastication'].includes(value) || action==='pin'&&pinById[value]?.loc==='variant'&&pinById[value]?.id.startsWith('head_');
 }
 function applyStudyAction(action,value) {
   if(!validStudyAction(action,value))return;
   if(action==='sub'){state.peel=0;state.hidden.clear();state.headCut.active=false;state.sel=null;state.selPart=null;state.pin=null;setSub(value);}
+  else if(action==='muscle'){const [id,part]=value.split(':');state.peel=0;state.hidden.clear();state.headCut.active=false;goTo(id,part||null);}
   else {const p=pinById[value];goTo(p.b,null,value);}
 }
 $('#bHeadCut').addEventListener('click', () => {
