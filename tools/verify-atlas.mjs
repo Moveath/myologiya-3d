@@ -1,3 +1,4 @@
+// Mobile panel interactions are covered by verify-mobile-layout.mjs and the USB device check.
 // Functional and visual regression checks with a clean, local-only browser profile.
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -20,7 +21,7 @@ const browser = await chromium.launch({headless:true,executablePath:process.env.
   args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']});
 const report = [];
 try {
-  for (const width of [390,1280]) for (const theme of ['light','dark']) {
+  for (const width of [1280]) for (const theme of ['light','dark']) {
     const context = await browser.newContext({viewport:{width,height:width===390?844:860},deviceScaleFactor:1,colorScheme:theme,reducedMotion:'reduce'});
     const page = await context.newPage();
     const errors=[];

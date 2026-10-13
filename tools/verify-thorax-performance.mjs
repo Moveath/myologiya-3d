@@ -24,13 +24,13 @@ const report={status:'running',method:'Software Chromium regression checks; no p
 const context=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:3,isMobile:true,hasTouch:true});
 const page=await context.newPage();page.setDefaultTimeout(120000);page.on('pageerror',e=>report.errors.push(String(e)));await page.route('https://fonts.googleapis.com/**',r=>r.fulfill({body:''}));
 async function steady(fn=()=>__perfCheck.info()){let last;for(let n=0;n<80;n++){const value=await page.evaluate(fn);if(last?.frames===value.frames)return value;last=value;await page.waitForTimeout(150);}throw Error('Renderer did not settle');}
-async function zoom(){const stage=page.locator('#stage'),box=await stage.boundingBox();await page.mouse.move(box.x+box.width*.4,box.y+box.height*.45);const ratios=[];for(let n=0;n<8;n++){await page.mouse.wheel(0,-36);await page.waitForTimeout(40);ratios.push((await page.evaluate(()=>__perfCheck.info())).ratio);}assert.ok(ratios.some(r=>r<=1.25));const final=await steady();assert.equal(final.ratio,2);return {movingRatios:ratios,settled:final};}
+async function zoom(){const stage=page.locator('#stage'),box=await stage.boundingBox();await page.mouse.move(box.x+box.width*.4,box.y+box.height*.45);const ratios=[];for(let n=0;n<8;n++){await page.mouse.wheel(0,-36);await page.waitForTimeout(40);ratios.push((await page.evaluate(()=>__perfCheck.info())).ratio);}assert.ok(ratios.some(r=>r<=1.25));const final=await steady();assert.equal(final.ratio,3);return {movingRatios:ratios,settled:final};}
 try{
  await page.goto(base+'/local.html');await page.waitForFunction(()=>window.__ready);
- await page.evaluate(()=>__atlas.enterSection('trunk'));await page.locator('[data-peel="3"]').click();await steady();
+ await page.evaluate(()=>__atlas.enterSection('trunk'));await page.locator('#bOptions').click();await page.locator('[data-peel="3"]').click();await page.locator('#closeOptions').click();await steady();
  assert.deepEqual((await page.evaluate(()=>__perfCheck.info())).models,['trunk']);
  report.cases.push({name:'whole-thorax zoom',...await zoom()});
- await page.evaluate(()=>__atlas.goTo('rib_7_left'));await steady();
+ await page.evaluate(()=>__atlas.goTo('rib_7_left'));await page.locator('#closeMobileCard').click();await steady();
  report.cases.push({name:'thorax ray equivalence',rays:await page.evaluate(()=>__perfCheck.compare()),unchangedBuffers:await page.evaluate(()=>__geometryAudit)});
  assert.deepEqual(report.errors,[]);report.status='passed';
 }finally{await browser.close();server.close();await fs.writeFile(path.join(root,'verify/performance-thorax.json'),JSON.stringify(report,null,2)+'\n');}

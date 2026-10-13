@@ -1,0 +1,36 @@
+{
+  "physicalDevice": "OPPO Reno5 Lite / CPH2205",
+  "browser": "Chrome/155.0.8059.39",
+  "method": "Real Android Chrome over USB, CDP touch gestures; no viewport emulation",
+  "cases": [
+    {
+      "quality": "detail",
+      "browserAnimationFrameIntervals": {
+        "samples": 120,
+        "medianMs": 16.599999999998545,
+        "p95Ms": 33.100000000000364,
+        "settledRatio": 3,
+        "additionalRestorationWaitMs": 0
+      }
+    },
+    {
+      "quality": "auto",
+      "browserAnimationFrameIntervals": {
+        "samples": 129,
+        "medianMs": 16.599999999998545,
+        "p95Ms": 33,
+        "settledRatio": 3,
+        "additionalRestorationWaitMs": 257
+      }
+    }
+  ],
+  "errors": [],
+  "viewport": {
+    "width": 360,
+    "height": 663,
+    "dpr": 3,
+    "canvasWidth": 1080,
+    "canvasHeight": 1989
+  },
+  "status": "passed"
+}

@@ -58,6 +58,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 button, input { font: inherit; color: inherit; }
+select { font:inherit; color:inherit; }
 button { cursor: pointer; }
 :focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 
@@ -370,6 +371,56 @@ dt .term { text-decoration-color: var(--ink-2); }
 }
 @media (prefers-reduced-motion: reduce) { .meter i, .figimg .hl, .pin i { transition: none; } }
 .field-sources{font-size:12px;margin-top:8px}.field-sources summary{cursor:pointer;color:var(--muted)}.field-sources ul{padding-left:18px}.field-sources li{margin:8px 0}.field-sources a{color:inherit}.source-locator{display:block;color:var(--muted);overflow-wrap:anywhere}
+.mobile-only { display:none; }
+.quality-control { display:flex;align-items:center;gap:8px;font-size:13px; }
+.quality-control select { border:1px solid var(--rule);border-radius:10px;background:var(--paper);padding:8px; }
+.settings-heading { display:none; }
+@media (max-width:899px) {
+  #app { height:100dvh; }
+  .mobile-only { display:flex; }
+  .bar { padding:10px 12px 4px;gap:8px; }
+  .bar .btn { height:44px;min-width:44px; }
+  .bar .brand h1 { font-size:16px; }
+  .bar .brand p { display:none; }
+  .bar > #bQuiz,.bar > #bAbout { display:none; }
+  .tools { top:64px;gap:0; }
+  .tools > #subs,.tools > .sub-scroll { display:none!important; }
+  .mobile-navigation { gap:8px;padding:0 12px;pointer-events:auto; }
+  .mobile-navigation select { min-width:0;flex:1;height:44px;padding:0 36px 0 12px;border:1px solid var(--rule);border-radius:12px;background:var(--paper);font-weight:500; }
+  .mobile-navigation button { height:44px; }
+  .fade { height:130px; }
+  #displayControls { display:none; }
+  #app[data-options-open="true"] #displayControls { display:flex;position:fixed;z-index:25;top:64px;right:12px;left:12px;max-height:calc(100dvh - 84px);overflow-y:auto;overscroll-behavior:contain;padding:16px;border:1px solid var(--rule);border-radius:18px;background:var(--paper);box-shadow:0 14px 45px var(--shade);gap:10px; }
+  #app[data-options-open="true"] .tools { z-index:26; }
+  .settings-heading { display:flex;width:100%;align-items:center;justify-content:space-between;font-size:18px;font-weight:600;margin-bottom:4px; }
+  #displayControls > .chip { width:100%;justify-content:flex-start;border-radius:10px;min-height:44px;background:transparent; }
+  #displayControls > .seg { width:100%;min-height:44px; }
+  #displayControls .seg button { flex:1;min-height:44px; }
+  #displayControls .quality-control { width:100%;justify-content:space-between;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:12px;margin-top:4px; }
+  #displayControls .quality-control select { min-height:44px; }
+  .quality-hint { font-size:12px;color:var(--ink-2);margin:0; }
+  #mobileMoreActions { width:100%;gap:10px; }
+  #mobileMoreActions .btn { flex:1;min-height:44px;width:auto; }
+  #headCutControls { display:none; }
+  #displayControls #headCutControls { width:100%;margin:0;padding:10px; }
+  #app[data-options-open="true"] #headCutControls:not([hidden]) { display:flex; }
+  .mobile-scrim { position:absolute;inset:0;z-index:20;background:rgba(0,0,0,.3);border:0; }
+  #optionsScrim { z-index:24; }
+  .mobile-dock { position:absolute;z-index:5;bottom:calc(12px + env(safe-area-inset-bottom,0px));left:12px;right:12px;display:flex;align-items:center;gap:12px;min-height:54px;padding:10px 14px;border:1px solid var(--rule);border-radius:16px;background:var(--paper);box-shadow:0 4px 20px var(--shade);text-align:left; }
+  .mobile-dock span { flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px; }
+  .mobile-dock b { font-size:13px;color:var(--teal);white-space:nowrap; }
+  .sheet { display:none;z-index:21;top:0;bottom:0;left:auto;right:0;width:min(440px,100%);max-height:none;border-radius:18px 0 0 18px;padding:68px 18px calc(20px + env(safe-area-inset-bottom,0px));border-top:0;box-shadow:-8px 0 30px var(--shade); }
+  #app[data-card-open="true"] .sheet { display:block; }
+  .sheet .grab,.sheet .togglemore { display:none!important; }
+  .sheet[data-state="peek"] .more { display:block; }
+  .sheet .act,.sheet .x { min-height:44px; }
+  .mobile-card-head { position:absolute;z-index:22;top:0;right:0;width:min(440px,100%);padding:12px 18px;min-height:56px;align-items:center;justify-content:space-between;background:var(--paper);border-bottom:1px solid var(--rule); }
+  .mobile-card-head button { min-height:40px; }
+  .drawer,.about { z-index:30; }
+  #tip { max-width:calc(100% - 24px);white-space:normal; }
+  .pinlabel { max-width:200px; }
+}
+@media (min-width:900px) { .quality-hint { display:none; } }
 </style>
 
 <script>{const theme=new URLSearchParams(location.search).get("theme");if(["light","dark"].includes(theme))document.documentElement.dataset.theme=theme;}</script>
@@ -400,16 +451,19 @@ dt .term { text-decoration-color: var(--ink-2); }
     <button class="btn icon" id="bAbout" aria-label="Как пользоваться и словарик" title="Как пользоваться и словарик">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
     </button>
+    <button class="btn icon mobile-only" id="bOptions" aria-label="Настройки вида" aria-controls="displayControls" aria-expanded="false">☰</button>
   </header>
 
   <div class="tools">
+    <div class="mobile-only mobile-navigation"><select id="mobileSub" aria-label="Подраздел"></select><button class="chip nocheck" id="mobileFit" title="Показать выбранный подраздел целиком">Вписать</button></div>
     <div class="row subs" id="subs" role="group" aria-label="Подраздел"></div>
     <div class="sub-scroll" id="subScrollBar" hidden>
       <button id="subPrev" aria-label="Прокрутить подразделы влево">←</button>
       <input id="subScroll" type="range" min="0" max="1000" value="0" aria-label="Прокрутка подразделов">
       <button id="subNext" aria-label="Прокрутить подразделы вправо">→</button>
     </div>
-    <div class="row">
+    <div class="row" id="displayControls">
+      <div class="settings-heading"><span>Настройки вида</span><button class="x" id="closeOptions" aria-label="Закрыть настройки">✕</button></div>
       <div class="seg" role="group" aria-label="Слои мышц">
         <span class="cap">Слои</span>
         <button data-peel="0" aria-pressed="true" title="Все мышцы">Все</button>
@@ -427,6 +481,9 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
       <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
+      <label class="quality-control">Качество <select id="renderQualityChoice"><option value="auto">Авто</option><option value="detail">Чёткое</option><option value="battery">Экономное</option></select></label>
+      <p class="quality-hint">«Чёткое» сохраняет резкость при вращении, но сильнее нагружает телефон. Учебные цвета костей можно отключить.</p>
+      <div class="mobile-only" id="mobileMoreActions"></div>
     </div>
     <div class="cut-controls" id="headCutControls" hidden>
       <label>Плоскость <select id="headCutAxis" aria-label="Плоскость среза"><option value="y">Горизонтальная</option><option value="x">Сагиттальная</option><option value="z">Фронтальная</option></select></label>
@@ -439,6 +496,10 @@ dt .term { text-decoration-color: var(--ink-2); }
   <div id="tip" hidden></div>
 
   <section class="sheet" id="sheet" data-state="peek" aria-live="polite"></section>
+  <button class="mobile-only mobile-dock" id="mobileCard" aria-controls="sheet" aria-expanded="false"><span id="mobileSelection">Выберите мышцу или кость</span><b>Описание ↗</b></button>
+  <button class="mobile-only mobile-scrim" id="cardScrim" hidden aria-label="Закрыть описание"></button>
+  <div class="mobile-only mobile-card-head" id="mobileCardHead" hidden><b>Описание</b><button class="chip nocheck" id="closeMobileCard">К модели ✕</button></div>
+  <button class="mobile-only mobile-scrim" id="optionsScrim" hidden aria-label="Закрыть настройки"></button>
 
   <aside class="drawer" id="drawer" hidden aria-label="Список структур">
     <div class="dhead">
@@ -559,7 +620,7 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="atlas-runtime.js"></script>
 <script type="module" onerror="window.__atlasRuntime?.fail('module')">
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { AtlasOrbitControls as OrbitControls } from './atlas-controls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { prepareRaycasts, createRenderQuality } from './atlas-performance.js';
@@ -735,6 +796,7 @@ const state = {
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
   boneColors: prefs.boneColors !== false,
   context: prefs.context !== false,
+  quality: ['auto','detail','battery'].includes(prefs.quality) ? prefs.quality : 'auto',
   headCut: { active: false, axis: 'y', value: 50, flip: false },
   mode: 'study', viewIdx: -1,
   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
@@ -767,11 +829,14 @@ try {
 }
 renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
 const renderQuality = createRenderQuality(renderer);
+renderQuality.setMode(state.quality);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
 renderer.setClearColor(0x000000, 0);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(32, 1, 0.01, 30);
 scene.add(camera);
-scene.add(new THREE.HemisphereLight(0xf2fbf9, 0x26302e, 1.25));
+scene.add(new THREE.HemisphereLight(0xf7f5f1, 0x36413e, 0.95));
 const key = new THREE.DirectionalLight(0xffffff, 2.3);
 key.position.set(-0.7, 1.0, 0.9); camera.add(key); key.target.position.set(0, 0, -1); camera.add(key.target);
 const fill = new THREE.DirectionalLight(0xd9ecff, 0.7);
@@ -795,7 +860,7 @@ function measureInsets() {
   const tools = document.querySelector('.tools').getBoundingClientRect();
   const sheet = $('#sheet').getBoundingClientRect();
   if (wide()) inset = { top: Math.max(0, tools.bottom - app.top + 6), bottom: 0, right: app.right - sheet.left + 8 };
-  else inset = { top: Math.max(0, tools.bottom - app.top + 6), bottom: Math.max(0, app.bottom - sheet.top), right: 0 };
+  else inset = { top: Math.max(0, tools.bottom - app.top + 10), bottom: $('#mobileCard').offsetHeight + 24, right: 0 };
 }
 function resize() {
   const w = canvas.clientWidth, h = canvas.clientHeight;
@@ -1221,7 +1286,7 @@ function buildPins() {
     pinLabel = document.createElement('button');
     pinLabel.className = 'pinlabel';
     pinLabel.innerHTML = `<b>${esc(p.ru)}</b>${p.lat ? `<i>${esc(p.lat)}</i>` : ''}${p.loc && p.loc !== 'surface' ? `<span class="tag">${localizationLabel(p)}</span>` : ''}`;
-    pinLabel.addEventListener('click', () => { sheet.dataset.state = 'open'; renderSheet(); });
+    pinLabel.addEventListener('click', () => { sheet.dataset.state = 'open'; renderSheet(); if(!wide())setMobilePanel('card',true); });
     pinLayer.appendChild(pinLabel);
   }
   occDirty = true;
@@ -1323,6 +1388,8 @@ function renderSubs() {
   const box = $('#subs');
   if (!S) { box.innerHTML = ''; return; }
   box.innerHTML = S.subs.map(x => `<button class="chip" data-sub="${x.id}" aria-pressed="${curSub() === x.id}" title="${esc(x.hint)}">${esc(x.ru)}</button>`).join('');
+  $('#mobileSub').innerHTML=S.subs.map(x=>`<option value="${x.id}">${esc(x.ru)}</option>`).join('');
+  $('#mobileSub').value=curSub();
   box.querySelectorAll('[data-sub]').forEach(b => b.addEventListener('click', () => setSub(b.dataset.sub)));
   const def = S.subs.find(x => x.id === curSub()) || S.subs[0];
   $('#secTitle').textContent = S.ru;
@@ -1404,6 +1471,7 @@ async function goTo(id, part, pinId) {
   if (sec && sec !== state.sec) { const ok = await enterSection(sec, { noFrame: true }); if (!ok) return; }
   if (state.mode === 'quiz') setMode('study');
   select(id, part || null, true);
+  if(!wide()) setMobilePanel('card',true);
   if (pinId) {
     if (!state.pinsOn) { state.pinsOn = true; prefs.pins = true; savePrefs(); }
     activatePin(pinId, true);
@@ -1426,6 +1494,7 @@ function muscleChips(ap, skipId) {
 }
 
 function renderSheet() {
+  syncMobileSelection();
   if (!state.sec) { sheet.innerHTML = ''; return; }
   if (state.mode === 'quiz') return renderQuiz();
   const S = SEC[state.sec];
@@ -1692,6 +1761,7 @@ function afterSheet() {
     if (state.selPart) return framePart(state.sel, state.selPart);
     const d = structs.get(state.sel).data; frame([state.sel], d && d.v ? d.v : null, false, 0.12); resetView();
   });
+  for(const id of ['bIso','bFocus','bHide']) on('#'+id,()=>{if(!wide())closeMobilePanels();});
   requestAnimationFrame(() => { const before = freeArea.h; resize(); if (Math.abs(before - freeArea.h) > 1) requestRender(); });
 }
 function plural(n, one, few, many) {
@@ -1764,6 +1834,7 @@ function nextQuestion() {
   renderSheet();
 }
 function renderQuiz() {
+  syncMobileSelection();
   const q = state.quiz;
   sheet.dataset.state = 'open';
   const scopes = quizScopes().map(s => `<button class="chip" data-scope="${s.id}" aria-pressed="${q.scope === s.id}">${esc(s.t)}</button>`).join('');
@@ -1889,7 +1960,7 @@ function renderList() {
     goTo(b.dataset.id, b.dataset.part || null, b.dataset.pinjump || null);
   }));
 }
-function openList() { closeBoneLegend(false); drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
+function openList() { closeMobilePanels(); closeBoneLegend(false); drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
 function closeList() { drawer.hidden = true; }
 $('#q').addEventListener('input', renderList);
 $('#bList').addEventListener('click', () => (drawer.hidden ? openList() : closeList()));
@@ -2055,6 +2126,7 @@ home.addEventListener('click', (e) => {
 ['pointerover', 'focusin'].forEach(t => home.addEventListener(t, (e) => { const el = e.target.closest('.seccard, .flabel'); if (el) hot(el.dataset.sec, true); }));
 ['pointerout', 'focusout'].forEach(t => home.addEventListener(t, (e) => { const el = e.target.closest('.seccard, .flabel'); if (el) hot(el.dataset.sec, false); }));
 function showHome() {
+  closeMobilePanels();
   if (state.mode === 'quiz') setMode('study');
   closeList(); hideGloss();
   closeBoneLegend(false);
@@ -2064,6 +2136,7 @@ function showHome() {
   requestAnimationFrame(layoutFigure);
 }
 async function enterSection(id, opts = {}) {
+  closeMobilePanels();
   const S = SEC[id];
   if (!S || !S.ready) return false;
   closeBoneLegend(false);
@@ -2197,6 +2270,7 @@ $('#about').addEventListener('click', e => { if (e.target.id === 'about') $('#ab
 addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   if ($('#headDetailDialog').open) return;
+  if(!wide() && ($('#app').dataset.optionsOpen==='true'||$('#app').dataset.cardOpen==='true')){closeMobilePanels(true);return;}
   if (!boneLegend.hidden) closeBoneLegend();
   else if (!gloss.hidden) hideGloss();
   else if (!$('#about').hidden) $('#about').hidden = true;
@@ -2208,6 +2282,69 @@ addEventListener('keydown', e => {
 });
 
 // ---------- start ----------
+// Mobile panels reuse the existing controls and card; there is one source of state.
+const controlsHome=$('#displayControls'), cutControls=$('#headCutControls');
+function syncMobileSelection(){
+  const d=A.muscles[state.sel]||A.bones[state.sel],pin=pinById[state.pin];
+  $('#mobileSelection').textContent=state.mode==='quiz'?'Вопрос теста':pin?.ru||d?.ru||'Выберите мышцу или кость';
+  $('#mobileCard b').textContent=state.mode==='quiz'?'Тест ↗':'Описание ↗';
+}
+function closeMobilePanels(restore=false){
+  const options=$('#app').dataset.optionsOpen==='true',card=$('#app').dataset.cardOpen==='true';
+  $('#app').dataset.optionsOpen='false';$('#app').dataset.cardOpen='false';
+  $('#optionsScrim').hidden=true;$('#cardScrim').hidden=true;$('#mobileCardHead').hidden=true;
+  $('#bOptions').setAttribute('aria-expanded','false');$('#mobileCard').setAttribute('aria-expanded','false');
+  controlsHome.removeAttribute('role');controlsHome.removeAttribute('aria-modal');
+  sheet.removeAttribute('role');sheet.removeAttribute('aria-modal');
+  if(restore&&!wide())(options?$('#bOptions'):card?$('#mobileCard'):canvas).focus();
+}
+function setMobilePanel(panel,open){
+  if(wide())return;
+  closeMobilePanels();
+  if(!open)return;
+  closeList();closeBoneLegend(false);hideGloss();
+  const options=panel==='options',el=options?controlsHome:sheet;
+  $('#app').dataset[options?'optionsOpen':'cardOpen']='true';
+  $(options?'#optionsScrim':'#cardScrim').hidden=false;
+  $('#mobileCardHead').hidden=options;
+  $(options?'#bOptions':'#mobileCard').setAttribute('aria-expanded','true');
+  el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label',options?'Настройки вида':'Описание структуры');
+  $(options?'#closeOptions':'#closeMobileCard').focus();
+}
+function layoutMobileControls(){
+  closeMobilePanels();
+  if(wide()){
+    const bar=$('.bar');bar.insertBefore($('#bQuiz'),$('#bOptions'));bar.insertBefore($('#bAbout'),$('#bOptions'));
+    $('.tools').append(cutControls);
+  }else{
+    $('#mobileMoreActions').append($('#bQuiz'),$('#bAbout'));
+    controlsHome.insertBefore(cutControls,$('.quality-control'));
+  }
+  requestAnimationFrame(()=>{resize();if(state.sec)frameSub(true);});
+}
+$('#mobileSub').addEventListener('change',e=>{closeMobilePanels();select(null);setSub(e.target.value);});
+$('#mobileFit').addEventListener('click',()=>{state.isolate=null;applyVisibility();frameSub(false);});
+$('#bOptions').addEventListener('click',()=>setMobilePanel('options',$('#app').dataset.optionsOpen!=='true'));
+$('#mobileCard').addEventListener('click',()=>setMobilePanel('card',true));
+for(const id of ['closeOptions','closeMobileCard','optionsScrim','cardScrim'])$('#'+id).addEventListener('click',()=>closeMobilePanels(true));
+for(const id of ['bView','bRestore','bHeadDetail','bBoneLegend','bAbout','bHome','bBrand'])$('#'+id).addEventListener('click',()=>closeMobilePanels());
+$('#bQuiz').addEventListener('click',()=>{closeMobilePanels();setMobilePanel('card',true);});
+$('#renderQualityChoice').value=state.quality;
+$('#renderQualityChoice').addEventListener('change',e=>{
+  state.quality=e.target.value;prefs.quality=state.quality;savePrefs();renderQuality.setMode(state.quality);requestRender();
+});
+addEventListener('keydown',e=>{
+  if(e.key!=='Tab'||wide()||$('#headDetailDialog').open)return;
+  const options=$('#app').dataset.optionsOpen==='true',card=$('#app').dataset.cardOpen==='true';
+  if(!options&&!card)return;
+  const nodes=[...(options?controlsHome:$('#mobileCardHead')).querySelectorAll('button,input,select,a[href],[tabindex="0"]'),...(!options?sheet.querySelectorAll('button,input,select,a[href],[tabindex="0"],summary'):[])].filter(x=>!x.disabled&&x.getClientRects().length);
+  if(!nodes.length)return;
+  const first=nodes[0],last=nodes.at(-1);
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+});
+matchMedia('(min-width:900px)').addEventListener('change',layoutMobileControls);
+layoutMobileControls();
 renderHome();
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutFigure);
 resize();

@@ -1,3 +1,4 @@
+// Mobile panel interactions are covered by verify-mobile-layout.mjs and the USB device check.
 // Real UI actions and renderer state: group visibility, palettes, supplemental bones.
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -17,7 +18,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const browser=await chromium.launch({headless:true,executablePath:process.env.ATLAS_CHROMIUM||undefined,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']});
 const report=[];
 try{
- for(const width of [390,1280])for(const theme of ['light','dark']){
+ for(const width of [1280])for(const theme of ['light','dark']){
   const context=await browser.newContext({viewport:{width,height:width===390?844:900},colorScheme:theme,reducedMotion:'reduce'});
   const page=await context.newPage();page.setDefaultTimeout(90000);const errors=[];
   page.on('pageerror',e=>errors.push(String(e)));

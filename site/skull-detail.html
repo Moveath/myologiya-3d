@@ -169,7 +169,7 @@ summary { cursor:pointer; font-weight:600; min-height:28px; }
 <script src="atlas-runtime.js"></script>
 <script type="module" onerror="window.__atlasRuntime?.fail('module')">
 import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {AtlasOrbitControls as OrbitControls} from './atlas-controls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {prepareRaycasts,createRenderQuality} from './atlas-performance.js';
