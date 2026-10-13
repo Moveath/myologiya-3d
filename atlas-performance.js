@@ -19,21 +19,23 @@ export async function prepareRaycasts(root) {
 // image when it settles. Triangle data, markers, camera and canvas CSS never change.
 export function createRenderQuality(renderer) {
   let lastMotion=-Infinity,previous=0,samples=0,total=0,pending=false;
+  let mode='auto';
   let motionRatio=Math.min(devicePixelRatio||1,1.25),applied=renderer.getPixelRatio();
   const canvas=renderer.domElement;
   return {
+    setMode(value){mode=['auto','detail','battery'].includes(value)?value:'auto';lastMotion=-Infinity;samples=0;total=0;pending=false;},
     motion(){pending=true;},
     update(now,moving) {
       moving ||= pending;pending=false;
-      const full=Math.min(devicePixelRatio||1,2);
+      const pixels=Math.max(1,canvas.clientWidth*canvas.clientHeight);
+      const full=Math.min(devicePixelRatio||1,mode==='battery'?1.5:3,Math.sqrt(4000000/pixels));
       if(moving) {
         if(now-lastMotion<100&&previous&&now-previous<250){total+=now-previous;samples++;}
-        if(samples>=12){if(total/samples>30)motionRatio=Math.max(Math.min(full,.75),motionRatio*.8);samples=0;total=0;}
+        if(samples>=12){if(total/samples>30)motionRatio=Math.max(Math.min(full,1),motionRatio*.8);samples=0;total=0;}
         lastMotion=now;
       } else if(now-lastMotion>180){samples=0;total=0;}
       previous=now;
-      const pixels=Math.max(1,canvas.clientWidth*canvas.clientHeight);
-      const ratio=now-lastMotion<180?Math.min(full,motionRatio,Math.sqrt(1500000/pixels)):full;
+      const ratio=mode==='detail'?full:now-lastMotion<180?Math.min(full,mode==='battery'?1:motionRatio,Math.sqrt(1500000/pixels)):full;
       if(Math.abs(applied-ratio)<.01)return false;
       applied=ratio;renderer.setPixelRatio(ratio);return true;
     }
