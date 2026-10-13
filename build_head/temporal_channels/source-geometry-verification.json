@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "geometry_sha256": "912fc50500459478386de7b5a556370ba0be1bd06e408295d7dd95e6b8288944",
+  "slice_atlases": {
+    "pages": 15,
+    "frames": 327,
+    "hashes_rectangles_source_steps_and_vectors_checked": true
+  },
+  "checks": [
+    {
+      "id": "facial_canal_wall",
+      "compressed_vertices": 13859,
+      "compressed_triangles": 26250,
+      "unrecognized_triangles": 0,
+      "maximum_vertex_quantization_error_mm": 0.0003604965120152637,
+      "all_face_normals_point_from_bone_to_void": true,
+      "normal_test_offset_mm": 0.1,
+      "source_mask_matches": 26250,
+      "caps_added": false
+    },
+    {
+      "id": "carotid_canal_wall",
+      "compressed_vertices": 25675,
+      "compressed_triangles": 47064,
+      "unrecognized_triangles": 0,
+      "maximum_vertex_quantization_error_mm": 0.0003637654140999197,
+      "all_face_normals_point_from_bone_to_void": true,
+      "normal_test_offset_mm": 0.1,
+      "source_mask_matches": 47064,
+      "caps_added": false
+    }
+  ],
+  "limits": "Geometric source identity does not establish complete anatomical channels. Source CBCT slices and anatomical references are reviewed separately."
+}

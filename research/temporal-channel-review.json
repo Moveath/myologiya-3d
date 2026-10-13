@@ -1,0 +1,334 @@
+{
+  "source": "OpenEar ZETA",
+  "question": "Можно ли получить полные костные каналы, а не поверхность нерва/артерии?",
+  "outcome": "Два проверенных фрагмента стенок; полные каналы не подтверждены.",
+  "geometry": {
+    "source": "OpenEar ZETA",
+    "license": "CC BY 4.0",
+    "coordinate_frame": "OpenEar native viewer metres; [RASx,RASy,RASz] -> [-RASx,RASz,RASy]; no registration to BodyParts3D.",
+    "bone_nrrd_sha256": "90f7567b9cd596c4d685e14575d997a0cb2e99d805ac9098e5859d87c0992fd1",
+    "geometry_file": "skull-temporal-channels.glb",
+    "geometry_sha256": "912fc50500459478386de7b5a556370ba0be1bd06e408295d7dd95e6b8288944",
+    "context_file": "skull-temporal-channels-context.glb",
+    "context_sha256": "4e63d5f4934aabd5da8f3f5a8a7aa1a962ac7217a924edb9c19bbc8b6ba83ef2",
+    "context_roi_native_zyx": [
+      [
+        174,
+        149,
+        245
+      ],
+      [
+        477,
+        398,
+        430
+      ]
+    ],
+    "context_triangles": 2061885,
+    "context_added_caps": false,
+    "structures": [
+      {
+        "id": "facial_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            206,
+            181,
+            277
+          ],
+          [
+            350,
+            366,
+            380
+          ]
+        ],
+        "guide_selected_interval": [
+          2,
+          225
+        ],
+        "guide_count": 226,
+        "triangles": 26250,
+        "vertices": 13859,
+        "bounds_m": [
+          [
+            -0.02556809997558594,
+            0.025201769948005676,
+            0.016567269802093505
+          ],
+          [
+            -0.016130599975585937,
+            0.04007676994800568,
+            0.03531726980209351
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.019901432037353516,
+            0.028805935978889467,
+            0.021733935832977294
+          ],
+          "n": [
+            0.7071067690849304,
+            -0.0,
+            -0.7071067690849304
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 216,
+        "reviewed_interval_planes": 224,
+        "approximate_guide_span_mm": 27.864083270123018,
+        "complete_channel": false,
+        "terminal_selection_limit": {
+          "reduced_radius_from_guide_index": 208,
+          "terminal_radius_voxels": 10,
+          "excluded_terminal_region_native_zyx": "k>330, j<218, i>351; unclassified long branch",
+          "review": "Short source-nerve branch and additional existing source void toward IAC reviewed in embedded CBCT. No endpoint-aperture completeness claim."
+        }
+      },
+      {
+        "id": "carotid_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            329,
+            255,
+            290
+          ],
+          [
+            475,
+            395,
+            428
+          ]
+        ],
+        "guide_selected_interval": [
+          0,
+          102
+        ],
+        "guide_count": 103,
+        "triangles": 47064,
+        "vertices": 25675,
+        "bounds_m": [
+          [
+            -0.03206809997558594,
+            0.04038926994800568,
+            0.025129769802093506
+          ],
+          [
+            -0.019818099975585937,
+            0.05351426994800568,
+            0.039129769802093504
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.02717226791381836,
+            0.04466010200977326,
+            0.031150601863861083
+          ],
+          "n": [
+            0.5773502588272095,
+            0.5773502588272095,
+            0.5773502588272095
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 15,
+        "reviewed_interval_planes": 103,
+        "approximate_guide_span_mm": 12.733586352540737,
+        "complete_channel": false
+      }
+    ],
+    "complete_channel_geometry_claim": false
+  },
+  "reviewed_source_sections": {
+    "facial": 224,
+    "carotid": 103
+  },
+  "anatomical_sources": {
+    "facial_canal_wall": [
+      {
+        "title": "Gray, Anatomy of the Human Body (1918), рис. 140 и 913",
+        "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+        "locator": "Рис. 913: ход лицевого канала относительно барабанной полости и шилососцевидного отверстия; рис. 140: внутренний слуховой проход.",
+        "scope": "anatomy"
+      },
+      {
+        "title": "Kozerska et al. (2017), Micro-CT study of the dehiscences of the tympanic segment of the facial canal",
+        "url": "https://doi.org/10.1007/s00276-016-1744-4",
+        "locator": "Введение и рис. 1: начало, окончание, три сегмента канала и его положение относительно барабанной полости; рис. 2–4: костная стенка и её разрывы.",
+        "scope": "anatomy"
+      }
+    ],
+    "carotid_canal_wall": [
+      {
+        "title": "Gray, Anatomy of the Human Body (1918), рис. 138, 141 и 913",
+        "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+        "locator": "Рис. 141: наружная апертура; рис. 138: внутренняя апертура у верхушки; рис. 913: сонный канал во вскрытой височной кости.",
+        "scope": "anatomy"
+      },
+      {
+        "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57–58",
+        "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+        "locator": "Рис. 58: наружная апертура сонного канала; рис. 57: внутренняя апертура у верхушки каменистой части.",
+        "scope": "anatomy"
+      }
+    ]
+  },
+  "facial_entire_guide_review": {
+    "planes": 226,
+    "closed_bone_mask_contours": 216,
+    "not_closed": 10,
+    "exported_planes": 224,
+    "limits": "Число замкнутых контуров не подтверждает стенку по всей окружности с анатомической точностью. После сравнения CBCT полного и подготовленного препарата выборка расширена по сохранившимся костным стенкам; открытый контур сам по себе не исключает стенку из выборки. Неразличимые тонкие стенки не дорисованы."
+  },
+  "facial_terminal_review": {
+    "original_longest_author_nerve_branch_rejected_as_endpoint": true,
+    "unclassified_long_branch_excluded": true,
+    "short_branch_connection_to_IAC_seen_in_source_CBCT": true,
+    "independent_reviewer": "skull_cranial_features",
+    "reviewer_conclusion": "Узкий кортикально ограниченный ход рядом с улиткой непрерывно расширяется до IAC. Согласуется с лабиринтным продолжением. Место коленчатого узла и длинная развилка отдельно не подтверждены.",
+    "source_images": [
+      "facial-endpoint-axis1-embedded.png",
+      "facial-endpoint-axis2-embedded.png",
+      "facial-proximal-candidate.png"
+    ],
+    "navigation_parameters": {
+      "selected_author_branch_endpoint_native_zyx": [
+        325,
+        205,
+        347
+      ],
+      "additional_source_void_samples_native_zyx": [
+        [
+          325,
+          205,
+          347
+        ],
+        [
+          325,
+          205,
+          346
+        ],
+        [
+          325,
+          205,
+          345
+        ],
+        [
+          325,
+          205,
+          344
+        ],
+        [
+          325,
+          205,
+          343
+        ],
+        [
+          325,
+          205,
+          342
+        ],
+        [
+          325,
+          205,
+          341
+        ],
+        [
+          325,
+          205,
+          340
+        ],
+        [
+          325,
+          205,
+          339
+        ],
+        [
+          325,
+          205,
+          338
+        ],
+        [
+          325,
+          205,
+          337
+        ]
+      ],
+      "source": "CBCT_Embedded.nrrd, acquisition 0.125 mm; registered Bone.nrrd",
+      "images": [
+        "facial-endpoint-axis1-embedded.png",
+        "facial-endpoint-axis2-embedded.png",
+        "facial-proximal-candidate.png"
+      ],
+      "limit": "Stop within the narrow proximal passage, before its widening into the IAC. No claim of complete endpoint aperture. The longer author nerve branch is not accepted as the facial canal endpoint."
+    },
+    "export_limit": "Выборка останавливается внутри узкого продолжения перед расширением в IAC. Полнота апертуры не объявлена."
+  },
+  "carotid_entire_guide_review": {
+    "planes": 103,
+    "closed_bone_mask_contours": 15,
+    "not_closed": 88,
+    "limits": "В большинстве проверенных положений костная маска не замыкает контур; по выбранному набору полный просвет без догадки не сегментирован."
+  },
+  "raw_roi_files": "build_head/temporal_channels/*-voxel-roi.npz и *-source-selection.npz; только исследовательский кэш, не сайт.",
+  "reviewed_images": [
+    "build_head/temporal_channels/skull-channel-carotid-slices-1.png",
+    "build_head/temporal_channels/skull-channel-carotid-slices-2.png",
+    "build_head/temporal_channels/skull-channel-carotid-slices-3.png",
+    "build_head/temporal_channels/skull-channel-carotid-slices-4.png",
+    "build_head/temporal_channels/skull-channel-carotid-slices-5.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-1.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-10.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-2.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-3.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-4.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-5.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-6.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-7.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-8.png",
+    "build_head/temporal_channels/skull-channel-facial-slices-9.png"
+  ],
+  "source_geometry_verification": {
+    "status": "passed",
+    "geometry_sha256": "912fc50500459478386de7b5a556370ba0be1bd06e408295d7dd95e6b8288944",
+    "slice_atlases": {
+      "pages": 15,
+      "frames": 327,
+      "hashes_rectangles_source_steps_and_vectors_checked": true
+    },
+    "checks": [
+      {
+        "id": "facial_canal_wall",
+        "compressed_vertices": 13859,
+        "compressed_triangles": 26250,
+        "unrecognized_triangles": 0,
+        "maximum_vertex_quantization_error_mm": 0.0003604965120152637,
+        "all_face_normals_point_from_bone_to_void": true,
+        "normal_test_offset_mm": 0.1,
+        "source_mask_matches": 26250,
+        "caps_added": false
+      },
+      {
+        "id": "carotid_canal_wall",
+        "compressed_vertices": 25675,
+        "compressed_triangles": 47064,
+        "unrecognized_triangles": 0,
+        "maximum_vertex_quantization_error_mm": 0.0003637654140999197,
+        "all_face_normals_point_from_bone_to_void": true,
+        "normal_test_offset_mm": 0.1,
+        "source_mask_matches": 47064,
+        "caps_added": false
+      }
+    ],
+    "limits": "Geometric source identity does not establish complete anatomical channels. Source CBCT slices and anatomical references are reviewed separately."
+  },
+  "next_needed": "Для полного канала необходима отдельная проверка конечных отверстий и тонких стенок на более детальных исходных срезах или другом открытом препарате; разрывы текущей маски не замыкать."
+}

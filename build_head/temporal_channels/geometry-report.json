@@ -1,0 +1,145 @@
+{
+  "source": "OpenEar ZETA",
+  "license": "CC BY 4.0",
+  "coordinate_frame": "OpenEar native viewer metres; [RASx,RASy,RASz] -> [-RASx,RASz,RASy]; no registration to BodyParts3D.",
+  "bone_nrrd_sha256": "90f7567b9cd596c4d685e14575d997a0cb2e99d805ac9098e5859d87c0992fd1",
+  "geometry_file": "skull-temporal-channels.glb",
+  "geometry_sha256": "912fc50500459478386de7b5a556370ba0be1bd06e408295d7dd95e6b8288944",
+  "context_file": "skull-temporal-channels-context.glb",
+  "context_sha256": "4e63d5f4934aabd5da8f3f5a8a7aa1a962ac7217a924edb9c19bbc8b6ba83ef2",
+  "context_roi_native_zyx": [
+    [
+      174,
+      149,
+      245
+    ],
+    [
+      477,
+      398,
+      430
+    ]
+  ],
+  "context_triangles": 2061885,
+  "context_added_caps": false,
+  "structures": [
+    {
+      "id": "facial_canal_wall",
+      "source": "07_3D_Models/Bone.nrrd",
+      "roi_native_zyx": [
+        [
+          206,
+          181,
+          277
+        ],
+        [
+          350,
+          366,
+          380
+        ]
+      ],
+      "guide_selected_interval": [
+        2,
+        225
+      ],
+      "guide_count": 226,
+      "triangles": 26250,
+      "vertices": 13859,
+      "bounds_m": [
+        [
+          -0.02556809997558594,
+          0.025201769948005676,
+          0.016567269802093505
+        ],
+        [
+          -0.016130599975585937,
+          0.04007676994800568,
+          0.03531726980209351
+        ]
+      ],
+      "marker": {
+        "p": [
+          -0.019901432037353516,
+          0.028805935978889467,
+          0.021733935832977294
+        ],
+        "n": [
+          0.7071067690849304,
+          -0.0,
+          -0.7071067690849304
+        ]
+      },
+      "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+      "source_triangle_coordinates_retained": true,
+      "caps_added": false,
+      "holes_filled": false,
+      "decimated": false,
+      "closed_source_contours_in_interval": 216,
+      "reviewed_interval_planes": 224,
+      "approximate_guide_span_mm": 27.864083270123018,
+      "complete_channel": false,
+      "terminal_selection_limit": {
+        "reduced_radius_from_guide_index": 208,
+        "terminal_radius_voxels": 10,
+        "excluded_terminal_region_native_zyx": "k>330, j<218, i>351; unclassified long branch",
+        "review": "Short source-nerve branch and additional existing source void toward IAC reviewed in embedded CBCT. No endpoint-aperture completeness claim."
+      }
+    },
+    {
+      "id": "carotid_canal_wall",
+      "source": "07_3D_Models/Bone.nrrd",
+      "roi_native_zyx": [
+        [
+          329,
+          255,
+          290
+        ],
+        [
+          475,
+          395,
+          428
+        ]
+      ],
+      "guide_selected_interval": [
+        0,
+        102
+      ],
+      "guide_count": 103,
+      "triangles": 47064,
+      "vertices": 25675,
+      "bounds_m": [
+        [
+          -0.03206809997558594,
+          0.04038926994800568,
+          0.025129769802093506
+        ],
+        [
+          -0.019818099975585937,
+          0.05351426994800568,
+          0.039129769802093504
+        ]
+      ],
+      "marker": {
+        "p": [
+          -0.02717226791381836,
+          0.04466010200977326,
+          0.031150601863861083
+        ],
+        "n": [
+          0.5773502588272095,
+          0.5773502588272095,
+          0.5773502588272095
+        ]
+      },
+      "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+      "source_triangle_coordinates_retained": true,
+      "caps_added": false,
+      "holes_filled": false,
+      "decimated": false,
+      "closed_source_contours_in_interval": 15,
+      "reviewed_interval_planes": 103,
+      "approximate_guide_span_mm": 12.733586352540737,
+      "complete_channel": false
+    }
+  ],
+  "complete_channel_geometry_claim": false
+}

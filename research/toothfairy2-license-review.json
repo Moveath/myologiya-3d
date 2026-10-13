@@ -1,0 +1,31 @@
+{
+  "reviewed": "2026-10-13",
+  "independent_reviewer": "skull_face_features",
+  "dataset": "ToothFairy2 (not ToothFairy3)",
+  "declared_current_copyright_license": "CC BY-SA 4.0",
+  "noncommercial_license_claim": false,
+  "decision": "Keep derived meshes and scans local until the authors clarify the conflicting research-only ethics language for the intended public potentially commercial atlas.",
+  "sources": [
+    {
+      "url": "https://doi.org/10.1016/j.media.2026.104095",
+      "title": "Bolelli et al. (2026), Multi-structure segmentation in CBCT volumes: The ToothFairy2 challenge",
+      "locator": "Ethics approval and data availability, paragraphs after the dataset class description",
+      "finding": "The current author publication explicitly says the training data are available under CC BY-SA and that this license permits third-party redistribution. The institutional repository is described as the authoritative maintained source; contributing derived data there is encouraged rather than mandated."
+    },
+    {
+      "url": "https://ditto.ing.unimore.it/static/toothfairy2/ToothFairy2_StructuredChallengeDescription.pdf",
+      "title": "Official ToothFairy2 structured challenge description",
+      "locator": "PDF physical page 8, printed Page 7 of 16, Ethics approval and Data usage agreement",
+      "short_quote": "shared for research purposes only",
+      "finding": "The ethics section restricts sharing to research purposes. The same page also declares the data CC BY-SA. The later publication names the same ethics approval 1374/2020/OSS/ESTMO SIRER ID 1275 but does not explicitly address removal or scope of this research-only sentence."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "title": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "locator": "You are free to; Notices",
+      "finding": "The copyright license permits commercial sharing and adaptation with attribution and ShareAlike. It does not necessarily supply all other permissions, including privacy or publicity rights."
+    }
+  ],
+  "assessment": "There is strong current primary evidence for commercial-compatible copyright licensing and redistribution. The old ethics text is a separate unresolved inconsistency, not evidence that the license is CC BY-NC. Treating that text as automatically cancelled would be an inference not expressly supported by the reviewed author materials.",
+  "scope": "Conservative publication decision for the user's explicit requirement of later unrestricted commercial-compatible publication; no legal guarantee is made. Local research and geometry inspection remain useful."
+}

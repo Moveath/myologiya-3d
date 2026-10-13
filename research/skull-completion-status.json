@@ -1241,9 +1241,55 @@
       }
     ]
   },
+  "source_channel_geometry": [
+    {
+      "mode": "channels",
+      "metadata": "site\\skull-temporal-channels.json",
+      "source": "OpenEar ZETA",
+      "license": "CC BY 4.0",
+      "source_ct_reslices": 327,
+      "structures": [
+        {
+          "id": "facial_canal_wall",
+          "ta98": "A02.1.06.009",
+          "scope": "channel_wall_segment",
+          "completeFeatureGeometry": false,
+          "continuousLumenConfirmed": null,
+          "modelNote": "Стенки выделены из исходной костной маски; модель нерва использована только для выбора области проверки. Проверены 224 последовательных положения косой плоскости вдоль направляющей длиной около 27,9 мм. Продолжение к внутреннему слуховому проходу проверено по КТ подготовленного препарата; неидентифицированная конечная ветвь исключена. Это не измерение полного канала: стенка местами неполна, открытые края и сообщения сохранены. Мелкие ответвления, обе апертуры и точная форма неразличимых тонких стенок не объявлены завершёнными."
+        },
+        {
+          "id": "carotid_canal_wall",
+          "ta98": "A02.1.06.013",
+          "scope": "channel_wall_segment",
+          "completeFeatureGeometry": false,
+          "continuousLumenConfirmed": null,
+          "modelNote": "Показаны существующие стенки исходной Bone.nrrd вдоль направляющей длиной около 12,7 мм, проверенные по 103 косым сечениям КТ полного препарата. В большинстве положений маска не замыкает контур; существующие стенки выделены и там, а разрывы сохранены. Это не полный закрытый канал. Модель артерии использована только как ориентир области проверки. Подготовленный препарат местами обрезан; полную КТ и отсутствие стенки в маске нельзя подменять дорисованной трубкой."
+        }
+      ],
+      "main_bodyparts3d_status_changed": false
+    },
+    {
+      "mode": "cranial_channels",
+      "metadata": "site\\skull-cranial-channels.json",
+      "source": "Halle micro-CT",
+      "license": "CC BY 4.0",
+      "source_ct_reslices": 112,
+      "structures": [
+        {
+          "id": "halle_hypoglossal",
+          "ta98": "A02.1.04.016",
+          "scope": "channel_bone_roi",
+          "completeFeatureGeometry": false,
+          "continuousLumenConfirmed": true,
+          "modelNote": "Показана настоящая костная ткань вокруг канала, выделенная из исходной сегментации при шаге 0,125 мм. Просвет виден в отверстиях, при вращении, срезе и на последовательных КТ-кадрах. Маска местами не замыкает тонкую стенку: эти разрывы сохранены, а все микродетали не объявлены завершёнными. Прямоугольные края блока — границы выборки, а не анатомические отверстия. Сторона тела не присвоена из-за неоднозначной исходной декларации ориентации."
+        }
+      ],
+      "main_bodyparts3d_status_changed": false
+    }
+  ],
   "cross_source_evidence": {
     "catalogue": "site/skull-feature-catalogue.json",
-    "terms_with_supplemental_material": 35,
+    "terms_with_supplemental_material": 38,
     "native_marker_counts": {
       "z": 18,
       "openear": 13,

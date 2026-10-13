@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import re
 from collections import defaultdict
+from ta98 import T
 ROOT=Path(__file__).resolve().parents[1]
 
 def read(path):
@@ -38,6 +39,18 @@ def build():
         term=next(p for p in variant_rows if p['c']==e['c'])
         entry=features.setdefault(e['c'],{'c':e['c'],'ru':term['ru'],'lat':term['lat'],'views':[]})
         entry['example']=e
+    for mode, filename in [('channels', 'skull-temporal-channels.json'), ('cranial_channels', 'skull-cranial-channels.json')]:
+        if not (ROOT/'site'/filename).is_file():
+            continue
+        model=read('site/'+filename)
+        for row in model['structures']:
+            code=row['ta98']
+            assert code in T, code
+            assert len(row['refs'])>=2 and row['modelNote']
+            entry=features.setdefault(code, {'c':code, 'ru':T[code][1], 'lat':T[code][0], 'views':[]})
+            entry.setdefault('channel_views', []).append({'mode':mode, 'id':row['id'], 'ru':row['ru'],
+                 'specimen':model['source'], 'modelNote':row['modelNote'], 'scope':row['scope'],
+                 'completeFeatureGeometry':row['completeFeatureGeometry']})
     out={'complete_geometry_claim':False,'markers':native,
          'counts':{mode:len(markers) for mode,markers in native.items()}}
     (ROOT/'site/skull-native-features.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf8')

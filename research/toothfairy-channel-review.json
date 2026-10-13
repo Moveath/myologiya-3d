@@ -1,0 +1,235 @@
+{
+  "specimen": "ToothFairy2 F026",
+  "source": "https://ditto.ing.unimore.it/toothfairy2/",
+  "mirror": "https://huggingface.co/datasets/XXCHENZm/ToothFairy2",
+  "declared_license": "CC BY-SA 4.0",
+  "publication_approved": false,
+  "publication_note": "Review current author licence against research-only wording in the 2024 ethics proposal before publishing.",
+  "source_header": {
+    "ObjectType": "Image",
+    "NDims": "3",
+    "BinaryData": "True",
+    "BinaryDataByteOrderMSB": "False",
+    "CompressedData": "False",
+    "TransformMatrix": "1 0 0 0 1 0 0 0 1",
+    "Offset": "0 0 0",
+    "CenterOfRotation": "0 0 0",
+    "AnatomicalOrientation": "RAI",
+    "ElementSpacing": "0.29999999999999999 0.29999999999999999 0.29999999999999999",
+    "ITK_InputFilterName": "MetaImageIO",
+    "ITK_original_direction": "1 0 0 0 1 0 0 0 1",
+    "ITK_original_spacing": "1 1 1",
+    "DimSize": "410 410 274",
+    "ElementType": "MET_UCHAR",
+    "ElementDataFile": "LOCAL"
+  },
+  "voxel_mm": 0.3,
+  "structures": [
+    {
+      "id": "mandible_context",
+      "source_label": 1,
+      "voxels": 1633222,
+      "components_6_connected": 81,
+      "component_voxels": [
+        1633096,
+        10,
+        8,
+        4,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "triangles": 633420,
+      "bounds_m": [
+        [
+          -0.11475000530481339,
+          -0.07875000685453415,
+          -0.08205000311136246
+        ],
+        [
+          -0.01575000025331974,
+          0.0001500000071246177,
+          -0.00795000046491623
+        ]
+      ],
+      "label_interpretation": "author-labelled mandibular bone",
+      "label_touches_volume_boundary": true,
+      "added_smoothing": false,
+      "added_gap_filling": false,
+      "full_bone_wall_claim": false
+    },
+    {
+      "id": "mandibular_canal_left",
+      "source_label": 3,
+      "voxels": 12664,
+      "components_6_connected": 1,
+      "component_voxels": [
+        12664
+      ],
+      "triangles": 20096,
+      "bounds_m": [
+        [
+          -0.04815000295639038,
+          -0.06435000151395798,
+          -0.07215000689029694
+        ],
+        [
+          -0.02265000157058239,
+          -0.014550000429153442,
+          -0.025050001218914986
+        ]
+      ],
+      "label_interpretation": "author-labelled canal volume",
+      "label_touches_volume_boundary": false,
+      "added_smoothing": false,
+      "added_gap_filling": false,
+      "full_bone_wall_claim": false
+    },
+    {
+      "id": "mandibular_canal_right",
+      "source_label": 4,
+      "voxels": 12895,
+      "components_6_connected": 1,
+      "component_voxels": [
+        12895
+      ],
+      "triangles": 19928,
+      "bounds_m": [
+        [
+          -0.10785000771284103,
+          -0.06255000084638596,
+          -0.07065000385046005
+        ],
+        [
+          -0.0823500007390976,
+          -0.012450000271201134,
+          -0.025050001218914986
+        ]
+      ],
+      "label_interpretation": "author-labelled canal volume",
+      "label_touches_volume_boundary": false,
+      "added_smoothing": false,
+      "added_gap_filling": false,
+      "full_bone_wall_claim": false
+    }
+  ],
+  "sha256": "07cfb0c148caa7389a09f12336008524bac2d4766881890f2bc8c1e949fce8f3",
+  "date": "2026-10-13",
+  "licence_review": {
+    "status": "requires_author_clarification_before_publication",
+    "current_declaration": "CC BY-SA 4.0; this is not an NC licence",
+    "conflict": "The 2024 official structured proposal ties ethical approval to sharing for research purposes only. The 2025 paper and 2026 article reaffirm CC BY-SA and redistribution but do not explicitly resolve whether the consent scope changed.",
+    "sources": [
+      {
+        "url": "https://toothfairy2.grand-challenge.org/dataset/",
+        "locator": "Dataset: CC BY-SA training set; test set not public"
+      },
+      {
+        "url": "https://ditto.ing.unimore.it/static/toothfairy2/ToothFairy2_StructuredChallengeDescription.e7fa795b7000.pdf",
+        "locator": "Printed Page7: Ethics approval and Data usage agreement"
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Bolelli_Segmenting_Maxillofacial_Structures_in_CBCT_Volumes_CVPR_2025_paper.pdf",
+        "locator": "Section3.3 Accessibility, Ethics approval; section3.2 author alpha-shape refinement"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.media.2026.104095",
+        "locator": "Ethics approval and data availability; author statement allowing redistribution under CC BY-SA"
+      }
+    ]
+  },
+  "download_verification": {
+    "method": "Selected original ZIP members through public HTTP byte ranges; ZIP CRC32 checked by Python zipfile. Full26GB archive hash not checked.",
+    "files": [
+      {
+        "name": "dataset.json",
+        "bytes": 1677,
+        "sha256": "830bea114446f5fbb8325b318f7c4004b2f3088ec94a08a79334b856763825b3"
+      },
+      {
+        "name": "ToothFairy2F_026.mha",
+        "bytes": 46059858,
+        "sha256": "ed8666a30c20e9f0497f2b7c212934b7859a3d6ddb767b09e17f1ad7e0626c22"
+      },
+      {
+        "name": "ToothFairy2F_026_0000.mha",
+        "bytes": 368475659,
+        "sha256": "a5f990f4f6bf78bab61a2b163b0865aee5beee1568c3239b37ff2becb956aa18"
+      }
+    ]
+  }
+}

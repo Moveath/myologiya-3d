@@ -1,0 +1,808 @@
+{
+  "date": "2026-10-13",
+  "scope": "Повторная проверка реальных источников 9 целых экземпляров мышц и 10 экземпляров частей.",
+  "commercially_compatible_sources_required": true,
+  "speculative_reconstruction_allowed": false,
+  "counts": {
+    "whole_instances": 9,
+    "part_instances": 10,
+    "accepted_new_instances": 0,
+    "unresolved_instances": 19
+  },
+  "complete_muscle_geometry_claim": false,
+  "local_review_glb_not_a_published_anatomical_completion": "build_head/muscle_completion/artisynth-authored-elements.glb",
+  "general_limitation": "Не найден в проверенном наборе источников не означает, что такой модели нигде не существует. Анатомическая статья и 3D-рисунок не заменяют полученный проверенный исходный файл.",
+  "instances": [
+    {
+      "id": "auricularis_anterior_right",
+      "ru": "Передняя ушная мышца",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020",
+      "kind": "whole",
+      "instance": "auricularis_anterior_right",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "auricularis_anterior_left",
+      "ru": "Передняя ушная мышца",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020",
+      "kind": "whole",
+      "instance": "auricularis_anterior_left",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "auricularis_superior_right",
+      "ru": "Верхняя ушная мышца",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021",
+      "kind": "whole",
+      "instance": "auricularis_superior_right",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "auricularis_superior_left",
+      "ru": "Верхняя ушная мышца",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021",
+      "kind": "whole",
+      "instance": "auricularis_superior_left",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "auricularis_posterior_right",
+      "ru": "Задняя ушная мышца",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022",
+      "kind": "whole",
+      "instance": "auricularis_posterior_right",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "auricularis_posterior_left",
+      "ru": "Задняя ушная мышца",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022",
+      "kind": "whole",
+      "instance": "auricularis_posterior_left",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "hudeca",
+        "li_toronto_2015"
+      ],
+      "next_requirement": "Отдельная человеческая поверхность/маска именно этой ушной мышцы и стороны с лицензией, разрешающей коммерческое распространение."
+    },
+    {
+      "id": "depressor_supercilii_right",
+      "ru": "Мышца, опускающая бровь",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019",
+      "kind": "whole",
+      "instance": "depressor_supercilii_right",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "visible_ape",
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Разрешённый исходный download Visible Ape, затем проверка отдельного объекта и своей стороны."
+    },
+    {
+      "id": "depressor_supercilii_left",
+      "ru": "Мышца, опускающая бровь",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019",
+      "kind": "whole",
+      "instance": "depressor_supercilii_left",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "visible_ape",
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Разрешённый исходный download Visible Ape, затем проверка отдельного объекта и своей стороны."
+    },
+    {
+      "id": "transversus_menti",
+      "ru": "Поперечная мышца подбородка",
+      "lat": "m. transversus menti",
+      "ta98": "A04.1.03.027",
+      "kind": "whole",
+      "instance": "transversus_menti",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "li_toronto_2015",
+        "z_anatomy",
+        "bodyparts43"
+      ],
+      "next_requirement": "Исходные координаты измеренной transversus menti и открытое разрешение на перераспространение."
+    },
+    {
+      "muscle": "orbicularis_oculi_right",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016",
+      "kind": "part",
+      "instance": "orbicularis_oculi_right:deep",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "lacrimal_pump_2020",
+        "z_anatomy",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Разрешённая геометрия глубокой части с подтверждением соответствия TA98, стороны и исходных границ."
+    },
+    {
+      "muscle": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015",
+      "kind": "part",
+      "instance": "orbicularis_oculi_right:ciliary",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "orbicularis_oculi_left",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016",
+      "kind": "part",
+      "instance": "orbicularis_oculi_left:deep",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "lacrimal_pump_2020",
+        "z_anatomy",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Разрешённая геометрия глубокой части с подтверждением соответствия TA98, стороны и исходных границ."
+    },
+    {
+      "muscle": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015",
+      "kind": "part",
+      "instance": "orbicularis_oculi_left:ciliary",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "nasalis_right",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010",
+      "kind": "part",
+      "instance": "nasalis_right:transverse",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "nasalis_right",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011",
+      "kind": "part",
+      "instance": "nasalis_right:alar",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "nasalis_left",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010",
+      "kind": "part",
+      "instance": "nasalis_left:transverse",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "nasalis_left",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011",
+      "kind": "part",
+      "instance": "nasalis_left:alar",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "z_anatomy",
+        "bodyparts43",
+        "jena_3d_face",
+        "baseline_face_2023"
+      ],
+      "next_requirement": "Исходная отдельная часть со своими границами; нельзя разделить имеющуюся целую мышцу произвольным срезом."
+    },
+    {
+      "muscle": "orbicularis_oris",
+      "part": "marginal",
+      "ru": "Краевая часть",
+      "lat": "pars marginalis",
+      "ta98": "A04.1.03.024",
+      "kind": "part",
+      "instance": "orbicularis_oris:marginal",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "artisynth",
+        "z_anatomy",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Источник с отдельно заданной полной частью TA98; OOM/OOP конечных элементов не заменяют подтверждение границы и номенклатуры."
+    },
+    {
+      "muscle": "orbicularis_oris",
+      "part": "labial",
+      "ru": "Губная часть",
+      "lat": "pars labialis",
+      "ta98": "A04.1.03.025",
+      "kind": "part",
+      "instance": "orbicularis_oris:labial",
+      "accepted_source_geometry": false,
+      "status": "unresolved_source_geometry",
+      "candidate_ids": [
+        "artisynth",
+        "z_anatomy",
+        "jena_3d_face"
+      ],
+      "next_requirement": "Источник с отдельно заданной полной частью TA98; OOM/OOP конечных элементов не заменяют подтверждение границы и номенклатуры."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "z_anatomy",
+      "license": "CC BY-SA 4.0",
+      "source": "research/cache/Z-Anatomy/Startup.blend",
+      "objects": [
+        {
+          "name": "Corrugator supercilii.l",
+          "type": "MESH",
+          "vertices": 141,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head"
+          ]
+        },
+        {
+          "name": "Corrugator supercilii.r",
+          "type": "MESH",
+          "vertices": 141,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head"
+          ]
+        },
+        {
+          "name": "Extrinsic auricular muscles.g",
+          "type": "FONT",
+          "vertices": null,
+          "collections": [
+            "4: Muscular system",
+            "Head",
+            "Muscles of head"
+          ]
+        },
+        {
+          "name": "Extrinsic auricular muscles.j",
+          "type": "MESH",
+          "vertices": 2,
+          "collections": [
+            "4: Muscular system",
+            "Head",
+            "Muscles of head"
+          ]
+        },
+        {
+          "name": "Intrinsic auricular muscles.g",
+          "type": "FONT",
+          "vertices": null,
+          "collections": [
+            "4: Muscular system",
+            "Head"
+          ]
+        },
+        {
+          "name": "Intrinsic auricular muscles.j",
+          "type": "MESH",
+          "vertices": 2,
+          "collections": [
+            "4: Muscular system",
+            "Head"
+          ]
+        },
+        {
+          "name": "Nasalis muscle.l",
+          "type": "MESH",
+          "vertices": 352,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Nasalis muscle.ol",
+          "type": "MESH",
+          "vertices": 32,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Nasalis muscle.or",
+          "type": "MESH",
+          "vertices": 32,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Nasalis muscle.r",
+          "type": "MESH",
+          "vertices": 352,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Orbicularis oris muscle.l",
+          "type": "MESH",
+          "vertices": 940,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Orbicularis oris muscle.ol",
+          "type": "MESH",
+          "vertices": 11,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Orbicularis oris muscle.or",
+          "type": "MESH",
+          "vertices": 11,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Orbicularis oris muscle.r",
+          "type": "MESH",
+          "vertices": 940,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Orbital part of orbicularis oculi.ol",
+          "type": "MESH",
+          "vertices": 16,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Orbital part of orbicularis oculi.or",
+          "type": "MESH",
+          "vertices": 16,
+          "collections": [
+            "2: Muscular insertions"
+          ]
+        },
+        {
+          "name": "Orbital part of orbicularis oculi.l",
+          "type": "MESH",
+          "vertices": 1195,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Orbital part of orbicularis oculi.r",
+          "type": "MESH",
+          "vertices": 1195,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head",
+            "Superficial muscles"
+          ]
+        },
+        {
+          "name": "Palpebral part of orbicularis oculi.l",
+          "type": "MESH",
+          "vertices": 415,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head"
+          ]
+        },
+        {
+          "name": "Palpebral part of orbicularis oculi.r",
+          "type": "MESH",
+          "vertices": 415,
+          "collections": [
+            "4: Muscular system",
+            "Facial muscles",
+            "Facial nerve (VII)",
+            "Head",
+            "Muscles",
+            "Muscles of head"
+          ]
+        }
+      ],
+      "evidence": {
+        "path": "build_head/muscle_completion/z-target-inventory.json",
+        "bytes": 59858,
+        "sha256": "f1cf5cea8a9a018f5abc6e0853732537a8c7363a9b7aed82ea8e2da3a3d4d02a"
+      },
+      "method": "Исходный .blend открыт через bpy с use_scripts=False; проверены имена, типы объектов, число вершин и коллекции.",
+      "decision": "target_surfaces_not_identified",
+      "finding": "Ушные названия — FONT и линии MESH из двух вершин. Отдельных целевых ушных мышц, depressor supercilii и transversus menti не найдено в проверенной именованной сцене. Nasalis и orbicularis oris представлены целыми правой/левой поверхностями; суффиксы .ol/.or относятся к коллекции Muscular insertions. У orbicularis oculi отдельно выделены только orbital/palpebral. Не выдавать эти объекты за отсутствующие части."
+    },
+    {
+      "id": "bodyparts43",
+      "license": "CC BY-SA 2.1 Japan (данные), MIT (код зеркала)",
+      "url": "https://github.com/olivercase/body_parts_3d_api",
+      "evidence": [
+        {
+          "path": "research/cache/bp43/MANIFEST.csv",
+          "bytes": 267920,
+          "sha256": "376cf368d8679a02bd60455b4cc8853f8367cd4043745372e6df1f231d08e27f"
+        },
+        {
+          "path": "research/cache/bp43/FMA2Obj.txt",
+          "bytes": 605737,
+          "sha256": "a199eb9cb258266768b7690f4ac2591f67d4b146c95e14046c46091c35c09385"
+        },
+        {
+          "path": "research/cache/bp43/obj2FMA.html",
+          "bytes": 4528437,
+          "sha256": "cab10eda6338a6935d0216810eaba78dd049877df496323a0a4916d290dd8e3a"
+        }
+      ],
+      "decision": "target_object_mapping_not_identified",
+      "finding": "Проверены манифест и опубликованное соответствие FMA→OBJ версии 4.3. Новые целевые поверхности не идентифицированы по доступному перечню. Это проверка перечня, а не визуальный осмотр каждой сетки 4.3 и не доказательство отсутствия анатомического образования вообще."
+    },
+    {
+      "id": "visible_ape",
+      "author": "José Saúl Martín / Visible Ape Project",
+      "url": "https://www.visibleapeproject.com/3d-human-head-and-neck",
+      "locator": "Labeled human reconstruction, muscle 5 Depressor supercilii; Download this model links",
+      "files": [
+        {
+          "uid": "22dbb37977304b5aab9db083b51026d2",
+          "name": "Modern Human Head & Neck Model",
+          "url": "https://sketchfab.com/3d-models/modern-human-head-neck-model-22dbb37977304b5aab9db083b51026d2",
+          "license": {
+            "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution",
+            "fullName": "Creative Commons Attribution",
+            "requirements": "Author must be credited. Commercial use is allowed.",
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "slug": "by"
+          },
+          "downloadable": true,
+          "official_download_status_2026_10_13": 401,
+          "mesh_obtained": false,
+          "metadata": {
+            "path": "research/cache/new-muscles/22dbb37977304b5aab9db083b51026d2.json",
+            "bytes": 3605,
+            "sha256": "a228436027b4eccf4bf1af3c7a21b816a2060d737f5fd36e4682ae5be66d2456"
+          }
+        },
+        {
+          "uid": "e454a6e1c3f14982b0597f34a236dc85",
+          "name": "Labeled Modern Human Head & Neck Reconstruction",
+          "url": "https://sketchfab.com/3d-models/labeled-modern-human-head-neck-reconstruction-e454a6e1c3f14982b0597f34a236dc85",
+          "license": {
+            "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution",
+            "fullName": "Creative Commons Attribution",
+            "requirements": "Author must be credited. Commercial use is allowed.",
+            "url": "http://creativecommons.org/licenses/by/4.0/",
+            "slug": "by"
+          },
+          "downloadable": true,
+          "official_download_status_2026_10_13": 401,
+          "mesh_obtained": false,
+          "metadata": {
+            "path": "research/cache/new-muscles/e454a6e1c3f14982b0597f34a236dc85.json",
+            "bytes": 3639,
+            "sha256": "82533969df6c4476454e886c3d3db18fd887e9a533470c727529b5a924797595"
+          }
+        }
+      ],
+      "decision": "authorized_source_download_requires_authentication",
+      "finding": "Авторская человеческая реконструкция с лицензией CC BY 4.0 — конкретный кандидат для depressor supercilii. Оба официальных download API вернули 401. В проверенных страницах проекта, авторской статье и поиске репозитория Aveiro другой разрешённый исходный файл не найден. Отдельность объектов и обе стороны пока не проверены. Закрытые ресурсы просмотрщика не извлекались."
+    },
+    {
+      "id": "artisynth",
+      "decision": "not_confirmed_ta98_parts",
+      "evidence": {
+        "path": "build_head/muscle_completion/artisynth-review.json",
+        "bytes": 194226,
+        "sha256": "8b8250072b32d5ec4dcda95673b8a37928f16446dbb5919eedf7e3ae1aae07e7"
+      },
+      "model": {
+        "path": "build_head/muscle_completion/artisynth-authored-elements.glb",
+        "bytes": 293508,
+        "sha256": "c54e0e185382f0afd440a043bc05ddc6e76fdc960f388c3962255562a3bbdbcd"
+      },
+      "license": "ArtiSynth Models license: redistribution of code and data permitted, with notices and citation",
+      "source_commit": "e37be3f1b4831f347c055cbf7124b6bd57414f98",
+      "anatomical_references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631558/",
+          "title": "Rogers et al. (2009), Comparative microanatomy of the orbicularis oris muscle between chimpanzees and humans",
+          "locator": "Introduction, Fig.1; Results, Fig.2: anatomical marginalis and peripheralis layers; these do not establish the boundary of a given FE element set"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5754395/",
+          "title": "Eskes et al. (2018), Simulation of facial expressions using person-specific sEMG signals controlling a biomechanical face model",
+          "locator": "Materials and methods, Biomechanical model: reference face and manually selected orbicularis muscle elements; OOP/OOM in muscle list"
+        }
+      ],
+      "shared_OOM_OOP_solid_elements": 61,
+      "objects": [
+        {
+          "id": "face_context",
+          "vertices": 4852,
+          "triangles": 9720,
+          "watertight": true,
+          "winding_consistent": true,
+          "max_difference_from_same_reference_node_mm": 0.0
+        },
+        {
+          "id": "OOM",
+          "vertices": 400,
+          "triangles": 796,
+          "watertight": true,
+          "winding_consistent": true,
+          "max_difference_from_same_reference_node_mm": 0.0
+        },
+        {
+          "id": "OOP",
+          "vertices": 328,
+          "triangles": 652,
+          "watertight": true,
+          "winding_consistent": true,
+          "max_difference_from_same_reference_node_mm": 0.0
+        }
+      ],
+      "finding": "Источник содержит авторские конечные элементы OOM/OOP, а не две независимо сегментированные TA98-части. Форма мягких тканей опирается на КТ, мышечные пути и активные элементы заданы в биомеханической модели авторами. Списки OOM/OOP пересекаются; экспорт одного полулица не доказывает полноту мышцы.",
+      "published": false,
+      "review_image_files": [
+        {
+          "path": "build_head/muscle_completion/both_context_0_0_-1.png",
+          "bytes": 185443,
+          "sha256": "cd3c7c87102a2fc28dec413aa24119223ee8f96dcabdca4e2ab616551dbdecf2"
+        },
+        {
+          "path": "build_head/muscle_completion/OOM_0.35_0.2_-1.png",
+          "bytes": 46627,
+          "sha256": "78f60297c9d04d07eef47bcad6065ddafed50718f1ad6ffc7b36b343845bca71"
+        },
+        {
+          "path": "build_head/muscle_completion/OOP_0.35_0.2_-1.png",
+          "bytes": 47001,
+          "sha256": "db7f8486523aba0ed18d13c3a55fe56fd20aec8aeeb925c712fdcf1b8eb67db2"
+        }
+      ],
+      "visual_review": {
+        "date": "2026-10-13",
+        "images": [
+          "both_context_0_0_-1.png",
+          "OOM_0.35_0.2_-1.png",
+          "OOP_0.35_0.2_-1.png"
+        ],
+        "finding": "Осмотр совместно с исходной поверхностью лица и по отдельности: два блочных полукольца одного полулица; ступенчатые края соответствуют конечным элементам. Это не отдельные полные поверхности двух частей TA98.",
+        "publication_decision": "Локальный технический образец. Не добавлять как подтверждённые анатомические части в учебный атлас."
+      },
+      "restriction": "Техническая модель сохранена для проверки источника. Не заменяет две отсутствующие TA98-части orbicularis oris и не добавляется в публичный атлас."
+    },
+    {
+      "id": "jena_3d_face",
+      "license": "CC BY 4.0",
+      "url": "https://doi.org/10.6084/m9.figshare.32324658",
+      "paper": "https://doi.org/10.3390/jimaging12090459",
+      "locator": "Methods 2.4 Segmentation; dataset donor 01, MRI mask_*.nii.gz",
+      "evidence": {
+        "path": "research/cache/new-muscles/01.zip",
+        "bytes": 20213126,
+        "sha256": "9b31efdb498fda41f15219c23092a16025a5a3f5d7b1ec6ff5013a21942b7a95"
+      },
+      "decision": "group_masks_do_not_define_target_parts",
+      "finding": "Реальный архив 01.zip получен; проверены маски AR, HS, KJ, sub, X3, XX и их метки. Авторы сегментировали общие мышечные пласты/группы, намеренно не проводили границы каждой лицевой мышцы. Доступная ресэмплированная сетка маски около 0,318×0,318×0,320 мм не означает такую исходную разрешающую способность МРТ (0,640 мм).",
+      "mask_XX_values_and_voxel_counts": {
+        "0": 309643693,
+        "2": 2850016,
+        "3": 4700531
+      },
+      "mask_KJ_values_and_voxel_counts": {
+        "0": 309731686,
+        "1": 7462554
+      },
+      "accepted_individual_muscle_labels": []
+    },
+    {
+      "id": "hudeca",
+      "license": "Данные CC BY-NC 4.0; статья CC BY-NC-ND 4.0",
+      "url": "https://hudeca.com/?page_id=590",
+      "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10783631/",
+      "locator": "A tridimensional atlas of the developing human head, Fig.S5K–M; author repository VR and raw imaging pages",
+      "decision": "excluded_noncommercial_license",
+      "finding": "В эмбриональном исследовании различимы наружные ушные мышцы. Авторские download-ссылки ведут к объёмам syGlass/исходным изображениям, а не проверенному комплекту отдельных целевых поверхностей. Пользователь не разрешил NC; данные не включены в сайт.",
+      "downloaded_target_meshes": 0
+    },
+    {
+      "id": "li_toronto_2015",
+      "url": "https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/OTU/TC-OTU-69552.pdf",
+      "locator": "Table 5.1, печатная стр.54; title-page copyright",
+      "decision": "underlying_source_and_redistribution_license_not_obtained",
+      "finding": "Работа действительно описывает измеренную 3D-архитектуру transversus menti и правой auricularis. Диссертация не предоставляет открыто лицензированных исходных геометрий. Число волокон и иллюстрации не заменяют координаты."
+    },
+    {
+      "id": "lacrimal_pump_2020",
+      "url": "https://doi.org/10.1016/j.jtos.2020.07.013",
+      "institution": "https://cris.fau.de/publications/241742781/",
+      "locator": "Methods: four serial-histology reconstructions by HiD; publisher/institutional record",
+      "decision": "source_geometry_and_open_license_not_obtained",
+      "finding": "Авторы выполнили реальные реконструкции слёзной части orbicularis oculi. В проверенных доступных материалах не найден свободно распространяемый исходный меш или маска для повторного экспорта; опубликованная иллюстрация не доказывает доступность 3D-данных."
+    },
+    {
+      "id": "baseline_face_2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10294925/",
+      "locator": "Methods, muscle network; Data Availability Statement",
+      "decision": "action_lines_not_target_volumes_and_data_on_request",
+      "finding": "Мышечные сети — авторские линии действия между ориентирами статистической формы головы; не сегментированные объёмы целевых мышц. Данные указаны как доступные по запросу."
+    },
+    {
+      "id": "anatomytool_artificial_head",
+      "url": "https://anatomytool.org/content/artificial-3d-head-mimic-muscles-and-facial-nerve",
+      "license": "CC BY-NC-SA 4.0",
+      "decision": "excluded_noncommercial_license",
+      "finding": "Проверена актуальная карточка, лицензия несовместима с выбранным пользователем условием. Геометрия не включена."
+    }
+  ]
+}

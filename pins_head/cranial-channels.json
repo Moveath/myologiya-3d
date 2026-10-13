@@ -1,0 +1,194 @@
+{
+  "source": "Halle micro-CT",
+  "specimen": "halle_skull",
+  "structures": [
+    {
+      "id": "halle_hypoglossal",
+      "node": "channels|halle_hypoglossal",
+      "ru": "Канал подъязычного нерва — костный блок",
+      "lat": "canalis nervi hypoglossi",
+      "ta98": "A02.1.04.016",
+      "description": "Канал подъязычного нерва проходит над основанием затылочного мыщелка. Его внутричерепное отверстие находится над краем большого отверстия; ход направлен латерально и вперёд. В этом препарате просвет прослежен между двумя отверстиями по исходной микро-КТ.",
+      "modelNote": "Показана настоящая костная ткань вокруг канала, выделенная из исходной сегментации при шаге 0,125 мм. Просвет виден в отверстиях, при вращении, срезе и на последовательных КТ-кадрах. Маска местами не замыкает тонкую стенку: эти разрывы сохранены, а все микродетали не объявлены завершёнными. Прямоугольные края блока — границы выборки, а не анатомические отверстия. Сторона тела не присвоена из-за неоднозначной исходной декларации ориентации.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF, с. 79: Lateral Parts (pars lateralis). Канал начинается над большим отверстием и проходит над основанием мыщелка латерально и вперёд; мыщелковый канал описан отдельно позади мыщелка.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Anatomy Standard: Occipital bone",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Иллюстрации Front и Back: canalis nervi hypoglossi над condylus occipitalis; canalis condylaris расположен отдельно сзади.",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Thomas Kirchner: Micro-CT data of a human skull (2022)",
+          "url": "https://zenodo.org/records/6108435",
+          "locator": "halle_skull.nrrd и halle_skull_segmented.nrrd; шаг 0,125 мм. Обе полные контрольные суммы MD5 сверены с записью Zenodo.",
+          "scope": "geometry"
+        }
+      ],
+      "view": {
+        "d": [
+          12,
+          0,
+          -7
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.055,
+        "target": [
+          0.055,
+          0.04,
+          0.1045
+        ]
+      },
+      "views": [
+        {
+          "id": "intracranial",
+          "ru": "Со стороны большого отверстия",
+          "d": [
+            12,
+            0,
+            -7
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.055,
+          "target": [
+            0.055,
+            0.04,
+            0.1045
+          ]
+        },
+        {
+          "id": "extracranial",
+          "ru": "Наружное отверстие",
+          "d": [
+            -12,
+            0,
+            7
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.055,
+          "target": [
+            0.055,
+            0.04,
+            0.1045
+          ]
+        }
+      ],
+      "color": "#d7ab5c",
+      "scope": "channel_bone_roi",
+      "completeFeatureGeometry": false,
+      "continuousLumenConfirmed": true,
+      "source": "Halle micro-CT",
+      "specimen": "halle_skull",
+      "side": null,
+      "evidence": {
+        "continuous_lumen_confirmed": true,
+        "apertures_reviewed": 2,
+        "complete_wall_claim": false,
+        "native_step_mm": 0.125,
+        "probeEndpoints_mm": [
+          [
+            61.0,
+            40.0,
+            101.0
+          ],
+          [
+            49.0,
+            40.0,
+            108.0
+          ]
+        ],
+        "probe_is_anatomical_centerline": false,
+        "probe_sample_count": 112,
+        "probe_ct_range": [
+          -974,
+          -750
+        ],
+        "all_probe_samples_mask_air": true,
+        "closed_oblique_contours": 34,
+        "contour_plane_count": 112,
+        "mesh": {
+          "node": "channels|halle_hypoglossal",
+          "file": "skull-cranial-channels.glb",
+          "sha256": "dcdefb763758557aec5a89e8941252af4cb56e3e9f094058133bab2ad40ff0ad",
+          "sourceROI": "channel-native.glb",
+          "vertices": 216511,
+          "triangles": 430828,
+          "normalsReversed": true,
+          "normalCheckBefore": {
+            "sampledTriangles": 20000,
+            "outwardMaskTransitionFraction": 0.0063,
+            "inwardMaskTransitionFraction": 0.97205
+          },
+          "normalCheckAfter": {
+            "sampledTriangles": 20000,
+            "outwardMaskTransitionFraction": 0.97205,
+            "inwardMaskTransitionFraction": 0.0063
+          },
+          "bounds_m": [
+            [
+              0.04600000008940697,
+              0.029999999329447746,
+              0.09399999678134918
+            ],
+            [
+              0.0638749971985817,
+              0.04787500202655792,
+              0.11387500166893005
+            ]
+          ],
+          "sampling_mm": 0.125,
+          "decimated": false,
+          "positionQuantization": false
+        },
+        "wholeSourceChecksums": [
+          {
+            "file": "halle_skull.nrrd",
+            "bytes": 2833296569,
+            "MD5": "2b46ca394084ab84af20bc267114e75f",
+            "wholeFileVerified": true
+          },
+          {
+            "file": "halle_skull_segmented.nrrd",
+            "bytes": 37249251,
+            "MD5": "7ae22945a353069bdb695b63fa2f20bd",
+            "wholeFileVerified": true
+          }
+        ],
+        "anatomical_review": "Независимо подтверждён canalis nervi hypoglossi по расположенному над передней частью мыщелка ходу у переднелатерального края большого отверстия. Кандидат не расположен позади мыщелка, где ожидается canalis condylaris.",
+        "review_images": [
+          "build_head/cranial_channels/candidate-hypoglossal-ct.png",
+          "build_head/cranial_channels/hypoglossal-horizontal-ct.png",
+          "build_head/cranial_channels/hypoglossal-coronal-ct.png",
+          "build_head/cranial_channels/jobs-context/inferior.png",
+          "build_head/cranial_channels/jobs-context/internal.png"
+        ],
+        "source_mesh_artificial_crop_boundaries": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "smoothed": false,
+        "synthetic_channel_surface": false
+      },
+      "slices": "halle_hypoglossal"
+    }
+  ],
+  "not_main_atlas_markers": true
+}

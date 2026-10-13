@@ -16,6 +16,21 @@ ear_landmarks = json.loads((ROOT/'site/skull-openear-landmarks.json').read_text(
 native = json.loads((ROOT/'site/skull-native-features.json').read_text(encoding='utf-8'))
 catalogue = json.loads((ROOT/'site/skull-feature-catalogue.json').read_text(encoding='utf-8'))
 examples = json.loads((ROOT/'site/skull-variant-examples.json').read_text(encoding='utf-8'))['examples']
+channel_models = []
+for mode, stem in [('channels', 'skull-temporal-channels'), ('cranial_channels', 'skull-cranial-channels')]:
+    path=ROOT/'site'/f'{stem}.json'
+    if not path.exists():
+        continue
+    model=json.loads(path.read_text(encoding='utf8'))
+    slices=json.loads((ROOT/'site'/model['slicesFile']).read_text(encoding='utf8'))
+    channel_models.append({'mode':mode, 'metadata':str(path.relative_to(ROOT)),
+        'source':model['source'], 'license':model['license'],
+        'source_ct_reslices':sum(len(s['frames']) for s in slices['series']),
+        'structures':[{'id':d['id'], 'ta98':d['ta98'], 'scope':d['scope'],
+                       'completeFeatureGeometry':d['completeFeatureGeometry'],
+                       'continuousLumenConfirmed':d.get('continuousLumenConfirmed'), 'modelNote':d['modelNote']}
+                      for d in model['structures']],
+        'main_bodyparts3d_status_changed':False})
 native_by_code = {}
 for mode, markers in native['markers'].items():
     for marker in markers:
@@ -76,6 +91,7 @@ report = {
                     'registered_to_main_atlas': False},
         'halle_microct': {'metadata': 'site/skull-microct.json', 'registered_to_main_atlas': False}},
     'remaining_primary_markers': remaining,
+    'source_channel_geometry': channel_models,
     'cross_source_evidence': {
         'catalogue': 'site/skull-feature-catalogue.json',
         'terms_with_supplemental_material': len(catalogue['features']),

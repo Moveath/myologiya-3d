@@ -1,0 +1,6456 @@
+{
+  "source": "Halle: исходная микро-КТ и полуавтоматическая костная сегментация одного препарата",
+  "sourceUrl": "https://zenodo.org/records/6108435",
+  "sources": [
+    {
+      "id": "halle",
+      "file": "halle_skull.nrrd",
+      "label": "Микро-КТ Halle",
+      "acquisition_step_mm": 0.125,
+      "md5": "2b46ca394084ab84af20bc267114e75f",
+      "wholeFileVerified": true
+    }
+  ],
+  "license": "CC BY 4.0",
+  "attribution": "Thomas Kirchner, Martin-Luther-Universität Halle-Wittenberg; Halle skull micro-CT, Zenodo 6108435 (2022).",
+  "source_acquisition_step_mm": 0.125,
+  "registered_grid_step_mm": 0.125,
+  "type": "oblique_reslice",
+  "standard_anatomical_plane": false,
+  "intensities_are_calibrated_HU": false,
+  "window_raw_values": [
+    -500,
+    1800
+  ],
+  "ct_interpolation": "nearest",
+  "mask_interpolation": "nearest",
+  "caption": "Косые срезы исходной микро-КТ поперёк проверенного просвета. Слева — исходные плотности; справа — тот же кадр с границей костной маски красным. Голубым выделена связная область воздуха, только если контур маски замкнут. Это не модель нерва. Пиксели выбраны из исходного объёма без усреднения; открытые контуры не исправлялись. Оси соответствуют препарату, сторона тела не присваивалась.",
+  "series": [
+    {
+      "id": "halle_hypoglossal",
+      "ru": "Канал подъязычного нерва: КТ вдоль просвета",
+      "kind": "oblique_reslice",
+      "pages": [
+        {
+          "file": "skull-cranial-channel-slices-1.png",
+          "width": 904,
+          "height": 678,
+          "sha256": "9525418a4a59909c5514e9ef96fa11e65c17ed1232cb9de40412be8343892f63"
+        },
+        {
+          "file": "skull-cranial-channel-slices-2.png",
+          "width": 904,
+          "height": 678,
+          "sha256": "813813059a4e9bbfc7222b31ef39fd8ca9a8e195604895f6eec2527c46d3e3c3"
+        },
+        {
+          "file": "skull-cranial-channel-slices-3.png",
+          "width": 904,
+          "height": 678,
+          "sha256": "c3101c4162443c9e537a761fc6e37a5c6c176de9cd23fc62a0a1a92e9cd41b87"
+        },
+        {
+          "file": "skull-cranial-channel-slices-4.png",
+          "width": 904,
+          "height": 678,
+          "sha256": "d6ad02f99c62f2c4bc19dd5c9b65c48c6b7d0613d5c21b44c4456ce844ecd3f2"
+        },
+        {
+          "file": "skull-cranial-channel-slices-5.png",
+          "width": 904,
+          "height": 452,
+          "sha256": "7e3a21acb77ebf3cfc1892f578acf30634d089e31fc26036c7e16feca47d3450"
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.061,
+            0.04,
+            0.101
+          ],
+          "center_native_zyx": [
+            320.0,
+            808.0,
+            488.0
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 1,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0608920276373877,
+            0.04,
+            0.10106298387819052
+          ],
+          "center_native_zyx": [
+            320.0,
+            808.5038710255241,
+            487.1362210991016
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 2,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06078405527477539,
+            0.04,
+            0.10112596775638102
+          ],
+          "center_native_zyx": [
+            320.0,
+            809.0077420510481,
+            486.2724421982031
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 3,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06067608291216309,
+            0.04,
+            0.10118895163457153
+          ],
+          "center_native_zyx": [
+            320.0,
+            809.5116130765723,
+            485.4086632973047
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 4,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06056811054955078,
+            0.04,
+            0.10125193551276204
+          ],
+          "center_native_zyx": [
+            320.0,
+            810.0154841020964,
+            484.54488439640625
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 5,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06046013818693848,
+            0.04,
+            0.10131491939095255
+          ],
+          "center_native_zyx": [
+            320.0,
+            810.5193551276204,
+            483.68110549550784
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 6,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06035216582432618,
+            0.04,
+            0.10137790326914306
+          ],
+          "center_native_zyx": [
+            320.0,
+            811.0232261531445,
+            482.8173265946094
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 7,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06024419346171387,
+            0.04,
+            0.10144088714733357
+          ],
+          "center_native_zyx": [
+            320.0,
+            811.5270971786686,
+            481.95354769371096
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 0.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 8,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.06013622109910157,
+            0.04,
+            0.10150387102552409
+          ],
+          "center_native_zyx": [
+            320.0,
+            812.0309682041927,
+            481.08976879281255
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 9,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.060028248736489265,
+            0.04,
+            0.1015668549037146
+          ],
+          "center_native_zyx": [
+            320.0,
+            812.5348392297168,
+            480.2259898919141
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 10,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05992027637387696,
+            0.04,
+            0.10162983878190511
+          ],
+          "center_native_zyx": [
+            320.0,
+            813.0387102552409,
+            479.3622109910157
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 11,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05981230401126465,
+            0.04,
+            0.10169282266009562
+          ],
+          "center_native_zyx": [
+            320.0,
+            813.5425812807649,
+            478.4984320901172
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 12,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05970433164865235,
+            0.04,
+            0.10175580653828613
+          ],
+          "center_native_zyx": [
+            320.0,
+            814.046452306289,
+            477.6346531892188
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 13,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05959635928604005,
+            0.04,
+            0.10181879041647665
+          ],
+          "center_native_zyx": [
+            320.0,
+            814.5503233318132,
+            476.7708742883204
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 14,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05948838692342774,
+            0.04,
+            0.10188177429466716
+          ],
+          "center_native_zyx": [
+            320.0,
+            815.0541943573372,
+            475.9070953874219
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 15,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05938041456081544,
+            0.04,
+            0.10194475817285767
+          ],
+          "center_native_zyx": [
+            320.0,
+            815.5580653828613,
+            475.0433164865235
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 1.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 16,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05927244219820313,
+            0.04,
+            0.10200774205104816
+          ],
+          "center_native_zyx": [
+            320.0,
+            816.0619364083853,
+            474.17953758562504
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 17,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05916446983559083,
+            0.04,
+            0.10207072592923867
+          ],
+          "center_native_zyx": [
+            320.0,
+            816.5658074339094,
+            473.31575868472663
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 18,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05905649747297853,
+            0.04,
+            0.1021337098074292
+          ],
+          "center_native_zyx": [
+            320.0,
+            817.0696784594336,
+            472.4519797838282
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 19,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05894852511036622,
+            0.04,
+            0.1021966936856197
+          ],
+          "center_native_zyx": [
+            320.0,
+            817.5735494849577,
+            471.58820088292975
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 20,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            0,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05884055274775392,
+            0.04,
+            0.10225967756381021
+          ],
+          "center_native_zyx": [
+            320.0,
+            818.0774205104817,
+            470.72442198203134
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.5,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 21,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            226,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05873258038514161,
+            0.04,
+            0.10232266144200072
+          ],
+          "center_native_zyx": [
+            320.0,
+            818.5812915360058,
+            469.8606430811329
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.625,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 22,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            452,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.058624608022529306,
+            0.04,
+            0.10238564532019123
+          ],
+          "center_native_zyx": [
+            320.0,
+            819.0851625615298,
+            468.99686418023447
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.75,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 23,
+          "image": "skull-cranial-channel-slices-1.png",
+          "rect": [
+            678,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.058516635659917,
+            0.04,
+            0.10244862919838175
+          ],
+          "center_native_zyx": [
+            320.0,
+            819.589033587054,
+            468.133085279336
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 2.875,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 24,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0584086632973047,
+            0.04,
+            0.10251161307657226
+          ],
+          "center_native_zyx": [
+            320.0,
+            820.0929046125781,
+            467.2693063784376
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.0,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 25,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0583006909346924,
+            0.04,
+            0.10257459695476277
+          ],
+          "center_native_zyx": [
+            320.0,
+            820.5967756381021,
+            466.4055274775392
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.125,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 26,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05819271857208009,
+            0.04,
+            0.10263758083295328
+          ],
+          "center_native_zyx": [
+            320.0,
+            821.1006466636262,
+            465.5417485766407
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.25,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 27,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05808474620946779,
+            0.04,
+            0.1027005647111438
+          ],
+          "center_native_zyx": [
+            320.0,
+            821.6045176891504,
+            464.6779696757423
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.375,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 28,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.057976773846855484,
+            0.04,
+            0.10276354858933431
+          ],
+          "center_native_zyx": [
+            320.0,
+            822.1083887146744,
+            463.81419077484384
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.5,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 29,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05786880148424318,
+            0.04,
+            0.10282653246752482
+          ],
+          "center_native_zyx": [
+            320.0,
+            822.6122597401985,
+            462.9504118739454
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.625,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 30,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05776082912163088,
+            0.04,
+            0.10288951634571532
+          ],
+          "center_native_zyx": [
+            320.0,
+            823.1161307657226,
+            462.086632973047
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.75,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 31,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05765285675901857,
+            0.04,
+            0.10295250022390583
+          ],
+          "center_native_zyx": [
+            320.0,
+            823.6200017912466,
+            461.22285407214855
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 3.875,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 32,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.057544884396406266,
+            0.04,
+            0.10301548410209635
+          ],
+          "center_native_zyx": [
+            320.0,
+            824.1238728167708,
+            460.35907517125014
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 33,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05743691203379396,
+            0.04,
+            0.10307846798028686
+          ],
+          "center_native_zyx": [
+            320.0,
+            824.6277438422949,
+            459.4952962703517
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 34,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05732893967118166,
+            0.04,
+            0.10314145185847737
+          ],
+          "center_native_zyx": [
+            320.0,
+            825.1316148678189,
+            458.63151736945326
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 35,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.057220967308569355,
+            0.04,
+            0.10320443573666788
+          ],
+          "center_native_zyx": [
+            320.0,
+            825.635485893343,
+            457.76773846855485
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 36,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05711299494595705,
+            0.04,
+            0.10326741961485839
+          ],
+          "center_native_zyx": [
+            320.0,
+            826.1393569188671,
+            456.9039595676564
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 37,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05700502258334475,
+            0.04,
+            0.10333040349304891
+          ],
+          "center_native_zyx": [
+            320.0,
+            826.6432279443912,
+            456.040180666758
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 38,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05689705022073244,
+            0.04,
+            0.10339338737123942
+          ],
+          "center_native_zyx": [
+            320.0,
+            827.1470989699153,
+            455.1764017658595
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 39,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05678907785812014,
+            0.04,
+            0.10345637124942993
+          ],
+          "center_native_zyx": [
+            320.0,
+            827.6509699954394,
+            454.3126228649611
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 4.875,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 40,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05668110549550784,
+            0.04,
+            0.10351935512762044
+          ],
+          "center_native_zyx": [
+            320.0,
+            828.1548410209634,
+            453.4488439640627
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.0,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 41,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.056573133132895526,
+            0.04,
+            0.10358233900581094
+          ],
+          "center_native_zyx": [
+            320.0,
+            828.6587120464875,
+            452.5850650631642
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 42,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.056465160770283226,
+            0.04,
+            0.10364532288400147
+          ],
+          "center_native_zyx": [
+            320.0,
+            829.1625830720117,
+            451.7212861622658
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 43,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05635718840767092,
+            0.04,
+            0.10370830676219196
+          ],
+          "center_native_zyx": [
+            320.0,
+            829.6664540975357,
+            450.85750726136735
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.375,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 44,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            0,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05624921604505862,
+            0.04,
+            0.10377129064038247
+          ],
+          "center_native_zyx": [
+            320.0,
+            830.1703251230598,
+            449.99372836046894
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.5,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 45,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            226,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.056141243682446315,
+            0.04,
+            0.10383427451857298
+          ],
+          "center_native_zyx": [
+            320.0,
+            830.6741961485839,
+            449.1299494595705
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.625,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 46,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            452,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05603327131983401,
+            0.04,
+            0.10389725839676349
+          ],
+          "center_native_zyx": [
+            320.0,
+            831.1780671741079,
+            448.26617055867206
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.75,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 47,
+          "image": "skull-cranial-channel-slices-2.png",
+          "rect": [
+            678,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05592529895722171,
+            0.04,
+            0.10396024227495401
+          ],
+          "center_native_zyx": [
+            320.0,
+            831.6819381996321,
+            447.40239165777365
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 5.875,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 48,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0558173265946094,
+            0.04,
+            0.10402322615314452
+          ],
+          "center_native_zyx": [
+            320.0,
+            832.1858092251562,
+            446.5386127568752
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.0,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 49,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0557093542319971,
+            0.04,
+            0.10408621003133503
+          ],
+          "center_native_zyx": [
+            320.0,
+            832.6896802506802,
+            445.6748338559768
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.125,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 50,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05560138186938479,
+            0.04,
+            0.10414919390952554
+          ],
+          "center_native_zyx": [
+            320.0,
+            833.1935512762043,
+            444.8110549550783
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.25,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 51,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.055493409506772486,
+            0.04,
+            0.10421217778771605
+          ],
+          "center_native_zyx": [
+            320.0,
+            833.6974223017284,
+            443.9472760541799
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.375,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 52,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.055385437144160186,
+            0.04,
+            0.10427516166590657
+          ],
+          "center_native_zyx": [
+            320.0,
+            834.2012933272525,
+            443.0834971532815
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.5,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 53,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05527746478154788,
+            0.04,
+            0.10433814554409708
+          ],
+          "center_native_zyx": [
+            320.0,
+            834.7051643527766,
+            442.219718252383
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 54,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.055169492418935574,
+            0.04,
+            0.10440112942228759
+          ],
+          "center_native_zyx": [
+            320.0,
+            835.2090353783007,
+            441.3559393514846
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.75,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 55,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05506152005632327,
+            0.04,
+            0.1044641133004781
+          ],
+          "center_native_zyx": [
+            320.0,
+            835.7129064038247,
+            440.49216045058614
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 6.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 56,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05495354769371097,
+            0.04,
+            0.1045270971786686
+          ],
+          "center_native_zyx": [
+            320.0,
+            836.2167774293488,
+            439.62838154968773
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 57,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.054845575331098656,
+            0.04,
+            0.10459008105685912
+          ],
+          "center_native_zyx": [
+            320.0,
+            836.720648454873,
+            438.76460264878926
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 58,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05473760296848636,
+            0.04,
+            0.10465306493504963
+          ],
+          "center_native_zyx": [
+            320.0,
+            837.224519480397,
+            437.90082374789085
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.25,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 59,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05462963060587406,
+            0.04,
+            0.10471604881324013
+          ],
+          "center_native_zyx": [
+            320.0,
+            837.7283905059211,
+            437.03704484699244
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.375,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 60,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05452165824326175,
+            0.04,
+            0.10477903269143064
+          ],
+          "center_native_zyx": [
+            320.0,
+            838.2322615314451,
+            436.173265946094
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.5,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 61,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.054413685880649446,
+            0.04,
+            0.10484201656962115
+          ],
+          "center_native_zyx": [
+            320.0,
+            838.7361325569692,
+            435.30948704519557
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.625,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 62,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05430571351803714,
+            0.04,
+            0.10490500044781167
+          ],
+          "center_native_zyx": [
+            320.0,
+            839.2400035824934,
+            434.4457081442971
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.75,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 63,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05419774115542484,
+            0.04,
+            0.10496798432600218
+          ],
+          "center_native_zyx": [
+            320.0,
+            839.7438746080174,
+            433.5819292433987
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 7.875,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 64,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.054089768792812534,
+            0.04,
+            0.10503096820419269
+          ],
+          "center_native_zyx": [
+            320.0,
+            840.2477456335415,
+            432.7181503425003
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.0,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 65,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05398179643020023,
+            0.04,
+            0.1050939520823832
+          ],
+          "center_native_zyx": [
+            320.0,
+            840.7516166590656,
+            431.8543714416018
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.125,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 66,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05387382406758793,
+            0.04,
+            0.10515693596057372
+          ],
+          "center_native_zyx": [
+            320.0,
+            841.2554876845898,
+            430.9905925407034
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.25,
+          "closed_source_mask_contour": true
+        },
+        {
+          "index": 67,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.053765851704975616,
+            0.04,
+            0.10521991983876423
+          ],
+          "center_native_zyx": [
+            320.0,
+            841.7593587101138,
+            430.12681363980494
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 68,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            0,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05365787934236332,
+            0.04,
+            0.10528290371695474
+          ],
+          "center_native_zyx": [
+            320.0,
+            842.2632297356379,
+            429.2630347389065
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 69,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            226,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05354990697975102,
+            0.04,
+            0.10534588759514525
+          ],
+          "center_native_zyx": [
+            320.0,
+            842.7671007611619,
+            428.3992558380081
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 70,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            452,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.053441934617138705,
+            0.04,
+            0.10540887147333575
+          ],
+          "center_native_zyx": [
+            320.0,
+            843.270971786686,
+            427.53547693710965
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 71,
+          "image": "skull-cranial-channel-slices-3.png",
+          "rect": [
+            678,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.053333962254526406,
+            0.04,
+            0.10547185535152627
+          ],
+          "center_native_zyx": [
+            320.0,
+            843.7748428122102,
+            426.67169803621124
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 8.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 72,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0532259898919141,
+            0.04,
+            0.10553483922971678
+          ],
+          "center_native_zyx": [
+            320.0,
+            844.2787138377342,
+            425.8079191353128
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 73,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05311801752930179,
+            0.04,
+            0.10559782310790729
+          ],
+          "center_native_zyx": [
+            320.0,
+            844.7825848632583,
+            424.94414023441436
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 74,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.053010045166689494,
+            0.04,
+            0.1056608069860978
+          ],
+          "center_native_zyx": [
+            320.0,
+            845.2864558887824,
+            424.08036133351595
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 75,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05290207280407719,
+            0.04,
+            0.1057237908642883
+          ],
+          "center_native_zyx": [
+            320.0,
+            845.7903269143064,
+            423.2165824326175
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 76,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05279410044146489,
+            0.04,
+            0.10578677474247883
+          ],
+          "center_native_zyx": [
+            320.0,
+            846.2941979398306,
+            422.3528035317191
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 77,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.052686128078852576,
+            0.04,
+            0.10584975862066934
+          ],
+          "center_native_zyx": [
+            320.0,
+            846.7980689653547,
+            421.4890246308206
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 78,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05257815571624028,
+            0.04,
+            0.10591274249885985
+          ],
+          "center_native_zyx": [
+            320.0,
+            847.3019399908787,
+            420.6252457299222
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 79,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05247018335362798,
+            0.04,
+            0.10597572637705036
+          ],
+          "center_native_zyx": [
+            320.0,
+            847.8058110164028,
+            419.7614668290238
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 9.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 80,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.052362210991015665,
+            0.04,
+            0.10603871025524086
+          ],
+          "center_native_zyx": [
+            320.0,
+            848.3096820419269,
+            418.8976879281253
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 81,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05225423862840336,
+            0.04,
+            0.10610169413343139
+          ],
+          "center_native_zyx": [
+            320.0,
+            848.813553067451,
+            418.03390902722685
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 82,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05214626626579106,
+            0.04,
+            0.1061646780116219
+          ],
+          "center_native_zyx": [
+            320.0,
+            849.3174240929751,
+            417.17013012632844
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 83,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05203829390317875,
+            0.04,
+            0.10622766188981239
+          ],
+          "center_native_zyx": [
+            320.0,
+            849.8212951184992,
+            416.30635122543003
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 84,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.051930321540566454,
+            0.04,
+            0.1062906457680029
+          ],
+          "center_native_zyx": [
+            320.0,
+            850.3251661440232,
+            415.4425723245316
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 85,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05182234917795415,
+            0.04,
+            0.10635362964619341
+          ],
+          "center_native_zyx": [
+            320.0,
+            850.8290371695473,
+            414.57879342363316
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 86,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.051714376815341835,
+            0.04,
+            0.10641661352438393
+          ],
+          "center_native_zyx": [
+            320.0,
+            851.3329081950715,
+            413.7150145227347
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 87,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.051606404452729536,
+            0.04,
+            0.10647959740257444
+          ],
+          "center_native_zyx": [
+            320.0,
+            851.8367792205955,
+            412.8512356218363
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 10.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 88,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05149843209011724,
+            0.04,
+            0.10654258128076495
+          ],
+          "center_native_zyx": [
+            320.0,
+            852.3406502461196,
+            411.98745672093787
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 89,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.051390459727504924,
+            0.04,
+            0.10660556515895546
+          ],
+          "center_native_zyx": [
+            320.0,
+            852.8445212716437,
+            411.1236778200394
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 90,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.051282487364892625,
+            0.04,
+            0.10666854903714597
+          ],
+          "center_native_zyx": [
+            320.0,
+            853.3483922971677,
+            410.259898919141
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 91,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            452,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            452,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            452,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05117451500228032,
+            0.04,
+            0.10673153291533649
+          ],
+          "center_native_zyx": [
+            320.0,
+            853.8522633226919,
+            409.3961200182425
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 92,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            0,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05106654263966801,
+            0.04,
+            0.106794516793527
+          ],
+          "center_native_zyx": [
+            320.0,
+            854.356134348216,
+            408.5323411173441
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 93,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            226,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05095857027705571,
+            0.04,
+            0.10685750067171751
+          ],
+          "center_native_zyx": [
+            320.0,
+            854.86000537374,
+            407.6685622164457
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 94,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            452,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05085059791444341,
+            0.04,
+            0.10692048454990802
+          ],
+          "center_native_zyx": [
+            320.0,
+            855.3638763992641,
+            406.80478331554724
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 95,
+          "image": "skull-cranial-channel-slices-4.png",
+          "rect": [
+            678,
+            565,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            565,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            565,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05074262555183111,
+            0.04,
+            0.10698346842809853
+          ],
+          "center_native_zyx": [
+            320.0,
+            855.8677474247881,
+            405.94100441464883
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 11.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 96,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            0,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.050634653189218795,
+            0.04,
+            0.10704645230628904
+          ],
+          "center_native_zyx": [
+            320.0,
+            856.3716184503123,
+            405.07722551375036
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 97,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            226,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.050526680826606496,
+            0.04,
+            0.10710943618447955
+          ],
+          "center_native_zyx": [
+            320.0,
+            856.8754894758364,
+            404.21344661285195
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 98,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            452,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.0504187084639942,
+            0.04,
+            0.10717242006267005
+          ],
+          "center_native_zyx": [
+            320.0,
+            857.3793605013605,
+            403.34966771195354
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 99,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            678,
+            0,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            0,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            0,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.050310736101381884,
+            0.04,
+            0.10723540394086056
+          ],
+          "center_native_zyx": [
+            320.0,
+            857.8832315268845,
+            402.4858888110551
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 100,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            0,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.050202763738769585,
+            0.04,
+            0.10729838781905107
+          ],
+          "center_native_zyx": [
+            320.0,
+            858.3871025524086,
+            401.62210991015667
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 101,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            226,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.05009479137615728,
+            0.04,
+            0.1073613716972416
+          ],
+          "center_native_zyx": [
+            320.0,
+            858.8909735779328,
+            400.7583310092582
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 102,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            452,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04998681901354497,
+            0.04,
+            0.1074243555754321
+          ],
+          "center_native_zyx": [
+            320.0,
+            859.3948446034568,
+            399.8945521083598
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 103,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            678,
+            113,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            113,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            113,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04987884665093267,
+            0.04,
+            0.10748733945362261
+          ],
+          "center_native_zyx": [
+            320.0,
+            859.8987156289809,
+            399.0307732074614
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 12.875,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 104,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            0,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04977087428832037,
+            0.04,
+            0.10755032333181312
+          ],
+          "center_native_zyx": [
+            320.0,
+            860.402586654505,
+            398.1669943065629
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.0,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 105,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            226,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04966290192570806,
+            0.04,
+            0.10761330721000363
+          ],
+          "center_native_zyx": [
+            320.0,
+            860.906457680029,
+            397.3032154056645
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.125,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 106,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            452,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.049554929563095755,
+            0.04,
+            0.10767629108819415
+          ],
+          "center_native_zyx": [
+            320.0,
+            861.4103287055532,
+            396.43943650476604
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.25,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 107,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            678,
+            226,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            226,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            226,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.049446957200483456,
+            0.04,
+            0.10773927496638466
+          ],
+          "center_native_zyx": [
+            320.0,
+            861.9141997310772,
+            395.5756576038676
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.375,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 108,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            0,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            0,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            113,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04933898483787115,
+            0.04,
+            0.10780225884457517
+          ],
+          "center_native_zyx": [
+            320.0,
+            862.4180707566013,
+            394.7118787029692
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.5,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 109,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            226,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            226,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            339,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.049231012475258844,
+            0.04,
+            0.10786524272276568
+          ],
+          "center_native_zyx": [
+            320.0,
+            862.9219417821254,
+            393.84809980207075
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.625,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 110,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            452,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            452,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            565,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.049123040112646545,
+            0.04,
+            0.10792822660095618
+          ],
+          "center_native_zyx": [
+            320.0,
+            863.4258128076494,
+            392.98432090117234
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.75,
+          "closed_source_mask_contour": false
+        },
+        {
+          "index": 111,
+          "image": "skull-cranial-channel-slices-5.png",
+          "rect": [
+            678,
+            339,
+            226,
+            113
+          ],
+          "rawRect": [
+            678,
+            339,
+            113,
+            113
+          ],
+          "overlayRect": [
+            791,
+            339,
+            113,
+            113
+          ],
+          "source_id": "halle",
+          "source_file": "halle_skull.nrrd",
+          "source_label": "Микро-КТ Halle, исходный препарат",
+          "source_acquisition_step_mm": 0.125,
+          "registered_grid_step_mm": 0.125,
+          "center_m": [
+            0.04901506775003423,
+            0.04,
+            0.1079912104791467
+          ],
+          "center_native_zyx": [
+            320.0,
+            863.9296838331736,
+            392.1205420002739
+          ],
+          "u": [
+            0.5038710255240862,
+            -0.0,
+            0.8637789008984335
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "normal": [
+            -0.8637789008984335,
+            0.0,
+            0.5038710255240862
+          ],
+          "pixel_step_mm": 0.125,
+          "field_mm": 14.125,
+          "display_scale": 1,
+          "distanceAlongSamplingProbe_mm": 13.875,
+          "closed_source_mask_contour": false
+        }
+      ],
+      "selectedSlice": 48,
+      "complete_channel": false,
+      "continuous_lumen_confirmed": true
+    }
+  ]
+}

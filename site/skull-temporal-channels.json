@@ -1,0 +1,271 @@
+{
+  "title": "Костные стенки каналов: OpenEar ZETA",
+  "mode": "channels",
+  "file": "skull-temporal-channels.glb",
+  "sha256": "912fc50500459478386de7b5a556370ba0be1bd06e408295d7dd95e6b8288944",
+  "contextFile": "skull-temporal-channels-context.glb",
+  "contextSha256": "4e63d5f4934aabd5da8f3f5a8a7aa1a962ac7217a924edb9c19bbc8b6ba83ef2",
+  "slicesFile": "skull-temporal-channel-slices.json",
+  "source": "OpenEar ZETA",
+  "sourceUrl": "https://zenodo.org/records/1473724",
+  "license": "CC BY 4.0",
+  "attribution": "Daniel Manuel Sieber, Peter Erfurt, Samuel John, Gabriel Ribeiro dos Santos, Daniel Schurzig, Mads Sølvsten Sørensen, Thomas Lenarz — OpenEar (2019).",
+  "coordinateFrame": "OpenEar native viewer metres; [RASx,RASy,RASz] -> [-RASx,RASz,RASy]; no registration to BodyParts3D.",
+  "structures": [
+    {
+      "id": "facial_canal_wall",
+      "ru": "Лицевой канал — выбранные стенки",
+      "lat": "canalis nervi facialis",
+      "ta98": "A02.1.06.009",
+      "description": "Лицевой канал проходит в височной кости от дна внутреннего слухового прохода к шилососцевидному отверстию. Здесь отдельно показан протяжённый участок его костной стенки, выделенный на исходной маске OpenEar ZETA.",
+      "modelNote": "Стенки выделены из исходной костной маски; модель нерва использована только для выбора области проверки. Проверены 224 последовательных положения косой плоскости вдоль направляющей длиной около 27,9 мм. Продолжение к внутреннему слуховому проходу проверено по КТ подготовленного препарата; неидентифицированная конечная ветвь исключена. Это не измерение полного канала: стенка местами неполна, открытые края и сообщения сохранены. Мелкие ответвления, обе апертуры и точная форма неразличимых тонких стенок не объявлены завершёнными.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 140 и 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Рис. 913: ход лицевого канала относительно барабанной полости и шилососцевидного отверстия; рис. 140: внутренний слуховой проход.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Kozerska et al. (2017), Micro-CT study of the dehiscences of the tympanic segment of the facial canal",
+          "url": "https://doi.org/10.1007/s00276-016-1744-4",
+          "locator": "Введение и рис. 1: начало, окончание, три сегмента канала и его положение относительно барабанной полости; рис. 2–4: костная стенка и её разрывы.",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd и CBCT_Embedded.nrrd. Маска и две зарегистрированные КТ одного препарата.",
+          "scope": "geometry"
+        }
+      ],
+      "view": {
+        "d": [
+          1,
+          0.4,
+          0.3
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.12,
+        "target": [
+          -0.0208491614487285,
+          0.0326392276969045,
+          0.0259423418568195
+        ]
+      },
+      "color": "#d7ab5c",
+      "scope": "channel_wall_segment",
+      "completeFeatureGeometry": false,
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "evidence": {
+        "id": "facial_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            206,
+            181,
+            277
+          ],
+          [
+            350,
+            366,
+            380
+          ]
+        ],
+        "guide_selected_interval": [
+          2,
+          225
+        ],
+        "guide_count": 226,
+        "triangles": 26250,
+        "vertices": 13859,
+        "bounds_m": [
+          [
+            -0.02556809997558594,
+            0.025201769948005676,
+            0.016567269802093505
+          ],
+          [
+            -0.016130599975585937,
+            0.04007676994800568,
+            0.03531726980209351
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.019901432037353516,
+            0.028805935978889467,
+            0.021733935832977294
+          ],
+          "n": [
+            0.7071067690849304,
+            -0.0,
+            -0.7071067690849304
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 216,
+        "reviewed_interval_planes": 224,
+        "approximate_guide_span_mm": 27.864083270123018,
+        "complete_channel": false,
+        "terminal_selection_limit": {
+          "reduced_radius_from_guide_index": 208,
+          "terminal_radius_voxels": 10,
+          "excluded_terminal_region_native_zyx": "k>330, j<218, i>351; unclassified long branch",
+          "review": "Short source-nerve branch and additional existing source void toward IAC reviewed in embedded CBCT. No endpoint-aperture completeness claim."
+        }
+      },
+      "slices": "facial_canal_wall"
+    },
+    {
+      "id": "carotid_canal_wall",
+      "ru": "Сонный канал — фрагмент стенки",
+      "lat": "canalis caroticus",
+      "ta98": "A02.1.06.013",
+      "description": "Сонный канал расположен в каменистой части височной кости между наружной апертурой на нижней поверхности и внутренней апертурой у верхушки. Отдельно выделены сохранившиеся участки костной стенки вдоль просвета.",
+      "modelNote": "Показаны существующие стенки исходной Bone.nrrd вдоль направляющей длиной около 12,7 мм, проверенные по 103 косым сечениям КТ полного препарата. В большинстве положений маска не замыкает контур; существующие стенки выделены и там, а разрывы сохранены. Это не полный закрытый канал. Модель артерии использована только как ориентир области проверки. Подготовленный препарат местами обрезан; полную КТ и отсутствие стенки в маске нельзя подменять дорисованной трубкой.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138, 141 и 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Рис. 141: наружная апертура; рис. 138: внутренняя апертура у верхушки; рис. 913: сонный канал во вскрытой височной кости.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57–58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис. 58: наружная апертура сонного канала; рис. 57: внутренняя апертура у верхушки каменистой части.",
+          "scope": "anatomy"
+        }
+      ],
+      "geometryRefs": [
+        {
+          "title": "Sieber et al. (2019), OpenEar ZETA",
+          "url": "https://zenodo.org/records/1473724",
+          "locator": "ZETA.zip: 07_3D_Models/Bone.nrrd; 05_Registred_Slicer_Volumes/CBCT_Unembedded.nrrd и CBCT_Embedded.nrrd. Маска и две зарегистрированные КТ одного препарата.",
+          "scope": "geometry"
+        }
+      ],
+      "view": {
+        "d": [
+          1,
+          0.4,
+          0.3
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.12,
+        "target": [
+          -0.0259431215195775,
+          0.046951868708455,
+          0.0321297471773775
+        ]
+      },
+      "color": "#cf8580",
+      "scope": "channel_wall_segment",
+      "completeFeatureGeometry": false,
+      "source": "OpenEar",
+      "specimen": "ZETA",
+      "side": "right",
+      "evidence": {
+        "id": "carotid_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            329,
+            255,
+            290
+          ],
+          [
+            475,
+            395,
+            428
+          ]
+        ],
+        "guide_selected_interval": [
+          0,
+          102
+        ],
+        "guide_count": 103,
+        "triangles": 47064,
+        "vertices": 25675,
+        "bounds_m": [
+          [
+            -0.03206809997558594,
+            0.04038926994800568,
+            0.025129769802093506
+          ],
+          [
+            -0.019818099975585937,
+            0.05351426994800568,
+            0.039129769802093504
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.02717226791381836,
+            0.04466010200977326,
+            0.031150601863861083
+          ],
+          "n": [
+            0.5773502588272095,
+            0.5773502588272095,
+            0.5773502588272095
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 15,
+        "reviewed_interval_planes": 103,
+        "approximate_guide_span_mm": 12.733586352540737,
+        "complete_channel": false
+      },
+      "slices": "carotid_canal_wall"
+    }
+  ],
+  "complete_channel_geometry_claim": false,
+  "context": {
+    "id": "temporal_context",
+    "ru": "Кость вокруг каналов — вырезка исходной маски",
+    "lat": "Os temporale",
+    "context": true,
+    "modelNote": "Контекст ограничен прямоугольной областью исходных данных. Открытые края этой выборки не являются анатомическими отверстиями. Плоские крышки и отсутствующие стенки не добавлялись."
+  },
+  "changes": [
+    "Из исходной Bone.nrrd извлечена поверхность без разрежения маски и без децимации.",
+    "Отобраны проверенные участки существующих треугольников; отверстия не заделывались, крышки не добавлялись.",
+    "Применено то же преобразование осей и мм → м, что у OpenEar; регистрация к BodyParts3D не выполнялась.",
+    "Для браузера использованы meshopt и 16-битное квантование координат."
+  ],
+  "limitations": [
+    "Это два набора выделенных костных стенок, а не завершённые каналы.",
+    "КТ полного препарата получена с шагом 0,25 мм, КТ подготовленного препарата — 0,125 мм. Зарегистрированные сетки и костная маска имеют шаг 0,125 мм. Источник указан у каждого кадра. Шаг сетки не равен анатомической точности.",
+    "Открытый контур маски сам по себе не доказывает анатомическую дегисценцию: тонкая стенка может не разрешаться на КТ или не войти в сегментацию."
+  ],
+  "limitationRefs": [
+    {
+      "title": "Comparison of cone beam-computed and micro-computed tomography data for measuring facial canal dehiscence (2025)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40296137/",
+      "locator": "Результаты и выводы: CBCT и микро-КТ по-разному выявляют тонкую костную стенку.",
+      "scope": "imaging_limits"
+    }
+  ]
+}
