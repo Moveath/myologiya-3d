@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "model": "site/skull-z-detail.glb",
+  "modelSha256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+  "metadata": "site/skull-z-detail.json",
+  "method": "Независимый прямой осмотр опубликованной GLB в ортографическом pintool, без создания/сглаживания геометрии и без принятия попадания луча за анатомическую верификацию.",
+  "sourceToThreeTransform": "[x,y,z] -> [x,z,-y], metres; no registration to BodyParts3D",
+  "orientationBasis": "Фронт подтверждён глазницами/передней носовой апертурой; задняя сторона затылочной костью и ламбдовидной границей; верх/низ — сводом и костным нёбом/большим отверстием. Правая сторона дополнительно проверена отрицательными центрами bounds.x именованных парных правых костей.",
+  "norms": [
+    {
+      "code": "A02.1.00.002",
+      "view": "ant",
+      "parts": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "vomer",
+        "mandible",
+        "parietal_left",
+        "parietal_right",
+        "temporal_left",
+        "temporal_right",
+        "maxilla_left",
+        "maxilla_right",
+        "zygomatic_left",
+        "zygomatic_right",
+        "palatine_left",
+        "palatine_right",
+        "nasal_left",
+        "nasal_right",
+        "lacrimal_left",
+        "lacrimal_right",
+        "inferior_concha_left",
+        "inferior_concha_right"
+      ],
+      "screenshot": "build_head/skull_whole/jobs/ant.png",
+      "observation": "Видны обе глазницы и передняя носовая апертура; лоб сверху, нижняя челюсть снизу.",
+      "d": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "screenshotSha256": "63b43585a4d4143307a0d42cca70de2cdd469d7d5503a04ad031ea1f047a7c96"
+    },
+    {
+      "code": "A02.1.00.003",
+      "view": "sup",
+      "parts": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "vomer",
+        "mandible",
+        "parietal_left",
+        "parietal_right",
+        "temporal_left",
+        "temporal_right",
+        "maxilla_left",
+        "maxilla_right",
+        "zygomatic_left",
+        "zygomatic_right",
+        "palatine_left",
+        "palatine_right",
+        "nasal_left",
+        "nasal_right",
+        "lacrimal_left",
+        "lacrimal_right",
+        "inferior_concha_left",
+        "inferior_concha_right"
+      ],
+      "screenshot": "build_head/skull_whole/jobs/sup.png",
+      "observation": "Вид свода снаружи: сагиттальная граница между теменными костями; спереди венечная, сзади ламбдовидная. Передний отдел внизу изображения.",
+      "d": [
+        0,
+        1,
+        0.001
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ],
+      "screenshotSha256": "76264adb9a6fce86c25cc5ed9b4fc615be57d4285b775b066fd68695abfd8dc5"
+    },
+    {
+      "code": "A02.1.00.004",
+      "view": "post",
+      "parts": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "vomer",
+        "mandible",
+        "parietal_left",
+        "parietal_right",
+        "temporal_left",
+        "temporal_right",
+        "maxilla_left",
+        "maxilla_right",
+        "zygomatic_left",
+        "zygomatic_right",
+        "palatine_left",
+        "palatine_right",
+        "nasal_left",
+        "nasal_right",
+        "lacrimal_left",
+        "lacrimal_right",
+        "inferior_concha_left",
+        "inferior_concha_right"
+      ],
+      "screenshot": "build_head/skull_whole/jobs/post.png",
+      "observation": "В центре затылочная кость, над ней ламбдовидная граница и теменные кости; лицевые поверхности обращены от наблюдателя.",
+      "d": [
+        0,
+        0,
+        -1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "screenshotSha256": "6b5d3bfc3229d8aa7649b6279d2e631a65107111dbbac31e691be782f1cc5d93"
+    },
+    {
+      "code": "A02.1.00.005",
+      "view": "right",
+      "parts": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "vomer",
+        "mandible",
+        "parietal_left",
+        "parietal_right",
+        "temporal_left",
+        "temporal_right",
+        "maxilla_left",
+        "maxilla_right",
+        "zygomatic_left",
+        "zygomatic_right",
+        "palatine_left",
+        "palatine_right",
+        "nasal_left",
+        "nasal_right",
+        "lacrimal_left",
+        "lacrimal_right",
+        "inferior_concha_left",
+        "inferior_concha_right"
+      ],
+      "screenshot": "build_head/skull_whole/jobs/right.png",
+      "observation": "Видна наружная поверхность правой височной области, скуловая дуга и правая ветвь нижней челюсти; передний отдел справа на изображении. Сторона проверена по именованным правым узлам и знаку их bounds.x.",
+      "d": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "screenshotSha256": "ef0b5ddd98bc2b7e37e1d0715a60fbe7df5252dabfe313282f24df7a12c66078"
+    },
+    {
+      "code": "A02.1.00.006",
+      "view": "inf",
+      "parts": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "vomer",
+        "parietal_left",
+        "parietal_right",
+        "temporal_left",
+        "temporal_right",
+        "maxilla_left",
+        "maxilla_right",
+        "zygomatic_left",
+        "zygomatic_right",
+        "palatine_left",
+        "palatine_right",
+        "nasal_left",
+        "nasal_right",
+        "lacrimal_left",
+        "lacrimal_right",
+        "inferior_concha_left",
+        "inferior_concha_right"
+      ],
+      "screenshot": "build_head/skull_whole/jobs/inf.png",
+      "observation": "При скрытой нижней челюсти видны костное нёбо, задние носовые отверстия и основание вокруг большого отверстия. Передний отдел вверху изображения.",
+      "d": [
+        0,
+        -1,
+        0.001
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "screenshotSha256": "727731e3928d38ffc4f43b957f4ef7a45eb6f325bea166c54937151fe23191f0"
+    }
+  ],
+  "groupViews": [
+    {
+      "view": "brain",
+      "screenshot": "build_head/skull_whole/jobs/brain.png",
+      "screenshotSha256": "f0ef932585d7ab78a9985e11aad9455fe116aec7cdbb9628e54a08e4fbfa4d83",
+      "observation": "Отдельно показаны восемь мозговых костных объектов. Фронтальная и теменные области свода, височные кости и основание анатомически согласованы. Проверен набор объектов, не весь мелкий рельеф."
+    },
+    {
+      "view": "face",
+      "screenshot": "build_head/skull_whole/jobs/face.png",
+      "screenshotSha256": "8d456df133f6b2f654996f1469e10a5fdd0976687a06015fd2ce6117eafaae02",
+      "observation": "Отдельно показаны четырнадцать лицевых костных объектов, включая обе стороны парных костей. Это отдел черепа, а не отдельная замкнутая полость."
+    },
+    {
+      "view": "palate",
+      "screenshot": "build_head/skull_whole/jobs/palate.png",
+      "screenshotSha256": "35f3c8da77ff7be4a9f9b4b99ba702b98217ccdbc7a2f8684f8ac6d60ccb0c08",
+      "observation": "Верхнечелюстные нёбные отростки спереди, горизонтальные нёбные пластинки сзади. На модели имеются щели; полная костная непрерывность и просветы мелких каналов не подтверждены."
+    },
+    {
+      "view": "nose",
+      "screenshot": "build_head/skull_whole/jobs/nose.png",
+      "screenshotSha256": "5421282fb3b0d8082e542e45c69f55a53f98d85882ce5bbd7c479178ec09196c",
+      "observation": "Решётчатая кость, сошник, нижние носовые раковины и нёбные кости видны в разборной группе. Костные носовые ходы не сегментированы как отдельные объёмы; часть контекста намеренно скрыта."
+    }
+  ],
+  "nomenclature": {
+    "source": "research/cache/kolesnikov-2003.pdf",
+    "sha256": "170edbce343f39814721b66fab637d18fefbb9a00dcae43368b3f31195f6291a",
+    "printedPages": [
+      9,
+      10,
+      11
+    ],
+    "checkedRows": 97,
+    "normalization": "е/ё; код .061 согласован по печатной с.17 и IFAA, расхождение с.10 указано в карточке",
+    "screenshots": [
+      "build_head/skull_whole/terms-page-9.png",
+      "build_head/skull_whole/terms-page-10.png",
+      "build_head/skull_whole/terms-page-11.png"
+    ]
+  },
+  "claims": {
+    "verifiedStandardViews": 5,
+    "verifiedBoneGroups": 3,
+    "newNativeLandmarkCoordinates": 0,
+    "completeFeatureGeometry": false
+  },
+  "limitations": [
+    "Направление стандартного вида проверено, но это не инструмент антропометрических измерений и не новая регистрация в франкфуртскую плоскость.",
+    "Нормы и обзорные группы используют исходную Z-Anatomy с её известными дефектами и ограничениями.",
+    "75 контекстных ссылок не означают 75 подтверждённых полных геометрий.",
+    "4 вида внутрикостной микроструктуры и 2 варианта не заменены внешней поверхностью; 8 терминов закреплены за будущими модулями."
+  ]
+}

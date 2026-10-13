@@ -1,0 +1,1622 @@
+{
+  "scope": "13 подтерминов слуховых косточек и 43 ранее не подтверждённых мелких образования височной кости. Это не аудит всех 325 surface основного черепа.",
+  "geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+  "counts": {
+    "ossicle_terms": 13,
+    "ossicle_whole_visible_parts_at_source_scale": 11,
+    "ossicle_partial_microdetails": 2,
+    "temporal_codes": 43
+  },
+  "source_scale_not_absolute_accuracy": true,
+  "external_anatomist_signoff": false,
+  "no_primary_marker_flags_changed": true,
+  "complete_temporal_geometry_claim": false,
+  "features": [
+    {
+      "code": "A15.3.02.045",
+      "ru": "Головка молоточка",
+      "lat": "caput mallei",
+      "source": "OpenEar ZETA",
+      "object": "malleus",
+      "native_marker": "openear_malleus_head",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Головка молоточка полностью присутствует в авторской поверхности; суставная и противоположная стороны сопоставлены с наковальней.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/malleus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.046",
+      "ru": "Шейка молоточка",
+      "lat": "collum mallei",
+      "source": "OpenEar ZETA",
+      "object": "malleus",
+      "native_marker": "openear_malleus_neck",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Сужение шейки между головкой и корнем рукоятки присутствует со всех осмотренных сторон; искусственное отделение или достройка не выполнялись.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/malleus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.044",
+      "ru": "Рукоятка молоточка",
+      "lat": "manubrium mallei",
+      "source": "OpenEar ZETA",
+      "object": "malleus",
+      "native_marker": "openear_malleus_handle",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Рукоятка от корня до собственного дистального расширения видна с четырёх направлений; её исходное положение относительно барабанной перепонки сохранено.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/malleus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: головка, шейка и рукоятка молоточка",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.039",
+      "ru": "Тело наковальни",
+      "lat": "corpus incudis",
+      "source": "OpenEar ZETA",
+      "object": "incus",
+      "native_marker": "openear_incus_body",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Расширенное тело наковальни осмотрено с четырёх направлений; переходы в обе ножки и поверхность со стороны головки молоточка присутствуют.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/incus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.040",
+      "ru": "Длинная ножка наковальни",
+      "lat": "crus longum",
+      "source": "OpenEar ZETA",
+      "object": "incus",
+      "native_marker": "openear_incus_long_limb",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Ход длинной ножки от тела до дистального изгиба виден с четырёх направлений; неопределённая микрограница чечевицеобразной пластинки не включена в утверждение полноты её терминального рельефа.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/incus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.042",
+      "ru": "Короткая ножка наковальни",
+      "lat": "crus breve",
+      "source": "OpenEar ZETA",
+      "object": "incus",
+      "native_marker": "openear_incus_short_limb",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Короткая ножка от тела до собственного закруглённого конца видна с четырёх направлений и в исходном взаимном положении косточек.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/incus-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_796.png",
+          "locator": "Рис. 796: тело, длинная и короткая ножки наковальни",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.034",
+      "ru": "Головка стремени",
+      "lat": "caput stapedis",
+      "source": "OpenEar ZETA",
+      "object": "stapes",
+      "native_marker": "openear_stapes_head",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Головка стремени полностью видна как собственное расширение у схождения двух ножек; суставная поверхность и противоположная сторона осмотрены.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          -1,
+          -2,
+          0
+        ],
+        "distance": 0.012
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/stapes-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.037",
+      "ru": "Основание стремени",
+      "lat": "basis stapedis",
+      "source": "OpenEar ZETA",
+      "object": "stapes",
+      "native_marker": "openear_stapes_base",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Пластинка основания с обеими сторонами и наружным контуром присутствует в исходной сетке. Её сопряжения с двумя ножками видимы.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "distance": 0.012
+      },
+      "screenshots": [
+        "build_head/openear_landmarks/stapes-markers.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: головка, ножки и основание стремени",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.035",
+      "ru": "Передняя ножка стремени",
+      "lat": "crus anterius",
+      "source": "OpenEar ZETA",
+      "object": "stapes",
+      "native_marker": "openear_stapes_anterior_limb",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Передняя ножка непрерывно прослеживается от схождения под головкой до основания на двух противоположных видах. Межножковое отверстие отделяет её от задней ножки.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.012
+      },
+      "screenshots": [
+        "build_head/openear_landmarks_completion/09-stapes-z.png",
+        "build_head/openear_landmarks_completion/10-stapes-nz.png",
+        "build_head/openear_landmarks_completion/24-stapes-pins-context.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: Передняя ножка стремени; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: Передняя ножка стремени; подпись соответствующего отростка или ножки.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.036",
+      "ru": "Задняя ножка стремени",
+      "lat": "crus posterius",
+      "source": "OpenEar ZETA",
+      "object": "stapes",
+      "native_marker": "openear_stapes_posterior_limb",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Задняя дугообразная ножка непрерывно прослеживается от схождения под головкой до основания на двух противоположных видах.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.012
+      },
+      "screenshots": [
+        "build_head/openear_landmarks_completion/09-stapes-z.png",
+        "build_head/openear_landmarks_completion/10-stapes-nz.png",
+        "build_head/openear_landmarks_completion/24-stapes-pins-context.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+          "locator": "Рис. 918: Задняя ножка стремени; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+          "locator": "Рис. 798: Задняя ножка стремени; подпись соответствующего отростка или ножки.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.047",
+      "ru": "Латеральный отросток молоточка",
+      "lat": "processus lateralis",
+      "source": "OpenEar ZETA",
+      "object": "malleus",
+      "native_marker": "openear_malleus_lateral_process",
+      "extent_status": "whole-visible-part-at-source-scale",
+      "observed": "Конический выступ непосредственно у начала рукоятки. Видим с противоположных сторон и в косых видах. Направление к верхнему участку барабанной перепонки проверено в исходной взаимной позе её авторской сегментации и молоточка.",
+      "limit": "Полнота относится к видимому макрорельефу названной части в данной авторской сетке. Микроскопические края, хрящ, связки и гистология не включены; точной отдельной сегментации границы части нет.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+        "build_head/openear_landmarks_completion/22-malleus-pins-oblique.png",
+        "build_head/openear_landmarks_completion/23-malleus-pins-context.png",
+        "build_head/openear_landmarks_completion/19-malleus-oblique2.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: Латеральный отросток молоточка; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: Латеральный отросток молоточка; подпись соответствующего отростка или ножки.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.048",
+      "ru": "Передний отросток молоточка",
+      "lat": "processus anterior",
+      "source": "OpenEar ZETA",
+      "object": "malleus",
+      "native_marker": "openear_malleus_anterior_process",
+      "extent_status": "partial-source-detail",
+      "observed": "Небольшой самостоятельный выступ на передней стороне шейки, выше латерального отростка. Он видим в двух разнесённых косых видах и со стороны +X препарата. Его переднее положение сопоставлено с задней короткой ножкой наковальни и улиткой, а не выведено из знака координаты.",
+      "limit": "В исходной модели различим короткий выступ переднего отростка. Тонкое длинное продолжение, изображаемое в некоторых анатомических рисунках, на этой сетке не подтверждено и не достроено. Маркер относится только к видимому выступу. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+      "view": {
+        "d": [
+          1,
+          1,
+          -1
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+        "build_head/openear_landmarks_completion/22-malleus-pins-oblique.png",
+        "build_head/openear_landmarks_completion/30-malleus-neck.png",
+        "build_head/openear_landmarks_completion/31-malleus-anteriorcontext.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+          "locator": "Рис. 916: Передний отросток молоточка; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+          "locator": "Рис. 793: Передний отросток молоточка; подпись соответствующего отростка или ножки.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A15.3.02.041",
+      "ru": "Чечевицеобразный отросток наковальни",
+      "lat": "processus lenticularis",
+      "source": "OpenEar ZETA",
+      "object": "incus",
+      "native_marker": "openear_incus_lenticular_process",
+      "extent_status": "partial-source-detail",
+      "observed": "Отмечено дистальное закруглённое расширение на изгибе длинной ножки. В изолированной наковальне просмотрены четыре стороны и два увеличенных косых вида; в исходном суставном положении эта область обращена к головке стремени. Тонкая соединительная ножка и край отдельной пластинки на сглаженной авторской сетке не разделяются.",
+      "limit": "Отмечен видимый терминальный участок чечевицеобразного отростка в авторской модели наковальни. Тонкая ножка и граница пластинки здесь сглажены и не представлены отдельной подтверждённой микрогеометрией. Маркер не означает, что эти детали полностью восстановлены. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+      "view": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.02
+      },
+      "screenshots": [
+        "build_head/openear_landmarks_completion/25-incus-pins-x.png",
+        "build_head/openear_landmarks_completion/26-incus-pins-oblique.png",
+        "build_head/openear_landmarks_completion/27-incus-z.png",
+        "build_head/openear_landmarks_completion/28-incus-tip-medial.png",
+        "build_head/openear_landmarks_completion/29-incus-tip-lateral.png"
+      ],
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+          "locator": "Рис. 917: Чечевицеобразный отросток наковальни; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Chien et al. (2009), Anatomy of the Distal Incus in Humans",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2774412/",
+          "locator": "Results, Qualitative histological descriptions; Figs. 2–5: терминальная пластинка и соединительная ножка чечевицеобразного отростка, его связь с головкой стремени.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_microscopic_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.007",
+      "ru": "Борозда затылочной артерии",
+      "lat": "sulcus arteriae occipitalis",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Борозда затылочной артерии не выделена надёжно на неровной наружной поверхности маски.",
+      "limit": "Осмотреть нижнюю поверхность полноценной, не обрезанной височной кости; отделить сосудистый след от ступенчатости сегментации.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; sulcus arteriae occipitalis"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; sulcus arteriae occipitalis"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.009",
+      "ru": "Канал лицевого нерва",
+      "lat": "canalis nervi facialis",
+      "source": "OpenEar ZETA",
+      "extent_status": "source-wall-segments-traced",
+      "observed": "Проверены 224 последовательных косых сечений; сохранены 26250 треугольников реальной костной стенки. Протяжённость навигационного пути 27.864 мм; она не является измерением всей длины анатомического канала.",
+      "limit": "Выборка останавливается внутри узкого продолжения перед расширением в IAC. Полнота апертуры не объявлена. Полный периметр конечных апертур и непрерывная тонкая стенка не подтверждены.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 140 и 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Рис. 913: ход лицевого канала относительно барабанной полости и шилососцевидного отверстия; рис. 140: внутренний слуховой проход.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Kozerska et al. (2017), Micro-CT study of the dehiscences of the tympanic segment of the facial canal",
+          "url": "https://doi.org/10.1007/s00276-016-1744-4",
+          "locator": "Введение и рис. 1: начало, окончание, три сегмента канала и его положение относительно барабанной полости; рис. 2–4: костная стенка и её разрывы.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "source_report": "research/temporal-channel-review.json",
+      "source_mesh": "skull-temporal-channels.glb",
+      "object": "facial_canal_wall"
+    },
+    {
+      "code": "A02.1.06.010",
+      "ru": "Коленце лицевого канала",
+      "lat": "geniculum canalis nervi facialis",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Изгиб модели нерва не подтверждает отдельно стенки коленца лицевого канала.",
+      "limit": "Проверить стенки первого коленца на непрерывном ряду КТ-срезов с направлением лабиринтного и барабанного сегментов.",
+      "refs": [
+        {
+          "title": "Monkhouse (1990), The anatomy of the facial nerve — анатомический обзор",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2286163/",
+          "locator": "Monkhouse (1990), The anatomy of the facial nerve — анатомический обзор; geniculum canalis nervi facialis"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; geniculum canalis nervi facialis"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.011",
+      "ru": "Каналец барабанной струны",
+      "lat": "canaliculus chordae tympani",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Барабанная струна сегментирована отдельно; мелкий входной каналец не подтверждён непрерывной костной стенкой.",
+      "limit": "Отдельно проследить каналец на КТ, не использовать поверхность нерва как суррогат канала.",
+      "refs": [
+        {
+          "title": "McManus et al. (2012), Surgical anatomy of the chorda tympani: a micro-CT study",
+          "url": "https://ourarchive.otago.ac.nz/esploro/outputs/journalArticle/Surgical-anatomy-of-the-chorda-tympani/9926558676201891",
+          "locator": "McManus et al. (2012), Surgical anatomy of the chorda tympani: a micro-CT study; canaliculus chordae tympani"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; canaliculus chordae tympani"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.013",
+      "ru": "Сонный канал",
+      "lat": "canalis caroticus",
+      "source": "OpenEar ZETA",
+      "extent_status": "source-wall-segments-traced",
+      "observed": "Проверены 103 последовательных косых сечений; сохранены 47064 треугольников реальной костной стенки. Протяжённость навигационного пути 12.734 мм; она не является измерением всей длины анатомического канала.",
+      "limit": "Часть границ не замыкается в исходной маске; внутреннее устье ещё не отделено уверенно от края подготовленного образца. Наличие открытых сечений само по себе не считается анатомическим отсутствием стенки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138, 141 и 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Рис. 141: наружная апертура; рис. 138: внутренняя апертура у верхушки; рис. 913: сонный канал во вскрытой височной кости.",
+          "scope": "anatomy"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57–58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис. 58: наружная апертура сонного канала; рис. 57: внутренняя апертура у верхушки каменистой части.",
+          "scope": "anatomy"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "source_report": "research/temporal-channel-review.json",
+      "source_mesh": "skull-temporal-channels.glb",
+      "object": "carotid_canal_wall"
+    },
+    {
+      "code": "A02.1.06.014",
+      "ru": "Наружная апертура сонного канала",
+      "lat": "apertura externa canalis carotici",
+      "source": "OpenEar ZETA",
+      "extent_status": "local-surface-or-aperture-only",
+      "observed": "Край наружной апертуры подтверждён на маске и исходной КТ полного препарата. Подготовленный embedded-скан частично обрезает эту область и не использован как единственное доказательство.",
+      "limit": "Проверить полную геометрию края отдельно; весь сонный канал и его внутренняя апертура данным маркером не завершаются.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; apertura externa canalis carotici"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; apertura externa canalis carotici"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "native_marker": "openear_temporal_carotid_external_aperture",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "screenshots": [
+        "build_head/temporal_features/carotid_external_aperture-review.png",
+        "build_head/temporal_features/carotid_external_aperture-cross-review.png",
+        "build_head/temporal_features/carotid_external_aperture-cbct-full.png"
+      ]
+    },
+    {
+      "code": "A02.1.06.015",
+      "ru": "Внутренняя апертура сонного канала",
+      "lat": "apertura interna canalis carotici",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Внутренняя апертура у верхушки не отделена уверенно от подготовленного края образца.",
+      "limit": "Проверить верхушку пирамиды в полном КТ и убедиться в сохранности естественного края.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; apertura interna canalis carotici"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; apertura interna canalis carotici"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.016",
+      "ru": "Сонно-барабанные канальцы",
+      "lat": "canaliculi caroticotympanici",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Наличие крупных сегментов артерии и барабанной полости не доказывает мелкие сонно-барабанные канальцы.",
+      "limit": "Нужны отдельно прослеженные сообщения на КТ достаточного разрешения.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canaliculi caroticotympanici"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; canaliculi caroticotympanici"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.017",
+      "ru": "Мышечно-трубный канал",
+      "lat": "canalis musculotubarius",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Мышечно-трубный канал не входит в отдельные авторские сегменты; два полуканала здесь не различены.",
+      "limit": "Проверить передний отдел каменистой части по КТ с раздельным подтверждением двух полуканалов.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; canalis musculotubarius"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canalis musculotubarius"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.018",
+      "ru": "Полуканал мышцы, напрягающей барабанную перепонку",
+      "lat": "semicanalis musculi tensoris tympani",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Полуканал мышцы, напрягающей барабанную перепонку, не выделен собственной проверенной стенкой.",
+      "limit": "Проследить верхний полуканал до барабанной полости и отличить его от костной части слуховой трубы.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 913; semicanalis musculi tensoris tympani"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; semicanalis musculi tensoris tympani"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.019",
+      "ru": "Полуканал слуховой трубы",
+      "lat": "semicanalis tubae auditivae; semicanalis tubae auditoriae",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Костная часть слуховой трубы не выделена авторской сеткой и отдельно не прослежена.",
+      "limit": "Проследить нижний полуканал, проверить его костные границы и выход.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 913; semicanalis tubae auditivae; semicanalis tubae auditoriae"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; semicanalis tubae auditivae; semicanalis tubae auditoriae"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.020",
+      "ru": "Перегородка мышечно-трубного канала",
+      "lat": "septum canalis musculotubarii",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Тонкая перегородка между полуканалами не подтверждена самостоятельным осмотром.",
+      "limit": "Проверить непрерывную разделяющую костную пластинку на исходных срезах.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 913; septum canalis musculotubarii"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; septum canalis musculotubarii"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.024",
+      "ru": "Расщелина канала большого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi majoris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Расщелина канала большого каменистого нерва не подтверждена отдельной апертурой.",
+      "limit": "Проследить расщелину и сообщение с соответствующим каналом; сопоставить с передней поверхностью пирамиды.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; hiatus canalis nervi petrosi majoris"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; hiatus canalis nervi petrosi majoris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.025",
+      "ru": "Борозда большого каменистого нерва",
+      "lat": "sulcus nervi petrosi majoris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Борозда большого каменистого нерва не выделена уверенно; отдельного сегмента этого нерва в наборе нет.",
+      "limit": "Проверить непрерывный поверхностный рельеф от расщелины к верхушке пирамиды.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; sulcus nervi petrosi majoris"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; sulcus nervi petrosi majoris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.026",
+      "ru": "Расщелина канала малого каменистого нерва",
+      "lat": "hiatus canalis nervi petrosi minoris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Расщелина канала малого каменистого нерва не отделена от мелких неровностей сегментации.",
+      "limit": "Проверить отдельное костное устье и его канал; не использовать типичное положение как геометрическое доказательство.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; hiatus canalis nervi petrosi minoris"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; hiatus canalis nervi petrosi minoris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.027",
+      "ru": "Борозда малого каменистого нерва",
+      "lat": "sulcus nervi petrosi minoris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Борозда малого каменистого нерва не подтверждена поверхностным профилем.",
+      "limit": "Осмотреть переднюю поверхность с уверенным различением двух каменистых борозд.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; sulcus nervi petrosi minoris"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; sulcus nervi petrosi minoris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.030",
+      "ru": "Борозда верхнего каменистого синуса",
+      "lat": "sulcus sinus petrosi superioris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Объединённый сегмент Sinus Dura не выделяет верхний каменистый синус и не доказывает его костную борозду.",
+      "limit": "Проверить собственный рельеф верхнего края пирамиды на сохранном препарате.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; sulcus sinus petrosi superioris"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56; sulcus sinus petrosi superioris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.033",
+      "ru": "Внутренний слуховой проход",
+      "lat": "meatus acusticus internus",
+      "source": "OpenEar ZETA",
+      "extent_status": "local-surface-or-aperture-only",
+      "observed": "Подтверждён локальный участок костной стенки внутреннего слухового прохода в маске, GLB и зарегистрированном КТ.",
+      "limit": "Для полного геометрического охвата дополнительно проверить дно, все его поля и отверстия; текущая точка этого не заменяет.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 140",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray140.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 140; meatus acusticus internus"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56; meatus acusticus internus"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "native_marker": "openear_temporal_internal_acoustic_meatus",
+      "view": {
+        "d": [
+          0.6,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "screenshots": [
+        "build_head/temporal_features/internal_acoustic_meatus-review.png",
+        "build_head/temporal_features/internal_acoustic_meatus-cross-review.png",
+        "build_head/temporal_features/internal_acoustic_meatus-cbct.png"
+      ]
+    },
+    {
+      "code": "A02.1.06.034",
+      "ru": "Поддуговая ямка",
+      "lat": "fossa subarcuata",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Поддуговая ямка не выделена уверенно отдельно от многочисленных малых углублений в области лабиринта.",
+      "limit": "Проверить заднюю поверхность выше и латеральнее внутреннего слухового отверстия и связанный каналец.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56; fossa subarcuata"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; fossa subarcuata"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.035",
+      "ru": "Каналец преддверия",
+      "lat": "canaliculus vestibuli",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Каналец преддверия не прослежен от лабиринта до задней поверхности.",
+      "limit": "Проверить последовательность КТ-сечений и выход канальца; составной объект Scala Vestibuli не служит его сегментацией.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; canaliculus vestibuli"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; canaliculus vestibuli"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.036",
+      "ru": "Апертура канальца преддверия",
+      "lat": "apertura canaliculi vestibuli",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Апертура канальца преддверия с прикрывающей пластинкой не подтверждена отдельным рельефом.",
+      "limit": "Осмотреть заднюю поверхность пирамиды и проследить сообщение с канальцем.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; apertura canaliculi vestibuli"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56; apertura canaliculi vestibuli"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.038",
+      "ru": "Борозда нижнего каменистого синуса",
+      "lat": "sulcus sinus petrosi inferioris",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Борозда нижнего каменистого синуса не подтверждена собственным костным профилем.",
+      "limit": "Проверить задненижний край пирамиды на образце с сохранённой естественной границей.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; sulcus sinus petrosi inferioris"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56; sulcus sinus petrosi inferioris"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.042",
+      "ru": "Каналец улитки",
+      "lat": "canaliculus cochleae",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Каналец улитки не подтверждён непрерывным просветом.",
+      "limit": "Проследить сообщение с улиткой и отдельный наружный выход; не путать с канальцем преддверия.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; canaliculus cochleae"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canaliculus cochleae"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.043",
+      "ru": "Апертура канальца улитки",
+      "lat": "apertura canaliculi cochleae",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Апертура канальца улитки не отличена уверенно от малых дефектов маски возле яремной области.",
+      "limit": "Проверить точное положение и сообщение с канальцем по исходным срезам.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; apertura canaliculi cochleae"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; apertura canaliculi cochleae"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.044",
+      "ru": "Сосцевидный каналец",
+      "lat": "canaliculus mastoideus",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Сосцевидный каналец отдельно не сегментирован и не прослежен.",
+      "limit": "Проверить ход от яремной ямки к барабанно-сосцевидной щели.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canaliculus mastoideus"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; canaliculus mastoideus"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.046",
+      "ru": "Внутрияремный отросток",
+      "lat": "processus intrajugularis",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Межъяремный отросток не отделён уверенно от подготовленных краёв яремной области.",
+      "limit": "Осмотреть неповреждённую яремную вырезку с различением костного выступа и скола.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; processus intrajugularis"
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; processus intrajugularis"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.048",
+      "ru": "Шилососцевидное отверстие",
+      "lat": "foramen stylomastoideum",
+      "source": "OpenEar ZETA",
+      "extent_status": "local-surface-or-aperture-only",
+      "observed": "Видимый костный край шилососцевидного отверстия подтверждён на маске и КТ полного препарата, а не по обрезанному embedded-скану.",
+      "limit": "Полностью проследить лицевой канал до внутреннего слухового прохода; один край отверстия не подтверждает весь ход.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; foramen stylomastoideum"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; foramen stylomastoideum"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "native_marker": "openear_temporal_stylomastoid_foramen",
+      "view": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "screenshots": [
+        "build_head/temporal_features/stylomastoid_foramen-review.png",
+        "build_head/temporal_features/stylomastoid_foramen-cross-review.png",
+        "build_head/temporal_features/stylomastoid_foramen-cbct-full.png"
+      ]
+    },
+    {
+      "code": "A02.1.06.049",
+      "ru": "Барабанный каналец",
+      "lat": "canaliculus tympanicus",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Барабанный каналец не подтверждён по исходной маске с её ограниченной детализацией.",
+      "limit": "Проследить каналец от каменистой ямочки в барабанную полость на более подробных исходных срезах.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canaliculus tympanicus"
+        },
+        {
+          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
+          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
+          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; canaliculus tympanicus"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.050",
+      "ru": "Каменистая ямочка",
+      "lat": "fossula petrosa",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Каменистая ямочка не выделена уверенно между сонной и яремной областями.",
+      "limit": "Осмотреть небольшое углубление и вход в барабанный каналец; не принимать любой мелкий дефект за ямочку.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; fossula petrosa"
+        },
+        {
+          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
+          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; fossula petrosa"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.051",
+      "ru": "Барабанная полость",
+      "lat": "cavitas tympani",
+      "source": "OpenEar ZETA",
+      "extent_status": "local-surface-or-aperture-only",
+      "observed": "Подтверждён участок костной стенки барабанной полости; точка и исходные срезы сохранены.",
+      "limit": "Полный объём полости и все её стенки и малые образования требуют отдельной проверки, не заявлены одним маркером.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 913; cavitas tympani"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; cavitas tympani"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "native_marker": "openear_temporal_tympanic_cavity",
+      "view": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "screenshots": [
+        "build_head/temporal_features/tympanic_cavity-review.png",
+        "build_head/temporal_features/tympanic_cavity-cross-review.png",
+        "build_head/temporal_features/tympanic_cavity-cbct.png"
+      ]
+    },
+    {
+      "code": "A02.1.06.053",
+      "ru": "Барабанное кольцо",
+      "lat": "anulus tympanicus",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Наличие барабанной перепонки в авторской модели не доказывает точную геометрию барабанного кольца.",
+      "limit": "Проверить костной контур вокруг перепонки, его разрыв и сопряжённые ости по исходной КТ.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 142",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray142.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 142; anulus tympanicus"
+        },
+        {
+          "title": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820210/",
+          "locator": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки; anulus tympanicus"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.055",
+      "ru": "Наружный слуховой проход",
+      "lat": "meatus acusticus externus",
+      "source": "OpenEar ZETA",
+      "extent_status": "local-surface-or-aperture-only",
+      "observed": "Подтверждён локальный участок костной стенки наружного слухового прохода в маске, GLB и КТ.",
+      "limit": "Отдельно проверить всю протяжённость костного прохода и детали барабанного кольца.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 139",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray139.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 139; meatus acusticus externus"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 59",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_59.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 59; meatus acusticus externus"
+        }
+      ],
+      "complete_feature_geometry_claim": false,
+      "native_marker": "openear_temporal_external_acoustic_meatus",
+      "view": {
+        "d": [
+          -0.3,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "screenshots": [
+        "build_head/temporal_features/external_acoustic_meatus-review.png",
+        "build_head/temporal_features/external_acoustic_meatus-cross-review.png",
+        "build_head/temporal_features/external_acoustic_meatus-cbct.png"
+      ]
+    },
+    {
+      "code": "A02.1.06.056",
+      "ru": "Большая барабанная ость",
+      "lat": "spina tympanica major",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Большая барабанная ость не выделена отдельно от неровностей кольца.",
+      "limit": "Проверить передний верхний конец барабанного кольца и не путать с надпроходной остью.",
+      "refs": [
+        {
+          "title": "Spalteholz, Hand Atlas of Human Anatomy, т. 1, рис. 12, с. 13 (общественное достояние)",
+          "url": "https://commons.wikimedia.org/wiki/File:Hand_atlas_of_human_anatomy_(IA_cu31924003110347).pdf",
+          "locator": "Spalteholz, Hand Atlas of Human Anatomy, т. 1, рис. 12, с. 13 (общественное достояние); spina tympanica major"
+        },
+        {
+          "title": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820210/",
+          "locator": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки; spina tympanica major"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.057",
+      "ru": "Малая барабанная ость",
+      "lat": "spina tympanica minor",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Малая барабанная ость не выделена уверенно в исходной поверхности.",
+      "limit": "Проверить задний верхний конец барабанного кольца и отличить от наружного края прохода.",
+      "refs": [
+        {
+          "title": "Spalteholz, Hand Atlas of Human Anatomy, т. 1, рис. 12, с. 13 (общественное достояние)",
+          "url": "https://commons.wikimedia.org/wiki/File:Hand_atlas_of_human_anatomy_(IA_cu31924003110347).pdf",
+          "locator": "Spalteholz, Hand Atlas of Human Anatomy, т. 1, рис. 12, с. 13 (общественное достояние); spina tympanica minor"
+        },
+        {
+          "title": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820210/",
+          "locator": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки; spina tympanica minor"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.058",
+      "ru": "Барабанная борозда",
+      "lat": "sulcus tympanicus",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Барабанная борозда не подтверждена отдельным узким профилем; сетка перепонки не заменяет борозду.",
+      "limit": "Проверить внутренний край кольца на КТ достаточной детализации, с несколькими соседними сечениями.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 142",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray142.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 142; sulcus tympanicus"
+        },
+        {
+          "title": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820210/",
+          "locator": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки; sulcus tympanicus"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.059",
+      "ru": "Барабанная вырезка",
+      "lat": "incisura tympanica",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Верхний разрыв барабанного кольца не размечен как самостоятельная подтверждённая вырезка.",
+      "limit": "Проверить оба костных конца кольца и естественную границу вырезки.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 142",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray142.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 142; incisura tympanica"
+        },
+        {
+          "title": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2820210/",
+          "locator": "Tympanic Membrane Boundary Deformations… — исследование костного края барабанной перепонки; incisura tympanica"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.066",
+      "ru": "Борозда средней височной артерии",
+      "lat": "sulcus arteriae temporalis mediae",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Борозда средней височной артерии не подтверждена на частично сохранённой чешуе.",
+      "limit": "Использовать целую височную кость и различить сосудистый след от сканерной ступенчатости.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 137",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 137; sulcus arteriae temporalis mediae"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 55",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_55.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 55; sulcus arteriae temporalis mediae"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.069",
+      "ru": "Надпроходная ямочка",
+      "lat": "foveola suprameatica; foveola suprameatalis",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Надпроходная ямочка не выделена уверенно в наружном рельефе препарата.",
+      "limit": "Проверить небольшое углубление позади и выше наружного слухового отверстия.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 137",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 137; foveola suprameatica; foveola suprameatalis"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; foveola suprameatica; foveola suprameatalis"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.070",
+      "ru": "Надпроходная ость",
+      "lat": "spina suprameatica; spina suprameatalis",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Надпроходная ость не подтверждена самостоятельным выступом в этой проверке.",
+      "limit": "Осмотреть задневерхний край наружного слухового отверстия и отличить его от барабанных остей.",
+      "refs": [
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 55",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_55.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 55; spina suprameatica; spina suprameatalis"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; spina suprameatica; spina suprameatalis"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.074",
+      "ru": "Каменисто-барабанная щель",
+      "lat": "fissura petrotympanica",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Каменисто-барабанная щель не прослежена как непрерывная естественная граница.",
+      "limit": "Проверить положение позади суставной области и связь с передним выходом барабанной струны.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 137",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 137; fissura petrotympanica"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; fissura petrotympanica"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.075",
+      "ru": "Каменисто-чешуйчатая щель",
+      "lat": "fissura petrosquamosa",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Каменисто-чешуйчатая щель не отделена от подготовительных границ блока.",
+      "limit": "Проверить естественную линию соединения частей на целом образце, а не плоскость распила.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 138; fissura petrosquamosa"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_57.png",
+          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57; fissura petrosquamosa"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.076",
+      "ru": "Барабанно-чешуйчатая щель",
+      "lat": "fissura tympanosquamosa",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Барабанно-чешуйчатая щель не размечена отдельно перед наружным слуховым проходом.",
+      "limit": "Проверить реальный просвет или шов в соответствующей границе частей кости.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 137",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray137.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 137; fissura tympanosquamosa"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; fissura tympanosquamosa"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    },
+    {
+      "code": "A02.1.06.077",
+      "ru": "Барабанно-сосцевидная щель",
+      "lat": "fissura tympanomastoidea",
+      "source": "OpenEar ZETA",
+      "extent_status": "not-yet-demonstrated",
+      "observed": "Барабанно-сосцевидная щель не отделена уверенно от неровностей наружной поверхности.",
+      "limit": "Проверить естественную границу позади наружного слухового прохода и входы связанных канальцев.",
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
+          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; fissura tympanomastoidea"
+        },
+        {
+          "title": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4",
+          "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf#page=22",
+          "locator": "Gulya & Schuknecht, Anatomy of the Temporal Bone, свободный фрагмент издателя, с. 1–4; fissura tympanomastoidea"
+        }
+      ],
+      "complete_feature_geometry_claim": false
+    }
+  ]
+}

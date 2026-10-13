@@ -1,55 +1,114 @@
 {
   "tolerance_mm": 0.003,
+  "native_published_geometry_sha256": "4d407227a9709b5ca1288ff5b06d4abc5aecb6105f11ba038b8ea171544154af",
+  "required_ta98_subterms": [
+    "A15.3.02.034",
+    "A15.3.02.035",
+    "A15.3.02.036",
+    "A15.3.02.037",
+    "A15.3.02.039",
+    "A15.3.02.040",
+    "A15.3.02.041",
+    "A15.3.02.042",
+    "A15.3.02.044",
+    "A15.3.02.045",
+    "A15.3.02.046",
+    "A15.3.02.047",
+    "A15.3.02.048"
+  ],
   "comparison_units": "millimetres, to avoid metre-scale near-degeneracy tolerance in trimesh triangle projection",
   "anatomical_validity_not_proved_by_distance": true,
   "checks": [
     {
       "id": "openear_malleus_head",
       "original_ply": "03_Malleus.ply",
+      "original_ply_sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
       "distance_to_original_surface_mm": 0.0002275621809370328,
       "nearest_original_triangle": 2958
     },
     {
       "id": "openear_malleus_neck",
       "original_ply": "03_Malleus.ply",
+      "original_ply_sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
       "distance_to_original_surface_mm": 0.00026296843340744414,
       "nearest_original_triangle": 1097
     },
     {
       "id": "openear_malleus_handle",
       "original_ply": "03_Malleus.ply",
+      "original_ply_sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
       "distance_to_original_surface_mm": 0.00015897709635715788,
       "nearest_original_triangle": 1715
     },
     {
+      "id": "openear_malleus_lateral_process",
+      "original_ply": "03_Malleus.ply",
+      "original_ply_sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
+      "distance_to_original_surface_mm": 0.00018651187655029116,
+      "nearest_original_triangle": 1533
+    },
+    {
+      "id": "openear_malleus_anterior_process",
+      "original_ply": "03_Malleus.ply",
+      "original_ply_sha256": "52e00f6afe6946e8adf6e2514acbf072950e62dac4d39ca8edc0d87b2ffb1cc2",
+      "distance_to_original_surface_mm": 3.84709888447525e-06,
+      "nearest_original_triangle": 307
+    },
+    {
       "id": "openear_incus_body",
       "original_ply": "04_Incus.ply",
+      "original_ply_sha256": "f967dd6b0fc5f195fe76a3605f8a5acfaf522c62667d0acf194637574c2049ee",
       "distance_to_original_surface_mm": 0.0002699539621953179,
       "nearest_original_triangle": 2340
     },
     {
       "id": "openear_incus_long_limb",
       "original_ply": "04_Incus.ply",
+      "original_ply_sha256": "f967dd6b0fc5f195fe76a3605f8a5acfaf522c62667d0acf194637574c2049ee",
       "distance_to_original_surface_mm": 0.00016699013115177073,
       "nearest_original_triangle": 1516
     },
     {
       "id": "openear_incus_short_limb",
       "original_ply": "04_Incus.ply",
+      "original_ply_sha256": "f967dd6b0fc5f195fe76a3605f8a5acfaf522c62667d0acf194637574c2049ee",
       "distance_to_original_surface_mm": 0.00016366618211007062,
       "nearest_original_triangle": 3829
     },
     {
+      "id": "openear_incus_lenticular_process",
+      "original_ply": "04_Incus.ply",
+      "original_ply_sha256": "f967dd6b0fc5f195fe76a3605f8a5acfaf522c62667d0acf194637574c2049ee",
+      "distance_to_original_surface_mm": 0.00028645593372374385,
+      "nearest_original_triangle": 3106
+    },
+    {
       "id": "openear_stapes_head",
       "original_ply": "05_Stapes.ply",
+      "original_ply_sha256": "91da300f4245514218410d33a371be2470e53b30c4197001ebf9879988bb3364",
       "distance_to_original_surface_mm": 2.591011818854282e-05,
       "nearest_original_triangle": 534
     },
     {
       "id": "openear_stapes_base",
       "original_ply": "05_Stapes.ply",
+      "original_ply_sha256": "91da300f4245514218410d33a371be2470e53b30c4197001ebf9879988bb3364",
       "distance_to_original_surface_mm": 0.00017274757902333728,
       "nearest_original_triangle": 1204
+    },
+    {
+      "id": "openear_stapes_anterior_limb",
+      "original_ply": "05_Stapes.ply",
+      "original_ply_sha256": "91da300f4245514218410d33a371be2470e53b30c4197001ebf9879988bb3364",
+      "distance_to_original_surface_mm": 0.00032723946631780886,
+      "nearest_original_triangle": 32
+    },
+    {
+      "id": "openear_stapes_posterior_limb",
+      "original_ply": "05_Stapes.ply",
+      "original_ply_sha256": "91da300f4245514218410d33a371be2470e53b30c4197001ebf9879988bb3364",
+      "distance_to_original_surface_mm": 0.0001785783407543918,
+      "nearest_original_triangle": 1573
     }
   ]
 }

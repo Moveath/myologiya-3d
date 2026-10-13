@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "generatedBy": "scripts/cranial_features_variant_check.py",
+  "renderScript": "scripts/cranial_features_variant_check.mjs",
+  "code": "A02.1.03.024",
+  "bone": "frontal",
+  "ru": "Блоковая ость",
+  "lat": "spina trochlearis",
+  "scope": "Целевой региональный осмотр обеих глазниц на трёх уже разрешённо полученных моделях.",
+  "criterion": "Реально присутствующий выступ верхнемедиальной области глазницы с основанием, свободной верхушкой и различимой целой формой.",
+  "refs": [
+    {
+      "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+      "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+    },
+    {
+      "title": "Radiological anatomy of the trochlear spine (2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13179243/",
+      "locator": "Introduction; Results; Fig.1–3: superomedial anterior orbit; fovea and spine."
+    }
+  ],
+  "records": [
+    {
+      "source": "bonehub_visible_human",
+      "title": "Visible Human Full-Skeleton 3D Bone Models",
+      "sourceUrl": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+      "license": "CC BY 4.0",
+      "nativeFile": "research/cache/new-skull/bonehub-01_Male-SKULL_CRANIAL_MAXILLA.stl",
+      "nativeSha256": "02d01572797e0ea71a8d18b2f5c98c5a006c42e467422550027cc62d8f8d354e",
+      "reviewMesh": "research/cache/new-skull/review.glb",
+      "reviewMeshSha256": "d668341b3ce5cbcf0d5bf5764bf9f72e1bcdee8265afb380f19d81158eb802b1",
+      "node": "01_male-cranial_maxilla",
+      "status": "not_demonstrated",
+      "observation": "В переднем и трёх нижнепередних видах обе глазницы доступны. Верхнемедиальная область сглажена; отдельная блоковая ость, прослеживаемая от основания до верхушки, не выделяется. Неровные края в глубине глазниц не приняты за этот передний ориентир.",
+      "views": [
+        {
+          "node": "01_male-cranial_maxilla",
+          "camera": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.195,
+              1.748,
+              -0.17
+            ],
+            [
+              0.3,
+              1.808,
+              -0.095
+            ]
+          ],
+          "name": "anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/01_male-cranial_maxilla-anterior.png",
+          "screenshotSha256": "370ff92e75b9aa2a2423945fa400063afa5388e0c30c7b7cb28adb3bee0a7c20"
+        },
+        {
+          "node": "01_male-cranial_maxilla",
+          "camera": {
+            "d": [
+              0,
+              -0.5,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.195,
+              1.748,
+              -0.17
+            ],
+            [
+              0.3,
+              1.808,
+              -0.095
+            ]
+          ],
+          "name": "inferior_anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/01_male-cranial_maxilla-inferior_anterior.png",
+          "screenshotSha256": "c473e2f5aa1b9cabb7e33135a4475f6e2c9ea970a5464893d3e78110a9075fb8"
+        },
+        {
+          "node": "01_male-cranial_maxilla",
+          "camera": {
+            "d": [
+              -0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.195,
+              1.748,
+              -0.17
+            ],
+            [
+              0.3,
+              1.808,
+              -0.095
+            ]
+          ],
+          "name": "xminus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/01_male-cranial_maxilla-xminus_oblique.png",
+          "screenshotSha256": "05d9d3320d357b81d338923d87cc428c5daeb87927262c100e19c6b1e41ae449"
+        },
+        {
+          "node": "01_male-cranial_maxilla",
+          "camera": {
+            "d": [
+              0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.195,
+              1.748,
+              -0.17
+            ],
+            [
+              0.3,
+              1.808,
+              -0.095
+            ]
+          ],
+          "name": "xplus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/01_male-cranial_maxilla-xplus_oblique.png",
+          "screenshotSha256": "068a460d071ea7d8ede3fc2a6adf43ec5c09b131be82f2049b0a82a2a2ae80c7"
+        }
+      ],
+      "geometryEdits": false,
+      "markersAdded": 0,
+      "completeFeatureGeometry": false
+    },
+    {
+      "source": "bonehub_visible_human",
+      "title": "Visible Human Full-Skeleton 3D Bone Models",
+      "sourceUrl": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+      "license": "CC BY 4.0",
+      "nativeFile": "research/cache/new-skull/bonehub-02_Female-SKULL_CRANIAL_MAXILLA.stl",
+      "nativeSha256": "4fa5023f7b3f2dc10f1a5c45d58f58b7b17f1160c78899e9a4bd0fd85dec1e2f",
+      "reviewMesh": "research/cache/new-skull/review.glb",
+      "reviewMeshSha256": "d668341b3ce5cbcf0d5bf5764bf9f72e1bcdee8265afb380f19d81158eb802b1",
+      "node": "02_female-cranial_maxilla",
+      "status": "not_demonstrated",
+      "observation": "На собственных видах обеих глазниц видны гладкие верхние и медиальные стенки, местами с прерывистыми краями. Самостоятельный переднемедиальный выступ с различимыми основанием и верхушкой не подтверждён.",
+      "views": [
+        {
+          "node": "02_female-cranial_maxilla",
+          "camera": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.185,
+              1.6,
+              -0.19
+            ],
+            [
+              0.285,
+              1.67,
+              -0.125
+            ]
+          ],
+          "name": "anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/02_female-cranial_maxilla-anterior.png",
+          "screenshotSha256": "93dadf534414abc9f3c307880122224690ac9af4b7df1ce7a74e4490e98102ba"
+        },
+        {
+          "node": "02_female-cranial_maxilla",
+          "camera": {
+            "d": [
+              0,
+              -0.5,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.185,
+              1.6,
+              -0.19
+            ],
+            [
+              0.285,
+              1.67,
+              -0.125
+            ]
+          ],
+          "name": "inferior_anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/02_female-cranial_maxilla-inferior_anterior.png",
+          "screenshotSha256": "478dd8612a917f9dce6a1e3790d582316d3f7ccbeef5a83d28350cddfac31e1d"
+        },
+        {
+          "node": "02_female-cranial_maxilla",
+          "camera": {
+            "d": [
+              -0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.185,
+              1.6,
+              -0.19
+            ],
+            [
+              0.285,
+              1.67,
+              -0.125
+            ]
+          ],
+          "name": "xminus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/02_female-cranial_maxilla-xminus_oblique.png",
+          "screenshotSha256": "a35abf2be3096ef3ca3503a98d871089ec53d13295c3c4442bad51d1b9cbed64"
+        },
+        {
+          "node": "02_female-cranial_maxilla",
+          "camera": {
+            "d": [
+              0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              0.185,
+              1.6,
+              -0.19
+            ],
+            [
+              0.285,
+              1.67,
+              -0.125
+            ]
+          ],
+          "name": "xplus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/02_female-cranial_maxilla-xplus_oblique.png",
+          "screenshotSha256": "eca4a43eef70695626031227923907c4e01a9fe050477c1d68c92eaede7a1274"
+        }
+      ],
+      "geometryEdits": false,
+      "markersAdded": 0,
+      "completeFeatureGeometry": false
+    },
+    {
+      "source": "nih_002448",
+      "title": "Skull — NIH 3D, 3DPX-002448",
+      "sourceUrl": "https://3d.nih.gov/entries/3DPX-002448",
+      "license": "CC BY 4.0",
+      "nativeFile": "research/cache/new-skull/nih-002448.stl",
+      "nativeSha256": "66828cc9a39bb43338ee40bc995d2bce3a5b68f84f5bb304b33da26498fa9f18",
+      "reviewMesh": "research/cache/new-skull/review.glb",
+      "reviewMeshSha256": "d668341b3ce5cbcf0d5bf5764bf9f72e1bcdee8265afb380f19d81158eb802b1",
+      "node": "nih-002448",
+      "status": "not_demonstrated",
+      "observation": "В переднем и косых нижнепередних видах область доступна с обеих сторон. Верхнемедиальная поверхность сглажена, а глубокие стенки имеют дефекты; ни один выступ не подтверждён как целая блоковая ость.",
+      "views": [
+        {
+          "node": "nih-002448",
+          "camera": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              -0.06,
+              -0.02,
+              0.02
+            ],
+            [
+              0.06,
+              0.058,
+              0.098
+            ]
+          ],
+          "name": "anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/nih-002448-anterior.png",
+          "screenshotSha256": "2c75ff2a203effe20be126107211fc3c8bf868c87b6286cd8edd0727c5dcf89f"
+        },
+        {
+          "node": "nih-002448",
+          "camera": {
+            "d": [
+              0,
+              -0.5,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              -0.06,
+              -0.02,
+              0.02
+            ],
+            [
+              0.06,
+              0.058,
+              0.098
+            ]
+          ],
+          "name": "inferior_anterior",
+          "screenshot": "build_head/cranial_extent/other-orbits/nih-002448-inferior_anterior.png",
+          "screenshotSha256": "b8bd8ff1601f907ded81dc8de5e8a9dcced9655818bacfc84ff4963725657ce5"
+        },
+        {
+          "node": "nih-002448",
+          "camera": {
+            "d": [
+              -0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              -0.06,
+              -0.02,
+              0.02
+            ],
+            [
+              0.06,
+              0.058,
+              0.098
+            ]
+          ],
+          "name": "xminus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/nih-002448-xminus_oblique.png",
+          "screenshotSha256": "d7ba178f332d735e57404d653908198b67dbe31bf663c9e7ceaf36fd16cf10a6"
+        },
+        {
+          "node": "nih-002448",
+          "camera": {
+            "d": [
+              0.32,
+              -0.45,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "zoomBox": [
+            [
+              -0.06,
+              -0.02,
+              0.02
+            ],
+            [
+              0.06,
+              0.058,
+              0.098
+            ]
+          ],
+          "name": "xplus_oblique",
+          "screenshot": "build_head/cranial_extent/other-orbits/nih-002448-xplus_oblique.png",
+          "screenshotSha256": "0ddfd00275c439448586423ecca47d2159e13c6a0e77bc16d14568a87e979b9b"
+        }
+      ],
+      "geometryEdits": false,
+      "markersAdded": 0,
+      "completeFeatureGeometry": false
+    }
+  ],
+  "limitations": [
+    "Отсутствие различимого рельефа в сглаженной/неполной модели не доказывает отсутствия варианта в исходном препарате.",
+    "Камеры и рамки кадрирования не являются анатомическими точками; новые маркеры не ставились.",
+    "Эти три исследовательские сетки не добавлены на сайт и не зарегистрированы на BodyParts3D.",
+    "Полный перечень TA98 на этих дополнительных моделях не проверялся."
+  ],
+  "completeGeometryClaim": false,
+  "independentExpertValidation": false
+}

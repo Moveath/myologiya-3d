@@ -1,0 +1,2991 @@
+{
+  "script": "scripts/cranial_features_extent_render.mjs",
+  "sources": {
+    "bp": {
+      "file": "build_head/head_hi.glb",
+      "sha256": "343cfc3e1a47b43ce9bf7a558b08539df5d2408e5a304df966cf9ac2b0706f25"
+    },
+    "z": {
+      "file": "site/skull-z-detail.glb",
+      "sha256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba"
+    }
+  },
+  "records": [
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_ant.png",
+      "sha256": "d375a5b79bafc268e3a16db64040db875af5fa0ffcdfd86955620b8e751d38fa",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_post.png",
+      "sha256": "3beefce689fa538cd285c1fb155bfd0574058ac5c7b9a9cf4c8ce80dfc69b53a",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_right.png",
+      "sha256": "27c8c4281a43116d7cd28b7edc955f782b16380dff796d2454d0244e3ffd79a8",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_left.png",
+      "sha256": "8a8ad2a0014b3d34eb03c9bb2751908398d0c111b9c6623f6123fa3b88d6ae4c",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_sup.png",
+      "sha256": "a4b0156f629aebdc487d38efd3c029795af208cc8dc64459b34392b9e937a170",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_inf.png",
+      "sha256": "6199fd4db4a8d95982ef571aa703fcf9941404f64f3bb63cbbab88484314ed11",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_oblique_front.png",
+      "sha256": "07521e5aec03a6b9f2fdb25a87b00b9cc054df6f2822e65abda75db35a1adeaa",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "frontal",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_frontal_oblique_back.png",
+      "sha256": "0ed3e3f57ea91df432284e5b6d8775e5fb5f50c8905017b1496fc163ff3850ea",
+      "bounds": [
+        [
+          -0.05987640097737312,
+          1.5290799140930176,
+          0.11528399586677551
+        ],
+        [
+          0.05854230001568794,
+          1.632290005683899,
+          0.1822660118341446
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_ant.png",
+      "sha256": "abb284dc245429f997a02cf51af934506496f9b7317d54773b741999579ca4b5",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_post.png",
+      "sha256": "997b28ed321ea82d8c6a6131517aa37c369c7154122a4bd6527c767afec0051b",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_right.png",
+      "sha256": "5b7f7bc63ebb6a699cb2f7b639fbc1eefbf23efb9b0f05c4b4231ef0953f2087",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_left.png",
+      "sha256": "4a39dd9878f91b3b69ee4c9e12365eb2bc40da951f7917902a77bf8cf2a04fdb",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_sup.png",
+      "sha256": "87bd9f3f1f39dc813ef91eaaadf19f61f44d9439103b029b5a09bb9014cfd7b1",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_inf.png",
+      "sha256": "e7d3d038b3bc8d55333195bc14087c39fcf905a76ae85eda8a76031bb492e344",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_oblique_front.png",
+      "sha256": "7ade5aaab9be26b0cccce27a7c511a5a3c824d834b47a43666af31b51b04492f",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "occipital",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_occipital_oblique_back.png",
+      "sha256": "f5eef45c824a2c195efdd675347423995f4b638719f0eabfc3f2dfa80d33d5d1",
+      "bounds": [
+        [
+          -0.05864319950342178,
+          1.4884899854660034,
+          -0.002225019969046116
+        ],
+        [
+          0.057311199605464935,
+          1.589609980583191,
+          0.11019899696111679
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_ant.png",
+      "sha256": "1af14dac1572c6e20c24c486317ed595529a1eb870b8e601d5fca49cd35640c4",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_post.png",
+      "sha256": "2edc37d04f2252fb555e88797c4a5d0b2d6cb2cc7bc2ad0ef87c518b90a4583b",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_right.png",
+      "sha256": "a367eff10bff92462bf7daf2a7cfb3c0b5499fab4c20f07bc9f69fd90f9d4a13",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_left.png",
+      "sha256": "0b478f0d4f9b9545d5c35a1944b05c8345e36bf920412b9a8106c1b8bdb3c964",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_sup.png",
+      "sha256": "8c3b54427c73733a99bec3fcc170aa6406846de5ba84392254528a6e09c7d6dd",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_inf.png",
+      "sha256": "2468c212637d52a033be336ba4a135eecabfc3670b601729d8581e800b82638c",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_oblique_front.png",
+      "sha256": "dd58799101fde6a2649e09adc647ccbc5b61f9534dcf4e74f8ab28563acfcbd5",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "sphenoid",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_sphenoid_oblique_back.png",
+      "sha256": "ff288ab7ca1bf8b9d9d6a4da7325c43b72737ea7837b3418b70c9498450487f3",
+      "bounds": [
+        [
+          -0.053293000906705856,
+          1.489490032196045,
+          0.09996839612722397
+        ],
+        [
+          0.05199829861521721,
+          1.555530071258545,
+          0.1518470048904419
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_ant.png",
+      "sha256": "53bfe19990b305960a2af5b30dd2a330c4dcc3ff5496953f730e6d19799637e6",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_post.png",
+      "sha256": "fc7ec7812ebc1193588c99d442598e839d1761c55847cf2ed3ba59f587c01ad5",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_right.png",
+      "sha256": "9eadb0a642d986bedff58c3ddf8cb911ce1f105b7b94ecc5d4df2bc028aa5373",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_left.png",
+      "sha256": "895cfe0b38275f34d94ae938266fafe6e38c194a0825c8540db499d86596a735",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_sup.png",
+      "sha256": "3d5de2335f0a3fe1d902ade538327903969a846eada4c14ce4c3126601479e95",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_inf.png",
+      "sha256": "ff2914c6f3d8f1a088f31a1e264c64b4034ce79a737b9cdd0af789986331dd3b",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_oblique_front.png",
+      "sha256": "b7fcfaf134473e58a1cbabefed4603a8141564f9f4bc243dcd3499ec260b1d30",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "ethmoid",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_ethmoid_oblique_back.png",
+      "sha256": "5f567255aeaf5359b00523f9e489aa0a5e4db50411db8956dcd0d45465724d6b",
+      "bounds": [
+        [
+          -0.020248400047421455,
+          1.5065600872039795,
+          0.12966200709342957
+        ],
+        [
+          0.015651699155569077,
+          1.5413600206375122,
+          0.17229899764060974
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_ant.png",
+      "sha256": "a2ebfd2c529f271a1d849fe1a331ca2b2e3be1b400f63f9c2c62aa66304387a8",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_post.png",
+      "sha256": "95c3e98caef88ae897001f95c0fea28b16850f173b60dd55cb9a94ebcbac5bea",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_right.png",
+      "sha256": "f470bef62f8bc75fa1f1e11287121dfb7ed51a86c28f49849cb2d3d27c90f9c2",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_left.png",
+      "sha256": "0ef35c3e47bb458df3197c7bd2f4319d6b212f50b5618800abc5feab2815ecf7",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_sup.png",
+      "sha256": "b5d3fa2922181d90ba0bc636ff8b3b1a2ae53a5693da247ba7c768e97b9350ec",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_inf.png",
+      "sha256": "8e5df1de81c1065c6bfe6cd8ea43c9e48d9315f2e165148684e035ae92025e39",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_oblique_front.png",
+      "sha256": "11042f322e3d5e2bda437b0c9fe504d6e843f890515e6a03cc051f96c949f859",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_right_oblique_back.png",
+      "sha256": "03916947290427d94f005e1392d23e7b3e10b9e987d75835d71ed5f54ba49cba",
+      "bounds": [
+        [
+          -0.07263030111789703,
+          1.5262700319290161,
+          0.0007589650340378284
+        ],
+        [
+          0.004820010159164667,
+          1.638219952583313,
+          0.13567300140857697
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_ant.png",
+      "sha256": "9e1833c22e6e1b162ba9b7a90f3ecf066710a94ac23123a4c796795a2e48d51d",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_post.png",
+      "sha256": "da73faa06a54cf5868b53d0ac519f5f1058c5ea63510593754080596a8c8a4d3",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_right.png",
+      "sha256": "c04996ee6a0473a742fa55700205ca62a9adb3602e6c1772ec00b12f72b7511e",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_left.png",
+      "sha256": "97212f61840f13c4da91c28d390bd9e0c53de55285c740618dabe4e5305deb00",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_sup.png",
+      "sha256": "4d5b67b03e4a5f815cfc52cb57f76f75b5e041dd98ffee98f4d1360bf6dfc999",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_inf.png",
+      "sha256": "b5b060f92dba7898be027f3dee66c0e1e52dc26ac0ba77619813807cb4a9cb65",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_oblique_front.png",
+      "sha256": "33a088ccd198718f27ce1fb1cbb2ec7969da24b27e72705c04806ed1bd6dec3d",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "bp",
+      "bone": "parietal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/bp_parietal_left_oblique_back.png",
+      "sha256": "cfa914baef77e43cbd67b52dce76c0dc9100f491e6bac5a5a6dbc6b4e3c4d28b",
+      "bounds": [
+        [
+          -0.0077911801636219025,
+          1.526229977607727,
+          0.0005099670379422605
+        ],
+        [
+          0.07135479897260666,
+          1.6382099390029907,
+          0.1392510086297989
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_ant.png",
+      "sha256": "b53a43ff7d57843f56d397164f092bdd44c3f0641f0ff3da0ce1de9a1d6525f5",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_post.png",
+      "sha256": "c8abcc05790a7d04d87fef0704043117f25c2a1c081426754dd927b40ba3cf82",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_right.png",
+      "sha256": "bb803ce4dbaf4a5bac188da0cfc05aaa8cfee8b442ffa7ad908d595b56baf050",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_left.png",
+      "sha256": "f00c228928f805703284cc6d2c96fda75921a347d36f5244064872209f1c5f6d",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_sup.png",
+      "sha256": "3f126ed558524d406a1066a5fe03e994a1a9871d19b45dba886ccc5fedfa44e3",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_inf.png",
+      "sha256": "ef5f5311cecf24f88e3c49716b9502a3c9f82c5cdbd1631ab1dcdf35358c310d",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_oblique_front.png",
+      "sha256": "0e1be2defb6189403f9bf91b133eccd8b5297b7fbbdd4f53c6c6dd2476d2bc39",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "frontal",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_frontal_oblique_back.png",
+      "sha256": "26475d3b3897415b6c70c203f1e44f316148a9b042af2e86645e6d801fc88fac",
+      "bounds": [
+        [
+          -0.061189014464616776,
+          1.5926116704940796,
+          0.01801314577460289
+        ],
+        [
+          0.06118898466229439,
+          1.6991924047470093,
+          0.08711200207471848
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_ant.png",
+      "sha256": "5e7efe1dfb5d2ac5451596edd560c6a41ce958b45f7a25e6788e0874a7a52629",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_post.png",
+      "sha256": "e32992d10c5293fe17aab31414a7eaa8ec63986e3231657d91136e1b20704f33",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_right.png",
+      "sha256": "28b6384528538a9693ab5c32b205e32ff643a01d9c96f9a2e21fa419a631bc09",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_left.png",
+      "sha256": "6679b716424c1d80bdbf4c21d68153a471ef7f26109290dc9bf07a7b55ee0230",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_sup.png",
+      "sha256": "be0e226d77ba23416e2180d5c7895ce5ba3f907f8f93828fb54f6c70edae497d",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_inf.png",
+      "sha256": "a4964783d67b1000ae974214c33f0ace83e0824120892fbc279150849f97e645",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_oblique_front.png",
+      "sha256": "2aeae4123119c9a19039a8f2050b4f9fe580fdb1acb8d06585f6eda115b4f886",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "occipital",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_occipital_oblique_back.png",
+      "sha256": "8a5c17ee632add65a25f45bd06c69245ddae2bc68ee1b40f1acc820efebc4345",
+      "bounds": [
+        [
+          -0.05963081866502762,
+          1.5507360696792603,
+          -0.10337518900632858
+        ],
+        [
+          0.059630781412124634,
+          1.6551929712295532,
+          0.012472253292798996
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_ant.png",
+      "sha256": "0315fe1987203fa29f48fa26635a72dadde034ff534a6dd6dcedf13a5312b3a7",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_post.png",
+      "sha256": "a4559e33b3d77d849eb6e8dbbb777d2ba819c85598e75250e688b16857d935f3",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_right.png",
+      "sha256": "c4991177c435cd61a413291d6655be9ab9114e0f45a5169e1e4741bfe84a534b",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_left.png",
+      "sha256": "602e3fa46ebd21bcc1f02d1df9958a45c9e20e0b57be1199434ab3a3ca5c4628",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_sup.png",
+      "sha256": "b9d117fa88b987ea565157cbb22e6a19aff30f5a6157e460d01a0173a32851be",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_inf.png",
+      "sha256": "2ebcccfc62199da2ff984418e3f2423c2fd7439001ea3cdd570982c8d6546cdd",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_oblique_front.png",
+      "sha256": "088ed37629afdb3bfb1eb29dff532489ddec2fc66584959b616a3787efc02d30",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "sphenoid",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_sphenoid_oblique_back.png",
+      "sha256": "5762430d93cec00fc56ef9079b3a8ad85399117148179c9d9ded70ab4b903582",
+      "bounds": [
+        [
+          -0.05441933497786522,
+          1.5503122806549072,
+          0.0022515407763421535
+        ],
+        [
+          0.054419297724962234,
+          1.6202486753463745,
+          0.05545402318239212
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_ant.png",
+      "sha256": "5cfc77fbd918f4452e8eea644e3b7d834546dc027af5844fd421a1db3b82b42b",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_post.png",
+      "sha256": "24e2b8138a40dac94482c85c49faaef3506c8c0f77b72e862dcb750308e03f68",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_right.png",
+      "sha256": "0150fafebe950045787f74e5281a45bdada1c5eac8e6b890cf39283a5654a479",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_left.png",
+      "sha256": "07723709f8551012fe6d6e796c5bf410bce88c87ad2af578c147ebf32716c317",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_sup.png",
+      "sha256": "6d17261ad5642f3b8d923223eb51d091e561e2b654321a323b231e657c804b36",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_inf.png",
+      "sha256": "faf0634b66a9d1ff062db4c5b368c629343b1a1d91d0ee766eb4f1abde1b2698",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_oblique_front.png",
+      "sha256": "e3a981512f020b050b09912c6f276c35c2088af9e32def1d4f3e9b1288480357",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "ethmoid",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_ethmoid_oblique_back.png",
+      "sha256": "f8bdaac04c686325b4e64b314c38b6abdecacfdd7d2f16c9b4f97c8086883c30",
+      "bounds": [
+        [
+          -0.01874006725847721,
+          1.5658774375915527,
+          0.03140878304839134
+        ],
+        [
+          0.018740063533186913,
+          1.6053110361099243,
+          0.07594645768404007
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_ant.png",
+      "sha256": "18c427a04a4ef3f014013dd9db7ef62380a22b8fe26a72204d94bc8888f77e57",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_post.png",
+      "sha256": "0ec6cdbdac25263ae980434cf628121fda1b0456a3a67573d05a39406ed07074",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_right.png",
+      "sha256": "5f6617f6bdf71b24473919334d51c05f5051ab79137f2c2d76b321595fcbf19f",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_left.png",
+      "sha256": "8ffc1fb3ba74e3771c9f62e14196f46f84925aa308edd7a87a43f16fe275b36d",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_sup.png",
+      "sha256": "1bd20f9eee9224bfac369aa556bdc649394027e141d8920d3bfd960bc59ff4f2",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_inf.png",
+      "sha256": "76af3df972379432ab780954fbe2a32588d63e6b9cc019edcefb63c6d01c9aa1",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_oblique_front.png",
+      "sha256": "83195144832edca3080241fc8f55e4aa1b57670eea5183b694d64989e6f192f8",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_right_oblique_back.png",
+      "sha256": "f28ba9842be038c20f6f8813ecf987a2b7f57c088e4748b24ffb4ea7bfcc98d6",
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.589820146560669,
+          -0.10030511766672134
+        ],
+        [
+          0.0056159887462854385,
+          1.7054541110992432,
+          0.03906109184026718
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_ant.png",
+      "sha256": "db35d13757ca9b6e891fc94809fa625e5cfb7219c019f055ac4d059c2f6fa20d",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_post.png",
+      "sha256": "76bed5f59f09382defadb644bfd3a73cd0acc4bed180eaa476e34b34f9331c5c",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_right.png",
+      "sha256": "951563464484118b1f23083473392838ada9c3c108a6867dadadd417cf0b3eed",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_left.png",
+      "sha256": "b796e8b47267f8fcd14270dd8b4b84c2660d6510668bfbdafdf5418b8b8bdf40",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_sup.png",
+      "sha256": "dc05201f93dc239d933cc1a916a0b7cacd5a0836d149f5eb96236235f4fd8132",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_inf.png",
+      "sha256": "b9d5537ad02c927f2b32afd921a55a5482b7f128070170adce52525defc79678",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_oblique_front.png",
+      "sha256": "6bf883c9030785562670473d59d47a7ef9f72f493733469f3ad3344c47d0f8bb",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    },
+    {
+      "source": "z",
+      "bone": "parietal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/z_parietal_left_oblique_back.png",
+      "sha256": "c0ec907e3f5229ae88f33939e9c5d65ff8d4b6e715185551ddf10e06872ad03c",
+      "bounds": [
+        [
+          -0.007425185292959213,
+          1.5896923542022705,
+          -0.10056015849113464
+        ],
+        [
+          0.0742856115102768,
+          1.7053675651550293,
+          0.042743049561977386
+        ]
+      ]
+    }
+  ]
+}

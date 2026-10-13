@@ -1,0 +1,854 @@
+{
+  "date": "2026-10-13",
+  "scope": "Адресная проверка foramen mastoideum на полном Halle CT и уже полученных совместимых исходниках; дополнительные конкретные источники для .024/.035.",
+  "new_confirmed_variant_meshes": 0,
+  "exported_anatomical_objects": 0,
+  "completeFeatureGeometry": false,
+  "result": "Связь наружное устье → костный проход → устье в борозде сигмовидного синуса не подтверждена. Отрицательный результат этой проверки не доказывает отсутствия варианта у препарата и не означает невозможности дальнейшей сегментации.",
+  "source": {
+    "title": "Thomas Kirchner — A micro-CT of a human skull",
+    "url": "https://zenodo.org/records/6108435",
+    "license": "CC BY 4.0",
+    "ct_file": "halle_skull.nrrd",
+    "ct_md5": "2b46ca394084ab84af20bc267114e75f",
+    "mask_file": "halle_skull_segmented.nrrd",
+    "mask_md5": "7ae22945a353069bdb695b63fa2f20bd",
+    "both_complete_md5_rechecked": true,
+    "native_spacing_mm": 0.125,
+    "array_axes": "k,j,i",
+    "viewer_axes": "x=i, y=k, z=j; millimetres ×0.001",
+    "anterior": "+viewer z, established by anatomy; header LPS not treated as independent evidence",
+    "laterality": "Не присвоена: low-X/high-X — координатные стороны, не правая/левая анатомические стороны.",
+    "lossless_roi_bounds_mm": [
+      [
+        0,
+        35,
+        30
+      ],
+      [
+        143.75,
+        110,
+        130
+      ]
+    ],
+    "processing": "Исходные int16 CT и binary mask обрезаны без интерполяции. Контекстная сетка имеет шаг 0,25 мм; две локальные сетки — исходный шаг маски 0,125 мм. Marching cubes level 0.5, обращение winding, без сглаживания/достройки/закрытия отверстий.",
+    "caches_not_for_publication": [
+      "mastoid-ct.npy",
+      "mastoid-mask.npy",
+      "context.glb",
+      "xlow-native.glb",
+      "xhigh-native.glb"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "halle_low_x_lumen",
+      "ta98_candidate": "A02.1.06.008",
+      "assigned_anatomical_name": null,
+      "roi_bounds_mm": [
+        [
+          8,
+          38,
+          48
+        ],
+        [
+          36,
+          65,
+          85
+        ]
+      ],
+      "context_marker_m": [
+        0.02,
+        0.05,
+        0.062
+      ],
+      "observed": "На x17–20 мм различим округлый внутрикостный просвет с костной стенкой. В направлении x21–24 мм он сближается с извилистой щелью шва; на y49–54 мм округлый просвет виден отдельно от длинной щели.",
+      "unconfirmed": "Не найден однозначный внутренний конец именно в sigmoid sulcus. Попадание ROI в топографически подходящую область недостаточно; часть CT-просвета не воспроизводится исходной бинарной маской.",
+      "independent_review": "Cranial agent осмотрел dense-x/dense-y, mastoid-xlow-y и широкие виды с меткой: подтверждён реальный просвет, анатомическое имя не подтверждено.",
+      "decision": "Не экспортировать под именем foramen mastoideum; не превращать сегмент просвета в полный канал."
+    },
+    {
+      "id": "halle_high_x_sutural_opening",
+      "ta98_candidate": "A02.1.06.008",
+      "assigned_anatomical_name": null,
+      "roi_bounds_mm": [
+        [
+          112,
+          37,
+          57
+        ],
+        [
+          135,
+          55,
+          83
+        ]
+      ],
+      "context_marker_m": [
+        0.122,
+        0.044,
+        0.071
+      ],
+      "observed": "На y42–44 мм есть сообщение через толщу кости; в ортогональных z65–75 мм оно продолжается в разветвлённую щель шва.",
+      "unconfirmed": "Именно эмиссарное отверстие не отделено от раскрытого шва; его собственный внутренний конец в sigmoid sulcus не установлен. Замкнутый трубчатый контур не требовался как обязательный признак, проверялась топография сообщения.",
+      "independent_review": "Cranial agent независимо подтвердил сквозное сообщение и неоднозначность шов/эмиссарный ход; широкая привязка её не сняла.",
+      "decision": "Не экспортировать под именем сосцевидного отверстия."
+    }
+  ],
+  "anatomical_identification_refs": [
+    {
+      "title": "Pekçevik et al. — Mastoid Emissary Vein Canal Incidence and Its Relationship with Jugular Bulb and Sigmoid Sulcus Anatomical Variations",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8864204/",
+      "locator": "Methods / Image Analysis, Figure 1: tracing the bony canal from the sigmoid sulcus extracranially; Fig.4 relationship to sigmoid sulcus."
+    },
+    {
+      "title": "Chaiyamoon et al. — Anatomical study of the mastoid foramina and mastoid emissary veins (2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38110768/",
+      "locator": "Abstract: 22 dry skulls / 44 sides, drilled courses, distinction of connecting/non-connecting foramina and exact entrance in the sigmoid groove."
+    }
+  ],
+  "ct_montages": [
+    {
+      "file": "build_head/temporal_variants/candidate-xhigh-dense-y.json",
+      "bytes": 1838,
+      "sha256": "2b64a8da1db417935fce5aa24b387e80c2b29f30f10a359df56d3bb5e66585a0",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xhigh-dense-y.png",
+        "bytes": 217990,
+        "sha256": "cd32d59cedb54cc13c7ab4627133095f1ad894266b777970c4d0a943ac5ce737"
+      },
+      "frame_count": 9,
+      "bounds_mm": [
+        113.0,
+        37.0,
+        57.0,
+        134.0,
+        60.0,
+        82.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/candidate-xhigh-z.json",
+      "bytes": 1398,
+      "sha256": "faa9a83b2d749c6d62363028dc9c8c90116dbdf54cfe32128ecb832ca398f577",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xhigh-z.png",
+        "bytes": 132163,
+        "sha256": "b66bbb8b31d4c34656dc80fab2942b356e4416186f87c9bba04b2f5f366ff7d3"
+      },
+      "frame_count": 6,
+      "bounds_mm": [
+        112.0,
+        36.0,
+        57.0,
+        135.0,
+        62.0,
+        85.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/candidate-xlow-dense-x.json",
+      "bytes": 1836,
+      "sha256": "af36b5839c8da59bba2785b02fc89d89448c8791dba35466634b4339772a6419",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xlow-dense-x.png",
+        "bytes": 196175,
+        "sha256": "225dbc2bcfa45e418b572a07e79038d8062e54d716bc9bfd8c33842e2ec82ad0"
+      },
+      "frame_count": 9,
+      "bounds_mm": [
+        14.0,
+        43.0,
+        54.0,
+        29.0,
+        59.0,
+        72.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/candidate-xlow-dense-y.json",
+      "bytes": 1836,
+      "sha256": "51519115e8a11708098a8bf5aa3beb8af1d81ed045a53b718748abf44076944c",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xlow-dense-y.png",
+        "bytes": 201900,
+        "sha256": "2793281594b3ec3a22147be256dadd4bb687b0e9d288f273952aa6a80f7de456"
+      },
+      "frame_count": 9,
+      "bounds_mm": [
+        14.0,
+        43.0,
+        54.0,
+        29.0,
+        59.0,
+        72.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/candidate-xlow-x.json",
+      "bytes": 1396,
+      "sha256": "7e5d670542a0b7c96e2e09a47749fab46c86b57e416362149570472bb113e642",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xlow-x.png",
+        "bytes": 314698,
+        "sha256": "bc75b6ff11032ee3ea4d7312452a4e8b1c42330a197e60f235c2970d3989dde4"
+      },
+      "frame_count": 6,
+      "bounds_mm": [
+        10.0,
+        35.0,
+        45.0,
+        32.0,
+        85.0,
+        85.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/candidate-xlow-y.json",
+      "bytes": 1396,
+      "sha256": "7fa25a2548583ee26099f1de37b8c800f9ffdded73c35a0a305c29decb4ff8b9",
+      "image": {
+        "file": "build_head/temporal_variants/candidate-xlow-y.png",
+        "bytes": 182844,
+        "sha256": "0e614e8863b2bcc675101b6762d2105a8233e8564c8a8c3dd8f42a79408da013"
+      },
+      "frame_count": 6,
+      "bounds_mm": [
+        10.0,
+        35.0,
+        50.0,
+        32.0,
+        85.0,
+        80.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/mastoid-context-y.json",
+      "bytes": 1396,
+      "sha256": "d62daa1dca30061460aa23787a95aaeccb8d654fa6848b5cae3475628112aa1d",
+      "image": {
+        "file": "build_head/temporal_variants/mastoid-context-y.png",
+        "bytes": 450536,
+        "sha256": "ea2e56f77688032efd994b2d5cee86f732e456a9aa3a0adcdb116ba23ff36ea2"
+      },
+      "frame_count": 6,
+      "bounds_mm": [
+        30.0,
+        30.0,
+        70.0,
+        115.0,
+        105.0,
+        145.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/mastoid-whole-y.json",
+      "bytes": 1399,
+      "sha256": "fb50a1026e6bec965bf913095ce5ca5f0ce8b0cdc1558b93dcb161a990e17f0a",
+      "image": {
+        "file": "build_head/temporal_variants/mastoid-whole-y.png",
+        "bytes": 369517,
+        "sha256": "362299dbfb18236305ff4adba3561e5394d5e3a9ff5cd707f34d24e12397e4b7"
+      },
+      "frame_count": 6,
+      "bounds_mm": [
+        0.0,
+        35.0,
+        45.0,
+        143.75,
+        110.0,
+        130.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/mastoid-xhigh-y.json",
+      "bytes": 1840,
+      "sha256": "76afff4b7181dd7278d2ff77d62eb361e79ddb58494ea1227665b743505b2a40",
+      "image": {
+        "file": "build_head/temporal_variants/mastoid-xhigh-y.png",
+        "bytes": 509286,
+        "sha256": "d09647a199e8eb2e8d272eace355f3e2f1c3f2b8b507a79ef0a1fc9df833f4b6"
+      },
+      "frame_count": 9,
+      "bounds_mm": [
+        105.0,
+        35.0,
+        50.0,
+        143.75,
+        80.0,
+        105.0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/mastoid-xlow-y.json",
+      "bytes": 1836,
+      "sha256": "6baf5dabf238293f3dc6d7a91d2d1105f0a27b2db77b75c5d185fbfb7efb5435",
+      "image": {
+        "file": "build_head/temporal_variants/mastoid-xlow-y.png",
+        "bytes": 541750,
+        "sha256": "c10f33325a155d93911f74784ef14726c2a8a6ea3535444bff43631163b57978"
+      },
+      "frame_count": 9,
+      "bounds_mm": [
+        0.0,
+        35.0,
+        55.0,
+        40.0,
+        80.0,
+        105.0
+      ]
+    }
+  ],
+  "ct_displayed_frames": 75,
+  "halle_geometry_views": [
+    {
+      "file": "build_head/temporal_variants/jobs/01-internal.png",
+      "bytes": 729989,
+      "sha256": "52ddefc13271411b11c537b203af8495723b36c767014be8fa49fd8608925d18",
+      "d": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/jobs/02-lateral.png",
+      "bytes": 409392,
+      "sha256": "639317da22eb0c2173c0072e363046e15337ea26efff8bda5ece29230c8ed96d",
+      "d": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/native-jobs/01-inside.png",
+      "bytes": 434475,
+      "sha256": "2f68eff83dd7d8a96478b45804f662bf91d8e21a4488982f973f5d8ebcdeee0e",
+      "d": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/native-jobs/02-outside.png",
+      "bytes": 580972,
+      "sha256": "576e4073ab5b825f062d3e50f95e5aa853b9de2fd6fa283b3a95592eb37a5e59",
+      "d": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/high-jobs/01-inside.png",
+      "bytes": 393313,
+      "sha256": "72d314aec288b0280c36baa6792bbb8dd22fde1b00893ed114de07d5d1d39f64",
+      "d": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/high-jobs/02-outside.png",
+      "bytes": 509009,
+      "sha256": "c314144193ff9578c20bb5a9289ad4c20ce9f1bc4d94783dcb41f60b94cec29d",
+      "d": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/context-marked/01-marked.png",
+      "bytes": 731072,
+      "sha256": "0e641c1befec23a61481634a9738b492c4ad7f00d95a2051d76eb9094d4e75a2",
+      "d": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "file": "build_head/temporal_variants/context-marked/02-oblique.png",
+      "bytes": 624038,
+      "sha256": "291f01967be6aef230fb806ae857e943d049bc65e52bc8e8777e5a0af19a2f23",
+      "d": [
+        0.2,
+        1,
+        0.4
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ],
+  "existing_additional_mesh_review": {
+    "mesh": "research/cache/new-skull/review.glb",
+    "sha256": "d668341b3ce5cbcf0d5bf5764bf9f72e1bcdee8265afb380f19d81158eb802b1",
+    "license_and_acquisition_record": "research/new-skull-source-audit.json",
+    "views": [
+      {
+        "node": "01_male-cranial_maxilla",
+        "view": {
+          "d": [
+            0,
+            -1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ]
+        },
+        "key": "inf",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/01_male-cranial_maxilla-inf.png",
+        "sha256": "d9eb61c2c268879b4c1fcd92fbfb0a0c1af1463008c47bdcfb404eed74b5999a"
+      },
+      {
+        "node": "01_male-cranial_maxilla",
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xlow",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/01_male-cranial_maxilla-xlow.png",
+        "sha256": "9623dee7fc7c2dc7f5766a26c7b81e968dcabceb847881999da9c6aac66bc15f"
+      },
+      {
+        "node": "01_male-cranial_maxilla",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xhigh",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/01_male-cranial_maxilla-xhigh.png",
+        "sha256": "cff44cdef0d402cf19479df2f9afd7fec41a0ebbb5f1c0fcee2ebd2bf598a44c"
+      },
+      {
+        "node": "01_male-cranial_maxilla",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "key": "internal",
+        "clipping": {
+          "viewer_y_upper_m": 1.79,
+          "method": "Keep only existing triangles with all vertices below limit; no caps."
+        },
+        "screenshot": "build_head/temporal_variants/other-jobs/01_male-cranial_maxilla-internal.png",
+        "sha256": "0ff2425c14cce25c1ee818f88259e025c4b98f3d080aed6a2203355debf80498"
+      },
+      {
+        "node": "02_female-cranial_maxilla",
+        "view": {
+          "d": [
+            0,
+            -1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ]
+        },
+        "key": "inf",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/02_female-cranial_maxilla-inf.png",
+        "sha256": "124810453ba20c022d62f81dbc0b4f360d1a89c2c6447e89abfb59e713c3c5dc"
+      },
+      {
+        "node": "02_female-cranial_maxilla",
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xlow",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/02_female-cranial_maxilla-xlow.png",
+        "sha256": "786ee3cb8b7a1045bd4a35ffc7ebc7a2cea4a62bc0af073913432bb64268f59e"
+      },
+      {
+        "node": "02_female-cranial_maxilla",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xhigh",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/02_female-cranial_maxilla-xhigh.png",
+        "sha256": "25cf97576ce8b5264865441c075299838ee3ad19efe393f18a0deceb05da6ae7"
+      },
+      {
+        "node": "02_female-cranial_maxilla",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "key": "internal",
+        "clipping": {
+          "viewer_y_upper_m": 1.647,
+          "method": "Keep only existing triangles with all vertices below limit; no caps."
+        },
+        "screenshot": "build_head/temporal_variants/other-jobs/02_female-cranial_maxilla-internal.png",
+        "sha256": "78ecc9308d10e29deff92cb240fb86b9ccb43743cd93e0e23906540ba002c836"
+      },
+      {
+        "node": "nih-002448",
+        "view": {
+          "d": [
+            0,
+            -1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ]
+        },
+        "key": "inf",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/nih-002448-inf.png",
+        "sha256": "bd23237d0ec5e4e9e1dbb217ca14a94f0227332e74c1705bece1cc252e2d98b3"
+      },
+      {
+        "node": "nih-002448",
+        "view": {
+          "d": [
+            -1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xlow",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/nih-002448-xlow.png",
+        "sha256": "80b56a82dfcc86dd6f96a7ff92f813b1aee9d10cb37c3f9a5d34b4d23b12734d"
+      },
+      {
+        "node": "nih-002448",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "key": "xhigh",
+        "clipping": null,
+        "screenshot": "build_head/temporal_variants/other-jobs/nih-002448-xhigh.png",
+        "sha256": "8bbb360357047e1b63ca6bbc42c68ae9124cccdf6b663bcae52e51578dbecb00"
+      },
+      {
+        "node": "nih-002448",
+        "view": {
+          "d": [
+            0,
+            1,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "key": "internal",
+        "clipping": {
+          "viewer_y_upper_m": 0.04,
+          "method": "Keep only existing triangles with all vertices below limit; no caps."
+        },
+        "screenshot": "build_head/temporal_variants/other-jobs/nih-002448-internal.png",
+        "sha256": "669eebab2565631764a1fe01c16c78c8321864613af767e0056e6454faa3da36"
+      }
+    ],
+    "specimens": [
+      {
+        "node": "01_male-cranial_maxilla",
+        "source": "BoneHub Visible Human male",
+        "result_008": "В просмотренных наружных, нижнем и внутреннем видах не выделена пара устьев с прослеживаемым ходом; мелкая геометрия сглажена.",
+        "result_035": "Самостоятельный околососцевидный выступ нижней стороны яремного отростка в этих видах не выделен."
+      },
+      {
+        "node": "02_female-cranial_maxilla",
+        "source": "BoneHub Visible Human female",
+        "result_008": "В просмотренных видах не подтверждён отдельный полный ход .008; сглаженная поверхность не даёт основания дорисовывать его.",
+        "result_035": "Нижний и боковые виды не подтверждают отдельный удлинённый выступ в заявленном месте."
+      },
+      {
+        "node": "nih-002448",
+        "source": "NIH 3DPX-002448",
+        "result_008": "Внутри есть мелкие дефекты поверхности; их анатомические имена и связь с отдельным наружным отверстием не установлены.",
+        "result_035": "Шейные позвонки и нижняя челюсть входят в состав общей сетки; отдельный paramastoid process из неё не идентифицирован."
+      }
+    ],
+    "limit": "Это адресная визуальная проверка указанных ракурсов, не доказательство анатомического отсутствия и не независимая проверка оригинальной CT-сегментации этих дополнительных сеток."
+  },
+  "targeted_new_sources": [
+    {
+      "id": "gro_xpct_2025",
+      "title": "Schaeper et al. — 3D imaging of the human temporal bone by X-ray phase-contrast tomography",
+      "article": "https://www.nature.com/articles/s44303-025-00086-y",
+      "dataset": "https://doi.org/10.25625/V3YSYD",
+      "api": "https://data.goettingen-research-online.de/api/datasets/:persistentId/?persistentId=doi:10.25625/V3YSYD",
+      "official_metadata_evidence": {
+        "file": "research/cache/temporal-variants/xpct-metadata.json",
+        "bytes": 27913,
+        "sha256": "bf0427cd9a3a522e4b9c30a8782bef4258619fb32f8dbdbb39d083b63718bd6a"
+      },
+      "article_license": "CC BY 4.0",
+      "actual_dataset_license": {
+        "name": "CC BY-NC 4.0",
+        "uri": "http://creativecommons.org/licenses/by-nc/4.0",
+        "iconUri": "https://licensebuttons.net/l/by-nc/4.0/88x31.png"
+      },
+      "files": [
+        {
+          "id": 119438,
+          "name": "H02_BM18_overview_px=6.186um.h5",
+          "bytes": 30260875553
+        },
+        {
+          "id": 119442,
+          "name": "H02_BM18_zoom_px=4.516um.h5",
+          "bytes": 13254829608
+        },
+        {
+          "id": 119444,
+          "name": "H02_uCT_px=7.2um.h5",
+          "bytes": 5210430754
+        },
+        {
+          "id": 119440,
+          "name": "H09_BM18_overview_px=12.372um.h5",
+          "bytes": 31572860574
+        },
+        {
+          "id": 119441,
+          "name": "H09_BM18_zoom_px=3.624um.h5",
+          "bytes": 16185224588
+        },
+        {
+          "id": 119439,
+          "name": "H11_BM18_overview_px=12.372um.h5",
+          "bytes": 79869814437
+        },
+        {
+          "id": 119443,
+          "name": "H11_uCT_zoom_px=15.53um.h5",
+          "bytes": 5976159560
+        },
+        {
+          "id": 124567,
+          "name": "Supplementary Movie 1.mp4",
+          "bytes": 96531145
+        }
+      ],
+      "decision": "Отклонён для коммерчески совместимого набора: лицензия исходных объёмов CC BY-NC 4.0 отличается от лицензии статьи. Объёмы не скачивались и геометрия не извлекалась."
+    },
+    {
+      "id": "ini32_orbit",
+      "target": "A02.1.03.024",
+      "title": "INI-32 Orbit CT Atlas",
+      "url": "https://www.nitrc.org/projects/ini32_orbit_ct/",
+      "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12720090/",
+      "declared_license": "CC Attribution",
+      "decision": "Лицензия допускает коммерческое использование, но atlas — усреднение 32 пространственно нормализованных орбит, включая отражённые левые. Такой шаблон не подтверждает отдельную блоковую ость конкретного исходного человека; не использован для закрытия .024."
+    }
+  ],
+  "outcomes": [
+    {
+      "code": "A02.1.06.008",
+      "ru": "Сосцевидное отверстие",
+      "status": "not_demonstrated_as_named_complete_passage",
+      "new_geometry": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png",
+          "locator": "Рис.138: внутренняя поверхность левой височной кости; подпись Mastoid foramen у заднего края сосцевидной области."
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
+          "locator": "Рис.58 атласа: образование Foramen mastoideum."
+        },
+        {
+          "title": "Mastoid emissary foramina: an anatomical morphological study (2014)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178196/",
+          "locator": "Introduction; Materials and Methods; Results: положение относительно затылочно-сосцевидного шва и изменчивость числа отверстий."
+        },
+        {
+          "title": "Variations of Mastoid Foramen in North Indian Population — исследование 71 черепа",
+          "url": "https://nicpd.ac.in/ojs-/index.php/njirm/article/view/828",
+          "locator": "Abstract — Materials and Methods, Results; печатные с.49–52: шовное и вне шва расположение, варианты числа и отсутствие отверстия."
+        }
+      ],
+      "remaining": "На исходных плотностях или другом разрешённом препарате однозначно связать внешнее устье с собственным костным ходом и устьем в борозде; проверить стенки на каждом участке, отдельно от шва и ячеек."
+    },
+    {
+      "code": "A02.1.03.024",
+      "ru": "Блоковая ость",
+      "status": "not_demonstrated_in_targeted_orbital_views",
+      "new_geometry": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Radiological anatomy of the trochlear spine (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13179243/",
+          "locator": "Introduction; Results; Fig.1–3: superomedial anterior orbit; fovea and spine."
+        }
+      ],
+      "additional_independent_review": {
+        "file": "research/cranial-orbital-variant-review.json",
+        "bytes": 14765,
+        "sha256": "c1c4257b327aae08c945733ad5a5f9972ea2b9d4035bde8f51c2fd6aabb6b489"
+      },
+      "observed": "Cranial agent отдельно осмотрел 12 целевых глазничных ракурсов BoneHub male/female и NIH002448: обе глазницы, передний/нижнепередний и косые виды. Полные основание и верхушка отдельной spina trochlearis не подтверждены; сглаживание и разрывы сетки не приняты за ость.",
+      "remaining": "Нужен индивидуальный CT/исходная сетка с реально различимой spina trochlearis, отдельно от trochlear fovea/других бугорков. Средний шаблон INI-32 не заменяет такой препарат; отрицательный осмотр сеток не доказывает отсутствия варианта у исходных людей."
+    },
+    {
+      "code": "A02.1.04.035",
+      "ru": "Околососцевидный отросток",
+      "status": "not_demonstrated_in_reviewed_native_views",
+      "new_geometry": false,
+      "refs": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Bergman et al. — Variations of the Occipital Bone",
+          "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
+          "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        },
+        {
+          "title": "J. L. Pace — The Paramastoid Process: A survey of 890 Maltese skulls",
+          "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/13690/1/Paramastoid%20Process.pdf",
+          "locator": "Печатная с.34 (PDF с.1), Summary и первые абзацы: нижняя сторона яремного отростка; paracondylar как синоним paramastoid. С.35 (PDF с.2): варианты сочленения с поперечным отростком атланта."
+        },
+        {
+          "title": "Schumacher et al. (2018) — Paramastoid Process: Literature Review of Its Anatomy and Clinical Implications",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29929028/",
+          "locator": "Открытый Abstract: paramastoid, paraoccipital, paracondylar, parajugular как названия варианта нижней стороны яремного отростка; возможное сочленение с атлантом."
+        }
+      ],
+      "remaining": "Нужен разрешённый исходный экземпляр с идентифицируемым processus paramastoideus; ни библиографический пример, ни обычный сосцевидный/яремный отросток не заменяет его геометрию."
+    }
+  ],
+  "publication_decision": "Публиковать можно отчёт и доказательные изображения с атрибуцией; отдельный анатомический объект .008 не создан. Большие ROI и диагностические GLB сохраняются локально. Главные 521 маркера и variant-флаги не менялись.",
+  "script_files": [
+    "scripts/temporal_variant_inspect.py",
+    "scripts/temporal_variant_volume.py",
+    "scripts/temporal_variant_mesh.py",
+    "scripts/temporal_variant_other_jobs.py",
+    "scripts/temporal_variant_report.py"
+  ]
+}

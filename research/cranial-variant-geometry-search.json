@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-13",
+  "scope": "Адресный поиск геометрии вариантов мозговых костей; не изменение анатомических названий или наличия вариантов в основном атласе.",
+  "noRestrictedMeshesExtracted": true,
+  "publicMetadataOnly": true,
+  "sources": [
+    {
+      "terms": ["A02.1.03.007"],
+      "title": "Metopic frontal bone (VCU_3D_5300), AFIP0025642",
+      "url": "https://sketchfab.com/3d-models/37e58c465b0f4a129db1d7a40800cc14",
+      "metadataUrl": "https://api.sketchfab.com/v3/models/37e58c465b0f4a129db1d7a40800cc14",
+      "cache": "research/cache/cranial-extent/37e58c465b0f4a129db1d7a40800cc14.json",
+      "downloadable": false,
+      "license": null,
+      "status": "not_licensed_for_download",
+      "observation": "Автор описывает микро-КТ 74,92 мкм и сохраняющийся метопический шов. Показанная версия полая, с Poisson-реконструкцией; исходная запись MorphoSource должна рассматриваться отдельно. В публичных метаданных Sketchfab нет разрешённого скачивания или лицензии.",
+      "upstream": "https://www.morphosource.org/Detail/SpecimenDetail/Show/specimen_id/17365",
+      "upstreamStatus": "При прямом обращении получена страница проверки браузера, а не карточка исходного материала. Условия лицензии и разрешённый исходный файл не установлены; ограничение не обходилось.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.04.013"],
+      "title": "Skull 21 (skull with Inca bone)",
+      "url": "https://sketchfab.com/3d-models/84c1d64d2f8d435f8b081ed4a1a832e6",
+      "metadataUrl": "https://api.sketchfab.com/v3/models/84c1d64d2f8d435f8b081ed4a1a832e6",
+      "cache": "research/cache/cranial-extent/84c1d64d2f8d435f8b081ed4a1a832e6.json",
+      "downloadable": false,
+      "license": null,
+      "status": "not_licensed_for_download",
+      "observation": "Описание автора указывает череп с костью инков. Публичная API-карточка не предоставляет лицензию и разрешённое скачивание; сетка не получена и её полная форма не проверена.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.04.013"],
+      "title": "Os incae completum",
+      "url": "https://sketchfab.com/3d-models/828f7cd18dab4a26af38805c84c87f6c",
+      "metadataUrl": "https://api.sketchfab.com/v3/models/828f7cd18dab4a26af38805c84c87f6c",
+      "cache": "research/cache/cranial-extent/828f7cd18dab4a26af38805c84c87f6c.json",
+      "downloadable": false,
+      "license": null,
+      "status": "not_licensed_for_download",
+      "observation": "Описание автора именует полный вариант межтеменной кости. Публичные метаданные не предоставляют лицензию и разрешённое скачивание; сетка не извлекалась.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.05.008"],
+      "title": "Anukulsampan et al. (2024), The Prevalence of the Middle Clinoid Process",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11226267/",
+      "locator": "Materials and Methods; Fig.1–3; Copyright and License information.",
+      "license": "CC BY-NC-ND 4.0 (статья)",
+      "status": "anatomical_reference_not_redistributable_geometry",
+      "observation": "Исходное исследование подтверждает способ отличения отростка по двум КТ-плоскостям. В статье нет полученного нами открытого исходного трёхмерного объёма; изображения с ограничением NC/ND в проект не добавлялись. Подтверждение анатомического термина по статье не создаёт геометрию.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.05.037", "A02.1.05.039"],
+      "title": "Javed et al. (2023), Correlation Analysis on Accessory Foramina in the Sphenoid Bone",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10670589/",
+      "locator": "Fig.3; Data Availability Statement: данные содержатся в статье.",
+      "cache": "research/cache/variant-figures/PMC10670589.xml",
+      "status": "anatomical_photographs_no_native_volume_obtained",
+      "observation": "Фотографии подтверждают существование и топографию вариантов. Исходного CT/DICOM или разрешённой 3D-сетки конкретного отверстия не получено; плоская фотография не принимается за всю стенку и ход.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.05.037", "A02.1.05.039"],
+      "title": "Schulze et al. (2023), Flat panel CT versus multidetector CT in skull base imaging",
+      "url": "https://link.springer.com/article/10.1186/s13005-023-00391-0",
+      "locator": "Results — Presence of anatomical structures; Data Availability.",
+      "license": "CC BY 4.0 (статья; не автоматическое разрешение на закрытые исходные КТ)",
+      "status": "native_data_not_openly_available",
+      "observation": "В работе исследованы реальные препараты. Авторы прямо указывают, что исходные данные не открыты из-за чувствительности и выдаются по запросу. Статья не является доступным исходным объёмом для сборки; сообщение о результате в этой выборке не переносится на Halle или BodyParts3D.",
+      "completeGeometryClaim": false
+    },
+    {
+      "terms": ["A02.1.04.035"],
+      "title": "Pace, The Paramastoid Process: A survey of 890 Maltese skulls",
+      "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/13690/1/Paramastoid%20Process.pdf",
+      "locator": "Печатные страницы 34–35: Summary, топографическое описание и изображения.",
+      "status": "anatomical_reference_no_native_3d_obtained",
+      "observation": "Первичное исследование задаёт ожидаемую область и позволяет не спутать вариант с обычным яремным отростком. Открытый исходный скан или сетка из этой работы не получены; дорисовка выступа по рисунку не выполнялась.",
+      "completeGeometryClaim": false
+    }
+  ],
+  "additionalTargetedPublicSearches": [
+    {"query": "paramastoid", "url": "https://api.sketchfab.com/v3/search?type=models&q=paramastoid&count=24", "cache": "research/cache/cranial-extent/search-paramastoid.json", "result": "В сохранённом ответе нет моделей. Это результат данного запроса, а не доказательство отсутствия открытой геометрии вообще."},
+    {"query": "interparietal", "url": "https://api.sketchfab.com/v3/search?type=models&q=interparietal&count=24", "cache": "research/cache/cranial-extent/search-interparietal.json", "result": "Найдены человеческие Os incae completum/incompletum и os interparietale, но в ответе у них нет разрешённого скачивания и лицензии. Животные не принимаются вместо человека."},
+    {"query": "clinoid", "url": "https://api.sketchfab.com/v3/search?type=models&q=clinoid&count=24", "cache": "research/cache/cranial-extent/search-clinoid.json", "result": "В выдаче есть anterior clinoidectomy и skeletonized anterior clinoid. Описание переднего отростка или хирургического препарата само по себе не подтверждает присутствующий целый средний отросток; такого присвоения не делалось."},
+    {"query": "venosum", "url": "https://api.sketchfab.com/v3/search?type=models&q=venosum&count=24", "cache": "research/cache/cranial-extent/search-venosum.json", "result": "Релевантной именованной сетки венозного отверстия клиновидной кости в сохранённой выдаче не установлено."},
+    {"query": "innominatus", "url": "https://api.sketchfab.com/v3/search?type=models&q=innominatus&count=24", "cache": "research/cache/cranial-extent/search-innominatus.json", "result": "Выдача в основном относится к тазовым костям, а не к каменистому канальцу черепа. Новое анатомическое присвоение не делалось."}
+  ],
+  "remainingAcceptance": "Для каждого варианта требуется разрешённый исходный образец, где он действительно виден; прямой осмотр всей макроформы, для канальца — непрерывный ход и обе апертуры. Лицензия, скачиваемость, название автора или фотография по отдельности не закрывают эту проверку."
+}

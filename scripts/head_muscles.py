@@ -264,12 +264,7 @@ EVIDENCE['transversus_menti']['fields']['n'] = [TM_STUDY,TM_DEFINITION]
 MUSCLE_TEMPLATES['transversus_menti']['refs'].append({'title':'Открытое определение: иннервация','url':TM_DEFINITION})
 EVIDENCE['transversus_menti']['unconfirmed'] = ['a','s']
 
-# Name-only parts inherit general fields in the UI; source evidence stays with
-# the parent record. Inherited fields are explicitly labelled by the renderer.
-for key,muscle in MUSCLE_TEMPLATES.items():
-    for field in ('o','i','a','n','s'):
-        if field not in EVIDENCE[key].get('unconfirmed',[]):
-            assert len(set(EVIDENCE[key]['fields'][field])) >= 2, (key,field)
-    EVIDENCE[key]['parts'] = {part:{'code':value['code'],
-        'fields':{f:EVIDENCE[key]['fields'][f] for f in ('o','i','a','n') if f in value}}
-        for part,value in muscle.get('parts',{}).items()}
+# Field locators and part-specific support are maintained separately from the
+# prose. This also validates independence groups and explicit inheritance.
+from head_muscle_evidence import enrich_evidence
+enrich_evidence(MUSCLE_TEMPLATES, EVIDENCE)

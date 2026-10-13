@@ -1,0 +1,104 @@
+{
+  "modelFile": "site/skull-z-detail.glb",
+  "modelSha256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba",
+  "cutValue": 0.5003516925743856,
+  "initialBounds": [
+    [
+      -0.07439018785953522,
+      1.4962966442108154,
+      -0.10337518900632858
+    ],
+    [
+      0.0742856115102768,
+      1.7054541110992432,
+      0.10027167201042175
+    ]
+  ],
+  "defaultHalfPlaneX": -0.000052288174629211426,
+  "file": "site/skull-detail.html",
+  "sha256": "6e363b9f4bcd769644b8254507e6d659f773b1b32ffc429fa4f0a3e5ea84999e",
+  "url": "skull-detail.html?mode=z&part=mandible",
+  "probe": "Read-only bounds/plane/camera accessor injected into served source; no functional viewer behavior changed.",
+  "reviewPlane": "x=0; normal [-1,0,0] for right, [1,0,0] for left",
+  "records": [
+    {
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.4962966442108154,
+          -0.10337518900632858
+        ],
+        [
+          0.0742856115102768,
+          1.7054541110992432,
+          0.10027167201042175
+        ]
+      ],
+      "plane": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "constant": -6.938893903907228e-18
+      },
+      "camera": {
+        "position": [
+          0.22610677953799818,
+          1.5713880265895133,
+          0.1445020307632659
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "only": "mandible",
+      "side": "right",
+      "screenshot": "build_head/face_features/extent_launch_mandible_right.png",
+      "screenshotSha256": "68e0144f5657c89d67ade73c0d440164332e97ca34ae5dd75a7d99e9ca4641d4",
+      "cutMatchesReview": true
+    },
+    {
+      "bounds": [
+        [
+          -0.07439018785953522,
+          1.4962966442108154,
+          -0.10337518900632858
+        ],
+        [
+          0.0742856115102768,
+          1.7054541110992432,
+          0.10027167201042175
+        ]
+      ],
+      "plane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "constant": 6.938893903907228e-18
+      },
+      "camera": {
+        "position": [
+          -0.22610677953799818,
+          1.5713880265895133,
+          0.1445020307632659
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "only": "mandible",
+      "side": "left",
+      "screenshot": "build_head/face_features/extent_launch_mandible_left.png",
+      "screenshotSha256": "ffa229d486551cf0a09fc25f185b84397a9415f06f312eb108e3899c19934252",
+      "cutMatchesReview": true
+    }
+  ],
+  "errors": []
+}

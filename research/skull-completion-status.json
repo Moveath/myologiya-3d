@@ -205,19 +205,46 @@
     "openear": {
       "structures": 13,
       "metadata": "site/skull-openear.json",
-      "independently_placed_markers": 13,
+      "independently_placed_markers": 18,
       "marker_localization_counts": {
-        "surface": 13
+        "surface": 18
       },
       "marker_metadata": "site/skull-native-features.json",
       "marker_source": "pins_head/openear-native.json",
-      "complete_ossicle_landmark_catalogue_claim": false,
+      "complete_ossicle_landmark_catalogue_claim": true,
+      "complete_ossicle_detailed_geometry_claim": false,
+      "ossicle_subterm_count": 13,
       "registered_to_main_atlas": false
     },
     "halle_microct": {
       "metadata": "site/skull-microct.json",
       "registered_to_main_atlas": false
     }
+  },
+  "skull_whole_catalogue": {
+    "file": "site/skull-whole.json",
+    "terms": 97,
+    "current_module": 89,
+    "future_modules": 8,
+    "geometry_policy": "Ракурс и состав группы не означают полную геометрию каждого образования."
+  },
+  "muscle_attachment_catalogue": {
+    "file": "site/skull-muscle-attachments.json",
+    "muscles": 52,
+    "parts": 26,
+    "complete_attachment_areas": 0
+  },
+  "bone_feature_extent_review": {
+    "file": "site/skull-geometry-review.json",
+    "records": 521,
+    "counts": {
+      "partial": 122,
+      "not_demonstrated": 165,
+      "complete": 234
+    },
+    "scope": "macroscopic_source_feature_extent",
+    "independent_expert_validation": false,
+    "note": "Полнота относится только к явно указанной макроскопической форме. Исходные статусы маркеров не меняются; это не процент анатомической готовности всего черепа."
   },
   "remaining_primary_markers": {
     "lacrimal_left": [
@@ -1289,13 +1316,13 @@
   ],
   "cross_source_evidence": {
     "catalogue": "site/skull-feature-catalogue.json",
-    "terms_with_supplemental_material": 38,
+    "terms_with_supplemental_material": 43,
     "native_marker_counts": {
       "z": 18,
-      "openear": 13,
+      "openear": 18,
       "microct": 0
     },
-    "native_unique_terms": 23,
+    "native_unique_terms": 28,
     "main_projection_unique_terms": 113,
     "terms": {
       "A02.1.15.031": [
@@ -1516,6 +1543,51 @@
           "specimen": "OpenEar ZETA"
         }
       ],
+      "A15.3.02.035": [
+        {
+          "mode": "openear",
+          "id": "openear_stapes_anterior_limb",
+          "scope": "visible-surface-landmark; not independent subpart segmentation",
+          "modelNote": "Отмечена поверхность различимой передней ножки исходной модели стремени OpenEar ZETA. Модель сохраняет собственную форму этого препарата; точка не делит всю косточку на отдельные сегменты. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+          "specimen": "OpenEar ZETA"
+        }
+      ],
+      "A15.3.02.036": [
+        {
+          "mode": "openear",
+          "id": "openear_stapes_posterior_limb",
+          "scope": "visible-surface-landmark; not independent subpart segmentation",
+          "modelNote": "Отмечена поверхность различимой задней ножки исходной модели стремени OpenEar ZETA. Это ориентир на авторской костной поверхности, не реконструкция недостающей ткани. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+          "specimen": "OpenEar ZETA"
+        }
+      ],
+      "A15.3.02.047": [
+        {
+          "mode": "openear",
+          "id": "openear_malleus_lateral_process",
+          "scope": "visible-surface-landmark; not independent subpart segmentation",
+          "modelNote": "Отмечен реально выступающий участок у корня рукоятки исходного молоточка. Связки и складки барабанной перепонки этим маркером не сегментированы. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+          "specimen": "OpenEar ZETA"
+        }
+      ],
+      "A15.3.02.048": [
+        {
+          "mode": "openear",
+          "id": "openear_malleus_anterior_process",
+          "scope": "visible-surface-landmark; not independent subpart segmentation",
+          "modelNote": "В исходной модели различим короткий выступ переднего отростка. Тонкое длинное продолжение, изображаемое в некоторых анатомических рисунках, на этой сетке не подтверждено и не достроено. Маркер относится только к видимому выступу. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+          "specimen": "OpenEar ZETA"
+        }
+      ],
+      "A15.3.02.041": [
+        {
+          "mode": "openear",
+          "id": "openear_incus_lenticular_process",
+          "scope": "visible-surface-landmark; not independent subpart segmentation",
+          "modelNote": "Отмечен видимый терминальный участок чечевицеобразного отростка в авторской модели наковальни. Тонкая ножка и граница пластинки здесь сглажены и не представлены отдельной подтверждённой микрогеометрией. Маркер не означает, что эти детали полностью восстановлены. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+          "specimen": "OpenEar ZETA"
+        }
+      ],
       "A02.1.06.033": [
         {
           "mode": "openear",
@@ -1587,6 +1659,21 @@
     "research/cranial-feature-review.json",
     "research/temporal-feature-review.json",
     "research/variant-example-review.json",
-    "verify/ui-skull-features-report.json"
+    "verify/ui-skull-features-report.json",
+    "research/head-muscle-field-review.json",
+    "research/skull-whole-model-review.json",
+    "verify/head-source-geometry.json",
+    "verify/ui-atlas-runtime-report.json",
+    "verify/ui-skull-catalogues-report.json",
+    "verify/ui-skull-channels-report.json",
+    "verify/ui-skull-geometry-report.json",
+    "research/face-feature-extent-review.json",
+    "research/cranial-feature-extent-review.json",
+    "research/temporal-feature-extent-review.json",
+    "research/face-feature-extent-cross-review.json",
+    "research/temporal-variant-geometry-review.json",
+    "research/cranial-variant-geometry-search.json",
+    "research/cranial-orbital-variant-review.json",
+    "verify/ui-atlas-touch-report.json"
   ]
 }

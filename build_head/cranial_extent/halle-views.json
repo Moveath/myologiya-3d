@@ -1,0 +1,361 @@
+{
+  "script": "scripts/cranial_features_extent_render.mjs",
+  "sources": {
+    "halle": {
+      "file": "site/skull-microct.glb",
+      "sha256": "9d44b028eb29be563a499473935bc8b825a6daf724a8eb444532e534f62dd1e1"
+    }
+  },
+  "records": [
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_ant.png",
+      "sha256": "8a495b41033860eb0d5622fbe8161c6f5a3a364d6622252016b90930bb109225",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_post.png",
+      "sha256": "d70f40f1c5b0ac44faa7eb2c53acfef2d84df65cdc29f526faa2b3b8b70a8730",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_sup.png",
+      "sha256": "1d333bb2a357e1f8486bfca708191e1f3c49901fe4597a43c0814615f0672067",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_inf.png",
+      "sha256": "6592d85f63141146baa0127f90ccc0fc553857f690b07f13eba2a36f049b8590",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_oblique_front.png",
+      "sha256": "5cac4e38bf4752b3f2cd43ed1bf80baed44acb0e0100ce878cc1d6b0977693fc",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_oblique_back.png",
+      "sha256": "b4d302ebb7f3ad265438a0d806c2ade75451ea3195347909cda4ec547098aeea",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "xminus",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_xminus.png",
+      "sha256": "f86c7be39f8e1225951793c788c6d4d2d061a9b17b20df24616965390d77a1d0",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "xplus",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_xplus.png",
+      "sha256": "c5c939d05d1a85356d902389c565c70a88f1e07c5ce5527f69a58e078502430b",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "internal_base",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "cut": {
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "constant": 0.105
+        },
+        "zoomBox": [
+          [
+            0.022,
+            0.022,
+            0.035
+          ],
+          [
+            0.126,
+            0.105,
+            0.182
+          ]
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_internal_base.png",
+      "sha256": "6624de00a763ed4d3f95208da2e0b5825c6bee2544b400617632ecb575ab9dc3",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    },
+    {
+      "source": "halle",
+      "bone": "specimen",
+      "view": "internal_base_oblique",
+      "camera": {
+        "d": [
+          0,
+          1,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "cut": {
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "constant": 0.105
+        },
+        "zoomBox": [
+          [
+            0.022,
+            0.022,
+            0.035
+          ],
+          [
+            0.126,
+            0.105,
+            0.182
+          ]
+        ]
+      },
+      "image": "build_head/cranial_extent/halle_specimen_internal_base_oblique.png",
+      "sha256": "e832e7bf32e03e44f7fa8f28ad4f5aa977b1df49f7fc2fdd5b14461bba255730",
+      "bounds": [
+        [
+          0.00287500024,
+          0.00562500022,
+          0.00237500016
+        ],
+        [
+          0.14350055263096,
+          0.17212491525642,
+          0.21112501320569999
+        ]
+      ]
+    }
+  ]
+}

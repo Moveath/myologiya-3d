@@ -69,23 +69,89 @@
       "lat": "canalis nervi facialis",
       "bodyparts3d_records": 2,
       "main_localization_unchanged": "projection",
-      "outcome": "channel-not-traced",
-      "finding": "Исходная отдельная сетка лицевого нерва доступна, но она не является стенкой лицевого канала.",
-      "remaining_work": "Проследить костный просвет по последовательным исходным КТ-сечениям от внутреннего слухового прохода до шилососцевидного отверстия; проверить все сегменты.",
+      "outcome": "native-channel-walls-partially-traced",
+      "finding": "По 224 исходным КТ-сечениям проверены и выделены участки настоящей костной стенки лицевого канала. Сетка нерва не использована как стенка.",
+      "remaining_work": "Проверить полный периметр конечных апертур, границы первого коленца и тонкие стенки; текущая выборка заканчивается до расширения в IAC.",
       "full_feature_geometry_confirmed": false,
-      "review_scope": "source-capability-and-region-review",
+      "review_scope": "targeted-native-source-wall-and-serial-ct-review",
       "anatomical_refs": [
         {
-          "title": "Университет Палацкого, Libor Luňáček — Spánková kost",
-          "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
-          "locator": "Университет Палацкого, Libor Luňáček — Spánková kost; canalis nervi facialis"
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 140 и 913",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray913.png",
+          "locator": "Рис. 913: ход лицевого канала относительно барабанной полости и шилососцевидного отверстия; рис. 140: внутренний слуховой проход.",
+          "scope": "anatomy"
         },
         {
-          "title": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8",
-          "url": "https://semmelweis.hu/anatomia/files/2014/04/Connections-of-the-Skull.pdf",
-          "locator": "Университет Земмельвейса — Connections of the skull, с. 2, 4–8; canalis nervi facialis"
+          "title": "Kozerska et al. (2017), Micro-CT study of the dehiscences of the tympanic segment of the facial canal",
+          "url": "https://doi.org/10.1007/s00276-016-1744-4",
+          "locator": "Введение и рис. 1: начало, окончание, три сегмента канала и его положение относительно барабанной полости; рис. 2–4: костная стенка и её разрывы.",
+          "scope": "anatomy"
         }
-      ]
+      ],
+      "geometry_scope": "selected-original-bone-wall-segments",
+      "source_report": "research/temporal-channel-review.json",
+      "native_geometry": {
+        "id": "facial_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            206,
+            181,
+            277
+          ],
+          [
+            350,
+            366,
+            380
+          ]
+        ],
+        "guide_selected_interval": [
+          2,
+          225
+        ],
+        "guide_count": 226,
+        "triangles": 26250,
+        "vertices": 13859,
+        "bounds_m": [
+          [
+            -0.02556809997558594,
+            0.025201769948005676,
+            0.016567269802093505
+          ],
+          [
+            -0.016130599975585937,
+            0.04007676994800568,
+            0.03531726980209351
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.019901432037353516,
+            0.028805935978889467,
+            0.021733935832977294
+          ],
+          "n": [
+            0.7071067690849304,
+            -0.0,
+            -0.7071067690849304
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 216,
+        "reviewed_interval_planes": 224,
+        "approximate_guide_span_mm": 27.864083270123018,
+        "complete_channel": false,
+        "terminal_selection_limit": {
+          "reduced_radius_from_guide_index": 208,
+          "terminal_radius_voxels": 10,
+          "excluded_terminal_region_native_zyx": "k>330, j<218, i>351; unclassified long branch",
+          "review": "Short source-nerve branch and additional existing source void toward IAC reviewed in embedded CBCT. No endpoint-aperture completeness claim."
+        }
+      }
     },
     {
       "code": "A02.1.06.010",
@@ -141,23 +207,83 @@
       "lat": "canalis caroticus",
       "bodyparts3d_records": 2,
       "main_localization_unchanged": "projection",
-      "outcome": "channel-not-traced",
-      "finding": "Авторская сонная артерия и участки окружающей кости доступны. Полный костный ход между двумя апертурами не проверен.",
-      "remaining_work": "Проследить непрерывную стенку обоих сегментов сонного канала; проверка наружного устья не завершает канал.",
+      "outcome": "native-channel-walls-partially-traced",
+      "finding": "По 103 исходным КТ-сечениям проверены и выделены участки настоящей костной стенки сонного канала; её открытые границы сохранены.",
+      "remaining_work": "Уверенно отделить внутреннюю апертуру от подготовленного края образца и проверить оставшиеся тонкие стенки обоих сегментов; не замыкать естественные сообщения или пробелы маски.",
       "full_feature_geometry_confirmed": false,
-      "review_scope": "source-capability-and-region-review",
+      "review_scope": "targeted-native-source-wall-and-serial-ct-review",
       "anatomical_refs": [
         {
-          "title": "Gray, Anatomy of the Human Body (1918), рис. 141",
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138, 141 и 913",
           "url": "https://commons.wikimedia.org/wiki/File:Gray141.png",
-          "locator": "Gray, Anatomy of the Human Body (1918), рис. 141; canalis caroticus"
+          "locator": "Рис. 141: наружная апертура; рис. 138: внутренняя апертура у верхушки; рис. 913: сонный канал во вскрытой височной кости.",
+          "scope": "anatomy"
         },
         {
-          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58",
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 57–58",
           "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_58.png",
-          "locator": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 58; canalis caroticus"
+          "locator": "Рис. 58: наружная апертура сонного канала; рис. 57: внутренняя апертура у верхушки каменистой части.",
+          "scope": "anatomy"
         }
-      ]
+      ],
+      "geometry_scope": "selected-original-bone-wall-segments",
+      "source_report": "research/temporal-channel-review.json",
+      "native_geometry": {
+        "id": "carotid_canal_wall",
+        "source": "07_3D_Models/Bone.nrrd",
+        "roi_native_zyx": [
+          [
+            329,
+            255,
+            290
+          ],
+          [
+            475,
+            395,
+            428
+          ]
+        ],
+        "guide_selected_interval": [
+          0,
+          102
+        ],
+        "guide_count": 103,
+        "triangles": 47064,
+        "vertices": 25675,
+        "bounds_m": [
+          [
+            -0.03206809997558594,
+            0.04038926994800568,
+            0.025129769802093506
+          ],
+          [
+            -0.019818099975585937,
+            0.05351426994800568,
+            0.039129769802093504
+          ]
+        ],
+        "marker": {
+          "p": [
+            -0.02717226791381836,
+            0.04466010200977326,
+            0.031150601863861083
+          ],
+          "n": [
+            0.5773502588272095,
+            0.5773502588272095,
+            0.5773502588272095
+          ]
+        },
+        "selection": "Only original source-mask triangles facing the reviewed canal region, with an unobstructed local path to that region. No nerve/artery triangles exported.",
+        "source_triangle_coordinates_retained": true,
+        "caps_added": false,
+        "holes_filled": false,
+        "decimated": false,
+        "closed_source_contours_in_interval": 15,
+        "reviewed_interval_planes": 103,
+        "approximate_guide_span_mm": 12.733586352540737,
+        "complete_channel": false
+      }
     },
     {
       "code": "A02.1.06.014",

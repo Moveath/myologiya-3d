@@ -1,0 +1,7280 @@
+{
+  "date": "2026-10-13",
+  "script": "scripts/face_features_extent_render.mjs",
+  "sources": {
+    "bp": {
+      "file": "build_head/head_hi.glb",
+      "sha256": "343cfc3e1a47b43ce9bf7a558b08539df5d2408e5a304df966cf9ac2b0706f25"
+    },
+    "z": {
+      "file": "site/skull-z-detail.glb",
+      "sha256": "d33caac5b244cc9d41c54d273b4f9cebf62d6f05d225f76e41ee8980f0a72dba"
+    }
+  },
+  "records": [
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_ant.png",
+      "sha256": "a9ada2d4d92ad17d95795bd3ef1b7fc26ce2dcba0310a85a7f29d42a0746ab94"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_post.png",
+      "sha256": "bd3f4828220b50a25244954d9fb2aad1c2ebfbdfc759e0ab79138cecf6c8ec6c"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_right.png",
+      "sha256": "1a62a8d6c36ff1200a09d32460cf2d78b732edde614677f06f0a571891f7be4b"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_left.png",
+      "sha256": "9289d7106bf9e8d51a89a05ab3ae932789847edcbdc33520d81d9a77802d1ecc"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_sup.png",
+      "sha256": "834c0df6786638c5ed06d9e016f3d94e410a6f10304c17ec4c0bf779ce4b598f"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_inf.png",
+      "sha256": "25697030441bfd88436590d2f1ca2ad7fbbe312545870d0570614968b0ffbaaf"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_oblique_front.png",
+      "sha256": "d2bb3a7d082232e4396add9e073abdb88d5c7a8496822a6c10e74b59b0db5da9"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.045177899301052094,
+          1.4755799770355225,
+          0.13667599856853485
+        ],
+        [
+          0.000021546000425587408,
+          1.54121994972229,
+          0.18876899778842926
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_right_oblique_back.png",
+      "sha256": "ee40a374ac244aa36de4e872ba7af38dcd514b61904b2fe77c3dd5857ea87bf0"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_ant.png",
+      "sha256": "15d84c67b27e2f0d4067787c4e5c11d06a3e65bf9b7f6b6de265ab1690470041"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_post.png",
+      "sha256": "0f4b9710873287da826bdc3ebdd9647490eb8319d1f4156a329e4ca631ce6ff7"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_right.png",
+      "sha256": "c755c3afb94834d7c5d415484e3ab3314db4cd36e49d47eb23100431cc65fc7d"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_left.png",
+      "sha256": "3f8628836c76379cb26e2c42160f9be9d33f50d0f9af0622a29dd655c556098f"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_sup.png",
+      "sha256": "f839bb3441be5202db21747aaf75c9597fbe6deff3754dc63d3785c3bb2aa6d4"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_inf.png",
+      "sha256": "b046b92744f6691e812f9c1c62341f375b9ab504cdcaef95d939763cdd878bec"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_oblique_front.png",
+      "sha256": "e7373609d2b371940b5d2081202445cd1c617389d15ea3a59d24b9b735468a39"
+    },
+    {
+      "source": "bp",
+      "bone": "maxilla_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0033842199482023716,
+          1.4754799604415894,
+          0.13433900475502014
+        ],
+        [
+          0.0433121994137764,
+          1.5412399768829346,
+          0.1876000016927719
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_maxilla_left_oblique_back.png",
+      "sha256": "7ae8b192b11059246ebf0a6cbc6d0a2e4ffd502250725f632e4554626bb03fa3"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_ant.png",
+      "sha256": "d4608a4b591e10a0cb44f82035c95c60c7c724a5194668799258f79c02442dba"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_post.png",
+      "sha256": "9251fddf7d075ec5443b4fcbf5803e1025aebdae76aa0731b80dc05addfc63df"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_right.png",
+      "sha256": "63bd48e6034890b04b8601d6f8513d49d685a1b62a496a216a839aeb71018074"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_left.png",
+      "sha256": "3eb7b3a379351346b77fb645a047666b69cbc50b68c82d90cb72e65395fa4c8a"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_sup.png",
+      "sha256": "397e97abe2d58d723d0ee2a7ab5dd9e01205c68aa309d34b101d15f0472f8b5b"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_inf.png",
+      "sha256": "5268c85def4f636b5fbb390f050cb0d9e5a593107bc8d29dc5b484d789742df4"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_oblique_front.png",
+      "sha256": "6ccb15d30872cee1b73b161954469d8efd215d3c234695af5882e54835ac774b"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_oblique_back.png",
+      "sha256": "30570ed79f65ed565095d973b7d9ce05ac177ceae5d42a3c3abb3a54a031857f"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_ant.png",
+      "sha256": "ef9799df297dcc6f58ec88e83d60fe4ce9def71552d8d0c94b825ceb477a6783"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_post.png",
+      "sha256": "a05cd34b762d9a1372e83c2e8097aa9c50dbd8abdee494f026b179355d283d96"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_right.png",
+      "sha256": "b7518b8b1765baaa0ca22a40a548d5331138a958f052ce255e42a09964d7ebb7"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_left.png",
+      "sha256": "0dcc3340de31adfc23649f7f8a71347df1fc6a44d21998ea51f6ac2e2cd3d1e6"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_sup.png",
+      "sha256": "da4556c6dcd24228674decf85da373f74b91c40e64ed333c92b174afcaf8ea47"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_inf.png",
+      "sha256": "c50cd5c846096cc2a7ef85ade5bd4823bcdaf1476df259f387297b116ad9f482"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_oblique_front.png",
+      "sha256": "c92edb4cd50f9ce519b7d4deda7c347cc2706a52bb0f00d625361d94c6d4f747"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06106150150299072,
+          1.4912700653076172,
+          0.12955200672149658
+        ],
+        [
+          -0.031232500448822975,
+          1.544409990310669,
+          0.16727599501609802
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_right_oblique_back.png",
+      "sha256": "fb0a8ad59fe21dedfa984140d2f397668e7f2717049dca037c2ca9b9f6e5d7bb"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_ant.png",
+      "sha256": "f23940431398efa58f706e4fb6c21d072ec846c7b5c3fea20d0239e9e08e7f0c"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_post.png",
+      "sha256": "9e96d8b0f8cb5eac71b052a1dcf7d4bc30b802ee77308eef9b147b6df8c3059f"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_right.png",
+      "sha256": "b55324eccf8be290bd0e3428eed45b5a15b440bb94bbe09c0075cbfa32c8fcd2"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_left.png",
+      "sha256": "e1f70d5b18877ec9814bdd5d6289f52a75026600006f41acbdf1efca272a5549"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_sup.png",
+      "sha256": "2b29138bf24dcd4b538df14f8a5d0d29b683e6a6ba138343a5632a9341b126a6"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_inf.png",
+      "sha256": "0f7918489807ed18326ba25e0b18289ab3e1df0308cc6056fafdcf721d804a6c"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_oblique_front.png",
+      "sha256": "4a1c05be21fa917389ef39c2d14a5c8f87b109fa8ea5778c66016ba2b18cdf1a"
+    },
+    {
+      "source": "bp",
+      "bone": "zygomatic_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.02986759878695011,
+          1.4912199974060059,
+          0.1295199990272522
+        ],
+        [
+          0.05973320081830025,
+          1.544409990310669,
+          0.16728200018405914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_zygomatic_left_oblique_back.png",
+      "sha256": "c43faed9b136e2f9f5e661f3a60c0ea5d8b2fb0b8f7251e0da934151792ccc43"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_ant.png",
+      "sha256": "9e5b8b7ab571fb62d7f8dc6f4761f06b526dd15734dd8d61db5bf9c4afbbffb8"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_post.png",
+      "sha256": "253ca0c2aeca846c6910dcab06c8eb93c57aad228b01fa593de868c5fd924203"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_right.png",
+      "sha256": "9a410c72d185b6b431db6b1d1ffb348d0559b786969db72938908adfe39a4ef7"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_left.png",
+      "sha256": "2ed2fb70b142177492dd2ff4cc2f018b574249dc795723259a08b384555d5c5f"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_sup.png",
+      "sha256": "2834aaa2bfaf73bfd9ea35e7a4c5535b7f1f7e2db67d96cc8f3b35f895d0dc71"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_inf.png",
+      "sha256": "c91f9216537e0ba56f3c17974a2736963e1d8f77a69c7971fe38f19114b413e1"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_oblique_front.png",
+      "sha256": "c2a862fc8b6344dbb10116b0b8883442b422718eb0dd7086cdcc34597c1e6026"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02683280035853386,
+          1.4819200038909912,
+          0.1218620017170906
+        ],
+        [
+          -0.0012073200196027756,
+          1.5207899808883667,
+          0.15595600008964539
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_right_oblique_back.png",
+      "sha256": "afef2a31eb96bd57007245e3a206faf6d2995144933b846f4dbdb1599f62059f"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_ant.png",
+      "sha256": "f3404b5b6d282e0819e6006e71ca9f17f0e2e41339e6b558234423ec881e8fe9"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_post.png",
+      "sha256": "1df45c4e21c262e9f78a5702bf879d4c2217b28518278620c6bcfe5eb4bbca9e"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_right.png",
+      "sha256": "5bd37a0114bec78d11b9eed8108fc767b4f84f1c49b05078007b59d5803c6cf9"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_left.png",
+      "sha256": "fd79ce59990f3157f67fabb2f4c6157865635632553f7463823d67e6b499cf99"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_sup.png",
+      "sha256": "0c2efb8ff544a10141cd1b6b1af6ffd3699e09f02abbba58fe1af5810888c71b"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_inf.png",
+      "sha256": "1ceefd8840f789457be4de439d907cefec47ca5a835f3b7449848f64557d1a5c"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_oblique_front.png",
+      "sha256": "4cb125c779dcb626ead08796de4b3b5c2e82aee73ff2554e2acec74c388d5243"
+    },
+    {
+      "source": "bp",
+      "bone": "palatine_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.003429549979045987,
+          1.4810999631881714,
+          0.11919599771499634
+        ],
+        [
+          0.022371500730514526,
+          1.5192300081253052,
+          0.15793201327323914
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_palatine_left_oblique_back.png",
+      "sha256": "6842f181bb39525d8f0b4e060a09c31a67cc8311727e4c8886ef3ff80c18d0d1"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_ant.png",
+      "sha256": "894eae36f200b10dd73f3d4c6a565de84878bda5ff9897962c62397958475024"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_post.png",
+      "sha256": "deeab1de5c25a1856f0960adc76e3b26925f031e8249727a0e90b5c41ad802f4"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_right.png",
+      "sha256": "89dd4ab708d00fc2e245e0ac071e151d036282eedfa390ebd23e41d6fce0dfe5"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_left.png",
+      "sha256": "ef56a31e49a249c6848fd512a26738898b978e917350be8b5e6569e07777c31d"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_sup.png",
+      "sha256": "3499093b59cf9723da1386fd5e1eff81f6861e9a985f3c61257d704707790044"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_inf.png",
+      "sha256": "b329aa3b6fb0126b4350d8df271659e134a536c24d3778784867d8cbfe518cc7"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_oblique_front.png",
+      "sha256": "ae598a6a012227ae00ce8fd079b76f0a64618c3b5231ea2fa920dcadff21577d"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017185399308800697,
+          1.5101100206375122,
+          0.1574310064315796
+        ],
+        [
+          -0.006874209735542536,
+          1.5344799757003784,
+          0.17167998850345612
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_right_oblique_back.png",
+      "sha256": "65e436305dda15cb55b96a9f5197aa3c1d813145b66218cd08f44e237595654f"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_ant.png",
+      "sha256": "a83164350bb69b9ad9ae7708ea64904929f311ba711e5220e884dc9ca2ef006f"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_post.png",
+      "sha256": "777af0ccb36dca2e88c04b9afa651f4a849d4f82b1b57412159545a5df077af9"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_right.png",
+      "sha256": "811466d8c315aa548f32c618eab5f14251a2a8fd115c052a602df582c2d262a1"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_left.png",
+      "sha256": "14922a9b078e756eb1bbb065f08460c9ea4b346236a5b86bb58bea43eeb48325"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_sup.png",
+      "sha256": "9fcaed76f1d4e4e922812e11119b631a90932508d3b759715b8cbd8823a989ae"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_inf.png",
+      "sha256": "aa42345478ace687e04562a6a36b4d318158d4f5143c655a48cf52d5b5eeb29d"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_oblique_front.png",
+      "sha256": "be3d44f05fbff961318af7ee4c865f16bc33ce59d920b4134b2c5816953bcb97"
+    },
+    {
+      "source": "bp",
+      "bone": "lacrimal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006668019574135542,
+          1.5074000358581543,
+          0.1569110006093979
+        ],
+        [
+          0.017093800008296967,
+          1.5351099967956543,
+          0.17057499289512634
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_lacrimal_left_oblique_back.png",
+      "sha256": "50bea783c79d09b3015d42880d39e29eb34b2d89e4f68f1b3b042cc4d6bc3ba0"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_ant.png",
+      "sha256": "4d765b7de26bdae40e84cfff700c02676213584fc20dd2aba6123795ee237dff"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_post.png",
+      "sha256": "8d0fd80a584e6a10e87a62445a36ec8e43c4f708621a92307b5148c9897aa327"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_right.png",
+      "sha256": "33d124dff19ff0ed5c84365ab7a5fa386fd809c01fe17d34a865a758aef43d20"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_left.png",
+      "sha256": "dca0a8aa24d9b292035a4405131a7fbfea45572368e8b6cebc295d21e0875ec3"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_sup.png",
+      "sha256": "c9c502e99b6b0126dfd3f21634bdd2fcaf2c076264f92eaae275da6942ee48ee"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_inf.png",
+      "sha256": "009041ea5183eb92ec0b886353c25f8d002a6779ca2d3f1902795343af214fc6"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_oblique_front.png",
+      "sha256": "f25c1c1bb4f12dd796214e9e8e36b720049fd0e193bfa74d886045c326e93b9b"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008742250502109528,
+          1.510680079460144,
+          0.1747010052204132
+        ],
+        [
+          -0.0004377300210762769,
+          1.5410500764846802,
+          0.1950259953737259
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_right_oblique_back.png",
+      "sha256": "fda6acc4e59f9cd4b4d54640cf8002d67d8f58951572bafa4c0bb0bed45fd775"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_ant.png",
+      "sha256": "2dd00fdd01ccba7d307441fdb1b67d71c61767112e764d4f723c28bf487c2f08"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_post.png",
+      "sha256": "4098095d9b8eb2f52c310ef194ffbbb45f631267160360890dee531df52d86c4"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_right.png",
+      "sha256": "255ea8e84b2dd0dff4c50bea7ee4070e251cdaca8485784137232c7b96c75e3b"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_left.png",
+      "sha256": "f5b2fb29d66a49c51481c980d5ac43c9550caeb15b6e658fe662891f038fd3cd"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_sup.png",
+      "sha256": "1d65e98a231c3a62f39d37089b5ce90297543fbd77b9cd69c8f4dd1593ff463e"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_inf.png",
+      "sha256": "19742132d21c6c5bf64780de24986da339bebb663444ee02cd1bcde53c02a31e"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_oblique_front.png",
+      "sha256": "650b1958def55cc63d1b1a823c6d402c6de3acde3b7306f764f75feab82a67f3"
+    },
+    {
+      "source": "bp",
+      "bone": "nasal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.0027096099220216274,
+          1.5112800598144531,
+          0.17440100014209747
+        ],
+        [
+          0.007026140112429857,
+          1.5413299798965454,
+          0.193682000041008
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_nasal_left_oblique_back.png",
+      "sha256": "509cef5494a4609ab7dc38745abe054a28d3265a06063b397198d872226d0ee0"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_ant.png",
+      "sha256": "8f2007f918150b342d21dfda547b040602e0f13dc267f89b7cfc24974d43291b"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_post.png",
+      "sha256": "dac9bbdb9ee8766e0a34421efe66dd4344913f34b2326b0fc4d98952d4b42a27"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_right.png",
+      "sha256": "d489f71bd9b3c1523f647a385ace6aa8e5a0e78f2843bfb9ac09cd3842536d02"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_left.png",
+      "sha256": "eaffe603929cb12e782b3f3b10c45f75cda47c21ace16e7b9a871aac48c66ce8"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_sup.png",
+      "sha256": "0b1b190ca01c7602887cd302208e9d2bb122396aebacf256dd307ffff0b21764"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_inf.png",
+      "sha256": "ca1eb7dc34b9a23de2561ca0a92dc58fe25392d2fd25c5273244097c2d47bc4d"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_oblique_front.png",
+      "sha256": "2721c056f02e06cf3c97063601d7abff10ed8e4a51a7d30b8e9ce789dc3c5cc5"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.015017700381577015,
+          1.4897900819778442,
+          0.1373780071735382
+        ],
+        [
+          -0.004865739960223436,
+          1.5115900039672852,
+          0.17092500627040863
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_right_oblique_back.png",
+      "sha256": "3ce4cb5373cf196e5538b57d5805b3caecc87c25b807ff8c05a884012d0775b7"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_ant.png",
+      "sha256": "c9c218d8b5b4d5060d9ec8e0d8298c4d446cbe444b43a582cf39079c477951e9"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_post.png",
+      "sha256": "048ad4ae3d0aa1b5d601390e9638bb369b93d03995bf8b70a1215ac4175199c8"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_right.png",
+      "sha256": "6a572d654ff19859c3db73d76546f655e8f0db15e5bbbb442d5e881ad22dbbee"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_left.png",
+      "sha256": "9bb960a6c885137e2c9aef36fa072f1b73f865000172d0b1311b161168873012"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_sup.png",
+      "sha256": "33a398a84cd7f90f624e0bb61304915f4ed67b25e670b73a3620f1b73238a1d3"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_inf.png",
+      "sha256": "29c86e7eb64d97b85828db3f1247e71811f1d3ed8acc5890aa8f1918a3825b6c"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_oblique_front.png",
+      "sha256": "b4723a609c4644efad4e7a68c6bd1c1c3e66d1e6a67d71ab356bc62093cbebbb"
+    },
+    {
+      "source": "bp",
+      "bone": "inferior_concha_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0025677599478513002,
+          1.4930200576782227,
+          0.13993799686431885
+        ],
+        [
+          0.012598500587046146,
+          1.5081299543380737,
+          0.1738630086183548
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_inferior_concha_left_oblique_back.png",
+      "sha256": "f2c9e6aadea281bc885fb753a1b48594552cfcc3a4308cde7b3f065c40a72974"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_ant.png",
+      "sha256": "37e8689bcd61ba1b9dfd693305ae32198892280890d35e1e5be81c24b2d11027"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_post.png",
+      "sha256": "4cec2bf90788b88b7702c19847f0d23b2530f1bf179622fec136b75c7f774d11"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_right.png",
+      "sha256": "687e7d9b14f025d07a756ddeb6264049a60c1e60d0105dbbd1b7321a9e5251f4"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_left.png",
+      "sha256": "4eb662015d8cd341afcba26fda73822d75f7fe2591f1ed0af41cd76174f2de0f"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_sup.png",
+      "sha256": "0b0e02158a369917fd75559be65d534b77da118f6ad0674ae1926d0b886000df"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_inf.png",
+      "sha256": "efc86a15437c2436c3217f60a8c96b60ea58f13b387252126638191b9a56e14a"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_oblique_front.png",
+      "sha256": "ab6cbbe76e3db050165284cc82fd3256a42dc024893b26c375df6f8908b47a42"
+    },
+    {
+      "source": "bp",
+      "bone": "vomer",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.006211999803781509,
+          1.4949499368667603,
+          0.11817800253629684
+        ],
+        [
+          0.0034725398290902376,
+          1.5183000564575195,
+          0.17736800014972687
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_vomer_oblique_back.png",
+      "sha256": "b3e6e04583a03c5f4821273e7187d80a41adc2d391388049bef6847bd3d68760"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "right_medial_front",
+      "camera": {
+        "d": [
+          1,
+          0.15,
+          0.45
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_right_medial_front.png",
+      "sha256": "df25e2bc56a89d8aecef166237d6d53afe0fcc3cff7490953936c941bb074760"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "right_medial_back",
+      "camera": {
+        "d": [
+          1,
+          0.15,
+          -0.35
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          -0.050896499305963516,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_right_medial_back.png",
+      "sha256": "c6b8dff5e7ebd98023a0ce8dc888d17671e520aba64ae709b89fa60e650096ae"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "left_medial_front",
+      "camera": {
+        "d": [
+          -1,
+          0.15,
+          0.45
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          0,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_left_medial_front.png",
+      "sha256": "0e29902ea95c3ff48addd6aec10ccceeb0f85026b5a7d45475f09519f517472f"
+    },
+    {
+      "source": "bp",
+      "bone": "mandible",
+      "view": "left_medial_back",
+      "camera": {
+        "d": [
+          -1,
+          0.15,
+          -0.35
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          0,
+          1.4356499910354614,
+          0.09956210106611252
+        ],
+        [
+          0.04955749958753586,
+          1.5154999494552612,
+          0.1789259910583496
+        ]
+      ],
+      "image": "build_head/face_features/extent_bp_mandible_left_medial_back.png",
+      "sha256": "8b12c91555a70a903f0208db0c8ccaa0003880655df305d94ee3f38d9b51df9e"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_ant.png",
+      "sha256": "f5d098cb6eb85c2a0a8b2ffe416e4fe206939dd7848a3a5c7d236220670b43aa"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_post.png",
+      "sha256": "bc55a4fb3940eeba222340e26aef165b7981ee31c290da113f4c856ed7bb0ad8"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_right.png",
+      "sha256": "e4758a11c21d09270711895c10a6f8b140a4d5949a03ef8899f7512b5c744a16"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_left.png",
+      "sha256": "2ec3fa5430f801532031e8b7f07d9385eb7ba4d61beed9a026e058872c4a28b5"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_sup.png",
+      "sha256": "0249a4db7e453fbb0492cbd783d76dbf2cc3661649190ed210013cac9d94ac5e"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_inf.png",
+      "sha256": "f7f6fdfe24d56903c23bb107d90b5c09a02b606645ae3f608b3f1b83befcc45a"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_oblique_front.png",
+      "sha256": "f3ee3f10d7512c0ad0b828f5f6da8318846889105ed05e34f031ce569abafa82"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.04603412002325058,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.00021110475063323975,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_right_oblique_back.png",
+      "sha256": "ca54eb59e99fd993413ea49f4b2f98e0bf2edf78ebd23330a4d891b5a195ac4c"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_ant.png",
+      "sha256": "a84ebe1833e5cef2572356114091056a02bf744764dd632be7ba4175ef8990c9"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_post.png",
+      "sha256": "021c6e50438fd3c751cfa76aa9547f3c686eaf94e4f6dbf870ffccdae4992766"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_right.png",
+      "sha256": "c69927d3a18ce1a717e4e869505f78a8c1c41d0c9e3edc094265ead319d8fa0c"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_left.png",
+      "sha256": "ae48cc0cd3aa846b18550249d5924c752c7836a0e990ac09d94d4da1edc43a68"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_sup.png",
+      "sha256": "dfed756c5ea29ce07748cd444f98c214ed74d865b50e8e64bc8f7407487dae7f"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_inf.png",
+      "sha256": "ad6b9dbf30fab2456b67b225e12feb066d066ac07b18389f24f1ea341f098c3d"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_oblique_front.png",
+      "sha256": "8601c477e537f11618a4ef14cae64a1031e39f3262d42e86ef7190c8255227da"
+    },
+    {
+      "source": "z",
+      "bone": "maxilla_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00021110475063323975,
+          1.537443995475769,
+          0.04006047919392586
+        ],
+        [
+          0.04603412002325058,
+          1.6052191257476807,
+          0.0938725546002388
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_maxilla_left_oblique_back.png",
+      "sha256": "0fde1befdcaf27b9ec659ba169df649d7d4b323b671c0b1c79c29e01d7b13100"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_ant.png",
+      "sha256": "bd1183ed4927e1b9fdf795a512251ee8cdff541e8e238ffd5fdce0cd2d0ae21b"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_post.png",
+      "sha256": "733747a3f9c23fca4aac9d5c315ded8e633e13283fa1725edb20070da827eb0b"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_right.png",
+      "sha256": "9024312bb48f5ccc95333fea56d94e35cf677fca251d51f1f258ee2d6413359d"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_left.png",
+      "sha256": "885999c9648b7e3dcee9c1833ccf9d61b496bb19fa8b49b6930be19d39088a1e"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_sup.png",
+      "sha256": "f635521e317af6592e084342d4ff6f2b86bef6d489c1cf7fc2e351cb5ca2cd22"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_inf.png",
+      "sha256": "a0afeed192698aaf7fa5a37db4083c0ffdb55a3f3cb0ea7d574e55b87e49a2de"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_oblique_front.png",
+      "sha256": "67499d13182d3efd16060d3197a0f9faa4150b9d21d765900f3a2ed6de1b6b61"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_oblique_back.png",
+      "sha256": "d064b9226e0062ff1b3c33842e1fc8231a069379c48d50edb68261c2265c5c6f"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_ant.png",
+      "sha256": "41724ed38aef47ce5f6c508c156f80834a5b02d209626b54b4d967f158de30e0"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_post.png",
+      "sha256": "30eef1499983670e2e938dc02efa15978b28fd32585c5ccb731c007107a02935"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_right.png",
+      "sha256": "9ca13abd4aa24936e2c428aa34ef781cbb9ad25d89895b83b411b7ad2afd7c90"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_left.png",
+      "sha256": "1c1fdb27ffb70a56f30a3d6fbf38286d0a9f0b98ccf3e7a648971fe0a606047d"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_sup.png",
+      "sha256": "629edc41c2a196b7dd22df0baf97825e703163017dbeaeae68cb4065ba28a9f6"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_inf.png",
+      "sha256": "f685dfd639bc66d1f6cb48530b08ba1b948aea488f882b7780cc18cea9c045cd"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_oblique_front.png",
+      "sha256": "6481298917a4d70874ff993577259f0cf3a34a97925967f5f317c4072190889e"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.06232469528913498,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          -0.031617116183042526,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_right_oblique_back.png",
+      "sha256": "58cf45894962b156704f8ace0e9e9e7cf054c8fdfddc8528115453e939acf0fd"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_ant.png",
+      "sha256": "e6f390c0107c3ced62f1070437ec864d559eb8f5793666d205bdcc0bd1a7bce6"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_post.png",
+      "sha256": "4a5bb4266fbd482fa544f871568a9fd47ec3850d194ad3914c289156aaa62068"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_right.png",
+      "sha256": "b13365984400d5bb597c461e6aab7878b97fe339a36e9c3e15931749eaf8825f"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_left.png",
+      "sha256": "e5e7b291e4ef03f67fdaa7ab7f920c50f6a61f729cd4ab06328a514323fc3f77"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_sup.png",
+      "sha256": "47f2c2b0812ec20cd1c5877cfe8e0bdabc6f7d4f54d798761b1bc65e1a6e5c4c"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_inf.png",
+      "sha256": "028a48c7bd7694d7c1d91dbae2b61fc50d5a5164142e97239fc62adab06c3672"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_oblique_front.png",
+      "sha256": "f1961b908918815f91291f04d98df09b9d7e13795621b42f0801bd9278f2cd08"
+    },
+    {
+      "source": "z",
+      "bone": "zygomatic_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.031617116183042526,
+          1.5537165403366089,
+          0.0327085517346859
+        ],
+        [
+          0.06232469528913498,
+          1.608465552330017,
+          0.07167743891477585
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_zygomatic_left_oblique_back.png",
+      "sha256": "172fa080e540b047a9e89d315ee0e21838b44d812471bbe41ab524c9a7b2ea22"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_ant.png",
+      "sha256": "eb5c53002d4102025c4bb8f9f2e52769effe3c120d4afda691d518e533264dde"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_post.png",
+      "sha256": "9e8a8a61f9a539f8a1804b673a9ef0f7913448ecca6d9c7b7b85efd9bdaeba71"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_right.png",
+      "sha256": "0046be9995e34710daa41ed150c5ab7df05f102940fe4e60460e7d294f89bbf4"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_left.png",
+      "sha256": "1973af38fc71f9c05dd64602fe3c04fb72058aa0baa6398c1a673f266c268050"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_sup.png",
+      "sha256": "65abcfe01c0326529b9784528692efea24a3c926eac21d1a0eabd5a8385bdbed"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_inf.png",
+      "sha256": "18f6dfe6c326d532067d8425b5cee35a83cd52ae4ccdb431ab5ab6d90c6eb257"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_oblique_front.png",
+      "sha256": "819d2f106e6c846129df525d6d489fc0d5c77ef47592ad9d8a59b932a9d6d350"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.02703838422894478,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          -0.0007838830351829529,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_right_oblique_back.png",
+      "sha256": "281e622c69567bddd4a86f1a08756d3655fc14888a0896a5a2f36c44a03cb42b"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_ant.png",
+      "sha256": "f5cebf5e9a6a80c1e1b338ba6dd292828c747505ec7e85a5cb712fe60e9ede62"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_post.png",
+      "sha256": "f8ace3a839e2779d0666bdcad84c48f5138d73f6da0afa30e530763b94a101eb"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_right.png",
+      "sha256": "974a0e12d509c103afe9c335bb86f537519207a9462872828d17787f5aba6a21"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_left.png",
+      "sha256": "df7b3ff2919a17ac49c5aac058f34e0eceaf4df30bf63b357d7e5886c6551f51"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_sup.png",
+      "sha256": "f3607e08b2575f7ea098e26446df3ed3cbbd4f43552054c43372e69a40665fb1"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_inf.png",
+      "sha256": "bd2848e5d9d805d5dd8f7ea06b8cd12a92e7a50d6cbcaf6716f4ba6ec883764d"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_oblique_front.png",
+      "sha256": "af98c3456a834296164690aadd455997d424d071c5ca38cff89dd24dde249061"
+    },
+    {
+      "source": "z",
+      "bone": "palatine_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.0007838830351829529,
+          1.5439777374267578,
+          0.024777857586741447
+        ],
+        [
+          0.02703838422894478,
+          1.5841305255889893,
+          0.05999695509672165
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_palatine_left_oblique_back.png",
+      "sha256": "b07ceefff41021f2235408f4d50114e8a6b80a49085182e823e093ed5f4d4da5"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_ant.png",
+      "sha256": "c537fe778920a7568560a86b1306746180c016e5973e424129bfa4a34e82f61e"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_post.png",
+      "sha256": "70ed339778ff944ecfe11877c744d54f7f258c204af43f6c37e559b033290ad3"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_right.png",
+      "sha256": "fe8a025ced7b536a0cad479e333bbf64ddbac359e53939ad02ca74e1b8a2f23a"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_left.png",
+      "sha256": "6dcf92384b51703cc2867777041d67ea5cf3ef738da63ba46a5812cc075556e0"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_sup.png",
+      "sha256": "444dd48c963b87b3c102d5bf27680e1e16d9fbf33986602560ee1cd605fcd712"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_inf.png",
+      "sha256": "8f5f9d654c15c563d2559a37b591f306ccf130fe35b03140704238054122b913"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_oblique_front.png",
+      "sha256": "bf911639a8773f6bb0c777e785093806b6f52e935af444439e1fe66295da3569"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.017119670286774635,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          -0.006468209903687239,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_right_oblique_back.png",
+      "sha256": "28ad5186a08fc4e04828704cf30dd2e73ce7de0d34992070db35eec769b5b9ca"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_ant.png",
+      "sha256": "930db540a4a74b491f9701a0d5834b76577673c61fa9c23eeed1d2f7f30abf78"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_post.png",
+      "sha256": "75360145169dd189a3ed6335d2f177d98889957cdd3efb27f5aaa75b33acc41e"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_right.png",
+      "sha256": "7760de11a4c5953f0afb5bf9686f490a1966481a2e1e596777bb88de7716b11d"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_left.png",
+      "sha256": "d2f7fe9d4164f427e91f3bb7430f17d407c40e21eb769756e403068213df0fb9"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_sup.png",
+      "sha256": "4239a6b942e3403fc20e5ae8419f7f126792d3768891fbb16eb9154cdf2a43f5"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_inf.png",
+      "sha256": "7525d8f5972ea4576f21998f3eba5d602e740ef2e6f866adc11b27a5d2ccfe89"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_oblique_front.png",
+      "sha256": "2c65589d91ca354cc874909238e16a26542a0666ad5b79cd1d3f234e456d8860"
+    },
+    {
+      "source": "z",
+      "bone": "lacrimal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.006468209903687239,
+          1.5731173753738403,
+          0.06151899695396423
+        ],
+        [
+          0.017119670286774635,
+          1.598219394683838,
+          0.07622788101434708
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_lacrimal_left_oblique_back.png",
+      "sha256": "74c9b61ca20822ebe4f8d5ca2ab62908f1991983ddc3d7e74b9113d5a7b747da"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_ant.png",
+      "sha256": "5b94d7d984af5f04de2448b5f0e00e7fe701a4ea38f2e33c1a671d0293faeb6b"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_post.png",
+      "sha256": "546fcc92807cb0ae638429bed01d8421d48c603669dced588ae7dc9cee770198"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_right.png",
+      "sha256": "33820970b692164847931567760dd2d51d74d219b73a710a418e079e354cc0c6"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_left.png",
+      "sha256": "0981b7971da4ad29f9aadebe51f56c6b15b596ca6b8c245369ec8ac894b2fc0d"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_sup.png",
+      "sha256": "09d7e89d15b7889ec5afdc717f0cf219f54e73b7661f520ab2bc509bd77e3286"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_inf.png",
+      "sha256": "83eb6d93719a9536f874943d24bbc4918fc559946409486040870d039d827bcb"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_oblique_front.png",
+      "sha256": "8a0d67df8255b3d084114678390f1cfb9012ff206674738058fe79639c97a918"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.008399778045713902,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          -1.7462298274040222e-8,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_right_oblique_back.png",
+      "sha256": "58f458f6e9ade995b0ef5269a5a67eeb27ad7b7a6ff5d0ef8368cac0d349d495"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_ant.png",
+      "sha256": "ea6dc1ecae8edc18178b41d8b630bf9aabbe24f6d09b29f45502715e7159d485"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_post.png",
+      "sha256": "a78a0a565290931139ebe7a815b36e021165c1c6cca10bf39d3590f31d041031"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_right.png",
+      "sha256": "e42ecf480880e02a232667776f081934186cb266abdbf26f8e31e94937e0a72a"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_left.png",
+      "sha256": "f74658e80a18456765800bb91c20b0a63bb675f958d8f149513cef6117a5cf2d"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_sup.png",
+      "sha256": "ca8d30b0d89931795d3753bb711dea91c88dba45f3cc1948a31617b2245ef377"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_inf.png",
+      "sha256": "0c9057080bb8ad0c29ddc72ffe8096f55d991863250f0ce0d541c4767bfddada"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_oblique_front.png",
+      "sha256": "1c4d91141834998349462c7b52ce6f31ffa179f5e9ebf3b886fd4fbfd2759603"
+    },
+    {
+      "source": "z",
+      "bone": "nasal_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          1.7462298274040222e-8,
+          1.5737073421478271,
+          0.07933586835861206
+        ],
+        [
+          0.008399778045713902,
+          1.6050796508789062,
+          0.10027167201042175
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_nasal_left_oblique_back.png",
+      "sha256": "a049a526b6743ff88ab65c2953dc1970556624b622c9ca3881c94a4d6bb87466"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_ant.png",
+      "sha256": "f593dfc383cce3dd9f53c935a8ca8d49ee99a95ef7837b8e39edcd2998a86194"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_post.png",
+      "sha256": "bd1d36773241de0d18371a977573416ecce115eba413d177564cae282adac0df"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_right.png",
+      "sha256": "a1d035509ecbc2526cf0a86bcb7826cc0c7f8052ff35e5ed554eb007f2faa08e"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_left.png",
+      "sha256": "9177d6157cf8b6621a417d915fa6e99d73cba5f005bfb2acb61cfe726fa37c64"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_sup.png",
+      "sha256": "d2f6a11bfa21a71e256eabcf11ff5a8b707939870975afb56b3eeb7f558fe28f"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_inf.png",
+      "sha256": "d0d74a1c48df54bfea3a9320e0d2bf5306fb92c43d6aee79d0b96f543a5e8625"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_oblique_front.png",
+      "sha256": "d4c6d153aca9cc50c6c538dc16ee0eb22a6a84bf4b5956abf1f634129a07de4b"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_right",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.014880185015499592,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          -0.004423435311764479,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_right_oblique_back.png",
+      "sha256": "1b59e6db16c966ede15f8eb57047744b23d38f38c44b408bad7568846dd18ab7"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_ant.png",
+      "sha256": "b5f1c5abf8a567861f7bb22ef1c1a900c8f5699d9942facc911e83f61d668152"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_post.png",
+      "sha256": "fe2f5387c7a94647f116a595d5821890068fc01fd4e836a801458c1800650d72"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_right.png",
+      "sha256": "b520cc0cd01d0623713c1c7cbe8c432caba15205f3679f3b9d2472945d1d1c28"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_left.png",
+      "sha256": "b94556259323a146f228512fdf3db79f1a1cf3dde7cf9679d2e376771934812f"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_sup.png",
+      "sha256": "cb598a3d8a0e7e96a5ad361fd9e5627f47f553943644ee0b05c42f3d9bbd5abc"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_inf.png",
+      "sha256": "aae67719aeff6ab336fa52608a9abd844017720d70ade97c0a8db3d4985c66b2"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_oblique_front.png",
+      "sha256": "742d38cc6c24513c8041b18b9117c2aa26eb278d80b3b87ad1ad08894c24dd8e"
+    },
+    {
+      "source": "z",
+      "bone": "inferior_concha_left",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          0.004423435311764479,
+          1.5521032810211182,
+          0.0407877191901207
+        ],
+        [
+          0.014880185015499592,
+          1.574622631072998,
+          0.07542936503887177
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_inferior_concha_left_oblique_back.png",
+      "sha256": "52cf543f1f8ce148589e883c41fb1e70b98bdbbe642d8e9a40f82d0cc1720d7d"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "ant",
+      "camera": {
+        "d": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_ant.png",
+      "sha256": "32a34485c7b14f183e92a114b91dc23edc0db2c6e066bedc17d4eab01e25d34d"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "post",
+      "camera": {
+        "d": [
+          0,
+          0,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_post.png",
+      "sha256": "2520e5563ab10ce57d98f997f1193df8cffd71d40e20f5c7a5142ce0fd7e1865"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "right",
+      "camera": {
+        "d": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_right.png",
+      "sha256": "0045b087e2b384bb303c4b24d68297b05ae1d28f8816261506bedd6e0a8adc51"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "left",
+      "camera": {
+        "d": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_left.png",
+      "sha256": "f9bde7e14160a81c10e1154f702adbf8f88df270119ee23d74eab150f807eb6f"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "sup",
+      "camera": {
+        "d": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_sup.png",
+      "sha256": "3ea2519c42b34b3aa3747c2d680f6b89da2b60f23af07e64dd10ff164613343b"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "inf",
+      "camera": {
+        "d": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_inf.png",
+      "sha256": "163bd9d1022ff0146d96a27619b0c4718f4dc388586e115566d663056e2425de"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "oblique_front",
+      "camera": {
+        "d": [
+          1,
+          0.4,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_oblique_front.png",
+      "sha256": "623f38a29cb4bc247ff7e91519ed10904239c5cd995fb076f16b8dc335a5f5c3"
+    },
+    {
+      "source": "z",
+      "bone": "vomer",
+      "view": "oblique_back",
+      "camera": {
+        "d": [
+          -1,
+          0.4,
+          -1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bounds": [
+        [
+          -0.00511865084990859,
+          1.5574067831039429,
+          0.020958365872502327
+        ],
+        [
+          0.005118680652230978,
+          1.5803581476211548,
+          0.08210162818431854
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_vomer_oblique_back.png",
+      "sha256": "2736e7339bdc525c20da0baa979ddf788cf6a1dd6a0aa39633a45ee91641128f"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "right_medial_front",
+      "camera": {
+        "d": [
+          1,
+          0.15,
+          0.45
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_right_medial_front.png",
+      "sha256": "ca49ce069f01ee90b48674625f37548481d7e9b5b87f0198b1629700dd7744f3"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "right_medial_back",
+      "camera": {
+        "d": [
+          1,
+          0.15,
+          -0.35
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          -0.05166403576731682,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_right_medial_back.png",
+      "sha256": "da3881b177a61ed99a2d055333b150f6791ed6fad3158c27635213ce3ff1188c"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "left_medial_front",
+      "camera": {
+        "d": [
+          -1,
+          0.15,
+          0.45
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          0,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_left_medial_front.png",
+      "sha256": "fb832ed6415ea9c899778e55071a5062afa8b9281b5be2338f80fe9f8e66d5d8"
+    },
+    {
+      "source": "z",
+      "bone": "mandible",
+      "view": "left_medial_back",
+      "camera": {
+        "d": [
+          -1,
+          0.15,
+          -0.35
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "clipping": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "constant": 0,
+        "artificialBoundary": true
+      },
+      "bounds": [
+        [
+          0,
+          1.4962966442108154,
+          0.0017980196280404925
+        ],
+        [
+          0.05166403576731682,
+          1.5786473751068115,
+          0.08370994031429291
+        ]
+      ],
+      "image": "build_head/face_features/extent_z_mandible_left_medial_back.png",
+      "sha256": "6c3a3ebf6782369f51390af4396987e5eaec808b67a32881164f6f5d6d0835c6"
+    }
+  ]
+}

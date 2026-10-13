@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-10-13T06:34:56.382Z",
+  "status": "passed",
+  "cases": [
+    {
+      "width": 390,
+      "theme": "light",
+      "status": "passed",
+      "records": 521,
+      "evidenceContext": {
+        "boneChange": true,
+        "sourceChange": true,
+        "resetRestores": true
+      },
+      "retry": {
+        "geometryRestored": true,
+        "otherModePreserved": true
+      }
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "status": "passed",
+      "records": 521,
+      "evidenceContext": {
+        "boneChange": true,
+        "sourceChange": true,
+        "resetRestores": true
+      },
+      "retry": {
+        "geometryRestored": true,
+        "otherModePreserved": true
+      }
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "status": "passed",
+      "records": 521,
+      "evidenceContext": {
+        "boneChange": true,
+        "sourceChange": true,
+        "resetRestores": true
+      },
+      "retry": {
+        "geometryRestored": true,
+        "otherModePreserved": true
+      }
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "status": "passed",
+      "records": 521,
+      "evidenceContext": {
+        "boneChange": true,
+        "sourceChange": true,
+        "resetRestores": true
+      },
+      "retry": {
+        "geometryRestored": true,
+        "otherModePreserved": true
+      }
+    }
+  ],
+  "nativeRetry": [
+    {
+      "target": {
+        "marker": "mandible_mylohyoid_groove_right",
+        "part": "mandible"
+      },
+      "status": "passed"
+    },
+    {
+      "target": {
+        "part": "maxilla_left"
+      },
+      "status": "passed"
+    }
+  ],
+  "sourceLaunches": [
+    {
+      "id": "temporal_right:A02.1.06.014",
+      "mode": "openear",
+      "marker": "openear_temporal_carotid_external_aperture",
+      "status": "passed"
+    },
+    {
+      "id": "temporal_right:A02.1.06.033",
+      "mode": "openear",
+      "marker": "openear_temporal_internal_acoustic_meatus",
+      "status": "passed"
+    },
+    {
+      "id": "temporal_right:A02.1.06.048",
+      "mode": "openear",
+      "marker": "openear_temporal_stylomastoid_foramen",
+      "status": "passed"
+    },
+    {
+      "id": "temporal_right:A02.1.06.051",
+      "mode": "openear",
+      "marker": "openear_temporal_tympanic_cavity",
+      "status": "passed"
+    },
+    {
+      "id": "temporal_right:A02.1.06.055",
+      "mode": "openear",
+      "marker": "openear_temporal_external_acoustic_meatus",
+      "status": "passed"
+    },
+    {
+      "id": "ethmoid:A02.1.07.012",
+      "mode": "microct",
+      "marker": null,
+      "status": "passed"
+    },
+    {
+      "id": "temporal_right:A02.1.06.009",
+      "mode": "channels",
+      "marker": null,
+      "status": "passed"
+    },
+    {
+      "id": "occipital:A02.1.04.016",
+      "mode": "cranial_channels",
+      "marker": null,
+      "status": "passed"
+    }
+  ]
+}

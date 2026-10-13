@@ -2282,6 +2282,566 @@
         "mode": "openear"
       },
       {
+        "id": "openear_stapes_anterior_limb",
+        "b": "stapes",
+        "c": "A15.3.02.035",
+        "ru": "Передняя ножка стремени",
+        "lat": "crus anterius",
+        "p": [
+          -0.022298647645299,
+          0.034001311495229086,
+          0.022106006463812566
+        ],
+        "n": [
+          -0.19760537131024125,
+          0.3759552671413695,
+          0.9053230110507537
+        ],
+        "x": "Передняя из двух ножек, соединяющих область головки с основанием стремени.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+            "locator": "Рис. 918: Передняя ножка стремени; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+            "locator": "Рис. 798: Передняя ножка стремени; подпись соответствующего отростка или ножки.",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.012
+        },
+        "modelNote": "Отмечена поверхность различимой передней ножки исходной модели стремени OpenEar ZETA. Модель сохраняет собственную форму этого препарата; точка не делит всю косточку на отдельные сегменты. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.035",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.035; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "05_Stapes.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.303,
+            0.43
+          ],
+          "faceIndex": 68,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks_completion/picks.json",
+          "screenshot": "build_head/openear_landmarks_completion/09-stapes-z.png",
+          "review": "Отдельная непрерывная ножка по передней стороне межножкового отверстия; менее изогнута, чем противоположная. Имя проверено по форме и исходному положению наковальни и улитки: сторона задней короткой ножки наковальни противоположна. Оси сканера не приняты за анатомические оси.",
+          "screenshots": [
+            "build_head/openear_landmarks_completion/09-stapes-z.png",
+            "build_head/openear_landmarks_completion/10-stapes-nz.png",
+            "build_head/openear_landmarks_completion/24-stapes-pins-context.png"
+          ],
+          "review_inputs": "build_head/openear_landmarks_completion/review-inputs.json",
+          "ray_is_coordinate_selection_only": true,
+          "independent_agent_review": "Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома."
+        },
+        "scope": "visible-surface-landmark; not independent subpart segmentation",
+        "featureGeometryComplete": false,
+        "surfaceScope": "identified-part-surface; no-separate-subpart-mesh",
+        "mode": "openear"
+      },
+      {
+        "id": "openear_stapes_posterior_limb",
+        "b": "stapes",
+        "c": "A15.3.02.036",
+        "ru": "Задняя ножка стремени",
+        "lat": "crus posterius",
+        "p": [
+          -0.020164628029221213,
+          0.03372335095700046,
+          0.021409278353485186
+        ],
+        "n": [
+          -0.36014805465206773,
+          0.5165512972888565,
+          0.7768321157106796
+        ],
+        "x": "Задняя из двух ножек, соединяющих область головки с основанием стремени.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray918.png",
+            "locator": "Рис. 918: Задняя ножка стремени; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_798.png",
+            "locator": "Рис. 798: Задняя ножка стремени; подпись соответствующего отростка или ножки.",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "distance": 0.012
+        },
+        "modelNote": "Отмечена поверхность различимой задней ножки исходной модели стремени OpenEar ZETA. Это ориентир на авторской костной поверхности, не реконструкция недостающей ткани. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.036",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.036; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "05_Stapes.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              0,
+              0,
+              1
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "uv": [
+            0.779,
+            0.492
+          ],
+          "faceIndex": 1252,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks_completion/picks.json",
+          "screenshot": "build_head/openear_landmarks_completion/09-stapes-z.png",
+          "review": "Дугообразная непрерывная ножка на противоположной стороне межножкового отверстия. Заднее направление проверено в исходном взаимном положении косточек по короткой ножке наковальни; противоположная ножка менее изогнута.",
+          "screenshots": [
+            "build_head/openear_landmarks_completion/09-stapes-z.png",
+            "build_head/openear_landmarks_completion/10-stapes-nz.png",
+            "build_head/openear_landmarks_completion/24-stapes-pins-context.png"
+          ],
+          "review_inputs": "build_head/openear_landmarks_completion/review-inputs.json",
+          "ray_is_coordinate_selection_only": true,
+          "independent_agent_review": "Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома."
+        },
+        "scope": "visible-surface-landmark; not independent subpart segmentation",
+        "featureGeometryComplete": false,
+        "surfaceScope": "identified-part-surface; no-separate-subpart-mesh",
+        "mode": "openear"
+      },
+      {
+        "id": "openear_malleus_lateral_process",
+        "b": "malleus",
+        "c": "A15.3.02.047",
+        "ru": "Латеральный отросток молоточка",
+        "lat": "processus lateralis",
+        "p": [
+          -0.02683593790686973,
+          0.030530630129549707,
+          0.02200682460316522
+        ],
+        "n": [
+          0.5978474391366309,
+          -0.7990717978784797,
+          0.06373932344343305
+        ],
+        "x": "Выступ у основания рукоятки молоточка, направленный к барабанной перепонке.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+            "locator": "Рис. 916: Латеральный отросток молоточка; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+            "locator": "Рис. 793: Латеральный отросток молоточка; подпись соответствующего отростка или ножки.",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен реально выступающий участок у корня рукоятки исходного молоточка. Связки и складки барабанной перепонки этим маркером не сегментированы. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.047",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.047; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "03_Malleus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.64,
+            0.605
+          ],
+          "faceIndex": 1352,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks_completion/picks.json",
+          "screenshot": "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+          "review": "Конический выступ непосредственно у начала рукоятки. Видим с противоположных сторон и в косых видах. Направление к верхнему участку барабанной перепонки проверено в исходной взаимной позе её авторской сегментации и молоточка.",
+          "screenshots": [
+            "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+            "build_head/openear_landmarks_completion/22-malleus-pins-oblique.png",
+            "build_head/openear_landmarks_completion/23-malleus-pins-context.png",
+            "build_head/openear_landmarks_completion/19-malleus-oblique2.png"
+          ],
+          "review_inputs": "build_head/openear_landmarks_completion/review-inputs.json",
+          "ray_is_coordinate_selection_only": true,
+          "independent_agent_review": "Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома."
+        },
+        "scope": "visible-surface-landmark; not independent subpart segmentation",
+        "featureGeometryComplete": false,
+        "surfaceScope": "identified-part-surface; no-separate-subpart-mesh",
+        "mode": "openear"
+      },
+      {
+        "id": "openear_malleus_anterior_process",
+        "b": "malleus",
+        "c": "A15.3.02.048",
+        "ru": "Передний отросток молоточка",
+        "lat": "processus anterior",
+        "p": [
+          -0.02690092031469036,
+          0.03212189815766636,
+          0.020694141820077956
+        ],
+        "n": [
+          0.1799154091045125,
+          0.9576678141448683,
+          -0.22472828775600548
+        ],
+        "x": "Передний выступ, отходящий от области шейки молоточка.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray916.png",
+            "locator": "Рис. 916: Передний отросток молоточка; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_793.png",
+            "locator": "Рис. 793: Передний отросток молоточка; подпись соответствующего отростка или ножки.",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            1,
+            -1
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "В исходной модели различим короткий выступ переднего отростка. Тонкое длинное продолжение, изображаемое в некоторых анатомических рисунках, на этой сетке не подтверждено и не достроено. Маркер относится только к видимому выступу. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.048",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.048; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "03_Malleus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              1,
+              -1
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.445,
+            0.465
+          ],
+          "faceIndex": 620,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks_completion/picks.json",
+          "screenshot": "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+          "review": "Небольшой самостоятельный выступ на передней стороне шейки, выше латерального отростка. Он видим в двух разнесённых косых видах и со стороны +X препарата. Его переднее положение сопоставлено с задней короткой ножкой наковальни и улиткой, а не выведено из знака координаты.",
+          "screenshots": [
+            "build_head/openear_landmarks_completion/21-malleus-pins-x.png",
+            "build_head/openear_landmarks_completion/22-malleus-pins-oblique.png",
+            "build_head/openear_landmarks_completion/30-malleus-neck.png",
+            "build_head/openear_landmarks_completion/31-malleus-anteriorcontext.png"
+          ],
+          "review_inputs": "build_head/openear_landmarks_completion/review-inputs.json",
+          "ray_is_coordinate_selection_only": true,
+          "independent_agent_review": "Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома.",
+          "source_density_review": {
+            "image": "build_head/openear_landmarks_completion/malleus_anterior_process-embedded-ct.png",
+            "metadata": "build_head/openear_landmarks_completion/cbct-review.json",
+            "source": "OpenEar ZETA CBCT_Embedded.nrrd",
+            "source_acquisition_step_mm": 0.125,
+            "registered_grid_step_mm": 0.125,
+            "interpretation": "Проверено соответствие терминального участка или выступа исходной плотности в трёх направлениях. Эти срезы не доказывают геометрию более тонких краёв и не заменяют визуальное анатомическое сопоставление."
+          }
+        },
+        "scope": "visible-surface-landmark; not independent subpart segmentation",
+        "featureGeometryComplete": false,
+        "surfaceScope": "short-native-projection-only; long-thin-extension-unresolved",
+        "mode": "openear"
+      },
+      {
+        "id": "openear_incus_lenticular_process",
+        "b": "incus",
+        "c": "A15.3.02.041",
+        "ru": "Чечевицеобразный отросток наковальни",
+        "lat": "processus lenticularis",
+        "p": [
+          -0.02301797368659631,
+          0.03180905717101487,
+          0.022590852066074304
+        ],
+        "n": [
+          0.4065978848394494,
+          0.23470284409431633,
+          0.8829454881350971
+        ],
+        "x": "Терминальная часть длинной ножки наковальни со стороны сочленения с головкой стремени.",
+        "refs": [
+          {
+            "title": "Gray, Anatomy of the Human Body (1918)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gray917.png",
+            "locator": "Рис. 917: Чечевицеобразный отросток наковальни; сопоставлены два вида косточки, если они присутствуют на рисунке.",
+            "scope": "anatomy"
+          },
+          {
+            "title": "Chien et al. (2009), Anatomy of the Distal Incus in Humans",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2774412/",
+            "locator": "Results, Qualitative histological descriptions; Figs. 2–5: терминальная пластинка и соединительная ножка чечевицеобразного отростка, его связь с головкой стремени.",
+            "scope": "anatomy"
+          }
+        ],
+        "loc": "surface",
+        "source": "OpenEar",
+        "specimen": "OpenEar ZETA",
+        "side": "right",
+        "view": {
+          "d": [
+            1,
+            0,
+            0
+          ],
+          "up": [
+            0,
+            0,
+            -1
+          ],
+          "distance": 0.02
+        },
+        "modelNote": "Отмечен видимый терминальный участок чечевицеобразного отростка в авторской модели наковальни. Тонкая ножка и граница пластинки здесь сглажены и не представлены отдельной подтверждённой микрогеометрией. Маркер не означает, что эти детали полностью восстановлены. Отдельный правый препарат; координаты не перенесены на BodyParts3D.",
+        "nomenclature": [
+          {
+            "title": "Terminologia Anatomica (TA98), IFAA",
+            "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/15.3.02%20TA98%20EN.htm",
+            "locator": "A15.3.02.041",
+            "scope": "nomenclature"
+          },
+          {
+            "title": "Международная анатомическая терминология, под ред. Л. Л. Колесникова (2003)",
+            "url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_latin_language/Kolesnikov_-_Terminologia_Anatomica_1.pdf",
+            "locator": "Печатная с. 196, A15.3.02.041; для ножек добавлено название кости для однозначности карточки.",
+            "scope": "nomenclature"
+          }
+        ],
+        "geometryRefs": [
+          {
+            "title": "Sieber et al. (2019), The OpenEar library — ZETA",
+            "url": "https://zenodo.org/records/1473724",
+            "locator": "04_Incus.ply",
+            "scope": "geometry"
+          }
+        ],
+        "evidence": {
+          "method": "manual-multiview-surface-review-and-raycast",
+          "view": {
+            "d": [
+              1,
+              0,
+              0
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "uv": [
+            0.19,
+            0.923
+          ],
+          "faceIndex": 3993,
+          "coordinateFrame": "OpenEar ZETA native specimen; author RAS transformed by [-RASx,RASz,RASy], metres. No registration to BodyParts3D.",
+          "source": "build_head/openear_landmarks_completion/picks.json",
+          "screenshot": "build_head/openear_landmarks_completion/25-incus-pins-x.png",
+          "review": "Отмечено дистальное закруглённое расширение на изгибе длинной ножки. В изолированной наковальне просмотрены четыре стороны и два увеличенных косых вида; в исходном суставном положении эта область обращена к головке стремени. Тонкая соединительная ножка и край отдельной пластинки на сглаженной авторской сетке не разделяются.",
+          "screenshots": [
+            "build_head/openear_landmarks_completion/25-incus-pins-x.png",
+            "build_head/openear_landmarks_completion/26-incus-pins-oblique.png",
+            "build_head/openear_landmarks_completion/27-incus-z.png",
+            "build_head/openear_landmarks_completion/28-incus-tip-medial.png",
+            "build_head/openear_landmarks_completion/29-incus-tip-lateral.png"
+          ],
+          "review_inputs": "build_head/openear_landmarks_completion/review-inputs.json",
+          "ray_is_coordinate_selection_only": true,
+          "independent_agent_review": "Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома.",
+          "source_density_review": {
+            "image": "build_head/openear_landmarks_completion/incus_lenticular_process-embedded-ct.png",
+            "metadata": "build_head/openear_landmarks_completion/cbct-review.json",
+            "source": "OpenEar ZETA CBCT_Embedded.nrrd",
+            "source_acquisition_step_mm": 0.125,
+            "registered_grid_step_mm": 0.125,
+            "interpretation": "Проверено соответствие терминального участка или выступа исходной плотности в трёх направлениях. Эти срезы не доказывают геометрию более тонких краёв и не заменяют визуальное анатомическое сопоставление."
+          }
+        },
+        "scope": "visible-surface-landmark; not independent subpart segmentation",
+        "featureGeometryComplete": false,
+        "surfaceScope": "terminal-region-only; pedicle-and-disc-boundary-unresolved",
+        "mode": "openear"
+      },
+      {
         "id": "openear_temporal_internal_acoustic_meatus",
         "b": "temporal_bone",
         "mode": "openear",
@@ -2896,7 +3456,7 @@
   },
   "counts": {
     "z": 18,
-    "openear": 13,
+    "openear": 18,
     "microct": 0
   }
 }

@@ -1,4 +1,4 @@
-"""Package eight directly reviewed OpenEar ossicle landmarks, without mesh changes.
+"""Package thirteen directly reviewed OpenEar ossicle landmarks, without mesh changes.
 
 These are a supplemental, explicitly partial set. They do not replace the full
 TA98 lists or the localization states on the BodyParts3D temporal bones.
@@ -6,6 +6,7 @@ TA98 lists or the localization states on the BodyParts3D temporal bones.
 from pathlib import Path
 import hashlib
 import json
+from openear_landmarks_completion import FEATURES, EXPECTED_CODES, refs as completion_refs
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT / 'build_head/openear_landmarks'
@@ -40,15 +41,21 @@ def references(bone):
 
 def main():
     picks = json.loads((REVIEW / 'picks.json').read_text(encoding='utf-8'))
-    assert len(picks) == len(TERMS) == 8
+    assert len(picks) == len(TERMS) == 8  # original eight are preserved verbatim
+    picks += json.loads((ROOT / 'build_head/openear_landmarks_completion/picks.json').read_text(encoding='utf-8'))
+    terms = dict(TERMS)
+    terms.update({key: (row['ru'], row['lat'], row['x']) for key, row in FEATURES.items()})
+    assert len(picks) == len(terms) == 13
+    assert {row['c'] for row in picks} == EXPECTED_CODES
+    assert {row['id'] for row in picks} == set(terms)
     markers = []
     for row in picks:
-        ru, lat, text = TERMS[row['id']]
+        ru, lat, text = terms[row['id']]
         assert len(row['p']) == len(row['n']) == 3
         view = dict(row['v'], distance=.020 if row['b'] != 'stapes' else .012)
         if row['id'] == 'stapes_base':
             view = {'d': [0, 1, 0], 'up': [0, 0, 1], 'distance': .012}
-        elif row['b'] == 'stapes':
+        elif row['id'] == 'stapes_head':
             view = {'d': [0, 0, 1], 'up': [-1, -2, 0], 'distance': .012}
         marker = {
             'id': 'openear_' + row['id'], 'b': row['b'], 'c': row['c'],
@@ -79,12 +86,43 @@ def main():
                 'review': 'Поверхность осмотрена из нескольких направлений, форма сопоставлена с независимыми рисунками Gray и Sobotta. Номера граней относятся к опубликованному GLB, а не исходным PLY. Луч выбирает координату на уже распознанном образовании; само попадание луча не считается анатомической проверкой.'
             }
         }
+        if row['id'] in FEATURES:
+            spec = FEATURES[row['id']]
+            marker['refs'] = completion_refs(row['id'])
+            marker['modelNote'] = spec['modelNote'] + ' Отдельный правый препарат; координаты не перенесены на BodyParts3D.'
+            marker['scope'] = 'visible-surface-landmark; not independent subpart segmentation'
+            marker['featureGeometryComplete'] = False
+            marker['surfaceScope'] = ('terminal-region-only; pedicle-and-disc-boundary-unresolved'
+                                      if row['id'] == 'incus_lenticular_process' else
+                                      'short-native-projection-only; long-thin-extension-unresolved'
+                                      if row['id'] == 'malleus_anterior_process' else
+                                      'identified-part-surface; no-separate-subpart-mesh')
+            marker['evidence'].update({
+                'source': 'build_head/openear_landmarks_completion/picks.json',
+                'screenshot': row['screenshots'][0],
+                'screenshots': row['screenshots'],
+                'review': row['review'],
+                'review_inputs': 'build_head/openear_landmarks_completion/review-inputs.json',
+                'ray_is_coordinate_selection_only': True,
+                'independent_agent_review': 'Дополнительный визуальный просмотр другим агентом: названия .035/.036/.047 и видимый короткий выступ .048 поддержаны; .041 поддержан только как терминальная область, без разделения ножки и пластинки. Не является внешней рецензией анатома.',
+            })
+            if row['id'] in ('malleus_anterior_process', 'incus_lenticular_process'):
+                marker['evidence']['source_density_review'] = {
+                    'image': f'build_head/openear_landmarks_completion/{row["id"]}-embedded-ct.png',
+                    'metadata': 'build_head/openear_landmarks_completion/cbct-review.json',
+                    'source': 'OpenEar ZETA CBCT_Embedded.nrrd',
+                    'source_acquisition_step_mm': .125, 'registered_grid_step_mm': .125,
+                    'interpretation': 'Проверено соответствие терминального участка или выступа исходной плотности в трёх направлениях. Эти срезы не доказывают геометрию более тонких краёв и не заменяют визуальное анатомическое сопоставление.',
+                }
         markers.append(marker)
     result = {
         'source': 'OpenEar', 'specimen': 'ZETA', 'side': 'right',
         'geometry_sha256': hashlib.sha256((ROOT / 'site/skull-openear.glb').read_bytes()).hexdigest(),
         'complete': False,
-        'scope': 'Восемь отдельно проверенных поверхностных ориентиров слуховых косточек. Это не полный список образований среднего уха и не замена 521 маркеру основного черепа.',
+        'ossicle_ta98_subterms_complete': True,
+        'ossicle_detailed_geometry_complete': False,
+        'ossicle_ta98_subterm_codes': sorted(EXPECTED_CODES),
+        'scope': 'Тринадцать поверхностных ориентиров: все подтермины TA98 трёх слуховых косточек. Полнота названий и маркеров не означает восстановление сглаженных микродеталей; это не полный список образований среднего уха и не замена 521 маркеру основного черепа.',
         'markers': markers,
         'groups': [
             {'id': 'ossicles', 'ru': 'Слуховые косточки', 'parts': ['malleus', 'incus', 'stapes'],
@@ -101,21 +139,24 @@ def main():
     (ROOT / 'pins_head/openear-native.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     report = {
         'source': 'OpenEar ZETA', 'geometry_sha256': result['geometry_sha256'],
-        'new_surface_landmarks': len(markers), 'temporal_bone_projection_promotions': 0,
+        'new_surface_landmarks': len(markers), 'new_in_this_completion': 5,
+        'preserved_original_landmarks': 8, 'temporal_bone_projection_promotions': 0,
+        'ossicle_ta98_subterms_complete': True, 'required_codes': sorted(EXPECTED_CODES),
+        'ossicle_detailed_geometry_complete': False,
         'completion_claim': False,
         'anatomical_review': 'Машинная геометрическая проверка и визуальное сопоставление с двумя атласами; не выдаётся за внешнюю экспертную рецензию анатома.',
-        'bone_mask_review': 'Осмотрены шесть координатных направлений, область внутреннего слухового прохода с нервом VIII и срез на y=0.044 м. Шумная поверхность и подготовительные границы блока не позволяют уверенно отделить все костные апертуры и стенки мелких каналов. Новые костные каналы и их точки не заявлены.',
+        'bone_mask_review': 'Этот отчёт относится к слуховым косточкам. Независимые костные ориентиры и выбранные участки стенок каналов описаны отдельно в research/temporal-feature-review.json и research/temporal-channel-review.json; они не выводятся из сегментаций нервов.',
         'orientation': 'Сохранены векторы камеры в координатах образца; направления сетки не названы анатомическими видами тела. Препарат ориентирован произвольно относительно осей сканера.',
         'not_marked': [
-            'Передний и латеральный отростки молоточка: отдельный уверенный выбор этих малых отростков не завершён.',
-            'Чечевицеобразный отросток наковальни: не выдан за независимый подтверждённый участок лишь по близости к стремени.',
-            'Передняя и задняя ножки стремени: просвет и обе ножки видны, но отдельное анатомическое различение сторон не подтверждено одним заголовком RAS.',
+            'Отдельная тонкая ножка и край пластинки чечевицеобразного отростка сглажены в исходной PLY. Маркер на его видимой терминальной части не считается полной реконструкцией этой микрогеометрии.',
+            'Длинное тонкое продолжение переднего отростка молоточка не подтверждено на этой сетке; отмечен только существующий короткий выступ, без достройки.',
             'Отдельные компоненты общего сегмента Scala Vestibuli не разделены; цветной объём не является костной стенкой.'
         ],
         'markers': [{'id': m['id'], 'code': m['c'], 'bone': m['b']} for m in markers],
+        'completion_review': {key: {'code': value['c'], 'observed': value['observed'], 'modelNote': value['modelNote'], 'sources': completion_refs(key), 'screenshots': value['images']} for key, value in FEATURES.items()},
     }
     (ROOT / 'research/openear-landmark-review.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print('Wrote 8 OpenEar native landmarks; no BodyParts3D state changes')
+    print('Wrote 13 OpenEar native landmarks (8 preserved + 5 reviewed); no BodyParts3D state changes')
 
 
 if __name__ == '__main__':

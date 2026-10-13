@@ -10,7 +10,10 @@ destination.mkdir(parents=True, exist_ok=True)
 for item in (root / 'site').iterdir():
     if item.is_file() and item.name not in ('index.html', 'local.html'):
         shutil.copy2(item, destination / item.name)
+    elif item.is_dir() and item.name == 'vendor':
+        shutil.copytree(item, destination / item.name, dirs_exist_ok=True)
 subprocess.run([sys.executable, str(root / 'scripts/make_local.py'),
                 str(root / 'site/index.html'), str(destination / 'index.html')], check=True)
+shutil.copy2(destination / 'index.html', destination / 'local.html')
 (destination / '.nojekyll').touch()
 print('Static site:', destination)

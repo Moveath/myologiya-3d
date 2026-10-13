@@ -1,0 +1,79 @@
+{
+  "source": "Halle, Zenodo 6108435",
+  "sourceFile": "mastoid-ct.npy",
+  "original_ct_md5": "2b46ca394084ab84af20bc267114e75f",
+  "source_step_mm": 0.125,
+  "viewer_axes": "x=i,y=k,z=j; laterality not assigned",
+  "bounds_mm": [
+    10.0,
+    35.0,
+    50.0,
+    32.0,
+    85.0,
+    80.0
+  ],
+  "frames": [
+    {
+      "axis": "y",
+      "value_mm": 44.0,
+      "imageRect": [
+        0,
+        32,
+        403,
+        550
+      ]
+    },
+    {
+      "axis": "y",
+      "value_mm": 46.0,
+      "imageRect": [
+        550,
+        32,
+        403,
+        550
+      ]
+    },
+    {
+      "axis": "y",
+      "value_mm": 48.0,
+      "imageRect": [
+        1100,
+        32,
+        403,
+        550
+      ]
+    },
+    {
+      "axis": "y",
+      "value_mm": 50.0,
+      "imageRect": [
+        0,
+        632,
+        403,
+        550
+      ]
+    },
+    {
+      "axis": "y",
+      "value_mm": 52.0,
+      "imageRect": [
+        550,
+        632,
+        403,
+        550
+      ]
+    },
+    {
+      "axis": "y",
+      "value_mm": 54.0,
+      "imageRect": [
+        1100,
+        632,
+        403,
+        550
+      ]
+    }
+  ],
+  "display": "Original int16 CT, window -500..1800 native units; nearest pixel resize; no spatial interpolation",
+  "sha256": "0e614e8863b2bcc675101b6762d2105a8233e8564c8a8c3dd8f42a79408da013"
+}

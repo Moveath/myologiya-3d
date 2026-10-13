@@ -1,0 +1,666 @@
+{
+  "created_at": "2026-10-13T06:34:37.361Z",
+  "status": "passed",
+  "method": "Chromium CDP Input.dispatchTouchEvent with hasTouch/isMobile; read-only camera instrumentation; no synthetic DOM events",
+  "limitation": "Mobile browser emulation at 390 × 844 CSS pixels, not a physical phone or Safari test.",
+  "sourceHashes": {
+    "local.html": "67f06369595b4779377bfa57a58f000443570814587d551161ab98a4f51746bb",
+    "skull-detail.html": "f8f3d75a2a74175c61ed59a9544af9e2f9b1619dde7558ada1d06dc1d22e0c96"
+  },
+  "cases": [
+    {
+      "kind": "main",
+      "theme": "light",
+      "width": 390,
+      "status": "passed",
+      "point": {
+        "x": 195,
+        "y": 425
+      },
+      "rotationDelta": 0.6255899544955611,
+      "zoomRatio": 0.39999999999999963,
+      "initial": {
+        "position": [
+          -0.8358867882363766,
+          1.6573159121434538,
+          0.9307472161846767
+        ],
+        "target": [
+          -0.0006686073150999893,
+          1.5379990291546999,
+          0.0955290352634
+        ],
+        "distance": 1.1871879960853062,
+        "zoom": 1,
+        "triangles": 410286,
+        "drawCalls": 102,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 0,
+          "touchMoves": 0,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "rotated": {
+        "position": [
+          -1.1438948991724054,
+          1.8054489756100907,
+          0.27136847849569706
+        ],
+        "target": [
+          -0.0006686073150999893,
+          1.5379990291546999,
+          0.0955290352634
+        ],
+        "distance": 1.1871879960853045,
+        "zoom": 1,
+        "triangles": 410286,
+        "drawCalls": 102,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 1,
+          "touchMoves": 12,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "pinched": {
+        "position": [
+          -0.45802651636283004,
+          1.6449790940095244,
+          0.16542652521591056
+        ],
+        "target": [
+          -0.0007359537597995391,
+          1.537999029154699,
+          0.09509117730529508
+        ],
+        "distance": 0.47487519843412135,
+        "zoom": 1,
+        "triangles": 386952,
+        "drawCalls": 80,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 3,
+          "touchMoves": 36,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "images": [
+        {
+          "file": "shots/atlas-touch/main-390-light-before.png",
+          "sha256": "c8e68e0b5ceebfebda0eed07f247f3805068096bb8ae9aed08ba393597f1ce3a"
+        },
+        {
+          "file": "shots/atlas-touch/main-390-light-rotated.png",
+          "sha256": "dc13c5bbf46907b15851cf679b4978c9b212bb8213ccca33e8e1bc44b19f01a6"
+        },
+        {
+          "file": "shots/atlas-touch/main-390-light-pinched.png",
+          "sha256": "9deeb8c902618fae975200efa8db2f56cd29821b191b385aeed0cf4e09fc0819"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "detail",
+      "theme": "light",
+      "width": 390,
+      "status": "passed",
+      "point": {
+        "x": 195,
+        "y": 352.6875
+      },
+      "rotationDelta": 1.0001364597559748,
+      "zoomRatio": 0.4000000000000015,
+      "initial": {
+        "position": [
+          -0.18542404579574412,
+          1.5954170239699834,
+          0.27453403721584685
+        ],
+        "target": [
+          0,
+          1.5374720096588135,
+          0.0427539799711667
+        ],
+        "distance": 0.302426348685314,
+        "zoom": 1,
+        "triangles": 112343,
+        "drawCalls": 22,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 0,
+          "touchMoves": 0,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "rotated": {
+        "position": [
+          -0.272752550550967,
+          1.6577411307597105,
+          -0.008266418466036901
+        ],
+        "target": [
+          0,
+          1.5374720096588135,
+          0.0427539799711667
+        ],
+        "distance": 0.3024263486853139,
+        "zoom": 1,
+        "triangles": 112343,
+        "drawCalls": 22,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 1,
+          "touchMoves": 12,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "pinched": {
+        "position": [
+          -0.10906075534714182,
+          1.585579709831553,
+          0.022130689632981166
+        ],
+        "target": [
+          0.000040195273205948,
+          1.5374720096588148,
+          0.04253909913709112
+        ],
+        "distance": 0.120970539474126,
+        "zoom": 1,
+        "triangles": 112051,
+        "drawCalls": 21,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 3,
+          "touchMoves": 36,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "images": [
+        {
+          "file": "shots/atlas-touch/detail-390-light-before.png",
+          "sha256": "6d557a15ba47828cef341960c5dc703898aee1c59eda0818f1bdab6228d395d7"
+        },
+        {
+          "file": "shots/atlas-touch/detail-390-light-rotated.png",
+          "sha256": "aee85caca42ccbef2183f7fe5177f04a73b8111f4a40476cbc4c8671e04cb55d"
+        },
+        {
+          "file": "shots/atlas-touch/detail-390-light-pinched.png",
+          "sha256": "48101d9269d6aa278cb437ed65095acba98148b172654c01aabf649308759ee3"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "main",
+      "theme": "dark",
+      "width": 390,
+      "status": "passed",
+      "point": {
+        "x": 195,
+        "y": 425
+      },
+      "rotationDelta": 0.6079582925455101,
+      "zoomRatio": 0.4000000000000005,
+      "initial": {
+        "position": [
+          -0.8358867882363766,
+          1.6573159121434538,
+          0.9307472161846767
+        ],
+        "target": [
+          -0.0006686073150999893,
+          1.5379990291546999,
+          0.0955290352634
+        ],
+        "distance": 1.1871879960853062,
+        "zoom": 1,
+        "triangles": 410286,
+        "drawCalls": 102,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 0,
+          "touchMoves": 0,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "rotated": {
+        "position": [
+          -1.1413900577466694,
+          1.801129761422603,
+          0.29284129618628624
+        ],
+        "target": [
+          -0.0006686073150999893,
+          1.5379990291546999,
+          0.0955290352634
+        ],
+        "distance": 1.1871879960853073,
+        "zoom": 1,
+        "triangles": 410286,
+        "drawCalls": 102,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 1,
+          "touchMoves": 12,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "pinched": {
+        "position": [
+          -0.45802662554504503,
+          1.6449790930749568,
+          0.16542610880120853
+        ],
+        "target": [
+          -0.000736063438800167,
+          1.5379990291547017,
+          0.09509075623920782
+        ],
+        "distance": 0.47487519843412357,
+        "zoom": 1,
+        "triangles": 386952,
+        "drawCalls": 80,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 3,
+          "touchMoves": 36,
+          "contextLost": 0
+        },
+        "main": {
+          "sec": "head",
+          "selected": null
+        },
+        "detail": null,
+        "runtimeFailure": null
+      },
+      "images": [
+        {
+          "file": "shots/atlas-touch/main-390-dark-before.png",
+          "sha256": "c588544bf03236878ed8baa7bc301f11dd1ffeeefcf22e75d09add829ebf41c8"
+        },
+        {
+          "file": "shots/atlas-touch/main-390-dark-rotated.png",
+          "sha256": "279170b78c300e265141812a6d06b52106477484b33fefbc8eee61f3fe087a7c"
+        },
+        {
+          "file": "shots/atlas-touch/main-390-dark-pinched.png",
+          "sha256": "15ff2a0ae5f681e0e66cae9be223072b3a99b4c4908b81444c9e3e982c06ab37"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "detail",
+      "theme": "dark",
+      "width": 390,
+      "status": "passed",
+      "point": {
+        "x": 195,
+        "y": 352.6875
+      },
+      "rotationDelta": 1.0001362846662576,
+      "zoomRatio": 0.4,
+      "initial": {
+        "position": [
+          -0.18542404579574412,
+          1.5954170239699834,
+          0.27453403721584685
+        ],
+        "target": [
+          0,
+          1.5374720096588135,
+          0.0427539799711667
+        ],
+        "distance": 0.302426348685314,
+        "zoom": 1,
+        "triangles": 112343,
+        "drawCalls": 22,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 0,
+          "touchMoves": 0,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "rotated": {
+        "position": [
+          -0.27275256697223577,
+          1.657741118554035,
+          -0.008266359450837223
+        ],
+        "target": [
+          0,
+          1.5374720096588135,
+          0.0427539799711667
+        ],
+        "distance": 0.30242634868531393,
+        "zoom": 1,
+        "triangles": 112343,
+        "drawCalls": 22,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 1,
+          "touchMoves": 12,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "pinched": {
+        "position": [
+          -0.10906067128302813,
+          1.5855797098322042,
+          0.022130240838146836
+        ],
+        "target": [
+          0.00004027933643850581,
+          1.5374720096588121,
+          0.042538650345423305
+        ],
+        "distance": 0.12097053947412557,
+        "zoom": 1,
+        "triangles": 112051,
+        "drawCalls": 21,
+        "contextLost": false,
+        "scroll": [
+          0,
+          0
+        ],
+        "viewportScale": 1,
+        "input": {
+          "trustedTouchPointers": 3,
+          "touchMoves": 36,
+          "contextLost": 0
+        },
+        "main": null,
+        "detail": {
+          "mode": "z",
+          "selected": "mandible",
+          "ready": true,
+          "visible": [
+            "frontal",
+            "occipital",
+            "sphenoid",
+            "ethmoid",
+            "vomer",
+            "mandible",
+            "parietal_left",
+            "parietal_right",
+            "temporal_left",
+            "temporal_right",
+            "maxilla_left",
+            "maxilla_right",
+            "zygomatic_left",
+            "zygomatic_right",
+            "palatine_left",
+            "palatine_right",
+            "nasal_left",
+            "nasal_right",
+            "lacrimal_left",
+            "lacrimal_right",
+            "inferior_concha_left",
+            "inferior_concha_right"
+          ]
+        },
+        "runtimeFailure": null
+      },
+      "images": [
+        {
+          "file": "shots/atlas-touch/detail-390-dark-before.png",
+          "sha256": "5e785e19bb4ea196195cb8775aa18e42468b8d559237c50dcf22cbfb41d1570e"
+        },
+        {
+          "file": "shots/atlas-touch/detail-390-dark-rotated.png",
+          "sha256": "2995ee24a5817d9321e5ae7bd743962b5cea336cc52b74a3180b04b3fa5b0ce4"
+        },
+        {
+          "file": "shots/atlas-touch/detail-390-dark-pinched.png",
+          "sha256": "86be01e491f34e4d8774bb0475ac0135129ec671b293cded0a63f2571329008c"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

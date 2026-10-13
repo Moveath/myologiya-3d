@@ -12,10 +12,10 @@ OUT=ROOT/'build_head/temporal_features'
 # absent, nor proof that another open dataset cannot resolve it.
 OUTCOMES={
 7: ('surface-detail-unresolved','Борозда затылочной артерии не выделена надёжно на неровной наружной поверхности маски.','Осмотреть нижнюю поверхность полноценной, не обрезанной височной кости; отделить сосудистый след от ступенчатости сегментации.'),
-9: ('channel-not-traced','Исходная отдельная сетка лицевого нерва доступна, но она не является стенкой лицевого канала.','Проследить костный просвет по последовательным исходным КТ-сечениям от внутреннего слухового прохода до шилососцевидного отверстия; проверить все сегменты.'),
+9: ('native-channel-walls-partially-traced','По 224 исходным КТ-сечениям проверены и выделены участки настоящей костной стенки лицевого канала. Сетка нерва не использована как стенка.','Проверить полный периметр конечных апертур, границы первого коленца и тонкие стенки; текущая выборка заканчивается до расширения в IAC.'),
 10: ('channel-not-traced','Изгиб модели нерва не подтверждает отдельно стенки коленца лицевого канала.','Проверить стенки первого коленца на непрерывном ряду КТ-срезов с направлением лабиринтного и барабанного сегментов.'),
 11: ('small-channel-unresolved','Барабанная струна сегментирована отдельно; мелкий входной каналец не подтверждён непрерывной костной стенкой.','Отдельно проследить каналец на КТ, не использовать поверхность нерва как суррогат канала.'),
-13: ('channel-not-traced','Авторская сонная артерия и участки окружающей кости доступны. Полный костный ход между двумя апертурами не проверен.','Проследить непрерывную стенку обоих сегментов сонного канала; проверка наружного устья не завершает канал.'),
+13: ('native-channel-walls-partially-traced','По 103 исходным КТ-сечениям проверены и выделены участки настоящей костной стенки сонного канала; её открытые границы сохранены.','Уверенно отделить внутреннюю апертуру от подготовленного края образца и проверить оставшиеся тонкие стенки обоих сегментов; не замыкать естественные сообщения или пробелы маски.'),
 14: ('native-aperture-rim-confirmed','Край наружной апертуры подтверждён на маске и исходной КТ полного препарата. Подготовленный embedded-скан частично обрезает эту область и не использован как единственное доказательство.','Проверить полную геометрию края отдельно; весь сонный канал и его внутренняя апертура данным маркером не завершаются.'),
 15: ('aperture-unresolved','Внутренняя апертура у верхушки не отделена уверенно от подготовленного края образца.','Проверить верхушку пирамиды в полном КТ и убедиться в сохранности естественного края.'),
 16: ('small-channel-unresolved','Наличие крупных сегментов артерии и барабанной полости не доказывает мелкие сонно-барабанные канальцы.','Нужны отдельно прослеженные сообщения на КТ достаточного разрешения.'),
@@ -73,6 +73,16 @@ def main():
              'anatomical_refs':[{**r,'locator':r.get('locator',r['title']+'; '+lat)} for r in DESCRIPTIONS[code]['refs'][:2]]}
         if code in markers:
             m=markers[code];row.update(native_marker=m['id'],geometry_scope=m['geometryScope'],geometry_evidence=m['evidence'])
+        if num in (9,13):
+            channel_path=ROOT/'research/temporal-channel-review.json'
+            if channel_path.exists():
+                channel=json.loads(channel_path.read_text(encoding='utf-8'))
+                key='facial_canal_wall' if num==9 else 'carotid_canal_wall'
+                geom=next(g for g in channel['geometry']['structures'] if g['id']==key)
+                row.update(review_scope='targeted-native-source-wall-and-serial-ct-review',
+                           geometry_scope='selected-original-bone-wall-segments',
+                           source_report='research/temporal-channel-review.json',
+                           native_geometry=geom,anatomical_refs=channel['anatomical_sources'][key])
         rows.append(row)
     result={'date':'2026-10-13','source':'OpenEar ZETA','geometry_sha256':native['geometry_sha256'],
             'unique_projection_codes':43,'paired_primary_records':86,'new_native_feature_markers':len(markers),

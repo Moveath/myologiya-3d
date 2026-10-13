@@ -15,6 +15,7 @@ ear = json.loads((ROOT/'site/skull-openear.json').read_text(encoding='utf-8'))
 ear_landmarks = json.loads((ROOT/'site/skull-openear-landmarks.json').read_text(encoding='utf-8'))
 native = json.loads((ROOT/'site/skull-native-features.json').read_text(encoding='utf-8'))
 catalogue = json.loads((ROOT/'site/skull-feature-catalogue.json').read_text(encoding='utf-8'))
+extent = json.loads((ROOT/'site/skull-geometry-review.json').read_text(encoding='utf-8'))
 examples = json.loads((ROOT/'site/skull-variant-examples.json').read_text(encoding='utf-8'))['examples']
 channel_models = []
 for mode, stem in [('channels', 'skull-temporal-channels'), ('cranial_channels', 'skull-cranial-channels')]:
@@ -87,9 +88,16 @@ report = {
                     'marker_localization_counts': dict(Counter(p['loc'] for p in native['markers']['openear'])),
                     'marker_metadata': 'site/skull-native-features.json',
                     'marker_source': 'pins_head/openear-native.json',
-                    'complete_ossicle_landmark_catalogue_claim': False,
+                    'complete_ossicle_landmark_catalogue_claim': bool(ear_landmarks.get('ossicle_ta98_subterms_complete')),
+                    'complete_ossicle_detailed_geometry_claim': bool(ear_landmarks.get('ossicle_detailed_geometry_complete')),
+                    'ossicle_subterm_count': len([p for p in native['markers']['openear'] if p['c'].startswith('A15.3.02.')]),
                     'registered_to_main_atlas': False},
         'halle_microct': {'metadata': 'site/skull-microct.json', 'registered_to_main_atlas': False}},
+    'skull_whole_catalogue': {'file':'site/skull-whole.json','terms':97,'current_module':89,'future_modules':8,'geometry_policy':'Ракурс и состав группы не означают полную геометрию каждого образования.'},
+    'muscle_attachment_catalogue': {'file':'site/skull-muscle-attachments.json','muscles':52,'parts':26,'complete_attachment_areas':0},
+    'bone_feature_extent_review': {'file':'site/skull-geometry-review.json','records':extent['total'],
+        'counts':extent['counts'],'scope':extent['scope'],'independent_expert_validation':False,
+        'note':'Полнота относится только к явно указанной макроскопической форме. Исходные статусы маркеров не меняются; это не процент анатомической готовности всего черепа.'},
     'remaining_primary_markers': remaining,
     'source_channel_geometry': channel_models,
     'cross_source_evidence': {
@@ -114,6 +122,14 @@ report = {
                 'verify/ui-skull-study-navigation-report.json',
                 'research/face-feature-review.json', 'research/cranial-feature-review.json',
                 'research/temporal-feature-review.json', 'research/variant-example-review.json',
-                'verify/ui-skull-features-report.json']}
+                'verify/ui-skull-features-report.json', 'research/head-muscle-field-review.json',
+                'research/skull-whole-model-review.json', 'verify/head-source-geometry.json',
+                'verify/ui-atlas-runtime-report.json', 'verify/ui-skull-catalogues-report.json',
+                'verify/ui-skull-channels-report.json', 'verify/ui-skull-geometry-report.json',
+                'research/face-feature-extent-review.json', 'research/cranial-feature-extent-review.json',
+                'research/temporal-feature-extent-review.json', 'research/face-feature-extent-cross-review.json',
+                'research/temporal-variant-geometry-review.json', 'research/cranial-variant-geometry-search.json',
+                'research/cranial-orbital-variant-review.json',
+                'verify/ui-atlas-touch-report.json']}
 (ROOT/'research/skull-completion-status.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 print('Skull status:', dict(counts), '— complete geometry is not claimed')
