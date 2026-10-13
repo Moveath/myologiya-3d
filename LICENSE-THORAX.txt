@@ -1,0 +1,22 @@
+Thoracic model assets: thorax-glb.txt and thorax-q-glb.txt
+
+BodyParts3D 3.0, copyright The Database Center for Life Science (DBCLS).
+Source: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
+Mirror: https://github.com/Kevin-Mattheus-Moerman/BodyParts3D
+Publication: https://pubmed.ncbi.nlm.nih.gov/18835852/
+
+License of the original and these derivative model assets:
+Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP)
+https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+
+Changes: original coordinates converted from millimetres to metres and to the
+atlas axes; muscles, costal cartilage and context simplified; source objects
+named and grouped; GLB export, meshopt compression and quantization. All original
+bone triangles retained before quantization. Sternal components keep their
+original alignment. No mirroring, synthetic anatomy or scan-derived accuracy
+beyond the original BodyParts3D surfaces is claimed.
+
+Full per-file source IDs, SHA-256 and transformation audit are in the project
+research/thorax-model-provenance.json and scripts/manifest_thorax.py.
+Linked third-party anatomical publications retain their own rights; their
+figures and full texts are not distributed as part of these model assets.

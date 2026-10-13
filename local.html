@@ -486,7 +486,7 @@ dt .term { text-decoration-color: var(--ink-2); }
         <button class="x" id="bCloseAbout" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </div>
       <p>Кнопка с человечком слева вверху возвращает к схеме тела, где выбираются разделы. Под заголовком раздела — подразделы: например, у руки это плечевой пояс, плечо, предплечье и кисть. В подразделе остаются только его мышцы, а остальные кости видны бледно, чтобы было понятно, где ты находишься.</p>
-      <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы и шеи доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
+      <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы, шеи и грудного отдела доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
       <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
@@ -505,6 +505,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <h3>Как проверены тексты</h3>
       <p>Раздел «Шея» содержит C1–C7, подъязычную кость и 62 мышечных экземпляра с обеих сторон. Переключай подразделы, чтобы разобрать поверхностные, над- и подподъязычные, глубокие передние, задние и подзатылочные мышцы, связь с плечевым поясом. Цвета костей помогают различать уровни позвонков. Для 100 из 138 костных записей проверено положение маркера; у остальных есть текстовое объяснение без выдуманных координат. Общие и региональные термины TA98 применены к позвонкам по указанным источникам, а составные образования вынесены отдельно. «Состав раздела и ограничения» перечисляет следующие самостоятельные задачи.</p>
       <p>Карточки шеи содержат ссылки по полям на открытые анатомические тексты Gray, университетские таблицы, современные учебные статьи и номенклатуру TA98. Различия источников сохранены. Исходная модель мышцы не подтверждает автоматически все её прикрепления или границы частей.</p>
+      <p>«Грудной отдел» — T1–T12, 24 ребра, грудина и 43 мышечные карточки. Подразделы отделяют грудную стенку, диафрагму, мышцы плечевого пояса и спины. Межрёберные и некоторые глубокие мышцы представлены исходными группами. Подрёберные, грудные межпоперечные и непостоянная грудинная мышца имеют описание без отдельной сетки. Образования диафрагмы перечислены в её карточке; отверстия не дорисовываются. Цвета различают уровни позвонков и пары рёбер. Органы, сосуды, нервы, суставы, связки и фасции будут отдельными модулями.</p>
       <p>Для исходных разделов руки и ноги использованы сводная таблица мышц по Gray's Anatomy (<a href="https://en.wikipedia.org/wiki/List_of_skeletal_muscles_of_the_human_body" target="_blank" rel="noopener">Wikipedia</a>) и <a href="https://teachmeanatomy.info/" target="_blank" rel="noopener">TeachMeAnatomy</a>. В новых карточках головы приведены ссылки на использованные открытые учебные статьи, таблицы Loyola University и DEGUM, а для спорных вопросов — анатомические исследования. Неподтверждённые сведения не заполнены догадками.</p>
       <p>Где русские и англоязычные учебники расходятся, это написано прямо в карточке: большая и малая грудные мышцы, подключичная, плечелучевая и локтевая мышцы, наружная запирательная мышца, короткий сгибатель большого пальца стопы.</p>
       <p>Латинские названия даны по международной анатомической терминологии (Terminologia Anatomica, TA98).</p>
@@ -525,10 +526,12 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="data-leg.js"></script>
 <script src="data-head.js"></script>
 <script src="data-neck.js"></script>
+<script src="data-thorax.js"></script>
 <script src="pins.js"></script>
 <script src="pins-leg.js"></script>
 <script src="pins-head.js"></script>
 <script src="pins-neck.js"></script>
+<script src="pins-thorax.js"></script>
 <script src="skull-evidence-index.js"></script>
 <script src="skull-geometry-index.js"></script>
 <script src="bodymap.js"></script>
@@ -581,7 +584,19 @@ const SECTIONS = [
       { id: 'posterior', ru: 'Задние и подзатылочные', hint: 'Ременные, глубокие задние и подзатылочные мышцы', v: 'post' },
       { id: 'girdle', ru: 'Связь с плечевым поясом', hint: 'Трапециевидная мышца и мышца, поднимающая лопатку', v: 'post' }
     ] },
-  { id: 'trunk', ru: 'Туловище', hint: 'Грудная клетка, позвоночник, мышцы спины и живота', ready: false },
+  { id: 'trunk', ru: 'Грудной отдел', short: 'Грудь', hint: 'Грудные позвонки, рёбра, грудина и мышцы', ready: true, file: 'thorax',
+    tries: ['sternum', 'rib_1_right', 'thorax_pectoralis_major_right'],
+    subs: [
+      { id: 'all', ru: 'Весь грудной отдел', hint: 'Костно-мышечный раздел грудной клетки и грудного отдела позвоночника', v: 'antlat' },
+      { id: 'spine', ru: 'Позвонки T1–T12', hint: 'Двенадцать грудных позвонков', v: 'postlat' },
+      { id: 'ribs', ru: 'Рёбра', hint: 'Двенадцать пар рёбер и рёберные хрящи', v: 'antlat' },
+      { id: 'sternum', ru: 'Грудина', hint: 'Рукоятка, тело и мечевидный отросток', v: 'ant' },
+      { id: 'pectoral', ru: 'Грудь и плечевой пояс', hint: 'Грудные мышцы, подключичная и передняя зубчатая', v: 'antlat' },
+      { id: 'wall', ru: 'Мышцы стенки', hint: 'Межрёберные, подрёберные, поперечная мышца груди и мышцы, поднимающие рёбра', v: 'antlat' },
+      { id: 'diaphragm', ru: 'Диафрагма', hint: 'Диафрагма и её части', v: 'cranSup' },
+      { id: 'back', ru: 'Поверхностные мышцы спины', hint: 'Связь с плечевым поясом и задние зубчатые мышцы', v: 'post' },
+      { id: 'deepback', ru: 'Глубокие мышцы спины', hint: 'Мышцы грудного отдела спины и сегментарные группы', v: 'post' }
+    ] },
   { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Правая рука: плечевой пояс, плечо, предплечье и кисть', ready: true, file: 'arm',
     tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
     subs: [
@@ -612,7 +627,7 @@ function subOf(id) {
   if (A.muscles[id]) { const r = regionOf(id); return r === 'trunk' ? 'shoulder' : r; }
   return A.bones[id] ? A.bones[id].sub : null;
 }
-const isSoft = (g) => g === 'b_soft' || g === 'b_soft_leg' || g === 'b_soft_head';
+const isSoft = (g) => g === 'b_soft' || g === 'b_soft_leg' || g === 'b_soft_head' || g === 'b_soft_thorax';
 function secCounts(sec) {
   const m = Object.keys(A.muscles).filter(k => secOf(k) === sec && !A.muscles[k].noModel).length;
   const b = Object.keys(A.bones).filter(k => secOf(k) === sec && !isSoft(A.bones[k].g)).length;
@@ -791,8 +806,13 @@ const HEAD_BONE_PALETTE = {
   zygomatic: '#e99c4a', maxilla: '#d988b0', palatine: '#8674ad', inferior_concha: '#959fe0',
   vomer: '#b98665', mandible: '#a4bf71',
   hyoid: '#e8c04c', atlas: '#689ddd', axis: '#e88762', cervical_3: '#91b95b',
-  cervical_4: '#b488c9', cervical_5: '#4fa7a1', cervical_6: '#d988b0', cervical_7: '#cfa847'
+  cervical_4: '#b488c9', cervical_5: '#4fa7a1', cervical_6: '#d988b0', cervical_7: '#cfa847',
+  sternum:'#e8c04c'
 };
+['#689ddd','#e88762','#91b95b','#b488c9','#4fa7a1','#d988b0','#cfa847','#86ced8','#b98665','#959fe0','#a4bf71','#e99c4a'].forEach((color,i)=>{
+  HEAD_BONE_PALETTE['rib_'+(i+1)]=color;
+  HEAD_BONE_PALETTE['thoracic_'+(i+1)]=color;
+});
 const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
 const WHITE = new THREE.Color('#ffffff');
@@ -835,11 +855,11 @@ function updateHeadCut() {
 const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
   const material = GHOST.clone(); material.color.copy(color); return [id, material];
 }));
-const boneColorsActive = () => ['head','neck'].includes(state.sec) && state.boneColors && state.mode !== 'quiz';
+const boneColorsActive = () => ['head','neck','trunk'].includes(state.sec) && state.boneColors && state.mode !== 'quiz';
 const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
 function updateBoneColorControls() {
   const head = state.sec === 'head', quiz = state.mode === 'quiz';
-  const colored = head || state.sec === 'neck';
+  const colored = head || ['neck','trunk'].includes(state.sec);
   $('#bBoneColors').hidden = !colored;
   $('#bBoneColors').disabled = quiz;
   $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
@@ -923,7 +943,7 @@ function visState(s) {
   if (iso && iso.kind !== 'm') return s.id === iso.id ? 2 : 0; // an isolated bone is shown on its own
   const sub = curSub();
   const S = SEC[state.sec];
-  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
+  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : state.sec === 'trunk' ? (['ribs','sternum'].includes(sub) ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
   const inSub = sub === 'all' || subOf(s.id) === sub;
   if (s.kind === 'm') {
     if (iso) return s.id === iso.id ? 2 : 0;
@@ -1029,6 +1049,7 @@ function frameBox(box, viewKey, instant, minSize = 0) {
 // how much context to keep around a structure when flying to it (small bones of the hand and foot get a close view)
 const smallFrame = (id) => {
   if (['head','neck'].includes(secOf(id))) return A.muscles[id] ? 0.07 : 0.05;
+  if (secOf(id)==='trunk') return A.muscles[id] ? 0.12 : 0.07;
   if (A.muscles[id]) return ['hand', 'foot'].includes(regionOf(id)) ? 0.12 : 0.22;
   const b = A.bones[id];
   return b && (b.sub === 'hand' || b.sub === 'foot') ? 0.08 : 0.22;
@@ -1057,7 +1078,9 @@ function frameSub(instant) {
   const S = SEC[state.sec];
   const def = S.subs.find(x => x.id === curSub()) || S.subs[0];
   const ids = state.sec === 'neck' && curSub() === 'all' && !state.isolate
-    ? ['atlas','axis','cervical_7','hyoid','sternocleidomastoid_right','sternocleidomastoid_left'].filter(id=>structs.has(id)) : shownIds();
+    ? ['atlas','axis','cervical_7','hyoid','sternocleidomastoid_right','sternocleidomastoid_left'].filter(id=>structs.has(id))
+    : state.sec === 'trunk' && curSub() === 'all' && !state.isolate
+      ? [...structs.values()].filter(s=>s.kind==='b').map(s=>s.id) : shownIds();
   frame(ids, def.v, instant);
   resetView();
 }
@@ -1309,6 +1332,13 @@ function select(id, part, fly, keepPin) {
     makeVisible(id, fly);
     if (fly && state.selPart) framePart(id, state.selPart);
     else if (fly) { const d = structs.get(id).data; frame([id], d && d.v ? d.v : 'ant', false, smallFrame(id)); resetView(); }
+  } else if (fly && d0?.noModel && d0.contextTargets?.length) {
+    const targets=d0.contextTargets.filter(target=>structs.has(target));
+    if(targets.length){
+      state.isolate=null;state.xrayBone=null;
+      makeVisible(targets[0],true);
+      frame(targets,A.bones[targets[0]].v||'ant',false,smallFrame(targets[0]));resetView();
+    }
   }
   paint();
   buildPins();
@@ -1360,7 +1390,7 @@ function renderSheet() {
       <p class="name">Нажми на мышцу или кость</p>
       <p class="hint">${curSub() === 'all' ? 'Выбери подраздел вверху, чтобы остались только его мышцы.' : `Сейчас открыт подраздел «${esc(subDef.ru)}».`} Карточка покажет начало, прикрепление, функцию, иннервацию и кровоснабжение.</p>
       <div class="tryrow">${tryIds.map(t => `<button class="chip" data-go="${t}">${esc((A.muscles[t] || A.bones[t]).ru)}</button>`).join('')}</div>
-      ${state.sec==='neck'?neckScope():''}`;
+      ${state.sec==='neck'?neckScope():state.sec==='trunk'?thoraxScope():''}`;
     afterSheet(); return;
   }
   const isMuscle = !!A.muscles[id];
@@ -1438,10 +1468,11 @@ function renderSheet() {
       <button class="x" id="bDeselect" aria-label="Закрыть карточку">${IC_X}</button>
     </div>
     ${partsRow}
+    ${noModel&&d.contextTargets?.length?'<p class="note">Отдельной модели мышцы нет. Показана соседняя костная область для ориентации.</p>':''}
     <div class="actions">
       <button class="act primary togglemore" id="bMore">${sheet.dataset.state === 'open' ? 'Свернуть' : 'Подробнее'}</button>
       ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : 'Только эта'}</button>` : ''}
-      ${!noModel && !isMuscle && ['head','neck'].includes(state.sec) ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
+      ${!noModel && !isMuscle && !isSoft(d.g) && ['head','neck','trunk'].includes(state.sec) ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
       ${!isMuscle && /^temporal_(left|right)$/.test(id) ? '<button class="act" data-detail-mode="openear">Внутри височной кости</button>' : ''}
       ${!noModel ? `<button class="act" id="bHide">Скрыть</button>` : ''}
       ${!noModel ? `<button class="act icon" id="bFocus" aria-label="Приблизить" title="Приблизить"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 8v5M8 10.5h5"/></svg></button>` : ''}
@@ -1452,9 +1483,12 @@ function renderSheet() {
       ${p ? `<p class="pname"><b>${esc(p.ru)}</b> <i>${esc(p.lat)}</i></p>` : ''}
       <dl class="facts">${factHtml}</dl>
       ${noModel ? '<div class="note">Для этой структуры нет отдельной 3D-модели в используемом наборе BodyParts3D.</div>' : ''}
+      ${noModel&&d.contextTargets?.length?`<p class="hint">Открыть соседнюю костную область для ориентации. Это не модель отсутствующей мышцы.</p><div class="linkrow">${d.contextTargets.map(b=>`<button class="chip" data-gobone="${esc(b)}">${esc(A.bones[b].ru)} ↗</button>`).join('')}</div>`:''}
       ${p && p.noModel ? '<div class="note">Эта часть описана в карточке, но не выделена отдельной геометрией в исходной модели.</div>' : ''}
       ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебный вид и ограничения модели ↗</button>`:''}</div>`:''}
       ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
+      ${note?sourceLinks(p?.noteRefs||d.noteRefs):''}
+      ${d.features?.length?`<div class="sect"><h3>Анатомические образования</h3><p class="hint">Каталог строения. Отдельная геометрия и координаты этих образований не заявлены.</p>${d.features.map(f=>`<details class="field-sources"><summary>${esc(f.ru)} · <i>${esc(f.lat)}</i></summary><p class="tacode">TA98 ${esc(f.code)}</p><p>${esc(f.x)}</p>${f.note?`<p class="note">${esc(f.note)}</p>`:''}${sourceLinks(f.refs)}</details>`).join('')}</div>`:''}
       ${pinSect}
       ${sourceLinks(d.refs)}
     </div>`;
@@ -1477,6 +1511,17 @@ function neckScope() {
     <p>Мелкие межостистые, межпоперечные мышцы, вращатели и многораздельные мышцы требуют отдельного разбора. Здесь также не заявлены отдельные модели фасций, связок, суставов, сосудов, нервов, глотки, гортани и желёз. Они сохраняют самостоятельные перечни для следующих модулей.</p>
     <h3>Шейный отдел как целое</h3>
     ${(A.neckWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}
+  </details>`;
+}
+function thoraxScope() {
+  const terms=PINS.filter(p=>secOf(p.b)==='trunk'&&p.t==='ta');
+  const located=terms.filter(p=>p.p).length;
+  return `<details class="sect thorax-scope"><summary>Состав раздела и ограничения</summary>
+    <p>37 костей: T1–T12, 12 пар рёбер и грудина. Мышцы представлены 43 карточками: 40 имеют исходную геометрию, 3 — описание и переход к соседней костной области. Общие группы межрёберных и глубоких мышц не разделены на вымышленные отдельные пучки. Повторные региональные просмотры мышц плечевого пояса и спины не увеличивают число мышц всего тела.</p>
+    <p>Каталог содержит ${terms.length} костных записей TA98; координаты есть у ${located}. Остальные доступны в карточках с объяснением ограничения. Точка обозначает выбранный участок, а не всю форму или площадь прикрепления. Применимость общих терминов к отдельным позвонкам и рёбрам поясняется в карточках.</p>
+    <p>Рёберные хрящи показаны двумя исходными группами. Соседние кости и межпозвоночные диски служат бледным контекстом. Учебные слои не обозначают единые анатомические пласты. Органы грудной полости, сосуды, нервы, фасции, суставы и связки относятся к следующим разделам.</p>
+    <h3>Грудная клетка и позвоночник как целое</h3>
+    ${(A.thoraxWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}
   </details>`;
 }
 function localizationLabel(p) {
@@ -1625,7 +1670,7 @@ $('#glosslist').innerHTML = GLOSS.map(g => `<div><dt>${esc(g.k)}</dt><dd>${esc(g
 // ---------- quiz ----------
 function quizScopes() {
   const S = SEC[state.sec];
-  const out = S.subs.filter(x => state.sec === 'head' ? ['all','mimetic','mastication'].includes(x.id) : state.sec !== 'neck' || x.id !== 'cervical')
+  const out = S.subs.filter(x => state.sec === 'head' ? ['all','mimetic','mastication'].includes(x.id) : state.sec === 'neck' ? x.id !== 'cervical' : state.sec !== 'trunk' || !['spine','ribs','sternum','diaphragm'].includes(x.id))
     .map(x => ({ id: x.id, t: x.id === 'all' ? 'Всё' : x.ru }));
   if (state.sec === 'arm' && state.trunk) out.push({ id: 'trunk', t: 'Грудь и спина' });
   return out;
@@ -1868,7 +1913,7 @@ const BM_KEYS = [null, 'head', 'neck', 'trunk', 'arm', 'leg'];
 const FIG_LABELS = [
   { sec: 'head', side: 'r', ru: 'Голова', at: [BM.anchors.head[0] + 0.06, BM.anchors.head[1] + 0.004] },
   { sec: 'neck', side: 'r', ru: 'Шея', at: [BM.anchors.neck[0] + 0.03, BM.anchors.neck[1]] },
-  { sec: 'trunk', side: 'r', ru: 'Туловище', at: [BM.anchors.trunk[0] + 0.12, BM.anchors.trunk[1] + 0.035] },
+  { sec: 'trunk', side: 'r', ru: 'Грудной отдел', at: [BM.anchors.trunk[0] + 0.12, BM.anchors.trunk[1] + 0.035] },
   { sec: 'arm', side: 'l', ru: 'Рука', at: BM.anchors.arm },
   { sec: 'leg', side: 'l', ru: 'Таз и нога', at: BM.anchors.leg }
 ];
@@ -2001,7 +2046,7 @@ async function enterSection(id, opts = {}) {
 // ---------- controls wiring ----------
 $('#bView').addEventListener('click', () => {
   if (!state.sec) return;
-  const order = ['head','neck'].includes(state.sec) ? HEAD_VIEW_ORDER : VIEW_ORDER;
+  const order = ['head','neck','trunk'].includes(state.sec) ? HEAD_VIEW_ORDER : VIEW_ORDER;
   state.viewIdx = (state.viewIdx + 1) % order.length;
   const [v, label] = order[state.viewIdx];
   const ids = state.sel && structs.has(state.sel) && isVisible(structs.get(state.sel)) && state.isolate ? [state.sel] : shownIds();
