@@ -17,6 +17,8 @@ for line in open(os.path.join(root, "verify", "ifaa.txt")):
 for row in json.load(open(os.path.join(root, 'verify', 'ifaa-head-bones.json'), encoding='utf-8')):
     if row['code'] in T:
         ref[row['code']] = row['lat']
+for row in json.load(open(os.path.join(root, 'verify', 'ifaa-neck-bones.json'), encoding='utf-8')):
+    ref[row['code']] = row['lat']
 # The website contains later nomenclature revisions. These three skull entries
 # are checked against the printed TA98, Kolesnikov 2003, pp. 12–13. Assert the
 # raw electronic values before applying the documented edition reconciliation.

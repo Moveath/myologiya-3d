@@ -411,3 +411,8 @@ for _bone in HEAD_SINGLE:
 for _bone in HEAD_PAIRED:
     for _side in ('right', 'left'):
         BONE[f'{_bone}_{_side}'] = list(HEAD_BONE_CODES[_bone])
+
+# Cervical general terms have explicitly documented per-bone applicability.
+from neck_terms import T as NECK_TERMS, BONE_CODES as NECK_BONE_CODES
+T.update(NECK_TERMS)
+BONE.update({bone:list(codes) for bone,codes in NECK_BONE_CODES.items()})

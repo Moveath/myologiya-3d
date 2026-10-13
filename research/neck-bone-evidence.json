@@ -1,0 +1,2906 @@
+{
+  "version": 1,
+  "scope": "Кости шеи: подъязычная кость, C1–C7; термины, топография и применимость, без проверки геометрии.",
+  "reviewed": "2026-10-13",
+  "catalogueIsOfficialPerBoneCount": false,
+  "geometryVerified": false,
+  "applicabilityNote": "TA98 содержит общие и региональные списки. Применение общих терминов к каждой кости здесь составлено редакционно по анатомическим источникам; число записей не является отдельным официальным счётчиком IFAA. Перечень терминов не подтверждает детали конкретной модели.",
+  "applicationNotes": {
+    "hyoid": "Три образования из самостоятельного раздела TA98; парные рога имеют один код на тип образования.",
+    "atlas": "Специальный список атланта дополнен поперечным отростком, поперечным и позвоночным отверстиями и нижней вырезкой. Общая верхняя вырезка здесь соответствует борозде позвоночной артерии и не дублируется. Тело и остистый отросток не добавляются.",
+    "axis": "Общие образования применяются с учётом зуба и отсутствия обычной верхней межпозвоночной поверхности. Региональные бугорки типичного поперечного отростка не переносятся автоматически.",
+    "cervical_3": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+    "cervical_4": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+    "cervical_5": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+    "cervical_6": "Общие образования позвонка и применимые региональные признаки C3–C7. Сонный бугорок — отдельное название переднего бугорка C6, а не дополнительная кость.",
+    "cervical_7": "Общие образования позвонка и применимые региональные признаки C3–C7. Передний бугорок может не обособляться; это объяснение регионального термина, а не утверждение о видимой детали модели."
+  },
+  "nomenclature": [
+    {
+      "title": "IFAA TA98 — Columna vertebralis",
+      "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH769%20A2F%20EN.htm",
+      "locator": "A02.2.00.001,006,009; A02.2.01; A02.2.02."
+    },
+    {
+      "title": "IFAA TA98 — Os hyoideum",
+      "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/02.1.16%20TA98%20EN.htm",
+      "locator": "A02.1.16.001–004."
+    },
+    {
+      "title": "Международная анатомическая терминология, ред. Л. Л. Колесников, 2003",
+      "locator": "Печатные с.19–20; локальная исследовательская копия просмотрена, не публикуется."
+    }
+  ],
+  "terms": {
+    "A02.1.16.001": {
+      "lat": "os hyoideum",
+      "ru": "Подъязычная кость",
+      "flag": ""
+    },
+    "A02.1.16.002": {
+      "lat": "corpus ossis hyoidei",
+      "ru": "Тело подъязычной кости",
+      "flag": ""
+    },
+    "A02.1.16.003": {
+      "lat": "cornu minus",
+      "ru": "Малый рог",
+      "flag": ""
+    },
+    "A02.1.16.004": {
+      "lat": "cornu majus",
+      "ru": "Большой рог",
+      "flag": ""
+    },
+    "A02.2.01.001": {
+      "lat": "vertebra",
+      "ru": "Позвонок",
+      "flag": ""
+    },
+    "A02.2.01.002": {
+      "lat": "corpus vertebrae",
+      "ru": "Тело позвонка",
+      "flag": ""
+    },
+    "A02.2.01.003": {
+      "lat": "facies intervertebralis",
+      "ru": "Межпозвоночная поверхность",
+      "flag": ""
+    },
+    "A02.2.01.004": {
+      "lat": "epiphysis anularis",
+      "ru": "Анулярный эпифиз",
+      "flag": ""
+    },
+    "A02.2.01.005": {
+      "lat": "arcus vertebrae",
+      "ru": "Дуга позвонка",
+      "flag": ""
+    },
+    "A02.2.01.006": {
+      "lat": "pediculus arcus vertebrae",
+      "ru": "Ножка дуги позвонка",
+      "flag": ""
+    },
+    "A02.2.01.007": {
+      "lat": "lamina arcus vertebrae",
+      "ru": "Пластинка дуги позвонка",
+      "flag": ""
+    },
+    "A02.2.01.008": {
+      "lat": "foramen intervertebrale",
+      "ru": "Межпозвоночное отверстие",
+      "flag": ""
+    },
+    "A02.2.01.009": {
+      "lat": "incisura vertebralis superior",
+      "ru": "Верхняя позвоночная вырезка",
+      "flag": ""
+    },
+    "A02.2.01.010": {
+      "lat": "incisura vertebralis inferior",
+      "ru": "Нижняя позвоночная вырезка",
+      "flag": ""
+    },
+    "A02.2.01.011": {
+      "lat": "foramen vertebrale",
+      "ru": "Позвоночное отверстие",
+      "flag": ""
+    },
+    "A02.2.01.012": {
+      "lat": "processus spinosus",
+      "ru": "Остистый отросток",
+      "flag": ""
+    },
+    "A02.2.01.013": {
+      "lat": "processus transversus",
+      "ru": "Поперечный отросток",
+      "flag": ""
+    },
+    "A02.2.01.014": {
+      "lat": "processus articularis superior; zygapophysis superior",
+      "ru": "Верхний суставной отросток",
+      "flag": ""
+    },
+    "A02.2.01.015": {
+      "lat": "facies articularis superior",
+      "ru": "Верхняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.01.016": {
+      "lat": "processus articularis inferior; zygapophysis inferior",
+      "ru": "Нижний суставной отросток",
+      "flag": ""
+    },
+    "A02.2.01.017": {
+      "lat": "facies articularis inferior",
+      "ru": "Нижняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.02.001": {
+      "lat": "vertebrae cervicales [C I - C VII]",
+      "ru": "Шейные позвонки [C I–C VII]",
+      "flag": ""
+    },
+    "A02.2.02.002": {
+      "lat": "uncus corporis; processus uncinatus",
+      "ru": "Крючок тела; крючковидный отросток",
+      "flag": ""
+    },
+    "A02.2.02.003": {
+      "lat": "foramen transversarium",
+      "ru": "Поперечное отверстие",
+      "flag": ""
+    },
+    "A02.2.02.004": {
+      "lat": "tuberculum anterius",
+      "ru": "Передний бугорок",
+      "flag": ""
+    },
+    "A02.2.02.005": {
+      "lat": "tuberculum caroticum",
+      "ru": "Сонный бугорок",
+      "flag": ""
+    },
+    "A02.2.02.006": {
+      "lat": "tuberculum posterius",
+      "ru": "Задний бугорок",
+      "flag": ""
+    },
+    "A02.2.02.007": {
+      "lat": "sulcus nervi spinalis",
+      "ru": "Борозда спинномозгового нерва",
+      "flag": ""
+    },
+    "A02.2.02.101": {
+      "lat": "atlas [C I]",
+      "ru": "Атлант [C I]",
+      "flag": ""
+    },
+    "A02.2.02.102": {
+      "lat": "massa lateralis atlantis",
+      "ru": "Латеральная масса",
+      "flag": ""
+    },
+    "A02.2.02.103": {
+      "lat": "facies articularis superior",
+      "ru": "Верхняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.02.104": {
+      "lat": "facies articularis inferior",
+      "ru": "Нижняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.02.105": {
+      "lat": "arcus anterior atlantis",
+      "ru": "Передняя дуга атланта",
+      "flag": ""
+    },
+    "A02.2.02.106": {
+      "lat": "fovea dentis",
+      "ru": "Ямка зуба",
+      "flag": ""
+    },
+    "A02.2.02.107": {
+      "lat": "tuberculum anterius",
+      "ru": "Передний бугорок",
+      "flag": ""
+    },
+    "A02.2.02.108": {
+      "lat": "arcus posterior atlantis",
+      "ru": "Задняя дуга атланта",
+      "flag": ""
+    },
+    "A02.2.02.109": {
+      "lat": "sulcus arteriae vertebralis",
+      "ru": "Борозда позвоночной артерии",
+      "flag": ""
+    },
+    "A02.2.02.110": {
+      "lat": "canalis arteriae vertebralis",
+      "ru": "Канал позвоночной артерии",
+      "flag": ""
+    },
+    "A02.2.02.111": {
+      "lat": "tuberculum posterius",
+      "ru": "Задний бугорок",
+      "flag": ""
+    },
+    "A02.2.02.201": {
+      "lat": "axis [C II]",
+      "ru": "Осевой позвонок [C II]",
+      "flag": ""
+    },
+    "A02.2.02.202": {
+      "lat": "dens axis",
+      "ru": "Зуб",
+      "flag": ""
+    },
+    "A02.2.02.203": {
+      "lat": "apex dentis",
+      "ru": "Верхушка зуба",
+      "flag": ""
+    },
+    "A02.2.02.204": {
+      "lat": "facies articularis anterior",
+      "ru": "Передняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.02.205": {
+      "lat": "facies articularis posterior",
+      "ru": "Задняя суставная поверхность",
+      "flag": ""
+    },
+    "A02.2.02.301": {
+      "lat": "vertebra prominens [C VII]",
+      "ru": "Выступающий позвонок [C VII]",
+      "flag": ""
+    },
+    "A02.2.00.001": {
+      "lat": "columna vertebralis",
+      "ru": "Позвоночный столб",
+      "flag": ""
+    },
+    "A02.2.00.006": {
+      "lat": "lordosis cervicis; lordosis colli",
+      "ru": "Шейный лордоз",
+      "flag": ""
+    },
+    "A02.2.00.009": {
+      "lat": "canalis vertebralis",
+      "ru": "Позвоночный канал",
+      "flag": ""
+    }
+  },
+  "bones": {
+    "hyoid": {
+      "ru": "Подъязычная кость",
+      "lat": "os hyoideum",
+      "code": "A02.1.16.001",
+      "x": "Подъязычная кость состоит из тела и пар больших и малых рогов.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Hyoid Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+          "locator": "PDF с.148–149: Body; Greater Cornua; Lesser Cornua."
+        },
+        {
+          "title": "Anatomy Standard — Os hyoideum",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-hyoideum.html",
+          "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
+        }
+      ],
+      "note": "Три образования из самостоятельного раздела TA98; парные рога имеют один код на тип образования.",
+      "codes": [
+        "A02.1.16.002",
+        "A02.1.16.003",
+        "A02.1.16.004"
+      ],
+      "entries": {
+        "A02.1.16.002": {
+          "x": "Средняя часть кости между рогами.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Hyoid Bone",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+              "locator": "PDF с.148–149: Body; Greater Cornua; Lesser Cornua."
+            },
+            {
+              "title": "Anatomy Standard — Os hyoideum",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-hyoideum.html",
+              "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.1.16.003": {
+          "x": "Небольшой выступ у соединения тела с большим рогом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Hyoid Bone",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+              "locator": "PDF с.148–149: Body; Greater Cornua; Lesser Cornua."
+            },
+            {
+              "title": "Anatomy Standard — Os hyoideum",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-hyoideum.html",
+              "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.1.16.004": {
+          "x": "Парный длинный рог, отходящий назад от тела.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Hyoid Bone",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+              "locator": "PDF с.148–149: Body; Greater Cornua; Lesser Cornua."
+            },
+            {
+              "title": "Anatomy Standard — Os hyoideum",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-hyoideum.html",
+              "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "atlas": {
+      "ru": "Атлант [C I]",
+      "lat": "atlas [C I]",
+      "code": "A02.2.02.101",
+      "x": "Первый шейный позвонок: кольцо из двух дуг и латеральных масс, без тела и остистого отростка.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Atlas",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+          "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+        }
+      ],
+      "note": "Специальный список атланта дополнен поперечным отростком, поперечным и позвоночным отверстиями и нижней вырезкой. Общая верхняя вырезка здесь соответствует борозде позвоночной артерии и не дублируется. Тело и остистый отросток не добавляются.",
+      "codes": [
+        "A02.2.02.102",
+        "A02.2.02.103",
+        "A02.2.02.104",
+        "A02.2.02.105",
+        "A02.2.02.106",
+        "A02.2.02.107",
+        "A02.2.02.108",
+        "A02.2.02.109",
+        "A02.2.02.110",
+        "A02.2.02.111",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.013",
+        "A02.2.02.003"
+      ],
+      "entries": {
+        "A02.2.02.102": {
+          "x": "Парная массивная часть между передней и задней дугами.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.103": {
+          "x": "Вогнутая поверхность для затылочного мыщелка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.104": {
+          "x": "Нижняя суставная поверхность латеральной массы для C2.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.105": {
+          "x": "Передняя часть костного кольца атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.106": {
+          "x": "Суставная ямка на задней стороне передней дуги для зуба C2.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.107": {
+          "x": "Срединное возвышение на передней стороне передней дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.108": {
+          "x": "Задняя часть костного кольца атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.109": {
+          "x": "Борозда сверху задней дуги позади латеральной массы.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.110": {
+          "x": "Непостоянный костный канал над бороздой позвоночной артерии при наличии костного мостика.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Ponticulus posticus of atlas vertebrae (2017)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5623291/",
+              "locator": "Description: complete and partial bony bridges over the vertebral artery groove."
+            }
+          ],
+          "scope": "anatomy",
+          "inc": 1,
+          "note": "Наличие канала в конкретной сетке проверяется отдельно. Скобки номенклатуры сами по себе не являются доказательством варианта."
+        },
+        "A02.2.02.111": {
+          "x": "Срединное возвышение на задней дуге.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Нижняя позвоночная вырезка в области задней дуги атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Frontiers in Neuroanatomy (2025) — Sœmmerring’s error: anatomical perspectives",
+              "url": "https://doi.org/10.3389/fnana.2025.1568824",
+              "locator": "Where is Sœmmerring’s error?: inferior notch of atlas and pedicle of axis; анатомическое описание, без принятия предложенной авторами перенумерации нервов."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Термин общего списка. Особенности верхнего шейного перехода не следует переносить с типичного позвонка автоматически."
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Atlas",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/atlas.html",
+              "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        }
+      }
+    },
+    "axis": {
+      "ru": "Осевой позвонок [C II]",
+      "lat": "axis [C II]",
+      "code": "A02.2.02.201",
+      "x": "Второй шейный позвонок. Зуб выступает вверх из его тела и сочленяется с атлантом.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Axis",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+          "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+        }
+      ],
+      "note": "Общие образования применяются с учётом зуба и отсутствия обычной верхней межпозвоночной поверхности. Региональные бугорки типичного поперечного отростка не переносятся автоматически.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.003",
+        "A02.2.02.202",
+        "A02.2.02.203",
+        "A02.2.02.204",
+        "A02.2.02.205"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Нижняя поверхность тела C2, обращённая к диску C2–C3.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Верхняя часть C2 несёт зуб; здесь нельзя подразумевать диск между телами C1 и C2."
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке осевого позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Axis",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+              "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.202": {
+          "x": "Отросток, выступающий вверх из тела осевого позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Axis",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+              "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.203": {
+          "x": "Верхний конец зуба.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Axis",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+              "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.204": {
+          "x": "Передняя суставная поверхность зуба для ямки зуба атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Axis",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+              "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.205": {
+          "x": "Задняя суставная поверхность зуба, обращённая к поперечной связке атланта.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Axis",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/axis.html",
+              "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "cervical_3": {
+      "ru": "Третий шейный позвонок (C3)",
+      "lat": "vertebrae cervicales [C I - C VII]",
+      "code": "A02.2.02.001",
+      "x": "Шейный позвонок C3: тело, дуга и отростки. Относится к типичным шейным позвонкам.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Typical Cervical Vertebra",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+          "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+        }
+      ],
+      "note": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+      "level": "C3",
+      "termNote": "Латынь и код относятся к групповому термину TA98; номер обозначает выбранный позвонок, не отдельную строку TA98.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.002",
+        "A02.2.02.003",
+        "A02.2.02.004",
+        "A02.2.02.006",
+        "A02.2.02.007"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Поверхность тела, обращённая к межпозвоночному диску.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.002": {
+          "x": "Возвышение бокового края верхней поверхности тела C3–C7.",
+          "refs": [
+            {
+              "title": "Raveendranath et al. (2019) — Morphometry of C3–7",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6944996/",
+              "locator": "Methods, Uncinate Process; Fig.1–2; Table 1, C3–C7."
+            },
+            {
+              "title": "Güvençer et al. (2016) — Morphometric evaluation of the uncinate process",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5075958/",
+              "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.004": {
+          "x": "Передний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.006": {
+          "x": "Задний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.007": {
+          "x": "Борозда на верхней стороне поперечного отростка между его бугорками.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "cervical_4": {
+      "ru": "Четвёртый шейный позвонок (C4)",
+      "lat": "vertebrae cervicales [C I - C VII]",
+      "code": "A02.2.02.001",
+      "x": "Шейный позвонок C4: тело, дуга и отростки. Относится к типичным шейным позвонкам.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Typical Cervical Vertebra",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+          "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+        }
+      ],
+      "note": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+      "level": "C4",
+      "termNote": "Латынь и код относятся к групповому термину TA98; номер обозначает выбранный позвонок, не отдельную строку TA98.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.002",
+        "A02.2.02.003",
+        "A02.2.02.004",
+        "A02.2.02.006",
+        "A02.2.02.007"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Поверхность тела, обращённая к межпозвоночному диску.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.002": {
+          "x": "Возвышение бокового края верхней поверхности тела C3–C7.",
+          "refs": [
+            {
+              "title": "Raveendranath et al. (2019) — Morphometry of C3–7",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6944996/",
+              "locator": "Methods, Uncinate Process; Fig.1–2; Table 1, C3–C7."
+            },
+            {
+              "title": "Güvençer et al. (2016) — Morphometric evaluation of the uncinate process",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5075958/",
+              "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.004": {
+          "x": "Передний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.006": {
+          "x": "Задний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.007": {
+          "x": "Борозда на верхней стороне поперечного отростка между его бугорками.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "cervical_5": {
+      "ru": "Пятый шейный позвонок (C5)",
+      "lat": "vertebrae cervicales [C I - C VII]",
+      "code": "A02.2.02.001",
+      "x": "Шейный позвонок C5: тело, дуга и отростки. Относится к типичным шейным позвонкам.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Typical Cervical Vertebra",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+          "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+        }
+      ],
+      "note": "Общие образования позвонка и применимые региональные признаки C3–C7.",
+      "level": "C5",
+      "termNote": "Латынь и код относятся к групповому термину TA98; номер обозначает выбранный позвонок, не отдельную строку TA98.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.002",
+        "A02.2.02.003",
+        "A02.2.02.004",
+        "A02.2.02.006",
+        "A02.2.02.007"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Поверхность тела, обращённая к межпозвоночному диску.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.002": {
+          "x": "Возвышение бокового края верхней поверхности тела C3–C7.",
+          "refs": [
+            {
+              "title": "Raveendranath et al. (2019) — Morphometry of C3–7",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6944996/",
+              "locator": "Methods, Uncinate Process; Fig.1–2; Table 1, C3–C7."
+            },
+            {
+              "title": "Güvençer et al. (2016) — Morphometric evaluation of the uncinate process",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5075958/",
+              "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.004": {
+          "x": "Передний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.006": {
+          "x": "Задний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.007": {
+          "x": "Борозда на верхней стороне поперечного отростка между его бугорками.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "cervical_6": {
+      "ru": "Шестой шейный позвонок (C6)",
+      "lat": "vertebrae cervicales [C I - C VII]",
+      "code": "A02.2.02.001",
+      "x": "Шейный позвонок C6: тело, дуга и отростки. Относится к типичным шейным позвонкам.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — Typical Cervical Vertebra",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+          "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+        }
+      ],
+      "note": "Общие образования позвонка и применимые региональные признаки C3–C7. Сонный бугорок — отдельное название переднего бугорка C6, а не дополнительная кость.",
+      "level": "C6",
+      "termNote": "Латынь и код относятся к групповому термину TA98; номер обозначает выбранный позвонок, не отдельную строку TA98.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.002",
+        "A02.2.02.003",
+        "A02.2.02.004",
+        "A02.2.02.006",
+        "A02.2.02.007",
+        "A02.2.02.005"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Поверхность тела, обращённая к межпозвоночному диску.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.002": {
+          "x": "Возвышение бокового края верхней поверхности тела C3–C7.",
+          "refs": [
+            {
+              "title": "Raveendranath et al. (2019) — Morphometry of C3–7",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6944996/",
+              "locator": "Methods, Uncinate Process; Fig.1–2; Table 1, C3–C7."
+            },
+            {
+              "title": "Güvençer et al. (2016) — Morphometric evaluation of the uncinate process",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5075958/",
+              "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.004": {
+          "x": "Передний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.006": {
+          "x": "Задний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.007": {
+          "x": "Борозда на верхней стороне поперечного отростка между его бугорками.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.005": {
+          "x": "Выраженный передний бугорок поперечного отростка C6.",
+          "refs": [
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            },
+            {
+              "title": "Lee et al. (2013) — The Efficacy of Carotid Tubercle as an Anatomical Landmark",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3664672/",
+              "locator": "Introduction: carotid tubercle at the transverse process of the sixth cervical vertebra."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    },
+    "cervical_7": {
+      "ru": "Выступающий позвонок [C VII]",
+      "lat": "vertebra prominens [C VII]",
+      "code": "A02.2.02.301",
+      "x": "Седьмой шейный позвонок, обычно с длинным нераздвоенным остистым отростком.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Cervical Vertebrae",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+          "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+        },
+        {
+          "title": "Anatomy Standard — C7",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/c7.html",
+          "locator": "Lateral and superior aspects: processus spinosus, sulcus nervi spinalis, foramen transversarium."
+        }
+      ],
+      "note": "Общие образования позвонка и применимые региональные признаки C3–C7. Передний бугорок может не обособляться; это объяснение регионального термина, а не утверждение о видимой детали модели.",
+      "codes": [
+        "A02.2.01.002",
+        "A02.2.01.003",
+        "A02.2.01.004",
+        "A02.2.01.005",
+        "A02.2.01.006",
+        "A02.2.01.007",
+        "A02.2.01.009",
+        "A02.2.01.010",
+        "A02.2.01.011",
+        "A02.2.01.012",
+        "A02.2.01.013",
+        "A02.2.01.014",
+        "A02.2.01.015",
+        "A02.2.01.016",
+        "A02.2.01.017",
+        "A02.2.02.002",
+        "A02.2.02.003",
+        "A02.2.02.004",
+        "A02.2.02.006",
+        "A02.2.02.007"
+      ],
+      "entries": {
+        "A02.2.01.002": {
+          "x": "Передняя опорная часть позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.003": {
+          "x": "Поверхность тела, обращённая к межпозвоночному диску.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.004": {
+          "x": "Кольцевая область окостенения по краю тела позвонка, срастающаяся с ним при созревании скелета.",
+          "refs": [
+            {
+              "title": "Radiographic morphology of normal ring apophyses in the immature cervical spine (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29497774/",
+              "locator": "Abstract: Background, Results and Conclusions; возрастная изменчивость и сращение."
+            },
+            {
+              "title": "Uys et al. (2019) — Cervical vertebral ring apophysis ossification",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31402420/",
+              "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Возрастную стадию и границы эпифиза нельзя установить по одной внешней сетке взрослой кости."
+        },
+        "A02.2.01.005": {
+          "x": "Задняя костная часть, ограничивающая позвоночное отверстие.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.006": {
+          "x": "Парная короткая часть дуги, соединённая с телом.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.007": {
+          "x": "Пластинчатая задняя часть дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.009": {
+          "x": "Вырезка у верхнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.010": {
+          "x": "Вырезка у нижнего края ножки дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.011": {
+          "x": "Пространство, ограниченное костными частями позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.012": {
+          "x": "Задний срединный отросток дуги.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.013": {
+          "x": "Парный отросток, направленный вбок.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.014": {
+          "x": "Верхний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.015": {
+          "x": "Суставная поверхность, обращённая к вышележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.016": {
+          "x": "Нижний суставной отросток позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.01.017": {
+          "x": "Суставная поверхность, обращённая к нижележащему позвонку.",
+          "refs": [
+            {
+              "title": "Gray (1918) — General Characteristics of a Vertebra",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+              "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+            },
+            {
+              "title": "OpenStax — The Vertebral Column",
+              "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+              "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.002": {
+          "x": "Возвышение бокового края верхней поверхности тела C3–C7.",
+          "refs": [
+            {
+              "title": "Raveendranath et al. (2019) — Morphometry of C3–7",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6944996/",
+              "locator": "Methods, Uncinate Process; Fig.1–2; Table 1, C3–C7."
+            },
+            {
+              "title": "Güvençer et al. (2016) — Morphometric evaluation of the uncinate process",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5075958/",
+              "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.003": {
+          "x": "Отверстие в поперечном отростке.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Форма отверстия не подтверждает его сосудистое содержимое в данной модели."
+        },
+        "A02.2.02.004": {
+          "x": "Передний бугорок поперечного отростка: на C7 может быть слабо выражен или не обособляться.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Ultrasound-Guided Cervical Selective Nerve Root Block (2024)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11278421/",
+              "locator": "§2.4.2 CSNRB Group; Fig.1C: prominent posterior and rudimentary anterior tubercle of C7."
+            }
+          ],
+          "scope": "anatomy",
+          "note": "Региональный термин включён для объяснения изменчивости; наличие отдельного бугорка в модели не заявлено."
+        },
+        "A02.2.02.006": {
+          "x": "Задний бугорок поперечного отростка типичного шейного позвонка.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — Typical Cervical Vertebra",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-cervicalis-typica.html",
+              "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
+            }
+          ],
+          "scope": "anatomy"
+        },
+        "A02.2.02.007": {
+          "x": "Обычно неглубокая борозда сверху поперечного отростка C7.",
+          "refs": [
+            {
+              "title": "Gray (1918) — The Cervical Vertebrae",
+              "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+              "locator": "PDF с.27–32: типичные позвонки; First Cervical Vertebra; Second Cervical Vertebra; Seventh Cervical Vertebra."
+            },
+            {
+              "title": "Anatomy Standard — C7",
+              "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/c7.html",
+              "locator": "Lateral and superior aspects: processus spinosus, sulcus nervi spinalis, foramen transversarium."
+            }
+          ],
+          "scope": "anatomy"
+        }
+      }
+    }
+  },
+  "wholeTerms": {
+    "A02.2.00.001": {
+      "x": "Последовательность позвонков, образующая позвоночный столб.",
+      "refs": [
+        {
+          "title": "Gray (1918) — General Characteristics of a Vertebra",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+          "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+        },
+        {
+          "title": "OpenStax — The Vertebral Column",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+          "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        }
+      ],
+      "scope": "anatomy"
+    },
+    "A02.2.00.006": {
+      "x": "Изгиб шейного отдела выпуклостью вперёд.",
+      "refs": [
+        {
+          "title": "Gray (1918) — The Vertebral Column as a Whole",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=52",
+          "locator": "PDF с.52, Curves: cervical curve convex forward."
+        },
+        {
+          "title": "OpenStax — The Vertebral Column",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+          "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        }
+      ],
+      "scope": "anatomy"
+    },
+    "A02.2.00.009": {
+      "x": "Канал, образуемый последовательностью позвоночных отверстий.",
+      "refs": [
+        {
+          "title": "Gray (1918) — General Characteristics of a Vertebra",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+          "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+        },
+        {
+          "title": "OpenStax — The Vertebral Column",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+          "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        }
+      ],
+      "scope": "anatomy"
+    },
+    "A02.2.01.008": {
+      "x": "Отверстие между соседними позвонками; его границы принадлежат нескольким структурам.",
+      "refs": [
+        {
+          "title": "Gray (1918) — General Characteristics of a Vertebra",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=25",
+          "locator": "PDF с.25–26, Body; Pedicles; Laminae; Processes."
+        },
+        {
+          "title": "OpenStax — The Vertebral Column",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+          "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        }
+      ],
+      "scope": "anatomy"
+    }
+  },
+  "limits": [
+    "Нет координат или подтверждения деталей сетки.",
+    "Один термин парного образования не означает проверку обеих сторон.",
+    "Межпозвоночное отверстие — составное образование; не приписывается одной кости.",
+    "Анулярный эпифиз: стадия сращения отдельно не проверена."
+  ]
+}

@@ -486,7 +486,7 @@ dt .term { text-decoration-color: var(--ink-2); }
         <button class="x" id="bCloseAbout" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </div>
       <p>Кнопка с человечком слева вверху возвращает к схеме тела, где выбираются разделы. Под заголовком раздела — подразделы: например, у руки это плечевой пояс, плечо, предплечье и кисть. В подразделе остаются только его мышцы, а остальные кости видны бледно, чтобы было понятно, где ты находишься.</p>
-      <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
+      <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы и шеи доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
       <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
@@ -503,6 +503,8 @@ dt .term { text-decoration-color: var(--ink-2); }
       <p>У девяти карточек мышц нет отдельной модели: это ушные мышцы, мышцы, опускающие бровь, и поперечная мышца подбородка. Некоторые части мышц доступны только как карточки. Такое ограничение указано рядом с описанием.</p>
       <p>У каждого образования черепа из списка TA98 есть маркер и описание со ссылками. Сплошная обводка обозначает участок поверхности, пунктирная — анатомическую проекцию или вариант строения: мелкое образование может быть не прорисовано в самой модели. Один маркер не показывает всю поверхность или ход канала. Различие объяснено в карточке. Кнопка «Просвечивать кость» помогает увидеть ориентиры с внутренней стороны.</p>
       <h3>Как проверены тексты</h3>
+      <p>Раздел «Шея» содержит C1–C7, подъязычную кость и 62 мышечных экземпляра с обеих сторон. Переключай подразделы, чтобы разобрать поверхностные, над- и подподъязычные, глубокие передние, задние и подзатылочные мышцы, связь с плечевым поясом. Цвета костей помогают различать уровни позвонков. Для 100 из 138 костных записей проверено положение маркера; у остальных есть текстовое объяснение без выдуманных координат. Общие и региональные термины TA98 применены к позвонкам по указанным источникам, а составные образования вынесены отдельно. «Состав раздела и ограничения» перечисляет следующие самостоятельные задачи.</p>
+      <p>Карточки шеи содержат ссылки по полям на открытые анатомические тексты Gray, университетские таблицы, современные учебные статьи и номенклатуру TA98. Различия источников сохранены. Исходная модель мышцы не подтверждает автоматически все её прикрепления или границы частей.</p>
       <p>Для исходных разделов руки и ноги использованы сводная таблица мышц по Gray's Anatomy (<a href="https://en.wikipedia.org/wiki/List_of_skeletal_muscles_of_the_human_body" target="_blank" rel="noopener">Wikipedia</a>) и <a href="https://teachmeanatomy.info/" target="_blank" rel="noopener">TeachMeAnatomy</a>. В новых карточках головы приведены ссылки на использованные открытые учебные статьи, таблицы Loyola University и DEGUM, а для спорных вопросов — анатомические исследования. Неподтверждённые сведения не заполнены догадками.</p>
       <p>Где русские и англоязычные учебники расходятся, это написано прямо в карточке: большая и малая грудные мышцы, подключичная, плечелучевая и локтевая мышцы, наружная запирательная мышца, короткий сгибатель большого пальца стопы.</p>
       <p>Латинские названия даны по международной анатомической терминологии (Terminologia Anatomica, TA98).</p>
@@ -522,9 +524,11 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="data.js"></script>
 <script src="data-leg.js"></script>
 <script src="data-head.js"></script>
+<script src="data-neck.js"></script>
 <script src="pins.js"></script>
 <script src="pins-leg.js"></script>
 <script src="pins-head.js"></script>
+<script src="pins-neck.js"></script>
 <script src="skull-evidence-index.js"></script>
 <script src="skull-geometry-index.js"></script>
 <script src="bodymap.js"></script>
@@ -566,7 +570,17 @@ const SECTIONS = [
       { id: 'mimetic', ru: 'Мимические мышцы', hint: 'Мышцы лица и свода черепа', v: 'ant' },
       { id: 'mastication', ru: 'Жевательные мышцы', hint: 'Жевательная, височная и крыловидные мышцы', v: 'antlat' }
     ] },
-  { id: 'neck', ru: 'Шея', hint: 'Мышцы шеи, подъязычная кость, шейные позвонки', ready: false },
+  { id: 'neck', ru: 'Шея', short: 'Шея', hint: 'Шейные позвонки, подъязычная кость и мышцы с обеих сторон', ready: true, file: 'neck',
+    tries: ['atlas', 'hyoid', 'sternocleidomastoid_right'],
+    subs: [
+      { id: 'all', ru: 'Вся шея', hint: 'Кости и мышцы шеи; соседние структуры показаны бледно', v: 'antlat' },
+      { id: 'cervical', ru: 'Позвонки', hint: 'Семь шейных позвонков C1–C7', v: 'antlat' },
+      { id: 'superficial', ru: 'Поверхностные', hint: 'Подкожная и грудино-ключично-сосцевидная мышцы', v: 'antlat' },
+      { id: 'hyoid', ru: 'Подъязычная область', hint: 'Подъязычная кость, надподъязычные и подподъязычные мышцы', v: 'ant' },
+      { id: 'deep', ru: 'Глубокие спереди', hint: 'Предпозвоночные и лестничные мышцы', v: 'antlat' },
+      { id: 'posterior', ru: 'Задние и подзатылочные', hint: 'Ременные, глубокие задние и подзатылочные мышцы', v: 'post' },
+      { id: 'girdle', ru: 'Связь с плечевым поясом', hint: 'Трапециевидная мышца и мышца, поднимающая лопатку', v: 'post' }
+    ] },
   { id: 'trunk', ru: 'Туловище', hint: 'Грудная клетка, позвоночник, мышцы спины и живота', ready: false },
   { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Правая рука: плечевой пояс, плечо, предплечье и кисть', ready: true, file: 'arm',
     tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
@@ -775,7 +789,9 @@ const HEAD_BONE_PALETTE = {
   frontal: '#e8c04c', parietal: '#b488c9', occipital: '#4fa7a1', temporal: '#689ddd',
   sphenoid: '#e88762', ethmoid: '#91b95b', nasal: '#86ced8', lacrimal: '#cfa847',
   zygomatic: '#e99c4a', maxilla: '#d988b0', palatine: '#8674ad', inferior_concha: '#959fe0',
-  vomer: '#b98665', mandible: '#a4bf71'
+  vomer: '#b98665', mandible: '#a4bf71',
+  hyoid: '#e8c04c', atlas: '#689ddd', axis: '#e88762', cervical_3: '#91b95b',
+  cervical_4: '#b488c9', cervical_5: '#4fa7a1', cervical_6: '#d988b0', cervical_7: '#cfa847'
 };
 const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
@@ -819,15 +835,16 @@ function updateHeadCut() {
 const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
   const material = GHOST.clone(); material.color.copy(color); return [id, material];
 }));
-const boneColorsActive = () => state.sec === 'head' && state.boneColors && state.mode !== 'quiz';
+const boneColorsActive = () => ['head','neck'].includes(state.sec) && state.boneColors && state.mode !== 'quiz';
 const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
 function updateBoneColorControls() {
   const head = state.sec === 'head', quiz = state.mode === 'quiz';
-  $('#bBoneColors').hidden = !head;
+  const colored = head || state.sec === 'neck';
+  $('#bBoneColors').hidden = !colored;
   $('#bBoneColors').disabled = quiz;
   $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
   $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
-  $('#bBoneLegend').hidden = !head || quiz || !state.boneColors;
+  $('#bBoneLegend').hidden = !colored || quiz || !state.boneColors;
   $('#bHeadDetail').hidden = !head || quiz;
 }
 
@@ -906,7 +923,7 @@ function visState(s) {
   if (iso && iso.kind !== 'm') return s.id === iso.id ? 2 : 0; // an isolated bone is shown on its own
   const sub = curSub();
   const S = SEC[state.sec];
-  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
+  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
   const inSub = sub === 'all' || subOf(s.id) === sub;
   if (s.kind === 'm') {
     if (iso) return s.id === iso.id ? 2 : 0;
@@ -1011,7 +1028,7 @@ function frameBox(box, viewKey, instant, minSize = 0) {
 }
 // how much context to keep around a structure when flying to it (small bones of the hand and foot get a close view)
 const smallFrame = (id) => {
-  if (secOf(id) === 'head') return A.muscles[id] ? 0.07 : 0.05;
+  if (['head','neck'].includes(secOf(id))) return A.muscles[id] ? 0.07 : 0.05;
   if (A.muscles[id]) return ['hand', 'foot'].includes(regionOf(id)) ? 0.12 : 0.22;
   const b = A.bones[id];
   return b && (b.sub === 'hand' || b.sub === 'foot') ? 0.08 : 0.22;
@@ -1039,7 +1056,9 @@ const shownIds = () => [...structs.values()].filter(s => s.kind !== 'c' && visSt
 function frameSub(instant) {
   const S = SEC[state.sec];
   const def = S.subs.find(x => x.id === curSub()) || S.subs[0];
-  frame(shownIds(), def.v, instant);
+  const ids = state.sec === 'neck' && curSub() === 'all' && !state.isolate
+    ? ['atlas','axis','cervical_7','hyoid','sternocleidomastoid_right','sternocleidomastoid_left'].filter(id=>structs.has(id)) : shownIds();
+  frame(ids, def.v, instant);
   resetView();
 }
 function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Повернуть'; }
@@ -1340,7 +1359,8 @@ function renderSheet() {
       <div class="kicker">${esc(S.short || S.ru)} · ${plural(c.m, 'мышца', 'мышцы', 'мышц')} · ${plural(c.b, 'кость', 'кости', 'костей')} · ${plural(c.p, 'образование', 'образования', 'образований')} костей (TA98)</div>
       <p class="name">Нажми на мышцу или кость</p>
       <p class="hint">${curSub() === 'all' ? 'Выбери подраздел вверху, чтобы остались только его мышцы.' : `Сейчас открыт подраздел «${esc(subDef.ru)}».`} Карточка покажет начало, прикрепление, функцию, иннервацию и кровоснабжение.</p>
-      <div class="tryrow">${tryIds.map(t => `<button class="chip" data-go="${t}">${esc((A.muscles[t] || A.bones[t]).ru)}</button>`).join('')}</div>`;
+      <div class="tryrow">${tryIds.map(t => `<button class="chip" data-go="${t}">${esc((A.muscles[t] || A.bones[t]).ru)}</button>`).join('')}</div>
+      ${state.sec==='neck'?neckScope():''}`;
     afterSheet(); return;
   }
   const isMuscle = !!A.muscles[id];
@@ -1421,7 +1441,7 @@ function renderSheet() {
     <div class="actions">
       <button class="act primary togglemore" id="bMore">${sheet.dataset.state === 'open' ? 'Свернуть' : 'Подробнее'}</button>
       ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : 'Только эта'}</button>` : ''}
-      ${!noModel && !isMuscle && state.sec === 'head' ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
+      ${!noModel && !isMuscle && ['head','neck'].includes(state.sec) ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? 'Сделать кость непрозрачной' : 'Просвечивать кость'}</button>` : ''}
       ${!isMuscle && /^temporal_(left|right)$/.test(id) ? '<button class="act" data-detail-mode="openear">Внутри височной кости</button>' : ''}
       ${!noModel ? `<button class="act" id="bHide">Скрыть</button>` : ''}
       ${!noModel ? `<button class="act icon" id="bFocus" aria-label="Приблизить" title="Приблизить"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 8v5M8 10.5h5"/></svg></button>` : ''}
@@ -1447,6 +1467,17 @@ function sourceLinks(refs) {
     const source = typeof ref === 'string' ? {url: ref, title: `Источник ${i + 1}`} : ref;
     return /^https:\/\//.test(source.url || '') ? `<a class="chip" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title || `Источник ${i + 1}`)}</a>` : '';
   }).join('')}</div>${refs.some(ref=>typeof ref==='object'&&ref.locator)?`<details class="field-sources"><summary>Точные места в источниках</summary><ul>${refs.filter(ref=>typeof ref==='object'&&ref.locator).map(ref=>`<li><b>${esc(ref.title||'Источник')}</b><span class="source-locator">${esc(ref.locator)}</span></li>`).join('')}</ul></details>`:''}</div>`;
+}
+function neckScope() {
+  const terms=PINS.filter(p=>secOf(p.b)==='neck'&&p.t==='ta');
+  const located=terms.filter(p=>p.p).length;
+  return `<details class="sect neck-scope"><summary>Состав раздела и ограничения</summary>
+    <p>Костно-мышечный раздел: C1–C7, подъязычная кость и 62 мышечных экземпляра с обеих сторон. Соседние кости и щитовидный хрящ показаны бледно для ориентации. Учебные слои помогают разбирать модель и не обозначают единые анатомические пласты.</p>
+    <p>Каталог содержит ${terms.length} записей TA98; проверенные координаты есть у ${located}. Остальные можно прочитать в карточке кости, но случайные точки для них не добавлены. Маркер не подтверждает полную форму образования.</p>
+    <p>Мелкие межостистые, межпоперечные мышцы, вращатели и многораздельные мышцы требуют отдельного разбора. Здесь также не заявлены отдельные модели фасций, связок, суставов, сосудов, нервов, глотки, гортани и желёз. Они сохраняют самостоятельные перечни для следующих модулей.</p>
+    <h3>Шейный отдел как целое</h3>
+    ${(A.neckWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}
+  </details>`;
 }
 function localizationLabel(p) {
   return ({surface: 'На поверхности', projection: 'Анатомическая проекция', internal: 'Внутренний ориентир · схема', variant: 'Вариант строения · проекция'})[p.loc] || '';
@@ -1491,7 +1522,7 @@ function bonePinSect(id, d) {
   const groups = [];
   for (const p of own) { const g = p.g || ''; let G = groups.find(x => x.g === g); if (!G) groups.push(G = { g, list: [] }); G.list.push(p); }
   const byPart = groups.length > 1;
-  if (feats.length) html += `<p class="lead">Ровно столько терминов в официальном списке Terminologia Anatomica (TA98)${byPart ? ', по частям — ниже' : ' для этой кости'}${inc ? `; ${plural(inc, 'непостоянное', 'непостоянных', 'непостоянных')} (бывает не у всех людей) ${inc === 1 ? 'отмечено' : 'отмечены'} «непост.»` : ''}.</p>`;
+  if (feats.length) html += d.termScopeNote ? `<p class="lead">${esc(d.termScopeNote)}</p>` : `<p class="lead">Ровно столько терминов в официальном списке Terminologia Anatomica (TA98)${byPart ? ', по частям — ниже' : ' для этой кости'}${inc ? `; ${plural(inc, 'непостоянное', 'непостоянных', 'непостоянных')} (бывает не у всех людей) ${inc === 1 ? 'отмечено' : 'отмечены'} «непост.»` : ''}.</p>`;
   if (groups.length > 1 || (groups[0] && groups[0].g)) {
     for (const G of groups) {
       const n = G.list.filter(p => !p.part).length;
@@ -1594,7 +1625,7 @@ $('#glosslist').innerHTML = GLOSS.map(g => `<div><dt>${esc(g.k)}</dt><dd>${esc(g
 // ---------- quiz ----------
 function quizScopes() {
   const S = SEC[state.sec];
-  const out = S.subs.filter(x => state.sec !== 'head' || ['all','mimetic','mastication'].includes(x.id))
+  const out = S.subs.filter(x => state.sec === 'head' ? ['all','mimetic','mastication'].includes(x.id) : state.sec !== 'neck' || x.id !== 'cervical')
     .map(x => ({ id: x.id, t: x.id === 'all' ? 'Всё' : x.ru }));
   if (state.sec === 'arm' && state.trunk) out.push({ id: 'trunk', t: 'Грудь и спина' });
   return out;
@@ -1624,7 +1655,7 @@ function nextQuestion() {
   q.peel = A.muscles[target].d - 1;
   q.options = shuffle([target].concat(same.concat(other).slice(0, 3)));
   applyVisibility();
-  frame([target], A.muscles[target].v || 'ant', false, state.sec === 'head' ? 0.08 : ['hand', 'foot'].includes(regionOf(target)) ? 0.15 : 0.3);
+  frame([target], A.muscles[target].v || 'ant', false, ['head','neck'].includes(state.sec) ? 0.08 : ['hand', 'foot'].includes(regionOf(target)) ? 0.15 : 0.3);
   resetView();
   renderSheet();
 }
@@ -1761,7 +1792,7 @@ $('#bCloseList').addEventListener('click', closeList);
 const boneLegend = $('#boneLegend');
 function renderBoneLegend() {
   let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
-  for (const group of A.boneGroups.filter(g => g.sec === 'head' && !isSoft(g.id))) {
+  for (const group of A.boneGroups.filter(g => g.sec === state.sec && !isSoft(g.id))) {
     const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)]);
     if (!bones.length) continue;
     html += `<h3>${esc(group.title)}</h3>`;
@@ -1970,7 +2001,7 @@ async function enterSection(id, opts = {}) {
 // ---------- controls wiring ----------
 $('#bView').addEventListener('click', () => {
   if (!state.sec) return;
-  const order = state.sec === 'head' ? HEAD_VIEW_ORDER : VIEW_ORDER;
+  const order = ['head','neck'].includes(state.sec) ? HEAD_VIEW_ORDER : VIEW_ORDER;
   state.viewIdx = (state.viewIdx + 1) % order.length;
   const [v, label] = order[state.viewIdx];
   const ids = state.sel && structs.has(state.sel) && isVisible(structs.get(state.sel)) && state.isolate ? [state.sel] : shownIds();

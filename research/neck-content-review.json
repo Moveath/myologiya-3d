@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "reviewed": "2026-10-13",
+  "scope": "Ограниченная отдельная редакционная проверка выбранных полей spinalis, longissimus, scalenes и частей trapezius в scripts/neck_muscles.py.",
+  "reviewType": "internal_assistant_cross_review",
+  "externalAnatomistReview": false,
+  "geometryReviewed": false,
+  "status": "reviewed_findings_corrected",
+  "recheck": "Повторно прочитаны итоговые fieldRefs и текст карточек после исправления автором; две запрошенные правки и уточнение T2 подтверждены.",
+  "limitations": [
+    "Не является проверкой всех утверждений раздела или независимой экспертной анатомической приёмкой.",
+    "Источники подтверждают типичную анатомию; соответствие прикреплений конкретной 3D-сетке здесь не проверялось.",
+    "Проверены только перечисленные выводы; общий статус не означает полную проверку всего раздела."
+  ],
+  "findings": [
+    {
+      "id": "deep_back_missing_actions_reference",
+      "status": "fixed_verified",
+      "resolution": "Для перечисленных мышц n/a второй источник заменён на реальные столбцы UAMS. Для функции longissimus capitis отдельно использована OpenStax Table 11.5: разгибание, боковой наклон и поворот в свою сторону подтверждены этой строкой и Kenhub; отсутствующий в UAMS поворот больше не приписывается его строке.",
+      "severity": "evidence",
+      "structures": ["iliocostalis_cervicis", "longissimus_cervicis", "longissimus_capitis", "spinalis_cervicis", "semispinalis_cervicis", "semispinalis_capitis"],
+      "fields": ["a", "n"],
+      "finding": "Общий second_ref на WikiMD The Deep Muscles of the Back не подтверждает заявленную пару источников для иннервации и функции этих отдельных мышц. В доступном тексте есть Nerves/Actions для Splenii, но после остальных подразделов нет обещанного общего раздела Nerves/Actions.",
+      "recommendation": "Для простых проверенных утверждений использовать действительно присутствующие строки Action/Innervation таблицы UAMS вместе с соответствующей статьёй Kenhub. Сохранить Gray для тех o/i, которые он явно описывает.",
+      "sources": [
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Splenius — Nerves/Actions; далее Iliocostalis, Longissimus, Spinalis, Semispinalis; конец основного текста после Intertransversarii."},
+        {"url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-back-region/", "locator": "Строки iliocostalis, longissimus, spinalis, semispinalis; столбцы Action и Innervation."},
+        {"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back", "locator": "Table 11.5, только строка Longissimus capitis: direction of unilateral rotation; bilateral extension."}
+      ]
+    },
+    {
+      "id": "trapezius_parts_reference_scope",
+      "status": "fixed_verified",
+      "resolution": "Ссылки частей теперь указывают на Kenhub и отдельную главу Gray The Muscles Connecting the Upper Extremity to the Vertebral Column. Глава повторно прочитана: Trapezius — распределение superior/middle/inferior fibers по прикреплениям; Actions — подъём, опускание и приведение лопатки.",
+      "severity": "evidence_scope",
+      "structures": ["neck_trapezius"],
+      "fields": ["parts.o", "parts.i", "parts.a"],
+      "finding": "Автоматическое наследование ссылок целой мышцы создаёт впечатление, что UAMS отдельно подтверждает принадлежность каждого прикрепления именованной части. Строка UAMS перечисляет прикрепления всей мышцы, не разделяя их по трём частям.",
+      "recommendation": "Привязать второй источник к конкретным частям и полям. Если источник остаётся о целой мышце, явно обозначить его более широкий охват вместо самостоятельного подтверждения части.",
+      "sources": [
+        {"url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-back-region/", "locator": "Строка trapezius, Origin/Insertion/Action."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle", "locator": "Origin and insertion; Functions — descending, transverse, ascending fibers."},
+        {"url": "https://doi.org/10.1016/0268-0033(94)90057-4", "locator": "Johnson et al., Anatomy and actions of the trapezius muscle (1994), abstract: распределение пучков по прикреплениям на ключице и лопатке."},
+        {"url": "https://www.ncbi.nlm.nih.gov/books/NBK518994/", "locator": "Introduction: раздельные функции upper, middle, lower fibers."}
+      ]
+    },
+    {
+      "id": "longissimus_cervicis_attachments",
+      "status": "confirmed_with_variability",
+      "structures": ["longissimus_cervicis"],
+      "fields": ["o", "i"],
+      "finding": "Начало на верхних 4–5 грудных поперечных отростках и прикрепление к задним бугоркам C2–C6 подтверждены. Формулировка «обычно T1–T5» не превращает изменчивый диапазон в измерение модели.",
+      "sources": [
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Longissimus cervicis (Transversalis cervicis)."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/longissimus-muscle", "locator": "Origin and insertion, абзац Longissimus cervicis."}
+      ]
+    },
+    {
+      "id": "longissimus_capitis_source_difference",
+      "status": "confirmed_difference_disclosed",
+      "structures": ["longissimus_capitis"],
+      "fields": ["o", "note"],
+      "finding": "Gray называет суставные отростки нижних шейных позвонков; Kenhub — поперечные. Существующее примечание корректно сохраняет это расхождение. Не использовать сводное «отростки» как подтверждение точной площадки на сетке.",
+      "sources": [
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Longissimus capitis (Trachelomastoid muscle)."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/longissimus-muscle", "locator": "Origin and insertion, абзац Longissimus capitis."}
+      ]
+    },
+    {
+      "id": "spinalis_cervicis_variability",
+      "status": "fixed_verified",
+      "resolution": "В примечание добавлено явное указание возможного начала от T2 по Gray.",
+      "structures": ["spinalis_cervicis"],
+      "fields": ["o", "i", "note"],
+      "finding": "Оба источника поддерживают изменчивость мышцы и её прикреплений. Gray допускает начало от T2, тогда как краткая карточка указывает область C7–T1. Для полноты примечания стоит прямо назвать возможность T2, не изменяя геометрию.",
+      "sources": [
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Spinalis cervicis: inconstant; C7, sometimes T1 and T2; insertion axis, occasionally two vertebrae below."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/spinalis-muscle", "locator": "Origin and insertion: irregular/poorly developed spinalis cervicis; C7–T1 to C2–C4."}
+      ]
+    },
+    {
+      "id": "scalene_blood_supply",
+      "status": "confirmed",
+      "structures": ["scalenus_anterior", "scalenus_medius", "scalenus_posterior"],
+      "fields": ["s"],
+      "finding": "Общее краткое указание восходящей шейной артерии подтверждается в двух источниках для каждой из трёх мышц. Это не полный перечень всех питающих ветвей; у задней лестничной оба источника также называют поверхностную ветвь поперечной артерии шеи.",
+      "sources": [
+        {"url": "https://www.stritch.luc.edu/lumen/meded/grossanatomy/homepage/muscletables/head-neckmuscletable.pdf", "locator": "PDF с.4, три отдельные строки Scalene; Blood supply."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/scalene-muscles", "locator": "Blood supply в подразделах anterior, medius, posterior."}
+      ]
+    },
+    {
+      "id": "scalene_segmental_differences",
+      "status": "confirmed_difference_disclosed",
+      "structures": ["scalenus_anterior", "scalenus_medius", "scalenus_posterior"],
+      "fields": ["o", "n", "note"],
+      "finding": "Kenhub и Loyola действительно расходятся по отдельным сегментам иннервации передней и начала задней лестничной. Нынешние пояснения сохраняют разницу вместо ложного точного универсального диапазона.",
+      "sources": [
+        {"url": "https://www.stritch.luc.edu/lumen/meded/grossanatomy/homepage/muscletables/head-neckmuscletable.pdf", "locator": "PDF с.4: anterior Innervation C5–C8; posterior Origin C4–C6."},
+        {"url": "https://www.kenhub.com/en/library/anatomy/scalene-muscles", "locator": "Anterior Innervation C4–C6; posterior Origin and insertion C5–C7; сводная таблица допускает C4–C6/C5–C7."}
+      ]
+    }
+  ]
+}
