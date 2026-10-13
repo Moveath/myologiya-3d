@@ -49,13 +49,16 @@ def add(name, mesh):
 
 for key, parts in MUSCLES.items():
     for fid, part in parts:
-        add(f"m|{key}|{part or ''}", load(fid, 0.13, 1500, 14000))
+        settings = getattr(_mod, 'MUSCLE_BUILD', {}).get(key, (0.13, 1500, 14000))
+        add(f"m|{key}|{part or ''}", load(fid, *settings))
 import os
 BONE_RATIO = float(os.environ.get("BONE_RATIO", "0.15"))
 BONE_MAX = int(os.environ.get("BONE_MAX", "12000"))
 for key, ids in BONES.items():
     for fid in ids:
-        add(f"b|{key}", load(fid, BONE_RATIO, 1200, BONE_MAX))
+        # Composite bones need unique node names while keeping their shared id.
+        name = f"b|{key}" + (f"|{fid}" if len(ids) > 1 else '')
+        add(name, load(fid, BONE_RATIO, 1200, BONE_MAX))
 for key, ids in OTHER.items():
     for fid in ids:
         add(f"o|{key}", load(fid, 0.15, 800, 6000))

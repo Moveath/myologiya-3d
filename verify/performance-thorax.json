@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "method": "Software Chromium regression checks; no physical-device FPS claim.",
+  "cases": [
+    {
+      "name": "whole-thorax zoom",
+      "movingRatios": [
+        1.25,
+        2,
+        2,
+        1.25,
+        2,
+        2,
+        1.25,
+        2
+      ],
+      "settled": {
+        "frames": 23,
+        "ratio": 2,
+        "distance": 1.962902793833835,
+        "triangles": 914994,
+        "models": [
+          "trunk"
+        ],
+        "pins": 0
+      }
+    },
+    {
+      "name": "thorax ray equivalence",
+      "rays": [
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": -0.5,
+          "hits": 1
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0,
+          "hits": 1
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0.5,
+          "hits": 0
+        }
+      ],
+      "unchangedBuffers": 354
+    }
+  ],
+  "errors": []
+}

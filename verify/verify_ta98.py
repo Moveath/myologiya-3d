@@ -19,6 +19,21 @@ for row in json.load(open(os.path.join(root, 'verify', 'ifaa-head-bones.json'), 
         ref[row['code']] = row['lat']
 for row in json.load(open(os.path.join(root, 'verify', 'ifaa-neck-bones.json'), encoding='utf-8')):
     ref[row['code']] = row['lat']
+from thorax_terms import PRINTED_RECONCILIATIONS
+thorax_rows = json.load(open(os.path.join(root, 'verify', 'ifaa-thorax-bones.json'), encoding='utf-8'))
+reconciled = set()
+for row in thorax_rows:
+    code, lat = row['code'], row['lat']
+    for correction in PRINTED_RECONCILIATIONS:
+        if str(row['tid']) == correction['tid']:
+            assert (code,lat) == (correction['rawCode'],correction['rawLatin']), ('Unexpected thorax IFAA revision',row)
+            code,lat = correction['code'],correction['latin']
+            assert T[code][0] == lat, (code,'Printed TA98 mismatch')
+            reconciled.add(correction['tid'])
+    if code in ref: assert ref[code] == lat, (code,'Conflicting IFAA fixtures')
+    ref[code] = lat
+assert len(reconciled) == 2
+print('Thorax edition reconciliation: 2 documented electronic errors checked against printed TA98')
 # The website contains later nomenclature revisions. These three skull entries
 # are checked against the printed TA98, Kolesnikov 2003, pp. 12–13. Assert the
 # raw electronic values before applying the documented edition reconciliation.

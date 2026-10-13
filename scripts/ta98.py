@@ -416,3 +416,11 @@ for _bone in HEAD_PAIRED:
 from neck_terms import T as NECK_TERMS, BONE_CODES as NECK_BONE_CODES
 T.update(NECK_TERMS)
 BONE.update({bone:list(codes) for bone,codes in NECK_BONE_CODES.items()})
+
+# Thoracic catalogue: general terms use explicit level-specific applicability.
+from thorax_terms import T as THORAX_TERMS, BONE_CODES as THORAX_BONE_CODES
+for _code,_term in THORAX_TERMS.items():
+    if _code in T:
+        assert T[_code] == _term, (_code, 'Conflicting regional nomenclature')
+T.update(THORAX_TERMS)
+BONE.update({bone:list(codes) for bone,codes in THORAX_BONE_CODES.items()})

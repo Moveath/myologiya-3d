@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "reviewed": "2026-10-13",
+  "scope": "Ограниченная отдельная редакционная проверка начал, прикреплений и связанных примечаний глубоких мышц спины в scripts/thorax_muscles.py.",
+  "reviewType": "internal_assistant_cross_review",
+  "externalAnatomistReview": false,
+  "geometryReviewed": false,
+  "status": "reviewed_findings_corrected",
+  "recheck": "После сообщения основному автору повторно прочитаны исправленные longissimus_thoracis и rotatores_thoracis: обе обнаруженные проблемы охвата источников устранены.",
+  "limitations": [
+    "Проверены только перечисленные поля; это не проверка всех утверждений раздела и не независимая экспертная анатомическая приёмка.",
+    "Прикрепления не сопоставлялись с поверхностями конкретной 3D-модели.",
+    "Таблица Loyola в этой отдельной проверке не была повторно открыта: инструмент просмотра вернул ошибку. Её сведения не выдаются здесь за независимо перепроверенные.",
+    "Номенклатура и координаты в этот обзор не входят."
+  ],
+  "findings": [
+    {
+      "id": "longissimus_thoracis_rib_attachment_scope",
+      "status": "fixed_verified",
+      "severity": "evidence_scope",
+      "structures": ["longissimus_thoracis"],
+      "fields": ["o", "i", "note"],
+      "finding": "Прежнее описание рёберных прикреплений между бугорками и углами буквально поддерживал Gray; Kenhub указывает область углов и другой диапазон рёбер. Локатор общего сухожилия требовал соседнего подраздела Sacrospinalis.",
+      "resolution": "Прикрепление обобщено до задних участков нижних рёбер в области углов. В примечании отдельно указаны VII–XII у Kenhub и нижние девять–десять у Gray. Локатор расширен до Sacrospinalis и Longissimus dorsi.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/longissimus-muscle", "locator": "Key facts, Longissimus thoracis; Origin and insertion — Thoracic part, абзацы о поясничной и грудной порциях."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Sacrospinalis — common tendon; Longissimus dorsi — lumbar attachments, thoracic transverse processes and lower nine or ten ribs."}
+      ]
+    },
+    {
+      "id": "rotatores_longi_laminae_second_reference",
+      "status": "fixed_verified",
+      "severity": "evidence_scope",
+      "structures": ["rotatores_thoracis"],
+      "fields": ["i", "parts.longi.x"],
+      "finding": "Kenhub перечисляет пластинки дуг и основания остистых отростков; указанная вторая строка UAMS подтверждает остистые отростки через один или два уровня, но не пластинки дуг. Старый Gray описывает соседний уровень, поэтому сам по себе не даёт второго подтверждения пластинок для longi.",
+      "resolution": "Основное поле и описание длинных пучков сужены до областей оснований остистых отростков. Утверждение о пластинках дуг в этих двух полях убрано.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/rotatores-muscles", "locator": "Key facts; Origin and insertion — long rotators, short rotators."},
+        {"url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-back-region/", "locator": "Строка rotatores, Origin и Insertion; отдельно long rotatores и short rotatores."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Rotatores — transverse process to lamina and root of spinous process of vertebra above."}
+      ]
+    },
+    {
+      "id": "iliocostalis_thoracis_attachments",
+      "status": "confirmed",
+      "structures": ["iliocostalis_thoracis"],
+      "fields": ["o", "i"],
+      "result": "Оба источника поддерживают нижние шесть рёбер как начало и верхние шесть рёбер с поперечным отростком C7 как прикрепление. Их употребление слова «углы» не доказывает отдельный ориентир angulus costae на XII ребре конкретной модели.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/iliocostalis-muscle", "locator": "Key facts; Origin and insertion — Iliocostalis thoracis."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Iliocostalis dorsi — lower six ribs; upper six ribs and seventh cervical transverse process."}
+      ]
+    },
+    {
+      "id": "semispinalis_thoracis_levels",
+      "status": "confirmed",
+      "structures": ["semispinalis_thoracis"],
+      "fields": ["o", "i"],
+      "result": "Поперечные отростки T6–T10 и остистые отростки C6–T4 подтверждаются обеими указанными статьями.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/semispinalis-thoracis-muscle", "locator": "Key facts; Anatomy — Origin and insertion."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Semispinalis dorsi — sixth to tenth thoracic transverse processes; upper four thoracic and lower two cervical spinous processes."}
+      ]
+    },
+    {
+      "id": "spinalis_thoracis_variable_upper_attachments",
+      "status": "confirmed_with_discrepancy_note",
+      "structures": ["spinalis_thoracis"],
+      "fields": ["o", "i", "note"],
+      "result": "Начало T11–L2 совпадает. Kenhub указывает T2–T8; Gray описывает изменчивое число верхних грудных прикреплений. Существующее примечание сохраняет различие вместо обещания одинакового диапазона у всех людей.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/spinalis-muscle", "locator": "Key facts; Origin and insertion — Spinalis thoracis."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Spinalis dorsi — last two thoracic and first two lumbar spinous processes; four to eight upper thoracic attachments."}
+      ]
+    },
+    {
+      "id": "multifidus_regional_origins",
+      "status": "confirmed",
+      "structures": ["multifidus"],
+      "fields": ["o", "parts.thoracic.o", "parts.thoracic.i"],
+      "result": "Региональное описание начал соответствует Kenhub и Gray: грудные поперечные, поясничные сосцевидные, нижние шейные суставные отростки, крестцово-подвздошная область. Грудная часть прикрепляется к вышележащим остистым отросткам. Диапазон 2–5 против 2–4 в отдельном примечании здесь по Loyola повторно не проверялся.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle", "locator": "Key facts; Origin and insertion — cervical, thoracic and lumbar multifidus."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Multifidus — sacral, lumbar, thoracic, cervical origins; fasciculi to spinous processes above."}
+      ]
+    },
+    {
+      "id": "interspinales_thoracis_noncontinuous_scope",
+      "status": "confirmed_with_discrepancy_note",
+      "structures": ["interspinales_thoracis"],
+      "fields": ["note"],
+      "result": "Kenhub и Gray перечисляют ограниченные грудные интервалы и дают разные списки. Предупреждение о несплошной цепочке T1–T12 и различиях источников обосновано. Пара ссылок основных o/i с Loyola в этом обзоре повторно не проверена.",
+      "sources": [
+        {"url": "https://www.kenhub.com/en/library/anatomy/interspinales-muscles", "locator": "Key facts; Origin and insertion — interspinales thoracis, T2/T11/T12 and T1/T10/T11."},
+        {"url": "https://www.wikimd.org/wiki/The_Deep_Muscles_of_the_Back", "locator": "Gray: Interspinales — thoracic region, upper and lower intervals and occasional bundles."}
+      ]
+    }
+  ]
+}
