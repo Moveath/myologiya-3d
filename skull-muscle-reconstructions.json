@@ -1,0 +1,2615 @@
+{
+  "version": 1,
+  "created": "2026-10-13",
+  "title": "Мышцы: учебные реконструкции и ограничения",
+  "asset": "skull-muscle-reconstructions.glb",
+  "sha256": "e2e34a9f932f6213d926a8aea6d8de89e053d87bb3e3d24ed7112b879974dc24",
+  "coordinateSystem": {
+    "units": "educational_unit",
+    "registeredTo": null,
+    "measured": false
+  },
+  "counts": {
+    "whole": 9,
+    "parts": 10,
+    "educational_reconstruction": 16,
+    "explanation": 3
+  },
+  "notice": "Самостоятельные объёмные схемы. Размеры и контуры условные. Они объясняют указанные отношения и не заменяют геометрию исходного препарата.",
+  "legend": [
+    {
+      "color": "#c34c51",
+      "ru": "Учебное обозначение мышцы или области"
+    },
+    {
+      "color": "#7182c5",
+      "ru": "Область начала · условно"
+    },
+    {
+      "color": "#dd9e47",
+      "ru": "Область прикрепления · условно"
+    },
+    {
+      "color": "#a4b0b5",
+      "ru": "Контекст · условный ориентир"
+    }
+  ],
+  "originalGeometryStatusesChanged": false,
+  "independentAnatomistReview": false,
+  "entries": [
+    {
+      "id": "auricularis_anterior_right",
+      "muscle": "auricularis_anterior_right",
+      "part": null,
+      "ru": "Передняя ушная мышца · правая сторона",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_anterior_right__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_anterior_right__auricle_outline",
+        "auricularis_anterior_right__auricle_context",
+        "auricularis_anterior_right__origin",
+        "auricularis_anterior_right__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            -1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Височная фасция / край сухожильного шлема",
+          "p": [
+            1.33,
+            0.4,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Область ости завитка",
+          "p": [
+            0.25,
+            0.36,
+            0.14
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Переднее положение мышцы относительно раковины.",
+        "Общее направление от височной фасциальной области к раковине."
+      ],
+      "unknown": [
+        "Точная ширина, толщина, протяжённость начала и индивидуальные ответвления в исходном наборе отсутствуют."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи височной фасциальной области с передней областью завитка ушной раковины."
+    },
+    {
+      "id": "auricularis_anterior_left",
+      "muscle": "auricularis_anterior_left",
+      "part": null,
+      "ru": "Передняя ушная мышца · левая сторона",
+      "lat": "m. auricularis anterior",
+      "ta98": "A04.1.03.020",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_anterior_left__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_anterior_left__auricle_outline",
+        "auricularis_anterior_left__auricle_context",
+        "auricularis_anterior_left__origin",
+        "auricularis_anterior_left__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            -1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Височная фасция / край сухожильного шлема",
+          "p": [
+            -1.33,
+            0.4,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Область ости завитка",
+          "p": [
+            -0.25,
+            0.36,
+            0.14
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "elsevier-open-summary:23524",
+          "title": "Elsevier: открытая справочная страница",
+          "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/auricularis-anterior-muscle/23524",
+          "locator": "Quick Facts / Origin",
+          "independentSource": "elsevier-open-summary"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis anterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Переднее положение мышцы относительно раковины.",
+        "Общее направление от височной фасциальной области к раковине."
+      ],
+      "unknown": [
+        "Точная ширина, толщина, протяжённость начала и индивидуальные ответвления в исходном наборе отсутствуют."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи височной фасциальной области с передней областью завитка ушной раковины."
+    },
+    {
+      "id": "auricularis_superior_right",
+      "muscle": "auricularis_superior_right",
+      "part": null,
+      "ru": "Верхняя ушная мышца · правая сторона",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_superior_right__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_superior_right__auricle_outline",
+        "auricularis_superior_right__auricle_context",
+        "auricularis_superior_right__origin",
+        "auricularis_superior_right__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            -1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Сухожильный шлем · область начала",
+          "p": [
+            0,
+            1.48,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Верхняя область раковины",
+          "p": [
+            0,
+            0.58,
+            0.1
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Верхнее положение относительно раковины.",
+        "Схождение направлений к верхней области раковины."
+      ],
+      "unknown": [
+        "Площадь апоневротического начала и индивидуальное распределение пучков не измерены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи сухожильного шлема с верхней областью ушной раковины."
+    },
+    {
+      "id": "auricularis_superior_left",
+      "muscle": "auricularis_superior_left",
+      "part": null,
+      "ru": "Верхняя ушная мышца · левая сторона",
+      "lat": "m. auricularis superior",
+      "ta98": "A04.1.03.021",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_superior_left__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_superior_left__auricle_outline",
+        "auricularis_superior_left__auricle_context",
+        "auricularis_superior_left__origin",
+        "auricularis_superior_left__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            -1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Сухожильный шлем · область начала",
+          "p": [
+            0,
+            1.48,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Верхняя область раковины",
+          "p": [
+            0,
+            0.58,
+            0.1
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis superior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Верхнее положение относительно раковины.",
+        "Схождение направлений к верхней области раковины."
+      ],
+      "unknown": [
+        "Площадь апоневротического начала и индивидуальное распределение пучков не измерены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи сухожильного шлема с верхней областью ушной раковины."
+    },
+    {
+      "id": "auricularis_posterior_right",
+      "muscle": "auricularis_posterior_right",
+      "part": null,
+      "ru": "Задняя ушная мышца · правая сторона",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_posterior_right__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_posterior_right__auricle_outline",
+        "auricularis_posterior_right__auricle_context",
+        "auricularis_posterior_right__origin",
+        "auricularis_posterior_right__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            -1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Сосцевидная область · начало",
+          "p": [
+            -1.15,
+            0,
+            -0.16
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Задняя поверхность раковины",
+          "p": [
+            -0.12,
+            0,
+            -0.06
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.4,
+          1.1,
+          -6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Заднее положение мышцы.",
+        "Связь с задней поверхностью раковины в области её выпуклости."
+      ],
+      "unknown": [
+        "Число брюшек и их точные границы изменчивы; на схеме число лент не обозначает число брюшек."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи сосцевидной области с задней поверхностью ушной раковины."
+    },
+    {
+      "id": "auricularis_posterior_left",
+      "muscle": "auricularis_posterior_left",
+      "part": null,
+      "ru": "Задняя ушная мышца · левая сторона",
+      "lat": "m. auricularis posterior",
+      "ta98": "A04.1.03.022",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "auricularis_posterior_left__muscle"
+      ],
+      "contextNodes": [
+        "auricularis_posterior_left__auricle_outline",
+        "auricularis_posterior_left__auricle_context",
+        "auricularis_posterior_left__origin",
+        "auricularis_posterior_left__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Ушная раковина · условный контур",
+          "p": [
+            0,
+            -0.66,
+            0.1
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кпереди",
+          "p": [
+            -1.48,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Кзади",
+          "p": [
+            1.1,
+            -0.72,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Сосцевидная область · начало",
+          "p": [
+            1.15,
+            0,
+            -0.16
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Задняя поверхность раковины",
+          "p": [
+            0.12,
+            0,
+            -0.06
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          1.1,
+          -6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: анатомия мимических мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 6, таблица Muscles in the range of the outer ear: три строки auricularis, Origin / Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Liugan, Zhang, Cakmak, 2018",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00752/full",
+          "locator": "Innervation of the Auricular Muscles, первый абзац; Fig. 1A: положение трёх наружных ушных мышц относительно раковины.",
+          "independentSource": "liugan-zhang-cakmak-2018"
+        },
+        {
+          "title": "Rüschenschmidt и соавт., 2022: исследование ушных мышц",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8775077/",
+          "locator": "3.1 Cadaver Preparations; Fig. 1A–C; Supplementary Fig. S3: отдельные передняя, верхняя и задняя ушные мышцы. Общий соавтор Volk с руководством DEGUM; не засчитывается как дополнительная независимая редакция таблицы.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Origin",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «начало»",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "degum-zilles-table:Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "title": "DEGUM, Volk / Sauer: таблица мышц",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "с. 6, раздел 5 (мимические мышцы), строка m. auricularis posterior, Approach",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "sourceId": "kenhub-editorial:the-facial-muscles",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles",
+          "locator": "Auricular muscles: абзац «прикрепление»",
+          "independentSource": "kenhub-editorial"
+        }
+      ],
+      "demonstrates": [
+        "Заднее положение мышцы.",
+        "Связь с задней поверхностью раковины в области её выпуклости."
+      ],
+      "unknown": [
+        "Число брюшек и их точные границы изменчивы; на схеме число лент не обозначает число брюшек."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема связи сосцевидной области с задней поверхностью ушной раковины."
+    },
+    {
+      "id": "depressor_supercilii_right",
+      "muscle": "depressor_supercilii_right",
+      "part": null,
+      "ru": "Мышца, опускающая бровь · правая сторона",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "depressor_supercilii_right__muscle"
+      ],
+      "contextNodes": [
+        "depressor_supercilii_right__lid_1",
+        "depressor_supercilii_right__lid_-1",
+        "depressor_supercilii_right__brow",
+        "depressor_supercilii_right__origin",
+        "depressor_supercilii_right__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            -1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Лобный отросток верхней челюсти · область начала",
+          "p": [
+            1,
+            0.2,
+            -0.06
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Кожа медиальной части брови",
+          "p": [
+            0.67,
+            0.9,
+            0.13
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Cook, Lucarelli, Lemke, 2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11766019/",
+          "locator": "Abstract, Results: frontal process of maxilla; dermal insertion above medial canthal tendon. Вариабельность числа головок.",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "title": "Hur и соавт., 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац с DS; Results; Fig. 1: верхнечелюстное начало, медиальная часть брови и неодинаковые связи с соседними мышцами.",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "demonstrates": [
+        "Положение у медиального участка брови.",
+        "Общее направление между костным началом и кожным прикреплением."
+      ],
+      "unknown": [
+        "Границы и число головок не восстановлены; возможные соединения с соседними мышцами не показаны."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "В таблице DEGUM началом названа лобная кость; в исследованиях Cook и Hur — лобный отросток верхней челюсти. Схема следует двум исследованиям, расхождение сохранено."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Условная восходящая связь верхнечелюстного начала с кожей медиальной части брови."
+    },
+    {
+      "id": "depressor_supercilii_left",
+      "muscle": "depressor_supercilii_left",
+      "part": null,
+      "ru": "Мышца, опускающая бровь · левая сторона",
+      "lat": "m. depressor supercilii",
+      "ta98": "A04.1.03.019",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "depressor_supercilii_left__muscle"
+      ],
+      "contextNodes": [
+        "depressor_supercilii_left__lid_1",
+        "depressor_supercilii_left__lid_-1",
+        "depressor_supercilii_left__brow",
+        "depressor_supercilii_left__origin",
+        "depressor_supercilii_left__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            -1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Лобный отросток верхней челюсти · область начала",
+          "p": [
+            -1,
+            0.2,
+            -0.06
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Кожа медиальной части брови",
+          "p": [
+            -0.67,
+            0.9,
+            0.13
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Cook, Lucarelli, Lemke, 2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11766019/",
+          "locator": "Abstract, Results: frontal process of maxilla; dermal insertion above medial canthal tendon. Вариабельность числа головок.",
+          "independentSource": "cook-lucarelli-lemke"
+        },
+        {
+          "title": "Hur и соавт., 2022",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264148",
+          "locator": "Introduction, абзац с DS; Results; Fig. 1: верхнечелюстное начало, медиальная часть брови и неодинаковые связи с соседними мышцами.",
+          "independentSource": "hur-lee-jung-schneider-2022"
+        }
+      ],
+      "demonstrates": [
+        "Положение у медиального участка брови.",
+        "Общее направление между костным началом и кожным прикреплением."
+      ],
+      "unknown": [
+        "Границы и число головок не восстановлены; возможные соединения с соседними мышцами не показаны."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "В таблице DEGUM началом названа лобная кость; в исследованиях Cook и Hur — лобный отросток верхней челюсти. Схема следует двум исследованиям, расхождение сохранено."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Условная восходящая связь верхнечелюстного начала с кожей медиальной части брови."
+    },
+    {
+      "id": "transversus_menti",
+      "muscle": "transversus_menti",
+      "part": null,
+      "ru": "Поперечная мышца подбородка",
+      "lat": "m. transversus menti",
+      "ta98": "A04.1.03.027",
+      "side": null,
+      "status": "explanation",
+      "representation": "explanation",
+      "asset": null,
+      "nodes": [],
+      "contextNodes": [],
+      "labels": [],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Case report; Fig. 1 на с. 1400",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "kenhub-editorial:depressor-anguli-oris-muscle",
+          "title": "Kenhub: открытая анатомическая статья",
+          "url": "https://www.kenhub.com/en/library/anatomy/depressor-anguli-oris-muscle",
+          "locator": "Depressor anguli oris / Origin and insertion: абзац о пересечении средней линии и transversus menti",
+          "independentSource": "kenhub-editorial"
+        },
+        {
+          "sourceId": "sripanidkulchai-2013:art40.pdf",
+          "title": "Sripanidkulchai и соавт., 2013: transversus menti",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v31n4/art40.pdf",
+          "locator": "с. 1399, Discussion: предполагаемое действие, с отсылкой к Weaver (1978)",
+          "independentSource": "sripanidkulchai-2013"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Action",
+          "independentSource": "imaios-javaid-definition"
+        },
+        {
+          "sourceId": "imaios-javaid-definition:transversus-menti-muscle-14215192",
+          "title": "IMAIOS, M. A. Javaid: открытое определение",
+          "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/transversus-menti-muscle-14215192",
+          "locator": "Definition / Blood supply",
+          "independentSource": "imaios-javaid-definition"
+        }
+      ],
+      "demonstrates": [
+        "Карточка сохраняет сведения и разногласия источников.",
+        "Реконструкция постоянной мышцы могла бы создать ошибочное представление о норме."
+      ],
+      "unknown": [
+        "Границы пучка и его выраженность у данного человека неизвестны.",
+        "Отдельная функция не подтверждена двумя независимыми исследованиями.",
+        "Источники расходятся в конкретных питающих ветвях; общий сосуд не выбран произвольно."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Непостоянный поперечный пучок описан в литературе; отдельной подтверждённой формы в исходных моделях нет."
+    },
+    {
+      "id": "orbicularis_oculi_right__deep",
+      "muscle": "orbicularis_oculi_right",
+      "part": "deep",
+      "ru": "Глубокая часть · правая сторона",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "orbicularis_oculi_right__deep__muscle"
+      ],
+      "contextNodes": [
+        "orbicularis_oculi_right__deep__lid_1",
+        "orbicularis_oculi_right__deep__lid_-1",
+        "orbicularis_oculi_right__deep__posterior_crest"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            -1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Задний слёзный гребень · условная линия",
+          "p": [
+            1.2,
+            0,
+            -0.4
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Переход к медиальной области век",
+          "p": [
+            0.58,
+            0.24,
+            -0.02
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.8,
+          0.8,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Kakizaki и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20719297/",
+          "locator": "Abstract, Results: начало мышцы Horner от заднего слёзного гребня и передней области медиальной стенки глазницы.",
+          "independentSource": "kakizaki-2010"
+        },
+        {
+          "title": "Location and tension of the medial palpebral ligament, 2013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24220420/",
+          "locator": "Abstract: от заднего слёзного гребня латерально к хрящу века, глубже поверхностного слоя медиальной связки.",
+          "independentSource": "mpl-location-2013"
+        },
+        {
+          "title": "DEGUM: слёзная часть круговой мышцы глаза",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 4: M. orbicularis oculi / Pars lacrimalis, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "demonstrates": [
+        "Медиальное глубокое положение.",
+        "Направление от гребня латерально к тканям век."
+      ],
+      "unknown": [
+        "Точное окружение слёзных канальцев, границы пучков и взаимоотношения всех связочных слоёв не восстановлены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Верхняя и нижняя ленты обозначают направления к векам; это не сегментация отдельных брюшек и не полная модель слёзного насоса."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема глубокого хода от заднего слёзного гребня к медиальной области век."
+    },
+    {
+      "id": "orbicularis_oculi_right__ciliary",
+      "muscle": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "ru": "Ресничный пучок · правая сторона",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "educational_region",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "orbicularis_oculi_right__ciliary__margin_region"
+      ],
+      "contextNodes": [
+        "orbicularis_oculi_right__ciliary__lid_1",
+        "orbicularis_oculi_right__ciliary__lid_-1"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            -1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Краевая область верхнего века",
+          "p": [
+            0,
+            0.4,
+            0.09
+          ],
+          "role": "region"
+        },
+        {
+          "ru": "Краевая область нижнего века",
+          "p": [
+            0,
+            -0.4,
+            0.09
+          ],
+          "role": "region"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Lipham, Tawfik, Dutton, 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11897949/",
+          "locator": "Abstract, Purpose / Results / Conclusions: histologic relations of Riolan muscle in the eyelid margin.",
+          "independentSource": "lipham-tawfik-dutton-2002"
+        },
+        {
+          "title": "Wulc и соавт., 1987: Where is the gray line?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3632419/",
+          "locator": "Abstract: гистологическое соответствие серой линии поверхностной части orbicularis / Riolan.",
+          "independentSource": "wulc-1987"
+        },
+        {
+          "title": "Knop и соавт., 2011: анатомия мейбомиевых желёз",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21450915/",
+          "locator": "Fig. 5–6, гистологические срезы свободного края века: краевые волокна Riolan.",
+          "independentSource": "knop-workshop-2011"
+        }
+      ],
+      "demonstrates": [
+        "Положение пучка у края века.",
+        "Региональная принадлежность к круговой мышце глаза."
+      ],
+      "unknown": [
+        "Не показаны отдельные волокна вокруг железистых протоков, ресничных фолликулов и микроскопические границы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Цветная лента — обозначение области, а не сплошной изолированный цилиндр мышцы. Название fasciculus ciliaris относится к TA98; в исследованиях используется имя Riolan."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Условно выделена краевая область век, соответствующая ресничному пучку."
+    },
+    {
+      "id": "nasalis_right__transverse",
+      "muscle": "nasalis_right",
+      "part": "transverse",
+      "ru": "Поперечная часть · правая сторона",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "nasalis_right__transverse__muscle"
+      ],
+      "contextNodes": [
+        "nasalis_right__transverse__dorsum_context",
+        "nasalis_right__transverse__ala_context_-1",
+        "nasalis_right__transverse__ala_context_1",
+        "nasalis_right__transverse__origin",
+        "nasalis_right__transverse__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Спинка носа · условный ориентир",
+          "p": [
+            0,
+            0.82,
+            0.3
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Крыло носа · условный контур",
+          "p": [
+            -0.62,
+            -0.16,
+            0.35
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Верхняя челюсть · область начала",
+          "p": [
+            -0.98,
+            -0.38,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Апоневроз спинки носа · область",
+          "p": [
+            0,
+            0.39,
+            0.49
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.8,
+          1.1,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars transversa, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Anderson, Henneberg, Norris, 2008: Anatomy of the nasal profile",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526105/",
+          "locator": "Results, раздел мышц; Fig. 3b и Fig. 4: начало на верхней челюсти, поперечное продолжение над носом, индивидуальная изменчивость.",
+          "independentSource": "anderson-henneberg-norris-2008"
+        },
+        {
+          "title": "Hur и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20512646/",
+          "locator": "Abstract, Results: transverse nasalis от maxilla восходит; описаны варианты двух брюшек и соединений.",
+          "independentSource": "hur-nasalis-2010"
+        }
+      ],
+      "demonstrates": [
+        "Восходящее и медиальное направление от боковой области основания носа.",
+        "Продолжение к апоневрозу спинки носа."
+      ],
+      "unknown": [
+        "Границы апоневроза и соединения с соседними мышцами индивидуальны и здесь не сегментированы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Направление поперечной части от верхней челюсти к апоневрозу над спинкой носа."
+    },
+    {
+      "id": "nasalis_right__alar",
+      "muscle": "nasalis_right",
+      "part": "alar",
+      "ru": "Крыльная часть · правая сторона",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011",
+      "side": "right",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "nasalis_right__alar__muscle"
+      ],
+      "contextNodes": [
+        "nasalis_right__alar__dorsum_context",
+        "nasalis_right__alar__ala_context_-1",
+        "nasalis_right__alar__ala_context_1",
+        "nasalis_right__alar__origin",
+        "nasalis_right__alar__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Спинка носа · условный ориентир",
+          "p": [
+            0,
+            0.82,
+            0.3
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Верхняя челюсть · область начала",
+          "p": [
+            -0.7,
+            -0.67,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Ткани крыла носа · область",
+          "p": [
+            -0.52,
+            -0.14,
+            0.4
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.8,
+          1.1,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars alaris, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Park, Hur, 2024: крыльная часть носовой мышцы",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39136748/",
+          "locator": "Abstract, Results / Conclusion: верхнечелюстное начало; область крыла; дополнительные волокна к соседним мышцам присутствуют не во всех препаратах.",
+          "independentSource": "park-hur-2024"
+        },
+        {
+          "title": "Sonoanatomy of the Nasal Ala, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152086/",
+          "locator": "Fig. 2B caption и Fig. 4: maxilla — alar facial crease / deeper external ala skin. Fig. 2 переработана по Hur и не считается третьим независимым наблюдением границ.",
+          "independentSource": "nasal-ala-ultrasound-2025"
+        }
+      ],
+      "demonstrates": [
+        "Положение у основания крыла носа.",
+        "Связь верхнечелюстной области с крылом."
+      ],
+      "unknown": [
+        "Дополнительные волокна к соседним мышцам и коже изменчивы; они не добавлены как обязательная норма."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Направление крыльной части от верхнечелюстной области к тканям крыла носа."
+    },
+    {
+      "id": "orbicularis_oculi_left__deep",
+      "muscle": "orbicularis_oculi_left",
+      "part": "deep",
+      "ru": "Глубокая часть · левая сторона",
+      "lat": "pars profunda",
+      "ta98": "A04.1.03.016",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "orbicularis_oculi_left__deep__muscle"
+      ],
+      "contextNodes": [
+        "orbicularis_oculi_left__deep__lid_1",
+        "orbicularis_oculi_left__deep__lid_-1",
+        "orbicularis_oculi_left__deep__posterior_crest"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            -1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Задний слёзный гребень · условная линия",
+          "p": [
+            -1.2,
+            0,
+            -0.4
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Переход к медиальной области век",
+          "p": [
+            -0.58,
+            0.24,
+            -0.02
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.8,
+          0.8,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Kakizaki и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20719297/",
+          "locator": "Abstract, Results: начало мышцы Horner от заднего слёзного гребня и передней области медиальной стенки глазницы.",
+          "independentSource": "kakizaki-2010"
+        },
+        {
+          "title": "Location and tension of the medial palpebral ligament, 2013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24220420/",
+          "locator": "Abstract: от заднего слёзного гребня латерально к хрящу века, глубже поверхностного слоя медиальной связки.",
+          "independentSource": "mpl-location-2013"
+        },
+        {
+          "title": "DEGUM: слёзная часть круговой мышцы глаза",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 4: M. orbicularis oculi / Pars lacrimalis, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        }
+      ],
+      "demonstrates": [
+        "Медиальное глубокое положение.",
+        "Направление от гребня латерально к тканям век."
+      ],
+      "unknown": [
+        "Точное окружение слёзных канальцев, границы пучков и взаимоотношения всех связочных слоёв не восстановлены."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Верхняя и нижняя ленты обозначают направления к векам; это не сегментация отдельных брюшек и не полная модель слёзного насоса."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Схема глубокого хода от заднего слёзного гребня к медиальной области век."
+    },
+    {
+      "id": "orbicularis_oculi_left__ciliary",
+      "muscle": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "ru": "Ресничный пучок · левая сторона",
+      "lat": "fasciculus ciliaris",
+      "ta98": "A04.1.03.015",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "educational_region",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "orbicularis_oculi_left__ciliary__margin_region"
+      ],
+      "contextNodes": [
+        "orbicularis_oculi_left__ciliary__lid_1",
+        "orbicularis_oculi_left__ciliary__lid_-1"
+      ],
+      "labels": [
+        {
+          "ru": "Медиально · к носу",
+          "p": [
+            -1.28,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Латерально",
+          "p": [
+            1.2,
+            -0.48,
+            0
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Краевая область верхнего века",
+          "p": [
+            0,
+            0.4,
+            0.09
+          ],
+          "role": "region"
+        },
+        {
+          "ru": "Краевая область нижнего века",
+          "p": [
+            0,
+            -0.4,
+            0.09
+          ],
+          "role": "region"
+        }
+      ],
+      "camera": {
+        "position": [
+          -2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "Lipham, Tawfik, Dutton, 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11897949/",
+          "locator": "Abstract, Purpose / Results / Conclusions: histologic relations of Riolan muscle in the eyelid margin.",
+          "independentSource": "lipham-tawfik-dutton-2002"
+        },
+        {
+          "title": "Wulc и соавт., 1987: Where is the gray line?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3632419/",
+          "locator": "Abstract: гистологическое соответствие серой линии поверхностной части orbicularis / Riolan.",
+          "independentSource": "wulc-1987"
+        },
+        {
+          "title": "Knop и соавт., 2011: анатомия мейбомиевых желёз",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21450915/",
+          "locator": "Fig. 5–6, гистологические срезы свободного края века: краевые волокна Riolan.",
+          "independentSource": "knop-workshop-2011"
+        }
+      ],
+      "demonstrates": [
+        "Положение пучка у края века.",
+        "Региональная принадлежность к круговой мышце глаза."
+      ],
+      "unknown": [
+        "Не показаны отдельные волокна вокруг железистых протоков, ресничных фолликулов и микроскопические границы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена.",
+        "Цветная лента — обозначение области, а не сплошной изолированный цилиндр мышцы. Название fasciculus ciliaris относится к TA98; в исследованиях используется имя Riolan."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Условно выделена краевая область век, соответствующая ресничному пучку."
+    },
+    {
+      "id": "nasalis_left__transverse",
+      "muscle": "nasalis_left",
+      "part": "transverse",
+      "ru": "Поперечная часть · левая сторона",
+      "lat": "pars transversa",
+      "ta98": "A04.1.03.010",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "nasalis_left__transverse__muscle"
+      ],
+      "contextNodes": [
+        "nasalis_left__transverse__dorsum_context",
+        "nasalis_left__transverse__ala_context_-1",
+        "nasalis_left__transverse__ala_context_1",
+        "nasalis_left__transverse__origin",
+        "nasalis_left__transverse__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Спинка носа · условный ориентир",
+          "p": [
+            0,
+            0.82,
+            0.3
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Крыло носа · условный контур",
+          "p": [
+            0.62,
+            -0.16,
+            0.35
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Верхняя челюсть · область начала",
+          "p": [
+            0.98,
+            -0.38,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Апоневроз спинки носа · область",
+          "p": [
+            0,
+            0.39,
+            0.49
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.8,
+          1.1,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars transversa, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Anderson, Henneberg, Norris, 2008: Anatomy of the nasal profile",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526105/",
+          "locator": "Results, раздел мышц; Fig. 3b и Fig. 4: начало на верхней челюсти, поперечное продолжение над носом, индивидуальная изменчивость.",
+          "independentSource": "anderson-henneberg-norris-2008"
+        },
+        {
+          "title": "Hur и соавт., 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20512646/",
+          "locator": "Abstract, Results: transverse nasalis от maxilla восходит; описаны варианты двух брюшек и соединений.",
+          "independentSource": "hur-nasalis-2010"
+        }
+      ],
+      "demonstrates": [
+        "Восходящее и медиальное направление от боковой области основания носа.",
+        "Продолжение к апоневрозу спинки носа."
+      ],
+      "unknown": [
+        "Границы апоневроза и соединения с соседними мышцами индивидуальны и здесь не сегментированы."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Направление поперечной части от верхней челюсти к апоневрозу над спинкой носа."
+    },
+    {
+      "id": "nasalis_left__alar",
+      "muscle": "nasalis_left",
+      "part": "alar",
+      "ru": "Крыльная часть · левая сторона",
+      "lat": "pars alaris",
+      "ta98": "A04.1.03.011",
+      "side": "left",
+      "status": "educational_reconstruction",
+      "representation": "independent_spatial_diagram",
+      "asset": "skull-muscle-reconstructions.glb",
+      "nodes": [
+        "nasalis_left__alar__muscle"
+      ],
+      "contextNodes": [
+        "nasalis_left__alar__dorsum_context",
+        "nasalis_left__alar__ala_context_-1",
+        "nasalis_left__alar__ala_context_1",
+        "nasalis_left__alar__origin",
+        "nasalis_left__alar__insertion"
+      ],
+      "labels": [
+        {
+          "ru": "Спинка носа · условный ориентир",
+          "p": [
+            0,
+            0.82,
+            0.3
+          ],
+          "role": "context"
+        },
+        {
+          "ru": "Верхняя челюсть · область начала",
+          "p": [
+            0.7,
+            -0.67,
+            0
+          ],
+          "role": "origin"
+        },
+        {
+          "ru": "Ткани крыла носа · область",
+          "p": [
+            0.52,
+            -0.14,
+            0.4
+          ],
+          "role": "insertion"
+        }
+      ],
+      "camera": {
+        "position": [
+          2.8,
+          1.1,
+          5
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "DEGUM: носовая мышца",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. nasalis / Pars alaris, Origin и Approach.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Park, Hur, 2024: крыльная часть носовой мышцы",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39136748/",
+          "locator": "Abstract, Results / Conclusion: верхнечелюстное начало; область крыла; дополнительные волокна к соседним мышцам присутствуют не во всех препаратах.",
+          "independentSource": "park-hur-2024"
+        },
+        {
+          "title": "Sonoanatomy of the Nasal Ala, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152086/",
+          "locator": "Fig. 2B caption и Fig. 4: maxilla — alar facial crease / deeper external ala skin. Fig. 2 переработана по Hur и не считается третьим независимым наблюдением границ.",
+          "independentSource": "nasal-ala-ultrasound-2025"
+        }
+      ],
+      "demonstrates": [
+        "Положение у основания крыла носа.",
+        "Связь верхнечелюстной области с крылом."
+      ],
+      "unknown": [
+        "Дополнительные волокна к соседним мышцам и коже изменчивы; они не добавлены как обязательная норма."
+      ],
+      "limitations": [
+        "Все размеры, толщина и контуры условные; показана пространственная связь, а не измеренная форма мышцы.",
+        "Серые формы — условные ориентиры. Они не заменяют модели костей, хрящей или органов.",
+        "Не совмещено с BodyParts3D. Реконструкция не меняет статус отсутствующей исходной модели.",
+        "Независимая проверка анатомом не проведена; схема не используется для проверки точной формы в тесте.",
+        "Правая и левая схемы используют явно симметричное учебное построение; индивидуальная асимметрия не воспроизведена."
+      ],
+      "method": "Авторские параметрические ленты по описанным в источниках отношениям. Контрольные точки заданы в независимом учебном пространстве; изображения и сетки источников не копировались.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Направление крыльной части от верхнечелюстной области к тканям крыла носа."
+    },
+    {
+      "id": "orbicularis_oris__marginal",
+      "muscle": "orbicularis_oris",
+      "part": "marginal",
+      "ru": "Краевая часть",
+      "lat": "pars marginalis",
+      "ta98": "A04.1.03.024",
+      "side": null,
+      "status": "explanation",
+      "representation": "explanation",
+      "asset": null,
+      "nodes": [],
+      "contextNodes": [],
+      "labels": [],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "TA98: части круговой мышцы рта",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1673%20A2F%20EN.htm",
+          "locator": "A04.1.03.024 Pars marginalis; A04.1.03.025 Pars labialis — номенклатура, не геометрия.",
+          "independentSource": "ifaa-ta98"
+        },
+        {
+          "title": "DEGUM: круговая мышца рта",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. orbicularis oris, перечислены pars marginalis и pars labialis; пространственная граница не задана.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Rogers и соавт., 2009: микроанатомия orbicularis oris",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631558/",
+          "locator": "Results / Discussion: исследование различает marginalis и peripheralis; эти слова нельзя автоматически приравнять к паре TA98 marginalis / labialis.",
+          "independentSource": "rogers-2009"
+        },
+        {
+          "title": "Anatomy, Head and Neck, Orbicularis Oris Muscle",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545169/",
+          "locator": "Muscles: авторы перечисляют несколько разных систем названий слоёв; точной карты к паре TA98 здесь нет.",
+          "independentSource": "statpearls-oris"
+        }
+      ],
+      "demonstrates": [
+        "Вся круговая мышца рта доступна в основном атласе.",
+        "Описание целой мышцы не выдано за отдельные доказанные прикрепления этой части."
+      ],
+      "unknown": [
+        "В исследованиях применяются разные пары названий: marginalis / peripheralis, superficial / deep; они не приравнены автоматически к TA98 marginalis / labialis.",
+        "Нет размеченного исходного образца, связывающего границы именно этой части с принятым термином TA98."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Название части сохранено по TA98. Однозначная пространственная граница этой части на исходной сетке не установлена."
+    },
+    {
+      "id": "orbicularis_oris__labial",
+      "muscle": "orbicularis_oris",
+      "part": "labial",
+      "ru": "Губная часть",
+      "lat": "pars labialis",
+      "ta98": "A04.1.03.025",
+      "side": null,
+      "status": "explanation",
+      "representation": "explanation",
+      "asset": null,
+      "nodes": [],
+      "contextNodes": [],
+      "labels": [],
+      "camera": {
+        "position": [
+          2.4,
+          1.4,
+          6
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "refs": [
+        {
+          "title": "TA98: части круговой мышцы рта",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1673%20A2F%20EN.htm",
+          "locator": "A04.1.03.024 Pars marginalis; A04.1.03.025 Pars labialis — номенклатура, не геометрия.",
+          "independentSource": "ifaa-ta98"
+        },
+        {
+          "title": "DEGUM: круговая мышца рта",
+          "url": "https://www.degum.de/fileadmin/dokumente/sektionen/kopf-hals/Informationen_zum_Fach/Instruction_for_the_sonography_of_facial_muscles_v06a.pdf",
+          "locator": "PDF с. 5: M. orbicularis oris, перечислены pars marginalis и pars labialis; пространственная граница не задана.",
+          "independentSource": "degum-zilles-table"
+        },
+        {
+          "title": "Rogers и соавт., 2009: микроанатомия orbicularis oris",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631558/",
+          "locator": "Results / Discussion: исследование различает marginalis и peripheralis; эти слова нельзя автоматически приравнять к паре TA98 marginalis / labialis.",
+          "independentSource": "rogers-2009"
+        },
+        {
+          "title": "Anatomy, Head and Neck, Orbicularis Oris Muscle",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545169/",
+          "locator": "Muscles: авторы перечисляют несколько разных систем названий слоёв; точной карты к паре TA98 здесь нет.",
+          "independentSource": "statpearls-oris"
+        }
+      ],
+      "demonstrates": [
+        "Вся круговая мышца рта доступна в основном атласе.",
+        "Описание целой мышцы не выдано за отдельные доказанные прикрепления этой части."
+      ],
+      "unknown": [
+        "В исследованиях применяются разные пары названий: marginalis / peripheralis, superficial / deep; они не приравнены автоматически к TA98 marginalis / labialis.",
+        "Нет размеченного исходного образца, связывающего границы именно этой части с принятым термином TA98."
+      ],
+      "limitations": [
+        "Объяснение ограничения не подтверждает отсутствующую форму.",
+        "Существующая карточка и исходные модели сохранены."
+      ],
+      "method": "Сопоставление номенклатуры, текстов и доступной исходной геометрии; новая поверхность не создавалась.",
+      "coordinateSystem": {
+        "units": "educational_unit",
+        "registeredTo": null,
+        "measured": false,
+        "axes": "X — горизонталь схемы, Y — вверх, Z — к наблюдателю; анатомические стороны подписаны в сцене."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Миология 3D — авторские параметрические учебные схемы, 2026",
+        "sourceGeometry": "Новые сетки из открытого кода scripts/head_muscle_reconstructions.py; сторонние сетки и иллюстрации не включены."
+      },
+      "review": {
+        "literatureChecked": true,
+        "technicalChecked": true,
+        "independentAnatomist": false,
+        "eligibleForGeometryQuiz": false
+      },
+      "summary": "Название части сохранено по TA98. Однозначная пространственная граница этой части на исходной сетке не установлена."
+    }
+  ]
+}
