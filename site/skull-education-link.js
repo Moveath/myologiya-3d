@@ -1,3 +1,3 @@
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 export function educationURL(id,category){const q=new URLSearchParams(location.search),p=new URLSearchParams({theme:document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')});for(const key of ['entry','embed'])if(q.has(key))p.set(key,q.get(key));if(id)p.set('id',id);if(category)p.set('category',category);return 'skull-education.html?'+p;}
-export function educationLink(id,label='Учебная схема и объяснение ограничений ↗',category){return `<a class="btn" data-education-link href="${esc(educationURL(id,category))}">${esc(label)}</a>`;}
+export function educationLink(id,label='Учебный вид и объяснение ограничений ↗',category){return `<a class="btn" data-education-link href="${esc(educationURL(id,category))}">${esc(label)}</a>`;}

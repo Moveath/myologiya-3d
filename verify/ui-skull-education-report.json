@@ -1,5 +1,5 @@
 {
-  "created": "2026-10-13T09:06:49.189Z",
+  "created": "2026-10-13T10:06:59.651Z",
   "cases": [
     {
       "width": 390,
@@ -7,7 +7,8 @@
       "passed": true,
       "sourceReturn": true,
       "embeddedReturn": true,
-      "contextIsolation": true
+      "atlasNavigation": true,
+      "noStandaloneModels": true
     },
     {
       "width": 390,
@@ -15,7 +16,8 @@
       "passed": true,
       "sourceReturn": true,
       "embeddedReturn": true,
-      "contextIsolation": true
+      "atlasNavigation": true,
+      "noStandaloneModels": true
     },
     {
       "width": 1280,
@@ -23,7 +25,8 @@
       "passed": true,
       "sourceReturn": true,
       "embeddedReturn": true,
-      "contextIsolation": true
+      "atlasNavigation": true,
+      "noStandaloneModels": true
     },
     {
       "width": 1280,
@@ -31,7 +34,8 @@
       "passed": true,
       "sourceReturn": true,
       "embeddedReturn": true,
-      "contextIsolation": true
+      "atlasNavigation": true,
+      "noStandaloneModels": true
     }
   ],
   "coverage": {
@@ -45,18 +49,19 @@
       "ossicles": 13
     },
     "status": {
-      "explanation": 313,
+      "explanation": 387,
       "source_model": 255,
-      "educational_reconstruction": 74,
       "future_scope": 8,
       "documented_attachment": 78
     },
-    "unique3DDiagrams": 44,
-    "recordsWithDiagrams": 76,
+    "unique3DDiagrams": 0,
+    "recordsWithDiagrams": 0,
+    "atlasViews": 720,
     "attachmentFields": 156
   },
   "dataRetry": true,
-  "modelRetry": true,
+  "noStandaloneModels": true,
   "noWebGLTextFallback": true,
+  "moduleFailureNotice": true,
   "status": "passed"
 }

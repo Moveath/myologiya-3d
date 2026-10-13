@@ -131,7 +131,7 @@ def export():
         education=json.loads(education_path.read_text(encoding='utf8'))
         report['educational_release']={k:education[k] for k in ('counts','educationalDispositionComplete','completeSkullGeometry','independentAnatomistReview','physicalDeviceTests','meaning')}
         report['educational_release']['page']='site/skull-education.html'
-        report['acceptance_policy_update']='13 октября 2026 пользователь разрешил обозначенные учебные реконструкции и объяснения там, где данных для формы не хватает. Ниже сохранены отдельные строгие требования к исходной геометрии; незакрытые научные пункты не выдаются за выполненные.'
+        report['acceptance_policy_update']='13 октября 2026 пользователь разрешил объяснения там, где данных для формы не хватает, затем заменил отдельные учебные 3D-схемы переходами к исходным видам атласа. Ниже сохранены отдельные строгие требования к исходной геометрии; незакрытые научные пункты не выдаются за выполненные.'
         report['status']='educational_inventory_complete_with_documented_limits'
     dest=ROOT/'research/skull-closure-requirements.json'
     dest.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -140,7 +140,7 @@ def export():
     loc={'surface':'Видимый участок','projection':'Проекция','variant':'Место варианта'}
     body='<h1>Череп: полный реестр приёмки</h1><p>13 октября 2026 · версия требований 2 · анатомическая готовность не заявляется.</p><p>'+escape(report['counting_policy'])+'</p><p>'+escape(report['scope_policy'])+'</p>'
     if report.get('educational_release'):
-        body+='<h2>Учебный выпуск с обозначенными ограничениями</h2><p>'+escape(report['acceptance_policy_update'])+'</p><p>'+escape(report['educational_release']['meaning'])+'</p><p><a href="../site/skull-education.html">Открыть все модели и объяснения</a></p>'
+        body+='<h2>Учебный выпуск с обозначенными ограничениями</h2><p>'+escape(report['acceptance_policy_update'])+'</p><p>'+escape(report['educational_release']['meaning'])+'</p><p><a href="../site/skull-education.html">Открыть учебные виды и объяснения</a></p>'
     body+='<h2>Границы разделов с учётом будущего атласа всего тела</h2>'+table(['Раздел','Этап','Что входит'],[(m['title'],m['phase'],m['includes']) for m in modules])+'<p>'+escape(report['cross_module_contract'])+'</p>'
     body+='<h2>Отдельная строгая приёмка исходной геометрии и внешняя рецензия</h2>'+table(['Код','Пункт','Сейчас','Что сделать','Критерий готовности'],[(g['id'],g['title'],g['current_status'],g['work'],g['done_when']) for g in report['gates']])
     body+='<h2>9 мышц без модели</h2>'+table(['Код','Мышца и сторона','Латынь'],[(m['code'],m['ru'],m['lat']) for m in muscle_rows if not m['has_model']])

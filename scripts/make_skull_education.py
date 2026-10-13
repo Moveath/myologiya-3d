@@ -76,9 +76,30 @@ def export():
         for m in r['models']:
             assert m['nodes'] and (SITE/m['file']).is_file(),r['id']
             assert len({ref['url'] for ref in m['refs']})>=2,m['id']
-    files=['skull-educational-bones.json','skull-educational-bones.glb','skull-muscle-reconstructions.json','skull-muscle-reconstructions.glb','skull-attachment-education.json','skull-openear-landmarks.json']
-    data=dict(version=1,policy='Исходная геометрия, отдельно обозначенная учебная схема или явное объяснение ограничений; решение для каждой записи согласовано пользователем 13 октября 2026.',
-        title='Череп: модели и объяснения',entries=entries,counts=dict(total=len(entries),categories=expected,status=dict(Counter(r['status'] for r in entries)),unique3DDiagrams=len({m['id'] for r in entries for m in r['models']}),recordsWithDiagrams=sum(bool(r['models']) for r in entries),attachmentFields=156),
+    # User requested direct atlas views instead of the separate procedural models.
+    # Historical source packages stay reproducible; they are not displayed here.
+    context_views={'A02.1.00.034':'frontal','A02.1.00.035':'frontal','A02.1.00.036':'frontal',
+                   'A02.1.00.037':'frontal','A02.1.00.043':'parietal_right','A02.1.00.063':'maxilla_right'}
+    for r in entries:
+        if r['models']:
+            r['models']=[]
+            r['limitations']=['Учебный вид открывает исходную структуру или её окружающую область. Он не добавляет отсутствующую геометрию. Подробные ограничения перечислены ниже.']
+            r['guidance']=['Открой соответствующий вид в атласе и сопоставь его с описанием и источниками. Ориентир или окружающая область не подтверждают отсутствующие детали.']
+            r['known']=[s.replace('Схема связи','Связь') for s in r['known']]
+        if r['status']=='educational_reconstruction':r['status']='explanation'
+        if r['category']=='muscles':
+            r['limitations'].insert(0,'Отдельной исходной модели этой мышцы или части в наборе нет. Кнопка открывает её карточку в атласе; окружающий вид не заменяет отсутствующую мышцу.')
+        if r['category']=='whole' and r['code'] in context_views:
+            r['links'].append(dict(label='Окружающая кость · учебный вид ↗',href='skull-detail.html?'+urlencode(dict(mode='z',part=context_views[r['code']]))))
+            r['limitations'].append('Открывается окружающая кость для ориентации. Само указанное образование в этом виде отдельно не подтверждено.')
+        for l in r['links']:
+            l['label']=l['label'].replace('исходная модель','учебный вид').replace('Исходный учебный вид','Учебный вид')
+        primary=next((l for l in r['links'] if 'study=' in l['href']),None)
+        if primary is None:primary=next((l for l in r['links'] if l['href'].startswith('skull-detail.html')),None)
+        r['atlasView']=dict(primary) if primary else None
+    files=['skull-educational-bones.json','skull-muscle-reconstructions.json','skull-attachment-education.json','skull-openear-landmarks.json']
+    data=dict(version=2,policy='По уточнению пользователя отдельные учебные 3D-схемы убраны из просмотра. Карточки открывают конкретную кость, мышцу или учебный вид в исходном атласе; неизвестное и ограничения объясняются текстом.',
+        title='Череп: учебные виды и объяснения',entries=entries,counts=dict(total=len(entries),categories=expected,status=dict(Counter(r['status'] for r in entries)),unique3DDiagrams=0,recordsWithDiagrams=0,atlasViews=sum(bool(r['atlasView']) for r in entries),attachmentFields=156),
         educationalDispositionComplete=True,completeSkullGeometry=False,independentAnatomistReview=False,physicalDeviceTests=False,
         sourceFiles={f:hashlib.sha256((SITE/f).read_bytes()).hexdigest() for f in files})
     (SITE/'skull-education.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf8')

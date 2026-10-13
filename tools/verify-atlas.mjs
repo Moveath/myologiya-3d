@@ -29,7 +29,7 @@ try {
     await page.route('https://cdn.jsdelivr.net/npm/**',route=>route.fulfill({path:path.join(root,'tools/node_modules',route.request().url().split('/npm/')[1].replace('three@0.170.0/','three/')),contentType:'text/javascript'}));
     // Remove external font/network timing from layout regression screenshots.
     await page.route('https://fonts.googleapis.com/**',route=>route.fulfill({body:'',contentType:'text/css'}));
-    await page.goto('http://127.0.0.1:8776/'+(process.argv[3]||'local.html'));
+    await page.goto('http://127.0.0.1:8776/'+(process.argv[3]||'local.html'),{waitUntil:'domcontentloaded',timeout:120000});
     await page.waitForFunction(()=>window.__ready===true);
     await page.screenshot({path:path.join(out,`${width}-${theme}-home.png`)});
     await page.locator('.seccard[data-sec="head"]').click();

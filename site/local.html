@@ -534,6 +534,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { prepareRaycasts, createRenderQuality } from './atlas-performance.js';
 
 const A = window.ATLAS;
 const $ = (s) => document.querySelector(s);
@@ -713,6 +714,7 @@ try {
   throw e;
 }
 renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+const renderQuality = createRenderQuality(renderer);
 renderer.setClearColor(0x000000, 0);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(32, 1, 0.01, 30);
@@ -730,7 +732,7 @@ controls.minDistance = 0.06; controls.maxDistance = 3.5; controls.screenSpacePan
 let needsRender = true;
 let tween = null;
 const requestRender = () => { needsRender = true; };
-controls.addEventListener('change', requestRender);
+controls.addEventListener('change', () => { renderQuality.motion(); requestRender(); });
 controls.addEventListener('start', () => { tween = null; resetView(); hideTip(); hideGloss(); });
 
 // screen insets so framing avoids the controls on top and the sheet below
@@ -779,8 +781,9 @@ const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
 const WHITE = new THREE.Color('#ffffff');
 const headCutPlane = new THREE.Plane();
+const headCutActive = () => state.sec === 'head' && state.mode === 'study' && state.headCut.active;
 function pointClipped(point) {
-  return state.sec === 'head' && state.mode === 'study' && state.headCut.active && headCutPlane.distanceToPoint(point) < -1e-7;
+  return headCutActive() && headCutPlane.distanceToPoint(point) < -1e-7;
 }
 function updateHeadCut() {
   const enabled = state.sec === 'head' && state.mode === 'study' && state.headCut.active;
@@ -861,7 +864,8 @@ async function fetchModel(file) {
     return await parse(b64ToBuffer(await fetchText(`${file}-q-glb.txt`)));
   }
 }
-function register(gltf) {
+async function register(gltf) {
+  await prepareRaycasts(gltf.scene);
   const map = new Map();
   gltf.scene.traverse(o => {
     if (!o.isMesh) return;
@@ -889,7 +893,7 @@ function register(gltf) {
 }
 function loadSection(id) {
   if (models[id]) return Promise.resolve(models[id]);
-  if (!loading[id]) loading[id] = fetchModel(SEC[id].file).then(g => (models[id] = register(g))).catch(e => { loading[id] = null; throw e; });
+  if (!loading[id]) loading[id] = fetchModel(SEC[id].file).then(register).then(model => (models[id] = model)).catch(e => { loading[id] = null; throw e; });
   return loading[id];
 }
 
@@ -1044,7 +1048,7 @@ function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Пов
 window.__atlasRuntime.watch(canvas,()=>{needsRender=true;resize();});
 function loop(now) {
   requestAnimationFrame(loop);
-  if(renderer.getContext().isContextLost())return;
+  if(document.hidden || $('#headDetailDialog').open || renderer.getContext().isContextLost())return;
   if (tween) {
     const k = Math.min(1, (now - tween.t0) / tween.dur);
     const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
@@ -1053,7 +1057,9 @@ function loop(now) {
     if (k >= 1) { tween = null; occDirty = true; }
     needsRender = true;
   }
-  if (controls.update()) needsRender = true;
+  const cameraMoved = controls.update();
+  const qualityChanged = renderQuality.update(now, !!tween || cameraMoved);
+  if (cameraMoved || qualityChanged) needsRender = true;
   if (needsRender) {
     renderer.render(scene, camera); needsRender = false;
     if (pinEls.length) {
@@ -1069,6 +1075,7 @@ function hitAt(clientX, clientY) {
   const r = canvas.getBoundingClientRect();
   const ndc = new THREE.Vector2(((clientX - r.left) / r.width) * 2 - 1, -((clientY - r.top) / r.height) * 2 + 1);
   ray.setFromCamera(ndc, camera);
+  ray.firstHitOnly = !headCutActive();
   const hit = ray.intersectObjects(pickables, false).find(h => !pointClipped(h.point));
   return hit ? hit.object.userData : null;
 }
@@ -1172,6 +1179,7 @@ function computeOcclusion() {
   const own = s && s.kind === 'm' ? new Set(s.meshes) : null;
   const targets = pickables.filter(m => (!own || !own.has(m)) && m.material !== XRAY);
   const cp = camera.position;
+  occRay.firstHitOnly = !headCutActive();
   for (const pe of pinEls) {
     const d = pe.v.clone().sub(cp);
     const dist = d.length();
@@ -1369,7 +1377,7 @@ function renderSheet() {
       <p>${glossify(esc(ap.x), used)}</p>
       ${ap.modelNote ? `<div class="note">${esc(ap.modelNote)}</div>` : ''}
       ${geometryReviewLink(ap)}${detailLinks(ap)}
-      ${state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="${esc(ap.b+':'+ap.c)}">Учебная схема и объяснение ограничений ↗</button></div>`:''}
+      ${state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="${esc(ap.b+':'+ap.c)}">Учебный вид и объяснение ограничений ↗</button></div>`:''}
       ${sourceLinks(ap.refs)}
       ${muscleChips(ap, isMuscle ? id : null)}
       ${isMuscle ? `<div class="linkrow"><button class="chip" data-gobone="${ap.b}">Открыть кость: ${esc(boneName.toLowerCase())}</button></div>` : ''}
@@ -1425,7 +1433,7 @@ function renderSheet() {
       <dl class="facts">${factHtml}</dl>
       ${noModel ? '<div class="note">Для этой структуры нет отдельной 3D-модели в используемом наборе BodyParts3D.</div>' : ''}
       ${p && p.noModel ? '<div class="note">Эта часть описана в карточке, но не выделена отдельной геометрией в исходной модели.</div>' : ''}
-      ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебная схема и ограничения модели ↗</button>`:''}</div>`:''}
+      ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебный вид и ограничения модели ↗</button>`:''}</div>`:''}
       ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
       ${pinSect}
       ${sourceLinks(d.refs)}
@@ -1954,8 +1962,8 @@ async function enterSection(id, opts = {}) {
   renderSheet();
   resize();
   if (!opts.noFrame && (changed || !opts.keepCamera)) frameSub(true);
-  // warm up the other ready section in the background
-  SECTIONS.filter(x => x.ready && x.id !== id && !models[x.id]).forEach(x => loadSection(x.id).catch(() => {}));
+  // Other sections load on demand: background mesh decoding/indexing competes
+  // with the current camera gesture and retains unnecessary data on phones.
   return true;
 }
 
@@ -2059,11 +2067,6 @@ resize();
 requestAnimationFrame(loop);
 const deep = location.hash.replace('#', '');
 if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
-else {
-  // fetch the last used section quietly while the body map is on screen
-  const warm = SEC[prefs.sec] && SEC[prefs.sec].ready ? prefs.sec : 'arm';
-  loadSection(warm).catch(() => {});
-}
 window.__atlas = { enterSection, setSub, select, goTo, activatePin, showHome, state };
 window.__ready = true;
 </script>

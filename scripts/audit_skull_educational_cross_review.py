@@ -150,7 +150,7 @@ def audit(with_browser=False):
     for r in bone['records']:
         e = indexed[r['id']]
         check('bone_refs_preserved', e['refs'] == r['refs'], r['id'])
-        check('bone_disposition_preserved', e['status'] == r['status'], r['id'])
+        check('bone_disposition_preserved', e['status'] == ('explanation' if r['status']=='educational_reconstruction' else r['status']), r['id'])
         check('bone_known_preserved', e['known'] == [r['known']], r['id'])
         if r['kind'] != 'whole':
             s = extent[r['id']]
@@ -182,7 +182,7 @@ def audit(with_browser=False):
 
     for r in muscles['entries']:
         key = r['muscle']+(':'+r['part'] if r.get('part') else '')
-        check('muscle_disposition_preserved', indexed['muscle:'+key]['status'] == r['status'], key)
+        check('muscle_disposition_preserved', indexed['muscle:'+key]['status'] == 'explanation', key)
         check('muscle_refs_preserved', indexed['muscle:'+key]['refs'] == r['refs'], key)
         source_card = main_muscles[r['muscle']]
         if r.get('part'):
@@ -201,8 +201,9 @@ def audit(with_browser=False):
         glb_nodes[filename] = {node.get('name') for node in gltf.get('nodes', [])}
     for m in all_models.values():
         check('all_diagram_nodes_exist', set(m['nodes']+m['contextNodes']) <= glb_nodes[m['file']], m['id'])
-    check('44_distinct_diagrams', len(all_models) == 44)
-    check('12_variant_types_have_diagrams', len({r['code'] for r in rows if r['category'] == 'variants' and r['models']}) == 12)
+    check('no_displayed_diagrams', len(all_models) == 0)
+    check('720_atlas_views', sum(bool(r.get('atlasView')) for r in rows) == 720)
+    check('all_variants_link_to_atlas', all(r.get('atlasView') for r in rows if r['category']=='variants'))
     check('incisive_fossa_limit_describes_fossa', 'ямки' in indexed['whole:A02.1.00.060']['unknown'][0])
     check('palatine_torus_limit_describes_variant', 'варианта' in indexed['whole:A02.1.00.063']['unknown'][0])
 
@@ -210,9 +211,9 @@ def audit(with_browser=False):
     if browser_result:
         check('all_attachment_fields_render_correct_scope', not browser_result['failures'], browser_result['failures'])
     report = {'createdUtc':datetime.now(timezone.utc).isoformat(),
-              'reviewType':'independent_agent_internal_inventory_and_evidence_preservation_review',
+              'reviewType':'internal_inventory_and_evidence_preservation_review',
               'notExternalAnatomistReview':True, 'notNewAnatomicalSourceValidation':True,
-              'scope':'All 728 published records and their upstream registries, 156 attachment fields, 44 diagrams, link targets and source freshness.',
+              'scope':'All 728 published records and their upstream registries, 156 attachment fields, 720 atlas links, removed standalone diagrams and source freshness.',
               'status':'passed' if not failures else 'failed', 'counts':data['counts'],
               'checks':dict(checks), 'totalAssertions':sum(checks.values()), 'inheritedFields':inherited,
               'internalLinkCounts':dict(link_counts), 'failures':failures, 'browserScopeReview':browser_result,

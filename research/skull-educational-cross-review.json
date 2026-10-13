@@ -1,9 +1,9 @@
 {
-  "createdUtc": "2026-10-13T09:18:25.292706+00:00",
-  "reviewType": "independent_agent_internal_inventory_and_evidence_preservation_review",
+  "createdUtc": "2026-10-13T10:10:14.293826+00:00",
+  "reviewType": "internal_inventory_and_evidence_preservation_review",
   "notExternalAnatomistReview": true,
   "notNewAnatomicalSourceValidation": true,
-  "scope": "All 728 published records and their upstream registries, 156 attachment fields, 44 diagrams, link targets and source freshness.",
+  "scope": "All 728 published records and their upstream registries, 156 attachment fields, 720 atlas links, removed standalone diagrams and source freshness.",
   "status": "passed",
   "counts": {
     "total": 728,
@@ -16,14 +16,14 @@
       "ossicles": 13
     },
     "status": {
-      "explanation": 313,
+      "explanation": 387,
       "source_model": 255,
-      "educational_reconstruction": 74,
       "future_scope": 8,
       "documented_attachment": 78
     },
-    "unique3DDiagrams": 44,
-    "recordsWithDiagrams": 76,
+    "unique3DDiagrams": 0,
+    "recordsWithDiagrams": 0,
+    "atlasViews": 720,
     "attachmentFields": 156
   },
   "checks": {
@@ -33,18 +33,15 @@
     "external_anatomist_not_claimed": 1,
     "physical_devices_not_claimed": 1,
     "educational_inventory_complete": 1,
-    "compiled_source_hash_current": 6,
+    "compiled_source_hash_current": 4,
     "attachment_source_hash_current": 1,
     "muscle_glb_hash_current": 1,
     "required_entry_content": 5096,
     "entry_ref_urls_distinct": 728,
     "reference_has_locator_title_https": 1704,
-    "internal_link_file_exists": 1131,
+    "internal_link_file_exists": 1137,
     "source_geometry_assessment_resolves": 384,
     "atlas_landmark_exists": 521,
-    "diagram_explained": 76,
-    "diagram_refs": 76,
-    "diagram_definition_consistent": 76,
     "source_variant_code_resolves": 14,
     "source_whole_launch_resolves": 83,
     "internal_education_id_exists": 19,
@@ -73,14 +70,13 @@
     "original_missing_mesh_not_promoted": 19,
     "muscle_16_diagrams_3_explanations": 1,
     "ossicle_limit_preserved": 13,
-    "glb_valid_header": 2,
-    "all_diagram_nodes_exist": 44,
-    "44_distinct_diagrams": 1,
-    "12_variant_types_have_diagrams": 1,
+    "no_displayed_diagrams": 1,
+    "720_atlas_views": 1,
+    "all_variants_link_to_atlas": 1,
     "incisive_fossa_limit_describes_fossa": 1,
     "palatine_torus_limit_describes_variant": 1
   },
-  "totalAssertions": 14990,
+  "totalAssertions": 14721,
   "inheritedFields": [
     "orbicularis_oculi_right:ciliary:origin",
     "orbicularis_oculi_right:ciliary:insertion",
@@ -96,7 +92,7 @@
     "lateral_pterygoid_left:lower:insertion"
   ],
   "internalLinkCounts": {
-    "detail": 480,
+    "detail": 486,
     "landmark": 521,
     "variant": 14,
     "education": 19,
@@ -105,14 +101,14 @@
   "failures": [],
   "browserScopeReview": null,
   "inspectedFilesSha256": {
-    "skull-education.json": "cf475b2488b325d11095f938e7836d8f121c72b2ccafd0a074f848039e42f5ab",
+    "skull-education.json": "a0834c4174183c2342c4ad676c4415feb492a449c61d9134844da144a27f6814",
     "skull-educational-bones.json": "805cbdaba59cf6643c7e6701b4fb545966c651c400801d67d31a657cf19e1bb6",
     "skull-attachment-education.json": "862bdd439cdc87c89ecd08ecdd75a46bfa33d6504c90520530208c9846fcb571",
     "skull-muscle-attachments.json": "38b9c3571645660a3a31f639ee79f23dfc2fe13508f61dbbbf32ea2569a50fdb",
     "skull-muscle-reconstructions.json": "b72984d671803646d20ba8bc6e458d7453b8081e1994cc232c7b5bcd0417cb3f",
     "skull-whole.json": "68d55f72539b0e5345960568ad180d614a8f4904559e23e03e3dd72cc934153d",
     "skull-geometry-review.json": "cc170c7e1c43ecafe88aa04fd119ae704670ff5ce05f19303ca87240f7f24405",
-    "skull-education.js": "673cb069cc9ae018b9babdecbeea901f02211ded677df254b2196cf555f01304",
+    "skull-education.js": "5c67d55971eaf49dfe82887a6bb6d90444b6ef608e58017b71ea42ccf1d91924",
     "skull-education-model.js": "4e7f4ad7cfe27bb80b01a033b54fad7b9eb86e2af9e512713e9b467c105011d9"
   },
   "limitations": [

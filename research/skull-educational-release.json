@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "policy": "Исходная геометрия, отдельно обозначенная учебная схема или явное объяснение ограничений; решение для каждой записи согласовано пользователем 13 октября 2026.",
-  "title": "Череп: модели и объяснения",
+  "version": 2,
+  "policy": "По уточнению пользователя отдельные учебные 3D-схемы убраны из просмотра. Карточки открывают конкретную кость, мышцу или учебный вид в исходном атласе; неизвестное и ограничения объясняются текстом.",
+  "title": "Череп: учебные виды и объяснения",
   "counts": {
     "total": 728,
     "categories": {
@@ -13,14 +13,14 @@
       "ossicles": 13
     },
     "status": {
-      "explanation": 313,
+      "explanation": 387,
       "source_model": 255,
-      "educational_reconstruction": 74,
       "future_scope": 8,
       "documented_attachment": 78
     },
-    "unique3DDiagrams": 44,
-    "recordsWithDiagrams": 76,
+    "unique3DDiagrams": 0,
+    "recordsWithDiagrams": 0,
+    "atlasViews": 720,
     "attachmentFields": 156
   },
   "educationalDispositionComplete": true,
@@ -29,9 +29,7 @@
   "physicalDeviceTests": false,
   "sourceFiles": {
     "skull-educational-bones.json": "805cbdaba59cf6643c7e6701b4fb545966c651c400801d67d31a657cf19e1bb6",
-    "skull-educational-bones.glb": "9a18ed4dbfa842181b292f1142332111221e2d84119062e2b679f340b772c7db",
     "skull-muscle-reconstructions.json": "b72984d671803646d20ba8bc6e458d7453b8081e1994cc232c7b5bcd0417cb3f",
-    "skull-muscle-reconstructions.glb": "e2e34a9f932f6213d926a8aea6d8de89e053d87bb3e3d24ed7112b879974dc24",
     "skull-attachment-education.json": "862bdd439cdc87c89ecd08ecdd75a46bfa33d6504c90520530208c9846fcb571",
     "skull-openear-landmarks.json": "e6f38c27953aa788bf0d239ba57914a0dc73561b397977aadb8e033bd13b5a42"
   },
