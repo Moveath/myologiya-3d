@@ -111,7 +111,7 @@ try {
     assert.equal(await page.locator('#bBoneColors').getAttribute('aria-pressed'),'true');
     const overflow = await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
     assert.equal(overflow,false,'Horizontal page overflow');
-    for(const sec of ['arm','leg']){assert.equal(await page.evaluate(id=>window.__atlas.enterSection(id),sec),true);assert.equal(await page.locator('#bBoneColors').isVisible(),false);}
+    for(const sec of ['arm','leg']){assert.equal(await page.evaluate(id=>window.__atlas.enterSection(id),sec),true);assert.equal(await page.locator('#bBoneColors').isVisible(),true);}
     assert.deepEqual(errors,[]);
     report.push({width,theme,errors,overflow,head_cuts:['y','x','z'],head_cut_reverse:true,head_cut_quiz_hidden:true,status:'passed'});
     await context.close();

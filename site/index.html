@@ -87,6 +87,15 @@ button { cursor: pointer; }
 .subs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-block: 1px; }
 .subs::-webkit-scrollbar { display: none; }
 .subs .chip { flex: none; }
+.sub-scroll { display:flex; align-items:center; gap:10px; padding:0 16px; pointer-events:auto; }
+.sub-scroll[hidden] { display:none; }
+.sub-scroll input { flex:1; min-width:0; height:24px; accent-color:var(--teal); cursor:ew-resize; }
+.sub-scroll button { width:32px; height:28px; border:1px solid var(--rule); border-radius:8px; background:var(--paper-glass); }
+.sub-scroll button:disabled { opacity:.35; }
+.list-filters { margin:8px 16px; flex-shrink:0; }
+.list-group { border-bottom:1px solid var(--rule); padding-bottom:6px; }
+.list-group summary { padding:12px 0 6px; cursor:pointer; color:var(--ink-2); font-size:12px; font-weight:600; }
+.list-group summary small { float:right; margin-right:6px; }
 .seg { display: inline-flex; align-items: stretch; border: 1px solid var(--rule); border-radius: var(--r-ctl);
   background: var(--paper-glass); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); overflow: hidden; }
 .seg .cap { display: flex; align-items: center; padding: 0 8px 0 10px; font: 500 10px/1 var(--f-mono);
@@ -395,6 +404,11 @@ dt .term { text-decoration-color: var(--ink-2); }
 
   <div class="tools">
     <div class="row subs" id="subs" role="group" aria-label="Подраздел"></div>
+    <div class="sub-scroll" id="subScrollBar" hidden>
+      <button id="subPrev" aria-label="Прокрутить подразделы влево">←</button>
+      <input id="subScroll" type="range" min="0" max="1000" value="0" aria-label="Прокрутка подразделов">
+      <button id="subNext" aria-label="Прокрутить подразделы вправо">→</button>
+    </div>
     <div class="row">
       <div class="seg" role="group" aria-label="Слои мышц">
         <span class="cap">Слои</span>
@@ -409,6 +423,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
+      <button class="chip" id="bContext" aria-pressed="true" title="Показать или скрыть окружающие полупрозрачные структуры; выбранная группа остаётся">Окружение</button>
       <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
       <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
@@ -429,6 +444,9 @@ dt .term { text-decoration-color: var(--ink-2); }
     <div class="dhead">
       <input id="q" type="search" placeholder="Мышца, кость или образование кости, по-русски или по-латыни" autocomplete="off" aria-label="Поиск">
       <button class="x" id="bCloseList" aria-label="Закрыть список"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="seg list-filters" role="group" aria-label="Тип структур">
+      <button data-list-type="all" aria-pressed="true">Все</button><button data-list-type="bones" aria-pressed="false">Кости</button><button data-list-type="muscles" aria-pressed="false">Мышцы</button>
     </div>
     <div class="dlist" id="dlist"></div>
   </aside>
@@ -528,11 +546,13 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="data-head.js"></script>
 <script src="data-neck.js"></script>
 <script src="data-thorax.js"></script>
+<script src="data-context-bones.js"></script>
 <script src="pins.js"></script>
 <script src="pins-leg.js"></script>
 <script src="pins-head.js"></script>
 <script src="pins-neck.js"></script>
 <script src="pins-thorax.js"></script>
+<script src="pins-context-bones.js"></script>
 <script src="skull-evidence-index.js"></script>
 <script src="skull-geometry-index.js"></script>
 <script src="bodymap.js"></script>
@@ -598,20 +618,21 @@ const SECTIONS = [
       { id: 'back', ru: 'Поверхностные мышцы спины', hint: 'Связь с плечевым поясом и задние зубчатые мышцы', v: 'post' },
       { id: 'deepback', ru: 'Глубокие мышцы спины', hint: 'Мышцы грудного отдела спины и сегментарные группы', v: 'post' }
     ] },
-  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Правая рука: плечевой пояс, плечо, предплечье и кисть', ready: true, file: 'arm',
+  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Правая рука; плечевой пояс и плечевые кости с обеих сторон', ready: true, file: 'arm', extraFile: 'arm-extra',
     tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
     subs: [
-      { id: 'all', ru: 'Вся рука', hint: 'Вся правая верхняя конечность', v: 'antlat' },
+      { id: 'all', ru: 'Весь раздел', hint: 'Правая верхняя конечность, плечевой пояс и плечевые кости обеих сторон', v: 'antlat' },
       { id: 'shoulder', ru: 'Плечевой пояс', hint: 'Лопатка, ключица и мышцы вокруг плечевого сустава', v: 'antlat' },
       { id: 'arm', ru: 'Плечо', hint: 'От плечевого сустава до локтя', v: 'antlat' },
       { id: 'forearm', ru: 'Предплечье', hint: 'От локтя до запястья', v: 'ant' },
       { id: 'hand', ru: 'Кисть', hint: 'Запястье, ладонь и пальцы', v: 'ant' }
     ] },
-  { id: 'leg', ru: 'Таз и нижняя конечность', short: 'Таз и нога', hint: 'Тазовые кости, ягодицы, бедро, голень и стопа', ready: true, file: 'leg',
+  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и правая нижняя конечность', ready: true, file: 'leg', extraFile: 'leg-extra',
     tries: ['gluteus_maximus', 'quadriceps_femoris', 'triceps_surae'],
     subs: [
-      { id: 'all', ru: 'Вся нога', hint: 'Таз и вся правая нижняя конечность', v: 'antlat' },
-      { id: 'pelvis', ru: 'Таз', hint: 'Тазовые кости, крестец, ягодичные мышцы и дно таза', v: 'antlat' },
+      { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и правая нижняя конечность', v: 'antlat' },
+      { id: 'lumbar', ru: 'Поясница L1–L5', hint: 'Пять поясничных позвонков; костный подраздел', v: 'postlat' },
+      { id: 'pelvis', ru: 'Таз, крестец и копчик', hint: 'Тазовые кости, крестцово-копчиковая область и мышцы таза', v: 'antlat' },
       { id: 'thigh', ru: 'Бедро', hint: 'От тазобедренного сустава до колена', v: 'ant' },
       { id: 'shank', ru: 'Голень', hint: 'От колена до лодыжек', v: 'antlat' },
       { id: 'foot', ru: 'Стопа', hint: 'Пятка, свод и пальцы', v: 'footv' }
@@ -713,6 +734,7 @@ const state = {
   sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
   boneColors: prefs.boneColors !== false,
+  context: prefs.context !== false,
   headCut: { active: false, axis: 'y', value: 50, flip: false },
   mode: 'study', viewIdx: -1,
   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
@@ -815,6 +837,9 @@ const HEAD_BONE_PALETTE = {
   HEAD_BONE_PALETTE['thoracic_'+(i+1)]=color;
 });
 const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
+Object.assign(HEAD_BONE_PALETTE, {clavicle:'#e8c04c',scapula:'#689ddd',humerus:'#e88762',radius:'#91b95b',ulna:'#b488c9',hip_bone:'#689ddd',sacrum:'#e8c04c',femur:'#e88762',patella:'#b488c9',tibia:'#91b95b',fibula:'#4fa7a1'});
+const limbPalette=['#689ddd','#e88762','#91b95b','#b488c9','#4fa7a1','#d988b0','#cfa847','#86ced8','#b98665','#959fe0','#a4bf71','#e99c4a'];
+Object.entries(A.bones).filter(([,b])=>!isSoft(b.g)).forEach(([id],i)=>{const key=headBoneKey(id);HEAD_BONE_PALETTE[key] ||= limbPalette[i%limbPalette.length];});
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
 const WHITE = new THREE.Color('#ffffff');
 const headCutPlane = new THREE.Plane();
@@ -856,17 +881,18 @@ function updateHeadCut() {
 const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([id, color]) => {
   const material = GHOST.clone(); material.color.copy(color); return [id, material];
 }));
-const boneColorsActive = () => ['head','neck','trunk'].includes(state.sec) && state.boneColors && state.mode !== 'quiz';
+const boneColorsActive = () => !!state.sec && state.boneColors && state.mode !== 'quiz';
 const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
 function updateBoneColorControls() {
   const head = state.sec === 'head', quiz = state.mode === 'quiz';
-  const colored = head || ['neck','trunk'].includes(state.sec);
+  const colored = !!state.sec;
   $('#bBoneColors').hidden = !colored;
   $('#bBoneColors').disabled = quiz;
   $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
   $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
   $('#bBoneLegend').hidden = !colored || quiz || !state.boneColors;
-  $('#bHeadDetail').hidden = !head || quiz;
+  $('#bHeadDetail').hidden = !colored || quiz;
+  $('#bHeadDetail').textContent = head ? 'Учебные группы' : 'Кости и мышцы';
 }
 
 function muscleColor(id) {
@@ -931,7 +957,16 @@ async function register(gltf) {
 }
 function loadSection(id) {
   if (models[id]) return Promise.resolve(models[id]);
-  if (!loading[id]) loading[id] = fetchModel(SEC[id].file).then(register).then(model => (models[id] = model)).catch(e => { loading[id] = null; throw e; });
+  if (!loading[id]) loading[id] = Promise.all([fetchModel(SEC[id].file), SEC[id].extraFile ? fetchModel(SEC[id].extraFile) : null]).then(([main,extra])=>{
+    if(extra){
+      const replaced=new Set(Object.values(A.contextBoneSources||{}).filter(x=>x.sec===id).map(x=>x.sourceId));
+      const remove=[];
+      main.scene.traverse(o=>{if(o.name.startsWith('c|')&&replaced.has(o.name.split('|')[1]))remove.push(o);});
+      remove.forEach(o=>o.removeFromParent());
+      main.scene.add(extra.scene);
+    }
+    return register(main);
+  }).then(model => (models[id] = model)).catch(e => { loading[id] = null; throw e; });
   return loading[id];
 }
 
@@ -939,12 +974,12 @@ function loadSection(id) {
 // in the quiz each question peels down to the target's own layer; otherwise the user's setting applies
 const effPeel = () => (state.mode === 'quiz' && state.quiz.target ? state.quiz.peel : state.peel);
 // 2 = shown, 1 = faint context (bones outside the subsection), 0 = hidden
-function visState(s) {
+function baseVisState(s) {
   const iso = state.isolate ? structs.get(state.isolate) : null;
   if (iso && iso.kind !== 'm') return s.id === iso.id ? 2 : 0; // an isolated bone is shown on its own
   const sub = curSub();
   const S = SEC[state.sec];
-  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : state.sec === 'trunk' ? (['ribs','sternum'].includes(sub) ? 0 : 2) : (sub === 'all' || (S && S.subs[1].id === sub) ? 2 : 0);
+  if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : state.sec === 'trunk' ? (['ribs','sternum'].includes(sub) ? 0 : 2) : (sub === 'all' || ['shoulder','pelvis','lumbar'].includes(sub) ? 2 : 0);
   const inSub = sub === 'all' || subOf(s.id) === sub;
   if (s.kind === 'm') {
     if (iso) return s.id === iso.id ? 2 : 0;
@@ -956,6 +991,10 @@ function visState(s) {
   if (state.hidden.has(s.id)) return 0;
   if (SOFT_DEPTH[s.id] && (effPeel() >= SOFT_DEPTH[s.id] || iso)) return 0;
   return inSub ? 2 : 1;
+}
+function visState(s) {
+  const v=baseVisState(s);
+  return !state.context && (v===1 || s.kind==='c') ? 0 : v;
 }
 const isVisible = (s) => visState(s) === 2;
 let pickables = [];
@@ -975,6 +1014,7 @@ function applyVisibility() {
   }
   document.querySelectorAll('[data-peel]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.peel === state.peel)));
   $('#bTrunk').setAttribute('aria-pressed', String(state.trunk));
+  $('#bContext').setAttribute('aria-pressed', String(state.context));
   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
   updateBoneColorControls();
@@ -1289,7 +1329,20 @@ function renderSubs() {
   $('#secSub').textContent = curSub() === 'all' ? S.hint : `${def.ru}: ${def.hint.charAt(0).toLowerCase()}${def.hint.slice(1)}`;
   const cur = box.querySelector('[aria-pressed="true"]');
   if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  requestAnimationFrame(syncSubScroll);
 }
+function syncSubScroll() {
+  const box=$('#subs'), max=Math.max(0,box.scrollWidth-box.clientWidth), bar=$('#subScrollBar');
+  const hidden=max<2;
+  if(bar.hidden!==hidden){bar.hidden=hidden;requestAnimationFrame(resize);}
+  $('#subScroll').value=max ? Math.round(box.scrollLeft/max*1000) : 0;
+  $('#subPrev').disabled=box.scrollLeft<2;
+  $('#subNext').disabled=box.scrollLeft>=max-2;
+}
+$('#subs').addEventListener('scroll',syncSubScroll,{passive:true});
+new ResizeObserver(syncSubScroll).observe($('#subs'));
+$('#subScroll').addEventListener('input',e=>{const box=$('#subs');box.scrollLeft=+e.target.value/1000*(box.scrollWidth-box.clientWidth);});
+for(const [id,sign] of [['subPrev',-1],['subNext',1]]) $('#'+id).addEventListener('click',()=>$('#subs').scrollBy({left:sign*$('#subs').clientWidth*.7,behavior:'smooth'}));
 function setSub(sub, opts = {}) {
   if (!state.sec) return;
   state.subs[state.sec] = sub;
@@ -1391,7 +1444,7 @@ function renderSheet() {
       <p class="name">Нажми на мышцу или кость</p>
       <p class="hint">${curSub() === 'all' ? 'Выбери подраздел вверху, чтобы остались только его мышцы.' : `Сейчас открыт подраздел «${esc(subDef.ru)}».`} Карточка покажет начало, прикрепление, функцию, иннервацию и кровоснабжение.</p>
       <div class="tryrow">${tryIds.map(t => `<button class="chip" data-go="${t}">${esc((A.muscles[t] || A.bones[t]).ru)}</button>`).join('')}</div>
-      ${state.sec==='neck'?neckScope():state.sec==='trunk'?thoraxScope():''}`;
+      ${state.sec==='neck'?neckScope():state.sec==='trunk'?thoraxScope():state.sec==='leg'&&curSub()==='lumbar'?lumbarScope():''}`;
     afterSheet(); return;
   }
   const isMuscle = !!A.muscles[id];
@@ -1489,6 +1542,8 @@ function renderSheet() {
       ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебный вид и ограничения модели ↗</button>`:''}</div>`:''}
       ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
       ${note?sourceLinks(p?.noteRefs||d.noteRefs):''}
+      ${id==='sacrum'?`<div class="linkrow"><button class="chip" data-pinid="coc_os_coccygis">Копчик · os coccygis</button></div>`:''}
+      ${d.sub==='lumbar'?lumbarScope():''}
       ${d.features?.length?`<div class="sect"><h3>Анатомические образования</h3><p class="hint">Каталог строения. Отдельная геометрия и координаты этих образований не заявлены.</p>${d.features.map(f=>`<details class="field-sources"><summary>${esc(f.ru)} · <i>${esc(f.lat)}</i></summary><p class="tacode">TA98 ${esc(f.code)}</p><p>${esc(f.x)}</p>${f.note?`<p class="note">${esc(f.note)}</p>`:''}${sourceLinks(f.refs)}</details>`).join('')}</div>`:''}
       ${pinSect}
       ${sourceLinks(d.refs)}
@@ -1513,6 +1568,9 @@ function neckScope() {
     <h3>Шейный отдел как целое</h3>
     ${(A.neckWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}
   </details>`;
+}
+function lumbarScope() {
+  return `<details class="sect"><summary>Поясничный отдел как целое</summary><p>Костный подраздел L1–L5. Новые мышцы поясницы и отдельные модели дисков этим дополнением не добавлены. Названия и описания проверены по источникам; координаты образований пока не нанесены.</p>${(A.lumbarWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}</details>`;
 }
 function thoraxScope() {
   const terms=PINS.filter(p=>secOf(p.b)==='trunk'&&p.t==='ta');
@@ -1740,7 +1798,7 @@ function renderQuiz() {
     </div>
     <div class="score">Верно ${q.right} из ${q.total} · серия ${q.streak} · рекорд ${q.best}</div>
     <div class="scopes" role="group" aria-label="Область теста">${scopes}</div>
-    ${state.sec === 'head' && state.boneColors ? '<p class="hint">Цвета костей временно отключены на время теста.</p>' : ''}
+    ${state.boneColors ? '<p class="hint">Цвета костей временно отключены на время теста.</p>' : ''}
     ${body}`;
   sheet.querySelectorAll('[data-scope]').forEach(b => b.addEventListener('click', () => {
     q.scope = b.dataset.scope;
@@ -1782,6 +1840,7 @@ function setMode(m) {
 
 // ---------- list drawer ----------
 const drawer = $('#drawer');
+let listType='all';
 const norm = (s) => s.toLowerCase().replace(/ё/g, 'е');
 function renderList() {
   const term = norm($('#q').value.trim());
@@ -1791,34 +1850,36 @@ function renderList() {
   const order = SECTIONS.filter(S => S.ready).sort((a, b) => (b.id === state.sec) - (a.id === state.sec));
   for (const S of order) {
     let sec = '';
-    for (const g of A.groups.filter(g => g.sec === S.id)) {
+    for (const g of A.groups.filter(g => g.sec === S.id && listType!=='bones')) {
       const items = Object.entries(A.muscles).filter(([, d]) => d.g === g.id).map(([id, d]) => {
         const own = match(d);
         const parts = d.parts ? Object.entries(d.parts).filter(([, p]) => own || match(p)) : [];
         return { id, d, parts, show: own || parts.length > 0 };
       }).filter(x => x.show);
       if (!items.length) continue;
-      sec += `<h3>${esc(g.title)}</h3>`;
+      sec += `<details class="list-group" ${term||S.id===state.sec?'open':''}><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
       for (const { id, d, parts } of items) {
         n++;
         const tag = d.noModel ? '<span class="tag">только карточка</span>' : '';
         sec += `<button class="item ${id === state.sel && !state.selPart ? 'cur' : ''}" data-id="${id}"><b>${esc(d.ru)}</b><i>${esc(d.lat)}</i>${tag}</button>`;
         for (const [pk, p] of parts) sec += `<button class="item sub ${id === state.sel && state.selPart === pk ? 'cur' : ''}" data-id="${id}" data-part="${pk}"><b>${esc(p.ru)}</b><i>${esc(p.lat)}</i></button>`;
       }
+      sec += '</details>';
     }
-    for (const g of A.boneGroups.filter(g => g.sec === S.id)) {
+    for (const g of A.boneGroups.filter(g => g.sec === S.id && listType!=='muscles' && (listType!=='bones'||!isSoft(g.id)))) {
       // landmarks are listed under their bone only when the search matches them
       const items = Object.entries(A.bones).filter(([, d]) => d.g === g.id).map(([id, d]) => {
         const pins = term ? (pinsByBone[id] || []).filter(q => q.b === id && match(q)) : [];
         return { id, d, pins, show: match(d) || pins.length > 0 };
       }).filter(x => x.show);
       if (!items.length) continue;
-      sec += `<h3>${esc(g.title)}</h3>`;
+      sec += `<details class="list-group" ${term||S.id===state.sec?'open':''}><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
       for (const { id, d, pins } of items) {
         n++;
         sec += `<button class="item ${id === state.sel && !state.pin ? 'cur' : ''}" data-id="${id}"><b>${esc(d.ru)}</b><i>${esc(d.lat)}</i></button>`;
         for (const q of pins) sec += `<button class="item sub ${state.pin === q.id ? 'cur' : ''}" data-id="${id}" data-pinjump="${q.id}"><b>${esc(q.ru)}</b>${q.lat ? `<i>${esc(q.lat)}</i>` : ''}<span class="tag">${q.t === 'ta' ? 'TA98' : 'мышца'}</span></button>`;
       }
+      sec += '</details>';
     }
     if (sec) html += `<h2>${esc(S.ru)}${S.id === state.sec ? ' <small>· открыт сейчас</small>' : ''}</h2>${sec}`;
   }
@@ -1833,10 +1894,16 @@ function closeList() { drawer.hidden = true; }
 $('#q').addEventListener('input', renderList);
 $('#bList').addEventListener('click', () => (drawer.hidden ? openList() : closeList()));
 $('#bCloseList').addEventListener('click', closeList);
+document.querySelectorAll('[data-list-type]').forEach(b=>b.addEventListener('click',()=>{
+  listType=b.dataset.listType;
+  document.querySelectorAll('[data-list-type]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  renderList();
+}));
 
 // ---------- bone colour legend ----------
 const boneLegend = $('#boneLegend');
 function renderBoneLegend() {
+  $('#boneLegendTitle').textContent='Цвета костей · '+SEC[state.sec].ru;
   let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
   for (const group of A.boneGroups.filter(g => g.sec === state.sec && !isSoft(g.id))) {
     const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)]);
@@ -1846,7 +1913,7 @@ function renderBoneLegend() {
     for (const key of keys) {
       const entries = bones.filter(([id]) => headBoneKey(id) === key), d = entries[0][1];
       const name = d.ru.replace(/ · (?:правая|левая)$/, '');
-      html += `<div class="bone-color-item" data-bone-type="${key}"><span class="bone-color-dot" style="--bone-color:${HEAD_BONE_PALETTE[key]}" aria-hidden="true"></span><div><b>${esc(name)}</b><i>${esc(d.lat)}</i><div class="bone-color-actions">${entries.map(([id, data]) => `<button class="chip" data-color-bone="${id}" aria-label="${esc(data.ru)}" aria-pressed="${state.sel === id}">${entries.length > 1 ? id.endsWith('_right') ? 'Правая' : 'Левая' : 'Показать кость'}</button>`).join('')}</div></div></div>`;
+      html += `<div class="bone-color-item" data-bone-type="${key}"><span class="bone-color-dot" style="--bone-color:${HEAD_BONE_PALETTE[key]}" aria-hidden="true"></span><div><b>${esc(name)}</b><i>${esc(d.lat)}</i><div class="bone-color-actions">${entries.map(([id, data]) => `<button class="chip" data-color-bone="${id}" aria-label="${esc(data.ru)}" aria-pressed="${state.sel === id}">${entries.length > 1 ? id.endsWith('_left') ? 'Левая' : 'Правая' : 'Показать кость'}</button>`).join('')}</div></div></div>`;
     }
   }
   $('#boneLegendList').innerHTML = html;
@@ -2069,9 +2136,12 @@ $('#bTrunk').addEventListener('click', () => {
 });
 $('#bRestore').addEventListener('click', () => { state.isolate = null; state.hidden.clear(); applyVisibility(); renderSheet(); });
 $('#bBoneColors').addEventListener('click', () => {
-  if (state.sec !== 'head' || state.mode === 'quiz') return;
+  if (!state.sec || state.mode === 'quiz') return;
   state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
   closeBoneLegend(false); applyVisibility(); renderSheet();
+});
+$('#bContext').addEventListener('click',()=>{
+  state.context=!state.context;prefs.context=state.context;savePrefs();applyVisibility();
 });
 function openHeadDetail(mode = 'study', part = null, marker = null) {
   const theme = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -2089,7 +2159,7 @@ function closeHeadDetail() {
   $('#headDetailFrame').src = 'about:blank';
   $('#bHeadDetail').focus();
 }
-$('#bHeadDetail').addEventListener('click', () => openHeadDetail());
+$('#bHeadDetail').addEventListener('click', () => state.sec==='head' ? openHeadDetail() : openList());
 $('#closeHeadDetail').addEventListener('click', closeHeadDetail);
 $('#headDetailDialog').addEventListener('cancel', event => { event.preventDefault(); closeHeadDetail(); });
 addEventListener('message', event => {

@@ -20,6 +20,9 @@ for row in json.load(open(os.path.join(root, 'verify', 'ifaa-head-bones.json'), 
 for row in json.load(open(os.path.join(root, 'verify', 'ifaa-neck-bones.json'), encoding='utf-8')):
     ref[row['code']] = row['lat']
 from thorax_terms import PRINTED_RECONCILIATIONS
+for row in json.load(open(os.path.join(root, 'verify', 'ifaa-lumbar-bones.json'), encoding='utf-8')):
+    if row['code'] in ref: assert ref[row['code']] == row['lat'], (row['code'], 'Conflicting lumbar fixture')
+    ref[row['code']] = row['lat']
 thorax_rows = json.load(open(os.path.join(root, 'verify', 'ifaa-thorax-bones.json'), encoding='utf-8'))
 reconciled = set()
 for row in thorax_rows:

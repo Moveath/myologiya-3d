@@ -424,3 +424,13 @@ for _code,_term in THORAX_TERMS.items():
         assert T[_code] == _term, (_code, 'Conflicting regional nomenclature')
 T.update(THORAX_TERMS)
 BONE.update({bone:list(codes) for bone,codes in THORAX_BONE_CODES.items()})
+
+# Selectable former context: lumbar applicability and unsided left-bone catalogues.
+from lumbar_terms import T as LUMBAR_TERMS, BONE_CODES as LUMBAR_BONE_CODES
+for _code, _term in LUMBAR_TERMS.items():
+    if _code in T:
+        assert T[_code] == _term, (_code, 'Conflicting lumbar nomenclature')
+T.update(LUMBAR_TERMS)
+BONE.update({bone:list(codes) for bone,codes in LUMBAR_BONE_CODES.items()})
+for _bone in ('clavicle','scapula','humerus','hip_bone'):
+    BONE[_bone+'_left'] = list(BONE[_bone])

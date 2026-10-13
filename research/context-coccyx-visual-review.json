@@ -1,0 +1,36 @@
+{
+  "reviewed": "2026-10-13",
+  "sourceFid": "FMA16202",
+  "sourceName": "sacrum",
+  "sourceSha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
+  "sourceTriangles": 44416,
+  "connectedComponents": 1,
+  "method": "Отдельный визуальный осмотр полной исходной сетки в четырёх ортографических видах; сверка расположения нижнего продолжения с анатомическими описаниями. Число компонентов сетки не используется как анатомическая сегментация.",
+  "views": [
+    "build_context_bones/review/sacrum_audit_ant.png",
+    "build_context_bones/review/sacrum_audit_post.png",
+    "build_context_bones/review/sacrum_audit_lat.png",
+    "build_context_bones/review/sacrum_audit_sup.png"
+  ],
+  "observation": "За нижним сужением крестцовой части видна непрерывная цепочка небольших сегментообразных образований, особенно в переднем, заднем и боковом видах.",
+  "interpretation": "Геометрия FMA16202 визуально включает копчиковую область вместе с крестцом, хотя объект в исходном каталоге назван sacrum. Поэтому нельзя утверждать, что копчик вообще отсутствует в существующей модели.",
+  "coccygealRegionVisuallyPresent": true,
+  "separateCoccyxObjectPresent": false,
+  "sacrococcygealBoundaryVerified": false,
+  "individualCoccygealSegmentsVerified": false,
+  "newSegmentationCreated": false,
+  "independentExpertReview": false,
+  "limitation": "Не установлены точная граница между крестцом и копчиком, принадлежность отдельных треугольников, число истинных копчиковых позвонков и полнота мелких образований. Новая отдельная сетка копчика и выдуманные границы не создавались. Допустим переход к объединённой исходной модели с ясным объяснением.",
+  "refs": [
+    {
+      "title": "OpenStax Anatomy and Physiology 2e — The Vertebral Column",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+      "locator": "Sacrum and Coccyx; Figure 7.29: положение копчика у нижнего конца крестца"
+    },
+    {
+      "title": "Gray's Anatomy, 1918 — The Coccyx",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=45",
+      "locator": "PDF с. 45–46, The Coccyx: нижний конец позвоночника и связь верхнего копчикового сегмента с крестцом"
+    }
+  ]
+}

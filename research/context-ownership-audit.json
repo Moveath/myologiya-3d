@@ -1,0 +1,1172 @@
+{
+  "version": 1,
+  "reviewed": "2026-10-13",
+  "scope": "Инвентарь исходных CONTEXT и выбираемых костных карточек пяти опубликованных разделов до дополнения.",
+  "stage": "before_context_bone_supplement",
+  "manifests": [
+    "manifest",
+    "manifest_leg",
+    "manifest_head",
+    "manifest_neck",
+    "manifest_thorax"
+  ],
+  "dataFiles": [
+    "site/data.js",
+    "site/data-leg.js",
+    "site/data-head.js",
+    "site/data-neck.js",
+    "site/data-thorax.js"
+  ],
+  "contextOnlyBones": {
+    "FMA16587": {
+      "sourceName": "left hip bone",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "hip_bone_left",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA16587.stl",
+      "sourceSHA256": "456552349a088b72f8e1b06660b93e005b7ffcebe713a0e38ea88f806535dbc7",
+      "catalogueCoordinates": null
+    },
+    "FMA13072": {
+      "sourceName": "first lumbar vertebra",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "lumbar_1",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13072.stl",
+      "sourceSHA256": "fc7e0f70a87808629ee655a344e986d741c6111d2664f2b245685d523e5e143a",
+      "catalogueCoordinates": null
+    },
+    "FMA13073": {
+      "sourceName": "second lumbar vertebra",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "lumbar_2",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13073.stl",
+      "sourceSHA256": "230f9a1ca9efae14e7223bba05e49b2093a486103a29fe67b7907aba41b8ad28",
+      "catalogueCoordinates": null
+    },
+    "FMA13074": {
+      "sourceName": "third lumbar vertebra",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "lumbar_3",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13074.stl",
+      "sourceSHA256": "8b04d8e2e380daba38d00333658cc0809a0ab8ce8fd7cb7634615628715592fb",
+      "catalogueCoordinates": null
+    },
+    "FMA13075": {
+      "sourceName": "fourth lumbar vertebra",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "lumbar_4",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13075.stl",
+      "sourceSHA256": "3464b94d03d42e43bf5ba01a741b7677bec8113a8359eb4a2caec960c6cf341c",
+      "catalogueCoordinates": null
+    },
+    "FMA13076": {
+      "sourceName": "fifth lumbar vertebra",
+      "contextIn": [
+        "manifest_leg",
+        "manifest_thorax"
+      ],
+      "proposedCard": "lumbar_5",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13076.stl",
+      "sourceSHA256": "244f54f1388b1cb02014a6de9c1b32ef40d398967bc8e17ed56b46c637fe11c1",
+      "catalogueCoordinates": null
+    },
+    "FMA13323": {
+      "sourceName": "left clavicle",
+      "contextIn": [
+        "manifest_neck",
+        "manifest_thorax"
+      ],
+      "proposedCard": "clavicle_left",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13323.stl",
+      "sourceSHA256": "ec68d362926061c62c2b7493fb6554941d78250f27ecdf744375659050bdc7ee",
+      "catalogueCoordinates": null
+    },
+    "FMA13396": {
+      "sourceName": "left scapula",
+      "contextIn": [
+        "manifest_neck",
+        "manifest_thorax"
+      ],
+      "proposedCard": "scapula_left",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA13396.stl",
+      "sourceSHA256": "104b7749a10794987535c539d6c412b9b9afb3fd1819bdf5911ab1852f07a425",
+      "catalogueCoordinates": null
+    },
+    "FMA23131": {
+      "sourceName": "left humerus",
+      "contextIn": [
+        "manifest_thorax"
+      ],
+      "proposedCard": "humerus_left",
+      "cardPresentBefore": false,
+      "meshSource": "stl_thorax/FMA23131.stl",
+      "sourceSHA256": "a0650a72c481093ee8c3b1fe7cf8ad97b2d63875685e1acf608dec7a5e031748",
+      "catalogueCoordinates": null
+    }
+  },
+  "contextWithExistingOwner": {
+    "FMA7486": {
+      "sourceName": "manubrium",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "sternum"
+        }
+      ]
+    },
+    "FMA7487": {
+      "sourceName": "body of sternum",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "sternum"
+        }
+      ]
+    },
+    "FMA7488": {
+      "sourceName": "xiphoid process",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "sternum"
+        }
+      ]
+    },
+    "FMA7857": {
+      "sourceName": "right first rib",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_1_right"
+        }
+      ]
+    },
+    "FMA7882": {
+      "sourceName": "right second rib",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_2_right"
+        }
+      ]
+    },
+    "FMA7909": {
+      "sourceName": "right third rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_3_right"
+        }
+      ]
+    },
+    "FMA7957": {
+      "sourceName": "right fourth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_4_right"
+        }
+      ]
+    },
+    "FMA8066": {
+      "sourceName": "right fifth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_5_right"
+        }
+      ]
+    },
+    "FMA8175": {
+      "sourceName": "right sixth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_6_right"
+        }
+      ]
+    },
+    "FMA8229": {
+      "sourceName": "right seventh rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_7_right"
+        }
+      ]
+    },
+    "FMA8283": {
+      "sourceName": "right eighth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_8_right"
+        }
+      ]
+    },
+    "FMA8364": {
+      "sourceName": "right ninth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_9_right"
+        }
+      ]
+    },
+    "FMA8445": {
+      "sourceName": "right tenth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_10_right"
+        }
+      ]
+    },
+    "FMA8531": {
+      "sourceName": "right eleventh rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_11_right"
+        }
+      ]
+    },
+    "FMA8533": {
+      "sourceName": "right twelfth rib",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_12_right"
+        }
+      ]
+    },
+    "BP28": {
+      "sourceName": "right costal cartilage",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "OTHER",
+          "id": "thorax_costal_cartilages_right"
+        }
+      ]
+    },
+    "FMA12519": {
+      "sourceName": "atlas",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "atlas"
+        }
+      ]
+    },
+    "FMA12520": {
+      "sourceName": "axis",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "axis"
+        }
+      ]
+    },
+    "FMA12521": {
+      "sourceName": "third cervical vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "cervical_3"
+        }
+      ]
+    },
+    "FMA12522": {
+      "sourceName": "fourth cervical vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "cervical_4"
+        }
+      ]
+    },
+    "FMA12523": {
+      "sourceName": "fifth cervical vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "cervical_5"
+        }
+      ]
+    },
+    "FMA12524": {
+      "sourceName": "sixth cervical vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "cervical_6"
+        }
+      ]
+    },
+    "FMA12525": {
+      "sourceName": "seventh cervical vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_neck",
+          "role": "BONES",
+          "id": "cervical_7"
+        }
+      ]
+    },
+    "FMA9165": {
+      "sourceName": "first thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_1"
+        }
+      ]
+    },
+    "FMA9187": {
+      "sourceName": "second thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_2"
+        }
+      ]
+    },
+    "FMA9209": {
+      "sourceName": "third thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_3"
+        }
+      ]
+    },
+    "FMA9248": {
+      "sourceName": "fourth thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_4"
+        }
+      ]
+    },
+    "FMA9922": {
+      "sourceName": "fifth thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_5"
+        }
+      ]
+    },
+    "FMA9945": {
+      "sourceName": "sixth thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_6"
+        }
+      ]
+    },
+    "FMA9968": {
+      "sourceName": "seventh thoracic vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_7"
+        }
+      ]
+    },
+    "FMA9991": {
+      "sourceName": "eighth thoracic vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_8"
+        }
+      ]
+    },
+    "FMA10014": {
+      "sourceName": "ninth thoracic vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_9"
+        }
+      ]
+    },
+    "FMA10037": {
+      "sourceName": "tenth thoracic vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_10"
+        }
+      ]
+    },
+    "FMA10059": {
+      "sourceName": "eleventh thoracic vertebra",
+      "contextIn": [
+        "manifest"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_11"
+        }
+      ]
+    },
+    "FMA10081": {
+      "sourceName": "twelfth thoracic vertebra",
+      "contextIn": [
+        "manifest",
+        "manifest_leg"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "thoracic_12"
+        }
+      ]
+    },
+    "FMA52735": {
+      "sourceName": "occipital bone",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_head",
+          "role": "BONES",
+          "id": "occipital"
+        }
+      ]
+    },
+    "FMA52748": {
+      "sourceName": "mandible",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_head",
+          "role": "BONES",
+          "id": "mandible"
+        }
+      ]
+    },
+    "FMA52738": {
+      "sourceName": "right temporal bone",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_head",
+          "role": "BONES",
+          "id": "temporal_right"
+        }
+      ]
+    },
+    "FMA52739": {
+      "sourceName": "left temporal bone",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_head",
+          "role": "BONES",
+          "id": "temporal_left"
+        }
+      ]
+    },
+    "FMA13322": {
+      "sourceName": "right clavicle",
+      "contextIn": [
+        "manifest_neck",
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest",
+          "role": "BONES",
+          "id": "clavicle"
+        }
+      ]
+    },
+    "FMA13395": {
+      "sourceName": "right scapula",
+      "contextIn": [
+        "manifest_neck",
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest",
+          "role": "BONES",
+          "id": "scapula"
+        }
+      ]
+    },
+    "FMA7987": {
+      "sourceName": "left first rib",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_1_left"
+        }
+      ]
+    },
+    "FMA8012": {
+      "sourceName": "left second rib",
+      "contextIn": [
+        "manifest_neck"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_thorax",
+          "role": "BONES",
+          "id": "rib_2_left"
+        }
+      ]
+    },
+    "FMA23130": {
+      "sourceName": "right humerus",
+      "contextIn": [
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest",
+          "role": "BONES",
+          "id": "humerus"
+        }
+      ]
+    },
+    "FMA16202": {
+      "sourceName": "sacrum",
+      "contextIn": [
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_leg",
+          "role": "BONES",
+          "id": "sacrum"
+        }
+      ]
+    },
+    "FMA16586": {
+      "sourceName": "right hip bone",
+      "contextIn": [
+        "manifest_thorax"
+      ],
+      "owners": [
+        {
+          "manifest": "manifest_leg",
+          "role": "BONES",
+          "id": "hip_bone"
+        }
+      ]
+    }
+  },
+  "otherContextOnly": {
+    "FMA7875": {
+      "sourceName": "right first costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA7886": {
+      "sourceName": "right second costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA7913": {
+      "sourceName": "right third costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA7976": {
+      "sourceName": "right fourth costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA8070": {
+      "sourceName": "right fifth costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA8194": {
+      "sourceName": "right sixth costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA8248": {
+      "sourceName": "right seventh costal cartilage",
+      "contextIn": [
+        "manifest"
+      ]
+    },
+    "FMA16033": {
+      "sourceName": "intervertebral disk of first lumbar vertebra",
+      "contextIn": [
+        "manifest_leg"
+      ]
+    },
+    "FMA16034": {
+      "sourceName": "intervertebral disk of second lumbar vertebra",
+      "contextIn": [
+        "manifest_leg"
+      ]
+    },
+    "FMA16035": {
+      "sourceName": "intervertebral disk of third lumbar vertebra",
+      "contextIn": [
+        "manifest_leg"
+      ]
+    },
+    "FMA16036": {
+      "sourceName": "intervertebral disk of fourth lumbar vertebra",
+      "contextIn": [
+        "manifest_leg"
+      ]
+    },
+    "FMA16037": {
+      "sourceName": "intervertebral disk of fifth lumbar vertebra",
+      "contextIn": [
+        "manifest_leg"
+      ]
+    },
+    "FMA55680": {
+      "sourceName": "right upper lateral secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55681": {
+      "sourceName": "right upper central secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55682": {
+      "sourceName": "left upper central secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55683": {
+      "sourceName": "left upper lateral secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55686": {
+      "sourceName": "right lower secondary canine tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55687": {
+      "sourceName": "left lower secondary canine tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55688": {
+      "sourceName": "right upper second secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55689": {
+      "sourceName": "right upper first secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55690": {
+      "sourceName": "left upper first secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55691": {
+      "sourceName": "left upper second secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55692": {
+      "sourceName": "left lower second secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55693": {
+      "sourceName": "left lower first secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55694": {
+      "sourceName": "right lower first secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55695": {
+      "sourceName": "right lower second secondary premolar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55697": {
+      "sourceName": "right upper second secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55698": {
+      "sourceName": "right upper first secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55699": {
+      "sourceName": "left upper first secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55700": {
+      "sourceName": "left upper second secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55703": {
+      "sourceName": "left lower second secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55704": {
+      "sourceName": "left lower first secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55705": {
+      "sourceName": "right lower first secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55706": {
+      "sourceName": "right lower second secondary molar tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55798": {
+      "sourceName": "right upper secondary canine tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55799": {
+      "sourceName": "left upper secondary canine tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA57140": {
+      "sourceName": "right lower lateral secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA57141": {
+      "sourceName": "left lower lateral secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA57142": {
+      "sourceName": "right lower central secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA57143": {
+      "sourceName": "left lower central secondary incisor tooth",
+      "contextIn": [
+        "manifest_head"
+      ]
+    },
+    "FMA55099": {
+      "sourceName": "thyroid cartilage",
+      "contextIn": [
+        "manifest_neck"
+      ]
+    },
+    "FMA10458": {
+      "sourceName": "intervertebral disk of first thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13495": {
+      "sourceName": "intervertebral disk of second thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13500": {
+      "sourceName": "intervertebral disk of third thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13501": {
+      "sourceName": "intervertebral disk of fourth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13502": {
+      "sourceName": "intervertebral disk of fifth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13503": {
+      "sourceName": "intervertebral disk of sixth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13504": {
+      "sourceName": "intervertebral disk of seventh thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13505": {
+      "sourceName": "intervertebral disk of eighth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13506": {
+      "sourceName": "intervertebral disk of ninth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13507": {
+      "sourceName": "intervertebral disk of tenth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13508": {
+      "sourceName": "intervertebral disk of eleventh thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    },
+    "FMA13509": {
+      "sourceName": "intervertebral disk of twelfth thoracic vertebra",
+      "contextIn": [
+        "manifest_thorax"
+      ]
+    }
+  },
+  "sacrum": {
+    "card": "sacrum",
+    "owner": "manifest_leg.BONES",
+    "group": "b_pelvis",
+    "sub": "pelvis",
+    "sourceId": "FMA16202",
+    "contextIn": [
+      "manifest_thorax"
+    ],
+    "selectableBefore": true
+  },
+  "coccyx": {
+    "separateNamedSourceFound": false,
+    "currentRepresentation": "Термины A02.2.06.001 и A02.2.06.002 внутри sacrum в scripts/make_pins_leg.py; отдельной карточки и сегментированной сетки нет.",
+    "geometryReview": "research/context-coccyx-visual-review.json",
+    "geometryInterpretation": "Визуальная проверка FMA16202 показывает каудальную сегментообразную область, согласующуюся с копчиком. Имя FMA16202 само по себе не служит доказательством. Точная граница и отдельная сегментация не установлены.",
+    "recommendedNavigation": "Быстрый переход к существующему термину копчика в sacrum; не выдавать его за отдельную модель.",
+    "reviewArtifactPresent": true,
+    "sourceReviewerVisualCrossCheck": "Дополнительно просмотрен передний вид build_context_bones/review/sacrum_audit_ant.png: каудальное сегментообразное продолжение действительно присутствует. Это не определение точной границы или количества копчиковых позвонков."
+  },
+  "recommendations": [
+    "Добавить выбираемые L1–L5 в b_lumbar / lumbar существующего leg, без новых мышц, органов или отрисованных ориентиров.",
+    "Сделать левую тазовую кость выбираемой в b_pelvis / pelvis.",
+    "Сделать левую ключицу, лопатку и плечевую кость выбираемыми в существующем arm; не обещать полный модуль левой руки.",
+    "Для контекста с существующей карточкой дать переход к владельцу; не создавать дубликат независимой структуры.",
+    "Зубы, диски и щитовидный хрящ сохраняют отдельный будущий объём. Группы рёберных хрящей уже представлены в thorax."
+  ],
+  "nomenclature": {
+    "source": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH769%20A2F%20EN.htm",
+    "lumbarFixture": "verify/ifaa-lumbar-bones.json",
+    "lumbarTerms": "scripts/lumbar_terms.py",
+    "leftBoneCatalogues": "scripts/context_bone_cards.py: catalogue_codes — одинаковые непарно сформулированные TA98-термины, координаты отсутствуют",
+    "officialPerBoneCountsClaim": false
+  },
+  "anatomySources": [
+    {
+      "title": "Gray (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+      "locator": "PDF с.35–37: поясничные позвонки; с.37–46: крестец и копчик; с.226–227: тазовая кость."
+    },
+    {
+      "title": "OpenStax, Anatomy and Physiology 2e",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+      "locator": "Regions of the Vertebral Column; Lumbar Vertebrae; Sacrum and Coccyx; Fig.7.28–7.29."
+    },
+    {
+      "title": "OpenStax, Pelvic Girdle and Pelvis",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
+      "locator": "Hip Bone; Fig.8.13."
+    }
+  ],
+  "limitations": [
+    "Аудит данных и отдельный визуальный осмотр не являются независимой экспертной анатомической приёмкой.",
+    "Общая анатомия подтверждается двумя независимыми учебными источниками; они не подтверждают точность каждой детали конкретной сетки BP3D.",
+    "Новые координаты не создавались, имеющиеся справа не отражались.",
+    "Стартовая обзорная фигура body и независимые исследовательские препараты не включены: проверены именно CONTEXT пяти учебных разделов и их site/data*.js."
+  ],
+  "resolution": {
+    "stage": "published_supplement",
+    "bones": {
+      "hip_bone_left": {
+        "section": "leg",
+        "subsection": "pelvis",
+        "sourceId": "FMA16587"
+      },
+      "clavicle_left": {
+        "section": "arm",
+        "subsection": "shoulder",
+        "sourceId": "FMA13323"
+      },
+      "scapula_left": {
+        "section": "arm",
+        "subsection": "shoulder",
+        "sourceId": "FMA13396"
+      },
+      "humerus_left": {
+        "section": "arm",
+        "subsection": "arm",
+        "sourceId": "FMA23131"
+      },
+      "lumbar_1": {
+        "section": "leg",
+        "subsection": "lumbar",
+        "sourceId": "FMA13072"
+      },
+      "lumbar_2": {
+        "section": "leg",
+        "subsection": "lumbar",
+        "sourceId": "FMA13073"
+      },
+      "lumbar_3": {
+        "section": "leg",
+        "subsection": "lumbar",
+        "sourceId": "FMA13074"
+      },
+      "lumbar_4": {
+        "section": "leg",
+        "subsection": "lumbar",
+        "sourceId": "FMA13075"
+      },
+      "lumbar_5": {
+        "section": "leg",
+        "subsection": "lumbar",
+        "sourceId": "FMA13076"
+      }
+    },
+    "contextOnlyBonesRemaining": 0,
+    "note": "All nine formerly context-only bone instances have selectable owners. Non-bone context and future body scope are unchanged. Positions remain unverified."
+  }
+}

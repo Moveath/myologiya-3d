@@ -12,6 +12,13 @@
 - `pins_thorax/ta.json`: 245 поверхностных маркеров на 37 независимо осмотренных костях; 213 записей без координат. `thorax_landmark_selections.py` хранит экранные выборки, `prepare_thorax_landmark_review.py` и `export_thorax_landmarks.py` воспроизводят разметку. 75 подписанных PNG сохраняются в локальной учебной копии. `surface` не подтверждает всю форму образования.
 - Проверки: `python scripts/thorax_terms.py`, `python scripts/thorax_muscles.py`, `python scripts/make_thorax_data.py`, `python scripts/make_pins_thorax.py`, `python verify/verify_ta98.py`, `python verify/verify_thorax_positions.py`, `node tools/verify-thorax-data.mjs`, `python scripts/make_local.py site/index.html site/local.html`, `node tools/verify-thorax.mjs`. Эмуляция 390/1280 px в двух темах не означает испытания физического телефона.
 
+## Навигация и владельцы фоновых костей
+
+- `scripts/make_context_bone_data.py` генерирует `site/data-context-bones.js` и `site/pins-context-bones.js`; исходники — `context_bone_cards.py` и `lumbar_terms.py`. Девять костей: L1–L5 и левая тазовая в leg, левые ключица/лопатка/плечевая в arm. 196 записей каталога без координат; не отражать правые маркеры.
+- `package_context_bones.py` сохраняет все исходные треугольники в arm-extra/leg-extra, включая fallback. `loadSection` лениво объединяет сцены и удаляет только дублирующие c|FID в разделе-владельце. Старые GLB и pins не изменять ради этой интеграции. Копчик остаётся термином в общей сетке крестца; отдельной границы не заявлять.
+- `state.context` управляет окружением независимо от `isolate`; скрывает vis=1 и kind=c, сохраняет vis=2 всей выбранной группы. Палитра и легенда работают во всех пяти разделах. Проверять реальные клики переключателя, а не только видимость кнопки. Ползунок подразделов синхронизирован с прокруткой; фильтры списка не меняют анатомическую группировку.
+- После изменений: генератор, `verify/verify_ta98.py`, `node tools/verify-context-bone-models.mjs`, `make_local.py`, `node tools/verify-navigation.mjs` и затронутые прежние проверки. Аудит владения контекстом не означает готовность всего скелета; сохранить ограничения исходной геометрии и разметки.
+
 ## Новый раздел шеи
 
 - Источники: `scripts/manifest_neck.py` (8 костей, 62 мышечных экземпляра, 16 именованных частей), `scripts/neck_muscles.py` (карточки и ссылки по полям), `scripts/neck_terms.py` (TA98, русские термины, описания и применимость). `site/data-neck.js` и `site/pins-neck.js` генерируются, вручную не править.

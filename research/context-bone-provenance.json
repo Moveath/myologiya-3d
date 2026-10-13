@@ -1,0 +1,318 @@
+{
+  "source": "BodyParts3D 3.0 / 20110915, The Database Center for Life Science (DBCLS)",
+  "sourceMirror": "https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+  "license": "CC BY-SA 2.1 Japan",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "transformation": "Original source millimetres [x,y,z] to metres [x,z,-y]/1000. No registration, reflection or generated boundaries.",
+  "processing": "No decimation: all original source STL triangles retained before meshopt compression and quantization. Equivalent BONE_RATIO=1.0 with no triangle cap.",
+  "geometryCompleteClaim": false,
+  "newLandmarks": false,
+  "bones": {
+    "clavicle_left": {
+      "ownerSection": "arm",
+      "sourceFid": "FMA13323",
+      "sourceName": "left clavicle",
+      "sourceFile": "stl_thorax/FMA13323.stl",
+      "sourceSha256": "ec68d362926061c62c2b7493fb6554941d78250f27ecdf744375659050bdc7ee",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13323.stl",
+      "sourceTriangles": 5140,
+      "builtTriangles": 5140,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          0.01013860034942627,
+          1.3317900390625,
+          0.047234901428222655
+        ],
+        [
+          0.14869599914550782,
+          1.3668399658203125,
+          0.14675
+        ]
+      ]
+    },
+    "scapula_left": {
+      "ownerSection": "arm",
+      "sourceFid": "FMA13396",
+      "sourceName": "left scapula",
+      "sourceFile": "stl_thorax/FMA13396.stl",
+      "sourceSha256": "104b7749a10794987535c539d6c412b9b9afb3fd1819bdf5911ab1852f07a425",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13396.stl",
+      "sourceTriangles": 121816,
+      "builtTriangles": 121816,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          0.05800849914550781,
+          1.201510009765625,
+          -0.011350099563598632
+        ],
+        [
+          0.1673739929199219,
+          1.3598499755859375,
+          0.09907839965820313
+        ]
+      ]
+    },
+    "humerus_left": {
+      "ownerSection": "arm",
+      "sourceFid": "FMA23131",
+      "sourceName": "left humerus",
+      "sourceFile": "stl_thorax/FMA23131.stl",
+      "sourceSha256": "a0650a72c481093ee8c3b1fe7cf8ad97b2d63875685e1acf608dec7a5e031748",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA23131.stl",
+      "sourceTriangles": 16492,
+      "builtTriangles": 16492,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          0.13935499572753907,
+          1.0394599609375,
+          0.04717720031738281
+        ],
+        [
+          0.24025999450683594,
+          1.34693994140625,
+          0.09671089935302735
+        ]
+      ]
+    },
+    "lumbar_1": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA13072",
+      "sourceName": "first lumbar vertebra",
+      "sourceFile": "stl_thorax/FMA13072.stl",
+      "sourceSha256": "fc7e0f70a87808629ee655a344e986d741c6111d2664f2b245685d523e5e143a",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13072.stl",
+      "sourceTriangles": 12946,
+      "builtTriangles": 12946,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          -0.03669250106811523,
+          1.026949951171875,
+          0.02934749984741211
+        ],
+        [
+          0.03267290115356445,
+          1.084469970703125,
+          0.10979100036621094
+        ]
+      ]
+    },
+    "lumbar_2": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA13073",
+      "sourceName": "second lumbar vertebra",
+      "sourceFile": "stl_thorax/FMA13073.stl",
+      "sourceSha256": "230f9a1ca9efae14e7223bba05e49b2093a486103a29fe67b7907aba41b8ad28",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13073.stl",
+      "sourceTriangles": 6946,
+      "builtTriangles": 6946,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          -0.04118130111694336,
+          1.0033900146484376,
+          0.0339651985168457
+        ],
+        [
+          0.03751689910888672,
+          1.051719970703125,
+          0.11493399810791016
+        ]
+      ]
+    },
+    "lumbar_3": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA13074",
+      "sourceName": "third lumbar vertebra",
+      "sourceFile": "stl_thorax/FMA13074.stl",
+      "sourceSha256": "8b04d8e2e380daba38d00333658cc0809a0ab8ce8fd7cb7634615628715592fb",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13074.stl",
+      "sourceTriangles": 14750,
+      "builtTriangles": 14750,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          -0.04100230026245117,
+          0.9752429809570312,
+          0.03389799880981445
+        ],
+        [
+          0.03878110122680664,
+          1.0208499755859375,
+          0.11668099975585937
+        ]
+      ]
+    },
+    "lumbar_4": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA13075",
+      "sourceName": "fourth lumbar vertebra",
+      "sourceFile": "stl_thorax/FMA13075.stl",
+      "sourceSha256": "3464b94d03d42e43bf5ba01a741b7677bec8113a8359eb4a2caec960c6cf341c",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13075.stl",
+      "sourceTriangles": 15426,
+      "builtTriangles": 15426,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          -0.04357350158691406,
+          0.9489910278320313,
+          0.03370429992675781
+        ],
+        [
+          0.0421161994934082,
+          0.9920809936523437,
+          0.11556099700927734
+        ]
+      ]
+    },
+    "lumbar_5": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA13076",
+      "sourceName": "fifth lumbar vertebra",
+      "sourceFile": "stl_thorax/FMA13076.stl",
+      "sourceSha256": "244f54f1388b1cb02014a6de9c1b32ef40d398967bc8e17ed56b46c637fe11c1",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA13076.stl",
+      "sourceTriangles": 17282,
+      "builtTriangles": 17282,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          -0.05184189987182617,
+          0.9140430297851563,
+          0.029386800765991213
+        ],
+        [
+          0.048909500122070314,
+          0.9631599731445313,
+          0.10973300170898438
+        ]
+      ]
+    },
+    "hip_bone_left": {
+      "ownerSection": "leg",
+      "sourceFid": "FMA16587",
+      "sourceName": "left hip bone",
+      "sourceFile": "stl_thorax/FMA16587.stl",
+      "sourceSha256": "456552349a088b72f8e1b06660b93e005b7ffcebe713a0e38ea88f806535dbc7",
+      "sourceUrl": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/FMA16587.stl",
+      "sourceTriangles": 9470,
+      "builtTriangles": 9470,
+      "decimation": false,
+      "boundsMetres": [
+        [
+          0.004176390171051025,
+          0.7594180297851563,
+          0.013876999855041504
+        ],
+        [
+          0.13192799377441405,
+          0.9672650146484375,
+          0.15223399353027345
+        ]
+      ]
+    }
+  },
+  "assets": {
+    "arm-extra-glb.txt": {
+      "sha256": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+      "bytes": 679024,
+      "glbSha256": "d7dabdf52108d287f150c6c74f67b1a4a7d1748e9c8f96f7f92d6906ddbfcfb5",
+      "sourceGlbSha256": "7616e5d47893c5a9317bf2a46bc1d3e2a29557da6418c901b103065bbc4003df",
+      "bones": [
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ]
+    },
+    "arm-extra-q-glb.txt": {
+      "sha256": "042946c324e5b3033572674bf7a0d9ab3947b5c7697da9113d9783cee931cc40",
+      "bytes": 2298156,
+      "glbSha256": "fb849924322783a318bf53abcdc0f60b1de51d0ea7380c43ff4bcf03c649ea42",
+      "sourceGlbSha256": "7616e5d47893c5a9317bf2a46bc1d3e2a29557da6418c901b103065bbc4003df",
+      "bones": [
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ]
+    },
+    "leg-extra-glb.txt": {
+      "sha256": "cf2ecfdb50bca2820a889f5b4cbee0c938a161192ec1ed5b2aad4f3c978b3165",
+      "bytes": 416248,
+      "glbSha256": "77e4c4495b7244e23085083c1e15538c8bc998f3c4599f27300785be17dda300",
+      "sourceGlbSha256": "9ca6e3a48fbf628fc2bb5a406884e5bd4bab3af26d6eb5d02da891048b0e3b0d",
+      "bones": [
+        "lumbar_1",
+        "lumbar_2",
+        "lumbar_3",
+        "lumbar_4",
+        "lumbar_5",
+        "hip_bone_left"
+      ]
+    },
+    "leg-extra-q-glb.txt": {
+      "sha256": "700239ae8f12f17dda16cf295bdfce8b9d266129a64ad718fea8b385d855d5be",
+      "bytes": 1234216,
+      "glbSha256": "16e492c21dbc630a07e3302f6aaba60b44ee3af2f53222eb3aeb77d771cf88fa",
+      "sourceGlbSha256": "9ca6e3a48fbf628fc2bb5a406884e5bd4bab3af26d6eb5d02da891048b0e3b0d",
+      "bones": [
+        "lumbar_1",
+        "lumbar_2",
+        "lumbar_3",
+        "lumbar_4",
+        "lumbar_5",
+        "hip_bone_left"
+      ]
+    }
+  },
+  "sacrumSourceAudit": {
+    "fid": "FMA16202",
+    "sourceName": "sacrum",
+    "sourceFile": "stl_thorax/FMA16202.stl",
+    "sourceSha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
+    "sourceTriangles": 44416,
+    "connectedComponents": 1,
+    "separateCoccyxNamedInSourceCatalog": false,
+    "separateCoccyxGeometryCreated": false,
+    "note": "FMA16202 is named sacrum in the source catalog. Component count is not an anatomical segmentation. See the separate visual review before making any claim about coccygeal coverage.",
+    "visualReview": {
+      "reviewed": "2026-10-13",
+      "sourceFid": "FMA16202",
+      "sourceName": "sacrum",
+      "sourceSha256": "d52dac1add057e05699c3c767736ab45c9c426ab0eebd438e20cd4f0768ee3d8",
+      "sourceTriangles": 44416,
+      "connectedComponents": 1,
+      "method": "Отдельный визуальный осмотр полной исходной сетки в четырёх ортографических видах; сверка расположения нижнего продолжения с анатомическими описаниями. Число компонентов сетки не используется как анатомическая сегментация.",
+      "views": [
+        "build_context_bones/review/sacrum_audit_ant.png",
+        "build_context_bones/review/sacrum_audit_post.png",
+        "build_context_bones/review/sacrum_audit_lat.png",
+        "build_context_bones/review/sacrum_audit_sup.png"
+      ],
+      "observation": "За нижним сужением крестцовой части видна непрерывная цепочка небольших сегментообразных образований, особенно в переднем, заднем и боковом видах.",
+      "interpretation": "Геометрия FMA16202 визуально включает копчиковую область вместе с крестцом, хотя объект в исходном каталоге назван sacrum. Поэтому нельзя утверждать, что копчик вообще отсутствует в существующей модели.",
+      "coccygealRegionVisuallyPresent": true,
+      "separateCoccyxObjectPresent": false,
+      "sacrococcygealBoundaryVerified": false,
+      "individualCoccygealSegmentsVerified": false,
+      "newSegmentationCreated": false,
+      "independentExpertReview": false,
+      "limitation": "Не установлены точная граница между крестцом и копчиком, принадлежность отдельных треугольников, число истинных копчиковых позвонков и полнота мелких образований. Новая отдельная сетка копчика и выдуманные границы не создавались. Допустим переход к объединённой исходной модели с ясным объяснением.",
+      "refs": [
+        {
+          "title": "OpenStax Anatomy and Physiology 2e — The Vertebral Column",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+          "locator": "Sacrum and Coccyx; Figure 7.29: положение копчика у нижнего конца крестца"
+        },
+        {
+          "title": "Gray's Anatomy, 1918 — The Coccyx",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=45",
+          "locator": "PDF с. 45–46, The Coccyx: нижний конец позвоночника и связь верхнего копчикового сегмента с крестцом"
+        }
+      ]
+    }
+  }
+}

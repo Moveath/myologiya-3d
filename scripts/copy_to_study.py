@@ -25,6 +25,7 @@ else:
     destination.mkdir(exist_ok=False)
 relative_paths=[p for p in subprocess.check_output(['git','-C',str(root),'ls-files','-z']).decode('utf-8').split('\0') if p]
 relative_paths+=['build_head/head_hi.glb','build_head/head.glb','build_head/head_q.glb','build_head/meta.json']
+relative_paths += [str(p.relative_to(root)) for directory in ['build_context_bones','shots/navigation'] for p in (root/directory).rglob('*') if p.is_file() and p.suffix.lower() in ('.glb','.json','.png','.js','.html')]
 relative_paths += [str(p.relative_to(root)) for directory in ['stl_neck','build_neck','pins_neck','shots/neck','stl_thorax','build_thorax','pins_thorax','shots/thorax'] for p in (root/directory).rglob('*') if p.is_file() and p.suffix.lower() in ('.stl','.glb','.json','.png','.js','.html')]
 relative_paths += [str(p.relative_to(root)) for directory in ['stl_head','shots/head','shots/head-detail','shots/head-study','shots/head-features','shots/head-channels','shots/head-catalogues','shots/head-geometry','shots/atlas-touch','shots/skull-education'] for p in (root/directory).rglob('*') if p.is_file()]
 relative_paths += [str(p.relative_to(root)) for directory in ['build_head/complete_face','build_head/complete_temporal/jobs','shots/cranial-completion','build_head/face_features','build_head/cranial_extent','build_head/temporal_channels/extent-bp','build_head/temporal_variants'] for p in (root/directory).rglob('*.png')]

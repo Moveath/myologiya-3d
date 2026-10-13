@@ -100,7 +100,7 @@ try{
     await page.locator('#bQuiz').click();
     for(const sec of ['head','arm','leg','neck','trunk']){
       assert.equal(await page.evaluate(s=>window.__atlas.enterSection(s),sec),true);
-      assert.equal(await page.locator('#bBoneColors').isVisible(),['head','neck','trunk'].includes(sec));
+      assert.equal(await page.locator('#bBoneColors').isVisible(),true);
     }
     assert.deepEqual(errors,[]);
     report.push({width,theme,...counts,status:'passed'});
