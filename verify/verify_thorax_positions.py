@@ -9,12 +9,19 @@ import hashlib
 import io
 import json
 import sys
+import argparse
 import numpy as np
 import trimesh
+from geometry_distance import SurfaceQuery
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from prepare_thorax_landmark_review import BONES, source_path
+from evidence_output import write_report
+parser=argparse.ArgumentParser()
+parser.add_argument('--report')
+parser.add_argument('--source-only',action='store_true')
+args=parser.parse_args()
 
 rows=json.loads((ROOT/'pins_thorax/ta.json').read_text(encoding='utf8'))
 assert len({(r['bone'],r['code']) for r in rows})==len(rows)
@@ -53,6 +60,7 @@ if fallback.exists():
 elif '--source-only' not in sys.argv:
     raise FileNotFoundError('Generate site/thorax-q-glb.txt, or explicitly use --source-only for interim checks')
 
+queries={name:{bone:SurfaceQuery(mesh) for bone,mesh in meshes.items()} for name,meshes in sources.items()}
 results=[]
 for row in rows:
     assert row['localization']=='surface'
@@ -63,14 +71,15 @@ for row in rows:
         assert hashlib.sha256(source_path(fid).read_bytes()).hexdigest()==expected
     assert abs(np.linalg.norm(row['n'])-1)<.003,(row['bone'],row['code'],'normal')
     for name,meshes in sources.items():
-        _,distance,_=trimesh.proximity.closest_point_naive(meshes[row['bone']],np.array([row['p']]))
-        mm=float(distance[0])*1000
+        _,distance,_=queries[name][row['bone']].closest([row['p']])
+        mm=float(distance[0])
         assert mm<.3,(name,row['bone'],row['code'],mm)
         results.append(dict(model=name,bone=row['bone'],code=row['code'],distance_mm=round(mm,5)))
 
 report=dict(check='Assigned bone surface; tolerance 0.3 mm; SHA-256 of every cited source STL',
+            queryUnits='millimetres, rebased in-memory copy; coordinates unchanged',
             models=list(sources),publishedFallbackChecked='published_fallback' in sources,
             anatomicalExpertAcceptance=False,wholeFeatureGeometryVerified=False,
             primaryMarkers=len(rows),maximumDistanceMm=max(r['distance_mm'] for r in results),records=results)
-(ROOT/'verify/thorax-position-geometry.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+print('Evidence:',write_report(report,'thorax-positions','thorax-position-geometry.json',args.report))
 print('Thorax positions passed:',len(results),'checks; max',report['maximumDistanceMm'],'mm; models',list(sources))

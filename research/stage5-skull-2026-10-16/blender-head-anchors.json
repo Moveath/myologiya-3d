@@ -1,0 +1,4949 @@
+{
+  "status": "passed",
+  "tool": "Blender MCP",
+  "blender": "5.2.2 LTS",
+  "source": "build_head\\head_hi.glb",
+  "source_sha256": "343cfc3e1a47b43ce9bf7a558b08539df5d2408e5a304df966cf9ac2b0706f25",
+  "coordinate_transform": "(x,y,z) glTF -> (x,-z,y) Blender",
+  "bones": 22,
+  "records_checked": 521,
+  "maximum_distance_mm": 0.007415766958729364,
+  "scope": "Surface-distance and import regression only; no new anatomical coordinate or extent acceptance.",
+  "source_unchanged": true,
+  "meshes": [
+    {
+      "bone": "frontal",
+      "vertices": 16531,
+      "triangles": 33062,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "occipital",
+      "vertices": 13904,
+      "triangles": 27812,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "sphenoid",
+      "vertices": 7647,
+      "triangles": 15322,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "ethmoid",
+      "vertices": 3887,
+      "triangles": 7774,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "vomer",
+      "vertices": 1213,
+      "triangles": 2422,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "mandible",
+      "vertices": 10831,
+      "triangles": 21658,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "parietal_right",
+      "vertices": 14863,
+      "triangles": 29734,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "parietal_left",
+      "vertices": 15123,
+      "triangles": 30250,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "temporal_right",
+      "vertices": 5633,
+      "triangles": 11274,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "temporal_left",
+      "vertices": 5604,
+      "triangles": 11208,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "maxilla_right",
+      "vertices": 7068,
+      "triangles": 14148,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "maxilla_left",
+      "vertices": 7251,
+      "triangles": 14506,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "zygomatic_right",
+      "vertices": 2308,
+      "triangles": 4612,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "zygomatic_left",
+      "vertices": 2282,
+      "triangles": 4560,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "palatine_right",
+      "vertices": 1798,
+      "triangles": 3592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "palatine_left",
+      "vertices": 1823,
+      "triangles": 3642,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "nasal_right",
+      "vertices": 514,
+      "triangles": 1024,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "nasal_left",
+      "vertices": 564,
+      "triangles": 1124,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "lacrimal_right",
+      "vertices": 559,
+      "triangles": 1114,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "lacrimal_left",
+      "vertices": 578,
+      "triangles": 1152,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "inferior_concha_right",
+      "vertices": 806,
+      "triangles": 1616,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    },
+    {
+      "bone": "inferior_concha_left",
+      "vertices": 744,
+      "triangles": 1484,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0
+    }
+  ],
+  "records": [
+    {
+      "id": "head_frontal_A02_1_03_002",
+      "bone": "frontal",
+      "code": "A02.1.03.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0038461921576526947,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_003",
+      "bone": "frontal",
+      "code": "A02.1.03.003",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.003210366685379995,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_004",
+      "bone": "frontal",
+      "code": "A02.1.03.004",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002100548499583965,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_005",
+      "bone": "frontal",
+      "code": "A02.1.03.005",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 6.3027904673163e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_006",
+      "bone": "frontal",
+      "code": "A02.1.03.006",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002346826704524574,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_008",
+      "bone": "frontal",
+      "code": "A02.1.03.008",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002513751269361819,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_011",
+      "bone": "frontal",
+      "code": "A02.1.03.011",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0007615645358782785,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_012",
+      "bone": "frontal",
+      "code": "A02.1.03.012",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0008334020549227716,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_013",
+      "bone": "frontal",
+      "code": "A02.1.03.013",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.00042319362592024845,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_014",
+      "bone": "frontal",
+      "code": "A02.1.03.014",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0040635454752191436,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_015",
+      "bone": "frontal",
+      "code": "A02.1.03.015",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0024884891445253743,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_016",
+      "bone": "frontal",
+      "code": "A02.1.03.016",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005010121640225407,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_017",
+      "bone": "frontal",
+      "code": "A02.1.03.017",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0036974495287722675,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_019",
+      "bone": "frontal",
+      "code": "A02.1.03.019",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 1.4961180738737312e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_021",
+      "bone": "frontal",
+      "code": "A02.1.03.021",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0012638863609026885,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_022",
+      "bone": "frontal",
+      "code": "A02.1.03.022",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004306965820433106,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_023",
+      "bone": "frontal",
+      "code": "A02.1.03.023",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0037420354601636063,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_002",
+      "bone": "parietal_right",
+      "code": "A02.1.02.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005052773758507101,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_007",
+      "bone": "parietal_right",
+      "code": "A02.1.02.007",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.00034819009897546493,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_010",
+      "bone": "parietal_right",
+      "code": "A02.1.02.010",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0026175646326009883,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_011",
+      "bone": "parietal_right",
+      "code": "A02.1.02.011",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002209888634752133,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_012",
+      "bone": "parietal_right",
+      "code": "A02.1.02.012",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.001647269300519838,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_013",
+      "bone": "parietal_right",
+      "code": "A02.1.02.013",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0038904354369151406,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_014",
+      "bone": "parietal_right",
+      "code": "A02.1.02.014",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0009652457038100692,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_015",
+      "bone": "parietal_right",
+      "code": "A02.1.02.015",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0006645650501013733,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_017",
+      "bone": "parietal_right",
+      "code": "A02.1.02.017",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0010046479701486533,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_018",
+      "bone": "parietal_right",
+      "code": "A02.1.02.018",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004067561349074822,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_002",
+      "bone": "parietal_left",
+      "code": "A02.1.02.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0017641679050939274,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_007",
+      "bone": "parietal_left",
+      "code": "A02.1.02.007",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.000496289203510969,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_010",
+      "bone": "parietal_left",
+      "code": "A02.1.02.010",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0033871001505758613,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_011",
+      "bone": "parietal_left",
+      "code": "A02.1.02.011",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0015925965044516488,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_012",
+      "bone": "parietal_left",
+      "code": "A02.1.02.012",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0009086654131351679,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_013",
+      "bone": "parietal_left",
+      "code": "A02.1.02.013",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.003152062845401815,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_014",
+      "bone": "parietal_left",
+      "code": "A02.1.02.014",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.001734449710966146,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_015",
+      "bone": "parietal_left",
+      "code": "A02.1.02.015",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0024878233944036765,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_017",
+      "bone": "parietal_left",
+      "code": "A02.1.02.017",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005585849066847004,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_018",
+      "bone": "parietal_left",
+      "code": "A02.1.02.018",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0049452564780949615,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_002",
+      "bone": "occipital",
+      "code": "A02.1.04.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0009980307140722289,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_005",
+      "bone": "occipital",
+      "code": "A02.1.04.005",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.000639485278952634,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_006",
+      "bone": "occipital",
+      "code": "A02.1.04.006",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.000967585833677731,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_009",
+      "bone": "occipital",
+      "code": "A02.1.04.009",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0016780189753262675,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_010",
+      "bone": "occipital",
+      "code": "A02.1.04.010",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004815598458662862,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_011",
+      "bone": "occipital",
+      "code": "A02.1.04.011",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0003545881384070526,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_012",
+      "bone": "occipital",
+      "code": "A02.1.04.012",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0007677376174797246,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_014",
+      "bone": "occipital",
+      "code": "A02.1.04.014",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004169258772890316,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_022",
+      "bone": "occipital",
+      "code": "A02.1.04.022",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0029419295515253907,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_023",
+      "bone": "occipital",
+      "code": "A02.1.04.023",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0032583207030256744,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_025",
+      "bone": "occipital",
+      "code": "A02.1.04.025",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0039774354263499845,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_027",
+      "bone": "occipital",
+      "code": "A02.1.04.027",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0009472294664192304,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_028",
+      "bone": "occipital",
+      "code": "A02.1.04.028",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0037283668916643364,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_029",
+      "bone": "occipital",
+      "code": "A02.1.04.029",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0016103094822028652,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_030",
+      "bone": "occipital",
+      "code": "A02.1.04.030",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0015268525430656155,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_031",
+      "bone": "occipital",
+      "code": "A02.1.04.031",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004938628535455791,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_036",
+      "bone": "occipital",
+      "code": "A02.1.04.036",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.001855686377894017,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_037",
+      "bone": "occipital",
+      "code": "A02.1.04.037",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005284014605422271,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_002",
+      "bone": "sphenoid",
+      "code": "A02.1.05.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004047655238537118,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_003",
+      "bone": "sphenoid",
+      "code": "A02.1.05.003",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0016701065987945185,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_006",
+      "bone": "sphenoid",
+      "code": "A02.1.05.006",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0018454828705216642,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_007",
+      "bone": "sphenoid",
+      "code": "A02.1.05.007",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0003218172821561893,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_009",
+      "bone": "sphenoid",
+      "code": "A02.1.05.009",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.003966214990214212,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_010",
+      "bone": "sphenoid",
+      "code": "A02.1.05.010",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005068020072940271,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_014",
+      "bone": "sphenoid",
+      "code": "A02.1.05.014",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0035816169656754937,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_015",
+      "bone": "sphenoid",
+      "code": "A02.1.05.015",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.003371444108779542,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_020",
+      "bone": "sphenoid",
+      "code": "A02.1.05.020",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0034687154766288586,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_024",
+      "bone": "sphenoid",
+      "code": "A02.1.05.024",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002011715423577698,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_025",
+      "bone": "sphenoid",
+      "code": "A02.1.05.025",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0017679328720987542,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_026",
+      "bone": "sphenoid",
+      "code": "A02.1.05.026",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0015316335293391603,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_027",
+      "bone": "sphenoid",
+      "code": "A02.1.05.027",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0005796658228973683,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_029",
+      "bone": "sphenoid",
+      "code": "A02.1.05.029",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.000711403686182166,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_030",
+      "bone": "sphenoid",
+      "code": "A02.1.05.030",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0038400175981223583,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_031",
+      "bone": "sphenoid",
+      "code": "A02.1.05.031",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002637150373629993,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_032",
+      "bone": "sphenoid",
+      "code": "A02.1.05.032",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002636284534673905,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_034",
+      "bone": "sphenoid",
+      "code": "A02.1.05.034",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.002474313532729866,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_036",
+      "bone": "sphenoid",
+      "code": "A02.1.05.036",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005162169600225752,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_042",
+      "bone": "sphenoid",
+      "code": "A02.1.05.042",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.00039384264027830795,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_043",
+      "bone": "sphenoid",
+      "code": "A02.1.05.043",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.004084848569618771,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_044",
+      "bone": "sphenoid",
+      "code": "A02.1.05.044",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0017620094467929448,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_046",
+      "bone": "sphenoid",
+      "code": "A02.1.05.046",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.003172416654706467,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_051",
+      "bone": "sphenoid",
+      "code": "A02.1.05.051",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.005081934887130046,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_004",
+      "bone": "temporal_right",
+      "code": "A02.1.06.004",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00016357375898223836,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_047",
+      "bone": "temporal_right",
+      "code": "A02.1.06.047",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007219474014164007,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_054",
+      "bone": "temporal_right",
+      "code": "A02.1.06.054",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0016220420775425737,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_061",
+      "bone": "temporal_right",
+      "code": "A02.1.06.061",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0021737826045864495,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_062",
+      "bone": "temporal_right",
+      "code": "A02.1.06.062",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0033827686820586678,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_065",
+      "bone": "temporal_right",
+      "code": "A02.1.06.065",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003367860244907206,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_067",
+      "bone": "temporal_right",
+      "code": "A02.1.06.067",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007306128964046366,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_078",
+      "bone": "temporal_right",
+      "code": "A02.1.06.078",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004243358944222564,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_004",
+      "bone": "temporal_left",
+      "code": "A02.1.06.004",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005187366241443669,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_047",
+      "bone": "temporal_left",
+      "code": "A02.1.06.047",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00030773693993069173,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_054",
+      "bone": "temporal_left",
+      "code": "A02.1.06.054",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0021916362129559275,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_061",
+      "bone": "temporal_left",
+      "code": "A02.1.06.061",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018344360341870924,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_062",
+      "bone": "temporal_left",
+      "code": "A02.1.06.062",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004373560841486324,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_065",
+      "bone": "temporal_left",
+      "code": "A02.1.06.065",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0064169225879595615,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_067",
+      "bone": "temporal_left",
+      "code": "A02.1.06.067",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00039740311308378296,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_078",
+      "bone": "temporal_left",
+      "code": "A02.1.06.078",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0036847263800154906,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_002",
+      "bone": "ethmoid",
+      "code": "A02.1.07.002",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0044564194467966445,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_004",
+      "bone": "ethmoid",
+      "code": "A02.1.07.004",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0009946912769009941,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_006",
+      "bone": "ethmoid",
+      "code": "A02.1.07.006",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0049255181693297345,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_007",
+      "bone": "ethmoid",
+      "code": "A02.1.07.007",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0036959086173737887,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_011",
+      "bone": "ethmoid",
+      "code": "A02.1.07.011",
+      "source_file": "pins_head/ta.json",
+      "localization": "surface",
+      "distance_mm": 0.0037331130897655385,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_002",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.006215457233338384,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_003",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0041289126784249675,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_006",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00028180164690638776,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_007",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002482414174664882,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_008",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0035836615097650792,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_009",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.009",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0034120100735890446,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_010",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004935103333991719,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_011",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005171504199097399,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_013",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.013",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0042606511669873726,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_016",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.016",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0036708011066366453,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_017",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.017",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015443476968357572,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_021",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.021",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009500604392087553,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_023",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.023",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004489320872380631,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_024",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.024",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005305280865286477,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_028",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.028",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004622569122147979,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_029",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.029",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003500802222333732,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_030",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.030",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001049913066708541,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_035",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.035",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005701667305402225,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_036",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.036",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007102347012732935,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_037",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.037",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0024847547592798946,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_040",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.040",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011619774795690319,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_002",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0033561454984010197,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_003",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0010669054972822778,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_006",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002018712166318437,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_007",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0025594947601348395,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_008",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003455805199337192,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_009",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.009",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0043963036659988575,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_010",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0029466941668943036,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_011",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005022920049668755,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_013",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.013",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.000183193776592816,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_016",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.016",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0004344757087437756,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_017",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.017",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0013436092558549717,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_021",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.021",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0014685962241856032,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_023",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.023",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.000992578407021938,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_024",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.024",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0002904804716763465,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_028",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.028",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00036288611227064393,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_029",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.029",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0016576872212681337,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_030",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.030",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00037087289683768176,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_035",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.035",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0021312509943527402,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_036",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.036",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002668538172656554,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_037",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.037",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0012637700592676993,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_040",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.040",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004318125775171211,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_002",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004597897259372985,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_003",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002152495881091454,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_004",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003535730229486944,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_005",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00018070538487791055,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_006",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015971071434250916,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_002",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001116301177717105,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_003",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00072666080086492,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_004",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 7.028863535651908e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_005",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009224589234690939,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_006",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0024791631858533947,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_002",
+      "bone": "palatine_right",
+      "code": "A02.1.13.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004061458639625926,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_003",
+      "bone": "palatine_right",
+      "code": "A02.1.13.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009838029200182064,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_004",
+      "bone": "palatine_right",
+      "code": "A02.1.13.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005297035841067554,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_005",
+      "bone": "palatine_right",
+      "code": "A02.1.13.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0002440722539631679,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_007",
+      "bone": "palatine_right",
+      "code": "A02.1.13.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004026971964776749,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_011",
+      "bone": "palatine_right",
+      "code": "A02.1.13.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018367305756328278,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_013",
+      "bone": "palatine_right",
+      "code": "A02.1.13.013",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.000686773375946359,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_014",
+      "bone": "palatine_right",
+      "code": "A02.1.13.014",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00466412166133523,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_015",
+      "bone": "palatine_right",
+      "code": "A02.1.13.015",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004443771558726439,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_002",
+      "bone": "palatine_left",
+      "code": "A02.1.13.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00047710267381262383,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_003",
+      "bone": "palatine_left",
+      "code": "A02.1.13.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0028785582344426075,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_004",
+      "bone": "palatine_left",
+      "code": "A02.1.13.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0005605788260254485,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_005",
+      "bone": "palatine_left",
+      "code": "A02.1.13.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0033092410376411863,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_007",
+      "bone": "palatine_left",
+      "code": "A02.1.13.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0026080970201292075,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_011",
+      "bone": "palatine_left",
+      "code": "A02.1.13.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004053190423292108,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_013",
+      "bone": "palatine_left",
+      "code": "A02.1.13.013",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0010037261972684064,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_014",
+      "bone": "palatine_left",
+      "code": "A02.1.13.014",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004131859441258712,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_015",
+      "bone": "palatine_left",
+      "code": "A02.1.13.015",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004996117695554858,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_right_A02_1_09_002",
+      "bone": "lacrimal_right",
+      "code": "A02.1.09.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003797722911258461,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_left_A02_1_09_002",
+      "bone": "lacrimal_left",
+      "code": "A02.1.09.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001776315343704482,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_vomer_A02_1_11_002",
+      "bone": "vomer",
+      "code": "A02.1.11.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001668358549977711,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_002",
+      "bone": "mandible",
+      "code": "A02.1.15.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0022887354589329334,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_003",
+      "bone": "mandible",
+      "code": "A02.1.15.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002251940486530657,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_005",
+      "bone": "mandible",
+      "code": "A02.1.15.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00013465584913774364,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_006",
+      "bone": "mandible",
+      "code": "A02.1.15.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00015296672017939272,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_007",
+      "bone": "mandible",
+      "code": "A02.1.15.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0005038411927671405,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_008",
+      "bone": "mandible",
+      "code": "A02.1.15.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009788443549041403,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_016",
+      "bone": "mandible",
+      "code": "A02.1.15.016",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 9.313225746154785e-07,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_017",
+      "bone": "mandible",
+      "code": "A02.1.15.017",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015164677051870967,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_018",
+      "bone": "mandible",
+      "code": "A02.1.15.018",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00284834686681279,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_021",
+      "bone": "mandible",
+      "code": "A02.1.15.021",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004048957634950057,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_024",
+      "bone": "mandible",
+      "code": "A02.1.15.024",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004310283202357823,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_025",
+      "bone": "mandible",
+      "code": "A02.1.15.025",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0004018481547518604,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_026",
+      "bone": "mandible",
+      "code": "A02.1.15.026",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0035502387163433013,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_032",
+      "bone": "mandible",
+      "code": "A02.1.15.032",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001955124389496632,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_034",
+      "bone": "mandible",
+      "code": "A02.1.15.034",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003611589590946096,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_035",
+      "bone": "mandible",
+      "code": "A02.1.15.035",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0024798264348646626,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_036",
+      "bone": "mandible",
+      "code": "A02.1.15.036",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004688193257607054,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_037",
+      "bone": "mandible",
+      "code": "A02.1.15.037",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004040339717903407,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_left_A02_1_08_002",
+      "bone": "inferior_concha_left",
+      "code": "A02.1.08.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004322001586842816,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_left_A02_1_08_003",
+      "bone": "inferior_concha_left",
+      "code": "A02.1.08.003",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.0001281846380152274,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_left_A02_1_08_004",
+      "bone": "inferior_concha_left",
+      "code": "A02.1.08.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0027297330689179944,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_right_A02_1_08_002",
+      "bone": "inferior_concha_right",
+      "code": "A02.1.08.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018015392697634525,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_right_A02_1_08_003",
+      "bone": "inferior_concha_right",
+      "code": "A02.1.08.003",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.002576172846602276,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_inferior_concha_right_A02_1_08_004",
+      "bone": "inferior_concha_right",
+      "code": "A02.1.08.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0036907852063450264,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_left_A02_1_09_003",
+      "bone": "lacrimal_left",
+      "code": "A02.1.09.003",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.0006479549483628944,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_left_A02_1_09_004",
+      "bone": "lacrimal_left",
+      "code": "A02.1.09.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0010868546951314784,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_right_A02_1_09_003",
+      "bone": "lacrimal_right",
+      "code": "A02.1.09.003",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.004972931037627859,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_lacrimal_right_A02_1_09_004",
+      "bone": "lacrimal_right",
+      "code": "A02.1.09.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0018473167529009515,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_004",
+      "bone": "mandible",
+      "code": "A02.1.15.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002537501586630242,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_009",
+      "bone": "mandible",
+      "code": "A02.1.15.009",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0014676610362585052,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_010",
+      "bone": "mandible",
+      "code": "A02.1.15.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001075373234016297,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_011",
+      "bone": "mandible",
+      "code": "A02.1.15.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003830722107522888,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_012",
+      "bone": "mandible",
+      "code": "A02.1.15.012",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0027278952074993867,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_013",
+      "bone": "mandible",
+      "code": "A02.1.15.013",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0011912209174624877,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_014",
+      "bone": "mandible",
+      "code": "A02.1.15.014",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0001992333835687532,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_015",
+      "bone": "mandible",
+      "code": "A02.1.15.015",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005767944003309822,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_019",
+      "bone": "mandible",
+      "code": "A02.1.15.019",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00393382379115792,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_020",
+      "bone": "mandible",
+      "code": "A02.1.15.020",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00014477198817530734,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_022",
+      "bone": "mandible",
+      "code": "A02.1.15.022",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004310674739826936,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_023",
+      "bone": "mandible",
+      "code": "A02.1.15.023",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005253013569017639,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_027",
+      "bone": "mandible",
+      "code": "A02.1.15.027",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0003769176544210495,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_028",
+      "bone": "mandible",
+      "code": "A02.1.15.028",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006658168558715261,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_029",
+      "bone": "mandible",
+      "code": "A02.1.15.029",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006421778380172327,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_030",
+      "bone": "mandible",
+      "code": "A02.1.15.030",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003933243078790838,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_031",
+      "bone": "mandible",
+      "code": "A02.1.15.031",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0003911377461918164,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_033",
+      "bone": "mandible",
+      "code": "A02.1.15.033",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003935304903279757,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_mandible_A02_1_15_038",
+      "bone": "mandible",
+      "code": "A02.1.15.038",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005588933618128067,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_00_061",
+      "bone": "maxilla_left",
+      "code": "A02.1.00.061",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0010126608458449482,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_00_062",
+      "bone": "maxilla_left",
+      "code": "A02.1.00.062",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0023867489744588966,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_004",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0031532090360997245,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_005",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0037901606901868945,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_012",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.012",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0024576077066740254,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_014",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.014",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0042476222006371245,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_015",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.015",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0007123004479581141,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_018",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.018",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0026749355583888246,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_019",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.019",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0008073573098954512,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_020",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.020",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006831860446254723,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_022",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.022",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003168071089021396,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_025",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.025",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002819988367264159,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_026",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.026",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.005052811957284575,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_027",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.027",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.0012468767636164557,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_031",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.031",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.0008325091584993061,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_032",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.032",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0014788416820010752,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_033",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.033",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00013991243008604215,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_034",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.034",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0047943290155672,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_038",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.038",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0026490586151339812,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_039",
+      "bone": "maxilla_left",
+      "code": "A02.1.12.039",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0020745319488923997,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_00_061",
+      "bone": "maxilla_right",
+      "code": "A02.1.00.061",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001023967001856363,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_00_062",
+      "bone": "maxilla_right",
+      "code": "A02.1.00.062",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00020598920968950551,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_004",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001969886170627433,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_005",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0026396514840598684,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_012",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.012",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0032389743864769116,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_014",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.014",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0009377747574035311,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_015",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.015",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0032882987852644874,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_018",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.018",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002707578914851183,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_019",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.019",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0010544813449087087,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_020",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.020",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004799770067620557,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_022",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.022",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004044869456265587,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_025",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.025",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 3.24896802794683e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_026",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.026",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.00317854596687539,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_027",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.027",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.0014204457556843408,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_031",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.031",
+      "source_file": "pins_head/face-features-bp.json",
+      "localization": "surface",
+      "distance_mm": 0.004603761226462666,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_032",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.032",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0023220829916681396,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_033",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.033",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0017712866338115418,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_034",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.034",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002621844942041207,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_038",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.038",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0036748440379597014,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_039",
+      "bone": "maxilla_right",
+      "code": "A02.1.12.039",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0028041120003763353,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_nasal_left_A02_1_10_002",
+      "bone": "nasal_left",
+      "code": "A02.1.10.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.005309092102834256,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_nasal_left_A02_1_10_003",
+      "bone": "nasal_left",
+      "code": "A02.1.10.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00145378714933031,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_nasal_right_A02_1_10_002",
+      "bone": "nasal_right",
+      "code": "A02.1.10.002",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00678533615428023,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_nasal_right_A02_1_10_003",
+      "bone": "nasal_right",
+      "code": "A02.1.10.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0027904682156076888,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_006",
+      "bone": "palatine_left",
+      "code": "A02.1.13.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009003423429021495,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_008",
+      "bone": "palatine_left",
+      "code": "A02.1.13.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002608185013741604,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_009",
+      "bone": "palatine_left",
+      "code": "A02.1.13.009",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.0037942800190648995,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_010",
+      "bone": "palatine_left",
+      "code": "A02.1.13.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002295942749697133,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_012",
+      "bone": "palatine_left",
+      "code": "A02.1.13.012",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0010989891734425328,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_016",
+      "bone": "palatine_left",
+      "code": "A02.1.13.016",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0006288572649282287,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_017",
+      "bone": "palatine_left",
+      "code": "A02.1.13.017",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0020396516902110307,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_018",
+      "bone": "palatine_left",
+      "code": "A02.1.13.018",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00015971299660577642,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_left_A02_1_13_019",
+      "bone": "palatine_left",
+      "code": "A02.1.13.019",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0030159360449033557,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_006",
+      "bone": "palatine_right",
+      "code": "A02.1.13.006",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0032960595035547158,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_008",
+      "bone": "palatine_right",
+      "code": "A02.1.13.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0036300846204539994,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_009",
+      "bone": "palatine_right",
+      "code": "A02.1.13.009",
+      "source_file": "pins_head/face-completion.json",
+      "localization": "surface",
+      "distance_mm": 0.003775269306061091,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_010",
+      "bone": "palatine_right",
+      "code": "A02.1.13.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0048004603740992025,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_012",
+      "bone": "palatine_right",
+      "code": "A02.1.13.012",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015171791574175586,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_016",
+      "bone": "palatine_right",
+      "code": "A02.1.13.016",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002039350647464744,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_017",
+      "bone": "palatine_right",
+      "code": "A02.1.13.017",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006039198297003168,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_018",
+      "bone": "palatine_right",
+      "code": "A02.1.13.018",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00301767977362033,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_palatine_right_A02_1_13_019",
+      "bone": "palatine_right",
+      "code": "A02.1.13.019",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001353844822915562,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_vomer_A02_1_11_003",
+      "bone": "vomer",
+      "code": "A02.1.11.003",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0031255774501914857,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_vomer_A02_1_11_004",
+      "bone": "vomer",
+      "code": "A02.1.11.004",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0022060773972043535,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_vomer_A02_1_11_005",
+      "bone": "vomer",
+      "code": "A02.1.11.005",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0016140194247782347,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_007",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003964976258430397,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_008",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0012200994206068572,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_009",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.009",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003955775810027262,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_010",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0013830061789121828,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_left_A02_1_14_011",
+      "bone": "zygomatic_left",
+      "code": "A02.1.14.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002065961552943918,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_007",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.007",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003873527930409182,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_008",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.008",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0021368784928199602,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_009",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.009",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00031116766763261694,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_010",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.010",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0035042944546148647,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_zygomatic_right_A02_1_14_011",
+      "bone": "zygomatic_right",
+      "code": "A02.1.14.011",
+      "source_file": "pins_head/face-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0035095972634735517,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_007",
+      "bone": "frontal",
+      "code": "A02.1.03.007",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0016819416259750142,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_009",
+      "bone": "frontal",
+      "code": "A02.1.03.009",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00048262643304042285,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_010",
+      "bone": "frontal",
+      "code": "A02.1.03.010",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0020390102690726053,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_018",
+      "bone": "frontal",
+      "code": "A02.1.03.018",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0012162769280621433,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_020",
+      "bone": "frontal",
+      "code": "A02.1.03.020",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00022036387292700965,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_024",
+      "bone": "frontal",
+      "code": "A02.1.03.024",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.002588442157502868,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_025",
+      "bone": "frontal",
+      "code": "A02.1.03.025",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004196522695565363,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_026",
+      "bone": "frontal",
+      "code": "A02.1.03.026",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009418503736924322,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_027",
+      "bone": "frontal",
+      "code": "A02.1.03.027",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007009190881035465,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_028",
+      "bone": "frontal",
+      "code": "A02.1.03.028",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0001695883184993363,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_029",
+      "bone": "frontal",
+      "code": "A02.1.03.029",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003390096253497177,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_030",
+      "bone": "frontal",
+      "code": "A02.1.03.030",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.005081042218080256,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_frontal_A02_1_03_031",
+      "bone": "frontal",
+      "code": "A02.1.03.031",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002520036787245772,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_003",
+      "bone": "parietal_right",
+      "code": "A02.1.02.003",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0011986595609414508,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_004",
+      "bone": "parietal_right",
+      "code": "A02.1.02.004",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001590992269484559,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_005",
+      "bone": "parietal_right",
+      "code": "A02.1.02.005",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004486394118430326,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_006",
+      "bone": "parietal_right",
+      "code": "A02.1.02.006",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0032778575587144587,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_008",
+      "bone": "parietal_right",
+      "code": "A02.1.02.008",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00180527126758534,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_009",
+      "bone": "parietal_right",
+      "code": "A02.1.02.009",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0015149615819609608,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_016",
+      "bone": "parietal_right",
+      "code": "A02.1.02.016",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 3.73255915064874e-06,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_019",
+      "bone": "parietal_right",
+      "code": "A02.1.02.019",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00046762434635638783,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_003",
+      "bone": "parietal_left",
+      "code": "A02.1.02.003",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004394586085254559,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_004",
+      "bone": "parietal_left",
+      "code": "A02.1.02.004",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0032773700695543084,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_005",
+      "bone": "parietal_left",
+      "code": "A02.1.02.005",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009799708777791238,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_006",
+      "bone": "parietal_left",
+      "code": "A02.1.02.006",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011891847861988936,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_008",
+      "bone": "parietal_left",
+      "code": "A02.1.02.008",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002945091182482429,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_009",
+      "bone": "parietal_left",
+      "code": "A02.1.02.009",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002948142991954228,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_016",
+      "bone": "parietal_left",
+      "code": "A02.1.02.016",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00023156232487053785,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_019",
+      "bone": "parietal_left",
+      "code": "A02.1.02.019",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0034576564758026507,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_003",
+      "bone": "occipital",
+      "code": "A02.1.04.003",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018390916238786303,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_004",
+      "bone": "occipital",
+      "code": "A02.1.04.004",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0008178819257409486,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_007",
+      "bone": "occipital",
+      "code": "A02.1.04.007",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003307617362224846,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_008",
+      "bone": "occipital",
+      "code": "A02.1.04.008",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0031244617275660858,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_013",
+      "bone": "occipital",
+      "code": "A02.1.04.013",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.003093665554843028,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_015",
+      "bone": "occipital",
+      "code": "A02.1.04.015",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0007072191579027276,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_016",
+      "bone": "occipital",
+      "code": "A02.1.04.016",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0027474968646856723,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_017",
+      "bone": "occipital",
+      "code": "A02.1.04.017",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006354432571242796,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_018",
+      "bone": "occipital",
+      "code": "A02.1.04.018",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0001772647237885394,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_019",
+      "bone": "occipital",
+      "code": "A02.1.04.019",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0030037761007406516,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_020",
+      "bone": "occipital",
+      "code": "A02.1.04.020",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004906260073767044,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_021",
+      "bone": "occipital",
+      "code": "A02.1.04.021",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0042990145630028564,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_024",
+      "bone": "occipital",
+      "code": "A02.1.04.024",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001763858108461136,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_026",
+      "bone": "occipital",
+      "code": "A02.1.04.026",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0020878680970781716,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_032",
+      "bone": "occipital",
+      "code": "A02.1.04.032",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001375540477965842,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_033",
+      "bone": "occipital",
+      "code": "A02.1.04.033",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0002792213535940391,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_034",
+      "bone": "occipital",
+      "code": "A02.1.04.034",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001289257284042833,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_occipital_A02_1_04_035",
+      "bone": "occipital",
+      "code": "A02.1.04.035",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0022116375930636423,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_004",
+      "bone": "sphenoid",
+      "code": "A02.1.05.004",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00424433164880611,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_005",
+      "bone": "sphenoid",
+      "code": "A02.1.05.005",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015010620018074405,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_008",
+      "bone": "sphenoid",
+      "code": "A02.1.05.008",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0035064149415120482,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_011",
+      "bone": "sphenoid",
+      "code": "A02.1.05.011",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001252684228347789,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_012",
+      "bone": "sphenoid",
+      "code": "A02.1.05.012",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004255310614098562,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_013",
+      "bone": "sphenoid",
+      "code": "A02.1.05.013",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0028351391847536433,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_016",
+      "bone": "sphenoid",
+      "code": "A02.1.05.016",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0010695882792788325,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_017",
+      "bone": "sphenoid",
+      "code": "A02.1.05.017",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 2.9103830456733704e-07,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_018",
+      "bone": "sphenoid",
+      "code": "A02.1.05.018",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.006154151378723327,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_019",
+      "bone": "sphenoid",
+      "code": "A02.1.05.019",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003600175659812521,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_021",
+      "bone": "sphenoid",
+      "code": "A02.1.05.021",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0035415307593211764,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_022",
+      "bone": "sphenoid",
+      "code": "A02.1.05.022",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003291810116934357,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_023",
+      "bone": "sphenoid",
+      "code": "A02.1.05.023",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0035299478895467473,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_028",
+      "bone": "sphenoid",
+      "code": "A02.1.05.028",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005700356268789619,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_033",
+      "bone": "sphenoid",
+      "code": "A02.1.05.033",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0017059429637811263,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_035",
+      "bone": "sphenoid",
+      "code": "A02.1.05.035",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018416411649013753,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_037",
+      "bone": "sphenoid",
+      "code": "A02.1.05.037",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0005419113335847214,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_038",
+      "bone": "sphenoid",
+      "code": "A02.1.05.038",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0016779528095867136,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_039",
+      "bone": "sphenoid",
+      "code": "A02.1.05.039",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.003343132675581728,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_040",
+      "bone": "sphenoid",
+      "code": "A02.1.05.040",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007500911465285753,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_041",
+      "bone": "sphenoid",
+      "code": "A02.1.05.041",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0019188428268535063,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_045",
+      "bone": "sphenoid",
+      "code": "A02.1.05.045",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003483188720565522,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_047",
+      "bone": "sphenoid",
+      "code": "A02.1.05.047",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0005369589644033113,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_048",
+      "bone": "sphenoid",
+      "code": "A02.1.05.048",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00022136697452879162,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_049",
+      "bone": "sphenoid",
+      "code": "A02.1.05.049",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00267665677711193,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_050",
+      "bone": "sphenoid",
+      "code": "A02.1.05.050",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0010954975095955888,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_052",
+      "bone": "sphenoid",
+      "code": "A02.1.05.052",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0013777761296296376,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_053",
+      "bone": "sphenoid",
+      "code": "A02.1.05.053",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0005420785669230099,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_sphenoid_A02_1_05_054",
+      "bone": "sphenoid",
+      "code": "A02.1.05.054",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0022580675249628257,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_003",
+      "bone": "ethmoid",
+      "code": "A02.1.07.003",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.005987286840536399,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_005",
+      "bone": "ethmoid",
+      "code": "A02.1.07.005",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.000581779318054032,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_008",
+      "bone": "ethmoid",
+      "code": "A02.1.07.008",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 8.429369557916289e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_009",
+      "bone": "ethmoid",
+      "code": "A02.1.07.009",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0013006442713958677,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_010",
+      "bone": "ethmoid",
+      "code": "A02.1.07.010",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0028059548640158027,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_012",
+      "bone": "ethmoid",
+      "code": "A02.1.07.012",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0044458010961534455,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_013",
+      "bone": "ethmoid",
+      "code": "A02.1.07.013",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0023749128104100237,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_014",
+      "bone": "ethmoid",
+      "code": "A02.1.07.014",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0028532210762932664,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_015",
+      "bone": "ethmoid",
+      "code": "A02.1.07.015",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00010490512636351923,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_016",
+      "bone": "ethmoid",
+      "code": "A02.1.07.016",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004878805157204624,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_017",
+      "bone": "ethmoid",
+      "code": "A02.1.07.017",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0006872889457554265,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_ethmoid_A02_1_07_018",
+      "bone": "ethmoid",
+      "code": "A02.1.07.018",
+      "source_file": "pins_head/cranial-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003023596264029038,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_002",
+      "bone": "temporal_right",
+      "code": "A02.1.06.002",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004128013188164914,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_003",
+      "bone": "temporal_right",
+      "code": "A02.1.06.003",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0015240125321724918,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_005",
+      "bone": "temporal_right",
+      "code": "A02.1.06.005",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0042841306822083425,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_006",
+      "bone": "temporal_right",
+      "code": "A02.1.06.006",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0006339564038171375,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_007",
+      "bone": "temporal_right",
+      "code": "A02.1.06.007",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0004988134492123208,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_008",
+      "bone": "temporal_right",
+      "code": "A02.1.06.008",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0033819153486547293,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_009",
+      "bone": "temporal_right",
+      "code": "A02.1.06.009",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004280921075405786,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_010",
+      "bone": "temporal_right",
+      "code": "A02.1.06.010",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001228781229656306,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_011",
+      "bone": "temporal_right",
+      "code": "A02.1.06.011",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0011658730727504008,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_012",
+      "bone": "temporal_right",
+      "code": "A02.1.06.012",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0012409243481670273,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_013",
+      "bone": "temporal_right",
+      "code": "A02.1.06.013",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0019016001715499442,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_014",
+      "bone": "temporal_right",
+      "code": "A02.1.06.014",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0016684155070834095,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_015",
+      "bone": "temporal_right",
+      "code": "A02.1.06.015",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0018928177496491116,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_016",
+      "bone": "temporal_right",
+      "code": "A02.1.06.016",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00426081396653899,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_017",
+      "bone": "temporal_right",
+      "code": "A02.1.06.017",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0024236499029939296,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_018",
+      "bone": "temporal_right",
+      "code": "A02.1.06.018",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004666063887270866,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_019",
+      "bone": "temporal_right",
+      "code": "A02.1.06.019",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.005383915777201764,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_020",
+      "bone": "temporal_right",
+      "code": "A02.1.06.020",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00027000004365618224,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_021",
+      "bone": "temporal_right",
+      "code": "A02.1.06.021",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011154990033901413,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_022",
+      "bone": "temporal_right",
+      "code": "A02.1.06.022",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0019218020952394,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_023",
+      "bone": "temporal_right",
+      "code": "A02.1.06.023",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002972401262013591,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_024",
+      "bone": "temporal_right",
+      "code": "A02.1.06.024",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002884522473323159,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_025",
+      "bone": "temporal_right",
+      "code": "A02.1.06.025",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.006397395281965146,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_026",
+      "bone": "temporal_right",
+      "code": "A02.1.06.026",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.000826922132546315,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_027",
+      "bone": "temporal_right",
+      "code": "A02.1.06.027",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004259960405761376,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_028",
+      "bone": "temporal_right",
+      "code": "A02.1.06.028",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0012250316103745718,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_029",
+      "bone": "temporal_right",
+      "code": "A02.1.06.029",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004366180291981436,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_030",
+      "bone": "temporal_right",
+      "code": "A02.1.06.030",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001738158289299463,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_031",
+      "bone": "temporal_right",
+      "code": "A02.1.06.031",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0032045552416093415,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_032",
+      "bone": "temporal_right",
+      "code": "A02.1.06.032",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0023800143935659435,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_033",
+      "bone": "temporal_right",
+      "code": "A02.1.06.033",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.005617454007733613,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_034",
+      "bone": "temporal_right",
+      "code": "A02.1.06.034",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004107826498511713,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_035",
+      "bone": "temporal_right",
+      "code": "A02.1.06.035",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00171176986896171,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_036",
+      "bone": "temporal_right",
+      "code": "A02.1.06.036",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0033034398256859276,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_037",
+      "bone": "temporal_right",
+      "code": "A02.1.06.037",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011736393616956775,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_038",
+      "bone": "temporal_right",
+      "code": "A02.1.06.038",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0011007854254785343,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_039",
+      "bone": "temporal_right",
+      "code": "A02.1.06.039",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018550150571172708,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_040",
+      "bone": "temporal_right",
+      "code": "A02.1.06.040",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0035177438348910073,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_041",
+      "bone": "temporal_right",
+      "code": "A02.1.06.041",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0013952940207673237,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_042",
+      "bone": "temporal_right",
+      "code": "A02.1.06.042",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0003791020617427421,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_043",
+      "bone": "temporal_right",
+      "code": "A02.1.06.043",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004002411515102722,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_044",
+      "bone": "temporal_right",
+      "code": "A02.1.06.044",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0029555806122516515,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_045",
+      "bone": "temporal_right",
+      "code": "A02.1.06.045",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0018550150571172708,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_046",
+      "bone": "temporal_right",
+      "code": "A02.1.06.046",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0009295998779634829,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_048",
+      "bone": "temporal_right",
+      "code": "A02.1.06.048",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0014727670532010961,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_049",
+      "bone": "temporal_right",
+      "code": "A02.1.06.049",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0005705413173018314,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_050",
+      "bone": "temporal_right",
+      "code": "A02.1.06.050",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0012660083257287624,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_051",
+      "bone": "temporal_right",
+      "code": "A02.1.06.051",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001969565573745058,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_052",
+      "bone": "temporal_right",
+      "code": "A02.1.06.052",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0013338828921405366,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_053",
+      "bone": "temporal_right",
+      "code": "A02.1.06.053",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0026629443254932994,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_055",
+      "bone": "temporal_right",
+      "code": "A02.1.06.055",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0019822921331069665,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_056",
+      "bone": "temporal_right",
+      "code": "A02.1.06.056",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003227821707696421,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_057",
+      "bone": "temporal_right",
+      "code": "A02.1.06.057",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0006411396498151589,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_058",
+      "bone": "temporal_right",
+      "code": "A02.1.06.058",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0024497912818333134,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_059",
+      "bone": "temporal_right",
+      "code": "A02.1.06.059",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00200611975742504,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_060",
+      "bone": "temporal_right",
+      "code": "A02.1.06.060",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 2.385349695543937e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_063",
+      "bone": "temporal_right",
+      "code": "A02.1.06.063",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00320230242323305,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_064",
+      "bone": "temporal_right",
+      "code": "A02.1.06.064",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0003911377461918164,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_066",
+      "bone": "temporal_right",
+      "code": "A02.1.06.066",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0018840395341612748,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_068",
+      "bone": "temporal_right",
+      "code": "A02.1.06.068",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0023841973870730726,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_069",
+      "bone": "temporal_right",
+      "code": "A02.1.06.069",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 3.668985470994812e-05,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_070",
+      "bone": "temporal_right",
+      "code": "A02.1.06.070",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002599857680252171,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_071",
+      "bone": "temporal_right",
+      "code": "A02.1.06.071",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0008848642778502835,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_072",
+      "bone": "temporal_right",
+      "code": "A02.1.06.072",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002095617446684628,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_073",
+      "bone": "temporal_right",
+      "code": "A02.1.06.073",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004706980689661577,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_074",
+      "bone": "temporal_right",
+      "code": "A02.1.06.074",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003317525170132285,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_075",
+      "bone": "temporal_right",
+      "code": "A02.1.06.075",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002834867700585164,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_076",
+      "bone": "temporal_right",
+      "code": "A02.1.06.076",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0006048866794117203,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_077",
+      "bone": "temporal_right",
+      "code": "A02.1.06.077",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.001189318936667405,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_002",
+      "bone": "temporal_left",
+      "code": "A02.1.06.002",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002079246087305364,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_003",
+      "bone": "temporal_left",
+      "code": "A02.1.06.003",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003916993591701612,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_005",
+      "bone": "temporal_left",
+      "code": "A02.1.06.005",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0040034738049143925,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_006",
+      "bone": "temporal_left",
+      "code": "A02.1.06.006",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003322710426800768,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_007",
+      "bone": "temporal_left",
+      "code": "A02.1.06.007",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00225008761844947,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_008",
+      "bone": "temporal_left",
+      "code": "A02.1.06.008",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "variant",
+      "distance_mm": 0.0009262198545911815,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_009",
+      "bone": "temporal_left",
+      "code": "A02.1.06.009",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0024065866455202922,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_010",
+      "bone": "temporal_left",
+      "code": "A02.1.06.010",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003836269570456352,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_011",
+      "bone": "temporal_left",
+      "code": "A02.1.06.011",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0019255282950325636,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_012",
+      "bone": "temporal_left",
+      "code": "A02.1.06.012",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004159463060204871,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_013",
+      "bone": "temporal_left",
+      "code": "A02.1.06.013",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0036442561395233497,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_014",
+      "bone": "temporal_left",
+      "code": "A02.1.06.014",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0019077306205872446,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_015",
+      "bone": "temporal_left",
+      "code": "A02.1.06.015",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0006451377316807339,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_016",
+      "bone": "temporal_left",
+      "code": "A02.1.06.016",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0018607303218232119,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_017",
+      "bone": "temporal_left",
+      "code": "A02.1.06.017",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0007292820782822673,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_018",
+      "bone": "temporal_left",
+      "code": "A02.1.06.018",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0007315620109693555,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_019",
+      "bone": "temporal_left",
+      "code": "A02.1.06.019",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002151876742573222,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_020",
+      "bone": "temporal_left",
+      "code": "A02.1.06.020",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0034907063763967017,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_021",
+      "bone": "temporal_left",
+      "code": "A02.1.06.021",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.004594485289999284,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_022",
+      "bone": "temporal_left",
+      "code": "A02.1.06.022",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.00506481819684268,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_023",
+      "bone": "temporal_left",
+      "code": "A02.1.06.023",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003608819952205522,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_024",
+      "bone": "temporal_left",
+      "code": "A02.1.06.024",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0008396791031373141,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_025",
+      "bone": "temporal_left",
+      "code": "A02.1.06.025",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003544155561030493,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_026",
+      "bone": "temporal_left",
+      "code": "A02.1.06.026",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0008099315778054006,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_027",
+      "bone": "temporal_left",
+      "code": "A02.1.06.027",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0017237107385881245,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_028",
+      "bone": "temporal_left",
+      "code": "A02.1.06.028",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.006597399988095276,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_029",
+      "bone": "temporal_left",
+      "code": "A02.1.06.029",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0019409476408327464,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_030",
+      "bone": "temporal_left",
+      "code": "A02.1.06.030",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0036538172025757376,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_031",
+      "bone": "temporal_left",
+      "code": "A02.1.06.031",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0021266675958031556,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_032",
+      "bone": "temporal_left",
+      "code": "A02.1.06.032",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002423283376629115,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_033",
+      "bone": "temporal_left",
+      "code": "A02.1.06.033",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0002950514499389101,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_034",
+      "bone": "temporal_left",
+      "code": "A02.1.06.034",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.007415766958729364,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_035",
+      "bone": "temporal_left",
+      "code": "A02.1.06.035",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0024801286144793266,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_036",
+      "bone": "temporal_left",
+      "code": "A02.1.06.036",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0017021926623783656,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_037",
+      "bone": "temporal_left",
+      "code": "A02.1.06.037",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.002972847596538486,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_038",
+      "bone": "temporal_left",
+      "code": "A02.1.06.038",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0007865767770454113,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_039",
+      "bone": "temporal_left",
+      "code": "A02.1.06.039",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011117417670902796,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_040",
+      "bone": "temporal_left",
+      "code": "A02.1.06.040",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009221955679095117,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_041",
+      "bone": "temporal_left",
+      "code": "A02.1.06.041",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.001686927248556458,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_042",
+      "bone": "temporal_left",
+      "code": "A02.1.06.042",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0022002468540449627,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_043",
+      "bone": "temporal_left",
+      "code": "A02.1.06.043",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.004837501819565659,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_044",
+      "bone": "temporal_left",
+      "code": "A02.1.06.044",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0016715265473976615,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_045",
+      "bone": "temporal_left",
+      "code": "A02.1.06.045",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0011117417670902796,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_046",
+      "bone": "temporal_left",
+      "code": "A02.1.06.046",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.00046843950940456125,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_048",
+      "bone": "temporal_left",
+      "code": "A02.1.06.048",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.002222484681624337,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_049",
+      "bone": "temporal_left",
+      "code": "A02.1.06.049",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0025872536753013264,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_050",
+      "bone": "temporal_left",
+      "code": "A02.1.06.050",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0009932003877111129,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_051",
+      "bone": "temporal_left",
+      "code": "A02.1.06.051",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0017212009879585821,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_052",
+      "bone": "temporal_left",
+      "code": "A02.1.06.052",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0005783205665466085,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_053",
+      "bone": "temporal_left",
+      "code": "A02.1.06.053",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0031453387236979324,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_055",
+      "bone": "temporal_left",
+      "code": "A02.1.06.055",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.003973453203798272,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_056",
+      "bone": "temporal_left",
+      "code": "A02.1.06.056",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0040641825762577355,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_057",
+      "bone": "temporal_left",
+      "code": "A02.1.06.057",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0015198316987152793,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_058",
+      "bone": "temporal_left",
+      "code": "A02.1.06.058",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0025735582767083542,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_059",
+      "bone": "temporal_left",
+      "code": "A02.1.06.059",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0004282787813281175,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_060",
+      "bone": "temporal_left",
+      "code": "A02.1.06.060",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.005129394594405312,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_063",
+      "bone": "temporal_left",
+      "code": "A02.1.06.063",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.003733164703589864,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_064",
+      "bone": "temporal_left",
+      "code": "A02.1.06.064",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0025402027858945075,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_066",
+      "bone": "temporal_left",
+      "code": "A02.1.06.066",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0024809426122374134,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_068",
+      "bone": "temporal_left",
+      "code": "A02.1.06.068",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0028378985916788224,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_069",
+      "bone": "temporal_left",
+      "code": "A02.1.06.069",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.006323401066765655,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_070",
+      "bone": "temporal_left",
+      "code": "A02.1.06.070",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0037655149753845762,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_071",
+      "bone": "temporal_left",
+      "code": "A02.1.06.071",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0009844920896284748,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_072",
+      "bone": "temporal_left",
+      "code": "A02.1.06.072",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0007771852210680663,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_073",
+      "bone": "temporal_left",
+      "code": "A02.1.06.073",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "surface",
+      "distance_mm": 0.0034161785151809454,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_074",
+      "bone": "temporal_left",
+      "code": "A02.1.06.074",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0025158371954603354,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_075",
+      "bone": "temporal_left",
+      "code": "A02.1.06.075",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0002417710618374258,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_076",
+      "bone": "temporal_left",
+      "code": "A02.1.06.076",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0011896922842424829,
+      "anatomical_placement_accepted": false
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_077",
+      "bone": "temporal_left",
+      "code": "A02.1.06.077",
+      "source_file": "pins_head/temporal-extra.json",
+      "localization": "projection",
+      "distance_mm": 0.0028259316877665697,
+      "anatomical_placement_accepted": false
+    }
+  ],
+  "original_scene_objects_preserved": true
+}

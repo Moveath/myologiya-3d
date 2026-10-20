@@ -1,0 +1,27 @@
+{
+  "tool": "Blender MCP",
+  "blender": "5.2.2 LTS",
+  "results": [
+    {
+      "scene": "Shared landmark measurement",
+      "bone": "parietal_right",
+      "vertices": 14863,
+      "faces": 29734,
+      "boundary": 0,
+      "nonmanifold": 0,
+      "noncontiguous": 0,
+      "zero_area_imported": 6
+    },
+    {
+      "scene": "Stage4 arm audit",
+      "bone": "scapula",
+      "vertices": 10002,
+      "faces": 20000,
+      "boundary": 0,
+      "nonmanifold": 0,
+      "noncontiguous": 0,
+      "zero_area_imported": 2
+    }
+  ],
+  "note": "Import can remove degenerate faces; original GLB findings remain authoritative for stored triangle counts."
+}

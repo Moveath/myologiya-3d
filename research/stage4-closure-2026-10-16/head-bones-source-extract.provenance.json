@@ -1,0 +1,31 @@
+{
+  "source": "build_head\\head_hi.glb",
+  "source_sha256": "343cfc3e1a47b43ce9bf7a558b08539df5d2408e5a304df966cf9ac2b0706f25",
+  "output_sha256": "3e04d0748f934661b1ca299b3a9e8b346e1a3e8b56081ae554ec4efda4860f28",
+  "source_bones": [
+    "b|frontal",
+    "b|occipital",
+    "b|sphenoid",
+    "b|ethmoid",
+    "b|vomer",
+    "b|mandible",
+    "b|parietal_right",
+    "b|parietal_left",
+    "b|temporal_right",
+    "b|temporal_left",
+    "b|maxilla_right",
+    "b|maxilla_left",
+    "b|zygomatic_right",
+    "b|zygomatic_left",
+    "b|palatine_right",
+    "b|palatine_left",
+    "b|nasal_right",
+    "b|nasal_left",
+    "b|lacrimal_right",
+    "b|lacrimal_left",
+    "b|inferior_concha_right",
+    "b|inferior_concha_left"
+  ],
+  "method": "Extract existing bone nodes only for packing regression. No mesh repair, no new anatomical coordinates, not published. Source geometry is the existing local hi derivative, not recovered original BP3D STL.",
+  "license": "Existing project BodyParts3D CC BY-SA 2.1 Japan attribution retained; LIC-001 remains."
+}

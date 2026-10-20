@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-16",
+  "python": {
+    "verify_head.py": "passed: 22 bones, 521 own TA98 records; 325 surface / 14 variant / 182 projection",
+    "test_skull_shared_stage5.py": "3 tests passed",
+    "verify_ta98.py": "762 terms compared; 3 pre-existing limb discrepancies retained in ta98.log"
+  },
+  "initialNodeAttempt": {
+    "status": "failed_test_fixture",
+    "reason": "Compared runtime-enriched shared relations with raw pins-head baseline; head_occipital_A02_1_04_006 gained existing clivus relations from unchanged pins-shared.js.",
+    "correction": "Snapshot raw head records before shared enrichment for baseline preservation; retain full runtime index for duplicate, relation-target and supplemental checks. No application/data change to satisfy this failure.",
+    "rerun": "passed; data-regression.json"
+  },
+  "geometry": "Blender MCP: 40 existing anchors, 18 diagnostic images, source and original scene preserved. No anatomical coordinate/extent accepted.",
+  "scope": "Full expensive head_positions suite not repeated with unchanged coordinates; targeted Blender review performed. UI results are separate actual Playwright records."
+}

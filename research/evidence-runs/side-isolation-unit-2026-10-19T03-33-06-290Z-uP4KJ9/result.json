@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "tests": [
+    "Legacy right IDs and left noModel cards retain correct side",
+    "Both sides, midline and unseparated sources remain available",
+    "Context source IDs are independently sided",
+    "Isolated muscle excludes unrelated bones, soft tissues and background",
+    "Muscle bone allowlist follows recorded attachments, including part filter",
+    "Only explicitly enabled muscle context survives isolation",
+    "Shared boundary participants survive bone isolation, not merely adjacent bones",
+    "Normal layers are delegated; unilateral filter applies before all overrides",
+    "No coordinates or geometry created for missing left bones",
+    "All original published models, catalogue and pin files have unchanged SHA-256"
+  ],
+  "modelIdentities": 517,
+  "pins": 2363
+}

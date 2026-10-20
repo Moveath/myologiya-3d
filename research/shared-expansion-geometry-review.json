@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-15",
+  "measurements": "verify/shared-expansion-geometry.json",
+  "scope": "Review of four pre-existing coordinates, not new coordinates or whole-feature segmentation. Surface proximity alone is not anatomical acceptance.",
+  "points": [
+    {"id":"cal_sinus_tarsi","status":"unverified","reason":"Point on lateral calcaneal surface below the apparent interval; exact location within sinus not established in two views. Preserve raw coordinate; suppress marker.","views":["shots/shared-landmarks/cal_sinus_tarsi-lateral.png","shots/shared-landmarks/cal_sinus_tarsi-superior.png"]},
+    {"id":"head_occipital_A02_1_04_006","status":"representative_component","scope":"occipital_clivus_surface","reason":"Visible point on endocranial basioccipital slope adjacent to sphenoid. Represents only the existing occipital component, not the full clivus.","views":["shots/shared-landmarks/head_occipital_A02_1_04_006-oblique.png"]},
+    {"id":"head_maxilla_right_A02_1_12_012","status":"unverified","reason":"Near both surfaces, but marker occluded in reviewed views; exact sutural location not accepted. Preserve raw coordinate; suppress marker.","views":["shots/shared-landmarks/head_maxilla_right_A02_1_12_012-oblique.png"]},
+    {"id":"head_maxilla_left_A02_1_12_012","status":"unverified","reason":"Near both surfaces, but marker occluded in reviewed views; exact sutural location not accepted. Preserve raw coordinate; suppress marker.","views":["shots/shared-landmarks/head_maxilla_left_A02_1_12_012-oblique.png"]}
+  ]
+}

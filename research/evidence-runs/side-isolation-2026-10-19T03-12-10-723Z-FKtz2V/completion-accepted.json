@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "changedFiles": [
+    "site/index.html",
+    "site/local.html",
+    "site/atlas-visibility.js",
+    "site/atlas-model-sides.js",
+    "scripts/make_model_sides.py",
+    "tools/verify-side-isolation.mjs",
+    "tools/prepare-side-isolation-mcp.mjs",
+    "ANATOMY_ISSUES.md",
+    "ANATOMY_PROGRESS.md",
+    "research/side-isolation-report-2026-10-19.md"
+  ],
+  "sourceHashes": {
+    "site/index.html": "f52d7371b81baeacd0c720c35301afa57734c7a9aaf4d00bb8b1a28e37230d12",
+    "site/local.html": "880d5cc7ea84547f581a2105629d6b09349db140c1cc51d8ecda94c70c51bfa7",
+    "site/atlas-visibility.js": "2a5af956d8b0c6709ea9a81068a64e6aaf2abe15f584fcd4298373fdcf3ac33a",
+    "site/atlas-model-sides.js": "655605c994463daeac6fd45fcbaa940b8818db178e1788c42685ea5e3a03c058",
+    "scripts/make_model_sides.py": "7af58640e81cc68c5faf12810be51a17baacb22ed51ff6eb59b1dbf1e7b276a1",
+    "tools/verify-side-isolation.mjs": "9cf4609bf8c7d5d9302b5a6ebcdae6fbff394d82df2013258ff227150ecf13f4",
+    "tools/prepare-side-isolation-mcp.mjs": "10d32a6956fbcbee4701cb23c24f3ce63f097fe5ef5f7c0aee3d6820debcb026",
+    "ANATOMY_ISSUES.md": "425aa1b2dc6b61a6bae8e37b1e92d7428b79e535772b715b3bf820400ff46c06",
+    "ANATOMY_PROGRESS.md": "2658e5b1df587d7e541d20c2aa79bb3adc3fc8519b33eb262899803c82ab43d3",
+    "research/side-isolation-report-2026-10-19.md": "c1c92c7698bd0d7525fc95e770b49d00741d51c78b4574d32c8c512f0f25f92a"
+  },
+  "reportLinksChecked": 8,
+  "originalPublishedModelsAndDataUnchanged": true,
+  "originalBlenderSceneRestored": true,
+  "newAnatomicalCoordinates": 0,
+  "newDependencies": 0,
+  "registry": {
+    "status": "passed",
+    "issues": 239,
+    "status_counts": {
+      "проверена": 63,
+      "требует проверки": 84,
+      "заблокирована": 59,
+      "открыта": 33
+    },
+    "scientific_pending": 140,
+    "stages": {
+      "5": [
+        41,
+        115
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        8,
+        29
+      ],
+      "6": [
+        0,
+        14
+      ],
+      "7": [
+        0,
+        45
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "supersedes": "completion.json: final part framing and report links",
+  "finalPartTests": [
+    "side-isolation-mcp-2026-10-19T03-41-26-560Z-hC8zxE",
+    "side-isolation-mcp-2026-10-19T03-41-26-652Z-UPFATm"
+  ]
+}

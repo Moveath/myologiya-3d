@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-16",
+  "tool": "Playwright MCP",
+  "scope": "UI/data regression, not anatomical acceptance or physical-device performance",
+  "initialAttempt": {
+    "status": "interrupted_without_result",
+    "reason": "Initial long-running browser batch interrupted; background server was not visible to a process check and logs were empty. No successful test claimed. Server subsequently run in managed exec session."
+  },
+  "newLandmarks": [
+    {
+      "status": "passed",
+      "anatomicalAcceptance": false,
+      "geometryAcceptance": false,
+      "width": 1280,
+      "theme": "dark",
+      "offset": 0,
+      "instances": 2,
+      "relationEdges": 10,
+      "preservedPinTransitions": 10,
+      "searchedCodes": [],
+      "existingMarkerKinds": [],
+      "errors": [],
+      "screenshot": "C:\\Users\\Пользователь\\Desktop\\учеба\\Миология 3D/shots/stage5-skull/1280-dark-batch-0.png",
+      "elapsedMs": 1732,
+      "coverageNote": "Shared clipping, isolation, xray and BVH are tested separately by verify-shared-landmarks.mjs."
+    },
+    {
+      "status": "passed",
+      "anatomicalAcceptance": false,
+      "geometryAcceptance": false,
+      "width": 1280,
+      "theme": "dark",
+      "offset": 2,
+      "instances": 26,
+      "relationEdges": 63,
+      "preservedPinTransitions": 63,
+      "searchedCodes": [
+        "A02.1.00.022",
+        "A02.1.00.025",
+        "A02.1.00.026",
+        "A02.1.00.048",
+        "A02.1.00.064",
+        "A02.1.00.065",
+        "A02.1.00.069",
+        "A02.1.00.070",
+        "A02.1.00.072",
+        "A02.1.00.073",
+        "A02.1.00.074",
+        "A02.1.00.082",
+        "A02.1.00.088",
+        "A02.1.00.096",
+        "A03.1.02.024"
+      ],
+      "existingMarkerKinds": [
+        "unknown",
+        "area",
+        "line",
+        "volume",
+        "point"
+      ],
+      "errors": [],
+      "screenshot": "C:\\Users\\Пользователь\\Desktop\\учеба\\Миология 3D/shots/stage5-skull/1280-dark-batch-2.png",
+      "elapsedMs": 9064,
+      "coverageNote": "Shared clipping, isolation, xray and BVH are tested separately by verify-shared-landmarks.mjs."
+    },
+    {
+      "status": "passed",
+      "anatomicalAcceptance": false,
+      "geometryAcceptance": false,
+      "width": 390,
+      "theme": "light",
+      "offset": 0,
+      "instances": 28,
+      "relationEdges": 73,
+      "preservedPinTransitions": 73,
+      "searchedCodes": [
+        "A02.1.00.022",
+        "A02.1.00.025",
+        "A02.1.00.026",
+        "A02.1.00.048",
+        "A02.1.00.064",
+        "A02.1.00.065",
+        "A02.1.00.069",
+        "A02.1.00.070",
+        "A02.1.00.072",
+        "A02.1.00.073",
+        "A02.1.00.074",
+        "A02.1.00.082",
+        "A02.1.00.088",
+        "A02.1.00.096",
+        "A03.1.02.024"
+      ],
+      "existingMarkerKinds": [
+        "unknown",
+        "area",
+        "line",
+        "volume",
+        "point"
+      ],
+      "errors": [],
+      "screenshot": "C:\\Users\\Пользователь\\Desktop\\учеба\\Миология 3D/shots/stage5-skull/390-light-batch-0.png",
+      "elapsedMs": 10237,
+      "coverageNote": "Shared clipping, isolation, xray and BVH are tested separately by verify-shared-landmarks.mjs."
+    }
+  ],
+  "existingLandmarks": [
+    {
+      "width": 1280,
+      "theme": "dark",
+      "status": "passed",
+      "distances": [
+        {
+          "id": "shared_jugular_foramen_right",
+          "mm": 0.0011001809161905992
+        },
+        {
+          "id": "shared_jugular_foramen_left",
+          "mm": 0.0025881481444415006
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "status": "passed",
+      "distances": [
+        {
+          "id": "shared_jugular_foramen_right",
+          "mm": 0.0011001809161905992
+        },
+        {
+          "id": "shared_jugular_foramen_left",
+          "mm": 0.0025881481444415006
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Independent focused cross-check of the fourteen proposed reference relationships before registration. Existing literature selection reused; no parallel E-utilities calls.",
+  "counts": {
+    "candidatesCrossChecked": 14,
+    "referenceBoneMembershipAcceptable": 14,
+    "unconditionalCompleteAnatomyAcceptances": 0,
+    "geometryAcceptances": 0
+  },
+  "scope": "An independently authored anatomical source pair for reference membership does not establish original experimental observations, presence in a specific specimen, a contour or a point.",
+  "rows": [
+    {
+      "code": "A02.1.00.022",
+      "issueId": "SH-022",
+      "bonePatterns": [
+        "frontal",
+        "parietal_{side}",
+        "temporal_{side}",
+        "sphenoid",
+        "zygomatic_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_temporal",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=155",
+          "locator": "PDF p.155, The Temporal Fossa: anterior wall, lateral boundary and floor",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_temporal",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=11",
+          "locator": "Printed/PDF p.11, Temporal fossa: Boundaries and Floor",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Accept whole fossa plus boundaries. Gray includes zygomatic in its floor wording, CBS separates four-bone floor and zygomatic anterior boundary; retain discrepancy, never label five bones as one agreed floor definition.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.025",
+      "issueId": "SH-025",
+      "bonePatterns": [
+        "sphenoid",
+        "maxilla_{side}",
+        "palatine_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_ppf",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=157",
+          "locator": "PDF p.157, Pterygomaxillary fissure and The Pterygopalatine Fossa",
+          "access": "full_text"
+        },
+        {
+          "id": "cap_ppf",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513269/",
+          "locator": "Structure and Function, first paragraph: bone membership only",
+          "access": "full_text"
+        }
+      ],
+      "requiredRestriction": "Accept only the three-bone membership. NBK513269 later boundary prose is not accepted here (temporalis lateral boundary and sphenoid/palatine-process wording); do not copy extra details.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.026",
+      "issueId": "SH-026",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "sphenoid"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_ppf",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=157",
+          "locator": "PDF p.157, Pterygomaxillary fissure and The Pterygopalatine Fossa",
+          "access": "full_text"
+        },
+        {
+          "id": "sneha_pmf",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40065930/",
+          "locator": "Abstract, first sentence: maxilla and sphenoid pterygoid process",
+          "access": "abstract"
+        }
+      ],
+      "requiredRestriction": "Both sources explicitly define the maxilla/sphenoid pterygoid divergence; no measurements imported.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.048",
+      "issueId": "SH-048",
+      "bonePatterns": [
+        "frontal",
+        "ethmoid",
+        "sphenoid"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_acf",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=163",
+          "locator": "PDF p.163, Anterior Fossa: first paragraph",
+          "access": "full_text"
+        },
+        {
+          "id": "kasai_acf",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31049216/",
+          "locator": "Abstract, first sentence and results: three bones, variable interfaces",
+          "access": "abstract"
+        }
+      ],
+      "requiredRestriction": "Three-bone membership corroborated by Gray floor description and Kasai abstract. Individual interfaces vary; no contour inferred.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.064",
+      "issueId": "SH-064",
+      "bonePatterns": [
+        "palatine_{side}",
+        "sphenoid"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "cbs_canals",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=15",
+          "locator": "Printed/PDF p.15, Palatovaginal canal and Vomerovaginal canal: only bony boundaries",
+          "access": "publisher_preview"
+        },
+        {
+          "id": "herz_pvc",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24083128/",
+          "locator": "Abstract, Objective; Results: variable bony wall, not model measurements",
+          "access": "abstract"
+        }
+      ],
+      "requiredRestriction": "CBS and Herzallah abstract explicitly name palatine sphenoidal process and sphenoid vaginal process. Variable identification/walls in cadavers do not establish this model.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.065",
+      "issueId": "SH-065",
+      "bonePatterns": [
+        "vomer",
+        "sphenoid"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "cbs_canals",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=15",
+          "locator": "Printed/PDF p.15, Palatovaginal canal and Vomerovaginal canal: only bony boundaries",
+          "access": "publisher_preview"
+        },
+        {
+          "id": "acad_vvc",
+          "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?q=canal+vom%C3%A9ro+rostral",
+          "locator": "Entry canal voméro-vaginal, first definition: ala of vomer and vaginal process",
+          "access": "full_text"
+        }
+      ],
+      "requiredRestriction": "CBS and Académie directly support vomer ala + sphenoid vaginal process. Académie separates vomerovaginal from vomerorostral. Do not import conflicting statements on contents, or assume bilateral presence in this specimen.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.069",
+      "issueId": "SH-069",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_rim",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+          "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Aperture defined by the three-bone rim; not the seven-bone orbital walls.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.070",
+      "issueId": "SH-070",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_rim",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+          "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Whole orbital rim is frontal/maxilla/zygomatic; not orbital cavity.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.072",
+      "issueId": "SH-072",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_rim",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+          "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Inferior rim is maxilla medially and zygomatic laterally. Preserve local maxillary contribution with explicit partOf/scope.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.073",
+      "issueId": "SH-073",
+      "bonePatterns": [
+        "frontal",
+        "zygomatic_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_rim",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+          "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Lateral entrance rim is frontal + zygomatic; sphenoid lateral wall must not be imported.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.074",
+      "issueId": "SH-074",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_rim",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+          "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "Medial entrance rim is frontal + frontal process of maxilla; lacrimal/ethmoid/sphenoid medial wall must not be imported.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.082",
+      "issueId": "SH-082",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "lacrimal_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_lacrimal",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=122",
+          "locator": "PDF p.122, The Frontal Process: last part; PDF p.126, Lacrimal orbital surface",
+          "access": "full_text"
+        },
+        {
+          "id": "dcr_fossa",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557851/",
+          "locator": "Anatomy and Physiology: Lacrimal Sac and Duct; Endoscopic Nasal Anatomy, first paragraph",
+          "access": "full_text"
+        }
+      ],
+      "requiredRestriction": "Lacrimal sac fossa is frontal process maxilla + lacrimal bone. Neither local lacrimal groove alone equals the whole fossa; no size accepted.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.088",
+      "issueId": "SH-088",
+      "bonePatterns": [
+        "nasal_right",
+        "nasal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_nasal",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=170",
+          "locator": "PDF p.170, The Anterior Nasal Aperture; following paragraph on choanae",
+          "access": "full_text"
+        },
+        {
+          "id": "cbs_rim",
+          "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+          "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+          "access": "publisher_preview"
+        }
+      ],
+      "requiredRestriction": "One bony anterior nasal aperture bordered by the paired nasal and maxillary bones, not two nostrils.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    },
+    {
+      "code": "A02.1.00.096",
+      "issueId": "SH-096",
+      "bonePatterns": [
+        "sphenoid",
+        "vomer",
+        "palatine_{side}"
+      ],
+      "decision": "accept_reference_bone_membership_with_stated_scope_only",
+      "acceptedRole": "boundaryContribution",
+      "sourcesDirectlyRead": [
+        {
+          "id": "gray_nasal",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=170",
+          "locator": "PDF p.170, The Anterior Nasal Aperture; following paragraph on choanae",
+          "access": "full_text"
+        },
+        {
+          "id": "nasal_choana",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK544232/?report=printable",
+          "locator": "Structure and Function > Choanae: four boundary bullets",
+          "access": "full_text"
+        }
+      ],
+      "requiredRestriction": "Three-bone membership agrees. Gray additionally names vomer ala in upper boundary; NBK gives abbreviated sphenoid roof. Avoid falsely identical precise boundary roles; no contour accepted.",
+      "geometryAccepted": false,
+      "coordinatesAccepted": false
+    }
+  ],
+  "stopConditions": [
+    "Do not convert boundaryContribution to equal floor/wall roles for every listed bone.",
+    "Do not claim existing model contains both named canals on both sides solely from reference definitions.",
+    "Do not treat canonical region/contour entities as independently duplicated local bone parts.",
+    "Do not close pending geometry or coordinate issues on this literature result."
+  ],
+  "sourceQualityNotes": [
+    "Gray/CBS differ in the temporal-fossa floor scope; both support whole-fossa membership including zygomatic.",
+    "NBK513269 is used only for directly checked three-bone membership, not every boundary phrase.",
+    "The Académie URL search returns both vomerorostral and vomerovaginal entries; only the exact latter definition was used.",
+    "CBS and Académie canal-content claims differ and are outside the accepted field."
+  ],
+  "filesModified": "Only this cross-check JSON; no source code, anatomical data, models or shared-source-review.json altered.",
+  "registryClosureReview": {
+    "existingCriteriaRead": "ANATOMY_ISSUES.md; no criteria edited",
+    "potentiallyClosableAfterSuccessfulIntegrationAndUi": [
+      "SH-026",
+      "SH-069",
+      "SH-070",
+      "SH-072",
+      "SH-073",
+      "SH-074",
+      "SH-082",
+      "SH-088",
+      "SH-096"
+    ],
+    "retainPendingDespiteReferenceImplementation": {
+      "SH-022": "Criterion explicitly requires all boundary roles; floor/anterior-wall source scope still differs. Whole-region membership implemented only.",
+      "SH-025": "Criterion explicitly requires all boundaries; second source accepted only for bone membership because some boundary prose is problematic.",
+      "SH-048": "Criterion explicitly requires all boundary contributions; second source abstract supports three bones and variable interfaces, not a full independent boundary review.",
+      "SH-064": "Existing criterion additionally requires individual variants and identity of canals; reference membership cannot close specimen review.",
+      "SH-065": "Existing criterion additionally requires individual variants and identity of canals; reference membership cannot close specimen review.",
+      "CO-ZYGOTEMP-right": "No accepted line/anchor on current specimen.",
+      "CO-ZYGOTEMP-left": "No accepted line/anchor on current specimen."
+    },
+    "pin002": {
+      "existingId": "PIN-002",
+      "oldRecords": 32,
+      "additionalRecords": 28,
+      "totalRecords": 60,
+      "duplicateIdsAcrossSets": 0,
+      "decision": "Expand existing mass list; preserve prior32 and historical count, append28 including2temporozygomatic sutures. Do not create another missing-coordinates issue."
+    },
+    "semanticKinds": {
+      "proposedId": "PIN-SKULL-KIND",
+      "exactExistingIssueFound": false,
+      "records": 402,
+      "stage": 5,
+      "status": "требует проверки",
+      "recordManifest": "research/stage5-skull-2026-10-16/catalog-review.json -> records[geometryKind==unknown]",
+      "overlapNote": "Semantic classification is distinct from GEO-001 full-extent verification, PIN-005 legacy localization fallback and VIS-007 stage6 surface highlighting. Record sets overlap and must not be summed as additional structures.",
+      "closureScope": "Per-ID evidence-backed anatomical representation; no automatic regex classification and no elevation of coordinate/shape certainty."
+    }
+  }
+}

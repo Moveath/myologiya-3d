@@ -1,0 +1,29 @@
+{
+  "report": "research/stage5-arm-forearm-report-2026-10-18.md",
+  "data": "data-regression.json",
+  "records": "reviewed-records.json",
+  "remaining": "remaining-records.json",
+  "blender": "blender-arm-forearm.json",
+  "trimesh": "trimesh-arm-forearm.json",
+  "pubmed": "pubmed-verified.json",
+  "leftForearm": "left-forearm-resources.json",
+  "registry": "registry-final.json",
+  "playwright": [
+    "../stage5-arm-forearm-mcp-2026-10-18T18-56-16-271Z-dDj8c5/result.json",
+    "../stage5-arm-forearm-mcp-2026-10-18T18-58-01-739Z-1GUYNJ/result.json"
+  ],
+  "ta98": {
+    "command": ".venv/Scripts/python.exe -X utf8 verify/verify_ta98.py",
+    "exitCode": 0,
+    "terms": 762,
+    "knownDifferences": [
+      "A02.5.10.015",
+      "A02.5.10.017",
+      "A02.5.11.007"
+    ],
+    "missing": [],
+    "extra": []
+  },
+  "acceptedNewCoordinates": 0,
+  "originalGLBChanged": false
+}

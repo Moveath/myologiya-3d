@@ -20,6 +20,12 @@ T.update({
 })
 for c in ('A02.2.00.001','A02.2.00.009'): T[c]=NT[c]
 DESCRIPTIONS={c:dict(v) for c,v in ND.items() if c in T}
+# The inherited locator targeted cervical figures. Use the actual general and
+# lumbar sections without changing the shared neck source object.
+LUMBAR_OPENSTAX=ref('OpenStax — The Vertebral Column',OPENSTAX['url'],
+ 'General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs.')
+for desc in DESCRIPTIONS.values():
+    desc['refs']=[LUMBAR_OPENSTAX if r['url']==OPENSTAX['url'] else dict(r) for r in desc['refs']]
 # The cervical ring-apophysis studies in neck_terms do not attest lumbar levels.
 DESCRIPTIONS['A02.2.01.004']=dict(x='Кольцевая краевая область тела позвонка.',refs=[AS,ref('Gray (1918) — Ossification of the Vertebral Column',GRAY_URL+'#page=46','PDF с.46, Ossification of the Vertebral Column: secondary centers на верхней и нижней поверхностях тела; Fig.103.')],scope='anatomy',note='Возрастную стадию и границы эпифиза нельзя установить по внешней сетке взрослой кости.')
 for c,x in {
@@ -28,8 +34,8 @@ for c,x in {
  'A02.2.04.004':'Выступ на задней стороне верхнего суставного отростка.',
 }.items(): DESCRIPTIONS[c]=dict(x=x,refs=[GRAY,AS],scope='anatomy')
 DESCRIPTIONS['A02.2.04.004']['note']='В электронной IFAA написание mammillaris, в русском издании Колесникова — mamillaris; это орфографическое различие названия одного образования.'
-DESCRIPTIONS['A02.2.04.001']=dict(x='Пять поясничных позвонков между грудным отделом и крестцом.',refs=[GRAY,OPENSTAX],scope='anatomy')
-DESCRIPTIONS['A02.2.00.007']=dict(x='Поясничный изгиб позвоночного столба выпуклостью вперёд.',refs=[ref('Gray (1918) — Vertebral Column as a Whole',GRAY_URL+'#page=52','PDF с.52, Curves — lumbar curve.'),OPENSTAX],scope='anatomy')
+DESCRIPTIONS['A02.2.04.001']=dict(x='Пять поясничных позвонков между грудным отделом и крестцом.',refs=[GRAY,LUMBAR_OPENSTAX],scope='anatomy')
+DESCRIPTIONS['A02.2.00.007']=dict(x='Поясничный изгиб позвоночного столба выпуклостью вперёд.',refs=[ref('Gray (1918) — Vertebral Column as a Whole',GRAY_URL+'#page=52','PDF с.52, Curves — lumbar curve.'),LUMBAR_OPENSTAX],scope='anatomy')
 DESCRIPTIONS['A02.2.01.013']=dict(x='Общее название бокового отростка позвонка. В поясничной области его соотношение с рёберным и добавочным отростками требует региональной терминологии.',refs=[GRAY,AS],scope='anatomy',note='Не обозначает дополнительный независимый выступ рядом с рёберным отростком. В разных учебных описаниях термин transverse process применяется к латеральному отростку в более широком смысле.')
 WHOLE_TERMS=['A02.2.00.001','A02.2.00.007','A02.2.00.009','A02.2.01.008','A02.2.04.001']
 APPLICABILITY_NOTE='Общие и поясничные списки TA98 применены к L1–L5 редакционно по анатомическим источникам; это не отдельные официальные количества IFAA для каждого позвонка. Каталог не подтверждает форму конкретной сетки.'
@@ -37,8 +43,14 @@ APPLICATION_NOTES={f'lumbar_{i}':'Общие образования позвон
 GENERAL=[f'A02.2.01.{i:03}' for i in range(2,18) if i!=8]
 BONE_CODES={f'lumbar_{i}':GENERAL+[f'A02.2.04.{j:03}' for j in (2,3,4)] for i in range(1,6)}
 ORD=['Первый','Второй','Третий','Четвёртый','Пятый']
-BONES={f'lumbar_{i}':dict(ru=f'{ORD[i-1]} поясничный позвонок (L{i})',lat=T['A02.2.04.001'][0],code='A02.2.04.001',level=f'L{i}',x=f'Позвонок L{i} поясничного отдела: тело, дуга и отростки. Поясничный отдел расположен между грудным отделом и крестцом.',refs=[GRAY,OPENSTAX],note=APPLICATION_NOTES[f'lumbar_{i}'],termNote='Латынь и код — групповой термин TA98; L1–L5 обозначают выбранный уровень, а не пять отдельных строк TA98.') for i in range(1,6)}
+BONES={f'lumbar_{i}':dict(ru=f'{ORD[i-1]} поясничный позвонок (L{i})',lat=T['A02.2.04.001'][0],code='A02.2.04.001',level=f'L{i}',x=f'Позвонок L{i} поясничного отдела: тело, дуга и отростки. Поясничный отдел расположен между грудным отделом и крестцом.',refs=[GRAY,LUMBAR_OPENSTAX],note=APPLICATION_NOTES[f'lumbar_{i}'],termNote='Латынь и код — групповой термин TA98; L1–L5 обозначают выбранный уровень, а не пять отдельных строк TA98.') for i in range(1,6)}
 for v in BONES.values(): v.update(g='b_lumbar',sub='lumbar',sec='leg')
+BONES['lumbar_5']['x']+=' В типичном L5 передняя высота тела больше задней; это связано с пояснично-крестцовым углом. Особенности конкретной сетки отдельно не приняты.'
+BONES['lumbar_5']['refs']=[GRAY,ref('Dartmouth — Basic Human Anatomy, Chapter 39',
+ 'https://humananatomy.host.dartmouth.edu/BHA/public_html/part_7/chapter_39.html',
+ 'Lumbar Vertebrae: fifth lumbar vertebra and lumbosacral angle.'),ref('NCBI Bookshelf — Anatomy, Back, Lumbar Vertebrae',
+ 'https://www.ncbi.nlm.nih.gov/books/NBK459278/',
+ 'Indexed Structure and Function excerpt: L5 anterior height exceeds posterior height; full page unavailable (reCAPTCHA), 2026-10-18.')]
 
 def description_for(bone,code):
     return dict(DESCRIPTIONS[code])

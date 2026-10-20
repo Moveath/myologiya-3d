@@ -1,0 +1,24 @@
+{
+  "incidents": [
+    {
+      "file": "trimesh-pelvis.json",
+      "status": "failed_partial_json",
+      "reason": "numpy.bool_ was not JSON serializable after measurements. Partial file retained.",
+      "fix": "Convert side result to bool and serialize complete payload before opening output.",
+      "successfulReplacement": "trimesh-pelvis-v2.json"
+    },
+    {
+      "file": "../stage5-pelvis-mcp-2026-10-18T16-30-44-453Z-FQI3H7/result.json",
+      "status": "failed_test_assertion",
+      "reason": "Compared rays array to numeric 10. All preceding phases completed; production app unchanged.",
+      "fix": "Check rays.length, actual BVH count and nonempty hits.",
+      "successfulRecheck": "desktop-recheck.json"
+    },
+    {
+      "file": "update-registry.py",
+      "status": "prewrite_assertion_corrected",
+      "reason": "Initial ID parser omitted historical IDs with underscores.",
+      "fix": "Read all issue heading IDs; assert 221 prior cards before any write. Final result validates 224 and retained history."
+    }
+  ]
+}

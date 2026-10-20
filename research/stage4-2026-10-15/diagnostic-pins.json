@@ -1,0 +1,265 @@
+[
+  {
+    "id": "hum_collum_chirurgicum",
+    "b": "humerus",
+    "p": [
+      -0.19187,
+      1.29025,
+      0.07466
+    ],
+    "n": [
+      -0.875,
+      0.151,
+      -0.46
+    ]
+  },
+  {
+    "id": "hum_corpus",
+    "b": "humerus",
+    "p": [
+      -0.20344,
+      1.19513,
+      0.07618
+    ],
+    "n": [
+      -0.376,
+      -0.086,
+      0.923
+    ]
+  },
+  {
+    "id": "hum_facies_anterolateralis",
+    "b": "humerus",
+    "p": [
+      -0.20857,
+      1.16143,
+      0.06735
+    ],
+    "n": [
+      -0.999,
+      0.028,
+      -0.032
+    ]
+  },
+  {
+    "id": "hum_sulcus_n_radialis",
+    "b": "humerus",
+    "p": [
+      -0.20379,
+      1.19513,
+      0.05846
+    ],
+    "n": [
+      -0.625,
+      0.165,
+      -0.762
+    ]
+  },
+  {
+    "id": "rad_corpus",
+    "b": "radius",
+    "p": [
+      -0.25041,
+      0.93067,
+      0.08843
+    ],
+    "n": [
+      0.211,
+      0.161,
+      0.964
+    ]
+  },
+  {
+    "id": "rad_facies_anterior",
+    "b": "radius",
+    "p": [
+      -0.25084,
+      0.91851,
+      0.09083
+    ],
+    "n": [
+      0.298,
+      0.182,
+      0.937
+    ]
+  },
+  {
+    "id": "carp_os_centrale",
+    "b": "scaphoid",
+    "p": [
+      -0.26405,
+      0.80663,
+      0.11404
+    ],
+    "n": [
+      0.664,
+      -0.698,
+      -0.268
+    ]
+  },
+  {
+    "id": "tal_os_trigonum",
+    "b": "talus",
+    "p": [
+      -0.07989,
+      0.04394,
+      0.03224
+    ],
+    "n": [
+      -0.551,
+      -0.365,
+      -0.75
+    ]
+  },
+  {
+    "id": "cal_sinus_tarsi",
+    "b": "calcaneus",
+    "p": [
+      -0.09929,
+      0.03444,
+      0.0639
+    ],
+    "n": [
+      -0.597,
+      0.52,
+      -0.611
+    ],
+    "anchorStatus": "unverified",
+    "side": "right",
+    "related": [
+      "calcaneus",
+      "talus"
+    ]
+  },
+  {
+    "id": "head_occipital_A02_1_04_006",
+    "b": "occipital",
+    "p": [
+      -0.00002,
+      1.51962,
+      0.09944
+    ],
+    "n": [
+      0.005,
+      0.482,
+      -0.876
+    ],
+    "loc": "surface",
+    "related": [
+      "occipital",
+      "sphenoid"
+    ]
+  },
+  {
+    "id": "head_maxilla_right_A02_1_12_012",
+    "b": "maxilla_right",
+    "p": [
+      -0.03824,
+      1.50943,
+      0.15662
+    ],
+    "n": [
+      -0.132,
+      0.77,
+      0.624
+    ],
+    "loc": "surface",
+    "anchorStatus": "unverified",
+    "side": "right",
+    "related": [
+      "maxilla_right",
+      "zygomatic_right"
+    ]
+  },
+  {
+    "id": "head_maxilla_left_A02_1_12_012",
+    "b": "maxilla_left",
+    "p": [
+      0.03565,
+      1.50939,
+      0.15681
+    ],
+    "n": [
+      -0.024,
+      0.678,
+      0.735
+    ],
+    "loc": "surface",
+    "anchorStatus": "unverified",
+    "side": "left",
+    "related": [
+      "maxilla_left",
+      "zygomatic_left"
+    ]
+  },
+  {
+    "id": "head_zygomatic_right_A02_1_14_011",
+    "b": "zygomatic_right",
+    "p": [
+      -0.04038,
+      1.50903,
+      0.15526
+    ],
+    "n": [
+      0.673,
+      0.618,
+      0.406
+    ],
+    "loc": "projection"
+  },
+  {
+    "id": "head_zygomatic_left_A02_1_14_011",
+    "b": "zygomatic_left",
+    "p": [
+      0.03908,
+      1.509,
+      0.15525
+    ],
+    "n": [
+      -0.583,
+      0.702,
+      0.409
+    ],
+    "loc": "projection"
+  },
+  {
+    "id": "shared_jugular_foramen_right",
+    "b": "temporal_right",
+    "p": [
+      -0.03777,
+      1.50995,
+      0.07946
+    ],
+    "n": [
+      -0.069,
+      -0.642,
+      -0.764
+    ],
+    "loc": "projection",
+    "side": "right",
+    "related": [
+      "temporal_right",
+      "occipital"
+    ]
+  },
+  {
+    "id": "shared_jugular_foramen_left",
+    "b": "temporal_left",
+    "p": [
+      0.03647,
+      1.5099,
+      0.07951
+    ],
+    "n": [
+      0.102,
+      -0.573,
+      -0.813
+    ],
+    "loc": "projection",
+    "side": "left",
+    "related": [
+      "temporal_left",
+      "occipital"
+    ]
+  }
+]

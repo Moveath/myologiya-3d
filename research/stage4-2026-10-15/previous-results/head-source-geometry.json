@@ -1,0 +1,674 @@
+{
+  "status": "passed",
+  "scope": "All 22 source bones in both distributed GLBs; compression and identity only, not anatomical completeness",
+  "metric": "Maximum bidirectional nearest-vertex distance; a conservative vertex-to-surface bound, not continuous surface Hausdorff distance",
+  "tolerance_mm": 0.03,
+  "assets": {
+    "head-glb.txt": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+    "head-q-glb.txt": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b"
+  },
+  "checked": 44,
+  "maximum_distance_mm": 0.010736916331433609,
+  "records": [
+    {
+      "file": "head-glb.txt",
+      "bone": "frontal",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52734.stl",
+          "sha256": "0791c2e2dde886005d3d5997b75a05353d3ae20d908fc74ab820a58520d26f46"
+        }
+      ],
+      "source_triangles": 33062,
+      "distributed_triangles": 33062,
+      "maximum_bidirectional_vertex_distance_mm": 0.010539167207254034,
+      "source_to_distributed_maximum_mm": 0.010539167207254034,
+      "distributed_to_source_maximum_mm": 0.010539167207254034
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "occipital",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52735.stl",
+          "sha256": "22467369bae988b5afc2699c631f3ae0d2db2ef65a624ccb5c6a259d767415b5"
+        }
+      ],
+      "source_triangles": 27812,
+      "distributed_triangles": 27812,
+      "maximum_bidirectional_vertex_distance_mm": 0.010736916331433609,
+      "source_to_distributed_maximum_mm": 0.010736916331433609,
+      "distributed_to_source_maximum_mm": 0.010736916331433609
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "sphenoid",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52736.stl",
+          "sha256": "76e95b3525d5e94964f5ed5308e8234f78945b9c2ffdc6065e5d3a6e2dc08777"
+        }
+      ],
+      "source_triangles": 15322,
+      "distributed_triangles": 15322,
+      "maximum_bidirectional_vertex_distance_mm": 0.010544713847697562,
+      "source_to_distributed_maximum_mm": 0.010544713847697562,
+      "distributed_to_source_maximum_mm": 0.010544713847697562
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "ethmoid",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52740.stl",
+          "sha256": "732b19d2f1784564cdcbe3dd892eebbc1d0274a62491fecb3779186371faaf93"
+        }
+      ],
+      "source_triangles": 7774,
+      "distributed_triangles": 7774,
+      "maximum_bidirectional_vertex_distance_mm": 0.010395836202062836,
+      "source_to_distributed_maximum_mm": 0.010395836202062836,
+      "distributed_to_source_maximum_mm": 0.010395836202062836
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "vomer",
+      "source_files": [
+        {
+          "file": "stl_head/FMA9710.stl",
+          "sha256": "8504c22ef2017bf56768f1127d607ccb0947dab8b2893e546d0ececc76d28d9b"
+        }
+      ],
+      "source_triangles": 2422,
+      "distributed_triangles": 2422,
+      "maximum_bidirectional_vertex_distance_mm": 0.010074250617378756,
+      "source_to_distributed_maximum_mm": 0.010074250617378756,
+      "distributed_to_source_maximum_mm": 0.010074250617378756
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "mandible",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52748.stl",
+          "sha256": "e0321ce797a06e8e14fea22261084262cf28099172224e22f44a60d66c42a888"
+        }
+      ],
+      "source_triangles": 21658,
+      "distributed_triangles": 21658,
+      "maximum_bidirectional_vertex_distance_mm": 0.010644794048557622,
+      "source_to_distributed_maximum_mm": 0.010644794048557622,
+      "distributed_to_source_maximum_mm": 0.010644794048557622
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "parietal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52788.stl",
+          "sha256": "b2bb58e09216066e45af9d74894b8974cbe84bc3a0fa4db5b614670272d5c428"
+        }
+      ],
+      "source_triangles": 29734,
+      "distributed_triangles": 29734,
+      "maximum_bidirectional_vertex_distance_mm": 0.01071154885007243,
+      "source_to_distributed_maximum_mm": 0.01071154885007243,
+      "distributed_to_source_maximum_mm": 0.01071154885007243
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "parietal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52789.stl",
+          "sha256": "fbff8a906a4a96ff287b842c5a14ebbee2d96c2df6d554608861b011836a1346"
+        }
+      ],
+      "source_triangles": 30250,
+      "distributed_triangles": 30250,
+      "maximum_bidirectional_vertex_distance_mm": 0.010616764666691213,
+      "source_to_distributed_maximum_mm": 0.010616764666691213,
+      "distributed_to_source_maximum_mm": 0.010616764666691213
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "temporal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52738.stl",
+          "sha256": "c4d134473a62f43ab18efa415f394ff6c01a07ca14664a640a4ba787eaa6cadc"
+        }
+      ],
+      "source_triangles": 11274,
+      "distributed_triangles": 11274,
+      "maximum_bidirectional_vertex_distance_mm": 0.010495760555603825,
+      "source_to_distributed_maximum_mm": 0.010495760555603825,
+      "distributed_to_source_maximum_mm": 0.010495760555603825
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "temporal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52739.stl",
+          "sha256": "c42357deb26fb0468d7a2f4b471e7e7d8e7363cc5abe7e6d90e982c3d1ae449f"
+        }
+      ],
+      "source_triangles": 11208,
+      "distributed_triangles": 11208,
+      "maximum_bidirectional_vertex_distance_mm": 0.010271306702983775,
+      "source_to_distributed_maximum_mm": 0.010271306702983775,
+      "distributed_to_source_maximum_mm": 0.010271306702983775
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "maxilla_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53649.stl",
+          "sha256": "a83de38623317730c5f6c47be8c98b1fd7780b23317d09ca35e1f4f0735dd02e"
+        }
+      ],
+      "source_triangles": 14148,
+      "distributed_triangles": 14148,
+      "maximum_bidirectional_vertex_distance_mm": 0.010673737682390022,
+      "source_to_distributed_maximum_mm": 0.010673737682390022,
+      "distributed_to_source_maximum_mm": 0.010673737682390022
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "maxilla_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53650.stl",
+          "sha256": "875a8fafabc5df5c11d9cdc6c99ac37326c7f77c5ab5987e8d5b3d00e0d8b907"
+        }
+      ],
+      "source_triangles": 14506,
+      "distributed_triangles": 14506,
+      "maximum_bidirectional_vertex_distance_mm": 0.01049101339592842,
+      "source_to_distributed_maximum_mm": 0.01049101339592842,
+      "distributed_to_source_maximum_mm": 0.01049101339592842
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "zygomatic_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52892.stl",
+          "sha256": "a7af6f93c52cd816c3b5f134811ebe1cba5766e0ab170747cff37c089cbcc001"
+        }
+      ],
+      "source_triangles": 4612,
+      "distributed_triangles": 4612,
+      "maximum_bidirectional_vertex_distance_mm": 0.010300653487230383,
+      "source_to_distributed_maximum_mm": 0.010300653487230383,
+      "distributed_to_source_maximum_mm": 0.010300653487230383
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "zygomatic_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52893.stl",
+          "sha256": "a47bff85f4f2fbde1ed67cdb79688414616f9ca05187425bc2ffa1b841295feb"
+        }
+      ],
+      "source_triangles": 4560,
+      "distributed_triangles": 4560,
+      "maximum_bidirectional_vertex_distance_mm": 0.010235993245932022,
+      "source_to_distributed_maximum_mm": 0.010235993245932022,
+      "distributed_to_source_maximum_mm": 0.010235993245932022
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "palatine_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53655.stl",
+          "sha256": "318b033125aa504ed5583e61c4a6808a7fd998835d2dceef9df17c327726582b"
+        }
+      ],
+      "source_triangles": 3592,
+      "distributed_triangles": 3592,
+      "maximum_bidirectional_vertex_distance_mm": 0.010647980813411836,
+      "source_to_distributed_maximum_mm": 0.010647980813411836,
+      "distributed_to_source_maximum_mm": 0.010647980813411836
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "palatine_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53656.stl",
+          "sha256": "1ac7ac814f39eb834d2f175002825085c6b04ecc94751ec247ab7c0161cabe37"
+        }
+      ],
+      "source_triangles": 3642,
+      "distributed_triangles": 3642,
+      "maximum_bidirectional_vertex_distance_mm": 0.010249769858197463,
+      "source_to_distributed_maximum_mm": 0.010249769858197463,
+      "distributed_to_source_maximum_mm": 0.010249769858197463
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "nasal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53647.stl",
+          "sha256": "a2c4e73f0346df903e9fcc4c7522c2ce9a82fd65f2f8f2993867812306577303"
+        }
+      ],
+      "source_triangles": 1024,
+      "distributed_triangles": 1024,
+      "maximum_bidirectional_vertex_distance_mm": 0.010156180611023734,
+      "source_to_distributed_maximum_mm": 0.010156180611023734,
+      "distributed_to_source_maximum_mm": 0.010156180611023734
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "nasal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53648.stl",
+          "sha256": "576a778c98145cbe676ca7c97f599430f8f52ed367ba4907d7ab1ebb720bb5ca"
+        }
+      ],
+      "source_triangles": 1124,
+      "distributed_triangles": 1124,
+      "maximum_bidirectional_vertex_distance_mm": 0.009693899536299483,
+      "source_to_distributed_maximum_mm": 0.009693899536299483,
+      "distributed_to_source_maximum_mm": 0.009693899536299483
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "lacrimal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53645.stl",
+          "sha256": "19849965bec68b62f2d6c08968ab1d421cddd433f65e7d7e60fedaa4b5cf3466"
+        }
+      ],
+      "source_triangles": 1114,
+      "distributed_triangles": 1114,
+      "maximum_bidirectional_vertex_distance_mm": 0.009990208860771692,
+      "source_to_distributed_maximum_mm": 0.009990208860771692,
+      "distributed_to_source_maximum_mm": 0.009990208860771692
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "lacrimal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53646.stl",
+          "sha256": "9c3dc16643b4d11476b055f6785775a725d6e1cdf7497e26d4c634fda446e010"
+        }
+      ],
+      "source_triangles": 1152,
+      "distributed_triangles": 1152,
+      "maximum_bidirectional_vertex_distance_mm": 0.009883935298508362,
+      "source_to_distributed_maximum_mm": 0.009883935298508362,
+      "distributed_to_source_maximum_mm": 0.009883935298508362
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "inferior_concha_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA54737.stl",
+          "sha256": "7797ac8cb5c391b89091f704b810ee72d0a2e6f2bc31e088d9d9732c12606acf"
+        }
+      ],
+      "source_triangles": 1616,
+      "distributed_triangles": 1616,
+      "maximum_bidirectional_vertex_distance_mm": 0.010311857693045452,
+      "source_to_distributed_maximum_mm": 0.010311857693045452,
+      "distributed_to_source_maximum_mm": 0.010311857693045452
+    },
+    {
+      "file": "head-glb.txt",
+      "bone": "inferior_concha_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA54738.stl",
+          "sha256": "b5433ce863c424e22f113062e23812b81afbbdacac33b5afa73ecab03b6ebeff"
+        }
+      ],
+      "source_triangles": 1484,
+      "distributed_triangles": 1484,
+      "maximum_bidirectional_vertex_distance_mm": 0.010080082798569335,
+      "source_to_distributed_maximum_mm": 0.010080082798569335,
+      "distributed_to_source_maximum_mm": 0.010080082798569335
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "frontal",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52734.stl",
+          "sha256": "0791c2e2dde886005d3d5997b75a05353d3ae20d908fc74ab820a58520d26f46"
+        }
+      ],
+      "source_triangles": 33062,
+      "distributed_triangles": 33062,
+      "maximum_bidirectional_vertex_distance_mm": 0.010539167207254034,
+      "source_to_distributed_maximum_mm": 0.010539167207254034,
+      "distributed_to_source_maximum_mm": 0.010539167207254034
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "occipital",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52735.stl",
+          "sha256": "22467369bae988b5afc2699c631f3ae0d2db2ef65a624ccb5c6a259d767415b5"
+        }
+      ],
+      "source_triangles": 27812,
+      "distributed_triangles": 27812,
+      "maximum_bidirectional_vertex_distance_mm": 0.010736916331433609,
+      "source_to_distributed_maximum_mm": 0.010736916331433609,
+      "distributed_to_source_maximum_mm": 0.010736916331433609
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "sphenoid",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52736.stl",
+          "sha256": "76e95b3525d5e94964f5ed5308e8234f78945b9c2ffdc6065e5d3a6e2dc08777"
+        }
+      ],
+      "source_triangles": 15322,
+      "distributed_triangles": 15322,
+      "maximum_bidirectional_vertex_distance_mm": 0.010544713847697562,
+      "source_to_distributed_maximum_mm": 0.010544713847697562,
+      "distributed_to_source_maximum_mm": 0.010544713847697562
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "ethmoid",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52740.stl",
+          "sha256": "732b19d2f1784564cdcbe3dd892eebbc1d0274a62491fecb3779186371faaf93"
+        }
+      ],
+      "source_triangles": 7774,
+      "distributed_triangles": 7774,
+      "maximum_bidirectional_vertex_distance_mm": 0.010395836202062836,
+      "source_to_distributed_maximum_mm": 0.010395836202062836,
+      "distributed_to_source_maximum_mm": 0.010395836202062836
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "vomer",
+      "source_files": [
+        {
+          "file": "stl_head/FMA9710.stl",
+          "sha256": "8504c22ef2017bf56768f1127d607ccb0947dab8b2893e546d0ececc76d28d9b"
+        }
+      ],
+      "source_triangles": 2422,
+      "distributed_triangles": 2422,
+      "maximum_bidirectional_vertex_distance_mm": 0.010074250617378756,
+      "source_to_distributed_maximum_mm": 0.010074250617378756,
+      "distributed_to_source_maximum_mm": 0.010074250617378756
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "mandible",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52748.stl",
+          "sha256": "e0321ce797a06e8e14fea22261084262cf28099172224e22f44a60d66c42a888"
+        }
+      ],
+      "source_triangles": 21658,
+      "distributed_triangles": 21658,
+      "maximum_bidirectional_vertex_distance_mm": 0.010644794048557622,
+      "source_to_distributed_maximum_mm": 0.010644794048557622,
+      "distributed_to_source_maximum_mm": 0.010644794048557622
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "parietal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52788.stl",
+          "sha256": "b2bb58e09216066e45af9d74894b8974cbe84bc3a0fa4db5b614670272d5c428"
+        }
+      ],
+      "source_triangles": 29734,
+      "distributed_triangles": 29734,
+      "maximum_bidirectional_vertex_distance_mm": 0.01071154885007243,
+      "source_to_distributed_maximum_mm": 0.01071154885007243,
+      "distributed_to_source_maximum_mm": 0.01071154885007243
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "parietal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52789.stl",
+          "sha256": "fbff8a906a4a96ff287b842c5a14ebbee2d96c2df6d554608861b011836a1346"
+        }
+      ],
+      "source_triangles": 30250,
+      "distributed_triangles": 30250,
+      "maximum_bidirectional_vertex_distance_mm": 0.010616764666691213,
+      "source_to_distributed_maximum_mm": 0.010616764666691213,
+      "distributed_to_source_maximum_mm": 0.010616764666691213
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "temporal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52738.stl",
+          "sha256": "c4d134473a62f43ab18efa415f394ff6c01a07ca14664a640a4ba787eaa6cadc"
+        }
+      ],
+      "source_triangles": 11274,
+      "distributed_triangles": 11274,
+      "maximum_bidirectional_vertex_distance_mm": 0.010495760555603825,
+      "source_to_distributed_maximum_mm": 0.010495760555603825,
+      "distributed_to_source_maximum_mm": 0.010495760555603825
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "temporal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52739.stl",
+          "sha256": "c42357deb26fb0468d7a2f4b471e7e7d8e7363cc5abe7e6d90e982c3d1ae449f"
+        }
+      ],
+      "source_triangles": 11208,
+      "distributed_triangles": 11208,
+      "maximum_bidirectional_vertex_distance_mm": 0.010271306702983775,
+      "source_to_distributed_maximum_mm": 0.010271306702983775,
+      "distributed_to_source_maximum_mm": 0.010271306702983775
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "maxilla_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53649.stl",
+          "sha256": "a83de38623317730c5f6c47be8c98b1fd7780b23317d09ca35e1f4f0735dd02e"
+        }
+      ],
+      "source_triangles": 14148,
+      "distributed_triangles": 14148,
+      "maximum_bidirectional_vertex_distance_mm": 0.010673737682390022,
+      "source_to_distributed_maximum_mm": 0.010673737682390022,
+      "distributed_to_source_maximum_mm": 0.010673737682390022
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "maxilla_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53650.stl",
+          "sha256": "875a8fafabc5df5c11d9cdc6c99ac37326c7f77c5ab5987e8d5b3d00e0d8b907"
+        }
+      ],
+      "source_triangles": 14506,
+      "distributed_triangles": 14506,
+      "maximum_bidirectional_vertex_distance_mm": 0.01049101339592842,
+      "source_to_distributed_maximum_mm": 0.01049101339592842,
+      "distributed_to_source_maximum_mm": 0.01049101339592842
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "zygomatic_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52892.stl",
+          "sha256": "a7af6f93c52cd816c3b5f134811ebe1cba5766e0ab170747cff37c089cbcc001"
+        }
+      ],
+      "source_triangles": 4612,
+      "distributed_triangles": 4612,
+      "maximum_bidirectional_vertex_distance_mm": 0.010300653487230383,
+      "source_to_distributed_maximum_mm": 0.010300653487230383,
+      "distributed_to_source_maximum_mm": 0.010300653487230383
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "zygomatic_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA52893.stl",
+          "sha256": "a47bff85f4f2fbde1ed67cdb79688414616f9ca05187425bc2ffa1b841295feb"
+        }
+      ],
+      "source_triangles": 4560,
+      "distributed_triangles": 4560,
+      "maximum_bidirectional_vertex_distance_mm": 0.010235993245932022,
+      "source_to_distributed_maximum_mm": 0.010235993245932022,
+      "distributed_to_source_maximum_mm": 0.010235993245932022
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "palatine_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53655.stl",
+          "sha256": "318b033125aa504ed5583e61c4a6808a7fd998835d2dceef9df17c327726582b"
+        }
+      ],
+      "source_triangles": 3592,
+      "distributed_triangles": 3592,
+      "maximum_bidirectional_vertex_distance_mm": 0.010647980813411836,
+      "source_to_distributed_maximum_mm": 0.010647980813411836,
+      "distributed_to_source_maximum_mm": 0.010647980813411836
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "palatine_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53656.stl",
+          "sha256": "1ac7ac814f39eb834d2f175002825085c6b04ecc94751ec247ab7c0161cabe37"
+        }
+      ],
+      "source_triangles": 3642,
+      "distributed_triangles": 3642,
+      "maximum_bidirectional_vertex_distance_mm": 0.010249769858197463,
+      "source_to_distributed_maximum_mm": 0.010249769858197463,
+      "distributed_to_source_maximum_mm": 0.010249769858197463
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "nasal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53647.stl",
+          "sha256": "a2c4e73f0346df903e9fcc4c7522c2ce9a82fd65f2f8f2993867812306577303"
+        }
+      ],
+      "source_triangles": 1024,
+      "distributed_triangles": 1024,
+      "maximum_bidirectional_vertex_distance_mm": 0.010156180611023734,
+      "source_to_distributed_maximum_mm": 0.010156180611023734,
+      "distributed_to_source_maximum_mm": 0.010156180611023734
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "nasal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53648.stl",
+          "sha256": "576a778c98145cbe676ca7c97f599430f8f52ed367ba4907d7ab1ebb720bb5ca"
+        }
+      ],
+      "source_triangles": 1124,
+      "distributed_triangles": 1124,
+      "maximum_bidirectional_vertex_distance_mm": 0.009693899536299483,
+      "source_to_distributed_maximum_mm": 0.009693899536299483,
+      "distributed_to_source_maximum_mm": 0.009693899536299483
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "lacrimal_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53645.stl",
+          "sha256": "19849965bec68b62f2d6c08968ab1d421cddd433f65e7d7e60fedaa4b5cf3466"
+        }
+      ],
+      "source_triangles": 1114,
+      "distributed_triangles": 1114,
+      "maximum_bidirectional_vertex_distance_mm": 0.009990208860771692,
+      "source_to_distributed_maximum_mm": 0.009990208860771692,
+      "distributed_to_source_maximum_mm": 0.009990208860771692
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "lacrimal_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA53646.stl",
+          "sha256": "9c3dc16643b4d11476b055f6785775a725d6e1cdf7497e26d4c634fda446e010"
+        }
+      ],
+      "source_triangles": 1152,
+      "distributed_triangles": 1152,
+      "maximum_bidirectional_vertex_distance_mm": 0.009883935298508362,
+      "source_to_distributed_maximum_mm": 0.009883935298508362,
+      "distributed_to_source_maximum_mm": 0.009883935298508362
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "inferior_concha_right",
+      "source_files": [
+        {
+          "file": "stl_head/FMA54737.stl",
+          "sha256": "7797ac8cb5c391b89091f704b810ee72d0a2e6f2bc31e088d9d9732c12606acf"
+        }
+      ],
+      "source_triangles": 1616,
+      "distributed_triangles": 1616,
+      "maximum_bidirectional_vertex_distance_mm": 0.010311857693045452,
+      "source_to_distributed_maximum_mm": 0.010311857693045452,
+      "distributed_to_source_maximum_mm": 0.010311857693045452
+    },
+    {
+      "file": "head-q-glb.txt",
+      "bone": "inferior_concha_left",
+      "source_files": [
+        {
+          "file": "stl_head/FMA54738.stl",
+          "sha256": "b5433ce863c424e22f113062e23812b81afbbdacac33b5afa73ecab03b6ebeff"
+        }
+      ],
+      "source_triangles": 1484,
+      "distributed_triangles": 1484,
+      "maximum_bidirectional_vertex_distance_mm": 0.010080082798569335,
+      "source_to_distributed_maximum_mm": 0.010080082798569335,
+      "distributed_to_source_maximum_mm": 0.010080082798569335
+    }
+  ]
+}

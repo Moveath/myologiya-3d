@@ -31,8 +31,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -65,8 +80,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -91,7 +121,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -124,8 +169,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -150,7 +210,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -183,8 +258,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -209,7 +299,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -234,7 +339,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -267,8 +387,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -301,8 +436,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -335,8 +485,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -369,8 +534,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -403,8 +583,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -437,8 +632,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -471,8 +681,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -497,7 +722,22 @@ window.ATLAS.pins.push(...[
         "locator": "T1 frontal/lateral: complete costal facet; T8–L1 lateral and oblique: complete facets T10–T12 and absence of transverse costal facets T11–T12. The illustrated T9 is one variant, not an invariant rule."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -522,7 +762,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -547,7 +802,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_1",
@@ -572,7 +842,22 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Возвышение бокового края верхней поверхности тела T1; размеры на образце не приняты.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -605,8 +890,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -639,8 +939,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -665,7 +980,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -698,8 +1028,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -724,7 +1069,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -757,8 +1117,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -783,7 +1158,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -808,7 +1198,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -841,8 +1246,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -875,8 +1295,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -909,8 +1344,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -943,8 +1393,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -977,8 +1442,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -1011,8 +1491,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -1045,8 +1540,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -1071,7 +1581,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -1096,7 +1621,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_2",
@@ -1121,7 +1661,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1154,8 +1709,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1188,8 +1758,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1214,7 +1799,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1247,8 +1847,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1273,7 +1888,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1306,8 +1936,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1332,7 +1977,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1357,7 +2017,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1390,8 +2065,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1424,8 +2114,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1458,8 +2163,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1492,8 +2212,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1526,8 +2261,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1560,8 +2310,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1594,8 +2359,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1620,7 +2400,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1645,7 +2440,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_3",
@@ -1670,7 +2480,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1703,8 +2528,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1737,8 +2577,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1763,7 +2618,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1796,8 +2666,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1822,7 +2707,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1855,8 +2755,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1881,7 +2796,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1906,7 +2836,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1939,8 +2884,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -1973,8 +2933,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2007,8 +2982,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2041,8 +3031,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2075,8 +3080,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2109,8 +3129,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2143,8 +3178,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2169,7 +3219,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2194,7 +3259,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_4",
@@ -2219,7 +3299,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2252,8 +3347,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2286,8 +3396,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2312,7 +3437,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2345,8 +3485,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2371,7 +3526,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2404,8 +3574,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2430,7 +3615,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2455,7 +3655,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2488,8 +3703,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2522,8 +3752,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2556,8 +3801,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2590,8 +3850,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2624,8 +3899,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2658,8 +3948,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2692,8 +3997,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2718,7 +4038,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2743,7 +4078,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_5",
@@ -2768,7 +4118,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2801,8 +4166,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2835,8 +4215,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2861,7 +4256,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2894,8 +4304,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2920,7 +4345,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2953,8 +4393,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -2979,7 +4434,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3004,7 +4474,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3037,8 +4522,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3071,8 +4571,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3105,8 +4620,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3139,8 +4669,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3173,8 +4718,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3207,8 +4767,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3241,8 +4816,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3267,7 +4857,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3292,7 +4897,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_6",
@@ -3317,7 +4937,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3350,8 +4985,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3384,8 +5034,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3410,7 +5075,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3443,8 +5123,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3469,7 +5164,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3502,8 +5212,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3528,7 +5253,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3553,7 +5293,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3586,8 +5341,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3620,8 +5390,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3654,8 +5439,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3688,8 +5488,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3722,8 +5537,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3756,8 +5586,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3790,8 +5635,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3816,7 +5676,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3841,7 +5716,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_7",
@@ -3866,7 +5756,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -3899,8 +5804,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -3933,8 +5853,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -3959,7 +5894,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -3992,8 +5942,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4018,7 +5983,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4051,8 +6031,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4077,7 +6072,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4102,7 +6112,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4135,8 +6160,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4169,8 +6209,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4203,8 +6258,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4237,8 +6307,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4271,8 +6356,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4305,8 +6405,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4339,8 +6454,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4365,7 +6495,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4390,7 +6535,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_8",
@@ -4415,7 +6575,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4448,8 +6623,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4482,8 +6672,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4508,7 +6713,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4541,8 +6761,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4567,7 +6802,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4600,8 +6850,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4626,7 +6891,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4651,7 +6931,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4684,8 +6979,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4718,8 +7028,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4752,8 +7077,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4786,8 +7126,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4820,8 +7175,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4854,8 +7224,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4888,8 +7273,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4914,7 +7314,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4939,8 +7354,23 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
-    "inc": 1
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "inc": 1,
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя реберная площадка тела; наличие на T9 вариабельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_9",
@@ -4965,7 +7395,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -4998,8 +7443,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5032,8 +7492,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5058,7 +7533,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5091,8 +7581,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5117,7 +7622,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5150,8 +7670,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5176,7 +7711,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5201,7 +7751,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5234,8 +7799,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5268,8 +7848,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5302,8 +7897,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5336,8 +7946,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5370,8 +7995,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5404,8 +8044,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5438,8 +8093,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5464,7 +8134,22 @@ window.ATLAS.pins.push(...[
         "locator": "T1 frontal/lateral: complete costal facet; T8–L1 lateral and oblique: complete facets T10–T12 and absence of transverse costal facets T11–T12. The illustrated T9 is one variant, not an invariant rule."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_10",
@@ -5489,7 +8174,22 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Площадка для бугорка ребра, а не весь поперечный отросток или сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5522,8 +8222,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5556,8 +8271,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5582,7 +8312,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5615,8 +8360,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5641,7 +8401,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5674,8 +8449,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5700,7 +8490,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5725,7 +8530,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5758,8 +8578,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5792,8 +8627,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5826,8 +8676,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5860,8 +8725,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5894,8 +8774,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5928,8 +8823,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5962,8 +8872,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_11",
@@ -5988,7 +8913,22 @@ window.ATLAS.pins.push(...[
         "locator": "T1 frontal/lateral: complete costal facet; T8–L1 lateral and oblique: complete facets T10–T12 and absence of transverse costal facets T11–T12. The illustrated T9 is one variant, not an invariant rule."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6021,8 +8961,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — опорная костная часть, а не одна из её поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6055,8 +9010,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя и нижняя площадки тела обращены к дискам; нужны две отдельные площади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6081,7 +9051,22 @@ window.ATLAS.pins.push(...[
         "locator": "T4 superior; T5 frontal, lateral, superior and inferior oblique views; T5–T6 foramen."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Краевые зоны окостенения тела; их возрастные границы не устанавливаются по наружному силуэту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны возраст/стадия сращения и изображения или сегментация зон окостенения этого образца; наружная сетка взрослого тела не задаёт эпифиз.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6114,8 +9099,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга включает ножки и пластинки и имеет толщину.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6140,7 +9140,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножки — парные костные мосты между телом и задними элементами дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6173,8 +9188,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинки — парные костные части задней дуги, а не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6199,7 +9229,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка ножки — открытая выемка, участвующая в нижней границе межпозвоночного отверстия.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6224,7 +9269,22 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка ножки участвует в верхней границе отверстия с нижележащим позвонком.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6257,8 +9317,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый костный край позвоночного отверстия. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Просвет внутри костного кольца; поверхностный маркер не описывает его сечение или объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны принятые границы выемки или просвета; точка на его краю не задаёт всё пространство.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6291,8 +9366,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ от основания до конца, не только верхушка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6325,8 +9415,31 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечные отростки — парные костные выступы; их площадки и бугорки рассматриваются отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "relatedLandmarks": [
+      "extra_thoracic_12_superior_tubercle_right",
+      "extra_thoracic_12_superior_tubercle_left",
+      "extra_thoracic_12_inferior_tubercle_right",
+      "extra_thoracic_12_inferior_tubercle_left",
+      "extra_thoracic_12_lateral_tubercle_right",
+      "extra_thoracic_12_lateral_tubercle_left"
+    ],
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6359,8 +9472,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхние суставные отростки — костные части, несущие площадки, но не весь сустав.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6393,8 +9521,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — контактная площадь собственного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6427,8 +9570,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левый нижний суставной отросток, суставной участок. Он не задаёт полную границу, толщину или точные размеры образования. Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижние суставные отростки — костные части, а не соответствующие суставные щели.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6461,8 +9619,23 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Thoracic Vertebrae; Vertebral Column Curvatures; Intervertebral Discs."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: левая нижняя суставная поверхность. Он не задаёт полную границу, толщину или точные размеры образования. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — собственная площадка для верхней площадки нижележащего позвонка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "thoracic_12",
@@ -6487,7 +9660,22 @@ window.ATLAS.pins.push(...[
         "locator": "T1 frontal/lateral: complete costal facet; T8–L1 lateral and oblique: complete facets T10–T12 and absence of transverse costal facets T11–T12. The illustrated T9 is one variant, not an invariant rule."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+    "geometryKind": "area",
+    "geometryKindReason": "Суставная площадка для головки ребра; целая ямка или полуямка согласно уровню и варианту.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически принятая маска всей площадки на этой сетке. Каждую сторону или поверхность проверять независимо; один маркер не подтверждает обе.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6520,8 +9708,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6530,7 +9734,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T1.",
     "p": null,
     "n": null,
     "m": [],
@@ -6546,7 +9750,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_1_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_1_right_A02_3_02_002",
+      "thorax_thoracic_1_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6579,8 +9804,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6613,8 +9854,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6623,7 +9880,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03414,
       1.38731,
@@ -6647,8 +9904,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6673,7 +9946,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_1_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_1_right_A02_3_02_008",
+      "thorax_thoracic_1_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6698,7 +9992,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая сегментация костной части на этом образце.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Лестничный бугорок — костный выступ I ребра между сосудистыми бороздами.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_1_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6723,7 +10037,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Сосудистая борозда I ребра — участок поверхности, а не сам сосуд или его просвет.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_1_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_right",
@@ -6748,7 +10082,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Венозная борозда I ребра — участок поверхности впереди лестничного бугорка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_1_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6781,8 +10135,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6791,7 +10161,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T1.",
     "p": null,
     "n": null,
     "m": [],
@@ -6807,7 +10177,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_1_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_1_left_A02_3_02_002",
+      "thorax_thoracic_1_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6840,8 +10231,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6874,8 +10281,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6884,7 +10307,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.033,
       1.38712,
@@ -6908,8 +10331,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6934,7 +10373,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_1_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_1_left_A02_3_02_008",
+      "thorax_thoracic_1_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6959,7 +10419,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая сегментация костной части на этом образце.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Лестничный бугорок — костный выступ I ребра между сосудистыми бороздами.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_1_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -6984,7 +10464,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Сосудистая борозда I ребра — участок поверхности, а не сам сосуд или его просвет.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_1_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_1_left",
@@ -7009,7 +10509,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Венозная борозда I ребра — участок поверхности впереди лестничного бугорка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_1_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_1_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7042,8 +10562,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7052,7 +10588,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T1 и T2; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -7068,7 +10604,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_002",
+      "thorax_thoracic_1_A02_2_03_003",
+      "thorax_thoracic_2_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7093,7 +10651,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7126,8 +10704,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7152,7 +10746,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7185,8 +10799,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7195,7 +10825,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03464,
       1.37665,
@@ -7219,8 +10849,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7245,7 +10891,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_008",
+      "thorax_thoracic_2_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7278,8 +10945,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7304,7 +10991,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7313,7 +11020,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -7327,11 +11034,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 2,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_right",
@@ -7356,7 +11122,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Бугристость II ребра представляет шероховатую область поверхности; точка не задаёт её площадь.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_2_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7389,8 +11175,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7399,7 +11201,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T1 и T2; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -7415,7 +11217,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_002",
+      "thorax_thoracic_1_A02_2_03_003",
+      "thorax_thoracic_2_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7440,7 +11264,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7473,8 +11317,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7499,7 +11359,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7532,8 +11412,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7542,7 +11438,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03178,
       1.37803,
@@ -7566,8 +11462,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7592,7 +11504,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_008",
+      "thorax_thoracic_2_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7625,8 +11558,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7651,7 +11604,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7660,7 +11633,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -7674,11 +11647,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 2,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_2_left",
@@ -7703,7 +11735,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Бугристость II ребра представляет шероховатую область поверхности; точка не задаёт её площадь.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_2_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_2_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7736,8 +11788,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7746,7 +11814,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T2 и T3; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -7762,7 +11830,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_002",
+      "thorax_thoracic_2_A02_2_03_003",
+      "thorax_thoracic_3_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7787,7 +11877,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7820,8 +11930,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7846,7 +11972,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7879,8 +12025,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7889,7 +12051,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03391,
       1.35835,
@@ -7913,8 +12075,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7939,7 +12117,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_008",
+      "thorax_thoracic_3_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7972,8 +12171,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -7998,7 +12217,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_right",
@@ -8007,7 +12246,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -8021,11 +12260,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_3_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 3,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_3_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8058,8 +12356,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8068,7 +12382,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T2 и T3; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -8084,7 +12398,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_002",
+      "thorax_thoracic_2_A02_2_03_003",
+      "thorax_thoracic_3_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8109,7 +12445,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8142,8 +12498,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8168,7 +12540,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8201,8 +12593,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8211,7 +12619,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03056,
       1.35636,
@@ -8235,8 +12643,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8261,7 +12685,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_008",
+      "thorax_thoracic_3_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8294,8 +12739,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8320,7 +12785,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_3_left",
@@ -8329,7 +12814,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -8343,11 +12828,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_3_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 3,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_3_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8380,8 +12924,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8390,7 +12950,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T3 и T4; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -8406,7 +12966,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_002",
+      "thorax_thoracic_3_A02_2_03_003",
+      "thorax_thoracic_4_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8431,7 +13013,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8464,8 +13066,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8490,7 +13108,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8523,8 +13161,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8533,7 +13187,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03749,
       1.33728,
@@ -8557,8 +13211,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8583,7 +13253,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_008",
+      "thorax_thoracic_4_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8616,8 +13307,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8642,7 +13353,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_right",
@@ -8651,7 +13382,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -8665,11 +13396,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_4_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 4,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_4_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8702,8 +13492,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8712,7 +13518,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T3 и T4; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -8728,7 +13534,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_002",
+      "thorax_thoracic_3_A02_2_03_003",
+      "thorax_thoracic_4_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8753,7 +13581,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8786,8 +13634,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8812,7 +13676,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8845,8 +13729,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8855,7 +13755,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03335,
       1.3363,
@@ -8879,8 +13779,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8905,7 +13821,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_008",
+      "thorax_thoracic_4_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8938,8 +13875,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8964,7 +13921,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_4_left",
@@ -8973,7 +13950,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -8987,11 +13964,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_4_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 4,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_4_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9024,8 +14060,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9034,7 +14086,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T4 и T5; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -9050,7 +14102,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_002",
+      "thorax_thoracic_4_A02_2_03_003",
+      "thorax_thoracic_5_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9075,7 +14149,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9108,8 +14202,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9134,7 +14244,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9167,8 +14297,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9177,7 +14323,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03473,
       1.30763,
@@ -9201,8 +14347,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9227,7 +14389,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_008",
+      "thorax_thoracic_5_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9260,8 +14443,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9286,7 +14489,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_right",
@@ -9295,7 +14518,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -9309,11 +14532,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_5_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 5,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_5_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9346,8 +14628,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9356,7 +14654,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T4 и T5; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -9372,7 +14670,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_002",
+      "thorax_thoracic_4_A02_2_03_003",
+      "thorax_thoracic_5_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9397,7 +14717,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9430,8 +14770,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9456,7 +14812,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9489,8 +14865,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9499,7 +14891,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03244,
       1.30747,
@@ -9523,8 +14915,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9549,7 +14957,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_008",
+      "thorax_thoracic_5_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9582,8 +15011,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9608,7 +15057,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_5_left",
@@ -9617,7 +15086,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -9631,11 +15100,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_5_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 5,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_5_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9668,8 +15196,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9678,7 +15222,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T5 и T6; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -9694,7 +15238,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_002",
+      "thorax_thoracic_5_A02_2_03_003",
+      "thorax_thoracic_6_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9719,7 +15285,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9752,8 +15338,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9778,7 +15380,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9811,8 +15433,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9821,7 +15459,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03672,
       1.28049,
@@ -9845,8 +15483,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9871,7 +15525,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_008",
+      "thorax_thoracic_6_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9904,8 +15579,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9930,7 +15625,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_right",
@@ -9939,7 +15654,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -9953,11 +15668,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_6_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 6,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_6_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -9990,8 +15764,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10000,7 +15790,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T5 и T6; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -10016,7 +15806,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_002",
+      "thorax_thoracic_5_A02_2_03_003",
+      "thorax_thoracic_6_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10041,7 +15853,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10074,8 +15906,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10100,7 +15948,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10133,8 +16001,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10143,7 +16027,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03271,
       1.28038,
@@ -10167,8 +16051,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10193,7 +16093,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_008",
+      "thorax_thoracic_6_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10226,8 +16147,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10252,7 +16193,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_6_left",
@@ -10261,7 +16222,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -10275,11 +16236,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_6_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 6,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_6_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10312,8 +16332,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10322,7 +16358,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T6 и T7; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -10338,7 +16374,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_002",
+      "thorax_thoracic_6_A02_2_03_003",
+      "thorax_thoracic_7_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10363,7 +16421,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10396,8 +16474,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10422,7 +16516,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10455,8 +16569,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10465,7 +16595,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.0364,
       1.25234,
@@ -10489,8 +16619,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10515,7 +16661,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_008",
+      "thorax_thoracic_7_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10548,8 +16715,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10574,7 +16761,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_right",
@@ -10583,7 +16790,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -10597,11 +16804,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_7_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 7,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_7_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10634,8 +16900,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10644,7 +16926,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T6 и T7; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -10660,7 +16942,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_002",
+      "thorax_thoracic_6_A02_2_03_003",
+      "thorax_thoracic_7_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10685,7 +16989,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10718,8 +17042,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10744,7 +17084,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10777,8 +17137,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10787,7 +17163,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03332,
       1.25193,
@@ -10811,8 +17187,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10837,7 +17229,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_008",
+      "thorax_thoracic_7_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10870,8 +17283,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10896,7 +17329,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_7_left",
@@ -10905,7 +17358,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -10919,11 +17372,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_7_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 7,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_7_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -10956,8 +17468,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -10966,7 +17494,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T7 и T8; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -10982,7 +17510,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_002",
+      "thorax_thoracic_7_A02_2_03_003",
+      "thorax_thoracic_8_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11007,7 +17557,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11040,8 +17610,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11066,7 +17652,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11099,8 +17705,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11109,7 +17731,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03557,
       1.22215,
@@ -11133,8 +17755,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11159,7 +17797,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_008",
+      "thorax_thoracic_8_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11192,8 +17851,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11218,7 +17897,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_right",
@@ -11227,7 +17926,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -11241,11 +17940,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_8_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 8,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_8_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11278,8 +18036,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11288,7 +18062,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T7 и T8; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -11304,7 +18078,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_002",
+      "thorax_thoracic_7_A02_2_03_003",
+      "thorax_thoracic_8_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11329,7 +18125,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11362,8 +18178,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11388,7 +18220,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11421,8 +18273,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11431,7 +18299,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03256,
       1.22319,
@@ -11455,8 +18323,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11481,7 +18365,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_008",
+      "thorax_thoracic_8_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11514,8 +18419,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11540,7 +18465,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_8_left",
@@ -11549,7 +18494,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -11563,11 +18508,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_8_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 8,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_8_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11600,8 +18604,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11610,7 +18630,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T8 и T9; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -11626,7 +18646,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_002",
+      "thorax_thoracic_8_A02_2_03_003",
+      "thorax_thoracic_9_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11651,7 +18693,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11684,8 +18746,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11710,7 +18788,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11743,8 +18841,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11753,7 +18867,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03294,
       1.19857,
@@ -11777,8 +18891,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11803,7 +18933,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_008",
+      "thorax_thoracic_9_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11836,8 +18987,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11862,7 +19033,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_right",
@@ -11871,7 +19062,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -11885,11 +19076,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_9_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 9,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_9_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -11922,8 +19172,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -11932,7 +19198,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующие уровни — T8 и T9; межпозвоночный диск не является костной площадкой.",
     "p": null,
     "n": null,
     "m": [],
@@ -11948,7 +19214,29 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_002",
+      "thorax_thoracic_8_A02_2_03_003",
+      "thorax_thoracic_9_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -11973,7 +19261,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12006,8 +19314,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12032,7 +19356,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12065,8 +19409,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12075,7 +19435,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.02878,
       1.19981,
@@ -12099,8 +19459,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12125,7 +19501,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_008",
+      "thorax_thoracic_9_A02_2_03_004"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12158,8 +19555,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12184,7 +19601,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_9_left",
@@ -12193,7 +19630,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -12207,11 +19644,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_9_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 9,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_9_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12244,8 +19740,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12254,7 +19766,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. В типичном описании — T10; вариант участия T9 проверяется отдельно и автоматически не связывается.",
     "p": null,
     "n": null,
     "m": [],
@@ -12265,12 +19777,33 @@ window.ATLAS.pins.push(...[
         "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
       },
       {
-        "title": "Anatomy Standard — Ribs",
-        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/costae.html",
-        "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
+        "title": "Buchanan — Manual of Anatomy, The Thorax",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_4",
+        "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_002",
+      "thorax_thoracic_10_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12295,8 +19828,28 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
-    "inc": 1
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+    "inc": 1,
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12329,8 +19882,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12355,7 +19924,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12388,8 +19977,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12398,7 +20003,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       -0.03197,
       1.1642,
@@ -12422,8 +20027,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12432,7 +20053,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.009",
     "ru": "Суставная поверхность бугорка ребра",
     "lat": "facies articularis tuberculi costae",
-    "x": "Суставная площадка бугорка для поперечного отростка позвонка.",
+    "x": "Суставная площадка бугорка для поперечного отростка позвонка. Для X ребра выраженность рёберно-поперечного сочленения вариабельна; наличие на этом экземпляре не принято.",
     "p": null,
     "n": null,
     "m": [],
@@ -12443,12 +20064,34 @@ window.ATLAS.pins.push(...[
         "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
       },
       {
-        "title": "Anatomy Standard — Ribs",
-        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/costae.html",
-        "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
+        "title": "Buchanan — Manual of Anatomy, The Thorax",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_4",
+        "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_008",
+      "thorax_thoracic_10_A02_2_03_004"
+    ],
+    "inc": 1,
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12481,8 +20124,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12507,7 +20170,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_right",
@@ -12516,7 +20199,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -12530,11 +20213,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_10_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 10,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_10_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12567,8 +20309,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12577,7 +20335,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. В типичном описании — T10; вариант участия T9 проверяется отдельно и автоматически не связывается.",
     "p": null,
     "n": null,
     "m": [],
@@ -12588,12 +20346,33 @@ window.ATLAS.pins.push(...[
         "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
       },
       {
-        "title": "Anatomy Standard — Ribs",
-        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/costae.html",
-        "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
+        "title": "Buchanan — Manual of Anatomy, The Thorax",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_4",
+        "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_002",
+      "thorax_thoracic_10_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12618,8 +20397,28 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
-    "inc": 1
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+    "inc": 1,
+    "geometryKind": "line",
+    "geometryKindReason": "Межсуставной гребень разделяет площадки головки; требуется трассировка линии, а не её случайный центр.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12652,8 +20451,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: шейка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Шейка — костный участок между головкой и телом, имеющий толщину.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12678,7 +20493,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "geometryKind": "line",
+    "geometryKindReason": "Гребень верхнего края шейки протяжён; он не является гребнем головки или тела.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_005",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_005"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12711,8 +20546,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12721,7 +20572,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.008",
     "ru": "Бугорок ребра",
     "lat": "tuberculum costae",
-    "x": "Выступ у перехода шейки в тело.",
+    "x": "Выступ у перехода шейки в тело. Суставная площадка и несуставной участок различаются; исходный маркер не описывает обе части.",
     "p": [
       0.03003,
       1.16563,
@@ -12745,8 +20596,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: бугорок ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Бугорок включает суставную и несуставную части; одна площадка не представляет весь выступ.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12755,7 +20622,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.009",
     "ru": "Суставная поверхность бугорка ребра",
     "lat": "facies articularis tuberculi costae",
-    "x": "Суставная площадка бугорка для поперечного отростка позвонка.",
+    "x": "Суставная площадка бугорка для поперечного отростка позвонка. Для X ребра выраженность рёберно-поперечного сочленения вариабельна; наличие на этом экземпляре не принято.",
     "p": null,
     "n": null,
     "m": [],
@@ -12766,12 +20633,34 @@ window.ATLAS.pins.push(...[
         "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
       },
       {
-        "title": "Anatomy Standard — Ribs",
-        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/costae.html",
-        "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
+        "title": "Buchanan — Manual of Anatomy, The Thorax",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Book_-_Buchanan%27s_Manual_of_Anatomy_including_Embryology_4",
+        "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+    "geometryKind": "area",
+    "geometryKindReason": "Собственная площадка бугорка ребра; не весь рёберно-поперечный сустав.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_008",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_008",
+      "thorax_thoracic_10_A02_2_03_004"
+    ],
+    "inc": 1,
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12804,8 +20693,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок изгиба в области угла ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12830,7 +20739,27 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_10_left",
@@ -12839,7 +20768,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант.",
     "p": null,
     "n": null,
     "m": [],
@@ -12853,11 +20782,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_10_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 10,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_10_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -12890,8 +20878,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -12900,7 +20904,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T11.",
     "p": null,
     "n": null,
     "m": [],
@@ -12916,7 +20920,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_11_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_11_right_A02_3_02_002",
+      "thorax_thoracic_11_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -12949,8 +20974,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -12975,7 +21016,27 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_11_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_11_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -13000,7 +21061,27 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_11_right_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_11_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_right",
@@ -13009,7 +21090,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант. Для XI–XII ребра нельзя переносить типовую трассу нижнего края с выраженной бороздой: нужны отдельные источники и разметка этого уровня.",
     "p": null,
     "n": null,
     "m": [],
@@ -13023,11 +21104,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_11_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 11,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_11_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13060,8 +21200,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13070,7 +21226,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T11.",
     "p": null,
     "n": null,
     "m": [],
@@ -13086,7 +21242,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_11_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_11_left_A02_3_02_002",
+      "thorax_thoracic_11_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13119,8 +21296,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13145,7 +21338,27 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Здесь каталог описывает область изгиба тела. Линия рельефа в этой области не заменяет весь изгиб.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_11_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_11_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13170,7 +21383,27 @@ window.ATLAS.pins.push(...[
         "locator": "The Tenth Rib: alternative head facets depending on inferior facet of T9; tubercular facet may be absent. The Eleventh and Twelfth Ribs."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Борозда имеет дно, ширину и края; её поверхностная маска предпочтительнее единственной точки или оси.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_11_left_A02_3_02_007",
+    "relatedLandmarks": [
+      "thorax_rib_11_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_11_left",
@@ -13179,7 +21412,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант. Для XI–XII ребра нельзя переносить типовую трассу нижнего края с выраженной бороздой: нужны отдельные источники и разметка этого уровня.",
     "p": null,
     "n": null,
     "m": [],
@@ -13193,11 +21426,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_11_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 11,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_11_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_right",
@@ -13230,8 +21522,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_right",
@@ -13240,7 +21548,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T12.",
     "p": null,
     "n": null,
     "m": [],
@@ -13256,7 +21564,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_12_right_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_12_right_A02_3_02_002",
+      "thorax_thoracic_12_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_right",
@@ -13289,8 +21618,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_right",
@@ -13299,7 +21644,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант. Для XI–XII ребра нельзя переносить типовую трассу нижнего края с выраженной бороздой: нужны отдельные источники и разметка этого уровня.",
     "p": null,
     "n": null,
     "m": [],
@@ -13313,11 +21658,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "right",
+    "partOf": "thorax_rib_12_right_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 12,
+      "side": "right",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_12_right_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_left",
@@ -13350,8 +21754,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: головка ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Костная головка целиком, а не только покрывающая её суставная площадка.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_left",
@@ -13360,7 +21780,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.003",
     "ru": "Суставная поверхность головки ребра",
     "lat": "facies articularis capitis costae",
-    "x": "Суставная поверхность головки, обращённая к позвонку.",
+    "x": "Суставная поверхность головки, обращённая к позвонку. Площадки принадлежат ребру; связанные ямки позвонков — противоположные поверхности, а не дубликаты этого ориентира. Соответствующий уровень — T12.",
     "p": null,
     "n": null,
     "m": [],
@@ -13376,7 +21796,28 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая маска всей поверхности на исходном меше.",
+    "geometryKind": "area",
+    "geometryKindReason": "Контактная поверхность головки; её число и разделение зависят от уровня и варианта.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_12_left_A02_3_02_002",
+    "relatedLandmarks": [
+      "thorax_rib_12_left_A02_3_02_002",
+      "thorax_thoracic_12_A02_2_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_left",
@@ -13409,8 +21850,24 @@ window.ATLAS.pins.push(...[
         "locator": "Typical seventh rib, posterior view; first and second rib superior view; XI and XII dorsal view."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: участок тела ребра. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — протяжённая костная часть, включающая поверхности и края.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "rib_12_left",
@@ -13419,7 +21876,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.3.02.012",
     "ru": "Гребень ребра",
     "lat": "crista costae",
-    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются.",
+    "x": "Гребень тела ребра; отдельный термин, не равнозначный гребню головки или шейки. Номенклатура и учебный список подтверждают термин и принадлежность к телу. Два независимых описания точной топографии пока не согласованы; координата и протяжённость не заявляются. Наличие и выраженность гребня на этом экземпляре не подтверждены. Неопределённость не означает установленный анатомический вариант. Для XI–XII ребра нельзя переносить типовую трассу нижнего края с выраженной бороздой: нужны отдельные источники и разметка этого уровня.",
     "p": null,
     "n": null,
     "m": [],
@@ -13433,11 +21890,70 @@ window.ATLAS.pins.push(...[
         "title": "Masaryk University — Osteology, ribs",
         "url": "https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf",
         "locator": "Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used."
+      },
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна анатомически проверенная трасса линии на исходном меше.",
     "anatomyVerification": "incomplete",
-    "evidenceScope": "nomenclature_and_body_region_only"
+    "evidenceScope": "nomenclature_and_body_region_only",
+    "geometryKind": "line",
+    "geometryKindReason": "Линейное представление гребня тела обосновано определением костного края в Académie de médecine и описанием нижнего края у Gray. Точная трасса, выраженность и применимость к каждому образцу остаются непроверенными.",
+    "anatomicalMultiplicity": "single",
+    "side": "left",
+    "partOf": "thorax_rib_12_left_A02_3_02_007",
+    "geometryTypeRefs": [
+      {
+        "id": "rib_crest_academy",
+        "title": "Académie nationale de médecine — crête du corps de la côte (2015)",
+        "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?page=119&q=St",
+        "locator": "Entry crête du corps de la côte: inferior body border / inferolateral lip. Does not establish level-specific extent on this specimen.",
+        "authorGroup": "academie_medecine",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "title": "Gray (1918) — The Ribs",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=66",
+        "locator": "PDF с.66–73; General Characteristics; Head; Neck; Body; Peculiar Ribs."
+      }
+    ],
+    "geometryTypeConfidence": "moderate",
+    "unresolvedFields": [
+      "topography",
+      "specimen_extent",
+      "specimen_presence",
+      "level_applicability"
+    ],
+    "applicabilityReview": {
+      "source": "research/stage5-thorax-targeted-report-2026-10-18.md",
+      "level": 12,
+      "side": "left",
+      "specimenPresence": "unconfirmed",
+      "variantClassification": "not_established"
+    },
+    "relatedLandmarks": [
+      "thorax_rib_12_left_A02_3_02_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13470,8 +21986,27 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность рукоятки грудины. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность рукоятки грудины. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Рукоятка — целая костная часть.",
+    "anatomicalMultiplicity": "single",
+    "relatedLandmarks": [
+      "extra_sternum_2_anterior_surface",
+      "extra_sternum_2_posterior_surface"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13504,8 +22039,29 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ключичная вырезка. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ключичная вырезка. Он не задаёт полную границу, толщину или точные размеры образования. Показана правая сторона. Нужна принятая маска всей поверхности на исходном меше. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Ключичная вырезка рассматривается как суставная площадка рукоятки; обе стороны требуют отдельных масок.",
+    "anatomicalMultiplicity": "paired",
+    "partOf": "thorax_sternum_A02_3_03_002",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_002",
+      "extra_sternum_clavicular_notch_right",
+      "extra_sternum_clavicular_notch_left"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13538,8 +22094,27 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: костный край яремной вырезки. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: костный край яремной вырезки. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужны проверенные границы пространства, включая некостные участки.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Открытая срединная выемка верхнего края рукоятки, а не отверстие через кость.",
+    "anatomicalMultiplicity": "single",
+    "partOf": "thorax_sternum_A02_3_03_002",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны проверенные границы пространства, включая некостные участки.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13572,8 +22147,27 @@ window.ATLAS.pins.push(...[
         "locator": "Sternum; Parts of a Typical Rib; Rib Classifications; Figure 7.32."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передний костный край в области угла грудины. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передний костный край в области угла грудины. Точка находится на видимом костном крае и не подтверждает все стенки и весь просвет отверстия. Нужна анатомически проверенная трасса линии на исходном меше.",
+    "loc": "surface",
+    "geometryKind": "line",
+    "geometryKindReason": "Поперечный перегиб у перехода рукоятки в тело; не вся суставная щель.",
+    "anatomicalMultiplicity": "single",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_002",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна анатомически проверенная трасса линии на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13606,8 +22200,28 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела грудины. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела грудины. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело грудины включает толщину и обе поверхности.",
+    "anatomicalMultiplicity": "single",
+    "relatedLandmarks": [
+      "extra_sternum_6_anterior_surface",
+      "extra_sternum_6_posterior_surface",
+      "extra_sternum_foramen_variant"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13640,8 +22254,28 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность мечевидного отростка. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: передняя поверхность мечевидного отростка. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая сегментация костной части на этом образце.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Мечевидный отросток — целая часть с вариабельной формой и окостенением.",
+    "anatomicalMultiplicity": "single",
+    "relatedLandmarks": [
+      "extra_sternum_7_anterior_surface",
+      "extra_sternum_7_posterior_surface",
+      "extra_sternum_bifid_xiphoid_variant"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13674,8 +22308,39 @@ window.ATLAS.pins.push(...[
         "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: одна из правых рёберных вырезок тела грудины. Он не задаёт полную границу, толщину или точные размеры образования.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: одна из правых рёберных вырезок тела грудины. Он не задаёт полную границу, толщину или точные размеры образования. Нужна принятая маска всей поверхности на исходном меше. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Набор контактных участков для рёберных хрящей; нужны отдельные уровни и стороны.",
+    "anatomicalMultiplicity": "levels_and_sides",
+    "relatedLandmarks": [
+      "extra_sternum_costal_notch_1_right",
+      "extra_sternum_costal_notch_1_left",
+      "extra_sternum_costal_notch_2_right",
+      "extra_sternum_costal_notch_2_left",
+      "extra_sternum_costal_notch_3_right",
+      "extra_sternum_costal_notch_3_left",
+      "extra_sternum_costal_notch_4_right",
+      "extra_sternum_costal_notch_4_left",
+      "extra_sternum_costal_notch_5_right",
+      "extra_sternum_costal_notch_5_left",
+      "extra_sternum_costal_notch_6_right",
+      "extra_sternum_costal_notch_6_left",
+      "extra_sternum_costal_notch_7_right",
+      "extra_sternum_costal_notch_7_left"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
   },
   {
     "b": "sternum",
@@ -13700,9 +22365,1510 @@ window.ATLAS.pins.push(...[
         "locator": "Results: suprasternal bones/ossicles among observed sternal variants; Discussion."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Нужна принятая сегментация костной части на этом образце. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты. Сначала подтвердить наличие варианта на этом образце.",
     "inc": 1,
-    "taParen": true
+    "taParen": true,
+    "geometryKind": "volume",
+    "geometryKindReason": "Добавочные надгрудинные косточки — вариант; объёмы не заявлены существующими в GLB.",
+    "anatomicalMultiplicity": "variable",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце. Каждый уровень и сторону проверять независимо; исходный маркер не подтверждает все компоненты. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_superior_tubercle_right",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Верхний бугорок поперечного отростка T12 справа",
+    "side": "right",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_superior_tubercle_left",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Верхний бугорок поперечного отростка T12 слева",
+    "side": "left",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_inferior_tubercle_right",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Нижний бугорок поперечного отростка T12 справа",
+    "side": "right",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_inferior_tubercle_left",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Нижний бугорок поперечного отростка T12 слева",
+    "side": "left",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_lateral_tubercle_right",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Латеральный бугорок поперечного отростка T12 справа",
+    "side": "right",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_thoracic_12_lateral_tubercle_left",
+    "b": "thoracic_12",
+    "t": "additional",
+    "lat": "",
+    "ru": "Латеральный бугорок поперечного отростка T12 слева",
+    "side": "left",
+    "m": [],
+    "g": "Дополнительные образования",
+    "x": "Одна из трёх описываемых костных возвышенностей в области поперечного отростка T12. Это часть позвонка, а не отдельная кость или реберная суставная площадка.",
+    "refs": [
+      {
+        "id": "thorax_gray_t12",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=33",
+        "locator": "PDF p.35, Twelfth Thoracic Vertebra: three elevations on each transverse process.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      },
+      {
+        "id": "thorax_elsevier_t12",
+        "title": "Elsevier Complete Anatomy — Twelfth Thoracic Vertebra",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/twelfth-thoracic-vertebra/17444",
+        "locator": "Key Features & Anatomical Relations: superior, inferior and lateral tubercles; descriptive catalogue only.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "partOf": "thorax_thoracic_12_A02_2_01_013",
+    "relatedLandmarks": [
+      "thorax_thoracic_12_A02_2_01_013"
+    ],
+    "geometryKind": "volume",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Наличие и точные границы на данном образце не приняты; координаты не созданы. Нужно выделить костную часть и принять её границы на этой сетке.",
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужно выделить костную часть и принять её границы на этой сетке.",
+      "source": "research/stage5-thorax-report-2026-10-18.md"
+    }
+  },
+  {
+    "id": "extra_sternum_clavicular_notch_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Ключичная вырезка справа",
+    "lat": "",
+    "x": "Сторонний экземпляр парной суставной площадки рукоятки; исходная общая карточка сохранена как родитель.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "title": "Anatomy Standard — Sternum",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/sternum.html",
+        "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_003",
+    "side": "right",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_003",
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_1_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 1-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок на рукоятке. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 1,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_2_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 2-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок у перехода рукоятки в тело. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 2,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_002",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_002",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_3_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 3-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 3,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_4_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 4-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 4,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_5_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 5-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 5,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_6_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 6-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 6,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_7_right",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 7-го рёберного хряща справа",
+    "lat": "",
+    "x": "Контактный участок у перехода тела в мечевидный отросток. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "right",
+    "level": 7,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006",
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006",
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_clavicular_notch_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Ключичная вырезка слева",
+    "lat": "",
+    "x": "Сторонний экземпляр парной суставной площадки рукоятки; исходная общая карточка сохранена как родитель.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "title": "Anatomy Standard — Sternum",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/sternum.html",
+        "locator": "Frontal and anterior oblique aspects, labeled manubrium/body/xiphoid/notches."
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_003",
+    "side": "left",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_003",
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_1_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 1-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок на рукоятке. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 1,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_2_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 2-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок у перехода рукоятки в тело. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 2,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_002",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_002",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_3_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 3-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 3,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_4_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 4-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 4,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_5_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 5-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 5,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_6_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 6-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок на теле грудины. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 6,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_costal_notch_7_left",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Вырезка для 7-го рёберного хряща слева",
+    "lat": "",
+    "x": "Контактный участок у перехода тела в мечевидный отросток. Соединяется с хрящом; костное ребро не подменяет хрящевой вклад.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "thorax_elsevier_chapter",
+        "title": "Elsevier publisher sample, Human Anatomy, Chapter 3: Thorax",
+        "url": "https://booksite.elsevier.com/samplechapters/9780443103735/9780443103735.pdf",
+        "locator": "Printed pp.51–52, Fig.3.2: II and VII cartilage junctions; intercostal spaces. Bibliographic author/edition not inferred from filename.",
+        "authorGroup": "elsevier_sample_chapter",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_008",
+    "side": "left",
+    "level": 7,
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_008",
+      "thorax_sternum_A02_3_03_006",
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "sternalParts": [
+      "thorax_sternum_A02_3_03_006",
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_2_anterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Передняя поверхность рукоятки",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_002",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_2_posterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Задняя поверхность рукоятки",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_002",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_002"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_6_anterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Передняя поверхность тела грудины",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_006",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_6_posterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Задняя поверхность тела грудины",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_006",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_7_anterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Передняя поверхность мечевидного отростка",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_007",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_7_posterior_surface",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Задняя поверхность мечевидного отростка",
+    "lat": "",
+    "x": "Поверхность части, а не отдельная кость. Маска и границы на модели требуют проверки.",
+    "m": [],
+    "geometryKind": "area",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "partOf": "thorax_sternum_A02_3_03_007",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая маска всей поверхности на исходном меше.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая маска всей поверхности на исходном меше."
+  },
+  {
+    "id": "extra_sternum_foramen_variant",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Отверстие тела грудины — вариант",
+    "lat": "",
+    "x": "Непостоянное отверстие тела грудины. Наличие в этой модели не установлено; не является обязательным ориентиром.",
+    "m": [],
+    "geometryKind": "space",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "id": "sternum_duraikannu_2016",
+        "title": "Duraikannu C, Noronha OV, Sundarrajan P (2016). MDCT evaluation of sternal variations: Pictorial essay.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4931775/",
+        "locator": "Sternal foramen; Variations of xiphoid process, Fig.18; examples are not this specimen.",
+        "authorGroup": "duraikannu_2016",
+        "checked": "2026-10-18",
+        "kind": "anatomical",
+        "pmid": "27413263",
+        "doi": "10.4103/0971-3026.184407",
+        "access": "full_text"
+      },
+      {
+        "title": "Gray (1918) — The Sternum",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=60",
+        "locator": "PDF с.60–64; Manubrium, Borders, Body, Xiphoid process, Ossification."
+      }
+    ],
+    "educationAvailable": false,
+    "inc": 1,
+    "partOf": "thorax_sternum_A02_3_03_006",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_006"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужны проверенные границы пространства, включая некостные участки. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужны проверенные границы пространства, включая некостные участки. Сначала подтвердить наличие варианта на этом образце."
+  },
+  {
+    "id": "extra_sternum_bifid_xiphoid_variant",
+    "b": "sternum",
+    "t": "additional",
+    "ru": "Раздвоенный мечевидный отросток — вариант",
+    "lat": "",
+    "x": "Вариант формы конца мечевидного отростка. Не дополнительная кость и не подтверждённая форма этого GLB.",
+    "m": [],
+    "geometryKind": "volume",
+    "geometryKindReason": "Предметное решение по указанным источникам; геометрия образца не принята.",
+    "refs": [
+      {
+        "id": "sternum_duraikannu_2016",
+        "title": "Duraikannu C, Noronha OV, Sundarrajan P (2016). MDCT evaluation of sternal variations: Pictorial essay.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4931775/",
+        "locator": "Sternal foramen; Variations of xiphoid process, Fig.18; examples are not this specimen.",
+        "authorGroup": "duraikannu_2016",
+        "checked": "2026-10-18",
+        "kind": "anatomical",
+        "pmid": "27413263",
+        "doi": "10.4103/0971-3026.184407",
+        "access": "full_text"
+      },
+      {
+        "id": "sternum_elsevier",
+        "title": "Elsevier Complete Anatomy — Sternum",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/sternum/16892",
+        "locator": "Key Features, Variations and Surface Anatomy; no dimensions or population averages used.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-18",
+        "kind": "anatomical"
+      }
+    ],
+    "educationAvailable": false,
+    "inc": 1,
+    "partOf": "thorax_sternum_A02_3_03_007",
+    "relatedLandmarks": [
+      "thorax_sternum_A02_3_03_007"
+    ],
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "geometryRequirements": {
+      "status": "unverified_extent",
+      "coordinateReuse": false,
+      "neededEvidence": "Нужна принятая сегментация костной части на этом образце. Сначала подтвердить наличие варианта на этом образце.",
+      "source": "research/stage5-thorax-batch2-report-2026-10-18.md"
+    },
+    "modelNote": "Координата и отдельная геометрия не назначены. Нужна принятая сегментация костной части на этом образце. Сначала подтвердить наличие варианта на этом образце."
   }
 ]);
 window.ATLAS.thoraxWholeTerms=[
@@ -13843,7 +24009,7 @@ window.ATLAS.thoraxWholeTerms=[
     "c": "A02.3.01.002",
     "ru": "Истинные ребра [I–VII]",
     "lat": "costae verae [I - VII]",
-    "x": "Ребра I–VII: их хрящи соединяются с грудиной непосредственно.",
+    "x": "В типовой учебной схеме рёбра I–VII соединяются с грудиной своими хрящами. Индивидуальные варианты числа прямых соединений проверяются отдельно; схема не подтверждает этот образец.",
     "refs": [
       {
         "title": "Gray (1918) — The Costal Cartilages",
@@ -13854,6 +24020,26 @@ window.ATLAS.thoraxWholeTerms=[
         "title": "OpenStax — The Thoracic Cage",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage",
         "locator": "Sternum; Parts of a Typical Rib; Rib Classifications; Figure 7.32."
+      },
+      {
+        "title": "Patel A et al. (2023) — Anatomy of the anterior ribs and the composition of the costal margin: A cadaver study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37982795/",
+        "locator": "Abstract Methods/Results/Conclusion: 30 cadavers, variable cartilaginous attachments; frequencies are not transferred to this model.",
+        "id": "costal_patel_2023",
+        "pmid": "37982795",
+        "doi": "10.1097/TA.0000000000004115",
+        "access": "abstract",
+        "authorGroup": "patel_2023"
+      },
+      {
+        "title": "Risk N et al. (2026) — Anatomic variability of the ribs and costal cartilage: A pilot study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42545742/",
+        "locator": "Abstract Methods/Results: CT of 278 patients; variability and side differences. Different data/method from Patel; overlapping research group, not an independent team.",
+        "id": "costal_risk_2026",
+        "pmid": "42545742",
+        "doi": "10.1097/TA.0000000000005147",
+        "access": "abstract",
+        "authorGroup": "risk_2026"
       }
     ],
     "scope": "anatomy"
@@ -13862,7 +24048,7 @@ window.ATLAS.thoraxWholeTerms=[
     "c": "A02.3.01.003",
     "ru": "Ложные ребра [VIII–XII]",
     "lat": "costae spuriae [VIII - XII]",
-    "x": "Ребра VIII–XII: прямого соединения их хрящей с грудиной нет.",
+    "x": "В типовой учебной схеме рёбра VIII–XII не имеют прямого соединения с грудиной. У нижних хрящей описаны варианты соединений и свободных концов; их наличие в этой модели не установлено.",
     "refs": [
       {
         "title": "Gray (1918) — The Costal Cartilages",
@@ -13873,6 +24059,26 @@ window.ATLAS.thoraxWholeTerms=[
         "title": "OpenStax — The Thoracic Cage",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage",
         "locator": "Sternum; Parts of a Typical Rib; Rib Classifications; Figure 7.32."
+      },
+      {
+        "title": "Patel A et al. (2023) — Anatomy of the anterior ribs and the composition of the costal margin: A cadaver study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37982795/",
+        "locator": "Abstract Methods/Results/Conclusion: 30 cadavers, variable cartilaginous attachments; frequencies are not transferred to this model.",
+        "id": "costal_patel_2023",
+        "pmid": "37982795",
+        "doi": "10.1097/TA.0000000000004115",
+        "access": "abstract",
+        "authorGroup": "patel_2023"
+      },
+      {
+        "title": "Risk N et al. (2026) — Anatomic variability of the ribs and costal cartilage: A pilot study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42545742/",
+        "locator": "Abstract Methods/Results: CT of 278 patients; variability and side differences. Different data/method from Patel; overlapping research group, not an independent team.",
+        "id": "costal_risk_2026",
+        "pmid": "42545742",
+        "doi": "10.1097/TA.0000000000005147",
+        "access": "abstract",
+        "authorGroup": "risk_2026"
       }
     ],
     "scope": "anatomy",
@@ -14015,7 +24221,7 @@ window.ATLAS.thoraxWholeTerms=[
     "c": "A02.3.04.006",
     "ru": "Реберная дуга",
     "lat": "arcus costalis",
-    "x": "Дугообразный нижний передний край, образованный соединениями реберных хрящей.",
+    "x": "Дугообразный нижний передний край, образованный соединениями реберных хрящей. Обычно описываются хрящи VII–X, но фактический состав и соединения вариабельны; типовая схема не задаёт контур данного образца.",
     "refs": [
       {
         "title": "Gray (1918) — The Thorax",
@@ -14026,6 +24232,26 @@ window.ATLAS.thoraxWholeTerms=[
         "title": "Anatomy Standard — Thoracic Cage",
         "url": "https://www.anatomystandard.com/ossa-et-juncturae/thorax/cavea-thoracis.html",
         "locator": "Anterior, superior aperture and inferior aperture views; costal margin; pulmonary sulcus."
+      },
+      {
+        "title": "Patel A et al. (2023) — Anatomy of the anterior ribs and the composition of the costal margin: A cadaver study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37982795/",
+        "locator": "Abstract Methods/Results/Conclusion: 30 cadavers, variable cartilaginous attachments; frequencies are not transferred to this model.",
+        "id": "costal_patel_2023",
+        "pmid": "37982795",
+        "doi": "10.1097/TA.0000000000004115",
+        "access": "abstract",
+        "authorGroup": "patel_2023"
+      },
+      {
+        "title": "Risk N et al. (2026) — Anatomic variability of the ribs and costal cartilage: A pilot study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42545742/",
+        "locator": "Abstract Methods/Results: CT of 278 patients; variability and side differences. Different data/method from Patel; overlapping research group, not an independent team.",
+        "id": "costal_risk_2026",
+        "pmid": "42545742",
+        "doi": "10.1097/TA.0000000000005147",
+        "access": "abstract",
+        "authorGroup": "risk_2026"
       }
     ],
     "scope": "anatomy"

@@ -1,0 +1,1 @@
+async(page)=>{await page.screenshot({path:"C:\\Users\\\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u041c\u0438\u043e\u043b\u043e\u0433\u0438\u044f 3D\\shots\\stage5-skull-batch8\\1280-dark-batch-0.png"});return {status:"passed",purpose:"historical-path collision test"};}

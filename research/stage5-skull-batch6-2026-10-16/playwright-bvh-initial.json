@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "error": "page.waitForFunction: Timeout 30000ms exceeded",
+  "consoleError": "Invalid or unexpected token",
+  "cause": "Raw escaped newline extracted from the existing template literal was injected literally into the temporary HTML module.",
+  "scope": "test-only Playwright route, no application file changed",
+  "repair": "Decode only the template boundary newline; preserve every comparison assertion; parse before rerun.",
+  "anatomicalOrGeometryAcceptance": false
+}

@@ -1,0 +1,88 @@
+{
+  "method": "Imported object metadata and stored masks, not new anatomical segmentation",
+  "models": [
+    {
+      "bone": "hip_bone",
+      "name": "Mesh_64",
+      "vertices": 4858,
+      "polygons": 9716,
+      "materials": [],
+      "vertexGroups": [],
+      "attributes": [
+        ".select_vert",
+        "position",
+        ".corner_vert",
+        ".corner_edge",
+        ".select_poly",
+        "sharp_face",
+        ".edge_verts",
+        ".select_edge",
+        "custom_normal",
+        "sharp_edge"
+      ],
+      "customPropertyKeys": [],
+      "meshPropertyKeys": [],
+      "anatomicalBoundaryAccepted": false
+    },
+    {
+      "bone": "sacrum",
+      "name": "Mesh_65",
+      "vertices": 9986,
+      "polygons": 20000,
+      "materials": [],
+      "vertexGroups": [],
+      "attributes": [
+        ".select_vert",
+        "position",
+        ".corner_vert",
+        ".corner_edge",
+        ".select_poly",
+        "sharp_face",
+        ".edge_verts",
+        ".select_edge",
+        "custom_normal",
+        "sharp_edge"
+      ],
+      "customPropertyKeys": [],
+      "meshPropertyKeys": [],
+      "anatomicalBoundaryAccepted": false
+    },
+    {
+      "bone": "hip_bone_left",
+      "name": "b|hip_bone_left",
+      "vertices": 4735,
+      "polygons": 9470,
+      "materials": [],
+      "vertexGroups": [],
+      "attributes": [
+        ".select_vert",
+        "position",
+        ".corner_vert",
+        ".corner_edge",
+        ".select_poly",
+        "sharp_face",
+        ".edge_verts",
+        ".select_edge",
+        "custom_normal",
+        "sharp_edge"
+      ],
+      "customPropertyKeys": [],
+      "meshPropertyKeys": [
+        "header",
+        "processed"
+      ],
+      "anatomicalBoundaryAccepted": false
+    }
+  ],
+  "hashes": {
+    "site/leg-q-glb.txt": "3f7d1377ae151fb338b197d3ee4185ad1434791a20eb1bc8322cd2dc9d8fdf8d",
+    "build_context_bones/leg_extra_hi.glb": "9ca6e3a48fbf628fc2bb5a406884e5bd4bab3af26d6eb5d02da891048b0e3b0d"
+  },
+  "previousGeometryUnchanged": true,
+  "previousTrimesh": "trimesh-pelvis-v2.json",
+  "originalScenePreserved": true,
+  "newMasks": 0,
+  "newContours": 0,
+  "newCoordinates": 0,
+  "limitation": "No labelled boundary can be inferred from a whole-bone mesh or nearest-surface distance."
+}

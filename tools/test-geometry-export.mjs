@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {ExtendedTriangle} from 'three-mesh-bvh';
+import {Vector3} from 'three';
+import {pairKind,scan} from './audit-self-intersections.mjs';
+import {validateExport} from './geometry-export-check.mjs';
+const triangle=(...p)=>new ExtendedTriangle(...p.map(x=>new Vector3(...x)));
+const a=triangle([0,0,0],[1,0,0],[0,1,0]);
+assert.equal(pairKind(a,triangle([.2,.2,-1],[.2,.2,1],[.8,.2,0])),'crossing');
+assert.equal(pairKind(a,triangle([0,0,1],[1,0,1],[0,1,1])),'none');
+assert.equal(pairKind(a,triangle([0,0,0],[1,0,0],[0,-1,0])),'contact');
+assert.equal(pairKind(a,triangle([.1,.1,0],[.3,.1,0],[.1,.3,0])),'coplanarOverlap');
+assert.equal(pairKind(a,triangle([0,1,0],[0,0,0],[1,0,0])),'duplicate');
+assert.equal(pairKind(a,triangle([0,0,0],[1,0,0],[0,0,1])),'adjacent');
+const v=new Float64Array([0,0,0,1,0,0,0,1,0,.2,.2,-1,.2,.2,1,.8,.2,0]);
+const f=new Uint32Array([0,1,2,3,4,5]);
+const r=scan(v,f);assert.equal(r.complete,true);assert.equal(r.counts.crossing,1);assert.deepEqual(r.examples[0],{i:0,j:1,kind:'crossing'});
+assert.deepEqual([...f],[0,1,2,3,4,5]);
+const row={owner:'b|test',faces:2,vertices:4,zeroFaces:0,invalidPositions:0,invalidNormals:0,determinant:1};
+assert.deepEqual(validateExport({meshes:[row]},{meshes:[row]}),[]);
+for(const change of [{faces:1},{zeroFaces:1},{invalidNormals:1},{determinant:0},{orientedTrianglesFloat32SHA256:'changed'}])
+  assert.ok(validateExport({meshes:[row]},{meshes:[{...row,...change}]}).length);
+console.log('Geometry/export regression checks passed');

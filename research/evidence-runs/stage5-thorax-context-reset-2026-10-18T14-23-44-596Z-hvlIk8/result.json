@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "owner": "cervical_7",
+      "foreign": "thoracic_1",
+      "canonicalRaySelection": true,
+      "pinRetained": true,
+      "contextOff": true,
+      "contextRestored": true,
+      "ray": {
+        "rays": [
+          {
+            "x": 0.05128205128205132,
+            "y": -0.04976303317535535,
+            "hits": 1
+          },
+          {
+            "x": -0.5,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": -0.5,
+            "y": 0,
+            "hits": 0
+          },
+          {
+            "x": -0.5,
+            "y": 0.5,
+            "hits": 0
+          },
+          {
+            "x": 0,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "hits": 1
+          },
+          {
+            "x": 0,
+            "y": 0.5,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": 0,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": 0.5,
+            "hits": 0
+          }
+        ],
+        "bvh": 2
+      }
+    },
+    {
+      "owner": "thoracic_1",
+      "foreign": "cervical_7",
+      "canonicalRaySelection": true,
+      "pinRetained": true,
+      "contextOff": true,
+      "contextRestored": true,
+      "ray": {
+        "rays": [
+          {
+            "x": 0.3076923076923077,
+            "y": 0.04502369668246442,
+            "hits": 1
+          },
+          {
+            "x": -0.5,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": -0.5,
+            "y": 0,
+            "hits": 0
+          },
+          {
+            "x": -0.5,
+            "y": 0.5,
+            "hits": 0
+          },
+          {
+            "x": 0,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "hits": 1
+          },
+          {
+            "x": 0,
+            "y": 0.5,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": -0.5,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": 0,
+            "hits": 0
+          },
+          {
+            "x": 0.5,
+            "y": 0.5,
+            "hits": 0
+          }
+        ],
+        "bvh": 2
+      }
+    }
+  ],
+  "limitation": "Interim test required all foreign bones to return to context; superseded because the currently selected foreign bone must stay visible until selection changes."
+}

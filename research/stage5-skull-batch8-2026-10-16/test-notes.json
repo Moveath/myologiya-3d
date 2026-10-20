@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-16",
+  "initialLargeCardCall": {
+    "status": "not_counted",
+    "artifact": "cards-1280-0-result.json",
+    "reason": "No parsed structured result was retained. Empty object is not successful evidence; cause not reconstructed. All 46 IDs subsequently verified in bounded calls."
+  },
+  "initialTargetCall": {
+    "status": "failed_test_setup",
+    "artifact": "playwright-target-1280.json",
+    "error": "ReferenceError: __sharedCheck is not defined",
+    "correction": "Loaded existing verify-shared-landmarks.mjs --mcp probe before target interactions. No application workaround.",
+    "rerun": "playwright-target-1280-retry.json"
+  },
+  "pythonUnitTests": {
+    "command": ".venv/Scripts/python.exe verify/test_skull_shared_stage5.py",
+    "status": "passed",
+    "tests": 3,
+    "elapsedSeconds": 0.014,
+    "evidence": "Actual tool execution output; exit code 0."
+  },
+  "screenshotsViewed": [
+    "shots/stage5-skull-batch8/1280-cards.png",
+    "shots/stage5-skull-batch8/390-cards.png"
+  ],
+  "limitations": "Emulated viewport, not physical handset; surface distance is not anatomy acceptance; original GLB unchanged."
+}

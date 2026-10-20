@@ -1,0 +1,84 @@
+{
+  "bones": [
+    "hyoid",
+    "atlas",
+    "axis",
+    "cervical_3",
+    "cervical_4",
+    "cervical_5",
+    "cervical_6",
+    "cervical_7"
+  ],
+  "checkedOriginal": 138,
+  "added": [
+    "extra_atlas_transverse_ligament_tubercle_right",
+    "extra_atlas_transverse_ligament_tubercle_left",
+    "extra_hyoid_body_surface_anterior",
+    "extra_hyoid_body_surface_posterior",
+    "shared_neck_intervertebral_c2_c3_right",
+    "shared_neck_intervertebral_c2_c3_left",
+    "shared_neck_intervertebral_c3_c4_right",
+    "shared_neck_intervertebral_c3_c4_left",
+    "shared_neck_intervertebral_c4_c5_right",
+    "shared_neck_intervertebral_c4_c5_left",
+    "shared_neck_intervertebral_c5_c6_right",
+    "shared_neck_intervertebral_c5_c6_left",
+    "shared_neck_intervertebral_c6_c7_right",
+    "shared_neck_intervertebral_c6_c7_left"
+  ],
+  "pendingDetails": [
+    {
+      "id": "NECK-CAT-C2-DENS-NECK",
+      "bone": "axis",
+      "candidate": "Шейка / сужение зуба C2",
+      "status": "требует проверки",
+      "existing": "neck_axis_A02_2_02_202 содержит весь зуб",
+      "sourceLead": "Gray PDF p.30; PMC7043813 waist morphometry",
+      "next": "Сверить определение границ и термин с независимым современным источником; решить нужду в отдельной карточке, не переносить размеры чужих пациентов."
+    },
+    {
+      "id": "NECK-CAT-HYOID-BODY-SUPERIOR-BORDER",
+      "bone": "hyoid",
+      "candidate": "Верхний край тела подъязычной кости",
+      "status": "требует проверки",
+      "existing": "neck_hyoid_A02_1_16_002 — всё тело",
+      "sourceLead": "Gray PDF pp.148–149; NBK539726 ограниченный доступ",
+      "next": "Адресная двухисточниковая сверка собственного края тела, отличить край всей кости и описания мембраны; затем решение о карточке."
+    },
+    {
+      "id": "NECK-CAT-HYOID-BODY-INFERIOR-BORDER",
+      "bone": "hyoid",
+      "candidate": "Нижний край тела подъязычной кости",
+      "status": "требует проверки",
+      "existing": "neck_hyoid_A02_1_16_002 — всё тело",
+      "sourceLead": "Gray PDF pp.148–149; источники прикреплений не заменяют обзор края тела",
+      "next": "Независимый анатомический локатор, терминологическое и каталожное решение. Координаты до разметки отсутствуют."
+    }
+  ],
+  "notNewIndependentStructures": [
+    {
+      "candidate": "Сонный и передний бугорок C6",
+      "decision": "Два старых TA98 ID — представления одной сущности; concept и взаимные ссылки."
+    },
+    {
+      "candidate": "Верхняя вырезка C1",
+      "decision": "Не создавать дубль борозды позвоночной артерии."
+    },
+    {
+      "candidate": "Собственные суставные поверхности C1/C2 и затылочных мыщелков",
+      "decision": "Не объединять из-за контакта; полный сустав не равен одной общей костной поверхности."
+    },
+    {
+      "candidate": "Hyoid с mandible / temporal",
+      "decision": "Нет общего костного сочленения только на основании связок и мышц."
+    }
+  ],
+  "variantsRetainedNotMadeMandatory": [
+    "C1 canalis arteriae vertebralis / ponticulus",
+    "C7 anterior tubercle",
+    "C7 transverse-foramen and arterial-course variation",
+    "bifid spinous-process variation",
+    "anular epiphysis maturation"
+  ],
+  "fullAnatomicalAcceptance": false
+}

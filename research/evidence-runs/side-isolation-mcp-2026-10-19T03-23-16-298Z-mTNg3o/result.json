@@ -1,0 +1,3441 @@
+{
+  "status": "failed",
+  "phase": "head-and-cuts",
+  "error": "Error: Cut disables firstHitOnly",
+  "width": 1280,
+  "theme": "light",
+  "checks": [
+    "both: no hidden pickables",
+    "Both humeri in general view",
+    "right: no hidden pickables",
+    "right: no opposite-side mesh",
+    "Right scapula only",
+    "left: no hidden pickables",
+    "left: no opposite-side mesh",
+    "Existing left humerus retained",
+    "No invented left arm muscles in quiz",
+    "left-hand: no hidden pickables",
+    "left-hand: no opposite-side mesh",
+    "No substituted right hand",
+    "Left hand noModel notice",
+    "No fake left hand isolation",
+    "left-card: no hidden pickables",
+    "left-card: no opposite-side mesh",
+    "search-right: no hidden pickables",
+    "search-right: no opposite-side mesh",
+    "Opposite-side search switches unilateral view",
+    "strict-muscle: no hidden pickables",
+    "strict-muscle: no opposite-side mesh",
+    "Strict muscle isolation excludes all bones/background",
+    "muscle-bones: no hidden pickables",
+    "muscle-bones: no opposite-side mesh",
+    "Only attachment bones accompany biceps",
+    "context-off: no hidden pickables",
+    "context-off: no opposite-side mesh",
+    "General background toggle does not remove explicit muscle bones",
+    "muscle-unisolated: no hidden pickables",
+    "muscle-unisolated: no opposite-side mesh",
+    "Muscle bone mode also filters non-isolated bone context",
+    "part: no hidden pickables",
+    "part: no opposite-side mesh",
+    "Part isolation respects explicit attachment allowlist",
+    "part-strict: no hidden pickables",
+    "part-strict: no opposite-side mesh",
+    "Turning muscle bones off restores strict isolation",
+    "elbow: no hidden pickables",
+    "elbow: no opposite-side mesh",
+    "Shared elbow has precisely three allowed bones",
+    "Shared transparency preserved",
+    "Shared pin ID survives participant selection",
+    "left-bone-isolation: no hidden pickables",
+    "left-bone-isolation: no opposite-side mesh",
+    "Single left bone isolation",
+    "Left humerus has real raycast target",
+    "Real canvas click selects left ID",
+    "Left bone BVH agrees with native rays",
+    "selected-both: no hidden pickables",
+    "Selection preserves explicit both-side mode",
+    "neck-default: no hidden pickables",
+    "Side preference is local to each section",
+    "c7-t1: no hidden pickables",
+    "Cross-section context owner survives shared isolation",
+    "c7-t1-no-background: no hidden pickables",
+    "Shared components survive background off",
+    "masseter: no hidden pickables",
+    "masseter: no opposite-side mesh",
+    "Left head muscle strict isolation",
+    "masseter-bones: no hidden pickables",
+    "masseter-bones: no opposite-side mesh",
+    "Missing attachment relations do not invent bone context",
+    "Missing muscle links are disclosed in card",
+    "temporalis-bones: no hidden pickables",
+    "temporalis-bones: no opposite-side mesh",
+    "Existing left muscle links supply bone context",
+    "temporal: no hidden pickables",
+    "temporal: no opposite-side mesh",
+    "Left temporal isolation",
+    "cut: no hidden pickables",
+    "cut: no opposite-side mesh"
+  ],
+  "snapshots": {
+    "both": {
+      "side": "both",
+      "sub": "all",
+      "selected": null,
+      "isolate": null,
+      "visible": [
+        {
+          "id": "deltoid",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "supraspinatus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "infraspinatus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "teres_minor",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "teres_major",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "subscapularis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "coracobrachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "brachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "anconeus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pronator_teres",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_carpi_radialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "palmaris_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_carpi_ulnaris",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_digitorum_superficialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_digitorum_profundus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pronator_quadratus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "brachioradialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_radialis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_radialis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_digitorum",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_ulnaris",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "supinator",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "abductor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_indicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "abductor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "opponens_pollicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "adductor_pollicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "abductor_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_digiti_minimi_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "opponens_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lumbricals",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "palmar_interossei",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "dorsal_interossei",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scaphoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lunate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triquetrum",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pisiform",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezium",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "capitate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "hamate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "interosseous_membrane",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_retinaculum",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7486",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7487",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7488",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7857",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7882",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7909",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7957",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8066",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8175",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8229",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8283",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8364",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8445",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8531",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8533",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7875",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7886",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7913",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7976",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8070",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8194",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8248",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:BP28",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12519",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12520",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12521",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12522",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12523",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12524",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12525",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9165",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9187",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9209",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9248",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9922",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9945",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9968",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9991",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10014",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10037",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10059",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10081",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "scapula_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei",
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate",
+        "metacarpal_1",
+        "metacarpal_2",
+        "metacarpal_3",
+        "metacarpal_4",
+        "metacarpal_5",
+        "phalanx_prox_1",
+        "phalanx_prox_2",
+        "phalanx_prox_3",
+        "phalanx_prox_4",
+        "phalanx_prox_5",
+        "phalanx_mid_2",
+        "phalanx_mid_3",
+        "phalanx_mid_4",
+        "phalanx_mid_5",
+        "phalanx_dist_1",
+        "phalanx_dist_2",
+        "phalanx_dist_3",
+        "phalanx_dist_4",
+        "phalanx_dist_5",
+        "interosseous_membrane",
+        "flexor_retinaculum",
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "right": {
+      "side": "right",
+      "sub": "all",
+      "selected": null,
+      "isolate": null,
+      "visible": [
+        {
+          "id": "deltoid",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "supraspinatus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "infraspinatus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "teres_minor",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "teres_major",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "subscapularis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "coracobrachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "brachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "anconeus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pronator_teres",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_carpi_radialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "palmaris_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_carpi_ulnaris",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_digitorum_superficialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "flexor_digitorum_profundus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pronator_quadratus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "brachioradialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_radialis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_radialis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_digitorum",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_carpi_ulnaris",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "supinator",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "abductor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_pollicis_longus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "extensor_indicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "abductor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_pollicis_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "opponens_pollicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "adductor_pollicis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "abductor_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_digiti_minimi_brevis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "opponens_digiti_minimi",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lumbricals",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "palmar_interossei",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "dorsal_interossei",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scaphoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lunate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triquetrum",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pisiform",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezium",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "capitate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "hamate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "interosseous_membrane",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_retinaculum",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7486",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7487",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7488",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7857",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7882",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7909",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7957",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8066",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8175",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8229",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8283",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8364",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8445",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8531",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8533",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7875",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7886",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7913",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7976",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8070",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8194",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8248",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:BP28",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12519",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12520",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12521",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12522",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12523",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12524",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12525",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9165",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9187",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9209",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9248",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9922",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9945",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9968",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9991",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10014",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10037",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10059",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10081",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei",
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate",
+        "metacarpal_1",
+        "metacarpal_2",
+        "metacarpal_3",
+        "metacarpal_4",
+        "metacarpal_5",
+        "phalanx_prox_1",
+        "phalanx_prox_2",
+        "phalanx_prox_3",
+        "phalanx_prox_4",
+        "phalanx_prox_5",
+        "phalanx_mid_2",
+        "phalanx_mid_3",
+        "phalanx_mid_4",
+        "phalanx_mid_5",
+        "phalanx_dist_1",
+        "phalanx_dist_2",
+        "phalanx_dist_3",
+        "phalanx_dist_4",
+        "phalanx_dist_5",
+        "interosseous_membrane",
+        "flexor_retinaculum"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "left": {
+      "side": "left",
+      "sub": "all",
+      "selected": null,
+      "isolate": null,
+      "visible": [
+        {
+          "id": "context:FMA7486",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7487",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7488",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12519",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12520",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12521",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12522",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12523",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12524",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA12525",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9165",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9187",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9209",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9248",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9922",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9945",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9968",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9991",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10014",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10037",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10059",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA10081",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "scapula_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "cut": false
+    },
+    "left-hand": {
+      "side": "left",
+      "sub": "hand",
+      "selected": null,
+      "isolate": null,
+      "visible": [
+        {
+          "id": "clavicle_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "scapula_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "cut": false
+    },
+    "left-card": {
+      "side": "left",
+      "sub": "arm",
+      "selected": "scaphoid_left",
+      "isolate": null,
+      "visible": [
+        {
+          "id": "clavicle_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "scapula_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "humerus_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "cut": false
+    },
+    "search-right": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "biceps_brachii",
+      "isolate": null,
+      "visible": [
+        {
+          "id": "coracobrachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "brachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "anconeus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scaphoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lunate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triquetrum",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pisiform",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezium",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "capitate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "hamate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "interosseous_membrane",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "flexor_retinaculum",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "humerus"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "strict-muscle": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "biceps_brachii",
+      "isolate": "biceps_brachii",
+      "visible": [
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        }
+      ],
+      "pickable": [
+        "biceps_brachii"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "muscle-bones": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "biceps_brachii",
+      "isolate": "biceps_brachii",
+      "visible": [
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "biceps_brachii",
+        "scapula",
+        "radius"
+      ],
+      "related": [
+        "scapula",
+        "radius"
+      ],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "context-off": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "biceps_brachii",
+      "isolate": "biceps_brachii",
+      "visible": [
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "biceps_brachii",
+        "scapula",
+        "radius"
+      ],
+      "related": [
+        "scapula",
+        "radius"
+      ],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "muscle-unisolated": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "biceps_brachii",
+      "isolate": null,
+      "visible": [
+        {
+          "id": "coracobrachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "biceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 2
+        },
+        {
+          "id": "brachialis",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "anconeus",
+          "kind": "m",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "scapula",
+        "radius"
+      ],
+      "related": [
+        "scapula",
+        "radius"
+      ],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "part": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "triceps_brachii",
+      "isolate": "triceps_brachii",
+      "visible": [
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        },
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "triceps_brachii",
+        "humerus",
+        "ulna"
+      ],
+      "related": [
+        "humerus",
+        "ulna"
+      ],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "part-strict": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "triceps_brachii",
+      "isolate": "triceps_brachii",
+      "visible": [
+        {
+          "id": "triceps_brachii",
+          "kind": "m",
+          "side": "right",
+          "meshes": 3
+        }
+      ],
+      "pickable": [
+        "triceps_brachii"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis",
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ],
+      "cut": false
+    },
+    "elbow": {
+      "side": "right",
+      "sub": "arm",
+      "selected": "humerus",
+      "isolate": "humerus",
+      "visible": [
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "humerus",
+        "radius",
+        "ulna"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "cut": false
+    },
+    "left-bone-isolation": {
+      "side": "left",
+      "sub": "arm",
+      "selected": "humerus_left",
+      "isolate": "humerus_left",
+      "visible": [
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "humerus_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "cut": false
+    },
+    "selected-both": {
+      "side": "both",
+      "sub": "arm",
+      "selected": "humerus",
+      "isolate": null,
+      "visible": [
+        {
+          "id": "clavicle",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scapula",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "humerus",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "radius",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "ulna",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "scaphoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "lunate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "triquetrum",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "pisiform",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezium",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "trapezoid",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "capitate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "hamate",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "metacarpal_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_prox_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_mid_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_1",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_2",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_3",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_4",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "phalanx_dist_5",
+          "kind": "b",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "interosseous_membrane",
+          "kind": "o",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "clavicle_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "scapula_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "humerus_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "humerus",
+        "humerus_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "neck-default": {
+      "side": "both",
+      "sub": "all",
+      "selected": null,
+      "isolate": null,
+      "visible": [
+        {
+          "id": "hyoid",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "atlas",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "axis",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "cervical_3",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "cervical_4",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "cervical_5",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "cervical_6",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "cervical_7",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA52735",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA52748",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA52738",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA52739",
+          "kind": "c",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA13322",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA13323",
+          "kind": "c",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7486",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7487",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA13395",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA13396",
+          "kind": "c",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA55099",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7857",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7987",
+          "kind": "c",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA7882",
+          "kind": "c",
+          "side": "right",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA8012",
+          "kind": "c",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "thoracic_1",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9187",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9209",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9248",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9922",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "context:FMA9945",
+          "kind": "c",
+          "side": "unseparated",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "hyoid",
+        "atlas",
+        "axis",
+        "cervical_3",
+        "cervical_4",
+        "cervical_5",
+        "cervical_6",
+        "cervical_7"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "c7-t1": {
+      "side": "both",
+      "sub": "all",
+      "selected": "cervical_7",
+      "isolate": "cervical_7",
+      "visible": [
+        {
+          "id": "cervical_7",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "thoracic_1",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "cervical_7",
+        "thoracic_1"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "c7-t1-no-background": {
+      "side": "both",
+      "sub": "all",
+      "selected": "cervical_7",
+      "isolate": "cervical_7",
+      "visible": [
+        {
+          "id": "cervical_7",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        },
+        {
+          "id": "thoracic_1",
+          "kind": "b",
+          "side": "unseparated",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "cervical_7",
+        "thoracic_1"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "masseter": {
+      "side": "left",
+      "sub": "all",
+      "selected": "masseter_left",
+      "isolate": "masseter_left",
+      "visible": [
+        {
+          "id": "masseter_left",
+          "kind": "m",
+          "side": "left",
+          "meshes": 2
+        }
+      ],
+      "pickable": [
+        "masseter_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "masseter_left",
+        "lateral_pterygoid_left",
+        "temporalis_left",
+        "medial_pterygoid_left",
+        "corrugator_supercilii_left",
+        "levator_anguli_oris_left",
+        "depressor_labii_inferioris_left",
+        "mentalis_left",
+        "buccinator_left"
+      ],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "masseter-bones": {
+      "side": "left",
+      "sub": "all",
+      "selected": "masseter_left",
+      "isolate": "masseter_left",
+      "visible": [
+        {
+          "id": "masseter_left",
+          "kind": "m",
+          "side": "left",
+          "meshes": 2
+        }
+      ],
+      "pickable": [
+        "masseter_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [
+        "masseter_left",
+        "lateral_pterygoid_left",
+        "temporalis_left",
+        "medial_pterygoid_left",
+        "corrugator_supercilii_left",
+        "levator_anguli_oris_left",
+        "depressor_labii_inferioris_left",
+        "mentalis_left",
+        "buccinator_left"
+      ],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "temporalis-bones": {
+      "side": "left",
+      "sub": "all",
+      "selected": "temporalis_left",
+      "isolate": "temporalis_left",
+      "visible": [
+        {
+          "id": "temporalis_left",
+          "kind": "m",
+          "side": "left",
+          "meshes": 1
+        },
+        {
+          "id": "temporal_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "temporalis_left",
+        "temporal_left"
+      ],
+      "related": [
+        "temporal_left"
+      ],
+      "hiddenPickables": 0,
+      "quiz": [
+        "masseter_left",
+        "lateral_pterygoid_left",
+        "temporalis_left",
+        "medial_pterygoid_left",
+        "corrugator_supercilii_left",
+        "levator_anguli_oris_left",
+        "depressor_labii_inferioris_left",
+        "mentalis_left",
+        "buccinator_left"
+      ],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "temporal": {
+      "side": "left",
+      "sub": "all",
+      "selected": "temporal_left",
+      "isolate": "temporal_left",
+      "visible": [
+        {
+          "id": "temporal_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "temporal_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": false
+    },
+    "cut": {
+      "side": "left",
+      "sub": "all",
+      "selected": "temporal_left",
+      "isolate": "temporal_left",
+      "visible": [
+        {
+          "id": "temporal_left",
+          "kind": "b",
+          "side": "left",
+          "meshes": 1
+        }
+      ],
+      "pickable": [
+        "temporal_left"
+      ],
+      "related": [],
+      "hiddenPickables": 0,
+      "quiz": [],
+      "firstHitOnly": true,
+      "cut": true
+    }
+  },
+  "errors": []
+}

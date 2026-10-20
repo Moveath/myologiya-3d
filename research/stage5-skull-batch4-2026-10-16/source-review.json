@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-16",
+  "sources": [
+    {
+      "id": "batch4_gray_body",
+      "title": "Gray / Lewis, Anatomy of the Human Body (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=102",
+      "locator": "PDF pp.102–105: Body, surfaces; distinguish depression, plate and projection. No dimensions transferred.",
+      "authorGroup": "gray_lewis_1918",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_oxford_body",
+      "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+      "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+      "locator": "Printed pp.40–41 / PDF pp.59–60: body and its superior, lateral, anterior and inferior features.",
+      "authorGroup": "van_gijn_dunne",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_gray_wings",
+      "title": "Gray / Lewis, Anatomy of the Human Body (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=105",
+      "locator": "PDF pp.105–108: greater/lesser wings, pterygoid plates, notches, fossae and hamulus.",
+      "authorGroup": "gray_lewis_1918",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_mcf",
+      "title": "Tayebi Meybodi et al. Comprehensive microsurgical anatomy of the middle cranial fossa, Part I (2023)",
+      "url": "https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2023.1132774/full",
+      "locator": "Anterior clinoid process; Middle fossa foramina (rotundum, ovale, spinosum, Vesalius, canaliculus innominatus). DOI 10.3389/fsurg.2023.1132774. No population dimensions or symmetry assumed for this specimen.",
+      "authorGroup": "tayebi_meybodi_2023",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_palacky_sphenoid",
+      "title": "Libor Luňáček, Palacký University — Neurocranium",
+      "url": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+      "locator": "Os sphenoidale: greater/lesser wings and pterygoid plates. Used only for these named structures; erroneous heading calling the sphenoid paired is rejected.",
+      "authorGroup": "lunacek_palacky",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_gray_temporal",
+      "title": "Gray / Lewis, Anatomy of the Human Body (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=90",
+      "locator": "PDF pp.90–93: squama surfaces, zygomatic process, articular eminence, mandibular fossa, borders; pp.98–99: fissures and suprameatal spine.",
+      "authorGroup": "gray_lewis_1918",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_oxford_temporal",
+      "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+      "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+      "locator": "Printed pp.22–28 / PDF pp.41–47: squamous/tympanic parts, mandibular fossa and Fig.1.12. Do not adopt the conflation of supramastoid crest with Henle spine.",
+      "authorGroup": "van_gijn_dunne",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    },
+    {
+      "id": "batch4_gulya",
+      "title": "Aina Julianna Gulya. Gulya and Schuknecht’s Anatomy of the Temporal Bone with Surgical Implications, 3rd ed. (2007)",
+      "url": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf",
+      "locator": "Printed pp.1–4 / PDF pp.22–25: squama, mastoid fossa, suprameatal spine, photos A–E and junctions of temporal components. Title/copyright checked; a publisher preview, not the entire book.",
+      "authorGroup": "gulya_schuknecht",
+      "kind": "anatomical",
+      "scope": "representation",
+      "checked": "2026-10-16",
+      "access": "text"
+    }
+  ],
+  "reusedWithoutNewFullTextClaims": [
+    {
+      "codes": [
+        "A02.1.05.046",
+        "A02.1.05.047",
+        "A02.1.05.049",
+        "A02.1.05.050"
+      ],
+      "evidence": "Existing exact descriptions, source pairs and locators in head_cranial_evidence.py / head-baseline.json; only representation semantics changed."
+    },
+    {
+      "codes": [
+        "A02.1.05.037",
+        "A02.1.05.039"
+      ],
+      "evidence": "Tayebi Meybodi full text + prior independent Palamenghi source. Palamenghi metadata revalidated through E-utilities and publisher indexed abstract; no new full-text claim."
+    }
+  ],
+  "disagreements": [
+    {
+      "source": "https://www.atlascloveka.upol.cz/cs/cs02/cs0201/cs020114.html",
+      "claim": "Sphenoid labelled paired in heading",
+      "decision": "Rejected heading; Gray and NCBI NBK544308/MeSH D013100 establish unpaired bone. No application change needed."
+    },
+    {
+      "source": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+      "claim": "Supramastoid crest labelled spine of Henle",
+      "decision": "Not used for that synonym; Gulya pp.1–2 and Gray distinguish suprameatal spine from ridge. Existing separate records .068/.070 retained."
+    },
+    {
+      "source": "https://api.pageplace.de/preview/DT0400.9780849375989_A24589274/preview-9780849375989_A24589274.pdf",
+      "claim": "Suspected wrong attribution",
+      "decision": "Not confirmed: title is Gulya and Schuknecht’s..., 3rd ed., Aina Julianna Gulya, copyright 2007. Existing citation retained."
+    }
+  ],
+  "ncbi": {
+    "apiPassed": true,
+    "files": [
+      "pubmed-skull-base.json",
+      "pubmed-refined.json",
+      "pubmed-ear.json"
+    ],
+    "exactPhraseResult": "0 with quotedphrasesnotfound, not absence of publications",
+    "verifiedPmids": [
+      "38001601",
+      "38806238"
+    ],
+    "bookshelf": {
+      "nbk": "NBK544308",
+      "authors": [
+        "Radia T. Jamil",
+        "Avery L. Callahan"
+      ],
+      "updated": "2023-07-24",
+      "access": "Indexed chapter text available; direct page/reader CAPTCHA. Used as corroboration, not proof of model geometry."
+    }
+  },
+  "accessLimits": [
+    "PMC11630884 CAPTCHA; AJNR publisher pages unavailable; no access bypass",
+    "Palamenghi publisher PDF cache miss; metadata and indexed publisher abstract, not new full-text reading",
+    "FIPAT .06.039 cache miss; .06.045 and .00.046 read",
+    "Unrelated MDPI URL lookup yielded 429 and was discarded; only DOI verified by EFetch is cited"
+  ],
+  "scope": "Anatomical facts, representation choices and specimen geometry are separate. No coordinates, prevalence, dimensions or external images copied."
+}

@@ -1,0 +1,44 @@
+{
+  "flags": [
+    "-c",
+    "-noq",
+    "-kn",
+    "-km"
+  ],
+  "reference": {
+    "file": "research/stage4-2026-10-16/fixture-bone.glb",
+    "sha256": "6ea43168c3f148204347ec664bf0a41e4e538d14aea9474ab2f704d33775278e",
+    "three": "170",
+    "imagesSkipped": true,
+    "meshes": [
+      {
+        "owner": "b|fixture",
+        "faces": 5120,
+        "vertices": 2562,
+        "zeroFaces": 0,
+        "invalidPositions": 0,
+        "invalidNormals": 0,
+        "determinant": 1
+      }
+    ]
+  },
+  "output": {
+    "file": "research/stage4-closure-2026-10-16/fixture-safe.glb",
+    "sha256": "32a4ee85e1a4a87a1bc9d9431a39763bdc03aa136f2b5892fc1c218a2462f6fc",
+    "three": "170",
+    "imagesSkipped": true,
+    "meshes": [
+      {
+        "owner": "b|fixture",
+        "faces": 5120,
+        "vertices": 2562,
+        "zeroFaces": 0,
+        "invalidPositions": 0,
+        "invalidNormals": 0,
+        "determinant": 1
+      }
+    ]
+  },
+  "errors": [],
+  "limits": "No anatomical approval or self-intersection proof. No texture conversion. Non-quantized positions/normals; compare source geometry separately."
+}

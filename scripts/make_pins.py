@@ -6,6 +6,10 @@
 import json, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ta98 import T as TA, G as TG, BONE, CARPUS_SHARED
+from upper_girdle_stage5_review import review as review_girdle, additional_records as girdle_additional
+from arm_forearm_stage5_review import review as review_arm, additional_records as arm_additional
+from hand_stage5_review import review as review_hand, additional_records as hand_additional
+from hand_targeted_stage5_review import review as targeted_hand, additional_records as targeted_hand_additional, left_records
 
 ta_path, old_path, out_path = sys.argv[1:4]
 POS = {p["id"]: p for p in json.load(open(ta_path))}
@@ -402,10 +406,17 @@ ids = [o["id"] for o in out]
 assert len(ids) == len(set(ids)), "duplicate ids"
 unused = set(POS) - {s[0] for s in S} - {a[0] for a in A}
 assert not unused, ("positions without description", unused)
+out = [review_girdle(p) for p in out] + list(girdle_additional({'clavicle', 'scapula'}))
+out = [review_arm(p) for p in out] + list(arm_additional({'humerus', 'radius', 'ulna'}))
+out = [review_hand(p) for p in out] + list(hand_additional())
+out = [targeted_hand(p) for p in out] + list(targeted_hand_additional())
+out += list(left_records(out))
+assert len({p['id'] for p in out}) == len(out)
 
 open(out_path, "w", encoding="utf-8").write(
     "/* Точки на костях: плечевой пояс и верхняя конечность. t: ta = образование по Terminologia Anatomica (TA98, код c), "
     "att = место прикрепления мышцы без отдельного термина, soft = точка на связке/перепонке. m: [мышца, o=начало|i=прикрепление, часть] */\n"
     "window.ATLAS.pins = " + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ";\n")
 n_ta = sum(1 for o in out if o["t"] == "ta")
-print(len(out), "pins:", n_ta, "TA,", len(out) - n_ta, "attachment/soft;", len(arm_bones), "bones checked")
+print(len(out), "pins:", n_ta, "TA,", sum(o['t'] in ('att', 'soft') for o in out),
+      "attachment/soft,", sum(o['t'] == 'additional' for o in out), "additional;", len(arm_bones), "bones checked")

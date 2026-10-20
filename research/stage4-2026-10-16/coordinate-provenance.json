@@ -1,0 +1,211 @@
+{
+  "git_present": false,
+  "raw_arm_present": false,
+  "raw_leg_default_present": false,
+  "rounding_max_mm": 0.008660254037844387,
+  "points": [
+    {
+      "source": "pins/ta.json",
+      "b": "humerus",
+      "id": "hum_collum_chirurgicum",
+      "p": [
+        -0.19187,
+        1.29025,
+        0.07466
+      ],
+      "n": [
+        -0.875,
+        0.151,
+        -0.46
+      ]
+    },
+    {
+      "source": "pins/ta.json",
+      "b": "humerus",
+      "id": "hum_corpus",
+      "p": [
+        -0.20344,
+        1.19513,
+        0.07618
+      ],
+      "n": [
+        -0.376,
+        -0.086,
+        0.923
+      ]
+    },
+    {
+      "source": "pins/ta.json",
+      "b": "humerus",
+      "id": "hum_facies_anterolateralis",
+      "p": [
+        -0.20857,
+        1.16143,
+        0.06735
+      ],
+      "n": [
+        -0.999,
+        0.028,
+        -0.032
+      ]
+    },
+    {
+      "source": "pins/ta.json",
+      "b": "humerus",
+      "id": "hum_sulcus_n_radialis",
+      "p": [
+        -0.20379,
+        1.19513,
+        0.05846
+      ],
+      "n": [
+        -0.625,
+        0.165,
+        -0.762
+      ]
+    },
+    {
+      "source": "pins/ta.json",
+      "b": "radius",
+      "id": "rad_corpus",
+      "p": [
+        -0.25041,
+        0.93067,
+        0.08843
+      ],
+      "n": [
+        0.211,
+        0.161,
+        0.964
+      ]
+    },
+    {
+      "source": "pins/ta.json",
+      "b": "radius",
+      "id": "rad_facies_anterior",
+      "p": [
+        -0.25084,
+        0.91851,
+        0.09083
+      ],
+      "n": [
+        0.298,
+        0.182,
+        0.937
+      ]
+    },
+    {
+      "source": "pins_leg/ta.json",
+      "b": "calcaneus",
+      "id": "cal_sinus_tarsi",
+      "p": [
+        -0.09929,
+        0.03444,
+        0.0639
+      ],
+      "n": [
+        -0.597,
+        0.52,
+        -0.611
+      ]
+    }
+  ],
+  "source_lines": [
+    {
+      "file": "build/landmarks.js",
+      "line": 130,
+      "text": "  const surgical = surf(k, axisAt(k, yS), [-1, 0, -0.6]);"
+    },
+    {
+      "file": "build/landmarks.js",
+      "line": 162,
+      "text": "  put(k, 'hum_head', head); put(k, 'anat_neck', neckA); put(k, 'surg_neck', surgical);"
+    },
+    {
+      "file": "build/landmarks.js",
+      "line": 165,
+      "text": "  put(k, 'radial_groove', radialGroove); put(k, 'hum_body_med', bodyMed); put(k, 'hum_body_ant', bodyAnt);"
+    },
+    {
+      "file": "build/landmarks.js",
+      "line": 180,
+      "text": "  const ant = surf(k, axisAt(k, top - 0.55 * L), [0, 0, 1]);"
+    },
+    {
+      "file": "build/landmarks.js",
+      "line": 188,
+      "text": "  put(k, 'pronator_tuberosity', pron); put(k, 'rad_interosseous', ib); put(k, 'rad_anterior', ant); put(k, 'rad_posterior', post);"
+    },
+    {
+      "file": "build/landmarks.js",
+      "line": 203,
+      "text": "  const ant = surf(k, axisAt(k, top - 0.42 * L), [0, 0, 1]);"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 45,
+      "text": "const put = (bone, id, s) => { if (s) out.push({ bone, id, p: s.p.toArray().map(x => +x.toFixed(5)), n: s.n.toArray().map(x => +x.toFixed(3)) }); else out.push({ bone, id, missing: true }); };"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 100,
+      "text": "  put(k, 'hum_collum_chirurgicum', OLDS('surg_neck'));"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 106,
+      "text": "  put(k, 'hum_corpus', surf(k, axisAt(k, top - 0.5 * L), [-0.2, 0, 1]));"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 108,
+      "text": "  put(k, 'hum_facies_anterolateralis', surf(k, axisAt(k, top - 0.6 * L), [-1, 0, 0.75]));"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 110,
+      "text": "  put(k, 'hum_sulcus_n_radialis', OLDS('radial_groove'));"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 141,
+      "text": "  put(k, 'rad_corpus', surf(k, axisAt(k, top - 0.5 * L), [-0.5, 0, 1]));"
+    },
+    {
+      "file": "build/landmarks_ta.js",
+      "line": 143,
+      "text": "  put(k, 'rad_facies_anterior', OLDS('rad_anterior'));"
+    },
+    {
+      "file": "build/pintool.html",
+      "line": 86,
+      "text": "  return { p: hit.point.toArray().map(f), n: n.toArray().map(x => Math.round(x * 1000) / 1000) };"
+    },
+    {
+      "file": "build/pintool.html",
+      "line": 145,
+      "text": "new GLTFLoader().load('arm_raw.glb', g => {"
+    },
+    {
+      "file": "build_leg/landmarks_ta.js",
+      "line": 46,
+      "text": "const put = (bone, id, s) => { if (s) out.push({ bone, id, p: s.p.toArray().map(x => +x.toFixed(5)), n: s.n.toArray().map(x => +x.toFixed(3)) }); else out.push({ bone, id, missing: true }); };"
+    },
+    {
+      "file": "build_leg/landmarks_ta.js",
+      "line": 370,
+      "text": "  put(k, 'cal_sinus_tarsi', PK(k, 'sup', 0.27, 0.72));"
+    },
+    {
+      "file": "build_leg/pintool.html",
+      "line": 86,
+      "text": "  return { p: hit.point.toArray().map(f), n: n.toArray().map(x => Math.round(x * 1000) / 1000) };"
+    },
+    {
+      "file": "build_leg/pintool.html",
+      "line": 145,
+      "text": "new GLTFLoader().load(new URLSearchParams(location.search).get('f') || 'arm_raw.glb', g => {"
+    }
+  ],
+  "note": "No normal offset in surf/pick; historical GLB URL for leg can be overridden by ?f=. Saved hash/query for that historical run is unavailable."
+}

@@ -1,0 +1,1 @@
+before-* files contain exact Node Buffer JSON bytes. original-* decode those byte arrays without alteration. implementation.diff incorrectly compared serialized bytes to source and is superseded by implementation-verified.diff. No historical source bytes were reconstructed or guessed.

@@ -1,0 +1,919 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "bone": "radius",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 1404,
+      "triangles": 2804,
+      "boundsM": [
+        [
+          -0.2802597329783,
+          0.8160334568950001,
+          0.05708042748779999
+        ],
+        [
+          -0.2203289285266,
+          1.0454487835299,
+          0.12384862708870001
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "humerus",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 8136,
+      "triangles": 16268,
+      "boundsM": [
+        [
+          -0.2415662922476,
+          1.0394401635503001,
+          0.0471869239007
+        ],
+        [
+          -0.1406629153488,
+          1.3469157514719,
+          0.0967062402843
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "ulna",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 1798,
+      "triangles": 3592,
+      "boundsM": [
+        [
+          -0.2481446951563,
+          0.8152564801735,
+          0.04045312564769999
+        ],
+        [
+          -0.19727861912209999,
+          1.0629048605396,
+          0.1200673403774
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "interosseous_membrane",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 1105,
+      "triangles": 2160,
+      "boundsM": [
+        [
+          -0.25135619893850003,
+          0.8318319835655,
+          0.06640414814580001
+        ],
+        [
+          -0.2295490522884,
+          0.9880561030351,
+          0.1146285033269
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "humerus_left",
+      "source": "build_context_bones/arm_extra_hi.glb",
+      "sha256": "7616e5d47893c5a9317bf2a46bc1d3e2a29557da6418c901b103065bbc4003df",
+      "vertices": 8248,
+      "triangles": 16492,
+      "boundsM": [
+        [
+          0.13935498893260956,
+          1.0394599437713623,
+          0.04717719927430153
+        ],
+        [
+          0.24025999009609222,
+          1.3469399213790894,
+          0.09671089798212051
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    }
+  ],
+  "anchors": [
+    {
+      "id": "rad_caput",
+      "bone": "radius",
+      "p": [
+        -0.24059,
+        1.04043,
+        0.07341
+      ],
+      "distanceMm": 0.005046545124314091,
+      "triangle": 1921,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_fovea_articularis",
+      "bone": "radius",
+      "p": [
+        -0.23256,
+        1.04347,
+        0.06999
+      ],
+      "distanceMm": 0.13861139918336193,
+      "triangle": 2579,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_circumferentia_articularis",
+      "bone": "radius",
+      "p": [
+        -0.22087,
+        1.03955,
+        0.07018
+      ],
+      "distanceMm": 0.0257083603729258,
+      "triangle": 2694,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_collum",
+      "bone": "radius",
+      "p": [
+        -0.23486,
+        1.02927,
+        0.07747
+      ],
+      "distanceMm": 0.07903506606061525,
+      "triangle": 2772,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_corpus",
+      "bone": "radius",
+      "p": [
+        -0.25041,
+        0.93067,
+        0.08843
+      ],
+      "distanceMm": 0.45643321880194404,
+      "triangle": 1495,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_tuberositas",
+      "bone": "radius",
+      "p": [
+        -0.23088,
+        1.01299,
+        0.08454
+      ],
+      "distanceMm": 0.03270921047793015,
+      "triangle": 2652,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_facies_anterior",
+      "bone": "radius",
+      "p": [
+        -0.25084,
+        0.91851,
+        0.09083
+      ],
+      "distanceMm": 0.3414393351829122,
+      "triangle": 1495,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_facies_posterior",
+      "bone": "radius",
+      "p": [
+        -0.24864,
+        0.93067,
+        0.07868
+      ],
+      "distanceMm": 0.15974989972105552,
+      "triangle": 1704,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_facies_lateralis",
+      "bone": "radius",
+      "p": [
+        -0.26197,
+        0.8954,
+        0.092
+      ],
+      "distanceMm": 0.05441201934954293,
+      "triangle": 1335,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_tuberositas_pronatoria",
+      "bone": "radius",
+      "p": [
+        -0.25666,
+        0.93576,
+        0.08373
+      ],
+      "distanceMm": 0.007078048789279919,
+      "triangle": 1293,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_margo_interosseus",
+      "bone": "radius",
+      "p": [
+        -0.23712,
+        0.95173,
+        0.08302
+      ],
+      "distanceMm": 0.08863007210070592,
+      "triangle": 1682,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_margo_anterior",
+      "bone": "radius",
+      "p": [
+        -0.25435,
+        0.90632,
+        0.09393
+      ],
+      "distanceMm": 0.0027290140409051557,
+      "triangle": 1496,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_margo_posterior",
+      "bone": "radius",
+      "p": [
+        -0.25547,
+        0.91968,
+        0.07909
+      ],
+      "distanceMm": 0.11559507647371345,
+      "triangle": 1243,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_processus_styloideus",
+      "bone": "radius",
+      "p": [
+        -0.27979,
+        0.81869,
+        0.11432
+      ],
+      "distanceMm": 0.07678264696537808,
+      "triangle": 677,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_crista_suprastyloidea",
+      "bone": "radius",
+      "p": [
+        -0.27318,
+        0.84472,
+        0.10795
+      ],
+      "distanceMm": 0.028761591365855967,
+      "triangle": 872,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_tuberculum_dorsale",
+      "bone": "radius",
+      "p": [
+        -0.26496,
+        0.83243,
+        0.0992
+      ],
+      "distanceMm": 0.05634150419278446,
+      "triangle": 89,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_sulci_tendinum",
+      "bone": "radius",
+      "p": [
+        -0.25583,
+        0.83243,
+        0.10232
+      ],
+      "distanceMm": 0.12793414386976143,
+      "triangle": 145,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_incisura_ulnaris",
+      "bone": "radius",
+      "p": [
+        -0.24988,
+        0.82553,
+        0.11193
+      ],
+      "distanceMm": 0.049468065541289796,
+      "triangle": 294,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_facies_articularis_carpalis",
+      "bone": "radius",
+      "p": [
+        -0.26318,
+        0.81945,
+        0.10944
+      ],
+      "distanceMm": 0.015840243553992297,
+      "triangle": 481,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "rad_supinator",
+      "bone": "radius",
+      "p": [
+        -0.24615,
+        0.98637,
+        0.07982
+      ],
+      "distanceMm": 0.22225633032401884,
+      "triangle": 1571,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_caput",
+      "bone": "humerus",
+      "p": [
+        -0.14621,
+        1.33782,
+        0.06609
+      ],
+      "distanceMm": 0.09035219591392922,
+      "triangle": 10009,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_collum_anatomicum",
+      "bone": "humerus",
+      "p": [
+        -0.14737,
+        1.30877,
+        0.06662
+      ],
+      "distanceMm": 0.03293203698466241,
+      "triangle": 15583,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_collum_chirurgicum",
+      "bone": "humerus",
+      "p": [
+        -0.19187,
+        1.29025,
+        0.07466
+      ],
+      "distanceMm": 0.3702893073356956,
+      "triangle": 10959,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_tuberculum_majus",
+      "bone": "humerus",
+      "p": [
+        -0.18865,
+        1.33319,
+        0.06992
+      ],
+      "distanceMm": 0.08558398705225966,
+      "triangle": 13919,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_tuberculum_minus",
+      "bone": "humerus",
+      "p": [
+        -0.16567,
+        1.32238,
+        0.09625
+      ],
+      "distanceMm": 0.16289813251946691,
+      "triangle": 14960,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_sulcus_intertubercularis",
+      "bone": "humerus",
+      "p": [
+        -0.18407,
+        1.31838,
+        0.0847
+      ],
+      "distanceMm": 0.15043527520524166,
+      "triangle": 7537,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_crista_tuberculi_majoris",
+      "bone": "humerus",
+      "p": [
+        -0.19212,
+        1.28838,
+        0.07493
+      ],
+      "distanceMm": 0.2948995439449962,
+      "triangle": 10961,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_crista_tuberculi_minoris",
+      "bone": "humerus",
+      "p": [
+        -0.1734,
+        1.28838,
+        0.0826
+      ],
+      "distanceMm": 0.22450994341039499,
+      "triangle": 6360,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_corpus",
+      "bone": "humerus",
+      "p": [
+        -0.20344,
+        1.19513,
+        0.07618
+      ],
+      "distanceMm": 0.32019600664004677,
+      "triangle": 11523,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_facies_anteromedialis",
+      "bone": "humerus",
+      "p": [
+        -0.18617,
+        1.1994,
+        0.06607
+      ],
+      "distanceMm": 0.07845769548493148,
+      "triangle": 6040,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_facies_anterolateralis",
+      "bone": "humerus",
+      "p": [
+        -0.20857,
+        1.16143,
+        0.06735
+      ],
+      "distanceMm": 0.6755192920091584,
+      "triangle": 8057,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_facies_posterior",
+      "bone": "humerus",
+      "p": [
+        -0.19885,
+        1.1456,
+        0.05264
+      ],
+      "distanceMm": 0.08050457969873719,
+      "triangle": 5850,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_sulcus_n_radialis",
+      "bone": "humerus",
+      "p": [
+        -0.20379,
+        1.19513,
+        0.05846
+      ],
+      "distanceMm": 0.4814593103593282,
+      "triangle": 11099,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_margo_medialis",
+      "bone": "humerus",
+      "p": [
+        -0.1901,
+        1.16137,
+        0.06693
+      ],
+      "distanceMm": 0.07249054573553437,
+      "triangle": 5967,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_crista_supraepicondylaris_medialis",
+      "bone": "humerus",
+      "p": [
+        -0.19427,
+        1.10346,
+        0.05765
+      ],
+      "distanceMm": 0.21866000726317014,
+      "triangle": 12408,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_processus_supracondylaris",
+      "bone": "humerus",
+      "p": [
+        -0.20112,
+        1.11898,
+        0.06601
+      ],
+      "distanceMm": 0.09317896048350749,
+      "triangle": 11587,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_margo_lateralis",
+      "bone": "humerus",
+      "p": [
+        -0.20637,
+        1.16101,
+        0.05325
+      ],
+      "distanceMm": 0.017016957515795843,
+      "triangle": 8127,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_crista_supraepicondylaris_lateralis",
+      "bone": "humerus",
+      "p": [
+        -0.22379,
+        1.1063,
+        0.05134
+      ],
+      "distanceMm": 0.12878033742384556,
+      "triangle": 5356,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_tuberositas_deltoidea",
+      "bone": "humerus",
+      "p": [
+        -0.205,
+        1.21604,
+        0.07038
+      ],
+      "distanceMm": 0.1025238193085501,
+      "triangle": 11135,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_condylus",
+      "bone": "humerus",
+      "p": [
+        -0.21081,
+        1.0541,
+        0.07422
+      ],
+      "distanceMm": 0.13795805673225622,
+      "triangle": 2436,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_capitulum",
+      "bone": "humerus",
+      "p": [
+        -0.22175,
+        1.05393,
+        0.0725
+      ],
+      "distanceMm": 0.057350269471648854,
+      "triangle": 2277,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_trochlea",
+      "bone": "humerus",
+      "p": [
+        -0.19986,
+        1.04682,
+        0.07849
+      ],
+      "distanceMm": 0.0558337516915929,
+      "triangle": 2705,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_fossa_olecrani",
+      "bone": "humerus",
+      "p": [
+        -0.20655,
+        1.06628,
+        0.06133
+      ],
+      "distanceMm": 0.0959206385975852,
+      "triangle": 5027,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_fossa_coronoidea",
+      "bone": "humerus",
+      "p": [
+        -0.19986,
+        1.07128,
+        0.06969
+      ],
+      "distanceMm": 0.06262920398870392,
+      "triangle": 11868,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_fossa_radialis",
+      "bone": "humerus",
+      "p": [
+        -0.21975,
+        1.07328,
+        0.06491
+      ],
+      "distanceMm": 0.2493987295978771,
+      "triangle": 5540,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_epicondylus_medialis",
+      "bone": "humerus",
+      "p": [
+        -0.17919,
+        1.0627,
+        0.06382
+      ],
+      "distanceMm": 0.03887467445325098,
+      "triangle": 4267,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_sulcus_n_ulnaris",
+      "bone": "humerus",
+      "p": [
+        -0.18619,
+        1.0627,
+        0.05861
+      ],
+      "distanceMm": 0.18146814112992704,
+      "triangle": 4487,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_epicondylus_lateralis",
+      "bone": "humerus",
+      "p": [
+        -0.23999,
+        1.06809,
+        0.05887
+      ],
+      "distanceMm": 0.23232071529079862,
+      "triangle": 1887,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "hum_body_ant",
+      "bone": "humerus",
+      "p": [
+        -0.20395,
+        1.13736,
+        0.06961
+      ],
+      "distanceMm": 0.11253131244100929,
+      "triangle": 11563,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_olecranon",
+      "bone": "ulna",
+      "p": [
+        -0.20676,
+        1.05563,
+        0.04458
+      ],
+      "distanceMm": 0.03929732011953273,
+      "triangle": 974,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_processus_coronoideus",
+      "bone": "ulna",
+      "p": [
+        -0.20481,
+        1.03505,
+        0.07513
+      ],
+      "distanceMm": 0.13915906815483822,
+      "triangle": 3157,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_tuberositas",
+      "bone": "ulna",
+      "p": [
+        -0.21592,
+        1.0208,
+        0.06949
+      ],
+      "distanceMm": 0.005026717863456823,
+      "triangle": 3309,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_incisura_radialis",
+      "bone": "ulna",
+      "p": [
+        -0.21849,
+        1.03805,
+        0.06713
+      ],
+      "distanceMm": 0.15974287338187326,
+      "triangle": 422,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_incisura_trochlearis",
+      "bone": "ulna",
+      "p": [
+        -0.21194,
+        1.04077,
+        0.07596
+      ],
+      "distanceMm": 0.0796201916336555,
+      "triangle": 3222,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_corpus",
+      "bone": "ulna",
+      "p": [
+        -0.2237,
+        0.93457,
+        0.08593
+      ],
+      "distanceMm": 0.05536855843571544,
+      "triangle": 1979,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_facies_anterior",
+      "bone": "ulna",
+      "p": [
+        -0.22976,
+        0.96046,
+        0.0798
+      ],
+      "distanceMm": 0.10726346723466765,
+      "triangle": 1680,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_facies_posterior",
+      "bone": "ulna",
+      "p": [
+        -0.22754,
+        0.91527,
+        0.08152
+      ],
+      "distanceMm": 0.24570887062293126,
+      "triangle": 1574,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_facies_medialis",
+      "bone": "ulna",
+      "p": [
+        -0.22156,
+        0.91527,
+        0.08515
+      ],
+      "distanceMm": 0.19802645911852187,
+      "triangle": 1955,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_margo_interosseus",
+      "bone": "ulna",
+      "p": [
+        -0.23317,
+        0.94996,
+        0.082
+      ],
+      "distanceMm": 0.14916968288016677,
+      "triangle": 1623,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_margo_anterior",
+      "bone": "ulna",
+      "p": [
+        -0.21863,
+        0.96076,
+        0.07517
+      ],
+      "distanceMm": 0.2670691400243067,
+      "triangle": 1921,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_margo_posterior",
+      "bone": "ulna",
+      "p": [
+        -0.22966,
+        0.9645,
+        0.06946
+      ],
+      "distanceMm": 0.05198558401582998,
+      "triangle": 1532,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_crista_m_supinatoris",
+      "bone": "ulna",
+      "p": [
+        -0.22434,
+        1.01383,
+        0.05792
+      ],
+      "distanceMm": 0.039291946551432456,
+      "triangle": 1294,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_caput",
+      "bone": "ulna",
+      "p": [
+        -0.23884,
+        0.82645,
+        0.10512
+      ],
+      "distanceMm": 0.09097026438447593,
+      "triangle": 2821,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_circumferentia_articularis",
+      "bone": "ulna",
+      "p": [
+        -0.24779,
+        0.82645,
+        0.11395
+      ],
+      "distanceMm": 0.08497000046326508,
+      "triangle": 2191,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_processus_styloideus",
+      "bone": "ulna",
+      "p": [
+        -0.23541,
+        0.8167,
+        0.10637
+      ],
+      "distanceMm": 0.022976018272874585,
+      "triangle": 2618,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "uln_distal_anterior",
+      "bone": "ulna",
+      "p": [
+        -0.23712,
+        0.85042,
+        0.10936
+      ],
+      "distanceMm": 0.20054851027806075,
+      "triangle": 2078,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "membrane_mid",
+      "bone": "interosseous_membrane",
+      "p": [
+        -0.23935,
+        0.90169,
+        0.09384
+      ],
+      "distanceMm": 0.0006068818562645701,
+      "triangle": 508,
+      "anatomicalAcceptance": false
+    }
+  ],
+  "blenderDifferenceMm": 8.878995775885717e-05,
+  "newCoordinates": 0,
+  "scope": "Side signs, world transforms, finite vertices/normals and nearest triangle; no anatomical localisation acceptance or repeated self-intersection scan."
+}

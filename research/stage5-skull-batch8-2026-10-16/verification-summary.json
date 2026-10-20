@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "date": "2026-10-16",
+  "python": [
+    "verify_head.py: 22 bones / 521 own entries",
+    "verify_head_positions.py: 521 anchors / max 0.0074 mm",
+    "verify_ta98.py: 762 terms / 3 known differences",
+    "test_skull_shared_stage5.py: 3 tests passed"
+  ],
+  "node": "verify-skull-batch8.mjs: 521 original IDs, p/n/loc and 484 explicit types preserved; 37 classified; 6 new cards",
+  "blender": {
+    "anchors": 40,
+    "viewsInspected": 15,
+    "coordinateAcceptance": false,
+    "extentAcceptance": false
+  },
+  "playwright": {
+    "widths": [
+      1280,
+      390
+    ],
+    "cardsPerWidth": 46,
+    "relatedTransitionsPerWidth": 14,
+    "targetBones": [
+      "mandible",
+      "occipital",
+      "ethmoid"
+    ],
+    "bvhNativeComparisons": 54,
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "errorsInAcceptedRuns": []
+  },
+  "resultFiles": [
+    "mcp-kinds-desktop-1280-result.json",
+    "mcp-shared-desktop-1280-result.json",
+    "mcp-kinds-mobile-390-result.json",
+    "mcp-shared-mobile-390-result.json",
+    "playwright-shared-regression-1280.json",
+    "playwright-shared-regression-390.json",
+    "playwright-target-1280-retry.json",
+    "playwright-target-390.json",
+    "playwright-bvh.json",
+    "data-regression.json",
+    "blender-review.json",
+    "blender-focus-review.json"
+  ],
+  "failedOrIncompleteAttemptsRetained": "test-notes.json",
+  "anatomicalCompletion": false
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-16",
+  "status": "passed",
+  "protectedFilesChecked": 330,
+  "protectedModelsUnchanged": 41,
+  "changedProtectedFiles": [
+    "scripts/make_pins_head.py",
+    "scripts/shared_landmarks.py",
+    "site/index.html",
+    "site/local.html",
+    "site/pins-head.js",
+    "site/pins-shared.js"
+  ],
+  "priorIssueIDsPreserved": 193,
+  "priorClosureCriteriaPreserved": 193,
+  "priorProgressHistoryPreserved": true,
+  "statusTransitions": [
+    {
+      "id": "SH-038",
+      "before": "требует проверки",
+      "after": "проверена"
+    },
+    {
+      "id": "SH-085",
+      "before": "требует проверки",
+      "after": "проверена"
+    }
+  ],
+  "newIssue": "SRC-OCC-JUGULAR-CAPTION",
+  "registry": {
+    "status": "passed",
+    "issues": 194,
+    "status_counts": {
+      "проверена": 34,
+      "требует проверки": 76,
+      "заблокирована": 51,
+      "открыта": 33
+    },
+    "scientific_pending": 125,
+    "stages": {
+      "5": [
+        12,
+        72
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        8,
+        29
+      ],
+      "6": [
+        0,
+        13
+      ],
+      "7": [
+        0,
+        44
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "reportLocalLinksChecked": 19,
+  "headCoordinatesPreserved": 521,
+  "originalIDsPreserved": 1771,
+  "classification": {
+    "new": 31,
+    "explicit": 150,
+    "unknown": 371
+  },
+  "currentShared": {
+    "instances": 71,
+    "types": 40,
+    "relations": 196,
+    "boneCards": 23,
+    "unlocated": 65
+  },
+  "newAnatomicalCoordinatesAccepted": 0,
+  "newContoursAccepted": 0,
+  "evidenceFilesSha256": {
+    "blender-review.json": "92675b058f27d6f87acda63f322f543e43c60f355d72bf8d579aad1a86f2f1e2",
+    "data-batch2.json": "d61fd88fe0c65177f342ffbec64398cbed857465223dda4644bc6c33e1700099",
+    "data-final-regression.json": "8a95ea10a3067b9b9f5333c43f6ff4794cbb0337c7c4d31008fe8f8e0e19acca",
+    "data-first-batch-regression.json": "7260ead9edeec881136b6ec15ec226c926048a755db5dc08b775b63c43de8d91",
+    "fipat-occipital.json": "8b4a303abc202a4569c68de5e9732913a0dea68075a3470ecf933c8f7843645b",
+    "geometry-kind-review.json": "a31817c040adadac1d673c1ccbd64e1f386a3dd91d7dd2a02303876f1cd98f08",
+    "occipital-review.json": "eeba74b04419d5adefd29d2e7a3b0596bf3824fda44329caf39622bd5f8f4090",
+    "playwright-existing.json": "6974678bcd296de25da338953741e1305bba8c8fb3f533b7db049dca16f7a9ca",
+    "playwright-final.json": "03722a360372e64ab44cbf1a99406377202d457c60d6c69c496604671a9a049f",
+    "playwright-laterality.json": "be9f1a0a942bf159d7b600ef3732c53653f28408a8af1d61ab27a98ef812f744",
+    "playwright-new.json": "9876befca1c1c802c8dc1299695e4f3968ed79d9254c03882048a9938f53a946",
+    "pubmed-nasolacrimal-search.json": "1436df89255a350f682057863ebc514c670212d704c91a533c5ed63aefd4510e",
+    "pubmed-new-sources.json": "e0f9dacf7b2689fde28b1c44a3f3f993cf21d0c252149462b2eed2c7c8f8f800",
+    "shared-decisions.json": "5ae6b7a6577d8d90452720a0b94b1c4eaae04c492bff3277c61a8b038e89d6bf",
+    "unlocated-shared-ids.json": "3aceebb3aeef5826123f7cf8290445143918a9178745fb3778de5899303cf447"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "status": "completed_with_open_geometry_limits",
+  "scope": "targeted thorax review; no new coordinates or mesh edits",
+  "current": {
+    "node": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/data-regression.json",
+    "blender": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/blender-cartilage.json",
+    "python_sources": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/cartilage-source-components.json",
+    "ui_1280": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/ui-1280-v2.json",
+    "ui_390": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/ui-390-v2.json",
+    "pubmed_search": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/pubmed-search.json",
+    "pubmed_efetch": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/pubmed-verified.json",
+    "crista_ids": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/crista-22-decisions.json",
+    "markup_inventory": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/geometry-markup-inventory.json",
+    "markup_groups": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/markup-groups-corrected.json",
+    "registry": "research/evidence-runs/stage5-thorax-targeted-2026-10-18T15-15-53-933Z-k1z33M/registry-final.json"
+  },
+  "reused": {
+    "previous_batch": "research/stage5-thorax-batch2-report-2026-10-18.md",
+    "index": "research/stage5-thorax-batch2-2026-10-18/evidence.json",
+    "trimesh_490": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/trimesh-positions.json",
+    "previous_blender_27_views": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/blender-ribs.json"
+  },
+  "limits": [
+    "New Blender comparison only for cartilage coverage; previous rib/point/BVH/clipping checks reused with unchanged protected code/models.",
+    "UI first attempt used wrong overview location; ui-1280.json retained, final v2 passed.",
+    "Persistent browser cache disabled during final checks; final current data validated in DOM.",
+    "Draft markup-groups.json superseded by markup-groups-corrected.json; no data types changed.",
+    "Python TA98 console: 762 terms, three previously documented differences; no new difference.",
+    "PubMed abstract access only; Bookshelf reCAPTCHA and Masaryk photo index timeout not bypassed.",
+    "No new or historical issue closed in this task."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-17",
+  "results": {
+    "baseline": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/atlas-before.json",
+    "hashes": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/hashes-before.json",
+    "coverage": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/neck-coverage-final.json",
+    "python": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/python-source-check.json",
+    "blender": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/blender-neck-batch2.json",
+    "pubmedOdontoid": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/pubmed-odontoid.json",
+    "pubmedUpperCervical": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/pubmed-c2-exit.json",
+    "registry": "research/evidence-runs/stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn/registry-validation.json",
+    "batch2Data": "research/evidence-runs/stage5-neck-batch2-data-2026-10-17T10-08-43-440Z-Xzc8AL/data-regression.json",
+    "baselineData": "research/evidence-runs/stage5-neck-data-2026-10-17T09-42-19-644Z-8Kajd7/data-regression.json",
+    "ui1280dark": "research/evidence-runs/stage5-neck-mcp-2026-10-17T09-47-56-968Z-ECTPCN/result.json",
+    "ui390light": "research/evidence-runs/stage5-neck-mcp-2026-10-17T09-47-57-060Z-fgzgpM/result.json",
+    "uiOtherThemes": "research/evidence-runs/stage5-neck-batch2-links-2026-10-17T10-08-43-541Z-ApuIen/result.json",
+    "uiBeforeLanguageCleanup": "research/evidence-runs/stage5-neck-batch2-links-2026-10-17T09-58-56-466Z-lfUqmR/result.json"
+  },
+  "modifiedExisting": [
+    "site/pins-neck.js",
+    "site/pins-shared.js",
+    "scripts/make_pins_neck.py",
+    "ANATOMY_ISSUES.md",
+    "ANATOMY_PROGRESS.md",
+    "scripts/neck_stage5_review.py",
+    "tools/verify-stage5-neck.mjs"
+  ],
+  "newCodeAndReport": [
+    "scripts/neck_geometry_requirements.py",
+    "verify/review_neck_batch2_blender.py",
+    "tools/verify-stage5-neck-batch2.mjs",
+    "tools/verify-stage5-neck-links.mjs",
+    "research/stage5-neck-batch2-report-2026-10-17.md"
+  ],
+  "decisions": [
+    "unlocated-records.json",
+    "unlocated-records.md",
+    "catalogue-decisions.json",
+    "geometry-scope.json"
+  ],
+  "historicalGeometryReused": {
+    "path": "research/evidence-runs/stage5-neck-2026-10-17T08-47-16-476Z-I01uyt/neck-position-geometry.json",
+    "checks": 214,
+    "rerun": false,
+    "reason": "Source points and model hashes unchanged; proximity is not anatomical acceptance."
+  },
+  "ta98": {
+    "command": ".venv/Scripts/python.exe verify/verify_ta98.py",
+    "exitCode": 0,
+    "terms": 762,
+    "knownDifferences": 3
+  },
+  "networkLimitations": [
+    "Initial sandbox EFetch failed TLS; subsequent official API request succeeded.",
+    "Publisher chapter direct request unavailable; indexed publisher excerpt used.",
+    "PMC7549867 direct reCAPTCHA; only indexed passage read."
+  ],
+  "reviewedBlenderViews": 7,
+  "newAnatomicalCoordinateAcceptance": 0,
+  "newExtentAcceptance": 0
+}

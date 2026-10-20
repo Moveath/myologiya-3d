@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "issues": 232,
+  "statuses": {
+    "проверена": 58,
+    "требует проверки": 81,
+    "заблокирована": 58,
+    "открыта": 35
+  },
+  "scientificVerificationRequired": 138,
+  "closedThisTask": [
+    "CAT-UPPER-LEFT-FOREARM"
+  ],
+  "stage5": {
+    "verified": 36,
+    "total": 110
+  },
+  "newIssues": 0,
+  "newBoneCards": 2,
+  "newLandmarkRecords": 44,
+  "modelsUnchanged": 69,
+  "uiRuns": [
+    "stage5-left-forearm-mcp-2026-10-18T19-27-17-437Z-Fetl8u",
+    "stage5-left-forearm-mcp-2026-10-18T19-28-40-497Z-sfNQW4",
+    "stage5-left-forearm-final-mcp-2026-10-18T19-32-18-405Z-fA9jy9"
+  ],
+  "changedFileHashes": {
+    "ANATOMY_ISSUES.md": "50b9db88d60a54af8dbcd5d5925000ec23ecb21d36acda3175b092f48c5b9274",
+    "ANATOMY_PROGRESS.md": "f788c542484477d15b53fae1e4452cfecd7fc71ab1b51d975c4e437e2a239341",
+    "scripts/make_context_bone_data.py": "40d2a2563204ae34a5cccf5207023e891c79863bb8fd46b9b03c4d97703376ad",
+    "site/data-context-bones.js": "b71c58d67e3d90caa484e3573582f44107cf945ff0b910c5c9ab86f7edc3588a",
+    "site/index.html": "5403afbf78c8b1d664329e31ecb62c140b945d18ca1d8e7abd8c5e98e9edc63d",
+    "site/local.html": "4239b298be7824c8e3a0d80142d0d40746490a43fdc7e42b4306022089f2a97d",
+    "site/pins-context-bones.js": "8b7b84c0bb51d4fa80d9ef8a4346581d02c64b553ef0f2ed3cb50f338322b067",
+    "scripts/ta98.py": "914e05506e1c36bf9c020dabd8c64a2333c9c91de19c0dd9c3e1faede3471c49",
+    "scripts/left_forearm_stage5_review.py": "14cd8399dbfed4ee5c51b05800220b3ff772222645573cefde380006cbcd057e",
+    "verify/review_left_forearm_resources.py": "bae1aa766e3f36fda72c3ba02647de2cbb43a0fb6557f8a725b11ecc94c492b6",
+    "verify/review_left_forearm_blender.py": "de31895ccc7cbb296bb352918426aa46071e77aa1a71c91917f90e796be83acd",
+    "tools/prepare-stage5-left-forearm-evidence.mjs": "f9470fa8765546e290389ae099ac67c87f9c29eb4c164562d3a93a6f313b37db",
+    "tools/verify-stage5-left-forearm.mjs": "5a34176540ad96b43e37d2e865957fd46717b9fc1dadb705264a678700c08a29",
+    "tools/prepare-stage5-left-forearm-mcp.mjs": "b0dc0b050675c6bdf2872e175f58c242d7ed7bc5475ce386ed1e0e6fdf28c0c9",
+    "tools/prepare-stage5-left-forearm-final-mcp.mjs": "bdcf93e05615a728b8cdc814761be4cf094a15c7a760218d1396d6c062fae44e",
+    "research\\stage5-left-forearm-report-2026-10-19.md": "7ed722b5a5dd8c424a487bd2fa36b994f8ed1d45f43f4e093cf0a75e0ad73a16"
+  },
+  "pythonChecks": {
+    "generator": "passed",
+    "pyCompile": "passed",
+    "ta98": {
+      "compared": 762,
+      "knownDifferences": [
+        "A02.5.10.015",
+        "A02.5.10.017",
+        "A02.5.11.007"
+      ]
+    }
+  },
+  "earlierFailedAttempts": [
+    "Sandbox-local server inaccessible to MCP; restarted outside restricted network sandbox.",
+    "Broad triangle-count equality failed for other arm objects; differences retained, no whole-mesh acceptance claimed.",
+    "Final-note fixture expected visible desktop bMore; corrected to actual visibility without application changes."
+  ]
+}

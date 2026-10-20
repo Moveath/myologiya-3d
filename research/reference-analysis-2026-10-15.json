@@ -1,0 +1,3251 @@
+{
+  "date": "2026-10-15",
+  "scope": "stage 3 reference analysis; no anatomy or geometry modification",
+  "totals": {
+    "newFiles": 89,
+    "newUnique": 87,
+    "duplicates": 2,
+    "priorReviewed": 16,
+    "allFiles": 105
+  },
+  "newImages": [
+    {
+      "id": "H01",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.37.jpeg",
+      "sha256": "f7de631e912432576746496b8badb26d16ae32c86b5ce4906239f5ac24d2db54",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "original",
+      "observation": "Каталог головы/шеи: надподъязычные группы, платизма, грудино-ключично-сосцевидная, подподъязычные и предпозвоночные мышцы.",
+      "patterns": [
+        "g:neck_suprahyoid",
+        "g:neck_infrahyoid",
+        "g:neck_prevertebral",
+        "platysma*",
+        "sternocleidomastoid*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "digastric_right",
+        "digastric_left",
+        "stylohyoid_right",
+        "stylohyoid_left",
+        "mylohyoid_right",
+        "mylohyoid_left",
+        "geniohyoid_right",
+        "geniohyoid_left",
+        "sternohyoid_right",
+        "sternohyoid_left",
+        "omohyoid_right",
+        "omohyoid_left",
+        "sternothyroid_right",
+        "sternothyroid_left",
+        "thyrohyoid_right",
+        "thyrohyoid_left",
+        "longus_colli_right",
+        "longus_colli_left",
+        "longus_capitis_right",
+        "longus_capitis_left",
+        "rectus_capitis_anterior_right",
+        "rectus_capitis_anterior_left",
+        "rectus_capitis_lateralis_right",
+        "rectus_capitis_lateralis_left",
+        "platysma_right",
+        "platysma_left",
+        "sternocleidomastoid_right",
+        "sternocleidomastoid_left"
+      ]
+    },
+    {
+      "id": "H02",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.38 (1).jpeg",
+      "sha256": "272495f0db1bce5d6763d62d8694945c5b94c1795faaa3f3fc5b78495625adaa",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "original",
+      "observation": "3D костей головы/шеи с красными и синими площадями; в этом кадре нет выбранной подписи.",
+      "patterns": [
+        "g:head_mastication",
+        "sternocleidomastoid*"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "GEO-011"
+      ],
+      "gap": "Площадь не равна точечному ориентиру. Нельзя восстановить границы по одному ракурсу.",
+      "projectIds": [
+        "masseter_right",
+        "masseter_left",
+        "temporalis_right",
+        "temporalis_left",
+        "lateral_pterygoid_right",
+        "lateral_pterygoid_left",
+        "medial_pterygoid_right",
+        "medial_pterygoid_left",
+        "sternocleidomastoid_right",
+        "sternocleidomastoid_left"
+      ]
+    },
+    {
+      "id": "H03",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.38 (2).jpeg",
+      "sha256": "c452e4a322d712444d672a54f4a1a367473b5191d18254e99b6ad66326216aca",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "original",
+      "observation": "Синяя подпись прикрепления грудино-ключично-сосцевидной мышцы и участок у сосцевидного отростка.",
+      "patterns": [
+        "sternocleidomastoid*"
+      ],
+      "issues": [
+        "VIS-007",
+        "GEO-012"
+      ],
+      "gap": "Область прикрепления подтверждается текстами; точный контур на образце не принят.",
+      "projectIds": [
+        "sternocleidomastoid_right",
+        "sternocleidomastoid_left"
+      ]
+    },
+    {
+      "id": "H04",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.38.jpeg",
+      "sha256": "ffc60242d5404150dbabfc91adf91784af59d799cdbfc2abd991b8b331c6f563",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Каталог: обзор прикреплений, мимические, ушные, жевательные, язык, мягкое нёбо, глотка.",
+      "patterns": [
+        "g:head_face",
+        "g:head_ear",
+        "g:head_mastication"
+      ],
+      "issues": [
+        "FUT-002",
+        "VIS-002"
+      ],
+      "gap": "Язык, мягкое нёбо и глотка не представлены самостоятельными мышечными карточками.",
+      "projectIds": [
+        "orbicularis_oculi_right",
+        "orbicularis_oculi_left",
+        "corrugator_supercilii_right",
+        "corrugator_supercilii_left",
+        "procerus_right",
+        "procerus_left",
+        "nasalis_right",
+        "nasalis_left",
+        "depressor_septi_nasi_right",
+        "depressor_septi_nasi_left",
+        "orbicularis_oris",
+        "depressor_anguli_oris_right",
+        "depressor_anguli_oris_left",
+        "depressor_labii_inferioris_right",
+        "depressor_labii_inferioris_left",
+        "mentalis_right",
+        "mentalis_left",
+        "risorius_right",
+        "risorius_left",
+        "zygomaticus_major_right",
+        "zygomaticus_major_left",
+        "zygomaticus_minor_right",
+        "zygomaticus_minor_left",
+        "levator_labii_superioris_right",
+        "levator_labii_superioris_left",
+        "levator_nasolabialis_right",
+        "levator_nasolabialis_left",
+        "levator_anguli_oris_right",
+        "levator_anguli_oris_left",
+        "buccinator_right",
+        "buccinator_left",
+        "depressor_supercilii_right",
+        "depressor_supercilii_left",
+        "transversus_menti",
+        "auricularis_anterior_right",
+        "auricularis_anterior_left",
+        "auricularis_superior_right",
+        "auricularis_superior_left",
+        "auricularis_posterior_right",
+        "auricularis_posterior_left",
+        "masseter_right",
+        "masseter_left",
+        "temporalis_right",
+        "temporalis_left",
+        "lateral_pterygoid_right",
+        "lateral_pterygoid_left",
+        "medial_pterygoid_right",
+        "medial_pterygoid_left"
+      ]
+    },
+    {
+      "id": "H05",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.39 (1).jpeg",
+      "sha256": "d0ae45b570222182faa017a89a48dade45931ccc60ca4dde92478824f577e87a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Красная подпись начала височной мышцы, окраска височной области.",
+      "patterns": [
+        "temporalis*"
+      ],
+      "issues": [
+        "VIS-007",
+        "GEO-011"
+      ],
+      "gap": "Не копировать красный силуэт как границу прикрепления.",
+      "projectIds": [
+        "temporalis_right",
+        "temporalis_left"
+      ]
+    },
+    {
+      "id": "H06",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.39 (2).jpeg",
+      "sha256": "1479e6741f099fbaf2c75ed35382f9fd9418338013e8f22aae5d2adf05330041",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Каталог головы: другой кадр списка обзоров и групп, включая язык и мягкое нёбо.",
+      "patterns": [
+        "g:head_face",
+        "g:head_ear",
+        "g:head_mastication"
+      ],
+      "issues": [
+        "FUT-002",
+        "VIS-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "orbicularis_oculi_right",
+        "orbicularis_oculi_left",
+        "corrugator_supercilii_right",
+        "corrugator_supercilii_left",
+        "procerus_right",
+        "procerus_left",
+        "nasalis_right",
+        "nasalis_left",
+        "depressor_septi_nasi_right",
+        "depressor_septi_nasi_left",
+        "orbicularis_oris",
+        "depressor_anguli_oris_right",
+        "depressor_anguli_oris_left",
+        "depressor_labii_inferioris_right",
+        "depressor_labii_inferioris_left",
+        "mentalis_right",
+        "mentalis_left",
+        "risorius_right",
+        "risorius_left",
+        "zygomaticus_major_right",
+        "zygomaticus_major_left",
+        "zygomaticus_minor_right",
+        "zygomaticus_minor_left",
+        "levator_labii_superioris_right",
+        "levator_labii_superioris_left",
+        "levator_nasolabialis_right",
+        "levator_nasolabialis_left",
+        "levator_anguli_oris_right",
+        "levator_anguli_oris_left",
+        "buccinator_right",
+        "buccinator_left",
+        "depressor_supercilii_right",
+        "depressor_supercilii_left",
+        "transversus_menti",
+        "auricularis_anterior_right",
+        "auricularis_anterior_left",
+        "auricularis_superior_right",
+        "auricularis_superior_left",
+        "auricularis_posterior_right",
+        "auricularis_posterior_left",
+        "masseter_right",
+        "masseter_left",
+        "temporalis_right",
+        "temporalis_left",
+        "lateral_pterygoid_right",
+        "lateral_pterygoid_left",
+        "medial_pterygoid_right",
+        "medial_pterygoid_left"
+      ]
+    },
+    {
+      "id": "H07",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.46.39.jpeg",
+      "sha256": "0d36d9f36b800649feef2cfb32bb3115729cf383992d4f048aea85e622daeec3",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Красная подпись начала мышцы, поднимающей верхнюю губу, в подглазничной области.",
+      "patterns": [
+        "levator_labii_superioris*"
+      ],
+      "issues": [
+        "VIS-007",
+        "GEO-011"
+      ],
+      "gap": "Не смешивать с levator nasolabialis и levator anguli oris.",
+      "projectIds": [
+        "levator_labii_superioris_right",
+        "levator_labii_superioris_left"
+      ]
+    },
+    {
+      "id": "H08",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.15.jpeg",
+      "sha256": "9c0860e7b3169bfbe84ed80355f1dfa38e1199e4de5b3f6a867d1254fde35e16",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Длинная мышца головы, передняя прямая мышца головы, длинная мышца шеи; нижняя часть каталога.",
+      "patterns": [
+        "longus_capitis*",
+        "rectus_capitis_anterior*",
+        "longus_colli*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "longus_capitis_right",
+        "longus_capitis_left",
+        "rectus_capitis_anterior_right",
+        "rectus_capitis_anterior_left",
+        "longus_colli_right",
+        "longus_colli_left"
+      ]
+    },
+    {
+      "id": "H09",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.16 (1).jpeg",
+      "sha256": "d24438c2598e1ab7c23fb9c0cf1e4622d394cb3c9c77916748c191b6d0265859",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Подподъязычные: лопаточно-подъязычная, щитоподъязычная, грудино-подъязычная и грудино-щитовидная.",
+      "patterns": [
+        "g:neck_infrahyoid"
+      ],
+      "issues": [
+        "MP-omohyoid_right-superior",
+        "MP-omohyoid_right-inferior",
+        "MP-omohyoid_left-superior",
+        "MP-omohyoid_left-inferior"
+      ],
+      "gap": "Целая миниатюра omohyoid не доказывает отдельные брюшки.",
+      "projectIds": [
+        "sternohyoid_right",
+        "sternohyoid_left",
+        "omohyoid_right",
+        "omohyoid_left",
+        "sternothyroid_right",
+        "sternothyroid_left",
+        "thyrohyoid_right",
+        "thyrohyoid_left"
+      ]
+    },
+    {
+      "id": "H10",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.16.jpeg",
+      "sha256": "bf328ef4be4954258ceed05a9aced72176f9fd3f5cd4f4321bae5869a54863d1",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Лестничные мышцы помещены в рубрику Músculos pré-vertebrais; обзор с нервами.",
+      "patterns": [
+        "g:neck_scalene"
+      ],
+      "issues": [
+        "REF-002",
+        "FUT-006"
+      ],
+      "gap": "В проекте уже отдельная группа лестничных; рубрику и смешанный язык референса не копировать.",
+      "projectIds": [
+        "scalenus_anterior_right",
+        "scalenus_anterior_left",
+        "scalenus_medius_right",
+        "scalenus_medius_left",
+        "scalenus_posterior_right",
+        "scalenus_posterior_left"
+      ]
+    },
+    {
+      "id": "H11",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.17 (1).jpeg",
+      "sha256": "36f26e2fe7eada2c811c36e6f7cfd2fafad415105e9d8d629e0dca5bf07a94ce",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Надподъязычные: два обзора; список мышц свёрнут.",
+      "patterns": [
+        "g:neck_suprahyoid"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "Свёрнутый список не доказывает отсутствие структур.",
+      "projectIds": [
+        "digastric_right",
+        "digastric_left",
+        "stylohyoid_right",
+        "stylohyoid_left",
+        "mylohyoid_right",
+        "mylohyoid_left",
+        "geniohyoid_right",
+        "geniohyoid_left"
+      ]
+    },
+    {
+      "id": "H12",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.17.jpeg",
+      "sha256": "87a5ce43bcfd1a00b4c60acb08f2f91133f562f3782d3293fddab9a445131944",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Надподъязычные: подбородочно-, челюстно-, двубрюшная и шилоподъязычная.",
+      "patterns": [
+        "g:neck_suprahyoid"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "digastric_right",
+        "digastric_left",
+        "stylohyoid_right",
+        "stylohyoid_left",
+        "mylohyoid_right",
+        "mylohyoid_left",
+        "geniohyoid_right",
+        "geniohyoid_left"
+      ]
+    },
+    {
+      "id": "H13",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.18 (1).jpeg",
+      "sha256": "e773123bed68201e5ec5e0597e2177a69c461c8bea58e857f6682bc855f0b8d7",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Глотка: три сжимателя, перстнеглоточная часть; частично нижние карточки.",
+      "patterns": [],
+      "issues": [
+        "FUT-002"
+      ],
+      "gap": "Вне текущих 255 карточек; список кандидатов ниже.",
+      "projectIds": []
+    },
+    {
+      "id": "H14",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.18 (2).jpeg",
+      "sha256": "9d6273b63e52ea43ee88d754185d9cb329e84922cc747ed854d760b7ff39e1cd",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Мягкое нёбо: мышца язычка, поднимающая/напрягающая нёбо, нёбно-язычная, нёбно-глоточная.",
+      "patterns": [],
+      "issues": [
+        "FUT-002"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "H15",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.18.jpeg",
+      "sha256": "8ba1cfaf878fa8fb87b77d7aaaba0a459c0a43cc2f4327e95d0f2e28e9687561",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Глотка: три сжимателя, перстнеглоточная часть, трубно-глоточная и шилоглоточная.",
+      "patterns": [],
+      "issues": [
+        "FUT-002"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "H16",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.19 (1).jpeg",
+      "sha256": "da0474cde18491fd003570d76b21de7095da7849cb5eabd162d6c30f63acf1e2",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Карточка подъязычно-язычной мышцы: обзор; нижний раздел не раскрыт.",
+      "patterns": [],
+      "issues": [
+        "FUT-002"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "H17",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.19.jpeg",
+      "sha256": "5d127ae0aa95959e36d795e55ed16fcba001d0aeacc6189d15a52113b7fb52d9",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Язык: подъязычно-язычная, подбородочно-язычная, шилоязычная, собственные мышцы; учебное сечение.",
+      "patterns": [],
+      "issues": [
+        "FUT-002",
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "H18",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.20 (1).jpeg",
+      "sha256": "36e2181a346384aeda68cacdb5cb703c531b0eb3d793f4aac07efdba0fb9f152",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Три обзора жевательных мышц: височная, жевательная, медиальная/латеральная крыловидные.",
+      "patterns": [
+        "g:head_mastication"
+      ],
+      "issues": [
+        "GEO-012"
+      ],
+      "gap": "Все четыре семейства есть; это не независимая приёмка формы/частей.",
+      "projectIds": [
+        "masseter_right",
+        "masseter_left",
+        "temporalis_right",
+        "temporalis_left",
+        "lateral_pterygoid_right",
+        "lateral_pterygoid_left",
+        "medial_pterygoid_right",
+        "medial_pterygoid_left"
+      ]
+    },
+    {
+      "id": "H19",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.20 (2).jpeg",
+      "sha256": "3ea991328ff53c2a765dfe1e51209bef082a734ad595cf5ffc4fd462e822f1e6",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Передняя, верхняя, задняя ушные и височно-теменная мышцы.",
+      "patterns": [
+        "g:head_ear",
+        "temporoparietalis*"
+      ],
+      "issues": [
+        "MG-auricularis_anterior_right",
+        "MG-auricularis_anterior_left",
+        "MG-auricularis_superior_right",
+        "MG-auricularis_superior_left",
+        "MG-auricularis_posterior_right",
+        "MG-auricularis_posterior_left"
+      ],
+      "gap": "Шесть ушных экземпляров без модели остаются; височно-теменные уже есть.",
+      "projectIds": [
+        "auricularis_anterior_right",
+        "auricularis_anterior_left",
+        "auricularis_superior_right",
+        "auricularis_superior_left",
+        "auricularis_posterior_right",
+        "auricularis_posterior_left",
+        "temporoparietalis_right",
+        "temporoparietalis_left"
+      ]
+    },
+    {
+      "id": "H20",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.20 (3).jpeg",
+      "sha256": "5feb0a7f659461c541a0b3b699988af18002b57f6fd8215274d2407f1e911d3b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Нижняя часть мимического каталога: поднимающие/опускающие угол и губу, скуловые, смеха, подбородочная, щёчная.",
+      "patterns": [
+        "levator_labii_superioris*",
+        "levator_anguli_oris*",
+        "zygomaticus_minor*",
+        "zygomaticus_major*",
+        "risorius*",
+        "depressor_anguli_oris*",
+        "depressor_labii_inferioris*",
+        "mentalis*",
+        "buccinator*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "levator_labii_superioris_right",
+        "levator_labii_superioris_left",
+        "levator_anguli_oris_right",
+        "levator_anguli_oris_left",
+        "zygomaticus_minor_right",
+        "zygomaticus_minor_left",
+        "zygomaticus_major_right",
+        "zygomaticus_major_left",
+        "risorius_right",
+        "risorius_left",
+        "depressor_anguli_oris_right",
+        "depressor_anguli_oris_left",
+        "depressor_labii_inferioris_right",
+        "depressor_labii_inferioris_left",
+        "mentalis_right",
+        "mentalis_left",
+        "buccinator_right",
+        "buccinator_left"
+      ]
+    },
+    {
+      "id": "H21",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.20.jpeg",
+      "sha256": "da0474cde18491fd003570d76b21de7095da7849cb5eabd162d6c30f63acf1e2",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "duplicateOf": "H16",
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Точная копия H16 (проверено SHA-256).",
+      "patterns": [],
+      "issues": [
+        "FUT-002"
+      ],
+      "gap": "Повторно не считается отдельным анатомическим доказательством.",
+      "projectIds": []
+    },
+    {
+      "id": "H22",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.21 (1).jpeg",
+      "sha256": "f0fd9cf8352cfc5d11f69d9a800b7a212fe69ce3a29dcbec4c96ac1f700f440b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Карточка мышцы, опускающей перегородку носа, содержит кнопку «Действие» с play.",
+      "patterns": [
+        "depressor_septi_nasi*"
+      ],
+      "issues": [
+        "FUT-012"
+      ],
+      "gap": "Работа анимации по неподвижному кадру не проверена.",
+      "projectIds": [
+        "depressor_septi_nasi_right",
+        "depressor_septi_nasi_left"
+      ]
+    },
+    {
+      "id": "H23",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.21 (2).jpeg",
+      "sha256": "45dc6ddbcd6d6cb747c97f83d68035e68a301e790c8254ce64677aa48089a316",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Верхняя часть мимического каталога: круговая глаза, затылочно-лобная, сморщивающая бровь, гордецов, носовая, опускающая перегородку.",
+      "patterns": [
+        "orbicularis_oculi*",
+        "occipitofrontalis*",
+        "corrugator_supercilii*",
+        "procerus*",
+        "nasalis*",
+        "depressor_septi_nasi*"
+      ],
+      "issues": [
+        "SRC-006"
+      ],
+      "gap": "Не раскрыты глубокая/ресничная части глаза и части носовой.",
+      "projectIds": [
+        "orbicularis_oculi_right",
+        "orbicularis_oculi_left",
+        "occipitofrontalis_right",
+        "occipitofrontalis_left",
+        "corrugator_supercilii_right",
+        "corrugator_supercilii_left",
+        "procerus_right",
+        "procerus_left",
+        "nasalis_right",
+        "nasalis_left",
+        "depressor_septi_nasi_right",
+        "depressor_septi_nasi_left"
+      ]
+    },
+    {
+      "id": "H24",
+      "path": "мышцы головы и шеи/WhatsApp Image 2026-10-15 at 21.49.21.jpeg",
+      "sha256": "2c19aa69ca25ec606ac835e302420bbc19ec8e05438b727082d8e0576396d99b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Средняя часть мимического каталога, включая круговую рта и поднимающую верхнюю губу и крыло носа.",
+      "patterns": [
+        "orbicularis_oculi*",
+        "occipitofrontalis*",
+        "corrugator_supercilii*",
+        "procerus*",
+        "nasalis*",
+        "depressor_septi_nasi*",
+        "orbicularis_oris",
+        "levator_nasolabialis*",
+        "levator_labii_superioris*",
+        "levator_anguli_oris*",
+        "zygomaticus_minor*",
+        "zygomaticus_major*"
+      ],
+      "issues": [
+        "SRC-006"
+      ],
+      "gap": "Нет доказательства отдельных marginal/labial сеток.",
+      "projectIds": [
+        "orbicularis_oculi_right",
+        "orbicularis_oculi_left",
+        "occipitofrontalis_right",
+        "occipitofrontalis_left",
+        "corrugator_supercilii_right",
+        "corrugator_supercilii_left",
+        "procerus_right",
+        "procerus_left",
+        "nasalis_right",
+        "nasalis_left",
+        "depressor_septi_nasi_right",
+        "depressor_septi_nasi_left",
+        "orbicularis_oris",
+        "levator_nasolabialis_right",
+        "levator_nasolabialis_left",
+        "levator_labii_superioris_right",
+        "levator_labii_superioris_left",
+        "levator_anguli_oris_right",
+        "levator_anguli_oris_left",
+        "zygomaticus_minor_right",
+        "zygomaticus_minor_left",
+        "zygomaticus_major_right",
+        "zygomaticus_major_left"
+      ]
+    },
+    {
+      "id": "T01",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.49 (1).jpeg",
+      "sha256": "c97400c3ed78c03a21d536ee26141eae8fec873745b75c67cc3a04696aa11f35",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Общий каталог: спина, межостистые/межпоперечные, подзатылочные, грудь, диафрагма, живот, тазовое дно.",
+      "patterns": [
+        "g:neck_suboccipital",
+        "g:thorax_wall",
+        "thorax_diaphragm",
+        "levator_ani",
+        "coccygeus"
+      ],
+      "issues": [
+        "ANAT-002",
+        "FUT-003",
+        "FUT-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "rectus_capitis_posterior_major_right",
+        "rectus_capitis_posterior_major_left",
+        "rectus_capitis_posterior_minor_right",
+        "rectus_capitis_posterior_minor_left",
+        "obliquus_capitis_superior_right",
+        "obliquus_capitis_superior_left",
+        "obliquus_capitis_inferior_right",
+        "obliquus_capitis_inferior_left",
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_subcostales",
+        "thorax_transversus_thoracis_right",
+        "thorax_transversus_thoracis_left",
+        "thorax_levatores_costarum_right",
+        "thorax_levatores_costarum_left",
+        "thorax_diaphragm",
+        "levator_ani",
+        "coccygeus"
+      ]
+    },
+    {
+      "id": "T02",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.49 (2).jpeg",
+      "sha256": "0f2bc20eb34308ecff792fa992de6d009d7b64f4ea5676e348a92944a9650d6f",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Нижняя часть общего каталога: дополнительно мужская/женская промежность.",
+      "patterns": [
+        "g:thorax_wall",
+        "thorax_diaphragm",
+        "levator_ani",
+        "coccygeus"
+      ],
+      "issues": [
+        "FUT-001",
+        "FUT-003",
+        "ANAT-001"
+      ],
+      "gap": "",
+      "projectIds": [
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_subcostales",
+        "thorax_transversus_thoracis_right",
+        "thorax_transversus_thoracis_left",
+        "thorax_levatores_costarum_right",
+        "thorax_levatores_costarum_left",
+        "thorax_diaphragm",
+        "levator_ani",
+        "coccygeus"
+      ]
+    },
+    {
+      "id": "T03",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.49.jpeg",
+      "sha256": "ae10d6feddf954f1fb0d46b1df7fa8e2de8bf39b99aad96e83575ca9f6ea77f1",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Обзор туловища, режим площадей прикреплений, рубрики мышц спины.",
+      "patterns": [
+        "g:thorax_back",
+        "g:thorax_deep_back"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007"
+      ],
+      "gap": "",
+      "projectIds": [
+        "thorax_serratus_posterior_superior_right",
+        "thorax_serratus_posterior_superior_left",
+        "thorax_serratus_posterior_inferior_right",
+        "thorax_serratus_posterior_inferior_left",
+        "thorax_latissimus_dorsi_right",
+        "thorax_latissimus_dorsi_left",
+        "thorax_rhomboid_major_right",
+        "thorax_rhomboid_major_left",
+        "thorax_rhomboid_minor_right",
+        "thorax_rhomboid_minor_left",
+        "thorax_trapezius_right",
+        "thorax_trapezius_left",
+        "thorax_iliocostalis_thoracis_right",
+        "thorax_iliocostalis_thoracis_left",
+        "thorax_longissimus_thoracis_right",
+        "thorax_longissimus_thoracis_left",
+        "thorax_spinalis_thoracis_right",
+        "thorax_spinalis_thoracis_left",
+        "thorax_semispinalis_thoracis_right",
+        "thorax_semispinalis_thoracis_left",
+        "thorax_multifidus_right",
+        "thorax_multifidus_left",
+        "thorax_rotatores_thoracis",
+        "thorax_interspinales_thoracis",
+        "thorax_intertransversarii_thoracis"
+      ]
+    },
+    {
+      "id": "T04",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.50 (1).jpeg",
+      "sha256": "f87baaede535e3dca95c5ec09accf23807759d8acfe0c594561e140249658471",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поверхностная спина: трапециевидная, широчайшая, поднимающая лопатку, малая/большая ромбовидные.",
+      "patterns": [
+        "trapezius",
+        "latissimus_dorsi",
+        "levator_scapulae",
+        "rhomboid_minor",
+        "rhomboid_major",
+        "thorax_trapezius*",
+        "thorax_latissimus_dorsi*",
+        "thorax_rhomboid_minor*",
+        "thorax_rhomboid_major*",
+        "neck_levator_scapulae*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "Региональные представления уже есть; не создавать ещё независимые дубли.",
+      "projectIds": [
+        "trapezius",
+        "latissimus_dorsi",
+        "levator_scapulae",
+        "rhomboid_minor",
+        "rhomboid_major",
+        "thorax_trapezius_right",
+        "thorax_trapezius_left",
+        "thorax_latissimus_dorsi_right",
+        "thorax_latissimus_dorsi_left",
+        "thorax_rhomboid_minor_right",
+        "thorax_rhomboid_minor_left",
+        "thorax_rhomboid_major_right",
+        "thorax_rhomboid_major_left",
+        "neck_levator_scapulae_right",
+        "neck_levator_scapulae_left"
+      ]
+    },
+    {
+      "id": "T05",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.50.jpeg",
+      "sha256": "8fcdeb36e01839524990150f49e4d45a97915b3ee12278326a2acf5e87eb14f3",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "3D скелета туловища и подпись «Начало: Подвздошная мышца», красная подвздошная ямка.",
+      "patterns": [
+        "iliopsoas:iliacus"
+      ],
+      "issues": [
+        "VIS-007",
+        "GEO-012"
+      ],
+      "gap": "Подтверждён тип области, а не её точная площадь на BP3D.",
+      "projectIds": [
+        "iliopsoas:iliacus"
+      ]
+    },
+    {
+      "id": "T06",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.51 (1).jpeg",
+      "sha256": "c40b82f95ed7165e7229ead81d6c67274292760ce17d77c893ceb5eeb9ebd0f2",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Остисто-поперечные: ременные головы и шеи.",
+      "patterns": [
+        "splenius_capitis*",
+        "splenius_cervicis*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "splenius_capitis_right",
+        "splenius_capitis_left",
+        "splenius_cervicis_right",
+        "splenius_cervicis_left"
+      ]
+    },
+    {
+      "id": "T07",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.51.jpeg",
+      "sha256": "9ffd86fa9b6fe40e5d060e52f2543481b87608f6ba6f361758db6ab27e69f871",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Рубрика «Собственные мышцы спины — Остисто-поперечные» содержит верхнюю/нижнюю задние зубчатые.",
+      "patterns": [
+        "thorax_serratus_posterior_superior*",
+        "thorax_serratus_posterior_inferior*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "Классификация референса спорна; не переносить в проект.",
+      "projectIds": [
+        "thorax_serratus_posterior_superior_right",
+        "thorax_serratus_posterior_superior_left",
+        "thorax_serratus_posterior_inferior_right",
+        "thorax_serratus_posterior_inferior_left"
+      ]
+    },
+    {
+      "id": "T08",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.52 (1).jpeg",
+      "sha256": "33acbf31dfb53d035839bcf36211a6d74b46c7caa33be39dd1659fcd83cf4c28",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Длиннейшие, подвздошно-рёберная шеи; отдельно «Грудная часть» и «Поясничная часть; латеральный отдел…».",
+      "patterns": [
+        "longissimus_capitis*",
+        "longissimus_cervicis*",
+        "thorax_longissimus_thoracis*",
+        "iliocostalis_cervicis*"
+      ],
+      "issues": [
+        "FUT-011",
+        "SRC-007"
+      ],
+      "gap": "Не отождествлять TA98 pars thoracica iliocostalis lumborum с mesh iliocostalis thoracis.",
+      "projectIds": [
+        "longissimus_capitis_right",
+        "longissimus_capitis_left",
+        "longissimus_cervicis_right",
+        "longissimus_cervicis_left",
+        "thorax_longissimus_thoracis_right",
+        "thorax_longissimus_thoracis_left",
+        "iliocostalis_cervicis_right",
+        "iliocostalis_cervicis_left"
+      ]
+    },
+    {
+      "id": "T09",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.52 (2).jpeg",
+      "sha256": "af0f79a28db0d0744c764da505cb227a9f3990e02b71d3bdea5a7dd44de7e436",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Под заголовком «Мышца, выпрямляющая позвоночник» показаны вращатели, многораздельные и полуостистые.",
+      "patterns": [
+        "thorax_rotatores_thoracis",
+        "thorax_multifidus*",
+        "semispinalis_capitis*",
+        "semispinalis_cervicis*",
+        "thorax_semispinalis_thoracis*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "Ошибка/неудачная рубрика референса: смешаны erector spinae и transversospinales.",
+      "projectIds": [
+        "thorax_rotatores_thoracis",
+        "thorax_multifidus_right",
+        "thorax_multifidus_left",
+        "semispinalis_capitis_right",
+        "semispinalis_capitis_left",
+        "semispinalis_cervicis_right",
+        "semispinalis_cervicis_left",
+        "thorax_semispinalis_thoracis_right",
+        "thorax_semispinalis_thoracis_left"
+      ]
+    },
+    {
+      "id": "T10",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.52.jpeg",
+      "sha256": "fae7cd91820a24542c40cca056ef0ba638280bab354b1c9d50d4475b4c1a1577",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Собственные мышцы спины: остистые головы/шеи/груди, длиннейшие головы/шеи/груди.",
+      "patterns": [
+        "spinalis_cervicis*",
+        "thorax_spinalis_thoracis*",
+        "longissimus_capitis*",
+        "longissimus_cervicis*",
+        "thorax_longissimus_thoracis*"
+      ],
+      "issues": [
+        "FUT-011"
+      ],
+      "gap": "spinalis capitis отдельной карточки нет; семиостистую голову не переименовывать.",
+      "projectIds": [
+        "spinalis_cervicis_right",
+        "spinalis_cervicis_left",
+        "thorax_spinalis_thoracis_right",
+        "thorax_spinalis_thoracis_left",
+        "longissimus_capitis_right",
+        "longissimus_capitis_left",
+        "longissimus_cervicis_right",
+        "longissimus_cervicis_left",
+        "thorax_longissimus_thoracis_right",
+        "thorax_longissimus_thoracis_left"
+      ]
+    },
+    {
+      "id": "T11",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.53 (1).jpeg",
+      "sha256": "051d412b84304341f5b9d49a6b4086fc4a0c4b6b94508e2678abd34852747fd8",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Межпоперечные: латеральная прямая головы, передние и латеральные задние шеи, латеральные/медиальные поясницы.",
+      "patterns": [
+        "rectus_capitis_lateralis*"
+      ],
+      "issues": [
+        "ANAT-002",
+        "FUT-011"
+      ],
+      "gap": "Межпоперечные груди не подменяют шейные или поясничные.",
+      "projectIds": [
+        "rectus_capitis_lateralis_right",
+        "rectus_capitis_lateralis_left"
+      ]
+    },
+    {
+      "id": "T12",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.53 (2).jpeg",
+      "sha256": "118e3e6dff48b16d17064a300559ea55f4929373195ddb5d2e111f60947178ed",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Подзатылочные: малая/большая задние прямые, верхняя/нижняя косые.",
+      "patterns": [
+        "g:neck_suboccipital"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "rectus_capitis_posterior_major_right",
+        "rectus_capitis_posterior_major_left",
+        "rectus_capitis_posterior_minor_right",
+        "rectus_capitis_posterior_minor_left",
+        "obliquus_capitis_superior_right",
+        "obliquus_capitis_superior_left",
+        "obliquus_capitis_inferior_right",
+        "obliquus_capitis_inferior_left"
+      ]
+    },
+    {
+      "id": "T13",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.53.jpeg",
+      "sha256": "efc5546391d5c04d1902374dcc4e9c56787551bf4616e797acc54d54e3e6789a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Межостистые мышцы шеи и поясницы.",
+      "patterns": [],
+      "issues": [
+        "ANAT-002",
+        "FUT-011"
+      ],
+      "gap": "Имеющаяся грудная группа — другой регион.",
+      "projectIds": []
+    },
+    {
+      "id": "T14",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.54.jpeg",
+      "sha256": "cc0909600dae2c947906a9d944da11263054d4befc4b23b87236ca23efff1b91",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Обзоры грудной стенки, наружные/внутренние/самые внутренние межрёберные, поперечная груди.",
+      "patterns": [
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_transversus_thoracis*"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_transversus_thoracis_right",
+        "thorax_transversus_thoracis_left"
+      ]
+    },
+    {
+      "id": "T15",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.55.jpeg",
+      "sha256": "eaa4c737866537b0525926d4194a9a7cecd64b1ffc186d90f677287afdd55a5e",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Грудная стенка: также короткие/длинные поднимающие рёбра и подрёберные.",
+      "patterns": [
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_transversus_thoracis*",
+        "thorax_levatores_costarum*",
+        "thorax_subcostales"
+      ],
+      "issues": [
+        "MG-thorax_subcostales"
+      ],
+      "gap": "",
+      "projectIds": [
+        "thorax_intercostales_externi",
+        "thorax_intercostales_interni",
+        "thorax_intercostales_intimi",
+        "thorax_transversus_thoracis_right",
+        "thorax_transversus_thoracis_left",
+        "thorax_levatores_costarum_right",
+        "thorax_levatores_costarum_left",
+        "thorax_subcostales"
+      ]
+    },
+    {
+      "id": "T16",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.56 (1).jpeg",
+      "sha256": "2cd727726c9255281fc54863c695a835ffc0c8ff362fc99f0a0df0be89b5d56b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Мышцы живота: косые наружная/внутренняя, поперечная, прямая; паховая связка, обзор апоневрозов.",
+      "patterns": [],
+      "issues": [
+        "FUT-003",
+        "FUT-004"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "T17",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.56.jpeg",
+      "sha256": "c2352d92a9e6d6af43f33a3229afd110092685332827c8986ba1e1bfdd5dd099",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Диафрагма: обзор, главные части, связи с сосудами и play «Вдох».",
+      "patterns": [
+        "thorax_diaphragm"
+      ],
+      "issues": [
+        "MP-thorax_diaphragm-sternal",
+        "MP-thorax_diaphragm-costal",
+        "MP-thorax_diaphragm-lumbar",
+        "FUT-005",
+        "FUT-012"
+      ],
+      "gap": "Миниатюра «части» не даёт измеренных границ трёх частей.",
+      "projectIds": [
+        "thorax_diaphragm"
+      ]
+    },
+    {
+      "id": "T18",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.57 (1).jpeg",
+      "sha256": "8490d136d1ed68c685b5783dedbed385e53e54840fb72b55ddcf88b15d1fbeb3",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Тазовое дно: копчиковая, подвздошно-копчиковая, лобково-копчиковая, лобково-прямокишечная, наружный сфинктер.",
+      "patterns": [
+        "coccygeus",
+        "levator_ani:ilio",
+        "levator_ani:pubo"
+      ],
+      "issues": [
+        "ANAT-001",
+        "FUT-001"
+      ],
+      "gap": "Puborectalis не представлена в parts levator_ani.",
+      "projectIds": [
+        "coccygeus",
+        "levator_ani:ilio",
+        "levator_ani:pubo"
+      ]
+    },
+    {
+      "id": "T19",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.57.jpeg",
+      "sha256": "ec859e8bb47a9b91ed3d538a0cd62625be7e7f610656f2a781d5c82b03f8a21e",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Живот: косые, поперечная, прямая, пирамидальная и квадратная поясницы.",
+      "patterns": [],
+      "issues": [
+        "FUT-003"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "T20",
+      "path": "мышцы туловища/WhatsApp Image 2026-10-15 at 21.54.58.jpeg",
+      "sha256": "84cb52ef1bb345eebcea42d77073d5c91da1c516b335d1ee8f0d4d9f694bdf9c",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Мужская/женская промежность: глубокая/поверхностная поперечные, луковично-губчатая, седалищно-пещеристая.",
+      "patterns": [],
+      "issues": [
+        "FUT-001"
+      ],
+      "gap": "Пол и варианты, границы и отдельные модели требуют исследования.",
+      "projectIds": []
+    },
+    {
+      "id": "U01",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.30.jpeg",
+      "sha256": "2322af12eb4ce44c8c68d4d47b15d60de046aa5717699dc6234ae86abe966e85",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Каталог руки: пояс, плечо, предплечье, кисть, обзор прикреплений.",
+      "patterns": [
+        "g:girdle",
+        "g:arm_ant",
+        "g:arm_post",
+        "g:fa_ant",
+        "g:fa_post"
+      ],
+      "issues": [
+        "VIS-007"
+      ],
+      "gap": "",
+      "projectIds": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus",
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis"
+      ]
+    },
+    {
+      "id": "U02",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.31 (1).jpeg",
+      "sha256": "cdc576427ec54a57120922f64330b64b826415b19f7b1389fb845d60631fa349",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Выбрана поддельтовидная сумка, бирюзовый меш; подпись связанной темы ошибочно отсылает к запястью/кисти.",
+      "patterns": [],
+      "issues": [
+        "FUT-004"
+      ],
+      "gap": "Сумка не является мышцей или костным пином; не копировать рубрикацию.",
+      "projectIds": []
+    },
+    {
+      "id": "U03",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.31.jpeg",
+      "sha256": "0977947cc67a0a83e28d1dde0c29b1e65859da570c0ba77736fe1b999b2ef9d2",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Каталог групп руки и обзоры сумок/сухожильных влагалищ.",
+      "patterns": [
+        "g:hand_thenar",
+        "g:hand_hypo",
+        "g:hand_mid"
+      ],
+      "issues": [
+        "FUT-004"
+      ],
+      "gap": "",
+      "projectIds": [
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "abductor_digiti_minimi",
+        "flexor_digiti_minimi_brevis",
+        "opponens_digiti_minimi",
+        "palmaris_brevis",
+        "lumbricals",
+        "palmar_interossei",
+        "dorsal_interossei"
+      ]
+    },
+    {
+      "id": "U04",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.32.jpeg",
+      "sha256": "14ccda02f0d81f1bfc7dd6a24b9a0d33d1c030d24f150e89199e0bad42ad2889",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поперечное сечение запястья с цветными сухожильными влагалищами.",
+      "patterns": [],
+      "issues": [
+        "FUT-004",
+        "VIS-011"
+      ],
+      "gap": "Не заменять полноценное сечение обрезанием незамкнутой поверхности.",
+      "projectIds": []
+    },
+    {
+      "id": "U05",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.33.jpeg",
+      "sha256": "ba55fa3fe4fc01ac6b55596bcfc6eb8e420fb067c8de30345ab6b0ce54ff88cb",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Два учебных вида влагалищ кисти: продольный и поперечный.",
+      "patterns": [],
+      "issues": [
+        "FUT-004",
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "U06",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.34 (1).jpeg",
+      "sha256": "178ddda4095bd0cdd2a83ae0c48da8d958dffe36c13a5dbf2b70dcf860bf7828",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Режим красных/синих площадей начала/прикрепления на костях руки.",
+      "patterns": [
+        "b:clavicle",
+        "b:scapula",
+        "b:humerus",
+        "b:radius",
+        "b:ulna"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "GEO-012"
+      ],
+      "gap": "",
+      "projectIds": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna"
+      ]
+    },
+    {
+      "id": "U07",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.34.jpeg",
+      "sha256": "fc4b533eec4a48f4a0e9960cd7db860a382bc9da5db9c061ed5af34c7d3c137e",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Продольный вид сухожилий и влагалищ запястья/кисти.",
+      "patterns": [],
+      "issues": [
+        "FUT-004",
+        "GEO-012"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "U08",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.35 (1).jpeg",
+      "sha256": "aafd4fdf3d42f66cc2d3bfb033b592bf62ba1859cf24b633044ab0cd6c40d876",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Учебный срез плечевого пояса с площадями сечения мышц и круглыми указателями.",
+      "patterns": [
+        "g:girdle",
+        "pectoralis_major",
+        "pectoralis_minor"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "Белый кружок на срезе не переносится как костный ориентир.",
+      "projectIds": [
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "subscapularis",
+        "pectoralis_major",
+        "pectoralis_minor"
+      ]
+    },
+    {
+      "id": "U09",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.35 (2).jpeg",
+      "sha256": "942476c7b0f368094c2d3bb31ba9e6f64a8c3de977bbbfeca8e1c48fa9e2256a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Плечевой пояс: дельтовидная, большая/малая грудные, подключичная; обзор сечения.",
+      "patterns": [
+        "deltoid",
+        "pectoralis_major",
+        "pectoralis_minor",
+        "subclavius"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "deltoid",
+        "pectoralis_major",
+        "pectoralis_minor",
+        "subclavius"
+      ]
+    },
+    {
+      "id": "U10",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.35.jpeg",
+      "sha256": "e65397312dc82469de06088aca37ab31e3331d5354eec3590103756c461dfc9c",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Общий 3D вид руки: красное брюшко, светлое сухожилие, направления волокон.",
+      "patterns": [
+        "deltoid",
+        "pectoralis_major",
+        "biceps_brachii"
+      ],
+      "issues": [
+        "GEO-012"
+      ],
+      "gap": "Внешний вид отличается; текстура сама по себе не доказывает ошибку формы.",
+      "projectIds": [
+        "deltoid",
+        "pectoralis_major",
+        "biceps_brachii"
+      ]
+    },
+    {
+      "id": "U11",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.36 (1).jpeg",
+      "sha256": "d31a51be4ab0906cfe2a828ecbb0f9efff0af29582e7bfc285769f3452db5ed0",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Передняя зубчатая, подлопаточная, надостная/подостная, малая/большая круглые; выше малая грудная и подключичная.",
+      "patterns": [
+        "serratus_anterior",
+        "subscapularis",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "pectoralis_minor",
+        "subclavius"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "serratus_anterior",
+        "subscapularis",
+        "supraspinatus",
+        "infraspinatus",
+        "teres_minor",
+        "teres_major",
+        "pectoralis_minor",
+        "subclavius"
+      ]
+    },
+    {
+      "id": "U12",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.36 (2).jpeg",
+      "sha256": "eb6218fabdbebe3b6f65e0ab580b2ae583b207df29c7bdfee90905401a19fc9f",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Мышцы плеча: вскрытый вид компартментов, задняя группа выделена зелёным.",
+      "patterns": [
+        "g:arm_ant",
+        "g:arm_post"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus"
+      ]
+    },
+    {
+      "id": "U13",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.36.jpeg",
+      "sha256": "2e886ac50f37754437454c545e467cb97158cf5d2d893059e1e6d16f44d6b6b0",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Каталог плеча: обзор, два вида компартментов, клювовидно-плечевая и плечевая.",
+      "patterns": [
+        "coracobrachialis",
+        "brachialis",
+        "biceps_brachii",
+        "triceps_brachii"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "coracobrachialis",
+        "brachialis",
+        "biceps_brachii",
+        "triceps_brachii"
+      ]
+    },
+    {
+      "id": "U14",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.37 (1).jpeg",
+      "sha256": "8106578169b8742ddaa0fdf3aff57d3dd2ed9be401b64b6266decd05f4565615",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поперечное сечение плеча: цветовые группы/поверхности сечения.",
+      "patterns": [
+        "g:arm_ant",
+        "g:arm_post"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "coracobrachialis",
+        "biceps_brachii",
+        "brachialis",
+        "triceps_brachii",
+        "anconeus"
+      ]
+    },
+    {
+      "id": "U15",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.37 (2).jpeg",
+      "sha256": "5147c7e350126e4158ed4284440bbae9e57dc58323efc2504b8dc21ce3f5a16d",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Сечение плеча, выбрана двуглавая мышца; связанные виды действия.",
+      "patterns": [
+        "biceps_brachii"
+      ],
+      "issues": [
+        "VIS-011",
+        "FUT-012"
+      ],
+      "gap": "",
+      "projectIds": [
+        "biceps_brachii"
+      ]
+    },
+    {
+      "id": "U16",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.37.jpeg",
+      "sha256": "bc038ad5c1bb12378f70846988b86cb1954227296fa2a1daf66a0b583914624d",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Вскрытый вид плеча: выбрана длинная головка triceps.",
+      "patterns": [
+        "triceps_brachii:long"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "Выбор этой части уже работает в проекте; не регистрировать отсутствующую головку.",
+      "projectIds": [
+        "triceps_brachii:long"
+      ]
+    },
+    {
+      "id": "U17",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.38 (1).jpeg",
+      "sha256": "12eab30a478d9ca949e3d25c6cc842c1ebfb33efee36d5bffe09be1f40d17cfb",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Предплечье: круглый пронатор, лучевой/локтевой сгибатели, длинная ладонная; ниже сгибатели пальцев.",
+      "patterns": [
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "flexor_carpi_ulnaris",
+        "palmaris_longus",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "palmaris longus не заменяет отсутствующую palmaris brevis.",
+      "projectIds": [
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "flexor_carpi_ulnaris",
+        "palmaris_longus",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus"
+      ]
+    },
+    {
+      "id": "U18",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.38 (2).jpeg",
+      "sha256": "897edfb9229267ef7b3f36596c7f422b6457cdf952ddeb02b63da85d093df38a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Сгибатели пальцев/большого пальца, квадратный пронатор, плечелучевая, лучевые разгибатели, супинатор.",
+      "patterns": [
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "supinator"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "supinator"
+      ]
+    },
+    {
+      "id": "U19",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.38 (3).jpeg",
+      "sha256": "dc243185b60b5b69ef63a157ae28468f6cbc35540a290ed8978719344e6f4eb6",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Разгибатели кисти/пальцев/большого пальца, локтевая, длинная отводящая большой палец.",
+      "patterns": [
+        "extensor_carpi_radialis_brevis",
+        "supinator",
+        "anconeus",
+        "extensor_carpi_ulnaris",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_indicis",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "extensor_carpi_radialis_brevis",
+        "supinator",
+        "anconeus",
+        "extensor_carpi_ulnaris",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_indicis",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus"
+      ]
+    },
+    {
+      "id": "U20",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.38.jpeg",
+      "sha256": "aa579879a6edf2a166189a0e8ce085d509432cc34535e0df68e16d6d9bc76559",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Плечо: клювовидно-плечевая, плечевая, двуглавая, трёхглавая.",
+      "patterns": [
+        "coracobrachialis",
+        "brachialis",
+        "biceps_brachii",
+        "triceps_brachii"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "coracobrachialis",
+        "brachialis",
+        "biceps_brachii",
+        "triceps_brachii"
+      ]
+    },
+    {
+      "id": "U21",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.39 (1).jpeg",
+      "sha256": "1b10d0243c5bc69e6b81ef7d6873f2ae5858bc6f137bb102ef109a718f7ca1fe",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поперечное цветное сечение предплечья.",
+      "patterns": [
+        "g:fa_ant",
+        "g:fa_post"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "pronator_teres",
+        "flexor_carpi_radialis",
+        "palmaris_longus",
+        "flexor_carpi_ulnaris",
+        "flexor_digitorum_superficialis",
+        "flexor_digitorum_profundus",
+        "flexor_pollicis_longus",
+        "pronator_quadratus",
+        "brachioradialis",
+        "extensor_carpi_radialis_longus",
+        "extensor_carpi_radialis_brevis",
+        "extensor_digitorum",
+        "extensor_digiti_minimi",
+        "extensor_carpi_ulnaris",
+        "supinator",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus",
+        "extensor_indicis"
+      ]
+    },
+    {
+      "id": "U22",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.39 (2).jpeg",
+      "sha256": "0333976259d4abc324346285978eb81b99b5755d6e0b3917e4b50a223ae65f95",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Кисть: короткая отводящая/короткий сгибатель большого пальца, противопоставляющая/приводящая, сгибатель и отводящая мизинца.",
+      "patterns": [
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "flexor_digiti_minimi_brevis",
+        "abductor_digiti_minimi"
+      ],
+      "issues": [
+        "SRC-003",
+        "MG-palmaris_brevis"
+      ],
+      "gap": "Короткая ладонная на данном кадре не показана; это не доказательство её отсутствия в приложении-референсе.",
+      "projectIds": [
+        "abductor_pollicis_brevis",
+        "flexor_pollicis_brevis",
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "flexor_digiti_minimi_brevis",
+        "abductor_digiti_minimi"
+      ]
+    },
+    {
+      "id": "U23",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.39.jpeg",
+      "sha256": "f4a79548624c33ed0fbbb6ca6b000d1041c17521f751d5c60ddd569dac569bef",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Конец каталога предплечья: разгибатели указательного/большого пальца, длинная отводящая.",
+      "patterns": [
+        "extensor_indicis",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "extensor_indicis",
+        "abductor_pollicis_longus",
+        "extensor_pollicis_brevis",
+        "extensor_pollicis_longus"
+      ]
+    },
+    {
+      "id": "U24",
+      "path": "мышцы верхней конечности/WhatsApp Image 2026-10-15 at 21.58.40.jpeg",
+      "sha256": "1e45ae956235a17d5276d27c80997368adc442f1a0b6b55888bdd5aef7c63228",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Кисть: противопоставляющая мизинца, межкостные ладонные/тыльные, червеобразные.",
+      "patterns": [
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "flexor_digiti_minimi_brevis",
+        "abductor_digiti_minimi",
+        "opponens_digiti_minimi",
+        "palmar_interossei",
+        "dorsal_interossei",
+        "lumbricals"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "opponens_pollicis",
+        "adductor_pollicis",
+        "flexor_digiti_minimi_brevis",
+        "abductor_digiti_minimi",
+        "opponens_digiti_minimi",
+        "palmar_interossei",
+        "dorsal_interossei",
+        "lumbricals"
+      ]
+    },
+    {
+      "id": "L01",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.42 (1).jpeg",
+      "sha256": "d2a167ccab5e856841d6a7f62d95e66235cfb11fb4d94686c0cce8a87320b90b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Нижняя часть каталога: бедро/голень/стопа, сумки бедра/колена, влагалища голеностопа.",
+      "patterns": [],
+      "issues": [
+        "FUT-004"
+      ],
+      "gap": "",
+      "projectIds": []
+    },
+    {
+      "id": "L02",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.42.jpeg",
+      "sha256": "dcbfa7b5db25e765b4b57d047051d69bf26d78ab20eaf3c3ec52ecbc49d3e878",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Общий каталог ноги: подвздошно-поясничная, ягодичная область, бедро, голень, стопа.",
+      "patterns": [
+        "iliopsoas",
+        "g:pelvis_ext"
+      ],
+      "issues": [
+        "REF-002"
+      ],
+      "gap": "",
+      "projectIds": [
+        "iliopsoas",
+        "gluteus_maximus",
+        "gluteus_medius",
+        "gluteus_minimus",
+        "tensor_fasciae_latae",
+        "quadratus_femoris",
+        "obturator_externus"
+      ]
+    },
+    {
+      "id": "L03",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.43 (1).jpeg",
+      "sha256": "c667cc0904df7fbe8a4efe93551b9bc62f6e5e631723def8a086a87163a650b9",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Общий 3D вид нижней конечности: мышечные брюшки и светлые сухожилия.",
+      "patterns": [
+        "quadriceps_femoris",
+        "tibialis_anterior"
+      ],
+      "issues": [
+        "GEO-012"
+      ],
+      "gap": "Нет масштаба, одинаковой позы и исходной сетки для метрической оценки.",
+      "projectIds": [
+        "quadriceps_femoris",
+        "tibialis_anterior"
+      ]
+    },
+    {
+      "id": "L04",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.43.jpeg",
+      "sha256": "8a950d1c78a3d44aaecb76b1840faf32b472af6aaf8d4e5eea96106a0b22404a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Цветные площади начала/прикрепления на костях таза и ноги.",
+      "patterns": [
+        "iliopsoas",
+        "b:hip_bone",
+        "b:femur",
+        "b:tibia",
+        "b:fibula"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "GEO-012"
+      ],
+      "gap": "",
+      "projectIds": [
+        "iliopsoas",
+        "hip_bone",
+        "femur",
+        "tibia",
+        "fibula"
+      ]
+    },
+    {
+      "id": "L05",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.46 (1).jpeg",
+      "sha256": "e991a3da82d0548417ebde9eba8679b4fe0da46396f2d80e938e3163fb736391",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Ягодичная область: два обзора, цветные компартменты, большая/средняя ягодичные.",
+      "patterns": [
+        "gluteus_maximus",
+        "gluteus_medius"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "gluteus_maximus",
+        "gluteus_medius"
+      ]
+    },
+    {
+      "id": "L06",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.46 (2).jpeg",
+      "sha256": "65a0b62d314fb8ee5eca6ebad63d36c8199096179e22c3eee4b3db646e4250a8",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Малая ягодичная, грушевидная, обе близнецовые, обе запирательные, квадратная бедра.",
+      "patterns": [
+        "gluteus_minimus",
+        "piriformis",
+        "gemellus_superior",
+        "gemellus_inferior",
+        "obturator_internus",
+        "obturator_externus",
+        "quadratus_femoris"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "gluteus_minimus",
+        "piriformis",
+        "gemellus_superior",
+        "gemellus_inferior",
+        "obturator_internus",
+        "obturator_externus",
+        "quadratus_femoris"
+      ]
+    },
+    {
+      "id": "L07",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.46.jpeg",
+      "sha256": "e273f3346e25caca1e8e799f5d7affc989b73934b22d463add53104a648ada37",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Подвздошно-поясничная: большая поясничная, подвздошная; отдельная малая поясничная.",
+      "patterns": [
+        "iliopsoas:psoas",
+        "iliopsoas:iliacus"
+      ],
+      "issues": [
+        "FUT-011"
+      ],
+      "gap": "psoas minor не входит автоматически в iliopsoas и не равна psoas major.",
+      "projectIds": [
+        "iliopsoas:psoas",
+        "iliopsoas:iliacus"
+      ]
+    },
+    {
+      "id": "L08",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.47.jpeg",
+      "sha256": "95e4b43da06118012f8e2b28d9a45bb93e75747bbc83a8b9c70afbcc4bf590d6",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поперечное цветное сечение бедра.",
+      "patterns": [
+        "g:thigh_ant",
+        "g:thigh_med",
+        "g:thigh_post"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "sartorius",
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_longus",
+        "adductor_brevis",
+        "adductor_magnus",
+        "gracilis",
+        "biceps_femoris",
+        "semitendinosus",
+        "semimembranosus"
+      ]
+    },
+    {
+      "id": "L09",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.48 (1).jpeg",
+      "sha256": "da4e06ba515ae311ecb16dd9df3af0c621fcb69e402329ad4e9335eb00174f53",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Квадрицепс, гребенчатая, короткая/длинная/большая приводящие, тонкая, полуперепончатая/полусухожильная, бицепс бедра.",
+      "patterns": [
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus",
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus",
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ]
+    },
+    {
+      "id": "L10",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.48.jpeg",
+      "sha256": "04c05f35effd86d419e31ca4c6086530eb8f080f98e30fdd438ec9f2235757a4",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Бедро: обзор, компартменты, напрягатель широкой фасции, портняжная, квадрицепс, приводящие.",
+      "patterns": [
+        "tensor_fasciae_latae",
+        "sartorius",
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "tensor_fasciae_latae",
+        "sartorius",
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus"
+      ]
+    },
+    {
+      "id": "L11",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.49 (1).jpeg",
+      "sha256": "db1fee9c030532dfdcfe4e39df1c927519e1276b9ba49c5da4dee2444514289a",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Продолжение каталога бедра: квадрицепс, гребенчатая, приводящие, тонкая, задняя группа.",
+      "patterns": [
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus",
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus",
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ]
+    },
+    {
+      "id": "L12",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.49 (2).jpeg",
+      "sha256": "5739e8dcf834d07c8f0f7df0c02463a686013bac305170d4a65847a1f0da2a0b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Нижняя часть каталога бедра: большая приводящая, тонкая, полуперепончатая/полусухожильная, бицепс.",
+      "patterns": [
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "adductor_magnus",
+        "gracilis",
+        "semimembranosus",
+        "semitendinosus",
+        "biceps_femoris"
+      ]
+    },
+    {
+      "id": "L13",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.49.jpeg",
+      "sha256": "04c05f35effd86d419e31ca4c6086530eb8f080f98e30fdd438ec9f2235757a4",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "duplicateOf": "L10",
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Точная копия L10 (проверено SHA-256).",
+      "patterns": [
+        "tensor_fasciae_latae",
+        "sartorius",
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "tensor_fasciae_latae",
+        "sartorius",
+        "quadriceps_femoris",
+        "pectineus",
+        "adductor_brevis",
+        "adductor_longus"
+      ]
+    },
+    {
+      "id": "L14",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.50 (1).jpeg",
+      "sha256": "32f7e5096b65974f2f416730112de07769ca9b7c8603b6e8f617b2702c5f5633",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Поперечное цветное сечение голени, разные группы мышц.",
+      "patterns": [
+        "g:shank_ant",
+        "g:shank_lat",
+        "g:shank_post"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "tibialis_anterior",
+        "extensor_digitorum_longus",
+        "fibularis_tertius",
+        "extensor_hallucis_longus",
+        "fibularis_longus",
+        "fibularis_brevis",
+        "triceps_surae",
+        "plantaris",
+        "popliteus",
+        "flexor_digitorum_longus",
+        "tibialis_posterior",
+        "flexor_hallucis_longus"
+      ]
+    },
+    {
+      "id": "L15",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.50 (2).jpeg",
+      "sha256": "dae1c4eeb3fc73b2ee329b02c4635db1d2503b266db5deae58d8a0e8a9e773f8",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Подколенная, трёхглавая голени, подошвенная, задняя большеберцовая, длинные сгибатели, передняя большеберцовая.",
+      "patterns": [
+        "popliteus",
+        "triceps_surae",
+        "plantaris",
+        "tibialis_posterior",
+        "flexor_digitorum_longus",
+        "flexor_hallucis_longus",
+        "tibialis_anterior",
+        "extensor_hallucis_longus"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "popliteus",
+        "triceps_surae",
+        "plantaris",
+        "tibialis_posterior",
+        "flexor_digitorum_longus",
+        "flexor_hallucis_longus",
+        "tibialis_anterior",
+        "extensor_hallucis_longus"
+      ]
+    },
+    {
+      "id": "L16",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.50.jpeg",
+      "sha256": "cf7f0f768b61de4d929069cb98b47354a14f40034ae739ec6d9400dbf8a4437b",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Начало каталога голени, обзор и компартменты, подколенная/трёхглавая/подошвенная и глубокая задняя группа.",
+      "patterns": [
+        "popliteus",
+        "triceps_surae",
+        "plantaris",
+        "tibialis_posterior",
+        "flexor_digitorum_longus",
+        "flexor_hallucis_longus"
+      ],
+      "issues": [
+        "VIS-011"
+      ],
+      "gap": "",
+      "projectIds": [
+        "popliteus",
+        "triceps_surae",
+        "plantaris",
+        "tibialis_posterior",
+        "flexor_digitorum_longus",
+        "flexor_hallucis_longus"
+      ]
+    },
+    {
+      "id": "L17",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.51 (1).jpeg",
+      "sha256": "7c9a78b697b0995b5ee01779f99b6f4e1947c37eb6fa81a8df23454f8adccb05",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Передняя большеберцовая, длинные разгибатели, длинная/короткая/третья малоберцовые.",
+      "patterns": [
+        "tibialis_anterior",
+        "extensor_hallucis_longus",
+        "extensor_digitorum_longus",
+        "fibularis_longus",
+        "fibularis_brevis",
+        "fibularis_tertius"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "tibialis_anterior",
+        "extensor_hallucis_longus",
+        "extensor_digitorum_longus",
+        "fibularis_longus",
+        "fibularis_brevis",
+        "fibularis_tertius"
+      ]
+    },
+    {
+      "id": "L18",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.51.jpeg",
+      "sha256": "bad3f796d29f4385d2ac477c75076c8a616ba4406d1b8c6a0ba33fcd08c994e5",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Карточка длинного разгибателя пальцев стопы: play-кнопки разгибания II–V, тыльного сгибания, эверсии.",
+      "patterns": [
+        "extensor_digitorum_longus"
+      ],
+      "issues": [
+        "FUT-012"
+      ],
+      "gap": "Проверена только подпись/наличие кнопок, не кинематика анимации.",
+      "projectIds": [
+        "extensor_digitorum_longus"
+      ]
+    },
+    {
+      "id": "L19",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.52 (1).jpeg",
+      "sha256": "ba8a495d744ce9735bb249d86c883f44a9a309f58f439beac3be9e6388207c74",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Стопа: короткие разгибатели, отводящая/короткий сгибатель/приводящая большого пальца, отводящая/сгибатель/противопоставляющая мизинца.",
+      "patterns": [
+        "extensor_digitorum_brevis",
+        "extensor_hallucis_brevis",
+        "abductor_hallucis",
+        "flexor_hallucis_brevis",
+        "adductor_hallucis",
+        "abductor_digiti_minimi_pedis",
+        "flexor_digiti_minimi_brevis_pedis",
+        "opponens_digiti_minimi_pedis"
+      ],
+      "issues": [
+        "SRC-003"
+      ],
+      "gap": "Непостоянство opponens digiti minimi pedis уже отмечено в проекте.",
+      "projectIds": [
+        "extensor_digitorum_brevis",
+        "extensor_hallucis_brevis",
+        "abductor_hallucis",
+        "flexor_hallucis_brevis",
+        "adductor_hallucis",
+        "abductor_digiti_minimi_pedis",
+        "flexor_digiti_minimi_brevis_pedis",
+        "opponens_digiti_minimi_pedis"
+      ]
+    },
+    {
+      "id": "L20",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.52.jpeg",
+      "sha256": "b0feb5e95c88533dfef42fb908a014aeb92d1f3e40d15ce056eba346f7822e79",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Обзор стопы и четыре учебных слоя подошвы I–IV.",
+      "patterns": [
+        "g:foot_med",
+        "g:foot_lat",
+        "g:foot_mid",
+        "dorsal_interossei_pedis"
+      ],
+      "issues": [
+        "VIS-012"
+      ],
+      "gap": "Глобальные Все/−1/−2/Кости не являются четырьмя именованными подошвенными слоями.",
+      "projectIds": [
+        "abductor_hallucis",
+        "flexor_hallucis_brevis",
+        "adductor_hallucis",
+        "abductor_digiti_minimi_pedis",
+        "flexor_digiti_minimi_brevis_pedis",
+        "opponens_digiti_minimi_pedis",
+        "dorsal_interossei_pedis",
+        "flexor_digitorum_brevis",
+        "quadratus_plantae",
+        "lumbricals_pedis",
+        "plantar_interossei"
+      ]
+    },
+    {
+      "id": "L21",
+      "path": "мышцы нижней конечности/WhatsApp Image 2026-10-15 at 22.01.53.jpeg",
+      "sha256": "f28c4b31689ccff379e871f08bfdf78831d1f665f180c2ade03deaaa8d100393",
+      "size": [
+        720,
+        1600
+      ],
+      "new": true,
+      "reviewed": true,
+      "reviewMethod": "readable contact sheet, full screenshot included",
+      "observation": "Стопа: сгибатель/противопоставляющая мизинца, короткий сгибатель пальцев, квадратная подошвы, межкостные, червеобразные.",
+      "patterns": [
+        "flexor_digiti_minimi_brevis_pedis",
+        "opponens_digiti_minimi_pedis",
+        "flexor_digitorum_brevis",
+        "quadratus_plantae",
+        "plantar_interossei",
+        "dorsal_interossei_pedis",
+        "lumbricals_pedis"
+      ],
+      "issues": [
+        "VIS-012",
+        "SRC-003"
+      ],
+      "gap": "",
+      "projectIds": [
+        "flexor_digiti_minimi_brevis_pedis",
+        "opponens_digiti_minimi_pedis",
+        "flexor_digitorum_brevis",
+        "quadratus_plantae",
+        "plantar_interossei",
+        "dorsal_interossei_pedis",
+        "lumbricals_pedis"
+      ]
+    }
+  ],
+  "oldImages": [
+    {
+      "id": "B01",
+      "path": "Кости череп/WhatsApp Image 2026-10-15 at 13.55.02 (1).jpeg",
+      "sha256": "601cb49524ceb22f7136cb493159ef3d1841d4e54f0119942fabedc557bc8048",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог костей/образований и составных видов черепа; цветовое разделение, контекстные миниатюры",
+      "projectIds": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "mandible",
+        "parietal_right",
+        "parietal_left",
+        "temporal_right",
+        "temporal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "issues": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-007",
+        "VIS-009",
+        "SYS-001"
+      ],
+      "gap": "Имеющиеся костные карточки/общие ориентиры; режим частей и ясность выбора требуют VIS-*; прежние кандидаты остаются SH-*/SHX-*."
+    },
+    {
+      "id": "B02",
+      "path": "Кости череп/WhatsApp Image 2026-10-15 at 13.55.02.jpeg",
+      "sha256": "e211f51a3ab059c8fa22fb1fdcd96b2c5cfd18f64e31103bc2a452bd19f72d1a",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог костей/образований и составных видов черепа; цветовое разделение, контекстные миниатюры",
+      "projectIds": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "mandible",
+        "parietal_right",
+        "parietal_left",
+        "temporal_right",
+        "temporal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "issues": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-007",
+        "VIS-009",
+        "SYS-001"
+      ],
+      "gap": "Имеющиеся костные карточки/общие ориентиры; режим частей и ясность выбора требуют VIS-*; прежние кандидаты остаются SH-*/SHX-*."
+    },
+    {
+      "id": "B03",
+      "path": "Кости череп/WhatsApp Image 2026-10-15 at 13.55.03 (1).jpeg",
+      "sha256": "000a071baa80d617ad7c9b2f19f32b029bf5c5d2d6e98654f7a4e3c62eac498b",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог костей/образований и составных видов черепа; цветовое разделение, контекстные миниатюры",
+      "projectIds": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "mandible",
+        "parietal_right",
+        "parietal_left",
+        "temporal_right",
+        "temporal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "issues": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-007",
+        "VIS-009",
+        "SYS-001"
+      ],
+      "gap": "Имеющиеся костные карточки/общие ориентиры; режим частей и ясность выбора требуют VIS-*; прежние кандидаты остаются SH-*/SHX-*."
+    },
+    {
+      "id": "B04",
+      "path": "Кости череп/WhatsApp Image 2026-10-15 at 13.55.03.jpeg",
+      "sha256": "d2e051ab47bf3b2cf5a5f2893bf17e3dcf8c84ed028194a8109b3bbd546a451b",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог костей/образований и составных видов черепа; цветовое разделение, контекстные миниатюры",
+      "projectIds": [
+        "frontal",
+        "occipital",
+        "sphenoid",
+        "ethmoid",
+        "mandible",
+        "parietal_right",
+        "parietal_left",
+        "temporal_right",
+        "temporal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "issues": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-007",
+        "VIS-009",
+        "SYS-001"
+      ],
+      "gap": "Имеющиеся костные карточки/общие ориентиры; режим частей и ясность выбора требуют VIS-*; прежние кандидаты остаются SH-*/SHX-*."
+    },
+    {
+      "id": "B05",
+      "path": "кости верхней конечности/WhatsApp Image 2026-10-15 at 14.38.09 (2).jpeg",
+      "sha256": "4a7eb82d512be9caa0447713c650b221147a4b54865cd71b8dc819f7d0374f8c",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог верхней конечности: отдельные кости в контексте и режимы образований; серия включает сесамовидные кости кисти",
+      "projectIds": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate",
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "VIS-008",
+        "SCOPE-001"
+      ],
+      "gap": "Основные кости существуют; отдельный объём кистевых сесамовидных не определён (SCOPE-001). Групповое соответствие серии; не новая расшифровка каждой миниатюры."
+    },
+    {
+      "id": "B06",
+      "path": "кости верхней конечности/WhatsApp Image 2026-10-15 at 14.38.48 (1).jpeg",
+      "sha256": "46bdde751c9215880ea40ef0f267542509d8598e31aab26855894cab378e7916",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог верхней конечности: отдельные кости в контексте и режимы образований; серия включает сесамовидные кости кисти",
+      "projectIds": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate",
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "VIS-008",
+        "SCOPE-001"
+      ],
+      "gap": "Основные кости существуют; отдельный объём кистевых сесамовидных не определён (SCOPE-001). Групповое соответствие серии; не новая расшифровка каждой миниатюры."
+    },
+    {
+      "id": "B07",
+      "path": "кости верхней конечности/WhatsApp Image 2026-10-15 at 14.38.49.jpeg",
+      "sha256": "06a3761880329b3769a9a9e2d5d8367e9866cdd7827883d26d8a917dc1f050d5",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог верхней конечности: отдельные кости в контексте и режимы образований; серия включает сесамовидные кости кисти",
+      "projectIds": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate",
+        "clavicle_left",
+        "scapula_left",
+        "humerus_left"
+      ],
+      "issues": [
+        "VIS-002",
+        "VIS-007",
+        "VIS-008",
+        "SCOPE-001"
+      ],
+      "gap": "Основные кости существуют; отдельный объём кистевых сесамовидных не определён (SCOPE-001). Групповое соответствие серии; не новая расшифровка каждой миниатюры."
+    },
+    {
+      "id": "B08",
+      "path": "кости нижней конечности/WhatsApp Image 2026-10-15 at 14.38.09 (1).jpeg",
+      "sha256": "1eb622567b3eb1f91b9c14e5f99a2f1f65592c3702629076a91523825e214e66",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог таза/нижней конечности: режим частей и образований, цветные части тазовой кости, отдельные кости",
+      "projectIds": [
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "talus",
+        "calcaneus"
+      ],
+      "issues": [
+        "VIS-003",
+        "VIS-002",
+        "VIS-007"
+      ],
+      "gap": "Кости доступны; точные цветные части тазовой кости/связь с поверхностью ещё не приняты."
+    },
+    {
+      "id": "B09",
+      "path": "кости нижней конечности/WhatsApp Image 2026-10-15 at 14.38.10.jpeg",
+      "sha256": "67c127c297bce15bee20c0f5abc0890ff5c198b9069af775dc9818c9a2c3d972",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог таза/нижней конечности: режим частей и образований, цветные части тазовой кости, отдельные кости",
+      "projectIds": [
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "talus",
+        "calcaneus"
+      ],
+      "issues": [
+        "VIS-003",
+        "VIS-002",
+        "VIS-007"
+      ],
+      "gap": "Кости доступны; точные цветные части тазовой кости/связь с поверхностью ещё не приняты."
+    },
+    {
+      "id": "B10",
+      "path": "кости нижней конечности/WhatsApp Image 2026-10-15 at 14.38.48.jpeg",
+      "sha256": "f295752f67aa7e5494f21afdabc84bd8d28fa876073101f080f6fbd979b7665c",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог таза/нижней конечности: режим частей и образований, цветные части тазовой кости, отдельные кости",
+      "projectIds": [
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "talus",
+        "calcaneus"
+      ],
+      "issues": [
+        "VIS-003",
+        "VIS-002",
+        "VIS-007"
+      ],
+      "gap": "Кости доступны; точные цветные части тазовой кости/связь с поверхностью ещё не приняты."
+    },
+    {
+      "id": "B11",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.07 (1).jpeg",
+      "sha256": "3a691bfcdb7eb5cb43919c19ffd72247375428de5aba386037d261e1057feba5",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог туловища: позвоночник, рёбра/хрящи/грудина, переключение костей и образований",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    },
+    {
+      "id": "B12",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.07 (2).jpeg",
+      "sha256": "61882e8836ca24ab4fda6d2f86a0dcae75599a4fa0732650ba8316f742705d22",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог туловища: позвоночник, рёбра/хрящи/грудина, переключение костей и образований",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    },
+    {
+      "id": "B13",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.07.jpeg",
+      "sha256": "f1d91e7e42f68c64b56c15b052f32fcd35c9243d7846cc5d205ad8110399aa7a",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Непосредственный 3D-вид позвоночника: непрерывная структура и выделение частей",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    },
+    {
+      "id": "B14",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.08 (1).jpeg",
+      "sha256": "fc310fee55e89d3f415b0dbfc2c2435d0dfb8aebe2445fe274a7e6abb219b950",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог туловища: позвоночник, рёбра/хрящи/грудина, переключение костей и образований",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    },
+    {
+      "id": "B15",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.08.jpeg",
+      "sha256": "e5cf852efb9c309a76507ad60845d647a122107f401696cea96e07f577b5e5f5",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Каталог туловища: позвоночник, рёбра/хрящи/грудина, переключение костей и образований",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    },
+    {
+      "id": "B16",
+      "path": "кости туловища/WhatsApp Image 2026-10-15 at 14.38.09.jpeg",
+      "sha256": "6053aca730e2ed698e9940d387e0699bcde87396ad10b9fb197806ac80a7221c",
+      "reviewMethod": "reused ANATOMY_REPAIR_PLAN.md Appendix F; no new visual claim",
+      "new": false,
+      "observation": "Непосредственный крупный 3D-вид позвонка: разные цвета тела/отростков и окружающий контекст",
+      "projectIds": [
+        "sacrum"
+      ],
+      "issues": [
+        "VIS-004",
+        "VIS-005",
+        "VIS-006",
+        "VIS-002"
+      ],
+      "gap": "Часть позвоночника и грудина представлены; полнота составного вида/цветных частей остаётся задачей, непрерывность всего столба не заявляется."
+    }
+  ],
+  "limitations": [
+    "Old images identified by prior inventory path; old SHA baseline unavailable. Current hashes saved for future comparisons.",
+    "A screenshot or catalog thumbnail does not prove exact boundaries, scale, side, mesh segmentation or resource licence.",
+    "Existing IDs listed for comparison; bilateral matches do not infer screenshot laterality."
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "before": [
+    {
+      "id": "deltoid",
+      "kind": "m",
+      "meshes": 3
+    },
+    {
+      "id": "supraspinatus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "infraspinatus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "teres_minor",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "teres_major",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "subscapularis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "coracobrachialis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "biceps_brachii",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "brachialis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "triceps_brachii",
+      "kind": "m",
+      "meshes": 3
+    },
+    {
+      "id": "anconeus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "pronator_teres",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "flexor_carpi_radialis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "palmaris_longus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "flexor_carpi_ulnaris",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "flexor_digitorum_superficialis",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "flexor_digitorum_profundus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "flexor_pollicis_longus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "pronator_quadratus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "brachioradialis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_carpi_radialis_longus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_carpi_radialis_brevis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_digitorum",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_digiti_minimi",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_carpi_ulnaris",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "supinator",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "abductor_pollicis_longus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_pollicis_brevis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_pollicis_longus",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "extensor_indicis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "abductor_pollicis_brevis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "flexor_pollicis_brevis",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "opponens_pollicis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "adductor_pollicis",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "abductor_digiti_minimi",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "opponens_digiti_minimi",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "lumbricals",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "palmar_interossei",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "dorsal_interossei",
+      "kind": "m",
+      "meshes": 1
+    },
+    {
+      "id": "clavicle",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scapula",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "humerus",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "radius",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "ulna",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scaphoid",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "lunate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "triquetrum",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "pisiform",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "trapezium",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "trapezoid",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "capitate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "hamate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "interosseous_membrane",
+      "kind": "o",
+      "meshes": 1
+    },
+    {
+      "id": "flexor_retinaculum",
+      "kind": "o",
+      "meshes": 1
+    },
+    {
+      "id": "context",
+      "kind": "c",
+      "meshes": 42
+    },
+    {
+      "id": "clavicle_left",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scapula_left",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "humerus_left",
+      "kind": "b",
+      "meshes": 1
+    }
+  ],
+  "isolated": [
+    {
+      "id": "biceps_brachii",
+      "kind": "m",
+      "meshes": 2
+    },
+    {
+      "id": "clavicle",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scapula",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "humerus",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "radius",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "ulna",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scaphoid",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "lunate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "triquetrum",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "pisiform",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "trapezium",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "trapezoid",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "capitate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "hamate",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "metacarpal_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_prox_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_mid_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_1",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_2",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_3",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_4",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "phalanx_dist_5",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "interosseous_membrane",
+      "kind": "o",
+      "meshes": 1
+    },
+    {
+      "id": "context",
+      "kind": "c",
+      "meshes": 42
+    },
+    {
+      "id": "clavicle_left",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "scapula_left",
+      "kind": "b",
+      "meshes": 1
+    },
+    {
+      "id": "humerus_left",
+      "kind": "b",
+      "meshes": 1
+    }
+  ]
+}

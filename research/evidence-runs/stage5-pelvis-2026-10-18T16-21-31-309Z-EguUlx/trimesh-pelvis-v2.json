@@ -1,0 +1,1036 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "bone": "sacrum",
+      "source": "site/leg-q-glb.txt",
+      "sha256": "3f7d1377ae151fb338b197d3ee4185ad1434791a20eb1bc8322cd2dc9d8fdf8d",
+      "vertices": 9986,
+      "triangles": 20000,
+      "boundsM": [
+        [
+          -0.060265789714399984,
+          0.7907165003812001,
+          0.005616399808800002
+        ],
+        [
+          0.06203903235160002,
+          0.9360434066008001,
+          0.09455290347360001
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "hip_bone",
+      "source": "site/leg-q-glb.txt",
+      "sha256": "3f7d1377ae151fb338b197d3ee4185ad1434791a20eb1bc8322cd2dc9d8fdf8d",
+      "vertices": 4858,
+      "triangles": 9716,
+      "boundsM": [
+        [
+          -0.131250549188,
+          0.7589240984548001,
+          0.013838572720800002
+        ],
+        [
+          -0.0034642785139999965,
+          0.9668080369132002,
+          0.1523136681804
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "hip_bone_left",
+      "source": "build_context_bones/leg_extra_hi.glb",
+      "sha256": "9ca6e3a48fbf628fc2bb5a406884e5bd4bab3af26d6eb5d02da891048b0e3b0d",
+      "vertices": 4735,
+      "triangles": 9470,
+      "boundsM": [
+        [
+          0.00417639035731554,
+          0.7594180107116699,
+          0.013876999728381634
+        ],
+        [
+          0.1319279968738556,
+          0.9672650098800659,
+          0.15223398804664612
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    }
+  ],
+  "anchors": [
+    {
+      "id": "sac_basis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00484,
+        0.91983,
+        0.06968
+      ],
+      "distanceMm": 0.016056748068514242,
+      "triangle": 8591,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_promontorium",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00137,
+        0.90441,
+        0.09455
+      ],
+      "distanceMm": 0.007311192934755342,
+      "triangle": 9624,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_ala",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.04416,
+        0.90485,
+        0.07406
+      ],
+      "distanceMm": 0.017824107649823402,
+      "triangle": 8098,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_processus_articularis_superior",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.02153,
+        0.93216,
+        0.05904
+      ],
+      "distanceMm": 0.016057270824063514,
+      "triangle": 9105,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_pars_lateralis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.03535,
+        0.86905,
+        0.03625
+      ],
+      "distanceMm": 0.01757306607167904,
+      "triangle": 1552,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_facies_auricularis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.04504,
+        0.89075,
+        0.04597
+      ],
+      "distanceMm": 0.02365706265849497,
+      "triangle": 2111,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_tuberositas",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.03764,
+        0.90809,
+        0.05091
+      ],
+      "distanceMm": 0.013543207899894435,
+      "triangle": 876,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_facies_pelvica",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00135,
+        0.8612,
+        0.03036
+      ],
+      "distanceMm": 0.009569796284358152,
+      "triangle": 2532,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_lineae_transversae",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00091,
+        0.88401,
+        0.0548
+      ],
+      "distanceMm": 0.011043806390072478,
+      "triangle": 12829,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_foramina_intervertebralia",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.01969,
+        0.89714,
+        0.05114
+      ],
+      "distanceMm": 0.0023749478798637358,
+      "triangle": 4794,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_foramina_sacralia_anteriora",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.02247,
+        0.88706,
+        0.05531
+      ],
+      "distanceMm": 0.007168183435771796,
+      "triangle": 7863,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_facies_dorsalis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.03114,
+        0.88881,
+        0.02861
+      ],
+      "distanceMm": 0.016001815765062512,
+      "triangle": 4481,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_crista_sacralis_mediana",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00132,
+        0.89884,
+        0.03246
+      ],
+      "distanceMm": 0.010096449092574115,
+      "triangle": 15725,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_foramina_sacralia_posteriora",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.02607,
+        0.88376,
+        0.02896
+      ],
+      "distanceMm": 0.024265018263536973,
+      "triangle": 4467,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_crista_sacralis_medialis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.00961,
+        0.88133,
+        0.01822
+      ],
+      "distanceMm": 0.010173377512380665,
+      "triangle": 4358,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_crista_sacralis_lateralis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.03309,
+        0.87242,
+        0.02387
+      ],
+      "distanceMm": 0.004378305052151022,
+      "triangle": 2213,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_cornu_sacrale",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.01046,
+        0.83724,
+        0.00928
+      ],
+      "distanceMm": 0.003316213185418122,
+      "triangle": 12691,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_canalis_sacralis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00078,
+        0.91573,
+        0.06215
+      ],
+      "distanceMm": 0.00236842293448313,
+      "triangle": 5255,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_hiatus_sacralis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00068,
+        0.83974,
+        0.01122
+      ],
+      "distanceMm": 0.0012285034203517427,
+      "triangle": 12777,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sac_apex",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        0.00145,
+        0.82191,
+        0.02523
+      ],
+      "distanceMm": 0.005335440456481299,
+      "triangle": 11831,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "coc_os_coccygis",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.01211,
+        0.81127,
+        0.02537
+      ],
+      "distanceMm": 0.0009614363342927132,
+      "triangle": 12542,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "coc_cornu_coccygeum",
+      "bone": "sacrum",
+      "t": "ta",
+      "p": [
+        -0.00755,
+        0.8212,
+        0.01696
+      ],
+      "distanceMm": 0.013412739142540507,
+      "triangle": 11897,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sacral_pelvic",
+      "bone": "sacrum",
+      "t": "att",
+      "p": [
+        -0.02217,
+        0.85013,
+        0.02845
+      ],
+      "distanceMm": 0.024261983161528573,
+      "triangle": 3316,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sacral_dorsal",
+      "bone": "sacrum",
+      "t": "att",
+      "p": [
+        -0.03164,
+        0.85522,
+        0.02209
+      ],
+      "distanceMm": 0.01089811921828239,
+      "triangle": 2738,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_acetabulum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.06866,
+        0.8316,
+        0.07684
+      ],
+      "distanceMm": 0.04195894473672822,
+      "triangle": 2889,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_limbus_acetabuli",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.09853,
+        0.84605,
+        0.08744
+      ],
+      "distanceMm": 0.02081595075721264,
+      "triangle": 4240,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_fossa_acetabuli",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05611,
+        0.82352,
+        0.08036
+      ],
+      "distanceMm": 0.01737326288268235,
+      "triangle": 2824,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_incisura_acetabuli",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05345,
+        0.81274,
+        0.09087
+      ],
+      "distanceMm": 0.020985434418103247,
+      "triangle": 3344,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_facies_lunata",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.08461,
+        0.84273,
+        0.08255
+      ],
+      "distanceMm": 0.003844439264229742,
+      "triangle": 3031,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_ramus_ischiopubicus",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.03716,
+        0.76775,
+        0.08066
+      ],
+      "distanceMm": 0.01790051288912195,
+      "triangle": 104,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_foramen_obturatum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.0453,
+        0.78,
+        0.07602
+      ],
+      "distanceMm": 0.026577613876513816,
+      "triangle": 735,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_incisura_ischiadica_major",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.07519,
+        0.86518,
+        0.07026
+      ],
+      "distanceMm": 0.01933337450747482,
+      "triangle": 8982,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_corpus_ossis_ilii",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05635,
+        0.84956,
+        0.08896
+      ],
+      "distanceMm": 0.011642359434736701,
+      "triangle": 3609,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_sulcus_supraacetabularis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.09827,
+        0.8579,
+        0.10333
+      ],
+      "distanceMm": 0.008519243626857255,
+      "triangle": 5150,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_ala",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.08187,
+        0.94459,
+        0.06187
+      ],
+      "distanceMm": 0.00980360531503394,
+      "triangle": 5641,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_linea_arcuata",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.06038,
+        0.85819,
+        0.09703
+      ],
+      "distanceMm": 0.011034576828332086,
+      "triangle": 3636,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_crista_iliaca",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.09899,
+        0.96648,
+        0.07575
+      ],
+      "distanceMm": 0.018955755936532655,
+      "triangle": 5566,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_labium_externum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.11807,
+        0.95727,
+        0.09327
+      ],
+      "distanceMm": 0.028904017078756172,
+      "triangle": 5781,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuberculum_iliacum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.12703,
+        0.94058,
+        0.11802
+      ],
+      "distanceMm": 0.002760839672858166,
+      "triangle": 5867,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_linea_intermedia",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.11654,
+        0.95951,
+        0.09499
+      ],
+      "distanceMm": 0.0432720335354638,
+      "triangle": 5802,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_labium_internum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.11363,
+        0.95956,
+        0.0965
+      ],
+      "distanceMm": 0.007641135387337168,
+      "triangle": 5811,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_sias",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.11536,
+        0.90411,
+        0.1521
+      ],
+      "distanceMm": 0.001184385370042826,
+      "triangle": 6191,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_siai",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.10506,
+        0.87364,
+        0.12813
+      ],
+      "distanceMm": 0.015100947635013007,
+      "triangle": 6597,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_sips",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04579,
+        0.91494,
+        0.01386
+      ],
+      "distanceMm": 0.012160028848532893,
+      "triangle": 9338,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_sipi",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.0498,
+        0.8719,
+        0.04595
+      ],
+      "distanceMm": 0.00785349267359767,
+      "triangle": 7552,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_fossa_iliaca",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.10721,
+        0.90941,
+        0.11566
+      ],
+      "distanceMm": 0.02215052913325011,
+      "triangle": 9546,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_facies_glutea",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.10784,
+        0.89797,
+        0.10087
+      ],
+      "distanceMm": 0.002154020854921086,
+      "triangle": 5252,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_linea_glutea_anterior",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.09987,
+        0.91892,
+        0.08498
+      ],
+      "distanceMm": 0.010326328012431182,
+      "triangle": 5677,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_linea_glutea_posterior",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.06476,
+        0.91753,
+        0.04352
+      ],
+      "distanceMm": 0.0030740614070429825,
+      "triangle": 9079,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_linea_glutea_inferior",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.09878,
+        0.86525,
+        0.09656
+      ],
+      "distanceMm": 0.010318592908362631,
+      "triangle": 5234,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_facies_sacropelvica",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04093,
+        0.9074,
+        0.03836
+      ],
+      "distanceMm": 0.024148932302753574,
+      "triangle": 7955,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_facies_auricularis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05316,
+        0.8962,
+        0.063
+      ],
+      "distanceMm": 0.027877601696891446,
+      "triangle": 7263,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuberositas_iliaca",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05111,
+        0.92532,
+        0.04172
+      ],
+      "distanceMm": 0.020250152803387645,
+      "triangle": 8044,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_corpus_ossis_ischii",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.07051,
+        0.79277,
+        0.05526
+      ],
+      "distanceMm": 0.007803977238374418,
+      "triangle": 652,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_ramus_ossis_ischii",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05558,
+        0.76714,
+        0.06409
+      ],
+      "distanceMm": 0.01929705555812875,
+      "triangle": 695,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuber_ischiadicum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05353,
+        0.76468,
+        0.05138
+      ],
+      "distanceMm": 0.022091722246805463,
+      "triangle": 450,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_spina_ischiadica",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04216,
+        0.82628,
+        0.04732
+      ],
+      "distanceMm": 0.002346101449843056,
+      "triangle": 4684,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_incisura_ischiadica_minor",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.07034,
+        0.81001,
+        0.05443
+      ],
+      "distanceMm": 0.003283050435213594,
+      "triangle": 2615,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_corpus_ossis_pubis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.01379,
+        0.79999,
+        0.14591
+      ],
+      "distanceMm": 0.001973214718054179,
+      "triangle": 2308,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuberculum_pubicum",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.01506,
+        0.81187,
+        0.14968
+      ],
+      "distanceMm": 0.019930010534825113,
+      "triangle": 2251,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_facies_symphysialis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.0048,
+        0.808,
+        0.14
+      ],
+      "distanceMm": 0.010303488115470976,
+      "triangle": 1897,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_crista_pubica",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.01007,
+        0.8133,
+        0.14493
+      ],
+      "distanceMm": 0.012369247451042882,
+      "triangle": 1923,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_ramus_superior_ossis_pubis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04382,
+        0.82436,
+        0.12792
+      ],
+      "distanceMm": 0.004586105358215911,
+      "triangle": 2026,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_eminentia_iliopubica",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05971,
+        0.84675,
+        0.11143
+      ],
+      "distanceMm": 0.004193733533975998,
+      "triangle": 3676,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_pecten_ossis_pubis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.03267,
+        0.81727,
+        0.12461
+      ],
+      "distanceMm": 0.006238771270516768,
+      "triangle": 1721,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_crista_obturatoria",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04223,
+        0.81594,
+        0.13212
+      ],
+      "distanceMm": 0.0071970627603663954,
+      "triangle": 2036,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_sulcus_obturatorius",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05319,
+        0.80959,
+        0.11286
+      ],
+      "distanceMm": 0.008649418554100188,
+      "triangle": 3866,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuberculum_obturatorium_anterius",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.04966,
+        0.80881,
+        0.12025
+      ],
+      "distanceMm": 0.004099448187203849,
+      "triangle": 4695,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_tuberculum_obturatorium_posterius",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.05664,
+        0.80963,
+        0.10521
+      ],
+      "distanceMm": 0.023526687448267827,
+      "triangle": 3845,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cox_ramus_inferior_ossis_pubis",
+      "bone": "hip_bone",
+      "t": "ta",
+      "p": [
+        -0.02339,
+        0.78569,
+        0.11361
+      ],
+      "distanceMm": 0.006638292608165445,
+      "triangle": 1364,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "gluteal_post",
+      "bone": "hip_bone",
+      "t": "att",
+      "p": [
+        -0.0642,
+        0.92105,
+        0.02952
+      ],
+      "distanceMm": 0.016036910248828612,
+      "triangle": 9163,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "gluteal_mid",
+      "bone": "hip_bone",
+      "t": "att",
+      "p": [
+        -0.08753,
+        0.92338,
+        0.07375
+      ],
+      "distanceMm": 0.005817214052114261,
+      "triangle": 5674,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "gluteal_low",
+      "bone": "hip_bone",
+      "t": "att",
+      "p": [
+        -0.1019,
+        0.88147,
+        0.09703
+      ],
+      "distanceMm": 0.013452377605155656,
+      "triangle": 5250,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "pubis_pelvic",
+      "bone": "hip_bone",
+      "t": "att",
+      "p": [
+        -0.02914,
+        0.80855,
+        0.11754
+      ],
+      "distanceMm": 0.011714062939708624,
+      "triangle": 1671,
+      "anatomicalAcceptance": false
+    }
+  ],
+  "boneAnchors": 68,
+  "attachmentAnchors": 6,
+  "scope": "World transforms, side signs, finite vertices/normals, nearest-triangle distance. No repeated self-intersection scan or anatomical acceptance.",
+  "newCoordinates": 0
+}

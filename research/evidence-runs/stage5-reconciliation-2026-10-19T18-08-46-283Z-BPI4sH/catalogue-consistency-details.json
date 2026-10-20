@@ -1,0 +1,49 @@
+{
+  "status": "passed-with-one-catalogue-discrepancy",
+  "duplicateIds": 0,
+  "invalidOwners": 0,
+  "invalidLinks": 0,
+  "owners": 214,
+  "boneCards": 205,
+  "softCards": 9,
+  "records": 2631,
+  "noCoordinates": 1305,
+  "types": {
+    "area": 756,
+    "volume": 1198,
+    "point": 14,
+    "line": 298,
+    "space": 359,
+    "unknown": 6
+  },
+  "untypedAndUnreferencedPelvicAttachments": [
+    "gluteal_post",
+    "gluteal_mid",
+    "gluteal_low",
+    "pubis_pelvic",
+    "sacral_pelvic",
+    "sacral_dorsal"
+  ],
+  "noModelByGroup": {
+    "arm_forearm": 2,
+    "hand": 31,
+    "lower_proximal": 4,
+    "foot": 27
+  },
+  "newIssue": "CAT-FOOT-SESAMOID-GROUP",
+  "sesamoidGroups": {
+    "sesamoid_pedis": {
+      "group": "b_toes",
+      "title": "Сесамовидные кости большого пальца стопы · справа",
+      "noModel": false
+    },
+    "sesamoid_pedis_left": {
+      "group": "b_tarsus",
+      "title": "Сесамовидные кости большого пальца стопы · слева",
+      "noModel": true
+    }
+  },
+  "skullCountsExplanation": "72 shared_* instances + four legacy owner IDs with relations =76 indexed multi-bone records; not four newly discovered shared structures.",
+  "handCountsExplanation": "305 hand-owner records + retinaculum_mid + two radius-owned radiocarpal joints =308 clinical-scope records.",
+  "oldSourceCounts": "447/106/457 are historical cohorts, not current totals. refs present does not verify each claim."
+}

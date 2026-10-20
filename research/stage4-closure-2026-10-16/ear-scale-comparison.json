@@ -1,0 +1,47 @@
+{
+  "measurements": [
+    {
+      "source": "OpenEar ZETA, published independent specimen",
+      "structure": "malleus",
+      "mesh": 2,
+      "extent_mm": [
+        3.4881610505400005,
+        3.2142921142199974,
+        8.175721326659996
+      ],
+      "max_vertex_chord_mm": 8.704917991103429
+    },
+    {
+      "source": "OpenEar ZETA, published independent specimen",
+      "structure": "stapes",
+      "mesh": 4,
+      "extent_mm": [
+        3.4294748499,
+        4.002887935319997,
+        2.3217728128199973
+      ],
+      "max_vertex_chord_mm": 4.284526162672851
+    },
+    {
+      "source": "SPL 2018 source coordinate units; not calibrated mm",
+      "structure": "malleus",
+      "extent_source_units": [
+        22.471384048461914,
+        8.187262535095215,
+        22.621903896331787
+      ],
+      "max_vertex_chord_source_units": 29.415697165694613
+    },
+    {
+      "source": "SPL 2018 source coordinate units; not calibrated mm",
+      "structure": "stapes",
+      "extent_source_units": [
+        9.395895004272461,
+        10.136852264404297,
+        9.412133991718292
+      ],
+      "max_vertex_chord_source_units": 12.773694392832532
+    }
+  ],
+  "decision": "Different unregistered specimens. Do not derive a scale factor from these dimensions or transplant coordinates. NRRD headers have no space units; MRML spacing alone does not validate acquisition calibration."
+}

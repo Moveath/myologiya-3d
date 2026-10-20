@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-16",
+  "command": ".venv/Scripts/python.exe -X utf8 verify/test_skull_shared_stage5.py",
+  "status": "passed",
+  "tests": 3,
+  "generatedInMemory": 28,
+  "newCoordinates": 0,
+  "originalModelsTouched": 0,
+  "limitations": "Module isolated, not connected to active generator. Browser/data integration tests belong to parent integration.",
+  "files": {
+    "scripts/skull_shared_stage5.py": "08491a8810b9a7cdd2269c4ccbb4fb1c0bbb7d337145932cc3de445e24ee49e2",
+    "verify/test_skull_shared_stage5.py": "4853169333dc0ded47170cb6035cb88b48b4e782e7407b1db5dfb785bb3af8b0"
+  },
+  "postEducationFix": {
+    "date": "2026-10-16",
+    "command": ".venv/Scripts/python.exe -X utf8 verify/test_skull_shared_stage5.py",
+    "status": "passed",
+    "tests": 3,
+    "elapsedSeconds": 0.004,
+    "stdout": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.004s\n\nOK",
+    "resultsOrigin": "Recorded output from the completed post-fix run; no rerun during report preservation",
+    "files": {
+      "scripts/skull_shared_stage5.py": "152091dbc4bf0955361a26c33713d36465c050198cf1d3acc8249410d37a819b",
+      "scripts/shared_landmarks.py": "9d1aa718c48d33d46c01cb116d838c7e14f8a7199bcd4f7b7deec2b5c5016ac5",
+      "scripts/make_shared_landmarks.py": "c2755e08b8e0788f635b344e2e30a3429af4b819da17e324f38f4ae7b63c5b15",
+      "site/index.html": "5df8ad94d4efd068ba1c6dfd27d111b78e35c57bff3eb7f53783c83d51deca91",
+      "site/local.html": "d2657ae5aaca1500aa0bedf0f137d1b36cf276ed37fee91cd6080b5d403334d9",
+      "site/pins-shared.js": "7b447b861c867e2c18c1f4c96f39edd8532a04986ab6dbc09fa4d03460504fed",
+      "tools/verify-stage5-skull.mjs": "25cc5b92f80e7a9812d99273290eb1ca17e7ce2b6dbbd3c2d45b1e47a702a6a7",
+      "verify/test_skull_shared_stage5.py": "4853169333dc0ded47170cb6035cb88b48b4e782e7407b1db5dfb785bb3af8b0"
+    }
+  }
+}

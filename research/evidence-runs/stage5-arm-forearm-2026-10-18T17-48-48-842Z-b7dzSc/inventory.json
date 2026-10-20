@@ -1,0 +1,1797 @@
+[
+  {
+    "id": "clavicle",
+    "ru": "Ключица",
+    "sec": "arm",
+    "sub": "shoulder",
+    "soft": false,
+    "pins": [
+      {
+        "id": "cla_extremitas_sternalis",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "cla_facies_articularis_sternalis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "cla_impressio_lig_costoclavicularis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "cla_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "cla_sulcus_m_subclavii",
+        "t": "ta",
+        "p": true,
+        "kind": "line"
+      },
+      {
+        "id": "cla_extremitas_acromialis",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "cla_facies_articularis_acromialis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "cla_tuberositas_lig_coracoclavicularis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "cla_tuberculum_conoideum",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "cla_linea_trapezoidea",
+        "t": "ta",
+        "p": true,
+        "kind": "line"
+      },
+      {
+        "id": "extra_clavicle_acromioclavicular_joint",
+        "t": "additional",
+        "p": false,
+        "kind": "volume"
+      }
+    ]
+  },
+  {
+    "id": "scapula",
+    "ru": "Лопатка",
+    "sec": "arm",
+    "sub": "shoulder",
+    "soft": false,
+    "pins": [
+      {
+        "id": "sca_facies_costalis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_fossa_subscapularis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_facies_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_spina",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_tuberculum_deltoideum",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_fossa_supraspinata",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_fossa_infraspinata",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_acromion",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_facies_articularis_clavicularis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_angulus_acromii",
+        "t": "ta",
+        "p": true,
+        "kind": "point"
+      },
+      {
+        "id": "sca_margo_medialis",
+        "t": "ta",
+        "p": true,
+        "kind": "line"
+      },
+      {
+        "id": "sca_margo_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": "line"
+      },
+      {
+        "id": "sca_margo_superior",
+        "t": "ta",
+        "p": true,
+        "kind": "line"
+      },
+      {
+        "id": "sca_incisura",
+        "t": "ta",
+        "p": true,
+        "kind": "space"
+      },
+      {
+        "id": "sca_angulus_inferior",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_angulus_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_angulus_superior",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_cavitas_glenoidalis",
+        "t": "ta",
+        "p": true,
+        "kind": "area"
+      },
+      {
+        "id": "sca_tuberculum_supraglenoidale",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_tuberculum_infraglenoidale",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_collum",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "sca_processus_coracoideus",
+        "t": "ta",
+        "p": true,
+        "kind": "volume"
+      },
+      {
+        "id": "extra_scapula_spinoglenoid_notch",
+        "t": "additional",
+        "p": false,
+        "kind": "space"
+      }
+    ]
+  },
+  {
+    "id": "humerus",
+    "ru": "Плечевая кость",
+    "sec": "arm",
+    "sub": "arm",
+    "soft": false,
+    "pins": [
+      {
+        "id": "hum_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_collum_anatomicum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_collum_chirurgicum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_tuberculum_majus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_tuberculum_minus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_sulcus_intertubercularis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_crista_tuberculi_majoris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_crista_tuberculi_minoris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_facies_anteromedialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_facies_anterolateralis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_facies_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_sulcus_n_radialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_margo_medialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_crista_supraepicondylaris_medialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_processus_supracondylaris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_margo_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_crista_supraepicondylaris_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_tuberositas_deltoidea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_condylus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_capitulum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_fossa_olecrani",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_fossa_coronoidea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_fossa_radialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_epicondylus_medialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_sulcus_n_ulnaris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_epicondylus_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "hum_body_ant",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "radius",
+    "ru": "Лучевая кость",
+    "sec": "arm",
+    "sub": "forearm",
+    "soft": false,
+    "pins": [
+      {
+        "id": "rad_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_fovea_articularis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_circumferentia_articularis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_collum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_facies_anterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_facies_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_facies_lateralis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_tuberositas_pronatoria",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_margo_interosseus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_margo_anterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_margo_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_processus_styloideus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_crista_suprastyloidea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_tuberculum_dorsale",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_sulci_tendinum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_incisura_ulnaris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_facies_articularis_carpalis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "rad_supinator",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "ulna",
+    "ru": "Локтевая кость",
+    "sec": "arm",
+    "sub": "forearm",
+    "soft": false,
+    "pins": [
+      {
+        "id": "uln_olecranon",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_processus_coronoideus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_incisura_radialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_incisura_trochlearis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_facies_anterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_facies_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_facies_medialis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_margo_interosseus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_margo_anterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_margo_posterior",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_crista_m_supinatoris",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_circumferentia_articularis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_processus_styloideus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "uln_distal_anterior",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "scaphoid",
+    "ru": "Ладьевидная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "scaph_tuberculum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "carp_os_centrale",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "lunate",
+    "ru": "Полулунная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": []
+  },
+  {
+    "id": "triquetrum",
+    "ru": "Трёхгранная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": []
+  },
+  {
+    "id": "pisiform",
+    "ru": "Гороховидная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pisiform_apex",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "trapezium",
+    "ru": "Кость-трапеция",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "trapz_tuberculum",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "trapezoid",
+    "ru": "Трапециевидная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "att_trapezoid_palmar",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "capitate",
+    "ru": "Головчатая кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "carp_sulcus_carpi",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "att_capitate_palmar",
+        "t": "att",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "hamate",
+    "ru": "Крючковидная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "ham_hamulus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "interosseous_membrane",
+    "ru": "Межкостная перепонка предплечья",
+    "sec": "arm",
+    "sub": "forearm",
+    "soft": true,
+    "pins": [
+      {
+        "id": "membrane_mid",
+        "t": "soft",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "flexor_retinaculum",
+    "ru": "Удерживатель сгибателей",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": true,
+    "pins": [
+      {
+        "id": "retinaculum_mid",
+        "t": "soft",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "metacarpal_1",
+    "ru": "I пястная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "mc1_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc1_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc1_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_prox_1",
+    "ru": "Проксимальная фаланга большого пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pp1_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp1_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp1_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp1_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_dist_1",
+    "ru": "Дистальная фаланга большого пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pd1_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd1_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd1_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd1_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "metacarpal_2",
+    "ru": "II пястная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "mc2_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc2_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc2_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_prox_2",
+    "ru": "Проксимальная фаланга указательного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pp2_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp2_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp2_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp2_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_mid_2",
+    "ru": "Средняя фаланга указательного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pm2_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm2_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm2_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm2_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_dist_2",
+    "ru": "Дистальная фаланга указательного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pd2_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd2_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd2_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd2_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "metacarpal_3",
+    "ru": "III пястная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "mc3_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc3_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc3_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc3_processus_styloideus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_prox_3",
+    "ru": "Проксимальная фаланга среднего пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pp3_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp3_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp3_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp3_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_mid_3",
+    "ru": "Средняя фаланга среднего пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pm3_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm3_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm3_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm3_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_dist_3",
+    "ru": "Дистальная фаланга среднего пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pd3_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd3_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd3_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd3_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "metacarpal_4",
+    "ru": "IV пястная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "mc4_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc4_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc4_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_prox_4",
+    "ru": "Проксимальная фаланга безымянного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pp4_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp4_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp4_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp4_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_mid_4",
+    "ru": "Средняя фаланга безымянного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pm4_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm4_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm4_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm4_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_dist_4",
+    "ru": "Дистальная фаланга безымянного пальца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pd4_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd4_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd4_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd4_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "metacarpal_5",
+    "ru": "V пястная кость",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "mc5_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc5_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "mc5_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_prox_5",
+    "ru": "Проксимальная фаланга мизинца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pp5_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp5_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp5_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pp5_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_mid_5",
+    "ru": "Средняя фаланга мизинца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pm5_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm5_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm5_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pm5_trochlea",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "phalanx_dist_5",
+    "ru": "Дистальная фаланга мизинца",
+    "sec": "arm",
+    "sub": "hand",
+    "soft": false,
+    "pins": [
+      {
+        "id": "pd5_basis",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd5_corpus",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd5_caput",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      },
+      {
+        "id": "pd5_tuberositas",
+        "t": "ta",
+        "p": true,
+        "kind": null
+      }
+    ]
+  },
+  {
+    "id": "clavicle_left",
+    "ru": "Левая ключица",
+    "sec": "arm",
+    "sub": "shoulder",
+    "soft": false,
+    "pins": [
+      {
+        "id": "context_clavicle_left_A02_4_02_002",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_003",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_004",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_005",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_006",
+        "t": "ta",
+        "p": false,
+        "kind": "line"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_007",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_008",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_009",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_010",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_clavicle_left_A02_4_02_011",
+        "t": "ta",
+        "p": false,
+        "kind": "line"
+      },
+      {
+        "id": "extra_clavicle_left_acromioclavicular_joint",
+        "t": "additional",
+        "p": false,
+        "kind": "volume"
+      }
+    ]
+  },
+  {
+    "id": "scapula_left",
+    "ru": "Левая лопатка",
+    "sec": "arm",
+    "sub": "shoulder",
+    "soft": false,
+    "pins": [
+      {
+        "id": "context_scapula_left_A02_4_01_002",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_003",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_004",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_005",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_006",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_007",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_008",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_009",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_010",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_011",
+        "t": "ta",
+        "p": false,
+        "kind": "point"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_012",
+        "t": "ta",
+        "p": false,
+        "kind": "line"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_013",
+        "t": "ta",
+        "p": false,
+        "kind": "line"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_014",
+        "t": "ta",
+        "p": false,
+        "kind": "line"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_015",
+        "t": "ta",
+        "p": false,
+        "kind": "space"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_016",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_017",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_018",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_019",
+        "t": "ta",
+        "p": false,
+        "kind": "area"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_020",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_021",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_022",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "context_scapula_left_A02_4_01_023",
+        "t": "ta",
+        "p": false,
+        "kind": "volume"
+      },
+      {
+        "id": "extra_scapula_left_spinoglenoid_notch",
+        "t": "additional",
+        "p": false,
+        "kind": "space"
+      }
+    ]
+  },
+  {
+    "id": "humerus_left",
+    "ru": "Левая плечевая кость",
+    "sec": "arm",
+    "sub": "arm",
+    "soft": false,
+    "pins": [
+      {
+        "id": "context_humerus_left_A02_4_04_002",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_003",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_004",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_005",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_006",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_007",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_008",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_009",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_010",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_011",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_012",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_013",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_014",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_015",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_016",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_017",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_018",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_019",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_020",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_021",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_022",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_023",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_024",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_025",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_026",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_027",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_028",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      },
+      {
+        "id": "context_humerus_left_A02_4_04_029",
+        "t": "ta",
+        "p": false,
+        "kind": null
+      }
+    ]
+  }
+]

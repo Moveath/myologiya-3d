@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-16",
+  "scope": "Stage 5, skull: read-only architecture review and authorized targeted geometry-kind UI presentation",
+  "anatomicalAcceptance": false,
+  "browserRunByThisReview": false,
+  "modelsOrCoordinatesChanged": false,
+  "existingArchitecture": {
+    "canonicalRecord": "site/atlas-landmarks.js indexes one pin object by stable id and every relations[].bone; the same object is retained under all contributing bones.",
+    "legacyCompatibility": "b is retained as navigation owner; sh is legacy catalogue/context. catalogueBones controls own TA98 term membership independently of anatomical contributions.",
+    "contributingRoles": ["boundaryContribution", "component"],
+    "nonContributingRoles": ["adjacentContext", "variantOf"],
+    "search": "landmarkSearchOwner returns the selected related bone or the existing owner; renderList produces one result per instance rather than copies under each bone.",
+    "selection": "select retains the active shared landmark while switching between related bones. activeBoundaryBones and contributingBoneIds preserve contributing bones in isolation and xray views.",
+    "uncertainCoordinates": "hasLandmarkPosition rejects anchorStatus=unverified. currentPins and flyToPin honor this; historic coordinates remain in data without a visible/selectable 3D marker.",
+    "coordinateGenerator": "scripts/make_shared_landmarks.py checks reviewed model hashes and original p/n before reusing jugular temporal boundary anchors. It does not synthesize positions for new records."
+  },
+  "findings": [
+    {
+      "finding": "geometryKind is distinct from localization",
+      "status": "UI support implemented; metadata and browser verification owned by parent task",
+      "files": ["site/index.html:1560", "site/index.html:1669", "site/local.html"],
+      "detail": "Existing loc values surface/projection/internal/variant express placement confidence/context, not whether the named structure is a point, area, line, interosseous space or volume. Previously all markers used point buttons and only free-text modelNote distinguished extent.",
+      "change": "Optional geometryKind renders a machine-readable data-geometry-kind and an explicit explanatory label in the selected landmark card. Missing field renders no inferred category. Existing loc, p/n, IDs, raycasting, BVH and clipping are unchanged.",
+      "supportedValues": ["point", "area", "line", "space", "volume", "unknown"],
+      "limits": "No region, curve, contour or volume is constructed. Non-point markers explicitly do not define the complete anatomy. An unlocated or suppressed record receives no marker-completeness claim."
+    },
+    {
+      "finding": "Head validation assumes every original term must retain coordinates",
+      "status": "Recommended targeted follow-up only if a genuinely unlocated original skull record is introduced",
+      "files": ["verify/verify_head.py:16", "verify/verify_head.py:61", "scripts/make_pins_head.py:68"],
+      "detail": "The generator already supports a missing reviewed position, but verify_head.py requires positions() to equal the entire catalogue and requires p/n for every pin. A justified conversion of an invalid coordinate to unlocated would fail as incomplete, even if its stable ID, terminology and explicit limitation were retained.",
+      "recommendation": "Keep full catalogue/ID coverage checks. Distinguish a documented unlocated/suppressed result from an accidentally missing record. Do not remove the coverage assertion merely to make tests pass. Existing in-place suppression already works without changing historic p/n."
+    },
+    {
+      "finding": "Existing PIN-005 fallback is outside the skull batch",
+      "status": "Existing unresolved issue retained; not changed",
+      "files": ["site/index.html:1279", "ANATOMY_ISSUES.md#pin-005"],
+      "detail": "Legacy markers without loc default to surface. The ledger already assigns the affected old arm/leg markers and variants to PIN-005. Original 521 skull records have loc, and newly unlocated shared records render no point; no global arm/leg data correction was attempted."
+    },
+    {
+      "finding": "Reference presence and API tests are not independent anatomical acceptance",
+      "status": "Scope limitation retained",
+      "files": ["verify/verify_head.py:18", "tools/verify-shared-landmarks.mjs:40", "scripts/head_localization.py:18"],
+      "detail": "The head test counts distinct URLs; shared relation tests require distinct declared authorGroup values and locators. These checks catch missing metadata but cannot establish factual support or genuine source independence. Anatomical review remains a separate acceptance step."
+    }
+  ],
+  "minimalExtensionPath": [
+    "Add a scientifically reviewed definition in scripts/shared_landmark_catalogue.py or an in-place patch in scripts/shared_landmarks.py; preserve pre-existing id, c, b, p and n.",
+    "Supply per-relation references with verified authorGroup and exact locators. Do not use a view/launch list as evidence of bone participation.",
+    "Add independently reviewed geometryKind metadata without converting loc or inferring it from missing coordinates.",
+    "Regenerate pins through scripts/make_shared_landmarks.py; regenerate skull-whole derived data where catalogue cross-navigation changes. No model package rebuild is needed.",
+    "Keep a coordinate absent or explicitly suppressed until accepted on the relevant specimen. A line/area/space/volume classification does not itself authorize drawing geometry."
+  ],
+  "uiContract": {
+    "selector": ".pinbox .landmark-geometry[data-geometry-kind]",
+    "labels": {
+      "point": "Точечный ориентир",
+      "area": "Область или поверхность",
+      "line": "Линия, шов или контур",
+      "space": "Пространство между костями",
+      "volume": "Объёмная часть или полость",
+      "unknown": "Тип геометрического представления не уточнён"
+    },
+    "absentField": "No block; no category guessed",
+    "unrecognizedValue": "Safely displayed as unknown, never interpolated into markup",
+    "nonPointLocatedText": "Маркер показывает отдельную опорную точку. Он не задаёт полную линию, границы, поверхность или объём структуры."
+  },
+  "checksThisReview": {
+    "geometryKindStateCases": 18,
+    "states": ["located", "unlocated", "suppressed"],
+    "missingFieldDoesNotInfer": true,
+    "unrecognizedValueSafe": true,
+    "indexModuleSyntax": "passed via node --check --input-type=module",
+    "localWrapperRegenerated": "passed: .venv/Scripts/python.exe scripts/make_local.py site/index.html site/local.html",
+    "indexLocalHelperParity": "passed after normalizing CRLF/LF; the first byte-substring comparison reflected newline normalization, not a missing helper",
+    "browser": "Not run here; root task controls Playwright MCP",
+    "geometry": "Not run here; no geometry changes"
+  },
+  "recommendedChecks": {
+    "staticShared": "node tools/verify-shared-landmarks.mjs",
+    "headData": ".venv/Scripts/python.exe verify/verify_head.py",
+    "terminology": ".venv/Scripts/python.exe verify/verify_ta98.py (preserve the three documented differences)",
+    "coordinatesIfChangedOrReassessed": ".venv/Scripts/python.exe verify/verify_head_positions.py",
+    "mcpSharedScenario": "node tools/verify-shared-landmarks.mjs --mcp 1280 light emits a function suitable for Playwright MCP browser_run_code; repeat targeted cases at 390 dark.",
+    "mcpRelationScenario": "node tools/verify-shared-landmarks.mjs --mcp-expansion 1280 light <offset> <limit> skip supports bounded relation-edge testing. Default final checks also enter the leg, so skip them for a strict skull-only case and use the jugular scenario for UI regressions.",
+    "mcpNewAssertions": "For reviewed geometryKind records, assert the chosen kind label in .pinbox; non-point records explicitly disclaim full extent; unlocated/suppressed records create zero overlay pins; select from every related bone, search once per instance and retain ID through isolation/xray.",
+    "server": ".venv/Scripts/python.exe -m http.server 8782 --bind 127.0.0.1 --directory site",
+    "serverCaveat": "Prior stage-4 evidence records ERR_CONNECTION_TIMED_OUT for a sandboxed server. Use the same loopback server via authorized hidden Start-Process if that occurs; registration is not proof of connectivity."
+  }
+}

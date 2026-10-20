@@ -1,0 +1,30 @@
+{
+  "report": "research/stage5-upper-girdle-report-2026-10-18.md",
+  "data": "data-regression-final.json",
+  "records": "reviewed-records-final.json",
+  "remaining": "remaining-records-final.json",
+  "blender": "blender-girdle.json",
+  "trimesh": "trimesh-girdle.json",
+  "pubmed": "pubmed-verified.json",
+  "hand": "hand-reuse.json",
+  "registry": "registry-final.json",
+  "playwright": [
+    "../stage5-upper-girdle-mcp-2026-10-18T17-30-07-162Z-rWzqeU/result.json",
+    "../stage5-upper-girdle-mcp-2026-10-18T17-31-22-883Z-taCC8t/result.json"
+  ],
+  "ta98": {
+    "command": ".venv/Scripts/python.exe -X utf8 verify/verify_ta98.py",
+    "exitCode": 0,
+    "terms": 762,
+    "knownDifferences": [
+      "A02.5.10.015",
+      "A02.5.10.017",
+      "A02.5.11.007"
+    ],
+    "missing": [],
+    "extra": []
+  },
+  "acceptedNewCoordinates": 0,
+  "originalGLBChanged": false,
+  "notes": "All files uniquely allocated. Initial wrong broad inventory run LnLp2q excluded; corrected scope uses bone group section."
+}

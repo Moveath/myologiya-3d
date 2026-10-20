@@ -1,0 +1,39 @@
+{
+  "version": 21,
+  "commit": "e6c9044d5b6d35501c3384afc7d9d79c83268b8c",
+  "deployment": {
+    "id": "appgdep_6ad5cb4ba9388191b58a93de64390ba9",
+    "project_id": "appgprj_6accb5a3778c8191aa97507517bd2253",
+    "title": "Миология 3D",
+    "version_id": "appgprj_6accb5a3778c8191aa97507517bd2253~appgver_770a1d7d7c908191b590688f633cd5b3",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://myologiya-3d-egor.nifty-spool-0531.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": "sediment://file_00000000948c81f8bef786149d4ef05d",
+    "provider_deployment_id": "site---6accb5a3778c8191aa97507517bd2253",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-19T07:49:42.919640+00:00"
+  },
+  "publicSmoke": {
+    "status": "passed",
+    "url": "https://myologiya-3d-egor.nifty-spool-0531.chatgpt.site/?ux=21",
+    "first": [
+      "sesamoid_mcp1_radial_right",
+      "sesamoid_mcp1_ulnar_right",
+      "sesamoid_mcp1_radial_left",
+      "sesamoid_mcp1_ulnar_left"
+    ],
+    "coverage": "Обе стороны: показаны доступные модели; набор сторон неполный. Левая кисть и предплечье пока без 3D-моделей. Мышцы левой руки в этом разделе пока без 3D. Сесамовидные кости большого пальца доступны как карточки без 3D.",
+    "mobile": {
+      "primaryCards": 4,
+      "overflow": false
+    },
+    "hashes": {
+      "atlas-catalogue.js": "23b9a6d6c5d0353aeecdd8c74e6d1733ed548c884e3543f5d355759e134a234a",
+      "data-context-bones.js": "504941d9ecbf4f93901510346dbec9b878ff20cee4c262e9263cdcbc1efba553"
+    },
+    "errors": []
+  }
+}

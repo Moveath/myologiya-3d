@@ -1,0 +1,176 @@
+{
+  "blender": "5.2.2 LTS",
+  "active_scene_unchanged": "Scene",
+  "intersection_spotchecks": [
+    {
+      "owner": "b|occipital",
+      "file": "head-glb.txt",
+      "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+      "examples": [
+        {
+          "i": 24520,
+          "j": 24525,
+          "kind": "crossing",
+          "blenderOverlap": false
+        }
+      ]
+    },
+    {
+      "owner": "b|parietal_right",
+      "file": "head-glb.txt",
+      "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+      "examples": [
+        {
+          "i": 7526,
+          "j": 7528,
+          "kind": "crossing",
+          "blenderOverlap": false
+        },
+        {
+          "i": 7527,
+          "j": 7529,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 7526,
+          "j": 7529,
+          "kind": "crossing",
+          "blenderOverlap": true
+        }
+      ]
+    },
+    {
+      "owner": "b|temporal_right",
+      "file": "head-glb.txt",
+      "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+      "examples": [
+        {
+          "i": 456,
+          "j": 459,
+          "kind": "crossing",
+          "blenderOverlap": false
+        },
+        {
+          "i": 458,
+          "j": 459,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 458,
+          "j": 460,
+          "kind": "crossing",
+          "blenderOverlap": false
+        },
+        {
+          "i": 458,
+          "j": 461,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 455,
+          "j": 456,
+          "kind": "coplanarOverlap",
+          "blenderOverlap": false
+        },
+        {
+          "i": 455,
+          "j": 458,
+          "kind": "crossing",
+          "blenderOverlap": false
+        },
+        {
+          "i": 48,
+          "j": 51,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 47,
+          "j": 51,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 48,
+          "j": 49,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 47,
+          "j": 49,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 47,
+          "j": 50,
+          "kind": "crossing",
+          "blenderOverlap": false
+        },
+        {
+          "i": 49,
+          "j": 50,
+          "kind": "crossing",
+          "blenderOverlap": true
+        },
+        {
+          "i": 46,
+          "j": 50,
+          "kind": "crossing",
+          "blenderOverlap": false
+        }
+      ]
+    }
+  ],
+  "spl": [
+    {
+      "file": "Model_140_Malleus_Bone.vtk",
+      "vertices": 2132,
+      "bounds_source_units": [
+        [
+          8.577749252319336,
+          -19.89689064025879,
+          -19.49867057800293
+        ],
+        [
+          31.04913330078125,
+          -11.709628105163574,
+          3.1232333183288574
+        ]
+      ],
+      "extent_source_units": [
+        22.471384048461914,
+        8.187262535095215,
+        22.621903896331787
+      ],
+      "physical_mm_confirmed": false
+    },
+    {
+      "file": "Model_17_Stapes_Bone.vtk",
+      "vertices": 2728,
+      "bounds_source_units": [
+        [
+          1.571660041809082,
+          -21.362028121948242,
+          -8.686200141906738
+        ],
+        [
+          10.967555046081543,
+          -11.225175857543945,
+          0.725933849811554
+        ]
+      ],
+      "extent_source_units": [
+        9.395895004272461,
+        10.136852264404297,
+        9.412133991718292
+      ],
+      "physical_mm_confirmed": false
+    }
+  ],
+  "limits": "BVHTree overlap is an independent numeric candidate check, not anatomical acceptance or exact-arithmetic proof; SPL source coordinate units are not independently calibrated millimetres."
+}

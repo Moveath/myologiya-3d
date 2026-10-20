@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "reportLocalLinks": 8,
+  "filesSha256": {
+    "scripts/hand_targeted_stage5_review.py": "227cf3512b6130ac7bcdfa959454dba81cf366c26f3cc01e1e90af5f142e81d5",
+    "scripts/make_pins.py": "e2300fce2c4ec35f16ed067264ef3cd9c7e384cf86099db08f1e199dc4550c34",
+    "scripts/make_context_bone_data.py": "b7730104d7f7fb3fa977d19541bcfddb22cea9976695dd26b69640bd07a46570",
+    "site/pins.js": "00ac6fb936f4c92ccdade93402a9c8170031718c3827131af1908e3dba718b59",
+    "site/data-context-bones.js": "8666ec0e6f69adca42fb43c7bed9b9c45f22ef424eadd399d1b3c53db212722f",
+    "site/index.html": "2e34a20604f84adf8072e05203bb1afdde6d4be1692c0094555142b756788c8d",
+    "site/local.html": "2e4f59b2fd168227962fe0de2bbbd97ee4eee1275cd469fb89661b35dca2809b",
+    "ANATOMY_ISSUES.md": "8a8a2fcfef1bc3ae67832b272ff0c1a6e0e39695042bac081fad0f2ffa4b2e84",
+    "ANATOMY_PROGRESS.md": "c94b05ef2e5cc8698a58531fba19e61a55a01e5f038ac9f7c83161f12d7d1ece",
+    "research/stage5-hand-targeted-report-2026-10-19.md": "82e1fe0e690b9926b65b28ca4860a9cd0169b7767c0368c11b7df739862dcc7c",
+    "tools/verify-stage5-hand-targeted.mjs": "6516054bf5766178ac507928f2581a2174d5880051b738d064004aafe31e14b4",
+    "tools/prepare-stage5-hand-targeted-mcp.mjs": "c193069d4b120c4afd693f2e117887cc87f464aa74b624acb08ac373181330a9",
+    "tools/prepare-stage5-hand-targeted-evidence.mjs": "d64d4ca0c66543a829bb8f1996b1356de6ae545b4e6b5a0272cecb5fdaa740f7",
+    "verify/review_hand_targeted_resources.py": "086379f732bba5ea1959e5a1ee9c111fdac07723234176dfffca3591e057f6f8",
+    "verify/review_hand_targeted_blender.py": "929825f9f462eaa8a5c20590b8b421b9e050a0813519a69ed534acf82bbf4bf9",
+    "verify/fetch_hand_targeted_sources.py": "589f2454a3a73840c3a88a09637c9a9e7dd1022ec0c423ff059654e54782e539"
+  },
+  "data": "data-regression-sources-final.json",
+  "decisions": "candidate-decisions-sources-final.json",
+  "resources": "resource-review-final.json",
+  "blender": "blender-targeted.json",
+  "registry": "ledger-check.json",
+  "ui": [
+    "research/evidence-runs/stage5-hand-targeted-mcp-2026-10-18T20-34-49-550Z-zhlO4i/result.json",
+    "research/evidence-runs/stage5-hand-targeted-mcp-2026-10-18T20-39-14-828Z-ph2PN4/result.json"
+  ],
+  "limits": [
+    "FDS full text unavailable: four candidates remain",
+    "All new p/n null; no coordinate or mask accepted",
+    "No original mesh changed; left forearm and sesamoid blockers retained",
+    "UI emulator, not physical device; unchanged cut code not retested"
+  ]
+}

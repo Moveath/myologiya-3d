@@ -1,0 +1,283 @@
+--- before/index.html
+
++++ site/index.html
+
+@@ -464,6 +464,12 @@
+
+     </div>
+     <div class="row" id="displayControls">
+       <div class="settings-heading"><span>Настройки вида</span><button class="x" id="closeOptions" aria-label="Закрыть настройки">✕</button></div>
++      <div class="seg" role="group" aria-label="Сторона тела" title="Стороны тела человека. Срединные и неразделённые модели сохраняются.">
++        <span class="cap">Сторона</span>
++        <button data-side-view="both" aria-pressed="true">Обе</button>
++        <button data-side-view="right" aria-pressed="false">Справа</button>
++        <button data-side-view="left" aria-pressed="false">Слева</button>
++      </div>
+       <div class="seg" role="group" aria-label="Слои мышц">
+         <span class="cap">Слои</span>
+         <button data-peel="0" aria-pressed="true" title="Все мышцы">Все</button>
+@@ -478,6 +484,8 @@
+
+       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
+       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
+       <button class="chip" id="bContext" aria-pressed="true" title="Показать или скрыть окружающие полупрозрачные структуры; выбранная группа остаётся">Окружение</button>
++      <button class="chip" id="bMuscleBones" aria-pressed="false" title="При выборе мышцы оставить только кости, указанные в её прикреплениях; при изоляции показывать их вместе с мышцей">Кости мышцы</button>
++      <p class="quality-hint" id="sideViewNote" hidden></p>
+       <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
+       <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
+       <button class="chip restore" id="bRestore">Вернуть все</button>
+@@ -627,6 +635,7 @@
+
+ import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+ import { prepareRaycasts, createRenderQuality } from './atlas-performance.js?v=mobile-20261013';
+ import { indexLandmarks, relatedBoneIds, isSharedLandmark, landmarkBelongsTo, isOwnBoneTerm, landmarkSearchOwner, contributingBoneIds, hasLandmarkPosition, relationLabel } from './atlas-landmarks.js';
++import { structureSide, sideAllows, muscleBoneIds, selectionVisibility } from './atlas-visibility.js';
+ 
+ const A = window.ATLAS;
+ const $ = (s) => document.querySelector(s);
+@@ -799,12 +808,15 @@
+
+   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
+   boneColors: prefs.boneColors !== false,
+   context: prefs.context !== false,
++  sides: Object.assign({}, prefs.sides || {}), muscleBones: prefs.muscleBones === true,
+   quality: ['auto','detail','battery'].includes(prefs.quality) ? prefs.quality : 'auto',
+   headCut: { active: false, axis: 'y', value: 50, flip: false },
+   mode: 'study', viewIdx: -1,
+   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
+ };
+ const curSub = () => (state.sec && state.subs[state.sec]) || 'all';
++const curSide = () => ['left','right'].includes(state.sides[state.sec]) ? state.sides[state.sec] : 'both';
++const sideOf = id => structureSide(state.sec, id, A.muscles[id] || A.bones[id]);
+ 
+ // ---------- landmark pins (data) ----------
+ const PINS = A.pins || [];
+@@ -815,6 +827,12 @@
+
+   const pin = pinById[state.pin];
+   return pin && landmarkBelongsTo(pin, state.sel) ? contributingBoneIds(pin) : [];
+ };
++function visibilityPolicy() {
++  const muscle = state.mode === 'study' && state.muscleBones && A.muscles[state.sel] ? state.sel : null;
++  return { side: curSide(), hidden: state.hidden, isolate: state.isolate, muscle,
++    boundary: activeBoundaryBones(), related: muscle ? muscleBoneIds(pinsByMuscle[muscle] || [], state.selPart,
++      id => !!A.bones[id] && !isSoft(A.bones[id].g)) : [] };
++}
+ 
+ // ---------- three.js ----------
+ const canvas = $('#stage');
+@@ -1005,10 +1023,11 @@
+
+     // Existing BP3D boundary bones keep their canonical owners across C7–T1.
+     // Source identities are checked against manifest_neck/manifest_thorax.
+     const contextOwner = kind === 'c' ? ({neck:{FMA9165:'thoracic_1'},trunk:{FMA12525:'cervical_7'}}[section]?.[key]) : null;
+-    const id = contextOwner || (kind === 'c' ? 'context' : key);
++    const id = contextOwner || (kind === 'c' ? 'context:' + key : key);
+     let s = map.get(id);
+     if (!s) {
+       s = { id, kind, contextBone: !!contextOwner, meshes: [], data: kind === 'm' ? A.muscles[key] : (A.bones[id] || null) };
++      s.side = structureSide(section, id, s.data);
+       map.set(id, s);
+     }
+     let mat;
+@@ -1043,35 +1062,33 @@
+
+ // in the quiz each question peels down to the target's own layer; otherwise the user's setting applies
+ const effPeel = () => (state.mode === 'quiz' && state.quiz.target ? state.quiz.peel : state.peel);
+ // 2 = shown, 1 = faint context (bones outside the subsection), 0 = hidden
+-function baseVisState(s) {
+-  const iso = state.isolate ? structs.get(state.isolate) : null;
+-  // An active shared opening needs both contributing bones, even in bone isolation.
+-  if (s.kind === 'b' && !state.hidden.has(s.id) && activeBoundaryBones().includes(s.id)) return 2;
+-  if (iso && iso.kind !== 'm') return s.id === iso.id ? 2 : 0; // an isolated bone is shown on its own
++function baseVisState(s, policy) {
++  const explicit = selectionVisibility(s, policy);
++  if (explicit !== null) return explicit;
+   const sub = curSub();
+   const S = SEC[state.sec];
+   if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : state.sec === 'trunk' ? (['ribs','sternum'].includes(sub) ? 0 : 2) : (sub === 'all' || ['shoulder','pelvis','lumbar'].includes(sub) ? 2 : 0);
+   const inSub = sub === 'all' || subOf(s.id) === sub;
+   if (s.kind === 'm') {
+-    if (iso) return s.id === iso.id ? 2 : 0;
+     if (state.hidden.has(s.id)) return 0;
+     if (s.data.g === 'trunk' && !state.trunk) return 0;
+     if (!inSub) return 0;
+     return s.data.d > effPeel() ? 2 : 0;
+   }
+   if (state.hidden.has(s.id)) return 0;
+-  if (SOFT_DEPTH[s.id] && (effPeel() >= SOFT_DEPTH[s.id] || iso)) return 0;
++  if (SOFT_DEPTH[s.id] && effPeel() >= SOFT_DEPTH[s.id]) return 0;
+   return inSub ? 2 : 1;
+ }
+-function visState(s) {
+-  const v=baseVisState(s);
++function visState(s, policy = visibilityPolicy()) {
++  const v=baseVisState(s, policy);
+   return !state.context && (v===1 || s.kind==='c') ? 0 : v;
+ }
+ const isVisible = (s) => visState(s) === 2;
+ let pickables = [];
+ function applyVisibility() {
+   pickables = [];
+-  const boundaryBones = activeBoundaryBones();
++  const policy = visibilityPolicy();
++  const boundaryBones = [...policy.boundary, ...policy.related];
+   // A context bone selected through the shared view stays selectable when the
+   // landmark closes; unrelated, unselected context keeps its original behavior.
+   for (const s of structs.values()) if (s.contextBone) s.kind = boundaryBones.includes(s.id) || state.sel === s.id ? 'b' : 'c';
+@@ -1079,7 +1096,7 @@
+
+   const xrayBones = active && state.xrayBone && landmarkBelongsTo(active, state.xrayBone) ? [...new Set([state.xrayBone,...contributingBoneIds(active)])] : [state.xrayBone];
+   XRAY.color.copy(state.xrayBone ? boneColor(state.xrayBone) : BONE);
+   for (const s of structs.values()) {
+-    const v = visState(s);
++    const v = visState(s, policy);
+     for (const m of s.meshes) {
+       m.visible = v > 0;
+       const xray = xrayBones.includes(s.id) && s.kind === 'b';
+@@ -1093,6 +1110,12 @@
+
+   document.querySelectorAll('[data-peel]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.peel === state.peel)));
+   $('#bTrunk').setAttribute('aria-pressed', String(state.trunk));
+   $('#bContext').setAttribute('aria-pressed', String(state.context));
++  $('#bMuscleBones').setAttribute('aria-pressed', String(state.muscleBones));
++  document.querySelectorAll('[data-side-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sideView === curSide())));
++  const notes = [];
++  if (curSide() !== 'both') notes.push('Показана '+(curSide()==='left'?'левая':'правая')+' сторона. Срединные и неразделённые модели сохраняются; отсутствующая геометрия не достраивается.');
++  if (policy.muscle) notes.push(policy.related.length ? 'Кости показаны по связям прикреплений в каталоге; это не подтверждение координат.' : 'Костные связи этой мышцы или части в каталоге не указаны.');
++  $('#sideViewNote').hidden = !notes.length; $('#sideViewNote').textContent = notes.join(' ');
+   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
+   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
+   updateBoneColorControls();
+@@ -1200,7 +1223,7 @@
+
+     ? ['atlas','axis','cervical_7','hyoid','sternocleidomastoid_right','sternocleidomastoid_left'].filter(id=>structs.has(id))
+     : state.sec === 'trunk' && curSub() === 'all' && !state.isolate
+       ? [...structs.values()].filter(s=>s.kind==='b').map(s=>s.id) : shownIds();
+-  frame(ids, def.v, instant);
++  frame(ids.filter(id => structs.has(id) && visState(structs.get(id)) > 0), def.v, instant);
+   resetView();
+ }
+ function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Повернуть'; }
+@@ -1463,6 +1486,11 @@
+
+   if (id !== state.sel) state.xrayBone = sharedTransition && state.xrayBone ? id : null;
+   if (id !== state.sel) state.pinGroup = null;
+   state.sel = id;
++  if (state.isolate && state.isolate !== id) state.isolate = null;
++  const side = sideOf(id);
++  if (curSide() !== 'both' && ['left','right'].includes(side) && side !== curSide()) {
++    state.sides[state.sec] = side; prefs.sides = state.sides; savePrefs();
++  }
+   hideGloss();
+   const d0 = id ? (structs.get(id) || {}).data || A.muscles[id] || A.bones[id] : null;
+   state.selPart = part && d0 && d0.parts && d0.parts[part] ? part : null;
+@@ -1479,7 +1507,8 @@
+
+       frame(targets,A.bones[targets[0]].v||'ant',false,smallFrame(targets[0]));resetView();
+     }
+   }
+-  if (!id && previousPin?.relations?.length) applyVisibility();
++  // Selection also changes the muscle-context allowlist, including noModel cards.
++  applyVisibility();
+   paint();
+   buildPins();
+   renderSheet();
+@@ -1615,10 +1644,11 @@
+
+       <button class="x" id="bDeselect" aria-label="Закрыть карточку">${IC_X}</button>
+     </div>
+     ${partsRow}
++    ${isMuscle && state.muscleBones ? `<p class="note">${visibilityPolicy().related.length ? 'Костный контекст построен по указанным в каталоге связям прикрепления. Полнота связей и точность областей прикрепления этим режимом не подтверждаются.' : 'Для этой мышцы или части нет явных костных связей в каталоге. Кости не подбираются по близости или по противоположной стороне.'}</p>` : ''}
+     ${noModel&&d.contextTargets?.length?`<p class="note">Отдельной модели ${isMuscle?'мышцы':'кости'} нет. Показана соседняя костная область для ориентации.</p>`:''}
+     <div class="actions">
+       <button class="act primary togglemore" id="bMore">${sheet.dataset.state === 'open' ? 'Свернуть' : 'Подробнее'}</button>
+-      ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : sharedBoneView ? 'Только связанные кости' : 'Только эта'}</button>` : ''}
++      ${!noModel ? `<button class="act" id="bIso">${state.isolate === id ? 'Показать все' : sharedBoneView ? 'Только связанные кости' : isMuscle && state.muscleBones ? 'Мышца и связанные кости' : 'Только эта'}</button>` : ''}
+       ${!noModel && !isMuscle && !isSoft(d.g) && (sharedBoneView || ['head','neck','trunk'].includes(state.sec)) ? `<button class="act" id="bBoneXray" aria-pressed="${state.xrayBone === id}">${state.xrayBone === id ? sharedBoneView ? 'Сделать кости непрозрачными' : 'Сделать кость непрозрачной' : sharedBoneView ? 'Просвечивать связанные кости' : 'Просвечивать кость'}</button>` : ''}
+       ${!isMuscle && /^temporal_(left|right)$/.test(id) ? '<button class="act" data-detail-mode="openear">Внутри височной кости</button>' : ''}
+       ${!noModel ? `<button class="act" id="bHide">Скрыть</button>` : ''}
+@@ -1756,8 +1786,9 @@
+
+   sheet.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => select(b.dataset.go, null, true)));
+   sheet.querySelectorAll('[data-part]').forEach(b => b.addEventListener('click', () => {
+     state.selPart = b.dataset.part || null;
+-    paint(); buildPins(); renderSheet();
+-    framePart(state.sel, state.selPart);
++    applyVisibility(); renderSheet();
++    if (state.isolate && state.muscleBones) frame(shownIds(), null, false, 0.12);
++    else framePart(state.sel, state.selPart);
+   }));
+   sheet.querySelectorAll('.togglemore').forEach(b => b.addEventListener('click', () => {
+     sheet.dataset.state = sheet.dataset.state === 'open' ? 'peek' : 'open';
+@@ -1795,7 +1826,7 @@
+
+   on('#bIso', () => {
+     state.isolate = state.isolate === state.sel ? null : state.sel;
+     applyVisibility(); renderSheet();
+-    if (state.isolate) frame([...new Set([state.isolate,...activeBoundaryBones()])], null, false, 0.12);
++    if (state.isolate) frame(shownIds(), null, false, 0.12);
+   });
+   on('#bBoneXray', () => {
+     state.xrayBone = state.xrayBone === state.sel ? null : state.sel;
+@@ -1855,7 +1886,7 @@
+
+ function quizPool() {
+   const q = state.quiz;
+   return [...structs.values()]
+-    .filter(s => s.kind === 'm' && !state.hidden.has(s.id) && (s.data.g !== 'trunk' || state.trunk)
++    .filter(s => s.kind === 'm' && sideAllows(s.side, curSide()) && !state.hidden.has(s.id) && (s.data.g !== 'trunk' || state.trunk)
+       && s.data.d > state.peel && (q.scope === 'all' || regionOf(s.id) === q.scope))
+     .map(s => s.id);
+ }
+@@ -1869,7 +1900,7 @@
+
+   if (!cands.length) cands = pool;
+   const target = cands[Math.floor(Math.random() * cands.length)];
+   q.recent = [target].concat(q.recent).slice(0, Math.min(4, pool.length - 1));
+-  const mine = Object.keys(A.muscles).filter(id => id !== target && secOf(id) === state.sec);
++  const mine = Object.keys(A.muscles).filter(id => id !== target && secOf(id) === state.sec && sideAllows(sideOf(id), curSide()));
+   const same = shuffle(mine.filter(id => regionOf(id) === regionOf(target)));
+   const other = shuffle(mine.filter(id => regionOf(id) !== regionOf(target)));
+   q.target = target;
+@@ -2232,12 +2263,29 @@
+
+ }
+ 
+ // ---------- controls wiring ----------
++function setSide(side) {
++  if (!state.sec || !['both','left','right'].includes(side)) return;
++  state.sides[state.sec] = side; prefs.sides = state.sides; savePrefs();
++  state.hover = null;
++  if (state.sel && !sideAllows(sideOf(state.sel), side)) {
++    state.sel = null; state.selPart = null; state.pin = null; state.pinGroup = null;
++    state.isolate = null; state.xrayBone = null;
++  }
++  applyVisibility();
++  if (state.mode === 'quiz') nextQuestion(); else { renderSheet(); frameSub(false); }
++}
++document.querySelectorAll('[data-side-view]').forEach(b => b.addEventListener('click', () => setSide(b.dataset.sideView)));
++$('#bMuscleBones').addEventListener('click', () => {
++  state.muscleBones = !state.muscleBones; prefs.muscleBones = state.muscleBones; savePrefs();
++  applyVisibility(); renderSheet();
++  if (state.isolate) frame(shownIds(), null, false, 0.12);
++});
+ $('#bView').addEventListener('click', () => {
+   if (!state.sec) return;
+   const order = ['head','neck','trunk'].includes(state.sec) ? HEAD_VIEW_ORDER : VIEW_ORDER;
+   state.viewIdx = (state.viewIdx + 1) % order.length;
+   const [v, label] = order[state.viewIdx];
+-  const ids = state.sel && structs.has(state.sel) && isVisible(structs.get(state.sel)) && state.isolate ? [state.sel] : shownIds();
++  const ids = shownIds();
+   frame(ids, v, false);
+   $('#viewLabel').textContent = label;
+ });
+@@ -2398,6 +2446,6 @@
+
+ requestAnimationFrame(loop);
+ const deep = location.hash.replace('#', '');
+ if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
+-window.__atlas = { enterSection, setSub, select, goTo, activatePin, showHome, state };
++window.__atlas = { enterSection, setSub, setSide, select, goTo, activatePin, showHome, state };
+ window.__ready = true;
+ </script>

@@ -1,0 +1,20 @@
+[
+  {
+    "script": "verify_head.py",
+    "exitCode": 0,
+    "stdout": "Head integrity passed: 22 bones, 43 modeled muscle instances, 521 TA98 records/markers; kinds: {'surface': 325, 'variant': 14, 'projection': 182}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_ta98.py",
+    "exitCode": 0,
+    "stdout": "Thorax edition reconciliation: 2 documented electronic errors checked against printed TA98\nSkull edition reconciliation: 3 documented entries checked against printed TA98\nonly in IFAA list: []\nonly in atlas: []\nDIFF A02.5.10.015 | IFAA: ERR1 | atlas: facies malleolaris medialis \nDIFF A02.5.10.017 | IFAA: sulcus tendinis musculi longi flexoris hallucis | atlas: sulcus tendinis musculi flexoris hallucis longi \nDIFF A02.5.11.007 | IFAA: sulcus tendinis musculi longi flexoris hallucis | atlas: sulcus tendinis musculi flexoris hallucis longi \n762 terms compared, 3 differences\n",
+    "stderr": ""
+  },
+  {
+    "script": "test_skull_shared_stage5.py",
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK\n"
+  }
+]

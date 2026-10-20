@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import {createHash} from 'node:crypto';
+import {createEvidenceRun} from './evidence-run.mjs';
+const run=await createEvidenceRun(process.cwd(),'stage5-lumbopelvic-targeted');
+const box={window:{}};vm.createContext(box);
+for(const n of ['data','data-leg','data-head','data-neck','data-thorax','data-context-bones','pins','pins-leg','pins-head','pins-head-extra','pins-neck','pins-thorax','pins-context-bones','pins-shared'])vm.runInContext(await fs.readFile('site/'+n+'.js','utf8'),box);
+await run.write('atlas-before.json',JSON.parse(JSON.stringify(box.window.ATLAS)));
+const prior='research/evidence-runs/stage5-pelvis-2026-10-18T16-21-31-309Z-EguUlx';
+const files=new Set([...Object.keys(JSON.parse(await fs.readFile(prior+'/hashes-before.json','utf8'))),'scripts/pelvis_stage5_review.py','scripts/lumbar_stage5_review.py']);
+const hashes={};for(const f of files)hashes[f]=createHash('sha256').update(await fs.readFile(f)).digest('hex');
+await run.write('hashes-before.json',hashes);
+for(const f of ['ANATOMY_ISSUES.md','ANATOMY_PROGRESS.md'])await run.write('before-'+f,await fs.readFile(f,'utf8'));
+console.log(JSON.stringify({dir:run.dir,pins:box.window.ATLAS.pins.length}));

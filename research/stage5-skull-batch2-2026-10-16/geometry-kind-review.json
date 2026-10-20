@@ -1,0 +1,1351 @@
+{
+  "date": "2026-10-16",
+  "initialUnknown": 402,
+  "classified": 31,
+  "remainingUnknown": 371,
+  "rules": "Explicit per-code decisions based on anatomical definitions/extent, not substring/name rules or automatic FMA conversion. Display extent differs from a virtual FMA axis; no contours created.",
+  "records": [
+    {
+      "id": "head_frontal_A02_1_03_017",
+      "code": "A02.1.03.017",
+      "bone": "frontal",
+      "kind": "area",
+      "reason": "Локальная поверхность борозды — часть общего образования, а не его независимый дубликат.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Frontal Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=85",
+          "locator": "Squama; Orbital or Horizontal Part; Surfaces; Borders, pp.135–137. Электронная перепечатка Saylor: начиная со страницы PDF 85."
+        },
+        {
+          "title": "Anatomy Standard — лобная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-frontale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_gray_sagittal",
+          "title": "Gray / Lewis. Anatomy of the Human Body (1918)",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF pp.78,83,87,162: occipital, paired parietal and frontal sagittal sulci; inner skull-cap.",
+          "authorGroup": "gray_lewis_1918",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_elsevier_sagittal",
+          "title": "Elsevier / Complete Anatomy — Groove for Superior Sagittal Sinus (Frontal Part)",
+          "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/groove-for-superior-sagittal-sinus-frontal-part/20941",
+          "locator": "Description: anterior frontal, middle paired parietal and posterior occipital portions. No invariant right sinus dominance adopted.",
+          "authorGroup": "elsevier_complete_anatomy",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_002",
+      "code": "A02.1.04.002",
+      "bone": "occipital",
+      "kind": "space",
+      "reason": "Анатомическое отверстие, а не точка края и не отдельная кость.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_005",
+      "code": "A02.1.04.005",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Базилярная часть — участок костного вещества с верхней и нижней поверхностями.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_007",
+      "code": "A02.1.04.007",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Костный бугорок имеет протяжённость; вершина не равна всему бугорку.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_008",
+      "code": "A02.1.04.008",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Костная борозда включает дно и края; ось синуса не заменяет её поверхность.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_009",
+      "code": "A02.1.04.009",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Латеральная часть — костная часть, а не одна её суставная поверхность.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_010",
+      "code": "A02.1.04.010",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Чешуя включает толщину и две поверхности; одна поверхность не равна всей части.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_013",
+      "code": "A02.1.04.013",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Термин описывает отдельную костную часть при варианте; её наличие у образца не подтверждено.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Bergman et al. — Variations of the Occipital Bone",
+          "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
+          "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_014",
+      "code": "A02.1.04.014",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Мыщелок как костное возвышение отличается от покрывающей его суставной поверхности.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_017",
+      "code": "A02.1.04.017",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Мыщелковая ямка — углублённая область поверхности; канал в её дне рассматривается отдельно.",
+      "sources": [
+        {
+          "title": "Gray (1918) — Exterior of the Skull",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=153",
+          "locator": "Norma Basalis: basion and opisthion; condylar fossa and canals. Перепечатка Saylor, PDF с.153; craniometry, PDF с.173."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_018",
+      "code": "A02.1.04.018",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Яремный бугорок — костное возвышение, не яремная вырезка.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы. Ограничение источника: английская подпись Tuberculum jugulare — Jugular notch ошибочна; TA98 A02.1.04.018: jugular tubercle. Не смешивать с incisura jugularis."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_ta98_jugular_tubercle",
+          "title": "FIPAT TA98 — A02.1.04.018",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/02.1.04.018%20Entity%20TA98%20EN.htm",
+          "locator": "English equivalent: jugular tubercle; Bilaterality. Терминология, не координата.",
+          "authorGroup": "fipat",
+          "kind": "anatomical",
+          "scope": "nomenclature",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_019",
+      "code": "A02.1.04.019",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Яремная вырезка — вогнутый участок костного края; не всё совместное яремное отверстие.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_020",
+      "code": "A02.1.04.020",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Яремный отросток — костная часть с несколькими поверхностями.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "TeachMeAnatomy — The Occipital Bone",
+          "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/",
+          "locator": "Condylar; Basilar; Squamous parts."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_021",
+      "code": "A02.1.04.021",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Внутрияремный отросток — костный выступ, а не весь край отверстия; наличие рельефа не принято.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Complete morphometric analysis of jugular foramen (2016)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5111328/",
+          "locator": "Methods: endocranial aspect, Fig.1 — peak of intrajugular process of occipital bone."
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_022",
+      "code": "A02.1.04.022",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Наружный затылочный выступ не тождественен точечному краниометрическому inion.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_023",
+      "code": "A02.1.04.023",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Для полного костного гребня требуется протяжённый рельеф, а не только линия его вершины.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_024",
+      "code": "A02.1.04.024",
+      "bone": "occipital",
+      "kind": "line",
+      "reason": "Именованная выйная линия рассматривается как линия прикрепления; её кривая не размечена.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_025",
+      "code": "A02.1.04.025",
+      "bone": "occipital",
+      "kind": "line",
+      "reason": "Двусторонняя выйная линия не заменяется одной опорной точкой.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_026",
+      "code": "A02.1.04.026",
+      "bone": "occipital",
+      "kind": "line",
+      "reason": "Нижняя выйная линия требует протяжённости обеих сторон, а не одного маркера.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_028",
+      "code": "A02.1.04.028",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Крестообразное костное возвышение — составной рельеф; не единственная точка пересечения.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_029",
+      "code": "A02.1.04.029",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Внутренний затылочный выступ — рельеф, его вершина не представляет всю структуру.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_030",
+      "code": "A02.1.04.030",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Здесь требуется полный костный рельеф гребня; линейная ось в классификации FMA не задаёт его форму.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_031",
+      "code": "A02.1.04.031",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Для борозды нужна поверхность с краями; линейное описание хода синуса не подтверждает её полный рельеф.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_032",
+      "code": "A02.1.04.032",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Речь о затылочном участке поверхности венозной борозды, не о просвете самого синуса.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_035",
+      "code": "A02.1.04.035",
+      "bone": "occipital",
+      "kind": "volume",
+      "reason": "Вариантный костный отросток требует собственной формы; место возможного варианта не доказывает его наличие.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Bergman et al. — Variations of the Occipital Bone",
+          "url": "https://www.anatomyatlases.org/AnatomicVariants/SkeletalSystem/Text/OccipitalBone.shtml",
+          "locator": "Interparietal/Inca bone; paramastoid process; variations around foramen magnum."
+        },
+        {
+          "title": "J. L. Pace — The Paramastoid Process: A survey of 890 Maltese skulls",
+          "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/13690/1/Paramastoid%20Process.pdf",
+          "locator": "Печатная с.34 (PDF с.1), Summary и первые абзацы: нижняя сторона яремного отростка; paracondylar как синоним paramastoid. С.35 (PDF с.2): варианты сочленения с поперечным отростком атланта."
+        },
+        {
+          "title": "Schumacher et al. (2018) — Paramastoid Process: Literature Review of Its Anatomy and Clinical Implications",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29929028/",
+          "locator": "Открытый Abstract: paramastoid, paraoccipital, paracondylar, parajugular как названия варианта нижней стороны яремного отростка; возможное сочленение с атлантом."
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_036",
+      "code": "A02.1.04.036",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Верхняя парная ямка внутренней поверхности — область, не точечный ориентир.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_occipital_A02_1_04_037",
+      "code": "A02.1.04.037",
+      "bone": "occipital",
+      "kind": "area",
+      "reason": "Нижняя парная ямка внутренней поверхности — область, не отдельный объём мозжечка.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918) — The Occipital Bone",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=76",
+          "locator": "Lateral Parts; Basilar Part; Squama, pp.129–132. Электронная перепечатка Saylor: начиная со страницы PDF 76."
+        },
+        {
+          "title": "Anatomy Standard — затылочная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-occipitale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "id": "batch2_oxford_occipital",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Chapter 1, printed pp.18–21 (PDF pp.37–39), Occipital bone: lateral, basilar and squamous parts; Figs.1.9–1.10.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "representation_and_laterality",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_parietal_right_A02_1_02_004",
+      "code": "A02.1.02.004",
+      "bone": "parietal_right",
+      "kind": "area",
+      "reason": "Локальная поверхность борозды — часть общего образования, а не его независимый дубликат.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        },
+        {
+          "id": "batch2_gray_sagittal",
+          "title": "Gray / Lewis. Anatomy of the Human Body (1918)",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF pp.78,83,87,162: occipital, paired parietal and frontal sagittal sulci; inner skull-cap.",
+          "authorGroup": "gray_lewis_1918",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_elsevier_sagittal",
+          "title": "Elsevier / Complete Anatomy — Groove for Superior Sagittal Sinus (Frontal Part)",
+          "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/groove-for-superior-sagittal-sinus-frontal-part/20941",
+          "locator": "Description: anterior frontal, middle paired parietal and posterior occipital portions. No invariant right sinus dominance adopted.",
+          "authorGroup": "elsevier_complete_anatomy",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_parietal_left_A02_1_02_004",
+      "code": "A02.1.02.004",
+      "bone": "parietal_left",
+      "kind": "area",
+      "reason": "Локальная поверхность борозды — часть общего образования, а не его независимый дубликат.",
+      "sources": [
+        {
+          "title": "Anatomy Standard — теменная кость",
+          "url": "https://www.anatomystandard.com/ossa-et-juncturae/cranium/os-parietale.html",
+          "locator": "Авторские подписанные виды кости: передний, задний, верхний, нижний и косые ракурсы."
+        },
+        {
+          "title": "Kenhub — parietal bone (открытая статья)",
+          "url": "https://www.kenhub.com/en/library/anatomy/the-parietal-bone",
+          "locator": "Anatomy; surfaces, borders and component parts. Не используются платные модели или изображения."
+        },
+        {
+          "id": "batch2_gray_sagittal",
+          "title": "Gray / Lewis. Anatomy of the Human Body (1918)",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF pp.78,83,87,162: occipital, paired parietal and frontal sagittal sulci; inner skull-cap.",
+          "authorGroup": "gray_lewis_1918",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_elsevier_sagittal",
+          "title": "Elsevier / Complete Anatomy — Groove for Superior Sagittal Sinus (Frontal Part)",
+          "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/groove-for-superior-sagittal-sinus-frontal-part/20941",
+          "locator": "Description: anterior frontal, middle paired parietal and posterior occipital portions. No invariant right sinus dominance adopted.",
+          "authorGroup": "elsevier_complete_anatomy",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_temporal_right_A02_1_06_038",
+      "code": "A02.1.06.038",
+      "bone": "temporal_right",
+      "kind": "area",
+      "reason": "Поверхность местной венозной борозды не равна просвету синуса.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png"
+        },
+        {
+          "id": "batch2_gray_petrosal",
+          "title": "Gray / Lewis. Anatomy of the Human Body (1918)",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF pp.79,98: lateral basilar grooves and corresponding medial posterior petrous border; groove formed by both bones.",
+          "authorGroup": "gray_lewis_1918",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_oxford_petrosal",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Printed p.18, Basilar part / Internal surface features: groove at petrous temporal–basioccipital articulation.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    },
+    {
+      "id": "head_temporal_left_A02_1_06_038",
+      "code": "A02.1.06.038",
+      "bone": "temporal_left",
+      "kind": "area",
+      "reason": "Поверхность местной венозной борозды не равна просвету синуса.",
+      "sources": [
+        {
+          "title": "Gray, Anatomy of the Human Body (1918), рис. 138",
+          "url": "https://commons.wikimedia.org/wiki/File:Gray138.png"
+        },
+        {
+          "title": "Sobotta, Atlas and Text-book of Human Anatomy (1909), рис. 56",
+          "url": "https://commons.wikimedia.org/wiki/File:Sobo_1909_56.png"
+        },
+        {
+          "id": "batch2_gray_petrosal",
+          "title": "Gray / Lewis. Anatomy of the Human Body (1918)",
+          "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+          "locator": "PDF pp.79,98: lateral basilar grooves and corresponding medial posterior petrous border; groove formed by both bones.",
+          "authorGroup": "gray_lewis_1918",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        },
+        {
+          "id": "batch2_oxford_petrosal",
+          "title": "van Gijn DR, Dunne J. Oxford Handbook of Head and Neck Anatomy (2022)",
+          "url": "https://api.pageplace.de/preview/DT0400.9780192664341_A42890947/preview-9780192664341_A42890947.pdf",
+          "locator": "Printed p.18, Basilar part / Internal surface features: groove at petrous temporal–basioccipital articulation.",
+          "authorGroup": "van_gijn_dunne",
+          "kind": "anatomical",
+          "scope": "bone_relationships",
+          "checked": "2026-10-16",
+          "access": "full_text"
+        }
+      ]
+    }
+  ],
+  "remainingIds": [
+    "head_frontal_A02_1_03_002",
+    "head_frontal_A02_1_03_004",
+    "head_frontal_A02_1_03_005",
+    "head_frontal_A02_1_03_006",
+    "head_frontal_A02_1_03_009",
+    "head_frontal_A02_1_03_010",
+    "head_frontal_A02_1_03_013",
+    "head_frontal_A02_1_03_014",
+    "head_frontal_A02_1_03_016",
+    "head_frontal_A02_1_03_018",
+    "head_frontal_A02_1_03_019",
+    "head_frontal_A02_1_03_020",
+    "head_frontal_A02_1_03_022",
+    "head_frontal_A02_1_03_024",
+    "head_frontal_A02_1_03_025",
+    "head_frontal_A02_1_03_026",
+    "head_frontal_A02_1_03_028",
+    "head_frontal_A02_1_03_030",
+    "head_frontal_A02_1_03_031",
+    "head_occipital_A02_1_04_033",
+    "head_occipital_A02_1_04_034",
+    "head_sphenoid_A02_1_05_002",
+    "head_sphenoid_A02_1_05_005",
+    "head_sphenoid_A02_1_05_006",
+    "head_sphenoid_A02_1_05_007",
+    "head_sphenoid_A02_1_05_008",
+    "head_sphenoid_A02_1_05_009",
+    "head_sphenoid_A02_1_05_010",
+    "head_sphenoid_A02_1_05_011",
+    "head_sphenoid_A02_1_05_012",
+    "head_sphenoid_A02_1_05_013",
+    "head_sphenoid_A02_1_05_014",
+    "head_sphenoid_A02_1_05_015",
+    "head_sphenoid_A02_1_05_017",
+    "head_sphenoid_A02_1_05_018",
+    "head_sphenoid_A02_1_05_019",
+    "head_sphenoid_A02_1_05_020",
+    "head_sphenoid_A02_1_05_022",
+    "head_sphenoid_A02_1_05_023",
+    "head_sphenoid_A02_1_05_024",
+    "head_sphenoid_A02_1_05_028",
+    "head_sphenoid_A02_1_05_035",
+    "head_sphenoid_A02_1_05_036",
+    "head_sphenoid_A02_1_05_037",
+    "head_sphenoid_A02_1_05_038",
+    "head_sphenoid_A02_1_05_039",
+    "head_sphenoid_A02_1_05_040",
+    "head_sphenoid_A02_1_05_041",
+    "head_sphenoid_A02_1_05_042",
+    "head_sphenoid_A02_1_05_043",
+    "head_sphenoid_A02_1_05_044",
+    "head_sphenoid_A02_1_05_045",
+    "head_sphenoid_A02_1_05_046",
+    "head_sphenoid_A02_1_05_047",
+    "head_sphenoid_A02_1_05_048",
+    "head_sphenoid_A02_1_05_049",
+    "head_sphenoid_A02_1_05_050",
+    "head_sphenoid_A02_1_05_051",
+    "head_sphenoid_A02_1_05_052",
+    "head_sphenoid_A02_1_05_054",
+    "head_ethmoid_A02_1_07_002",
+    "head_ethmoid_A02_1_07_003",
+    "head_ethmoid_A02_1_07_004",
+    "head_ethmoid_A02_1_07_005",
+    "head_ethmoid_A02_1_07_006",
+    "head_ethmoid_A02_1_07_007",
+    "head_ethmoid_A02_1_07_011",
+    "head_ethmoid_A02_1_07_012",
+    "head_ethmoid_A02_1_07_013",
+    "head_ethmoid_A02_1_07_014",
+    "head_ethmoid_A02_1_07_015",
+    "head_ethmoid_A02_1_07_016",
+    "head_ethmoid_A02_1_07_018",
+    "head_vomer_A02_1_11_002",
+    "head_vomer_A02_1_11_003",
+    "head_vomer_A02_1_11_004",
+    "head_vomer_A02_1_11_005",
+    "head_mandible_A02_1_15_002",
+    "head_mandible_A02_1_15_004",
+    "head_mandible_A02_1_15_005",
+    "head_mandible_A02_1_15_006",
+    "head_mandible_A02_1_15_007",
+    "head_mandible_A02_1_15_008",
+    "head_mandible_A02_1_15_009",
+    "head_mandible_A02_1_15_010",
+    "head_mandible_A02_1_15_011",
+    "head_mandible_A02_1_15_012",
+    "head_mandible_A02_1_15_013",
+    "head_mandible_A02_1_15_014",
+    "head_mandible_A02_1_15_015",
+    "head_mandible_A02_1_15_016",
+    "head_mandible_A02_1_15_018",
+    "head_mandible_A02_1_15_019",
+    "head_mandible_A02_1_15_020",
+    "head_mandible_A02_1_15_021",
+    "head_mandible_A02_1_15_022",
+    "head_mandible_A02_1_15_023",
+    "head_mandible_A02_1_15_024",
+    "head_mandible_A02_1_15_025",
+    "head_mandible_A02_1_15_026",
+    "head_mandible_A02_1_15_027",
+    "head_mandible_A02_1_15_028",
+    "head_mandible_A02_1_15_029",
+    "head_mandible_A02_1_15_031",
+    "head_mandible_A02_1_15_032",
+    "head_mandible_A02_1_15_033",
+    "head_mandible_A02_1_15_034",
+    "head_mandible_A02_1_15_035",
+    "head_mandible_A02_1_15_036",
+    "head_mandible_A02_1_15_037",
+    "head_mandible_A02_1_15_038",
+    "head_parietal_right_A02_1_02_003",
+    "head_parietal_right_A02_1_02_005",
+    "head_parietal_right_A02_1_02_006",
+    "head_parietal_right_A02_1_02_008",
+    "head_parietal_right_A02_1_02_009",
+    "head_parietal_right_A02_1_02_010",
+    "head_parietal_right_A02_1_02_015",
+    "head_parietal_right_A02_1_02_016",
+    "head_parietal_right_A02_1_02_017",
+    "head_parietal_right_A02_1_02_018",
+    "head_parietal_right_A02_1_02_019",
+    "head_parietal_left_A02_1_02_003",
+    "head_parietal_left_A02_1_02_005",
+    "head_parietal_left_A02_1_02_006",
+    "head_parietal_left_A02_1_02_008",
+    "head_parietal_left_A02_1_02_009",
+    "head_parietal_left_A02_1_02_010",
+    "head_parietal_left_A02_1_02_015",
+    "head_parietal_left_A02_1_02_016",
+    "head_parietal_left_A02_1_02_017",
+    "head_parietal_left_A02_1_02_018",
+    "head_parietal_left_A02_1_02_019",
+    "head_temporal_right_A02_1_06_002",
+    "head_temporal_right_A02_1_06_003",
+    "head_temporal_right_A02_1_06_004",
+    "head_temporal_right_A02_1_06_005",
+    "head_temporal_right_A02_1_06_006",
+    "head_temporal_right_A02_1_06_007",
+    "head_temporal_right_A02_1_06_008",
+    "head_temporal_right_A02_1_06_010",
+    "head_temporal_right_A02_1_06_012",
+    "head_temporal_right_A02_1_06_014",
+    "head_temporal_right_A02_1_06_015",
+    "head_temporal_right_A02_1_06_020",
+    "head_temporal_right_A02_1_06_021",
+    "head_temporal_right_A02_1_06_022",
+    "head_temporal_right_A02_1_06_023",
+    "head_temporal_right_A02_1_06_024",
+    "head_temporal_right_A02_1_06_025",
+    "head_temporal_right_A02_1_06_026",
+    "head_temporal_right_A02_1_06_027",
+    "head_temporal_right_A02_1_06_028",
+    "head_temporal_right_A02_1_06_029",
+    "head_temporal_right_A02_1_06_030",
+    "head_temporal_right_A02_1_06_031",
+    "head_temporal_right_A02_1_06_032",
+    "head_temporal_right_A02_1_06_034",
+    "head_temporal_right_A02_1_06_036",
+    "head_temporal_right_A02_1_06_040",
+    "head_temporal_right_A02_1_06_041",
+    "head_temporal_right_A02_1_06_043",
+    "head_temporal_right_A02_1_06_045",
+    "head_temporal_right_A02_1_06_046",
+    "head_temporal_right_A02_1_06_047",
+    "head_temporal_right_A02_1_06_048",
+    "head_temporal_right_A02_1_06_050",
+    "head_temporal_right_A02_1_06_037",
+    "head_temporal_right_A02_1_06_039",
+    "head_temporal_right_A02_1_06_052",
+    "head_temporal_right_A02_1_06_053",
+    "head_temporal_right_A02_1_06_054",
+    "head_temporal_right_A02_1_06_056",
+    "head_temporal_right_A02_1_06_057",
+    "head_temporal_right_A02_1_06_058",
+    "head_temporal_right_A02_1_06_059",
+    "head_temporal_right_A02_1_06_060",
+    "head_temporal_right_A02_1_06_061",
+    "head_temporal_right_A02_1_06_062",
+    "head_temporal_right_A02_1_06_063",
+    "head_temporal_right_A02_1_06_064",
+    "head_temporal_right_A02_1_06_065",
+    "head_temporal_right_A02_1_06_066",
+    "head_temporal_right_A02_1_06_067",
+    "head_temporal_right_A02_1_06_068",
+    "head_temporal_right_A02_1_06_069",
+    "head_temporal_right_A02_1_06_070",
+    "head_temporal_right_A02_1_06_071",
+    "head_temporal_right_A02_1_06_072",
+    "head_temporal_right_A02_1_06_073",
+    "head_temporal_right_A02_1_06_074",
+    "head_temporal_right_A02_1_06_075",
+    "head_temporal_right_A02_1_06_076",
+    "head_temporal_right_A02_1_06_077",
+    "head_temporal_right_A02_1_06_078",
+    "head_temporal_left_A02_1_06_002",
+    "head_temporal_left_A02_1_06_003",
+    "head_temporal_left_A02_1_06_004",
+    "head_temporal_left_A02_1_06_005",
+    "head_temporal_left_A02_1_06_006",
+    "head_temporal_left_A02_1_06_007",
+    "head_temporal_left_A02_1_06_008",
+    "head_temporal_left_A02_1_06_010",
+    "head_temporal_left_A02_1_06_012",
+    "head_temporal_left_A02_1_06_014",
+    "head_temporal_left_A02_1_06_015",
+    "head_temporal_left_A02_1_06_020",
+    "head_temporal_left_A02_1_06_021",
+    "head_temporal_left_A02_1_06_022",
+    "head_temporal_left_A02_1_06_023",
+    "head_temporal_left_A02_1_06_024",
+    "head_temporal_left_A02_1_06_025",
+    "head_temporal_left_A02_1_06_026",
+    "head_temporal_left_A02_1_06_027",
+    "head_temporal_left_A02_1_06_028",
+    "head_temporal_left_A02_1_06_029",
+    "head_temporal_left_A02_1_06_030",
+    "head_temporal_left_A02_1_06_031",
+    "head_temporal_left_A02_1_06_032",
+    "head_temporal_left_A02_1_06_034",
+    "head_temporal_left_A02_1_06_036",
+    "head_temporal_left_A02_1_06_040",
+    "head_temporal_left_A02_1_06_041",
+    "head_temporal_left_A02_1_06_043",
+    "head_temporal_left_A02_1_06_045",
+    "head_temporal_left_A02_1_06_046",
+    "head_temporal_left_A02_1_06_047",
+    "head_temporal_left_A02_1_06_048",
+    "head_temporal_left_A02_1_06_050",
+    "head_temporal_left_A02_1_06_037",
+    "head_temporal_left_A02_1_06_039",
+    "head_temporal_left_A02_1_06_052",
+    "head_temporal_left_A02_1_06_053",
+    "head_temporal_left_A02_1_06_054",
+    "head_temporal_left_A02_1_06_056",
+    "head_temporal_left_A02_1_06_057",
+    "head_temporal_left_A02_1_06_058",
+    "head_temporal_left_A02_1_06_059",
+    "head_temporal_left_A02_1_06_060",
+    "head_temporal_left_A02_1_06_061",
+    "head_temporal_left_A02_1_06_062",
+    "head_temporal_left_A02_1_06_063",
+    "head_temporal_left_A02_1_06_064",
+    "head_temporal_left_A02_1_06_065",
+    "head_temporal_left_A02_1_06_066",
+    "head_temporal_left_A02_1_06_067",
+    "head_temporal_left_A02_1_06_068",
+    "head_temporal_left_A02_1_06_069",
+    "head_temporal_left_A02_1_06_070",
+    "head_temporal_left_A02_1_06_071",
+    "head_temporal_left_A02_1_06_072",
+    "head_temporal_left_A02_1_06_073",
+    "head_temporal_left_A02_1_06_074",
+    "head_temporal_left_A02_1_06_075",
+    "head_temporal_left_A02_1_06_076",
+    "head_temporal_left_A02_1_06_077",
+    "head_temporal_left_A02_1_06_078",
+    "head_maxilla_right_A02_1_12_002",
+    "head_maxilla_right_A02_1_12_005",
+    "head_maxilla_right_A02_1_12_008",
+    "head_maxilla_right_A02_1_12_009",
+    "head_maxilla_right_A02_1_12_010",
+    "head_maxilla_right_A02_1_12_011",
+    "head_maxilla_right_A02_1_12_014",
+    "head_maxilla_right_A02_1_12_016",
+    "head_maxilla_right_A02_1_12_018",
+    "head_maxilla_right_A02_1_12_019",
+    "head_maxilla_right_A02_1_12_021",
+    "head_maxilla_right_A02_1_12_022",
+    "head_maxilla_right_A02_1_12_024",
+    "head_maxilla_right_A02_1_12_025",
+    "head_maxilla_right_A02_1_12_026",
+    "head_maxilla_right_A02_1_12_027",
+    "head_maxilla_right_A02_1_12_028",
+    "head_maxilla_right_A02_1_12_029",
+    "head_maxilla_right_A02_1_12_030",
+    "head_maxilla_right_A02_1_12_031",
+    "head_maxilla_right_A02_1_12_032",
+    "head_maxilla_right_A02_1_12_033",
+    "head_maxilla_right_A02_1_12_034",
+    "head_maxilla_right_A02_1_12_035",
+    "head_maxilla_right_A02_1_12_037",
+    "head_maxilla_right_A02_1_12_038",
+    "head_maxilla_right_A02_1_12_039",
+    "head_maxilla_right_A02_1_12_040",
+    "head_maxilla_right_A02_1_00_062",
+    "head_maxilla_left_A02_1_12_002",
+    "head_maxilla_left_A02_1_12_005",
+    "head_maxilla_left_A02_1_12_008",
+    "head_maxilla_left_A02_1_12_009",
+    "head_maxilla_left_A02_1_12_010",
+    "head_maxilla_left_A02_1_12_011",
+    "head_maxilla_left_A02_1_12_014",
+    "head_maxilla_left_A02_1_12_016",
+    "head_maxilla_left_A02_1_12_018",
+    "head_maxilla_left_A02_1_12_019",
+    "head_maxilla_left_A02_1_12_021",
+    "head_maxilla_left_A02_1_12_022",
+    "head_maxilla_left_A02_1_12_024",
+    "head_maxilla_left_A02_1_12_025",
+    "head_maxilla_left_A02_1_12_026",
+    "head_maxilla_left_A02_1_12_027",
+    "head_maxilla_left_A02_1_12_028",
+    "head_maxilla_left_A02_1_12_029",
+    "head_maxilla_left_A02_1_12_030",
+    "head_maxilla_left_A02_1_12_031",
+    "head_maxilla_left_A02_1_12_032",
+    "head_maxilla_left_A02_1_12_033",
+    "head_maxilla_left_A02_1_12_034",
+    "head_maxilla_left_A02_1_12_035",
+    "head_maxilla_left_A02_1_12_037",
+    "head_maxilla_left_A02_1_12_038",
+    "head_maxilla_left_A02_1_12_039",
+    "head_maxilla_left_A02_1_12_040",
+    "head_maxilla_left_A02_1_00_062",
+    "head_zygomatic_right_A02_1_14_005",
+    "head_zygomatic_right_A02_1_14_006",
+    "head_zygomatic_right_A02_1_14_007",
+    "head_zygomatic_right_A02_1_14_008",
+    "head_zygomatic_right_A02_1_14_009",
+    "head_zygomatic_right_A02_1_14_010",
+    "head_zygomatic_right_A02_1_14_011",
+    "head_zygomatic_left_A02_1_14_005",
+    "head_zygomatic_left_A02_1_14_006",
+    "head_zygomatic_left_A02_1_14_007",
+    "head_zygomatic_left_A02_1_14_008",
+    "head_zygomatic_left_A02_1_14_009",
+    "head_zygomatic_left_A02_1_14_010",
+    "head_zygomatic_left_A02_1_14_011",
+    "head_palatine_right_A02_1_13_002",
+    "head_palatine_right_A02_1_13_005",
+    "head_palatine_right_A02_1_13_006",
+    "head_palatine_right_A02_1_13_007",
+    "head_palatine_right_A02_1_13_009",
+    "head_palatine_right_A02_1_13_010",
+    "head_palatine_right_A02_1_13_011",
+    "head_palatine_right_A02_1_13_012",
+    "head_palatine_right_A02_1_13_013",
+    "head_palatine_right_A02_1_13_016",
+    "head_palatine_right_A02_1_13_017",
+    "head_palatine_right_A02_1_13_018",
+    "head_palatine_right_A02_1_13_019",
+    "head_palatine_left_A02_1_13_002",
+    "head_palatine_left_A02_1_13_005",
+    "head_palatine_left_A02_1_13_006",
+    "head_palatine_left_A02_1_13_007",
+    "head_palatine_left_A02_1_13_009",
+    "head_palatine_left_A02_1_13_010",
+    "head_palatine_left_A02_1_13_011",
+    "head_palatine_left_A02_1_13_012",
+    "head_palatine_left_A02_1_13_013",
+    "head_palatine_left_A02_1_13_016",
+    "head_palatine_left_A02_1_13_017",
+    "head_palatine_left_A02_1_13_018",
+    "head_palatine_left_A02_1_13_019",
+    "head_nasal_right_A02_1_10_002",
+    "head_nasal_right_A02_1_10_003",
+    "head_nasal_left_A02_1_10_002",
+    "head_nasal_left_A02_1_10_003",
+    "head_lacrimal_right_A02_1_09_002",
+    "head_lacrimal_right_A02_1_09_003",
+    "head_lacrimal_right_A02_1_09_004",
+    "head_lacrimal_left_A02_1_09_002",
+    "head_lacrimal_left_A02_1_09_003",
+    "head_lacrimal_left_A02_1_09_004",
+    "head_inferior_concha_right_A02_1_08_002",
+    "head_inferior_concha_right_A02_1_08_003",
+    "head_inferior_concha_right_A02_1_08_004",
+    "head_inferior_concha_left_A02_1_08_002",
+    "head_inferior_concha_left_A02_1_08_003",
+    "head_inferior_concha_left_A02_1_08_004"
+  ]
+}

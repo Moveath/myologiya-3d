@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createEvidenceRun} from './evidence-run.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const [a,b]=await Promise.all([createEvidenceRun(root,'evidence-guard-test'),createEvidenceRun(root,'evidence-guard-test')]);
+assert.notEqual(a.dir,b.dir);
+const target=await a.write('sentinel.json',{original:true});
+await assert.rejects(a.write('sentinel.json',{original:false}),{code:'EEXIST'});
+assert.deepEqual(JSON.parse(await fs.readFile(target,'utf8')),{original:true});
+await assert.rejects(a.write('../escape.json',{}));
+await assert.rejects(a.write('sub\\escape.json',{}));
+await assert.rejects(createEvidenceRun(root,'../historical'));
+await a.write('result.json',{status:'passed',concurrentRunsDistinct:true,noClobber:true,pathTraversalRejected:true,otherRun:b.dir});
+console.log(JSON.stringify({status:'passed',run:a.dir}));

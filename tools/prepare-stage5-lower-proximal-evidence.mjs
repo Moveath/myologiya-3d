@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import {createHash} from 'node:crypto';
+import {createEvidenceRun} from './evidence-run.mjs';
+const run=await createEvidenceRun(process.cwd(),'stage5-lower-proximal');
+const box={window:{}};vm.createContext(box);
+for(const n of ['data','data-leg','data-head','data-neck','data-thorax','data-context-bones','pins','pins-leg','pins-head','pins-head-extra','pins-neck','pins-thorax','pins-context-bones','pins-shared'])vm.runInContext(await fs.readFile('site/'+n+'.js','utf8'),box);
+const A=JSON.parse(JSON.stringify(box.window.ATLAS));
+await run.write('atlas-before.json',A);
+const hashes={};for(const f of (await fs.readdir('site')).filter(f=>f.endsWith('-glb.txt')))hashes['site/'+f]=createHash('sha256').update(await fs.readFile('site/'+f)).digest('hex');
+await run.write('hashes-before.json',hashes);
+for(const f of ['ANATOMY_ISSUES.md','ANATOMY_PROGRESS.md','scripts/make_pins_leg.py','scripts/make_context_bone_data.py'])await run.write('before-'+f.replaceAll('/','_'),await fs.readFile(f,'utf8'));
+const groups=new Set(A.boneGroups.filter(g=>g.sec==='leg').map(g=>g.id));
+const rows=Object.entries(A.bones).filter(([id,b])=>groups.has(b.g)||b.sec==='leg').map(([id,b])=>({id,...b,pins:A.pins.filter(p=>p.b===id)}));
+await run.write('inventory-before.json',rows);
+console.log(JSON.stringify({dir:run.dir,rows:rows.map(b=>({id:b.id,sub:b.sub,g:b.g,noModel:!!b.noModel,pins:b.pins.length,types:Object.fromEntries([...new Set(b.pins.map(p=>p.geometryKind||'unknown'))].map(k=>[k,b.pins.filter(p=>(p.geometryKind||'unknown')===k).length]))}))}));

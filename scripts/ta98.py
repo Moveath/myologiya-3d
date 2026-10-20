@@ -432,5 +432,11 @@ for _code, _term in LUMBAR_TERMS.items():
         assert T[_code] == _term, (_code, 'Conflicting lumbar nomenclature')
 T.update(LUMBAR_TERMS)
 BONE.update({bone:list(codes) for bone,codes in LUMBAR_BONE_CODES.items()})
-for _bone in ('clavicle','scapula','humerus','hip_bone'):
+for _bone in ('clavicle','scapula','humerus','hip_bone','radius','ulna','femur','patella','tibia','fibula'):
+    BONE[_bone+'_left'] = list(BONE[_bone])
+
+# Foot sides share nomenclature applicability, never specimen coordinates.
+for _bone in ('talus','calcaneus','navicular','cuboid','cuneiform_med','cuneiform_int','cuneiform_lat','sesamoid_pedis',
+              *(f'metatarsal_{i}' for i in range(1,6)),
+              *(f'toe_{part}_{i}' for part in ('prox','mid','dist') for i in range(1,6) if not(part=='mid' and i==1))):
     BONE[_bone+'_left'] = list(BONE[_bone])

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "scope": "24 ribs and sternum; stage 5 batch 2",
+  "data": "research/evidence-runs/stage5-ribs-data-2026-10-18T14-57-48-409Z-WIBJx1/data-regression.json",
+  "geometry_data": "research/evidence-runs/thorax-data-2026-10-18T14-41-32-613Z-8SMw7W/thorax-data-geometry.json",
+  "full_ui_1280": "research/evidence-runs/stage5-ribs-mcp-2026-10-18T14-50-24-656Z-PwmL0A/result.json",
+  "full_ui_390": "research/evidence-runs/stage5-ribs-mcp-2026-10-18T14-50-24-737Z-Y0xLlh/result.json",
+  "sources_parent_links": "research/evidence-runs/stage5-ribs-final-links-2026-10-18T14-47-48-331Z-3M1DhT/result.json",
+  "final_search_ui": "research/evidence-runs/stage5-ribs-search-final-2026-10-18T15-06-49-553Z-rVaP9Q/result.json",
+  "blender": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/blender-ribs.json",
+  "trimesh": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/trimesh-positions.json",
+  "source_components": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/source-parts.json",
+  "pubmed_efetch": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/pubmed-verified.json",
+  "registry_final": "research/evidence-runs/stage5-thorax-batch2-2026-10-18T14-33-52-383Z-ETS7Lh/registry-final.json",
+  "limitations": [
+    "No new accepted anatomical coordinates or extents; surface proximity alone is not anatomy acceptance.",
+    "Full UI precedes the final search-label-only change; final DOM/search regression follows it, and Node verifies all other HTML unchanged.",
+    "TA98 console run: 762 terms, three pre-existing differences. No standalone JSON for this run.",
+    "Direct NCBI Bookshelf blocked by reCAPTCHA; indexed extracts only; PubMed EFetch and relevant PMC full text verified.",
+    "1280/light and 390/dark parent-link screenshots predate classification of new cards as additional; use final full UI and search UI for category counts.",
+    "Failed and client-interrupted runs retained; final-search JSON is authoritative for the last label change."
+  ]
+}

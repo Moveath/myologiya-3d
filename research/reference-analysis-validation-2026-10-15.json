@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-15",
+  "status": "passed",
+  "issueCount": 182,
+  "verified": 13,
+  "unresolved": 169,
+  "statuses": {
+    "проверена": 13,
+    "заблокирована": 41,
+    "требует проверки": 95,
+    "открыта": 33
+  },
+  "sciencePending": 130,
+  "stages": {
+    "1": {
+      "total": 5,
+      "verified": 5
+    },
+    "2": {
+      "total": 5,
+      "verified": 5
+    },
+    "3": {
+      "total": 4,
+      "verified": 3
+    },
+    "4": {
+      "total": 26,
+      "verified": 0
+    },
+    "5": {
+      "total": 67,
+      "verified": 0
+    },
+    "6": {
+      "total": 12,
+      "verified": 0
+    },
+    "7": {
+      "total": 44,
+      "verified": 0
+    },
+    "8": {
+      "total": 19,
+      "verified": 0
+    }
+  },
+  "newIDs": [
+    "ANAT-001",
+    "ANAT-002",
+    "VIS-011",
+    "VIS-012",
+    "FUT-011",
+    "FUT-012",
+    "ENV-003"
+  ],
+  "preservedIDs": 175,
+  "oldUnresolvedCriteriaPreserved": true,
+  "priorHistoryPreserved": true,
+  "images": {
+    "new": 89,
+    "unique": 87,
+    "prior": 16,
+    "inventory": 105,
+    "hashesUnchanged": 105
+  },
+  "protected": {
+    "files": 304,
+    "sha256Unchanged": true,
+    "scope": "Files captured by protected-before.json (site/scripts and existing listed pins directories); not an assertion that every project original was hashed."
+  },
+  "localLinksAndAnchors": 737,
+  "ui": {
+    "status": "passed",
+    "pageerrors": 0,
+    "mobileOverflow": false,
+    "screenshots": 9
+  },
+  "limitations": [
+    "Document validation is not anatomy or geometry acceptance.",
+    "No original GLB or app code edited; SHA comparison scope is exactly the 304 captured files.",
+    "Old reference images have no historic SHA baseline; only unchanged during this task confirmed."
+  ]
+}

@@ -43,8 +43,10 @@ for key,name in {
 }.items():
     MUSCLES['thorax_'+key]=[(NAME2ID[name],None)]
 
-# The aggregate cartilage objects cover the costal cartilage source set.
-# Do not duplicate them with individual FMA 1–7 cartilages.
+# BP24/BP28 are partial aggregates, not coverage of all costal cartilages.
+# Separate I–VII objects are not included here. Seven right derivatives exist in
+# arm-q-glb; original STL files and left counterparts still need recovery/review.
+# Do not rebuild or replace original GLB from this audit (see GEO-THORAX-CARTILAGE-COVERAGE).
 OTHER={f'thorax_costal_cartilages_{side}':ids(f'{side} costal cartilage') for side in ('right','left')}
 CONTEXT=ids('seventh cervical vertebra','first lumbar vertebra','second lumbar vertebra',
             'third lumbar vertebra','fourth lumbar vertebra','fifth lumbar vertebra',

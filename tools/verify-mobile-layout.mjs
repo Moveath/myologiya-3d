@@ -26,6 +26,9 @@ try{
   }
   await page.evaluate(()=>__atlas.enterSection('head'));await page.waitForTimeout(700);
   if(mobile){
+   // Software rendering can finish the framing animation after the fixed pause.
+   // Verify the actual recovery condition, retaining a bounded failure timeout.
+   await page.waitForFunction(()=>__mobileQA().ratio===3,{},{timeout:10000});
    assert.equal(await page.locator('#sheet').isVisible(),false);assert.equal(await page.locator('#displayControls').isVisible(),false);
    const q=await page.evaluate(()=>__mobileQA());assert.ok(q.free.h>780*.65);assert.equal(q.ratio,3);
    await page.screenshot({path:path.join(out,`${width}-${theme}-model.png`)});

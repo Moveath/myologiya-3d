@@ -1,0 +1,50 @@
+{
+  "priorReport": "research/stage4-closure-2026-10-16/source-availability.json",
+  "paths": [
+    {
+      "path": "research/cache/skull-microct/halle_skull.nrrd",
+      "existsNow": false
+    },
+    {
+      "path": "research/cache/skull-microct/halle_skull_segmented.nrrd",
+      "existsNow": false
+    },
+    {
+      "path": "research/cache/complete-temporal",
+      "existsNow": false
+    },
+    {
+      "path": "research/cache/temporal/spl-ear",
+      "existsNow": false
+    }
+  ],
+  "existingEvidence": [
+    {
+      "path": "research/stage4-closure-2026-10-16/head-bones-source-extract.glb",
+      "existsNow": true
+    },
+    {
+      "path": "research/stage4-closure-2026-10-16/head-bones-source-extract.provenance.json",
+      "existsNow": true
+    },
+    {
+      "path": "research/stage4-closure-2026-10-16/Ear-CT-256.nrrd.header",
+      "existsNow": true
+    },
+    {
+      "path": "research/stage4-closure-2026-10-16/Ear-seg-256.nrrd.header",
+      "existsNow": true
+    },
+    {
+      "path": "research/stage4-closure-2026-10-16/Model_140_Malleus_Bone.vtk",
+      "existsNow": true
+    },
+    {
+      "path": "research/stage4-closure-2026-10-16/Model_17_Stapes_Bone.vtk",
+      "existsNow": true
+    }
+  ],
+  "GLBRecoveryLimit": "Decoded cache reproduces published vertices/faces/transforms at their stored precision; quantization, prior decimation, voxel masks, specimen identity and original annotations cannot be inverted. No reconstructed geometry labelled as original.",
+  "newCTOrSegmentation": false,
+  "newBlenderContourSearch": false
+}

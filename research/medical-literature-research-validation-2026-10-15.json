@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-15",
+  "result": "passed",
+  "scope": "Skill structure, offline client checks and saved live API metadata; no anatomical geometry acceptance.",
+  "checks": [
+    "frontmatter_plain_scalar_subset",
+    "frontmatter_name_directory_description",
+    "compact_skill",
+    "skill_local_link",
+    "no_placeholders",
+    "python_syntax",
+    "empty_article_set",
+    "mixed_title_collective_author",
+    "no_invented_doi_year",
+    "retraction_flags_retained",
+    "error_payloads_rejected",
+    "bounded_429_retries",
+    "network_failure_no_secret_log",
+    "empty_search_no_fetch",
+    "existing_output_protected",
+    "invalid_pmid_rejected",
+    "live_pubmed-jugular-search-2026-10-15.json",
+    "live_pubmed-jugular-records-2026-10-15.json"
+  ],
+  "count": 18,
+  "skill_lines": 38,
+  "standard_quick_validate": {
+    "status": "blocked",
+    "reason": "ModuleNotFoundError: No module named yaml; PyYAML not installed"
+  },
+  "frontmatter_check": "Explicit two-field plain-scalar YAML subset; not the official PyYAML validator",
+  "live_api": {
+    "esearch_count": 210,
+    "records": 5,
+    "successful_requests": 3,
+    "sandbox_network_attempt": "failed; succeeded using authorized network execution"
+  },
+  "ncbi_contact": "No email invented, no registration email sent; regular-service contact registration not configured by this task.",
+  "registry_before": {
+    "проверена": 14,
+    "заблокирована": 44,
+    "требует проверки": 94,
+    "открыта": 34
+  },
+  "documents": {
+    "result": "passed",
+    "preserved_issue_ids": 186,
+    "status_counts": {
+      "проверена": 14,
+      "заблокирована": 44,
+      "требует проверки": 94,
+      "открыта": 34
+    },
+    "scientific_review_pending": 133,
+    "existing_closure_criteria": "unchanged",
+    "previous_log_entries": "preserved",
+    "local_links_checked": 458,
+    "stage_4_verified": 0,
+    "stage_4_total": 28,
+    "new_issues": 0,
+    "closed_this_task": 0
+  },
+  "skill_files_sha256": {
+    "SKILL.md": "c68ff7327d17d416fdda6d1e873b2eea02f6f08cebdb87b88545777b7a0045af",
+    "scripts/pubmed.py": "3e3e554fe4932434ade0c4db0029f5ad82333353a05555a5591835835d273f45"
+  }
+}

@@ -10,6 +10,7 @@ from collections import Counter
 from pathlib import Path
 
 from skull_whole_terms import TERMS, REFS, FUTURE, VIEWS, VARIANTS, GROUPS, NOTES, KOLESNIKOV_URL
+from make_shared_landmarks import all_linked_records as shared_landmark_instances
 
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT = ROOT / 'research/skull-whole-scope-audit.json'
@@ -26,6 +27,14 @@ def pair(name):
 
 def main():
     audit = json.loads(AUDIT.read_text(encoding='utf-8'))
+    shared_by_code = {}
+    for pin in shared_landmark_instances():
+        if not pin.get('concept','').startswith('skull-whole-'):
+            continue
+        code=pin.get('educationCode') or pin['c']
+        shared_by_code.setdefault(code, []).append(dict(
+            bone=pin.get('b') or pin['catalogueBones'][0], id=pin['id'], localization=pin.get('loc', 'unlocated'),
+            relatedBones=[r['bone'] for r in pin['relations']]))
     source_rows = sorted(audit['rows'], key=lambda row: row['code'])
     assert len(source_rows) == 97
     assert [r['code'] for r in source_rows] == [f'A02.1.00.{n:03}' for n in range(1, 98)]
@@ -174,6 +183,11 @@ def main():
         )
         if number in NOTES:
             row['note'] = NOTES[number]
+        if row['c'] in shared_by_code:
+            row['presentInMainPins'] = True
+            row['mainPinInstances'] = shared_by_code[row['c']]
+            original['present_in_current_pins'] = True
+            original['current_pin_instances'] = row['mainPinInstances']
         if number in VIEWS:
             row['geometry']['review'] = dict(
                 screenshot=f'build_head/skull_whole/jobs/{VIEWS[number]}.png',

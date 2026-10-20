@@ -9,8 +9,6 @@ import manifest_thorax as manifest
 ROOT = Path(__file__).resolve().parents[1]
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
-for name, destination in [('thorax.glb','thorax-glb.txt'), ('thorax_q.glb','thorax-q-glb.txt')]:
-    (ROOT/'site'/destination).write_text(base64.b64encode((ROOT/'build_thorax'/name).read_bytes()).decode('ascii'), encoding='ascii')
 meta = json.loads((ROOT/'build_thorax/meta.json').read_text(encoding='utf-8'))
 source = []
 for fid in sorted(set(manifest.all_ids())):
@@ -21,8 +19,12 @@ bones = {}
 for bone, fids in manifest.BONES.items():
     original = sum(len(trimesh.load(ROOT/'stl_thorax'/f'{fid}.stl', process=True).faces) for fid in fids)
     built = sum(row['faces'] for key,row in meta['parts'].items() if key == f'b|{bone}' or key.startswith(f'b|{bone}|'))
-    assert original == built, (bone, original, built)
+    if original != built:
+        raise ValueError((bone, original, built))
     bones[bone] = {'source_ids':fids, 'source_triangles':original, 'built_triangles':built, 'decimation':False}
+from package_geometry_guard import validate_candidates
+validate_candidates(ROOT, 'build_thorax/thorax_hi.glb', ['build_thorax/thorax.glb','build_thorax/thorax_q.glb'],
+                    {bone:row['source_triangles'] for bone,row in bones.items()})
 report = {
     'source':'BodyParts3D 3.0, The Database Center for Life Science (DBCLS)',
     'license':'CC BY-SA 2.1 Japan', 'license_url':'https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en',
@@ -30,9 +32,11 @@ report = {
     'processing':'Bone triangles retained before meshopt compression/quantization. Muscles and context simplified by build_glb.py. No synthetic structures.',
     'bones':bones, 'muscles':manifest.MUSCLES, 'context':manifest.CONTEXT, 'other':manifest.OTHER,
     'source_files':source, 'stats':meta['stats'],
-    'assets':{name:sha(ROOT/'site'/name) for name in ['thorax-glb.txt','thorax-q-glb.txt']},
+    'assets':{dest:hashlib.sha256(base64.b64encode((ROOT/'build_thorax'/name).read_bytes())).hexdigest() for name,dest in [('thorax.glb','thorax-glb.txt'),('thorax_q.glb','thorax-q-glb.txt')]},
     'geometry_complete_claim':False,
 }
+for name, destination in [('thorax.glb','thorax-glb.txt'), ('thorax_q.glb','thorax-q-glb.txt')]:
+    (ROOT/'site'/destination).write_text(base64.b64encode((ROOT/'build_thorax'/name).read_bytes()).decode('ascii'), encoding='ascii')
 (ROOT/'research/thorax-model-provenance.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 (ROOT/'site/LICENSE-THORAX.txt').write_text('''Thoracic model assets: thorax-glb.txt and thorax-q-glb.txt
 

@@ -90,5 +90,8 @@ const report={status:'passed',bones:bones.length,muscles:muscles.length,structur
   sourceFieldChecks:fieldChecks,nomenclatureChecks,unresolvedFields:unresolved,terms:pins.length,located:distances.length,
   maximumSurfaceDistanceMm:Math.max(...distances.map(d=>d.distanceMm)),distances,
   limitation:'Distance validates mesh correspondence only, not anatomical identity or completeness.'};
-await fs.writeFile(path.join(root,'verify/neck-data-geometry.json'),JSON.stringify(report,null,2)+'\n');
+const {createEvidenceRun}=await import('./evidence-run.mjs');
+const evidence=await createEvidenceRun(root,'neck-data-geometry');
+await evidence.write('neck-data-geometry.json',report);
+console.log('Evidence:',evidence.dir);
 console.log(JSON.stringify({...report,distances:undefined}));

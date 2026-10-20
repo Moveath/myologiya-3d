@@ -1,0 +1,75 @@
+{
+  "source": "site/head-q-glb.txt",
+  "sourceSha256": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b",
+  "coordinateTransform": "Three.js (x,y,z) to Blender (x,-z,y)",
+  "method": "nearest point on imported world-space triangles via mathutils.bvhtree",
+  "bones": {
+    "occipital": {
+      "meshes": 1,
+      "triangles": 27812
+    },
+    "temporal_right": {
+      "meshes": 1,
+      "triangles": 11274
+    },
+    "temporal_left": {
+      "meshes": 1,
+      "triangles": 11208
+    }
+  },
+  "candidates": [
+    {
+      "sourcePin": "head_temporal_right_A02_1_06_045",
+      "instanceId": "shared_jugular_foramen_right",
+      "bone": "temporal_right",
+      "p": [
+        -0.03777,
+        1.50995,
+        0.07946
+      ],
+      "n": [
+        -0.069,
+        -0.642,
+        -0.764
+      ],
+      "distanceMm": {
+        "occipital": 6.5392074175179005,
+        "temporal_right": 0.0011129083077321411,
+        "temporal_left": 52.273474633693695
+      },
+      "acceptedScope": "temporal_boundary_point",
+      "observation": "Existing temporal jugular-notch point lies on the temporal rim adjacent to the opening between temporal and occipital bones. Visible in the superior-posterior review; inferior views may occlude this rim. The occipital distance measures the gap to the other bone, not an error tolerance."
+    },
+    {
+      "sourcePin": "head_temporal_left_A02_1_06_045",
+      "instanceId": "shared_jugular_foramen_left",
+      "bone": "temporal_left",
+      "p": [
+        0.03647,
+        1.5099,
+        0.07951
+      ],
+      "n": [
+        0.102,
+        -0.573,
+        -0.813
+      ],
+      "distanceMm": {
+        "occipital": 6.4955176785588264,
+        "temporal_right": 52.20567435026169,
+        "temporal_left": 0.0025440897388762096
+      },
+      "acceptedScope": "temporal_boundary_point",
+      "observation": "Existing temporal jugular-notch point lies on the temporal rim adjacent to the opening between temporal and occipital bones. Visible in the superior-posterior review; inferior views may occlude this rim. The occipital distance measures the gap to the other bone, not an error tolerance."
+    }
+  ],
+  "date": "2026-10-15",
+  "tool": "Blender MCP execute_blender_code; Blender 5.2.2",
+  "scope": "Representative temporal boundary point only; not a lumen centre, full contour, or expert anatomical acceptance",
+  "views": [
+    "shots/shared-landmarks/jugular-inferior.png",
+    "shots/shared-landmarks/jugular-inferior-posterior.png",
+    "shots/shared-landmarks/jugular-superior.png",
+    "shots/shared-landmarks/jugular-superior-posterior.png"
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "source": "build_neck\\neck_hi.glb",
+  "sourceSha256": "db83a076558a0a48dd07858f07d5e2355e8420ab2b21b72a014bc02d12622f47",
+  "sourceUnchanged": true,
+  "originalScenePreserved": true,
+  "meshes": [
+    {
+      "bone": "hyoid",
+      "meshNames": [
+        "b|hyoid"
+      ],
+      "vertices": 2769,
+      "triangles": 5534,
+      "dimensionsMm": [
+        41.932701110839844,
+        34.84799575805664,
+        18.909931182861328
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "atlas",
+      "meshNames": [
+        "b|atlas"
+      ],
+      "vertices": 3082,
+      "triangles": 6172,
+      "dimensionsMm": [
+        84.30400848388672,
+        47.78720474243164,
+        19.41990852355957
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "axis",
+      "meshNames": [
+        "b|axis"
+      ],
+      "vertices": 3431,
+      "triangles": 6870,
+      "dimensionsMm": [
+        51.99039840698242,
+        51.142295837402344,
+        41.659950256347656
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "cervical_3",
+      "meshNames": [
+        "b|cervical_3"
+      ],
+      "vertices": 2635,
+      "triangles": 5278,
+      "dimensionsMm": [
+        54.990299224853516,
+        52.45709991455078,
+        25.87997817993164
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "cervical_4",
+      "meshNames": [
+        "b|cervical_4"
+      ],
+      "vertices": 2108,
+      "triangles": 4224,
+      "dimensionsMm": [
+        55.722198486328125,
+        51.16450500488281,
+        24.239898681640625
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "cervical_5",
+      "meshNames": [
+        "b|cervical_5"
+      ],
+      "vertices": 2373,
+      "triangles": 4754,
+      "dimensionsMm": [
+        58.569000244140625,
+        54.84810256958008,
+        21.98004722595215
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "cervical_6",
+      "meshNames": [
+        "b|cervical_6"
+      ],
+      "vertices": 3171,
+      "triangles": 6350,
+      "dimensionsMm": [
+        58.834903717041016,
+        61.97999954223633,
+        23.929954528808594
+      ],
+      "semanticSubregionsAccepted": false
+    },
+    {
+      "bone": "cervical_7",
+      "meshNames": [
+        "b|cervical_7"
+      ],
+      "vertices": 2607,
+      "triangles": 5222,
+      "dimensionsMm": [
+        66.34040069580078,
+        68.30260467529297,
+        26.999950408935547
+      ],
+      "semanticSubregionsAccepted": false
+    }
+  ],
+  "contextAnchors": [
+    {
+      "id": "neck_hyoid_A02_1_16_002",
+      "secondary": false,
+      "nearestSurfaceMm": 0.00035015310118069465,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "neck_atlas_A02_2_02_102",
+      "secondary": false,
+      "nearestSurfaceMm": 0.003996915893367259,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "neck_atlas_A02_2_02_102",
+      "secondary": true,
+      "nearestSurfaceMm": 0.0023956251880008494,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "neck_axis_A02_2_02_202",
+      "secondary": false,
+      "nearestSurfaceMm": 0.0012590387541422388,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "neck_cervical_6_A02_2_01_013",
+      "secondary": false,
+      "nearestSurfaceMm": 0.0037679778870369773,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "neck_cervical_7_A02_2_01_013",
+      "secondary": false,
+      "nearestSurfaceMm": 0.0022622207325184718,
+      "reuseForChildAccepted": false,
+      "anatomicalAcceptance": false
+    }
+  ],
+  "images": [
+    {
+      "bone": "atlas",
+      "view": "superior",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-atlas-superior.png"
+    },
+    {
+      "bone": "atlas",
+      "view": "inferior",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-atlas-inferior.png"
+    },
+    {
+      "bone": "axis",
+      "view": "anterior",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-axis-anterior.png"
+    },
+    {
+      "bone": "cervical_6",
+      "view": "oblique",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-cervical_6-oblique.png"
+    },
+    {
+      "bone": "cervical_7",
+      "view": "oblique",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-cervical_7-oblique.png"
+    },
+    {
+      "bone": "hyoid",
+      "view": "anterior",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-hyoid-anterior.png"
+    },
+    {
+      "bone": "hyoid",
+      "view": "posterior",
+      "file": "research\\evidence-runs\\stage5-neck-batch2-2026-10-17T09-34-16-669Z-UI5Ivn\\batch2-hyoid-posterior.png"
+    }
+  ],
+  "acceptedCoordinates": 0,
+  "acceptedExtents": 0
+}

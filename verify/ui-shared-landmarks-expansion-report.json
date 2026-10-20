@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-15",
+  "status": "passed",
+  "scope": "Shared anatomical landmark architecture and confirmed relations; not acceptance of every anatomical surface or pending candidate.",
+  "tools": {
+    "interactive": "Playwright MCP",
+    "geometry": "Blender MCP (see shared-expansion-geometry.json)",
+    "dependenciesInstalled": false,
+    "three": "0.170.0",
+    "bvh": "0.8.3"
+  },
+  "data": {
+    "reviewedInstances": 38,
+    "reviewedConcepts": 22,
+    "boneCardsChecked": 141,
+    "totalPins": 1805,
+    "unlocated": 479,
+    "suppressedUnverified": 3,
+    "preservedOriginalIDs": 1771,
+    "ownOccipitalTerms": 36,
+    "legacyShared": 2
+  },
+  "playwrightMCP": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "theme": "light",
+      "offset": 0,
+      "instances": 38,
+      "ownerCardEdges": 109,
+      "finalChecks": true,
+      "errors": []
+    },
+    "mobileBatches": [
+      {
+        "status": "passed",
+        "width": 390,
+        "theme": "dark",
+        "offset": 0,
+        "instances": 10,
+        "ownerCardEdges": 25,
+        "errors": []
+      },
+      {
+        "status": "passed",
+        "width": 390,
+        "theme": "dark",
+        "offset": 10,
+        "instances": 10,
+        "ownerCardEdges": 28,
+        "errors": []
+      },
+      {
+        "status": "passed",
+        "width": 390,
+        "theme": "dark",
+        "offset": 20,
+        "instances": 10,
+        "ownerCardEdges": 36,
+        "errors": []
+      },
+      {
+        "status": "passed",
+        "width": 390,
+        "theme": "dark",
+        "offset": 30,
+        "instances": 8,
+        "ownerCardEdges": 20,
+        "finalChecks": true,
+        "errors": []
+      }
+    ],
+    "mobileTotals": {
+      "width": 390,
+      "theme": "dark",
+      "instances": 38,
+      "ownerCardEdges": 109,
+      "status": "passed"
+    },
+    "jugularRegression": [
+      {
+        "width": 1280,
+        "theme": "dark",
+        "status": "passed",
+        "distances": [
+          {
+            "id": "shared_jugular_foramen_right",
+            "mm": 0.0011001809161905992
+          },
+          {
+            "id": "shared_jugular_foramen_left",
+            "mm": 0.0025881481444415006
+          }
+        ],
+        "errors": []
+      },
+      {
+        "width": 390,
+        "theme": "light",
+        "status": "passed",
+        "distances": [
+          {
+            "id": "shared_jugular_foramen_right",
+            "mm": 0.0011001809161905992
+          },
+          {
+            "id": "shared_jugular_foramen_left",
+            "mm": 0.0025881481444415006
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "checked": [
+      "One landmark object and one chip per related bone",
+      "All 109 confirmed bone-landmark edges",
+      "Stable selection while switching related bone",
+      "Unique search results and TA-code alias for clivus",
+      "Isolation and transparency of contributing bones",
+      "No marker for 32 new unlocated instances or 3 suppressed legacy coordinates",
+      "Jugular marker clicks, canvas raycasting, clipping and unlocated fallback",
+      "No horizontal overflow or console errors"
+    ],
+    "screenshots": [
+      "shots/shared-landmarks/390-dark-sinus.png",
+      "shots/shared-landmarks/390-dark-unlocated.png",
+      "shots/shared-landmarks/1280-light-sinus.png",
+      "shots/shared-landmarks/1280-light-unlocated.png"
+    ],
+    "visualInspection": "Mobile card and desktop shared relations inspected; no false coordinate markers added."
+  },
+  "existingRegression": {
+    "verify-atlas.mjs": {
+      "status": "passed",
+      "width": 1280,
+      "themes": [
+        "light",
+        "dark"
+      ]
+    },
+    "verify-navigation.mjs": {
+      "status": "passed",
+      "width": 1280,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "sections": 5,
+      "contextBonesAdded": 9
+    },
+    "verify-atlas-performance.mjs": {
+      "status": "passed",
+      "cases": 6,
+      "report": "verify/ui-atlas-performance-report.json"
+    },
+    "verify-mobile-layout.mjs": {
+      "status": "passed",
+      "widths": [
+        360,
+        390,
+        1280
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "report": "verify/mobile-layout.json",
+      "testFix": "Wait for restored pixel ratio instead of assuming completion after a fixed 700 ms; application render code unchanged."
+    },
+    "verify_head.py": {
+      "status": "passed",
+      "bones": 22,
+      "sourceRecords": 521
+    },
+    "verify_ta98.py": {
+      "status": "passed_with_known_discrepancies",
+      "terms": 762,
+      "knownDiscrepancies": 3,
+      "newDiscrepancies": 0
+    }
+  },
+  "integrityReport": "verify/shared-landmarks-expansion-integrity.json",
+  "limitations": [
+    "141 cards were structurally inventoried and candidates classified; this is not independent anatomical acceptance of all original descriptions and geometry.",
+    "38 skull terms and 17 other candidate positions/families remain pending, not 55 proven instances.",
+    "447 original records without coordinates remain; 32 new unlocated records bring the total to 479. Three legacy coordinates remain stored but their markers are suppressed.",
+    "verify_head_positions.py not run: trimesh is absent; no dependency was installed. Affected points were checked through Blender MCP.",
+    "Software Chromium/viewport emulation does not establish physical mobile-device performance.",
+    "A prior complete mobile MCP call exceeded its 300-second limit; all 109 edges subsequently passed in four batches. After resuming, the local server had stopped and was restarted; the failed connection was not counted as a test result.",
+    "New craniometric/orbital relations express reference anatomy; individual specimen variants and complete geometric boundaries are unverified."
+  ]
+}

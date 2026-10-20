@@ -1,0 +1,2097 @@
+{
+  "date": "2026-10-15",
+  "method": "Read-only VM of published data and JSON/accessor metadata of GLB; no mesh coordinates inspected or modified.",
+  "blender": {
+    "attempted": true,
+    "connected": false,
+    "error": "Could not connect to Blender. Make sure the Blender addon is running."
+  },
+  "counts": {
+    "bones": 150,
+    "muscles": 255,
+    "pins": 1805,
+    "handBones": 27,
+    "handEntries": 28
+  },
+  "bones": {
+    "scaphoid": {
+      "lat": "os scaphoideum",
+      "ru": "Ладьевидная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Проксимальный ряд запястья, лучевая сторона. Ломается чаще других костей запястья."
+    },
+    "lunate": {
+      "lat": "os lunatum",
+      "ru": "Полулунная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Проксимальный ряд запястья."
+    },
+    "triquetrum": {
+      "lat": "os triquetrum",
+      "ru": "Трёхгранная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Проксимальный ряд запястья."
+    },
+    "pisiform": {
+      "lat": "os pisiforme",
+      "ru": "Гороховидная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Проксимальный ряд запястья. Сесамовидная кость в сухожилии локтевого сгибателя запястья."
+    },
+    "trapezium": {
+      "lat": "os trapezium",
+      "ru": "Кость-трапеция",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Дистальный ряд запястья. Сочленяется с I пястной костью седловидным суставом."
+    },
+    "trapezoid": {
+      "lat": "os trapezoideum",
+      "ru": "Трапециевидная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Дистальный ряд запястья."
+    },
+    "capitate": {
+      "lat": "os capitatum",
+      "ru": "Головчатая кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Дистальный ряд запястья, самая крупная кость запястья."
+    },
+    "hamate": {
+      "lat": "os hamatum",
+      "ru": "Крючковидная кость",
+      "g": "b_carpus",
+      "sub": "hand",
+      "x": "Дистальный ряд запястья. Имеет крючок, к которому крепится удерживатель сгибателей."
+    },
+    "flexor_retinaculum": {
+      "lat": "retinaculum musculorum flexorum",
+      "ru": "Удерживатель сгибателей",
+      "g": "b_soft",
+      "sub": "hand",
+      "x": "Перекидывается над бороздой запястья и превращает её в запястный канал, где проходят сухожилия сгибателей и срединный нерв."
+    },
+    "metacarpal_1": {
+      "lat": "os metacarpi I",
+      "ru": "I пястная кость",
+      "g": "b_meta",
+      "sub": "hand",
+      "x": "Основание, тело и головка. Головка сочленяется с проксимальной фалангой большого пальца."
+    },
+    "phalanx_prox_1": {
+      "lat": "phalanx proximalis digiti I",
+      "ru": "Проксимальная фаланга большого пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "У большого пальца две фаланги: проксимальная и дистальная."
+    },
+    "phalanx_dist_1": {
+      "lat": "phalanx distalis digiti I",
+      "ru": "Дистальная фаланга большого пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Дистальная (ногтевая) фаланга с бугристостью дистальной фаланги."
+    },
+    "metacarpal_2": {
+      "lat": "os metacarpi II",
+      "ru": "II пястная кость",
+      "g": "b_meta",
+      "sub": "hand",
+      "x": "Основание, тело и головка. Головка сочленяется с проксимальной фалангой указательного пальца."
+    },
+    "phalanx_prox_2": {
+      "lat": "phalanx proximalis digiti II",
+      "ru": "Проксимальная фаланга указательного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Проксимальная (основная) фаланга."
+    },
+    "phalanx_mid_2": {
+      "lat": "phalanx media digiti II",
+      "ru": "Средняя фаланга указательного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Средняя фаланга."
+    },
+    "phalanx_dist_2": {
+      "lat": "phalanx distalis digiti II",
+      "ru": "Дистальная фаланга указательного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Дистальная (ногтевая) фаланга с бугристостью дистальной фаланги."
+    },
+    "metacarpal_3": {
+      "lat": "os metacarpi III",
+      "ru": "III пястная кость",
+      "g": "b_meta",
+      "sub": "hand",
+      "x": "Основание, тело и головка. Головка сочленяется с проксимальной фалангой среднего пальца."
+    },
+    "phalanx_prox_3": {
+      "lat": "phalanx proximalis digiti III",
+      "ru": "Проксимальная фаланга среднего пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Проксимальная (основная) фаланга."
+    },
+    "phalanx_mid_3": {
+      "lat": "phalanx media digiti III",
+      "ru": "Средняя фаланга среднего пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Средняя фаланга."
+    },
+    "phalanx_dist_3": {
+      "lat": "phalanx distalis digiti III",
+      "ru": "Дистальная фаланга среднего пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Дистальная (ногтевая) фаланга с бугристостью дистальной фаланги."
+    },
+    "metacarpal_4": {
+      "lat": "os metacarpi IV",
+      "ru": "IV пястная кость",
+      "g": "b_meta",
+      "sub": "hand",
+      "x": "Основание, тело и головка. Головка сочленяется с проксимальной фалангой безымянного пальца."
+    },
+    "phalanx_prox_4": {
+      "lat": "phalanx proximalis digiti IV",
+      "ru": "Проксимальная фаланга безымянного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Проксимальная (основная) фаланга."
+    },
+    "phalanx_mid_4": {
+      "lat": "phalanx media digiti IV",
+      "ru": "Средняя фаланга безымянного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Средняя фаланга."
+    },
+    "phalanx_dist_4": {
+      "lat": "phalanx distalis digiti IV",
+      "ru": "Дистальная фаланга безымянного пальца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Дистальная (ногтевая) фаланга с бугристостью дистальной фаланги."
+    },
+    "metacarpal_5": {
+      "lat": "os metacarpi V",
+      "ru": "V пястная кость",
+      "g": "b_meta",
+      "sub": "hand",
+      "x": "Основание, тело и головка. Головка сочленяется с проксимальной фалангой мизинца."
+    },
+    "phalanx_prox_5": {
+      "lat": "phalanx proximalis digiti V",
+      "ru": "Проксимальная фаланга мизинца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Проксимальная (основная) фаланга."
+    },
+    "phalanx_mid_5": {
+      "lat": "phalanx media digiti V",
+      "ru": "Средняя фаланга мизинца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Средняя фаланга."
+    },
+    "phalanx_dist_5": {
+      "lat": "phalanx distalis digiti V",
+      "ru": "Дистальная фаланга мизинца",
+      "g": "b_phal",
+      "sub": "hand",
+      "x": "Дистальная (ногтевая) фаланга с бугристостью дистальной фаланги."
+    },
+    "sesamoid_pedis": {
+      "lat": "ossa sesamoidea",
+      "ru": "Сесамовидные кости стопы",
+      "g": "b_toes",
+      "sub": "foot",
+      "x": "Две маленькие кости в сухожилиях короткого сгибателя большого пальца под головкой I плюсневой кости. Берут на себя нагрузку при отталкивании."
+    }
+  },
+  "pins": [
+    {
+      "b": "capitate",
+      "id": "carp_sulcus_carpi",
+      "t": "ta",
+      "c": "A02.4.08.014",
+      "ru": "Борозда запястья",
+      "lat": "sulcus carpi",
+      "x": "Продольная борозда, которую образуют ладонные поверхности всех костей запястья. Удерживатель сгибателей превращает её в запястный канал, где проходят сухожилия сгибателей пальцев и срединный нерв (сдавление нерва — синдром запястного канала).",
+      "p": [
+        -0.25651,
+        0.80203,
+        0.12289
+      ],
+      "n": [
+        0.487,
+        -0.076,
+        0.87
+      ],
+      "m": [],
+      "sh": [
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate"
+      ]
+    },
+    {
+      "b": "scaphoid",
+      "id": "carp_os_centrale",
+      "t": "ta",
+      "c": "A02.4.08.002",
+      "ru": "Центральная кость",
+      "lat": "os centrale",
+      "x": "Непостоянная добавочная кость между ладьевидной, трапециевидной и головчатой костями с тыльной стороны. У человека обычно срастается с ладьевидной костью ещё до рождения, отдельной встречается редко. На модели её нет — точка показывает, где она располагается.",
+      "p": [
+        -0.26405,
+        0.80663,
+        0.11404
+      ],
+      "n": [
+        0.664,
+        -0.698,
+        -0.268
+      ],
+      "m": [],
+      "inc": 1,
+      "sh": [
+        "scaphoid",
+        "lunate",
+        "triquetrum",
+        "pisiform",
+        "trapezium",
+        "trapezoid",
+        "capitate",
+        "hamate"
+      ]
+    },
+    {
+      "b": "metacarpal_1",
+      "id": "mc1_caput",
+      "t": "ta",
+      "c": "A02.4.09.004",
+      "ru": "Головка пястной кости",
+      "lat": "caput ossis metacarpi",
+      "x": "Головка I пястной кости. Сочленяется с проксимальной фалангой большого пальца; на ладонной стороне сустава лежат сесамовидные кости.",
+      "p": [
+        -0.30065,
+        0.77944,
+        0.14656
+      ],
+      "n": [
+        0.775,
+        0.539,
+        0.33
+      ],
+      "m": []
+    },
+    {
+      "b": "pisiform",
+      "id": "pisiform_apex",
+      "t": "att",
+      "ru": "Гороховидная кость: прикрепление и начало мышц",
+      "lat": "",
+      "x": "Сесамовидная кость в сухожилии локтевого сгибателя запястья, хорошо прощупывается у основания возвышения мизинца. От неё начинается мышца, отводящая мизинец. Отдельно названных образований у гороховидной кости в TA98 нет.",
+      "p": [
+        -0.23748,
+        0.80474,
+        0.13408
+      ],
+      "n": [
+        0.037,
+        0.105,
+        0.994
+      ],
+      "m": [
+        [
+          "flexor_carpi_ulnaris",
+          "i"
+        ],
+        [
+          "abductor_digiti_minimi",
+          "o"
+        ]
+      ]
+    },
+    {
+      "b": "flexor_retinaculum",
+      "id": "retinaculum_mid",
+      "t": "soft",
+      "ru": "Удерживатель сгибателей",
+      "lat": "retinaculum musculorum flexorum",
+      "x": "Перекидывается от бугорков ладьевидной кости и кости-трапеции к гороховидной кости и крючку крючковидной. Под ним — запястный канал, где проходят сухожилия сгибателей и срединный нерв.",
+      "p": [
+        -0.25225,
+        0.80596,
+        0.13639
+      ],
+      "n": [
+        0.097,
+        0.207,
+        0.973
+      ],
+      "m": [
+        [
+          "abductor_pollicis_brevis",
+          "o"
+        ],
+        [
+          "flexor_pollicis_brevis",
+          "o",
+          "sup"
+        ],
+        [
+          "opponens_pollicis",
+          "o"
+        ],
+        [
+          "abductor_digiti_minimi",
+          "o"
+        ],
+        [
+          "flexor_digiti_minimi_brevis",
+          "o"
+        ],
+        [
+          "opponens_digiti_minimi",
+          "o"
+        ]
+      ]
+    },
+    {
+      "b": "metatarsal_1",
+      "id": "mt1_caput",
+      "t": "ta",
+      "c": "A02.5.17.004",
+      "ru": "Головка плюсневой кости",
+      "lat": "caput ossis metatarsi",
+      "x": "Головка I плюсневой кости — опорная точка переднего отдела стопы; под ней лежат две сесамовидные кости.",
+      "p": [
+        -0.07276,
+        0.01765,
+        0.1757
+      ],
+      "n": [
+        -0.035,
+        0.812,
+        0.583
+      ],
+      "m": []
+    },
+    {
+      "b": "sesamoid_pedis",
+      "id": "sesamoid_plantar",
+      "t": "att",
+      "ru": "Сесамовидные кости — место прикрепления мышц большого пальца",
+      "lat": "",
+      "x": "Две маленькие кости под головкой I плюсневой кости, лежат в сухожилиях короткого сгибателя большого пальца.",
+      "p": [
+        -0.0761,
+        -0.00108,
+        0.16645
+      ],
+      "n": [
+        0.625,
+        -0.746,
+        -0.23
+      ],
+      "m": [
+        [
+          "flexor_hallucis_brevis",
+          "i"
+        ],
+        [
+          "adductor_hallucis",
+          "i"
+        ]
+      ]
+    }
+  ],
+  "muscles": {
+    "flexor_carpi_ulnaris": {
+      "lat": "m. flexor carpi ulnaris",
+      "ru": "Локтевой сгибатель запястья",
+      "g": "fa_ant",
+      "d": 1,
+      "v": "antmed",
+      "L": "поверхностный слой",
+      "parts": {
+        "hum": {
+          "ru": "Плечевая головка",
+          "lat": "caput humerale",
+          "o": "Медиальный надмыщелок плечевой кости."
+        },
+        "uln": {
+          "ru": "Локтевая головка",
+          "lat": "caput ulnare",
+          "o": "Локтевой отросток и задний край локтевой кости."
+        }
+      },
+      "o": "Плечевая головка — медиальный надмыщелок плечевой кости. Локтевая головка — локтевой отросток и задний край локтевой кости.",
+      "i": "Гороховидная кость; через связки — крючок крючковидной кости и основание V пястной кости.",
+      "a": "Сгибает кисть и приводит её (отводит в локтевую сторону).",
+      "n": "Локтевой нерв (n. ulnaris).",
+      "s": "Мышечные ветви локтевой артерии.",
+      "note": "Локтевой нерв входит на предплечье между двумя головками."
+    },
+    "flexor_pollicis_brevis": {
+      "lat": "m. flexor pollicis brevis",
+      "ru": "Короткий сгибатель большого пальца кисти",
+      "g": "hand_thenar",
+      "d": 1,
+      "v": "ant",
+      "L": "поверхностная",
+      "parts": {
+        "sup": {
+          "ru": "Поверхностная головка",
+          "lat": "caput superficiale",
+          "o": "Удерживатель сгибателей, бугорок кости-трапеции.",
+          "n": "Срединный нерв (n. medianus)."
+        },
+        "deep": {
+          "ru": "Глубокая головка",
+          "lat": "caput profundum",
+          "o": "Трапециевидная и головчатая кости.",
+          "n": "Локтевой нерв (глубокая ветвь)."
+        }
+      },
+      "o": "Поверхностная головка — удерживатель сгибателей и бугорок кости-трапеции. Глубокая головка — трапециевидная и головчатая кости.",
+      "i": "Основание проксимальной фаланги большого пальца (через латеральную сесамовидную кость).",
+      "a": "Сгибает проксимальную фалангу большого пальца.",
+      "n": "Поверхностная головка — срединный нерв; глубокая головка — локтевой нерв (глубокая ветвь).",
+      "s": "Поверхностная ладонная ветвь лучевой артерии, артерия большого пальца кисти."
+    }
+  },
+  "bp": [
+    "FMA24441\tright pisiform",
+    "FMA24442\tleft pisiform",
+    "FMA45097\tsesamoid bone of right foot",
+    "FMA45098\tsesamoid bone of left foot"
+  ],
+  "skeleton": [
+    [
+      "FMA24441",
+      "right pisiform",
+      "arm"
+    ],
+    [
+      "FMA24442",
+      "left pisiform",
+      "arm"
+    ],
+    [
+      "FMA45097",
+      "sesamoid bone of right foot",
+      "leg"
+    ],
+    [
+      "FMA45098",
+      "sesamoid bone of left foot",
+      "leg"
+    ]
+  ],
+  "glbs": {
+    "site/arm-glb.txt": {
+      "fileBytes": 2038268,
+      "fileSHA256": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+      "decodedBytes": 1528700,
+      "decodedSHA256": "32631627d3148fb3a3559f41c38a100ae42f4f3d3bfbfe732e05c1a2703ff714",
+      "extensions": [
+        "KHR_mesh_quantization",
+        "EXT_meshopt_compression"
+      ],
+      "nodeCount": 280,
+      "meshCount": 140,
+      "meshNodeCount": 140,
+      "boneNodes": [
+        {
+          "node": 64,
+          "path": [
+            "b|clavicle"
+          ],
+          "mesh": 64,
+          "primitives": [
+            {
+              "vertices": 2558,
+              "indices": 15336,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 65,
+          "path": [
+            "b|scapula"
+          ],
+          "mesh": 65,
+          "primitives": [
+            {
+              "vertices": 10002,
+              "indices": 60000,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 66,
+          "path": [
+            "b|humerus"
+          ],
+          "mesh": 66,
+          "primitives": [
+            {
+              "vertices": 8136,
+              "indices": 48804,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 67,
+          "path": [
+            "b|radius"
+          ],
+          "mesh": 67,
+          "primitives": [
+            {
+              "vertices": 1404,
+              "indices": 8412,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 68,
+          "path": [
+            "b|ulna"
+          ],
+          "mesh": 68,
+          "primitives": [
+            {
+              "vertices": 1798,
+              "indices": 10776,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 69,
+          "path": [
+            "b|scaphoid"
+          ],
+          "mesh": 69,
+          "primitives": [
+            {
+              "vertices": 539,
+              "indices": 3222,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 70,
+          "path": [
+            "b|lunate"
+          ],
+          "mesh": 70,
+          "primitives": [
+            {
+              "vertices": 434,
+              "indices": 2592,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 71,
+          "path": [
+            "b|triquetrum"
+          ],
+          "mesh": 71,
+          "primitives": [
+            {
+              "vertices": 354,
+              "indices": 2112,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 72,
+          "path": [
+            "b|pisiform"
+          ],
+          "mesh": 72,
+          "primitives": [
+            {
+              "vertices": 200,
+              "indices": 1188,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 73,
+          "path": [
+            "b|trapezium"
+          ],
+          "mesh": 73,
+          "primitives": [
+            {
+              "vertices": 515,
+              "indices": 3078,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 74,
+          "path": [
+            "b|trapezoid"
+          ],
+          "mesh": 74,
+          "primitives": [
+            {
+              "vertices": 310,
+              "indices": 1848,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 75,
+          "path": [
+            "b|capitate"
+          ],
+          "mesh": 75,
+          "primitives": [
+            {
+              "vertices": 644,
+              "indices": 3852,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 76,
+          "path": [
+            "b|hamate"
+          ],
+          "mesh": 76,
+          "primitives": [
+            {
+              "vertices": 577,
+              "indices": 3450,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 77,
+          "path": [
+            "b|metacarpal_1"
+          ],
+          "mesh": 77,
+          "primitives": [
+            {
+              "vertices": 1219,
+              "indices": 7302,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 78,
+          "path": [
+            "b|metacarpal_2"
+          ],
+          "mesh": 78,
+          "primitives": [
+            {
+              "vertices": 1611,
+              "indices": 9654,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 79,
+          "path": [
+            "b|metacarpal_3"
+          ],
+          "mesh": 79,
+          "primitives": [
+            {
+              "vertices": 1511,
+              "indices": 9054,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 80,
+          "path": [
+            "b|metacarpal_4"
+          ],
+          "mesh": 80,
+          "primitives": [
+            {
+              "vertices": 1155,
+              "indices": 6918,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 81,
+          "path": [
+            "b|metacarpal_5"
+          ],
+          "mesh": 81,
+          "primitives": [
+            {
+              "vertices": 1091,
+              "indices": 6534,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 82,
+          "path": [
+            "b|phalanx_prox_1"
+          ],
+          "mesh": 82,
+          "primitives": [
+            {
+              "vertices": 688,
+              "indices": 4104,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 83,
+          "path": [
+            "b|phalanx_prox_2"
+          ],
+          "mesh": 83,
+          "primitives": [
+            {
+              "vertices": 834,
+              "indices": 4992,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 84,
+          "path": [
+            "b|phalanx_prox_3"
+          ],
+          "mesh": 84,
+          "primitives": [
+            {
+              "vertices": 986,
+              "indices": 5904,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 85,
+          "path": [
+            "b|phalanx_prox_4"
+          ],
+          "mesh": 85,
+          "primitives": [
+            {
+              "vertices": 812,
+              "indices": 4860,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 86,
+          "path": [
+            "b|phalanx_prox_5"
+          ],
+          "mesh": 86,
+          "primitives": [
+            {
+              "vertices": 606,
+              "indices": 3624,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 87,
+          "path": [
+            "b|phalanx_mid_2"
+          ],
+          "mesh": 87,
+          "primitives": [
+            {
+              "vertices": 572,
+              "indices": 3420,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 88,
+          "path": [
+            "b|phalanx_mid_3"
+          ],
+          "mesh": 88,
+          "primitives": [
+            {
+              "vertices": 740,
+              "indices": 4428,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 89,
+          "path": [
+            "b|phalanx_mid_4"
+          ],
+          "mesh": 89,
+          "primitives": [
+            {
+              "vertices": 677,
+              "indices": 4050,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 90,
+          "path": [
+            "b|phalanx_mid_5"
+          ],
+          "mesh": 90,
+          "primitives": [
+            {
+              "vertices": 452,
+              "indices": 2700,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 91,
+          "path": [
+            "b|phalanx_dist_1"
+          ],
+          "mesh": 91,
+          "primitives": [
+            {
+              "vertices": 520,
+              "indices": 3120,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 92,
+          "path": [
+            "b|phalanx_dist_2"
+          ],
+          "mesh": 92,
+          "primitives": [
+            {
+              "vertices": 330,
+              "indices": 1968,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 93,
+          "path": [
+            "b|phalanx_dist_3"
+          ],
+          "mesh": 93,
+          "primitives": [
+            {
+              "vertices": 322,
+              "indices": 1920,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 94,
+          "path": [
+            "b|phalanx_dist_4"
+          ],
+          "mesh": 94,
+          "primitives": [
+            {
+              "vertices": 228,
+              "indices": 1356,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 95,
+          "path": [
+            "b|phalanx_dist_5"
+          ],
+          "mesh": 95,
+          "primitives": [
+            {
+              "vertices": 237,
+              "indices": 1398,
+              "mode": 4
+            }
+          ]
+        }
+      ],
+      "contextNodes": [
+        {
+          "node": 98,
+          "path": [
+            "c|FMA7486"
+          ]
+        },
+        {
+          "node": 99,
+          "path": [
+            "c|FMA7487"
+          ]
+        },
+        {
+          "node": 100,
+          "path": [
+            "c|FMA7488"
+          ]
+        },
+        {
+          "node": 101,
+          "path": [
+            "c|FMA7857"
+          ]
+        },
+        {
+          "node": 102,
+          "path": [
+            "c|FMA7882"
+          ]
+        },
+        {
+          "node": 103,
+          "path": [
+            "c|FMA7909"
+          ]
+        },
+        {
+          "node": 104,
+          "path": [
+            "c|FMA7957"
+          ]
+        },
+        {
+          "node": 105,
+          "path": [
+            "c|FMA8066"
+          ]
+        },
+        {
+          "node": 106,
+          "path": [
+            "c|FMA8175"
+          ]
+        },
+        {
+          "node": 107,
+          "path": [
+            "c|FMA8229"
+          ]
+        },
+        {
+          "node": 108,
+          "path": [
+            "c|FMA8283"
+          ]
+        },
+        {
+          "node": 109,
+          "path": [
+            "c|FMA8364"
+          ]
+        },
+        {
+          "node": 110,
+          "path": [
+            "c|FMA8445"
+          ]
+        },
+        {
+          "node": 111,
+          "path": [
+            "c|FMA8531"
+          ]
+        },
+        {
+          "node": 112,
+          "path": [
+            "c|FMA8533"
+          ]
+        },
+        {
+          "node": 113,
+          "path": [
+            "c|FMA7875"
+          ]
+        },
+        {
+          "node": 114,
+          "path": [
+            "c|FMA7886"
+          ]
+        },
+        {
+          "node": 115,
+          "path": [
+            "c|FMA7913"
+          ]
+        },
+        {
+          "node": 116,
+          "path": [
+            "c|FMA7976"
+          ]
+        },
+        {
+          "node": 117,
+          "path": [
+            "c|FMA8070"
+          ]
+        },
+        {
+          "node": 118,
+          "path": [
+            "c|FMA8194"
+          ]
+        },
+        {
+          "node": 119,
+          "path": [
+            "c|FMA8248"
+          ]
+        },
+        {
+          "node": 120,
+          "path": [
+            "c|BP28"
+          ]
+        },
+        {
+          "node": 121,
+          "path": [
+            "c|FMA12519"
+          ]
+        },
+        {
+          "node": 122,
+          "path": [
+            "c|FMA12520"
+          ]
+        },
+        {
+          "node": 123,
+          "path": [
+            "c|FMA12521"
+          ]
+        },
+        {
+          "node": 124,
+          "path": [
+            "c|FMA12522"
+          ]
+        },
+        {
+          "node": 125,
+          "path": [
+            "c|FMA12523"
+          ]
+        },
+        {
+          "node": 126,
+          "path": [
+            "c|FMA12524"
+          ]
+        },
+        {
+          "node": 127,
+          "path": [
+            "c|FMA12525"
+          ]
+        },
+        {
+          "node": 128,
+          "path": [
+            "c|FMA9165"
+          ]
+        },
+        {
+          "node": 129,
+          "path": [
+            "c|FMA9187"
+          ]
+        },
+        {
+          "node": 130,
+          "path": [
+            "c|FMA9209"
+          ]
+        },
+        {
+          "node": 131,
+          "path": [
+            "c|FMA9248"
+          ]
+        },
+        {
+          "node": 132,
+          "path": [
+            "c|FMA9922"
+          ]
+        },
+        {
+          "node": 133,
+          "path": [
+            "c|FMA9945"
+          ]
+        },
+        {
+          "node": 134,
+          "path": [
+            "c|FMA9968"
+          ]
+        },
+        {
+          "node": 135,
+          "path": [
+            "c|FMA9991"
+          ]
+        },
+        {
+          "node": 136,
+          "path": [
+            "c|FMA10014"
+          ]
+        },
+        {
+          "node": 137,
+          "path": [
+            "c|FMA10037"
+          ]
+        },
+        {
+          "node": 138,
+          "path": [
+            "c|FMA10059"
+          ]
+        },
+        {
+          "node": 139,
+          "path": [
+            "c|FMA10081"
+          ]
+        }
+      ],
+      "unmappedMeshNodes": [],
+      "sesamoidNameMatches": []
+    },
+    "site/arm-q-glb.txt": {
+      "fileBytes": 6003096,
+      "fileSHA256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "decodedBytes": 4502320,
+      "decodedSHA256": "98bd65e0977d4b033f935adc8cdea3010a024582bec59ac4cf67984a893abe02",
+      "extensions": [
+        "KHR_mesh_quantization"
+      ],
+      "nodeCount": 280,
+      "meshCount": 140,
+      "meshNodeCount": 140,
+      "boneNodes": [
+        {
+          "node": 64,
+          "path": [
+            "b|clavicle"
+          ],
+          "mesh": 64,
+          "primitives": [
+            {
+              "vertices": 2558,
+              "indices": 15336,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 65,
+          "path": [
+            "b|scapula"
+          ],
+          "mesh": 65,
+          "primitives": [
+            {
+              "vertices": 10002,
+              "indices": 60000,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 66,
+          "path": [
+            "b|humerus"
+          ],
+          "mesh": 66,
+          "primitives": [
+            {
+              "vertices": 8136,
+              "indices": 48804,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 67,
+          "path": [
+            "b|radius"
+          ],
+          "mesh": 67,
+          "primitives": [
+            {
+              "vertices": 1404,
+              "indices": 8412,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 68,
+          "path": [
+            "b|ulna"
+          ],
+          "mesh": 68,
+          "primitives": [
+            {
+              "vertices": 1798,
+              "indices": 10776,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 69,
+          "path": [
+            "b|scaphoid"
+          ],
+          "mesh": 69,
+          "primitives": [
+            {
+              "vertices": 539,
+              "indices": 3222,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 70,
+          "path": [
+            "b|lunate"
+          ],
+          "mesh": 70,
+          "primitives": [
+            {
+              "vertices": 434,
+              "indices": 2592,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 71,
+          "path": [
+            "b|triquetrum"
+          ],
+          "mesh": 71,
+          "primitives": [
+            {
+              "vertices": 354,
+              "indices": 2112,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 72,
+          "path": [
+            "b|pisiform"
+          ],
+          "mesh": 72,
+          "primitives": [
+            {
+              "vertices": 200,
+              "indices": 1188,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 73,
+          "path": [
+            "b|trapezium"
+          ],
+          "mesh": 73,
+          "primitives": [
+            {
+              "vertices": 515,
+              "indices": 3078,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 74,
+          "path": [
+            "b|trapezoid"
+          ],
+          "mesh": 74,
+          "primitives": [
+            {
+              "vertices": 310,
+              "indices": 1848,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 75,
+          "path": [
+            "b|capitate"
+          ],
+          "mesh": 75,
+          "primitives": [
+            {
+              "vertices": 644,
+              "indices": 3852,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 76,
+          "path": [
+            "b|hamate"
+          ],
+          "mesh": 76,
+          "primitives": [
+            {
+              "vertices": 577,
+              "indices": 3450,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 77,
+          "path": [
+            "b|metacarpal_1"
+          ],
+          "mesh": 77,
+          "primitives": [
+            {
+              "vertices": 1219,
+              "indices": 7302,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 78,
+          "path": [
+            "b|metacarpal_2"
+          ],
+          "mesh": 78,
+          "primitives": [
+            {
+              "vertices": 1611,
+              "indices": 9654,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 79,
+          "path": [
+            "b|metacarpal_3"
+          ],
+          "mesh": 79,
+          "primitives": [
+            {
+              "vertices": 1511,
+              "indices": 9054,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 80,
+          "path": [
+            "b|metacarpal_4"
+          ],
+          "mesh": 80,
+          "primitives": [
+            {
+              "vertices": 1155,
+              "indices": 6918,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 81,
+          "path": [
+            "b|metacarpal_5"
+          ],
+          "mesh": 81,
+          "primitives": [
+            {
+              "vertices": 1091,
+              "indices": 6534,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 82,
+          "path": [
+            "b|phalanx_prox_1"
+          ],
+          "mesh": 82,
+          "primitives": [
+            {
+              "vertices": 688,
+              "indices": 4104,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 83,
+          "path": [
+            "b|phalanx_prox_2"
+          ],
+          "mesh": 83,
+          "primitives": [
+            {
+              "vertices": 834,
+              "indices": 4992,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 84,
+          "path": [
+            "b|phalanx_prox_3"
+          ],
+          "mesh": 84,
+          "primitives": [
+            {
+              "vertices": 986,
+              "indices": 5904,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 85,
+          "path": [
+            "b|phalanx_prox_4"
+          ],
+          "mesh": 85,
+          "primitives": [
+            {
+              "vertices": 812,
+              "indices": 4860,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 86,
+          "path": [
+            "b|phalanx_prox_5"
+          ],
+          "mesh": 86,
+          "primitives": [
+            {
+              "vertices": 606,
+              "indices": 3624,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 87,
+          "path": [
+            "b|phalanx_mid_2"
+          ],
+          "mesh": 87,
+          "primitives": [
+            {
+              "vertices": 572,
+              "indices": 3420,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 88,
+          "path": [
+            "b|phalanx_mid_3"
+          ],
+          "mesh": 88,
+          "primitives": [
+            {
+              "vertices": 740,
+              "indices": 4428,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 89,
+          "path": [
+            "b|phalanx_mid_4"
+          ],
+          "mesh": 89,
+          "primitives": [
+            {
+              "vertices": 677,
+              "indices": 4050,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 90,
+          "path": [
+            "b|phalanx_mid_5"
+          ],
+          "mesh": 90,
+          "primitives": [
+            {
+              "vertices": 452,
+              "indices": 2700,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 91,
+          "path": [
+            "b|phalanx_dist_1"
+          ],
+          "mesh": 91,
+          "primitives": [
+            {
+              "vertices": 520,
+              "indices": 3120,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 92,
+          "path": [
+            "b|phalanx_dist_2"
+          ],
+          "mesh": 92,
+          "primitives": [
+            {
+              "vertices": 330,
+              "indices": 1968,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 93,
+          "path": [
+            "b|phalanx_dist_3"
+          ],
+          "mesh": 93,
+          "primitives": [
+            {
+              "vertices": 322,
+              "indices": 1920,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 94,
+          "path": [
+            "b|phalanx_dist_4"
+          ],
+          "mesh": 94,
+          "primitives": [
+            {
+              "vertices": 228,
+              "indices": 1356,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 95,
+          "path": [
+            "b|phalanx_dist_5"
+          ],
+          "mesh": 95,
+          "primitives": [
+            {
+              "vertices": 237,
+              "indices": 1398,
+              "mode": 4
+            }
+          ]
+        }
+      ],
+      "contextNodes": [
+        {
+          "node": 98,
+          "path": [
+            "c|FMA7486"
+          ]
+        },
+        {
+          "node": 99,
+          "path": [
+            "c|FMA7487"
+          ]
+        },
+        {
+          "node": 100,
+          "path": [
+            "c|FMA7488"
+          ]
+        },
+        {
+          "node": 101,
+          "path": [
+            "c|FMA7857"
+          ]
+        },
+        {
+          "node": 102,
+          "path": [
+            "c|FMA7882"
+          ]
+        },
+        {
+          "node": 103,
+          "path": [
+            "c|FMA7909"
+          ]
+        },
+        {
+          "node": 104,
+          "path": [
+            "c|FMA7957"
+          ]
+        },
+        {
+          "node": 105,
+          "path": [
+            "c|FMA8066"
+          ]
+        },
+        {
+          "node": 106,
+          "path": [
+            "c|FMA8175"
+          ]
+        },
+        {
+          "node": 107,
+          "path": [
+            "c|FMA8229"
+          ]
+        },
+        {
+          "node": 108,
+          "path": [
+            "c|FMA8283"
+          ]
+        },
+        {
+          "node": 109,
+          "path": [
+            "c|FMA8364"
+          ]
+        },
+        {
+          "node": 110,
+          "path": [
+            "c|FMA8445"
+          ]
+        },
+        {
+          "node": 111,
+          "path": [
+            "c|FMA8531"
+          ]
+        },
+        {
+          "node": 112,
+          "path": [
+            "c|FMA8533"
+          ]
+        },
+        {
+          "node": 113,
+          "path": [
+            "c|FMA7875"
+          ]
+        },
+        {
+          "node": 114,
+          "path": [
+            "c|FMA7886"
+          ]
+        },
+        {
+          "node": 115,
+          "path": [
+            "c|FMA7913"
+          ]
+        },
+        {
+          "node": 116,
+          "path": [
+            "c|FMA7976"
+          ]
+        },
+        {
+          "node": 117,
+          "path": [
+            "c|FMA8070"
+          ]
+        },
+        {
+          "node": 118,
+          "path": [
+            "c|FMA8194"
+          ]
+        },
+        {
+          "node": 119,
+          "path": [
+            "c|FMA8248"
+          ]
+        },
+        {
+          "node": 120,
+          "path": [
+            "c|BP28"
+          ]
+        },
+        {
+          "node": 121,
+          "path": [
+            "c|FMA12519"
+          ]
+        },
+        {
+          "node": 122,
+          "path": [
+            "c|FMA12520"
+          ]
+        },
+        {
+          "node": 123,
+          "path": [
+            "c|FMA12521"
+          ]
+        },
+        {
+          "node": 124,
+          "path": [
+            "c|FMA12522"
+          ]
+        },
+        {
+          "node": 125,
+          "path": [
+            "c|FMA12523"
+          ]
+        },
+        {
+          "node": 126,
+          "path": [
+            "c|FMA12524"
+          ]
+        },
+        {
+          "node": 127,
+          "path": [
+            "c|FMA12525"
+          ]
+        },
+        {
+          "node": 128,
+          "path": [
+            "c|FMA9165"
+          ]
+        },
+        {
+          "node": 129,
+          "path": [
+            "c|FMA9187"
+          ]
+        },
+        {
+          "node": 130,
+          "path": [
+            "c|FMA9209"
+          ]
+        },
+        {
+          "node": 131,
+          "path": [
+            "c|FMA9248"
+          ]
+        },
+        {
+          "node": 132,
+          "path": [
+            "c|FMA9922"
+          ]
+        },
+        {
+          "node": 133,
+          "path": [
+            "c|FMA9945"
+          ]
+        },
+        {
+          "node": 134,
+          "path": [
+            "c|FMA9968"
+          ]
+        },
+        {
+          "node": 135,
+          "path": [
+            "c|FMA9991"
+          ]
+        },
+        {
+          "node": 136,
+          "path": [
+            "c|FMA10014"
+          ]
+        },
+        {
+          "node": 137,
+          "path": [
+            "c|FMA10037"
+          ]
+        },
+        {
+          "node": 138,
+          "path": [
+            "c|FMA10059"
+          ]
+        },
+        {
+          "node": 139,
+          "path": [
+            "c|FMA10081"
+          ]
+        }
+      ],
+      "unmappedMeshNodes": [],
+      "sesamoidNameMatches": []
+    },
+    "site/arm-extra-glb.txt": {
+      "fileBytes": 679024,
+      "fileSHA256": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+      "decodedBytes": 509268,
+      "decodedSHA256": "d7dabdf52108d287f150c6c74f67b1a4a7d1748e9c8f96f7f92d6906ddbfcfb5",
+      "extensions": [
+        "KHR_mesh_quantization",
+        "EXT_meshopt_compression"
+      ],
+      "nodeCount": 6,
+      "meshCount": 3,
+      "meshNodeCount": 3,
+      "boneNodes": [
+        {
+          "node": 0,
+          "path": [
+            "b|clavicle_left"
+          ],
+          "mesh": 0,
+          "primitives": [
+            {
+              "vertices": 2572,
+              "indices": 15420,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 1,
+          "path": [
+            "b|scapula_left"
+          ],
+          "mesh": 1,
+          "primitives": [
+            {
+              "vertices": 60910,
+              "indices": 365448,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 2,
+          "path": [
+            "b|humerus_left"
+          ],
+          "mesh": 2,
+          "primitives": [
+            {
+              "vertices": 8248,
+              "indices": 49476,
+              "mode": 4
+            }
+          ]
+        }
+      ],
+      "contextNodes": [],
+      "unmappedMeshNodes": [],
+      "sesamoidNameMatches": []
+    },
+    "site/arm-extra-q-glb.txt": {
+      "fileBytes": 2298156,
+      "fileSHA256": "042946c324e5b3033572674bf7a0d9ab3947b5c7697da9113d9783cee931cc40",
+      "decodedBytes": 1723616,
+      "decodedSHA256": "fb849924322783a318bf53abcdc0f60b1de51d0ea7380c43ff4bcf03c649ea42",
+      "extensions": [
+        "KHR_mesh_quantization"
+      ],
+      "nodeCount": 6,
+      "meshCount": 3,
+      "meshNodeCount": 3,
+      "boneNodes": [
+        {
+          "node": 0,
+          "path": [
+            "b|clavicle_left"
+          ],
+          "mesh": 0,
+          "primitives": [
+            {
+              "vertices": 2572,
+              "indices": 15420,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 1,
+          "path": [
+            "b|scapula_left"
+          ],
+          "mesh": 1,
+          "primitives": [
+            {
+              "vertices": 60910,
+              "indices": 365448,
+              "mode": 4
+            }
+          ]
+        },
+        {
+          "node": 2,
+          "path": [
+            "b|humerus_left"
+          ],
+          "mesh": 2,
+          "primitives": [
+            {
+              "vertices": 8248,
+              "indices": 49476,
+              "mode": 4
+            }
+          ]
+        }
+      ],
+      "contextNodes": [],
+      "unmappedMeshNodes": [],
+      "sesamoidNameMatches": []
+    }
+  },
+  "protectedFiles": {
+    "site/data.js": "35b595d0df8e437ca4865bd4abf87524e3eacc19c2015895e5943fc394c07cd2",
+    "site/data-leg.js": "4343fd9ba03843138a6400e1ece4218c7107013e243500dcc6f786c3957690f0",
+    "site/data-head.js": "d9516de651fd7d72d17d241d9a6f731aea81837ee527948142d70a6ca19017d1",
+    "site/data-neck.js": "70c566e9ac12700dc3d2eb226218039e6a043a89e8781d79f0f45bf299a4b554",
+    "site/data-thorax.js": "31024673340848508d49e121a9586d215168d3a1ac97cb39aa2df0a393020ddc",
+    "site/data-context-bones.js": "3fe596f5d480952fb72980f8b0ae9da424e5ee9b476a27fb343982b406bea281",
+    "site/pins.js": "e3a67652c4f05a3493025a35e583198eff644e0dafcef3be56a848ce653ceb88",
+    "site/pins-leg.js": "da1defb712220182475cfa34ffd755e925792bc24e1d7bc96ed37d5b996fed95",
+    "site/pins-head.js": "4e340d03efb8f7ec3f90230f58a5f152671077924d8e725d1d2ae0a903e6c640",
+    "site/pins-neck.js": "470a15126028990448ce27fcaeeba92cfcc23e4992d404997aca0e041343acb9",
+    "site/pins-thorax.js": "9e872680e3065428640c9c7c721c7bbe3458d832e72a0c1de80ae73285b9be13",
+    "site/pins-context-bones.js": "195586211f51c55050401c8651a923c92511cbc190c0eaee9d46de98e2d52470",
+    "site/pins-shared.js": "c66b868588e1cf9797e377abc6675da2ac7c817e5749bff27cc1009552ffd551",
+    "scripts/manifest.py": "c635bcbf5ae33a930a4b1e8b49aae833c552ced039611990809f01a7d5bf92de",
+    "scripts/manifest_leg.py": "ad87e31e65be9f6614df4ee03435780141d4f990cba1ab0aae93bbb00a835bb4",
+    "scripts/build_glb.py": "3de04197475da35622fc275f0017140e137ad9ff4ca597134f3e487b305361d3",
+    "scripts/ta98.py": "a0ac1285c1f4918416479e2fd80369c959a748a2ee1e53dd22dd7ab38382b1c6",
+    "scripts/make_pins.py": "c8f7c77db6d63253a2dfc6d0e9510ca8ad8212e7192ba843589b29c966bab7f9",
+    "bp/all_named.tsv": "48d8920b1bdff802b89f1208fb09098d5da5324d4b64f9dcabf797d65ccffd5a",
+    "skeleton_parts.json": "684043b1381bb857b7231928825c38822a0bfc9bcdbcc19c4b032f1954187c39",
+    "site/arm-glb.txt": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+    "site/arm-q-glb.txt": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+    "site/arm-extra-glb.txt": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+    "site/arm-extra-q-glb.txt": "042946c324e5b3033572674bf7a0d9ab3947b5c7697da9113d9783cee931cc40"
+  },
+  "limitations": [
+    "No coordinate, contour, component or topology acceptance: Blender MCP unavailable.",
+    "No separate named hand sesamoids except pisiform in inspected catalog and arm GLB metadata; unidentified embedded components are not excluded.",
+    "Missing source arm STL/hi-GLB not recreated; no anatomy/model edits."
+  ]
+}

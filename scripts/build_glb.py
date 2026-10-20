@@ -3,10 +3,14 @@
 three.js frame: x = bp.x (body right is -x), y = bp.z (up), z = -bp.y (anterior), meters.
 Every mesh gets a node name:  m:<muscle>:<part> | b:<bone> | o:<other> | c:<id>
 """
-import sys, json
+import sys, json, os
 import numpy as np
 import trimesh
-import fast_simplification
+from mesh_build_policy import bone_settings, bone_target
+from geometry_export_guard import bone_mesh, stable_vertex_normals, validate_bone_roundtrip
+
+# Reject destructive legacy settings before reading or exporting any meshes.
+BONE_RATIO, BONE_MAX = bone_settings(os.environ)
 
 sys.path.insert(0, sys.argv[1])  # scripts dir
 _mod = __import__(sys.argv[5] if len(sys.argv) > 5 else 'manifest')
@@ -17,18 +21,23 @@ stl_dir, out_glb, out_meta = sys.argv[2], sys.argv[3], sys.argv[4]
 R = np.array([[1, 0, 0], [0, 0, 1], [0, -1, 0]], dtype=float)
 
 
-def load(fid, ratio, lo, hi):
-    m = trimesh.load(f"{stl_dir}/{fid}.stl", process=True)
-    m.merge_vertices()
+def load(fid, ratio, lo, hi, *, bone=False):
+    m = trimesh.load(f"{stl_dir}/{fid}.stl", process=not bone)
+    if not bone:
+        m.merge_vertices()
     v = (m.vertices @ R.T) / 1000.0
     f = m.faces
     n = len(f)
-    target = int(min(max(n * ratio, min(n, lo)), hi))
+    target = bone_target(n, hi) if bone else int(min(max(n * ratio, min(n, lo)), hi))
     if target < n:
+        import fast_simplification  # Only needed when non-bone meshes are reduced.
         v, f = fast_simplification.simplify(v.astype(np.float32), f.astype(np.int32),
                                             target_reduction=1 - target / n, agg=6)
+    if bone:
+        return bone_mesh(v, f)
     out = trimesh.Trimesh(vertices=v, faces=f, process=True)
     out.remove_unreferenced_vertices()
+    out.vertex_normals = stable_vertex_normals(out.vertices, out.faces)
     return out
 
 
@@ -51,14 +60,11 @@ for key, parts in MUSCLES.items():
     for fid, part in parts:
         settings = getattr(_mod, 'MUSCLE_BUILD', {}).get(key, (0.13, 1500, 14000))
         add(f"m|{key}|{part or ''}", load(fid, *settings))
-import os
-BONE_RATIO = float(os.environ.get("BONE_RATIO", "0.15"))
-BONE_MAX = int(os.environ.get("BONE_MAX", "12000"))
 for key, ids in BONES.items():
     for fid in ids:
         # Composite bones need unique node names while keeping their shared id.
         name = f"b|{key}" + (f"|{fid}" if len(ids) > 1 else '')
-        add(name, load(fid, BONE_RATIO, 1200, BONE_MAX))
+        add(name, load(fid, BONE_RATIO, 1200, BONE_MAX, bone=True))
 for key, ids in OTHER.items():
     for fid in ids:
         add(f"o|{key}", load(fid, 0.15, 800, 6000))
@@ -68,6 +74,9 @@ for fid in CONTEXT:
 # center on the limb (humerus+forearm region) so the orbit target is sensible
 b = scene.bounds
 meta["stats"] = {"faces": int(tot), "bounds": np.round(b, 4).tolist()}
-scene.export(out_glb, file_type="glb", include_normals=True)
+exported = scene.export(file_type="glb", include_normals=True)
+validate_bone_roundtrip(scene, exported)
+with open(out_glb, 'wb') as output:
+    output.write(exported)
 json.dump(meta, open(out_meta, "w"), indent=1)
 print("faces", tot, "bounds", np.round(b, 3).tolist())

@@ -5,6 +5,9 @@
 import json, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ta98 import T as TA, G as TG, BONE
+from pelvis_stage5_review import review as review_pelvis, additional_records as pelvic_additional
+from lower_proximal_stage5_review import review as review_lower, additional_records as lower_additional
+from foot_stage5_review import review as review_foot, additional_records as foot_additional
 
 ta_path, old_path, out_path = sys.argv[1:4]
 POS = {p["id"]: p for p in json.load(open(ta_path))}
@@ -626,10 +629,14 @@ ids = [o["id"] for o in out]
 assert len(ids) == len(set(ids)), "duplicate ids"
 unused = set(POS) - {s[0] for s in S} - {a[0] for a in A}
 assert not unused, ("positions without description", unused)
+out=[review_pelvis(p) for p in out]+list(pelvic_additional({'hip_bone','sacrum'}))
+out=[review_lower(p) for p in out]+list(lower_additional())
+out=[review_foot(p) for p in out]+list(foot_additional())
+assert len({p['id'] for p in out})==len(out)
 
 open(out_path, "w", encoding="utf-8").write(
     "/* Точки на костях: таз и нижняя конечность. t: ta = образование по Terminologia Anatomica (TA98, код c), "
     "att = место прикрепления мышцы без отдельного термина. m: [мышца, o=начало|i=прикрепление, часть] */\n"
     "window.ATLAS.pins = (window.ATLAS.pins || []).concat(" + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ");\n")
 n_ta = sum(1 for o in out if o["t"] == "ta")
-print(len(out), "pins:", n_ta, "TA,", len(out) - n_ta, "attachment")
+print(len(out), "pins:", n_ta, "TA,", sum(p['t']=='att' for p in out), "attachment,",sum(p['t']=='additional' for p in out),"additional")

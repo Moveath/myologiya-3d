@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "scope": "Stage 5 thorax batch 1: T1-T12; ribs/sternum remain for batch 2",
+  "sources": {
+    "pubmed": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/pubmed-foramen-broad.json",
+    "emptyExactSearch": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/pubmed-foramen.json"
+  },
+  "blender": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/blender-thorax.json",
+  "discResources": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/disc-resources.json",
+  "trimesh": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/trimesh-positions.json",
+  "compressedGLBNode": "research/evidence-runs/thorax-data-2026-10-18T13-00-48-339Z-IVAfZi/thorax-data-geometry.json",
+  "dataAndPreservation": "research/evidence-runs/stage5-thorax-data-2026-10-18T14-26-43-293Z-ywJBOr/data-regression.json",
+  "uiAfterContextFix": [
+    "research/evidence-runs/stage5-thorax-mcp-2026-10-18T14-17-43-770Z-BbYeOo/result.json",
+    "research/evidence-runs/stage5-thorax-mcp-2026-10-18T14-17-43-850Z-Di4ew8/result.json"
+  ],
+  "uiParentLinksAndIsolation": "research/evidence-runs/mcp-replay-2026-10-18T14-16-19-604Z-gpOMUO/result.json",
+  "uiFinalContextSelection": "research/evidence-runs/stage5-thorax-context-final-2026-10-18T14-24-32-805Z-TeMR1Q/result.json",
+  "registry": "research/evidence-runs/stage5-thorax-2026-10-18T12-51-39-645Z-iyyF5G/registry-final.json",
+  "unsuccessfulScenarios": [
+    {
+      "path": "research/evidence-runs/stage5-thorax-mcp-2026-10-18T13-00-19-080Z-HWgC73/result.json",
+      "reason": "Fixture used thorax instead of trunk section ID"
+    },
+    {
+      "path": "research/evidence-runs/stage5-thorax-mcp-2026-10-18T13-02-15-384Z-oSEVY4/result.json",
+      "reason": "Fixture did not await cross-region goTo"
+    },
+    {
+      "path": "research/evidence-runs/stage5-thorax-ui-links-2026-10-18T14-13-21-074Z-C39xdj/result.json",
+      "reason": "Confirmed context-bone isolation defect; fixed and retested"
+    }
+  ],
+  "interruptedNotPassed": "research/evidence-runs/stage5-thorax-mcp-2026-10-18T13-03-44-127Z-YOdiqB/scenario.js",
+  "ta98": {
+    "status": "passed_with_known_differences",
+    "termsCompared": 762,
+    "knownDifferences": 3,
+    "newDifferences": 0,
+    "record": "Summary from command output; known legacy A02.5.10.015, A02.5.10.017, A02.5.11.007"
+  },
+  "limits": {
+    "newAnatomicallyAcceptedCoordinates": 0,
+    "newAcceptedExtents": 0,
+    "ribsSternumOriginalRecordsStillPending": 246,
+    "physicalPhoneTest": false,
+    "newSkullCutTest": false,
+    "originalModelsChanged": false,
+    "previousIssueStatusesPreserved": 211
+  }
+}

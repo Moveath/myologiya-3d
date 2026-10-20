@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "registry": {
+    "status": "passed",
+    "issues": 235,
+    "status_counts": {
+      "проверена": 61,
+      "требует проверки": 83,
+      "заблокирована": 58,
+      "открыта": 33
+    },
+    "scientific_pending": 138,
+    "stages": {
+      "5": [
+        39,
+        113
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        8,
+        29
+      ],
+      "6": [
+        0,
+        13
+      ],
+      "7": [
+        0,
+        44
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "changedStatuses": {
+    "SHX-carpal-groove": [
+      "требует проверки",
+      "проверена"
+    ],
+    "CAT-HAND-SESAMOIDS": [
+      "открыта",
+      "проверена"
+    ],
+    "CAT-UPPER-REMAINDER": [
+      "открыта",
+      "требует проверки"
+    ]
+  },
+  "preservedIssueIds": 232,
+  "preservedHistoricalLogs": true,
+  "newIssues": [
+    "CAT-HAND-DETAIL",
+    "GEO-HAND-LANDMARKS",
+    "PIN-HAND-KIND"
+  ],
+  "ui": [
+    {
+      "run": "stage5-hand-mcp-2026-10-18T19-55-38-387Z-nCz0ci",
+      "width": 1280,
+      "cards": 113,
+      "edges": 75,
+      "errors": []
+    },
+    {
+      "run": "stage5-hand-mcp-2026-10-18T19-59-03-282Z-eOhVbV",
+      "width": 390,
+      "cards": 113,
+      "edges": 75,
+      "errors": []
+    }
+  ],
+  "codeSyntax": "py_compile and node --check passed",
+  "TA98": "762 terms; 3 previously documented differences",
+  "anatomicalCoordinatesAccepted": 0,
+  "newCoordinates": 0,
+  "remainingCandidates": 53,
+  "referenceImagesReused": 8,
+  "files": {
+    "scripts/hand_stage5_review.py": "dd55ee81dd8bb1a833682adc9d5afb38556562d7b705e98d621d5a768638936a",
+    "scripts/make_pins.py": "9ee231e559a1e9ad5323ebc87e3e9cbc9ce32e3af7633fc0e22718599486e8cc",
+    "scripts/make_context_bone_data.py": "a6dcc60772548542835f5819d19aadc7fb016554526f8d03cb890a1cbaba4fed",
+    "site/index.html": "8fd58c25113d690a85e736ba9c43b3bcdeace190f20f6b101901da8c22af33fe",
+    "site/local.html": "346d8c314cf27ef80010ea83374a66de65315de64d461d6629532a7e81355f77",
+    "site/pins.js": "e29bce5dceda969b039794964ff742c874ac52d056d5d5653f1bd2dfbbfc7d19",
+    "site/data-context-bones.js": "9b5b76d9493acec2a3f52ba2fda442a31880240c86003a2aa632ec8cedc5306f",
+    "verify/review_hand.py": "f1d43f4d0a23e64aab29f390401dfd558f25ee96ec2121b2cc73a076bc56259d",
+    "verify/review_hand_blender.py": "e7a6fa9dbfb8c0da70ccf381e3a988e834ccce12894a6f9bee2cc36612d48d3e",
+    "tools/prepare-stage5-hand-evidence.mjs": "c09269145605a4eb05e4390fb8459e4eb011f77a5838c9ff16644d8dc6ce11a0",
+    "tools/verify-stage5-hand.mjs": "092931e8945c119f0557e9614d64690f845897a320b93a6cfa5e1e9970869a66",
+    "tools/prepare-stage5-hand-mcp.mjs": "6395e01ce98a27cafb641bef363647f5e14aaaddf75bfaa2e5af7312eedc5402",
+    "ANATOMY_ISSUES.md": "0b7eb18c4f124848801cf4fa50e2d87044b2719b6c3ee13b33cf8b8fa98af72f",
+    "ANATOMY_PROGRESS.md": "aa65aebf0da1c748c5a9c3e30ae227d519eb9aa838f121c9ec229cb32b88d649",
+    "research/stage5-hand-report-2026-10-19.md": "c86be670e0f092572283c359b62c469126fb1e50b702712393c0af2732f4f86f"
+  },
+  "limitations": [
+    "No complete hand anatomy acceptance",
+    "No full-text acceptance inferred from PubMed metadata",
+    "No fresh heavy self-intersection or skull-cut tests; immutable models/runtime"
+  ],
+  "modelRegression": "69 existing resources protected, see data-regression.json"
+}

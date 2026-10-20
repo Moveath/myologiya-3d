@@ -1,0 +1,62 @@
+{
+  "source_cache_present": false,
+  "missing_inputs": [
+    {
+      "path": "build/arm_raw.glb",
+      "exists": false
+    },
+    {
+      "path": "build/arm_hi.glb",
+      "exists": false
+    },
+    {
+      "path": "build_leg/arm_raw.glb",
+      "exists": false
+    },
+    {
+      "path": "build_leg/leg_hi.glb",
+      "exists": false
+    },
+    {
+      "path": "research/cache/skull-microct/halle_skull.nrrd",
+      "exists": false
+    },
+    {
+      "path": "research/cache/skull-microct/halle_skull_segmented.nrrd",
+      "exists": false
+    },
+    {
+      "path": "research/cache/complete-temporal",
+      "exists": false
+    },
+    {
+      "path": "research/cache/temporal/spl-ear",
+      "exists": false
+    }
+  ],
+  "recovered_SPL_original_members": [
+    {
+      "file": "Model_140_Malleus_Bone.vtk",
+      "sha256": "09b0f86f72c5dd0da5719f26f2652758b13614bf6f361315b14f3827729f373f",
+      "bytes": 119479,
+      "zip_member": "inner-ear-2018-02/models/Model_140_Malleus_Bone.vtk",
+      "crc32": "cd009372",
+      "matches_official_zip": true
+    },
+    {
+      "file": "Model_17_Stapes_Bone.vtk",
+      "sha256": "6b22ca62d3d6e2a1bab66b95020ee9129e4bbb9966c34fa09fab49fdcd542d95",
+      "bytes": 152781,
+      "zip_member": "inner-ear-2018-02/models/Model_17_Stapes_Bone.vtk",
+      "crc32": "c1202d19",
+      "matches_official_zip": true
+    }
+  ],
+  "SPL_metadata": "Original archive MRML, CRC verified by zipfile; CT and label headers only. No full CT downloaded.",
+  "GLB_recovery_limit": "Decoded cache reproduces published vertices/faces/transforms at their stored precision; quantization, prior decimation, voxel masks, specimen identity and original annotations cannot be inverted. No reconstructed geometry labelled as original.",
+  "source_urls": {
+    "Halle": "https://zenodo.org/records/6108435",
+    "OpenEar": "https://zenodo.org/records/1473724",
+    "SPL": "https://www.openanatomy.org/atlases/nac/inner-ear-2018-02.zip"
+  }
+}

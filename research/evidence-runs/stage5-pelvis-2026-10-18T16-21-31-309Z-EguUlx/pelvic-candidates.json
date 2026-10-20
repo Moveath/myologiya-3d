@@ -1,0 +1,70 @@
+[
+  {
+    "id": "K-PELVIS-PREAURICULAR",
+    "issue": "CAT-PELVIS-REVIEW",
+    "structures": [
+      "hip_bone",
+      "hip_bone_left"
+    ],
+    "candidate": "Предушковидная борозда",
+    "status": "требует проверки",
+    "available": "Gray PDF p.231 describes a variable preauricular sulcus. Not a required feature of every adult hip.",
+    "needed": "Second independent targeted source, catalogue applicability and a decision on a variant card; individual presence needs an accepted surface. Do not infer sex or coordinates from the reference figure.",
+    "refs": [
+      "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=231"
+    ],
+    "nextStage": 5
+  },
+  {
+    "id": "K-PELVIS-COCCYGEAL-DETAIL",
+    "issue": "CAT-PELVIS-REVIEW",
+    "structures": [
+      "coc_os_coccygis",
+      "coc_cornu_coccygeum",
+      "sac_foramina_intervertebralia"
+    ],
+    "candidate": "Детализация Co1 и терминальных проходов S5",
+    "status": "требует проверки",
+    "available": "Gray PDF p.45 describes transverse elements and passages completed at the sacrococcygeal junction. Existing coccyx/cornu are retained, not duplicated.",
+    "needed": "Independent anatomical source and distinct-entity/synonym check before additional cards. Segment count and boundaries need same-specimen imaging/segmentation, GEO-007; do not apply a fixed segment count.",
+    "refs": [
+      "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=45",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5662850/"
+    ],
+    "nextStage": 5
+  },
+  {
+    "id": "K-PELVIS-POSTERIOR-OBTURATOR",
+    "issue": "CAT-PELVIS-REVIEW",
+    "structures": [
+      "cox_tuberculum_obturatorium_posterius",
+      "context_hip_bone_left_A02_5_01_312"
+    ],
+    "candidate": "Принадлежность заднего запирательного бугорка",
+    "status": "требует проверки",
+    "available": "TA98 catalogue places .312 in pubic group; Gray describes posterior tubercle on ischial border. Both records remain variants; no part mask assigned.",
+    "needed": "Resolve nomenclature hierarchy versus anatomical location using a further independent atlas; identify the variant on each actual mesh before a point/part mask is accepted.",
+    "refs": [
+      "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+      "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=234"
+    ],
+    "nextStage": 5
+  },
+  {
+    "id": "K-PELVIS-GREATER-SCIATIC-CONTRIBUTORS",
+    "issue": "CAT-PELVIS-REVIEW",
+    "structures": [
+      "extra_hip_bone_greater_sciatic_foramen",
+      "extra_hip_bone_left_greater_sciatic_foramen"
+    ],
+    "candidate": "Полный набор участников большого седалищного отверстия",
+    "status": "требует проверки",
+    "available": "Passage exists and differs from notch (Gray/Semmelweis). OpenStax includes sacrum in its boundary description; ligament attachment alone is not direct bony boundary.",
+    "needed": "Second targeted source for each proposed sacral/capsular boundary role; then extend existing two IDs, not create duplicate shared IDs. Soft tissue boundaries cannot be recovered from bare hip meshes.",
+    "refs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
+      "https://semmelweis.hu/anatomia/files/2016/08/hj-dorsreg-eng.pdf"
+    ],
+    "nextStage": 5
+  }
+]

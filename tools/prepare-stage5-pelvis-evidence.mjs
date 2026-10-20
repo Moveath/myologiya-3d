@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import {createHash} from 'node:crypto';
+import {createEvidenceRun} from './evidence-run.mjs';
+const run=await createEvidenceRun(process.cwd(),'stage5-pelvis');
+const box={window:{}};vm.createContext(box);
+for(const n of ['data','data-leg','data-head','data-neck','data-thorax','data-context-bones','pins','pins-leg','pins-head','pins-head-extra','pins-neck','pins-thorax','pins-context-bones','pins-shared'])vm.runInContext(await fs.readFile('site/'+n+'.js','utf8'),box);
+const A=JSON.parse(JSON.stringify(box.window.ATLAS));
+await run.write('atlas-before.json',A);
+const previous='research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ';
+const files=new Set([...Object.keys(JSON.parse(await fs.readFile(previous+'/hashes-before.json','utf8'))),'scripts/make_pins_leg.py','scripts/make_context_bone_data.py','scripts/make_shared_landmarks.py','site/pins-leg.js','site/pins-context-bones.js','site/pins-shared.js','site/index.html','site/local.html','site/atlas-landmarks.js']);
+const hashes={};for(const f of files)hashes[f]=createHash('sha256').update(await fs.readFile(f)).digest('hex');
+await run.write('hashes-before.json',hashes);
+for(const f of ['ANATOMY_ISSUES.md','ANATOMY_PROGRESS.md'])await run.write(f,await fs.readFile(f,'utf8'));
+const rows=A.pins.filter(p=>['hip_bone','hip_bone_left','sacrum'].includes(p.b)&&!p.relations);
+await run.write('inventory-before.json',rows);
+console.log(JSON.stringify({dir:run.dir,pins:A.pins.length,own:rows.length,boneTerms:rows.filter(p=>p.t==='ta').length,attachments:rows.filter(p=>p.t==='att').length}));

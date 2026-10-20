@@ -1,0 +1,33 @@
+{
+  "scope": "Stage5 pelvic batch; 114 original bone records and 26 additions. No original model or coordinate modifications.",
+  "status": "checks_completed_with_documented_test_incidents",
+  "data": "data-regression-ui-final.json",
+  "records": "reviewed-records-ui-final.json",
+  "coverage": "coverage.json",
+  "blender": "blender-pelvis.json",
+  "trimesh": "trimesh-pelvis-v2.json",
+  "observations": "geometry-observations.json",
+  "pubmed": "pubmed-coccyx.json",
+  "desktopInitial": "../stage5-pelvis-mcp-2026-10-18T16-30-44-453Z-FQI3H7/result.json",
+  "desktopContinuation": "desktop-recheck.json",
+  "mobile": "../stage5-pelvis-mcp-2026-10-18T16-33-21-851Z-l5Tclu/result.json",
+  "finalLabels": "code-labels-result.json",
+  "ring": "ring-final-ui.json",
+  "registry": "registry-final.json",
+  "candidates": "pelvic-candidates.json",
+  "incidents": "test-incidents.json",
+  "files": "changed-files.json",
+  "tests": [
+    "Three Python generators",
+    "verify_ta98.py:762 terms,3 historical differences",
+    "Node stable IDs/coordinates/out-of-scope preservation",
+    "Trimesh/Blender 74 anchors,7 viewed renders",
+    "Playwright1280dark composed check,390light full check",
+    "Final labels1280/390"
+  ],
+  "notRepeated": [
+    "Unchanged full mesh self-intersection scans",
+    "Unchanged skull clipping suite"
+  ],
+  "newAcceptedGeometry": 0
+}

@@ -1,0 +1,909 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "scope": "38 previously pending skull-wide TA98 terms and CO-ZYGOTEMP-right/left; source review, no code/data/model changes",
+  "counts": {
+    "candidatesReviewed": 38,
+    "referenceRelationTypesConfirmed": 14,
+    "referenceInstancesPossible": 26,
+    "remainingScopedCandidates": 24,
+    "coordinatesCreated": 0,
+    "geometryAccepted": 0
+  },
+  "terminology": {
+    "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH305%20A2F%20EN.htm",
+    "access": "full_text",
+    "checked": "2026-10-16",
+    "scope": "TA98 rows only; no silent TA2 renumbering"
+  },
+  "sources": [
+    {
+      "id": "gray_temporal",
+      "title": "Gray / Lewis, Anatomy of the Human Body (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=155",
+      "locator": "PDF p.155, The Temporal Fossa: anterior wall, lateral boundary and floor",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "gray_ppf",
+      "title": "Gray / Lewis (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=157",
+      "locator": "PDF p.157, Pterygomaxillary fissure and The Pterygopalatine Fossa",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "gray_acf",
+      "title": "Gray / Lewis (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=163",
+      "locator": "PDF p.163, Anterior Fossa: first paragraph",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "gray_rim",
+      "title": "Gray / Lewis (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=162",
+      "locator": "PDF p.162, The Orbits: paragraph beginning The base of the orbit",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "gray_lacrimal",
+      "title": "Gray / Lewis (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=122",
+      "locator": "PDF p.122, The Frontal Process: last part; PDF p.126, Lacrimal orbital surface",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "gray_nasal",
+      "title": "Gray / Lewis (1918)",
+      "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=170",
+      "locator": "PDF p.170, The Anterior Nasal Aperture; following paragraph on choanae",
+      "authorGroup": "gray_lewis_1918",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "cbs_temporal",
+      "title": "Yogesh Sontakke, Textbook of Human Anatomy: Head, Neck and Face, publisher sample, ISBN 9789354661792",
+      "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=11",
+      "locator": "Printed/PDF p.11, Temporal fossa: Boundaries and Floor",
+      "authorGroup": "sontakke_cbs",
+      "access": "publisher_preview",
+      "checked": "2026-10-16",
+      "year": null
+    },
+    {
+      "id": "cbs_rim",
+      "title": "Yogesh Sontakke, Textbook of Human Anatomy: Head, Neck and Face, publisher sample, ISBN 9789354661792",
+      "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=7",
+      "locator": "Printed/PDF p.7, Orbital openings: four margins; Bony nasal aperture: Boundaries",
+      "authorGroup": "sontakke_cbs",
+      "access": "publisher_preview",
+      "checked": "2026-10-16",
+      "year": null
+    },
+    {
+      "id": "cbs_canals",
+      "title": "Yogesh Sontakke, Textbook of Human Anatomy: Head, Neck and Face, publisher sample, ISBN 9789354661792",
+      "url": "https://cbspd.s3.ap-south-1.amazonaws.com/assets/documents/9789354661792S.pdf#page=15",
+      "locator": "Printed/PDF p.15, Palatovaginal canal and Vomerovaginal canal: only bony boundaries",
+      "authorGroup": "sontakke_cbs",
+      "access": "publisher_preview",
+      "checked": "2026-10-16",
+      "year": null
+    },
+    {
+      "id": "cap_ppf",
+      "title": "Cappello ZJ, Arbor TC, Potts KL. Anatomy, Pterygopalatine Fossa",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513269/",
+      "locator": "Structure and Function, first paragraph: bone membership only",
+      "authorGroup": "cappello_arbor_potts",
+      "access": "full_text",
+      "checked": "2026-10-16",
+      "updated": "2024-04-20",
+      "nbk": "NBK513269"
+    },
+    {
+      "id": "kasai_acf",
+      "title": "Kasai E, Kondo S, Kasai K. Morphological variation in the anterior cranial fossa (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31049216/",
+      "locator": "Abstract, first sentence and results: three bones, variable interfaces",
+      "authorGroup": "kasai_2019",
+      "access": "abstract",
+      "checked": "2026-10-16",
+      "pmid": "31049216",
+      "doi": "10.1002/cre2.163",
+      "apiMetadata": "shared-pubmed-records.json"
+    },
+    {
+      "id": "sneha_pmf",
+      "title": "Sneha JM, Goshi RC, Vidya CS, Doddawad VG. Morphometric Analysis of Pterygomaxillary Fissure in Dry Skulls and its Clinical Significance During Head and Neck Injury",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40065930/",
+      "locator": "Abstract, first sentence: maxilla and sphenoid pterygoid process",
+      "authorGroup": "sneha_2025",
+      "access": "abstract",
+      "checked": "2026-10-16",
+      "pmid": "40065930",
+      "doi": "10.1007/s12070-024-05240-3",
+      "printYear": 2025,
+      "electronicDate": "2024-11-27",
+      "apiMetadata": "shared-pubmed-records-2.json"
+    },
+    {
+      "id": "herz_pvc",
+      "title": "Herzallah IR, Amin S, El-Hariri MA, Casiano RR. Endoscopic identification of the pharyngeal (palatovaginal) canal: an overlooked area (2012)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24083128/",
+      "locator": "Abstract, Objective; Results: variable bony wall, not model measurements",
+      "authorGroup": "herzallah_2012",
+      "access": "abstract",
+      "checked": "2026-10-16",
+      "pmid": "24083128",
+      "doi": "10.1055/s-0032-1322798",
+      "apiMetadata": "shared-pubmed-records-2.json"
+    },
+    {
+      "id": "acad_vvc",
+      "title": "Dictionnaire médical de l’Académie de Médecine, édition2015",
+      "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?q=canal+vom%C3%A9ro+rostral",
+      "locator": "Entry canal voméro-vaginal, first definition: ala of vomer and vaginal process",
+      "authorGroup": "academie_medecine",
+      "access": "full_text",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "dcr_fossa",
+      "title": "Ullrich K, Malhotra R, Patel BC. Dacryocystorhinostomy",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557851/",
+      "locator": "Anatomy and Physiology: Lacrimal Sac and Duct; Endoscopic Nasal Anatomy, first paragraph",
+      "authorGroup": "ullrich_malhotra_patel",
+      "access": "full_text",
+      "checked": "2026-10-16",
+      "nbk": "NBK557851",
+      "updated": "2023-08-07"
+    },
+    {
+      "id": "nasal_choana",
+      "title": "Sobiesk JL, Munakomi S. Anatomy, Head and Neck, Nasal Cavity",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK544232/?report=printable",
+      "locator": "Structure and Function > Choanae: four boundary bullets",
+      "authorGroup": "sobiesk_munakomi",
+      "access": "full_text",
+      "checked": "2026-10-16",
+      "nbk": "NBK544232",
+      "updated": "2023-07-24"
+    }
+  ],
+  "candidates": [
+    {
+      "number": 22,
+      "code": "A02.1.00.022",
+      "lat": "fossa temporalis",
+      "ru": "Височная ямка",
+      "catalogueId": "skull-whole-022",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "parietal_{side}",
+        "temporal_{side}",
+        "sphenoid",
+        "zygomatic_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "region",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_temporal",
+        "cbs_temporal"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Связи описывают всю область. Gray включает zygomatic в floor, CBS — в переднюю стенку; оба подтверждают общий набор5костей. Разногласие частей сохранить, не выдавать набор за одно только дно."
+    },
+    {
+      "number": 24,
+      "code": "A02.1.00.024",
+      "lat": "fossa infratemporalis",
+      "ru": "Подвисочная ямка",
+      "catalogueId": "skull-whole-024",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Подвисочная ямка: костные и мягкотканные границы требуют единой модели ролей. Нельзя перечислить только дно/верхнюю стенку и назвать это полным составом.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 25,
+      "code": "A02.1.00.025",
+      "lat": "fossa pterygopalatina",
+      "ru": "Крыловидно-нёбная ямка",
+      "catalogueId": "skull-whole-025",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "sphenoid",
+        "maxilla_{side}",
+        "palatine_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "interbone_space",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_ppf",
+        "cap_ppf"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Справочный костный состав; не наследовать мягкотканные границы и не подтверждать объём этой модели."
+    },
+    {
+      "number": 26,
+      "code": "A02.1.00.026",
+      "lat": "fissura pterygomaxillaris",
+      "ru": "Крыловидно-верхнечелюстная щель",
+      "catalogueId": "skull-whole-026",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "sphenoid"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "interbone_space",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_ppf",
+        "sneha_pmf"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Щель между расходящимися maxilla и крыловидным отростком; средние размеры публикации не координаты."
+    },
+    {
+      "number": 38,
+      "code": "A02.1.00.038",
+      "lat": "sulcus sinus sagittalis superioris",
+      "ru": "Борозда верхнего сагиттального синуса",
+      "catalogueId": "skull-whole-038",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "line",
+      "blocker": "Локальные борозды frontal/parietal/occipital имеют собственные ID и точки. Нужны partOf и адресная проверка каждого вклада; не дедуплицировать разные локальные части.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 46,
+      "code": "A02.1.00.046",
+      "lat": "fissura sphenopetrosa",
+      "ru": "Клиновидно-каменистая щель",
+      "catalogueId": "skull-whole-046",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Нужна вторая адресно проверенная независимая топографическая опора для щели и разграничение с бороздой слуховой трубы; название само по себе недостаточно.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 48,
+      "code": "A02.1.00.048",
+      "lat": "fossa cranii anterior",
+      "ru": "Передняя черепная ямка",
+      "catalogueId": "skull-whole-048",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "ethmoid",
+        "sphenoid"
+      ],
+      "paired": false,
+      "instanceCount": 1,
+      "representation": "region",
+      "role": "component",
+      "sourceIds": [
+        "gray_acf",
+        "kasai_acf"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Один общий объект передней черепной ямки; индивидуальные взаимоотношения трёх костей вариабельны."
+    },
+    {
+      "number": 49,
+      "code": "A02.1.00.049",
+      "lat": "fossa cranii media",
+      "ru": "Средняя черепная ямка",
+      "catalogueId": "skull-whole-049",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "region",
+      "blocker": "Gray PDFp.163 включает sphenoidal angles parietals как боковую границу; краткий sphenoid+temporal описывает дно. Не публиковать усечённый состав всей ямки.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 50,
+      "code": "A02.1.00.050",
+      "lat": "fossa cranii posterior",
+      "ru": "Задняя черепная ямка",
+      "catalogueId": "skull-whole-050",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "region",
+      "blocker": "Gray PDFp.166 включает mastoid angles parietals; Koshi printedpp.17–18 описывает sphenoid/occipital/temporal без полного списка боковых вкладов. Требуется согласовать scope полной области.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 52,
+      "code": "A02.1.00.052",
+      "lat": "sulcus sinus petrosi inferioris",
+      "ru": "Борозда нижнего каменистого синуса",
+      "catalogueId": "skull-whole-052",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "line",
+      "blocker": "Нужны partOf для локальных temporal/occipital частей и определение сторон затылочной записи. Не раздваивать прежнюю точку по догадке.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 57,
+      "code": "A02.1.00.057",
+      "lat": "canalis palatinus major",
+      "ru": "Большой нёбный канал",
+      "catalogueId": "skull-whole-057",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "canal",
+      "blocker": "Требуется разграничение собственно канала и входа из PPF: Gray подчёркивает maxilla+palatine, Howard-Swirzinski2010/PMC2943084 Introduction добавляет posterior pterygoid wall sphenoid. Scope не принят.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 58,
+      "code": "A02.1.00.058",
+      "lat": "foramen palatinum majus",
+      "ru": "Большое нёбное отверстие",
+      "catalogueId": "skull-whole-058",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "aperture",
+      "blocker": "Выход greater palatine canal и общий канал не один объект. Нужна отдельная карта замыкающего края отверстия и локальных palatine/maxilla записей.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 60,
+      "code": "A02.1.00.060",
+      "lat": "fossa incisiva",
+      "ru": "Резцовая ямка",
+      "catalogueId": "skull-whole-060",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "region",
+      "blocker": "Резцовая ямка костного нёба не равна одноимённой лицевой ямке maxilla. Нужна идентификация локальных записей, отдельное подтверждение состава общего экземпляра.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 61,
+      "code": "A02.1.00.061",
+      "lat": "canales incisivi",
+      "ru": "Резцовые каналы",
+      "catalogueId": "skull-whole-061",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "canal",
+      "blocker": "Вариабельный парный/сливающийся ход; существующие каналы и выходы нельзя объединять только по множественному TA98. Нужна схема экземпляров/partOf.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 62,
+      "code": "A02.1.00.062",
+      "lat": "foramina incisiva",
+      "ru": "Резцовые отверстия",
+      "catalogueId": "skull-whole-062",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "aperture",
+      "blocker": "Различить nasal/oral apertures и число вариантов; не создавать по одному отверстию на кость автоматически.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 64,
+      "code": "A02.1.00.064",
+      "lat": "canalis palatovaginalis",
+      "ru": "Нёбно-влагалищный канал",
+      "catalogueId": "skull-whole-064",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "palatine_{side}",
+        "sphenoid"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "canal",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "cbs_canals",
+        "herz_pvc"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Только типовой состав стенок. Просвет, стенки и наличие идентифицированного канала этого образца не подтверждены."
+    },
+    {
+      "number": 65,
+      "code": "A02.1.00.065",
+      "lat": "canalis vomerovaginalis",
+      "ru": "Сошниково-влагалищный канал",
+      "catalogueId": "skull-whole-065",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "vomer",
+        "sphenoid"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "canal",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "cbs_canals",
+        "acad_vvc"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Парные каналы справа/слева при одинаковом наборе непарных костей. Не объединять с palatovaginalis; стенки образца не подтверждены."
+    },
+    {
+      "number": 66,
+      "code": "A02.1.00.066",
+      "lat": "canalis vomerorostralis",
+      "ru": "Сошниково-клювовидный канал",
+      "catalogueId": "skull-whole-066",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "canal",
+      "blocker": "Вклад vomer+sphenoid подтверждён определением Académie2015 и IFAA TAH370. Однако TAH work-in-progress маркирует pair, а словарь приводит старое имя median canal. Количество/стороны экземпляров не разрешены; не публиковать1или2по догадке.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 69,
+      "code": "A02.1.00.069",
+      "lat": "aditus orbitalis",
+      "ru": "Вход в глазницу",
+      "catalogueId": "skull-whole-069",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "aperture",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_rim",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Вход как отверстие, не вся семикостная глазница; край отдельно .070."
+    },
+    {
+      "number": 70,
+      "code": "A02.1.00.070",
+      "lat": "margo orbitalis",
+      "ru": "Глазничный край",
+      "catalogueId": "skull-whole-070",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "contour",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_rim",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Общий костный край; не создавать выдуманный контур или усреднённый пин."
+    },
+    {
+      "number": 72,
+      "code": "A02.1.00.072",
+      "lat": "margo infraorbitalis",
+      "ru": "Подглазничный край",
+      "catalogueId": "skull-whole-072",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "zygomatic_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "contour",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_rim",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Сохранить head_maxilla_{side}_A02_1_12_006 как локальный maxillary contribution. Новый общий край не должен превращать локальную точку в полную границу; нужен partOf или явно раздельный scope."
+    },
+    {
+      "number": 73,
+      "code": "A02.1.00.073",
+      "lat": "margo lateralis",
+      "ru": "Латеральный край",
+      "catalogueId": "skull-whole-073",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "zygomatic_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "contour",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_rim",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Латеральный край входа, не латеральная стенка (у стенки иной состав)."
+    },
+    {
+      "number": 74,
+      "code": "A02.1.00.074",
+      "lat": "margo medialis",
+      "ru": "Медиальный край",
+      "catalogueId": "skull-whole-074",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "frontal",
+        "maxilla_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "contour",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_rim",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Медиальный край входа, не медиальная стенка; не наследовать ethmoid/lacrimal/sphenoid из стенки."
+    },
+    {
+      "number": 81,
+      "code": "A02.1.00.081",
+      "lat": "sulcus lacrimalis",
+      "ru": "Слёзная борозда",
+      "catalogueId": "skull-whole-081",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "line",
+      "blocker": "Существуют два собственных sulcus lacrimalis: maxilla .12.018 и lacrimal .09.003. Это части/соседние борозды, не готовый общий объект по совпадению имени.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 82,
+      "code": "A02.1.00.082",
+      "lat": "fossa sacci lacrimalis",
+      "ru": "Ямка слёзного мешка",
+      "catalogueId": "skull-whole-082",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "maxilla_{side}",
+        "lacrimal_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "region",
+      "role": "component",
+      "sourceIds": [
+        "gray_lacrimal",
+        "dcr_fossa"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Ямка слёзного мешка не тождественна двум локальным sulcus lacrimalis. Доли костей вариабельны; не заявлять размер/площадь текущего образца."
+    },
+    {
+      "number": 83,
+      "code": "A02.1.00.083",
+      "lat": "fissura orbitalis superior",
+      "ru": "Верхняя глазничная щель",
+      "catalogueId": "skull-whole-083",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Gray PDFp.166 lateral completion by frontal против краткого greater+lesser sphenoid. Участие frontal в целом контуре требует адресного разбора определения и образца.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 85,
+      "code": "A02.1.00.085",
+      "lat": "canalis nasolacrimalis",
+      "ru": "Носо-слёзный канал",
+      "catalogueId": "skull-whole-085",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "canal",
+      "blocker": "Трёхкостный nasolacrimal canal нужно отделить от lacrimal fossa/local grooves/soft-tissue duct. Не добавлять полный канал по одной проекции без принятой схемы вклада inferior concha.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 86,
+      "code": "A02.1.00.086",
+      "lat": "cavitas nasalis ossea",
+      "ru": "Костная носовая полость",
+      "catalogueId": "skull-whole-086",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Полный костный состав должен быть разбит по стенкам; общий список учебного вида недостаточен. Реальный GLB не подтверждает слизистую и объём прохода.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 87,
+      "code": "A02.1.00.087",
+      "lat": "septum nasi osseum",
+      "ru": "Костная перегородка носа",
+      "catalogueId": "skull-whole-087",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "region",
+      "blocker": "Ethmoid+vomer главные компоненты, но nasal crests/rostrum и cartilage нельзя смешать. Требуется точный scope костной перегородки прежде полного списка связей.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 88,
+      "code": "A02.1.00.088",
+      "lat": "apertura piriformis",
+      "ru": "Грушевидная апертура",
+      "catalogueId": "skull-whole-088",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "nasal_right",
+        "nasal_left",
+        "maxilla_right",
+        "maxilla_left"
+      ],
+      "paired": false,
+      "instanceCount": 1,
+      "representation": "aperture",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_nasal",
+        "cbs_rim"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Одна передняя костная апертура; разделение на два объекта не требуется."
+    },
+    {
+      "number": 89,
+      "code": "A02.1.00.089",
+      "lat": "meatus nasi superior",
+      "ru": "Верхний носовой ход",
+      "catalogueId": "skull-whole-089",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Ход — пространство, не поверхность раковины. Проверить полный костный/мягкотканный scope, не наследовать все кости носовой полости.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 90,
+      "code": "A02.1.00.090",
+      "lat": "meatus nasi medius",
+      "ru": "Средний носовой ход",
+      "catalogueId": "skull-whole-090",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Требуется состав стенок именно среднего хода, не всего lateral nasal wall; удержать различие ethmoid/maxilla/inferior concha и мягких тканей.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 91,
+      "code": "A02.1.00.091",
+      "lat": "meatus nasi inferior",
+      "ru": "Нижний носовой ход",
+      "catalogueId": "skull-whole-091",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Требуется отдельная сверка границ нижнего хода и вкладов дна/maxilla/palatine/inferior concha; не считать любую близкую кость границей.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 92,
+      "code": "A02.1.00.092",
+      "lat": "ostium canalis nasolacrimalis",
+      "ru": "Отверстие носослёзного канала",
+      "catalogueId": "skull-whole-092",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "aperture",
+      "blocker": "Выход костного nasolacrimal canal и soft-tissue duct ostium с mucosal fold различаются; нужны отдельные определения и привязка.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 93,
+      "code": "A02.1.00.093",
+      "lat": "meatus nasi communis",
+      "ru": "Общий носовой ход",
+      "catalogueId": "skull-whole-093",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Две существующие статьи подтверждают пространство между septum и conchae, но не исчерпывающий костный состав. Нужна декомпозиция границ.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 94,
+      "code": "A02.1.00.094",
+      "lat": "recessus sphenoethmoidalis",
+      "ru": "Клиновидно-решётчатое углубление",
+      "catalogueId": "skull-whole-094",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Углубление не тождественно sphenoid sinus opening. Требуется двухисточниковый перечень границ и scope.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 95,
+      "code": "A02.1.00.095",
+      "lat": "meatus nasopharyngeus",
+      "ru": "Носоглоточный ход",
+      "catalogueId": "skull-whole-095",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "requires_scoped_review",
+      "representation": "interbone_space",
+      "blocker": "Существующие материалы подтверждают заднее продолжение ходов, но не полную костную принадлежность. Не наследовать все кости choana.",
+      "confidence": "not_accepted_for_automatic_relations"
+    },
+    {
+      "number": 96,
+      "code": "A02.1.00.096",
+      "lat": "choana; apertura nasalis posterior",
+      "ru": "Хоана; заднее носовое отверстие",
+      "catalogueId": "skull-whole-096",
+      "geometryStatus": "not_confirmed",
+      "coordinateAction": "none",
+      "decision": "reference_relations_confirmed",
+      "bonePatterns": [
+        "sphenoid",
+        "vomer",
+        "palatine_{side}"
+      ],
+      "paired": true,
+      "instanceCount": 2,
+      "representation": "aperture",
+      "role": "boundaryContribution",
+      "sourceIds": [
+        "gray_nasal",
+        "nasal_choana"
+      ],
+      "confidence": "high_for_reference_anatomy_only",
+      "implementationNote": "Два отдельных задних отверстия. Gray дополнительно включает ala vomer в верхнюю границу; краткий Bookshelf называет sphenoid. Общий набор sphenoid/vomer/palatine подтверждён, точное распределение сегментов не заявляется."
+    }
+  ],
+  "temporozygomatic": {
+    "issueIds": [
+      "CO-ZYGOTEMP-right",
+      "CO-ZYGOTEMP-left"
+    ],
+    "code": "A03.1.02.024",
+    "lat": "sutura temporozygomatica",
+    "en": "Temporozygomatic suture",
+    "terminologyUrl": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/03.1.02%20TA98%20EN.htm",
+    "terminologyLocator": "row A03.1.02.024",
+    "bonePatterns": [
+      "temporal_{side}",
+      "zygomatic_{side}"
+    ],
+    "representation": "suture_line",
+    "referenceRelation": "confirmed",
+    "evidenceReuse": [
+      "research/stage4-2026-10-15/pubmed-zygomaticotemporal.json: PMID36374372 metadata and abstract reviewed on2026-10-15",
+      "research/stage4-technical-report-2026-10-15.md: NBK544257 independent anatomy evidence"
+    ],
+    "geometryStatus": "unconfirmed; no accepted line/anchor; retain both issue IDs open",
+    "doNotSubstitute": [
+      "A02.1.14.011 zygomaticotemporal foramen",
+      "shared_skull_023_{side} zygomatic arch",
+      "zygomaticomaxillary suture"
+    ]
+  },
+  "newLimits": [
+    {
+      "code": "A02.1.00.066",
+      "finding": "Multiplicity conflict in accessible nomenclature/definition must be resolved before instantiated relations",
+      "evidence": [
+        {
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/unit/EN/TAH370%20Unit%20EN.htm",
+          "locator": "Unit type pair; Taxonomic definition; checked2026-10-16"
+        },
+        {
+          "url": "https://www.academie-medecine.fr/le-dictionnaire/index.php?q=canal+vom%C3%A9ro+rostral",
+          "locator": "entry canal voméro-rostral, édition2015; old synonym canal sphéno-vomérien médian"
+        }
+      ]
+    }
+  ],
+  "api": {
+    "status": "passed_after_authorized_network_access",
+    "sandboxAttempt": "NCBI network/TLS request failed; no result claimed",
+    "verifiedPmids": [
+      "31049216",
+      "27230518",
+      "39920365",
+      "26039331",
+      "18062149",
+      "40065930",
+      "24083128"
+    ],
+    "files": [
+      "shared-pubmed-records.json",
+      "shared-pubmed-records-2.json"
+    ],
+    "limitations": "Metadata verified by official EFetch, not a substitute for anatomical full text. Empty correction lists do not guarantee no notices. PMC browser robot challenges recorded; inaccessible full texts not claimed read."
+  },
+  "sourceIndependence": "Independent editorial/source families for reference definitions; no assertion of two independent measurements of this GLB. Modern morphological statistics are never model coordinates.",
+  "nextAction": "Implementation may add source-confirmed reference relationships without p/n/contours; preserve local IDs and local contribution scope. Remaining24 require targeted review; no assertion that skull is complete.",
+  "preparedModule": "scripts/skull_shared_stage5.py; not connected to active catalogue by this agent"
+}

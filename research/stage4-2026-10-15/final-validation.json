@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "old_ids_preserved": 186,
+  "total_issues": 189,
+  "status_counts": {
+    "проверена": 19,
+    "требует проверки": 94,
+    "открыта": 33,
+    "заблокирована": 43
+  },
+  "status_transitions": {
+    "ENV-001": [
+      "заблокирована",
+      "проверена"
+    ],
+    "ENV-002": [
+      "открыта",
+      "проверена"
+    ],
+    "QA-002": [
+      "требует проверки",
+      "проверена"
+    ],
+    "ENV-003": [
+      "требует проверки",
+      "проверена"
+    ]
+  },
+  "new_ids": [
+    "CO-ZYGOTEMP-left",
+    "CO-ZYGOTEMP-right",
+    "TECH-001"
+  ],
+  "existing_closure_criteria_preserved": 186,
+  "previous_progress_history_preserved": true,
+  "protected_files_checked": 315,
+  "protected_files_changed": [],
+  "new_report_local_links_missing": [],
+  "python": "3.12.14",
+  "isolated": true,
+  "packages": {
+    "numpy": "2.3.5",
+    "trimesh": "5.1.1",
+    "scipy": "1.16.3",
+    "PyYAML": "6.0.3"
+  },
+  "positions": {
+    "head": {
+      "measurements": 521,
+      "maximum_mm": 0.0074
+    },
+    "neck": {
+      "measurements": 214,
+      "maximum_mm": 0.0197
+    },
+    "thorax": {
+      "measurements": 490,
+      "maximum_mm": 0.02218
+    }
+  },
+  "diagnostic_models": 5,
+  "diagnostic_points": 16,
+  "mesh_vertices_all_finite": true,
+  "limitations": "Anatomical data/GLB inputs unchanged. Registry validation is not anatomical or geometric acceptance."
+}

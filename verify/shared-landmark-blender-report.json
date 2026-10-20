@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "tool": "Blender MCP",
+  "blender": "5.2.2 LTS",
+  "source": "site/head-q-glb.txt",
+  "sourceSha256": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b",
+  "sourceUnchanged": true,
+  "method": "nearest point on imported world-space triangles via mathutils.bvhtree",
+  "coordinateTransform": "Three.js (x,y,z) to Blender (x,-z,y)",
+  "scope": "Surface-distance regression only; not independent anatomical acceptance",
+  "results": [
+    {
+      "sourcePin": "head_temporal_right_A02_1_06_045",
+      "distanceMm": {
+        "occipital": 6.5392074175179005,
+        "temporal_right": 0.0011129083077321411,
+        "temporal_left": 52.273474633693695
+      }
+    },
+    {
+      "sourcePin": "head_temporal_left_A02_1_06_045",
+      "distanceMm": {
+        "occipital": 6.4955176785588264,
+        "temporal_right": 52.20567435026169,
+        "temporal_left": 0.0025440897388762096
+      }
+    }
+  ]
+}

@@ -90,3 +90,10 @@ build_head/temporal_variants/**/*.png
 build_head/temporal_variants/**/*.glb
 build_head/temporal_variants/**/*.npy
 build_head/skull_whole/terms-page-*.png
+
+# Local tool state, independent checkouts and reproducible publication archives.
+/.codex/
+/.playwright-mcp/
+/publish/
+/free-claude-code/
+/research/evidence-runs/**/site-release.tar.gz

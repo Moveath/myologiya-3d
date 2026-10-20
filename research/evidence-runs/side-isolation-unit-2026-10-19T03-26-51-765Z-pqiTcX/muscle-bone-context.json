@@ -1,0 +1,4255 @@
+{
+  "scope": "Existing explicit pin.m -> pin.b only. Zero links do not by themselves prove an anatomical omission. Text descriptions are not parsed; no completeness or coordinate acceptance.",
+  "rows": [
+    {
+      "muscleId": "deltoid",
+      "part": null,
+      "ru": "Дельтовидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "clavicle",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_spina",
+        "sca_acromion",
+        "cla_extremitas_acromialis",
+        "hum_tuberositas_deltoidea"
+      ]
+    },
+    {
+      "muscleId": "deltoid",
+      "part": "clav",
+      "ru": "Ключичная часть",
+      "noModel": false,
+      "boneIds": [
+        "clavicle",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "cla_extremitas_acromialis",
+        "hum_tuberositas_deltoidea"
+      ]
+    },
+    {
+      "muscleId": "deltoid",
+      "part": "acrom",
+      "ru": "Акромиальная часть",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_acromion",
+        "hum_tuberositas_deltoidea"
+      ]
+    },
+    {
+      "muscleId": "deltoid",
+      "part": "spin",
+      "ru": "Остистая часть",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_spina",
+        "hum_tuberositas_deltoidea"
+      ]
+    },
+    {
+      "muscleId": "supraspinatus",
+      "part": null,
+      "ru": "Надостная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_fossa_supraspinata",
+        "hum_tuberculum_majus"
+      ]
+    },
+    {
+      "muscleId": "infraspinatus",
+      "part": null,
+      "ru": "Подостная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_fossa_infraspinata",
+        "hum_tuberculum_majus"
+      ]
+    },
+    {
+      "muscleId": "teres_minor",
+      "part": null,
+      "ru": "Малая круглая мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_margo_lateralis",
+        "hum_tuberculum_majus"
+      ]
+    },
+    {
+      "muscleId": "teres_major",
+      "part": null,
+      "ru": "Большая круглая мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_margo_lateralis",
+        "sca_angulus_inferior",
+        "hum_crista_tuberculi_minoris"
+      ]
+    },
+    {
+      "muscleId": "subscapularis",
+      "part": null,
+      "ru": "Подлопаточная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_fossa_subscapularis",
+        "hum_tuberculum_minus"
+      ]
+    },
+    {
+      "muscleId": "coracobrachialis",
+      "part": null,
+      "ru": "Клювовидно-плечевая мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "sca_processus_coracoideus",
+        "hum_facies_anteromedialis"
+      ]
+    },
+    {
+      "muscleId": "biceps_brachii",
+      "part": null,
+      "ru": "Двуглавая мышца плеча",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "sca_tuberculum_supraglenoidale",
+        "sca_processus_coracoideus",
+        "rad_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "biceps_brachii",
+      "part": "long",
+      "ru": "Длинная головка",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "sca_tuberculum_supraglenoidale",
+        "rad_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "biceps_brachii",
+      "part": "short",
+      "ru": "Короткая головка",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "sca_processus_coracoideus",
+        "rad_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "brachialis",
+      "part": null,
+      "ru": "Плечевая мышца",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "uln_processus_coronoideus",
+        "uln_tuberositas",
+        "hum_body_ant"
+      ]
+    },
+    {
+      "muscleId": "triceps_brachii",
+      "part": null,
+      "ru": "Трёхглавая мышца плеча",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "humerus",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "sca_tuberculum_infraglenoidale",
+        "hum_sulcus_n_radialis",
+        "uln_olecranon"
+      ]
+    },
+    {
+      "muscleId": "triceps_brachii",
+      "part": "long",
+      "ru": "Длинная головка",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "sca_tuberculum_infraglenoidale",
+        "uln_olecranon"
+      ]
+    },
+    {
+      "muscleId": "triceps_brachii",
+      "part": "lat",
+      "ru": "Латеральная головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "hum_sulcus_n_radialis",
+        "uln_olecranon"
+      ]
+    },
+    {
+      "muscleId": "triceps_brachii",
+      "part": "med",
+      "ru": "Медиальная головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "hum_sulcus_n_radialis",
+        "uln_olecranon"
+      ]
+    },
+    {
+      "muscleId": "anconeus",
+      "part": null,
+      "ru": "Локтевая мышца",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "uln_olecranon"
+      ]
+    },
+    {
+      "muscleId": "brachioradialis",
+      "part": null,
+      "ru": "Плечелучевая мышца",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "hum_crista_supraepicondylaris_lateralis",
+        "rad_crista_suprastyloidea"
+      ]
+    },
+    {
+      "muscleId": "pronator_teres",
+      "part": null,
+      "ru": "Круглый пронатор",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "radius",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "rad_tuberositas_pronatoria",
+        "uln_processus_coronoideus"
+      ]
+    },
+    {
+      "muscleId": "pronator_teres",
+      "part": "hum",
+      "ru": "Плечевая головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "rad_tuberositas_pronatoria"
+      ]
+    },
+    {
+      "muscleId": "pronator_teres",
+      "part": "uln",
+      "ru": "Локтевая головка",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "rad_tuberositas_pronatoria",
+        "uln_processus_coronoideus"
+      ]
+    },
+    {
+      "muscleId": "flexor_carpi_radialis",
+      "part": null,
+      "ru": "Лучевой сгибатель запястья",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "metacarpal_2",
+        "metacarpal_3"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "mc2_basis",
+        "mc3_basis"
+      ]
+    },
+    {
+      "muscleId": "palmaris_longus",
+      "part": null,
+      "ru": "Длинная ладонная мышца",
+      "noModel": false,
+      "boneIds": [
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis"
+      ]
+    },
+    {
+      "muscleId": "flexor_carpi_ulnaris",
+      "part": null,
+      "ru": "Локтевой сгибатель запястья",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna",
+        "metacarpal_5",
+        "pisiform"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "uln_olecranon",
+        "uln_margo_posterior",
+        "mc5_basis",
+        "pisiform_apex"
+      ]
+    },
+    {
+      "muscleId": "flexor_carpi_ulnaris",
+      "part": "hum",
+      "ru": "Плечевая головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "metacarpal_5",
+        "pisiform"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "mc5_basis",
+        "pisiform_apex"
+      ]
+    },
+    {
+      "muscleId": "flexor_carpi_ulnaris",
+      "part": "uln",
+      "ru": "Локтевая головка",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "metacarpal_5",
+        "pisiform"
+      ],
+      "sourcePinIds": [
+        "uln_olecranon",
+        "uln_margo_posterior",
+        "mc5_basis",
+        "pisiform_apex"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_superficialis",
+      "part": null,
+      "ru": "Поверхностный сгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "radius",
+        "ulna",
+        "phalanx_mid_2",
+        "phalanx_mid_3",
+        "phalanx_mid_4",
+        "phalanx_mid_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "rad_facies_anterior",
+        "uln_processus_coronoideus",
+        "pm2_basis",
+        "pm3_basis",
+        "pm4_basis",
+        "pm5_basis"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_superficialis",
+      "part": "humuln",
+      "ru": "Плечелоктевая головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna",
+        "phalanx_mid_2",
+        "phalanx_mid_3",
+        "phalanx_mid_4",
+        "phalanx_mid_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_medialis",
+        "uln_processus_coronoideus",
+        "pm2_basis",
+        "pm3_basis",
+        "pm4_basis",
+        "pm5_basis"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_superficialis",
+      "part": "rad",
+      "ru": "Лучевая головка",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "phalanx_mid_2",
+        "phalanx_mid_3",
+        "phalanx_mid_4",
+        "phalanx_mid_5"
+      ],
+      "sourcePinIds": [
+        "rad_facies_anterior",
+        "pm2_basis",
+        "pm3_basis",
+        "pm4_basis",
+        "pm5_basis"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_profundus",
+      "part": null,
+      "ru": "Глубокий сгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "phalanx_dist_2",
+        "phalanx_dist_3",
+        "phalanx_dist_4",
+        "phalanx_dist_5"
+      ],
+      "sourcePinIds": [
+        "uln_facies_anterior",
+        "pd2_basis",
+        "pd3_basis",
+        "pd4_basis",
+        "pd5_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "flexor_pollicis_longus",
+      "part": null,
+      "ru": "Длинный сгибатель большого пальца кисти",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "phalanx_dist_1"
+      ],
+      "sourcePinIds": [
+        "rad_facies_anterior",
+        "pd1_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "pronator_quadratus",
+      "part": null,
+      "ru": "Квадратный пронатор",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "ulna"
+      ],
+      "sourcePinIds": [
+        "rad_facies_anterior",
+        "uln_distal_anterior"
+      ]
+    },
+    {
+      "muscleId": "extensor_carpi_radialis_longus",
+      "part": null,
+      "ru": "Длинный лучевой разгибатель запястья",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "metacarpal_2"
+      ],
+      "sourcePinIds": [
+        "hum_crista_supraepicondylaris_lateralis",
+        "mc2_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_carpi_radialis_brevis",
+      "part": null,
+      "ru": "Короткий лучевой разгибатель запястья",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "metacarpal_3"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "mc3_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_digitorum",
+      "part": null,
+      "ru": "Разгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "phalanx_mid_2",
+        "phalanx_dist_2",
+        "phalanx_mid_3",
+        "phalanx_dist_3",
+        "phalanx_mid_4",
+        "phalanx_dist_4",
+        "phalanx_mid_5",
+        "phalanx_dist_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "pm2_basis",
+        "pd2_basis",
+        "pm3_basis",
+        "pd3_basis",
+        "pm4_basis",
+        "pd4_basis",
+        "pm5_basis",
+        "pd5_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_digiti_minimi",
+      "part": null,
+      "ru": "Разгибатель мизинца",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "phalanx_mid_5",
+        "phalanx_dist_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "pm5_basis",
+        "pd5_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_carpi_ulnaris",
+      "part": null,
+      "ru": "Локтевой разгибатель запястья",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna",
+        "metacarpal_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "uln_margo_posterior",
+        "mc5_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_carpi_ulnaris",
+      "part": "hum",
+      "ru": "Плечевая головка",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "metacarpal_5"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "mc5_basis"
+      ]
+    },
+    {
+      "muscleId": "extensor_carpi_ulnaris",
+      "part": "uln",
+      "ru": "Локтевая головка",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "metacarpal_5"
+      ],
+      "sourcePinIds": [
+        "uln_margo_posterior",
+        "mc5_basis"
+      ]
+    },
+    {
+      "muscleId": "supinator",
+      "part": null,
+      "ru": "Супинатор",
+      "noModel": false,
+      "boneIds": [
+        "humerus",
+        "ulna",
+        "radius"
+      ],
+      "sourcePinIds": [
+        "hum_epicondylus_lateralis",
+        "uln_crista_m_supinatoris",
+        "rad_supinator"
+      ]
+    },
+    {
+      "muscleId": "abductor_pollicis_longus",
+      "part": null,
+      "ru": "Длинная мышца, отводящая большой палец кисти",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "ulna",
+        "metacarpal_1"
+      ],
+      "sourcePinIds": [
+        "rad_facies_posterior",
+        "uln_facies_posterior",
+        "mc1_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "extensor_pollicis_brevis",
+      "part": null,
+      "ru": "Короткий разгибатель большого пальца кисти",
+      "noModel": false,
+      "boneIds": [
+        "radius",
+        "phalanx_prox_1"
+      ],
+      "sourcePinIds": [
+        "rad_facies_posterior",
+        "pp1_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "extensor_pollicis_longus",
+      "part": null,
+      "ru": "Длинный разгибатель большого пальца кисти",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "phalanx_dist_1"
+      ],
+      "sourcePinIds": [
+        "uln_facies_posterior",
+        "pd1_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "extensor_indicis",
+      "part": null,
+      "ru": "Разгибатель указательного пальца",
+      "noModel": false,
+      "boneIds": [
+        "ulna",
+        "phalanx_mid_2",
+        "phalanx_dist_2"
+      ],
+      "sourcePinIds": [
+        "uln_facies_posterior",
+        "pm2_basis",
+        "pd2_basis",
+        "membrane_mid"
+      ]
+    },
+    {
+      "muscleId": "abductor_pollicis_brevis",
+      "part": null,
+      "ru": "Короткая мышца, отводящая большой палец кисти",
+      "noModel": false,
+      "boneIds": [
+        "scaphoid",
+        "trapezium",
+        "phalanx_prox_1"
+      ],
+      "sourcePinIds": [
+        "scaph_tuberculum",
+        "trapz_tuberculum",
+        "pp1_basis",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "flexor_pollicis_brevis",
+      "part": null,
+      "ru": "Короткий сгибатель большого пальца кисти",
+      "noModel": false,
+      "boneIds": [
+        "trapezium",
+        "phalanx_prox_1",
+        "trapezoid",
+        "capitate"
+      ],
+      "sourcePinIds": [
+        "trapz_tuberculum",
+        "pp1_basis",
+        "att_trapezoid_palmar",
+        "att_capitate_palmar",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "flexor_pollicis_brevis",
+      "part": "sup",
+      "ru": "Поверхностная головка",
+      "noModel": false,
+      "boneIds": [
+        "trapezium",
+        "phalanx_prox_1"
+      ],
+      "sourcePinIds": [
+        "trapz_tuberculum",
+        "pp1_basis",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "flexor_pollicis_brevis",
+      "part": "deep",
+      "ru": "Глубокая головка",
+      "noModel": false,
+      "boneIds": [
+        "phalanx_prox_1",
+        "trapezoid",
+        "capitate"
+      ],
+      "sourcePinIds": [
+        "pp1_basis",
+        "att_trapezoid_palmar",
+        "att_capitate_palmar"
+      ]
+    },
+    {
+      "muscleId": "opponens_pollicis",
+      "part": null,
+      "ru": "Мышца, противопоставляющая большой палец кисти",
+      "noModel": false,
+      "boneIds": [
+        "trapezium",
+        "metacarpal_1"
+      ],
+      "sourcePinIds": [
+        "trapz_tuberculum",
+        "mc1_corpus",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "adductor_pollicis",
+      "part": null,
+      "ru": "Мышца, приводящая большой палец кисти",
+      "noModel": false,
+      "boneIds": [
+        "phalanx_prox_1",
+        "metacarpal_2",
+        "metacarpal_3",
+        "capitate"
+      ],
+      "sourcePinIds": [
+        "pp1_basis",
+        "mc2_basis",
+        "mc3_basis",
+        "mc3_corpus",
+        "att_capitate_palmar"
+      ]
+    },
+    {
+      "muscleId": "adductor_pollicis",
+      "part": "obl",
+      "ru": "Косая головка",
+      "noModel": false,
+      "boneIds": [
+        "phalanx_prox_1",
+        "metacarpal_2",
+        "metacarpal_3",
+        "capitate"
+      ],
+      "sourcePinIds": [
+        "pp1_basis",
+        "mc2_basis",
+        "mc3_basis",
+        "att_capitate_palmar"
+      ]
+    },
+    {
+      "muscleId": "adductor_pollicis",
+      "part": "transv",
+      "ru": "Поперечная головка",
+      "noModel": false,
+      "boneIds": [
+        "phalanx_prox_1",
+        "metacarpal_3"
+      ],
+      "sourcePinIds": [
+        "pp1_basis",
+        "mc3_corpus"
+      ]
+    },
+    {
+      "muscleId": "abductor_digiti_minimi",
+      "part": null,
+      "ru": "Мышца, отводящая мизинец",
+      "noModel": false,
+      "boneIds": [
+        "phalanx_prox_5",
+        "pisiform"
+      ],
+      "sourcePinIds": [
+        "pp5_basis",
+        "pisiform_apex",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "flexor_digiti_minimi_brevis",
+      "part": null,
+      "ru": "Короткий сгибатель мизинца",
+      "noModel": false,
+      "boneIds": [
+        "hamate",
+        "phalanx_prox_5"
+      ],
+      "sourcePinIds": [
+        "ham_hamulus",
+        "pp5_basis",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "opponens_digiti_minimi",
+      "part": null,
+      "ru": "Мышца, противопоставляющая мизинец",
+      "noModel": false,
+      "boneIds": [
+        "hamate",
+        "metacarpal_5"
+      ],
+      "sourcePinIds": [
+        "ham_hamulus",
+        "mc5_corpus",
+        "retinaculum_mid"
+      ]
+    },
+    {
+      "muscleId": "palmaris_brevis",
+      "part": null,
+      "ru": "Короткая ладонная мышца",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "lumbricals",
+      "part": null,
+      "ru": "Червеобразные мышцы",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "palmar_interossei",
+      "part": null,
+      "ru": "Ладонные межкостные мышцы",
+      "noModel": false,
+      "boneIds": [
+        "metacarpal_2",
+        "phalanx_prox_2",
+        "metacarpal_4",
+        "phalanx_prox_4",
+        "metacarpal_5",
+        "phalanx_prox_5"
+      ],
+      "sourcePinIds": [
+        "mc2_corpus",
+        "pp2_basis",
+        "mc4_corpus",
+        "pp4_basis",
+        "mc5_corpus",
+        "pp5_basis"
+      ]
+    },
+    {
+      "muscleId": "dorsal_interossei",
+      "part": null,
+      "ru": "Тыльные межкостные мышцы",
+      "noModel": false,
+      "boneIds": [
+        "metacarpal_1",
+        "metacarpal_2",
+        "phalanx_prox_2",
+        "metacarpal_3",
+        "phalanx_prox_3",
+        "metacarpal_4",
+        "phalanx_prox_4",
+        "metacarpal_5"
+      ],
+      "sourcePinIds": [
+        "mc1_corpus",
+        "mc2_corpus",
+        "pp2_basis",
+        "mc3_corpus",
+        "pp3_basis",
+        "mc4_corpus",
+        "pp4_basis",
+        "mc5_corpus"
+      ]
+    },
+    {
+      "muscleId": "pectoralis_major",
+      "part": null,
+      "ru": "Большая грудная мышца",
+      "noModel": false,
+      "boneIds": [
+        "clavicle",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "cla_corpus",
+        "hum_crista_tuberculi_majoris"
+      ]
+    },
+    {
+      "muscleId": "pectoralis_major",
+      "part": "clav",
+      "ru": "Ключичная часть",
+      "noModel": false,
+      "boneIds": [
+        "clavicle",
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "cla_corpus",
+        "hum_crista_tuberculi_majoris"
+      ]
+    },
+    {
+      "muscleId": "pectoralis_major",
+      "part": "stern",
+      "ru": "Грудино-рёберная часть",
+      "noModel": false,
+      "boneIds": [
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "hum_crista_tuberculi_majoris"
+      ]
+    },
+    {
+      "muscleId": "pectoralis_major",
+      "part": "abd",
+      "ru": "Брюшная часть",
+      "noModel": false,
+      "boneIds": [
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "hum_crista_tuberculi_majoris"
+      ]
+    },
+    {
+      "muscleId": "pectoralis_minor",
+      "part": null,
+      "ru": "Малая грудная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_processus_coracoideus"
+      ]
+    },
+    {
+      "muscleId": "subclavius",
+      "part": null,
+      "ru": "Подключичная мышца",
+      "noModel": false,
+      "boneIds": [
+        "clavicle"
+      ],
+      "sourcePinIds": [
+        "cla_sulcus_m_subclavii"
+      ]
+    },
+    {
+      "muscleId": "serratus_anterior",
+      "part": null,
+      "ru": "Передняя зубчатая мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_facies_costalis",
+        "sca_margo_medialis",
+        "sca_angulus_inferior"
+      ]
+    },
+    {
+      "muscleId": "latissimus_dorsi",
+      "part": null,
+      "ru": "Широчайшая мышца спины",
+      "noModel": false,
+      "boneIds": [
+        "humerus"
+      ],
+      "sourcePinIds": [
+        "hum_sulcus_intertubercularis"
+      ]
+    },
+    {
+      "muscleId": "trapezius",
+      "part": null,
+      "ru": "Трапециевидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula",
+        "clavicle"
+      ],
+      "sourcePinIds": [
+        "sca_spina",
+        "sca_tuberculum_deltoideum",
+        "sca_acromion",
+        "cla_extremitas_acromialis"
+      ]
+    },
+    {
+      "muscleId": "trapezius",
+      "part": "desc",
+      "ru": "Нисходящая часть",
+      "noModel": false,
+      "boneIds": [
+        "clavicle"
+      ],
+      "sourcePinIds": [
+        "cla_extremitas_acromialis"
+      ]
+    },
+    {
+      "muscleId": "trapezius",
+      "part": "transv",
+      "ru": "Поперечная часть",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_spina",
+        "sca_acromion"
+      ]
+    },
+    {
+      "muscleId": "trapezius",
+      "part": "asc",
+      "ru": "Восходящая часть",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_spina",
+        "sca_tuberculum_deltoideum"
+      ]
+    },
+    {
+      "muscleId": "rhomboid_major",
+      "part": null,
+      "ru": "Большая ромбовидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_margo_medialis"
+      ]
+    },
+    {
+      "muscleId": "rhomboid_minor",
+      "part": null,
+      "ru": "Малая ромбовидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_margo_medialis"
+      ]
+    },
+    {
+      "muscleId": "levator_scapulae",
+      "part": null,
+      "ru": "Мышца, поднимающая лопатку",
+      "noModel": false,
+      "boneIds": [
+        "scapula"
+      ],
+      "sourcePinIds": [
+        "sca_margo_medialis",
+        "sca_angulus_superior"
+      ]
+    },
+    {
+      "muscleId": "iliopsoas",
+      "part": null,
+      "ru": "Подвздошно-поясничная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_labium_internum",
+        "cox_fossa_iliaca",
+        "fem_trochanter_minor"
+      ]
+    },
+    {
+      "muscleId": "iliopsoas",
+      "part": "psoas",
+      "ru": "Большая поясничная мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur"
+      ],
+      "sourcePinIds": [
+        "fem_trochanter_minor"
+      ]
+    },
+    {
+      "muscleId": "iliopsoas",
+      "part": "iliacus",
+      "ru": "Подвздошная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_labium_internum",
+        "cox_fossa_iliaca",
+        "fem_trochanter_minor"
+      ]
+    },
+    {
+      "muscleId": "obturator_internus",
+      "part": null,
+      "ru": "Внутренняя запирательная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_foramen_obturatum",
+        "fem_fossa_trochanterica"
+      ]
+    },
+    {
+      "muscleId": "piriformis",
+      "part": null,
+      "ru": "Грушевидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "sacrum"
+      ],
+      "sourcePinIds": [
+        "fem_trochanter_major",
+        "sacral_pelvic"
+      ]
+    },
+    {
+      "muscleId": "gemellus_superior",
+      "part": null,
+      "ru": "Верхняя близнецовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_spina_ischiadica",
+        "fem_fossa_trochanterica"
+      ]
+    },
+    {
+      "muscleId": "gemellus_inferior",
+      "part": null,
+      "ru": "Нижняя близнецовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "fem_fossa_trochanterica"
+      ]
+    },
+    {
+      "muscleId": "gluteus_maximus",
+      "part": null,
+      "ru": "Большая ягодичная мышца",
+      "noModel": false,
+      "boneIds": [
+        "sacrum",
+        "femur",
+        "hip_bone"
+      ],
+      "sourcePinIds": [
+        "coc_os_coccygis",
+        "fem_tuberositas_glutea",
+        "gluteal_post",
+        "sacral_dorsal"
+      ]
+    },
+    {
+      "muscleId": "gluteus_medius",
+      "part": null,
+      "ru": "Средняя ягодичная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_labium_externum",
+        "fem_trochanter_major",
+        "gluteal_mid"
+      ]
+    },
+    {
+      "muscleId": "gluteus_minimus",
+      "part": null,
+      "ru": "Малая ягодичная мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "hip_bone"
+      ],
+      "sourcePinIds": [
+        "fem_trochanter_major",
+        "gluteal_low"
+      ]
+    },
+    {
+      "muscleId": "tensor_fasciae_latae",
+      "part": null,
+      "ru": "Напрягатель широкой фасции",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_labium_externum",
+        "cox_sias",
+        "gerdy_tubercle"
+      ]
+    },
+    {
+      "muscleId": "quadratus_femoris",
+      "part": null,
+      "ru": "Квадратная мышца бедра",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "fem_tuberculum_quadratum"
+      ]
+    },
+    {
+      "muscleId": "obturator_externus",
+      "part": null,
+      "ru": "Наружная запирательная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_foramen_obturatum",
+        "fem_fossa_trochanterica"
+      ]
+    },
+    {
+      "muscleId": "levator_ani",
+      "part": null,
+      "ru": "Мышца, поднимающая задний проход",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "sacrum"
+      ],
+      "sourcePinIds": [
+        "cox_spina_ischiadica",
+        "coc_os_coccygis",
+        "pubis_pelvic"
+      ]
+    },
+    {
+      "muscleId": "levator_ani",
+      "part": "pubo",
+      "ru": "Лобково-копчиковая мышца",
+      "noModel": false,
+      "boneIds": [
+        "sacrum",
+        "hip_bone"
+      ],
+      "sourcePinIds": [
+        "coc_os_coccygis",
+        "pubis_pelvic"
+      ]
+    },
+    {
+      "muscleId": "levator_ani",
+      "part": "ilio",
+      "ru": "Подвздошно-копчиковая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "sacrum"
+      ],
+      "sourcePinIds": [
+        "cox_spina_ischiadica",
+        "coc_os_coccygis"
+      ]
+    },
+    {
+      "muscleId": "coccygeus",
+      "part": null,
+      "ru": "Копчиковая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "sacrum"
+      ],
+      "sourcePinIds": [
+        "cox_spina_ischiadica",
+        "coc_os_coccygis"
+      ]
+    },
+    {
+      "muscleId": "sartorius",
+      "part": null,
+      "ru": "Портняжная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_sias",
+        "pes_anserinus"
+      ]
+    },
+    {
+      "muscleId": "quadriceps_femoris",
+      "part": null,
+      "ru": "Четырёхглавая мышца бедра",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur",
+        "patella",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_sulcus_supraacetabularis",
+        "cox_siai",
+        "fem_linea_intertrochanterica",
+        "fem_corpus",
+        "fem_labium_laterale",
+        "fem_labium_mediale",
+        "fem_tuberositas_glutea",
+        "fem_linea_supracondylaris_medialis",
+        "pat_basis",
+        "tib_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "quadriceps_femoris",
+      "part": "rectus",
+      "ru": "Прямая мышца бедра",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "patella",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_sulcus_supraacetabularis",
+        "cox_siai",
+        "pat_basis",
+        "tib_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "quadriceps_femoris",
+      "part": "vlat",
+      "ru": "Латеральная широкая мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "patella",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "fem_linea_intertrochanterica",
+        "fem_labium_laterale",
+        "fem_tuberositas_glutea",
+        "pat_basis",
+        "tib_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "quadriceps_femoris",
+      "part": "vmed",
+      "ru": "Медиальная широкая мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "patella",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "fem_linea_intertrochanterica",
+        "fem_labium_mediale",
+        "fem_linea_supracondylaris_medialis",
+        "pat_basis",
+        "tib_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "quadriceps_femoris",
+      "part": "vint",
+      "ru": "Промежуточная широкая мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "patella",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "fem_corpus",
+        "pat_basis",
+        "tib_tuberositas"
+      ]
+    },
+    {
+      "muscleId": "pectineus",
+      "part": null,
+      "ru": "Гребенчатая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_pecten_ossis_pubis",
+        "fem_linea_pectinea"
+      ]
+    },
+    {
+      "muscleId": "adductor_longus",
+      "part": null,
+      "ru": "Длинная приводящая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_corpus_ossis_pubis",
+        "fem_labium_mediale"
+      ]
+    },
+    {
+      "muscleId": "adductor_brevis",
+      "part": null,
+      "ru": "Короткая приводящая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_corpus_ossis_pubis",
+        "cox_ramus_inferior_ossis_pubis",
+        "fem_linea_aspera"
+      ]
+    },
+    {
+      "muscleId": "adductor_magnus",
+      "part": null,
+      "ru": "Большая приводящая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_ramus_ossis_ischii",
+        "cox_tuber_ischiadicum",
+        "cox_ramus_inferior_ossis_pubis",
+        "fem_linea_aspera",
+        "fem_linea_supracondylaris_medialis",
+        "fem_tuberculum_adductorium"
+      ]
+    },
+    {
+      "muscleId": "adductor_magnus",
+      "part": "main",
+      "ru": "Основная часть",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_ramus_ossis_ischii",
+        "cox_tuber_ischiadicum",
+        "fem_linea_aspera",
+        "fem_linea_supracondylaris_medialis",
+        "fem_tuberculum_adductorium"
+      ]
+    },
+    {
+      "muscleId": "adductor_magnus",
+      "part": "minimus",
+      "ru": "Малая приводящая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cox_ramus_inferior_ossis_pubis",
+        "fem_linea_aspera"
+      ]
+    },
+    {
+      "muscleId": "gracilis",
+      "part": null,
+      "ru": "Тонкая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_corpus_ossis_pubis",
+        "cox_ramus_inferior_ossis_pubis",
+        "pes_anserinus"
+      ]
+    },
+    {
+      "muscleId": "biceps_femoris",
+      "part": null,
+      "ru": "Двуглавая мышца бедра",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "femur",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "fem_labium_laterale",
+        "fem_linea_supracondylaris_lateralis",
+        "fib_caput"
+      ]
+    },
+    {
+      "muscleId": "biceps_femoris",
+      "part": "long",
+      "ru": "Длинная головка",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "fib_caput"
+      ]
+    },
+    {
+      "muscleId": "biceps_femoris",
+      "part": "short",
+      "ru": "Короткая головка",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "fem_labium_laterale",
+        "fem_linea_supracondylaris_lateralis",
+        "fib_caput"
+      ]
+    },
+    {
+      "muscleId": "semitendinosus",
+      "part": null,
+      "ru": "Полусухожильная мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "pes_anserinus"
+      ]
+    },
+    {
+      "muscleId": "semimembranosus",
+      "part": null,
+      "ru": "Полуперепончатая мышца",
+      "noModel": false,
+      "boneIds": [
+        "hip_bone",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "cox_tuber_ischiadicum",
+        "semimembranosus_ins"
+      ]
+    },
+    {
+      "muscleId": "tibialis_anterior",
+      "part": null,
+      "ru": "Передняя большеберцовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "metatarsal_1",
+        "cuneiform_med"
+      ],
+      "sourcePinIds": [
+        "tib_condylus_lateralis",
+        "tib_facies_lateralis",
+        "mt1_basis",
+        "cuneiform_med_plantar"
+      ]
+    },
+    {
+      "muscleId": "extensor_digitorum_longus",
+      "part": null,
+      "ru": "Длинный разгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "fibula",
+        "toe_mid_2",
+        "toe_dist_2",
+        "toe_mid_3",
+        "toe_dist_3",
+        "toe_mid_4",
+        "toe_dist_4",
+        "toe_mid_5",
+        "toe_dist_5"
+      ],
+      "sourcePinIds": [
+        "tib_condylus_lateralis",
+        "fib_caput",
+        "tm2_basis",
+        "td2_basis",
+        "tm3_basis",
+        "td3_basis",
+        "tm4_basis",
+        "td4_basis",
+        "tm5_basis",
+        "td5_basis",
+        "fibula_ant_upper"
+      ]
+    },
+    {
+      "muscleId": "fibularis_tertius",
+      "part": null,
+      "ru": "Третья малоберцовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_5",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "mt5_basis",
+        "fibula_ant_lower"
+      ]
+    },
+    {
+      "muscleId": "extensor_hallucis_longus",
+      "part": null,
+      "ru": "Длинный разгибатель большого пальца стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_dist_1",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "td1_basis",
+        "fibula_med_middle"
+      ]
+    },
+    {
+      "muscleId": "fibularis_longus",
+      "part": null,
+      "ru": "Длинная малоберцовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "fibula",
+        "metatarsal_1",
+        "cuneiform_med"
+      ],
+      "sourcePinIds": [
+        "tib_condylus_lateralis",
+        "fib_caput",
+        "mt1_tuberositas",
+        "fibula_lat_upper",
+        "cuneiform_med_plantar"
+      ]
+    },
+    {
+      "muscleId": "fibularis_brevis",
+      "part": null,
+      "ru": "Короткая малоберцовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_5",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "mt5_tuberositas",
+        "fibula_lat_lower"
+      ]
+    },
+    {
+      "muscleId": "triceps_surae",
+      "part": null,
+      "ru": "Трёхглавая мышца голени",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "fibula",
+        "calcaneus",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "tib_linea_musculi_solei",
+        "fib_caput",
+        "cal_tuber",
+        "gastroc_med_origin",
+        "gastroc_lat_origin",
+        "fibula_post_upper"
+      ]
+    },
+    {
+      "muscleId": "triceps_surae",
+      "part": "gmed",
+      "ru": "Икроножная мышца, медиальная головка",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cal_tuber",
+        "gastroc_med_origin"
+      ]
+    },
+    {
+      "muscleId": "triceps_surae",
+      "part": "glat",
+      "ru": "Икроножная мышца, латеральная головка",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cal_tuber",
+        "gastroc_lat_origin"
+      ]
+    },
+    {
+      "muscleId": "triceps_surae",
+      "part": "soleus",
+      "ru": "Камбаловидная мышца",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "fibula",
+        "calcaneus"
+      ],
+      "sourcePinIds": [
+        "tib_linea_musculi_solei",
+        "fib_caput",
+        "cal_tuber",
+        "fibula_post_upper"
+      ]
+    },
+    {
+      "muscleId": "plantaris",
+      "part": null,
+      "ru": "Подошвенная мышца",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "femur"
+      ],
+      "sourcePinIds": [
+        "cal_tuber",
+        "plantaris_origin"
+      ]
+    },
+    {
+      "muscleId": "popliteus",
+      "part": null,
+      "ru": "Подколенная мышца",
+      "noModel": false,
+      "boneIds": [
+        "femur",
+        "tibia"
+      ],
+      "sourcePinIds": [
+        "popliteus_origin",
+        "popliteus_ins"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_longus",
+      "part": null,
+      "ru": "Длинный сгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "toe_dist_2",
+        "toe_dist_3",
+        "toe_dist_4",
+        "toe_dist_5"
+      ],
+      "sourcePinIds": [
+        "tib_facies_posterior",
+        "td2_basis",
+        "td3_basis",
+        "td4_basis",
+        "td5_basis"
+      ]
+    },
+    {
+      "muscleId": "tibialis_posterior",
+      "part": null,
+      "ru": "Задняя большеберцовая мышца",
+      "noModel": false,
+      "boneIds": [
+        "tibia",
+        "fibula",
+        "navicular",
+        "metatarsal_2",
+        "metatarsal_3",
+        "metatarsal_4",
+        "cuneiform_med",
+        "cuneiform_int",
+        "cuneiform_lat"
+      ],
+      "sourcePinIds": [
+        "tib_facies_posterior",
+        "fib_crista_medialis",
+        "nav_tuberositas",
+        "mt2_basis",
+        "mt3_basis",
+        "mt4_basis",
+        "cuneiform_med_plantar",
+        "att_cuneiform_int_plantar",
+        "cuneiform_lat_plantar"
+      ]
+    },
+    {
+      "muscleId": "flexor_hallucis_longus",
+      "part": null,
+      "ru": "Длинный сгибатель большого пальца стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_dist_1",
+        "fibula"
+      ],
+      "sourcePinIds": [
+        "td1_basis",
+        "fibula_post_lower"
+      ]
+    },
+    {
+      "muscleId": "extensor_digitorum_brevis",
+      "part": null,
+      "ru": "Короткий разгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_2",
+        "toe_prox_3",
+        "toe_prox_4",
+        "calcaneus"
+      ],
+      "sourcePinIds": [
+        "tp2_basis",
+        "tp3_basis",
+        "tp4_basis",
+        "calc_dorsal_anterior"
+      ]
+    },
+    {
+      "muscleId": "extensor_hallucis_brevis",
+      "part": null,
+      "ru": "Короткий разгибатель большого пальца стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "calcaneus"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "calc_dorsal_anterior"
+      ]
+    },
+    {
+      "muscleId": "dorsal_interossei_pedis",
+      "part": null,
+      "ru": "Тыльные межкостные мышцы стопы",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_1",
+        "metatarsal_2",
+        "toe_prox_2",
+        "metatarsal_3",
+        "toe_prox_3",
+        "metatarsal_4",
+        "toe_prox_4",
+        "metatarsal_5"
+      ],
+      "sourcePinIds": [
+        "mt1_corpus",
+        "mt2_corpus",
+        "tp2_basis",
+        "mt3_corpus",
+        "tp3_basis",
+        "mt4_corpus",
+        "tp4_basis",
+        "mt5_corpus"
+      ]
+    },
+    {
+      "muscleId": "abductor_hallucis",
+      "part": null,
+      "ru": "Мышца, отводящая большой палец стопы",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "toe_prox_1"
+      ],
+      "sourcePinIds": [
+        "cal_processus_medialis_tuberis",
+        "tp1_basis"
+      ]
+    },
+    {
+      "muscleId": "flexor_hallucis_brevis",
+      "part": null,
+      "ru": "Короткий сгибатель большого пальца стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "cuboid",
+        "cuneiform_med",
+        "cuneiform_lat",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "cuboid_groove",
+        "cuneiform_med_plantar",
+        "cuneiform_lat_plantar",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "flexor_hallucis_brevis",
+      "part": "medh",
+      "ru": "Медиальная головка",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "cuneiform_med",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "cuneiform_med_plantar",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "flexor_hallucis_brevis",
+      "part": "lath",
+      "ru": "Латеральная головка",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "cuboid",
+        "cuneiform_lat",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "cuboid_groove",
+        "cuneiform_lat_plantar",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "adductor_hallucis",
+      "part": null,
+      "ru": "Мышца, приводящая большой палец стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "metatarsal_2",
+        "metatarsal_3",
+        "metatarsal_4",
+        "metatarsal_5",
+        "cuboid",
+        "cuneiform_lat",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "mt2_basis",
+        "mt3_basis",
+        "mt3_caput",
+        "mt4_basis",
+        "mt4_caput",
+        "mt5_caput",
+        "cuboid_groove",
+        "cuneiform_lat_plantar",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "adductor_hallucis",
+      "part": "obl",
+      "ru": "Косая головка",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "metatarsal_2",
+        "metatarsal_3",
+        "metatarsal_4",
+        "cuboid",
+        "cuneiform_lat",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "mt2_basis",
+        "mt3_basis",
+        "mt4_basis",
+        "cuboid_groove",
+        "cuneiform_lat_plantar",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "adductor_hallucis",
+      "part": "transv",
+      "ru": "Поперечная головка",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_1",
+        "metatarsal_3",
+        "metatarsal_4",
+        "metatarsal_5",
+        "sesamoid_pedis"
+      ],
+      "sourcePinIds": [
+        "tp1_basis",
+        "mt3_caput",
+        "mt4_caput",
+        "mt5_caput",
+        "sesamoid_plantar"
+      ]
+    },
+    {
+      "muscleId": "abductor_digiti_minimi_pedis",
+      "part": null,
+      "ru": "Мышца, отводящая мизинец стопы",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "cal_processus_medialis_tuberis",
+        "cal_processus_lateralis_tuberis",
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "flexor_digiti_minimi_brevis_pedis",
+      "part": null,
+      "ru": "Короткий сгибатель мизинца стопы",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_5",
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "mt5_basis",
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "opponens_digiti_minimi_pedis",
+      "part": null,
+      "ru": "Мышца, противопоставляющая мизинец стопы",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_5"
+      ],
+      "sourcePinIds": [
+        "mt5_corpus"
+      ]
+    },
+    {
+      "muscleId": "flexor_digitorum_brevis",
+      "part": null,
+      "ru": "Короткий сгибатель пальцев",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus",
+        "toe_mid_2",
+        "toe_mid_3",
+        "toe_mid_4",
+        "toe_mid_5"
+      ],
+      "sourcePinIds": [
+        "cal_processus_medialis_tuberis",
+        "tm2_basis",
+        "tm3_basis",
+        "tm4_basis",
+        "tm5_basis"
+      ]
+    },
+    {
+      "muscleId": "quadratus_plantae",
+      "part": null,
+      "ru": "Квадратная мышца подошвы",
+      "noModel": false,
+      "boneIds": [
+        "calcaneus"
+      ],
+      "sourcePinIds": [
+        "calc_plantar"
+      ]
+    },
+    {
+      "muscleId": "lumbricals_pedis",
+      "part": null,
+      "ru": "Червеобразные мышцы стопы",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_2",
+        "toe_prox_3",
+        "toe_prox_4",
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "tp2_basis",
+        "tp3_basis",
+        "tp4_basis",
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "lumbricals_pedis",
+      "part": "l1",
+      "ru": "I червеобразная",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_2"
+      ],
+      "sourcePinIds": [
+        "tp2_basis"
+      ]
+    },
+    {
+      "muscleId": "lumbricals_pedis",
+      "part": "l2",
+      "ru": "II червеобразная",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_3"
+      ],
+      "sourcePinIds": [
+        "tp3_basis"
+      ]
+    },
+    {
+      "muscleId": "lumbricals_pedis",
+      "part": "l3",
+      "ru": "III червеобразная",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_4"
+      ],
+      "sourcePinIds": [
+        "tp4_basis"
+      ]
+    },
+    {
+      "muscleId": "lumbricals_pedis",
+      "part": "l4",
+      "ru": "IV червеобразная",
+      "noModel": false,
+      "boneIds": [
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "plantar_interossei",
+      "part": null,
+      "ru": "Подошвенные межкостные мышцы",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_3",
+        "toe_prox_3",
+        "metatarsal_4",
+        "toe_prox_4",
+        "metatarsal_5",
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "mt3_corpus",
+        "tp3_basis",
+        "mt4_corpus",
+        "tp4_basis",
+        "mt5_corpus",
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "plantar_interossei",
+      "part": "p1",
+      "ru": "I подошвенная межкостная",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_3",
+        "toe_prox_3"
+      ],
+      "sourcePinIds": [
+        "mt3_corpus",
+        "tp3_basis"
+      ]
+    },
+    {
+      "muscleId": "plantar_interossei",
+      "part": "p2",
+      "ru": "II подошвенная межкостная",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_4",
+        "toe_prox_4"
+      ],
+      "sourcePinIds": [
+        "mt4_corpus",
+        "tp4_basis"
+      ]
+    },
+    {
+      "muscleId": "plantar_interossei",
+      "part": "p3",
+      "ru": "III подошвенная межкостная",
+      "noModel": false,
+      "boneIds": [
+        "metatarsal_5",
+        "toe_prox_5"
+      ],
+      "sourcePinIds": [
+        "mt5_corpus",
+        "tp5_basis"
+      ]
+    },
+    {
+      "muscleId": "occipitofrontalis_right",
+      "part": null,
+      "ru": "Затылочно-лобная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "occipitofrontalis_right",
+      "part": "frontal",
+      "ru": "Лобное брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "occipitofrontalis_right",
+      "part": "occipital",
+      "ru": "Затылочное брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "occipitofrontalis_left",
+      "part": null,
+      "ru": "Затылочно-лобная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "occipitofrontalis_left",
+      "part": "frontal",
+      "ru": "Лобное брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "occipitofrontalis_left",
+      "part": "occipital",
+      "ru": "Затылочное брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "temporoparietalis_right",
+      "part": null,
+      "ru": "Височно-теменная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "temporoparietalis_left",
+      "part": null,
+      "ru": "Височно-теменная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_right",
+      "part": null,
+      "ru": "Круговая мышца глаза · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_right",
+      "part": "orbital",
+      "ru": "Глазничная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_right",
+      "part": "palpebral",
+      "ru": "Вековая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_right",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_left",
+      "part": null,
+      "ru": "Круговая мышца глаза · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_left",
+      "part": "orbital",
+      "ru": "Глазничная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_left",
+      "part": "palpebral",
+      "ru": "Вековая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_left",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "ru": "Ресничный пучок",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "corrugator_supercilii_right",
+      "part": null,
+      "ru": "Мышца, сморщивающая бровь · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "corrugator_supercilii_left",
+      "part": null,
+      "ru": "Мышца, сморщивающая бровь · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "procerus_right",
+      "part": null,
+      "ru": "Мышца гордецов · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "procerus_left",
+      "part": null,
+      "ru": "Мышца гордецов · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_right",
+      "part": null,
+      "ru": "Носовая мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_right",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_right",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_left",
+      "part": null,
+      "ru": "Носовая мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_left",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "nasalis_left",
+      "part": "alar",
+      "ru": "Крыльная часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_septi_nasi_right",
+      "part": null,
+      "ru": "Мышца, опускающая перегородку носа · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_septi_nasi_left",
+      "part": null,
+      "ru": "Мышца, опускающая перегородку носа · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oris",
+      "part": null,
+      "ru": "Круговая мышца рта",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oris",
+      "part": "marginal",
+      "ru": "Краевая часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "orbicularis_oris",
+      "part": "labial",
+      "ru": "Губная часть",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_anguli_oris_right",
+      "part": null,
+      "ru": "Мышца, опускающая угол рта · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_anguli_oris_left",
+      "part": null,
+      "ru": "Мышца, опускающая угол рта · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_labii_inferioris_right",
+      "part": null,
+      "ru": "Мышца, опускающая нижнюю губу · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_labii_inferioris_left",
+      "part": null,
+      "ru": "Мышца, опускающая нижнюю губу · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "mentalis_right",
+      "part": null,
+      "ru": "Подбородочная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "mentalis_left",
+      "part": null,
+      "ru": "Подбородочная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "risorius_right",
+      "part": null,
+      "ru": "Мышца смеха · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "risorius_left",
+      "part": null,
+      "ru": "Мышца смеха · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "zygomaticus_major_right",
+      "part": null,
+      "ru": "Большая скуловая мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "zygomaticus_major_left",
+      "part": null,
+      "ru": "Большая скуловая мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "zygomaticus_minor_right",
+      "part": null,
+      "ru": "Малая скуловая мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "zygomaticus_minor_left",
+      "part": null,
+      "ru": "Малая скуловая мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "levator_labii_superioris_right",
+      "part": null,
+      "ru": "Мышца, поднимающая верхнюю губу · правая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_right"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_right_A02_1_12_006"
+      ]
+    },
+    {
+      "muscleId": "levator_labii_superioris_left",
+      "part": null,
+      "ru": "Мышца, поднимающая верхнюю губу · левая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_left"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_left_A02_1_12_006"
+      ]
+    },
+    {
+      "muscleId": "levator_nasolabialis_right",
+      "part": null,
+      "ru": "Мышца, поднимающая верхнюю губу и крыло носа · правая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_right"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_right_A02_1_12_024"
+      ]
+    },
+    {
+      "muscleId": "levator_nasolabialis_left",
+      "part": null,
+      "ru": "Мышца, поднимающая верхнюю губу и крыло носа · левая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_left"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_left_A02_1_12_024"
+      ]
+    },
+    {
+      "muscleId": "levator_anguli_oris_right",
+      "part": null,
+      "ru": "Мышца, поднимающая угол рта · правая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_right"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_right_A02_1_12_009"
+      ]
+    },
+    {
+      "muscleId": "levator_anguli_oris_left",
+      "part": null,
+      "ru": "Мышца, поднимающая угол рта · левая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_left"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_left_A02_1_12_009"
+      ]
+    },
+    {
+      "muscleId": "buccinator_right",
+      "part": null,
+      "ru": "Щёчная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "buccinator_left",
+      "part": null,
+      "ru": "Щёчная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "masseter_right",
+      "part": null,
+      "ru": "Жевательная мышца · правая",
+      "noModel": false,
+      "boneIds": [
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_mandible_A02_1_15_026"
+      ]
+    },
+    {
+      "muscleId": "masseter_right",
+      "part": "superficial",
+      "ru": "Поверхностная часть",
+      "noModel": false,
+      "boneIds": [
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_mandible_A02_1_15_026"
+      ]
+    },
+    {
+      "muscleId": "masseter_right",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "noModel": false,
+      "boneIds": [
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_mandible_A02_1_15_026"
+      ]
+    },
+    {
+      "muscleId": "masseter_left",
+      "part": null,
+      "ru": "Жевательная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "masseter_left",
+      "part": "superficial",
+      "ru": "Поверхностная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "masseter_left",
+      "part": "deep",
+      "ru": "Глубокая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "temporalis_right",
+      "part": null,
+      "ru": "Височная мышца · правая",
+      "noModel": false,
+      "boneIds": [
+        "mandible",
+        "temporal_right"
+      ],
+      "sourcePinIds": [
+        "head_mandible_A02_1_15_032",
+        "head_temporal_right_A02_1_06_065"
+      ]
+    },
+    {
+      "muscleId": "temporalis_left",
+      "part": null,
+      "ru": "Височная мышца · левая",
+      "noModel": false,
+      "boneIds": [
+        "temporal_left"
+      ],
+      "sourcePinIds": [
+        "head_temporal_left_A02_1_06_065"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_right",
+      "part": null,
+      "ru": "Латеральная крыловидная мышца · правая",
+      "noModel": false,
+      "boneIds": [
+        "sphenoid",
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_sphenoid_A02_1_05_043",
+        "head_mandible_A02_1_15_038"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_right",
+      "part": "upper",
+      "ru": "Верхняя головка",
+      "noModel": false,
+      "boneIds": [
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_mandible_A02_1_15_038"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_right",
+      "part": "lower",
+      "ru": "Нижняя головка",
+      "noModel": false,
+      "boneIds": [
+        "sphenoid",
+        "mandible"
+      ],
+      "sourcePinIds": [
+        "head_sphenoid_A02_1_05_043",
+        "head_mandible_A02_1_15_038"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_left",
+      "part": null,
+      "ru": "Латеральная крыловидная мышца · левая",
+      "noModel": false,
+      "boneIds": [
+        "sphenoid"
+      ],
+      "sourcePinIds": [
+        "head_sphenoid_A02_1_05_027"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_left",
+      "part": "upper",
+      "ru": "Верхняя головка",
+      "noModel": false,
+      "boneIds": [
+        "sphenoid"
+      ],
+      "sourcePinIds": [
+        "head_sphenoid_A02_1_05_027"
+      ]
+    },
+    {
+      "muscleId": "lateral_pterygoid_left",
+      "part": "lower",
+      "ru": "Нижняя головка",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "medial_pterygoid_right",
+      "part": null,
+      "ru": "Медиальная крыловидная мышца · правая",
+      "noModel": false,
+      "boneIds": [
+        "sphenoid",
+        "mandible",
+        "maxilla_right",
+        "palatine_right"
+      ],
+      "sourcePinIds": [
+        "head_sphenoid_A02_1_05_043",
+        "head_mandible_A02_1_15_027",
+        "head_maxilla_right_A02_1_12_016",
+        "head_palatine_right_A02_1_13_007"
+      ]
+    },
+    {
+      "muscleId": "medial_pterygoid_left",
+      "part": null,
+      "ru": "Медиальная крыловидная мышца · левая",
+      "noModel": false,
+      "boneIds": [
+        "maxilla_left",
+        "palatine_left"
+      ],
+      "sourcePinIds": [
+        "head_maxilla_left_A02_1_12_016",
+        "head_palatine_left_A02_1_13_007"
+      ]
+    },
+    {
+      "muscleId": "auricularis_anterior_right",
+      "part": null,
+      "ru": "Передняя ушная мышца · правая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "auricularis_anterior_left",
+      "part": null,
+      "ru": "Передняя ушная мышца · левая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "auricularis_superior_right",
+      "part": null,
+      "ru": "Верхняя ушная мышца · правая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "auricularis_superior_left",
+      "part": null,
+      "ru": "Верхняя ушная мышца · левая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "auricularis_posterior_right",
+      "part": null,
+      "ru": "Задняя ушная мышца · правая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "auricularis_posterior_left",
+      "part": null,
+      "ru": "Задняя ушная мышца · левая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_supercilii_right",
+      "part": null,
+      "ru": "Мышца, опускающая бровь · правая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "depressor_supercilii_left",
+      "part": null,
+      "ru": "Мышца, опускающая бровь · левая",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "transversus_menti",
+      "part": null,
+      "ru": "Поперечная мышца подбородка",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "platysma_right",
+      "part": null,
+      "ru": "Подкожная мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "platysma_left",
+      "part": null,
+      "ru": "Подкожная мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternocleidomastoid_right",
+      "part": null,
+      "ru": "Грудино-ключично-сосцевидная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternocleidomastoid_left",
+      "part": null,
+      "ru": "Грудино-ключично-сосцевидная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_right",
+      "part": null,
+      "ru": "Двубрюшная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_right",
+      "part": "anterior",
+      "ru": "Переднее брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_right",
+      "part": "posterior",
+      "ru": "Заднее брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_left",
+      "part": null,
+      "ru": "Двубрюшная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_left",
+      "part": "anterior",
+      "ru": "Переднее брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "digastric_left",
+      "part": "posterior",
+      "ru": "Заднее брюшко",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "stylohyoid_right",
+      "part": null,
+      "ru": "Шилоподъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "stylohyoid_left",
+      "part": null,
+      "ru": "Шилоподъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "mylohyoid_right",
+      "part": null,
+      "ru": "Челюстно-подъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "mylohyoid_left",
+      "part": null,
+      "ru": "Челюстно-подъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "geniohyoid_right",
+      "part": null,
+      "ru": "Подбородочно-подъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "geniohyoid_left",
+      "part": null,
+      "ru": "Подбородочно-подъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternohyoid_right",
+      "part": null,
+      "ru": "Грудино-подъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternohyoid_left",
+      "part": null,
+      "ru": "Грудино-подъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_right",
+      "part": null,
+      "ru": "Лопаточно-подъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_right",
+      "part": "superior",
+      "ru": "Верхнее брюшко",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_right",
+      "part": "inferior",
+      "ru": "Нижнее брюшко",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_left",
+      "part": null,
+      "ru": "Лопаточно-подъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_left",
+      "part": "superior",
+      "ru": "Верхнее брюшко",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "omohyoid_left",
+      "part": "inferior",
+      "ru": "Нижнее брюшко",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternothyroid_right",
+      "part": null,
+      "ru": "Грудино-щитовидная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "sternothyroid_left",
+      "part": null,
+      "ru": "Грудино-щитовидная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thyrohyoid_right",
+      "part": null,
+      "ru": "Щитоподъязычная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thyrohyoid_left",
+      "part": null,
+      "ru": "Щитоподъязычная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_anterior_right",
+      "part": null,
+      "ru": "Передняя лестничная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_anterior_left",
+      "part": null,
+      "ru": "Передняя лестничная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_medius_right",
+      "part": null,
+      "ru": "Средняя лестничная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_medius_left",
+      "part": null,
+      "ru": "Средняя лестничная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_posterior_right",
+      "part": null,
+      "ru": "Задняя лестничная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "scalenus_posterior_left",
+      "part": null,
+      "ru": "Задняя лестничная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_right",
+      "part": null,
+      "ru": "Длинная мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_right",
+      "part": "superior_oblique",
+      "ru": "Верхняя косая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_right",
+      "part": "vertical",
+      "ru": "Вертикальная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_right",
+      "part": "inferior_oblique",
+      "ru": "Нижняя косая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_left",
+      "part": null,
+      "ru": "Длинная мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_left",
+      "part": "superior_oblique",
+      "ru": "Верхняя косая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_left",
+      "part": "vertical",
+      "ru": "Вертикальная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_colli_left",
+      "part": "inferior_oblique",
+      "ru": "Нижняя косая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_capitis_right",
+      "part": null,
+      "ru": "Длинная мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longus_capitis_left",
+      "part": null,
+      "ru": "Длинная мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_anterior_right",
+      "part": null,
+      "ru": "Передняя прямая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_anterior_left",
+      "part": null,
+      "ru": "Передняя прямая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_lateralis_right",
+      "part": null,
+      "ru": "Латеральная прямая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_lateralis_left",
+      "part": null,
+      "ru": "Латеральная прямая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_posterior_major_right",
+      "part": null,
+      "ru": "Большая задняя прямая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_posterior_major_left",
+      "part": null,
+      "ru": "Большая задняя прямая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_posterior_minor_right",
+      "part": null,
+      "ru": "Малая задняя прямая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "rectus_capitis_posterior_minor_left",
+      "part": null,
+      "ru": "Малая задняя прямая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "obliquus_capitis_superior_right",
+      "part": null,
+      "ru": "Верхняя косая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "obliquus_capitis_superior_left",
+      "part": null,
+      "ru": "Верхняя косая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "obliquus_capitis_inferior_right",
+      "part": null,
+      "ru": "Нижняя косая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "obliquus_capitis_inferior_left",
+      "part": null,
+      "ru": "Нижняя косая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "splenius_capitis_right",
+      "part": null,
+      "ru": "Ременная мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "splenius_capitis_left",
+      "part": null,
+      "ru": "Ременная мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "splenius_cervicis_right",
+      "part": null,
+      "ru": "Ременная мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "splenius_cervicis_left",
+      "part": null,
+      "ru": "Ременная мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "iliocostalis_cervicis_right",
+      "part": null,
+      "ru": "Подвздошно-рёберная мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "iliocostalis_cervicis_left",
+      "part": null,
+      "ru": "Подвздошно-рёберная мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longissimus_cervicis_right",
+      "part": null,
+      "ru": "Длиннейшая мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longissimus_cervicis_left",
+      "part": null,
+      "ru": "Длиннейшая мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longissimus_capitis_right",
+      "part": null,
+      "ru": "Длиннейшая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "longissimus_capitis_left",
+      "part": null,
+      "ru": "Длиннейшая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "spinalis_cervicis_right",
+      "part": null,
+      "ru": "Остистая мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "spinalis_cervicis_left",
+      "part": null,
+      "ru": "Остистая мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "semispinalis_cervicis_right",
+      "part": null,
+      "ru": "Полуостистая мышца шеи · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "semispinalis_cervicis_left",
+      "part": null,
+      "ru": "Полуостистая мышца шеи · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "semispinalis_capitis_right",
+      "part": null,
+      "ru": "Полуостистая мышца головы · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "semispinalis_capitis_left",
+      "part": null,
+      "ru": "Полуостистая мышца головы · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_right",
+      "part": null,
+      "ru": "Трапециевидная мышца · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_right",
+      "part": "descending",
+      "ru": "Нисходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_right",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_right",
+      "part": "ascending",
+      "ru": "Восходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_left",
+      "part": null,
+      "ru": "Трапециевидная мышца · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_left",
+      "part": "descending",
+      "ru": "Нисходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_left",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_trapezius_left",
+      "part": "ascending",
+      "ru": "Восходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_levator_scapulae_right",
+      "part": null,
+      "ru": "Мышца, поднимающая лопатку · правая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "neck_levator_scapulae_left",
+      "part": null,
+      "ru": "Мышца, поднимающая лопатку · левая",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_right",
+      "part": null,
+      "ru": "Большая грудная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_right",
+      "part": "clavicular",
+      "ru": "Ключичная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_right",
+      "part": "sternocostal",
+      "ru": "Грудино-рёберная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_right",
+      "part": "abdominal",
+      "ru": "Брюшная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_left",
+      "part": null,
+      "ru": "Большая грудная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_left",
+      "part": "clavicular",
+      "ru": "Ключичная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_left",
+      "part": "sternocostal",
+      "ru": "Грудино-рёберная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_major_left",
+      "part": "abdominal",
+      "ru": "Брюшная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_minor_right",
+      "part": null,
+      "ru": "Малая грудная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_pectoralis_minor_left",
+      "part": null,
+      "ru": "Малая грудная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_subclavius_right",
+      "part": null,
+      "ru": "Подключичная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_subclavius_left",
+      "part": null,
+      "ru": "Подключичная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_anterior_right",
+      "part": null,
+      "ru": "Передняя зубчатая мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_anterior_left",
+      "part": null,
+      "ru": "Передняя зубчатая мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_intercostales_externi",
+      "part": null,
+      "ru": "Наружные межрёберные мышцы",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_intercostales_interni",
+      "part": null,
+      "ru": "Внутренние межрёберные мышцы",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_intercostales_intimi",
+      "part": null,
+      "ru": "Самые внутренние межрёберные мышцы",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_subcostales",
+      "part": null,
+      "ru": "Подрёберные мышцы",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_transversus_thoracis_right",
+      "part": null,
+      "ru": "Поперечная мышца груди · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_transversus_thoracis_left",
+      "part": null,
+      "ru": "Поперечная мышца груди · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_right",
+      "part": null,
+      "ru": "Мышцы, поднимающие рёбра · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_right",
+      "part": "longi",
+      "ru": "Длинные мышцы, поднимающие рёбра",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_right",
+      "part": "breves",
+      "ru": "Короткие мышцы, поднимающие рёбра",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_left",
+      "part": null,
+      "ru": "Мышцы, поднимающие рёбра · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_left",
+      "part": "longi",
+      "ru": "Длинные мышцы, поднимающие рёбра",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_levatores_costarum_left",
+      "part": "breves",
+      "ru": "Короткие мышцы, поднимающие рёбра",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_diaphragm",
+      "part": null,
+      "ru": "Диафрагма",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_diaphragm",
+      "part": "sternal",
+      "ru": "Грудинная часть диафрагмы",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_diaphragm",
+      "part": "costal",
+      "ru": "Рёберная часть диафрагмы",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_diaphragm",
+      "part": "lumbar",
+      "ru": "Поясничная часть диафрагмы",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_posterior_superior_right",
+      "part": null,
+      "ru": "Верхняя задняя зубчатая мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_posterior_superior_left",
+      "part": null,
+      "ru": "Верхняя задняя зубчатая мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_posterior_inferior_right",
+      "part": null,
+      "ru": "Нижняя задняя зубчатая мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_serratus_posterior_inferior_left",
+      "part": null,
+      "ru": "Нижняя задняя зубчатая мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_iliocostalis_thoracis_right",
+      "part": null,
+      "ru": "Подвздошно-рёберная мышца: грудной исходный объект · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_iliocostalis_thoracis_left",
+      "part": null,
+      "ru": "Подвздошно-рёберная мышца: грудной исходный объект · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_longissimus_thoracis_right",
+      "part": null,
+      "ru": "Длиннейшая мышца груди · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_longissimus_thoracis_left",
+      "part": null,
+      "ru": "Длиннейшая мышца груди · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_spinalis_thoracis_right",
+      "part": null,
+      "ru": "Остистая мышца груди · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_spinalis_thoracis_left",
+      "part": null,
+      "ru": "Остистая мышца груди · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_semispinalis_thoracis_right",
+      "part": null,
+      "ru": "Полуостистая мышца груди · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_semispinalis_thoracis_left",
+      "part": null,
+      "ru": "Полуостистая мышца груди · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_multifidus_right",
+      "part": null,
+      "ru": "Многораздельные мышцы · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_multifidus_right",
+      "part": "thoracic",
+      "ru": "Многораздельные мышцы груди",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_multifidus_left",
+      "part": null,
+      "ru": "Многораздельные мышцы · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_multifidus_left",
+      "part": "thoracic",
+      "ru": "Многораздельные мышцы груди",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rotatores_thoracis",
+      "part": null,
+      "ru": "Мышцы-вращатели груди",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rotatores_thoracis",
+      "part": "longi",
+      "ru": "Длинные пучки вращателей",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rotatores_thoracis",
+      "part": "breves",
+      "ru": "Короткие пучки вращателей",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_interspinales_thoracis",
+      "part": null,
+      "ru": "Межостистые мышцы груди",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_intertransversarii_thoracis",
+      "part": null,
+      "ru": "Межпоперечные мышцы груди",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_latissimus_dorsi_right",
+      "part": null,
+      "ru": "Широчайшая мышца спины · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_latissimus_dorsi_left",
+      "part": null,
+      "ru": "Широчайшая мышца спины · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rhomboid_major_right",
+      "part": null,
+      "ru": "Большая ромбовидная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rhomboid_major_left",
+      "part": null,
+      "ru": "Большая ромбовидная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rhomboid_minor_right",
+      "part": null,
+      "ru": "Малая ромбовидная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_rhomboid_minor_left",
+      "part": null,
+      "ru": "Малая ромбовидная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_right",
+      "part": null,
+      "ru": "Трапециевидная мышца · справа",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_right",
+      "part": "descending",
+      "ru": "Нисходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_right",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_right",
+      "part": "ascending",
+      "ru": "Восходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_left",
+      "part": null,
+      "ru": "Трапециевидная мышца · слева",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_left",
+      "part": "descending",
+      "ru": "Нисходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_left",
+      "part": "transverse",
+      "ru": "Поперечная часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_trapezius_left",
+      "part": "ascending",
+      "ru": "Восходящая часть",
+      "noModel": false,
+      "boneIds": [],
+      "sourcePinIds": []
+    },
+    {
+      "muscleId": "thorax_sternalis",
+      "part": null,
+      "ru": "Грудинная мышца — вариант",
+      "noModel": true,
+      "boneIds": [],
+      "sourcePinIds": []
+    }
+  ]
+}

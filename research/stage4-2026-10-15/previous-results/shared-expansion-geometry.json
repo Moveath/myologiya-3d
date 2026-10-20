@@ -1,0 +1,104 @@
+{
+  "tool": "Blender MCP",
+  "blender": "5.2.2 LTS",
+  "transform": "Three (x,y,z) -> Blender (x,-z,y)",
+  "sourceModelsUnchanged": true,
+  "points": [
+    {
+      "id": "cal_sinus_tarsi",
+      "p": [
+        -0.09929,
+        0.03444,
+        0.0639
+      ],
+      "n": [
+        -0.597,
+        0.52,
+        -0.611
+      ],
+      "model": "site/leg-q-glb.txt",
+      "sha256": "3f7d1377ae151fb338b197d3ee4185ad1434791a20eb1bc8322cd2dc9d8fdf8d",
+      "related": [
+        "calcaneus",
+        "talus"
+      ],
+      "distanceMm": {
+        "calcaneus": 0.003813541979980073,
+        "talus": 9.461462497711182
+      },
+      "status": "measured_not_anatomically_accepted"
+    },
+    {
+      "id": "head_occipital_A02_1_04_006",
+      "p": [
+        -2e-05,
+        1.51962,
+        0.09944
+      ],
+      "n": [
+        0.005,
+        0.482,
+        -0.876
+      ],
+      "model": "site/head-q-glb.txt",
+      "sha256": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b",
+      "related": [
+        "occipital",
+        "sphenoid"
+      ],
+      "distanceMm": {
+        "occipital": 0.0011949167628699797,
+        "sphenoid": 0.6026516202837229
+      },
+      "status": "measured_not_anatomically_accepted"
+    },
+    {
+      "id": "head_maxilla_right_A02_1_12_012",
+      "p": [
+        -0.03824,
+        1.50943,
+        0.15662
+      ],
+      "n": [
+        -0.132,
+        0.77,
+        0.624
+      ],
+      "model": "site/head-q-glb.txt",
+      "sha256": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b",
+      "related": [
+        "maxilla_right",
+        "zygomatic_right"
+      ],
+      "distanceMm": {
+        "maxilla_right": 0.002619154656713363,
+        "zygomatic_right": 0.692404923029244
+      },
+      "status": "measured_not_anatomically_accepted"
+    },
+    {
+      "id": "head_maxilla_left_A02_1_12_012",
+      "p": [
+        0.03565,
+        1.50939,
+        0.15681
+      ],
+      "n": [
+        -0.024,
+        0.678,
+        0.735
+      ],
+      "model": "site/head-q-glb.txt",
+      "sha256": "2e73a1d251dc51f00245f61f7f54802761f7ab444717a50452230a565698dc1b",
+      "related": [
+        "maxilla_left",
+        "zygomatic_left"
+      ],
+      "distanceMm": {
+        "maxilla_left": 0.0023114218947739573,
+        "zygomatic_left": 0.5453578778542578
+      },
+      "status": "measured_not_anatomically_accepted"
+    }
+  ]
+}

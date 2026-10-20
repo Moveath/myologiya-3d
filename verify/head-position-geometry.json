@@ -1,14 +1,15 @@
 {
   "check": "Distance to assigned BodyParts3D mesh, tolerance 0.3 mm",
+  "query_units": "millimetres, rebased in-memory copy; source and pin coordinates unchanged",
   "note": "Geometric validation only; names, projections and source independence require anatomical review.",
   "checked": 521,
-  "maximum_distance_mm": 0.1712,
+  "maximum_distance_mm": 0.0074,
   "records": [
     {
       "bone": "inferior_concha_left",
       "code": "A02.1.08.002",
       "localization": "surface",
-      "distance_mm": 0.1605
+      "distance_mm": 0.0043
     },
     {
       "bone": "inferior_concha_left",
@@ -20,7 +21,7 @@
       "bone": "inferior_concha_left",
       "code": "A02.1.08.004",
       "localization": "surface",
-      "distance_mm": 0.0127
+      "distance_mm": 0.0027
     },
     {
       "bone": "inferior_concha_right",
@@ -56,7 +57,7 @@
       "bone": "lacrimal_left",
       "code": "A02.1.09.004",
       "localization": "projection",
-      "distance_mm": 0.0148
+      "distance_mm": 0.0011
     },
     {
       "bone": "lacrimal_right",
@@ -140,7 +141,7 @@
       "bone": "palatine_left",
       "code": "A02.1.13.013",
       "localization": "surface",
-      "distance_mm": 0.0165
+      "distance_mm": 0.001
     },
     {
       "bone": "palatine_left",
@@ -158,7 +159,7 @@
       "bone": "palatine_left",
       "code": "A02.1.13.006",
       "localization": "surface",
-      "distance_mm": 0.0117
+      "distance_mm": 0.0009
     },
     {
       "bone": "palatine_left",
@@ -188,19 +189,19 @@
       "bone": "palatine_left",
       "code": "A02.1.13.016",
       "localization": "projection",
-      "distance_mm": 0.0556
+      "distance_mm": 0.0006
     },
     {
       "bone": "palatine_left",
       "code": "A02.1.13.017",
       "localization": "surface",
-      "distance_mm": 0.0086
+      "distance_mm": 0.002
     },
     {
       "bone": "palatine_left",
       "code": "A02.1.13.018",
       "localization": "surface",
-      "distance_mm": 0.0288
+      "distance_mm": 0.0001
     },
     {
       "bone": "palatine_left",
@@ -230,13 +231,13 @@
       "bone": "palatine_right",
       "code": "A02.1.13.005",
       "localization": "surface",
-      "distance_mm": 0.1117
+      "distance_mm": 0.0002
     },
     {
       "bone": "palatine_right",
       "code": "A02.1.13.007",
       "localization": "surface",
-      "distance_mm": 0.0246
+      "distance_mm": 0.004
     },
     {
       "bone": "palatine_right",
@@ -260,13 +261,13 @@
       "bone": "palatine_right",
       "code": "A02.1.13.015",
       "localization": "surface",
-      "distance_mm": 0.0434
+      "distance_mm": 0.0044
     },
     {
       "bone": "palatine_right",
       "code": "A02.1.13.006",
       "localization": "surface",
-      "distance_mm": 0.068
+      "distance_mm": 0.0033
     },
     {
       "bone": "palatine_right",
@@ -302,7 +303,7 @@
       "bone": "palatine_right",
       "code": "A02.1.13.017",
       "localization": "surface",
-      "distance_mm": 0.0224
+      "distance_mm": 0.0007
     },
     {
       "bone": "palatine_right",
@@ -314,7 +315,7 @@
       "bone": "palatine_right",
       "code": "A02.1.13.019",
       "localization": "projection",
-      "distance_mm": 0.0302
+      "distance_mm": 0.0013
     },
     {
       "bone": "zygomatic_left",
@@ -326,7 +327,7 @@
       "bone": "zygomatic_left",
       "code": "A02.1.14.003",
       "localization": "surface",
-      "distance_mm": 0.0482
+      "distance_mm": 0.0007
     },
     {
       "bone": "zygomatic_left",
@@ -338,7 +339,7 @@
       "bone": "zygomatic_left",
       "code": "A02.1.14.005",
       "localization": "surface",
-      "distance_mm": 0.0372
+      "distance_mm": 0.001
     },
     {
       "bone": "zygomatic_left",
@@ -386,7 +387,7 @@
       "bone": "zygomatic_right",
       "code": "A02.1.14.003",
       "localization": "surface",
-      "distance_mm": 0.0049
+      "distance_mm": 0.0022
     },
     {
       "bone": "zygomatic_right",
@@ -398,7 +399,7 @@
       "bone": "zygomatic_right",
       "code": "A02.1.14.005",
       "localization": "surface",
-      "distance_mm": 0.0041
+      "distance_mm": 0.0002
     },
     {
       "bone": "zygomatic_right",
@@ -410,13 +411,13 @@
       "bone": "zygomatic_right",
       "code": "A02.1.14.007",
       "localization": "projection",
-      "distance_mm": 0.0079
+      "distance_mm": 0.0039
     },
     {
       "bone": "zygomatic_right",
       "code": "A02.1.14.008",
       "localization": "projection",
-      "distance_mm": 0.0549
+      "distance_mm": 0.0021
     },
     {
       "bone": "zygomatic_right",
@@ -434,7 +435,7 @@
       "bone": "zygomatic_right",
       "code": "A02.1.14.011",
       "localization": "projection",
-      "distance_mm": 0.0184
+      "distance_mm": 0.0035
     },
     {
       "bone": "maxilla_left",
@@ -464,7 +465,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.008",
       "localization": "surface",
-      "distance_mm": 0.0443
+      "distance_mm": 0.0035
     },
     {
       "bone": "maxilla_left",
@@ -482,7 +483,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.011",
       "localization": "surface",
-      "distance_mm": 0.0259
+      "distance_mm": 0.005
     },
     {
       "bone": "maxilla_left",
@@ -494,7 +495,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.016",
       "localization": "surface",
-      "distance_mm": 0.035
+      "distance_mm": 0.0004
     },
     {
       "bone": "maxilla_left",
@@ -572,7 +573,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.00.062",
       "localization": "projection",
-      "distance_mm": 0.0298
+      "distance_mm": 0.0025
     },
     {
       "bone": "maxilla_left",
@@ -590,7 +591,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.012",
       "localization": "surface",
-      "distance_mm": 0.064
+      "distance_mm": 0.0024
     },
     {
       "bone": "maxilla_left",
@@ -644,7 +645,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.027",
       "localization": "surface",
-      "distance_mm": 0.0146
+      "distance_mm": 0.0013
     },
     {
       "bone": "maxilla_left",
@@ -680,7 +681,7 @@
       "bone": "maxilla_left",
       "code": "A02.1.12.039",
       "localization": "surface",
-      "distance_mm": 0.0253
+      "distance_mm": 0.0021
     },
     {
       "bone": "maxilla_right",
@@ -710,7 +711,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.008",
       "localization": "surface",
-      "distance_mm": 0.0985
+      "distance_mm": 0.0036
     },
     {
       "bone": "maxilla_right",
@@ -728,7 +729,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.011",
       "localization": "surface",
-      "distance_mm": 0.0451
+      "distance_mm": 0.0052
     },
     {
       "bone": "maxilla_right",
@@ -776,7 +777,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.029",
       "localization": "surface",
-      "distance_mm": 0.0467
+      "distance_mm": 0.0035
     },
     {
       "bone": "maxilla_right",
@@ -800,7 +801,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.037",
       "localization": "surface",
-      "distance_mm": 0.0296
+      "distance_mm": 0.0025
     },
     {
       "bone": "maxilla_right",
@@ -812,7 +813,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.00.061",
       "localization": "projection",
-      "distance_mm": 0.0777
+      "distance_mm": 0.001
     },
     {
       "bone": "maxilla_right",
@@ -872,7 +873,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.022",
       "localization": "projection",
-      "distance_mm": 0.0658
+      "distance_mm": 0.0041
     },
     {
       "bone": "maxilla_right",
@@ -890,7 +891,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.027",
       "localization": "surface",
-      "distance_mm": 0.0489
+      "distance_mm": 0.0014
     },
     {
       "bone": "maxilla_right",
@@ -920,7 +921,7 @@
       "bone": "maxilla_right",
       "code": "A02.1.12.038",
       "localization": "surface",
-      "distance_mm": 0.1054
+      "distance_mm": 0.0037
     },
     {
       "bone": "maxilla_right",
@@ -986,13 +987,13 @@
       "bone": "temporal_left",
       "code": "A02.1.06.003",
       "localization": "surface",
-      "distance_mm": 0.0307
+      "distance_mm": 0.0039
     },
     {
       "bone": "temporal_left",
       "code": "A02.1.06.005",
       "localization": "surface",
-      "distance_mm": 0.0353
+      "distance_mm": 0.004
     },
     {
       "bone": "temporal_left",
@@ -1016,7 +1017,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.009",
       "localization": "projection",
-      "distance_mm": 0.0502
+      "distance_mm": 0.0024
     },
     {
       "bone": "temporal_left",
@@ -1052,13 +1053,13 @@
       "bone": "temporal_left",
       "code": "A02.1.06.015",
       "localization": "projection",
-      "distance_mm": 0.057
+      "distance_mm": 0.0007
     },
     {
       "bone": "temporal_left",
       "code": "A02.1.06.016",
       "localization": "projection",
-      "distance_mm": 0.0633
+      "distance_mm": 0.0018
     },
     {
       "bone": "temporal_left",
@@ -1076,13 +1077,13 @@
       "bone": "temporal_left",
       "code": "A02.1.06.019",
       "localization": "projection",
-      "distance_mm": 0.0731
+      "distance_mm": 0.0022
     },
     {
       "bone": "temporal_left",
       "code": "A02.1.06.020",
       "localization": "projection",
-      "distance_mm": 0.0122
+      "distance_mm": 0.0035
     },
     {
       "bone": "temporal_left",
@@ -1106,7 +1107,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.024",
       "localization": "projection",
-      "distance_mm": 0.0097
+      "distance_mm": 0.0008
     },
     {
       "bone": "temporal_left",
@@ -1154,7 +1155,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.032",
       "localization": "surface",
-      "distance_mm": 0.0504
+      "distance_mm": 0.0025
     },
     {
       "bone": "temporal_left",
@@ -1202,7 +1203,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.040",
       "localization": "surface",
-      "distance_mm": 0.0536
+      "distance_mm": 0.001
     },
     {
       "bone": "temporal_left",
@@ -1226,7 +1227,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.044",
       "localization": "projection",
-      "distance_mm": 0.0395
+      "distance_mm": 0.0017
     },
     {
       "bone": "temporal_left",
@@ -1244,7 +1245,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.048",
       "localization": "projection",
-      "distance_mm": 0.0449
+      "distance_mm": 0.0022
     },
     {
       "bone": "temporal_left",
@@ -1268,7 +1269,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.052",
       "localization": "surface",
-      "distance_mm": 0.0731
+      "distance_mm": 0.0006
     },
     {
       "bone": "temporal_left",
@@ -1292,7 +1293,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.057",
       "localization": "projection",
-      "distance_mm": 0.0117
+      "distance_mm": 0.0015
     },
     {
       "bone": "temporal_left",
@@ -1310,7 +1311,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.060",
       "localization": "surface",
-      "distance_mm": 0.0598
+      "distance_mm": 0.0051
     },
     {
       "bone": "temporal_left",
@@ -1322,7 +1323,7 @@
       "bone": "temporal_left",
       "code": "A02.1.06.064",
       "localization": "surface",
-      "distance_mm": 0.0195
+      "distance_mm": 0.0025
     },
     {
       "bone": "temporal_left",
@@ -1340,13 +1341,13 @@
       "bone": "temporal_left",
       "code": "A02.1.06.069",
       "localization": "projection",
-      "distance_mm": 0.1228
+      "distance_mm": 0.0063
     },
     {
       "bone": "temporal_left",
       "code": "A02.1.06.070",
       "localization": "projection",
-      "distance_mm": 0.0216
+      "distance_mm": 0.0037
     },
     {
       "bone": "temporal_left",
@@ -1454,7 +1455,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.005",
       "localization": "surface",
-      "distance_mm": 0.063
+      "distance_mm": 0.0042
     },
     {
       "bone": "temporal_right",
@@ -1478,7 +1479,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.009",
       "localization": "projection",
-      "distance_mm": 0.0107
+      "distance_mm": 0.0043
     },
     {
       "bone": "temporal_right",
@@ -1514,19 +1515,19 @@
       "bone": "temporal_right",
       "code": "A02.1.06.015",
       "localization": "projection",
-      "distance_mm": 0.0101
+      "distance_mm": 0.0019
     },
     {
       "bone": "temporal_right",
       "code": "A02.1.06.016",
       "localization": "projection",
-      "distance_mm": 0.0431
+      "distance_mm": 0.0042
     },
     {
       "bone": "temporal_right",
       "code": "A02.1.06.017",
       "localization": "projection",
-      "distance_mm": 0.0501
+      "distance_mm": 0.0024
     },
     {
       "bone": "temporal_right",
@@ -1538,7 +1539,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.019",
       "localization": "projection",
-      "distance_mm": 0.0583
+      "distance_mm": 0.0054
     },
     {
       "bone": "temporal_right",
@@ -1568,7 +1569,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.024",
       "localization": "projection",
-      "distance_mm": 0.0319
+      "distance_mm": 0.0029
     },
     {
       "bone": "temporal_right",
@@ -1616,7 +1617,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.032",
       "localization": "surface",
-      "distance_mm": 0.0149
+      "distance_mm": 0.0023
     },
     {
       "bone": "temporal_right",
@@ -1646,7 +1647,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.037",
       "localization": "surface",
-      "distance_mm": 0.0317
+      "distance_mm": 0.0011
     },
     {
       "bone": "temporal_right",
@@ -1688,7 +1689,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.044",
       "localization": "projection",
-      "distance_mm": 0.0031
+      "distance_mm": 0.003
     },
     {
       "bone": "temporal_right",
@@ -1706,7 +1707,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.048",
       "localization": "projection",
-      "distance_mm": 0.0355
+      "distance_mm": 0.0015
     },
     {
       "bone": "temporal_right",
@@ -1724,7 +1725,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.051",
       "localization": "projection",
-      "distance_mm": 0.0959
+      "distance_mm": 0.002
     },
     {
       "bone": "temporal_right",
@@ -1760,7 +1761,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.058",
       "localization": "projection",
-      "distance_mm": 0.0718
+      "distance_mm": 0.0025
     },
     {
       "bone": "temporal_right",
@@ -1784,7 +1785,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.064",
       "localization": "surface",
-      "distance_mm": 0.0265
+      "distance_mm": 0.0004
     },
     {
       "bone": "temporal_right",
@@ -1820,7 +1821,7 @@
       "bone": "temporal_right",
       "code": "A02.1.06.072",
       "localization": "surface",
-      "distance_mm": 0.1513
+      "distance_mm": 0.0021
     },
     {
       "bone": "temporal_right",
@@ -1844,13 +1845,13 @@
       "bone": "temporal_right",
       "code": "A02.1.06.076",
       "localization": "projection",
-      "distance_mm": 0.0056
+      "distance_mm": 0.0006
     },
     {
       "bone": "temporal_right",
       "code": "A02.1.06.077",
       "localization": "projection",
-      "distance_mm": 0.0972
+      "distance_mm": 0.0012
     },
     {
       "bone": "parietal_left",
@@ -1880,13 +1881,13 @@
       "bone": "parietal_left",
       "code": "A02.1.02.012",
       "localization": "surface",
-      "distance_mm": 0.0546
+      "distance_mm": 0.0009
     },
     {
       "bone": "parietal_left",
       "code": "A02.1.02.013",
       "localization": "surface",
-      "distance_mm": 0.0219
+      "distance_mm": 0.0032
     },
     {
       "bone": "parietal_left",
@@ -1922,7 +1923,7 @@
       "bone": "parietal_left",
       "code": "A02.1.02.004",
       "localization": "surface",
-      "distance_mm": 0.0385
+      "distance_mm": 0.0033
     },
     {
       "bone": "parietal_left",
@@ -2030,7 +2031,7 @@
       "bone": "parietal_right",
       "code": "A02.1.02.004",
       "localization": "surface",
-      "distance_mm": 0.1436
+      "distance_mm": 0.0016
     },
     {
       "bone": "parietal_right",
@@ -2072,7 +2073,7 @@
       "bone": "mandible",
       "code": "A02.1.15.002",
       "localization": "surface",
-      "distance_mm": 0.0247
+      "distance_mm": 0.0023
     },
     {
       "bone": "mandible",
@@ -2084,7 +2085,7 @@
       "bone": "mandible",
       "code": "A02.1.15.005",
       "localization": "surface",
-      "distance_mm": 0.0223
+      "distance_mm": 0.0001
     },
     {
       "bone": "mandible",
@@ -2096,7 +2097,7 @@
       "bone": "mandible",
       "code": "A02.1.15.007",
       "localization": "surface",
-      "distance_mm": 0.0552
+      "distance_mm": 0.0005
     },
     {
       "bone": "mandible",
@@ -2108,19 +2109,19 @@
       "bone": "mandible",
       "code": "A02.1.15.016",
       "localization": "surface",
-      "distance_mm": 0.0041
+      "distance_mm": 0.0
     },
     {
       "bone": "mandible",
       "code": "A02.1.15.017",
       "localization": "surface",
-      "distance_mm": 0.1551
+      "distance_mm": 0.0015
     },
     {
       "bone": "mandible",
       "code": "A02.1.15.018",
       "localization": "surface",
-      "distance_mm": 0.1122
+      "distance_mm": 0.0028
     },
     {
       "bone": "mandible",
@@ -2138,7 +2139,7 @@
       "bone": "mandible",
       "code": "A02.1.15.025",
       "localization": "surface",
-      "distance_mm": 0.097
+      "distance_mm": 0.0004
     },
     {
       "bone": "mandible",
@@ -2162,7 +2163,7 @@
       "bone": "mandible",
       "code": "A02.1.15.035",
       "localization": "surface",
-      "distance_mm": 0.0132
+      "distance_mm": 0.0025
     },
     {
       "bone": "mandible",
@@ -2180,7 +2181,7 @@
       "bone": "mandible",
       "code": "A02.1.15.004",
       "localization": "surface",
-      "distance_mm": 0.0524
+      "distance_mm": 0.0025
     },
     {
       "bone": "mandible",
@@ -2198,7 +2199,7 @@
       "bone": "mandible",
       "code": "A02.1.15.011",
       "localization": "projection",
-      "distance_mm": 0.0079
+      "distance_mm": 0.0038
     },
     {
       "bone": "mandible",
@@ -2228,19 +2229,19 @@
       "bone": "mandible",
       "code": "A02.1.15.019",
       "localization": "surface",
-      "distance_mm": 0.0265
+      "distance_mm": 0.004
     },
     {
       "bone": "mandible",
       "code": "A02.1.15.020",
       "localization": "surface",
-      "distance_mm": 0.1395
+      "distance_mm": 0.0002
     },
     {
       "bone": "mandible",
       "code": "A02.1.15.022",
       "localization": "surface",
-      "distance_mm": 0.0044
+      "distance_mm": 0.0043
     },
     {
       "bone": "mandible",
@@ -2258,7 +2259,7 @@
       "bone": "mandible",
       "code": "A02.1.15.028",
       "localization": "surface",
-      "distance_mm": 0.0091
+      "distance_mm": 0.0007
     },
     {
       "bone": "mandible",
@@ -2282,7 +2283,7 @@
       "bone": "mandible",
       "code": "A02.1.15.033",
       "localization": "surface",
-      "distance_mm": 0.0786
+      "distance_mm": 0.0039
     },
     {
       "bone": "mandible",
@@ -2324,7 +2325,7 @@
       "bone": "ethmoid",
       "code": "A02.1.07.004",
       "localization": "surface",
-      "distance_mm": 0.0168
+      "distance_mm": 0.001
     },
     {
       "bone": "ethmoid",
@@ -2360,7 +2361,7 @@
       "bone": "ethmoid",
       "code": "A02.1.07.008",
       "localization": "projection",
-      "distance_mm": 0.0338
+      "distance_mm": 0.0001
     },
     {
       "bone": "ethmoid",
@@ -2402,7 +2403,7 @@
       "bone": "ethmoid",
       "code": "A02.1.07.016",
       "localization": "projection",
-      "distance_mm": 0.1601
+      "distance_mm": 0.0049
     },
     {
       "bone": "ethmoid",
@@ -2420,7 +2421,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.002",
       "localization": "surface",
-      "distance_mm": 0.0171
+      "distance_mm": 0.004
     },
     {
       "bone": "sphenoid",
@@ -2444,7 +2445,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.009",
       "localization": "surface",
-      "distance_mm": 0.0841
+      "distance_mm": 0.0041
     },
     {
       "bone": "sphenoid",
@@ -2456,7 +2457,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.014",
       "localization": "surface",
-      "distance_mm": 0.0428
+      "distance_mm": 0.0035
     },
     {
       "bone": "sphenoid",
@@ -2498,7 +2499,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.029",
       "localization": "surface",
-      "distance_mm": 0.001
+      "distance_mm": 0.0007
     },
     {
       "bone": "sphenoid",
@@ -2576,13 +2577,13 @@
       "bone": "sphenoid",
       "code": "A02.1.05.008",
       "localization": "variant",
-      "distance_mm": 0.1332
+      "distance_mm": 0.0035
     },
     {
       "bone": "sphenoid",
       "code": "A02.1.05.011",
       "localization": "surface",
-      "distance_mm": 0.0101
+      "distance_mm": 0.0012
     },
     {
       "bone": "sphenoid",
@@ -2606,7 +2607,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.017",
       "localization": "projection",
-      "distance_mm": 0.0706
+      "distance_mm": 0.0
     },
     {
       "bone": "sphenoid",
@@ -2624,7 +2625,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.021",
       "localization": "projection",
-      "distance_mm": 0.0104
+      "distance_mm": 0.0035
     },
     {
       "bone": "sphenoid",
@@ -2636,7 +2637,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.023",
       "localization": "surface",
-      "distance_mm": 0.0187
+      "distance_mm": 0.0035
     },
     {
       "bone": "sphenoid",
@@ -2654,7 +2655,7 @@
       "bone": "sphenoid",
       "code": "A02.1.05.035",
       "localization": "surface",
-      "distance_mm": 0.019
+      "distance_mm": 0.0018
     },
     {
       "bone": "sphenoid",
@@ -2744,7 +2745,7 @@
       "bone": "occipital",
       "code": "A02.1.04.005",
       "localization": "surface",
-      "distance_mm": 0.0456
+      "distance_mm": 0.0006
     },
     {
       "bone": "occipital",
@@ -2774,7 +2775,7 @@
       "bone": "occipital",
       "code": "A02.1.04.012",
       "localization": "surface",
-      "distance_mm": 0.0194
+      "distance_mm": 0.0008
     },
     {
       "bone": "occipital",
@@ -2810,7 +2811,7 @@
       "bone": "occipital",
       "code": "A02.1.04.028",
       "localization": "surface",
-      "distance_mm": 0.0045
+      "distance_mm": 0.0037
     },
     {
       "bone": "occipital",
@@ -2846,13 +2847,13 @@
       "bone": "occipital",
       "code": "A02.1.04.003",
       "localization": "surface",
-      "distance_mm": 0.0095
+      "distance_mm": 0.0019
     },
     {
       "bone": "occipital",
       "code": "A02.1.04.004",
       "localization": "surface",
-      "distance_mm": 0.0276
+      "distance_mm": 0.0008
     },
     {
       "bone": "occipital",
@@ -2876,7 +2877,7 @@
       "bone": "occipital",
       "code": "A02.1.04.015",
       "localization": "projection",
-      "distance_mm": 0.0597
+      "distance_mm": 0.0007
     },
     {
       "bone": "occipital",
@@ -2888,7 +2889,7 @@
       "bone": "occipital",
       "code": "A02.1.04.017",
       "localization": "surface",
-      "distance_mm": 0.0108
+      "distance_mm": 0.0006
     },
     {
       "bone": "occipital",
@@ -2912,7 +2913,7 @@
       "bone": "occipital",
       "code": "A02.1.04.021",
       "localization": "projection",
-      "distance_mm": 0.0393
+      "distance_mm": 0.0043
     },
     {
       "bone": "occipital",
@@ -2924,7 +2925,7 @@
       "bone": "occipital",
       "code": "A02.1.04.026",
       "localization": "surface",
-      "distance_mm": 0.0212
+      "distance_mm": 0.0021
     },
     {
       "bone": "occipital",
@@ -2996,7 +2997,7 @@
       "bone": "frontal",
       "code": "A02.1.03.012",
       "localization": "surface",
-      "distance_mm": 0.1688
+      "distance_mm": 0.0008
     },
     {
       "bone": "frontal",
@@ -3020,7 +3021,7 @@
       "bone": "frontal",
       "code": "A02.1.03.016",
       "localization": "surface",
-      "distance_mm": 0.0281
+      "distance_mm": 0.005
     },
     {
       "bone": "frontal",
@@ -3032,25 +3033,25 @@
       "bone": "frontal",
       "code": "A02.1.03.019",
       "localization": "surface",
-      "distance_mm": 0.0488
+      "distance_mm": 0.0
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.021",
       "localization": "surface",
-      "distance_mm": 0.048
+      "distance_mm": 0.0013
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.022",
       "localization": "surface",
-      "distance_mm": 0.0382
+      "distance_mm": 0.0042
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.023",
       "localization": "surface",
-      "distance_mm": 0.0838
+      "distance_mm": 0.0038
     },
     {
       "bone": "frontal",
@@ -3062,7 +3063,7 @@
       "bone": "frontal",
       "code": "A02.1.03.009",
       "localization": "projection",
-      "distance_mm": 0.0329
+      "distance_mm": 0.0004
     },
     {
       "bone": "frontal",
@@ -3074,13 +3075,13 @@
       "bone": "frontal",
       "code": "A02.1.03.018",
       "localization": "projection",
-      "distance_mm": 0.0906
+      "distance_mm": 0.0012
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.020",
       "localization": "surface",
-      "distance_mm": 0.1712
+      "distance_mm": 0.0002
     },
     {
       "bone": "frontal",
@@ -3098,19 +3099,19 @@
       "bone": "frontal",
       "code": "A02.1.03.026",
       "localization": "surface",
-      "distance_mm": 0.116
+      "distance_mm": 0.0009
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.027",
       "localization": "surface",
-      "distance_mm": 0.0928
+      "distance_mm": 0.0007
     },
     {
       "bone": "frontal",
       "code": "A02.1.03.028",
       "localization": "surface",
-      "distance_mm": 0.0116
+      "distance_mm": 0.0002
     },
     {
       "bone": "frontal",

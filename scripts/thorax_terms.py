@@ -28,6 +28,12 @@ BUCHANAN = ref('Buchanan — Manual of Anatomy, The Thorax','https://embryology.
 RIB_VARIATION = ref('Silva et al. (2020) — Anatomical variations of the ribs','https://pmc.ncbi.nlm.nih.gov/articles/PMC7720665/','CERVICAL RIB; LUMBAR RIB; own MDCT illustrations. Classification sentence contains swapped false/floating labels and is not used.')
 MUNI = ref('Masaryk University — Osteology, ribs','https://is.muni.cz/el/1411/podzim2012/VSAN0131s/35483703/list_of_terms_2.pdf','Ribs — Body of rib: crista costae is listed separately from head and neck crests. General classification/last-rib shorthand is not used.')
 MUNI_PHOTOS = ref('Masaryk University — OsteoWeb, anatomical structures','https://is.muni.cz/do/rect/el/estud/prif/2025/osteoweb/web/pages/03_01_abecedni_seznam.html','Alphabetical photo index: Crista costae; Crista costae undecimae; Crista costae duodecimae.')
+COSTAL_PATEL = dict(ref('Patel A et al. (2023) — Anatomy of the anterior ribs and the composition of the costal margin: A cadaver study.',
+    'https://pubmed.ncbi.nlm.nih.gov/37982795/', 'Abstract Methods/Results/Conclusion: 30 cadavers, variable cartilaginous attachments; frequencies are not transferred to this model.'),
+    id='costal_patel_2023', pmid='37982795', doi='10.1097/TA.0000000000004115', access='abstract', authorGroup='patel_2023')
+COSTAL_RISK = dict(ref('Risk N et al. (2026) — Anatomic variability of the ribs and costal cartilage: A pilot study.',
+    'https://pubmed.ncbi.nlm.nih.gov/42545742/', 'Abstract Methods/Results: CT of 278 patients; variability and side differences. Different data/method from Patel; overlapping research group, not an independent team.'),
+    id='costal_risk_2026', pmid='42545742', doi='10.1097/TA.0000000000005147', access='abstract', authorGroup='risk_2026')
 
 T = {c:row for c,row in neck.T.items() if c.startswith('A02.2.01.') or c in ('A02.2.00.001','A02.2.00.009')}
 def add(prefix, rows):
@@ -98,11 +104,13 @@ desc('A02.3.03.009','Непостоянные небольшие кости у �
 desc('A02.3.01.005','Хрящевая часть, продолжающая ребро вперёд.',[GRAY_C,OPEN_CAGE])
 desc('A02.3.00.001','Костно-хрящевой каркас грудной клетки.',[GRAY_W,OPEN_CAGE])
 desc('A02.3.01.001','Двенадцать пар ребер типичного скелета.',[GRAY_R,OPEN_CAGE])
-desc('A02.3.01.002','Ребра I–VII: их хрящи соединяются с грудиной непосредственно.',[GRAY_C,OPEN_CAGE])
-desc('A02.3.01.003','Ребра VIII–XII: прямого соединения их хрящей с грудиной нет.',[GRAY_C,OPEN_CAGE],note='В TA98 XI–XII входят в ложные ребра и дополнительно названы колеблющимися.')
+desc('A02.3.01.002','В типовой учебной схеме рёбра I–VII соединяются с грудиной своими хрящами. Индивидуальные варианты числа прямых соединений проверяются отдельно; схема не подтверждает этот образец.',[GRAY_C,OPEN_CAGE,COSTAL_PATEL,COSTAL_RISK])
+desc('A02.3.01.003','В типовой учебной схеме рёбра VIII–XII не имеют прямого соединения с грудиной. У нижних хрящей описаны варианты соединений и свободных концов; их наличие в этой модели не установлено.',[GRAY_C,OPEN_CAGE,COSTAL_PATEL,COSTAL_RISK],note='В TA98 XI–XII входят в ложные ребра и дополнительно названы колеблющимися.')
 desc('A02.3.01.004','Ребра XI–XII с передними концами, не соединёнными с грудиной.',[GRAY_C,OPEN_CAGE])
 _whole = {1:'Грудная клетка как целое: грудина, ребра с хрящами и грудной отдел позвоночного столба.',2:'Пространство внутри грудной клетки.',3:'Верхнее отверстие грудной клетки между T1, первыми ребрами и верхним краем рукоятки.',4:'Нижнее отверстие грудной клетки, ограниченное T12, нижними ребрами и реберными дугами спереди.',5:'Парное углубление грудной полости по бокам тел грудных позвонков.',6:'Дугообразный нижний передний край, образованный соединениями реберных хрящей.',7:'Промежуток между соседними ребрами.',8:'Угол между правой и левой реберными дугами под грудиной.'}
 for i,text in _whole.items(): desc(f'A02.3.04.{i:03}',text,[GRAY_W,AS_W])
+DESCRIPTIONS['A02.3.04.006']['x'] += ' Обычно описываются хрящи VII–X, но фактический состав и соединения вариабельны; типовая схема не задаёт контур данного образца.'
+DESCRIPTIONS['A02.3.04.006']['refs'] += [COSTAL_PATEL,COSTAL_RISK]
 desc('A02.3.02.013','Добавочное ребро шейного отдела позвоночника.',[ref('Gray (1918) — Cervical Ribs',GRAY_URL+'#page=74','Cervical ribs derived from the seventh cervical vertebra; anatomical variation.'),RIB_VARIATION],inc=1,note='Номенклатурный вариант; модель такого образца в текущий раздел не включена.')
 desc('A02.3.02.020','Добавочное ребро поясничного отдела позвоночника.',[ref('Naidoo et al. (2017) — Supernumerary lumbar ribs','https://pmc.ncbi.nlm.nih.gov/articles/PMC5509900/','Case report: lumbar ribs in an adult skeleton.'),ref('Park et al. (2016) — Thoracolumbar junction','https://pmc.ncbi.nlm.nih.gov/articles/PMC5124870/','Definitions and CT examples of thoracolumbar variants; Discussion: lumbar rib vs accessory ossification centre.')],inc=1,note='Для разграничения поясничного ребра и несросшегося реберного отростка нужны критерии и целая последовательность позвонков; конкретный вариант здесь не моделируется.')
 
@@ -150,7 +158,7 @@ for b,data in BONES.items():
 WHOLE_TERMS = ['A02.2.00.001','A02.2.00.002','A02.2.00.003','A02.2.00.009','A02.2.01.008','A02.3.00.001']+[f'A02.3.01.{i:03}' for i in range(1,6)]+[f'A02.3.04.{i:03}' for i in range(1,9)]+['A02.3.02.013','A02.3.02.020']
 
 THORAX_SOFT = {
- 'cartilage':dict(ru='Реберные хрящи',lat='cartilago costalis',code='A02.3.01.005',**DESCRIPTIONS['A02.3.01.005'],note='Исходные объекты BP24/BP28 показаны совокупно по сторонам. Это не отдельные проверенные модели каждого реберного хряща; уровень и полнота отдельных хрящей не заявляются.')}
+ 'cartilage':dict(ru='Реберные хрящи',lat='cartilago costalis',code='A02.3.01.005',**DESCRIPTIONS['A02.3.01.005'],note='В грудной сборке показаны только частичные агрегаты BP24/BP28; отдельные хрящи I–VII не включены. Семь правых производных мешей доступны в другом ресурсе проекта, но не заменяют оригинальные исходники и принятую разметку. Полные хрящевые границы, уровни и левая сторона требуют отдельной проверки.')}
 
 def description_for(bone,code):
     return {**DESCRIPTIONS[code],**DESCRIPTION_OVERRIDES.get((bone,code),{})}

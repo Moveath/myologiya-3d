@@ -1,0 +1,64 @@
+[
+  {
+    "id": "K-LUMBAR-NUTRIENT",
+    "issue": "CAT-LUMBAR-DETAIL",
+    "bones": [
+      "lumbar_1",
+      "lumbar_2",
+      "lumbar_3",
+      "lumbar_4",
+      "lumbar_5"
+    ],
+    "structure": "Сосудистые отверстия тел позвонков",
+    "decision": "requires_review",
+    "anatomy": "General existence described; not a fixed count or single stable opening for every specimen.",
+    "refs": [
+      {
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/columna-vertebralis/vertebra-lumbalis-typica.html",
+        "locator": "Back oblique view of L3: venous opening"
+      },
+      {
+        "url": "https://humananatomy.host.dartmouth.edu/BHA/public_html/part_7/chapter_39.html",
+        "locator": "Parts of a Vertebra: vascular foramina on bodies"
+      }
+    ],
+    "needed": "Define teaching scope and vascular/topographical distinction; establish count, side and location per level in this specimen; do not convert an atlas arrow into coordinates.",
+    "canWorkNow": "Further targeted literature and catalogue review; geometry requires acceptance."
+  },
+  {
+    "id": "K-LUMBAR-MAMILLO-ACCESSORY",
+    "issue": "CAT-LUMBAR-DETAIL",
+    "structure": "Сосцевидно-добавочное отверстие",
+    "decision": "anatomical_variant_not_added",
+    "refs": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1905063/",
+        "pmid": "1905063",
+        "doi": "10.1007/BF01623137",
+        "access": "abstract"
+      }
+    ],
+    "needed": "Independent anatomical corroboration and specimen-level identification; distinguish ossification/degenerative change from a mandatory ordinary opening. No prevalence or coordinates transferred.",
+    "canWorkNow": "Literature corroboration available; presence on each model unconfirmed."
+  },
+  {
+    "id": "K-LUMBAR-TRANSITION",
+    "issue": "CAT-LUMBAR-DETAIL",
+    "structure": "Переходные позвонки / поясничное ребро и нумерация",
+    "decision": "variant_scope_requires_review",
+    "refs": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20203111/",
+        "pmid": "20203111",
+        "doi": "10.3174/ajnr.A2036",
+        "access": "indexed_abstract"
+      },
+      {
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=50",
+        "locator": "Lumbar Vertebrae, development: separate costal element at L1"
+      }
+    ],
+    "needed": "Separate variant concepts and evidence sets; full spine or registered imaging to identify numbering/transitional configuration. Neither publication proves a variant in BP3D.",
+    "canWorkNow": "Catalogue scope can be reviewed; do not relabel existing FMA nodes without specimen evidence."
+  }
+]

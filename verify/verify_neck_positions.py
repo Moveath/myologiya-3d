@@ -7,10 +7,18 @@ from pathlib import Path
 import base64
 import io
 import json
+import argparse
+import sys
 import numpy as np
 import trimesh
+from geometry_distance import SurfaceQuery
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from evidence_output import write_report
+parser=argparse.ArgumentParser()
+parser.add_argument('--report', help='New JSON path within an allocated evidence run')
+args=parser.parse_args()
 rows=json.loads((ROOT/'pins_neck/ta.json').read_text(encoding='utf8'))
 assert len({(r['bone'],r['code']) for r in rows})==len(rows)
 
@@ -36,6 +44,7 @@ sources={
 results=[]
 for name,scene in sources.items():
     meshes=meshes_of(scene)
+    queries={bone:SurfaceQuery(mesh) for bone,mesh in meshes.items()}
     for row in rows:
         bone,code=row['bone'],row['code']
         assert row['localization']=='surface'
@@ -43,14 +52,16 @@ for name,scene in sources.items():
         assert all(ref.get('locator') for ref in row['refs'])
         assert row['evidence'].get('uv') and row['evidence'].get('sourceSha256')
         for i, point in enumerate([row]+row.get('secondaryMarkers',[])):
-            closest,distance,triangle=trimesh.proximity.closest_point_naive(meshes[bone],np.array([point['p']]))
-            mm=float(distance[0])*1000
+            closest,distance,triangle=queries[bone].closest([point['p']])
+            mm=float(distance[0])
             assert mm < .3, (name,bone,code,i,mm)
             assert abs(np.linalg.norm(point['n'])-1)<.003,(bone,code,'normal')
             results.append(dict(model=name,bone=bone,code=code,secondary=i>0,distance_mm=round(mm,5)))
 report=dict(check='Assigned bone surface, source and published mesh; tolerance 0.3 mm',
+            queryUnits='millimetres, rebased in-memory copy; coordinates unchanged',
             anatomicalExpertAcceptance=False,wholeFeatureGeometryVerified=False,
             primaryMarkers=len(rows),secondaryMarkers=sum(len(r.get('secondaryMarkers',[])) for r in rows),
             maximumDistanceMm=max(r['distance_mm'] for r in results),records=results)
-(ROOT/'verify/neck-position-geometry.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+target=write_report(report,'neck-position-geometry','neck-position-geometry.json',args.report)
+print('Evidence:',target)
 print('Neck anchor positions passed:',len(results),'checks; max',report['maximumDistanceMm'],'mm')

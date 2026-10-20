@@ -8,6 +8,7 @@ import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {MeshBVH} from 'three-mesh-bvh';
+import {createEvidenceRun} from './evidence-run.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const box={window:{}};vm.createContext(box);
 for(const name of ['data.js','data-leg.js','data-head.js','data-neck.js','data-thorax.js','pins.js','pins-leg.js','pins-head.js','pins-neck.js','pins-thorax.js'])
@@ -91,5 +92,5 @@ const report={status:'passed',bones:bones.length,muscles:muscles.length,structur
   sourceFieldChecks:fieldChecks,nomenclatureChecks,unresolvedFields:unresolved,terms:pins.length,located:distances.length,
   maximumSurfaceDistanceMm:Math.max(...distances.map(d=>d.distanceMm)),distances,
   limitation:'Mesh correspondence only; no independent anatomical acceptance or complete-feature geometry claim.'};
-await fs.writeFile(path.join(root,'verify/thorax-data-geometry.json'),JSON.stringify(report,null,2)+'\n');
-console.log(JSON.stringify({...report,distances:undefined}));
+const run=await createEvidenceRun(root,'thorax-data');await run.write('thorax-data-geometry.json',report);
+console.log(JSON.stringify({...report,distances:undefined,evidence:run.dir}));

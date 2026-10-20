@@ -1,0 +1,478 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "bone": "clavicle",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 2558,
+      "triangles": 5112,
+      "boundsM": [
+        [
+          -0.1500384344549,
+          1.3317388061786,
+          0.04723872234879999
+        ],
+        [
+          -0.011425787339299998,
+          1.3668581539904001,
+          0.1467435411489
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "scapula",
+      "source": "site/arm-q-glb.txt",
+      "sha256": "ec8a8c4ae7cd43f0087743ae577d412d1a1c58b99e0d0d748bfc75ad9af9607d",
+      "vertices": 10002,
+      "triangles": 20000,
+      "boundsM": [
+        [
+          -0.1686858757709,
+          1.2014657092071,
+          -0.011397120900400001
+        ],
+        [
+          -0.05928755338370001,
+          1.3598653634969,
+          0.0990889688969
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "scapula_left",
+      "source": "build_context_bones/arm_extra_hi.glb",
+      "sha256": "7616e5d47893c5a9317bf2a46bc1d3e2a29557da6418c901b103065bbc4003df",
+      "vertices": 60910,
+      "triangles": 121816,
+      "boundsM": [
+        [
+          0.058008499443531036,
+          1.201509952545166,
+          -0.011350099928677082
+        ],
+        [
+          0.16737399995326996,
+          1.3598499298095703,
+          0.09907840192317963
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    },
+    {
+      "bone": "clavicle_left",
+      "source": "build_context_bones/arm_extra_hi.glb",
+      "sha256": "7616e5d47893c5a9317bf2a46bc1d3e2a29557da6418c901b103065bbc4003df",
+      "vertices": 2572,
+      "triangles": 5140,
+      "boundsM": [
+        [
+          0.010138600133359432,
+          1.3317900896072388,
+          0.047234900295734406
+        ],
+        [
+          0.14869600534439087,
+          1.3668400049209595,
+          0.14675000309944153
+        ]
+      ],
+      "sideCheck": true,
+      "anatomyAccepted": false
+    }
+  ],
+  "anchors": [
+    {
+      "id": "cla_extremitas_sternalis",
+      "bone": "clavicle",
+      "p": [
+        -0.01738,
+        1.34797,
+        0.13979
+      ],
+      "distanceMm": 0.11624506191446779,
+      "triangle": 4225,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_facies_articularis_sternalis",
+      "bone": "clavicle",
+      "p": [
+        -0.0116,
+        1.33758,
+        0.12756
+      ],
+      "distanceMm": 0.009144550898732942,
+      "triangle": 4260,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_impressio_lig_costoclavicularis",
+      "bone": "clavicle",
+      "p": [
+        -0.03039,
+        1.3408,
+        0.13552
+      ],
+      "distanceMm": 0.034497719709976796,
+      "triangle": 4981,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_corpus",
+      "bone": "clavicle",
+      "p": [
+        -0.06088,
+        1.34844,
+        0.13481
+      ],
+      "distanceMm": 0.05707274980651625,
+      "triangle": 2154,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_sulcus_m_subclavii",
+      "bone": "clavicle",
+      "p": [
+        -0.0804,
+        1.34646,
+        0.11275
+      ],
+      "distanceMm": 0.04090114568040014,
+      "triangle": 1923,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_extremitas_acromialis",
+      "bone": "clavicle",
+      "p": [
+        -0.13862,
+        1.36567,
+        0.06221
+      ],
+      "distanceMm": 0.041359189445956304,
+      "triangle": 227,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_facies_articularis_acromialis",
+      "bone": "clavicle",
+      "p": [
+        -0.14959,
+        1.36132,
+        0.06666
+      ],
+      "distanceMm": 0.1001157131758211,
+      "triangle": 80,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_tuberositas_lig_coracoclavicularis",
+      "bone": "clavicle",
+      "p": [
+        -0.12091,
+        1.35384,
+        0.05883
+      ],
+      "distanceMm": 0.002972868036316022,
+      "triangle": 2397,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_tuberculum_conoideum",
+      "bone": "clavicle",
+      "p": [
+        -0.11259,
+        1.35199,
+        0.05902
+      ],
+      "distanceMm": 0.24250232407259562,
+      "triangle": 2734,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "cla_linea_trapezoidea",
+      "bone": "clavicle",
+      "p": [
+        -0.12922,
+        1.35451,
+        0.05863
+      ],
+      "distanceMm": 0.16818388492045305,
+      "triangle": 2339,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_facies_costalis",
+      "bone": "scapula",
+      "p": [
+        -0.0732,
+        1.27176,
+        0.00093
+      ],
+      "distanceMm": 0.18611641637055987,
+      "triangle": 8525,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_fossa_subscapularis",
+      "bone": "scapula",
+      "p": [
+        -0.09517,
+        1.28158,
+        0.01435
+      ],
+      "distanceMm": 0.04267630267495513,
+      "triangle": 6729,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_facies_posterior",
+      "bone": "scapula",
+      "p": [
+        -0.08385,
+        1.24161,
+        -0.00334
+      ],
+      "distanceMm": 0.11520235948827626,
+      "triangle": 10160,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_spina",
+      "bone": "scapula",
+      "p": [
+        -0.10133,
+        1.32658,
+        0.00457
+      ],
+      "distanceMm": 0.0025517159724771834,
+      "triangle": 10108,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_tuberculum_deltoideum",
+      "bone": "scapula",
+      "p": [
+        -0.08441,
+        1.3155,
+        0.00141
+      ],
+      "distanceMm": 0.027528860656084092,
+      "triangle": 9716,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_fossa_supraspinata",
+      "bone": "scapula",
+      "p": [
+        -0.07852,
+        1.33562,
+        0.01889
+      ],
+      "distanceMm": 0.07443247731990878,
+      "triangle": 889,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_fossa_infraspinata",
+      "bone": "scapula",
+      "p": [
+        -0.10017,
+        1.26658,
+        0.01164
+      ],
+      "distanceMm": 0.015727530877597633,
+      "triangle": 9223,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_acromion",
+      "bone": "scapula",
+      "p": [
+        -0.15658,
+        1.3574,
+        0.05485
+      ],
+      "distanceMm": 0.0010134740965731435,
+      "triangle": 16183,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_facies_articularis_clavicularis",
+      "bone": "scapula",
+      "p": [
+        -0.14785,
+        1.35725,
+        0.06
+      ],
+      "distanceMm": 0.011683193712295425,
+      "triangle": 16222,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_angulus_acromii",
+      "bone": "scapula",
+      "p": [
+        -0.16359,
+        1.34222,
+        0.03265
+      ],
+      "distanceMm": 0.004288332431457467,
+      "triangle": 14317,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_margo_medialis",
+      "bone": "scapula",
+      "p": [
+        -0.05998,
+        1.29034,
+        -0.00054
+      ],
+      "distanceMm": 0.0030497779041237898,
+      "triangle": 8585,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_margo_lateralis",
+      "bone": "scapula",
+      "p": [
+        -0.12596,
+        1.26537,
+        0.02824
+      ],
+      "distanceMm": 0.019783430409725633,
+      "triangle": 17922,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_margo_superior",
+      "bone": "scapula",
+      "p": [
+        -0.09092,
+        1.34256,
+        0.03552
+      ],
+      "distanceMm": 0.028283762671550302,
+      "triangle": 566,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_incisura",
+      "bone": "scapula",
+      "p": [
+        -0.1071,
+        1.33251,
+        0.04783
+      ],
+      "distanceMm": 0.02109924493951917,
+      "triangle": 10614,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_angulus_inferior",
+      "bone": "scapula",
+      "p": [
+        -0.09159,
+        1.20227,
+        0.0009
+      ],
+      "distanceMm": 0.008935153745708574,
+      "triangle": 8071,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_angulus_lateralis",
+      "bone": "scapula",
+      "p": [
+        -0.13972,
+        1.30369,
+        0.06716
+      ],
+      "distanceMm": 0.04075140728580864,
+      "triangle": 11330,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_angulus_superior",
+      "bone": "scapula",
+      "p": [
+        -0.07907,
+        1.35186,
+        0.02159
+      ],
+      "distanceMm": 0.03484231115529226,
+      "triangle": 838,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_cavitas_glenoidalis",
+      "bone": "scapula",
+      "p": [
+        -0.14641,
+        1.3148,
+        0.05745
+      ],
+      "distanceMm": 0.0278910947261987,
+      "triangle": 11902,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_tuberculum_supraglenoidale",
+      "bone": "scapula",
+      "p": [
+        -0.14368,
+        1.33225,
+        0.05795
+      ],
+      "distanceMm": 0.022239899528153848,
+      "triangle": 12474,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_tuberculum_infraglenoidale",
+      "bone": "scapula",
+      "p": [
+        -0.13349,
+        1.29897,
+        0.05672
+      ],
+      "distanceMm": 0.0067922077313213,
+      "triangle": 11074,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_collum",
+      "bone": "scapula",
+      "p": [
+        -0.12641,
+        1.3108,
+        0.04343
+      ],
+      "distanceMm": 0.011854999527857086,
+      "triangle": 8898,
+      "anatomicalAcceptance": false
+    },
+    {
+      "id": "sca_processus_coracoideus",
+      "bone": "scapula",
+      "p": [
+        -0.13194,
+        1.33414,
+        0.09906
+      ],
+      "distanceMm": 0.017227070458781732,
+      "triangle": 17425,
+      "anatomicalAcceptance": false
+    }
+  ],
+  "blenderDifferenceMm": 8.292506625257046e-05,
+  "newCoordinates": 0,
+  "scope": "Side signs, world transforms, finite vertices/normals and nearest triangle; no anatomical localisation acceptance or repeated self-intersection scan."
+}

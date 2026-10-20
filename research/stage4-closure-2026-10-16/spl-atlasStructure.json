@@ -1,0 +1,603 @@
+[
+    {
+        "@id": "#Stapedius_Muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Stapedius Muscle"
+        },
+        "renderOption": {
+            "color": "rgb(219,179,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Stapedius_Muscle_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 28,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#_urlBase",
+        "@type": "BaseURL",
+        "url": ""
+    },
+    {
+        "@id": "#__header__",
+        "@type": "Header",
+	"name": "SPL Inner Ear Atlas",
+	"contact": "http://www.spl.harvard.edu/publications/item/view/2993",
+        "backgroundImage": [
+            "#_bgImageSrc0"
+        ],
+        "root": [
+            "#Vessels",
+            "#Middle_Ear",
+            "#Inner_Ear",
+            "#Internal_Auditory_Meatus"
+        ],
+        "title": "HighRes-EarAtlas-2018-02-16-Scene"
+    },
+    {
+        "@id": "#Cochlear_Nerve_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_9_Cochlear_Nerve.vtk"
+    },
+    {
+        "@id": "#Tensor_Tympani_Muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Tensor Tympani Muscle"
+        },
+        "renderOption": {
+            "color": "rgb(219,179,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Tensor_Tympani_Muscle_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 19,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Internal_Jugular_Vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_21_Internal_Jugular_Vein.vtk"
+    },
+    {
+        "@id": "#_LabelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "image-volumes/Ear-seg-256.nrrd"
+    },
+    {
+        "@id": "#Cochlear_Nerve",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Cochlear Nerve"
+        },
+        "renderOption": {
+            "color": "rgb(214,239,20)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Cochlear_Nerve_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 9,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Stapes_Bone_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_17_Stapes_Bone.vtk"
+    },
+    {
+        "@id": "#Middle_Ear",
+        "@type": "Group",
+        "annotation": {
+            "name": "Middle Ear"
+        },
+        "member": [
+            "#Stapedius_Muscle",
+            "#Stapes_Bone",
+            "#Malleus_Bone",
+            "#Tensor_Tympani_Muscle",
+            "#Incus_Bone",
+            "#Tympanic_Membrane"
+        ],
+        "renderOption": {
+            "color": "rgb(137,188,207)"
+        }
+    },
+    {
+        "@id": "#Inner_Ear",
+        "@type": "Group",
+        "annotation": {
+            "name": "Inner Ear"
+        },
+        "member": [
+            "#Osseous_Spiral_Lamina",
+            "#Labyrinth",
+            "#Fenestra_Rotunda"
+        ],
+        "renderOption": {
+            "color": "rgb(124,109,172)"
+        }
+    },
+    {
+        "@id": "#Facial_Nerve",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Facial Nerve"
+        },
+        "renderOption": {
+            "color": "rgb(214,100,79)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Facial_Nerve_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 5,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Osseous_Spiral_Lamina",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Osseous Spiral Lamina"
+        },
+        "renderOption": {
+            "color": "rgb(239,209,49)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Osseous_Spiral_Lamina_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 23,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Tympanic_Membrane_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_4_Tympanic_Membrane.vtk"
+    },
+    {
+        "@id": "#Tympanic_Membrane",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Tympanic Membrane"
+        },
+        "renderOption": {
+            "color": "rgb(200,200,49)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Tympanic_Membrane_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 4,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Labyrinth_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_10_Labyrinth.vtk"
+    },
+    {
+        "@id": "#Incus_Bone_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_14_Incus_Bone.vtk"
+    },
+    {
+        "@id": "#Internal_Carotid_Artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_24_Internal_Carotid_Artery.vtk"
+    },
+    {
+        "@id": "#_bgImageSrc0",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "image-volumes/Ear-CT-256.nrrd"
+    },
+    {
+        "@id": "#Stapes_Bone",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Stapes Bone"
+        },
+        "renderOption": {
+            "color": "rgb(110,70,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Stapes_Bone_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 17,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Osseous_Spiral_Lamina_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_23_Osseous_Spiral_Lamina.vtk"
+    },
+    {
+        "@id": "#Vestibular_Nerve",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Vestibular Nerve"
+        },
+        "renderOption": {
+            "color": "rgb(84,189,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Vestibular_Nerve_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 25,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Internal_Carotid_Artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Internal Carotid Artery"
+        },
+        "renderOption": {
+            "color": "rgb(214,70,40)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Internal_Carotid_Artery_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 24,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Malleus_Bone_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_140_Malleus_Bone.vtk"
+    },
+    {
+        "@id": "#Fenestra_Rotunda",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Fenestra Rotunda"
+        },
+        "renderOption": {
+            "color": "rgb(230,230,10)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Fenestra_Rotunda_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 12,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Internal_Auditory_Meatus",
+        "@type": "Group",
+        "annotation": {
+            "name": "Internal Auditory Meatus"
+        },
+        "member": [
+            "#Cochlear_Nerve",
+            "#Vestibular_Nerve",
+            "#Facial_Nerve"
+        ],
+        "renderOption": {
+            "color": "rgb(214,216,147)"
+        }
+    },
+    {
+        "@id": "#Internal_Jugular_Vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Internal Jugular Vein"
+        },
+        "renderOption": {
+            "color": "rgb(110,179,209)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Internal_Jugular_Vein_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 21,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Tensor_Tympani_Muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_19_Tensor_Tympani_Muscle.vtk"
+    },
+    {
+        "@id": "#Vestibular_Nerve_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_25_Vestibular_Nerve.vtk"
+    },
+    {
+        "@id": "#Vessels",
+        "@type": "Group",
+        "annotation": {
+            "name": "Vessels"
+        },
+        "member": [
+            "#Internal_Jugular_Vein",
+            "#Internal_Carotid_Artery"
+        ],
+        "renderOption": {
+            "color": "rgb(160,68,160)"
+        }
+    },
+    {
+        "@id": "#Labyrinth",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Labyrinth"
+        },
+        "renderOption": {
+            "color": "rgba(219,179,40, 0.5)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Labyrinth_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 10,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Malleus_Bone",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Malleus Bone"
+        },
+        "renderOption": {
+            "color": "rgb(255,200,49)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Malleus_Bone_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 140,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Facial_Nerve_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_5_Facial_Nerve.vtk"
+    },
+    {
+        "@id": "#Stapedius_Muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_28_Stapedius_Muscle.vtk"
+    },
+    {
+        "@id": "#Incus_Bone",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Incus Bone"
+        },
+        "renderOption": {
+            "color": "rgb(70,170,100)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Incus_Bone_ModelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 14,
+                "dataSource": "#_LabelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Fenestra_Rotunda_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_12_Fenestra_Rotunda.vtk"
+    }
+]

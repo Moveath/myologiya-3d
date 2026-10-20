@@ -1,0 +1,837 @@
+{
+  "status": "passed",
+  "ribMarkers": 106,
+  "ribIdentities": 24,
+  "sternalMarkers": 7,
+  "sternalComponents": 3,
+  "sourceHashes": {
+    "stl_thorax\\FMA7486.stl": "1d503e4a4b7b7090bb43ced9870d8bf8c618c4cc6c88f9570a6a3c0962b6597b",
+    "stl_thorax\\FMA7487.stl": "33488974f006fbf6404b7c3b095fac3502cd4c2abc787293eaf21e4c84193a90",
+    "stl_thorax\\FMA7488.stl": "1cf0972021a6dc32d12b5d9da6bd4f3f68ba79005d3590ef550cb416b9cc1431"
+  },
+  "ribSides": [
+    {
+      "bone": "rib_1_right",
+      "code": "A02.3.02.002",
+      "source": "FMA7857",
+      "sourceLabel": "right first rib",
+      "x": -0.01866
+    },
+    {
+      "bone": "rib_1_right",
+      "code": "A02.3.02.005",
+      "source": "FMA7857",
+      "sourceLabel": "right first rib",
+      "x": -0.02494
+    },
+    {
+      "bone": "rib_1_right",
+      "code": "A02.3.02.007",
+      "source": "FMA7857",
+      "sourceLabel": "right first rib",
+      "x": -0.05827
+    },
+    {
+      "bone": "rib_1_right",
+      "code": "A02.3.02.008",
+      "source": "FMA7857",
+      "sourceLabel": "right first rib",
+      "x": -0.03414
+    },
+    {
+      "bone": "rib_1_left",
+      "code": "A02.3.02.002",
+      "source": "FMA7987",
+      "sourceLabel": "left first rib",
+      "x": 0.01511
+    },
+    {
+      "bone": "rib_1_left",
+      "code": "A02.3.02.005",
+      "source": "FMA7987",
+      "sourceLabel": "left first rib",
+      "x": 0.02038
+    },
+    {
+      "bone": "rib_1_left",
+      "code": "A02.3.02.007",
+      "source": "FMA7987",
+      "sourceLabel": "left first rib",
+      "x": 0.05678
+    },
+    {
+      "bone": "rib_1_left",
+      "code": "A02.3.02.008",
+      "source": "FMA7987",
+      "sourceLabel": "left first rib",
+      "x": 0.033
+    },
+    {
+      "bone": "rib_2_right",
+      "code": "A02.3.02.002",
+      "source": "FMA7882",
+      "sourceLabel": "right second rib",
+      "x": -0.01946
+    },
+    {
+      "bone": "rib_2_right",
+      "code": "A02.3.02.005",
+      "source": "FMA7882",
+      "sourceLabel": "right second rib",
+      "x": -0.02662
+    },
+    {
+      "bone": "rib_2_right",
+      "code": "A02.3.02.007",
+      "source": "FMA7882",
+      "sourceLabel": "right second rib",
+      "x": -0.08442
+    },
+    {
+      "bone": "rib_2_right",
+      "code": "A02.3.02.008",
+      "source": "FMA7882",
+      "sourceLabel": "right second rib",
+      "x": -0.03464
+    },
+    {
+      "bone": "rib_2_right",
+      "code": "A02.3.02.010",
+      "source": "FMA7882",
+      "sourceLabel": "right second rib",
+      "x": -0.08102
+    },
+    {
+      "bone": "rib_2_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8012",
+      "sourceLabel": "left second rib",
+      "x": 0.01669
+    },
+    {
+      "bone": "rib_2_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8012",
+      "sourceLabel": "left second rib",
+      "x": 0.02496
+    },
+    {
+      "bone": "rib_2_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8012",
+      "sourceLabel": "left second rib",
+      "x": 0.08132
+    },
+    {
+      "bone": "rib_2_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8012",
+      "sourceLabel": "left second rib",
+      "x": 0.03178
+    },
+    {
+      "bone": "rib_2_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8012",
+      "sourceLabel": "left second rib",
+      "x": 0.07852
+    },
+    {
+      "bone": "rib_3_right",
+      "code": "A02.3.02.002",
+      "source": "FMA7909",
+      "sourceLabel": "right third rib",
+      "x": -0.02032
+    },
+    {
+      "bone": "rib_3_right",
+      "code": "A02.3.02.005",
+      "source": "FMA7909",
+      "sourceLabel": "right third rib",
+      "x": -0.02697
+    },
+    {
+      "bone": "rib_3_right",
+      "code": "A02.3.02.007",
+      "source": "FMA7909",
+      "sourceLabel": "right third rib",
+      "x": -0.09656
+    },
+    {
+      "bone": "rib_3_right",
+      "code": "A02.3.02.008",
+      "source": "FMA7909",
+      "sourceLabel": "right third rib",
+      "x": -0.03391
+    },
+    {
+      "bone": "rib_3_right",
+      "code": "A02.3.02.010",
+      "source": "FMA7909",
+      "sourceLabel": "right third rib",
+      "x": -0.09323
+    },
+    {
+      "bone": "rib_3_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8039",
+      "sourceLabel": "left third rib",
+      "x": 0.01727
+    },
+    {
+      "bone": "rib_3_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8039",
+      "sourceLabel": "left third rib",
+      "x": 0.02331
+    },
+    {
+      "bone": "rib_3_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8039",
+      "sourceLabel": "left third rib",
+      "x": 0.09591
+    },
+    {
+      "bone": "rib_3_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8039",
+      "sourceLabel": "left third rib",
+      "x": 0.03056
+    },
+    {
+      "bone": "rib_3_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8039",
+      "sourceLabel": "left third rib",
+      "x": 0.08444
+    },
+    {
+      "bone": "rib_4_right",
+      "code": "A02.3.02.002",
+      "source": "FMA7957",
+      "sourceLabel": "right fourth rib",
+      "x": -0.01944
+    },
+    {
+      "bone": "rib_4_right",
+      "code": "A02.3.02.005",
+      "source": "FMA7957",
+      "sourceLabel": "right fourth rib",
+      "x": -0.02865
+    },
+    {
+      "bone": "rib_4_right",
+      "code": "A02.3.02.007",
+      "source": "FMA7957",
+      "sourceLabel": "right fourth rib",
+      "x": -0.11096
+    },
+    {
+      "bone": "rib_4_right",
+      "code": "A02.3.02.008",
+      "source": "FMA7957",
+      "sourceLabel": "right fourth rib",
+      "x": -0.03749
+    },
+    {
+      "bone": "rib_4_right",
+      "code": "A02.3.02.010",
+      "source": "FMA7957",
+      "sourceLabel": "right fourth rib",
+      "x": -0.09567
+    },
+    {
+      "bone": "rib_4_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8148",
+      "sourceLabel": "left fourth rib",
+      "x": 0.01642
+    },
+    {
+      "bone": "rib_4_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8148",
+      "sourceLabel": "left fourth rib",
+      "x": 0.02709
+    },
+    {
+      "bone": "rib_4_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8148",
+      "sourceLabel": "left fourth rib",
+      "x": 0.10606
+    },
+    {
+      "bone": "rib_4_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8148",
+      "sourceLabel": "left fourth rib",
+      "x": 0.03335
+    },
+    {
+      "bone": "rib_4_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8148",
+      "sourceLabel": "left fourth rib",
+      "x": 0.0917
+    },
+    {
+      "bone": "rib_5_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8066",
+      "sourceLabel": "right fifth rib",
+      "x": -0.01913
+    },
+    {
+      "bone": "rib_5_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8066",
+      "sourceLabel": "right fifth rib",
+      "x": -0.02652
+    },
+    {
+      "bone": "rib_5_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8066",
+      "sourceLabel": "right fifth rib",
+      "x": -0.11582
+    },
+    {
+      "bone": "rib_5_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8066",
+      "sourceLabel": "right fifth rib",
+      "x": -0.03473
+    },
+    {
+      "bone": "rib_5_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8066",
+      "sourceLabel": "right fifth rib",
+      "x": -0.10104
+    },
+    {
+      "bone": "rib_5_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8093",
+      "sourceLabel": "left fifth rib",
+      "x": 0.01705
+    },
+    {
+      "bone": "rib_5_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8093",
+      "sourceLabel": "left fifth rib",
+      "x": 0.02444
+    },
+    {
+      "bone": "rib_5_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8093",
+      "sourceLabel": "left fifth rib",
+      "x": 0.10713
+    },
+    {
+      "bone": "rib_5_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8093",
+      "sourceLabel": "left fifth rib",
+      "x": 0.03244
+    },
+    {
+      "bone": "rib_5_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8093",
+      "sourceLabel": "left fifth rib",
+      "x": 0.09851
+    },
+    {
+      "bone": "rib_6_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8175",
+      "sourceLabel": "right sixth rib",
+      "x": -0.02013
+    },
+    {
+      "bone": "rib_6_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8175",
+      "sourceLabel": "right sixth rib",
+      "x": -0.02864
+    },
+    {
+      "bone": "rib_6_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8175",
+      "sourceLabel": "right sixth rib",
+      "x": -0.12012
+    },
+    {
+      "bone": "rib_6_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8175",
+      "sourceLabel": "right sixth rib",
+      "x": -0.03672
+    },
+    {
+      "bone": "rib_6_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8175",
+      "sourceLabel": "right sixth rib",
+      "x": -0.10523
+    },
+    {
+      "bone": "rib_6_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8202",
+      "sourceLabel": "left sixth rib",
+      "x": 0.01697
+    },
+    {
+      "bone": "rib_6_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8202",
+      "sourceLabel": "left sixth rib",
+      "x": 0.02548
+    },
+    {
+      "bone": "rib_6_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8202",
+      "sourceLabel": "left sixth rib",
+      "x": 0.11376
+    },
+    {
+      "bone": "rib_6_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8202",
+      "sourceLabel": "left sixth rib",
+      "x": 0.03271
+    },
+    {
+      "bone": "rib_6_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8202",
+      "sourceLabel": "left sixth rib",
+      "x": 0.10185
+    },
+    {
+      "bone": "rib_7_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8229",
+      "sourceLabel": "right seventh rib",
+      "x": -0.02006
+    },
+    {
+      "bone": "rib_7_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8229",
+      "sourceLabel": "right seventh rib",
+      "x": -0.02774
+    },
+    {
+      "bone": "rib_7_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8229",
+      "sourceLabel": "right seventh rib",
+      "x": -0.1323
+    },
+    {
+      "bone": "rib_7_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8229",
+      "sourceLabel": "right seventh rib",
+      "x": -0.0364
+    },
+    {
+      "bone": "rib_7_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8229",
+      "sourceLabel": "right seventh rib",
+      "x": -0.10769
+    },
+    {
+      "bone": "rib_7_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8256",
+      "sourceLabel": "left seventh rib",
+      "x": 0.01737
+    },
+    {
+      "bone": "rib_7_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8256",
+      "sourceLabel": "left seventh rib",
+      "x": 0.02643
+    },
+    {
+      "bone": "rib_7_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8256",
+      "sourceLabel": "left seventh rib",
+      "x": 0.12801
+    },
+    {
+      "bone": "rib_7_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8256",
+      "sourceLabel": "left seventh rib",
+      "x": 0.03332
+    },
+    {
+      "bone": "rib_7_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8256",
+      "sourceLabel": "left seventh rib",
+      "x": 0.10104
+    },
+    {
+      "bone": "rib_8_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8283",
+      "sourceLabel": "right eighth rib",
+      "x": -0.01998
+    },
+    {
+      "bone": "rib_8_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8283",
+      "sourceLabel": "right eighth rib",
+      "x": -0.02759
+    },
+    {
+      "bone": "rib_8_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8283",
+      "sourceLabel": "right eighth rib",
+      "x": -0.1277
+    },
+    {
+      "bone": "rib_8_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8283",
+      "sourceLabel": "right eighth rib",
+      "x": -0.03557
+    },
+    {
+      "bone": "rib_8_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8283",
+      "sourceLabel": "right eighth rib",
+      "x": -0.10077
+    },
+    {
+      "bone": "rib_8_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8310",
+      "sourceLabel": "left eighth rib",
+      "x": 0.01768
+    },
+    {
+      "bone": "rib_8_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8310",
+      "sourceLabel": "left eighth rib",
+      "x": 0.02512
+    },
+    {
+      "bone": "rib_8_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8310",
+      "sourceLabel": "left eighth rib",
+      "x": 0.12343
+    },
+    {
+      "bone": "rib_8_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8310",
+      "sourceLabel": "left eighth rib",
+      "x": 0.03256
+    },
+    {
+      "bone": "rib_8_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8310",
+      "sourceLabel": "left eighth rib",
+      "x": 0.09704
+    },
+    {
+      "bone": "rib_9_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8364",
+      "sourceLabel": "right ninth rib",
+      "x": -0.02189
+    },
+    {
+      "bone": "rib_9_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8364",
+      "sourceLabel": "right ninth rib",
+      "x": -0.02835
+    },
+    {
+      "bone": "rib_9_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8364",
+      "sourceLabel": "right ninth rib",
+      "x": -0.12712
+    },
+    {
+      "bone": "rib_9_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8364",
+      "sourceLabel": "right ninth rib",
+      "x": -0.03294
+    },
+    {
+      "bone": "rib_9_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8364",
+      "sourceLabel": "right ninth rib",
+      "x": -0.09051
+    },
+    {
+      "bone": "rib_9_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8391",
+      "sourceLabel": "left ninth rib",
+      "x": 0.01931
+    },
+    {
+      "bone": "rib_9_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8391",
+      "sourceLabel": "left ninth rib",
+      "x": 0.02548
+    },
+    {
+      "bone": "rib_9_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8391",
+      "sourceLabel": "left ninth rib",
+      "x": 0.12436
+    },
+    {
+      "bone": "rib_9_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8391",
+      "sourceLabel": "left ninth rib",
+      "x": 0.02878
+    },
+    {
+      "bone": "rib_9_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8391",
+      "sourceLabel": "left ninth rib",
+      "x": 0.0882
+    },
+    {
+      "bone": "rib_10_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8445",
+      "sourceLabel": "right tenth rib",
+      "x": -0.02144
+    },
+    {
+      "bone": "rib_10_right",
+      "code": "A02.3.02.005",
+      "source": "FMA8445",
+      "sourceLabel": "right tenth rib",
+      "x": -0.02609
+    },
+    {
+      "bone": "rib_10_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8445",
+      "sourceLabel": "right tenth rib",
+      "x": -0.12478
+    },
+    {
+      "bone": "rib_10_right",
+      "code": "A02.3.02.008",
+      "source": "FMA8445",
+      "sourceLabel": "right tenth rib",
+      "x": -0.03197
+    },
+    {
+      "bone": "rib_10_right",
+      "code": "A02.3.02.010",
+      "source": "FMA8445",
+      "sourceLabel": "right tenth rib",
+      "x": -0.08193
+    },
+    {
+      "bone": "rib_10_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8472",
+      "sourceLabel": "left tenth rib",
+      "x": 0.01864
+    },
+    {
+      "bone": "rib_10_left",
+      "code": "A02.3.02.005",
+      "source": "FMA8472",
+      "sourceLabel": "left tenth rib",
+      "x": 0.02428
+    },
+    {
+      "bone": "rib_10_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8472",
+      "sourceLabel": "left tenth rib",
+      "x": 0.12174
+    },
+    {
+      "bone": "rib_10_left",
+      "code": "A02.3.02.008",
+      "source": "FMA8472",
+      "sourceLabel": "left tenth rib",
+      "x": 0.03003
+    },
+    {
+      "bone": "rib_10_left",
+      "code": "A02.3.02.010",
+      "source": "FMA8472",
+      "sourceLabel": "left tenth rib",
+      "x": 0.07705
+    },
+    {
+      "bone": "rib_11_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8531",
+      "sourceLabel": "right eleventh rib",
+      "x": -0.02382
+    },
+    {
+      "bone": "rib_11_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8531",
+      "sourceLabel": "right eleventh rib",
+      "x": -0.10068
+    },
+    {
+      "bone": "rib_11_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8532",
+      "sourceLabel": "left eleventh rib",
+      "x": 0.02098
+    },
+    {
+      "bone": "rib_11_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8532",
+      "sourceLabel": "left eleventh rib",
+      "x": 0.09707
+    },
+    {
+      "bone": "rib_12_right",
+      "code": "A02.3.02.002",
+      "source": "FMA8533",
+      "sourceLabel": "right twelfth rib",
+      "x": -0.02274
+    },
+    {
+      "bone": "rib_12_right",
+      "code": "A02.3.02.007",
+      "source": "FMA8533",
+      "sourceLabel": "right twelfth rib",
+      "x": -0.06255
+    },
+    {
+      "bone": "rib_12_left",
+      "code": "A02.3.02.002",
+      "source": "FMA8534",
+      "sourceLabel": "left twelfth rib",
+      "x": 0.02074
+    },
+    {
+      "bone": "rib_12_left",
+      "code": "A02.3.02.007",
+      "source": "FMA8534",
+      "sourceLabel": "left twelfth rib",
+      "x": 0.06224
+    }
+  ],
+  "sternum": [
+    {
+      "code": "A02.3.03.002",
+      "nearest": "FMA7486",
+      "distanceMm": {
+        "FMA7486": 0.002176922618724219,
+        "FMA7487": 19.741309269780132,
+        "FMA7488": 131.09367568188927
+      },
+      "expectedPart": "FMA7486",
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.003",
+      "nearest": "FMA7486",
+      "distanceMm": {
+        "FMA7486": 0.001632616954341003,
+        "FMA7487": 49.2409954658916,
+        "FMA7488": 154.15034761381204
+      },
+      "expectedPart": "FMA7486",
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.004",
+      "nearest": "FMA7486",
+      "distanceMm": {
+        "FMA7486": 0.004159269480676571,
+        "FMA7487": 46.18702279689454,
+        "FMA7488": 156.0941205704849
+      },
+      "expectedPart": "FMA7486",
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.005",
+      "nearest": "FMA7487",
+      "distanceMm": {
+        "FMA7486": 0.5012122106647325,
+        "FMA7487": 0.000700306272818092,
+        "FMA7488": 108.30419612581245
+      },
+      "expectedPart": null,
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.006",
+      "nearest": "FMA7487",
+      "distanceMm": {
+        "FMA7486": 59.74900336185981,
+        "FMA7487": 0.0001150856973791015,
+        "FMA7488": 50.717509919246744
+      },
+      "expectedPart": "FMA7487",
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.007",
+      "nearest": "FMA7488",
+      "distanceMm": {
+        "FMA7486": 121.17743120258801,
+        "FMA7487": 11.431613601981251,
+        "FMA7488": 0.0021238596714780343
+      },
+      "expectedPart": "FMA7488",
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    },
+    {
+      "code": "A02.3.03.008",
+      "nearest": "FMA7487",
+      "distanceMm": {
+        "FMA7486": 30.479455511221484,
+        "FMA7487": 0.0005138970231686344,
+        "FMA7488": 77.83463726631075
+      },
+      "expectedPart": null,
+      "limitation": "Side, full surface and transition contour are not accepted from proximity."
+    }
+  ],
+  "acceptedCoordinates": 0,
+  "acceptedExtents": 0
+}

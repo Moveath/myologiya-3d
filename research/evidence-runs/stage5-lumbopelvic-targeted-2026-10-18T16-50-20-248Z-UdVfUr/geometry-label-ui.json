@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "width": 1280,
+      "checked": 31,
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "checked": 31,
+      "status": "passed"
+    }
+  ],
+  "toolEvidence": {
+    "content": [
+      {
+        "type": "text",
+        "text": "### Result\n[{\"width\":1280,\"checked\":31,\"status\":\"passed\"},{\"width\":390,\"checked\":31,\"status\":\"passed\"}]\n### Ran Playwright code\n```js\nawait (async(page)=>{const results=[];for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto('http://127.0.0.1:8782/local.html?theme='+(width===390?'light':'dark'),{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.__ready);await page.evaluate(async()=>{await __atlas.enterSection('leg');await __atlas.goTo('hip_bone');});const checked=await page.evaluate(async()=>{const rows=ATLAS.pins.filter(p=>p.targetedReview?.source==='research/stage5-lumbopelvic-targeted-report-2026-10-18.md');for(const bone of new Set(rows.map(p=>p.b))){await __atlas.goTo(bone);for(const p of rows.filter(q=>q.b===bone)){__atlas.activatePin(p.id);const note=document.querySelector('.pinbox [data-geometry-status=\"unverified_extent\"]');if(!note?.textContent.includes('Геометрия не принята. Ограничения и необходимые доказательства:')||!note.textContent.includes(p.geometryRequirements.neededEvidence))throw Error('Missing status '+p.id);}}return rows.length;});results.push({width,checked,status:'passed'});}return results;})(page);\n```"
+      }
+    ]
+  }
+}

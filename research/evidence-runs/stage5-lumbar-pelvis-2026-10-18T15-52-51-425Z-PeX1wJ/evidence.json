@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "date": "2026-10-18",
+  "scope": "Stage5 lumbar first internal batch of lumbar/pelvis task; pelvis/sacrum not fully reviewed",
+  "report": "research/stage5-lumbar-report-2026-10-18.md",
+  "data": {
+    "final": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/data-regression-final.json",
+    "first": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/data-regression.json",
+    "inventory": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/inventory-before.json",
+    "reviewed": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/lumbar-reviewed-records-final.json",
+    "remainder": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/pelvic-remainder-final.json",
+    "candidates": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/lumbar-candidates.json"
+  },
+  "geometry": {
+    "blender": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/blender-lumbar.json",
+    "trimesh": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/trimesh-lumbar.json",
+    "acceptedCoordinates": 0,
+    "acceptedContours": 0
+  },
+  "tests": {
+    "generators": [
+      "scripts/make_context_bone_data.py",
+      "scripts/make_shared_landmarks.py"
+    ],
+    "ta98": {
+      "status": "passed_with_3_known_differences",
+      "terms": 762,
+      "known": [
+        "A02.5.10.015",
+        "A02.5.10.017",
+        "A02.5.11.007"
+      ]
+    },
+    "desktop": "research/evidence-runs/stage5-lumbar-mcp-2026-10-18T16-00-51-129Z-fnybkc/result.json",
+    "mobile": "research/evidence-runs/stage5-lumbar-mcp-2026-10-18T16-08-14-410Z-lPUEtK/result.json",
+    "failedMobilePreserved": "research/evidence-runs/stage5-lumbar-mcp-2026-10-18T16-04-55-216Z-dCIOvw/result.json",
+    "note": "Mobile test corrected to close card after goTo. Final source-locator-only adjustment verified by Node after data regeneration; functional UI scenario unchanged. No physical phone tested; unchanged skull clipping not rerun."
+  },
+  "registry": "research/evidence-runs/stage5-lumbar-pelvis-2026-10-18T15-52-51-425Z-PeX1wJ/registry-final.json",
+  "limitations": [
+    "120 pelvic/sacral original records remain unreviewed in this batch, including 6 attachment records excluded from osteology acceptance.",
+    "112 lumbar records have no accepted geometry or points.",
+    "No GLB changes or new segmentation.",
+    "Three lumbar catalogue/variant directions remain pending.",
+    "Prior skull/neck/thorax/source blockers preserved."
+  ]
+}
