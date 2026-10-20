@@ -1,0 +1,97 @@
+{
+  "views": [
+    {
+      "file": "ulna-radial-notch-oblique.png",
+      "cameraTargetThreeMeters": [
+        0.22,
+        1.032,
+        0.075
+      ],
+      "offset": [
+        1,
+        0,
+        1
+      ],
+      "orthoMeters": 0.055,
+      "isolated": "ulna_left"
+    },
+    {
+      "file": "radius-ulnar-notch-medial.png",
+      "cameraTargetThreeMeters": [
+        0.249,
+        0.834,
+        0.099
+      ],
+      "offset": [
+        -1,
+        0,
+        0
+      ],
+      "orthoMeters": 0.06,
+      "isolated": "radius_left"
+    },
+    {
+      "file": "ulna-head-lateral.png",
+      "cameraTargetThreeMeters": [
+        0.235,
+        0.835,
+        0.101
+      ],
+      "offset": [
+        1,
+        0,
+        0
+      ],
+      "orthoMeters": 0.055,
+      "isolated": "ulna_left"
+    },
+    {
+      "file": "distal-oblique.png",
+      "cameraTargetThreeMeters": [
+        0.251,
+        0.835,
+        0.102
+      ],
+      "offset": [
+        1,
+        -0.6,
+        1
+      ],
+      "orthoMeters": 0.07,
+      "isolated": null
+    }
+  ],
+  "geometry": {
+    "radius_left": {
+      "triangles": 2714,
+      "determinant": 1.0000001937626735e-09,
+      "objectScale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ]
+    },
+    "ulna_left": {
+      "triangles": 3538,
+      "determinant": 1.0000001937626735e-09,
+      "objectScale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ]
+    },
+    "humerus_left": {
+      "triangles": 16492,
+      "determinant": 1.0,
+      "objectScale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "originalScene": "Scene",
+  "sceneRestored": true,
+  "sourceModelsUnmodified": true,
+  "anatomicalAcceptance": false
+}

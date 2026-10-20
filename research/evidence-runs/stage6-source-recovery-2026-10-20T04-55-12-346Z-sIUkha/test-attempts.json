@@ -1,0 +1,25 @@
+{
+  "initialMcpBlender": "Could not connect to Blender. Make sure the Blender addon is running.",
+  "blenderResolved": "User started MCP; successful scene read/import/restore afterwards",
+  "firstBrowserToolError": "TypeError [ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING]: A dynamic import callback was not specified.",
+  "errorProvenance": "Transcribed from tool outputs in this task; all later failures are in per-run JSON files",
+  "ta98": {
+    "command": ".venv/Scripts/python.exe -X utf8 verify/verify_ta98.py",
+    "exitCode": 0,
+    "terms": 762,
+    "knownDifferences": [
+      "A02.5.10.015",
+      "A02.5.10.017",
+      "A02.5.11.007"
+    ],
+    "newDifferences": 0
+  },
+  "desktopPassed": "stage6-sesamoid-ui-2026-10-20T05-10-47-170Z-OIg5Ss",
+  "mobilePassed": "stage6-sesamoid-ui-2026-10-20T05-14-15-154Z-3VRx4K",
+  "mobileDeadline": {
+    "milliseconds": 45000,
+    "failedRun": "stage6-sesamoid-ui-2026-10-20T05-12-52-382Z-tO1OwH",
+    "testPageClosed": true
+  },
+  "applicationCodeChangedForTests": false
+}

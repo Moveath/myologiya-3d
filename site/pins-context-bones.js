@@ -10724,19 +10724,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -10783,19 +10783,19 @@ window.ATLAS.pins.push(...[
     "partOf": "context_radius_left_A02_4_05_002",
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -10842,19 +10842,19 @@ window.ATLAS.pins.push(...[
     "partOf": "context_radius_left_A02_4_05_002",
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -10900,19 +10900,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -10958,19 +10958,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11016,19 +11016,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11074,19 +11074,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11132,19 +11132,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11190,19 +11190,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11249,19 +11249,19 @@ window.ATLAS.pins.push(...[
     "partOf": "context_radius_left_A02_4_05_010",
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11307,19 +11307,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11365,19 +11365,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11423,19 +11423,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11481,19 +11481,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11539,19 +11539,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11597,19 +11597,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11655,19 +11655,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11713,19 +11713,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11771,19 +11771,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11829,19 +11829,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11887,19 +11887,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -11945,19 +11945,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12003,19 +12003,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12061,19 +12061,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12119,19 +12119,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12177,19 +12177,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12235,19 +12235,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12293,19 +12293,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12351,19 +12351,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12409,19 +12409,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12467,19 +12467,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12525,19 +12525,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12583,19 +12583,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12642,19 +12642,19 @@ window.ATLAS.pins.push(...[
     "partOf": "context_ulna_left_A02_4_06_015",
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12700,19 +12700,19 @@ window.ATLAS.pins.push(...[
     ],
     "side": "left",
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -12760,7 +12760,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -12772,7 +12772,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_003",
@@ -12818,7 +12818,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -12830,7 +12830,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_004",
@@ -12876,7 +12876,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -12888,7 +12888,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_005",
@@ -12934,7 +12934,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -12946,7 +12946,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_006",
@@ -12992,7 +12992,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13004,7 +13004,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_007",
@@ -13050,7 +13050,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13062,7 +13062,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_008",
@@ -13120,7 +13120,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13132,7 +13132,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_009",
@@ -13178,7 +13178,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13190,7 +13190,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_010",
@@ -13236,7 +13236,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13248,7 +13248,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_011",
@@ -13294,7 +13294,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13306,7 +13306,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_012",
@@ -13352,7 +13352,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13364,7 +13364,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_013",
@@ -13410,7 +13410,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13422,7 +13422,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_014",
@@ -13468,7 +13468,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13480,7 +13480,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_015",
@@ -13526,7 +13526,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13538,7 +13538,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_016",
@@ -13584,7 +13584,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13596,7 +13596,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_017",
@@ -13642,7 +13642,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13654,7 +13654,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_018",
@@ -13700,7 +13700,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13712,7 +13712,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_019",
@@ -13758,7 +13758,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13770,7 +13770,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_020",
@@ -13816,7 +13816,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13828,7 +13828,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_021",
@@ -13874,7 +13874,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13886,7 +13886,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_022",
@@ -13932,7 +13932,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -13944,7 +13944,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_023",
@@ -13990,7 +13990,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14002,7 +14002,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_024",
@@ -14048,7 +14048,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14060,7 +14060,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_025",
@@ -14106,7 +14106,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14118,7 +14118,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_026",
@@ -14164,7 +14164,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14176,7 +14176,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_027",
@@ -14222,7 +14222,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14234,7 +14234,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_028",
@@ -14280,7 +14280,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14292,7 +14292,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_femur_left_A02_5_04_029",
@@ -14338,7 +14338,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14350,7 +14350,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_002",
@@ -14396,7 +14396,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14408,7 +14408,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_003",
@@ -14454,7 +14454,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14466,7 +14466,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_004",
@@ -14512,7 +14512,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14524,7 +14524,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_005",
@@ -14570,7 +14570,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14582,7 +14582,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_006",
@@ -14629,7 +14629,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14641,7 +14641,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_007",
@@ -14688,7 +14688,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14700,7 +14700,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_008",
@@ -14747,7 +14747,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14759,7 +14759,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_009",
@@ -14806,7 +14806,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14818,7 +14818,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_010",
@@ -14865,7 +14865,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14877,7 +14877,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_011",
@@ -14924,7 +14924,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14936,7 +14936,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_012",
@@ -14983,7 +14983,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -14995,7 +14995,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_013",
@@ -15042,7 +15042,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15054,7 +15054,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_014",
@@ -15100,7 +15100,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15112,7 +15112,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_015",
@@ -15158,7 +15158,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15170,7 +15170,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_016",
@@ -15216,7 +15216,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15228,7 +15228,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_fibula_left_A02_5_07_017",
@@ -15274,7 +15274,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15286,7 +15286,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_patella_left_A02_5_05_002",
@@ -15332,7 +15332,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15344,7 +15344,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_patella_left_A02_5_05_003",
@@ -15390,7 +15390,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15402,7 +15402,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_patella_left_A02_5_05_004",
@@ -15448,7 +15448,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15460,7 +15460,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_patella_left_A02_5_05_005",
@@ -15506,7 +15506,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15518,7 +15518,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_002",
@@ -15564,7 +15564,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15576,7 +15576,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_003",
@@ -15622,7 +15622,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15634,7 +15634,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_004",
@@ -15680,7 +15680,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15692,7 +15692,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_005",
@@ -15738,7 +15738,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15750,7 +15750,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_006",
@@ -15796,7 +15796,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15808,7 +15808,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_007",
@@ -15854,7 +15854,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15866,7 +15866,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_008",
@@ -15912,7 +15912,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15924,7 +15924,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_009",
@@ -15970,7 +15970,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -15982,7 +15982,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_010",
@@ -16028,7 +16028,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16040,7 +16040,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_011",
@@ -16086,7 +16086,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16098,7 +16098,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_012",
@@ -16144,7 +16144,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16156,7 +16156,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_013",
@@ -16202,7 +16202,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16214,7 +16214,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_014",
@@ -16260,7 +16260,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16272,7 +16272,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_015",
@@ -16318,7 +16318,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16330,7 +16330,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_016",
@@ -16376,7 +16376,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16388,7 +16388,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_017",
@@ -16434,7 +16434,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16446,7 +16446,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_018",
@@ -16492,7 +16492,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16504,7 +16504,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_019",
@@ -16550,7 +16550,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16562,7 +16562,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_020",
@@ -16608,7 +16608,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16620,7 +16620,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_021",
@@ -16666,7 +16666,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16678,7 +16678,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_022",
@@ -16724,7 +16724,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16736,7 +16736,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_023",
@@ -16782,7 +16782,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16794,7 +16794,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_tibia_left_A02_5_06_024",
@@ -16840,7 +16840,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -16852,7 +16852,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "context_calcaneus_left_A02_5_11_002",
@@ -24623,19 +24623,19 @@ window.ATLAS.pins.push(...[
     ],
     "anatomicalEntity": "foramina_group",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -24675,19 +24675,19 @@ window.ATLAS.pins.push(...[
     ],
     "anatomicalEntity": "foramina_group",
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -24726,19 +24726,19 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -24777,19 +24777,19 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -24854,19 +24854,19 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Модели левых лучевой и локтевой костей отсутствуют. Доступная левая плечевая кость не представляет весь сустав. Координаты, суставные поверхности, капсула и контуры не размечены. Геометрия правой стороны не отражалась.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. Доступны учебные модели левых radius/ulna и существующая плечевая кость. Показанные кости не представляют весь сустав: хрящ, капсула, координаты и контуры не размечены и не приняты. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -24927,20 +24927,20 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Модели левых лучевой и локтевой костей отсутствуют. Доступная левая плечевая кость не представляет весь сустав. Координаты, суставные поверхности, капсула и контуры не размечены. Геометрия правой стороны не отражалась.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. Доступны учебные модели левых radius/ulna и существующая плечевая кость. Показанные кости не представляют весь сустав: хрящ, капсула, координаты и контуры не размечены и не приняты. Геометрия правой стороны не отражалась.",
     "partOf": "extra_humerus_left_elbow_joint",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -25001,20 +25001,20 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Модели левых лучевой и локтевой костей отсутствуют. Доступная левая плечевая кость не представляет весь сустав. Координаты, суставные поверхности, капсула и контуры не размечены. Геометрия правой стороны не отражалась.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. Доступны учебные модели левых radius/ulna и существующая плечевая кость. Показанные кости не представляют весь сустав: хрящ, капсула, координаты и контуры не размечены и не приняты. Геометрия правой стороны не отражалась.",
     "partOf": "extra_humerus_left_elbow_joint",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -25075,20 +25075,20 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Модели левых лучевой и локтевой костей отсутствуют. Доступная левая плечевая кость не представляет весь сустав. Координаты, суставные поверхности, капсула и контуры не размечены. Геометрия правой стороны не отражалась.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. Доступны учебные модели левых radius/ulna и существующая плечевая кость. Показанные кости не представляют весь сустав: хрящ, капсула, координаты и контуры не размечены и не приняты. Геометрия правой стороны не отражалась.",
     "partOf": "extra_humerus_left_elbow_joint",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -25149,19 +25149,19 @@ window.ATLAS.pins.push(...[
       }
     ],
     "geometryRequirements": {
-      "status": "missing_source_model",
-      "neededEvidence": "Лицензированный левый исходник с подтверждённой стороной и преобразованием; затем разметка конкретной поверхности/траектории/объёма и анатомическая приёмка."
+      "status": "unverified_extent",
+      "neededEvidence": "Учебная модель кости доступна. Нужны подтверждённая локализация и разметка конкретной поверхности/траектории/объёма на её хеше; для суставов также границы сопряжённых поверхностей и сведения о хряще/позе."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
       "extentAcceptance": false,
-      "report": "research/stage5-left-forearm-report-2026-10-19.md"
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
     },
     "educationAvailable": false,
-    "modelNote": "Модели левых лучевой и локтевой костей отсутствуют. Доступная левая плечевая кость не представляет весь сустав. Координаты, суставные поверхности, капсула и контуры не размечены. Геометрия правой стороны не отражалась.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. Доступны учебные модели левых radius/ulna и существующая плечевая кость. Показанные кости не представляют весь сустав: хрящ, капсула, координаты и контуры не размечены и не приняты. Геометрия правой стороны не отражалась.",
     "leftForearmReview": {
       "source": "research/stage5-left-forearm-report-2026-10-19.md",
-      "scope": "catalogue_without_geometry",
+      "scope": "catalogue_with_limited_educational_model",
       "geometryAccepted": false
     }
   },
@@ -25210,7 +25210,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25222,7 +25222,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "extra_tibia_left_nutrient_foramina",
@@ -25269,7 +25269,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25281,7 +25281,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "extra_fibula_left_nutrient_foramina",
@@ -25328,7 +25328,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25340,7 +25340,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "extra_patella_left_posterior_nonarticular",
@@ -25387,7 +25387,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25399,7 +25399,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
   },
   {
     "id": "extra_femur_left_hip_joint",
@@ -25467,7 +25467,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25479,7 +25479,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "educationCode": "A03.6.07.001"
   },
   {
@@ -25544,7 +25544,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25556,7 +25556,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "educationCode": "A03.6.08.001"
   },
   {
@@ -25617,7 +25617,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25629,7 +25629,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "educationCode": "A03.6.09.001"
   },
   {
@@ -25690,7 +25690,7 @@ window.ATLAS.pins.push(...[
     "educationAvailable": false,
     "geometryRequirements": {
       "status": "unverified_extent",
-      "neededEvidence": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией."
+      "neededEvidence": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён."
     },
     "geometryReview": {
       "coordinateAcceptance": false,
@@ -25702,7 +25702,7 @@ window.ATLAS.pins.push(...[
       "scope": "catalogue_and_representation",
       "geometryAccepted": false
     },
-    "modelNote": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "modelNote": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "educationCode": "A03.6.05.001"
   },
   {

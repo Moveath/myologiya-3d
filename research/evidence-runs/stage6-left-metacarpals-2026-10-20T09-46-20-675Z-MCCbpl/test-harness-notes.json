@@ -1,0 +1,25 @@
+{
+  "failures": [
+    {
+      "test": "mcp-v1-1280-state",
+      "reason": "Test attempted a hidden bMore on a joint card; fixed to desktop list panel.",
+      "replacement": "mcp-v2-1280-state-result.json"
+    },
+    {
+      "test": "mcp-trial13-1280",
+      "reason": "MCP VM does not support dynamic import of node:fs. Test uses preloaded trial bytes; no application change."
+    },
+    {
+      "test": "initial integration verifier",
+      "reason": "An unbraced loop introduced while adapting the test; corrected before final successful run."
+    }
+  ],
+  "mobileTrialSnapshot": "v2 had an open card hiding viewport; v3 closes it and confirms view. Prior PNG retained.",
+  "cleanup": {
+    "trialOverridesRemoved": true,
+    "mainNoModelIandIII": [
+      true,
+      true
+    ]
+  }
+}

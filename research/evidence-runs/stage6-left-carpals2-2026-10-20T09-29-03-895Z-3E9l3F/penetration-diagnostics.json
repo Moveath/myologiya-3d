@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "a": "trapezium_left",
+      "b": "trapezoid_left",
+      "testedVerticesAndFaceCentres": 1606,
+      "insideSamples": 5,
+      "maxSamplePenetrationMM": 0.09537768464653515,
+      "affectedSourceFaces": [
+        418,
+        547,
+        552
+      ]
+    },
+    {
+      "a": "trapezoid_left",
+      "b": "trapezium_left",
+      "testedVerticesAndFaceCentres": 992,
+      "insideSamples": 10,
+      "maxSamplePenetrationMM": 0.12353379863872788,
+      "affectedSourceFaces": [
+        498,
+        499,
+        500,
+        511,
+        514,
+        533
+      ]
+    },
+    {
+      "a": "trapezoid_left",
+      "b": "capitate_left",
+      "testedVerticesAndFaceCentres": 992,
+      "insideSamples": 4,
+      "maxSamplePenetrationMM": 0.09223801509495748,
+      "affectedSourceFaces": [
+        93
+      ]
+    },
+    {
+      "a": "capitate_left",
+      "b": "trapezoid_left",
+      "testedVerticesAndFaceCentres": 1949,
+      "insideSamples": 6,
+      "maxSamplePenetrationMM": 0.09840035575567664,
+      "affectedSourceFaces": [
+        1130,
+        1196
+      ]
+    },
+    {
+      "a": "capitate_left",
+      "b": "hamate_left",
+      "testedVerticesAndFaceCentres": 1949,
+      "insideSamples": 6,
+      "maxSamplePenetrationMM": 0.05289292313068306,
+      "affectedSourceFaces": [
+        315,
+        319,
+        356,
+        362
+      ]
+    },
+    {
+      "a": "hamate_left",
+      "b": "capitate_left",
+      "testedVerticesAndFaceCentres": 1752,
+      "insideSamples": 4,
+      "maxSamplePenetrationMM": 0.10530669218948141,
+      "affectedSourceFaces": [
+        934,
+        1043
+      ]
+    }
+  ],
+  "method": "Solid-angle winding for all vertices and triangle centres; nearest triangle distance. Sampled penetration, not exact maximum or biological threshold."
+}

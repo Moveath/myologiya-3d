@@ -1,5 +1,9 @@
 """Addressed hand additions and a left catalogue, never reflected geometry."""
 from copy import deepcopy
+from left_carpals1_stage6 import admit, review_geometry
+from left_carpals2_stage6 import admit as admit_distal, review_geometry as review_distal_geometry
+from left_phalanges_stage6 import admit as admit_phalanges, review_geometry as review_phalange_geometry
+from left_metacarpals_stage6 import admit as admit_metacarpals, review_geometry as review_metacarpal_geometry
 from hand_stage5_review import (CARPALS, METACARPALS, PHALANGES, SESAMOID_BONES,
     GRAY, SOB, NCBI, CARPAL, TA, ref as base_ref, extra, joint)
 
@@ -142,6 +146,11 @@ for b,card in SESAMOID_BONES.items():
     LEFT_BONES[b.replace('_right','_left')]=p
 
 
+admit(LEFT_BONES)
+admit_distal(LEFT_BONES)
+admit_metacarpals(LEFT_BONES)
+admit_phalanges(LEFT_BONES)
+
 def left_records(right_records):
     """Only reviewed anatomical definitions; every geometric and muscle link discarded."""
     owners=set(CARPALS+METACARPALS+PHALANGES)
@@ -166,4 +175,4 @@ def left_records(right_records):
         if 'softTissueComponents' in p:
             p.pop('softTissueComponents');p['softTissueRequirements']=['левый удерживатель сгибателей; модель не подтверждена']
         p.pop('anchorStatus',None)
-        yield p
+        yield review_phalange_geometry(review_metacarpal_geometry(review_distal_geometry(review_geometry(p))))

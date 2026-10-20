@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "id": "radius_left",
+      "maxNearestVertexMM": 0.00010944658042124362,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 2714,
+      "targetTriangles": 2714,
+      "bounds": [
+        [
+          0.21903301516425167,
+          0.8160790182538591,
+          0.05712270245073148
+        ],
+        [
+          0.27889500226047303,
+          1.0454000740678993,
+          0.1237700025218258
+        ]
+      ],
+      "vertices": 1384,
+      "finite": true,
+      "normalsFinite": true,
+      "minNormalLength": 0.9999999999999997,
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "positiveX": true
+    },
+    {
+      "id": "ulna_left",
+      "maxNearestVertexMM": 0.00011036027133513144,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 3538,
+      "targetTriangles": 3538,
+      "bounds": [
+        [
+          0.19600800491534898,
+          0.8152630392111959,
+          0.040502901093706356
+        ],
+        [
+          0.2468270075732626,
+          1.062910084665205,
+          0.12008500478820405
+        ]
+      ],
+      "vertices": 1843,
+      "finite": true,
+      "normalsFinite": true,
+      "minNormalLength": 0.9999999999999998,
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "positiveX": true
+    }
+  ],
+  "existingHumerusSourceAgreement": {
+    "maxNearestVertexMM": 0.016813505725495927,
+    "orderedTriangleCornersWithin0002MM": false,
+    "sourceTriangles": 16492,
+    "targetTriangles": 16492
+  },
+  "adjacencyDiagnostics": {
+    "radius_left__ulna_left": {
+      "minVertexToTriangleMM": 1.0325626497642617,
+      "vertexIndex": 390,
+      "diagnosticPointM": [
+        0.24664599999999998,
+        0.826594,
+        0.11597700000000001
+      ],
+      "closestSurfaceM": [
+        0.2457159488335093,
+        0.8266590976032301,
+        0.11553320640444996
+      ],
+      "scope": "distance only, no pin or anatomical surface acceptance"
+    },
+    "radius_left__humerus_left": {
+      "minVertexToTriangleMM": 4.212333641546293,
+      "vertexIndex": 1069,
+      "diagnosticPointM": [
+        0.22131,
+        1.0430899999999999,
+        0.0647437
+      ],
+      "closestSurfaceM": [
+        0.21951431115455142,
+        1.0468822526550141,
+        0.06437211410337386
+      ],
+      "scope": "distance only, no pin or anatomical surface acceptance"
+    },
+    "ulna_left__humerus_left": {
+      "minVertexToTriangleMM": 0.16194291139595493,
+      "vertexIndex": 1366,
+      "diagnosticPointM": [
+        0.210345,
+        1.0599,
+        0.0583108
+      ],
+      "closestSurfaceM": [
+        0.2104104944256951,
+        1.0598282742349627,
+        0.058440381639841756
+      ],
+      "scope": "distance only, no pin or anatomical surface acceptance"
+    },
+    "radius_left__scaphoid_left": {
+      "minVertexToTriangleMM": 0.7636308891276229,
+      "vertexIndex": 192,
+      "diagnosticPointM": [
+        0.25903899999999996,
+        0.821731,
+        0.111621
+      ],
+      "closestSurfaceM": [
+        0.2588973764497717,
+        0.82119330876408,
+        0.11214441478739662
+      ],
+      "scope": "distance only, no pin or anatomical surface acceptance"
+    },
+    "radius_left__lunate_left": {
+      "minVertexToTriangleMM": 4.439698442335438,
+      "vertexIndex": 218,
+      "diagnosticPointM": [
+        0.249416,
+        0.820847,
+        0.10796800000000001
+      ],
+      "closestSurfaceM": [
+        0.24728119236925597,
+        0.8180221758755502,
+        0.11064641133967862
+      ],
+      "scope": "distance only, no pin or anatomical surface acceptance"
+    }
+  },
+  "registrationTransform": "native shared BP3D frame, [x,z,-y]/1000; no fit/translation/reflection",
+  "limitation": "No cartilage, full joint surface, pin localisation or clinical geometry acceptance"
+}

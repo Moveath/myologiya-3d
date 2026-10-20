@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "width": 1280,
+  "phase": "workflow",
+  "checks": [
+    "Search sesamoid_pedis",
+    "Toe group sesamoid_pedis",
+    "Selection sesamoid_pedis",
+    "Two existing children sesamoid_pedis",
+    "Child card extra_sesamoid_pedis_medial_hallux_sesamoid",
+    "Child card extra_sesamoid_pedis_lateral_hallux_sesamoid",
+    "Right group isolated"
+  ],
+  "errors": [],
+  "error": "TimeoutError: locator.click: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#bBoneXray')\u001b[22m\n"
+}

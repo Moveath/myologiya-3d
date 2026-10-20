@@ -1,0 +1,60 @@
+{
+  "status": "exported_for_testing",
+  "blender": "5.2.2 LTS",
+  "rows": [
+    {
+      "id": "radius_left",
+      "sourceId": "FMA23465",
+      "sourceSHA256": "c122b28e2abde87537f9b56a1584f5d1ea3cc8f61844d383682db54d63682b3c",
+      "derivative": "build_stage6/left_forearm_v1/radius_left.glb",
+      "derivativeSHA256": "b0aa2778b71b9a188668ffeecef8de45a5c656b05d2d3bede3715821f8a6a7c6",
+      "vertices": 1384,
+      "triangles": 2714,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          1363,
+          1364
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits."
+    },
+    {
+      "id": "ulna_left",
+      "sourceId": "FMA23468",
+      "sourceSHA256": "8f036cfc1c07d3453104305d1d9a3a519f3cf85fce7eb4046920501b86c8410d",
+      "derivative": "build_stage6/left_forearm_v1/ulna_left.glb",
+      "derivativeSHA256": "f4e174d076057ea45641ac232afe97482b21310438cf39a04708c1920efff062",
+      "vertices": 1843,
+      "triangles": 3538,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          321,
+          329
+        ],
+        [
+          2757,
+          2759
+        ],
+        [
+          3332,
+          3333
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits."
+    }
+  ],
+  "sceneRestored": "Scene",
+  "userObjectsUnchanged": true
+}

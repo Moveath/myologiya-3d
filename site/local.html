@@ -693,7 +693,7 @@ const SECTIONS = [
       { id: 'back', ru: 'Поверхностные мышцы спины', hint: 'Связь с плечевым поясом и задние зубчатые мышцы', v: 'post' },
       { id: 'deepback', ru: 'Глубокие мышцы спины', hint: 'Мышцы грудного отдела спины и сегментарные группы', v: 'post' }
     ] },
-  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Кости обеих рук; левая кисть и предплечье пока без 3D-моделей', ready: true, file: 'arm', extraFile: 'arm-extra',
+  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Левое предплечье и часть запястья — учебные модели; левая кисть неполная', ready: true, file: 'arm', extraFile: 'arm-extra', supplementalBones: ['radius_left','ulna_left','scaphoid_left','lunate_left','triquetrum_left','pisiform_left','trapezium_left','trapezoid_left','capitate_left','hamate_left','metacarpal_2_left','metacarpal_4_left','metacarpal_5_left','phalanx_prox_1_left','phalanx_prox_2_left','phalanx_prox_3_left','phalanx_prox_4_left','phalanx_prox_5_left','phalanx_mid_2_left','phalanx_mid_3_left','phalanx_mid_4_left','phalanx_mid_5_left','phalanx_dist_1_left','phalanx_dist_2_left','phalanx_dist_3_left','phalanx_dist_4_left','phalanx_dist_5_left'],
     tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
     subs: [
       { id: 'all', ru: 'Весь раздел', hint: 'Правая верхняя конечность, плечевой пояс и плечевые кости обеих сторон', v: 'antlat' },
@@ -702,10 +702,10 @@ const SECTIONS = [
       { id: 'forearm', ru: 'Предплечье', hint: 'От локтя до запястья', v: 'ant' },
       { id: 'hand', ru: 'Кисть', hint: 'Запястье, ладонь и пальцы', v: 'ant' }
     ] },
-  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и правая нижняя конечность', ready: true, file: 'leg', extraFile: 'leg-extra',
+  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и нижние конечности; 3D слева неполное', ready: true, file: 'leg', extraFile: 'leg-extra', supplementalBones: ['femur_left', 'patella_left', 'tibia_left', 'fibula_left'],
     tries: ['gluteus_maximus', 'quadriceps_femoris', 'triceps_surae'],
     subs: [
-      { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и правая нижняя конечность', v: 'antlat' },
+      { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и нижние конечности; 3D слева неполное', v: 'antlat' },
       { id: 'lumbar', ru: 'Поясница L1–L5', hint: 'Пять поясничных позвонков; костный подраздел', v: 'postlat' },
       { id: 'pelvis', ru: 'Таз, крестец и копчик', hint: 'Тазовые кости, крестцово-копчиковая область и мышцы таза', v: 'antlat' },
       { id: 'thigh', ru: 'Бедро', hint: 'От тазобедренного сустава до колена', v: 'ant' },
@@ -1045,9 +1045,25 @@ async function register(gltf, section) {
   });
   return { group: gltf.scene, structs: map };
 }
+async function fetchSupplementalBone(id) {
+  const response = await fetch(A.bones[id].modelFile);
+  if (!response.ok) throw new Error(`Не удалось загрузить модель ${id}: HTTP ${response.status}`);
+  const gltf = await new GLTFLoader().parseAsync(await response.arrayBuffer(), '');
+  let meshes = 0;
+  gltf.scene.traverse(o => {
+    if (!o.isMesh) return;
+    let owner = o;
+    while (owner && !owner.name.startsWith('b|')) owner = owner.parent;
+    if (owner?.name !== 'b|' + id) throw new Error(`Неверный владелец модели ${id}`);
+    meshes++;
+  });
+  if (!meshes) throw new Error(`Пустая модель ${id}`);
+  return gltf;
+}
 function loadSection(id) {
   if (models[id]) return Promise.resolve(models[id]);
-  if (!loading[id]) loading[id] = Promise.all([fetchModel(SEC[id].file), SEC[id].extraFile ? fetchModel(SEC[id].extraFile) : null]).then(([main,extra])=>{
+  if (!loading[id]) loading[id] = Promise.all([fetchModel(SEC[id].file), SEC[id].extraFile ? fetchModel(SEC[id].extraFile) : null,
+    Promise.all((SEC[id].supplementalBones || []).map(fetchSupplementalBone))]).then(([main,extra,supplements])=>{
     if(extra){
       const replaced=new Set(Object.values(A.contextBoneSources||{}).filter(x=>x.sec===id).map(x=>x.sourceId));
       const remove=[];
@@ -1055,6 +1071,7 @@ function loadSection(id) {
       remove.forEach(o=>o.removeFromParent());
       main.scene.add(extra.scene);
     }
+    supplements.forEach(gltf => main.scene.add(gltf.scene));
     return register(main, id);
   }).then(model => (models[id] = model)).catch(e => { loading[id] = null; throw e; });
   return loading[id];
@@ -1118,7 +1135,9 @@ function applyVisibility() {
   if (curSide() !== 'both') notes.push('Показана '+(curSide()==='left'?'левая':'правая')+' сторона. Срединные и неразделённые модели сохраняются; отсутствующая геометрия не достраивается.');
   if (policy.muscle) notes.push(policy.related.length ? 'Кости показаны по связям прикреплений в каталоге; это не подтверждение координат.' : 'Костные связи этой мышцы или части в каталоге не указаны.');
   $('#sideViewNote').hidden = !notes.length; $('#sideViewNote').textContent = notes.join(' ');
-  const coverage = state.sec === 'arm' ? upperLimbCoverage(curSide(), curSub(), structs.values()) : '';
+  const educational = [...structs.values()].filter(s=>s.data?.modelStatus==='educational_limited' && s.meshes.some(m=>m.visible));
+  const coverage = [state.sec === 'arm' ? upperLimbCoverage(curSide(), curSub(), structs.values()) : '',
+    educational.length ? [...new Set(educational.map(s=>s.data.modelRegionLabel || 'Левое предплечье'))].join(', ')+'. '+(educational.find(s=>s.data.modelRegionLabel)?.data.modelNotice || educational[0].data.modelNotice) : ''].filter(Boolean).join(' ');
   $('#modelCoverage').hidden = !coverage; $('#modelCoverage').textContent = coverage;
   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
@@ -1648,6 +1667,7 @@ function renderSheet() {
       <button class="x" id="bDeselect" aria-label="Закрыть карточку">${IC_X}</button>
     </div>
     ${partsRow}
+    ${!noModel && d.modelStatus==='educational_limited' ? `<p class="note" data-model-status="educational_limited"><b>${esc(d.modelNotice)}</b> <a href="${esc(d.modelLicense)}" target="_blank" rel="noopener">BodyParts3D © DBCLS · лицензия и изменения</a></p>` : ''}
     ${isMuscle && p && d.lat === 'm. trapezius' ? `<p class="hint" data-selected-part>${esc(p.ru)} · ${esc(p.lat)}</p>` : ''}
     ${isMuscle && state.muscleBones ? `<p class="note">${visibilityPolicy().related.length ? 'Костный контекст построен по указанным в каталоге связям прикрепления. Полнота связей и точность областей прикрепления этим режимом не подтверждаются.' : 'Для этой мышцы или части нет явных костных связей в каталоге. Кости не подбираются по близости или по противоположной стороне.'}</p>` : ''}
     ${noModel&&d.contextTargets?.length?`<p class="note">Отдельной модели ${isMuscle?'мышцы':'кости'} нет. Показана соседняя костная область для ориентации.</p>`:''}

@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "id": "scaphoid_left",
+      "maxNearestVertexMM": 7.253006856124972e-05,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 1070,
+      "targetTriangles": 1070,
+      "extentsMM": [
+        23.826981722541163,
+        15.721009047489076,
+        15.431000488792534
+      ],
+      "bounds": [
+        [
+          0.24864101827954066,
+          0.8064710466060987,
+          0.10760900627082126
+        ],
+        [
+          0.2724680000020818,
+          0.8221920556535878,
+          0.1230400067596138
+        ]
+      ],
+      "centroid": [
+        0.2609000359348609,
+        0.8151329759658986,
+        0.1149063298462503
+      ],
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "components": 1,
+      "positiveX": true
+    },
+    {
+      "id": "lunate_left",
+      "maxNearestVertexMM": 7.209027633671552e-05,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 866,
+      "targetTriangles": 866,
+      "extentsMM": [
+        16.71800311339844,
+        12.974976202215771,
+        16.76699908740531
+      ],
+      "bounds": [
+        [
+          0.23551000569296043,
+          0.8074470598360506,
+          0.10679400379070447
+        ],
+        [
+          0.25222800880635887,
+          0.8204220360382664,
+          0.12356100287810978
+        ]
+      ],
+      "centroid": [
+        0.24458800903920086,
+        0.8142813560710451,
+        0.11518351858086748
+      ],
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "components": 1,
+      "positiveX": true
+    },
+    {
+      "id": "triquetrum_left",
+      "maxNearestVertexMM": 7.029575463347998e-05,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 698,
+      "targetTriangles": 698,
+      "extentsMM": [
+        11.306000292865548,
+        13.888001147925877,
+        15.548996710217367
+      ],
+      "bounds": [
+        [
+          0.23082801389342933,
+          0.799112037467502,
+          0.11066000891817751
+        ],
+        [
+          0.24213401418629488,
+          0.8130000386154279,
+          0.12620900562839488
+        ]
+      ],
+      "centroid": [
+        0.23639501984061065,
+        0.8059807454591831,
+        0.11848482357519559
+      ],
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "components": 1,
+      "positiveX": true
+    },
+    {
+      "id": "pisiform_left",
+      "maxNearestVertexMM": 7.173774372693759e-05,
+      "orderedTriangleCornersWithin0002MM": true,
+      "sourceTriangles": 396,
+      "targetTriangles": 396,
+      "extentsMM": [
+        8.519989418349638,
+        11.888977615477359,
+        10.75300649218569
+      ],
+      "bounds": [
+        [
+          0.23107001829945517,
+          0.7998590467803268,
+          0.12325400365698513
+        ],
+        [
+          0.2395900077178048,
+          0.8117480243958042,
+          0.13400701014917082
+        ]
+      ],
+      "centroid": [
+        0.2352588098547026,
+        0.8059063175526712,
+        0.1287741413929948
+      ],
+      "degenerateFaces": 0,
+      "duplicateFaces": 0,
+      "watertight": true,
+      "windingConsistent": true,
+      "positiveVolume": true,
+      "components": 1,
+      "positiveX": true
+    }
+  ],
+  "adjacency": [
+    {
+      "a": "radius_left",
+      "b": "scaphoid_left",
+      "samples": 150,
+      "minSampleDistanceMM": 1.5661917734807378,
+      "medianSampleDistanceMM": 104.58748806387783,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "radius_left",
+      "b": "lunate_left",
+      "samples": 150,
+      "minSampleDistanceMM": 4.885955067206973,
+      "medianSampleDistanceMM": 107.03540730535123,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "ulna_left",
+      "b": "triquetrum_left",
+      "samples": 150,
+      "minSampleDistanceMM": 5.603826369389469,
+      "medianSampleDistanceMM": 215.09956378671407,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "scaphoid_left",
+      "b": "lunate_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.0017614650892900808,
+      "medianSampleDistanceMM": 11.258320197719994,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "lunate_left",
+      "b": "triquetrum_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.03845992328572141,
+      "medianSampleDistanceMM": 7.15158141012523,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "triquetrum_left",
+      "b": "pisiform_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.00017651942296784064,
+      "medianSampleDistanceMM": 6.167816905779427,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "scaphoid_left",
+      "b": "trapezium_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.038142558068704036,
+      "medianSampleDistanceMM": 11.879674096612309,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "scaphoid_left",
+      "b": "trapezoid_left",
+      "samples": 150,
+      "minSampleDistanceMM": 1.694416004341582,
+      "medianSampleDistanceMM": 12.104035220147976,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "scaphoid_left",
+      "b": "capitate_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.08355343241543225,
+      "medianSampleDistanceMM": 5.347662394814178,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "lunate_left",
+      "b": "capitate_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.11649394865565028,
+      "medianSampleDistanceMM": 6.609958080343308,
+      "jointSpaceAccepted": false
+    },
+    {
+      "a": "triquetrum_left",
+      "b": "hamate_left",
+      "samples": 150,
+      "minSampleDistanceMM": 0.032697310593114336,
+      "medianSampleDistanceMM": 4.747225130343769,
+      "jointSpaceAccepted": false
+    }
+  ],
+  "acceptedScope": "technical and gross source-frame consistency, not exact cartilage or joint contours"
+}

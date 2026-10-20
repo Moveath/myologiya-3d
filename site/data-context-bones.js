@@ -248,13 +248,23 @@ Object.assign(window.ATLAS.bones,{
     "sub": "forearm",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "candidateSourceId": "FMA23465",
+    "sourceId": "FMA23465",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена.",
+    "modelFile": "models/bodyparts3d-3.0/left-forearm/radius_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
+    },
     "x": "Латеральная кость левого предплечья в анатомическом положении. Проксимальная головка участвует в локтевом и проксимальном лучелоктевом сочленениях; дистальный конец имеет локтевую вырезку и запястную суставную поверхность.",
-    "note": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "refs": [
       {
         "id": "arm_forearm_gray",
@@ -279,6 +289,14 @@ Object.assign(window.ATLAS.bones,{
         "locator": "Introduction; Structure and Function: laterality and joint surfaces only.",
         "access": "full_text",
         "checked": "2026-10-19"
+      },
+      {
+        "id": "bp3d_left_forearm_geometry",
+        "title": "BodyParts3D © DBCLS — CC BY-SA 2.1 Japan; происхождение и изменения",
+        "url": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+        "access": "model_provenance",
+        "checked": "2026-10-20",
+        "locator": "BodyParts3D 3.0 / 20110915 / OBJ 95%; FMA23465, FMA23468; only educational geometry acceptance."
       },
       {
         "id": "arm_forearm_ta98",
@@ -298,13 +316,23 @@ Object.assign(window.ATLAS.bones,{
     "sub": "forearm",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "candidateSourceId": "FMA23468",
+    "sourceId": "FMA23468",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена.",
+    "modelFile": "models/bodyparts3d-3.0/left-forearm/ulna_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
+    },
     "x": "Медиальная кость левого предплечья в анатомическом положении. Проксимально расположены локтевой и венечный отростки, блоковидная и лучевая вырезки; головка находится дистально. Суставной диск отделяет головку от костей запястья.",
-    "note": "Подтверждённой индивидуальной 3D-модели левой кости в доступных ресурсах нет. Карточка описывает типичную анатомию; координаты, контуры и размеры не назначены. Геометрия правой стороны не отражалась. Соседняя плечевая кость служит только для ориентации.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
     "refs": [
       {
         "id": "arm_forearm_gray",
@@ -331,6 +359,14 @@ Object.assign(window.ATLAS.bones,{
         "checked": "2026-10-19"
       },
       {
+        "id": "bp3d_left_forearm_geometry",
+        "title": "BodyParts3D © DBCLS — CC BY-SA 2.1 Japan; происхождение и изменения",
+        "url": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+        "access": "model_provenance",
+        "checked": "2026-10-20",
+        "locator": "BodyParts3D 3.0 / 20110915 / OBJ 95%; FMA23465, FMA23468; only educational geometry acceptance."
+      },
+      {
         "id": "arm_forearm_ta98",
         "title": "FIPAT / IFAA — TA98 osteology",
         "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
@@ -348,10 +384,10 @@ Object.assign(window.ATLAS.bones,{
     "sec": "leg",
     "side": "left",
     "sub": "thigh",
-    "noModel": true,
+    "noModel": false,
     "candidateSourceId": "FMA24475",
     "x": "Кость левого бедра; проксимально сочленяется с тазовой костью, дистально — с большеберцовой костью и надколенником.",
-    "note": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "lower_proximal_gray_femur",
@@ -376,8 +412,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.04–07; names, not specimen geometry",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24475; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24475",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/femur_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
   },
   "patella_left": {
     "ru": "Левый надколенник",
@@ -387,10 +441,10 @@ Object.assign(window.ATLAS.bones,{
     "sec": "leg",
     "side": "left",
     "sub": "thigh",
-    "noModel": true,
+    "noModel": false,
     "candidateSourceId": "FMA24487",
     "x": "Сесамовидная кость в сухожилии четырёхглавой мышцы перед левым коленным суставом; сочленяется с бедренной костью.",
-    "note": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "lower_proximal_gray_patella",
@@ -415,8 +469,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.04–07; names, not specimen geometry",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24487; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24487",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/patella_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
   },
   "tibia_left": {
     "ru": "Левая большеберцовая кость",
@@ -426,10 +498,10 @@ Object.assign(window.ATLAS.bones,{
     "sec": "leg",
     "side": "left",
     "sub": "shank",
-    "noModel": true,
+    "noModel": false,
     "candidateSourceId": "FMA24478",
     "x": "Медиальная опорная кость левой голени; сочленяется с бедренной, малоберцовой и таранной костями.",
-    "note": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "lower_proximal_gray_tibia",
@@ -454,8 +526,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.04–07; names, not specimen geometry",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24478; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24478",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/tibia_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
   },
   "fibula_left": {
     "ru": "Левая малоберцовая кость",
@@ -465,10 +555,10 @@ Object.assign(window.ATLAS.bones,{
     "sec": "leg",
     "side": "left",
     "sub": "shank",
-    "noModel": true,
+    "noModel": false,
     "candidateSourceId": "FMA24481",
     "x": "Латеральная кость левой голени; головка сочленяется с большеберцовой костью, латеральная лодыжка — с таранной.",
-    "note": "Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "lower_proximal_gray_fibula",
@@ -493,8 +583,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.04–07; names, not specimen geometry",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24481; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24481",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/fibula_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
   },
   "talus_left": {
     "ru": "Таранная кость · слева",
@@ -758,7 +866,7 @@ Object.assign(window.ATLAS.bones,{
   "sesamoid_pedis_left": {
     "ru": "Сесамовидные кости большого пальца стопы · слева",
     "lat": "ossa sesamoidea",
-    "g": "b_tarsus",
+    "g": "b_toes",
     "sub": "foot",
     "sec": "leg",
     "side": "left",
@@ -1625,12 +1733,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1663,8 +1771,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24436; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24436",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/scaphoid_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
   },
   "lunate_left": {
     "ru": "Полулунная кость слева",
@@ -1673,12 +1799,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1711,8 +1837,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24438; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24438",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/lunate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
   },
   "triquetrum_left": {
     "ru": "Трёхгранная кость слева",
@@ -1721,12 +1865,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1759,8 +1903,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24440; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24440",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/triquetrum_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
   },
   "pisiform_left": {
     "ru": "Гороховидная кость слева",
@@ -1769,12 +1931,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1807,8 +1969,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24442; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24442",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/pisiform_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
   },
   "trapezium_left": {
     "ru": "Кость-трапеция слева",
@@ -1817,12 +1997,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1855,8 +2035,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24444; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24444",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/trapezium_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
   },
   "trapezoid_left": {
     "ru": "Трапециевидная кость слева",
@@ -1865,12 +2063,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1903,8 +2101,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24445; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24445",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/trapezoid_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
   },
   "capitate_left": {
     "ru": "Головчатая кость слева",
@@ -1913,12 +2129,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1951,8 +2167,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24447; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24447",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/capitate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
   },
   "hamate_left": {
     "ru": "Крючковидная кость слева",
@@ -1961,12 +2195,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Одна из восьми костей левого запястья.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -1999,8 +2233,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24449; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24449",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/hamate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
   },
   "metacarpal_1_left": {
     "ru": "I пястная кость слева",
@@ -2014,7 +2266,7 @@ Object.assign(window.ATLAS.bones,{
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников. Без произвольного смещения или деформации.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2048,7 +2300,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-18"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
+      "blockedReason": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников."
+    }
   },
   "metacarpal_2_left": {
     "ru": "II пястная кость слева",
@@ -2057,12 +2315,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2095,8 +2353,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24467; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24467",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
   },
   "metacarpal_3_left": {
     "ru": "III пястная кость слева",
@@ -2110,7 +2386,7 @@ Object.assign(window.ATLAS.bones,{
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток. Без произвольного смещения или деформации.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2144,7 +2420,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-18"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
+      "blockedReason": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток."
+    }
   },
   "metacarpal_4_left": {
     "ru": "IV пястная кость слева",
@@ -2153,12 +2435,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2191,8 +2473,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24471; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24471",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
   },
   "metacarpal_5_left": {
     "ru": "V пястная кость слева",
@@ -2201,12 +2501,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2239,8 +2539,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24473; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24473",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
   },
   "phalanx_prox_1_left": {
     "ru": "Проксимальная фаланга I пальца слева",
@@ -2249,12 +2567,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2287,8 +2605,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA65470; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA65470",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_1_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_prox_2_left": {
     "ru": "Проксимальная фаланга II пальца слева",
@@ -2297,12 +2633,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2335,8 +2671,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71915; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA71915",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_prox_3_left": {
     "ru": "Проксимальная фаланга III пальца слева",
@@ -2345,12 +2699,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2383,8 +2737,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71908; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA71908",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_prox_4_left": {
     "ru": "Проксимальная фаланга IV пальца слева",
@@ -2393,12 +2765,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2431,8 +2803,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71916; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA71916",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_prox_5_left": {
     "ru": "Проксимальная фаланга V пальца слева",
@@ -2441,12 +2831,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2479,8 +2869,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA66791; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA66791",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_mid_2_left": {
     "ru": "Средняя фаланга II пальца слева",
@@ -2489,12 +2897,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2527,8 +2935,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23938; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23938",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_mid_3_left": {
     "ru": "Средняя фаланга III пальца слева",
@@ -2537,12 +2963,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2575,8 +3001,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23940; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23940",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_mid_4_left": {
     "ru": "Средняя фаланга IV пальца слева",
@@ -2585,12 +3029,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2623,8 +3067,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23942; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23942",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_mid_5_left": {
     "ru": "Средняя фаланга V пальца слева",
@@ -2633,12 +3095,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2671,8 +3133,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23944; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23944",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_dist_1_left": {
     "ru": "Дистальная фаланга I пальца слева",
@@ -2681,12 +3161,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2719,8 +3199,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23951; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23951",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_1_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_dist_2_left": {
     "ru": "Дистальная фаланга II пальца слева",
@@ -2729,12 +3227,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2767,8 +3265,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23953; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23953",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_dist_3_left": {
     "ru": "Дистальная фаланга III пальца слева",
@@ -2777,12 +3293,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2815,8 +3331,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23955; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23955",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_dist_4_left": {
     "ru": "Дистальная фаланга IV пальца слева",
@@ -2825,12 +3359,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2863,8 +3397,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23957; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23957",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "phalanx_dist_5_left": {
     "ru": "Дистальная фаланга V пальца слева",
@@ -2873,12 +3425,12 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "contextTargets": [
       "humerus_left"
     ],
     "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2911,8 +3463,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23959; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA23959",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
   },
   "sesamoid_mcp1_radial_left": {
     "ru": "Лучевая сесамовидная кость большого пальца кисти слева",
@@ -3034,10 +3604,46 @@ Object.assign(window.ATLAS.bones,{
   }
 });
 for(const [id,patch] of Object.entries({
-  "scaphoid": {
+  "metacarpal_3": {
+    "side": "right"
+  },
+  "trapezoid": {
+    "side": "right"
+  },
+  "metacarpal_2": {
+    "side": "right"
+  },
+  "phalanx_prox_1": {
+    "side": "right"
+  },
+  "phalanx_mid_5": {
+    "side": "right"
+  },
+  "phalanx_prox_3": {
+    "side": "right"
+  },
+  "capitate": {
+    "side": "right"
+  },
+  "phalanx_dist_3": {
+    "side": "right"
+  },
+  "phalanx_mid_2": {
+    "side": "right"
+  },
+  "phalanx_dist_5": {
+    "side": "right"
+  },
+  "triquetrum": {
+    "side": "right"
+  },
+  "hamate": {
     "side": "right"
   },
   "metacarpal_5": {
+    "side": "right"
+  },
+  "flexor_retinaculum": {
     "side": "right"
   },
   "trapezium": {
@@ -3046,97 +3652,61 @@ for(const [id,patch] of Object.entries({
   "metacarpal_4": {
     "side": "right"
   },
-  "phalanx_prox_2": {
-    "side": "right"
-  },
-  "phalanx_dist_3": {
-    "side": "right"
-  },
-  "hamate": {
-    "side": "right"
-  },
-  "metacarpal_3": {
-    "side": "right"
-  },
-  "phalanx_dist_1": {
-    "side": "right"
-  },
-  "phalanx_prox_3": {
-    "side": "right"
-  },
-  "phalanx_prox_1": {
-    "side": "right"
-  },
-  "trapezoid": {
-    "side": "right"
-  },
-  "phalanx_mid_2": {
-    "side": "right"
-  },
   "phalanx_mid_3": {
-    "side": "right"
-  },
-  "phalanx_mid_4": {
-    "side": "right"
-  },
-  "phalanx_dist_5": {
-    "side": "right"
-  },
-  "lunate": {
-    "side": "right"
-  },
-  "flexor_retinaculum": {
-    "side": "right"
-  },
-  "pisiform": {
-    "side": "right"
-  },
-  "metacarpal_2": {
-    "side": "right"
-  },
-  "phalanx_prox_5": {
     "side": "right"
   },
   "phalanx_prox_4": {
     "side": "right"
   },
-  "phalanx_dist_2": {
-    "side": "right"
-  },
-  "metacarpal_1": {
+  "scaphoid": {
     "side": "right"
   },
   "phalanx_dist_4": {
     "side": "right"
   },
-  "triquetrum": {
+  "phalanx_dist_1": {
     "side": "right"
   },
-  "phalanx_mid_5": {
+  "pisiform": {
     "side": "right"
   },
-  "capitate": {
+  "phalanx_mid_4": {
+    "side": "right"
+  },
+  "phalanx_dist_2": {
+    "side": "right"
+  },
+  "phalanx_prox_2": {
+    "side": "right"
+  },
+  "phalanx_prox_5": {
+    "side": "right"
+  },
+  "metacarpal_1": {
+    "side": "right"
+  },
+  "lunate": {
     "side": "right"
   }
 })) Object.assign(window.ATLAS.bones[id],patch);
 for(const [id,patch] of Object.entries({
-  "femur": {
+  "fibula": {
     "side": "right",
-    "ru": "Правая бедренная кость",
+    "ru": "Правая малоберцовая кость",
     "refs": [
       {
-        "id": "lower_proximal_gray_femur",
-        "title": "Gray / Lewis (1918) — femur",
+        "id": "lower_proximal_gray_fibula",
+        "title": "Gray / Lewis (1918) — fibula",
         "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.3: upper extremity, shaft, lower extremity; PDF pp.242–249",
+        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
         "access": "full_text",
         "checked": "2026-10-19"
       },
       {
-        "id": "lower_proximal_sobotta_femur",
-        "title": "Sobotta / McMurrich (1914), Vol. I — femur",
+        "id": "lower_proximal_sobotta_fibula",
+        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
         "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Femur, printed pp.95–99, Figs.137–141",
+        "locator": "Fibula, printed p.101, Figs.148–152",
         "access": "full_text",
         "checked": "2026-10-19"
       },
@@ -3180,23 +3750,23 @@ for(const [id,patch] of Object.entries({
       }
     ]
   },
-  "fibula": {
+  "femur": {
     "side": "right",
-    "ru": "Правая малоберцовая кость",
+    "ru": "Правая бедренная кость",
     "refs": [
       {
-        "id": "lower_proximal_gray_fibula",
-        "title": "Gray / Lewis (1918) — fibula",
+        "id": "lower_proximal_gray_femur",
+        "title": "Gray / Lewis (1918) — femur",
         "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
+        "locator": "6c.3: upper extremity, shaft, lower extremity; PDF pp.242–249",
         "access": "full_text",
         "checked": "2026-10-19"
       },
       {
-        "id": "lower_proximal_sobotta_fibula",
-        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
+        "id": "lower_proximal_sobotta_femur",
+        "title": "Sobotta / McMurrich (1914), Vol. I — femur",
         "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Fibula, printed p.101, Figs.148–152",
+        "locator": "Femur, printed pp.95–99, Figs.137–141",
         "access": "full_text",
         "checked": "2026-10-19"
       },
@@ -4116,6 +4686,30 @@ window.ATLAS.contextBoneSources={
   },
   "lumbar_5": {
     "sourceId": "FMA13076",
+    "sec": "leg"
+  },
+  "radius_left": {
+    "sourceId": "FMA23465",
+    "sec": "arm"
+  },
+  "ulna_left": {
+    "sourceId": "FMA23468",
+    "sec": "arm"
+  },
+  "femur_left": {
+    "sourceId": "FMA24475",
+    "sec": "leg"
+  },
+  "patella_left": {
+    "sourceId": "FMA24487",
+    "sec": "leg"
+  },
+  "tibia_left": {
+    "sourceId": "FMA24478",
+    "sec": "leg"
+  },
+  "fibula_left": {
+    "sourceId": "FMA24481",
     "sec": "leg"
   }
 };

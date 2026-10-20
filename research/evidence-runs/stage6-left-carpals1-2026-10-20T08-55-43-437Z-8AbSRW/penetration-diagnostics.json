@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "a": "scaphoid_left",
+      "b": "lunate_left",
+      "testedVerticesAndFaceCentres": 1617,
+      "insideSamples": 9,
+      "maxSamplePenetrationMM": 0.07322502155088648,
+      "affectedSourceFaces": [
+        21,
+        25,
+        34,
+        66,
+        72
+      ]
+    },
+    {
+      "a": "lunate_left",
+      "b": "scaphoid_left",
+      "testedVerticesAndFaceCentres": 1330,
+      "insideSamples": 1,
+      "maxSamplePenetrationMM": 0.017103353366032453,
+      "affectedSourceFaces": [
+        536
+      ]
+    },
+    {
+      "a": "triquetrum_left",
+      "b": "hamate_left",
+      "testedVerticesAndFaceCentres": 1097,
+      "insideSamples": 2,
+      "maxSamplePenetrationMM": 0.07862054831591796,
+      "affectedSourceFaces": [
+        607,
+        609
+      ]
+    },
+    {
+      "a": "hamate_left",
+      "b": "triquetrum_left",
+      "testedVerticesAndFaceCentres": 1752,
+      "insideSamples": 2,
+      "maxSamplePenetrationMM": 0.08019921687078399,
+      "affectedSourceFaces": [
+        28,
+        33
+      ]
+    }
+  ],
+  "method": "Solid-angle winding for all vertices and triangle centres; nearest triangle distance. Sampled penetration, not exact maximum or biological threshold."
+}

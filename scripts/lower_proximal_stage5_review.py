@@ -1,5 +1,6 @@
 """Thigh/knee/leg catalogue: explicit anatomical decisions, never reflected coordinates."""
 from copy import deepcopy
+from left_lower_proximal_stage6 import admit as admit_left_models, NOTE as EDUCATIONAL_LEFT_NOTE
 from ta98 import T, BONE
 
 REPORT='research/stage5-lower-proximal-report-2026-10-19.md'
@@ -98,7 +99,7 @@ FIBULA={
 17:('line','Лодыжковая борозда — заднее ложе сухожилий малоберцовых мышц; трасса не подтверждает её полный контур.')}
 TABLES={'femur':FEMUR,'patella':PATELLA,'tibia':TIBIA,'fibula':FIBULA}
 NOTE='Координата старого маркера, если есть, не подтверждает анатомическую локализацию или протяжённость. Нужны разметка конкретного образца и анатомическая приёмка; для сустава также хрящи, капсула и связки.'
-LEFT_NOTE='Подтверждённой левой модели в доступных ресурсах нет. Координаты и геометрия правой стороны не переносились. Нужен лицензированный левый исходник с масштабом, осями и регистрацией.'
+LEFT_NOTE=EDUCATIONAL_LEFT_NOTE
 
 def limits(p):
     left=p.get('side')=='left'
@@ -139,6 +140,8 @@ for b,ru,code,fma in [('femur','бедренная кость','A02.5.04.001','F
            'fibula':'Латеральная кость левой голени; головка сочленяется с большеберцовой костью, латеральная лодыжка — с таранной.'}[b],note=LEFT_NOTE,refs=refs(b))
 
 RIGHT_PATCHES={b:dict(side='right',ru=v['ru'].replace('Левая','Правая').replace('Левый','Правый'),refs=refs(b)) for b in OWNERS for v in [LEFT_BONES[b+'_left']]}
+
+admit_left_models(LEFT_BONES)
 
 def left_records():
     for b in sorted(OWNERS):

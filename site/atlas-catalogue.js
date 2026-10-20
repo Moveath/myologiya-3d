@@ -18,9 +18,18 @@ export function upperLimbCoverage(side, sub, structures) {
   const left = relevant.filter(s => s.side === 'left');
   const notes = [];
   if (side !== 'right') {
-    if (!left.some(s => ['radius_left', 'ulna_left'].includes(s.id)) &&
-        !left.some(s => s.data?.sub === 'hand'))
+    const forearm = ['radius_left', 'ulna_left'].filter(id => left.some(s => s.id === id));
+    const hand = left.filter(s => s.kind === 'b' && s.data?.sub === 'hand' && !s.id.startsWith('sesamoid_')).length;
+    if (!forearm.length && !hand)
       notes.push('Левая кисть и предплечье пока без 3D-моделей.');
+    else {
+      if (!hand) notes.push('Левая кисть пока без 3D-моделей.');
+      else if (hand < 27) notes.push(`Левая кисть представлена частично: ${hand} из 27 обычных костей; остальные пока без 3D.`);
+      if (!forearm.length) notes.push('Левое предплечье пока без 3D-моделей.');
+      else if (forearm.length < 2) notes.push(forearm.includes('radius_left')
+        ? 'Левая локтевая кость пока без 3D-модели.'
+        : 'Левая лучевая кость пока без 3D-модели.');
+    }
     if (!left.some(s => s.kind === 'm')) notes.push('Мышцы левой руки в этом разделе пока без 3D.');
     if (side === 'both') notes.unshift('Обе стороны: показаны доступные модели; набор сторон неполный.');
   }
