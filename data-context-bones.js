@@ -120,7 +120,7 @@ Object.assign(window.ATLAS.bones,{
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "note": "Общие образования позвонка и три поясничных отростка. Межпозвоночное отверстие и поясничный изгиб относятся к нескольким структурам; вынесены в общий список. Общий поперечный и региональный рёберный отростки не следует считать двумя отдельными одинаковыми выступами. Кость имеет собственную исходную модель. Координаты образований отдельно не проверены; мышцы поясницы в этом дополнении не заявляются.",
@@ -146,7 +146,7 @@ Object.assign(window.ATLAS.bones,{
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "note": "Общие образования позвонка и три поясничных отростка. Межпозвоночное отверстие и поясничный изгиб относятся к нескольким структурам; вынесены в общий список. Общий поперечный и региональный рёберный отростки не следует считать двумя отдельными одинаковыми выступами. Кость имеет собственную исходную модель. Координаты образований отдельно не проверены; мышцы поясницы в этом дополнении не заявляются.",
@@ -172,7 +172,7 @@ Object.assign(window.ATLAS.bones,{
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "note": "Общие образования позвонка и три поясничных отростка. Межпозвоночное отверстие и поясничный изгиб относятся к нескольким структурам; вынесены в общий список. Общий поперечный и региональный рёберный отростки не следует считать двумя отдельными одинаковыми выступами. Кость имеет собственную исходную модель. Координаты образований отдельно не проверены; мышцы поясницы в этом дополнении не заявляются.",
@@ -198,7 +198,7 @@ Object.assign(window.ATLAS.bones,{
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "note": "Общие образования позвонка и три поясничных отростка. Межпозвоночное отверстие и поясничный изгиб относятся к нескольким структурам; вынесены в общий список. Общий поперечный и региональный рёберный отростки не следует считать двумя отдельными одинаковыми выступами. Кость имеет собственную исходную модель. Координаты образований отдельно не проверены; мышцы поясницы в этом дополнении не заявляются.",
@@ -214,7 +214,7 @@ Object.assign(window.ATLAS.bones,{
     "lat": "vertebrae lumbales [L I - L V]",
     "code": "A02.2.04.001",
     "level": "L5",
-    "x": "Позвонок L5 поясничного отдела: тело, дуга и отростки. Поясничный отдел расположен между грудным отделом и крестцом.",
+    "x": "Позвонок L5 поясничного отдела: тело, дуга и отростки. Поясничный отдел расположен между грудным отделом и крестцом. В типичном L5 передняя высота тела больше задней; это связано с пояснично-крестцовым углом. Особенности конкретной сетки отдельно не приняты.",
     "refs": [
       {
         "title": "Gray (1918) — The Lumbar Vertebrae",
@@ -222,9 +222,14 @@ Object.assign(window.ATLAS.bones,{
         "locator": "PDF с.35–37, The Lumbar Vertebrae; Fig.92–94; Fifth Lumbar Vertebra."
       },
       {
-        "title": "OpenStax — The Vertebral Column",
-        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "title": "Dartmouth — Basic Human Anatomy, Chapter 39",
+        "url": "https://humananatomy.host.dartmouth.edu/BHA/public_html/part_7/chapter_39.html",
+        "locator": "Lumbar Vertebrae: fifth lumbar vertebra and lumbosacral angle."
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Back, Lumbar Vertebrae",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK459278/",
+        "locator": "Indexed Structure and Function excerpt: L5 anterior height exceeds posterior height; full page unavailable (reCAPTCHA), 2026-10-18."
       }
     ],
     "note": "Общие образования позвонка и три поясничных отростка. Межпозвоночное отверстие и поясничный изгиб относятся к нескольким структурам; вынесены в общий список. Общий поперечный и региональный рёберный отростки не следует считать двумя отдельными одинаковыми выступами. Кость имеет собственную исходную модель. Координаты образований отдельно не проверены; мышцы поясницы в этом дополнении не заявляются.",
@@ -234,8 +239,4418 @@ Object.assign(window.ATLAS.bones,{
     "sec": "leg",
     "sourceId": "FMA13076",
     "termScopeNote": "Общие и поясничные списки TA98 применены к L1–L5 редакционно по анатомическим источникам; это не отдельные официальные количества IFAA для каждого позвонка. Каталог не подтверждает форму конкретной сетки."
+  },
+  "radius_left": {
+    "ru": "Левая лучевая кость",
+    "lat": "radius",
+    "code": "A02.4.05.001",
+    "g": "b_free",
+    "sub": "forearm",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "candidateSourceId": "FMA23465",
+    "sourceId": "FMA23465",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена.",
+    "modelFile": "models/bodyparts3d-3.0/left-forearm/radius_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
+    },
+    "x": "Латеральная кость левого предплечья в анатомическом положении. Проксимальная головка участвует в локтевом и проксимальном лучелоктевом сочленениях; дистальный конец имеет локтевую вырезку и запястную суставную поверхность.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
+    "refs": [
+      {
+        "id": "arm_forearm_gray",
+        "title": "Gray / Lewis (1918) — Humerus; Ulna; Radius",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.188–211 (one-based): Humerus, Ulna, Radius; explicit entity subsections. Historical public-domain text.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.85–89, Figs.113–125; pp.121–124, shoulder, elbow and radioulnar joints. OCR text; no claim of modern atlas access.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "left_forearm_ncbi",
+        "title": "Patel, Varacallo — Forearm Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK545260/",
+        "locator": "Introduction; Structure and Function: laterality and joint surfaces only.",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "bp3d_left_forearm_geometry",
+        "title": "BodyParts3D © DBCLS — CC BY-SA 2.1 Japan; происхождение и изменения",
+        "url": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+        "access": "model_provenance",
+        "checked": "2026-10-20",
+        "locator": "BodyParts3D 3.0 / 20110915 / OBJ 95%; FMA23465, FMA23468; only educational geometry acceptance."
+      },
+      {
+        "id": "arm_forearm_ta98",
+        "title": "FIPAT / IFAA — TA98 osteology",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.05.001",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "ulna_left": {
+    "ru": "Левая локтевая кость",
+    "lat": "ulna",
+    "code": "A02.4.06.001",
+    "g": "b_free",
+    "sub": "forearm",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "candidateSourceId": "FMA23468",
+    "sourceId": "FMA23468",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена.",
+    "modelFile": "models/bodyparts3d-3.0/left-forearm/ulna_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-forearm-educational-admission-2026-10-20.md"
+    },
+    "x": "Медиальная кость левого предплечья в анатомическом положении. Проксимально расположены локтевой и венечный отростки, блоковидная и лучевая вырезки; головка находится дистально. Суставной диск отделяет головку от костей запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей и зазоров не подтверждена. BodyParts3D 3.0 / DBCLS: сторона, масштаб и крупное положение проверены. Исходник уже упрощён автором; клиническая точность и независимое сканирование левой стороны не доказаны. Координаты, контуры и площади ориентиров не назначены. Геометрия правой стороны не отражалась.",
+    "refs": [
+      {
+        "id": "arm_forearm_gray",
+        "title": "Gray / Lewis (1918) — Humerus; Ulna; Radius",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.188–211 (one-based): Humerus, Ulna, Radius; explicit entity subsections. Historical public-domain text.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.85–89, Figs.113–125; pp.121–124, shoulder, elbow and radioulnar joints. OCR text; no claim of modern atlas access.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "left_forearm_ncbi",
+        "title": "Patel, Varacallo — Forearm Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK545260/",
+        "locator": "Introduction; Structure and Function: laterality and joint surfaces only.",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "bp3d_left_forearm_geometry",
+        "title": "BodyParts3D © DBCLS — CC BY-SA 2.1 Japan; происхождение и изменения",
+        "url": "models/bodyparts3d-3.0/left-forearm/LICENSE-MODELS.txt",
+        "access": "model_provenance",
+        "checked": "2026-10-20",
+        "locator": "BodyParts3D 3.0 / 20110915 / OBJ 95%; FMA23465, FMA23468; only educational geometry acceptance."
+      },
+      {
+        "id": "arm_forearm_ta98",
+        "title": "FIPAT / IFAA — TA98 osteology",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.06.001",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "femur_left": {
+    "ru": "Левая бедренная кость",
+    "lat": "femur",
+    "code": "A02.5.04.001",
+    "g": "b_limb",
+    "sec": "leg",
+    "side": "left",
+    "sub": "thigh",
+    "noModel": false,
+    "candidateSourceId": "FMA24475",
+    "x": "Кость левого бедра; проксимально сочленяется с тазовой костью, дистально — с большеберцовой костью и надколенником.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_femur",
+        "title": "Gray / Lewis (1918) — femur",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.3: upper extremity, shaft, lower extremity; PDF pp.242–249",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_femur",
+        "title": "Sobotta / McMurrich (1914), Vol. I — femur",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Femur, printed pp.95–99, Figs.137–141",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24475; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24475",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/femur_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
+  },
+  "patella_left": {
+    "ru": "Левый надколенник",
+    "lat": "patella",
+    "code": "A02.5.05.001",
+    "g": "b_limb",
+    "sec": "leg",
+    "side": "left",
+    "sub": "thigh",
+    "noModel": false,
+    "candidateSourceId": "FMA24487",
+    "x": "Сесамовидная кость в сухожилии четырёхглавой мышцы перед левым коленным суставом; сочленяется с бедренной костью.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_patella",
+        "title": "Gray / Lewis (1918) — patella",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.4: surfaces, borders, apex; PDF pp.260–262",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_patella",
+        "title": "Sobotta / McMurrich (1914), Vol. I — patella",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Patella, printed p.99, Figs.142–143",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24487; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24487",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/patella_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
+  },
+  "tibia_left": {
+    "ru": "Левая большеберцовая кость",
+    "lat": "tibia",
+    "code": "A02.5.06.001",
+    "g": "b_limb",
+    "sec": "leg",
+    "side": "left",
+    "sub": "shank",
+    "noModel": false,
+    "candidateSourceId": "FMA24478",
+    "x": "Медиальная опорная кость левой голени; сочленяется с бедренной, малоберцовой и таранной костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_tibia",
+        "title": "Gray / Lewis (1918) — tibia",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.5: extremities, shaft borders/surfaces; PDF pp.262–270",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_tibia",
+        "title": "Sobotta / McMurrich (1914), Vol. I — tibia",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Tibia, printed pp.99–101, Figs.144–147,150–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24478; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24478",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/tibia_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
+  },
+  "fibula_left": {
+    "ru": "Левая малоберцовая кость",
+    "lat": "fibula",
+    "code": "A02.5.07.001",
+    "g": "b_limb",
+    "sec": "leg",
+    "side": "left",
+    "sub": "shank",
+    "noModel": false,
+    "candidateSourceId": "FMA24481",
+    "x": "Латеральная кость левой голени; головка сочленяется с большеберцовой костью, латеральная лодыжка — с таранной.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; исходные сторона, масштаб, ориентация и крупная форма проверены. Есть пересечения исходных сеток: бедренная/тазовая (выборочно до 0,833 мм), большеберцовая/малоберцовая (до 0,239 мм) и большеберцовая/таранная (до 0,058 мм; таранная пока не подключена). Это не физиологический контакт; точные суставные поверхности, хрящи, зазоры и пины не приняты. Модели не отражались и не подгонялись. Независимый левый скан не подтверждён.",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_fibula",
+        "title": "Gray / Lewis (1918) — fibula",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_fibula",
+        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Fibula, printed p.101, Figs.148–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+        "locator": "FMA24481; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24481",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое бедро и голень",
+    "modelFile": "models/bodyparts3d-3.0/left-lower-proximal/fibula_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-lower-proximal/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-lower-proximal-report-2026-10-20.md"
+    }
+  },
+  "talus_left": {
+    "ru": "Таранная кость · слева",
+    "lat": "talus",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Кость заднего отдела стопы, сочленяющаяся с большеберцовой, малоберцовой, пяточной и ладьевидной костями.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "calcaneus_left": {
+    "ru": "Пяточная кость · слева",
+    "lat": "calcaneus",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Кость заднего отдела стопы, сочленяющаяся с таранной и кубовидной костями.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "navicular_left": {
+    "ru": "Ладьевидная кость · слева",
+    "lat": "os naviculare",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Кость между головкой таранной и тремя клиновидными костями; суставная фасетка для кубовидной кости вариабельна.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuboid_left": {
+    "ru": "Кубовидная кость · слева",
+    "lat": "os cuboideum",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Латеральная кость предплюсны между пяточной и IV–V плюсневыми костями; также сочленяется с латеральной клиновидной.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_med_left": {
+    "ru": "Медиальная клиновидная кость · слева",
+    "lat": "os cuneiforme mediale",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Медиальная кость клиновидной группы; сочленяется с ладьевидной, промежуточной клиновидной, I и II плюсневыми костями.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_int_left": {
+    "ru": "Промежуточная клиновидная кость · слева",
+    "lat": "os cuneiforme intermedium",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Кость между медиальной и латеральной клиновидными; сочленяется с ладьевидной и II плюсневой костями.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_lat_left": {
+    "ru": "Латеральная клиновидная кость · слева",
+    "lat": "os cuneiforme laterale",
+    "g": "b_tarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Кость между промежуточной клиновидной и кубовидной; сочленяется также с ладьевидной и II–IV плюсневыми костями.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "sesamoid_pedis_left": {
+    "ru": "Сесамовидные кости большого пальца стопы · слева",
+    "lat": "ossa sesamoidea",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Групповая карточка типичной медиальной и латеральной сесамовидных костей I плюснефалангового сустава. Варианты других суставов не включены в обязательную пару.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_1_left": {
+    "ru": "I плюсневая кость · слева",
+    "lat": "os metatarsi I",
+    "g": "b_metatarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "I плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_1_left": {
+    "ru": "Проксимальная фаланга I пальца стопы · слева",
+    "lat": "phalanx proximalis digiti I pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Проксимальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_1_left": {
+    "ru": "Дистальная фаланга I пальца стопы · слева",
+    "lat": "phalanx distalis digiti I pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Дистальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_2_left": {
+    "ru": "II плюсневая кость · слева",
+    "lat": "os metatarsi II",
+    "g": "b_metatarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "II плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_2_left": {
+    "ru": "Проксимальная фаланга II пальца стопы · слева",
+    "lat": "phalanx proximalis digiti II pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Проксимальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_2_left": {
+    "ru": "Средняя фаланга II пальца стопы · слева",
+    "lat": "phalanx media digiti II pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Средняя фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_2_left": {
+    "ru": "Дистальная фаланга II пальца стопы · слева",
+    "lat": "phalanx distalis digiti II pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Дистальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_3_left": {
+    "ru": "III плюсневая кость · слева",
+    "lat": "os metatarsi III",
+    "g": "b_metatarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "III плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_3_left": {
+    "ru": "Проксимальная фаланга III пальца стопы · слева",
+    "lat": "phalanx proximalis digiti III pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Проксимальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_3_left": {
+    "ru": "Средняя фаланга III пальца стопы · слева",
+    "lat": "phalanx media digiti III pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Средняя фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_3_left": {
+    "ru": "Дистальная фаланга III пальца стопы · слева",
+    "lat": "phalanx distalis digiti III pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Дистальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_4_left": {
+    "ru": "IV плюсневая кость · слева",
+    "lat": "os metatarsi IV",
+    "g": "b_metatarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "IV плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_4_left": {
+    "ru": "Проксимальная фаланга IV пальца стопы · слева",
+    "lat": "phalanx proximalis digiti IV pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Проксимальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_4_left": {
+    "ru": "Средняя фаланга IV пальца стопы · слева",
+    "lat": "phalanx media digiti IV pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Средняя фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_4_left": {
+    "ru": "Дистальная фаланга IV пальца стопы · слева",
+    "lat": "phalanx distalis digiti IV pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Дистальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_5_left": {
+    "ru": "V плюсневая кость · слева",
+    "lat": "os metatarsi V",
+    "g": "b_metatarsus",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "V плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_5_left": {
+    "ru": "Проксимальная фаланга V пальца стопы · слева",
+    "lat": "phalanx proximalis digiti V pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Проксимальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_5_left": {
+    "ru": "Средняя фаланга V пальца стопы · слева",
+    "lat": "phalanx media digiti V pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Средняя фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_5_left": {
+    "ru": "Дистальная фаланга V пальца стопы · слева",
+    "lat": "phalanx distalis digiti V pedis",
+    "g": "b_toes",
+    "sub": "foot",
+    "sec": "leg",
+    "side": "left",
+    "noModel": true,
+    "x": "Дистальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
   }
 });
+window.ATLAS.boneGroups.push({id:"b_hand_sesamoids",title:"Сесамовидные кости кисти",sec:"arm"});
+Object.assign(window.ATLAS.bones,{
+  "sesamoid_mcp1_radial_right": {
+    "ru": "Лучевая сесамовидная кость большого пальца кисти справа",
+    "searchAliases": [
+      "Лучевая сесамовидная кость I пястно-фалангового сустава",
+      "сесамоид большого пальца",
+      "большой палец"
+    ],
+    "catalogueRole": "typical_thumb_sesamoid",
+    "lat": "ossa sesamoidea",
+    "en": "radial sesamoid of the right thumb MCP joint",
+    "g": "b_hand_sesamoids",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "right",
+    "noModel": true,
+    "collectiveCode": "A02.4.11.001",
+    "scopeId": "B2",
+    "contextTargets": [
+      "metacarpal_1",
+      "phalanx_prox_1"
+    ],
+    "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
+    "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
+    "x": "Лучевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
+    "note": "Именованной и анатомически подтверждённой модели нет. Правая сторона указана по учебному объёму; координаты и зеркальная реконструкция не создавались. Возможна многокомпонентность сесамоида; это не автоматически перелом или дополнительная обязательная кость.",
+    "refs": [
+      {
+        "id": "arm_forearm_sesamoid_chen2015",
+        "title": "Chen et al. (2015) — sesamoid bones of the hand",
+        "url": "https://e-century.us/files/ijcem/8/7/ijcem0009673.pdf",
+        "locator": "PMID26380010; approved scope B2/B3, V1–V5; qualitative presence only, not conflicting percentages.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sesamoid_civan2020",
+        "title": "Civan et al. (2020) — sesamoid bones of the hand",
+        "url": "https://www.jointdrs.org/full-text/432",
+        "locator": "PMID32160497; DOI10.5606/ehc.2020.70955; MCP I radial/ulnar pair and variable other sites.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_thumb_mcp2023",
+        "title": "Knisely, Noland, Melville (2023) — Ultrasound versus MRI of thumb MCP",
+        "url": "https://jultrason.pl/assets/pdf/artykuly/5-jou-2023-0030.pdf",
+        "locator": "p.e216, Sesamoids: pair in volar plate; radial and ulnar identity. DOI10.15557/JoU.2023.0030.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_sesamoids",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.11.001: collective entry only",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "sesamoid_mcp1_ulnar_right": {
+    "ru": "Локтевая сесамовидная кость большого пальца кисти справа",
+    "searchAliases": [
+      "Локтевая сесамовидная кость I пястно-фалангового сустава",
+      "сесамоид большого пальца",
+      "большой палец"
+    ],
+    "catalogueRole": "typical_thumb_sesamoid",
+    "lat": "ossa sesamoidea",
+    "en": "ulnar sesamoid of the right thumb MCP joint",
+    "g": "b_hand_sesamoids",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "right",
+    "noModel": true,
+    "collectiveCode": "A02.4.11.001",
+    "scopeId": "B3",
+    "contextTargets": [
+      "metacarpal_1",
+      "phalanx_prox_1"
+    ],
+    "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
+    "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
+    "x": "Локтевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
+    "note": "Именованной и анатомически подтверждённой модели нет. Правая сторона указана по учебному объёму; координаты и зеркальная реконструкция не создавались. Возможна многокомпонентность сесамоида; это не автоматически перелом или дополнительная обязательная кость.",
+    "refs": [
+      {
+        "id": "arm_forearm_sesamoid_chen2015",
+        "title": "Chen et al. (2015) — sesamoid bones of the hand",
+        "url": "https://e-century.us/files/ijcem/8/7/ijcem0009673.pdf",
+        "locator": "PMID26380010; approved scope B2/B3, V1–V5; qualitative presence only, not conflicting percentages.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sesamoid_civan2020",
+        "title": "Civan et al. (2020) — sesamoid bones of the hand",
+        "url": "https://www.jointdrs.org/full-text/432",
+        "locator": "PMID32160497; DOI10.5606/ehc.2020.70955; MCP I radial/ulnar pair and variable other sites.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_thumb_mcp2023",
+        "title": "Knisely, Noland, Melville (2023) — Ultrasound versus MRI of thumb MCP",
+        "url": "https://jultrason.pl/assets/pdf/artykuly/5-jou-2023-0030.pdf",
+        "locator": "p.e216, Sesamoids: pair in volar plate; radial and ulnar identity. DOI10.15557/JoU.2023.0030.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_sesamoids",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.11.001: collective entry only",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "scaphoid_left": {
+    "ru": "Ладьевидная кость слева",
+    "lat": "os scaphoideum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24436; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24436",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/scaphoid_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
+  },
+  "lunate_left": {
+    "ru": "Полулунная кость слева",
+    "lat": "os lunatum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24438; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24438",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/lunate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
+  },
+  "triquetrum_left": {
+    "ru": "Трёхгранная кость слева",
+    "lat": "os triquetrum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24440; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24440",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/triquetrum_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
+  },
+  "pisiform_left": {
+    "ru": "Гороховидная кость слева",
+    "lat": "os pisiforme",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сторона, исходный масштаб и крупное расположение проверены. Есть локальные пересечения в шести парах соседних сеток запястья, включая контрольный дистальный ряд; полный перечень сохранён в отчёте партии. Это ограничение исходной учебной сборки, не физиологический контакт. Разметка и клиническая точность не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+        "locator": "FMA24442; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24442",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals1/pisiform_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals1/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals1-report-2026-10-20.md"
+    }
+  },
+  "trapezium_left": {
+    "ru": "Кость-трапеция слева",
+    "lat": "os trapezium",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24444; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24444",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/trapezium_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
+  },
+  "trapezoid_left": {
+    "ru": "Трапециевидная кость слева",
+    "lat": "os trapezoideum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24445; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24445",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/trapezoid_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
+  },
+  "capitate_left": {
+    "ru": "Головчатая кость слева",
+    "lat": "os capitatum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24447; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24447",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/capitate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
+  },
+  "hamate_left": {
+    "ru": "Крючковидная кость слева",
+    "lat": "os hamatum",
+    "g": "b_carpus",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Одна из восьми костей левого запястья.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, исходный масштаб и крупное расположение. В дистальном ряду есть локальные пересечения трапеции с трапециевидной, трапециевидной с головчатой и головчатой с крючковидной; сохранены прежние пересечения с проксимальным рядом. Это дефекты согласования исходных сеток, не физиологический контакт. Точные фасетки, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+        "locator": "FMA24449; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24449",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левое запястье",
+    "modelFile": "models/bodyparts3d-3.0/left-carpals2/hamate_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-carpals2/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-carpals2-report-2026-10-20.md"
+    }
+  },
+  "metacarpal_1_left": {
+    "ru": "I пястная кость слева",
+    "lat": "os metacarpi I",
+    "g": "b_meta",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": true,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
+    "note": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников. Без произвольного смещения или деформации.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
+      "blockedReason": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников."
+    }
+  },
+  "metacarpal_2_left": {
+    "ru": "II пястная кость слева",
+    "lat": "os metacarpi II",
+    "g": "b_meta",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24467; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24467",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
+  },
+  "metacarpal_3_left": {
+    "ru": "III пястная кость слева",
+    "lat": "os metacarpi III",
+    "g": "b_meta",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": true,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
+    "note": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток. Без произвольного смещения или деформации.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
+      "blockedReason": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток."
+    }
+  },
+  "metacarpal_4_left": {
+    "ru": "IV пястная кость слева",
+    "lat": "os metacarpi IV",
+    "g": "b_meta",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24471; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24471",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
+  },
+  "metacarpal_5_left": {
+    "ru": "V пястная кость слева",
+    "lat": "os metacarpi V",
+    "g": "b_meta",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения II пястной с трапецией и IV с V пястной; это дефекты согласования исходных сеток, не физиологический контакт. Девять прежних пар пересечений запястья сохраняются. Точные фасетки, хрящи, зазоры и разметка не приняты. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+        "locator": "FMA24473; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA24473",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая пясть (II, IV, V)",
+    "modelFile": "models/bodyparts3d-3.0/left-metacarpals/metacarpal_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-metacarpals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-metacarpals-report-2026-10-20.md"
+    }
+  },
+  "phalanx_prox_1_left": {
+    "ru": "Проксимальная фаланга I пальца слева",
+    "lat": "phalanx proximalis digiti I",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA65470; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA65470",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_1_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_prox_2_left": {
+    "ru": "Проксимальная фаланга II пальца слева",
+    "lat": "phalanx proximalis digiti II",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71915; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA71915",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_prox_3_left": {
+    "ru": "Проксимальная фаланга III пальца слева",
+    "lat": "phalanx proximalis digiti III",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71908; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA71908",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_prox_4_left": {
+    "ru": "Проксимальная фаланга IV пальца слева",
+    "lat": "phalanx proximalis digiti IV",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA71916; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA71916",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_prox_5_left": {
+    "ru": "Проксимальная фаланга V пальца слева",
+    "lat": "phalanx proximalis digiti V",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA66791; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA66791",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_prox_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_mid_2_left": {
+    "ru": "Средняя фаланга II пальца слева",
+    "lat": "phalanx media digiti II",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23938; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23938",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_mid_3_left": {
+    "ru": "Средняя фаланга III пальца слева",
+    "lat": "phalanx media digiti III",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23940; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23940",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_mid_4_left": {
+    "ru": "Средняя фаланга IV пальца слева",
+    "lat": "phalanx media digiti IV",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23942; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23942",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_mid_5_left": {
+    "ru": "Средняя фаланга V пальца слева",
+    "lat": "phalanx media digiti V",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23944; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23944",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_mid_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_dist_1_left": {
+    "ru": "Дистальная фаланга I пальца слева",
+    "lat": "phalanx distalis digiti I",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23951; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23951",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_1_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_dist_2_left": {
+    "ru": "Дистальная фаланга II пальца слева",
+    "lat": "phalanx distalis digiti II",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23953; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23953",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_dist_3_left": {
+    "ru": "Дистальная фаланга III пальца слева",
+    "lat": "phalanx distalis digiti III",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23955; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23955",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_dist_4_left": {
+    "ru": "Дистальная фаланга IV пальца слева",
+    "lat": "phalanx distalis digiti IV",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23957; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23957",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "phalanx_dist_5_left": {
+    "ru": "Дистальная фаланга V пальца слева",
+    "lat": "phalanx distalis digiti V",
+    "g": "b_phal",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": false,
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "x": "Фаланга левой кисти. У I пальца две фаланги, у II–V три. Части и поверхности не являются самостоятельными костями.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; независимое сканирование левого образца не подтверждено.",
+    "refs": [
+      {
+        "id": "arm_forearm_hand_gray1918",
+        "title": "Gray (1918) — Hand bones",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.209–225: carpus, metacarpus, phalanges; p.302: sesamoids. Historical synonyms mapped to TA98.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_sobotta1914",
+        "title": "Sobotta / McMurrich (1914), vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Printed pp.90–93: carpal arch, articular surfaces, metacarpals, phalanges, sesamoids; pp.125–129: hand joints.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_hand_bones",
+        "title": "Arias, Black, Varacallo — Hand Bones (2023)",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547684/",
+        "locator": "Structure and Function: 27 bones, CMC/MCP/IP articulations. Conflicting statement about four constant sesamoids NOT adopted.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_hand",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.08–10: hand bones; laterality is instance metadata.",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+        "locator": "FMA23959; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
+      }
+    ],
+    "sourceId": "FMA23959",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Фаланги левой кисти",
+    "modelFile": "models/bodyparts3d-3.0/left-phalanges/phalanx_dist_5_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-phalanges/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-phalanges-report-2026-10-20.md"
+    }
+  },
+  "sesamoid_mcp1_radial_left": {
+    "ru": "Лучевая сесамовидная кость большого пальца кисти слева",
+    "searchAliases": [
+      "Лучевая сесамовидная кость I пястно-фалангового сустава",
+      "сесамоид большого пальца",
+      "большой палец"
+    ],
+    "catalogueRole": "typical_thumb_sesamoid",
+    "lat": "ossa sesamoidea",
+    "en": "radial sesamoid of the left thumb MCP joint",
+    "g": "b_hand_sesamoids",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": true,
+    "collectiveCode": "A02.4.11.001",
+    "scopeId": "B2",
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
+    "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
+    "x": "Лучевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
+    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "refs": [
+      {
+        "id": "arm_forearm_sesamoid_chen2015",
+        "title": "Chen et al. (2015) — sesamoid bones of the hand",
+        "url": "https://e-century.us/files/ijcem/8/7/ijcem0009673.pdf",
+        "locator": "PMID26380010; approved scope B2/B3, V1–V5; qualitative presence only, not conflicting percentages.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sesamoid_civan2020",
+        "title": "Civan et al. (2020) — sesamoid bones of the hand",
+        "url": "https://www.jointdrs.org/full-text/432",
+        "locator": "PMID32160497; DOI10.5606/ehc.2020.70955; MCP I radial/ulnar pair and variable other sites.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_thumb_mcp2023",
+        "title": "Knisely, Noland, Melville (2023) — Ultrasound versus MRI of thumb MCP",
+        "url": "https://jultrason.pl/assets/pdf/artykuly/5-jou-2023-0030.pdf",
+        "locator": "p.e216, Sesamoids: pair in volar plate; radial and ulnar identity. DOI10.15557/JoU.2023.0030.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_sesamoids",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.11.001: collective entry only",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "sesamoid_mcp1_ulnar_left": {
+    "ru": "Локтевая сесамовидная кость большого пальца кисти слева",
+    "searchAliases": [
+      "Локтевая сесамовидная кость I пястно-фалангового сустава",
+      "сесамоид большого пальца",
+      "большой палец"
+    ],
+    "catalogueRole": "typical_thumb_sesamoid",
+    "lat": "ossa sesamoidea",
+    "en": "ulnar sesamoid of the left thumb MCP joint",
+    "g": "b_hand_sesamoids",
+    "sub": "hand",
+    "sec": "arm",
+    "side": "left",
+    "noModel": true,
+    "collectiveCode": "A02.4.11.001",
+    "scopeId": "B3",
+    "contextTargets": [
+      "humerus_left"
+    ],
+    "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
+    "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
+    "x": "Локтевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
+    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "refs": [
+      {
+        "id": "arm_forearm_sesamoid_chen2015",
+        "title": "Chen et al. (2015) — sesamoid bones of the hand",
+        "url": "https://e-century.us/files/ijcem/8/7/ijcem0009673.pdf",
+        "locator": "PMID26380010; approved scope B2/B3, V1–V5; qualitative presence only, not conflicting percentages.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_sesamoid_civan2020",
+        "title": "Civan et al. (2020) — sesamoid bones of the hand",
+        "url": "https://www.jointdrs.org/full-text/432",
+        "locator": "PMID32160497; DOI10.5606/ehc.2020.70955; MCP I radial/ulnar pair and variable other sites.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_thumb_mcp2023",
+        "title": "Knisely, Noland, Melville (2023) — Ultrasound versus MRI of thumb MCP",
+        "url": "https://jultrason.pl/assets/pdf/artykuly/5-jou-2023-0030.pdf",
+        "locator": "p.e216, Sesamoids: pair in volar plate; radial and ulnar identity. DOI10.15557/JoU.2023.0030.",
+        "access": "full_text",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "arm_forearm_ta98_sesamoids",
+        "title": "FIPAT / IFAA — TA98",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH894%20A2F%20EN.htm",
+        "locator": "A02.4.11.001: collective entry only",
+        "access": "official_list",
+        "checked": "2026-10-18"
+      }
+    ]
+  }
+});
+for(const [id,patch] of Object.entries({
+  "metacarpal_3": {
+    "side": "right"
+  },
+  "trapezoid": {
+    "side": "right"
+  },
+  "metacarpal_2": {
+    "side": "right"
+  },
+  "phalanx_prox_1": {
+    "side": "right"
+  },
+  "phalanx_mid_5": {
+    "side": "right"
+  },
+  "phalanx_prox_3": {
+    "side": "right"
+  },
+  "capitate": {
+    "side": "right"
+  },
+  "phalanx_dist_3": {
+    "side": "right"
+  },
+  "phalanx_mid_2": {
+    "side": "right"
+  },
+  "phalanx_dist_5": {
+    "side": "right"
+  },
+  "triquetrum": {
+    "side": "right"
+  },
+  "hamate": {
+    "side": "right"
+  },
+  "metacarpal_5": {
+    "side": "right"
+  },
+  "flexor_retinaculum": {
+    "side": "right"
+  },
+  "trapezium": {
+    "side": "right"
+  },
+  "metacarpal_4": {
+    "side": "right"
+  },
+  "phalanx_mid_3": {
+    "side": "right"
+  },
+  "phalanx_prox_4": {
+    "side": "right"
+  },
+  "scaphoid": {
+    "side": "right"
+  },
+  "phalanx_dist_4": {
+    "side": "right"
+  },
+  "phalanx_dist_1": {
+    "side": "right"
+  },
+  "pisiform": {
+    "side": "right"
+  },
+  "phalanx_mid_4": {
+    "side": "right"
+  },
+  "phalanx_dist_2": {
+    "side": "right"
+  },
+  "phalanx_prox_2": {
+    "side": "right"
+  },
+  "phalanx_prox_5": {
+    "side": "right"
+  },
+  "metacarpal_1": {
+    "side": "right"
+  },
+  "lunate": {
+    "side": "right"
+  }
+})) Object.assign(window.ATLAS.bones[id],patch);
+for(const [id,patch] of Object.entries({
+  "fibula": {
+    "side": "right",
+    "ru": "Правая малоберцовая кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_fibula",
+        "title": "Gray / Lewis (1918) — fibula",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_fibula",
+        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Fibula, printed p.101, Figs.148–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "tibia": {
+    "side": "right",
+    "ru": "Правая большеберцовая кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_tibia",
+        "title": "Gray / Lewis (1918) — tibia",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.5: extremities, shaft borders/surfaces; PDF pp.262–270",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_tibia",
+        "title": "Sobotta / McMurrich (1914), Vol. I — tibia",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Tibia, printed pp.99–101, Figs.144–147,150–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "femur": {
+    "side": "right",
+    "ru": "Правая бедренная кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_femur",
+        "title": "Gray / Lewis (1918) — femur",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.3: upper extremity, shaft, lower extremity; PDF pp.242–249",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_femur",
+        "title": "Sobotta / McMurrich (1914), Vol. I — femur",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Femur, printed pp.95–99, Figs.137–141",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "patella": {
+    "side": "right",
+    "ru": "Правый надколенник",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_patella",
+        "title": "Gray / Lewis (1918) — patella",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.4: surfaces, borders, apex; PDF pp.260–262",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_patella",
+        "title": "Sobotta / McMurrich (1914), Vol. I — patella",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Patella, printed p.99, Figs.142–143",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  }
+})) Object.assign(window.ATLAS.bones[id],patch);
+for(const [id,patch] of Object.entries({
+  "talus": {
+    "ru": "Таранная кость · справа",
+    "side": "right",
+    "x": "Кость заднего отдела стопы, сочленяющаяся с большеберцовой, малоберцовой, пяточной и ладьевидной костями.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "calcaneus": {
+    "ru": "Пяточная кость · справа",
+    "side": "right",
+    "x": "Кость заднего отдела стопы, сочленяющаяся с таранной и кубовидной костями.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "navicular": {
+    "ru": "Ладьевидная кость · справа",
+    "side": "right",
+    "x": "Кость между головкой таранной и тремя клиновидными костями; суставная фасетка для кубовидной кости вариабельна.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuboid": {
+    "ru": "Кубовидная кость · справа",
+    "side": "right",
+    "x": "Латеральная кость предплюсны между пяточной и IV–V плюсневыми костями; также сочленяется с латеральной клиновидной.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_med": {
+    "ru": "Медиальная клиновидная кость · справа",
+    "side": "right",
+    "x": "Медиальная кость клиновидной группы; сочленяется с ладьевидной, промежуточной клиновидной, I и II плюсневыми костями.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_int": {
+    "ru": "Промежуточная клиновидная кость · справа",
+    "side": "right",
+    "x": "Кость между медиальной и латеральной клиновидными; сочленяется с ладьевидной и II плюсневой костями.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "cuneiform_lat": {
+    "ru": "Латеральная клиновидная кость · справа",
+    "side": "right",
+    "x": "Кость между промежуточной клиновидной и кубовидной; сочленяется также с ладьевидной и II–IV плюсневыми костями.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "sesamoid_pedis": {
+    "ru": "Сесамовидные кости большого пальца стопы · справа",
+    "side": "right",
+    "x": "Групповая карточка типичной медиальной и латеральной сесамовидных костей I плюснефалангового сустава. Варианты других суставов не включены в обязательную пару.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ],
+    "note": "В существующем общем меше есть две раздельные компоненты. Индивидуальная анатомическая привязка и выделение медиальной/латеральной кости ещё не приняты; обе описаны отдельными дочерними карточками без координат."
+  },
+  "metatarsal_1": {
+    "ru": "I плюсневая кость · справа",
+    "side": "right",
+    "x": "I плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_1": {
+    "ru": "Проксимальная фаланга I пальца стопы · справа",
+    "side": "right",
+    "x": "Проксимальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_1": {
+    "ru": "Дистальная фаланга I пальца стопы · справа",
+    "side": "right",
+    "x": "Дистальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_2": {
+    "ru": "II плюсневая кость · справа",
+    "side": "right",
+    "x": "II плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_2": {
+    "ru": "Проксимальная фаланга II пальца стопы · справа",
+    "side": "right",
+    "x": "Проксимальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_2": {
+    "ru": "Средняя фаланга II пальца стопы · справа",
+    "side": "right",
+    "x": "Средняя фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_2": {
+    "ru": "Дистальная фаланга II пальца стопы · справа",
+    "side": "right",
+    "x": "Дистальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_3": {
+    "ru": "III плюсневая кость · справа",
+    "side": "right",
+    "x": "III плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_3": {
+    "ru": "Проксимальная фаланга III пальца стопы · справа",
+    "side": "right",
+    "x": "Проксимальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_3": {
+    "ru": "Средняя фаланга III пальца стопы · справа",
+    "side": "right",
+    "x": "Средняя фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_3": {
+    "ru": "Дистальная фаланга III пальца стопы · справа",
+    "side": "right",
+    "x": "Дистальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_4": {
+    "ru": "IV плюсневая кость · справа",
+    "side": "right",
+    "x": "IV плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_4": {
+    "ru": "Проксимальная фаланга IV пальца стопы · справа",
+    "side": "right",
+    "x": "Проксимальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_4": {
+    "ru": "Средняя фаланга IV пальца стопы · справа",
+    "side": "right",
+    "x": "Средняя фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_4": {
+    "ru": "Дистальная фаланга IV пальца стопы · справа",
+    "side": "right",
+    "x": "Дистальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "metatarsal_5": {
+    "ru": "V плюсневая кость · справа",
+    "side": "right",
+    "x": "V плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_prox_5": {
+    "ru": "Проксимальная фаланга V пальца стопы · справа",
+    "side": "right",
+    "x": "Проксимальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_mid_5": {
+    "ru": "Средняя фаланга V пальца стопы · справа",
+    "side": "right",
+    "x": "Средняя фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "toe_dist_5": {
+    "ru": "Дистальная фаланга V пальца стопы · справа",
+    "side": "right",
+    "x": "Дистальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
+    "refs": [
+      {
+        "id": "foot_gray",
+        "title": "Gray / Lewis (1918), The Foot",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6d.1–4: Tarsus, Metatarsus, Phalanges, Sesamoid bones; PDF pp.275–302",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_sobotta",
+        "title": "Sobotta / McMurrich (1914), Vol. I",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Bones of the foot, printed pp.102–106, Figs.153–166",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "foot_ta98",
+        "title": "FIPAT / IFAA TA98 — bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.10–18; номенклатура, не координаты",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  }
+})) Object.assign(window.ATLAS.bones[id],patch);
 window.ATLAS.contextBoneSources={
   "hip_bone_left": {
     "sourceId": "FMA16587",
@@ -272,6 +4687,30 @@ window.ATLAS.contextBoneSources={
   "lumbar_5": {
     "sourceId": "FMA13076",
     "sec": "leg"
+  },
+  "radius_left": {
+    "sourceId": "FMA23465",
+    "sec": "arm"
+  },
+  "ulna_left": {
+    "sourceId": "FMA23468",
+    "sec": "arm"
+  },
+  "femur_left": {
+    "sourceId": "FMA24475",
+    "sec": "leg"
+  },
+  "patella_left": {
+    "sourceId": "FMA24487",
+    "sec": "leg"
+  },
+  "tibia_left": {
+    "sourceId": "FMA24478",
+    "sec": "leg"
+  },
+  "fibula_left": {
+    "sourceId": "FMA24481",
+    "sec": "leg"
   }
 };
 window.ATLAS.lumbarWholeTerms=[
@@ -289,7 +4728,7 @@ window.ATLAS.lumbarWholeTerms=[
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "scope": "anatomy"
@@ -308,7 +4747,7 @@ window.ATLAS.lumbarWholeTerms=[
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "scope": "anatomy"
@@ -327,7 +4766,7 @@ window.ATLAS.lumbarWholeTerms=[
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "scope": "anatomy"
@@ -346,7 +4785,7 @@ window.ATLAS.lumbarWholeTerms=[
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "scope": "anatomy"
@@ -365,9 +4804,77 @@ window.ATLAS.lumbarWholeTerms=[
       {
         "title": "OpenStax — The Vertebral Column",
         "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-        "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
+        "locator": "General Structure of a Vertebra; Lumbar Vertebrae; Intervertebral Discs."
       }
     ],
     "scope": "anatomy"
   }
 ];
+for(const [id,patch] of Object.entries({
+  "hip_bone": {
+    "ru": "Правая тазовая кость",
+    "side": "right",
+    "x": "Правая тазовая кость взрослого объединяет подвздошную, седалищную и лобковую части. Сращение происходит в ходе созревания; единую точную возрастную границу для всех образований не назначаем.",
+    "refs": [
+      {
+        "id": "pelvis_gray_hip",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.226–234: The Hip Bone; Figs.235–236. Historic pubic body terminology differs from TA98.",
+        "authorGroup": "gray_1918",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "pelvis_openstax",
+        "title": "OpenStax Anatomy & Physiology 2e",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
+        "locator": "Hip Bone; Ilium; Ischium; Pubis; Pelvis.",
+        "authorGroup": "openstax",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "pelvis_standard",
+        "title": "Anatomy Standard — Hip bone",
+        "url": "https://www.anatomystandard.com/ossa-et-juncturae/extremitas-inferior/os-coxae.html",
+        "locator": "Acetabulum; anterior/posterior and medial aspects; note on corpus ossis pubis.",
+        "authorGroup": "anatomy_standard",
+        "checked": "2026-10-18"
+      }
+    ]
+  },
+  "hip_bone_left": {
+    "side": "left"
+  },
+  "sacrum": {
+    "x": "Крестец обычно образован пятью сросшимися позвонками; возможны варианты. Сочленяется с L5, обеими тазовыми костями и копчиком. Копчиковая область включена в существующую объединённую модель, но её точная граница и число сегментов не приняты (GEO-007).",
+    "refs": [
+      {
+        "id": "pelvis_gray_sac",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "PDF pp.37–46: Sacral and Coccygeal Vertebrae; Figs.95–100.",
+        "authorGroup": "gray_1918",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "pelvis_dartmouth",
+        "title": "Dartmouth — Basic Human Anatomy, Chapter 39",
+        "url": "https://humananatomy.host.dartmouth.edu/BHA/public_html/part_7/chapter_39.html",
+        "locator": "Sacrum and Coccyx; Figs.39-10 and 39-11.",
+        "authorGroup": "dartmouth_bha",
+        "checked": "2026-10-18"
+      },
+      {
+        "id": "pelvis_indiran",
+        "title": "Indiran V, Sivakumar V, Maduraimuthu P (2017). Coccygeal Morphology on Multislice Computed Tomography in a Tertiary Hospital in India.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5662850/",
+        "locator": "Introduction; Results: variable segments and fusion, not a measurement of BP3D.",
+        "authorGroup": "indiran_2017",
+        "checked": "2026-10-18",
+        "pmid": "29093777",
+        "doi": "10.4184/asj.2017.11.5.694",
+        "access": "full_text"
+      }
+    ]
+  }
+})) Object.assign(window.ATLAS.bones[id],patch);

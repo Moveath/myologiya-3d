@@ -32,7 +32,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — средняя костная часть подъязычной кости, имеющая отдельные поверхности.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "hyoid",
@@ -65,7 +74,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый малый рог. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
+    "modelNote": "Маркер обозначает выбранный участок: правый малый рог. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -87,7 +96,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "volume",
+    "geometryKindReason": "Малый рог — небольшой костный выступ; правая и левая стороны не подтверждаются одной точкой.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "hyoid",
@@ -120,7 +138,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior and posterior aspects: corpus, cornua majora et minora."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый большой рог. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
+    "modelNote": "Маркер обозначает выбранный участок: правый большой рог. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -142,7 +160,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "volume",
+    "geometryKindReason": "Большой рог — протяжённая костная часть; маркер на ней не задаёт весь объём.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "atlas",
@@ -175,7 +202,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: передний участок правой латеральной массы. Он не задаёт полную границу или точные размеры образования.",
+    "modelNote": "Маркер обозначает выбранный участок: передний участок правой латеральной массы. Он не задаёт полную границу или точные размеры образования. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -197,7 +224,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "volume",
+    "geometryKindReason": "Латеральная масса — объёмная опорная часть между дугами C1.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "atlas",
@@ -230,7 +266,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -252,7 +288,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя площадка латеральной массы сочленяется с затылочным мыщелком; принадлежит C1.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "atlas",
@@ -285,7 +330,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -307,7 +352,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя площадка латеральной массы обращена к C2; принадлежит C1.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "atlas",
@@ -341,7 +395,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя дуга, участок рядом со срединным бугорком. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передняя дуга — костная часть кольца C1, а не линия его переднего края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "atlas",
@@ -366,7 +429,27 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Разметить суставную площадку на задней стороне передней дуги C1, её края и обе поверхности сочленения отдельно. Координату зуба C2 не переносить.",
+    "geometryKind": "area",
+    "geometryKindReason": "Ямка зуба — суставная площадка сзади передней дуги, не сквозное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "area",
+      "available": "Сетка передней дуги C1; отдельной маски суставной площадки нет.",
+      "neededEvidence": "Разметить суставную площадку на задней стороне передней дуги C1, её края и обе поверхности сочленения отдельно. Координату зуба C2 не переносить.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_105",
+      "neck_axis_A02_2_02_204"
+    ]
   },
   {
     "b": "atlas",
@@ -400,7 +483,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передний бугорок. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок C1 — срединное возвышение передней дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "atlas",
@@ -434,7 +526,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: задняя дуга справа от средней линии. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задняя дуга — костная часть кольца C1 с толщиной.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "atlas",
@@ -459,7 +560,26 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить ход и ширину борозды позвоночной артерии на верхней стороне задней дуги C1 отдельно справа и слева; нужны согласованные верхние/задние/косые виды и принятая полилиния.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда ведёт позвоночную артерию по верхней стороне задней дуги; её ход не равен одной точке.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Сетка задней дуги C1, без размеченной борозды.",
+      "neededEvidence": "Проследить ход и ширину борозды позвоночной артерии на верхней стороне задней дуги C1 отдельно справа и слева; нужны согласованные верхние/задние/косые виды и принятая полилиния.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_108"
+    ]
   },
   {
     "b": "atlas",
@@ -484,8 +604,27 @@ window.ATLAS.pins.push(...[
         "locator": "Description: complete and partial bony bridges over the vertebral artery groove."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены.",
-    "inc": 1
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Сначала установить наличие полного/неполного костного мостика на каждой стороне данного образца по исходным изображениям и сетке. Только при наличии размечать проход; вариант не обязан иметь модель у каждого человека.",
+    "inc": 1,
+    "geometryKind": "space",
+    "geometryKindReason": "Вариабельный проход над бороздой при костном мостике; наличие на данном образце не установлено.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Сетка C1; вариантный канал на ней не подтверждён.",
+      "neededEvidence": "Сначала установить наличие полного/неполного костного мостика на каждой стороне данного образца по исходным изображениям и сетке. Только при наличии размечать проход; вариант не обязан иметь модель у каждого человека.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_109"
+    ]
   },
   {
     "b": "atlas",
@@ -519,7 +658,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: задний бугорок. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок C1 — срединное костное возвышение задней дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "atlas",
@@ -544,7 +692,26 @@ window.ATLAS.pins.push(...[
         "locator": "Where is Sœmmerring’s error?: inferior notch of atlas and pedicle of axis; анатомическое описание, без принятия предложенной авторами перенумерации нервов."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_108"
+    ]
   },
   {
     "b": "atlas",
@@ -578,7 +745,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: край позвоночного отверстия у передней дуги. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "atlas",
@@ -611,7 +787,7 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -633,7 +809,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "atlas",
@@ -666,7 +851,7 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, top, inferior, superolateral aspects: подписанные виды атланта."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
     "loc": "surface",
     "secondaryMarkers": [
       {
@@ -688,7 +873,16 @@ window.ATLAS.pins.push(...[
         ],
         "method": "independent-screen-pick-on-the-same-bone; no reflection"
       }
-    ]
+    ],
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -722,7 +916,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -756,7 +959,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: нижняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -781,7 +993,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_axis_A02_2_01_002"
+    ]
   },
   {
     "b": "axis",
@@ -815,7 +1046,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -848,8 +1088,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -882,8 +1131,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -908,7 +1166,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_axis_A02_2_01_006"
+    ]
   },
   {
     "b": "axis",
@@ -933,7 +1210,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_axis_A02_2_01_006"
+    ]
   },
   {
     "b": "axis",
@@ -967,7 +1263,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -1001,7 +1306,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -1034,8 +1348,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1068,8 +1391,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1102,8 +1434,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1136,8 +1477,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1170,8 +1520,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1204,8 +1563,17 @@ window.ATLAS.pins.push(...[
         "locator": "Anterior, superior, lateral, isometric aspects: зуб и суставные поверхности."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "axis",
@@ -1239,7 +1607,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: зуб, участок ниже передней суставной поверхности. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Зуб — костный отросток C2; его поверхности и верхушка имеют отдельные записи.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -1273,7 +1650,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхушка зуба. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "point",
+    "geometryKindReason": "Верхушка обозначает верхний конец зуба; точность конкретного координатного маркера проверяется отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -1307,7 +1693,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя суставная поверхность зуба. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Передняя площадка зуба сочленяется с ямкой зуба C1; это собственная поверхность C2.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "axis",
@@ -1341,7 +1736,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: задняя суставная поверхность зуба. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Задняя площадка зуба обращена к поперечной связке C1; не общая костная поверхность C1–C2.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_3",
@@ -1375,7 +1779,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_3",
@@ -1409,7 +1822,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior"
   },
   {
     "b": "cervical_3",
@@ -1434,7 +1856,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_01_002"
+    ]
   },
   {
     "b": "cervical_3",
@@ -1468,7 +1909,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_3",
@@ -1501,8 +1951,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1535,8 +1994,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1561,7 +2029,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_3",
@@ -1586,7 +2073,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_3",
@@ -1620,7 +2126,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_3",
@@ -1654,7 +2169,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_3",
@@ -1687,8 +2211,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1721,8 +2254,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1755,8 +2297,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1789,8 +2340,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1823,8 +2383,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1857,8 +2426,17 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Крючок — костное возвышение верхнелатерального края тела C3–C7.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1891,8 +2469,17 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_3",
@@ -1917,7 +2504,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок — костное возвышение поперечного отростка; выраженность на C7 вариабельна.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_3",
@@ -1942,7 +2548,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок — костный выступ задней части поперечного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_3",
@@ -1967,7 +2592,27 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда задаёт ход вдоль верхней стороны поперечного отростка; ширина и дно требуют отдельной разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целый поперечный отросток без принятой полилинии борозды.",
+      "neededEvidence": "Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_3_A02_2_02_004",
+      "neck_cervical_3_A02_2_02_006"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2001,7 +2646,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_4",
@@ -2035,7 +2689,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior"
   },
   {
     "b": "cervical_4",
@@ -2060,7 +2723,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_01_002"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2094,7 +2776,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_4",
@@ -2127,8 +2818,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2161,8 +2861,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2187,7 +2896,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2212,7 +2940,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2246,7 +2993,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_4",
@@ -2280,7 +3036,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_4",
@@ -2313,8 +3078,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2347,8 +3121,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2381,8 +3164,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2415,8 +3207,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2449,8 +3250,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2483,8 +3293,17 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Крючок — костное возвышение верхнелатерального края тела C3–C7.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2517,8 +3336,17 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_4",
@@ -2543,7 +3371,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок — костное возвышение поперечного отростка; выраженность на C7 вариабельна.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2568,7 +3415,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок — костный выступ задней части поперечного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_4",
@@ -2593,7 +3459,27 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда задаёт ход вдоль верхней стороны поперечного отростка; ширина и дно требуют отдельной разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целый поперечный отросток без принятой полилинии борозды.",
+      "neededEvidence": "Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_4_A02_2_02_004",
+      "neck_cervical_4_A02_2_02_006"
+    ]
   },
   {
     "b": "cervical_5",
@@ -2627,7 +3513,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_5",
@@ -2661,7 +3556,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior"
   },
   {
     "b": "cervical_5",
@@ -2686,7 +3590,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_01_002"
+    ]
   },
   {
     "b": "cervical_5",
@@ -2720,7 +3643,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_5",
@@ -2753,8 +3685,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -2787,8 +3728,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -2813,7 +3763,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_5",
@@ -2838,7 +3807,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_5",
@@ -2872,7 +3860,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_5",
@@ -2906,7 +3903,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_5",
@@ -2939,8 +3945,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -2973,8 +3988,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3007,8 +4031,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3041,8 +4074,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3075,8 +4117,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3109,8 +4160,17 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Крючок — костное возвышение верхнелатерального края тела C3–C7.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3143,8 +4203,17 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_5",
@@ -3169,7 +4238,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок — костное возвышение поперечного отростка; выраженность на C7 вариабельна.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_5",
@@ -3194,7 +4282,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок — костный выступ задней части поперечного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_5",
@@ -3219,7 +4326,27 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда задаёт ход вдоль верхней стороны поперечного отростка; ширина и дно требуют отдельной разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целый поперечный отросток без принятой полилинии борозды.",
+      "neededEvidence": "Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_5_A02_2_02_004",
+      "neck_cervical_5_A02_2_02_006"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3253,7 +4380,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_6",
@@ -3287,7 +4423,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior"
   },
   {
     "b": "cervical_6",
@@ -3312,7 +4457,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_01_002"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3346,7 +4510,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_6",
@@ -3379,8 +4552,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3413,8 +4595,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3439,7 +4630,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3464,7 +4674,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3498,7 +4727,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_6",
@@ -3532,7 +4770,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_6",
@@ -3565,8 +4812,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3599,8 +4855,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3633,8 +4898,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3667,8 +4941,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3701,8 +4984,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3735,8 +5027,17 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Крючок — костное возвышение верхнелатерального края тела C3–C7.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3769,8 +5070,17 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_6",
@@ -3779,7 +5089,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.2.02.004",
     "ru": "Передний бугорок",
     "lat": "tuberculum anterius",
-    "x": "Передний бугорок поперечного отростка типичного шейного позвонка.",
+    "x": "Передний бугорок поперечного отростка типичного шейного позвонка. На C6 передний и сонный бугорок обозначают одно образование; два кода TA98 сохранены как терминологические представления, а не как две независимые структуры.",
     "p": null,
     "n": null,
     "m": [],
@@ -3795,7 +5105,28 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Передний и сонный бугорок C6 — одно образование: будущая разметка должна быть общей для двух терминологических ID.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок — костное возвышение поперечного отростка; выраженность на C7 вариабельна.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "concept": "c6-anterior-carotid-tubercle",
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_02_005",
+      "neck_cervical_6_A02_2_01_013"
+    ],
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Передний и сонный бугорок C6 — одно образование: будущая разметка должна быть общей для двух терминологических ID.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
   },
   {
     "b": "cervical_6",
@@ -3820,7 +5151,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок — костный выступ задней части поперечного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3845,7 +5195,27 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда задаёт ход вдоль верхней стороны поперечного отростка; ширина и дно требуют отдельной разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целый поперечный отросток без принятой полилинии борозды.",
+      "neededEvidence": "Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_02_004",
+      "neck_cervical_6_A02_2_02_006"
+    ]
   },
   {
     "b": "cervical_6",
@@ -3854,7 +5224,7 @@ window.ATLAS.pins.push(...[
     "c": "A02.2.02.005",
     "ru": "Сонный бугорок",
     "lat": "tuberculum caroticum",
-    "x": "Выраженный передний бугорок поперечного отростка C6.",
+    "x": "Выраженный передний бугорок поперечного отростка C6. На C6 передний и сонный бугорок обозначают одно образование; два кода TA98 сохранены как терминологические представления, а не как две независимые структуры.",
     "p": null,
     "n": null,
     "m": [],
@@ -3870,7 +5240,28 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction: carotid tubercle at the transverse process of the sixth cervical vertebra."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Передний и сонный бугорок C6 — одно образование: будущая разметка должна быть общей для двух терминологических ID.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Сонный бугорок — передний бугорок C6 под специальным названием, не дополнительная независимая структура.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "concept": "c6-anterior-carotid-tubercle",
+    "relatedLandmarks": [
+      "neck_cervical_6_A02_2_02_004",
+      "neck_cervical_6_A02_2_01_013"
+    ],
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Передний и сонный бугорок C6 — одно образование: будущая разметка должна быть общей для двух терминологических ID.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
   },
   {
     "b": "cervical_7",
@@ -3904,7 +5295,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: передняя поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Тело — костная опорная часть с толщиной, не одна из его поверхностей.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_7",
@@ -3938,7 +5338,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: верхняя межпозвоночная поверхность тела. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Межпозвоночная поверхность — контактная площадь тела; у C2 здесь только нижняя.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "superior_inferior"
   },
   {
     "b": "cervical_7",
@@ -3963,7 +5372,26 @@ window.ATLAS.pins.push(...[
         "locator": "Abstract: anterior inferior ring apophysis development, C2–C4; исследование окостенения."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Для отображения: Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Эпифиз — возрастная область окостенения по периферии тела, а не произвольная линия края.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Сетка тела позвонка без отдельной возрастной сегментации эпифиза.",
+      "neededEvidence": "Установить возраст и стадию сращения эпифиза на исходном образце; нужны исходные изображения/сегментация зоны окостенения. Наружная взрослая сетка тела не определяет границы эпифиза.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_01_002"
+    ]
   },
   {
     "b": "cervical_7",
@@ -3997,7 +5425,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: участок задней части дуги. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Дуга — костный комплекс ножек и пластинок, ограничивающий отверстие сзади.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_7",
@@ -4030,8 +5467,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая ножка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Ножка — короткий костный мост от тела к задним отделам дуги.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4064,8 +5510,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая пластинка дуги. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Пластинка — костная часть задней дуги с толщиной; не только её наружная поверхность.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4090,7 +5545,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Верхняя вырезка — открытая выемка края ножки; не всё межпозвоночное отверстие.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_7",
@@ -4115,7 +5589,26 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+    "geometryKind": "space",
+    "geometryKindReason": "Нижняя вырезка — открытая выемка; у C1 рассматривается на задней дуге.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "space",
+      "available": "Целая сетка позвонка; выделенной вырезки нет.",
+      "neededEvidence": "Независимо разметить обе вырезки, их открытые края и связь с соответствующим межпозвоночным уровнем. Нужны боковые/косые виды и анатомическая приёмка; маркер ножки или дуги не задаёт выемку.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_01_006"
+    ]
   },
   {
     "b": "cervical_7",
@@ -4149,7 +5642,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: видимый край позвоночного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Позвоночное отверстие — просвет внутри костного кольца; точка на краю не определяет просвет.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_7",
@@ -4183,7 +5685,16 @@ window.ATLAS.pins.push(...[
       }
     ],
     "modelNote": "Маркер обозначает выбранный участок: остистый отросток. Он не задаёт полную границу или точные размеры образования.",
-    "loc": "surface"
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Остистый отросток — костный выступ дуги, включая его основание и конец.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "single"
   },
   {
     "b": "cervical_7",
@@ -4216,8 +5727,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый поперечный отросток. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Поперечный отросток — выступающая костная часть, а не точка на её конце.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4250,8 +5770,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый верхний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Верхний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4284,8 +5813,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая верхняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Верхняя суставная поверхность — площадка сочленения; не весь сустав и не соседняя кость.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4318,8 +5856,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый нижний суставной отросток, суставной участок. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Нижний суставной отросток — костная часть; суставная площадка выделена отдельно.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4352,8 +5899,17 @@ window.ATLAS.pins.push(...[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правая нижняя суставная поверхность. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "area",
+    "geometryKindReason": "Нижняя суставная поверхность — площадка сочленения; её границы требуют разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4386,8 +5942,17 @@ window.ATLAS.pins.push(...[
         "locator": "Introduction; Methods; direct cadaveric and CT measurements at C3–C7."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: правый крючок тела. Он не задаёт полную границу или точные размеры образования. Основная точка относится к правой стороне. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "volume",
+    "geometryKindReason": "Крючок — костное возвышение верхнелатерального края тела C3–C7.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4420,8 +5985,17 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает.",
-    "loc": "surface"
+    "modelNote": "Маркер обозначает выбранный участок: видимый край правого поперечного отверстия. Точка стоит на костном крае, а не внутри просвета; форму и стенки всего отверстия она не подтверждает. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо.",
+    "loc": "surface",
+    "geometryKind": "space",
+    "geometryKindReason": "Поперечное отверстие — проход в поперечном отростке; маркер на ободке не является центром канала.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired"
   },
   {
     "b": "cervical_7",
@@ -4446,7 +6020,26 @@ window.ATLAS.pins.push(...[
         "locator": "§2.4.2 CSNRB Group; Fig.1C: prominent posterior and rudimentary anterior tubercle of C7."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Для C7 сначала подтвердить наличие/рудиментарность переднего бугорка на данном образце.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Передний бугорок — костное возвышение поперечного отростка; выраженность на C7 вариабельна.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка. Для C7 сначала подтвердить наличие/рудиментарность переднего бугорка на данном образце.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_7",
@@ -4471,7 +6064,26 @@ window.ATLAS.pins.push(...[
         "locator": "C3 anterior/isometric; C4 top; C6 frontal aspect, tuberculum caroticum."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+    "geometryKind": "volume",
+    "geometryKindReason": "Задний бугорок — костный выступ задней части поперечного отростка.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый поперечный отросток; отдельной принятой разметки бугорка нет.",
+      "neededEvidence": "Разметить бугорок и переход в поперечный отросток независимо с обеих сторон. Координата всего отростка не доказывает положение бугорка.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_01_013"
+    ]
   },
   {
     "b": "cervical_7",
@@ -4496,7 +6108,397 @@ window.ATLAS.pins.push(...[
         "locator": "Lateral and superior aspects: processus spinosus, sulcus nervi spinalis, foramen transversarium."
       }
     ],
-    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены."
+    "modelNote": "Положение этого образования на данной сетке ещё не проверено. Карточка объясняет анатомию; произвольная точка или реконструкция не добавлены. Запись охватывает парное образование; одна точка не подтверждает обе стороны. Вторичные маркеры, если есть, проверяются независимо. Для отображения: Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+    "geometryKind": "line",
+    "geometryKindReason": "Борозда задаёт ход вдоль верхней стороны поперечного отростка; ширина и дно требуют отдельной разметки.",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "anatomicalMultiplicity": "paired",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целый поперечный отросток без принятой полилинии борозды.",
+      "neededEvidence": "Проследить борозду спинномозгового нерва между бугорками с обеих сторон; нужны размеченные ход и края, без переноса координат отростка. На C7 проверить выраженность борозды.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    },
+    "relatedLandmarks": [
+      "neck_cervical_7_A02_2_02_004",
+      "neck_cervical_7_A02_2_02_006"
+    ]
+  },
+  {
+    "id": "extra_atlas_transverse_ligament_tubercle_right",
+    "b": "atlas",
+    "t": "additional",
+    "lat": "",
+    "ru": "Медиальный бугорок латеральной массы атланта справа",
+    "x": "Бугорок на медиальной стороне латеральной массы для поперечной связки атланта; не передний и не задний срединный бугорок дуги.",
+    "side": "right",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "volume",
+    "refs": [
+      {
+        "id": "neck_gray_atlas",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+        "locator": "PDF p.29: medial tubercle below each superior facet for transverse atlantal ligament.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_tubbs_2002",
+        "title": "Tubbs RS, Wellons JC III, Banks J, Blount JP, Oakes WJ (2002). Quantitative anatomy of the transverse ligament tubercles.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12408389/",
+        "locator": "Abstract: Object and Methods; medial atlantal tubercles and transverse ligament. No sample measurements transferred.",
+        "authorGroup": "tubbs_2002",
+        "checked": "2026-10-17",
+        "kind": "anatomical",
+        "pmid": "12408389",
+        "doi": "10.3171/spi.2002.97.3.0343",
+        "access": "abstract_and_verified_efetch_metadata"
+      }
+    ],
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_102"
+    ],
+    "partOf": "neck_atlas_A02_2_02_102",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; границы не размечены, отдельный маркер не создан. Это описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Для отображения: На указанной стороне выделить медиальный бугорок и основание на латеральной массе C1. Нужны медиальные/косые виды и анатомическая приёмка; маркер массы не заменяет бугорок.",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целая латеральная масса C1; отдельного принятого меша бугорка нет.",
+      "neededEvidence": "На указанной стороне выделить медиальный бугорок и основание на латеральной массе C1. Нужны медиальные/косые виды и анатомическая приёмка; маркер массы не заменяет бугорок.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_atlas_transverse_ligament_tubercle_left",
+    "b": "atlas",
+    "t": "additional",
+    "lat": "",
+    "ru": "Медиальный бугорок латеральной массы атланта слева",
+    "x": "Бугорок на медиальной стороне латеральной массы для поперечной связки атланта; не передний и не задний срединный бугорок дуги.",
+    "side": "left",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "volume",
+    "refs": [
+      {
+        "id": "neck_gray_atlas",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+        "locator": "PDF p.29: medial tubercle below each superior facet for transverse atlantal ligament.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_tubbs_2002",
+        "title": "Tubbs RS, Wellons JC III, Banks J, Blount JP, Oakes WJ (2002). Quantitative anatomy of the transverse ligament tubercles.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12408389/",
+        "locator": "Abstract: Object and Methods; medial atlantal tubercles and transverse ligament. No sample measurements transferred.",
+        "authorGroup": "tubbs_2002",
+        "checked": "2026-10-17",
+        "kind": "anatomical",
+        "pmid": "12408389",
+        "doi": "10.3171/spi.2002.97.3.0343",
+        "access": "abstract_and_verified_efetch_metadata"
+      }
+    ],
+    "relatedLandmarks": [
+      "neck_atlas_A02_2_02_102"
+    ],
+    "partOf": "neck_atlas_A02_2_02_102",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; границы не размечены, отдельный маркер не создан. Это описательное название; отдельный код и официальная латинская форма TA98 не присвоены. Для отображения: На указанной стороне выделить медиальный бугорок и основание на латеральной массе C1. Нужны медиальные/косые виды и анатомическая приёмка; маркер массы не заменяет бугорок.",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целая латеральная масса C1; отдельного принятого меша бугорка нет.",
+      "neededEvidence": "На указанной стороне выделить медиальный бугорок и основание на латеральной массе C1. Нужны медиальные/косые виды и анатомическая приёмка; маркер массы не заменяет бугорок.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_hyoid_body_surface_anterior",
+    "b": "hyoid",
+    "t": "additional",
+    "lat": "",
+    "ru": "Передняя поверхность тела подъязычной кости",
+    "x": "Передняя сторона тела подъязычной кости; требуется разметка площади, а не копирование координаты карточки всего тела.",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "area",
+    "refs": [
+      {
+        "id": "neck_gray_hyoid",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+        "locator": "PDF pp.148–149: Body, anterior and posterior surfaces.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_elsevier_hyoid",
+        "title": "Elsevier Complete Anatomy — Anterior Surface of Body of Hyoid Bone",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/anterior-surface-of-body-of-hyoid-bone/22155",
+        "locator": "Description: two body surfaces, anterior and posterior. No proprietary mesh or image copied.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      }
+    ],
+    "relatedLandmarks": [
+      "neck_hyoid_A02_1_16_002"
+    ],
+    "partOf": "neck_hyoid_A02_1_16_002",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; границы не размечены, координаты и поверхность не созданы. Отдельный код TA98 не присвоен. Для отображения: Разметить границы данной поверхности тела подъязычной кости и переходы к рогам/краям по переднему, заднему и косому видам. Маркер тела — только контекст, не доказательство всей площади.",
+    "geometryRequirements": {
+      "representation": "area",
+      "available": "Целое тело подъязычной кости; отдельной поверхностной маски нет.",
+      "neededEvidence": "Разметить границы данной поверхности тела подъязычной кости и переходы к рогам/краям по переднему, заднему и косому видам. Маркер тела — только контекст, не доказательство всей площади.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_hyoid_body_surface_posterior",
+    "b": "hyoid",
+    "t": "additional",
+    "lat": "",
+    "ru": "Задняя поверхность тела подъязычной кости",
+    "x": "Задняя сторона тела подъязычной кости; требуется разметка площади, а не копирование координаты карточки всего тела.",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "area",
+    "refs": [
+      {
+        "id": "neck_gray_hyoid",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+        "locator": "PDF pp.148–149: Body, anterior and posterior surfaces.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_elsevier_hyoid",
+        "title": "Elsevier Complete Anatomy — Anterior Surface of Body of Hyoid Bone",
+        "url": "https://www.elsevier.com/resources/anatomy/skeletal-system/axial-skeleton/anterior-surface-of-body-of-hyoid-bone/22155",
+        "locator": "Description: two body surfaces, anterior and posterior. No proprietary mesh or image copied.",
+        "authorGroup": "elsevier_complete_anatomy",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      }
+    ],
+    "relatedLandmarks": [
+      "neck_hyoid_A02_1_16_002"
+    ],
+    "partOf": "neck_hyoid_A02_1_16_002",
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; границы не размечены, координаты и поверхность не созданы. Отдельный код TA98 не присвоен. Для отображения: Разметить границы данной поверхности тела подъязычной кости и переходы к рогам/краям по переднему, заднему и косому видам. Маркер тела — только контекст, не доказательство всей площади.",
+    "geometryRequirements": {
+      "representation": "area",
+      "available": "Целое тело подъязычной кости; отдельной поверхностной маски нет.",
+      "neededEvidence": "Разметить границы данной поверхности тела подъязычной кости и переходы к рогам/краям по переднему, заднему и косому видам. Маркер тела — только контекст, не доказательство всей площади.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_axis_dens_neck",
+    "b": "axis",
+    "t": "additional",
+    "ru": "Шейка зуба осевого позвонка",
+    "lat": "",
+    "x": "Суженная часть зуба у перехода к телу C2. Это часть зуба, а не его верхушка, суставная площадка или весь зуб.",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "volume",
+    "partOf": "neck_axis_A02_2_02_202",
+    "relatedLandmarks": [
+      "neck_axis_A02_2_02_202"
+    ],
+    "refs": [
+      {
+        "id": "neck_gray_dens_neck",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=27",
+        "locator": "PDF p.30: Second Cervical Vertebra; constriction or neck where dens joins body.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_patil_2020",
+        "title": "Patil ND, Essam M, Ragab RK, Elsaghir H (2020). Computerized Tomography-Based Morphometric Analysis of Odontoid in 100 Egyptian Patients.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043813/",
+        "locator": "Materials and Methods, Step 4; Figs.5–7: waist as a constriction. No sample dimensions transferred.",
+        "authorGroup": "patil_2020",
+        "checked": "2026-10-17",
+        "kind": "anatomical",
+        "pmid": "32128304",
+        "doi": "10.14444/7008",
+        "access": "full_text_and_verified_efetch_metadata"
+      }
+    ],
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-batch2-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; геометрическая разметка отсутствует. Описательное название: отдельный код и официальная латинская форма TA98 не присвоены. Для отображения: Выделить суженную часть зуба C2 и переход к телу на этом образце. Нужны анатомически принятые границы области по нескольким видам/исходным изображениям; средние размеры из статьи не переносить.",
+    "geometryRequirements": {
+      "representation": "volume",
+      "available": "Целый зуб C2; отдельной разметки его шейки нет.",
+      "neededEvidence": "Выделить суженную часть зуба C2 и переход к телу на этом образце. Нужны анатомически принятые границы области по нескольким видам/исходным изображениям; средние размеры из статьи не переносить.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_hyoid_body_border_superior",
+    "b": "hyoid",
+    "t": "additional",
+    "ru": "Верхний край тела подъязычной кости",
+    "lat": "",
+    "x": "Верхний край тела подъязычной кости; не весь край кости вместе с большими рогами. Карточка описывает протяжённую границу, не одиночную точку.",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "line",
+    "partOf": "neck_hyoid_A02_1_16_002",
+    "relatedLandmarks": [
+      "neck_hyoid_A02_1_16_002"
+    ],
+    "refs": [
+      {
+        "id": "neck_gray_hyoid_borders",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+        "locator": "PDF p.148: Body, superior and inferior borders; only existence/scope used.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_cunningham_hyoid_borders",
+        "title": "Cunningham et al. (2016). Developmental Juvenile Osteology, 2nd ed., The Skull.",
+        "url": "https://www.sciencedirect.com/topics/veterinary-science-and-veterinary-medicine/hyoid-bone",
+        "locator": "Publisher excerpt: The Hyoid > The Adult Hyoid, body has superior/inferior/lateral borders. Full chapter not accessed; precise edge morphology not transferred.",
+        "authorGroup": "cunningham_2016",
+        "checked": "2026-10-17",
+        "kind": "anatomical",
+        "access": "publisher_excerpt_indexed"
+      }
+    ],
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-batch2-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; геометрическая разметка отсутствует. Описательное название: отдельный код и официальная латинская форма TA98 не присвоены. Для отображения: Выделить соответствующий край именно тела подъязычной кости, с концами у переходов к рогам; нужны принятая полилиния и несколько согласованных видов. Весь наружный контур кости не равен этому краю.",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целое тело подъязычной кости; принятого контура края нет.",
+      "neededEvidence": "Выделить соответствующий край именно тела подъязычной кости, с концами у переходов к рогам; нужны принятая полилиния и несколько согласованных видов. Весь наружный контур кости не равен этому краю.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
+  },
+  {
+    "id": "extra_hyoid_body_border_inferior",
+    "b": "hyoid",
+    "t": "additional",
+    "ru": "Нижний край тела подъязычной кости",
+    "lat": "",
+    "x": "Нижний край тела подъязычной кости; не весь край кости вместе с большими рогами. Карточка описывает протяжённую границу, не одиночную точку.",
+    "m": [],
+    "g": "Дополнительные образования",
+    "geometryKind": "line",
+    "partOf": "neck_hyoid_A02_1_16_002",
+    "relatedLandmarks": [
+      "neck_hyoid_A02_1_16_002"
+    ],
+    "refs": [
+      {
+        "id": "neck_gray_hyoid_borders",
+        "title": "Gray / Lewis (1918)",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf#page=148",
+        "locator": "PDF p.148: Body, superior and inferior borders; only existence/scope used.",
+        "authorGroup": "gray_lewis_1918",
+        "checked": "2026-10-17",
+        "kind": "anatomical"
+      },
+      {
+        "id": "neck_cunningham_hyoid_borders",
+        "title": "Cunningham et al. (2016). Developmental Juvenile Osteology, 2nd ed., The Skull.",
+        "url": "https://www.sciencedirect.com/topics/veterinary-science-and-veterinary-medicine/hyoid-bone",
+        "locator": "Publisher excerpt: The Hyoid > The Adult Hyoid, body has superior/inferior/lateral borders. Full chapter not accessed; precise edge morphology not transferred.",
+        "authorGroup": "cunningham_2016",
+        "checked": "2026-10-17",
+        "kind": "anatomical",
+        "access": "publisher_excerpt_indexed"
+      }
+    ],
+    "educationAvailable": false,
+    "nomenclatureStatus": "outside_own_TA98_list",
+    "geometryReview": {
+      "status": "representation_reviewed",
+      "source": "research/stage5-neck-batch2-report-2026-10-17.md",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    },
+    "modelNote": "Положение на данной сетке не проверено; геометрическая разметка отсутствует. Описательное название: отдельный код и официальная латинская форма TA98 не присвоены. Для отображения: Выделить соответствующий край именно тела подъязычной кости, с концами у переходов к рогам; нужны принятая полилиния и несколько согласованных видов. Весь наружный контур кости не равен этому краю.",
+    "geometryRequirements": {
+      "representation": "line",
+      "available": "Целое тело подъязычной кости; принятого контура края нет.",
+      "neededEvidence": "Выделить соответствующий край именно тела подъязычной кости, с концами у переходов к рогам; нужны принятая полилиния и несколько согласованных видов. Весь наружный контур кости не равен этому краю.",
+      "coordinateReuse": false,
+      "report": "research/stage5-neck-batch2-report-2026-10-17.md"
+    }
   }
 ]);
 window.ATLAS.neckWholeTerms=[
@@ -4517,7 +6519,13 @@ window.ATLAS.neckWholeTerms=[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "scope": "anatomy"
+    "scope": "anatomy",
+    "geometryKind": "volume",
+    "geometryReview": {
+      "status": "concept_only",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    }
   },
   {
     "c": "A02.2.00.006",
@@ -4536,7 +6544,13 @@ window.ATLAS.neckWholeTerms=[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "scope": "anatomy"
+    "scope": "anatomy",
+    "geometryKind": "line",
+    "geometryReview": {
+      "status": "concept_only",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    }
   },
   {
     "c": "A02.2.00.009",
@@ -4555,7 +6569,13 @@ window.ATLAS.neckWholeTerms=[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "scope": "anatomy"
+    "scope": "anatomy",
+    "geometryKind": "space",
+    "geometryReview": {
+      "status": "concept_only",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    }
   },
   {
     "c": "A02.2.01.008",
@@ -4574,6 +6594,12 @@ window.ATLAS.neckWholeTerms=[
         "locator": "Vertebral Structure; Regional Modifications of Vertebrae — Cervical Vertebrae; Fig.7.24–7.25."
       }
     ],
-    "scope": "anatomy"
+    "scope": "anatomy",
+    "geometryKind": "space",
+    "geometryReview": {
+      "status": "concept_only",
+      "coordinateAcceptance": false,
+      "extentAcceptance": false
+    }
   }
 ];
