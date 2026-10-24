@@ -1,0 +1,179 @@
+{
+  "side": "left",
+  "fit": "similarity",
+  "source": "Multifidus thoracis muscle.l",
+  "triangles": 3902,
+  "self": {
+    "inherited": "Rigid source shape; positive uniform scale cannot create self intersections."
+  },
+  "sampledBoneOverlap": [
+    {
+      "bone": "b|thoracic_2",
+      "inside": 1,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 0.22141665506002323,
+      "deepest": [
+        {
+          "vertex": 142,
+          "depthMM": 0.22141665506002323
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_4",
+      "inside": 1,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 0.47167410762171263,
+      "deepest": [
+        {
+          "vertex": 516,
+          "depthMM": 0.47167410762171263
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_5",
+      "inside": 7,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.981820458190646,
+      "deepest": [
+        {
+          "vertex": 619,
+          "depthMM": 1.981820458190646
+        },
+        {
+          "vertex": 579,
+          "depthMM": 1.2003434500608667
+        },
+        {
+          "vertex": 960,
+          "depthMM": 1.072195069941029
+        },
+        {
+          "vertex": 1016,
+          "depthMM": 1.021598526022818
+        },
+        {
+          "vertex": 1086,
+          "depthMM": 0.9878115642929836
+        },
+        {
+          "vertex": 973,
+          "depthMM": 0.9081896303148594
+        },
+        {
+          "vertex": 675,
+          "depthMM": 0.8573350555367033
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_6",
+      "inside": 2,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.1731700188758944,
+      "deepest": [
+        {
+          "vertex": 861,
+          "depthMM": 1.1731700188758944
+        },
+        {
+          "vertex": 884,
+          "depthMM": 1.1703716166056708
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_7",
+      "inside": 10,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 2.6462399314812055,
+      "deepest": [
+        {
+          "vertex": 1155,
+          "depthMM": 2.6462399314812055
+        },
+        {
+          "vertex": 1036,
+          "depthMM": 2.2291316522219455
+        },
+        {
+          "vertex": 1129,
+          "depthMM": 2.001682841874547
+        },
+        {
+          "vertex": 1000,
+          "depthMM": 1.8761077295166102
+        },
+        {
+          "vertex": 1109,
+          "depthMM": 1.3939467022114584
+        },
+        {
+          "vertex": 1039,
+          "depthMM": 0.6324305189577266
+        },
+        {
+          "vertex": 1390,
+          "depthMM": 0.3426370292731042
+        },
+        {
+          "vertex": 1089,
+          "depthMM": 0.20541261875734976
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_11",
+      "inside": 2,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.3870548104464664,
+      "deepest": [
+        {
+          "vertex": 1811,
+          "depthMM": 1.3870548104464664
+        },
+        {
+          "vertex": 1791,
+          "depthMM": 0.8269767147078616
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_12",
+      "inside": 5,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.13324969171292,
+      "deepest": [
+        {
+          "vertex": 1943,
+          "depthMM": 1.13324969171292
+        },
+        {
+          "vertex": 1980,
+          "depthMM": 0.4242255623007759
+        },
+        {
+          "vertex": 19,
+          "depthMM": 0.28805026123377864
+        },
+        {
+          "vertex": 13,
+          "depthMM": 0.24462664616713853
+        },
+        {
+          "vertex": 1894,
+          "depthMM": 0.10762289009512878
+        }
+      ]
+    }
+  ],
+  "limitations": "600 deterministic surface vertices and three-ray parity per bone; not volume fraction or continuous penetration bound. Topographic approval is separate."
+}

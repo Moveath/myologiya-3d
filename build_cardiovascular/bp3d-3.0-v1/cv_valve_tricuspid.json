@@ -1,0 +1,40 @@
+{
+  "id": "cv_valve_tricuspid",
+  "source": {
+    "fma": "FMA7234",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA7234.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA7234.obj",
+    "bytes": 3234084,
+    "sha256": "e511e7eecfc23f0e5f7f7eaeb93c6fec9bb040e34262564162668221fddddc53",
+    "crc": 1463885137,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_valve_tricuspid.glb",
+  "sha256": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581",
+  "triangles": 47268,
+  "vertices": 23608,
+  "boundsM": [
+    [
+      -0.0189725,
+      1.19881,
+      0.113547
+    ],
+    [
+      0.0295173,
+      1.2466700000000002,
+      0.14526599999999998
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 1.379215855132631e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

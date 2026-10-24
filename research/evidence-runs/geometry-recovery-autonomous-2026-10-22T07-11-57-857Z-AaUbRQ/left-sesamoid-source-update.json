@@ -1,0 +1,201 @@
+{
+  "id": "left-sesamoid-source-license-scope",
+  "integrated": 0,
+  "evidence": [
+    "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+  ],
+  "updates": [
+    {
+      "key": "bone:sesamoid_mcp1_radial_left",
+      "kind": "bone",
+      "catalogueId": "sesamoid_mcp1_radial_left",
+      "part": null,
+      "ru": "Лучевая сесамовидная кость большого пальца кисти слева",
+      "lat": "ossa sesamoidea",
+      "sideInCatalogue": "left",
+      "initialNoModel": true,
+      "currentNoModel": true,
+      "status": "research_only_not_admitted",
+      "admitted": false,
+      "fullAnatomicalAcceptance": false,
+      "integratedFile": null,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+      ],
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "issueIds": [
+        "GEO-HAND-LEFT-MODELS"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md",
+            "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Human right STL2019 is a possible source for a controlled left derivative, but file-specific commercial derivative rights remain unconfirmed. Policy effective2024 is not retrospective. Source identity and positioning must be accepted before reflection.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
+      "allApplicableMethodsExhausted": false
+    },
+    {
+      "key": "bone:sesamoid_mcp1_ulnar_left",
+      "kind": "bone",
+      "catalogueId": "sesamoid_mcp1_ulnar_left",
+      "part": null,
+      "ru": "Локтевая сесамовидная кость большого пальца кисти слева",
+      "lat": "ossa sesamoidea",
+      "sideInCatalogue": "left",
+      "initialNoModel": true,
+      "currentNoModel": true,
+      "status": "research_only_not_admitted",
+      "admitted": false,
+      "fullAnatomicalAcceptance": false,
+      "integratedFile": null,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+      ],
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "issueIds": [
+        "GEO-HAND-LEFT-MODELS"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md",
+            "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Human right STL2019 is a possible source for a controlled left derivative, but file-specific commercial derivative rights remain unconfirmed. Policy effective2024 is not retrospective. Source identity and positioning must be accepted before reflection.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
+      "allApplicableMethodsExhausted": false
+    }
+  ]
+}

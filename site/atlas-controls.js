@@ -11,3 +11,12 @@ export class AtlasOrbitControls extends OrbitControls {
     this._trackPointer(event);
   }
 }
+
+// Stable screen basis for an exactly superior/inferior view. A cross product with
+// world-up alone vanishes at these poles and incorrectly shrinks the fit distance.
+export function framingBasis(direction) {
+  const right=direction.clone().set(0,1,0).cross(direction);
+  if(right.lengthSq()<1e-12)right.set(1,0,0);
+  right.normalize();
+  return {right,up:direction.clone().cross(right).normalize()};
+}

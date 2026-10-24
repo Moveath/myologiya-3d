@@ -1,0 +1,19 @@
+// Research copy only. Production index/local/data and admission rules stay intact.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const [build,run]=process.argv.slice(2),revision=process.argv[4]||'v1';
+if(!/^v\d+$/.test(revision))throw Error('Invalid revision');
+const dir=path.join(build,revision==='v1'?'browser':'browser-'+revision);await fs.mkdir(dir,{recursive:false});
+const spec=JSON.parse(await fs.readFile(build+'/recipe.json'));
+let html=await fs.readFile('site/local.html','utf8');
+const replace=(from,to)=>{if(html.split(from).length!==2)throw Error('Ambiguous trial hook '+from);html=html.replace(from,to);};
+replace("card.modelStatus !== 'educational_limited'","!['educational_limited','technical_prototype_not_admitted'].includes(card.modelStatus)");
+const patch=`<script>window.__PALMARIS_TEST_ONLY=true;Object.assign(window.ATLAS.muscles.palmaris_brevis,${JSON.stringify({noModel:false,modelStatus:spec.status,modelFile:'/trial/palmaris_brevis-trial.glb',side:'right',note:spec.notice+' Кожа и апоневроз отсутствуют; обнаружены пересечения. Геометрия не допущена в основной атлас.',modelNotice:spec.notice})});(window.ATLAS.supplementalMuscles.arm??=[]).push('palmaris_brevis');</script>\n`;
+replace('<script type="module" onerror=',patch+'<script type="module" onerror=');
+replace('window.__atlasRuntime.ready();',"window.__atlasRuntime.ready();\n// Test build only: explicit startup, not unsupported production query parameters.\nenterSection('arm').then(()=>goTo('palmaris_brevis')).then(()=>window.__palmarisTrialReady=true);");
+replace('<div id="app">','<div id="trialBanner" role="status">ТЕСТОВАЯ СБОРКА · palmaris brevis — прототип без анатомического допуска · <a href="/trial/ATTRIBUTION.html">Источники и ограничения</a></div><style>#trialBanner{height:64px;box-sizing:border-box;padding:8px 14px;font:14px/22px system-ui;background:#493e25;color:#fff}#trialBanner a{color:#d6f3ff}#app{height:calc(100dvh - 64px)!important}</style><div id="app">');
+await fs.writeFile(dir+'/trial.html',html,{flag:'wx'});
+await fs.copyFile(build+'/palmaris_brevis-trial.glb',dir+'/palmaris_brevis-trial.glb',fs.constants.COPYFILE_EXCL);
+await fs.writeFile(dir+'/ATTRIBUTION.html',`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Прототип palmaris brevis</title><main style="font:18px/1.5 system-ui;max-width:800px;margin:32px auto;padding:16px"><h1>Прототип без анатомического допуска</h1><p>Самостоятельная параметрическая поверхность «Миология 3D», 2026. Это технический эксперимент. Границы, прикрепления и глубина неизвестны; есть конфликты с соседними мягкими тканями. Не используется в основном атласе.</p><p>Контекст и поверхность, использованная для интерполяции: BodyParts3D 3.0, © Database Center for Life Science (DBCLS), <a href="https://lifesciencedb.jp/bp3d/info_en/license/index.html">исходная атрибуция</a>. Производная экспериментальная геометрия: <a href="https://creativecommons.org/licenses/by-sa/2.1/jp/">CC BY-SA 2.1 Japan</a>; при распространении сохраняются атрибуция, описание изменений и ShareAlike. DBCLS не подтверждал этот прототип.</p><p>3296 новых треугольников; исходные меши не менялись. Толщина 0,89 мм — пробный параметр из среднего значения одной кадаверной выборки, не измерение данной кисти. Плановые границы и отступ — неподтверждённые параметры. Никакие рисунки или геометрия другого приложения не копировались.</p><ul>${spec.sources.map(s=>`<li><a href="${s}">${s}</a></li>`).join('')}</ul><p><a href="/trial.html?region=arm&entry=palmaris_brevis">Вернуться к прототипу</a> · <a href="http://127.0.0.1:8783/local.html">Основной атлас</a></p></main>`,{flag:'wx'});
+await fs.writeFile(run+'/trial-build-'+revision+'.json',JSON.stringify({url:'http://127.0.0.1:8785/trial.html',directory:dir,productionModified:false,notice:spec.notice},null,2),{flag:'wx'});
+console.log(dir);

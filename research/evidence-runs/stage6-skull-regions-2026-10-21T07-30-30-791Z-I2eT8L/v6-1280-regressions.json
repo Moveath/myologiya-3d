@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "width": 1280,
+  "phase": "regressions",
+  "checks": [
+    "Visible mesh hit",
+    "BVH/native hits and original faceIndex agree",
+    "Mesh selection clears previous region",
+    "Side filter right",
+    "Side filter left",
+    "Side filter both",
+    "Unsegmented articular surface has no fabricated overlay",
+    "Explicit unmapped notice",
+    "No horizontal overflow",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": false,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      }
+    ],
+    "failures": [
+      [
+        "temporal_right:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ]
+    ],
+    "drawCalls": 16,
+    "clip": 0,
+    "pin": "head_occipital_A02_1_04_014"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_subclavian_right",
+  "source": {
+    "fma": "FMA3953",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA3953.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA3953.obj",
+    "bytes": 133686,
+    "sha256": "6a4f427a5f25314e6f85857872905bb40618afb4987990a47eb2ffd4f509e15d",
+    "crc": 2232888071,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_subclavian_right.glb",
+  "sha256": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07",
+  "triangles": 2260,
+  "vertices": 1132,
+  "boundsM": [
+    [
+      -0.0822777,
+      1.34211,
+      0.0940385
+    ],
+    [
+      -0.00968548,
+      1.36469,
+      0.112301
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 3.1895781380373533e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

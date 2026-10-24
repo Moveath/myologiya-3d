@@ -1,0 +1,362 @@
+{
+  "method": "Bone-only area-uniform deterministic surface samples; reflection about one rigid plane; nearest dense surface cloud (20000 samples + original vertices per bone); equal weight C2-C7; loss capped at 2mm. Three independent training samples/initializations and six leave-one-bone-out fits. No muscle points, collisions, endpoint distances or desired admission enter the objective.",
+  "approximation": "Cloud distances approximate surface distances. Geometric reflection symmetry is not independently labelled anatomical midsagittal anatomy. Fit does not license deforming a muscle or shifting each bundle.",
+  "originMM": [
+    0.0,
+    1420.0,
+    45.0
+  ],
+  "commonFits": [
+    {
+      "parameters": [
+        -0.014246440983667388,
+        -0.004021855422809067,
+        -1.085688032788247
+      ],
+      "normal": [
+        0.9998904498036266,
+        -0.014244880283260005,
+        -0.004021414827757713
+      ],
+      "offsetFromLocalOriginMM": -1.085688032788247,
+      "worldPlaneConstantMM": -21.494381702266555,
+      "lossMM2": 0.6001704502624637,
+      "success": true,
+      "functionCalls": 326,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.013971079576811834,
+        -0.0024150741080890227,
+        -1.067111421733282
+      ],
+      "normal": [
+        0.9998995033276573,
+        -0.013969675529805329,
+        -0.002414831401177699
+      ],
+      "offsetFromLocalOriginMM": -1.067111421733282,
+      "worldPlaneConstantMM": -21.012718087109846,
+      "lossMM2": 0.5777991583900592,
+      "success": true,
+      "functionCalls": 287,
+      "seed": 2000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.015006732730001901,
+        -0.003465088014913793,
+        -1.113119186891227
+      ],
+      "normal": [
+        0.999881416665256,
+        -0.015004953181591165,
+        -0.0034646771132218032
+      ],
+      "offsetFromLocalOriginMM": -1.113119186891227,
+      "worldPlaneConstantMM": -22.57606317484566,
+      "lossMM2": 0.5789647736819706,
+      "success": true,
+      "functionCalls": 648,
+      "seed": 3000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    }
+  ],
+  "leaveOneOut": [
+    {
+      "parameters": [
+        -0.01606072127613508,
+        -0.0017425467273438503,
+        -1.0004963115559158
+      ],
+      "normal": [
+        0.9998695339180365,
+        -0.016058625896756676,
+        -0.0017423193840996954
+      ],
+      "offsetFromLocalOriginMM": -1.0004963115559158,
+      "worldPlaneConstantMM": -23.88214945723488,
+      "lossMM2": 0.571193868459353,
+      "success": true,
+      "functionCalls": 207,
+      "seed": 1000,
+      "bones": [
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.013683501373447152,
+        -0.0038480941337294843,
+        -1.134296967442905
+      ],
+      "normal": [
+        0.9998989922867488,
+        -0.013682119234264151,
+        -0.003847705446540661
+      ],
+      "offsetFromLocalOriginMM": -1.134296967442905,
+      "worldPlaneConstantMM": -20.736053025192327,
+      "lossMM2": 0.6389043951210109,
+      "success": true,
+      "functionCalls": 402,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.013653448948517938,
+        -0.005982953958478841,
+        -1.1956493597689495
+      ],
+      "normal": [
+        0.9998889123103248,
+        -0.013651932218418148,
+        -0.00598228932594616
+      ],
+      "offsetFromLocalOriginMM": -1.1956493597689495,
+      "worldPlaneConstantMM": -20.8505961295903,
+      "lossMM2": 0.6120548214290411,
+      "success": true,
+      "functionCalls": 259,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_5",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.01415397595071559,
+        -0.007254690872890675,
+        -1.20606323412659
+      ],
+      "normal": [
+        0.9998735412043485,
+        -0.014152186055963183,
+        -0.007253773453420065
+      ],
+      "offsetFromLocalOriginMM": -1.20606323412659,
+      "worldPlaneConstantMM": -21.62858723899821,
+      "lossMM2": 0.599618227256468,
+      "success": true,
+      "functionCalls": 266,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_6",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.013577021505505518,
+        -0.0019681322247225444,
+        -0.960524843291258
+      ],
+      "normal": [
+        0.9999059087527028,
+        -0.013575744026617483,
+        -0.0019679470407066744
+      ],
+      "offsetFromLocalOriginMM": -0.960524843291258,
+      "worldPlaneConstantMM": -20.32663897791988,
+      "lossMM2": 0.532826108058827,
+      "success": true,
+      "functionCalls": 371,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_7"
+      ]
+    },
+    {
+      "parameters": [
+        -0.014498599014752351,
+        -0.004502839674460455,
+        -1.0844334918330005
+      ],
+      "normal": [
+        0.9998847774481522,
+        -0.014496928449175654,
+        -0.004502320845782603
+      ],
+      "offsetFromLocalOriginMM": -1.0844334918330005,
+      "worldPlaneConstantMM": -21.872676327722644,
+      "lossMM2": 0.6298868869324655,
+      "success": true,
+      "functionCalls": 216,
+      "seed": 1000,
+      "bones": [
+        "b|axis",
+        "b|cervical_3",
+        "b|cervical_4",
+        "b|cervical_5",
+        "b|cervical_6"
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "bone": "b|axis",
+      "plane": "X=0",
+      "meanMM": 0.7670430305220146,
+      "rmsMM": 0.9725096232228817,
+      "medianMM": 0.6063399701299045,
+      "p95MM": 2.0196462788869547,
+      "maxSampleMM": 4.159074261018083
+    },
+    {
+      "bone": "b|axis",
+      "plane": "common-bone-fit",
+      "meanMM": 0.7048010931828959,
+      "rmsMM": 0.8694545102309768,
+      "medianMM": 0.5527362413469346,
+      "p95MM": 1.6692410183275646,
+      "maxSampleMM": 3.9446245821058357
+    },
+    {
+      "bone": "b|cervical_3",
+      "plane": "X=0",
+      "meanMM": 0.6441960254017712,
+      "rmsMM": 0.8122733103003624,
+      "medianMM": 0.5088052614155498,
+      "p95MM": 1.5038956747458971,
+      "maxSampleMM": 3.5268104939109173
+    },
+    {
+      "bone": "b|cervical_3",
+      "plane": "common-bone-fit",
+      "meanMM": 0.5298618640878028,
+      "rmsMM": 0.6354737665959626,
+      "medianMM": 0.44022709987827974,
+      "p95MM": 1.1746010376624838,
+      "maxSampleMM": 2.601043006075431
+    },
+    {
+      "bone": "b|cervical_4",
+      "plane": "X=0",
+      "meanMM": 0.7140123559523923,
+      "rmsMM": 0.8489120928979428,
+      "medianMM": 0.5923041907883924,
+      "p95MM": 1.616539168160711,
+      "maxSampleMM": 2.6213418623627325
+    },
+    {
+      "bone": "b|cervical_4",
+      "plane": "common-bone-fit",
+      "meanMM": 0.5815718170374048,
+      "rmsMM": 0.7473188498704719,
+      "medianMM": 0.4169721888584547,
+      "p95MM": 1.5609492461025338,
+      "maxSampleMM": 2.724466407846902
+    },
+    {
+      "bone": "b|cervical_5",
+      "plane": "X=0",
+      "meanMM": 0.9697105660154828,
+      "rmsMM": 1.1649472149381535,
+      "medianMM": 0.8471118311518528,
+      "p95MM": 2.2096257465564504,
+      "maxSampleMM": 3.6467145651933284
+    },
+    {
+      "bone": "b|cervical_5",
+      "plane": "common-bone-fit",
+      "meanMM": 0.6108483389461214,
+      "rmsMM": 0.7400600117688458,
+      "medianMM": 0.48970383397440354,
+      "p95MM": 1.4574530168289674,
+      "maxSampleMM": 2.5442402287350387
+    },
+    {
+      "bone": "b|cervical_6",
+      "plane": "X=0",
+      "meanMM": 1.3352341923083046,
+      "rmsMM": 1.7397531132625084,
+      "medianMM": 1.051871014091082,
+      "p95MM": 3.2560618376468904,
+      "maxSampleMM": 8.250395871707948
+    },
+    {
+      "bone": "b|cervical_6",
+      "plane": "common-bone-fit",
+      "meanMM": 0.8013563903660422,
+      "rmsMM": 1.069143700783517,
+      "medianMM": 0.5895104087562897,
+      "p95MM": 1.9665645299545986,
+      "maxSampleMM": 6.406754967553073
+    },
+    {
+      "bone": "b|cervical_7",
+      "plane": "X=0",
+      "meanMM": 1.14111760373012,
+      "rmsMM": 1.4247563344348655,
+      "medianMM": 0.9114338819282588,
+      "p95MM": 2.8490063220494055,
+      "maxSampleMM": 4.067174343586755
+    },
+    {
+      "bone": "b|cervical_7",
+      "plane": "common-bone-fit",
+      "meanMM": 0.5542290088665156,
+      "rmsMM": 0.6955108608648444,
+      "medianMM": 0.4422644748771579,
+      "p95MM": 1.347819121906868,
+      "maxSampleMM": 4.756792351801875
+    }
+  ],
+  "uncertainty": {
+    "maxNormalDifferenceDegrees": 0.18527925653622604,
+    "sampledSignedPlaneVariationMM": 0.3492448085158715
+  },
+  "elapsedSeconds": 36.29700000002049,
+  "selectedParameters": [
+    -0.014246440983667388,
+    -0.004021855422809067,
+    -1.085688032788247
+  ],
+  "sourceContext": "research\\evidence-runs\\stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT\\context-arrays.json"
+}

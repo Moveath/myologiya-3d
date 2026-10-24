@@ -35,8 +35,19 @@ export function pairKind(a,b) {
   const shared=av.filter(p=>bv.some(q=>p.equals(q)));
   if (shared.length===3) return 'duplicate';
   // The library uses this angular tolerance too; near-parallel cases remain diagnostic.
-  if (Math.abs(normal.dot(otherNormal))>1-1e-10)
+  if (Math.abs(normal.dot(otherNormal))>1-1e-10) {
+    // Shared edge, opposite half-planes: intersection is the edge itself.
+    // Polygon clipping can otherwise create a tiny positive roundoff area.
+    // Same-half-plane triangles still need the overlap test (may be a folded face).
+    if(shared.length===2){
+      const edge=shared[1].clone().sub(shared[0]);
+      const pa=av.find(p=>!shared.some(q=>p.equals(q)));
+      const pb=bv.find(p=>!shared.some(q=>p.equals(q)));
+      if(pa&&pb&&edge.clone().cross(pa.clone().sub(shared[0]))
+        .dot(edge.clone().cross(pb.clone().sub(shared[0])))<0)return 'adjacent';
+    }
     return overlapArea(a,b,normal)>EPS*EPS ? 'coplanarOverlap' : 'contact';
+  }
   if (shared.length===2) return 'adjacent';
   return line.distance()>EPS ? 'crossing' : 'contact';
 }

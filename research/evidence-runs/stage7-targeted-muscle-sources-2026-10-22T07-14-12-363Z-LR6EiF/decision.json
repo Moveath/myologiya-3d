@@ -1,0 +1,2034 @@
+{
+  "schemaVersion": 1,
+  "generatedUTC": "2026-10-22T10:28:32.718194+00:00",
+  "scope": {
+    "muscles": 12,
+    "parts": 17,
+    "excluded": [
+      "MG-palmaris_brevis",
+      "MP-omohyoid_right-superior",
+      "MP-omohyoid_right-inferior",
+      "MP-omohyoid_left-superior",
+      "MP-omohyoid_left-inferior",
+      "additional left interspinales handled by another agent"
+    ]
+  },
+  "methods": {
+    "A": "Existing resources",
+    "B": "External scientific 3D source",
+    "C": "Controlled mirroring",
+    "D": "Segmentation or authored part",
+    "E": "Own reconstruction",
+    "F": "Medical imaging"
+  },
+  "productionIntegrations": 0,
+  "newTrialParts": 2,
+  "noModelResolved": 0,
+  "allMethodsExhausted": false,
+  "source": {
+    "repository": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+    "commit": "04d15340bad66394659c0e3b3ff9d9bb0924f6ca",
+    "archiveCache": "research/cache/stage7-z-muscles-04d15340/Z-Anatomy.zip",
+    "blendCache": "research/cache/stage7-z-muscles-04d15340/Z-Anatomy-Startup.blend",
+    "license": "CC BY-SA 4.0",
+    "commercialUse": "Permitted subject to attribution, ShareAlike and other license terms; publication not performed.",
+    "requiredAttribution": [
+      "Z-Anatomy — Gauthier Kervyn, Marcin Zielinski and contributors",
+      "BodyParts3D — The Database Center for Life Science — CC BY-SA 2.1 Japan"
+    ],
+    "scopeCaution": "Archive also lists NC-attributed ear/kidney content. Those unrelated resources are not exported into these derivatives. Source geometry license does not imply anatomic approval."
+  },
+  "newScientificSources": [
+    {
+      "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH1810%20A4%20EN.htm",
+      "scope": "TA98 A04.3.02.204 nomenclature only"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10818335/",
+      "doi": "10.1016/s1050-6411(00)00004-3",
+      "scope": "Bojadsen et al., 2000, comparative dissection 12 fresh + 2 embalmed cadavers; abstract/search text read, EFetch metadata verified. Supports regional architecture differences, not these mesh coordinates."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11051048/",
+      "scope": "Indexed section 5.1.1–5.1.2 / Fig.19 text supports craniomedial thoracic course and posterior location; direct page returned CAPTCHA. No image copied and no source-coordinate claim."
+    }
+  ],
+  "checks": {
+    "blenderCLI": "5.2.2 LTS, scripts disabled, specific objects read and derivative exports/render views completed",
+    "trimesh": "Read-only labelled-bone rigid and similarity registration; watertight/positive volumes after left winding correction",
+    "nodeGLB": 36,
+    "bvh": "24 actual native/BVH matching rays; indices unchanged; face-pair diagnostics classified by connected component",
+    "mcpSceneEvidence": "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/mcp-z-multifidus-scene-review.json",
+    "playwright": "Not run by this subtask; no app/card/selection code changed. Trial technical checks do not substitute for future integration UI checks."
+  },
+  "multifidusInterpretation": {
+    "perSide": {
+      "connectedComponents": 21,
+      "triangles": 3902,
+      "withinComponentCrossingPairs": 12,
+      "betweenComponentCrossingPairs": 521,
+      "betweenComponentDuplicatePairs": 1
+    },
+    "withinExampleSegmentMaxMM": 0.5659284219402424,
+    "withinExamplesMeasured": 11,
+    "withinFlaggedPairs": 12,
+    "numericalCaution": "Triangle intersection line length is not penetration. Counts/maxima alone are not medical rejection thresholds. Material Tendon is unused in these two source meshes; no attachment conclusion can be drawn from that slot.",
+    "boneContactScope": "Some saved surface samples occur at component cranio-caudal mid-range, others at extrema. Neither category proves named attachment/body location. Anatomical contact classification remains pending.",
+    "reasonNotIntegrated": "No completed educational admission of the mapped pouches/contacts and no validated mapping to the current parent selection. No claim that source parts are globally or irreparably anatomically wrong.",
+    "registrationChoice": "Rigid preserves scale; similarity lowers bone nearest-vertex RMS but changes scale and worsens the maximum distance to the existing parent. Neither metric alone selects an anatomical winner.",
+    "maskFeasibility": "Existing BP3D parent is an independently tessellated full muscle. A source-to-parent face/fascicle map has not been proven. Closest-point masks or coordinate cuts would be unvalidated. A separate authored part remains a candidate for isolated educational selection with parent retained."
+  },
+  "rows": [
+    {
+      "id": "MG-auricularis_anterior_right",
+      "structure": "auricularis_anterior_right",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-auricularis_anterior_left",
+      "structure": "auricularis_anterior_left",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-auricularis_superior_right",
+      "structure": "auricularis_superior_right",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-auricularis_superior_left",
+      "structure": "auricularis_superior_left",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-auricularis_posterior_right",
+      "structure": "auricularis_posterior_right",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-auricularis_posterior_left",
+      "structure": "auricularis_posterior_left",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+      "blocker": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+      "nextStep": "Получить отдельную человеческую сегментацию либо разметить начало/прикрепление и оболочку тонкой мышечной пластинки на согласованной модели ушной области. Не заменять кожу ушной раковины мышцей.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В Z-Anatomy Extrinsic/Intrinsic auricular muscles — FONT либо двухвершинные подписи без граней; Auricular region — кожа, а не ушные мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет полученной индивидуальной мышцы; не зарегистрированы ушной хрящ, апоневротические/фасциальные и мышечные площадки нужного экземпляра.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Идентифицированная ушная раковина, фасция и область начала/прикрепления того же образца; отдельные границы конкретной передней/верхней/задней мышцы. Допущенная исходная сторона перед отражением. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-depressor_supercilii_right",
+      "structure": "depressor_supercilii_right",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В закреплённом Z-Anatomy есть текст определения, но отдельный целевой объект не найден. Corrugator/круговая мышца глаза не являются автоматическими заменами.",
+      "blocker": "Кандидат Visible Ape Project именован автором, но разрешённый исходный файл ранее не получен; выделение структуры из общих лицевых сеток не подтверждено.",
+      "nextStep": "Получить авторский исходник VAP через разрешённую загрузку; проверить самостоятельный меш, сторону и топографию. Альтернатива — индивидуальная размеченная сегментация медиальной надглазничной области.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. VAP Modern Human Head & Neck содержит имя в авторском списке; полученного проверенного файла нет. Групповые маски 3DFACE не приняты как самостоятельная мышца.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В закреплённом Z-Anatomy есть текст определения, но отдельный целевой объект не найден. Corrugator/круговая мышца глаза не являются автоматическими заменами.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Кандидат Visible Ape Project именован автором, но разрешённый исходный файл ранее не получен; выделение структуры из общих лицевых сеток не подтверждено.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Глубинная граница с соседними мышцами у медиальной брови; толщина, траектория и подтверждённые площадки прикреплений, а не маска наружной кожи. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "https://www.visibleapeproject.com/3d-human-head-and-neck",
+        "https://api.sketchfab.com/v3/models/22dbb37977304b5aab9db083b51026d2",
+        "research/new-muscle-source-audit.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-depressor_supercilii_left",
+      "structure": "depressor_supercilii_left",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "В закреплённом Z-Anatomy есть текст определения, но отдельный целевой объект не найден. Corrugator/круговая мышца глаза не являются автоматическими заменами.",
+      "blocker": "Кандидат Visible Ape Project именован автором, но разрешённый исходный файл ранее не получен; выделение структуры из общих лицевых сеток не подтверждено.",
+      "nextStep": "Получить авторский исходник VAP через разрешённую загрузку; проверить самостоятельный меш, сторону и топографию. Альтернатива — индивидуальная размеченная сегментация медиальной надглазничной области.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. VAP Modern Human Head & Neck содержит имя в авторском списке; полученного проверенного файла нет. Групповые маски 3DFACE не приняты как самостоятельная мышца.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "В закреплённом Z-Anatomy есть текст определения, но отдельный целевой объект не найден. Corrugator/круговая мышца глаза не являются автоматическими заменами.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Кандидат Visible Ape Project именован автором, но разрешённый исходный файл ранее не получен; выделение структуры из общих лицевых сеток не подтверждено.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Глубинная граница с соседними мышцами у медиальной брови; толщина, траектория и подтверждённые площадки прикреплений, а не маска наружной кожи. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "https://www.visibleapeproject.com/3d-human-head-and-neck",
+        "https://api.sketchfab.com/v3/models/22dbb37977304b5aab9db083b51026d2",
+        "research/new-muscle-source-audit.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-transversus_menti",
+      "structure": "transversus_menti",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "Самостоятельного transversus menti в закреплённом архиве не найдено; mentalis не принят за синоним.",
+      "blocker": "Вариант требует документированного человеческого образца; диссертационный 3D-рисунок не даёт файл или лицензию геометрии.",
+      "nextStep": "Получить данные документированного варианта и права на конкретную геометрию/сегментацию. Не включать обязательную симметричную ленту по одному названию.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Сохранён статус вариабельного образования; принятого самостоятельного исходника нет. Схематические/процедурные формы не подтверждают индивидуальное наличие.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Самостоятельного transversus menti в закреплённом архиве не найдено; mentalis не принят за синоним.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Вариант требует документированного человеческого образца; диссертационный 3D-рисунок не даёт файл или лицензию геометрии.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Конкретный вариант с анатомическим описанием, изображениями, правами, стороной и масштабом. Не генерировать обязательную симметричную структуру. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/new-muscle-source-audit.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-thorax_subcostales",
+      "structure": "thorax_subcostales",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "Subcostal artery/vein в Z-Anatomy — сосудистые CURVE; целевых мышечных пучков нет.",
+      "blocker": "Не определены реальные пучки, уровни рёбер, сторона и внутренние площадки прикрепления на текущем образце.",
+      "nextStep": "Получить лицензированные пучки/сегментацию или согласованную разметку внутренних рёберных прикреплений и подтверждённые поперечные формы. Не переносить границы из картинки без регистрации.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. В каталогизированных локальных ресурсах и адресных BP3D 3/4 индексах нет принятого мышечного исходника; subcostal artery/vein не приняты за мышцы.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Subcostal artery/vein в Z-Anatomy — сосудистые CURVE; целевых мышечных пучков нет.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Не определены реальные пучки, уровни рёбер, сторона и внутренние площадки прикрепления на текущем образце.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Разметка уровней рёбер/позвонков, стороны и границ каждого мышечного пучка, области начала/прикрепления и относительная глубина. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-thorax_intertransversarii_thoracis",
+      "structure": "thorax_intertransversarii_thoracis",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "Есть поясничные ventral/dorsal intertransversarii и общая подпись Intertransversarii; грудной отдельный меш отсутствует. Связка/поясничная мышца не заменяет грудную.",
+      "blocker": "Нет индивидуально определённых грудных мышечных пучков с уровнями и формой.",
+      "nextStep": "Получить грудные пучки либо подтверждённую разметку их площадок и оболочек. Шейные и поясничные модели нельзя переименовать в грудные.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Не найден принятый грудной исходник. Найденные FMA71442/71443 относятся к шее и не заменяют грудную группу.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть поясничные ventral/dorsal intertransversarii и общая подпись Intertransversarii; грудной отдельный меш отсутствует. Связка/поясничная мышца не заменяет грудную.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Нет индивидуально определённых грудных мышечных пучков с уровнями и формой.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Разметка уровней рёбер/позвонков, стороны и границ каждого мышечного пучка, области начала/прикрепления и относительная глубина. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MG-thorax_sternalis",
+      "structure": "thorax_sternalis",
+      "part": null,
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "observed": "Отдельного sternalis в закреплённом архиве не найдено.",
+      "blocker": "Вариабельные форма, сторона и прикрепления; текущая модель не документирует этот вариант.",
+      "nextStep": "Получить аннотированный случай sternalis с формой, стороной и границами. Параметризация допустима только как явно индивидуальный пример с достаточными пространственными данными.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Карточка варианта сохранена. В проверенных источниках нет принятой геометрии; сам факт термина не делает мышцу обязательной.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Отдельного sternalis в закреплённом архиве не найдено.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "not_attempted_no_identified_region",
+          "description": "Вариабельные форма, сторона и прикрепления; текущая модель не документирует этот вариант.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Конкретный вариант с анатомическим описанием, изображениями, правами, стороной и масштабом. Не генерировать обязательную симметричную структуру. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oculi_right-deep",
+      "structure": "orbicularis_oculi_right",
+      "part": "deep",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+      "blocker": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+      "nextStep": "Получить микроанатомическую сегментацию/геометрию века с обозначением глубокого и ресничного пучков, затем строить маску там, где общая сетка действительно содержит структуру.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Локальные гистологические/объёмные данные глубокой или ресничной части, границы и толщины; наружный меш целой мышцы недостаточен. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json",
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oculi_right-ciliary",
+      "structure": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+      "blocker": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+      "nextStep": "Получить микроанатомическую сегментацию/геометрию века с обозначением глубокого и ресничного пучков, затем строить маску там, где общая сетка действительно содержит структуру.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Локальные гистологические/объёмные данные глубокой или ресничной части, границы и толщины; наружный меш целой мышцы недостаточен. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json",
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oculi_left-deep",
+      "structure": "orbicularis_oculi_left",
+      "part": "deep",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+      "blocker": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+      "nextStep": "Получить микроанатомическую сегментацию/геометрию века с обозначением глубокого и ресничного пучков, затем строить маску там, где общая сетка действительно содержит структуру.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Локальные гистологические/объёмные данные глубокой или ресничной части, границы и толщины; наружный меш целой мышцы недостаточен. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json",
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oculi_left-ciliary",
+      "structure": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+      "blocker": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+      "nextStep": "Получить микроанатомическую сегментацию/геометрию века с обозначением глубокого и ресничного пучков, затем строить маску там, где общая сетка действительно содержит структуру.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Orbital/Palpebral part, но нет самостоятельных pars profunda/fasciculus ciliaris и их vertex groups. Поверхностная сетка не доказывает глубокий пучок.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет размеченной глубины и границ конкретного тонкого пучка; соседние части не являются его заменой.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Локальные гистологические/объёмные данные глубокой или ресничной части, границы и толщины; наружный меш целой мышцы недостаточен. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json",
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-nasalis_right-transverse",
+      "structure": "nasalis_right",
+      "part": "transverse",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+      "blocker": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+      "nextStep": "Разметить анатомическую границу на зарегистрированной общей nasalis по доступным морфологическим/УЗ источникам; использовать маску, сохраняя непрерывную мышцу. Сухожилие не равно автоматически поперечной части.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-nasalis_right-alar",
+      "structure": "nasalis_right",
+      "part": "alar",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+      "blocker": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+      "nextStep": "Разметить анатомическую границу на зарегистрированной общей nasalis по доступным морфологическим/УЗ источникам; использовать маску, сохраняя непрерывную мышцу. Сухожилие не равно автоматически поперечной части.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-nasalis_left-transverse",
+      "structure": "nasalis_left",
+      "part": "transverse",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+      "blocker": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+      "nextStep": "Разметить анатомическую границу на зарегистрированной общей nasalis по доступным морфологическим/УЗ источникам; использовать маску, сохраняя непрерывную мышцу. Сухожилие не равно автоматически поперечной части.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-nasalis_left-alar",
+      "structure": "nasalis_left",
+      "part": "alar",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+      "blocker": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+      "nextStep": "Разметить анатомическую границу на зарегистрированной общей nasalis по доступным морфологическим/УЗ источникам; использовать маску, сохраняя непрерывную мышцу. Сухожилие не равно автоматически поперечной части.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Nasalis muscle.l/.r: 352 вершины/704 треугольника. Материалы Superficial 466/Tendon 238; это не альярная/поперечная сегментация. Vertex groups отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не подтверждена линия раздела pars alaris и pars transversa в авторской или действующей геометрии.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oris-marginal",
+      "structure": "orbicularis_oris",
+      "part": "marginal",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Orbicularis oris muscle.l/.r: 940 вершин/1880 треугольников. Все грани одного материала, vertex groups отсутствуют; двух целевых частей нет.",
+      "blocker": "Нет подтверждённой глубины/границ pars marginalis и pars labialis на имеющейся поверхности.",
+      "nextStep": "Получить анатомическую поверхностно-глубинную разметку и убедиться, что общая сетка содержит обе части; маски предпочтительнее искусственного рассечения.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца присутствует; самостоятельные краевая и губная части не представлены принятой сегментацией.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Orbicularis oris muscle.l/.r: 940 вершин/1880 треугольников. Все грани одного материала, vertex groups отсутствуют; двух целевых частей нет.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет подтверждённой глубины/границ pars marginalis и pars labialis на имеющейся поверхности.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-orbicularis_oris-labial",
+      "structure": "orbicularis_oris",
+      "part": "labial",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Реальные Orbicularis oris muscle.l/.r: 940 вершин/1880 треугольников. Все грани одного материала, vertex groups отсутствуют; двух целевых частей нет.",
+      "blocker": "Нет подтверждённой глубины/границ pars marginalis и pars labialis на имеющейся поверхности.",
+      "nextStep": "Получить анатомическую поверхностно-глубинную разметку и убедиться, что общая сетка содержит обе части; маски предпочтительнее искусственного рассечения.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая мышца присутствует; самостоятельные краевая и губная части не представлены принятой сегментацией.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Реальные Orbicularis oris muscle.l/.r: 940 вершин/1880 треугольников. Все грани одного материала, vertex groups отсутствуют; двух целевых частей нет.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Нет подтверждённой глубины/границ pars marginalis и pars labialis на имеющейся поверхности.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Подтверждённое покрытие родительского меша и анатомические границы частей; индексы граней без искусственного разрыва. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "prior_scoped_evidence_only_not_exhausted",
+          "description": "Сохранённый 3DFACE/MIDA аудит не даёт отдельную целевую метку; полный новый КТ/МРТ поиск и сегментация в этой партии не проводились.",
+          "evidence": [
+            "research/new-muscle-source-audit.json"
+          ]
+        }
+      },
+      "resources": [
+        "research/muscle-completion-review.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-thorax_diaphragm-sternal",
+      "structure": "thorax_diaphragm",
+      "part": "sternal",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+      "blocker": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+      "nextStep": "Проверить смысл и регистрацию авторских insertion patches Z-Anatomy на собственных костях и сухожильной границе; затем проследить подтверждённые территории по непрерывной сетке. Не делить по координатным плоскостям.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Территории прикреплений и границы центрального сухожилия того же образца; не делить по осевым плоскостям. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/thorax-muscle-evidence.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-thorax_diaphragm-costal",
+      "structure": "thorax_diaphragm",
+      "part": "costal",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+      "blocker": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+      "nextStep": "Проверить смысл и регистрацию авторских insertion patches Z-Anatomy на собственных костях и сухожильной границе; затем проследить подтверждённые территории по непрерывной сетке. Не делить по координатным плоскостям.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Территории прикреплений и границы центрального сухожилия того же образца; не делить по осевым плоскостям. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/thorax-muscle-evidence.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-thorax_diaphragm-lumbar",
+      "structure": "thorax_diaphragm",
+      "part": "lumbar",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+      "blocker": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+      "nextStep": "Проверить смысл и регистрацию авторских insertion patches Z-Anatomy на собственных костях и сухожильной границе; затем проследить подтверждённые территории по непрерывной сетке. Не делить по координатным плоскостям.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Diaphragm: 4796 вершин/9592 треугольника; 8403 muscle/1189 Tendon. Есть авторские insertion patches, но нет готовых sternal/costal/lumbar masks или vertex groups.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Материал центрального сухожилия не определяет три мышечные территории прикреплений; не проверено соответствие авторских patches и текущей модели.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Территории прикреплений и границы центрального сухожилия того же образца; не делить по осевым плоскостям. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/thorax-muscle-evidence.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-thorax_multifidus_right-thoracic",
+      "structure": "thorax_multifidus_right",
+      "part": "thoracic",
+      "initialStatus": "заблокирована",
+      "status": "candidate_review_pending",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть отдельные авторские Multifidus thoracis muscle.r/.l: по 1987 вершин, 3902 треугольника, 21 связный пучок. Левая сторона уже зеркальная в исходнике (determinant < 0). Созданы два trial GLB с исправленным winding слева.",
+      "blocker": "Ригидная регистрация по 12 позвонкам получена, но принятие места контакта каждого затронутого пучка не завершено. 12 внутрипучковых пар и межпучковые перекрытия не классифицированы как грубая анатомическая ошибка только по числу. Прямое соответствие границ текущему BP3D multifidus не установлено.",
+      "nextStep": "В сохранённой сцене сопоставить отмеченные контакты с анатомическими площадками задней дуги/отростков и уточнить, допустим ли отдельный учебный выбор авторской части. Для маски исходного BP3D нужен отдельный проверенный перенос/соответствие пучков; nearest-distance или осевой cut для маски недостаточны. Не заменять родителя. Если дефекты фасеток требуют ремонта, исправлять только производную с сохранением основной оболочки и повторной проверкой.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Общий многораздельный ресурс присутствует; принятый отдельный грудной регион/пучки отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "candidate_obtained_and_tested",
+          "description": "Есть отдельные авторские Multifidus thoracis muscle.r/.l: по 1987 вершин, 3902 треугольника, 21 связный пучок. Левая сторона уже зеркальная в исходнике (determinant < 0). Созданы два trial GLB с исправленным winding слева.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "authored_mirror_identified_not_admitted",
+          "description": "Зеркальность исходной левой авторской части установлена; положительная ориентация исправлена только в производной, это не отдельный донор.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-inventory.json"
+          ]
+        },
+        "D": {
+          "status": "authored_separate_part_found_current_parent_mapping_pending",
+          "description": "Ригидная регистрация по 12 позвонкам получена, но принятие места контакта каждого затронутого пучка не завершено. 12 внутрипучковых пар и межпучковые перекрытия не классифицированы как грубая анатомическая ошибка только по числу. Прямое соответствие границ текущему BP3D multifidus не установлено.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Метки позвонков и непрерывных пучков, подтверждённое число перекрытых уровней; общая длина меша не определяет часть. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-registration.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-contact-classification-summary.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-fold-measurements.json",
+        "build_stage7/z_multifidus_trials_v1/provenance.json"
+      ],
+      "trialModel": "build_stage7/z_multifidus_trials_v1/thorax_multifidus_right-thoracic-test.glb"
+    },
+    {
+      "id": "MP-thorax_multifidus_left-thoracic",
+      "structure": "thorax_multifidus_left",
+      "part": "thoracic",
+      "initialStatus": "заблокирована",
+      "status": "candidate_review_pending",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть отдельные авторские Multifidus thoracis muscle.r/.l: по 1987 вершин, 3902 треугольника, 21 связный пучок. Левая сторона уже зеркальная в исходнике (determinant < 0). Созданы два trial GLB с исправленным winding слева.",
+      "blocker": "Ригидная регистрация по 12 позвонкам получена, но принятие места контакта каждого затронутого пучка не завершено. 12 внутрипучковых пар и межпучковые перекрытия не классифицированы как грубая анатомическая ошибка только по числу. Прямое соответствие границ текущему BP3D multifidus не установлено.",
+      "nextStep": "В сохранённой сцене сопоставить отмеченные контакты с анатомическими площадками задней дуги/отростков и уточнить, допустим ли отдельный учебный выбор авторской части. Для маски исходного BP3D нужен отдельный проверенный перенос/соответствие пучков; nearest-distance или осевой cut для маски недостаточны. Не заменять родителя. Если дефекты фасеток требуют ремонта, исправлять только производную с сохранением основной оболочки и повторной проверкой.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Общий многораздельный ресурс присутствует; принятый отдельный грудной регион/пучки отсутствуют.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "candidate_obtained_and_tested",
+          "description": "Есть отдельные авторские Multifidus thoracis muscle.r/.l: по 1987 вершин, 3902 треугольника, 21 связный пучок. Левая сторона уже зеркальная в исходнике (determinant < 0). Созданы два trial GLB с исправленным winding слева.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "authored_mirror_identified_not_admitted",
+          "description": "Зеркальность исходной левой авторской части установлена; положительная ориентация исправлена только в производной, это не отдельный донор.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-inventory.json"
+          ]
+        },
+        "D": {
+          "status": "authored_separate_part_found_current_parent_mapping_pending",
+          "description": "Ригидная регистрация по 12 позвонкам получена, но принятие места контакта каждого затронутого пучка не завершено. 12 внутрипучковых пар и межпучковые перекрытия не классифицированы как грубая анатомическая ошибка только по числу. Прямое соответствие границ текущему BP3D multifidus не установлено.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Метки позвонков и непрерывных пучков, подтверждённое число перекрытых уровней; общая длина меша не определяет часть. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-registration.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-contact-classification-summary.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-multifidus-fold-measurements.json",
+        "build_stage7/z_multifidus_trials_v1/provenance.json"
+      ],
+      "trialModel": "build_stage7/z_multifidus_trials_v1/thorax_multifidus_left-thoracic-test.glb"
+    },
+    {
+      "id": "MP-thorax_rotatores_thoracis-longi",
+      "structure": "thorax_rotatores_thoracis",
+      "part": "longi",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Rotatores.l/.r по 3254 вершины/6518 треугольников, но нет longi/breves label или vertex groups. В каждой стороне один большой связный компонент 6456 граней и небольшой 62-гранный; это не готовое деление по длине пучков.",
+      "blocker": "Не размечены непрерывные пучки и их конечные позвонки. Одно общее имя либо длина bounding box не задаёт longi/breves.",
+      "nextStep": "Получить/разметить окончания каждого пучка и уровни в согласованном костном контексте. Сначала проверить, действительно ли поверхностная сетка сохраняет отдельные пучки, затем применить маски.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая группа доступна; нет принятых меток longi/breves по каждому пучку.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Rotatores.l/.r по 3254 вершины/6518 треугольников, но нет longi/breves label или vertex groups. В каждой стороне один большой связный компонент 6456 граней и небольшой 62-гранный; это не готовое деление по длине пучков.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не размечены непрерывные пучки и их конечные позвонки. Одно общее имя либо длина bounding box не задаёт longi/breves.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Метки позвонков и непрерывных пучков, подтверждённое число перекрытых уровней; общая длина меша не определяет часть. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-bundle-components.json"
+      ],
+      "trialModel": null
+    },
+    {
+      "id": "MP-thorax_rotatores_thoracis-breves",
+      "structure": "thorax_rotatores_thoracis",
+      "part": "breves",
+      "initialStatus": "заблокирована",
+      "status": "blocked_current_inputs",
+      "productionChanged": false,
+      "admitted": false,
+      "allMethodsExhausted": false,
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "observed": "Есть Rotatores.l/.r по 3254 вершины/6518 треугольников, но нет longi/breves label или vertex groups. В каждой стороне один большой связный компонент 6456 граней и небольшой 62-гранный; это не готовое деление по длине пучков.",
+      "blocker": "Не размечены непрерывные пучки и их конечные позвонки. Одно общее имя либо длина bounding box не задаёт longi/breves.",
+      "nextStep": "Получить/разметить окончания каждого пучка и уровни в согласованном костном контексте. Сначала проверить, действительно ли поверхностная сетка сохраняет отдельные пучки, затем применить маски.",
+      "methods": {
+        "A": {
+          "status": "reused_prior_evidence",
+          "description": "Ранее инвентаризированная текущая геометрия и общий родитель сохранены; полный аудит не повторён. Целая группа доступна; нет принятых меток longi/breves по каждому пучку.",
+          "evidence": [
+            "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+            "research/new-muscle-source-audit.json",
+            "research/muscle-completion-review.json",
+            "research/muscle-reconstruction-review.json",
+            "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json",
+            "research/stage7-reconstruction-method-plan-2026-10-22.json"
+          ]
+        },
+        "B": {
+          "status": "targeted_source_inspected_no_exact_target",
+          "description": "Есть Rotatores.l/.r по 3254 вершины/6518 треугольников, но нет longi/breves label или vertex groups. В каждой стороне один большой связный компонент 6456 граней и небольшой 62-гранный; это не готовое деление по длине пучков.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/source-receipt.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-remaining-name-types.json",
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "C": {
+          "status": "conditional_no_accepted_counterpart",
+          "description": "Не выполнено в этой партии: проверенного противоположного отсутствующего экземпляра/целевой маски нет; отражение не создаёт недостающую сегментацию. Для вариантов зеркальность не предполагается.",
+          "evidence": []
+        },
+        "D": {
+          "status": "inspected_source_no_target_labels",
+          "description": "Не размечены непрерывные пучки и их конечные позвонки. Одно общее имя либо длина bounding box не задаёт longi/breves.",
+          "evidence": [
+            "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-target-arrays-v2.json"
+          ]
+        },
+        "E": {
+          "status": "not_attempted_specific_inputs_missing",
+          "description": "Метки позвонков и непрерывных пучков, подтверждённое число перекрытых уровней; общая длина меша не определяет часть. Новый произвольный объём не создавался; метод не объявляется исчерпанным.",
+          "evidence": []
+        },
+        "F": {
+          "status": "not_attempted_specific_dataset_not_identified",
+          "description": "Лицензированные изображения с конкретной целевой разметкой в этой партии не получены; отсутствие результата не доказывает отсутствие набора в мире.",
+          "evidence": []
+        }
+      },
+      "resources": [
+        "research/stage7-muscle-batch2-decisions-2026-10-21.json",
+        "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/z-bundle-components.json"
+      ],
+      "trialModel": null
+    }
+  ]
+}

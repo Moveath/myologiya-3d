@@ -420,14 +420,34 @@ dt .term { text-decoration-color: var(--ink-2); }
   .pinlabel { max-width:200px; }
 }
 @media (min-width:900px) { .quality-hint { display:none; } }
+.systems { flex-wrap:wrap; }
+.systems button[aria-pressed="true"] { box-shadow:inset 0 -3px var(--teal); }
+#systemStatus { display:block; max-width:720px; margin:4px 0; font-size:12px; }
+.card-opacity { display:flex;align-items:center;gap:10px;flex-wrap:wrap; }
+.card-opacity input { max-width:180px; }
+.cv-links { display:grid;gap:6px; }
+.cv-links .chip,#sheet[data-system-card="true"] .chip { white-space:normal;text-align:left;line-height:1.4;overflow-wrap:anywhere;max-width:100%; }
+.list-filters { flex-wrap:wrap; }
+.cv-entry { margin:12px 0; }
 </style>
 
 <script>{const theme=new URLSearchParams(location.search).get("theme");if(["light","dark"].includes(theme))document.documentElement.dataset.theme=theme;}</script>
 <script type="importmap">
-{ "imports": {
-  "three": "./vendor/three/build/three.module.js",
-  "three/addons/": "./vendor/three/examples/jsm/"
-} }
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.js",
+    "three/addons/": "./vendor/three/examples/jsm/",
+    "./atlas-catalogue.js": "./atlas-catalogue.js?v=bb155d25f659265f",
+    "./atlas-controls.js": "./atlas-controls.js?v=a96a77ffe3f4435f",
+    "./atlas-landmarks.js": "./atlas-landmarks.js?v=de615ef467e293dc",
+    "./atlas-model-sides.js": "./atlas-model-sides.js?v=655605c994463dae",
+    "./atlas-performance.js": "./atlas-performance.js?v=005f155b9e134da6",
+    "./atlas-regions.js": "./atlas-regions.js?v=697983bf111c0747",
+    "./atlas-runtime.js": "./atlas-runtime.js?v=3ea79796e7f78014",
+    "./atlas-systems.js": "./atlas-systems.js?v=c88a09f2c3801399",
+    "./atlas-visibility.js": "./atlas-visibility.js?v=2a5af956d8b0c670"
+  }
+}
 </script>
 
 <div id="app">
@@ -463,6 +483,7 @@ dt .term { text-decoration-color: var(--ink-2); }
     </div>
     <div class="row" id="displayControls">
       <div class="settings-heading"><span>Настройки вида</span><button class="x" id="closeOptions" aria-label="Закрыть настройки">✕</button></div>
+      <div class="seg systems" id="systemControls" role="group" aria-label="Анатомические системы"></div>
       <div class="seg" role="group" aria-label="Сторона тела" title="Стороны тела человека. Срединные и неразделённые модели сохраняются.">
         <span class="cap">Сторона</span>
         <button data-side-view="both" aria-pressed="true">Обе</button>
@@ -474,17 +495,19 @@ dt .term { text-decoration-color: var(--ink-2); }
         <button data-peel="0" aria-pressed="true" title="Все мышцы">Все</button>
         <button data-peel="1" aria-pressed="false" title="Снять поверхностный слой">−1</button>
         <button data-peel="2" aria-pressed="false" title="Снять два слоя">−2</button>
-        <button data-peel="3" aria-pressed="false" title="Только кости">Кости</button>
+        <button data-peel="3" aria-pressed="false" title="Скрыть скелетные мышцы; другие системы управляются отдельно">Без мышц</button>
       </div>
       <button class="chip nocheck" id="bView" title="Повернуть модель другой стороной">
         <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span id="viewLabel">Повернуть</span>
       </button>
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
+      <button class="chip" id="bRegions" aria-pressed="true" hidden title="Показывать только размеченные участки выбранного ориентира">Область ориентира</button>
       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
       <button class="chip" id="bContext" aria-pressed="true" title="Показать или скрыть окружающие полупрозрачные структуры; выбранная группа остаётся">Окружение</button>
       <button class="chip" id="bMuscleBones" aria-pressed="false" title="При выборе мышцы оставить только кости, указанные в её прикреплениях; при изоляции показывать их вместе с мышцей">Кости мышцы</button>
       <p class="quality-hint" id="sideViewNote" hidden></p>
+      <p id="systemStatus" hidden role="status"></p>
       <button class="chip nocheck" id="bHeadDetail" hidden>Учебные группы</button>
       <button class="chip" id="bHeadCut" hidden aria-pressed="false" aria-controls="headCutControls">Срез черепа</button>
       <button class="chip restore" id="bRestore">Вернуть все</button>
@@ -511,11 +534,12 @@ dt .term { text-decoration-color: var(--ink-2); }
 
   <aside class="drawer" id="drawer" hidden aria-label="Список структур">
     <div class="dhead">
-      <input id="q" type="search" placeholder="Мышца, кость или образование кости, по-русски или по-латыни" autocomplete="off" aria-label="Поиск">
+      <input id="q" type="search" placeholder="Кость, мышца, сердце или сосуд · русский / латынь" autocomplete="off" aria-label="Поиск">
       <button class="x" id="bCloseList" aria-label="Закрыть список"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="seg list-filters" role="group" aria-label="Тип структур">
       <button data-list-type="all" aria-pressed="true">Все</button><button data-list-type="bones" aria-pressed="false">Кости</button><button data-list-type="muscles" aria-pressed="false">Мышцы</button>
+      <button data-list-type="heart" aria-pressed="false">Сердце</button><button data-list-type="arteries" aria-pressed="false">Артерии</button><button data-list-type="veins" aria-pressed="false">Вены</button>
     </div>
     <p class="hint" id="catalogueScope" style="padding:0 18px"></p>
     <div class="dlist" id="dlist"></div>
@@ -611,37 +635,55 @@ dt .term { text-decoration-color: var(--ink-2); }
   <div class="toast" id="toast" hidden></div>
 </div>
 
-<script src="data.js"></script>
-<script src="data-leg.js"></script>
-<script src="data-head.js"></script>
-<script src="data-neck.js"></script>
-<script src="data-thorax.js"></script>
-<script src="data-context-bones.js"></script>
-<script src="pins.js"></script>
-<script src="pins-leg.js"></script>
-<script src="pins-head.js"></script>
-<script src="pins-head-extra.js"></script>
-<script src="pins-neck.js"></script>
-<script src="pins-thorax.js"></script>
-<script src="pins-context-bones.js"></script>
-<script src="pins-shared.js"></script>
-<script src="skull-evidence-index.js"></script>
-<script src="skull-geometry-index.js"></script>
-<script src="bodymap.js"></script>
-<script src="atlas-runtime.js"></script>
+<script src="data.js?v=35b595d0df8e437c"></script>
+<script src="data-leg.js?v=4343fd9ba0384313"></script>
+<script src="data-head.js?v=d9516de651fd7d72"></script>
+<script src="data-neck.js?v=70c566e9ac12700d"></script>
+<script src="data-thorax.js?v=35b57ba46277062c"></script>
+<script src="data-context-bones.js?v=3259fad369129a31"></script>
+<script src="data-muscle-recovery.js?v=aa8d08d9f3d9f48f"></script>
+<script src="data-neck-recovery.js?v=b47c80938b7c2397"></script>
+<script src="data-cardiovascular.js?v=5eaaec7eeb903b28"></script>
+<script src="pins.js?v=c826508dd87c030a"></script>
+<script src="pins-leg.js?v=81208d5c89673f9c"></script>
+<script src="pins-head.js?v=eaa2f90fa3e09dee"></script>
+<script src="pins-head-extra.js?v=fb58984e585ed632"></script>
+<script src="pins-neck.js?v=5a50445603dfbea8"></script>
+<script src="pins-thorax.js?v=92ba853dc5aab431"></script>
+<script src="pins-context-bones.js?v=81600119f8a2b31f"></script>
+<script src="pins-shared.js?v=92679c680c15e094"></script>
+<script src="skull-evidence-index.js?v=17c47a1bcb56bdb7"></script>
+<script src="skull-geometry-index.js?v=a7e433caf1dd27e5"></script>
+<script src="bodymap.js?v=0039038032b7048e"></script>
+<script src="atlas-runtime.js?v=3ea79796e7f78014"></script>
+<script>window.__atlasRuntime.watchStartup();</script>
 <script type="module" onerror="window.__atlasRuntime?.fail('module')">
 import * as THREE from 'three';
-import { AtlasOrbitControls as OrbitControls } from './atlas-controls.js';
+import { AtlasOrbitControls as OrbitControls, framingBasis } from './atlas-controls.js?v=a96a77ffe3f4435f';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
-import { prepareRaycasts, createRenderQuality } from './atlas-performance.js?v=mobile-20261013';
-import { indexLandmarks, relatedBoneIds, isSharedLandmark, landmarkBelongsTo, isOwnBoneTerm, landmarkSearchOwner, contributingBoneIds, hasLandmarkPosition, relationLabel } from './atlas-landmarks.js';
-import { structureSide, sideAllows, muscleBoneIds, selectionVisibility } from './atlas-visibility.js';
-import { normalizeSearch, catalogueMatches, typicalThumbSesamoid, catalogueVariant, musclePartLatin, upperLimbCoverage } from './atlas-catalogue.js';
+import { prepareRaycasts, createRenderQuality } from './atlas-performance.js?v=005f155b9e134da6';
+import { indexLandmarks, relatedBoneIds, isSharedLandmark, landmarkBelongsTo, isOwnBoneTerm, landmarkSearchOwner, contributingBoneIds, hasLandmarkPosition, relationLabel } from './atlas-landmarks.js?v=de615ef467e293dc';
+import { structureSide, sideAllows, muscleBoneIds, selectionVisibility } from './atlas-visibility.js?v=2a5af956d8b0c670';
+import { normalizeSearch, catalogueMatches, typicalThumbSesamoid, catalogueVariant, musclePartLatin, upperLimbCoverage } from './atlas-catalogue.js?v=bb155d25f659265f';
+import { AnatomicalRegions, sha256 } from './atlas-regions.js?v=697983bf111c0747';
+import { ANATOMICAL_SYSTEMS, systemOf, systemDefaults, structureRelations, admittedModel } from './atlas-systems.js?v=c88a09f2c3801399';
+
+let anatomicalRegions = null;
+let regionManifestPromise = null;
+let regionLoadError = '';
+async function prepareAnatomicalRegions(structures, sourceHash) {
+  try {
+    regionManifestPromise ||= fetch('skull-region-masks.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();});
+    anatomicalRegions ||= new AnatomicalRegions(await regionManifestPromise,THREE);
+    await anatomicalRegions.prepare(structures,sourceHash);
+  } catch(e) {regionLoadError='Разметка временно недоступна; сохранён обычный маркер.';console.warn('Anatomical regions:',e.message);}
+}
 
 const A = window.ATLAS;
+const cardOf = id => A.muscles[id] || A.bones[id] || A.structures?.[id];
 const $ = (s) => document.querySelector(s);
-const groupById = Object.fromEntries(A.groups.concat(A.boneGroups).map(g => [g.id, g]));
+const groupById = Object.fromEntries(A.groups.concat(A.boneGroups,A.structureGroups || []).map(g => [g.id, g]));
 const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -702,7 +744,7 @@ const SECTIONS = [
       { id: 'forearm', ru: 'Предплечье', hint: 'От локтя до запястья', v: 'ant' },
       { id: 'hand', ru: 'Кисть', hint: 'Запястье, ладонь и пальцы', v: 'ant' }
     ] },
-  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и нижние конечности; 3D слева неполное', ready: true, file: 'leg', extraFile: 'leg-extra', supplementalBones: ['femur_left', 'patella_left', 'tibia_left', 'fibula_left'],
+  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и нижние конечности; 3D слева неполное', ready: true, file: 'leg', extraFile: 'leg-extra', supplementalBones: ['femur_left', 'patella_left', 'tibia_left', 'fibula_left','navicular_left','cuneiform_med_left','cuneiform_int_left','sesamoid_pedis_left','toe_prox_2_left','toe_prox_3_left','toe_prox_4_left','toe_mid_2_left','toe_mid_3_left','toe_mid_4_left','toe_dist_2_left','toe_dist_3_left','toe_dist_4_left'],
     tries: ['gluteus_maximus', 'quadriceps_femoris', 'triceps_surae'],
     subs: [
       { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и нижние конечности; 3D слева неполное', v: 'antlat' },
@@ -713,14 +755,17 @@ const SECTIONS = [
       { id: 'foot', ru: 'Стопа', hint: 'Пятка, свод и пальцы', v: 'footv' }
     ] }
 ];
+for (const S of SECTIONS) if ((A.structureGroups || []).some(g=>g.sec===S.id))
+  S.subs.push({id:'cardiovascular',ru:'Сердце и сосуды',hint:'Доступные сердечно-сосудистые структуры; системы включаются независимо',v:'ant'});
 const SEC = Object.fromEntries(SECTIONS.map(s => [s.id, s]));
 const secOf = (id) => {
-  const d = A.muscles[id] || A.bones[id];
+  const d = cardOf(id);
   return d ? groupById[d.g].sec : null;
 };
 const regionOf = (id) => groupById[A.muscles[id].g].region;
 // which subsection a structure belongs to (arm muscles of the chest and back live with the shoulder girdle)
 function subOf(id) {
+  if (A.structures?.[id]) return A.structures[id].sub;
   if (A.muscles[id]) { const r = regionOf(id); return r === 'trunk' ? 'shoulder' : r; }
   return A.bones[id] ? A.bones[id].sub : null;
 }
@@ -803,12 +848,14 @@ const prefs = (() => { try { return JSON.parse(localStorage.getItem('myo3d') || 
 const savePrefs = () => { try { localStorage.setItem('myo3d', JSON.stringify(prefs)); } catch (e) { /* storage unavailable */ } };
 
 const state = {
+  systems: systemDefaults(prefs.systems), opacity: {},
   sec: null, subs: Object.assign({}, prefs.subs || {}),
   peel: [0, 1, 2, 3].includes(prefs.peel) ? prefs.peel : 0,
   trunk: !!prefs.trunk,
   sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
   boneColors: prefs.boneColors !== false,
+  regionHighlight: prefs.regionHighlight !== false,
   context: prefs.context !== false,
   sides: Object.assign({}, prefs.sides || {}), muscleBones: prefs.muscleBones === true,
   quality: ['auto','detail','battery'].includes(prefs.quality) ? prefs.quality : 'auto',
@@ -818,7 +865,7 @@ const state = {
 };
 const curSub = () => (state.sec && state.subs[state.sec]) || 'all';
 const curSide = () => ['left','right'].includes(state.sides[state.sec]) ? state.sides[state.sec] : 'both';
-const sideOf = id => structureSide(state.sec, id, A.muscles[id] || A.bones[id]);
+const sideOf = id => structureSide(state.sec, id, cardOf(id));
 
 // ---------- landmark pins (data) ----------
 const PINS = A.pins || [];
@@ -976,6 +1023,8 @@ function updateBoneColorControls() {
   $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
   $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
   $('#bBoneLegend').hidden = !colored || quiz || !state.boneColors;
+  $('#bRegions').hidden = !head || quiz;
+  $('#bRegions').setAttribute('aria-pressed',String(state.regionHighlight));
   $('#bHeadDetail').hidden = !colored || quiz;
   $('#bHeadDetail').textContent = head ? 'Учебные группы' : 'Каталог костей и мышц';
 }
@@ -1004,7 +1053,11 @@ async function fetchModel(file) {
     progressSink(Math.min(98, Math.round(100 * e.loaded / total)));
   };
   const fetchText = (url) => new Promise((res, rej) => files.load(url, res, onProgress, rej));
-  const parse = (buf) => new Promise((res, rej) => loader.parse(buf, '', res, rej));
+  const parse = async (buf) => {
+    const gltf=await new Promise((res, rej) => loader.parse(buf, '', res, rej));
+    if(file==='head')gltf.scene.userData.regionSourceHash=await sha256(buf);
+    return gltf;
+  };
   try {
     await MeshoptDecoder.ready;
     loader.setMeshoptDecoder(MeshoptDecoder);
@@ -1019,7 +1072,7 @@ async function register(gltf, section) {
   gltf.scene.traverse(o => {
     if (!o.isMesh) return;
     let n = o;
-    while (n && !/^[mboc]\|/.test(n.name)) n = n.parent;
+    while (n && !/^[mbocs]\|/.test(n.name)) n = n.parent;
     if (!n) return;
     const [kind, key, part] = n.name.split('|');
     // Existing BP3D boundary bones keep their canonical owners across C7–T1.
@@ -1028,12 +1081,13 @@ async function register(gltf, section) {
     const id = contextOwner || (kind === 'c' ? 'context:' + key : key);
     let s = map.get(id);
     if (!s) {
-      s = { id, kind, contextBone: !!contextOwner, meshes: [], data: kind === 'm' ? A.muscles[key] : (A.bones[id] || null) };
+      s = { id, kind, contextBone: !!contextOwner, meshes: [], data: cardOf(id) || null };
       s.side = structureSide(section, id, s.data);
       map.set(id, s);
     }
     let mat;
     if (kind === 'm') mat = new THREE.MeshStandardMaterial({ color: muscleColor(id), roughness: 0.5, metalness: 0 });
+    else if (kind === 's') mat = new THREE.MeshStandardMaterial({color:ANATOMICAL_SYSTEMS[s.data.system].color,roughness:0.6,metalness:0,side:THREE.DoubleSide});
     else if (kind === 'b' || contextOwner) mat = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.72, metalness: 0 });
     else if (kind === 'o') mat = new THREE.MeshStandardMaterial({ color: SOFT, roughness: 0.45, metalness: 0, transparent: true, opacity: 0.85 });
     else mat = new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.8, transparent: true, opacity: 0.24, depthWrite: false });
@@ -1043,6 +1097,7 @@ async function register(gltf, section) {
     o.renderOrder = o.userData.order;
     s.meshes.push(o);
   });
+  if(section==='head')await prepareAnatomicalRegions(map,gltf.scene.userData.regionSourceHash);
   return { group: gltf.scene, structs: map };
 }
 async function fetchSupplementalBone(id) {
@@ -1060,10 +1115,29 @@ async function fetchSupplementalBone(id) {
   if (!meshes) throw new Error(`Пустая модель ${id}`);
   return gltf;
 }
+async function fetchSupplementalMuscle(id) {
+  const card = A.muscles[id];
+  if (!card || card.noModel || card.modelStatus !== 'educational_limited' || !card.modelFile)
+    throw new Error(`Нет допуска дополнительной мышцы ${id}`);
+  const response = await fetch(card.modelFile);
+  if (!response.ok) throw new Error(`Не удалось загрузить мышцу ${id}: HTTP ${response.status}`);
+  const gltf = await new GLTFLoader().parseAsync(await response.arrayBuffer(), '');
+  let meshes = 0;
+  gltf.scene.traverse(o => {
+    if (!o.isMesh) return;
+    let owner = o;
+    while (owner && !owner.name.startsWith('m|')) owner = owner.parent;
+    if (owner?.name !== `m|${id}|`) throw new Error(`Неверный владелец мышцы ${id}`);
+    meshes++;
+  });
+  if (!meshes) throw new Error(`Пустая модель мышцы ${id}`);
+  return gltf;
+}
 function loadSection(id) {
   if (models[id]) return Promise.resolve(models[id]);
   if (!loading[id]) loading[id] = Promise.all([fetchModel(SEC[id].file), SEC[id].extraFile ? fetchModel(SEC[id].extraFile) : null,
-    Promise.all((SEC[id].supplementalBones || []).map(fetchSupplementalBone))]).then(([main,extra,supplements])=>{
+    Promise.all((SEC[id].supplementalBones || []).map(fetchSupplementalBone)),
+    Promise.all((A.supplementalMuscles?.[id] || []).map(fetchSupplementalMuscle))]).then(([main,extra,supplements,muscles])=>{
     if(extra){
       const replaced=new Set(Object.values(A.contextBoneSources||{}).filter(x=>x.sec===id).map(x=>x.sourceId));
       const remove=[];
@@ -1072,22 +1146,69 @@ function loadSection(id) {
       main.scene.add(extra.scene);
     }
     supplements.forEach(gltf => main.scene.add(gltf.scene));
+    muscles.forEach(gltf => main.scene.add(gltf.scene));
     return register(main, id);
   }).then(model => (models[id] = model)).catch(e => { loading[id] = null; throw e; });
   return loading[id];
 }
+
+// Lazy supplemental systems never prevent the bone/muscle atlas from opening.
+const systemLoading={},systemErrors=new Map();
+async function ensureSystemModels(section) {
+  if(!models[section])return;
+  if(systemLoading[section])return systemLoading[section];
+  const ids=Object.entries(A.structures||{}).filter(([id,d])=>secOf(id)===section&&admittedModel(d)&&!models[section].structs.has(id)).map(([id])=>id);
+  if(!ids.length)return;
+  $('#systemStatus').hidden=false;$('#systemStatus').textContent='Загрузка сердца и сосудов…';
+  systemLoading[section]=(async()=>{
+    let cursor=0;
+    await Promise.all(Array.from({length:Math.min(3,ids.length)},async()=>{
+      while(cursor<ids.length) {
+        const id=ids[cursor++],card=A.structures[id];
+        try {
+          const response=await fetch(card.modelFile,{signal:AbortSignal.timeout(20000)});
+          if(!response.ok)throw Error('HTTP '+response.status);
+          const gltf=await new GLTFLoader().parseAsync(await response.arrayBuffer(),'');let count=0;
+          gltf.scene.traverse(o=>{if(!o.isMesh)return;let n=o;while(n&&!n.name.startsWith('s|'))n=n.parent;if(n?.name!=='s|'+id)throw Error('Неверный владелец модели');count++;});
+          if(!count)throw Error('Пустая модель');
+          const extra=await register(gltf,section);
+          models[section].group.add(extra.group);
+          for(const [key,s]of extra.structs)models[section].structs.set(key,s);
+          systemErrors.delete(id);
+        } catch(error) {systemErrors.set(id,error.message);console.warn('Cardiovascular model:',id,error.message);}
+      }
+    }));
+  })();
+  try{await systemLoading[section];}finally{delete systemLoading[section];}
+  if(state.sec===section){applyVisibility();renderSheet();if(curSub()==='cardiovascular'&&!state.sel)frameSub(false);}
+  const failed=ids.filter(id=>systemErrors.has(id));
+  $('#systemStatus').hidden=!failed.length;
+  $('#systemStatus').textContent=failed.length?`Не загружено моделей: ${failed.length}. Карточки доступны; повторите загрузку из карточки.`:'';
+}
+async function setSystem(key,enabled) {
+  if(!ANATOMICAL_SYSTEMS[key])return;
+  state.systems[key]=!!enabled;prefs.systems={...state.systems};savePrefs();
+  const selected=structs.get(state.sel);
+  if(!enabled&&selected&&systemOf(selected)===key){state.sel=null;state.selPart=null;state.pin=null;state.isolate=null;}
+  applyVisibility();renderSheet();
+  if(enabled&&['heart','arteries','veins'].includes(key)&&state.sec)await ensureSystemModels(state.sec);
+}
+$('#systemControls').innerHTML=Object.entries(ANATOMICAL_SYSTEMS).map(([key,s])=>`<button data-system="${key}" aria-pressed="${state.systems[key]}">${esc(s.label)}</button>`).join('');
+$('#systemControls').addEventListener('click',event=>{const b=event.target.closest('[data-system]');if(b)setSystem(b.dataset.system,!state.systems[b.dataset.system]);});
 
 // ---------- visibility, highlight ----------
 // in the quiz each question peels down to the target's own layer; otherwise the user's setting applies
 const effPeel = () => (state.mode === 'quiz' && state.quiz.target ? state.quiz.peel : state.peel);
 // 2 = shown, 1 = faint context (bones outside the subsection), 0 = hidden
 function baseVisState(s, policy) {
+  if (!state.systems[systemOf(s)]) return 0;
   const explicit = selectionVisibility(s, policy);
   if (explicit !== null) return explicit;
   const sub = curSub();
   const S = SEC[state.sec];
+  if(s.kind==='s') return sub==='all'||sub==='cardiovascular'?2:0;
   if (s.kind === 'c') return state.sec === 'head' ? (sub === 'neurocranium' ? 0 : 2) : state.sec === 'neck' ? (sub === 'cervical' ? 0 : 2) : state.sec === 'trunk' ? (['ribs','sternum'].includes(sub) ? 0 : 2) : (sub === 'all' || ['shoulder','pelvis','lumbar'].includes(sub) ? 2 : 0);
-  const inSub = sub === 'all' || subOf(s.id) === sub;
+  const inSub = sub === 'all' || sub === 'cardiovascular' || subOf(s.id) === sub;
   if (s.kind === 'm') {
     if (state.hidden.has(s.id)) return 0;
     if (s.data.g === 'trunk' && !state.trunk) return 0;
@@ -1122,11 +1243,16 @@ function applyVisibility() {
       const ghost = s.kind === 'b' && boneColorsActive() ? headBoneGhosts[headBoneKey(s.id)] || GHOST : GHOST;
       const contextOnly = s.contextBone && s.kind === 'c';
       m.material = contextOnly ? m.userData.contextMat : v === 1 ? ghost : xray ? XRAY : m.userData.mat;
+      if(m.material===m.userData.mat) {
+        const opacity=state.opacity[s.id]??(s.kind==='o'?.85:1);
+        m.material.opacity=opacity;m.material.transparent=opacity<1;m.material.depthWrite=opacity>=1;
+      }
       m.renderOrder = contextOnly || v === 1 || xray ? 2 : m.userData.order;
       if (v === 2 && s.kind !== 'c') pickables.push(m);
     }
   }
   document.querySelectorAll('[data-peel]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.peel === state.peel)));
+  document.querySelectorAll('[data-system]').forEach(b=>b.setAttribute('aria-pressed',String(state.systems[b.dataset.system])));
   $('#bTrunk').setAttribute('aria-pressed', String(state.trunk));
   $('#bContext').setAttribute('aria-pressed', String(state.context));
   $('#bMuscleBones').setAttribute('aria-pressed', String(state.muscleBones));
@@ -1159,12 +1285,13 @@ function paint() {
       const coloredBone = s.kind === 'b' && boneColorsActive() && headBoneColors[headBoneKey(s.id)];
       // a chosen part glows fully; the rest of the same muscle gets a faint tint
       const full = !selPart || m.userData.part === selPart;
-      if (on && coloredBone) { mat.color.copy(base).lerp(WHITE, 0.12); mat.emissive.copy(base).multiplyScalar(0.16); }
+      if (on && coloredBone) { mat.color.copy(base).lerp(WHITE, 0.28); mat.emissive.copy(base).multiplyScalar(0.24); }
       else if (on) { mat.color.copy(base).lerp(HL, full ? 0.62 : 0.2); mat.emissive.copy(HL).multiplyScalar(full ? 0.28 : 0.03); }
       else if (hov) { mat.color.copy(base); mat.emissive.setRGB(0.09, 0.09, 0.09); }
       else { mat.color.copy(base); mat.emissive.setRGB(0, 0, 0); }
     }
   }
+  anatomicalRegions?.update(state.pin,state.sec==='head'&&state.mode!=='quiz'&&state.regionHighlight,curSide());
   requestRender();
 }
 
@@ -1191,8 +1318,7 @@ function frameBox(box, viewKey, instant, minSize = 0) {
     : viewKey ? new THREE.Vector3(...VIEWS[viewKey]).normalize()
     : camera.position.clone().sub(controls.target).normalize();
   // fit the box's projected extent into the free part of the screen
-  const right = new THREE.Vector3().crossVectors(new THREE.Vector3(0, 1, 0), dir).normalize();
-  const up = new THREE.Vector3().crossVectors(dir, right).normalize();
+  const {right,up} = framingBasis(dir);
   const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
   const tanY = tanV * freeArea.h / freeArea.H, tanX = tanV * freeArea.w / freeArea.H;
   let dist = 0;
@@ -1473,6 +1599,10 @@ for(const [id,sign] of [['subPrev',-1],['subNext',1]]) $('#'+id).addEventListene
 function setSub(sub, opts = {}) {
   if (!state.sec) return;
   state.subs[state.sec] = sub;
+  if(sub==='cardiovascular') {
+    for(const key of ['heart','arteries','veins'])state.systems[key]=true;
+    ensureSystemModels(state.sec);
+  }
   prefs.subs = Object.assign({}, prefs.subs || {}, { [state.sec]: sub }); savePrefs();
   state.isolate = null;
   if (!opts.keepSel && state.sel && structs.has(state.sel) && sub !== 'all' && subOf(state.sel) !== sub) { state.sel = null; state.selPart = null; state.pin = null; }
@@ -1489,12 +1619,14 @@ const sheet = $('#sheet');
 function makeVisible(id, reveal) {
   const s = structs.get(id);
   if (!s) return;
+  state.systems[systemOf(s)]=true;
   if (state.isolate && state.isolate !== id) state.isolate = null;
   state.hidden.delete(id);
   const sub = subOf(id);
   if (curSub() !== 'all' && sub && sub !== curSub()) setSub(sub, { noFrame: true, keepSel: true, silent: true, fromQuiz: true });
   const setPeel = (p) => { state.peel = p; prefs.peel = p; savePrefs(); };
-  if (s.kind === 'm') {
+  if (s.kind === 's') { /* System visibility is independent of skeletal muscle layers. */ }
+  else if (s.kind === 'm') {
     if (s.data.g === 'trunk' && !state.trunk) { state.trunk = true; prefs.trunk = true; savePrefs(); }
     if (reveal || s.data.d <= state.peel) setPeel(s.data.d - 1);
   } else if (SOFT_DEPTH[id]) { if (state.peel >= SOFT_DEPTH[id]) setPeel(0); }
@@ -1515,7 +1647,7 @@ function select(id, part, fly, keepPin) {
     state.sides[state.sec] = side; prefs.sides = state.sides; savePrefs();
   }
   hideGloss();
-  const d0 = id ? (structs.get(id) || {}).data || A.muscles[id] || A.bones[id] : null;
+  const d0 = id ? (structs.get(id) || {}).data || cardOf(id) : null;
   state.selPart = part && d0 && d0.parts && d0.parts[part] ? part : null;
   if (id && structs.has(id)) {
     makeVisible(id, fly);
@@ -1541,6 +1673,7 @@ async function goTo(id, part, pinId) {
   const sec = secOf(id);
   if (sec && sec !== state.sec) { const ok = await enterSection(sec, { noFrame: true }); if (!ok) return; }
   if (state.mode === 'quiz') setMode('study');
+  if(A.structures?.[id]) {state.systems[A.structures[id].system]=true;await ensureSystemModels(sec);}
   select(id, part || null, true);
   if(!wide()) setMobilePanel('card',true);
   if (pinId) {
@@ -1565,13 +1698,15 @@ function muscleChips(ap, skipId) {
 }
 
 function renderSheet() {
+  delete sheet.dataset.systemCard;
   syncMobileSelection();
   if (!state.sec) { sheet.innerHTML = ''; return; }
   if (state.mode === 'quiz') return renderQuiz();
   const S = SEC[state.sec];
   const id = state.sel;
   const s = id ? structs.get(id) : null;
-  const d = s ? s.data : (id && (A.muscles[id] || A.bones[id])) || null;
+  const d = s ? s.data : (id && cardOf(id)) || null;
+  if(d?.system)return renderSystemCard(id,d,s);
   if (!d) {
     sheet.dataset.state = 'peek';
     const c = secCounts(state.sec);
@@ -1620,6 +1755,7 @@ function renderSheet() {
       </div>
       <p>${glossify(esc(ap.x), used)}</p>
       ${geometryKindMeta(ap)}
+      ${regionSelectionMeta(ap)}
       ${ap.lateralityReview?.note ? `<p class="landmark-laterality" data-laterality="${esc(ap.lateralityReview.pattern)}">${esc(ap.lateralityReview.note)}</p>` : ''}
       ${ap.modelNote ? `<div class="note"${ap.geometryRequirements?.status==='unverified_extent'?' data-geometry-status="unverified_extent"':''}>${ap.geometryRequirements?.status==='unverified_extent'?'<b>Геометрия не принята. Ограничения и необходимые доказательства:</b><br>':''}${esc(ap.modelNote)}</div>` : ''}
       ${geometryReviewLink(ap)}${detailLinks(ap)}
@@ -1690,6 +1826,7 @@ function renderSheet() {
       ${isMuscle&&state.sec==='head'?`<div class="linkrow"><button class="chip" data-detail-mode="education" data-detail-part="attachment:${esc(id+(state.selPart?':'+state.selPart:''))}">Области начала и прикрепления: что известно ↗</button>${(p?p.noModel:noModel)?`<button class="chip" data-detail-mode="education" data-detail-part="muscle:${esc(id+(state.selPart?':'+state.selPart:''))}">Учебный вид и ограничения модели ↗</button>`:''}</div>`:''}
       ${note ? `<div class="note">${glossify(esc(note), used)}</div>` : ''}
       ${note?sourceLinks(p?.noteRefs||d.noteRefs):''}
+      ${isMuscle&&d.relatedMuscles?.length?`<div class="sect"><h3>Связанные мышечные структуры</h3><div class="linkrow">${d.relatedMuscles.filter(key=>A.muscles[key]).map(key=>`<button class="chip" data-go="${esc(key)}">${esc(A.muscles[key].ru)}</button>`).join('')}</div></div>`:''}
       ${id==='sacrum'?`<div class="linkrow"><button class="chip" data-pinid="coc_os_coccygis">Копчик · os coccygis</button></div>`:''}
       ${d.sub==='lumbar'?lumbarScope():''}
       ${d.features?.length?`<div class="sect"><h3>Анатомические образования</h3><p class="hint">Каталог строения. Отдельная геометрия и координаты этих образований не заявлены.</p>${d.features.map(f=>`<details class="field-sources"><summary>${esc(f.ru)} · <i>${esc(f.lat)}</i></summary><p class="tacode">TA98 ${esc(f.code)}</p><p>${esc(f.x)}</p>${f.note?`<p class="note">${esc(f.note)}</p>`:''}${sourceLinks(f.refs)}</details>`).join('')}</div>`:''}
@@ -1699,6 +1836,27 @@ function renderSheet() {
   afterSheet();
 }
 // TA98 code, group and constancy of a point
+function renderSystemCard(id,d,s) {
+  const loaded=!!s?.meshes.length,links=structureRelations(id,A.structures);
+  sheet.dataset.state='full';
+  sheet.dataset.systemCard='true';
+  sheet.innerHTML=`<div class="sheet-head"><p class="hint">${esc(ANATOMICAL_SYSTEMS[d.system].label)} · ${d.side==='left'?'слева':d.side==='right'?'справа':'срединная / неразделённая структура'}</p><h2>${esc(d.ru)}</h2><p class="latin">${esc(d.lat)}</p></div>
+    <p class="note">${loaded?'Учебная модель. Точные границы, просветы и соединения не подтверждены.':'Отдельная принятая геометрия отсутствует.'}</p>
+    <details class="field-sources"><summary>Границы достоверности модели</summary><p>${esc(d.modelNote)}${d.modelScope?' '+esc(d.modelScope):''}</p><p>Цвет обозначает категорию, а не насыщение крови кислородом.</p></details>
+    ${!loaded?`<p class="hint">${d.noModel?'Только карточка: геометрия не подключена.':systemErrors.has(id)?'Модель не загрузилась.':'Модель ещё загружается.'}</p>`:''}
+    ${d.factsNote?`<p class="hint">${esc(d.factsNote)}</p>`:''}
+    <div class="acts">${loaded?`<button class="act" id="bIso">${state.isolate===id?'Показать все':'Только эта'}</button><button class="act" id="bFocus">В центре</button><button class="act" id="bHide">Скрыть</button>`:!d.noModel?'<button class="act" id="bRetrySystem">Повторить загрузку</button>':''}<button class="act" id="bDeselect">Снять выбор</button></div>
+    ${loaded?`<label class="card-opacity">Непрозрачность <input id="structureOpacity" aria-label="Непрозрачность выбранной структуры" type="range" min="15" max="100" value="${Math.round((state.opacity[id]??1)*100)}"><output id="opacityValue">${Math.round((state.opacity[id]??1)*100)}%</output></label>`:''}
+    ${Object.entries(d.facts||{}).map(([k,v])=>`<div class="sect"><h3>${esc(k)}</h3><p>${esc(v)}</p></div>`).join('')}
+    ${links.length?`<div class="sect"><h3>Связанные структуры</h3><div class="cv-links">${links.map(link=>`<button class="chip" data-structure-link="${link.id}">${esc(link.label)}: ${esc(A.structures[link.id].ru)}</button>`).join('')}</div></div>`:''}
+    ${d.system==='veins'?'<p class="hint">Венозная анатомия вариабельна. Здесь описаны основные типичные связи; модель не является зеркальной копией артерий.</p>':''}
+    ${sourceLinks(d.refs)}
+    ${loaded?'<div class="sect"><h3>Происхождение геометрии</h3><p>BodyParts3D 3.0, © 2008 DBCLS. Производная копия: изменение осей и единиц, нормали; форма сохранена.</p><a href="models/bodyparts3d-3.0/cardiovascular/ATTRIBUTION.md" target="_blank" rel="noopener">Атрибуция и изменения</a> · <a href="https://creativecommons.org/licenses/by-sa/2.1/jp/" target="_blank" rel="noopener">CC BY-SA 2.1 Japan</a></div>':''}`;
+  afterSheet();
+  sheet.querySelectorAll('[data-structure-link]').forEach(b=>b.addEventListener('click',()=>goTo(b.dataset.structureLink)));
+  $('#bRetrySystem')?.addEventListener('click',()=>ensureSystemModels(state.sec));
+  $('#structureOpacity')?.addEventListener('input',event=>{state.opacity[id]=+event.target.value/100;$('#opacityValue').textContent=event.target.value+'%';applyVisibility();});
+}
 function sourceLinks(refs) {
   if (!refs || !refs.length) return '';
   return `<div class="sect"><h3>Источники</h3><div class="linkrow">${refs.map((ref, i) => {
@@ -1730,6 +1888,14 @@ function thoraxScope() {
     <h3>Грудная клетка и позвоночник как целое</h3>
     ${(A.thoraxWholeTerms||[]).map(t=>`<details class="field-sources"><summary>${esc(t.ru)} · <i>${esc(t.lat)}</i></summary><p class="tacode">TA98 ${esc(t.c)}</p><p>${esc(t.x)}</p>${sourceLinks(t.refs)}</details>`).join('')}
   </details>`;
+}
+function regionSelectionMeta(p) {
+  if(state.sec!=='head')return '';
+  const info=anatomicalRegions?.info(p.id);
+  const status=info?.ready?(state.regionHighlight?'shown':'off'):'unmapped';
+  const text=info?.ready?`${info.admissionLabel}. ${info.label}. ${info.notice}`:
+    `${regionLoadError||info?.error||'Точная область этой структуры на текущей модели не размечена.'} ${hasLandmarkPosition(p)?'Сохранён обычный пин; он не обозначает всю форму и границы.':'Карточка сохранена без выдуманной области.'}`;
+  return `<div class="note" data-region-status="${status}"><b>${info?.ready?'Размеченный участок · учебная геометрия':'Без выделения области'}</b><br>${esc(text)}${info?.ready?`<div class="linkrow"><button class="chip" data-region-toggle aria-pressed="${state.regionHighlight}">${state.regionHighlight?'Скрыть выделение':'Показать выделение'}</button><button class="chip" data-region-view>Ракурс разметки</button></div><small>BodyParts3D / DBCLS · <a href="https://creativecommons.org/licenses/by-sa/2.1/jp/" target="_blank" rel="noopener">CC BY-SA 2.1 Japan</a></small>`:''}</div>`;
 }
 function localizationLabel(p) {
   return ({surface: 'На поверхности', projection: 'Анатомическая проекция', internal: 'Внутренний ориентир · схема', variant: 'Вариант строения · проекция'})[p.loc] || '';
@@ -1807,6 +1973,12 @@ function bonePinSect(id, d) {
   return html;
 }
 function afterSheet() {
+  anatomicalRegions?.update(state.pin,state.sec==='head'&&state.mode!=='quiz'&&state.regionHighlight,curSide());
+  sheet.querySelector('[data-region-toggle]')?.addEventListener('click',toggleRegionHighlight);
+  sheet.querySelector('[data-region-view]')?.addEventListener('click',()=>{
+    const defs=anatomicalRegions?.definitions(state.pin)||[];
+    if(defs.length)frame([...new Set(defs.map(d=>d.bone))],new THREE.Vector3(...defs[0].view),false,.08);
+  });
   sheet.querySelectorAll('[data-detail-mode]').forEach(b=>b.addEventListener('click',()=>openHeadDetail(b.dataset.detailMode,b.dataset.detailPart,b.dataset.detailMarker)));
   sheet.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => select(b.dataset.go, null, true)));
   sheet.querySelectorAll('[data-part]').forEach(b => b.addEventListener('click', () => {
@@ -2023,7 +2195,7 @@ function renderList() {
   // with a visible warning before a result can switch the side.
   const allowed = (id, section) => !!term || section !== state.sec || sideAllows(sideOf(id), curSide());
   const sideTag = id => {
-    const d = A.muscles[id] || A.bones[id], section = secOf(id);
+    const d = cardOf(id), section = secOf(id);
     const side = structureSide(section, id, d);
     return term && section === state.sec && !sideAllows(side, curSide())
       ? `<span class="tag">Переключит вид: ${side === 'left' ? 'слева' : 'справа'}</span>` : '';
@@ -2032,7 +2204,7 @@ function renderList() {
   const pinItem = (id, q, variant = false) => `<button class="item sub ${state.pin === q.id ? 'cur' : ''}" data-id="${id}" data-pinjump="${q.id}"><b>${esc(q.ru)}</b>${q.lat ? `<i>${esc(q.lat)}</i>` : ''}<span class="tag">${variant ? 'Анатомический вариант' : q.t === 'ta' ? 'TA98' : q.t === 'additional' ? 'ориентир' : 'мышца'}</span>${sideTag(id)}</button>`;
   let html = '', n = 0;
   const primary = new Set();
-  if (term && listType !== 'muscles') {
+  if (term && ['all','bones'].includes(listType)) {
     const items = Object.entries(A.bones).filter(([,d]) => typicalThumbSesamoid(d) && match(d));
     if (items.length) {
       html += '<details class="list-group" data-primary-sesamoids open><summary>Типичные сесамовидные кости большого пальца</summary>';
@@ -2044,7 +2216,7 @@ function renderList() {
   const order = SECTIONS.filter(S => S.ready).sort((a,b) => (b.id === state.sec) - (a.id === state.sec));
   for (const S of order) {
     let sec = '';
-    for (const g of A.groups.filter(g => g.sec === S.id && listType !== 'bones')) {
+    for (const g of A.groups.filter(g => g.sec === S.id && ['all','muscles'].includes(listType))) {
       const items = Object.entries(A.muscles).filter(([id,d]) => d.g === g.id && allowed(id,S.id)).map(([id,d]) => {
         const own = match(d), parts = d.parts ? Object.entries(d.parts).filter(([,p]) => own || match(p)) : [];
         return {id,d,parts,show:own || parts.length > 0};
@@ -2058,7 +2230,7 @@ function renderList() {
       }
       sec += '</details>';
     }
-    for (const g of A.boneGroups.filter(g => g.sec === S.id && listType !== 'muscles' && (listType !== 'bones' || !isSoft(g.id)))) {
+    for (const g of A.boneGroups.filter(g => g.sec === S.id && ['all','bones'].includes(listType) && (listType !== 'bones' || !isSoft(g.id)))) {
       const items = Object.entries(A.bones).filter(([id,d]) => d.g === g.id && !primary.has(id) && allowed(id,S.id)).map(([id,d]) => {
         const found = term ? (pinsByBone[id] || []).filter(q => landmarkSearchOwner(q,state.sel) === id && match(q)) : [];
         for (const q of found.filter(catalogueVariant)) variants.push({id,q});
@@ -2073,6 +2245,13 @@ function renderList() {
       }
       sec += '</details>';
     }
+    for(const g of (A.structureGroups||[]).filter(g=>g.sec===S.id)) {
+      const items=Object.entries(A.structures).filter(([id,d])=>d.g===g.id&&allowed(id,S.id)&&match(d)&&(listType==='all'||listType===d.system));
+      if(!items.length)continue;
+      sec+=`<details class="list-group" open><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
+      for(const [id,d]of items){n++;sec+=boneItem(id,d);}
+      sec+='</details>';
+    }
     if (sec) html += `<h2>${esc(S.ru)}${S.id === state.sec ? ' <small>· открыт сейчас</small>' : ''}</h2>${sec}`;
   }
   if (variants.length) {
@@ -2082,7 +2261,7 @@ function renderList() {
   }
   $('#catalogueScope').textContent = term
     ? 'Поиск по всем разделам и сторонам. Выбор другой стороны переключит 3D-вид. Варианты вынесены отдельно.'
-    : 'Это каталог, а не режим 3D. В открытом разделе список учитывает выбранную сторону; фильтры «Кости / Мышцы» меняют только список.';
+    : 'Это каталог. Фильтры меняют список; видимость систем настраивается отдельно. Запись «только карточка» не имеет принятой геометрии.';
   $('#dlist').innerHTML = n ? html : '<p class="empty">Ничего не нашлось. Попробуй часть слова: «сгиб», «flexor», «бугор».</p>';
   $('#dlist').querySelectorAll('[data-id]').forEach(b => b.addEventListener('click', () => {
     closeList(); goTo(b.dataset.id,b.dataset.part || null,b.dataset.pinjump || null);
@@ -2161,6 +2340,10 @@ function renderHome() {
     return `<button class="seccard ${S.ready ? '' : 'soon'}" data-sec="${S.id}" ${S.ready ? '' : 'aria-disabled="true"'}>
       <b>${esc(S.ru)}</b><span class="h">${esc(S.hint)}</span><span class="m">${meta}</span><span class="go" aria-hidden="true">${S.ready ? IC_GO : '…'}</span></button>`;
   }).join('');
+  const entry=document.createElement('button');entry.className='seccard cv-entry';entry.id='bCardiovascular';
+  entry.innerHTML='<b>Сердце и сосуды</b><span class="h">Сердце, артерии и вены · учебные модели и связанные карточки</span><span class="m">Открыть сердце в действующем атласе</span>';
+  entry.addEventListener('click',async()=>{state.systems.bones=false;state.systems.muscles=false;state.systems.heart=true;state.systems.arteries=true;state.systems.veins=true;await goTo('cv_heart');setSub('cardiovascular',{keepSel:true,noFrame:true});applyVisibility();});
+  $('#seclist').prepend(entry);
   renderFigure();
 }
 
@@ -2307,6 +2490,7 @@ async function enterSection(id, opts = {}) {
   renderSheet();
   resize();
   if (!opts.noFrame && (changed || !opts.keepCamera)) frameSub(true);
+  if(['heart','arteries','veins'].some(k=>state.systems[k]))ensureSystemModels(id);
   // Other sections load on demand: background mesh decoding/indexing competes
   // with the current camera gesture and retains unnecessary data on phones.
   return true;
@@ -2358,6 +2542,11 @@ $('#bBoneColors').addEventListener('click', () => {
   state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
   closeBoneLegend(false); applyVisibility(); renderSheet();
 });
+function toggleRegionHighlight() {
+  state.regionHighlight=!state.regionHighlight;prefs.regionHighlight=state.regionHighlight;savePrefs();
+  paint();updateBoneColorControls();renderSheet();
+}
+$('#bRegions').addEventListener('click',toggleRegionHighlight);
 $('#bContext').addEventListener('click',()=>{
   state.context=!state.context;prefs.context=state.context;savePrefs();applyVisibility();
 });
@@ -2430,7 +2619,7 @@ addEventListener('keydown', e => {
 // Mobile panels reuse the existing controls and card; there is one source of state.
 const controlsHome=$('#displayControls'), cutControls=$('#headCutControls');
 function syncMobileSelection(){
-  const d=A.muscles[state.sel]||A.bones[state.sel],pin=pinById[state.pin];
+  const d=cardOf(state.sel),pin=pinById[state.pin];
   $('#mobileSelection').textContent=state.mode==='quiz'?'Вопрос теста':pin?.ru||d?.ru||'Выберите мышцу или кость';
   $('#mobileCard b').textContent=state.mode==='quiz'?'Тест ↗':'Описание ↗';
 }
@@ -2496,7 +2685,10 @@ resize();
 requestAnimationFrame(loop);
 const deep = location.hash.replace('#', '');
 if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
-window.__atlas = { enterSection, setSub, setSide, select, goTo, activatePin, showHome, state };
+window.__atlas = { enterSection, setSub, setSide, select, goTo, activatePin, showHome, setSystem, state,
+  inspect:()=>({systems:{...state.systems},loading:Object.keys(systemLoading),errors:Object.fromEntries(systemErrors),drawCalls:renderer.info.render.calls,
+    structures:[...structs.values()].map(s=>({id:s.id,kind:s.kind,system:systemOf(s),side:s.side,visible:s.meshes.some(m=>m.visible),opacity:s.meshes[0]?.material.opacity,bvh:s.meshes.every(m=>!!m.geometry.boundsTree),triangles:s.meshes.reduce((n,m)=>n+(m.geometry.index?.count||m.geometry.attributes.position.count)/3,0)}))}) };
 window.__ready = true;
+window.__atlasRuntime.ready();
 </script>
 </body></html>

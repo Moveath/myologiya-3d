@@ -1,0 +1,98 @@
+{
+  "issueId": "ANAT-002",
+  "cardId": "interspinales_cervicis_left",
+  "scope": "New method only: exact reflection of the admitted right five-component group. Original 13 missing muscles and 21 parts are not changed.",
+  "noveltyEvidence": [
+    "research/stage7-muscle-batch2-report-2026-10-21.md says no reflection used",
+    "scripts/neck_stage7_admission.py explicitly records mirrored replacement not attempted previously"
+  ],
+  "decision": "research_only_not_admitted",
+  "reason": "X=0 reflection removes detected bone penetration, but creates unsupported gaps at both ends of each bundle. No endpoint correction, translation or deformation attempted.",
+  "sourceFile": "site/models/bodyparts3d-3.0/neck-stage7/interspinales_cervicis_right.glb",
+  "sourceSHA256": "e6394fef1dd6db9d3afe25654d248e27fe901ccee01749c54d081ee23acc36a5",
+  "candidateFile": "build_stage7/interspinales_mirror_v1/interspinales_cervicis_left-mirrored-trial.glb",
+  "candidateSHA256": "7bd27b1f7544f732843c1c8738e4230cc958a1a5903d8fb12748411917643f24",
+  "meshChecks": {
+    "pythonPassed": 11,
+    "nodePassed": 24,
+    "triangles": 2800,
+    "vertices": 1410,
+    "components": 5,
+    "scale": "1:1, reflection only",
+    "sourceUnchanged": true
+  },
+  "sampledPenetrationMM": {
+    "admitted-right": 0.11127564056314328,
+    "original-left-trial": 1.646903688274693,
+    "mirrored-left-trial": 0
+  },
+  "endpointMedianGapMM": {
+    "admitted-right": [
+      0.143973,
+      0.082752,
+      0.189259,
+      0.108578,
+      0.312254,
+      0.156408,
+      0.151437,
+      0.0766,
+      0.162677,
+      0.24806
+    ],
+    "original-left-trial": [
+      0.949502,
+      0.223263,
+      0.475202,
+      0.297067,
+      0.189224,
+      0.314822,
+      0.08172,
+      0.303521,
+      0.752204,
+      0.948663
+    ],
+    "mirrored-left-trial": [
+      2.983574,
+      1.450722,
+      1.685786,
+      1.486819,
+      1.406298,
+      1.397654,
+      1.237252,
+      2.110517,
+      2.432459,
+      1.939734
+    ]
+  },
+  "limitation": "Every vertex and face centroid was checked; ray-parity votes are numerical inside diagnostics. Reported maxima are sampled and not medical thresholds. Geometric gaps cannot establish presence/absence of tendon attachment.",
+  "scientificBasis": [
+    {
+      "url": "https://ifaa.unifr.ch/Public/EntryPage/TAH1770%20Part98A3%20EN.htm",
+      "locator": "A04.3.02.304, previously checked nomenclature"
+    },
+    {
+      "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-back-region/",
+      "locator": "interspinales row; previously checked adjacent spinous-process attachments"
+    },
+    {
+      "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/interspinales-muscles-1541082740",
+      "locator": "Gray / Description; previously checked paired bundles C2-C3 through C7-T1"
+    }
+  ],
+  "license": {
+    "name": "CC BY-SA 2.1 Japan",
+    "author": "DBCLS",
+    "version": "BodyParts3D 3.0, archive20110915, OBJ95%, FMA71309",
+    "derivative": "Exact reflection; source attribution and ShareAlike preserved in derivative directory. Existing verified licence reused, no new third-party content."
+  },
+  "remaining": [
+    "Independent validation of cervical midsagittal plane and sample-specific asymmetry before using reflection",
+    "Confirmed bilateral attachment patches or same-frame original left geometry that avoids penetration",
+    "Missing C7-T1 bundle is not reconstructed",
+    "Full anatomical acceptance and contacts with other muscles remain separate"
+  ],
+  "blenderScript": "verify/blender_interspinales_mirror.py",
+  "blenderRunByThisAgent": false,
+  "browserRunByThisAgent": false,
+  "productionChanges": 0
+}

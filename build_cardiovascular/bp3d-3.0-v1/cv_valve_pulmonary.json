@@ -1,0 +1,40 @@
+{
+  "id": "cv_valve_pulmonary",
+  "source": {
+    "fma": "FMA7246",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA7246.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA7246.obj",
+    "bytes": 1193477,
+    "sha256": "a7f560cb9d68b8fe135dea2499c8dd5026cfe66064241a0fcf87d81abbf6b0ea",
+    "crc": 3823045485,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_valve_pulmonary.glb",
+  "sha256": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf",
+  "triangles": 18202,
+  "vertices": 9109,
+  "boundsM": [
+    [
+      0.008740050000000001,
+      1.25498,
+      0.127544
+    ],
+    [
+      0.0409914,
+      1.27546,
+      0.159636
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 2.5708775662572324e-06,
+  "degenerate": 0,
+  "duplicateFaces": 1,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

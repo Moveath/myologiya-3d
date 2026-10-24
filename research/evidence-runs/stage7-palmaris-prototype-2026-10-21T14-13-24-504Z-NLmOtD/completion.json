@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-22",
+  "status": "technical_prototype_complete_not_admitted",
+  "registry": {
+    "status": "passed",
+    "issues": 255,
+    "status_counts": {
+      "проверена": 73,
+      "требует проверки": 86,
+      "заблокирована": 61,
+      "открыта": 30,
+      "в работе": 5
+    },
+    "scientific_pending": 146,
+    "stages": {
+      "5": [
+        46,
+        123
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        10,
+        31
+      ],
+      "6": [
+        3,
+        20
+      ],
+      "7": [
+        0,
+        45
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "closedTasks": 0,
+  "newTasks": 0,
+  "detailedAnatomicalPilots": 1,
+  "otherMethodDecisions": 33,
+  "prototypeVertices": 1650,
+  "prototypeTriangles": 3296,
+  "integratedModels": 0,
+  "inventory": {
+    "muscles": 259,
+    "muscleNoModel": 14,
+    "partsNoModel": 21,
+    "boneNoModel": 20
+  },
+  "pythonChecks": 21,
+  "nodeChecks": 34,
+  "playwrightMCPChecks": 56,
+  "browserEvidence": [
+    "mcp-palmaris-v3-1280-setup",
+    "mcp-palmaris-v2-1280-cards",
+    "mcp-palmaris-v3-1280-sides",
+    "mcp-palmaris-v3-390-setup",
+    "mcp-palmaris-v3-390-cards",
+    "mcp-palmaris-v3-390-sides"
+  ],
+  "sourceHashesUnchanged": 6,
+  "contextCrossingTrianglePairs": {
+    "abductor_digiti_minimi": 119,
+    "flexor_digiti_minimi_brevis": 58,
+    "flexor_retinaculum": 37
+  },
+  "selfIntersections": 0,
+  "limitations": [
+    "registered skin/aponeurosis/attachment boundaries absent",
+    "65 of 221 envelope samples unsupported",
+    "214 context triangle-pair crossings; not 214 independent lesions"
+  ],
+  "next": "Registered boundaries for PB or masks of continuous muscles; Stage 8 not started"
+}

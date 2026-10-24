@@ -1,0 +1,71 @@
+{
+  "status": "measured",
+  "models": 50,
+  "triangles": 704246,
+  "pairs": [
+    {
+      "a": "cv_heart",
+      "b": "cv_a_aorta_ascending",
+      "minimumVertexDistanceMm": 0.08722798712146278,
+      "medianVertexDistanceMm": 3.0246618348346166,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_heart",
+      "b": "cv_v_cava_superior",
+      "minimumVertexDistanceMm": 0.1213377402919254,
+      "medianVertexDistanceMm": 14.875935748874133,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_heart",
+      "b": "cv_v_cava_inferior",
+      "minimumVertexDistanceMm": 0.1374878835881784,
+      "medianVertexDistanceMm": 150.2015737957031,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_heart",
+      "b": "cv_valve_mitral",
+      "minimumVertexDistanceMm": 0.03984764011798566,
+      "medianVertexDistanceMm": 7.156034629239243,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_heart",
+      "b": "cv_valve_tricuspid",
+      "minimumVertexDistanceMm": 0.037533812562399446,
+      "medianVertexDistanceMm": 4.528006345419214,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_heart",
+      "b": "cv_valve_pulmonary",
+      "minimumVertexDistanceMm": 0.004380527285287697,
+      "medianVertexDistanceMm": 1.6334674830388125,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_a_aorta_ascending",
+      "b": "cv_a_aorta_arch",
+      "minimumVertexDistanceMm": 0.12955287039183264,
+      "medianVertexDistanceMm": 34.88213581851522,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    },
+    {
+      "a": "cv_a_aorta_arch",
+      "b": "cv_a_aorta_descending",
+      "minimumVertexDistanceMm": 0.11133766732577051,
+      "medianVertexDistanceMm": 130.2916760975322,
+      "meaning": "Vertex proximity only; not a lumen, seam, intersection or attachment acceptance"
+    }
+  ],
+  "scope": "Original BP3D specimen frame, no registration, deformation, reconstruction or inferred segmentation",
+  "geometryNotEstablished": [
+    "Exact luminal continuity",
+    "Wall thickness validity",
+    "Leaflet attachments and motion",
+    "Regional end-cut completeness",
+    "Absence of every triangle intersection"
+  ]
+}

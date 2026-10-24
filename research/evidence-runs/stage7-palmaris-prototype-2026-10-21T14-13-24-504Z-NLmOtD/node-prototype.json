@@ -1,0 +1,546 @@
+{
+  "status": "passed",
+  "checks": [
+    "Exactly one trial mesh, no foreign scene objects",
+    "Stable owner ID without Blender suffix",
+    "Indirect BVH preserves indices",
+    "3296 triangles loaded by r170",
+    "Finite exported normals",
+    "Bounded self-intersection scan completed",
+    "No self crossings/overlaps/duplicate faces",
+    "Native/BVH ray 0",
+    "Native/BVH ray 1",
+    "Native/BVH ray 2",
+    "Native/BVH ray 3",
+    "Native/BVH ray 4",
+    "Native/BVH ray 5",
+    "Native/BVH ray 6",
+    "Native/BVH ray 7",
+    "Native/BVH ray 8",
+    "Native/BVH ray 9",
+    "Native/BVH ray 10",
+    "Native/BVH ray 11",
+    "Native/BVH ray 12",
+    "Native/BVH ray 13",
+    "Native/BVH ray 14",
+    "Native/BVH ray 15",
+    "Native/BVH ray 16",
+    "Native/BVH ray 17",
+    "Native/BVH ray 18",
+    "Native/BVH ray 19",
+    "Native/BVH ray 20",
+    "Native/BVH ray 21",
+    "Native/BVH ray 22",
+    "Native/BVH ray 23",
+    "Production noModel retained",
+    "Prototype excluded from production whitelist",
+    "All existing blockers retained"
+  ],
+  "self": {
+    "complete": true,
+    "reason": null,
+    "triangles": 3296,
+    "durationMs": 87,
+    "extent": 0.024581551551818848,
+    "counts": {
+      "candidatePairs": 112288,
+      "degenerate": 0,
+      "duplicate": 0,
+      "coplanarOverlap": 0,
+      "crossing": 0,
+      "contact": 12596,
+      "adjacent": 4944
+    },
+    "examples": []
+  },
+  "rays": [
+    {
+      "face": 0,
+      "hits": 2
+    },
+    {
+      "face": 101,
+      "hits": 2
+    },
+    {
+      "face": 202,
+      "hits": 4
+    },
+    {
+      "face": 303,
+      "hits": 2
+    },
+    {
+      "face": 404,
+      "hits": 2
+    },
+    {
+      "face": 505,
+      "hits": 2
+    },
+    {
+      "face": 606,
+      "hits": 2
+    },
+    {
+      "face": 707,
+      "hits": 2
+    },
+    {
+      "face": 808,
+      "hits": 2
+    },
+    {
+      "face": 909,
+      "hits": 2
+    },
+    {
+      "face": 1010,
+      "hits": 2
+    },
+    {
+      "face": 1111,
+      "hits": 2
+    },
+    {
+      "face": 1212,
+      "hits": 2
+    },
+    {
+      "face": 1313,
+      "hits": 2
+    },
+    {
+      "face": 1414,
+      "hits": 2
+    },
+    {
+      "face": 1515,
+      "hits": 2
+    },
+    {
+      "face": 1616,
+      "hits": 2
+    },
+    {
+      "face": 1717,
+      "hits": 2
+    },
+    {
+      "face": 1818,
+      "hits": 2
+    },
+    {
+      "face": 1919,
+      "hits": 2
+    },
+    {
+      "face": 2020,
+      "hits": 2
+    },
+    {
+      "face": 2121,
+      "hits": 2
+    },
+    {
+      "face": 2222,
+      "hits": 2
+    },
+    {
+      "face": 2323,
+      "hits": 2
+    }
+  ],
+  "contacts": [
+    {
+      "id": "abductor_pollicis_brevis",
+      "name": "m|abductor_pollicis_brevis|",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "flexor_pollicis_brevis",
+      "name": "m|flexor_pollicis_brevis|sup",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "flexor_pollicis_brevis",
+      "name": "m|flexor_pollicis_brevis|deep",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "opponens_pollicis",
+      "name": "m|opponens_pollicis|",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "adductor_pollicis",
+      "name": "m|adductor_pollicis|obl",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "adductor_pollicis",
+      "name": "m|adductor_pollicis|transv",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "abductor_digiti_minimi",
+      "name": "m|abductor_digiti_minimi|",
+      "pairs": 52678,
+      "crossing": 119,
+      "overlap": 0,
+      "examples": [
+        {
+          "trialFace": 3220,
+          "contextFace": 282,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2999,
+          "contextFace": 282,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2991,
+          "contextFace": 291,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2990,
+          "contextFace": 291,
+          "kind": "crossing"
+        }
+      ]
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis",
+      "name": "m|flexor_digiti_minimi_brevis|",
+      "pairs": 12873,
+      "crossing": 58,
+      "overlap": 0,
+      "examples": [
+        {
+          "trialFace": 2255,
+          "contextFace": 450,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2254,
+          "contextFace": 450,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2255,
+          "contextFace": 455,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 2254,
+          "contextFace": 455,
+          "kind": "crossing"
+        }
+      ]
+    },
+    {
+      "id": "opponens_digiti_minimi",
+      "name": "m|opponens_digiti_minimi|",
+      "pairs": 10460,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "lumbricals",
+      "name": "m|lumbricals|",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "palmar_interossei",
+      "name": "m|palmar_interossei|",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "dorsal_interossei",
+      "name": "m|dorsal_interossei|",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "scaphoid",
+      "name": "b|scaphoid",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "lunate",
+      "name": "b|lunate",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "triquetrum",
+      "name": "b|triquetrum",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "pisiform",
+      "name": "b|pisiform",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "trapezium",
+      "name": "b|trapezium",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "trapezoid",
+      "name": "b|trapezoid",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "capitate",
+      "name": "b|capitate",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "hamate",
+      "name": "b|hamate",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "metacarpal_1",
+      "name": "b|metacarpal_1",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "metacarpal_2",
+      "name": "b|metacarpal_2",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "metacarpal_3",
+      "name": "b|metacarpal_3",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "metacarpal_4",
+      "name": "b|metacarpal_4",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "metacarpal_5",
+      "name": "b|metacarpal_5",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_prox_1",
+      "name": "b|phalanx_prox_1",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_prox_2",
+      "name": "b|phalanx_prox_2",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_prox_3",
+      "name": "b|phalanx_prox_3",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_prox_4",
+      "name": "b|phalanx_prox_4",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_prox_5",
+      "name": "b|phalanx_prox_5",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_mid_2",
+      "name": "b|phalanx_mid_2",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_mid_3",
+      "name": "b|phalanx_mid_3",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_mid_4",
+      "name": "b|phalanx_mid_4",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_mid_5",
+      "name": "b|phalanx_mid_5",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_dist_1",
+      "name": "b|phalanx_dist_1",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_dist_2",
+      "name": "b|phalanx_dist_2",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_dist_3",
+      "name": "b|phalanx_dist_3",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_dist_4",
+      "name": "b|phalanx_dist_4",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "phalanx_dist_5",
+      "name": "b|phalanx_dist_5",
+      "pairs": 0,
+      "crossing": 0,
+      "overlap": 0,
+      "examples": []
+    },
+    {
+      "id": "flexor_retinaculum",
+      "name": "o|flexor_retinaculum",
+      "pairs": 2980,
+      "crossing": 37,
+      "overlap": 0,
+      "examples": [
+        {
+          "trialFace": 502,
+          "contextFace": 1381,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 502,
+          "contextFace": 1383,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 503,
+          "contextFace": 1383,
+          "kind": "crossing"
+        },
+        {
+          "trialFace": 502,
+          "contextFace": 1384,
+          "kind": "crossing"
+        }
+      ]
+    }
+  ],
+  "inventory": {
+    "muscles": 259,
+    "muscleNoModel": 14,
+    "partsNoModel": 21,
+    "boneNoModel": 20
+  },
+  "anatomicalAdmission": false
+}

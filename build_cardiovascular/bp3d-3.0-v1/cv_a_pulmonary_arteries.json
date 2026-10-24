@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_pulmonary_arteries",
+  "source": {
+    "fma": "FMA66326",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA66326.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA66326.obj",
+    "bytes": 8393448,
+    "sha256": "b25f29ecfac3b722ea65defcb5b501e00ba5fbf8d4af6d4a37d33b22c0862477",
+    "crc": 1992517307,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_pulmonary_arteries.glb",
+  "sha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+  "triangles": 116948,
+  "vertices": 58474,
+  "boundsM": [
+    [
+      -0.124487,
+      1.13442,
+      0.0226764
+    ],
+    [
+      0.122788,
+      1.3673499999999998,
+      0.18397999999999998
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 0.00014877438448782313,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

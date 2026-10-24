@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "width": 390,
+  "phase": "setup",
+  "checks": [
+    "Seven accepted contours, four disabled drafts",
+    "Three.js r170",
+    "20 noModel retained",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "side": null,
+        "bone": "occipital",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.036:right",
+        "side": "right",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.036:left",
+        "side": "left",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.035:right",
+        "side": "right",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.035:left",
+        "side": "left",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.023:right",
+        "side": "right",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      },
+      {
+        "id": "sphenoid:A02.1.05.023:left",
+        "side": "left",
+        "bone": "sphenoid",
+        "visible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false
+      }
+    ],
+    "failures": [
+      [
+        "temporal_right:A02.1.06.047",
+        "Разметка не допущена или её привязка изменилась. Черновая маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.047",
+        "Разметка не допущена или её привязка изменилась. Черновая маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_right:A02.1.06.032",
+        "Разметка не допущена или её привязка изменилась. Черновая маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.032",
+        "Разметка не допущена или её привязка изменилась. Черновая маска не показывается; сохранён обычный пин."
+      ]
+    ],
+    "clip": 0,
+    "pin": null,
+    "side": "both",
+    "revision": "170",
+    "moving": true
+  }
+}

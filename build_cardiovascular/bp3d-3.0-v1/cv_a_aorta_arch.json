@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_aorta_arch",
+  "source": {
+    "fma": "FMA3768",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA3768.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA3768.obj",
+    "bytes": 207526,
+    "sha256": "6819f9ffa3c617cee719f04f59fd412c8cd39b951d5d1655d4451d3fb445477a",
+    "crc": 786552733,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_aorta_arch.glb",
+  "sha256": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c",
+  "triangles": 3282,
+  "vertices": 1643,
+  "boundsM": [
+    [
+      -0.008015959999999999,
+      1.30193,
+      0.0543052
+    ],
+    [
+      0.031593699999999995,
+      1.3394300000000001,
+      0.137676
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 3.637237472160237e-05,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_brachiocephalic",
+  "source": {
+    "fma": "FMA3932nsn",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA3932nsn.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA3932nsn.obj",
+    "bytes": 73381,
+    "sha256": "8c9bafe5236293262fab89dd8c110f0c6da85484d776c27c7250c70c6cae5b94",
+    "crc": 1130643685,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_brachiocephalic.glb",
+  "sha256": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921",
+  "triangles": 1210,
+  "vertices": 607,
+  "boundsM": [
+    [
+      -0.0193517,
+      1.31557,
+      0.101819
+    ],
+    [
+      0.0182457,
+      1.3536199999999998,
+      0.119894
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 5.24731851810476e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

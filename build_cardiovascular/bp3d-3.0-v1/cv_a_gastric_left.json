@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_gastric_left",
+  "source": {
+    "fma": "FMA14768",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA14768.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA14768.obj",
+    "bytes": 14239,
+    "sha256": "fc5d6e50f38ed455ad44251739dd607ebea1a2b66bbf482180818b4f72af31df",
+    "crc": 1714404380,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_gastric_left.glb",
+  "sha256": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f",
+  "triangles": 232,
+  "vertices": 118,
+  "boundsM": [
+    [
+      0.00101274,
+      1.08055,
+      0.13059800000000002
+    ],
+    [
+      0.013363400000000001,
+      1.08868,
+      0.143194
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 2.436409693613345e-07,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

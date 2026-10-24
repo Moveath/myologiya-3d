@@ -1,0 +1,111 @@
+{
+  "status": "diagnostic_only_not_admitted",
+  "rows": [
+    {
+      "name": "omohyoid_right",
+      "distal_to_scapula": {
+        "distance_mm": 5.461720990221169,
+        "point_mm": [
+          -97.6597930694749,
+          -43.365740055842444,
+          1338.6305407842647
+        ],
+        "triangle": 22743
+      },
+      "candidate_to_clavicle": {
+        "distance_mm": 33.03796142616613,
+        "point_mm": [
+          -45.818752481580574,
+          -128.9157120439983,
+          1356.2269348818354
+        ],
+        "triangle": 3393
+      },
+      "candidate_to_scm": {
+        "distance_mm": 9.52216617744792,
+        "point_mm": [
+          -40.15779716139427,
+          -114.23733930144905,
+          1383.5984740125718
+        ],
+        "triangle": 22528
+      },
+      "candidate_anterior_posterior_coordinate_mm": -105.80629496216214,
+      "scm_Y_ray_intersections_mm": [
+        -121.109958,
+        -116.836492
+      ],
+      "candidate_posterior_to_all_scm_ray_hits": true,
+      "interpretation": "Endpoint adjacency and gross deep-to-SCM relation can support orientation. They do not identify the intermediate tendon or its boundaries."
+    },
+    {
+      "name": "omohyoid_left",
+      "distal_to_scapula": {
+        "distance_mm": 5.4270949686935195,
+        "point_mm": [
+          96.29701461438879,
+          -43.35723202507247,
+          1338.5999755859375
+        ],
+        "triangle": 81839
+      },
+      "candidate_to_clavicle": {
+        "distance_mm": 33.11277219915872,
+        "point_mm": [
+          43.78308357681229,
+          -129.00498302699432,
+          1356.1747664090783
+        ],
+        "triangle": 2382
+      },
+      "candidate_to_scm": {
+        "distance_mm": 8.991082574041409,
+        "point_mm": [
+          38.34226915287418,
+          -113.99176276686805,
+          1383.8921667077088
+        ],
+        "triangle": 29154
+      },
+      "candidate_anterior_posterior_coordinate_mm": -106.1305653241072,
+      "scm_Y_ray_intersections_mm": [
+        -121.548005,
+        -116.424154
+      ],
+      "candidate_posterior_to_all_scm_ray_hits": true,
+      "interpretation": "Endpoint adjacency and gross deep-to-SCM relation can support orientation. They do not identify the intermediate tendon or its boundaries."
+    }
+  ],
+  "context_sources": [
+    {
+      "name": "right scapula",
+      "path": "stl_neck\\FMA13395.stl",
+      "sha256": "c0a3afd469db1fec9527bb81ec1f0956876d3d64d3acbf3a083619d4e7ce297b"
+    },
+    {
+      "name": "right clavicle",
+      "path": "stl_neck\\FMA13322.stl",
+      "sha256": "f340050375ea4397a85082fb7bd68ea553d52f4718656599804ecf8f4c7768be"
+    },
+    {
+      "name": "right sternocleidomastoid",
+      "path": "stl_neck\\FMA13408.stl",
+      "sha256": "f8b2c4b28041f155450654f43e00eed074191d580839c709e40ccfb0d1b56cbf"
+    },
+    {
+      "name": "left scapula",
+      "path": "stl_neck\\FMA13396.stl",
+      "sha256": "104b7749a10794987535c539d6c412b9b9afb3fd1819bdf5911ab1852f07a425"
+    },
+    {
+      "name": "left clavicle",
+      "path": "stl_neck\\FMA13323.stl",
+      "sha256": "ec68d362926061c62c2b7493fb6554941d78250f27ecdf744375659050bdc7ee"
+    },
+    {
+      "name": "left sternocleidomastoid",
+      "path": "stl_neck\\FMA13409.stl",
+      "sha256": "bc0cc11c249b42be52864ed2b862a755d58cf044847034e803b05821ddbc7d24"
+    }
+  ]
+}

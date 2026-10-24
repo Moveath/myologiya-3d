@@ -1,0 +1,147 @@
+{
+  "views": [
+    {
+      "file": "hindfoot-native.png",
+      "pair": [
+        "native__talus_left",
+        "native__calcaneus_left"
+      ],
+      "cameraCenter": [
+        0.07830976314432983,
+        0.041378562800687295,
+        0.05717522946735395
+      ],
+      "scale": 0.1,
+      "objects": [
+        {
+          "id": "native__talus_left",
+          "triangles": 5924,
+          "highlightedFaces": 239,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__calcaneus_left",
+          "triangles": 5652,
+          "highlightedFaces": 149,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "hindfoot-mirror.png",
+      "pair": [
+        "mirror__talus_left",
+        "mirror__calcaneus_left"
+      ],
+      "cameraCenter": [
+        0.08043739370645552,
+        0.041256113376643345,
+        0.05644852465531889
+      ],
+      "scale": 0.1,
+      "objects": [
+        {
+          "id": "mirror__talus_left",
+          "triangles": 5962,
+          "highlightedFaces": 239,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "mirror__calcaneus_left",
+          "triangles": 5448,
+          "highlightedFaces": 121,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "midfoot-native.png",
+      "pair": [
+        "native__cuboid_left",
+        "native__cuneiform_lat_left"
+      ],
+      "cameraCenter": [
+        0.09057783276308966,
+        0.03347490129600826,
+        0.09724596905132193
+      ],
+      "scale": 0.065,
+      "objects": [
+        {
+          "id": "native__cuboid_left",
+          "triangles": 3804,
+          "highlightedFaces": 273,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__cuneiform_lat_left",
+          "triangles": 2968,
+          "highlightedFaces": 370,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "midfoot-mixed.png",
+      "pair": [
+        "mirror__cuboid_left",
+        "native__cuneiform_lat_left"
+      ],
+      "cameraCenter": [
+        0.09037972884558289,
+        0.03396670101494727,
+        0.09611513610309934
+      ],
+      "scale": 0.065,
+      "objects": [
+        {
+          "id": "mirror__cuboid_left",
+          "triangles": 3634,
+          "highlightedFaces": 235,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__cuneiform_lat_left",
+          "triangles": 2968,
+          "highlightedFaces": 263,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ],
+  "sceneRestored": true,
+  "originalScene": "Scene",
+  "limitation": "Red faces are sampled penetrating face centres, not independently segmented anatomical joint surfaces. No source/model edits."
+}

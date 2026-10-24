@@ -1,0 +1,133 @@
+{
+  "source_commit": "7d520ffe410b3f79d82991b8368b2d51844feb80",
+  "source_coordinate_header": "3D Slicer output. SPACE=LPS",
+  "target": "existing Three world coordinates *1000; diagnostic only",
+  "method": "Least-squares registration of five unlabelled geometric AABB centers. One transform per region, positive determinant; no per-bone pose fitting or deformation. BBox centers are not anatomical landmarks. Similarity is diagnostic only, not admitted subject scaling.",
+  "models": [
+    {
+      "mode": "rigid",
+      "scale": 1.0,
+      "rotation_for_row_vectors": [
+        [
+          -0.6425846537624371,
+          0.1946581835277555,
+          -0.741075673824666
+        ],
+        [
+          -0.504493037198729,
+          0.620467239867179,
+          0.6004225009687802
+        ],
+        [
+          0.5766903312584758,
+          0.7596898023781016,
+          -0.3004990282774812
+        ]
+      ],
+      "rotation_determinant": 0.999999999999999,
+      "translation_mm": [
+        -58.586021789871836,
+        -176.5054996777501,
+        669.5173225660534
+      ],
+      "control_residuals_mm": {
+        "trapezium_left": 4.105566432465414,
+        "trapezoid_left": 1.9486795278710851,
+        "capitate_left": 3.146027198687757,
+        "metacarpal_2_left": 3.244302663286734,
+        "metacarpal_4_left": 3.943953229611103
+      },
+      "rms_center_residual_mm": 3.365435532497482,
+      "transformed_controls": [
+        {
+          "id": "trapezium_left",
+          "median_nearest_vertex_mm": 2.2571895399744717,
+          "p95_nearest_vertex_mm": 4.757496613661229
+        },
+        {
+          "id": "trapezoid_left",
+          "median_nearest_vertex_mm": 1.7376255101174358,
+          "p95_nearest_vertex_mm": 3.2480643669915046
+        },
+        {
+          "id": "capitate_left",
+          "median_nearest_vertex_mm": 2.3998234525123885,
+          "p95_nearest_vertex_mm": 4.7361510804163744
+        },
+        {
+          "id": "metacarpal_2_left",
+          "median_nearest_vertex_mm": 2.036094021804881,
+          "p95_nearest_vertex_mm": 4.813334974754668
+        },
+        {
+          "id": "metacarpal_4_left",
+          "median_nearest_vertex_mm": 3.1168046416714503,
+          "p95_nearest_vertex_mm": 6.665523259697848
+        }
+      ]
+    },
+    {
+      "mode": "similarity",
+      "scale": 0.9556004830077807,
+      "rotation_for_row_vectors": [
+        [
+          -0.6425846537624371,
+          0.1946581835277555,
+          -0.741075673824666
+        ],
+        [
+          -0.504493037198729,
+          0.620467239867179,
+          0.6004225009687802
+        ],
+        [
+          0.5766903312584758,
+          0.7596898023781016,
+          -0.3004990282774812
+        ]
+      ],
+      "rotation_determinant": 0.999999999999999,
+      "translation_mm": [
+        -44.273351972656485,
+        -133.70266286525714,
+        645.1776620039683
+      ],
+      "control_residuals_mm": {
+        "trapezium_left": 3.723172196179843,
+        "trapezoid_left": 1.4902439332802462,
+        "capitate_left": 3.437153267808932,
+        "metacarpal_2_left": 3.9020321648216236,
+        "metacarpal_4_left": 2.8616260497981303
+      },
+      "rms_center_residual_mm": 3.203486208294976,
+      "transformed_controls": [
+        {
+          "id": "trapezium_left",
+          "median_nearest_vertex_mm": 2.1530039664170975,
+          "p95_nearest_vertex_mm": 4.214672941277739
+        },
+        {
+          "id": "trapezoid_left",
+          "median_nearest_vertex_mm": 1.4158771295096906,
+          "p95_nearest_vertex_mm": 2.6767965507324942
+        },
+        {
+          "id": "capitate_left",
+          "median_nearest_vertex_mm": 2.087522935983339,
+          "p95_nearest_vertex_mm": 4.048927267518642
+        },
+        {
+          "id": "metacarpal_2_left",
+          "median_nearest_vertex_mm": 1.9697514638798588,
+          "p95_nearest_vertex_mm": 4.450338576828487
+        },
+        {
+          "id": "metacarpal_4_left",
+          "median_nearest_vertex_mm": 2.737440714847716,
+          "p95_nearest_vertex_mm": 6.530578907229671
+        }
+      ]
+    }
+  ],
+  "decision": "Not integrated. A different subject/pose is not interchangeable by center fit; anatomy and joint surfaces need separate review. No threshold converts these residuals to admission."
+}

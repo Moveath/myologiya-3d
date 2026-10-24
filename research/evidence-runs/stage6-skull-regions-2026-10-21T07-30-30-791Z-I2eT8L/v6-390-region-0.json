@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "width": 390,
+  "phase": "region-0",
+  "checks": [
+    "Real card selection",
+    "Only selected anatomical region",
+    "BVH retained; overlay excluded from picking",
+    "Reset overlay",
+    "Reset preserves selection/isolation",
+    "Bone isolation",
+    "Overlay respects transparency",
+    "Overlay remains after view/card changes",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": true,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      }
+    ],
+    "failures": [
+      [
+        "temporal_right:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ]
+    ],
+    "drawCalls": 2,
+    "clip": 0,
+    "pin": "head_occipital_A02_1_04_002"
+  }
+}

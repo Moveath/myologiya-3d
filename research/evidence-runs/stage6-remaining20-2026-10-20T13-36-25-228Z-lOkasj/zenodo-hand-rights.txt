@@ -1,0 +1,172 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:svcs="http://rdfs.org/sioc/services#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+  
+  
+
+  <edm:ProvidedCHO rdf:about="https://doi.org/10.5281/zenodo.20206461">
+    <dc:title xml:lang="en">Hand bones</dc:title>
+
+    
+    <dc:description xml:lang="en">This is a model of the skeletal structure of hands based on a CT scan.</dc:description>
+    
+
+    
+    <dc:creator rdf:resource="#agent_scan-the-world"/>
+    
+
+    
+
+    
+    <dc:identifier>78f46e687a513feb26019ebcea0690d2</dc:identifier>
+    
+    <dc:identifier>10.5281/zenodo.20206461</dc:identifier>
+    <dc:identifier>20206461</dc:identifier>
+
+    <dc:type>3D model</dc:type>
+    
+    <dc:type>Physical object</dc:type>
+    
+
+    
+    
+    <dc:subject>3d</dc:subject>
+    
+    <dc:subject>anatomy</dc:subject>
+    
+    <dc:subject>bone</dc:subject>
+    
+    <dc:subject>hand</dc:subject>
+    
+    <dc:subject>hands</dc:subject>
+    
+    <dc:subject>skeleton</dc:subject>
+    
+    <dc:subject>structure</dc:subject>
+    
+    <dc:subject>medical</dc:subject>
+    
+    <dc:subject>Skeletal</dc:subject>
+    
+    
+
+    
+
+    
+
+    
+
+    <edm:type>3D</edm:type>
+    
+  </edm:ProvidedCHO>
+
+  <!-- 2. WebResources -->
+
+  <!-- Landing Page -->
+  <edm:WebResource rdf:about="https://zenodo.org/records/20206461">
+     <dc:format>text/html</dc:format>
+     <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+
+  <!-- Digital Object (3D Model) -->
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content">
+    <dc:format>model/gltf-binary</dc:format>
+    
+
+    <dc:type rdf:resource="http://data.europeana.eu/vocabulary/modelType/3DMesh"/>
+  <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+    
+    
+    
+    
+    <edm:type>3D</edm:type>
+    
+
+    
+
+    
+
+    </edm:WebResource>
+
+  
+
+  
+  
+
+  <!-- Thumbnail -->
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r270.png/content">
+    <dc:format>image/png</dc:format>
+    <dcterms:isFormatOf rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/><edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+  
+  
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r090.png/content">
+    <dc:format>image/png</dc:format>
+    <dcterms:isFormatOf rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/><edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r180.png/content">
+    <dc:format>image/png</dc:format>
+    <dcterms:isFormatOf rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/><edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r000.png/content">
+    <dc:format>image/png</dc:format>
+    <dcterms:isFormatOf rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/><edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+  
+  <edm:WebResource rdf:about="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_top.png/content">
+    <dc:format>image/png</dc:format>
+    <dcterms:isFormatOf rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/><edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </edm:WebResource>
+  
+  
+
+  <!-- 3. Agents -->
+  
+  <edm:Agent rdf:about="#agent_scan-the-world">
+    <skos:prefLabel xml:lang="en">Scan-the-World</skos:prefLabel>
+    
+    
+  </edm:Agent>
+  
+
+  <!-- 4. Places -->
+  
+
+  <!-- 5. Aggregation -->
+  <ore:Aggregation rdf:about="https://doi.org/10.5281/zenodo.20206461#aggregation">
+    <edm:aggregatedCHO rdf:resource="https://doi.org/10.5281/zenodo.20206461"/>
+    <edm:dataProvider>3DBigDataSpace</edm:dataProvider>
+    <edm:isShownAt rdf:resource="https://zenodo.org/records/20206461"/>
+
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2.glb/content"/>
+    
+    
+
+    
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r270.png/content"/>
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r090.png/content"/>
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r180.png/content"/>
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r000.png/content"/>
+    
+    <edm:hasView rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_top.png/content"/>
+    
+    
+
+    
+    <edm:object rdf:resource="https://zenodo.org/api/records/20206461/files/78f46e687a513feb26019ebcea0690d2_r270.png/content"/>
+    
+
+    <edm:provider>3DBigDataSpace</edm:provider>
+    <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </ore:Aggregation>
+
+</rdf:RDF>

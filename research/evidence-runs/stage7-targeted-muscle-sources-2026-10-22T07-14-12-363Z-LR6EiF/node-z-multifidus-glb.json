@@ -1,0 +1,157 @@
+{
+  "passed": 36,
+  "checks": [
+    "right: exactly one trial mesh",
+    "right: stable part owner",
+    "right: source triangle count preserved",
+    "right: finite positions",
+    "right: actual geometric side",
+    "right: indirect BVH preserves indices",
+    "right: native/BVH ray 1",
+    "right: native/BVH ray 2",
+    "right: native/BVH ray 3",
+    "right: native/BVH ray 4",
+    "right: native/BVH ray 5",
+    "right: native/BVH ray 6",
+    "right: native/BVH ray 7",
+    "right: native/BVH ray 8",
+    "right: native/BVH ray 9",
+    "right: native/BVH ray 10",
+    "right: native/BVH ray 11",
+    "right: native/BVH ray 12",
+    "left: exactly one trial mesh",
+    "left: stable part owner",
+    "left: source triangle count preserved",
+    "left: finite positions",
+    "left: actual geometric side",
+    "left: indirect BVH preserves indices",
+    "left: native/BVH ray 1",
+    "left: native/BVH ray 2",
+    "left: native/BVH ray 3",
+    "left: native/BVH ray 4",
+    "left: native/BVH ray 5",
+    "left: native/BVH ray 6",
+    "left: native/BVH ray 7",
+    "left: native/BVH ray 8",
+    "left: native/BVH ray 9",
+    "left: native/BVH ray 10",
+    "left: native/BVH ray 11",
+    "left: native/BVH ray 12"
+  ],
+  "results": [
+    {
+      "side": "right",
+      "file": "build_stage7/z_multifidus_trials_v1/thorax_multifidus_right-thoracic-test.glb",
+      "triangles": 3902,
+      "vertices": 11704,
+      "rays": [
+        {
+          "faceIndex": 81,
+          "distance": 0.014999999999999876
+        },
+        {
+          "faceIndex": 406,
+          "distance": 0.014999999999999982
+        },
+        {
+          "faceIndex": 731,
+          "distance": 0.015000000000000064
+        },
+        {
+          "faceIndex": 1007,
+          "distance": 0.013285637274629763
+        },
+        {
+          "faceIndex": 1381,
+          "distance": 0.014999999999999972
+        },
+        {
+          "faceIndex": 1395,
+          "distance": 0.0124520239183578
+        },
+        {
+          "faceIndex": 2197,
+          "distance": 0.011252111818851123
+        },
+        {
+          "faceIndex": 2357,
+          "distance": 0.01499999999999999
+        },
+        {
+          "faceIndex": 2682,
+          "distance": 0.015000000000000019
+        },
+        {
+          "faceIndex": 3007,
+          "distance": 0.015000000000000006
+        },
+        {
+          "faceIndex": 3332,
+          "distance": 0.015000000000000001
+        },
+        {
+          "faceIndex": 3658,
+          "distance": 0.015000000000000043
+        }
+      ],
+      "status": "technical_trial_only"
+    },
+    {
+      "side": "left",
+      "file": "build_stage7/z_multifidus_trials_v1/thorax_multifidus_left-thoracic-test.glb",
+      "triangles": 3902,
+      "vertices": 11702,
+      "rays": [
+        {
+          "faceIndex": 81,
+          "distance": 0.0149999999999999
+        },
+        {
+          "faceIndex": 406,
+          "distance": 0.01499999999999998
+        },
+        {
+          "faceIndex": 731,
+          "distance": 0.014999999999999989
+        },
+        {
+          "faceIndex": 1007,
+          "distance": 0.013285657418133565
+        },
+        {
+          "faceIndex": 1381,
+          "distance": 0.014999999999999989
+        },
+        {
+          "faceIndex": 1395,
+          "distance": 0.012452012869391902
+        },
+        {
+          "faceIndex": 2197,
+          "distance": 0.011252177101738687
+        },
+        {
+          "faceIndex": 2357,
+          "distance": 0.014999999999999998
+        },
+        {
+          "faceIndex": 2682,
+          "distance": 0.01499999999999998
+        },
+        {
+          "faceIndex": 3007,
+          "distance": 0.01500000000000007
+        },
+        {
+          "faceIndex": 3332,
+          "distance": 0.014999999999999994
+        },
+        {
+          "faceIndex": 3658,
+          "distance": 0.015000000000000058
+        }
+      ],
+      "status": "technical_trial_only"
+    }
+  ]
+}

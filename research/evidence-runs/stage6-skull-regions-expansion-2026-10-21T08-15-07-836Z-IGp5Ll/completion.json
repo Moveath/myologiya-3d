@@ -1,0 +1,57 @@
+{
+  "status": "complete_with_anatomical_limits",
+  "acceptedContours": 7,
+  "acceptedCardIds": [
+    "head_occipital_A02_1_04_002",
+    "head_sphenoid_A02_1_05_023",
+    "head_sphenoid_A02_1_05_035",
+    "head_sphenoid_A02_1_05_036"
+  ],
+  "newContours": 6,
+  "draftMasks": 4,
+  "noModel": 20,
+  "nodeChecks": 183,
+  "browserChecks": 108,
+  "blenderViews": 27,
+  "sourceAndHeadDataUnchanged": {
+    "site/head-glb.txt": true,
+    "site/head-q-glb.txt": true,
+    "site/data-head.js": true,
+    "site/pins-head.js": true
+  },
+  "registry": {
+    "total": 254,
+    "verified": 72,
+    "unclosed": 182,
+    "blocked": 61,
+    "newClosed": 0
+  },
+  "scopeInventory": {
+    "bones": 5,
+    "records": 319,
+    "withActiveRegion": 4,
+    "withoutRegion": 315,
+    "originalPinsWithoutRegion": 271,
+    "recordsWithoutCoordinates": 44
+  },
+  "files": {
+    "ANATOMY_ISSUES.md": "0db46ee2eeacb7df260cde8654a6872dcf72c530a9b62e478a0d52d8e90374ca",
+    "ANATOMY_PROGRESS.md": "caca8fc22b467ed93f6b098841035185581cb12a19418a04b74a92110472d019",
+    "CURRENT_PROJECT_STATUS.md": "8f747ac20f40eb2b015cde2360b116e9f06e6ccee557e767db0bdcabac342ba2",
+    "site/atlas-regions.js": "73ebb17a182207aac2e136511ba9315e859cff5d07a4dfc0daf2c3ec3de9fcc4",
+    "site/index.html": "aec37d2ac608dfbdf3ea635abd3107cab8bf98bb060439454f9862e1fff77b9b",
+    "site/local.html": "09abae4591f6b99109e5c6b27278e88ea325c55cfe1d22502a41aae338cec461",
+    "site/skull-region-masks.json": "1a5733df0d9113002af0508d7d45b94a787f4fd913605fa39f4af1f469f393c0",
+    "scripts/make_skull_region_masks.py": "9a7a5f9db5e139e51bc7eb481684c18e504c20f781dd7155451478853bac6efb",
+    "scripts/skull_region_expansion_annotations.json": "83007a7435c244b4493878eb5c33dcf4265e5a50e3e3540d6a89657471b264ed",
+    "tools/export-skull-region-source.mjs": "36e271335aa923b9c0781bd72ba7fef994fba05431e299dc3d29f5c44db28e1a",
+    "tools/find-skull-region-candidates.py": "c37381a4b369b9711790461e195bf51f01829f4822f5ff20f101696781b278ba",
+    "tools/screen-skull-aperture-candidates.py": "5381bdb5689cc5b4263a623140a118cc63aa9cc0e16a2b724cf7c0109eb9036f",
+    "tools/record-skull-region-expansion.py": "bd828ee29b94a221c2f75ea30873d7f168907d010572d06fea0c18a63b14b154",
+    "tools/verify-skull-regions.mjs": "6306c8f3f0fa0cd49f979eb09a662e0f0946e98acb25d1672066913036fa408c",
+    "tools/prepare-skull-region-expansion-mcp.mjs": "387910da631673acec7a90381c8eb4c1a99a9c2ea0d84dba9aa38e4abebc49b0",
+    "verify/verify_skull_region_annotations.py": "1244c78ccf83ee073a758a1f3b77582cef6d4cce1b06e23ea61484dc08cf27fa",
+    "research/render-skull-region-pilot.py": "871840931703bde31f5bc40ef8c8774888ca3c7499db60bdcfffe3927ec8d521",
+    "research/stage6-skull-region-expansion-2026-10-21.md": "594e0616d78482832c1adb91316349dbd01036b2b8364e8ae16b74f438c60dc9"
+  }
+}

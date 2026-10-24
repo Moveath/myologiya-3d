@@ -1,0 +1,1837 @@
+{
+  "schemaVersion": 1,
+  "scope": "Addressed remaining20 bone recovery methods; no production edits, no old heavy tests repeated",
+  "methodDefinitions": {
+    "A": "Existing project geometry and archives",
+    "B": "Other scientific 3D sources",
+    "C": "Controlled mirroring",
+    "D": "Segmentation of existing combined geometry",
+    "E": "Evidence-grounded parametric reconstruction",
+    "F": "Reconstruction from licensed medical images"
+  },
+  "methodStatusNote": "Assessment is not execution; not_attempted/conditional/image-route means future work remains. No blanket claim that all methods are exhausted.",
+  "priorEvidenceReused": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+  "newSources": [
+    {
+      "id": "BoneHub-VisibleHuman-7d520ffe",
+      "url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+      "doi": "10.57967/hf/10464",
+      "commit": "7d520ffe410b3f79d82991b8368b2d51844feb80",
+      "authors": [
+        "Hamid Alavi",
+        "Malte Asseln"
+      ],
+      "institution": "Department of Biomechanical Engineering, University of Twente",
+      "license": "CC BY 4.0",
+      "commercialUse": "permitted subject to attribution/license link/change indication; not anatomical admission",
+      "provenance": "New independent CT segmentation of NLM Visible Human, aligned CT redistributed by University of Denver; male subject 39 years, 1.80 m",
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/MESH_README.md",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/metadata.json"
+      ],
+      "geometryAssessment": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json",
+      "newFiles": 23,
+      "limitations": [
+        "Different donor/pose from BP3D. No bone replacement/admission.",
+        "STL headers explicitly SPACE=LPS; source units need independent spacing validation before integration.",
+        "Sesamoids absent explicitly; phalanges grouped by digit.",
+        "Toe I/V and hand I/III grouped meshes are each one connected component, so connected-component splitting does not yield individual bones.",
+        "Talus and MT V not watertight on analysis import; tiny disconnected islands must not be removed without source review."
+      ]
+    },
+    {
+      "id": "OSF-Steer2026-current",
+      "url": "https://osf.io/avq7d/",
+      "doi": "10.1002/ar.70304",
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+        "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/osf-files.txt",
+        "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/osf-material-labels.txt"
+      ],
+      "status": "license_dependency_unchanged",
+      "license": null,
+      "reason": "Current node_license remains null; description is imaging data for Anatomical Record review. Article/pubic download does not establish distribution rights for the specific models. No large geometry download repeated."
+    },
+    {
+      "id": "Nakatsukasa2019-human-STL",
+      "url": "https://www.jstage.jst.go.jp/article/ase/127/3/127_190908/_article/-char/en",
+      "doi": "10.1537/ase.190908",
+      "authors": [
+        "Masato Nakatsukasa",
+        "Naoki Morimoto",
+        "Takeshi Nishimura"
+      ],
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+      ],
+      "scientificLocator": "Fig. 1 caption, p.160: right human hand from CT, radial/ulnar pollical sesamoids; supplementary item 1 STL. Study main sample is great apes, do not substitute their supplementary item 2 for the human model.",
+      "status": "specific_human_mesh_lead_license_unestablished",
+      "license": null,
+      "reason": "Article metadata copyright2019 Anthropological Society of Nippon; free access is not a commercial derivative license. Supplement API attempt redirected to generic homepage; no mesh downloaded or treated as absent. Need actual human supplement plus explicit commercial derivative rights and specimen/axes/scale."
+    },
+    {
+      "id": "Embodi3D-59877",
+      "url": "https://www.embodi3d.com/files/file/59877-handscan/",
+      "author": "Brian H",
+      "published": "2022-10-26",
+      "updated": "2023-01-14",
+      "format": "NRRD",
+      "sizeDeclared": "52.44 MB",
+      "licenseDeclared": "Free Files: CC – Attribution",
+      "licenseVersion": null,
+      "status": "unverified_imaging_lead",
+      "reason": "Public file page accessible; download link not retrieved. Side, voxel spacing, patient provenance, resolution and presence of two sesamoids unverified; sesamoid keyword alone is not proof. No images downloaded."
+    },
+    {
+      "id": "Basel-upperbody-CT",
+      "doi": "10.1007/s11548-023-02957-4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10589171/",
+      "status": "external_request_dependency",
+      "reason": "Data availability says not publicly available; anonymized version may be shared on request. Article license does not automatically license scans. No contact sent."
+    }
+  ],
+  "structures": [
+    {
+      "id": "talus_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24483.obj",
+            "sha256": "4c8f262a33f96045578cba926a21ae8afab114f667dd40e9a571e7ff03d0f9de",
+            "fma": "FMA24483"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/TALUS_LEFT.stl",
+          "sha256": "b79dcb8037223d2652e300cb42124c9d4e16dfedcc49ff36b4d44ed3fc24602e",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "calcaneus_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24498.obj",
+            "sha256": "64d82261ec8ffba2c536da5fdd7f9ac6d8855504ff7eb28030fbc4a299816d7b",
+            "fma": "FMA24498"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/CALCANEUS_LEFT.stl",
+          "sha256": "5e160f34aff9c2bfb1e3b6546add17a083ec4f6bb4be0f29392e714d44132eb9",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "cuboid_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24529.obj",
+            "sha256": "c235f1dc59dfba5e31a574f48de41e1be9e3b24a9ab4e0d16f9df9ac07434b29",
+            "fma": "FMA24529"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/CUBOID_LEFT.stl",
+          "sha256": "7ed61043826f269aecee108a1d1298e59dc2cf2da29b0083a297f548d48d0353",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "cuneiform_lat_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24526.obj",
+            "sha256": "981c3361de875fbf56694e4bb63460ce3a45aebdac602ec3d1249cc5427e511b",
+            "fma": "FMA24526"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/LATERAL_CUNEIFORM_LEFT.stl",
+          "sha256": "91ca1a16493dd6187bf5a5f0f1ea44e09313b7103bc41f364db835089d6a259d",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "metatarsal_1_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24508.obj",
+            "sha256": "5867825022c98465b222e5c523dc189e501fd49bf9d8f78b8815db20468d7fc6",
+            "fma": "FMA24508"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METATARSAL_1_LEFT.stl",
+          "sha256": "4878a50ff8aabc0cedd3b33fdee8cb646b9cf11ce00017c1caadf001693b273b",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "toe_prox_1_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA43254.obj",
+            "sha256": "f8c4d0830a0ba6878e602c9eaf330288c0b875fdce1dac5718c9669e3c868b10",
+            "fma": "FMA43254"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/PHALANGE_FOOT_1_LEFT.stl",
+          "sha256": "ab2892f9065aba885a58c2fd4c353bcddeefff9f738c4ceb6fff2db2e0cb80f5",
+          "anatomicalIdentity": "source-labelled grouped toe, not individually labelled phalanx",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub candidate has not passed source-to-atlas registration; combined phalanges need image-guided separation.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. First inspect original CT/segmentation to separate this phalanx; current grouped STL cannot do so."
+    },
+    {
+      "id": "toe_dist_1_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA32651.obj",
+            "sha256": "32eb582d7a1740054fb84cd07bd29fe1c142face782987584569025d038b7f5d",
+            "fma": "FMA32651"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/PHALANGE_FOOT_1_LEFT.stl",
+          "sha256": "ab2892f9065aba885a58c2fd4c353bcddeefff9f738c4ceb6fff2db2e0cb80f5",
+          "anatomicalIdentity": "source-labelled grouped toe, not individually labelled phalanx",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub candidate has not passed source-to-atlas registration; combined phalanges need image-guided separation.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. First inspect original CT/segmentation to separate this phalanx; current grouped STL cannot do so."
+    },
+    {
+      "id": "metatarsal_2_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24510.obj",
+            "sha256": "6164b8902ec5a4a96557688c0c2fe12ca1e6c5227882dcd49a30fa7eb8390f14",
+            "fma": "FMA24510"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METATARSAL_2_LEFT.stl",
+          "sha256": "96f867c81ad028dbe4055c55f0febbcd85a716d69510b612a721cdb9f9d31f36",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "metatarsal_3_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24512.obj",
+            "sha256": "d5ce0bfbec2c955128456f273d44565402b7b3cb6d486c1b40792a73a59566d1",
+            "fma": "FMA24512"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METATARSAL_3_LEFT.stl",
+          "sha256": "8c116abaea8921642537d1e4e47b64fc537a0e863fb528781a9ffd504029ed89",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "metatarsal_4_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24514.obj",
+            "sha256": "9f6dfc2ec72333328b511098bb0c09e93b35f39bba5b80dd4b4d73704fd83f2a",
+            "fma": "FMA24514"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METATARSAL_4_LEFT.stl",
+          "sha256": "0931995044a56dca28b5d402eaec24dd7ab39620ecda3e37f1a2c4c7001a1641",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "metatarsal_5_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24516.obj",
+            "sha256": "5e11681619427ee451e6bf5afa4b9416a98a4d43b0c04bc86518798be6fa4526",
+            "fma": "FMA24516"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METATARSAL_5_LEFT.stl",
+          "sha256": "9cbcf6b704376fb3bdbc895148234d10d4b303f546bd2fdb8ab7ed7c5540423d",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "toe_prox_5_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA32641.obj",
+            "sha256": "6f6cff98b381ccc2e748456f1ad5f10007fc12e05b43b6dadd4f19b5b1f070fc",
+            "fma": "FMA32641"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/PHALANGE_FOOT_5_LEFT.stl",
+          "sha256": "50393bc51588d269095d3d096f4cb9cd19db0dc639412a44c40bc7d90d98cbd0",
+          "anatomicalIdentity": "source-labelled grouped toe, not individually labelled phalanx",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub candidate has not passed source-to-atlas registration; combined phalanges need image-guided separation.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. First inspect original CT/segmentation to separate this phalanx; current grouped STL cannot do so."
+    },
+    {
+      "id": "toe_mid_5_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA230988.obj",
+            "sha256": "c4ddacd5ff579c7d936b4fe4ddbc93d595a78a6cae12dcefb5080469cf2e4a11",
+            "fma": "FMA230988"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/PHALANGE_FOOT_5_LEFT.stl",
+          "sha256": "50393bc51588d269095d3d096f4cb9cd19db0dc639412a44c40bc7d90d98cbd0",
+          "anatomicalIdentity": "source-labelled grouped toe, not individually labelled phalanx",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub candidate has not passed source-to-atlas registration; combined phalanges need image-guided separation.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. First inspect original CT/segmentation to separate this phalanx; current grouped STL cannot do so."
+    },
+    {
+      "id": "toe_dist_5_left",
+      "issueId": "GEO-LOWER-LEFT-FOOT",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA32659.obj",
+            "sha256": "fea03b86099528410efdf4bc72eba90601af86564afe71ed0a1f24873ff1d932",
+            "fma": "FMA32659"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/PHALANGE_FOOT_5_LEFT.stl",
+          "sha256": "50393bc51588d269095d3d096f4cb9cd19db0dc639412a44c40bc7d90d98cbd0",
+          "anatomicalIdentity": "source-labelled grouped toe, not individually labelled phalanx",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub candidate has not passed source-to-atlas registration; combined phalanges need image-guided separation.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. First inspect original CT/segmentation to separate this phalanx; current grouped STL cannot do so."
+    },
+    {
+      "id": "sesamoid_mcp1_radial_right",
+      "issueId": "GEO-HAND-MCP1-R",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword."
+    },
+    {
+      "id": "sesamoid_mcp1_ulnar_right",
+      "issueId": "GEO-HAND-MCP1-U",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword."
+    },
+    {
+      "id": "metacarpal_1_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24465.obj",
+            "sha256": "1688e69a708fbd6db940f97e362edb7c93c013d4af5e8f400204109783c652bd",
+            "fma": "FMA24465"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METACARPAL_1_LEFT.stl",
+          "sha256": "6698e6a702ad11270423a93903f77735692fba4ade9029daa2dbd81bb29a8e99",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. Two BP3D4.0 alternatives previously tested and not admitted.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/bp4-frame-diagnostic.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-registration-diagnostic.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "metacarpal_3_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "BP3D3.0",
+          "record": {
+            "file": "research/cache/stage6-sources/FMA24469.obj",
+            "sha256": "090a59745c4193bd716fb4c388df9c4fb797f825622df05cb9298864a46b37d1",
+            "fma": "FMA24469"
+          }
+        },
+        {
+          "sourceId": "BoneHub-VisibleHuman-7d520ffe",
+          "file": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/METACARPAL_3_LEFT.stl",
+          "sha256": "3886964b7ddd22177f3790fd1bc68b7a08c6d46fa0bfbd6f670e3b3253320918",
+          "anatomicalIdentity": "source-labelled same named left bone",
+          "technicalQuality": "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_candidate_found_not_admitted",
+          "summary": "Original left BP3D source exists; prior quality/overlap diagnostics reused unchanged.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. Two BP3D4.0 alternatives previously tested and not admitted.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/bp4-frame-diagnostic.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-registration-diagnostic.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+      "newBlocker": "BoneHub is another donor/pose; no validated transform/joint-conformity evidence. Do not replace working neighbours solely to make a candidate fit.",
+      "nextStep": "Addressed registered-region acceptance using labelled anatomical landmarks and coherent source neighbours. New source is available, so do not label all external-source/image methods exhausted."
+    },
+    {
+      "id": "sesamoid_mcp1_radial_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword."
+    },
+    {
+      "id": "sesamoid_mcp1_ulnar_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "initialStatus": "noModel",
+      "currentStatus": "noModel",
+      "admitted": false,
+      "newModelIntegrated": null,
+      "priorDecision": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+      "allApplicableMethodsExhausted": false,
+      "reviewDate": "2026-10-22",
+      "resources": [
+        {
+          "sourceId": "OSF-Steer2026-current"
+        },
+        {
+          "sourceId": "Nakatsukasa2019-human-STL"
+        },
+        {
+          "sourceId": "Embodi3D-59877"
+        },
+        {
+          "sourceId": "Basel-upperbody-CT"
+        }
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_no_identified_source",
+          "summary": "Previous project/named-mesh scan found no admitted radial/ulnar MCP-I sesamoid source.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/hand-sesamoid-scope-2026-10-15.md"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_specific_lead_rights_blocked",
+          "summary": "OSF license remains unspecified. New Nakatsukasa2019 human right-hand STL supplement is explicitly documented, but model license/download/scale not verified. BoneHub explicitly has no hand sesamoids.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/osf-node-current.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "conditional_not_attempted",
+          "summary": "Paired anatomical use can be considered only after one side has admitted identified source geometry. No such source yet; mirroring an unknown component does not solve identity.",
+          "evidence": [
+            "research/hand-sesamoid-scope-2026-10-15.md",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "prior_candidate_inspected_semantics_blocked",
+          "summary": "Hegde template has480 unnamed components, not480 anatomical labels. No arbitrary small component was assigned a sesamoid identity. New named human supplement could provide a fresh segmentation route after access/rights.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/hegde-component-inventory.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/nakatsukasa-article.html"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_shape_constraints_not_generated",
+          "summary": "Published means/variation do not determine registered articular shape and pose against this MC-I head. No sphere/ellipsoid created as anatomy.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/pubmed-addressed-records.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/sesamoid-abstracts.txt"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_imaging_lead_unverified_not_executed",
+          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
+          "evidence": [],
+          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+        }
+      ],
+      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.",
+      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword."
+    }
+  ],
+  "counts": {
+    "structuresReviewed": 20,
+    "newCandidateSTLFiles": 23,
+    "modelsIntegrated": 0,
+    "noModelRemoved": 0,
+    "remainingInThisScope": 20
+  },
+  "tests": {
+    "sourceDownloads": "26/26 file retrievals completed with SHA256 and per-file checkpoint",
+    "topologyInventory": "23 STL checked with trimesh/scipy; not full self-intersection/Blender admission",
+    "registration": "one shared rigid and one similarity diagnostic on5 hand control centers; RMS3.3654/3.2035mm; no transform applied to app",
+    "Blender": "not run by this agent",
+    "Playwright": "not run; production unchanged",
+    "historicalGeometryTests": "reused by reference without rerun"
+  }
+}

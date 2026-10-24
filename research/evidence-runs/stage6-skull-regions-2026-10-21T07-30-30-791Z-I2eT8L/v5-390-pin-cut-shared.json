@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "width": 390,
+  "phase": "pin-cut-shared",
+  "checks": [
+    "Real pin click clears overlay",
+    "Real pin click restores overlay",
+    "Global clipping enabled for mesh and overlay",
+    "Clipped mesh remains selectable",
+    "Clipped native/BVH face agreement",
+    "Unconfirmed jugular contour not invented",
+    "Shared card keeps stable pin ID",
+    "Both contributing bones retained",
+    "Shared unsegmented structure explicitly labelled",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": false,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      },
+      {
+        "id": "temporal_right:A02.1.06.047",
+        "bone": "temporal_right",
+        "visible": false,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 834
+      },
+      {
+        "id": "temporal_left:A02.1.06.047",
+        "bone": "temporal_left",
+        "visible": false,
+        "parentVisible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 825
+      }
+    ],
+    "failures": [],
+    "drawCalls": 2,
+    "clip": 0,
+    "pin": "shared_jugular_foramen_right"
+  }
+}

@@ -1,0 +1,629 @@
+{
+  "owner": "metacarpal_1_left",
+  "workingNeighbors": 27,
+  "results": [
+    {
+      "neighbor": "live__radius_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__ulna_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__scaphoid_left",
+      "complete": true,
+      "counts": {},
+      "examples": []
+    },
+    {
+      "neighbor": "live__lunate_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__triquetrum_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__pisiform_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__trapezium_left",
+      "complete": true,
+      "counts": {
+        "crossing": 152
+      },
+      "examples": [
+        {
+          "candidateFace": 5116,
+          "neighborFace": 777,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 5434,
+          "neighborFace": 777,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 5117,
+          "neighborFace": 777,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 5433,
+          "neighborFace": 993,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 5434,
+          "neighborFace": 993,
+          "kind": "crossing"
+        }
+      ],
+      "candidateIntoNeighbor": {
+        "complete": true,
+        "tested": 11324,
+        "insideSamples": 340,
+        "ambiguous": 0,
+        "maxSampleDepthMM": 0.9788031934278099,
+        "deepest": [
+          {
+            "mm": 0.9788031934278099,
+            "position": [
+              0.27562895203195725,
+              0.8011071292495814,
+              0.1216860873187535
+            ]
+          },
+          {
+            "mm": 0.9773846349442885,
+            "position": [
+              0.2755178742043324,
+              0.8006645054616054,
+              0.12171761823129087
+            ]
+          },
+          {
+            "mm": 0.9651890834531646,
+            "position": [
+              0.2754258403536531,
+              0.8002330963376473,
+              0.12172931674945808
+            ]
+          },
+          {
+            "mm": 0.9575493700546024,
+            "position": [
+              0.2752367195428801,
+              0.8004144193295121,
+              0.12214164018944916
+            ]
+          },
+          {
+            "mm": 0.9556510501985449,
+            "position": [
+              0.2753500186501374,
+              0.8008701718050364,
+              0.12213496722599096
+            ]
+          },
+          {
+            "mm": 0.9488316423494545,
+            "position": [
+              0.27535285047991925,
+              0.7998129018777066,
+              0.12172118287325509
+            ]
+          },
+          {
+            "mm": 0.9420591439744525,
+            "position": [
+              0.27549024090749047,
+              0.8013120044961873,
+              0.12210025680006506
+            ]
+          },
+          {
+            "mm": 0.9340139012177724,
+            "position": [
+              0.2751575492984971,
+              0.7999505835158437,
+              0.12214136215010751
+            ]
+          },
+          {
+            "mm": 0.9258306211631848,
+            "position": [
+              0.2757694519321471,
+              0.8015106881563094,
+              0.12166349538978727
+            ]
+          },
+          {
+            "mm": 0.9139012922402244,
+            "position": [
+              0.27565738631493947,
+              0.8017399174029645,
+              0.12203750891167146
+            ]
+          },
+          {
+            "mm": 0.9087237218489821,
+            "position": [
+              0.2751263519407483,
+              0.7995501016463511,
+              0.12208735574709018
+            ]
+          },
+          {
+            "mm": 0.9040795139437545,
+            "position": [
+              0.2753424234861764,
+              0.7994362970645945,
+              0.12168041494128135
+            ]
+          }
+        ],
+        "elapsedMs": 30
+      },
+      "neighborIntoCandidate": {
+        "complete": true,
+        "tested": 1606,
+        "insideSamples": 91,
+        "ambiguous": 0,
+        "maxSampleDepthMM": 0.9512837693092648,
+        "deepest": [
+          {
+            "mm": 0.9512837693092648,
+            "position": [
+              0.2761360197889336,
+              0.7998330458025293,
+              0.12230700755894533
+            ]
+          },
+          {
+            "mm": 0.9164479646182521,
+            "position": [
+              0.2765253528966186,
+              0.8005403619168542,
+              0.12177400785915005
+            ]
+          },
+          {
+            "mm": 0.9078862869752196,
+            "position": [
+              0.2763723479251586,
+              0.8015633722193508,
+              0.12265333885387826
+            ]
+          },
+          {
+            "mm": 0.7874088527336492,
+            "position": [
+              0.2755180184574968,
+              0.7985430677139149,
+              0.12285700809369526
+            ]
+          },
+          {
+            "mm": 0.7456517900331224,
+            "position": [
+              0.2766860177805519,
+              0.8006650160568896,
+              0.12125800899430939
+            ]
+          },
+          {
+            "mm": 0.727984353955647,
+            "position": [
+              0.2756520109768819,
+              0.8011490452139942,
+              0.123380005656785
+            ]
+          },
+          {
+            "mm": 0.6978410379504244,
+            "position": [
+              0.2760840280058652,
+              0.7982970349873852,
+              0.12178700834804879
+            ]
+          },
+          {
+            "mm": 0.6605810732715555,
+            "position": [
+              0.2750826750123399,
+              0.7994170505028226,
+              0.12353167294100705
+            ]
+          },
+          {
+            "mm": 0.6529005251844786,
+            "position": [
+              0.275200676320028,
+              0.7978977022861262,
+              0.12312867304393589
+            ]
+          },
+          {
+            "mm": 0.6496728391728496,
+            "position": [
+              0.2756866891198051,
+              0.797842709607733,
+              0.12238834199477466
+            ]
+          },
+          {
+            "mm": 0.6434364890942167,
+            "position": [
+              0.2750850045209141,
+              0.798292030104335,
+              0.12328100408551368
+            ]
+          },
+          {
+            "mm": 0.6351256437228782,
+            "position": [
+              0.2767903472125906,
+              0.8014840265124571,
+              0.1212030061433896
+            ]
+          }
+        ],
+        "elapsedMs": 6
+      }
+    },
+    {
+      "neighbor": "live__trapezoid_left",
+      "complete": true,
+      "counts": {},
+      "examples": []
+    },
+    {
+      "neighbor": "live__capitate_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__hamate_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__metacarpal_2_left",
+      "complete": true,
+      "counts": {},
+      "examples": []
+    },
+    {
+      "neighbor": "live__metacarpal_4_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__metacarpal_5_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_prox_1_left",
+      "complete": true,
+      "counts": {
+        "crossing": 132
+      },
+      "examples": [
+        {
+          "candidateFace": 0,
+          "neighborFace": 49,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 140,
+          "neighborFace": 49,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 6,
+          "neighborFace": 49,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 132,
+          "neighborFace": 179,
+          "kind": "crossing"
+        },
+        {
+          "candidateFace": 339,
+          "neighborFace": 179,
+          "kind": "crossing"
+        }
+      ],
+      "candidateIntoNeighbor": {
+        "complete": true,
+        "tested": 11324,
+        "insideSamples": 386,
+        "ambiguous": 0,
+        "maxSampleDepthMM": 1.0963434987956477,
+        "deepest": [
+          {
+            "mm": 1.0963434987956477,
+            "position": [
+              0.3037365422103724,
+              0.7712294999642733,
+              0.14331448065587118
+            ]
+          },
+          {
+            "mm": 1.0730059682205566,
+            "position": [
+              0.30363611011593994,
+              0.77136748710608,
+              0.14358499945926712
+            ]
+          },
+          {
+            "mm": 1.068123505663529,
+            "position": [
+              0.3039435389819245,
+              0.7713801497118589,
+              0.14337187756122607
+            ]
+          },
+          {
+            "mm": 1.067553901912766,
+            "position": [
+              0.30351677568966845,
+              0.7711195965045701,
+              0.14321520631567247
+            ]
+          },
+          {
+            "mm": 1.0629883282765615,
+            "position": [
+              0.3038883962305643,
+              0.7716718135142732,
+              0.14392501420745146
+            ]
+          },
+          {
+            "mm": 1.062671439355603,
+            "position": [
+              0.303824204555653,
+              0.7711322591103491,
+              0.14300208441763146
+            ]
+          },
+          {
+            "mm": 1.0596860775895114,
+            "position": [
+              0.30328339190688314,
+              0.7712011478396935,
+              0.14351550351447873
+            ]
+          },
+          {
+            "mm": 1.049712320762009,
+            "position": [
+              0.3023909589728412,
+              0.771658180866914,
+              0.144777252165601
+            ]
+          },
+          {
+            "mm": 1.0485284375414372,
+            "position": [
+              0.3025989353982445,
+              0.7715861161678489,
+              0.1445411309979957
+            ]
+          },
+          {
+            "mm": 1.0484697528948401,
+            "position": [
+              0.30237836682730423,
+              0.7713557742233329,
+              0.14426420043023824
+            ]
+          },
+          {
+            "mm": 1.0474032389673285,
+            "position": [
+              0.3030274803945881,
+              0.7717443934133,
+              0.14458194039814792
+            ]
+          },
+          {
+            "mm": 1.0459834631177207,
+            "position": [
+              0.30339975617734516,
+              0.7715391182557556,
+              0.14400748604002603
+            ]
+          }
+        ],
+        "elapsedMs": 17
+      },
+      "neighborIntoCandidate": {
+        "complete": true,
+        "tested": 1992,
+        "insideSamples": 56,
+        "ambiguous": 0,
+        "maxSampleDepthMM": 0.9777308177664741,
+        "deepest": [
+          {
+            "mm": 0.9777308177664741,
+            "position": [
+              0.30238534964899105,
+              0.7729543824164864,
+              0.1448440061066088
+            ]
+          },
+          {
+            "mm": 0.9720572066355304,
+            "position": [
+              0.30439501364418453,
+              0.7722883667598524,
+              0.14235167607286492
+            ]
+          },
+          {
+            "mm": 0.9265659188126967,
+            "position": [
+              0.304159682415559,
+              0.7731173666364672,
+              0.1440030077349578
+            ]
+          },
+          {
+            "mm": 0.9081927382642022,
+            "position": [
+              0.30101935226965654,
+              0.7722977051392022,
+              0.14423134026533427
+            ]
+          },
+          {
+            "mm": 0.8589775236448943,
+            "position": [
+              0.3003780151623717,
+              0.7719513713011376,
+              0.14366467458900503
+            ]
+          },
+          {
+            "mm": 0.8398526559447538,
+            "position": [
+              0.3025720053381953,
+              0.7714640259003858,
+              0.14219600589945536
+            ]
+          },
+          {
+            "mm": 0.7945451489684552,
+            "position": [
+              0.3045000144629739,
+              0.7718350586328526,
+              0.14148100952760423
+            ]
+          },
+          {
+            "mm": 0.7226207747108297,
+            "position": [
+              0.303629673438562,
+              0.7712853759895566,
+              0.14093600624650962
+            ]
+          },
+          {
+            "mm": 0.6509292244551151,
+            "position": [
+              0.30518568344085395,
+              0.772174373427615,
+              0.14139934448466285
+            ]
+          },
+          {
+            "mm": 0.6355713036338481,
+            "position": [
+              0.2999936767652104,
+              0.771583715847477,
+              0.14315900846798196
+            ]
+          },
+          {
+            "mm": 0.6063306007348176,
+            "position": [
+              0.2996960286390937,
+              0.7723520264308448,
+              0.14459700699005928
+            ]
+          },
+          {
+            "mm": 0.5992601133261282,
+            "position": [
+              0.30202835500312847,
+              0.7738780478249414,
+              0.1464926725667522
+            ]
+          }
+        ],
+        "elapsedMs": 6
+      }
+    },
+    {
+      "neighbor": "live__phalanx_prox_2_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_prox_3_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_prox_4_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_prox_5_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_mid_2_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_mid_3_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_mid_4_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_mid_5_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_dist_1_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_dist_2_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_dist_3_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_dist_4_left",
+      "aabbDisjoint": true,
+      "complete": true
+    },
+    {
+      "neighbor": "live__phalanx_dist_5_left",
+      "aabbDisjoint": true,
+      "complete": true
+    }
+  ],
+  "selfComplete": true,
+  "method": "Candidate registered to original bone shape only; all current working regional neighbours checked with indirect BVH. Depth sampled at all vertices and triangle centres, parity majority in three directions + exact closest triangle distance. Not continuous depth maximum, anatomical masks or a clinical admissibility threshold.",
+  "admitted": false
+}

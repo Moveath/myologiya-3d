@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "width": 390,
+  "phase": "region-2",
+  "checks": [
+    "Real card selection",
+    "Only selected anatomical region",
+    "BVH retained; overlay excluded from picking",
+    "Reset overlay",
+    "Reset preserves selection/isolation",
+    "Bone isolation",
+    "Overlay respects transparency",
+    "Overlay remains after view/card changes",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": false,
+        "parentVisible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      },
+      {
+        "id": "temporal_right:A02.1.06.047",
+        "bone": "temporal_right",
+        "visible": false,
+        "parentVisible": false,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 834
+      },
+      {
+        "id": "temporal_left:A02.1.06.047",
+        "bone": "temporal_left",
+        "visible": true,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 825
+      }
+    ],
+    "failures": [],
+    "drawCalls": 2,
+    "clip": 0,
+    "pin": "head_temporal_left_A02_1_06_047"
+  }
+}

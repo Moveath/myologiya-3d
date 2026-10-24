@@ -1,0 +1,112 @@
+{
+  "views": [
+    {
+      "file": "hallux-native.png",
+      "pair": [
+        "native__toe_prox_1_left",
+        "native__toe_dist_1_left"
+      ],
+      "cameraCenter": [
+        0.07957476548463352,
+        0.0017543224775413704,
+        0.2050715791962174
+      ],
+      "scale": 0.065,
+      "objects": [
+        {
+          "id": "native__toe_prox_1_left",
+          "triangles": 2194,
+          "highlightedFaces": 48,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__toe_dist_1_left",
+          "triangles": 1594,
+          "highlightedFaces": 93,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "toe5-pip-native.png",
+      "pair": [
+        "native__toe_prox_5_left",
+        "native__toe_mid_5_left"
+      ],
+      "cameraCenter": [
+        0.13826100793650792,
+        -0.0010726866984126985,
+        0.17617389682539678
+      ],
+      "scale": 0.05,
+      "objects": [
+        {
+          "id": "native__toe_prox_5_left",
+          "triangles": 1206,
+          "highlightedFaces": 20,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__toe_mid_5_left",
+          "triangles": 302,
+          "highlightedFaces": 22,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "toe5-dip-native.png",
+      "pair": [
+        "native__toe_mid_5_left",
+        "native__toe_dist_5_left"
+      ],
+      "cameraCenter": [
+        0.14088810000000002,
+        -0.0016932067666666668,
+        0.18136163333333333
+      ],
+      "scale": 0.035,
+      "objects": [
+        {
+          "id": "native__toe_mid_5_left",
+          "triangles": 302,
+          "highlightedFaces": 7,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "id": "native__toe_dist_5_left",
+          "triangles": 284,
+          "highlightedFaces": 13,
+          "objectScale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ],
+  "sceneRestored": true,
+  "originalScene": "Scene",
+  "limitation": "Red faces are sampled penetrating face centres, not independently segmented anatomical joint surfaces. No source/model edits."
+}

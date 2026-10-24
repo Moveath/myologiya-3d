@@ -1,0 +1,23 @@
+// Isolated research build; no production admission or catalogue write.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const [specFile,directory]=process.argv.slice(2),spec=JSON.parse(await fs.readFile(specFile));
+const out=path.resolve(directory),root=path.resolve('.');
+if(!out.startsWith(path.join(root,'build_stage7')+path.sep))throw Error('Research directory required');
+await fs.mkdir(out,{recursive:false});
+let html=await fs.readFile('site/local.html','utf8');
+const replace=(a,b)=>{if(html.split(a).length!==2)throw Error('Ambiguous hook '+a);html=html.replace(a,b);};
+replace("card.modelStatus !== 'educational_limited'","!['educational_limited','technical_prototype_not_admitted'].includes(card.modelStatus)");
+const model=await fs.readFile(spec.file),hash=crypto.createHash('sha256').update(model).digest('hex');
+if(hash!==spec.sha256)throw Error('Candidate hash changed');
+await fs.writeFile(path.join(out,'candidate.glb'),model,{flag:'wx'});
+const card={noModel:false,modelStatus:'technical_prototype_not_admitted',modelFile:'/trial/candidate.glb',side:spec.side,note:spec.notice,modelNotice:spec.notice};
+replace('<script type="module" onerror=',`<script>Object.assign(window.ATLAS.muscles[${JSON.stringify(spec.id)}],${JSON.stringify(card)});(window.ATLAS.supplementalMuscles[${JSON.stringify(spec.region)}]??=[]).push(${JSON.stringify(spec.id)});</script>\n<script type="module" onerror=`);
+replace('window.__atlasRuntime.ready();',`window.__atlasRuntime.ready();enterSection(${JSON.stringify(spec.region)}).then(()=>goTo(${JSON.stringify(spec.id)})).then(()=>window.__recoveryTrialReady=true);`);
+replace('<div id="app">','<div id="trialBanner" role="status">ТЕСТОВАЯ СБОРКА · без анатомического допуска · <a href="/trial/ATTRIBUTION.html">Источники и ограничения</a></div><style>#trialBanner{height:64px;box-sizing:border-box;padding:8px 14px;font:14px/22px system-ui;background:#493e25;color:white}#trialBanner a{color:#d6f3ff}#app{height:calc(100dvh - 64px)!important}</style><div id="app">');
+await fs.writeFile(path.join(out,'trial.html'),html,{flag:'wx'});
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+await fs.writeFile(path.join(out,'ATTRIBUTION.html'),`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Исследовательская геометрия</title><main style="font:18px/1.5 system-ui;max-width:800px;margin:32px auto;padding:16px"><h1>Геометрия без анатомического допуска</h1><p>${esc(spec.notice)}</p><p>${esc(spec.attribution)}</p><p><a href="${esc(spec.licenseUrl)}">Лицензия</a>; сохраняются атрибуция, указание изменений и ShareAlike. Источник не подтверждал эту реконструкцию.</p><p><a href="/trial.html">Тестовая сборка</a> · <a href="/local.html">Основной атлас без этой модели</a></p></main>`,{flag:'wx'});
+await fs.writeFile(path.join(out,'build.json'),JSON.stringify({...spec,createdAt:new Date().toISOString(),productionModified:false},null,2),{flag:'wx'});
+console.log(JSON.stringify({directory:out,sha256:hash,productionModified:false}));

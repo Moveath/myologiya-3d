@@ -30,10 +30,15 @@ def admit(cards):
             url=f'{BASE}/LICENSE-MODELS.txt', locator=source+'; производная GLB, учебный допуск',
             scope='geometry_provenance', checked='2026-10-20'))
     for bone, reason in BLOCKED.items():
+        mirror = (
+            " Проверено отражение правой кости: конфликт с проксимальной фалангой I до 1,258745 мм; зеркальный кандидат также не подключён."
+            if bone == "metacarpal_1_left" else
+            " Проверено отражение правой кости: конфликты с trapezoid до 1,317846 мм, II пястной до 1,105602 мм и проксимальной фалангой III до 0,820490 мм; зеркальный кандидат также не подключён.")
         assert cards[bone].get('noModel') is True
-        cards[bone].update(note=reason + ' Без произвольного смещения или деформации.',
+        cards[bone].update(note=reason + mirror + ' Глубины выборочные, не физиологический допуск. Без произвольного смещения или деформации.',
             modelReview=dict(educationalAcceptance=False, fullAnatomicalAcceptance=False,
-                             report=REPORT, blockedReason=reason))
+                             report=REPORT, blockedReason=reason,
+                             mirrorReport='research/stage6-mirrored-recovery-2026-10-20.md'))
 
 
 def review_geometry(record):

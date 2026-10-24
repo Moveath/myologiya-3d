@@ -1,0 +1,40 @@
+{
+  "id": "cv_v_renal_right",
+  "source": {
+    "fma": "FMA14335",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA14335.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA14335.obj",
+    "bytes": 99198,
+    "sha256": "256b622eabca4f844711d6fddf0d31a3cf39213780929de3aa7b87fd1a20bb5e",
+    "crc": 744733078,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_renal_right.glb",
+  "sha256": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6",
+  "triangles": 1538,
+  "vertices": 771,
+  "boundsM": [
+    [
+      -0.0661345,
+      1.04057,
+      0.08095440000000001
+    ],
+    [
+      -0.014266500000000001,
+      1.05902,
+      0.126983
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 3.8586203926961095e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

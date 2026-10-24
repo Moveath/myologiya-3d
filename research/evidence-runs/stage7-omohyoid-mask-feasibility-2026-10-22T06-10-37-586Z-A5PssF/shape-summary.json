@@ -1,0 +1,163 @@
+{
+  "method": "intrinsic-level-set-profile-v1",
+  "units": "BodyParts3D mm; original source orientation",
+  "hyoid_source": "stl_neck\\FMA52749.stl",
+  "hyoid_sha256": "6fb62b5be3fa82ee49daaebc00368eda788d113bacfee742a066b41aad17621b",
+  "rows": [
+    {
+      "name": "omohyoid_right",
+      "source": "stl_neck\\FMA13348.stl",
+      "source_sha256": "f3b4ad1076c8ae49c18c1b8f2e66e5ad83ed9fe4b930082f8fb7aebb567a9773",
+      "source_vertices": 13552,
+      "source_triangles": 27096,
+      "components_face_counts": [
+        27088,
+        8
+      ],
+      "used_triangles": 27088,
+      "endpoint_method": "Nearest source vertex to hyoid mesh, then farthest intrinsic vertex; not validated attachment labels",
+      "superior_endpoint_mm": [
+        -15.431599617004395,
+        -125.9000015258789,
+        1437.1500244140625
+      ],
+      "opposite_endpoint_mm": [
+        -95.80000305175781,
+        -47.196998596191406,
+        1342.050048828125
+      ],
+      "closest_hyoid_vertex_distance_mm": 0.023496282147486985,
+      "max_edge_distance_mm": 171.2823593085096,
+      "material_tissue_labels": false,
+      "candidate_internal_minimum": {
+        "level": 0.4,
+        "center_mm": [
+          -41.819929183783785,
+          -105.80629496216214,
+          1379.4964675279282
+        ],
+        "widths_mm": [
+          4.406126564304413,
+          2.184749699309613
+        ],
+        "perimeter_mm": 11.897707741395562,
+        "loops": 1,
+        "all_degree_two": true,
+        "out_of_plane_rms_mm": 0.14761453753737208
+      },
+      "internal_local_minima": [
+        {
+          "level": 0.225,
+          "center_mm": [
+            -22.14252923108109,
+            -113.63182467162156,
+            1401.5230341851354
+          ],
+          "widths_mm": [
+            7.494345867249141,
+            4.603726368215883
+          ],
+          "perimeter_mm": 20.49501069472249,
+          "loops": 1,
+          "all_degree_two": true,
+          "out_of_plane_rms_mm": 0.17019743884459573
+        },
+        {
+          "level": 0.4,
+          "center_mm": [
+            -41.819929183783785,
+            -105.80629496216214,
+            1379.4964675279282
+          ],
+          "widths_mm": [
+            4.406126564304413,
+            2.184749699309613
+          ],
+          "perimeter_mm": 11.897707741395562,
+          "loops": 1,
+          "all_degree_two": true,
+          "out_of_plane_rms_mm": 0.14761453753737208
+        }
+      ],
+      "anatomical_mask_admitted": false,
+      "limitation": "Shape extrema do not identify myotendinous boundaries. No donor-specific tendon label, texture or volume segmentation is available."
+    },
+    {
+      "name": "omohyoid_left",
+      "source": "stl_neck\\FMA13349.stl",
+      "source_sha256": "e83cba0b5fbf1e8e865b7af835cfb1c365fb09de476f9750554af5397a618552",
+      "source_vertices": 13482,
+      "source_triangles": 26960,
+      "components_face_counts": [
+        26960
+      ],
+      "used_triangles": 26960,
+      "endpoint_method": "Nearest source vertex to hyoid mesh, then farthest intrinsic vertex; not validated attachment labels",
+      "superior_endpoint_mm": [
+        12.649999618530273,
+        -127.98200225830078,
+        1437.1500244140625
+      ],
+      "opposite_endpoint_mm": [
+        94.51789855957031,
+        -47.150001525878906,
+        1342.050048828125
+      ],
+      "closest_hyoid_vertex_distance_mm": 0.09561424703658547,
+      "max_edge_distance_mm": 172.5728146780003,
+      "material_tissue_labels": false,
+      "candidate_internal_minimum": {
+        "level": 0.4,
+        "center_mm": [
+          39.82024071428572,
+          -106.1305653241072,
+          1379.78647058125
+        ],
+        "widths_mm": [
+          4.3457351200962435,
+          2.1786770462789358
+        ],
+        "perimeter_mm": 11.850919046633631,
+        "loops": 1,
+        "all_degree_two": true,
+        "out_of_plane_rms_mm": 0.13410479176643375
+      },
+      "internal_local_minima": [
+        {
+          "level": 0.225,
+          "center_mm": [
+            20.557680776642336,
+            -113.83476984525547,
+            1402.49185830438
+          ],
+          "widths_mm": [
+            7.435902347296738,
+            4.644352971375772
+          ],
+          "perimeter_mm": 20.42153682738034,
+          "loops": 1,
+          "all_degree_two": true,
+          "out_of_plane_rms_mm": 0.11271353538980278
+        },
+        {
+          "level": 0.4,
+          "center_mm": [
+            39.82024071428572,
+            -106.1305653241072,
+            1379.78647058125
+          ],
+          "widths_mm": [
+            4.3457351200962435,
+            2.1786770462789358
+          ],
+          "perimeter_mm": 11.850919046633631,
+          "loops": 1,
+          "all_degree_two": true,
+          "out_of_plane_rms_mm": 0.13410479176643375
+        }
+      ],
+      "anatomical_mask_admitted": false,
+      "limitation": "Shape extrema do not identify myotendinous boundaries. No donor-specific tendon label, texture or volume segmentation is available."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "phases": 19,
+  "assertions": 93,
+  "metricEntries": 2,
+  "files": [
+    "v8-1280-setup.json",
+    "v8-1280-pipeline.json",
+    "v8-1280-sphenoid-036.json",
+    "v1-1280-side-right.json",
+    "v1-1280-side-left.json",
+    "v1-1280-drafts.json",
+    "v8-1280-pin-click.json",
+    "v8-1280-cuts-rays-shared.json",
+    "v4-1280-shared.json",
+    "v8-390-setup.json",
+    "v8-390-pipeline.json",
+    "v8-390-sphenoid-036.json",
+    "v5-390-side-right.json",
+    "v5-390-side-left.json",
+    "v6-390-drafts-right.json",
+    "v6-390-drafts-left.json",
+    "v8-390-pin-click.json",
+    "v8-390-cuts-rays-shared.json",
+    "v7-390-shared.json"
+  ],
+  "historicalFailures": [
+    {
+      "file": "v1-1280-cuts-rays-shared.json",
+      "error": "TimeoutError: locator.click: Timeout 5500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#pinLayer [data-pinid=\"head_sphenoid_A02_1_05_036\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-role=\"b\" data-loc=\"surface\" class=\"pin on behind\" aria-label=\"Овальное отверстие\" data-pinid=\"head_sphenoid_A02_1_05_036\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "completedChecks": 0
+    },
+    {
+      "file": "v2-1280-cuts-rays-shared.json",
+      "error": "TimeoutError: locator.click: Timeout 5500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#pinLayer [data-pinid=\"head_sphenoid_A02_1_05_036\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button hidden=\"\" data-role=\"b\" class=\"pin on\" data-loc=\"surface\" aria-label=\"Овальное отверстие\" data-pinid=\"head_sphenoid_A02_1_05_036\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "completedChecks": 0
+    },
+    {
+      "file": "v3-1280-cuts-rays-shared.json",
+      "error": "Error: 35000 ms deadline; test page closed",
+      "completedChecks": 6
+    },
+    {
+      "file": "v4-390-pipeline.json",
+      "error": "Error: Only two selected contours add draw calls",
+      "completedChecks": 3
+    },
+    {
+      "file": "v5-390-drafts.json",
+      "error": "Error: 35000 ms deadline; test page closed",
+      "completedChecks": 6
+    },
+    {
+      "file": "v6-390-cuts-rays-shared.json",
+      "error": "Error: 35000 ms deadline; test page closed",
+      "completedChecks": 2
+    }
+  ],
+  "deadlinesMs": 35000
+}

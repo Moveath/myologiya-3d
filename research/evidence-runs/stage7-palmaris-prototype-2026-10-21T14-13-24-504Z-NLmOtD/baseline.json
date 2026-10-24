@@ -1,0 +1,373 @@
+{
+  "hashes": {
+    "site/arm-glb.txt": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+    "site/data.js": "35b595d0df8e437ca4865bd4abf87524e3eacc19c2015895e5943fc394c07cd2",
+    "site/index.html": "1417e34be383b4b125acf1606072dae1151b170f212508dbddc8444fc251c070",
+    "site/local.html": "2fc9ddd665d44321357d24129f738e7198e5737ac7ecd80a58734b25b134758d",
+    "site/data-muscle-recovery.js": "aa8d08d9f3d9f48fe5cee450162b1992d2df6dfe0d32b82c7c1c43e78d3f1d77",
+    "site/data-neck-recovery.js": "b47c80938b7c239771bb8f98e5f0d5ed82651dd62c825c81a444590db1901103"
+  },
+  "allArmMeshNames": [
+    "m|deltoid|clav",
+    "m|deltoid|acrom",
+    "m|deltoid|spin",
+    "m|supraspinatus|",
+    "m|infraspinatus|",
+    "m|teres_minor|",
+    "m|teres_major|",
+    "m|subscapularis|",
+    "m|coracobrachialis|",
+    "m|biceps_brachii|long",
+    "m|biceps_brachii|short",
+    "m|brachialis|",
+    "m|triceps_brachii|long",
+    "m|triceps_brachii|lat",
+    "m|triceps_brachii|med",
+    "m|anconeus|",
+    "m|pronator_teres|hum",
+    "m|pronator_teres|uln",
+    "m|flexor_carpi_radialis|",
+    "m|palmaris_longus|",
+    "m|flexor_carpi_ulnaris|hum",
+    "m|flexor_carpi_ulnaris|uln",
+    "m|flexor_digitorum_superficialis|humuln",
+    "m|flexor_digitorum_superficialis|rad",
+    "m|flexor_digitorum_profundus|",
+    "m|flexor_pollicis_longus|",
+    "m|pronator_quadratus|",
+    "m|brachioradialis|",
+    "m|extensor_carpi_radialis_longus|",
+    "m|extensor_carpi_radialis_brevis|",
+    "m|extensor_digitorum|",
+    "m|extensor_digiti_minimi|",
+    "m|extensor_carpi_ulnaris|hum",
+    "m|extensor_carpi_ulnaris|uln",
+    "m|supinator|",
+    "m|abductor_pollicis_longus|",
+    "m|extensor_pollicis_brevis|",
+    "m|extensor_pollicis_longus|",
+    "m|extensor_indicis|",
+    "m|abductor_pollicis_brevis|",
+    "m|flexor_pollicis_brevis|sup",
+    "m|flexor_pollicis_brevis|deep",
+    "m|opponens_pollicis|",
+    "m|adductor_pollicis|obl",
+    "m|adductor_pollicis|transv",
+    "m|abductor_digiti_minimi|",
+    "m|flexor_digiti_minimi_brevis|",
+    "m|opponens_digiti_minimi|",
+    "m|lumbricals|",
+    "m|palmar_interossei|",
+    "m|dorsal_interossei|",
+    "m|pectoralis_major|clav",
+    "m|pectoralis_major|stern",
+    "m|pectoralis_major|abd",
+    "m|pectoralis_minor|",
+    "m|subclavius|",
+    "m|serratus_anterior|",
+    "m|latissimus_dorsi|",
+    "m|trapezius|desc",
+    "m|trapezius|transv",
+    "m|trapezius|asc",
+    "m|rhomboid_major|",
+    "m|rhomboid_minor|",
+    "m|levator_scapulae|",
+    "b|clavicle",
+    "b|scapula",
+    "b|humerus",
+    "b|radius",
+    "b|ulna",
+    "b|scaphoid",
+    "b|lunate",
+    "b|triquetrum",
+    "b|pisiform",
+    "b|trapezium",
+    "b|trapezoid",
+    "b|capitate",
+    "b|hamate",
+    "b|metacarpal_1",
+    "b|metacarpal_2",
+    "b|metacarpal_3",
+    "b|metacarpal_4",
+    "b|metacarpal_5",
+    "b|phalanx_prox_1",
+    "b|phalanx_prox_2",
+    "b|phalanx_prox_3",
+    "b|phalanx_prox_4",
+    "b|phalanx_prox_5",
+    "b|phalanx_mid_2",
+    "b|phalanx_mid_3",
+    "b|phalanx_mid_4",
+    "b|phalanx_mid_5",
+    "b|phalanx_dist_1",
+    "b|phalanx_dist_2",
+    "b|phalanx_dist_3",
+    "b|phalanx_dist_4",
+    "b|phalanx_dist_5",
+    "o|interosseous_membrane",
+    "o|flexor_retinaculum",
+    "c|FMA7486",
+    "c|FMA7487",
+    "c|FMA7488",
+    "c|FMA7857",
+    "c|FMA7882",
+    "c|FMA7909",
+    "c|FMA7957",
+    "c|FMA8066",
+    "c|FMA8175",
+    "c|FMA8229",
+    "c|FMA8283",
+    "c|FMA8364",
+    "c|FMA8445",
+    "c|FMA8531",
+    "c|FMA8533",
+    "c|FMA7875",
+    "c|FMA7886",
+    "c|FMA7913",
+    "c|FMA7976",
+    "c|FMA8070",
+    "c|FMA8194",
+    "c|FMA8248",
+    "c|BP28",
+    "c|FMA12519",
+    "c|FMA12520",
+    "c|FMA12521",
+    "c|FMA12522",
+    "c|FMA12523",
+    "c|FMA12524",
+    "c|FMA12525",
+    "c|FMA9165",
+    "c|FMA9187",
+    "c|FMA9209",
+    "c|FMA9248",
+    "c|FMA9922",
+    "c|FMA9945",
+    "c|FMA9968",
+    "c|FMA9991",
+    "c|FMA10014",
+    "c|FMA10037",
+    "c|FMA10059",
+    "c|FMA10081"
+  ],
+  "source": {
+    "file": "site/arm-glb.txt",
+    "sha256": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878"
+  },
+  "palmarisCard": {
+    "lat": "m. palmaris brevis",
+    "ru": "Короткая ладонная мышца",
+    "g": "hand_hypo",
+    "d": 1,
+    "v": "antmed",
+    "L": "подкожная",
+    "noModel": true,
+    "o": "Медиальный край ладонного апоневроза.",
+    "i": "Кожа медиального края ладони.",
+    "a": "Собирает кожу возвышения мизинца в складки, углубляет ладонь.",
+    "n": "Локтевой нерв (поверхностная ветвь).",
+    "s": "Локтевая артерия, поверхностная ладонная дуга.",
+    "note": "Тонкая подкожная мышца. В 3D-модели её нет, поэтому здесь только карточка."
+  },
+  "selected": [
+    {
+      "id": "abductor_pollicis_brevis",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "flexor_pollicis_brevis",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "flexor_pollicis_brevis",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "opponens_pollicis",
+      "type": "m",
+      "triangles": 1498
+    },
+    {
+      "id": "adductor_pollicis",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "adductor_pollicis",
+      "type": "m",
+      "triangles": 1498
+    },
+    {
+      "id": "abductor_digiti_minimi",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "opponens_digiti_minimi",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "lumbricals",
+      "type": "m",
+      "triangles": 1978
+    },
+    {
+      "id": "palmar_interossei",
+      "type": "m",
+      "triangles": 1500
+    },
+    {
+      "id": "dorsal_interossei",
+      "type": "m",
+      "triangles": 2252
+    },
+    {
+      "id": "scaphoid",
+      "type": "b",
+      "triangles": 1074
+    },
+    {
+      "id": "lunate",
+      "type": "b",
+      "triangles": 864
+    },
+    {
+      "id": "triquetrum",
+      "type": "b",
+      "triangles": 704
+    },
+    {
+      "id": "pisiform",
+      "type": "b",
+      "triangles": 396
+    },
+    {
+      "id": "trapezium",
+      "type": "b",
+      "triangles": 1026
+    },
+    {
+      "id": "trapezoid",
+      "type": "b",
+      "triangles": 616
+    },
+    {
+      "id": "capitate",
+      "type": "b",
+      "triangles": 1284
+    },
+    {
+      "id": "hamate",
+      "type": "b",
+      "triangles": 1150
+    },
+    {
+      "id": "metacarpal_1",
+      "type": "b",
+      "triangles": 2434
+    },
+    {
+      "id": "metacarpal_2",
+      "type": "b",
+      "triangles": 3218
+    },
+    {
+      "id": "metacarpal_3",
+      "type": "b",
+      "triangles": 3018
+    },
+    {
+      "id": "metacarpal_4",
+      "type": "b",
+      "triangles": 2306
+    },
+    {
+      "id": "metacarpal_5",
+      "type": "b",
+      "triangles": 2178
+    },
+    {
+      "id": "phalanx_prox_1",
+      "type": "b",
+      "triangles": 1368
+    },
+    {
+      "id": "phalanx_prox_2",
+      "type": "b",
+      "triangles": 1664
+    },
+    {
+      "id": "phalanx_prox_3",
+      "type": "b",
+      "triangles": 1968
+    },
+    {
+      "id": "phalanx_prox_4",
+      "type": "b",
+      "triangles": 1620
+    },
+    {
+      "id": "phalanx_prox_5",
+      "type": "b",
+      "triangles": 1208
+    },
+    {
+      "id": "phalanx_mid_2",
+      "type": "b",
+      "triangles": 1140
+    },
+    {
+      "id": "phalanx_mid_3",
+      "type": "b",
+      "triangles": 1476
+    },
+    {
+      "id": "phalanx_mid_4",
+      "type": "b",
+      "triangles": 1350
+    },
+    {
+      "id": "phalanx_mid_5",
+      "type": "b",
+      "triangles": 900
+    },
+    {
+      "id": "phalanx_dist_1",
+      "type": "b",
+      "triangles": 1040
+    },
+    {
+      "id": "phalanx_dist_2",
+      "type": "b",
+      "triangles": 656
+    },
+    {
+      "id": "phalanx_dist_3",
+      "type": "b",
+      "triangles": 640
+    },
+    {
+      "id": "phalanx_dist_4",
+      "type": "b",
+      "triangles": 452
+    },
+    {
+      "id": "phalanx_dist_5",
+      "type": "b",
+      "triangles": 466
+    },
+    {
+      "id": "flexor_retinaculum",
+      "type": "o",
+      "triangles": 1596
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_hepatic_common",
+  "source": {
+    "fma": "FMA14771",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA14771.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA14771.obj",
+    "bytes": 49769,
+    "sha256": "88f5d72904e82ba8b83b40807310eadc724619c85bd686bbd9d3d3101ba331f4",
+    "crc": 3679912534,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_hepatic_common.glb",
+  "sha256": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663",
+  "triangles": 808,
+  "vertices": 406,
+  "boundsM": [
+    [
+      -0.0156324,
+      1.07867,
+      0.128072
+    ],
+    [
+      0.004814860000000001,
+      1.1095,
+      0.145279
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 1.0160001906050392e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

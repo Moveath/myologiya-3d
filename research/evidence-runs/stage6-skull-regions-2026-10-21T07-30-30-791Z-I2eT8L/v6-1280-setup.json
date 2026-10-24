@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "width": 1280,
+  "phase": "setup",
+  "checks": [
+    "Accepted contour loaded; both drafts disabled",
+    "20 noModel retained",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": false,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      }
+    ],
+    "failures": [
+      [
+        "temporal_right:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ]
+    ],
+    "drawCalls": 50,
+    "clip": 0,
+    "pin": null
+  }
+}

@@ -1,0 +1,2941 @@
+{
+  "source": "research\\cache\\stage7-z-muscles-04d15340\\Z-Anatomy-Startup.blend",
+  "source_sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "blender": "5.2.2 LTS",
+  "objects": [
+    {
+      "name": "Diaphragm",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Muscles",
+        "Trunk"
+      ],
+      "vertices": 4796,
+      "polygons": 4921,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.013290932402014732
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -1.4210854715202004e-14,
+          -0.008662796579301357
+        ],
+        [
+          0.0,
+          1.4210854715202004e-14,
+          0.9999998807907104,
+          1.1620349884033203
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm\", name=\"M3\", address=0x000002995FECBF60>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBDiaphragm\", name=\"SheetGenerator\", address=0x000002995FECBEA0>",
+        "MeasureItArchProps": "<bpy id prop: owner=\"OBDiaphragm\", name=\"MeasureItArchProps\", address=0x000002995FECBDE0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o1l",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 70,
+      "polygons": 90,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105426934084528e-15,
+          -3.0145773843772566e-14,
+          0.017060622572898865
+        ],
+        [
+          1.4210851327070215e-14,
+          1.0,
+          1.4210853868169056e-14,
+          0.002461872296407819
+        ],
+        [
+          3.014577045564078e-14,
+          1.4210853868169056e-14,
+          1.0,
+          1.1150178909301758
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o1l\", name=\"M3\", address=0x000002995FECB4E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o1r",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 70,
+      "polygons": 90,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105426934084528e-15,
+          -3.0145773843772566e-14,
+          -0.01706068217754364
+        ],
+        [
+          -1.4210851327070215e-14,
+          1.0,
+          1.4210853868169056e-14,
+          0.002461872296407819
+        ],
+        [
+          -3.014577045564078e-14,
+          1.4210853868169056e-14,
+          1.0,
+          1.1150178909301758
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o1r\", name=\"M3\", address=0x000002995FECABE0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o2l",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 43,
+      "polygons": 45,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105427357601002e-15,
+          -3.0145777231904355e-14,
+          0.016039516776800156
+        ],
+        [
+          1.4210851327070215e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          -0.006526198238134384
+        ],
+        [
+          3.014577045564078e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.0851482152938843
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o2l\", name=\"M3\", address=0x000002995FECA2E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o2r",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 43,
+      "polygons": 45,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105427357601002e-15,
+          -3.0145777231904355e-14,
+          -0.01603957638144493
+        ],
+        [
+          -1.4210851327070215e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          -0.006526198238134384
+        ],
+        [
+          -3.014577045564078e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.0851482152938843
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o2r\", name=\"M3\", address=0x000002995FEC99E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o3l",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 25,
+      "polygons": 23,
+      "matrix_world": [
+        [
+          1.0000003576278687,
+          7.105426934084528e-15,
+          -3.0145777231904355e-14,
+          0.012562290765345097
+        ],
+        [
+          1.4210853021136109e-14,
+          1.0,
+          1.4210853868169056e-14,
+          -0.014787709340453148
+        ],
+        [
+          3.014577045564078e-14,
+          1.4210853868169056e-14,
+          1.0,
+          1.0528374910354614
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o3l\", name=\"M3\", address=0x000002995FEC90E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o3r",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 25,
+      "polygons": 23,
+      "matrix_world": [
+        [
+          -1.0000003576278687,
+          7.105426934084528e-15,
+          -3.0145777231904355e-14,
+          -0.012562350369989872
+        ],
+        [
+          -1.4210853021136109e-14,
+          1.0,
+          1.4210853868169056e-14,
+          -0.014787709340453148
+        ],
+        [
+          -3.014577045564078e-14,
+          1.4210853868169056e-14,
+          1.0,
+          1.0528374910354614
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o3r\", name=\"M3\", address=0x000002995FEC87E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o4l",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 306,
+      "polygons": 453,
+      "matrix_world": [
+        [
+          0.9999998211860657,
+          -6.123448770267714e-08,
+          2.3719695096957594e-09,
+          0.05345533415675163
+        ],
+        [
+          8.149071639707017e-09,
+          0.9999998807907104,
+          0.0,
+          0.049647584557533264
+        ],
+        [
+          1.0055376087336754e-08,
+          1.601875823098453e-07,
+          0.9999998211860657,
+          1.1169277429580688
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o4l\", name=\"M3\", address=0x000002995FEBBDE0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o4r",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 306,
+      "polygons": 453,
+      "matrix_world": [
+        [
+          -0.9999998211860657,
+          6.7520851132485404e-09,
+          -8.003564477832015e-10,
+          -0.053455352783203125
+        ],
+        [
+          -8.149072527885437e-09,
+          0.9999998807907104,
+          0.0,
+          0.049647584557533264
+        ],
+        [
+          -1.0055373422801495e-08,
+          1.601875823098453e-07,
+          0.9999998211860657,
+          1.1169277429580688
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o4r\", name=\"M3\", address=0x000002995FEBB4E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o5l",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 61,
+      "polygons": 73,
+      "matrix_world": [
+        [
+          0.9999998211860657,
+          -6.12344948081045e-08,
+          2.3719695096957594e-09,
+          0.11240577697753906
+        ],
+        [
+          8.149072527885437e-09,
+          0.9999998807907104,
+          0.0,
+          0.0035550903994590044
+        ],
+        [
+          1.0055376975515173e-08,
+          1.6018759652070003e-07,
+          0.9999998211860657,
+          1.0691297054290771
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o5l\", name=\"M3\", address=0x000002995FEBABE0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.o5r",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 61,
+      "polygons": 73,
+      "matrix_world": [
+        [
+          -0.9999998211860657,
+          6.752083336891701e-09,
+          -8.003564477832015e-10,
+          -0.11240579187870026
+        ],
+        [
+          -8.149072527885437e-09,
+          0.9999998807907104,
+          0.0,
+          0.003555088536813855
+        ],
+        [
+          -1.0055373422801495e-08,
+          1.6018759652070003e-07,
+          0.9999998211860657,
+          1.0691297054290771
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.o5r\", name=\"M3\", address=0x000002995FEBA2E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.ol",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 200,
+      "polygons": 158,
+      "matrix_world": [
+        [
+          1.0000001192092896,
+          0.0,
+          0.0,
+          0.07777240872383118
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -3.8941431057537557e-07,
+          -0.07429639995098114
+        ],
+        [
+          0.0,
+          3.8941431057537557e-07,
+          0.9999998807907104,
+          1.123013973236084
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.ol\", name=\"M3\", address=0x000002995FEB99E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragm.or",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 200,
+      "polygons": 158,
+      "matrix_world": [
+        [
+          -1.0000001192092896,
+          0.0,
+          0.0,
+          -0.07777240872383118
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -3.8941431057537557e-07,
+          -0.07429639995098114
+        ],
+        [
+          0.0,
+          3.8941431057537557e-07,
+          0.9999998807907104,
+          1.123013973236084
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragm.or\", name=\"M3\", address=0x000002995FEB90E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragmatic fascia",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Abdominal part of muscular system",
+        "Fascia",
+        "Trunk"
+      ],
+      "vertices": 2428,
+      "polygons": 2391,
+      "matrix_world": [
+        [
+          0.9803574681282043,
+          -1.3931717548533191e-14,
+          3.930555071802066e-21,
+          -0.0032173041254281998
+        ],
+        [
+          -3.321580302365587e-21,
+          -1.5972048572621134e-07,
+          -0.9803575873374939,
+          -0.012000657618045807
+        ],
+        [
+          -1.3931717548533191e-14,
+          0.9803575873374939,
+          -1.5972048572621134e-07,
+          1.1757864952087402
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDiaphragmatic fascia\", name=\"M3\", address=0x000002995FEB87E0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBDiaphragmatic fascia\", name=\"SheetGenerator\", address=0x000002995FEB8720>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragmatic surface of liver.j",
+      "type": "MESH",
+      "collections": [
+        "8: Visceral systems"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.04835117980837822
+        ],
+        [
+          0.0,
+          1.0000001192092896,
+          3.485631623334484e-06,
+          -0.04080279916524887
+        ],
+        [
+          0.0,
+          -3.485631623334484e-06,
+          1.0000001192092896,
+          1.2935272455215454
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Hook",
+          "type": "HOOK"
+        }
+      ],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragmatic surface of liver.t",
+      "type": "FONT",
+      "collections": [
+        "8: Visceral systems"
+      ]
+    },
+    {
+      "name": "Diaphragmatic surface of lung.j",
+      "type": "MESH",
+      "collections": [
+        "8: Visceral systems"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09048017114400864
+        ],
+        [
+          0.0,
+          1.0000001192092896,
+          3.485631623334484e-06,
+          0.010781695134937763
+        ],
+        [
+          0.0,
+          -3.485631623334484e-06,
+          1.0000001192092896,
+          1.1644632816314697
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Hook",
+          "type": "HOOK"
+        }
+      ],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragmatic surface of lung.t",
+      "type": "FONT",
+      "collections": [
+        "8: Visceral systems"
+      ]
+    },
+    {
+      "name": "Diaphragmatic surface of spleen.j",
+      "type": "MESH",
+      "collections": [
+        "6: Lymphoid organs"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          0.8596738576889038,
+          0.5108115077018738,
+          0.005708240903913975,
+          0.145792156457901
+        ],
+        [
+          -0.5108432173728943,
+          0.8596202731132507,
+          0.009606251493096352,
+          0.024082671850919724
+        ],
+        [
+          1.0435417152621085e-07,
+          -0.011174248531460762,
+          0.9999377131462097,
+          1.1640713214874268
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Hook",
+          "type": "HOOK"
+        }
+      ],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Diaphragmatic surface of spleen.t",
+      "type": "FONT",
+      "collections": [
+        "6: Lymphoid organs"
+      ]
+    },
+    {
+      "name": "Dorsal parts of lateral intertransversarii lumborum muscles.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Hypaxial muscles of back",
+        "Muscles",
+        "Trunk"
+      ],
+      "vertices": 362,
+      "polygons": 720,
+      "matrix_world": [
+        [
+          -0.9999999403953552,
+          7.105427357601002e-15,
+          -1.6940658945086007e-21,
+          0.03461697697639465
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.03585638478398323
+        ],
+        [
+          1.6940658945086007e-21,
+          0.0,
+          1.0,
+          1.0676379203796387
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDorsal parts of lateral intertransversarii lumborum muscles.l\", name=\"M3\", address=0x000002995FE04720>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBDorsal parts of lateral intertransversarii lumborum muscles.l\", name=\"SheetGenerator\", address=0x000002995FE04660>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Dorsal parts of lateral intertransversarii lumborum muscles.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Hypaxial muscles of back",
+        "Muscles",
+        "Trunk"
+      ],
+      "vertices": 362,
+      "polygons": 720,
+      "matrix_world": [
+        [
+          0.9999999403953552,
+          7.105427357601002e-15,
+          -1.6940658945086007e-21,
+          -0.03461697697639465
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.03585638478398323
+        ],
+        [
+          -1.6940658945086007e-21,
+          0.0,
+          1.0,
+          1.0676379203796387
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBDorsal parts of lateral intertransversarii lumborum muscles.r\", name=\"M3\", address=0x000002995FDFFD20>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBDorsal parts of lateral intertransversarii lumborum muscles.r\", name=\"SheetGenerator\", address=0x000002995FDFFC60>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Inferior diaphragmatic nodes",
+      "type": "MESH",
+      "collections": [
+        "6: Lymphoid organs",
+        "Trunk"
+      ],
+      "vertices": 516,
+      "polygons": 576,
+      "matrix_world": [
+        [
+          -0.2618328928947449,
+          -0.8196703195571899,
+          0.97446608543396,
+          -0.0030317094642668962
+        ],
+        [
+          -0.9968722462654114,
+          0.7509322166442871,
+          0.3637920618057251,
+          -0.012341516092419624
+        ],
+        [
+          -0.7922672033309937,
+          -0.6739734411239624,
+          -0.7797890901565552,
+          1.239975929260254
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "M3": "<bpy id prop: owner=\"OBInferior diaphragmatic nodes\", name=\"M3\", address=0x000002995F8C4D20>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBInferior diaphragmatic nodes\", name=\"SheetGenerator\", address=0x000002995F8C4C60>"
+      }
+    },
+    {
+      "name": "Intertransversarii muscles.g",
+      "type": "FONT",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Hypaxial muscles of back",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Intertransversarii muscles.j",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Trunk"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          -2.000000238418579,
+          -1.4210856409267898e-14,
+          -5.6740647988531e-20,
+          -0.027253273874521255
+        ],
+        [
+          0.0,
+          -2.000000238418579,
+          -7.508699127356522e-06,
+          0.14528889954090118
+        ],
+        [
+          3.388132596810768e-21,
+          -6.971263246668968e-06,
+          2.000000238418579,
+          1.1321117877960205
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Intertransverse ligaments.l",
+      "type": "MESH",
+      "collections": [
+        "3: Joints",
+        "Abdomen",
+        "Back",
+        "Fibrous joints of vertebral column",
+        "Neck",
+        "Thorax",
+        "Trunk",
+        "Vertebral column"
+      ],
+      "vertices": 27,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          0.0,
+          0.0,
+          0.0334552600979805
+        ],
+        [
+          0.0,
+          1.000000238418579,
+          1.7881399116959074e-07,
+          0.04430333524942398
+        ],
+        [
+          0.0,
+          -1.7881400538044545e-07,
+          1.000000238418579,
+          1.3117300271987915
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Subdivision path",
+          "type": "SUBSURF"
+        },
+        {
+          "name": "Skin",
+          "type": "SKIN"
+        },
+        {
+          "name": "Subdivision profile",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBIntertransverse ligaments.l\", name=\"M3\", address=0x000002995F6E1620>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Intertransverse ligaments.r",
+      "type": "MESH",
+      "collections": [
+        "3: Joints",
+        "Abdomen",
+        "Back",
+        "Fibrous joints of vertebral column",
+        "Neck",
+        "Thorax",
+        "Trunk",
+        "Vertebral column"
+      ],
+      "vertices": 27,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          0.0,
+          0.0,
+          -0.0334552526473999
+        ],
+        [
+          0.0,
+          1.000000238418579,
+          1.7881399116959074e-07,
+          0.04430333524942398
+        ],
+        [
+          0.0,
+          -1.7881400538044545e-07,
+          1.000000238418579,
+          1.3117300271987915
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Subdivision path",
+          "type": "SUBSURF"
+        },
+        {
+          "name": "Skin",
+          "type": "SKIN"
+        },
+        {
+          "name": "Subdivision profile",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBIntertransverse ligaments.r\", name=\"M3\", address=0x000002995F6E0BA0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Left subcostal vein",
+      "type": "CURVE",
+      "collections": [
+        "5: Cardiovascular system",
+        "Systemic veins",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Multifidus colli muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Neck",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 696,
+      "polygons": 1390,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          0.014912751503288746
+        ],
+        [
+          -2.1316278684671217e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          0.034707099199295044
+        ],
+        [
+          -1.065813595420382e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.491797685623169
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus colli muscle.l\", name=\"M3\", address=0x00000299610B23A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus colli muscle.l\", name=\"SheetGenerator\", address=0x00000299610B22E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus colli muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Neck",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 696,
+      "polygons": 1390,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          -0.014912749640643597
+        ],
+        [
+          2.1316278684671217e-14,
+          1.0000001192092896,
+          0.0,
+          0.034707099199295044
+        ],
+        [
+          1.065813595420382e-14,
+          0.0,
+          1.0000001192092896,
+          1.491797685623169
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus colli muscle.r\", name=\"M3\", address=0x00000299610B1AA0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus colli muscle.r\", name=\"SheetGenerator\", address=0x00000299610B19E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus lumborum muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 1413,
+      "polygons": 2820,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          0.02212793193757534
+        ],
+        [
+          -2.1316278684671217e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          0.04374882951378822
+        ],
+        [
+          -1.065813595420382e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.0657624006271362
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus lumborum muscle.l\", name=\"M3\", address=0x00000299610B11A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus lumborum muscle.l\", name=\"SheetGenerator\", address=0x00000299610B10E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus lumborum muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 1413,
+      "polygons": 2820,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          -0.02212793193757534
+        ],
+        [
+          2.1316278684671217e-14,
+          1.0000001192092896,
+          0.0,
+          0.04374882951378822
+        ],
+        [
+          1.065813595420382e-14,
+          0.0,
+          1.0000001192092896,
+          1.0657624006271362
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus lumborum muscle.r\", name=\"M3\", address=0x00000299610B08A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus lumborum muscle.r\", name=\"SheetGenerator\", address=0x00000299610B07E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus muscles.g",
+      "type": "FONT",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Transversospinal muscles",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Multifidus muscles.j",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Trunk"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          -1.5000007152557373,
+          -1.0658087673325826e-14,
+          -1.5987257294381406e-14,
+          -0.012042399495840073
+        ],
+        [
+          -3.19744264973363e-14,
+          -1.5000004768371582,
+          -5.631525255012093e-06,
+          0.122257299721241
+        ],
+        [
+          -1.5987208166470465e-14,
+          -5.228449026617454e-06,
+          1.5000004768371582,
+          1.1710703372955322
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus thoracis muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 1987,
+      "polygons": 3902,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          0.014064760878682137
+        ],
+        [
+          -2.1316278684671217e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          0.076204314827919
+        ],
+        [
+          -1.065813595420382e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.3068362474441528
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus thoracis muscle.l\", name=\"M3\", address=0x00000299610AAFA0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus thoracis muscle.l\", name=\"SheetGenerator\", address=0x00000299610AAEE0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Multifidus thoracis muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 1987,
+      "polygons": 3902,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          -0.014064759016036987
+        ],
+        [
+          2.1316278684671217e-14,
+          1.0000001192092896,
+          0.0,
+          0.076204314827919
+        ],
+        [
+          1.065813595420382e-14,
+          0.0,
+          1.0000001192092896,
+          1.3068362474441528
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBMultifidus thoracis muscle.r\", name=\"M3\", address=0x00000299610AA6A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBMultifidus thoracis muscle.r\", name=\"SheetGenerator\", address=0x00000299610AA5E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Nasalis muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Facial muscles",
+        "Facial nerve (VII)",
+        "Head",
+        "Muscles",
+        "Muscles of head",
+        "Superficial muscles"
+      ],
+      "vertices": 352,
+      "polygons": 704,
+      "matrix_world": [
+        [
+          -1.0000001192092896,
+          0.0,
+          0.0,
+          0.008471999317407608
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -4.263256414560601e-14,
+          -0.08864494413137436
+        ],
+        [
+          0.0,
+          2.842170943040401e-14,
+          0.9999997019767761,
+          1.5819599628448486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBNasalis muscle.l\", name=\"M3\", address=0x00000299610482A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBNasalis muscle.l\", name=\"SheetGenerator\", address=0x00000299610481E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Nasalis muscle.ol",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 32,
+      "polygons": 21,
+      "matrix_world": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0034228451550006866
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -4.235164736271502e-22,
+          -0.09089131653308868
+        ],
+        [
+          0.0,
+          -4.235164736271502e-22,
+          0.9999998211860657,
+          1.592279314994812
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBNasalis muscle.ol\", name=\"M3\", address=0x00000299610378A0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Nasalis muscle.or",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 32,
+      "polygons": 21,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0034228451550006866
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -4.235164736271502e-22,
+          -0.09089131653308868
+        ],
+        [
+          0.0,
+          -4.235164736271502e-22,
+          0.9999998211860657,
+          1.592279314994812
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBNasalis muscle.or\", name=\"M3\", address=0x0000029961036FA0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Nasalis muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Facial muscles",
+        "Facial nerve (VII)",
+        "Head",
+        "Muscles",
+        "Muscles of head",
+        "Superficial muscles"
+      ],
+      "vertices": 352,
+      "polygons": 704,
+      "matrix_world": [
+        [
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -0.008472014218568802
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -4.263256414560601e-14,
+          -0.08864494413137436
+        ],
+        [
+          0.0,
+          2.842170943040401e-14,
+          0.9999997019767761,
+          1.5819599628448486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBNasalis muscle.r\", name=\"M3\", address=0x00000299610366A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBNasalis muscle.r\", name=\"SheetGenerator\", address=0x00000299610365E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.el",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 15,
+      "polygons": 12,
+      "matrix_world": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.014748929999768734
+        ],
+        [
+          0.0,
+          0.9999999403953552,
+          0.0,
+          -0.02968016266822815
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999403953552,
+          1.4958446025848389
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.el\", name=\"M3\", address=0x0000029960EFF120>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.er",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 15,
+      "polygons": 12,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.014748959802091122
+        ],
+        [
+          0.0,
+          0.9999999403953552,
+          0.0,
+          -0.02968016266822815
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999403953552,
+          1.4958446025848389
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.er\", name=\"M3\", address=0x0000029960EFE820>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Muscles",
+        "Muscles of neck",
+        "Neck",
+        "Trunk"
+      ],
+      "vertices": 1355,
+      "polygons": 2706,
+      "matrix_world": [
+        [
+          -0.9999999403953552,
+          0.0,
+          0.0,
+          0.05954314023256302
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -5.684341886080802e-14,
+          0.009174151346087456
+        ],
+        [
+          0.0,
+          5.684341886080802e-14,
+          0.9999997615814209,
+          1.4349044561386108
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.l\", name=\"M3\", address=0x0000029960EFDF20>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBOmohyoid muscle.l\", name=\"SheetGenerator\", address=0x0000029960EFDE60>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.ol",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 52,
+      "polygons": 64,
+      "matrix_world": [
+        [
+          -0.9999999403953552,
+          0.0,
+          0.0,
+          0.10057290643453598
+        ],
+        [
+          0.0,
+          0.9999999403953552,
+          1.4210854715202004e-14,
+          0.05623985826969147
+        ],
+        [
+          0.0,
+          -1.4210854715202004e-14,
+          0.9999999403953552,
+          1.394653558731079
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.ol\", name=\"M3\", address=0x0000029960EFD620>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.or",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 52,
+      "polygons": 64,
+      "matrix_world": [
+        [
+          0.9999999403953552,
+          0.0,
+          0.0,
+          -0.10057289153337479
+        ],
+        [
+          0.0,
+          0.9999999403953552,
+          1.4210847938938426e-14,
+          0.05623985826969147
+        ],
+        [
+          0.0,
+          -1.4210847938938426e-14,
+          0.9999999403953552,
+          1.394653558731079
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.or\", name=\"M3\", address=0x0000029960EFCD20>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Omohyoid muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Muscles",
+        "Muscles of neck",
+        "Neck",
+        "Trunk"
+      ],
+      "vertices": 1355,
+      "polygons": 2706,
+      "matrix_world": [
+        [
+          0.9999999403953552,
+          0.0,
+          0.0,
+          -0.05954306572675705
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -5.684341886080802e-14,
+          0.009174151346087456
+        ],
+        [
+          0.0,
+          5.684341886080802e-14,
+          0.9999997615814209,
+          1.4349044561386108
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOmohyoid muscle.r\", name=\"M3\", address=0x0000029960EFC420>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBOmohyoid muscle.r\", name=\"SheetGenerator\", address=0x0000029960EFC360>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Orbicularis oris muscle.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Facial muscles",
+        "Facial nerve (VII)",
+        "Head",
+        "Muscles",
+        "Muscles of head",
+        "Superficial muscles"
+      ],
+      "vertices": 940,
+      "polygons": 1880,
+      "matrix_world": [
+        [
+          -1.0000001192092896,
+          0.0,
+          0.0,
+          0.013950065709650517
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -4.263256414560601e-14,
+          -0.08278021216392517
+        ],
+        [
+          0.0,
+          2.842170943040401e-14,
+          0.9999997019767761,
+          1.5321714878082275
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOrbicularis oris muscle.l\", name=\"M3\", address=0x0000029960ED75A0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBOrbicularis oris muscle.l\", name=\"SheetGenerator\", address=0x0000029960ED74E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Orbicularis oris muscle.ol",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 11,
+      "polygons": 5,
+      "matrix_world": [
+        [
+          -1.0,
+          -2.524354896707238e-29,
+          -5.293955920339377e-23,
+          0.0020138102117925882
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -2.842170943040401e-14,
+          -0.08033162355422974
+        ],
+        [
+          -5.293955920339377e-23,
+          2.842170943040401e-14,
+          0.9999998807907104,
+          1.5113906860351562
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOrbicularis oris muscle.ol\", name=\"M3\", address=0x0000029960ED6CA0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Orbicularis oris muscle.or",
+      "type": "MESH",
+      "collections": [
+        "2: Muscular insertions"
+      ],
+      "vertices": 11,
+      "polygons": 5,
+      "matrix_world": [
+        [
+          1.0,
+          -2.524354896707238e-29,
+          -5.293955920339377e-23,
+          -0.0020138102117925882
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          -2.842170943040401e-14,
+          -0.08033162355422974
+        ],
+        [
+          5.293955920339377e-23,
+          2.842170943040401e-14,
+          0.9999998807907104,
+          1.5113906860351562
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY"
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF"
+        }
+      ],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOrbicularis oris muscle.or\", name=\"M3\", address=0x0000029960ED63A0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Orbicularis oris muscle.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Facial muscles",
+        "Facial nerve (VII)",
+        "Head",
+        "Muscles",
+        "Muscles of head",
+        "Superficial muscles"
+      ],
+      "vertices": 940,
+      "polygons": 1880,
+      "matrix_world": [
+        [
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -0.01395008061081171
+        ],
+        [
+          0.0,
+          0.9999997615814209,
+          -4.263256414560601e-14,
+          -0.08278021216392517
+        ],
+        [
+          0.0,
+          2.842170943040401e-14,
+          0.9999997019767761,
+          1.5321714878082275
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBOrbicularis oris muscle.r\", name=\"M3\", address=0x0000029960ED5AA0>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBOrbicularis oris muscle.r\", name=\"SheetGenerator\", address=0x0000029960ED59E0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Pelvic diaphragm.g",
+      "type": "FONT",
+      "collections": [
+        "4: Muscular system",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Pelvic diaphragm.j",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Trunk"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          -2.0000007152557373,
+          0.0,
+          0.0,
+          0.0001873970904853195
+        ],
+        [
+          0.0,
+          -2.000000476837158,
+          -7.5087000368512236e-06,
+          0.14434310793876648
+        ],
+        [
+          0.0,
+          -6.97126415616367e-06,
+          2.000000476837158,
+          0.832031786441803
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Rotatores.g",
+      "type": "FONT",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Transversospinal muscles",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Rotatores.j",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Trunk"
+      ],
+      "vertices": 2,
+      "polygons": 0,
+      "matrix_world": [
+        [
+          -1.5000007152557373,
+          -1.0658087673325826e-14,
+          -1.5987257294381406e-14,
+          -0.011689217761158943
+        ],
+        [
+          -3.19744264973363e-14,
+          -1.5000004768371582,
+          -5.631525255012093e-06,
+          0.10269173234701157
+        ],
+        [
+          -1.5987208166470465e-14,
+          -5.228449026617454e-06,
+          1.5000004768371582,
+          1.1591287851333618
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "Cross-section-X": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y": "1",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z": "1",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Rotatores.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Neck",
+        "Rotatores",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 3254,
+      "polygons": 6518,
+      "matrix_world": [
+        [
+          -1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          0.014613216742873192
+        ],
+        [
+          -2.1316278684671217e-14,
+          1.0000001192092896,
+          1.4210854715202004e-14,
+          0.06708212941884995
+        ],
+        [
+          -1.065813595420382e-14,
+          1.4210854715202004e-14,
+          1.0000001192092896,
+          1.2306926250457764
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBRotatores.l\", name=\"M3\", address=0x0000029960B42B20>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBRotatores.l\", name=\"SheetGenerator\", address=0x0000029960B42A60>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Rotatores.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Muscles",
+        "Neck",
+        "Rotatores",
+        "Transversospinal muscles",
+        "Trunk"
+      ],
+      "vertices": 3254,
+      "polygons": 6518,
+      "matrix_world": [
+        [
+          1.000000238418579,
+          7.105427357601002e-15,
+          -1.0658142730467397e-14,
+          -0.014613216742873192
+        ],
+        [
+          2.1316278684671217e-14,
+          1.0000001192092896,
+          0.0,
+          0.06708212941884995
+        ],
+        [
+          1.065813595420382e-14,
+          0.0,
+          1.0000001192092896,
+          1.2306926250457764
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999403953552
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBRotatores.r\", name=\"M3\", address=0x0000029960B42220>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBRotatores.r\", name=\"SheetGenerator\", address=0x0000029960B42160>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Right subcostal vein",
+      "type": "CURVE",
+      "collections": [
+        "5: Cardiovascular system",
+        "Systemic veins",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Subcostal artery.l",
+      "type": "CURVE",
+      "collections": [
+        "5: Cardiovascular system",
+        "Aorta",
+        "Systemic arteries",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Subcostal artery.r",
+      "type": "CURVE",
+      "collections": [
+        "5: Cardiovascular system",
+        "Aorta",
+        "Systemic arteries",
+        "Trunk"
+      ]
+    },
+    {
+      "name": "Superior diaphragmatic nodes",
+      "type": "MESH",
+      "collections": [
+        "6: Lymphoid organs"
+      ],
+      "vertices": 516,
+      "polygons": 576,
+      "matrix_world": [
+        [
+          -0.2618330419063568,
+          -0.819670557975769,
+          0.9744663238525391,
+          -0.0030320368241518736
+        ],
+        [
+          -0.9968732595443726,
+          0.7509328722953796,
+          0.3637923300266266,
+          -0.012341487221419811
+        ],
+        [
+          -0.7922680377960205,
+          -0.6739739775657654,
+          -0.7797896862030029,
+          1.2399768829345703
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "M3": "<bpy id prop: owner=\"OBSuperior diaphragmatic nodes\", name=\"M3\", address=0x0000029964612160>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBSuperior diaphragmatic nodes\", name=\"SheetGenerator\", address=0x00000299646120A0>"
+      }
+    },
+    {
+      "name": "Ventral parts of lateral intertransversarii lumborum muscles.l",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Hypaxial muscles of back",
+        "Muscles",
+        "Trunk"
+      ],
+      "vertices": 506,
+      "polygons": 996,
+      "matrix_world": [
+        [
+          -0.9999999403953552,
+          7.105427357601002e-15,
+          -1.6940658945086007e-21,
+          0.022831212729215622
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.024960046634078026
+        ],
+        [
+          1.6940658945086007e-21,
+          0.0,
+          1.0,
+          1.0484905242919922
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBVentral parts of lateral intertransversarii lumborum muscles.l\", name=\"M3\", address=0x00000299651D0960>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBVentral parts of lateral intertransversarii lumborum muscles.l\", name=\"SheetGenerator\", address=0x00000299651D08A0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    },
+    {
+      "name": "Ventral parts of lateral intertransversarii lumborum muscles.r",
+      "type": "MESH",
+      "collections": [
+        "4: Muscular system",
+        "Back",
+        "Hypaxial muscles of back",
+        "Muscles",
+        "Trunk"
+      ],
+      "vertices": 506,
+      "polygons": 996,
+      "matrix_world": [
+        [
+          0.9999999403953552,
+          7.105427357601002e-15,
+          -1.6940658945086007e-21,
+          -0.022831212729215622
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.024960046634078026
+        ],
+        [
+          -1.6940658945086007e-21,
+          0.0,
+          1.0,
+          1.0484905242919922
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "properties": {
+        "M3": "<bpy id prop: owner=\"OBVentral parts of lateral intertransversarii lumborum muscles.r\", name=\"M3\", address=0x00000299651C3F60>",
+        "SheetGenerator": "<bpy id prop: owner=\"OBVentral parts of lateral intertransversarii lumborum muscles.r\", name=\"SheetGenerator\", address=0x00000299651C3EA0>",
+        "Cross-section-X": "1",
+        "Cross-section-Y": "1",
+        "Cross-section-Z": "1",
+        "Cross-section-X-inverse": "0",
+        "Cross-section-Y-inverse": "0",
+        "Cross-section-Z-inverse": "0",
+        "muscle_color": "0",
+        "comic_shader": "False",
+        "key_color": "False"
+      }
+    }
+  ],
+  "text_names": [
+    "Costodiaphragmatic recess",
+    "Depressor supercilii muscle",
+    "Diaphragm",
+    "Diaphragmatic fascia",
+    "Diaphragmatic surface of liver",
+    "Diaphragmatic surface of lung",
+    "Dorsal parts of lateral intertransversarii lumborum muscles",
+    "Inferior diaphragmatic nodes",
+    "Intertransversarii muscles",
+    "Intertransverse ligaments",
+    "Jugulo-omohyoid lymph node",
+    "Jugulo-omohyoid node",
+    "Multifidus lumborum muscle",
+    "Multifidus muscles",
+    "Multifidus thoracis muscle",
+    "Nasalis muscle",
+    "Omohyoid muscle",
+    "Orbicularis oris muscle",
+    "Pelvic diaphragm",
+    "Rotatores",
+    "Subcostal artery",
+    "Subcostal nerve",
+    "Superior diaphragmatic nodes",
+    "Multifidus colli muscle"
+  ],
+  "bone_name_candidates": [
+    "Cervical vertebra.j",
+    "Cervical vertebrae.j",
+    "Lumbar vertebrae.j",
+    "Thoracic vertebra.j",
+    "Thoracic vertebrae.j",
+    "Uncinate process of first thoracic vertebra.j"
+  ]
+}

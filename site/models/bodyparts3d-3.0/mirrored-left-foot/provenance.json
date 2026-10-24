@@ -1,0 +1,116 @@
+{
+  "source": "BodyParts3D 3.0, The Database Center for Life Science (DBCLS)",
+  "sourceAsset": "site/leg-glb.txt",
+  "sourceAssetSHA256": "61f70a3367a1e08a959c0f8c089151b1535c6d4e0990121f68ad37df1903a3e3",
+  "license": "CC BY-SA 2.1 Japan",
+  "derivativeLicense": "CC BY-SA 2.1 Japan",
+  "sourceURL": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/README_e.html",
+  "transformation": "World-space x -> -x, face (a,b,c) -> (a,c,b); no scaling, fitting, deformation or pin transform",
+  "plane": {
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "offset": 0,
+    "space": "atlas Y-up metres",
+    "scope": "Educational skeleton frame, independently screened against bilateral and central bones; not exact patient plane"
+  },
+  "noOriginalOrPinChanges": true,
+  "independentLeftSpecimen": false,
+  "fullAnatomicalAcceptance": false,
+  "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+  "evidence": "research/evidence-runs/stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+  "files": [
+    {
+      "id": "sesamoid_pedis_left",
+      "sourceBone": "sesamoid_pedis",
+      "sourceFMA": [
+        "FMA45097"
+      ],
+      "sha256": "76b92997aff5c71ff35e171b7919f532d4b4290f36a0d7d96e709c602469f990",
+      "triangles": 576
+    },
+    {
+      "id": "toe_prox_2_left",
+      "sourceBone": "toe_prox_2",
+      "sourceFMA": [
+        "FMA32634"
+      ],
+      "sha256": "3b8baa66cbf42ad978e83a71eacfd339c252faa062c35bd2a78881145bd7360d",
+      "triangles": 1362
+    },
+    {
+      "id": "toe_prox_3_left",
+      "sourceBone": "toe_prox_3",
+      "sourceFMA": [
+        "FMA32636"
+      ],
+      "sha256": "d4ed9b8f2b1b8e3b6e9932ae27951d51a7b3c2d52b744eb06ab71feaad5cad67",
+      "triangles": 1222
+    },
+    {
+      "id": "toe_prox_4_left",
+      "sourceBone": "toe_prox_4",
+      "sourceFMA": [
+        "FMA32638"
+      ],
+      "sha256": "b7ddabd04a510e199d4263a3613b7567df393337160c79df5f1c644965745a9c",
+      "triangles": 1094
+    },
+    {
+      "id": "toe_mid_2_left",
+      "sourceBone": "toe_mid_2",
+      "sourceFMA": [
+        "FMA32642"
+      ],
+      "sha256": "869e4e9569aef05972bc8b7d3b35a523cc9e870880a7190853d70688d263b514",
+      "triangles": 652
+    },
+    {
+      "id": "toe_mid_3_left",
+      "sourceBone": "toe_mid_3",
+      "sourceFMA": [
+        "FMA32644"
+      ],
+      "sha256": "f5218ab8670f1cfdb659f9eeb572f0604f7f77b0154bcbbbf5f723b06090e91f",
+      "triangles": 634
+    },
+    {
+      "id": "toe_mid_4_left",
+      "sourceBone": "toe_mid_4",
+      "sourceFMA": [
+        "FMA32646"
+      ],
+      "sha256": "5af40993d84a3e2ac9b69297013a5a141d3dcdd9c8e20cb69d9d40edde2d8b59",
+      "triangles": 520
+    },
+    {
+      "id": "toe_dist_2_left",
+      "sourceBone": "toe_dist_2",
+      "sourceFMA": [
+        "FMA32652"
+      ],
+      "sha256": "10b026309aec6727c58aaf405f7a856af2cc3bab02d68577077ff498bd5be159",
+      "triangles": 466
+    },
+    {
+      "id": "toe_dist_3_left",
+      "sourceBone": "toe_dist_3",
+      "sourceFMA": [
+        "FMA32654"
+      ],
+      "sha256": "ddc8ca6a071f1a8ddf63296e044ef155fa05b3bf7c76741631f00df432c55c5b",
+      "triangles": 334
+    },
+    {
+      "id": "toe_dist_4_left",
+      "sourceBone": "toe_dist_4",
+      "sourceFMA": [
+        "FMA32656"
+      ],
+      "sha256": "fbab89442f578b1178b6d888c6aa227846048327de7979c1ffd952b37d5d8417",
+      "triangles": 362
+    }
+  ]
+}

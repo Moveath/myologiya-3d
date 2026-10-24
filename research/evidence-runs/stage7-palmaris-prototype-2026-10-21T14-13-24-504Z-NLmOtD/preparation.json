@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "id": "palmaris_brevis",
+  "issue": "MG-palmaris_brevis",
+  "side": "right",
+  "status": "technical_prototype_not_admitted",
+  "notice": "Тестовый прототип. Границы, глубина и прикрепления не подтверждены. Не учебно допущенная модель.",
+  "algorithm": "Measured hand frame + RBF envelope of existing hypothenar/retinaculum surfaces + closed parametric lamina",
+  "source_context": "research/evidence-runs/stage7-palmaris-prototype-2026-10-21T14-13-24-504Z-NLmOtD/hand-context.json",
+  "context_sha256": "2a0ae6210dd08d6c0ce7ba9aaaf7cfb3b99c5a2f01cd150b47bf57d9bf3bd8b9",
+  "frame": {
+    "origin_m": [
+      -0.23665165549187211,
+      0.8058286446348195,
+      0.1289101124447915
+    ],
+    "basis_columns": [
+      [
+        -0.9983019412650719,
+        0.030054320404464405,
+        -0.04989961814899023
+      ],
+      [
+        -0.02992821842472612,
+        -0.9995466933990427,
+        -0.0032725306662879745
+      ],
+      [
+        -0.04997535200787611,
+        -0.001773567045731357,
+        0.9987488766710194
+      ]
+    ],
+    "axes": [
+      "radial",
+      "distal",
+      "palmar"
+    ]
+  },
+  "parameters": {
+    "radial_mm": [
+      -11,
+      10
+    ],
+    "distal_mm": [
+      9,
+      33
+    ],
+    "clearance_mm": 1.0,
+    "thickness_mm": 0.89,
+    "nu": 32,
+    "nv": 24,
+    "edge_taper": 0.12
+  },
+  "parameter_evidence": {
+    "thickness_mm": "0.89 mm is a cadaveric sample mean from Nam et al. 2022, PMID35037581 (30 hands, SD0.16). Applied only as a test extrusion, not a validated thickness of this subject.",
+    "radial_mm/distal_mm/edge_taper/clearance_mm": "Explicit design assumptions. No anatomical measurement or pin. These values forbid automatic educational admission.",
+    "frame": "Derived from world-space pisiform and metacarpal II/V vertex centroids. Not attachment coordinates.",
+    "surface": "Envelope interpolation of adjacent meshes is a technical support surface, not skin, fascia, or palmaris brevis segmentation.",
+    "fibers": "Schematic transverse direction only; no individual fascicles or histological reconstruction."
+  },
+  "support_ids": [
+    "abductor_digiti_minimi",
+    "flexor_digiti_minimi_brevis",
+    "opponens_digiti_minimi",
+    "flexor_retinaculum"
+  ],
+  "support_samples": 221,
+  "support_hits": 156,
+  "unsupported_samples": [
+    [
+      -11.0,
+      9.0
+    ],
+    [
+      -9.6875,
+      9.0
+    ],
+    [
+      -8.375,
+      9.0
+    ],
+    [
+      -7.0625,
+      9.0
+    ],
+    [
+      10.0,
+      9.0
+    ],
+    [
+      -11.0,
+      11.0
+    ],
+    [
+      -9.6875,
+      11.0
+    ],
+    [
+      -8.375,
+      11.0
+    ],
+    [
+      10.0,
+      11.0
+    ],
+    [
+      -11.0,
+      13.0
+    ],
+    [
+      -9.6875,
+      13.0
+    ],
+    [
+      -8.375,
+      13.0
+    ],
+    [
+      2.125,
+      13.0
+    ],
+    [
+      8.6875,
+      13.0
+    ],
+    [
+      10.0,
+      13.0
+    ],
+    [
+      -11.0,
+      15.0
+    ],
+    [
+      -9.6875,
+      15.0
+    ],
+    [
+      0.8125,
+      15.0
+    ],
+    [
+      8.6875,
+      15.0
+    ],
+    [
+      10.0,
+      15.0
+    ],
+    [
+      -11.0,
+      17.0
+    ],
+    [
+      -9.6875,
+      17.0
+    ],
+    [
+      8.6875,
+      17.0
+    ],
+    [
+      10.0,
+      17.0
+    ],
+    [
+      -11.0,
+      19.0
+    ],
+    [
+      -9.6875,
+      19.0
+    ],
+    [
+      7.375,
+      19.0
+    ],
+    [
+      8.6875,
+      19.0
+    ],
+    [
+      10.0,
+      19.0
+    ],
+    [
+      -11.0,
+      21.0
+    ],
+    [
+      7.375,
+      21.0
+    ],
+    [
+      8.6875,
+      21.0
+    ],
+    [
+      10.0,
+      21.0
+    ],
+    [
+      -11.0,
+      23.0
+    ],
+    [
+      6.0625,
+      23.0
+    ],
+    [
+      7.375,
+      23.0
+    ],
+    [
+      8.6875,
+      23.0
+    ],
+    [
+      10.0,
+      23.0
+    ],
+    [
+      -11.0,
+      25.0
+    ],
+    [
+      6.0625,
+      25.0
+    ],
+    [
+      7.375,
+      25.0
+    ],
+    [
+      8.6875,
+      25.0
+    ],
+    [
+      10.0,
+      25.0
+    ],
+    [
+      4.75,
+      27.0
+    ],
+    [
+      6.0625,
+      27.0
+    ],
+    [
+      7.375,
+      27.0
+    ],
+    [
+      8.6875,
+      27.0
+    ],
+    [
+      10.0,
+      27.0
+    ],
+    [
+      4.75,
+      29.0
+    ],
+    [
+      6.0625,
+      29.0
+    ],
+    [
+      7.375,
+      29.0
+    ],
+    [
+      8.6875,
+      29.0
+    ],
+    [
+      10.0,
+      29.0
+    ],
+    [
+      3.4375,
+      31.0
+    ],
+    [
+      4.75,
+      31.0
+    ],
+    [
+      6.0625,
+      31.0
+    ],
+    [
+      7.375,
+      31.0
+    ],
+    [
+      8.6875,
+      31.0
+    ],
+    [
+      10.0,
+      31.0
+    ],
+    [
+      3.4375,
+      33.0
+    ],
+    [
+      4.75,
+      33.0
+    ],
+    [
+      6.0625,
+      33.0
+    ],
+    [
+      7.375,
+      33.0
+    ],
+    [
+      8.6875,
+      33.0
+    ],
+    [
+      10.0,
+      33.0
+    ]
+  ],
+  "blocking_requirements": [
+    "Skin deep boundary and ulnar insertion curve in the same hand frame",
+    "Ulnar palmar-aponeurosis boundary and retinacular origin footprint",
+    "Proximal/distal muscle outline and resting thickness map from registered ultrasound/MRI/dissection",
+    "Anatomist review of relations to ulnar canal, skin and hypothenar muscles"
+  ],
+  "sources": [
+    "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.6.02%20TA98%20EN.htm",
+    "https://pubmed.ncbi.nlm.nih.gov/35037581/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5696130/",
+    "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-upper-limb/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK546622/"
+  ],
+  "provenance": {
+    "author": "Миология 3D — procedural research prototype, 2026",
+    "context_author": "BodyParts3D 3.0, © DBCLS",
+    "license": "CC BY-SA 2.1 Japan",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/",
+    "scope": "Conservative ShareAlike for prototype derived from context envelopes and context copies. No paper/reference images or meshes copied."
+  }
+}

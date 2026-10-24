@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "method": "Addressed educational-admission interpretation of saved endpoint review; no new collision scan or transformation",
+  "input": "research/evidence-runs/stage7-multifidus-endpoint-review-2026-10-22T10-37-14-720Z-6g4M9Y/component-endpoint-review.json",
+  "results": [
+    {
+      "side": "right",
+      "components": 21,
+      "cranialEndsMoreMedial": 21,
+      "nearestSourceBoneSpanCandidates": {
+        "1": 10,
+        "2": 11
+      },
+      "sourceC7Caps": [
+        1,
+        2
+      ],
+      "savedContactCount": 16,
+      "contactBins": {
+        "geometric_end_20percent": 5,
+        "geometric_middle_60percent": 11
+      },
+      "maxSavedContactDepthMM": 1.9169190928352955
+    },
+    {
+      "side": "left",
+      "components": 21,
+      "cranialEndsMoreMedial": 21,
+      "nearestSourceBoneSpanCandidates": {
+        "1": 10,
+        "2": 11
+      },
+      "sourceC7Caps": [
+        1,
+        2
+      ],
+      "savedContactCount": 27,
+      "contactBins": {
+        "geometric_middle_60percent": 18,
+        "geometric_end_20percent": 9
+      },
+      "maxSavedContactDepthMM": 2.1146538156498935
+    }
+  ],
+  "decision": "test_only_identity_and_gross_relations_pending",
+  "integrated": 0,
+  "interpretation": [
+    "All21 components per side have a craniomedial geometric course. This supports one broad directional feature, not confirmed origin/insertion.",
+    "Nearest-source-bone cap matches suggest10 single-level and11 two-level bundles per side. These are candidate labels, not attachment mapping; continuous surface and named bone subparts were not segmented.",
+    "C7 is in the source endpoint search but absent from the atlas comparison subset. Distances around10–11mm from these caps to T1 must NOT be reported as proven attachment gaps.",
+    "Authors label the object multifidus thoracis and their bundled description includes deepest adjacent-vertebra slips. Modern sources often separate multifidus and rotatores by span/depth. No relabelling to rotatores or arbitrary component deletion is justified by nearest-bone span alone.",
+    "Contacts in a geometric middle bin need anatomical subpart review. A height fraction or material name does not establish an attachment or a major defect.",
+    "Educational admission is withheld for unresolved specimen-specific muscle identity/major endpoint relationships and parent compatibility, NOT for absence of precise surgical margins. Counts of crossings alone were not used as rejection criteria."
+  ],
+  "sources": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK537074/?report=classic",
+      "locator": "Structure and Function > Transversospinalis Group",
+      "access": "Indexed primary Bookshelf text; direct default page returned reCAPTCHA",
+      "paraphrase": "Describes rotatores spanning one or two segments and multifidus two to four, with distinct attachments."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3237883/",
+      "pmid": "21954879",
+      "locator": "Introduction; Results; Fig1 and Fig8 descriptions",
+      "access": "Full primary article opened",
+      "paraphrase": "Discusses layered short/long transversospinal bundles and different named groups; fetal observations are not adult coordinate evidence."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11051048/",
+      "pmid": "38672769",
+      "locator": "Thoracic region anatomy",
+      "access": "Indexed article text; direct page returned reCAPTCHA",
+      "paraphrase": "Describes thoracic multifidus coursing craniomedially between transverse and spinous processes, with longer multilevel span. This does not identify a particular mesh."
+    }
+  ],
+  "nextStep": "Register named transverse/spinous/laminar endpoint regions on source C7–T12 and compare with the current parent; resolve whether this source is a short/deep subset or includes rotatores before admitting any labelled partial geometry. The exact joint-gap standard is not required for this educational decision.",
+  "noNewAnatomicalCoordinates": true,
+  "geometryUnchanged": true,
+  "supersedes": "educational-admission-interpretation.json: prose reversed counts1/2; measured result fields unchanged. Use this corrected version."
+}

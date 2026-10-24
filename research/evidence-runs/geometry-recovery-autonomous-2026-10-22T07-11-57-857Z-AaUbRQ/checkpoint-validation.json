@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "baseline": {
+    "valid": true,
+    "rows": 55,
+    "counts": {
+      "bones": 20,
+      "muscles": 14,
+      "parts": 21
+    },
+    "revision": 3
+  },
+  "rejectedInvalidStates": [
+    "duplicate_key",
+    "identity_drift",
+    "unknown_issue",
+    "missing_evidence",
+    "duplicate_method",
+    "false_admission",
+    "false_coverage",
+    "stale_counts"
+  ],
+  "invalidSavePreservesCheckpoint": true,
+  "productionModified": false
+}

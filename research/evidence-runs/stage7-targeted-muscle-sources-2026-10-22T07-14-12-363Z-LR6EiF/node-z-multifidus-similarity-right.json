@@ -1,0 +1,114 @@
+{
+  "side": "right",
+  "fit": "similarity",
+  "source": "Multifidus thoracis muscle.r",
+  "triangles": 3902,
+  "self": {
+    "inherited": "Rigid source shape; positive uniform scale cannot create self intersections."
+  },
+  "sampledBoneOverlap": [
+    {
+      "bone": "b|thoracic_2",
+      "inside": 1,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 0.46925669095295114,
+      "deepest": [
+        {
+          "vertex": 142,
+          "depthMM": 0.46925669095295114
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_3",
+      "inside": 1,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 0.1256348230402643,
+      "deepest": [
+        {
+          "vertex": 304,
+          "depthMM": 0.1256348230402643
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_4",
+      "inside": 2,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.609940944966392,
+      "deepest": [
+        {
+          "vertex": 516,
+          "depthMM": 1.609940944966392
+        },
+        {
+          "vertex": 430,
+          "depthMM": 0.22111656997820742
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_5",
+      "inside": 1,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 0.6492979697409554,
+      "deepest": [
+        {
+          "vertex": 619,
+          "depthMM": 0.6492979697409554
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_11",
+      "inside": 2,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.823372572173756,
+      "deepest": [
+        {
+          "vertex": 1811,
+          "depthMM": 1.823372572173756
+        },
+        {
+          "vertex": 1791,
+          "depthMM": 1.758360845763237
+        }
+      ]
+    },
+    {
+      "bone": "b|thoracic_12",
+      "inside": 5,
+      "ambiguous": 0,
+      "samples": 600,
+      "maxSampleDepthMM": 1.6390683075414714,
+      "deepest": [
+        {
+          "vertex": 1943,
+          "depthMM": 1.6390683075414714
+        },
+        {
+          "vertex": 1980,
+          "depthMM": 1.1959661937902006
+        },
+        {
+          "vertex": 13,
+          "depthMM": 0.8877737401612911
+        },
+        {
+          "vertex": 19,
+          "depthMM": 0.46804288746723893
+        },
+        {
+          "vertex": 29,
+          "depthMM": 0.05786600725942211
+        }
+      ]
+    }
+  ],
+  "limitations": "600 deterministic surface vertices and three-ray parity per bone; not volume fraction or continuous penetration bound. Topographic approval is separate."
+}

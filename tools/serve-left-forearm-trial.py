@@ -18,5 +18,10 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=8784)
+    parser.add_argument("--trial-dir", default="build_stage6/left_forearm_v1/browser")
     args = parser.parse_args()
+    candidate = (ROOT / args.trial_dir).resolve()
+    if not candidate.is_relative_to(ROOT / "build_stage6") or not candidate.is_dir():
+        parser.error("Trial directory must exist inside build_stage6")
+    TRIAL = candidate
     ThreadingHTTPServer(("127.0.0.1", args.port), Handler).serve_forever()

@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_splenic",
+  "source": {
+    "fma": "FMA14773",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA14773.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA14773.obj",
+    "bytes": 213824,
+    "sha256": "aa172c17a971fc6a3fb28e912da2b799e362bf1e1e5db7cd119da441bf0134f8",
+    "crc": 2386395690,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_splenic.glb",
+  "sha256": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9",
+  "triangles": 3326,
+  "vertices": 1665,
+  "boundsM": [
+    [
+      -0.0020047700000000003,
+      1.07758,
+      0.0832442
+    ],
+    [
+      0.0859477,
+      1.11107,
+      0.136084
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 1.0398276188102349e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

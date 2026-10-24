@@ -1,0 +1,269 @@
+{
+  "status": "passed",
+  "checks": [
+    "Two saved vertex layers identified",
+    "Paired layers share local radial/distal positions",
+    "Saved directional thickness retained",
+    "All four support meshes reviewed",
+    "Finite unchanged coordinates",
+    "Saved frame remains orthonormal"
+  ],
+  "method": "Exact directional triangle-envelope query at all saved paired grid vertices; topology on a diagnostic coordinate-welded copy. Not a volume fraction or anatomical boundary.",
+  "hashes": {
+    "research/evidence-runs/stage7-palmaris-prototype-2026-10-21T14-13-24-504Z-NLmOtD/hand-context.json": "2a0ae6210dd08d6c0ce7ba9aaaf7cfb3b99c5a2f01cd150b47bf57d9bf3bd8b9",
+    "build_stage7/palmaris_brevis_v1/recipe.json": "6cbfa81a363c384ce926aeaee70a02c58138bdcf7d7a91fe8ed4d84e7b52928c",
+    "build_stage7/palmaris_brevis_v1/palmaris_brevis-trial.glb": "d943f2b87a0e9614a7e259aec3309d43a17689f76ea9298f231fe5e036e949f8",
+    "site/arm-glb.txt": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878"
+  },
+  "grid_vertices_per_layer": 825,
+  "unsupported_grid_vertices": 208,
+  "envelope_bottom_shortfall_count": 16,
+  "envelope_both_layers_below_count": 1,
+  "surfaces": [
+    {
+      "id": "abductor_digiti_minimi",
+      "name": "m|abductor_digiti_minimi|",
+      "triangles": 1500,
+      "raw_watertight": false,
+      "welded_watertight": false,
+      "winding_consistent": true,
+      "volume_mm3": 2029.2148288882931,
+      "supported_grid_vertices": 367,
+      "bottom_below_envelope": 12,
+      "both_layers_below_envelope": 1,
+      "max_directional_bottom_shortfall_mm": 0.9096466733545165,
+      "max_directional_top_shortfall_mm": 0.019646673354506206,
+      "examples": [
+        {
+          "grid_index": 248,
+          "local_radial_distal_mm": [
+            0.14257812500000355,
+            15.999999999999979
+          ],
+          "bottom_gap_mm": -0.9096466733545165,
+          "top_gap_mm": -0.019646673354506206
+        },
+        {
+          "grid_index": 281,
+          "local_radial_distal_mm": [
+            0.14749999999998828,
+            17.000000000000025
+          ],
+          "bottom_gap_mm": -0.5770115131954316,
+          "top_gap_mm": 0.3129884868045796
+        },
+        {
+          "grid_index": 215,
+          "local_radial_distal_mm": [
+            0.13656250000000533,
+            14.999999999999957
+          ],
+          "bottom_gap_mm": -0.45613782186578256,
+          "top_gap_mm": 0.43386217813420025
+        },
+        {
+          "grid_index": 313,
+          "local_radial_distal_mm": [
+            -0.49999999999999273,
+            18.000000000000032
+          ],
+          "bottom_gap_mm": -0.2125684001024215,
+          "top_gap_mm": 0.6774315998975613
+        },
+        {
+          "grid_index": 182,
+          "local_radial_distal_mm": [
+            0.12945312499999176,
+            13.999999999999966
+          ],
+          "bottom_gap_mm": -0.1313578214259934,
+          "top_gap_mm": 0.7586421785740178
+        }
+      ]
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis",
+      "name": "m|flexor_digiti_minimi_brevis|",
+      "triangles": 1500,
+      "raw_watertight": false,
+      "welded_watertight": false,
+      "winding_consistent": true,
+      "volume_mm3": 721.999362286957,
+      "supported_grid_vertices": 175,
+      "bottom_below_envelope": 2,
+      "both_layers_below_envelope": 0,
+      "max_directional_bottom_shortfall_mm": 0.016269334932450974,
+      "max_directional_top_shortfall_mm": 0.0,
+      "examples": [
+        {
+          "grid_index": 188,
+          "local_radial_distal_mm": [
+            3.9061718749999983,
+            14.000000000000032
+          ],
+          "bottom_gap_mm": -0.016269334932450974,
+          "top_gap_mm": 0.8737306650675594
+        },
+        {
+          "grid_index": 318,
+          "local_radial_distal_mm": [
+            2.7566406249999997,
+            17.999999999999975
+          ],
+          "bottom_gap_mm": -0.0008336238651782679,
+          "top_gap_mm": 0.8891663761348321
+        },
+        {
+          "grid_index": 613,
+          "local_radial_distal_mm": [
+            1.4096875000000098,
+            26.999999999999996
+          ],
+          "bottom_gap_mm": 0.012506169615800644,
+          "top_gap_mm": 0.9025061696157852
+        },
+        {
+          "grid_index": 580,
+          "local_radial_distal_mm": [
+            1.4277343749999942,
+            25.99999999999994
+          ],
+          "bottom_gap_mm": 0.04543077273700469,
+          "top_gap_mm": 0.9354307727370159
+        },
+        {
+          "grid_index": 253,
+          "local_radial_distal_mm": [
+            3.355468749999994,
+            16.0
+          ],
+          "bottom_gap_mm": 0.06539822229143688,
+          "top_gap_mm": 0.9553982222914197
+        }
+      ]
+    },
+    {
+      "id": "opponens_digiti_minimi",
+      "name": "m|opponens_digiti_minimi|",
+      "triangles": 1500,
+      "raw_watertight": false,
+      "welded_watertight": false,
+      "winding_consistent": true,
+      "volume_mm3": 1097.75898520664,
+      "supported_grid_vertices": 277,
+      "bottom_below_envelope": 0,
+      "both_layers_below_envelope": 0,
+      "max_directional_bottom_shortfall_mm": 0.0,
+      "max_directional_top_shortfall_mm": 0.0,
+      "examples": [
+        {
+          "grid_index": 747,
+          "local_radial_distal_mm": [
+            2.5078124999999947,
+            31.000000000000025
+          ],
+          "bottom_gap_mm": 0.3277919409567982,
+          "top_gap_mm": 1.2177919409568094
+        },
+        {
+          "grid_index": 291,
+          "local_radial_distal_mm": [
+            6.622499999999997,
+            17.00000000000001
+          ],
+          "bottom_gap_mm": 0.3354706657583968,
+          "top_gap_mm": 1.2254706657584071
+        },
+        {
+          "grid_index": 388,
+          "local_radial_distal_mm": [
+            5.401328124999993,
+            19.999999999999968
+          ],
+          "bottom_gap_mm": 0.33612665660207686,
+          "top_gap_mm": 1.2261266566020597
+        },
+        {
+          "grid_index": 649,
+          "local_radial_distal_mm": [
+            3.276718750000005,
+            28.00000000000002
+          ],
+          "bottom_gap_mm": 0.36755326598679705,
+          "top_gap_mm": 1.2575532659868083
+        },
+        {
+          "grid_index": 421,
+          "local_radial_distal_mm": [
+            5.406249999999993,
+            21.00000000000001
+          ],
+          "bottom_gap_mm": 0.36870458217322355,
+          "top_gap_mm": 1.2587045821732339
+        }
+      ]
+    },
+    {
+      "id": "flexor_retinaculum",
+      "name": "o|flexor_retinaculum",
+      "triangles": 1596,
+      "raw_watertight": false,
+      "welded_watertight": false,
+      "winding_consistent": true,
+      "volume_mm3": 1116.5821385490929,
+      "supported_grid_vertices": 72,
+      "bottom_below_envelope": 2,
+      "both_layers_below_envelope": 0,
+      "max_directional_bottom_shortfall_mm": 0.26854813735662386,
+      "max_directional_top_shortfall_mm": 0.0,
+      "examples": [
+        {
+          "grid_index": 96,
+          "local_radial_distal_mm": [
+            7.921874999999993,
+            10.999999999999968
+          ],
+          "bottom_gap_mm": -0.26854813735662386,
+          "top_gap_mm": 0.6214518626433865
+        },
+        {
+          "grid_index": 64,
+          "local_radial_distal_mm": [
+            8.351171875000007,
+            10.00000000000002
+          ],
+          "bottom_gap_mm": -0.05274588950342274,
+          "top_gap_mm": 0.8372541104965876
+        },
+        {
+          "grid_index": 128,
+          "local_radial_distal_mm": [
+            7.455390625000001,
+            11.999999999999991
+          ],
+          "bottom_gap_mm": 0.09767667681307923,
+          "top_gap_mm": 0.9876766768130905
+        },
+        {
+          "grid_index": 63,
+          "local_radial_distal_mm": [
+            7.761093750000009,
+            9.999999999999956
+          ],
+          "bottom_gap_mm": 0.1583806626920614,
+          "top_gap_mm": 1.0483806626920744
+        },
+        {
+          "grid_index": 95,
+          "local_radial_distal_mm": [
+            7.320312499999999,
+            10.999999999999941
+          ],
+          "bottom_gap_mm": 0.23144825116815326,
+          "top_gap_mm": 1.1214482511681636
+        }
+      ]
+    }
+  ],
+  "anatomical_admission": false
+}

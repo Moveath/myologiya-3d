@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-22",
+  "issuesReviewed": [
+    "MG-palmaris_brevis",
+    "MP-omohyoid_right-superior",
+    "MP-omohyoid_right-inferior",
+    "MP-omohyoid_left-superior",
+    "MP-omohyoid_left-inferior"
+  ],
+  "newModels": 0,
+  "newPartMasks": 0,
+  "palmaris": {
+    "status": "technical_prototype_not_admitted",
+    "sourceUnchanged": true,
+    "educationalBlockers": [
+      "unverified footprint and skin/aponeurosis attachments",
+      "local layer errors; open support surfaces preclude volumetric classification"
+    ],
+    "permittedNextStep": "Anatomically supported boundaries in hand frame, then derivative correction; no arbitrary offset"
+  },
+  "omohyoid": {
+    "status": "diagnostic_contours_only",
+    "contours": 2,
+    "anatomicalMasks": 0,
+    "required": "Two anatomically supported muscle-tendon boundaries per side, plus validated transfer to working geometry"
+  },
+  "noModel": {
+    "originalMuscles": 13,
+    "additionalMuscles": 1,
+    "parts": 21,
+    "bones": 20
+  },
+  "stage8Started": false
+}

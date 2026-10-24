@@ -1,0 +1,42 @@
+{
+  "passed": 22,
+  "checks": [
+    "FMA71442-corner-normals hash",
+    "FMA71442-corner-normals one owner",
+    "FMA71442-corner-normals triangle count",
+    "FMA71442-corner-normals finite normals",
+    "FMA71442-corner-normals unit normals",
+    "FMA71442-corner-normals BVH preserves arrays",
+    "FMA71442-corner-normals BVH ray 0.2",
+    "FMA71442-corner-normals BVH ray 0.4",
+    "FMA71442-corner-normals BVH ray 0.6",
+    "FMA71442-corner-normals BVH ray 0.8",
+    "FMA71442-corner-normals real ray hits",
+    "FMA71443-corner-normals hash",
+    "FMA71443-corner-normals one owner",
+    "FMA71443-corner-normals triangle count",
+    "FMA71443-corner-normals finite normals",
+    "FMA71443-corner-normals unit normals",
+    "FMA71443-corner-normals BVH preserves arrays",
+    "FMA71443-corner-normals BVH ray 0.2",
+    "FMA71443-corner-normals BVH ray 0.4",
+    "FMA71443-corner-normals BVH ray 0.6",
+    "FMA71443-corner-normals BVH ray 0.8",
+    "FMA71443-corner-normals real ray hits"
+  ],
+  "results": [
+    {
+      "id": "FMA71442-corner-normals",
+      "triangles": 8322,
+      "hits": 8,
+      "sampledBoneOverlap": []
+    },
+    {
+      "id": "FMA71443-corner-normals",
+      "triangles": 8782,
+      "hits": 8,
+      "sampledBoneOverlap": []
+    }
+  ],
+  "note": "Three-ray majority / 600 vertices is a surface sample; not an exact penetration bound or anatomical acceptance."
+}

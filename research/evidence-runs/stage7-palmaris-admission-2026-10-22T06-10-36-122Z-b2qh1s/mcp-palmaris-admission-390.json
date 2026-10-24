@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "width": 390,
+  "checks": [
+    "Test status retained",
+    "Persistent unadmitted notice",
+    "Saved GLB loaded with BVH",
+    "Single searchable PB ID"
+  ],
+  "errors": [],
+  "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mobileCard')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"mobileCard\" aria-expanded=\"true\" aria-controls=\"sheet\" class=\"mobile-only mobile-dock\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <section id=\"sheet\" class=\"sheet\" role=\"dialog\" data-state=\"peek\" aria-modal=\"true\" aria-live=\"polite\" aria-label=\"Описание структуры\">…</section> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n"
+}

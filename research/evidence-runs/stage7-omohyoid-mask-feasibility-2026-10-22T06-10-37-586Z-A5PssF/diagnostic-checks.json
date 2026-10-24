@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "name": "current GLB unchanged after read-only extraction",
+      "pass": true
+    },
+    {
+      "name": "nine expected review meshes",
+      "pass": true
+    },
+    {
+      "name": "no semantic tissue materials or groups",
+      "pass": true
+    },
+    {
+      "name": "both source sides",
+      "pass": true
+    },
+    {
+      "name": "both published sides",
+      "pass": true
+    },
+    {
+      "name": "two SCM depth checks",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_right source SHA unchanged",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_right main component retained",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_right 39 level sets",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_right candidate single closed contour",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_right no anatomy admission",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_left source SHA unchanged",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_left main component retained",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_left 39 level sets",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_left candidate single closed contour",
+      "pass": true
+    },
+    {
+      "name": "omohyoid_left no anatomy admission",
+      "pass": true
+    },
+    {
+      "name": "profile shape-minimum drift exposed",
+      "pass": true
+    }
+  ],
+  "passed": 17,
+  "scope": "Read-only topology/context diagnostics. No anatomy or mask admission."
+}

@@ -1,0 +1,87 @@
+{
+  "matrix": [
+    [
+      0.9999987991771461,
+      -0.0014795196826013536,
+      0.00046115699579392724,
+      0.0004075840343933934
+    ],
+    [
+      0.0014784968331091964,
+      0.9999964638356204,
+      0.0022105120152117633,
+      0.009601754206694402
+    ],
+    [
+      -0.00046442586110205725,
+      -0.0022098275416207367,
+      0.9999974504821777,
+      -0.0018026284177166535
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "controls": [
+    "trapezium_left",
+    "trapezoid_left",
+    "capitate_left",
+    "metacarpal_2_left",
+    "metacarpal_4_left"
+  ],
+  "scale": 1,
+  "reflection": false,
+  "residualCentreMM": [
+    0.04377493000668086,
+    0.09222642061797398,
+    0.06466298494823502,
+    0.08120647017419902,
+    0.06748713485439926
+  ],
+  "limitation": "Approximate common rigid registration from control bounding centres; not anatomical landmarks or acceptance. No published geometry is changed.",
+  "candidates": [
+    {
+      "id": "metacarpal_1_left",
+      "joints": [
+        {
+          "neighbor": "trapezium_left",
+          "insideSamples": 46,
+          "maxSampleDepthMM": 1.1341645050770919,
+          "direction": "candidate into working neighbor only"
+        },
+        {
+          "neighbor": "phalanx_prox_1_left",
+          "insideSamples": 2,
+          "maxSampleDepthMM": 0.3127707422049557,
+          "direction": "candidate into working neighbor only"
+        }
+      ]
+    },
+    {
+      "id": "metacarpal_3_left",
+      "joints": [
+        {
+          "neighbor": "trapezoid_left",
+          "insideSamples": 7,
+          "maxSampleDepthMM": 0.3762921792818732,
+          "direction": "candidate into working neighbor only"
+        },
+        {
+          "neighbor": "capitate_left",
+          "insideSamples": 0,
+          "maxSampleDepthMM": 0.0,
+          "direction": "candidate into working neighbor only"
+        },
+        {
+          "neighbor": "phalanx_prox_3_left",
+          "insideSamples": 6,
+          "maxSampleDepthMM": 0.18851429114945453,
+          "direction": "candidate into working neighbor only"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "date": "2026-10-21",
+  "scope": "34 исходных экземпляра; отсутствие готового источника не является исчерпывающим доказательством отсутствия во всех коллекциях",
+  "originalMissingMuscles": 13,
+  "originalMissingParts": 21,
+  "rows": [
+    {
+      "issue": "MG-palmaris_brevis",
+      "structure": "palmaris_brevis",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "В действующей сборке/локальных исходниках и просмотренных BP3D-индексах принятой мышцы нет. Найден кандидат Physiome workspace 968 / e/9e5; страницы при проверке вернули 403, модель не получена.",
+      "requiredData": "Авторский файл, явная лицензия, сторона и система координат, сопоставление с ладонью. Геометрия другого образца требует регистрации и отдельного допуска.",
+      "links": [
+        "https://models.physiomeproject.org/workspace/968",
+        "https://models.cellml.org/e/9e5"
+      ],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_anterior_right",
+      "structure": "auricularis_anterior_right",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_anterior_left",
+      "structure": "auricularis_anterior_left",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_superior_right",
+      "structure": "auricularis_superior_right",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_superior_left",
+      "structure": "auricularis_superior_left",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_posterior_right",
+      "structure": "auricularis_posterior_right",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-auricularis_posterior_left",
+      "structure": "auricularis_posterior_left",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Обе стороны отсутствуют в опубликованной сборке. Сохранённый аудит VAP/Z-Anatomy/3DFACE не даёт принятого отдельного меша этой мышцы в системе координат проекта.",
+      "requiredData": "Лицензированный индивидуальный меш/сегментация с проверенными границами у основания ушной раковины и регистрацией. При появлении одной принятой стороны допустимость отражения проверять отдельно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-depressor_supercilii_right",
+      "structure": "depressor_supercilii_right",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "VAP Modern Human Head & Neck содержит имя в авторском списке; полученного проверенного файла нет. Групповые маски 3DFACE не приняты как самостоятельная мышца.",
+      "requiredData": "Авторизованное получение конкретного меша и его лицензии, затем форма/сторона/совмещение с corrugator и orbicularis на том же образце. Список автора не подтверждает сетку.",
+      "links": [
+        "https://sketchfab.com/3d-models/modern-human-head-neck-model-22dbb37977304b5aab9db083b51026d2"
+      ],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-depressor_supercilii_left",
+      "structure": "depressor_supercilii_left",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "VAP Modern Human Head & Neck содержит имя в авторском списке; полученного проверенного файла нет. Групповые маски 3DFACE не приняты как самостоятельная мышца.",
+      "requiredData": "Авторизованное получение конкретного меша и его лицензии, затем форма/сторона/совмещение с corrugator и orbicularis на том же образце. Список автора не подтверждает сетку.",
+      "links": [
+        "https://sketchfab.com/3d-models/modern-human-head-neck-model-22dbb37977304b5aab9db083b51026d2"
+      ],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-transversus_menti",
+      "structure": "transversus_menti",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Сохранён статус вариабельного образования; принятого самостоятельного исходника нет. Схематические/процедурные формы не подтверждают индивидуальное наличие.",
+      "requiredData": "Лицензированный образец с документированным вариантом и маской его границ; не создавать обязательную симметричную копию.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-thorax_subcostales",
+      "structure": "thorax_subcostales",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "В каталогизированных локальных ресурсах и адресных BP3D 3/4 индексах нет принятого мышечного исходника; subcostal artery/vein не приняты за мышцы.",
+      "requiredData": "Сегментированные мышечные пучки с номерами рёбер и сторонами, лицензией и положением на внутренней грудной стенке.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-thorax_intertransversarii_thoracis",
+      "structure": "thorax_intertransversarii_thoracis",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Не найден принятый грудной исходник. Найденные FMA71442/71443 относятся к шее и не заменяют грудную группу.",
+      "requiredData": "Грудные сегменты и стороны на документированном образце, самостоятельная разметка/сетки, научная проверка вариабельности и регистрация.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MG-thorax_sternalis",
+      "structure": "thorax_sternalis",
+      "part": null,
+      "status": "заблокирована",
+      "wholeModelPresent": false,
+      "sourceAssessment": "Карточка варианта сохранена. В проверенных источниках нет принятой геометрии; сам факт термина не делает мышцу обязательной.",
+      "requiredData": "Образец с документированным вариантом, стороной/ходом/прикреплениями, разрешённым исходником или сегментацией. Не восстанавливать усреднённой лентой.",
+      "links": [],
+      "existingAcceptanceCriterion": "Данных для принятой геометрии нет. Получить исходный человеческий препарат/сегментацию с совместимыми правами, проверить сторону, масштаб, форму и принадлежность; Blender MCP и затем региональные проверки/Playwright. Изменение noModel без модели не закрывает задачу.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oculi_right-deep",
+      "structure": "orbicularis_oculi_right",
+      "part": "deep",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+      "requiredData": "Маска соответствующего пучка и анатомические референсы того же образца; масштаб век/границы и отдельный выбор без дублирования общей мышцы.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oculi_right-ciliary",
+      "structure": "orbicularis_oculi_right",
+      "part": "ciliary",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+      "requiredData": "Маска соответствующего пучка и анатомические референсы того же образца; масштаб век/границы и отдельный выбор без дублирования общей мышцы.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oculi_left-deep",
+      "structure": "orbicularis_oculi_left",
+      "part": "deep",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+      "requiredData": "Маска соответствующего пучка и анатомические референсы того же образца; масштаб век/границы и отдельный выбор без дублирования общей мышцы.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oculi_left-ciliary",
+      "structure": "orbicularis_oculi_left",
+      "part": "ciliary",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца имеется, но отдельная разметка глубокой части/ресничного пучка отсутствует. Грубая сетка целой мышцы не является доказательством этих тонких границ.",
+      "requiredData": "Маска соответствующего пучка и анатомические референсы того же образца; масштаб век/границы и отдельный выбор без дублирования общей мышцы.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-nasalis_right-transverse",
+      "structure": "nasalis_right",
+      "part": "transverse",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+      "requiredData": "Размеченные границы обеих частей по конкретному образцу и проверка стороны. Деление координатной плоскостью не допущено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-nasalis_right-alar",
+      "structure": "nasalis_right",
+      "part": "alar",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+      "requiredData": "Размеченные границы обеих частей по конкретному образцу и проверка стороны. Деление координатной плоскостью не допущено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-nasalis_left-transverse",
+      "structure": "nasalis_left",
+      "part": "transverse",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+      "requiredData": "Размеченные границы обеих частей по конкретному образцу и проверка стороны. Деление координатной плоскостью не допущено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-nasalis_left-alar",
+      "structure": "nasalis_left",
+      "part": "alar",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Объединённая nasalis загружается; нет принятой границы поперечной и крыльной частей в текущем меше.",
+      "requiredData": "Размеченные границы обеих частей по конкретному образцу и проверка стороны. Деление координатной плоскостью не допущено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oris-marginal",
+      "structure": "orbicularis_oris",
+      "part": "marginal",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца присутствует; самостоятельные краевая и губная части не представлены принятой сегментацией.",
+      "requiredData": "Анатомически проверенные маски/пучки в геометрии губ и независимая привязка к исходному мешу; не разрезать по расстоянию от пина.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-orbicularis_oris-labial",
+      "structure": "orbicularis_oris",
+      "part": "labial",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая мышца присутствует; самостоятельные краевая и губная части не представлены принятой сегментацией.",
+      "requiredData": "Анатомически проверенные маски/пучки в геометрии губ и независимая привязка к исходному мешу; не разрезать по расстоянию от пина.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-omohyoid_right-superior",
+      "structure": "omohyoid_right",
+      "part": "superior",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Правый исходник: основной компонент 27 088 треугольников + артефакт 8; левый: один компонент 26 960. Компоненты не дают двух принятых брюшек.",
+      "requiredData": "Граница промежуточного сухожилия, маски верхнего/нижнего брюшка и адресное совмещение с подъязычной костью/лопаткой. Полное имя OBJ не подтверждает разделение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-omohyoid_right-inferior",
+      "structure": "omohyoid_right",
+      "part": "inferior",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Правый исходник: основной компонент 27 088 треугольников + артефакт 8; левый: один компонент 26 960. Компоненты не дают двух принятых брюшек.",
+      "requiredData": "Граница промежуточного сухожилия, маски верхнего/нижнего брюшка и адресное совмещение с подъязычной костью/лопаткой. Полное имя OBJ не подтверждает разделение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-omohyoid_left-superior",
+      "structure": "omohyoid_left",
+      "part": "superior",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Правый исходник: основной компонент 27 088 треугольников + артефакт 8; левый: один компонент 26 960. Компоненты не дают двух принятых брюшек.",
+      "requiredData": "Граница промежуточного сухожилия, маски верхнего/нижнего брюшка и адресное совмещение с подъязычной костью/лопаткой. Полное имя OBJ не подтверждает разделение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-omohyoid_left-inferior",
+      "structure": "omohyoid_left",
+      "part": "inferior",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Правый исходник: основной компонент 27 088 треугольников + артефакт 8; левый: один компонент 26 960. Компоненты не дают двух принятых брюшек.",
+      "requiredData": "Граница промежуточного сухожилия, маски верхнего/нижнего брюшка и адресное совмещение с подъязычной костью/лопаткой. Полное имя OBJ не подтверждает разделение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_diaphragm-sternal",
+      "structure": "thorax_diaphragm",
+      "part": "sternal",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+      "requiredData": "Разметка мышечных территорий и сухожильной границы того же образца, проверка прикреплений; произвольное деление по осям запрещено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_diaphragm-costal",
+      "structure": "thorax_diaphragm",
+      "part": "costal",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+      "requiredData": "Разметка мышечных территорий и сухожильной границы того же образца, проверка прикреплений; произвольное деление по осям запрещено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_diaphragm-lumbar",
+      "structure": "thorax_diaphragm",
+      "part": "lumbar",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая диафрагма есть; грудинная/рёберная/поясничная территории не имеют принятых отдельных геометрических меток.",
+      "requiredData": "Разметка мышечных территорий и сухожильной границы того же образца, проверка прикреплений; произвольное деление по осям запрещено.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_multifidus_right-thoracic",
+      "structure": "thorax_multifidus_right",
+      "part": "thoracic",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Общий многораздельный ресурс присутствует; принятый отдельный грудной регион/пучки отсутствуют.",
+      "requiredData": "Позвонковые уровни и маски пучков в текущем образце; доказать границы грудного поднабора, не использовать прямоугольное отсечение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_multifidus_left-thoracic",
+      "structure": "thorax_multifidus_left",
+      "part": "thoracic",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Общий многораздельный ресурс присутствует; принятый отдельный грудной регион/пучки отсутствуют.",
+      "requiredData": "Позвонковые уровни и маски пучков в текущем образце; доказать границы грудного поднабора, не использовать прямоугольное отсечение.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_rotatores_thoracis-longi",
+      "structure": "thorax_rotatores_thoracis",
+      "part": "longi",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая группа доступна; нет принятых меток longi/breves по каждому пучку.",
+      "requiredData": "Подтверждённые начальный/конечный позвонок каждого пучка и маски двух классов; количество компонентов само по себе недостаточно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    },
+    {
+      "issue": "MP-thorax_rotatores_thoracis-breves",
+      "structure": "thorax_rotatores_thoracis",
+      "part": "breves",
+      "status": "заблокирована",
+      "wholeModelPresent": true,
+      "sourceAssessment": "Целая группа доступна; нет принятых меток longi/breves по каждому пучку.",
+      "requiredData": "Подтверждённые начальный/конечный позвонок каждого пучка и маски двух классов; количество компонентов само по себе недостаточно.",
+      "links": [],
+      "existingAcceptanceCriterion": "Блокер: отсутствует проверенная отдельная геометрия части. Подтвердить границы/пучки на исходнике и scope каждого поля; сегментировать только различимую область либо получить другой реальный источник. Сохранить родительскую мышцу и ID части.",
+      "recoveryDecision": "Не интегрировать: доказательств для сегментации, параметрической реконструкции или зеркального допуска недостаточно.",
+      "evidence": [
+        "research/evidence-runs/stage7-muscle-recovery-2026-10-21T09-59-41-337Z-J0c1JT/muscle-inventory-after.json",
+        "research/new-muscle-source-audit.json",
+        "research/muscle-completion-review.json",
+        "research/muscle-reconstruction-review.json"
+      ],
+      "futureStage": "7; независимая финальная приёмка 8"
+    }
+  ],
+  "additional": [
+    {
+      "issue": "ANAT-001",
+      "cards": [
+        "puborectalis_right",
+        "puborectalis_left"
+      ],
+      "sources": [
+        "FMA45856",
+        "FMA45857"
+      ],
+      "decision": "Ограниченный учебный допуск; точные контакты, прикрепления, пол и полная научная приёмка открыты"
+    },
+    {
+      "issue": "ANAT-002",
+      "sources": [
+        "FMA71309",
+        "FMA71442",
+        "FMA71443"
+      ],
+      "decision": "Только пробные GLB; уровни interspinales не подтверждены, межпоперечные сетки имеют дефекты нормалей и неподтверждённые подгруппы"
+    }
+  ]
+}

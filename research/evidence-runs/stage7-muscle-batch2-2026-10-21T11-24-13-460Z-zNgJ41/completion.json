@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "registry": {
+    "status": "passed",
+    "issues": 255,
+    "status_counts": {
+      "проверена": 73,
+      "требует проверки": 86,
+      "заблокирована": 61,
+      "открыта": 30,
+      "в работе": 5
+    },
+    "scientific_pending": 146,
+    "stages": {
+      "5": [
+        46,
+        123
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        10,
+        31
+      ],
+      "6": [
+        3,
+        20
+      ],
+      "7": [
+        0,
+        45
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "catalogue": {
+    "cards": 259,
+    "meshes": 304,
+    "missing": [
+      "palmaris_brevis",
+      "auricularis_anterior_right",
+      "auricularis_anterior_left",
+      "auricularis_superior_right",
+      "auricularis_superior_left",
+      "auricularis_posterior_right",
+      "auricularis_posterior_left",
+      "depressor_supercilii_right",
+      "depressor_supercilii_left",
+      "transversus_menti",
+      "thorax_subcostales",
+      "thorax_intertransversarii_thoracis",
+      "thorax_sternalis",
+      "interspinales_cervicis_left"
+    ],
+    "partsWithoutModel": 21,
+    "boneNoModel": 20,
+    "method": "Reuse previous real mesh inventory only after all 17 source hashes match; load the one newly published GLB."
+  },
+  "admittedNewModels": 1,
+  "newCards": 2,
+  "originalMissingMusclesRestored": 0,
+  "originalMissingPartsRestored": 0,
+  "technicalOnlyNormalRepairs": 2,
+  "sourceHashesPreserved": true,
+  "baselineFilesPreserved": 16,
+  "browserLocalPlaywrightAssertions": 60,
+  "mcpInitialLoadAssertions": 4,
+  "fullMcpRun": "blocked by approval policy; user-authorized local-process fallback used",
+  "all34OriginalAcceptanceCriteriaPreserved": true,
+  "reportLocalLinks": 5,
+  "closedIssuesThisRun": 0,
+  "newIssueIDs": 0,
+  "reviewedIssueDecisions": 35,
+  "next": "Stage 7 source/segmentation work; Stage 8 not started"
+}

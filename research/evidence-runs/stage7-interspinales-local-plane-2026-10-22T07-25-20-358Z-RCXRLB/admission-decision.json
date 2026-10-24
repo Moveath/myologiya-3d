@@ -1,0 +1,17 @@
+{
+  "issueId": "ANAT-002",
+  "cardId": "interspinales_cervicis_left",
+  "decision": "research_only_not_admitted",
+  "newMethod": "One reflection plane estimated from C2-C7 bone symmetry only; no muscle endpoint or intersection data entered the fit. Three starts and six leave-one-bone-out estimates saved.",
+  "fitStability": {"maxNormalDifferenceDegrees": 0.1852792565, "maxSampledPlaneVariationMM": 0.3492448085},
+  "geometricResult": "The alternative plane improves the overall geometric symmetry proxy but does not establish an independently labelled anatomical plane. It reduces most endpoint gaps and reintroduces overlap with C3-C7.",
+  "endpointMedianMM": [1.7788652, 0.2982712, 0.1900424, 0.3410189, 0.3466603, 0.4163526, 0.6224393, 0.3395119, 0.4128076, 1.1969923],
+  "maxSampledBoneDepthMM": 1.4523376412,
+  "remaining": "C2 and C7 endpoints still disagree with the current bone surfaces; other sampled overlaps cannot be accepted as normal attachment without a regional surface/endpoint check. Do not infer physiology from a universal distance threshold. C7-T1 is still absent.",
+  "nextStep": "Address individual original/derived bundles against labelled adjacent spinous-process attachment patches. Consider a clearly labelled partial group only when its own topography passes; do not shift each bundle to hide collisions.",
+  "tests": {"trimeshExportAssertions": 9, "nodeAssertions": 8, "nodeRays": 5, "BlenderMCPViews": 4},
+  "exportNote": "Initial overly strict normal equality and all-vertices-positive-plane assertions failed. Float32/loader normal difference was measured (max component difference 0.000353); geometric side diagnostic has 7 vertices up to 0.089 mm across fitted plane. Both diagnostics retained in mirror-preparation.json. No geometry changed to satisfy assertions.",
+  "anatomicalAdmission": false,
+  "productionChanges": 0,
+  "browserTest": "X=0 trial was checked at1280/390. This different local-plane derivative was not browser-tested because it was not admitted; its GLTF/BVH/ray load is checked in Node. No claim that previous browser results validate its anatomy."
+}

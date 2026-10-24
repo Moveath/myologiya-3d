@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "scope": "Registry semantics, not physical GLB load or scientific acceptance",
+  "checks": [
+    {
+      "name": "Five independent system defaults",
+      "passed": true
+    },
+    {
+      "name": "Saved booleans only; unknown systems excluded",
+      "passed": true
+    },
+    {
+      "name": "All five can be enabled together",
+      "passed": true
+    },
+    {
+      "name": "Legacy bones keep ownership",
+      "passed": true
+    },
+    {
+      "name": "Muscles and muscle parts keep ownership",
+      "passed": true
+    },
+    {
+      "name": "New structures use explicit system",
+      "passed": true
+    },
+    {
+      "name": "Missing card has no fabricated relations",
+      "passed": true
+    },
+    {
+      "name": "Missing relation endpoint is omitted",
+      "passed": true
+    },
+    {
+      "name": "Part, branch and tributary labels remain distinct",
+      "passed": true
+    },
+    {
+      "name": "Venous outflow is directed",
+      "passed": true
+    },
+    {
+      "name": "Parent and origin are not venous outflow",
+      "passed": true
+    },
+    {
+      "name": "No admission for absent or noModel cards",
+      "passed": true
+    },
+    {
+      "name": "Candidate and missing model path are not admitted",
+      "passed": true
+    },
+    {
+      "name": "Explicit admission plus actual path permits loading",
+      "passed": true
+    }
+  ]
+}

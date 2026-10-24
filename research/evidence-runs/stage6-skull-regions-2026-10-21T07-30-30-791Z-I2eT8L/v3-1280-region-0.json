@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "width": 1280,
+  "phase": "region-0",
+  "checks": [
+    "Real card selection",
+    "Only selected anatomical region",
+    "BVH retained; overlay excluded from picking",
+    "Reset overlay",
+    "Reset preserves selection/isolation",
+    "Bone isolation",
+    "Overlay respects transparency",
+    "Overlay remains after view/card changes"
+  ],
+  "errors": [
+    "TypeError: VIEWS[viewKey] is not iterable (cannot read property undefined)"
+  ],
+  "error": "Error: No page errors"
+}

@@ -1,0 +1,113 @@
+{
+  "status": "passed_with_documented_browser_capture_recovery",
+  "checks": [
+    "Production unchanged: site/arm-glb.txt",
+    "Production unchanged: site/data.js",
+    "Production unchanged: site/index.html",
+    "Production unchanged: site/local.html",
+    "Production unchanged: site/data-muscle-recovery.js",
+    "Production unchanged: site/data-neck-recovery.js",
+    "PB source unchanged: research/evidence-runs/stage7-palmaris-prototype-2026-10-21T14-13-24-504Z-NLmOtD/hand-context.json",
+    "PB source unchanged: build_stage7/palmaris_brevis_v1/recipe.json",
+    "PB source unchanged: build_stage7/palmaris_brevis_v1/palmaris_brevis-trial.glb",
+    "PB source unchanged: site/arm-glb.txt",
+    "Original STL unchanged: omohyoid_right",
+    "Original STL unchanged: omohyoid_left",
+    "Original hyoid STL unchanged",
+    "Neck GLB unchanged",
+    "PB layer checks",
+    "PB contact/BVH checks",
+    "Omohyoid Node/BVH checks",
+    "Current inventory",
+    "17 independent diagnostic checks",
+    "Three exact context comparisons",
+    "Blender evidence blender-contact-review.json",
+    "Blender evidence blender-review.json",
+    "24 final PB browser assertions",
+    "24 mobile omohyoid assertions",
+    "Desktop assertions retained, screenshot deadline accurately recorded",
+    "Desktop capture recovered without repeating completed clicks",
+    "Actual screenshot: palmaris-admission-1280.png",
+    "Actual screenshot: palmaris-admission-v2-390.png",
+    "Actual screenshot: omohyoid-390.png",
+    "Actual screenshot: omohyoid-1280-capture.png",
+    "Report link evidence-runs/stage7-palmaris-admission-2026-10-22T06-10-36-122Z-b2qh1s/layer-review.json",
+    "Report link evidence-runs/stage7-palmaris-admission-2026-10-22T06-10-36-122Z-b2qh1s/contact-review.json",
+    "Report link evidence-runs/stage7-palmaris-admission-2026-10-22T06-10-36-122Z-b2qh1s/contact-review.blend",
+    "Report link stage7-palmaris-prototype-2026-10-22.md",
+    "Report link evidence-runs/stage7-palmaris-admission-2026-10-22T06-10-36-122Z-b2qh1s/pubmed-layer-sources.json",
+    "Report link evidence-runs/stage7-omohyoid-mask-feasibility-2026-10-22T06-10-37-586Z-A5PssF/omohyoid-annotation-workspace.blend",
+    "Report link evidence-runs/stage7-omohyoid-mask-feasibility-2026-10-22T06-10-37-586Z-A5PssF/assessment.md",
+    "Report link stage7-reconstruction-method-plan-2026-10-22.json",
+    "Documentation ANATOMY_ISSUES.md",
+    "Documentation ANATOMY_PROGRESS.md",
+    "Documentation CURRENT_PROJECT_STATUS.md",
+    "Registry counts and IDs retained"
+  ],
+  "registry": {
+    "status": "passed",
+    "issues": 255,
+    "status_counts": {
+      "проверена": 73,
+      "требует проверки": 86,
+      "заблокирована": 61,
+      "открыта": 30,
+      "в работе": 5
+    },
+    "scientific_pending": 146,
+    "stages": {
+      "5": [
+        46,
+        123
+      ],
+      "2": [
+        5,
+        5
+      ],
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        10,
+        31
+      ],
+      "6": [
+        3,
+        20
+      ],
+      "7": [
+        0,
+        45
+      ],
+      "8": [
+        0,
+        22
+      ],
+      "1": [
+        5,
+        5
+      ]
+    }
+  },
+  "reviewedExistingIssues": 5,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "newModels": 0,
+  "newPartMasks": 0,
+  "inventory": {
+    "muscles": 259,
+    "muscleNoModel": 14,
+    "partsNoModel": 21,
+    "boneNoModel": 20
+  },
+  "pythonChecks": 23,
+  "exactArrayComparisons": 3,
+  "nodeChecks": 38,
+  "completedFunctionalBrowserAssertions": 72,
+  "fullDesktopOmohyoidRun": "timed_out_after_24_assertions_at_capture",
+  "recoveredDesktopCapture": true,
+  "blenderViews": 5,
+  "sourceHashesChecked": 14,
+  "stage8Started": false
+}

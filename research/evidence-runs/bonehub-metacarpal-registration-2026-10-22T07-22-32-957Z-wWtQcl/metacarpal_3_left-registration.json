@@ -1,0 +1,342 @@
+{
+  "owner": "metacarpal_3_left",
+  "source": "C:\\Users\\Пользователь\\Desktop\\учеба\\Миология 3D\\research\\evidence-runs\\geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr\\bonehub-candidates\\METACARPAL_3_LEFT.stl",
+  "sourceSha256": "3886964b7ddd22177f3790fd1bc68b7a08c6d46fa0bfbd6f670e3b3253320918",
+  "target": "native__metacarpal_3_left",
+  "targetSource": "C:\\Users\\Пользователь\\Desktop\\учеба\\Миология 3D\\research\\evidence-runs\\stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj\\comparison-arrays.json",
+  "sourceCoordinateHeader": "3D Slicer output. SPACE=LPS",
+  "identity": "source-labelled left; no mirroring",
+  "method": "One rigid mapping to existing native BP3D whole bone using PCA ends + symmetric sampled point-cloud ICP. Working neighbours excluded from optimisation. Shaft-only sensitivity fit is diagnostic, not admitted. Neither registration nor error thresholds establish articular anatomy.",
+  "source_long_axis_extent_mm": 69.82504555929472,
+  "target_long_axis_extent_mm": 68.54851020329534,
+  "fits": [
+    {
+      "mode": "whole",
+      "initial_axial_rotation_deg": 0,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          -0.5193242405896032,
+          0.1809690363711183,
+          -0.8351961093126213
+        ],
+        [
+          -0.6889008111440809,
+          0.48966392344240695,
+          0.5344575890414648
+        ],
+        [
+          0.5056856785999082,
+          0.8529240587261575,
+          -0.1296246292378278
+        ]
+      ],
+      "translation_mm": [
+        -12.078179102140986,
+        -256.16275401884474,
+        531.4130891167819
+      ],
+      "determinant": 0.9999999999999971,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 1.397394365996912,
+      "median_mm": 1.1434449777591595,
+      "p95_mm": 2.6608885227583654,
+      "long_axis_alignment_cosine": 0.9999626517598862,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 0.0,
+      "rotation_from_best_deg": 4.182619578303747e-06
+    },
+    {
+      "mode": "whole",
+      "initial_axial_rotation_deg": 90,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          -0.8984109928333333,
+          0.4386411259856987,
+          0.021252071669171157
+        ],
+        [
+          0.34722197764588747,
+          0.6798746704766105,
+          0.6459158851460463
+        ],
+        [
+          0.2688765259294865,
+          0.5876771180149226,
+          -0.7631127169466962
+        ]
+      ],
+      "translation_mm": [
+        289.3921128087332,
+        -90.93015093739365,
+        863.9170841399317
+      ],
+      "determinant": 1.0000000000000069,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 1.9197526125529856,
+      "median_mm": 1.371449695895437,
+      "p95_mm": 3.652256334063837,
+      "long_axis_alignment_cosine": 0.9992121914627902,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 7.738592864523775,
+      "rotation_from_best_deg": 69.41326562710051
+    },
+    {
+      "mode": "whole",
+      "initial_axial_rotation_deg": 180,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          0.5902319813469229,
+          0.7332949479449075,
+          0.33749774445730163
+        ],
+        [
+          0.39130197838725916,
+          0.10578123173790702,
+          -0.9141625089240079
+        ],
+        [
+          -0.7060516765120685,
+          0.6716314840226686,
+          -0.22450429787424114
+        ]
+      ],
+      "translation_mm": [
+        748.6178984873623,
+        -241.07969536479627,
+        314.8586200392489
+      ],
+      "determinant": 1.000000000000007,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 2.3297052009566754,
+      "median_mm": 1.5099491612834317,
+      "p95_mm": 4.589366727800156,
+      "long_axis_alignment_cosine": 0.9983194818049115,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 13.395969796389027,
+      "rotation_from_best_deg": 163.4492186262114
+    },
+    {
+      "mode": "whole",
+      "initial_axial_rotation_deg": 270,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          0.22430871584176612,
+          0.2356448670206165,
+          -0.945598803216385
+        ],
+        [
+          -0.9606561092288609,
+          0.21654770821868455,
+          -0.17391644507213486
+        ],
+        [
+          0.16378473615911773,
+          0.9474062416472024,
+          0.27494721946078604
+        ]
+      ],
+      "translation_mm": [
+        90.27245521809814,
+        -352.54455965408835,
+        209.4183536526209
+      ],
+      "determinant": 1.0000000000000195,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 1.7973850285234692,
+      "median_mm": 1.1780184326846024,
+      "p95_mm": 3.547478174904459,
+      "long_axis_alignment_cosine": 0.9999199833839199,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 5.858582681699685,
+      "rotation_from_best_deg": 51.462751812179285
+    },
+    {
+      "mode": "shaft60",
+      "initial_axial_rotation_deg": 0,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          -0.5070319864730964,
+          0.12176585685202754,
+          -0.8532828609542348
+        ],
+        [
+          -0.6709481826459628,
+          0.5656802502436051,
+          0.4794104615967627
+        ],
+        [
+          0.5410610879533322,
+          0.8155850235195775,
+          -0.20511940062641454
+        ]
+      ],
+      "translation_mm": [
+        -55.210715741952356,
+        -202.3394439957171,
+        622.6134440318893
+      ],
+      "determinant": 1.0000000000000144,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 1.6696860612535271,
+      "median_mm": 1.1228040468641587,
+      "p95_mm": 3.55905262010728,
+      "long_axis_alignment_cosine": 0.9956151718903956,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 2.9102514001275974,
+      "rotation_from_best_deg": 5.937583263969145
+    },
+    {
+      "mode": "shaft60",
+      "initial_axial_rotation_deg": 90,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          -0.7552287951766051,
+          0.5473710328798147,
+          0.3605751229635597
+        ],
+        [
+          0.6550045431592653,
+          0.6097143492901923,
+          0.4463378324883123
+        ],
+        [
+          0.024464573914505128,
+          0.5732655271632258,
+          -0.8190043467463775
+        ]
+      ],
+      "translation_mm": [
+        466.34177590820644,
+        -111.72643846602004,
+        810.7573385246476
+      ],
+      "determinant": 1.0000000000000115,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 2.245123237765834,
+      "median_mm": 1.4270037214631204,
+      "p95_mm": 4.52359411263633,
+      "long_axis_alignment_cosine": 0.9994808131323718,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 10.024980293278539,
+      "rotation_from_best_deg": 93.34017379296587
+    },
+    {
+      "mode": "shaft60",
+      "initial_axial_rotation_deg": 180,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          0.43953315551921596,
+          0.7397295845963511,
+          0.509520114296052
+        ],
+        [
+          0.5686489614159799,
+          0.20994244132925985,
+          -0.7953379973377755
+        ],
+        [
+          -0.6953049430860271,
+          0.6393155034891992,
+          -0.32836979629453
+        ]
+      ],
+      "translation_mm": [
+        778.7291498528705,
+        -219.0789460652611,
+        346.75851446427305
+      ],
+      "determinant": 1.00000000000004,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 2.6053523493440784,
+      "median_mm": 1.4802430272842684,
+      "p95_mm": 5.516087210938881,
+      "long_axis_alignment_cosine": 0.9999170472627543,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 13.694854246045297,
+      "rotation_from_best_deg": 177.25825289677655
+    },
+    {
+      "mode": "shaft60",
+      "initial_axial_rotation_deg": 270,
+      "iterations": 55,
+      "rotation_row_vectors": [
+        [
+          0.6331996913334107,
+          0.373510242470589,
+          -0.6778998817412861
+        ],
+        [
+          -0.7473386239787198,
+          0.06719405976279348,
+          -0.6610370182086736
+        ],
+        [
+          -0.20135325178623165,
+          0.9251892007055499,
+          0.3216858885511621
+        ]
+      ],
+      "translation_mm": [
+        300.84467787864304,
+        -369.1972220903772,
+        101.3189602418063
+      ],
+      "determinant": 1.0000000000000278,
+      "scale": 1,
+      "symmetrical_sample_point_rms_mm": 2.071822652318607,
+      "median_mm": 1.3229427372548284,
+      "p95_mm": 4.245015844493508,
+      "long_axis_alignment_cosine": 0.9995277989456248,
+      "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+      "rms_displacement_from_best_mm": 9.397325477774103,
+      "rotation_from_best_deg": 85.8429287325062
+    }
+  ],
+  "chosen": {
+    "mode": "whole",
+    "initial_axial_rotation_deg": 0,
+    "iterations": 55,
+    "rotation_row_vectors": [
+      [
+        -0.5193242405896032,
+        0.1809690363711183,
+        -0.8351961093126213
+      ],
+      [
+        -0.6889008111440809,
+        0.48966392344240695,
+        0.5344575890414648
+      ],
+      [
+        0.5056856785999082,
+        0.8529240587261575,
+        -0.1296246292378278
+      ]
+    ],
+    "translation_mm": [
+      -12.078179102140986,
+      -256.16275401884474,
+      531.4130891167819
+    ],
+    "determinant": 0.9999999999999971,
+    "scale": 1,
+    "symmetrical_sample_point_rms_mm": 1.397394365996912,
+    "median_mm": 1.1434449777591595,
+    "p95_mm": 2.6608885227583654,
+    "long_axis_alignment_cosine": 0.9999626517598862,
+    "seed": "PCA with long axis directed away from labelled source carpals; minor-axis quarter turns",
+    "rms_displacement_from_best_mm": 0.0,
+    "rotation_from_best_deg": 4.182619578303747e-06
+  },
+  "status": "test_only_anatomically_unverified",
+  "GLB": "metacarpal_3_left-rigid-trial.glb",
+  "GLBsha256": "b1182bc62c2d33ae7385c311be46ec6a67b01d6db15c873b9dde2ee608f63807",
+  "elapsed_seconds": 5.047000000020489
+}

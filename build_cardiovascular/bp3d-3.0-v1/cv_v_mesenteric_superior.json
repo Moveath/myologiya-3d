@@ -1,0 +1,40 @@
+{
+  "id": "cv_v_mesenteric_superior",
+  "source": {
+    "fma": "FMA14332",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA14332.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA14332.obj",
+    "bytes": 14676,
+    "sha256": "6cda0692a092682e024c919b4d40f726d4fc8a9cb2a29ab4e6374a468fbe4d97",
+    "crc": 1000416114,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_mesenteric_superior.glb",
+  "sha256": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362",
+  "triangles": 202,
+  "vertices": 103,
+  "boundsM": [
+    [
+      -0.00726891,
+      1.04383,
+      0.125472
+    ],
+    [
+      0.0024186100000000003,
+      1.0668900000000001,
+      0.150538
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 9.891141422229946e-07,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

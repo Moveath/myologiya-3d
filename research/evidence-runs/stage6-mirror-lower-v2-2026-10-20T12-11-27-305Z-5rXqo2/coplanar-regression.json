@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "fixtures": 5,
+  "reviewed": [
+    {
+      "id": "toe_prox_3_left",
+      "previousFalseCandidates": [
+        {
+          "i": 790,
+          "j": 791,
+          "kind": "coplanarOverlap"
+        }
+      ]
+    },
+    {
+      "id": "toe_prox_4_left",
+      "previousFalseCandidates": [
+        {
+          "i": 78,
+          "j": 90,
+          "kind": "coplanarOverlap"
+        },
+        {
+          "i": 942,
+          "j": 943,
+          "kind": "coplanarOverlap"
+        }
+      ]
+    }
+  ],
+  "scope": "Only exact shared-edge opposite-half-plane cases reclassified; no mesh or thresholds changed"
+}

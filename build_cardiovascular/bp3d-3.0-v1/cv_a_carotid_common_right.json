@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_carotid_common_right",
+  "source": {
+    "fma": "FMA3941",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA3941.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA3941.obj",
+    "bytes": 273176,
+    "sha256": "61cf12ead4134447efc5215bca9be7569fce0c3a607cdb850df94d1803427be0",
+    "crc": 2374678859,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_carotid_common_right.glb",
+  "sha256": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240",
+  "triangles": 4424,
+  "vertices": 2214,
+  "boundsM": [
+    [
+      -0.0213163,
+      1.34067,
+      0.105359
+    ],
+    [
+      -0.0085743,
+      1.38469,
+      0.117596
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 2.190118636708467e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

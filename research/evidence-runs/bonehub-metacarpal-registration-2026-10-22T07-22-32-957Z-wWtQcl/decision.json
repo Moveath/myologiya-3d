@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "scope": "New BoneHub MC I/III rigid shape-registration and bounded foot image-header followup only",
+  "priorReview": "../geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+  "structures": [
+    {
+      "id": "metacarpal_1_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "status": "test_only",
+      "admitted": false,
+      "productionChanged": false,
+      "noModelRemoved": false,
+      "testGLB": "metacarpal_1_left-rigid-trial-v2.glb",
+      "method": "PCA main axis signed away from named carpals; 4 quarter-turn starts; symmetric whole-surface rigid ICP. Separate shaft60 fits assess sensitivity. No scale/reflection/deformation and no neighbour-dependent objective. Source patient LPS translated into current Three world through one saved proper rigid matrix for each candidate.",
+      "sourceLengthAlongPCAmm": 47.597677910783545,
+      "BP3DLengthAlongPCAmm": 47.74952276998596,
+      "bestPointCloudRMSmm": 1.283059421029635,
+      "longAxisCosine": 0.9995890301223953,
+      "shaftSensitivity": {
+        "rotationDegrees": 2.157371590173273,
+        "rmsSourcePointDisplacementMM": 0.7099209782681418,
+        "note": "Shape registration depends on weighting of shaft and endpoints; no accepted anatomical base/head landmarks are encoded."
+      },
+      "surfaceDistances": [
+        {
+          "direction": "candidate-to-target",
+          "samples": 11324,
+          "medianMM": 0.9656788101030557,
+          "p95MM": 2.4968688093036175,
+          "maxSampleDistanceMM": 4.275359916355603,
+          "rmsMM": 1.2747809730441082
+        },
+        {
+          "direction": "target-to-candidate",
+          "samples": 3733,
+          "medianMM": 0.7681800274546066,
+          "p95MM": 2.589765066841954,
+          "maxSampleDistanceMM": 4.078423014586663,
+          "rmsMM": 1.204297772418682
+        }
+      ],
+      "collisionPairs": [
+        {
+          "neighbor": "live__trapezium_left",
+          "crossingTrianglePairs": 152,
+          "candidateIntoNeighborDepthMM": 0.9788031934278099,
+          "neighborIntoCandidateDepthMM": 0.9512837693092648,
+          "depthComplete": true,
+          "evidence": "metacarpal_1_left-neighbor-live__trapezium_left.json"
+        },
+        {
+          "neighbor": "live__phalanx_prox_1_left",
+          "crossingTrianglePairs": 132,
+          "candidateIntoNeighborDepthMM": 1.0963434987956477,
+          "neighborIntoCandidateDepthMM": 0.9777308177664741,
+          "depthComplete": true,
+          "evidence": "metacarpal_1_left-neighbor-live__phalanx_prox_1_left.json"
+        }
+      ],
+      "workingNeighborCount": 27,
+      "selfIntersection": {
+        "complete": true,
+        "counts": {
+          "candidatePairs": 184327,
+          "degenerate": 0,
+          "duplicate": 0,
+          "coplanarOverlap": 0,
+          "crossing": 0,
+          "contact": 29978,
+          "adjacent": 11322
+        }
+      },
+      "blocker": "New donor shape can be rigidly aligned approximately, but residual intersections with working base/head neighbours remain. Surface assignment and anatomical pose not independently confirmed; choosing another transform solely to remove collisions would be unsupported. This is not a claim that the source bone is intrinsically pathological or unusable as a separately identified specimen.",
+      "nextStep": "Review saved Blender views for base/head/shaft orientation and recorded crossing patches. Confirm anatomical landmarks before changing registration; if no coherent pose exists, evaluate the complete matched-donor region separately, preserving working BP3D neighbours.",
+      "evidence": [
+        "metacarpal_1_left-registration.json",
+        "metacarpal_1_left-surface-distances.json",
+        "metacarpal_1_left-neighbors-summary.json",
+        "metacarpal_1_left-self.json"
+      ]
+    },
+    {
+      "id": "metacarpal_3_left",
+      "issueId": "GEO-HAND-LEFT-MODELS",
+      "status": "test_only",
+      "admitted": false,
+      "productionChanged": false,
+      "noModelRemoved": false,
+      "testGLB": "metacarpal_3_left-rigid-trial-v2.glb",
+      "method": "PCA main axis signed away from named carpals; 4 quarter-turn starts; symmetric whole-surface rigid ICP. Separate shaft60 fits assess sensitivity. No scale/reflection/deformation and no neighbour-dependent objective. Source patient LPS translated into current Three world through one saved proper rigid matrix for each candidate.",
+      "sourceLengthAlongPCAmm": 69.82504555929472,
+      "BP3DLengthAlongPCAmm": 68.54851020329534,
+      "bestPointCloudRMSmm": 1.397394365996912,
+      "longAxisCosine": 0.9999626517598862,
+      "shaftSensitivity": {
+        "rotationDegrees": 5.937583263969145,
+        "rmsSourcePointDisplacementMM": 2.9102514001275974,
+        "note": "Shape registration depends on weighting of shaft and endpoints; no accepted anatomical base/head landmarks are encoded."
+      },
+      "surfaceDistances": [
+        {
+          "direction": "candidate-to-target",
+          "samples": 15020,
+          "medianMM": 1.0949810182976676,
+          "p95MM": 2.8089911945003028,
+          "maxSampleDistanceMM": 4.16713214605293,
+          "rmsMM": 1.3875206547893961
+        },
+        {
+          "direction": "target-to-candidate",
+          "samples": 4595,
+          "medianMM": 0.8098575975863415,
+          "p95MM": 2.9035478414543734,
+          "maxSampleDistanceMM": 4.258231022549338,
+          "rmsMM": 1.2863549747615595
+        }
+      ],
+      "collisionPairs": [
+        {
+          "neighbor": "live__trapezoid_left",
+          "crossingTrianglePairs": 73,
+          "candidateIntoNeighborDepthMM": 1.4973525357338762,
+          "neighborIntoCandidateDepthMM": 1.8899556504688926,
+          "depthComplete": true,
+          "evidence": "metacarpal_3_left-neighbor-live__trapezoid_left.json"
+        },
+        {
+          "neighbor": "live__capitate_left",
+          "crossingTrianglePairs": 65,
+          "candidateIntoNeighborDepthMM": 1.1226880159142383,
+          "neighborIntoCandidateDepthMM": 1.1479708098513435,
+          "depthComplete": true,
+          "evidence": "metacarpal_3_left-neighbor-live__capitate_left.json"
+        },
+        {
+          "neighbor": "live__metacarpal_2_left",
+          "crossingTrianglePairs": 104,
+          "candidateIntoNeighborDepthMM": 0.5773293394407392,
+          "neighborIntoCandidateDepthMM": 0.5566894220154723,
+          "depthComplete": true,
+          "evidence": "metacarpal_3_left-neighbor-live__metacarpal_2_left.json"
+        },
+        {
+          "neighbor": "live__metacarpal_4_left",
+          "crossingTrianglePairs": 174,
+          "candidateIntoNeighborDepthMM": 2.4721060132353836,
+          "neighborIntoCandidateDepthMM": 2.407283578780343,
+          "depthComplete": true,
+          "evidence": "metacarpal_3_left-neighbor-live__metacarpal_4_left.json"
+        },
+        {
+          "neighbor": "live__phalanx_prox_3_left",
+          "crossingTrianglePairs": 65,
+          "candidateIntoNeighborDepthMM": 0.19206765888941263,
+          "neighborIntoCandidateDepthMM": 0.14880627028107915,
+          "depthComplete": true,
+          "evidence": "metacarpal_3_left-neighbor-live__phalanx_prox_3_left.json"
+        }
+      ],
+      "workingNeighborCount": 27,
+      "selfIntersection": {
+        "complete": true,
+        "counts": {
+          "candidatePairs": 246416,
+          "degenerate": 0,
+          "duplicate": 0,
+          "coplanarOverlap": 0,
+          "crossing": 0,
+          "contact": 39281,
+          "adjacent": 15018
+        }
+      },
+      "blocker": "New donor shape can be rigidly aligned approximately, but residual intersections with working base/head neighbours remain. Surface assignment and anatomical pose not independently confirmed; choosing another transform solely to remove collisions would be unsupported. This is not a claim that the source bone is intrinsically pathological or unusable as a separately identified specimen.",
+      "nextStep": "Review saved Blender views for base/head/shaft orientation and recorded crossing patches. Confirm anatomical landmarks before changing registration; if no coherent pose exists, evaluate the complete matched-donor region separately, preserving working BP3D neighbours.",
+      "evidence": [
+        "metacarpal_3_left-registration.json",
+        "metacarpal_3_left-surface-distances.json",
+        "metacarpal_3_left-neighbors-summary.json",
+        "metacarpal_3_left-self.json"
+      ]
+    }
+  ],
+  "technicalExportCorrection": "First trial exports had no NORMAL attribute. They remain saved. v2 uses same saved positions/triangle indices with explicit vertex normals; registration not repeated. 64 Node checks passed on v2.",
+  "tests": {
+    "NodeGLB": "trial-glb-node-checks.json",
+    "passedNodeChecks": 64,
+    "BVH": "indirect:true; unchanged indices; all new candidate/current regional-neighbour pairs AABB/BVH; vertex/face-centre sampled depth in both directions for crossings",
+    "trimesh": "new-source topology and saved rigid transforms; originals untouched",
+    "Blender": "scenario prepared for parent agent; check owner-blender.json outputs when produced, no visual admission recorded by this summary",
+    "Playwright": "not run by this agent; test-only resources are not integrated into application"
+  },
+  "BlenderScenario": "blender_review_metacarpal.py",
+  "footMedicalImageCheckpoint": {
+    "status": "header_retrieved",
+    "sourceCommit": "7d520ffe410b3f79d82991b8368b2d51844feb80",
+    "header": "bonehub-male-foot-header.nrrd.txt",
+    "metadata": "foot-header-retrieval.json",
+    "bytesRead": 65536,
+    "httpStatus": 206,
+    "fullVolumeDownloaded": false,
+    "sizes": "2 520 552 1873",
+    "spacingMM": "0.9375 x 0.9375 x1.0 according to space directions",
+    "orientation": "left-posterior-superior",
+    "origin": "(0,0,0)",
+    "dimensions": "4",
+    "segmentNames": [
+      "TALUS_LEFT",
+      "METATARSAL_4_LEFT",
+      "METATARSAL_5_LEFT",
+      "PHALANGE_FOOT_1_LEFT",
+      "PHALANGE_FOOT_2_LEFT",
+      "PHALANGE_FOOT_3_LEFT",
+      "PHALANGE_FOOT_4_LEFT",
+      "PHALANGE_FOOT_5_LEFT",
+      "CALCANEUS_LEFT",
+      "CUBOID_LEFT",
+      "NAVICULAR_LEFT",
+      "LATERAL_CUNEIFORM_LEFT",
+      "INTERMEDIATE_CUNEIFORM_LEFT",
+      "MEDIAL_CUNEIFORM_LEFT",
+      "METATARSAL_1_LEFT",
+      "METATARSAL_2_LEFT",
+      "METATARSAL_3_LEFT"
+    ],
+    "decision": "17 labels; phalanges remain grouped by toe (five PHALANGE_FOOT labels), not proximal/middle/distal. The header does not supply separate joint boundaries. CT image of same male is public/pinned but has not been read or segmented.",
+    "CT": [
+      {
+        "type": "file",
+        "oid": "d152c72a6828ce626ff1279d8766a3e7fded2017",
+        "size": 418636727,
+        "lfs": {
+          "oid": "2ad6bb4129aa529e0d8d0f059694fccb4d996867cff3cfdf3c1cf1f4250fc776",
+          "size": 418636727,
+          "pointerSize": 134
+        },
+        "xetHash": "8494f0e179b7dcc6f85e235c7a28461e30d77297adf7f1b358bb06bcdb2a4bb1",
+        "path": "visible_human_3d_models/CT/Image/01_Male.nii.gz"
+      },
+      {
+        "type": "file",
+        "oid": "84fe6b47eab3472f881b572e6d6fa794fc472684",
+        "size": 501395759,
+        "lfs": {
+          "oid": "638c569c9a702a6c7b3f50e36fe4be8ef7acc2ab0c53d960ad19418d7f00d979",
+          "size": 501395759,
+          "pointerSize": 134
+        },
+        "xetHash": "a7de5ce5928df8532ebc6dc55e3ed4a88b4a9e1494a2434c5f62cc6775b83c45",
+        "path": "visible_human_3d_models/CT/Image/02_Female.nii.gz"
+      }
+    ],
+    "nextStep": "Retrieve the male CT only for a bounded planned image investigation, inspect alignment and joint gaps against this seg.nrrd, then annotate independent toe phalanges. Do not claim grouped labels resolve existing individual phalanx noModel."
+  },
+  "summary": {
+    "newModelsIntegrated": 0,
+    "noModelRemoved": 0,
+    "testDerivativeGLB": 2,
+    "examinedBones": 2,
+    "boneNoModelScopeUnchanged": 20
+  }
+}

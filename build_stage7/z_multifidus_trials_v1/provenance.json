@@ -1,0 +1,267 @@
+{
+  "source_archive": "Z-Anatomy/Models-of-human-anatomy@04d15340bad66394659c0e3b3ff9d9bb0924f6ca",
+  "models": [
+    {
+      "issue": "MP-thorax_multifidus_right-thoracic",
+      "file": "build_stage7\\z_multifidus_trials_v1\\thorax_multifidus_right-thoracic-test.glb",
+      "source_object": "Multifidus thoracis muscle.r",
+      "triangles": 3902,
+      "vertices": 1987,
+      "modelStatus": "test_not_admitted",
+      "side": "right",
+      "source_is_mirrored": false,
+      "winding_reversed": false
+    },
+    {
+      "issue": "MP-thorax_multifidus_left-thoracic",
+      "file": "build_stage7\\z_multifidus_trials_v1\\thorax_multifidus_left-thoracic-test.glb",
+      "source_object": "Multifidus thoracis muscle.l",
+      "triangles": 3902,
+      "vertices": 1987,
+      "modelStatus": "test_not_admitted",
+      "side": "left",
+      "source_is_mirrored": true,
+      "winding_reversed": true
+    }
+  ],
+  "transform": {
+    "kind": "rigid",
+    "scale": 1.0,
+    "matrix_source_blender_to_atlas_three": [
+      [
+        0.9999885119167531,
+        -0.003937139357277535,
+        -0.0027340388072770107,
+        0.002374824626193881
+      ],
+      [
+        0.0027361467594890936,
+        0.0005301152216914392,
+        0.9999961162318393,
+        -0.054375440486694515
+      ],
+      [
+        -0.003935674710752621,
+        -0.9999921089246322,
+        0.0005408817227777185,
+        0.09888641663425318
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_determinant": 1.0000000000000004,
+    "iterations": 25,
+    "nearest_vertex_rms_history_mm": [
+      2.4852942431698875,
+      2.3667000018591144,
+      2.310893734851081,
+      2.2863116115544604,
+      2.276268209778611,
+      2.2726644445037394,
+      2.271093072961003,
+      2.2703391069382852,
+      2.2699812035796936,
+      2.2698168894622124,
+      2.269731457772553,
+      2.2696918517523392,
+      2.269674843375961,
+      2.269664712193568,
+      2.269658838812447,
+      2.269655536580863,
+      2.269652235423273,
+      2.2696507762108813,
+      2.269649622812231,
+      2.2696490066013815,
+      2.269648755197541,
+      2.2696485817073597,
+      2.269648567714816,
+      2.269648567714816,
+      2.269648567714816
+    ],
+    "bones": [
+      {
+        "bone": "T1",
+        "nearest_vertex_mm": {
+          "min": 0.09602848139285135,
+          "median": 2.5821277606490285,
+          "p95": 6.067687970594465,
+          "max": 8.351353603069423
+        }
+      },
+      {
+        "bone": "T2",
+        "nearest_vertex_mm": {
+          "min": 0.10504766335396176,
+          "median": 2.343794528006034,
+          "p95": 4.42654022070562,
+          "max": 5.638008439404431
+        }
+      },
+      {
+        "bone": "T3",
+        "nearest_vertex_mm": {
+          "min": 0.12364231696345516,
+          "median": 2.127849073753602,
+          "p95": 3.7381629889780266,
+          "max": 6.336746173568846
+        }
+      },
+      {
+        "bone": "T4",
+        "nearest_vertex_mm": {
+          "min": 0.15990555498093623,
+          "median": 1.703560691478974,
+          "p95": 2.9484637176120754,
+          "max": 3.5447091996815416
+        }
+      },
+      {
+        "bone": "T5",
+        "nearest_vertex_mm": {
+          "min": 0.08874499274987152,
+          "median": 1.4533224064448487,
+          "p95": 3.2751282193033613,
+          "max": 5.911224719452533
+        }
+      },
+      {
+        "bone": "T6",
+        "nearest_vertex_mm": {
+          "min": 0.05406182268219076,
+          "median": 1.3224528060603213,
+          "p95": 3.1538322360220463,
+          "max": 6.260137535174528
+        }
+      },
+      {
+        "bone": "T7",
+        "nearest_vertex_mm": {
+          "min": 0.07981822002387971,
+          "median": 1.163211318432658,
+          "p95": 3.000468043773244,
+          "max": 4.920188231585076
+        }
+      },
+      {
+        "bone": "T8",
+        "nearest_vertex_mm": {
+          "min": 0.06261201953392755,
+          "median": 1.327954002490514,
+          "p95": 2.6422763626267303,
+          "max": 3.6879464447993113
+        }
+      },
+      {
+        "bone": "T9",
+        "nearest_vertex_mm": {
+          "min": 0.12183939810526664,
+          "median": 1.3965949978463565,
+          "p95": 2.9573762635458625,
+          "max": 3.7373323332456954
+        }
+      },
+      {
+        "bone": "T10",
+        "nearest_vertex_mm": {
+          "min": 0.11080887120002005,
+          "median": 1.7114578425623705,
+          "p95": 3.7512002756094707,
+          "max": 4.700725738759957
+        }
+      },
+      {
+        "bone": "T11",
+        "nearest_vertex_mm": {
+          "min": 0.1448743614777321,
+          "median": 2.1989857275900953,
+          "p95": 4.7055210364081,
+          "max": 5.8211860390903745
+        }
+      },
+      {
+        "bone": "T12",
+        "nearest_vertex_mm": {
+          "min": 0.14051036271131978,
+          "median": 2.2532079060454318,
+          "p95": 5.283498023070374,
+          "max": 7.152432909388235
+        }
+      }
+    ],
+    "muscles": [
+      {
+        "side": "right",
+        "vertices": 1987,
+        "triangles": 3902,
+        "bounds": [
+          [
+            -0.030060180599140757,
+            1.0899884640302568,
+            0.005143622710970672
+          ],
+          [
+            -0.0035366606183263134,
+            1.3978394429938747,
+            0.057684463480642365
+          ]
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "volume_mm3": 8026.553792668772,
+        "parent_nearest_vertex_mm": {
+          "min": 0.26034103583966445,
+          "median": 1.7578158944287832,
+          "p95": 3.9170179211710145,
+          "max": 6.2407915099730715
+        },
+        "negative_source_determinant_winding_reversed": false
+      },
+      {
+        "side": "left",
+        "vertices": 1987,
+        "triangles": 3902,
+        "bounds": [
+          [
+            0.000662665606044699,
+            1.0900624727679284,
+            0.005119100582262781
+          ],
+          [
+            0.02708778295663722,
+            1.3979043224621828,
+            0.05748616135005634
+          ]
+        ],
+        "watertight": true,
+        "winding_consistent": true,
+        "volume_mm3": 8026.554324583203,
+        "parent_nearest_vertex_mm": {
+          "min": 0.07646424327084858,
+          "median": 1.7854583263261898,
+          "p95": 4.049925285547667,
+          "max": 6.349708077610255
+        },
+        "negative_source_determinant_winding_reversed": true
+      }
+    ],
+    "admitted": false,
+    "reason": "Bone registration only; muscle topology and attachment relations require individual review."
+  },
+  "license": "CC BY-SA 4.0",
+  "attribution": [
+    "Z-Anatomy — Gauthier Kervyn (design, 3D, anatomy), Marcin Zielinski (Blender), contributors",
+    "BodyParts3D — The Database Center for Life Science — CC BY-SA 2.1 Japan"
+  ],
+  "method": "Source local-to-world, source Blender to atlas Three rigid registration, authored reflection winding correction only; no decimation/deformation.",
+  "admitted": false,
+  "blockers": [
+    "533 crossing triangle pairs and one duplicate per side require interpretation",
+    "Bone registration is not confirmed muscle-attachment registration",
+    "Sampled bone penetration reaches 1.92 mm right and 2.11 mm left",
+    "Overlays duplicate an existing whole muscle; no production replacement authorized by this diagnostic export"
+  ]
+}

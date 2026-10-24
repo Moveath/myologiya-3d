@@ -1,0 +1,28 @@
+{
+  "admitted": [
+    "navicular_left",
+    "cuneiform_med_left",
+    "cuneiform_int_left"
+  ],
+  "trialOnly": [
+    "talus_left",
+    "calcaneus_left",
+    "cuboid_left",
+    "cuneiform_lat_left"
+  ],
+  "report": "research/stage6-left-tarsals-report-2026-10-20.md",
+  "fullAnatomicalAcceptance": false,
+  "limitation": "Talus/calcaneus source overlap 329 triangle pairs, sampled depth up to 1.004 mm; cuboid/lateral cuneiform 247 pairs, up to 2.663 mm. These four remain trial only. Admitted models retain unaccepted precise facets/gaps/cartilage/pins. No automatic depth threshold; no deformation.",
+  "evidence": [
+    "blender-foot-views.json",
+    "trimesh-check.json",
+    "joint-intersections.json",
+    "bounded-penetration.json",
+    "three-bvh.json"
+  ],
+  "visualAssessment": "11 Blender views inspected: seven isolated shapes plus four common-frame projections. Navicular concave talar-facing region and anterior cuneiform group, wedge-shaped medial/intermediate cuneiforms consistent in coarse assembly. No gross side/scale/dislocation detected for these three. Extensive interpenetration at two other pairs requires independent surface review; not admitted by absence of dislocation alone.",
+  "sources": [
+    "scripts/foot_stage5_review.py refs: Gray 6d.1; Sobotta Vol.I pp102–106 Figs153–166",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb (Tarsal Bones, Fig8.19)"
+  ]
+}

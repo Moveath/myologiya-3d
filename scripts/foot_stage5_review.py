@@ -88,9 +88,11 @@ for i,roman in enumerate(('I','II','III','IV','V'),1):
 OWNERS=set(LABELS)
 
 def limits(p):
-    p.update(educationAvailable=False,geometryRequirements=dict(status='unverified_extent',neededEvidence=LEFT_NOTE if p.get('side')=='left' else NOTE),
+    from left_foot_stage6 import model_note
+    model_limit = model_note(p['b'], LEFT_NOTE) if p.get('side')=='left' else NOTE
+    p.update(educationAvailable=False,geometryRequirements=dict(status='unverified_extent',neededEvidence=model_limit),
              footReview=dict(source=REPORT,scope='catalogue_and_representation',coordinateAcceptance=False,extentAcceptance=False))
-    p['modelNote']=(p.get('modelNote','')+' '+(LEFT_NOTE if p.get('side')=='left' else NOTE)).strip()
+    p['modelNote']=(p.get('modelNote','')+' '+model_limit).strip()
     return p
 
 def review(record):
@@ -121,6 +123,8 @@ def review(record):
     return limits(p)
 
 LEFT_BONES={b+'_left':dict(ru=ru+' · слева',lat=lat,g=g,sub='foot',sec='leg',side='left',noModel=True,x=x,note=LEFT_NOTE,refs=refs()) for b,(ru,lat,g,x) in LABELS.items()}
+from left_foot_stage6 import admit as admit_foot
+admit_foot(LEFT_BONES)
 RIGHT_PATCHES={b:dict(ru=ru+' · справа',side='right',x=x,refs=refs()) for b,(ru,lat,g,x) in LABELS.items()}
 RIGHT_PATCHES['sesamoid_pedis']['note']='В существующем общем меше есть две раздельные компоненты. Индивидуальная анатомическая привязка и выделение медиальной/латеральной кости ещё не приняты; обе описаны отдельными дочерними карточками без координат.'
 

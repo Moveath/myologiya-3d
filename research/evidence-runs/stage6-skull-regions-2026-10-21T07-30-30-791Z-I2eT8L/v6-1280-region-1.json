@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "width": 1280,
+  "phase": "region-1",
+  "checks": [
+    "Real card selection",
+    "Unaccepted process mask not shown",
+    "Process boundary limitation visible",
+    "Draft cannot be enabled through card",
+    "No page errors"
+  ],
+  "errors": [],
+  "snapshot": {
+    "items": [
+      {
+        "id": "occipital:A02.1.04.002",
+        "bone": "occipital",
+        "visible": false,
+        "parentVisible": true,
+        "opacity": 1,
+        "parentOpacity": 1,
+        "bvh": true,
+        "overlayInPickables": false,
+        "vertices": 124
+      }
+    ],
+    "failures": [
+      [
+        "temporal_right:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ],
+      [
+        "temporal_left:A02.1.06.047",
+        "Граница области не принята. Черновая частичная маска не показывается; сохранён обычный пин."
+      ]
+    ],
+    "drawCalls": 50,
+    "clip": 0,
+    "pin": "head_temporal_right_A02_1_06_047"
+  }
+}

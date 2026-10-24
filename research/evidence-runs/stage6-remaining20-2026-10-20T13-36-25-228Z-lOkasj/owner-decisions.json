@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "talus_left",
+    "ru": "Таранная кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__talus_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24483.obj",
+          "sha256": "4c8f262a33f96045578cba926a21ae8afab114f667dd40e9a571e7ff03d0f9de",
+          "fma": "FMA24483"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__calcaneus_left",
+            "maxSampleDepthMM": 1.102854546018658
+          },
+          {
+            "other": "native__calcaneus_left",
+            "maxSampleDepthMM": 1.0034671356638454
+          },
+          {
+            "other": "live__navicular_left",
+            "maxSampleDepthMM": 0.20693822732011324
+          },
+          {
+            "other": "live__tibia_left",
+            "maxSampleDepthMM": 0.0577430333656409
+          }
+        ]
+      },
+      {
+        "id": "mirror__talus_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "mirror__calcaneus_left",
+            "maxSampleDepthMM": 1.0299541397829994
+          },
+          {
+            "other": "native__calcaneus_left",
+            "maxSampleDepthMM": 0.9811397150335683
+          },
+          {
+            "other": "live__navicular_left",
+            "maxSampleDepthMM": 0.7704528400651778
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "calcaneus_left",
+    "ru": "Пяточная кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__calcaneus_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24498.obj",
+          "sha256": "64d82261ec8ffba2c536da5fdd7f9ac6d8855504ff7eb28030fbc4a299816d7b",
+          "fma": "FMA24498"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "native__talus_left",
+            "maxSampleDepthMM": 1.0034671356638454
+          },
+          {
+            "other": "mirror__talus_left",
+            "maxSampleDepthMM": 0.9811397150335683
+          },
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 0.49747052378198203
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 0.28577059066263
+          }
+        ]
+      },
+      {
+        "id": "mirror__calcaneus_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__talus_left",
+            "maxSampleDepthMM": 1.102854546018658
+          },
+          {
+            "other": "mirror__talus_left",
+            "maxSampleDepthMM": 1.0299541397829994
+          },
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 0.6559189585757518
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 0.4371771015300315
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "cuboid_left",
+    "ru": "Кубовидная кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__cuboid_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24529.obj",
+          "sha256": "c235f1dc59dfba5e31a574f48de41e1be9e3b24a9ab4e0d16f9df9ac07434b29",
+          "fma": "FMA24529"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__cuneiform_lat_left",
+            "maxSampleDepthMM": 3.2255300789672723
+          },
+          {
+            "other": "native__cuneiform_lat_left",
+            "maxSampleDepthMM": 2.6623953272173604
+          },
+          {
+            "other": "mirror__calcaneus_left",
+            "maxSampleDepthMM": 0.6559189585757518
+          },
+          {
+            "other": "native__calcaneus_left",
+            "maxSampleDepthMM": 0.49747052378198203
+          },
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 0.4777697447841804
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 0.18933078010222068
+          },
+          {
+            "other": "live__navicular_left",
+            "maxSampleDepthMM": 0.18047288076353646
+          }
+        ]
+      },
+      {
+        "id": "mirror__cuboid_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "mirror__cuneiform_lat_left",
+            "maxSampleDepthMM": 2.654432831085847
+          },
+          {
+            "other": "native__cuneiform_lat_left",
+            "maxSampleDepthMM": 2.1071993719443785
+          },
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 1.316497650214023
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 0.8442313154477085
+          },
+          {
+            "other": "mirror__calcaneus_left",
+            "maxSampleDepthMM": 0.4371771015300315
+          },
+          {
+            "other": "mirror__metatarsal_5_left",
+            "maxSampleDepthMM": 0.4287431915320864
+          },
+          {
+            "other": "native__calcaneus_left",
+            "maxSampleDepthMM": 0.28577059066263
+          },
+          {
+            "other": "mirror__metatarsal_4_left",
+            "maxSampleDepthMM": 0.17640488309282018
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "cuneiform_lat_left",
+    "ru": "Латеральная клиновидная кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__cuneiform_lat_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24526.obj",
+          "sha256": "981c3361de875fbf56694e4bb63460ce3a45aebdac602ec3d1249cc5427e511b",
+          "fma": "FMA24526"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 2.6623953272173604
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 2.1071993719443785
+          },
+          {
+            "other": "mirror__metatarsal_2_left",
+            "maxSampleDepthMM": 1.580776307197254
+          },
+          {
+            "other": "native__metatarsal_2_left",
+            "maxSampleDepthMM": 0.7203638285078381
+          }
+        ]
+      },
+      {
+        "id": "mirror__cuneiform_lat_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 3.2255300789672723
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 2.654432831085847
+          },
+          {
+            "other": "mirror__metatarsal_2_left",
+            "maxSampleDepthMM": 0.7586227018728379
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 0.4316105637669453
+          },
+          {
+            "other": "native__metatarsal_3_left",
+            "maxSampleDepthMM": 0.04289387580984079
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metatarsal_1_left",
+    "ru": "I плюсневая кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metatarsal_1_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24508.obj",
+          "sha256": "5867825022c98465b222e5c523dc189e501fd49bf9d8f78b8815db20468d7fc6",
+          "fma": "FMA24508"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "live__cuneiform_med_left",
+            "maxSampleDepthMM": 1.1961054032991083
+          },
+          {
+            "other": "live__sesamoid_pedis_left",
+            "maxSampleDepthMM": 0.6799613488961918
+          },
+          {
+            "other": "mirror__toe_prox_1_left",
+            "maxSampleDepthMM": 0.4314341288147714
+          },
+          {
+            "other": "native__toe_prox_1_left",
+            "maxSampleDepthMM": 0.027579815111605354
+          }
+        ]
+      },
+      {
+        "id": "mirror__metatarsal_1_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "live__cuneiform_med_left",
+            "maxSampleDepthMM": 1.2636065012953999
+          },
+          {
+            "other": "live__sesamoid_pedis_left",
+            "maxSampleDepthMM": 0.271374996340849
+          },
+          {
+            "other": "mirror__toe_prox_1_left",
+            "maxSampleDepthMM": 0.2253380191596398
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "toe_prox_1_left",
+    "ru": "Проксимальная фаланга I пальца стопы · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__toe_prox_1_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA43254.obj",
+          "sha256": "f8c4d0830a0ba6878e602c9eaf330288c0b875fdce1dac5718c9669e3c868b10",
+          "fma": "FMA43254"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__toe_dist_1_left",
+            "maxSampleDepthMM": 0.6906669368229671
+          },
+          {
+            "other": "native__toe_dist_1_left",
+            "maxSampleDepthMM": 0.6416896650241481
+          },
+          {
+            "other": "native__metatarsal_1_left",
+            "maxSampleDepthMM": 0.027579815111605354
+          }
+        ]
+      },
+      {
+        "id": "mirror__toe_prox_1_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__toe_dist_1_left",
+            "maxSampleDepthMM": 0.7470780561315785
+          },
+          {
+            "other": "mirror__toe_dist_1_left",
+            "maxSampleDepthMM": 0.6744499965069598
+          },
+          {
+            "other": "native__metatarsal_1_left",
+            "maxSampleDepthMM": 0.4314341288147714
+          },
+          {
+            "other": "mirror__metatarsal_1_left",
+            "maxSampleDepthMM": 0.2253380191596398
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "toe_dist_1_left",
+    "ru": "Дистальная фаланга I пальца стопы · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__toe_dist_1_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA32651.obj",
+          "sha256": "32eb582d7a1740054fb84cd07bd29fe1c142face782987584569025d038b7f5d",
+          "fma": "FMA32651"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__toe_prox_1_left",
+            "maxSampleDepthMM": 0.7470780561315785
+          },
+          {
+            "other": "native__toe_prox_1_left",
+            "maxSampleDepthMM": 0.6416896650241481
+          }
+        ]
+      },
+      {
+        "id": "mirror__toe_dist_1_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__toe_prox_1_left",
+            "maxSampleDepthMM": 0.6906669368229671
+          },
+          {
+            "other": "mirror__toe_prox_1_left",
+            "maxSampleDepthMM": 0.6744499965069598
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metatarsal_2_left",
+    "ru": "II плюсневая кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metatarsal_2_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24510.obj",
+          "sha256": "6164b8902ec5a4a96557688c0c2fe12ca1e6c5227882dcd49a30fa7eb8390f14",
+          "fma": "FMA24510"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "native__cuneiform_lat_left",
+            "maxSampleDepthMM": 0.7203638285078381
+          },
+          {
+            "other": "native__metatarsal_3_left",
+            "maxSampleDepthMM": 0.530039014655362
+          },
+          {
+            "other": "live__toe_prox_2_left",
+            "maxSampleDepthMM": 0.5146517417745976
+          },
+          {
+            "other": "live__cuneiform_med_left",
+            "maxSampleDepthMM": 0.47117518959646326
+          }
+        ]
+      },
+      {
+        "id": "mirror__metatarsal_2_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__cuneiform_lat_left",
+            "maxSampleDepthMM": 1.580776307197254
+          },
+          {
+            "other": "native__metatarsal_3_left",
+            "maxSampleDepthMM": 1.5567443592353316
+          },
+          {
+            "other": "live__toe_prox_2_left",
+            "maxSampleDepthMM": 0.9115731244704375
+          },
+          {
+            "other": "mirror__cuneiform_lat_left",
+            "maxSampleDepthMM": 0.7586227018728379
+          },
+          {
+            "other": "mirror__metatarsal_3_left",
+            "maxSampleDepthMM": 0.5735125178315584
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metatarsal_3_left",
+    "ru": "III плюсневая кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metatarsal_3_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24512.obj",
+          "sha256": "d5ce0bfbec2c955128456f273d44565402b7b3cb6d486c1b40792a73a59566d1",
+          "fma": "FMA24512"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__metatarsal_2_left",
+            "maxSampleDepthMM": 1.5567443592353316
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 1.2624261952440652
+          },
+          {
+            "other": "native__metatarsal_2_left",
+            "maxSampleDepthMM": 0.530039014655362
+          },
+          {
+            "other": "mirror__metatarsal_4_left",
+            "maxSampleDepthMM": 0.4294248624282786
+          },
+          {
+            "other": "live__toe_prox_3_left",
+            "maxSampleDepthMM": 0.28009025264951604
+          },
+          {
+            "other": "mirror__cuneiform_lat_left",
+            "maxSampleDepthMM": 0.04289387580984079
+          }
+        ]
+      },
+      {
+        "id": "mirror__metatarsal_3_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 1.9667166694343157
+          },
+          {
+            "other": "mirror__metatarsal_4_left",
+            "maxSampleDepthMM": 1.2642611703785207
+          },
+          {
+            "other": "mirror__metatarsal_2_left",
+            "maxSampleDepthMM": 0.5735125178315584
+          },
+          {
+            "other": "live__toe_prox_3_left",
+            "maxSampleDepthMM": 0.1697417479113058
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metatarsal_4_left",
+    "ru": "IV плюсневая кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metatarsal_4_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24514.obj",
+          "sha256": "9f6dfc2ec72333328b511098bb0c09e93b35f39bba5b80dd4b4d73704fd83f2a",
+          "fma": "FMA24514"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__metatarsal_3_left",
+            "maxSampleDepthMM": 1.9667166694343157
+          },
+          {
+            "other": "native__metatarsal_3_left",
+            "maxSampleDepthMM": 1.2624261952440652
+          },
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 0.9970257774802745
+          },
+          {
+            "other": "live__toe_prox_4_left",
+            "maxSampleDepthMM": 0.8671543875547411
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 0.8442313154477085
+          },
+          {
+            "other": "mirror__metatarsal_5_left",
+            "maxSampleDepthMM": 0.46357885163272433
+          },
+          {
+            "other": "mirror__cuneiform_lat_left",
+            "maxSampleDepthMM": 0.4316105637669453
+          },
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 0.18933078010222068
+          }
+        ]
+      },
+      {
+        "id": "mirror__metatarsal_4_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 1.5141807753408993
+          },
+          {
+            "other": "mirror__metatarsal_3_left",
+            "maxSampleDepthMM": 1.2642611703785207
+          },
+          {
+            "other": "mirror__metatarsal_5_left",
+            "maxSampleDepthMM": 1.0387738485532914
+          },
+          {
+            "other": "live__toe_prox_4_left",
+            "maxSampleDepthMM": 0.5001122274319051
+          },
+          {
+            "other": "native__metatarsal_3_left",
+            "maxSampleDepthMM": 0.4294248624282786
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 0.17640488309282018
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metatarsal_5_left",
+    "ru": "V плюсневая кость · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metatarsal_5_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24516.obj",
+          "sha256": "5e11681619427ee451e6bf5afa4b9416a98a4d43b0c04bc86518798be6fa4526",
+          "fma": "FMA24516"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__metatarsal_4_left",
+            "maxSampleDepthMM": 1.5141807753408993
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 1.316497650214023
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 0.9970257774802745
+          },
+          {
+            "other": "mirror__toe_prox_5_left",
+            "maxSampleDepthMM": 0.6367134048348444
+          },
+          {
+            "other": "native__toe_prox_5_left",
+            "maxSampleDepthMM": 0.5080188880451237
+          },
+          {
+            "other": "native__cuboid_left",
+            "maxSampleDepthMM": 0.4777697447841804
+          }
+        ]
+      },
+      {
+        "id": "mirror__metatarsal_5_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__toe_prox_5_left",
+            "maxSampleDepthMM": 1.265050629259755
+          },
+          {
+            "other": "mirror__metatarsal_4_left",
+            "maxSampleDepthMM": 1.0387738485532914
+          },
+          {
+            "other": "mirror__toe_prox_5_left",
+            "maxSampleDepthMM": 0.4701675300303632
+          },
+          {
+            "other": "native__metatarsal_4_left",
+            "maxSampleDepthMM": 0.46357885163272433
+          },
+          {
+            "other": "mirror__cuboid_left",
+            "maxSampleDepthMM": 0.4287431915320864
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "toe_prox_5_left",
+    "ru": "Проксимальная фаланга V пальца стопы · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__toe_prox_5_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA32641.obj",
+          "sha256": "6f6cff98b381ccc2e748456f1ad5f10007fc12e05b43b6dadd4f19b5b1f070fc",
+          "fma": "FMA32641"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__metatarsal_5_left",
+            "maxSampleDepthMM": 1.265050629259755
+          },
+          {
+            "other": "native__toe_mid_5_left",
+            "maxSampleDepthMM": 0.7529842017530912
+          },
+          {
+            "other": "mirror__toe_mid_5_left",
+            "maxSampleDepthMM": 0.7121617286583024
+          },
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 0.5080188880451237
+          }
+        ]
+      },
+      {
+        "id": "mirror__toe_prox_5_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__toe_mid_5_left",
+            "maxSampleDepthMM": 0.9646646209410286
+          },
+          {
+            "other": "mirror__toe_mid_5_left",
+            "maxSampleDepthMM": 0.7872787185458714
+          },
+          {
+            "other": "native__metatarsal_5_left",
+            "maxSampleDepthMM": 0.6367134048348444
+          },
+          {
+            "other": "mirror__metatarsal_5_left",
+            "maxSampleDepthMM": 0.4701675300303632
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "toe_mid_5_left",
+    "ru": "Средняя фаланга V пальца стопы · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__toe_mid_5_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA230988.obj",
+          "sha256": "c4ddacd5ff579c7d936b4fe4ddbc93d595a78a6cae12dcefb5080469cf2e4a11",
+          "fma": "FMA230988"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__toe_prox_5_left",
+            "maxSampleDepthMM": 0.9646646209410286
+          },
+          {
+            "other": "native__toe_prox_5_left",
+            "maxSampleDepthMM": 0.7529842017530912
+          },
+          {
+            "other": "native__toe_dist_5_left",
+            "maxSampleDepthMM": 0.42614961623048914
+          },
+          {
+            "other": "mirror__toe_dist_5_left",
+            "maxSampleDepthMM": 0.2581155788566435
+          }
+        ]
+      },
+      {
+        "id": "mirror__toe_mid_5_left",
+        "source": "research\\evidence-runs\\stage6-mirror-lower-v2-2026-10-20T12-11-27-305Z-5rXqo2",
+        "crossingNeighbors": [
+          {
+            "other": "native__toe_dist_5_left",
+            "maxSampleDepthMM": 1.0275329995929219
+          },
+          {
+            "other": "mirror__toe_prox_5_left",
+            "maxSampleDepthMM": 0.7872787185458714
+          },
+          {
+            "other": "native__toe_prox_5_left",
+            "maxSampleDepthMM": 0.7121617286583024
+          },
+          {
+            "other": "mirror__toe_dist_5_left",
+            "maxSampleDepthMM": 0.4017983823035002
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "toe_dist_5_left",
+    "ru": "Дистальная фаланга V пальца стопы · слева",
+    "issue": "GEO-LOWER-LEFT-FOOT",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__toe_dist_5_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA32659.obj",
+          "sha256": "fea03b86099528410efdf4bc72eba90601af86564afe71ed0a1f24873ff1d932",
+          "fma": "FMA32659"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "mirror__toe_mid_5_left",
+            "maxSampleDepthMM": 1.0275329995929219
+          },
+          {
+            "other": "native__toe_mid_5_left",
+            "maxSampleDepthMM": 0.42614961623048914
+          }
+        ]
+      },
+      {
+        "id": "mirror__toe_dist_5_left",
+        "source": "research\\evidence-runs\\stage6-mirror-toe5-repair-2026-10-20T12-20-59-021Z-ZBXbnc",
+        "crossingNeighbors": [
+          {
+            "other": "mirror__toe_mid_5_left",
+            "maxSampleDepthMM": 0.4017983823035002
+          },
+          {
+            "other": "native__toe_mid_5_left",
+            "maxSampleDepthMM": 0.2581155788566435
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "sesamoid_mcp1_radial_right",
+    "ru": "Лучевая сесамовидная кость большого пальца кисти справа",
+    "issue": "GEO-HAND-MCP1-R",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [],
+    "required": "Идентифицированные лучевая/локтевая сетки MCP I с разрешением на коммерческое распространение производных, масштабом, стороной и данными регистрации к той же кисти; либо лицензированная CT/MRI-сегментация и независимая приёмка.",
+    "stage": "6 / 8",
+    "reason": "Нет принятой отдельной формы и регистрации; морфометрия не задаёт готовую сетку."
+  },
+  {
+    "id": "sesamoid_mcp1_ulnar_right",
+    "ru": "Локтевая сесамовидная кость большого пальца кисти справа",
+    "issue": "GEO-HAND-MCP1-U",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [],
+    "required": "Идентифицированные лучевая/локтевая сетки MCP I с разрешением на коммерческое распространение производных, масштабом, стороной и данными регистрации к той же кисти; либо лицензированная CT/MRI-сегментация и независимая приёмка.",
+    "stage": "6 / 8",
+    "reason": "Нет принятой отдельной формы и регистрации; морфометрия не задаёт готовую сетку."
+  },
+  {
+    "id": "metacarpal_1_left",
+    "ru": "I пястная кость слева",
+    "issue": "GEO-HAND-LEFT-MODELS",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metacarpal_1_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24465.obj",
+          "sha256": "1688e69a708fbd6db940f97e362edb7c93c013d4af5e8f400204109783c652bd",
+          "fma": "FMA24465"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "live__trapezium_left",
+            "maxSampleDepthMM": 1.1534579127303728
+          },
+          {
+            "other": "live__phalanx_prox_1_left",
+            "maxSampleDepthMM": 0.45115351408990667
+          }
+        ]
+      },
+      {
+        "id": "mirror__metacarpal_1_left",
+        "source": "research\\evidence-runs\\stage6-mirror-upper-v2-2026-10-20T12-11-27-299Z-T0jfz0",
+        "crossingNeighbors": [
+          {
+            "other": "live__phalanx_prox_1_left",
+            "maxSampleDepthMM": 1.258744474477942
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "metacarpal_3_left",
+    "ru": "III пястная кость слева",
+    "issue": "GEO-HAND-LEFT-MODELS",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [
+      {
+        "id": "native__metacarpal_3_left",
+        "source": {
+          "file": "research/cache/stage6-sources/FMA24469.obj",
+          "sha256": "090a59745c4193bd716fb4c388df9c4fb797f825622df05cb9298864a46b37d1",
+          "fma": "FMA24469"
+        },
+        "crossingNeighbors": [
+          {
+            "other": "live__trapezoid_left",
+            "maxSampleDepthMM": 0.545628503176897
+          },
+          {
+            "other": "live__phalanx_prox_3_left",
+            "maxSampleDepthMM": 0.23859204856088634
+          },
+          {
+            "other": "live__capitate_left",
+            "maxSampleDepthMM": 0.06349154068259649
+          }
+        ]
+      },
+      {
+        "id": "mirror__metacarpal_3_left",
+        "source": "research\\evidence-runs\\stage6-mirror-upper-v2-2026-10-20T12-11-27-299Z-T0jfz0",
+        "crossingNeighbors": [
+          {
+            "other": "live__trapezoid_left",
+            "maxSampleDepthMM": 1.3178455817450323
+          },
+          {
+            "other": "live__metacarpal_2_left",
+            "maxSampleDepthMM": 1.1056010716529994
+          },
+          {
+            "other": "live__phalanx_prox_3_left",
+            "maxSampleDepthMM": 0.8204891525892207
+          }
+        ]
+      }
+    ],
+    "required": "Согласованные маски/контуры сопряжённых поверхностей, поза и исходная сегментация одного образца; независимая оценка отмеченных пересечений и обоснованное исправление. Полная приёмка отдельно от учебного допуска.",
+    "stage": "6 / 8",
+    "reason": "Варианты численно целы, но сопряжение не принято. Меньшая выборочная глубина не является самостоятельным допуском."
+  },
+  {
+    "id": "sesamoid_mcp1_radial_left",
+    "ru": "Лучевая сесамовидная кость большого пальца кисти слева",
+    "issue": "GEO-HAND-LEFT-MODELS",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [],
+    "required": "Идентифицированные лучевая/локтевая сетки MCP I с разрешением на коммерческое распространение производных, масштабом, стороной и данными регистрации к той же кисти; либо лицензированная CT/MRI-сегментация и независимая приёмка.",
+    "stage": "6 / 8",
+    "reason": "Нет принятой отдельной формы и регистрации; морфометрия не задаёт готовую сетку."
+  },
+  {
+    "id": "sesamoid_mcp1_ulnar_left",
+    "ru": "Локтевая сесамовидная кость большого пальца кисти слева",
+    "issue": "GEO-HAND-LEFT-MODELS",
+    "status": "заблокирована",
+    "noModel": true,
+    "admitted": false,
+    "variants": [],
+    "required": "Идентифицированные лучевая/локтевая сетки MCP I с разрешением на коммерческое распространение производных, масштабом, стороной и данными регистрации к той же кисти; либо лицензированная CT/MRI-сегментация и независимая приёмка.",
+    "stage": "6 / 8",
+    "reason": "Нет принятой отдельной формы и регистрации; морфометрия не задаёт готовую сетку."
+  }
+]

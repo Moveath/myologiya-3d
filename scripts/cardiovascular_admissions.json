@@ -1,0 +1,864 @@
+{
+  "cv_heart": {
+    "status": "educational_limited",
+    "sha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
+    "technicalExceptions": {
+      "degenerateRetained": 88,
+      "duplicateFacesRetained": 37,
+      "normalFallbackVertices": 147,
+      "decision": "Source triangles retained; scale-stable shading normals only. Exterior readable in multi-view review; not suitable for exact interior morphometry. Local defects remain open."
+    }
+  },
+  "cv_valve_tricuspid": {
+    "status": "educational_limited",
+    "sha256": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_valve_mitral": {
+    "status": "educational_limited",
+    "sha256": "648b76dc1ce284811c3bb833676d0bd66c0fc2d283fe5c67c3ea0ab14f70514a",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_valve_pulmonary": {
+    "status": "educational_limited",
+    "sha256": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
+    "technicalExceptions": {
+      "degenerateRetained": 0,
+      "duplicateFacesRetained": 1,
+      "normalFallbackVertices": 0,
+      "decision": "Source triangles retained; scale-stable shading normals only. Exterior readable in multi-view review; not suitable for exact interior morphometry. Local defects remain open."
+    }
+  },
+  "cv_a_aorta_ascending": {
+    "status": "educational_limited",
+    "sha256": "4e8f5a84bdaae04ccf5521086367aee877651edf3a28ea6d47d423ea5fe5bf90",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_aorta_arch": {
+    "status": "educational_limited",
+    "sha256": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_aorta_descending": {
+    "status": "educational_limited",
+    "sha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_pulmonary_arteries": {
+    "status": "educational_limited",
+    "sha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_coronary_right": {
+    "status": "educational_limited",
+    "sha256": "f2f78688c8d7e643011b91c40c82442392522e423718b7fa77681ddffa5785d7",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_coronary_left": {
+    "status": "educational_limited",
+    "sha256": "7427494bcf3098ce8baec842d8a0eb96ec6b9cf08883e453775dabc74673f79f",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_coronary_anterior_interventricular": {
+    "status": "educational_limited",
+    "sha256": "52b5503c115ec23b3d9a2cc92bf629897bebd93fc04d422a23475dc268751e26",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_coronary_circumflex": {
+    "status": "educational_limited",
+    "sha256": "c572e0a4b4c17c782684f2a855b516cb9b82f563b40aee92c34f7cfcd685c71c",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_brachiocephalic": {
+    "status": "educational_limited",
+    "sha256": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_carotid_common_right": {
+    "status": "educational_limited",
+    "sha256": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_carotid_common_left": {
+    "status": "educational_limited",
+    "sha256": "54873fa7b82afac4e362b9fee4ee65c63d7e968af7a1cc41bed0a1eec446e362",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_subclavian_right": {
+    "status": "educational_limited",
+    "sha256": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_subclavian_left": {
+    "status": "educational_limited",
+    "sha256": "1056a73683e8562fd074f2a62dbc87cb25b6f0c394810a24ad2cfcaf44805b72",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_celiac": {
+    "status": "educational_limited",
+    "sha256": "dfe166bbe591833c837a5eb5cbb8b2d95567d8dba4e88d866eb9c424fd0597d5",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_mesenteric_superior": {
+    "status": "educational_limited",
+    "sha256": "7f988137e2067b183d6d4453fa7986029673c435fdf1889811d3ba627f5da832",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_mesenteric_inferior": {
+    "status": "educational_limited",
+    "sha256": "32779c90c9c6444d48fb1e4f5d570983d35de9915d2f441ee3b95d946685d2a6",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_renal_right": {
+    "status": "educational_limited",
+    "sha256": "e694ff52290e655dc2b60e14fd4df8ba234dffa71afbf248c7697988dc484e90",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_renal_left": {
+    "status": "educational_limited",
+    "sha256": "37a9b9e001dd3f68d0f690be35c2a89dcf93f5ae72984e3eb7386442e608f885",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_common_right": {
+    "status": "educational_limited",
+    "sha256": "dc702310615f14e908728b982c0f3021f5d616c7c3a3a066a0a4c41da8446cf4",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_common_left": {
+    "status": "educational_limited",
+    "sha256": "107e04bbbff8bdeec17c76be3bd30124b494b873f17e17d6ed66909f79ac3a0b",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_external_right": {
+    "status": "educational_limited",
+    "sha256": "bfb5041d44abb889bfe9fc360e310a3cb52a013bc054efbe7635e06e719d0716",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_external_left": {
+    "status": "educational_limited",
+    "sha256": "a942547a8435283b3d745475bdd67bc3548d0164fccad2bc6999418d7103c164",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_internal_right": {
+    "status": "educational_limited",
+    "sha256": "8e8ac278246beb543f96162b744ca4411c9ab6e19fc6a55213bf850e76df055e",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_iliac_internal_left": {
+    "status": "educational_limited",
+    "sha256": "2e8e7293ab26363932e1b5fb484e754264e7c7b111b59311a7e4594933ecf9ca",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_cava_superior": {
+    "status": "educational_limited",
+    "sha256": "04b6e3625c6af4585d5e24e9c6b3c78217f5dcef394719c92d40a741518cfbb0",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_cava_inferior": {
+    "status": "educational_limited",
+    "sha256": "9b68140a4346d0085df1dbb0718ac4374170d007d9a1cf5b0390824303b31918",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_pulmonary_veins": {
+    "status": "educational_limited",
+    "sha256": "4fd24a8b5fd382dcc7833e3f4dc44fc9bcbed75789697f30c96a2d4eff25fa64",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_brachiocephalic_right": {
+    "status": "educational_limited",
+    "sha256": "71964aa3eb0fc69a21df0f34c565095e10ca0781b53c465241c86fe651d76d8a",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_brachiocephalic_left": {
+    "status": "educational_limited",
+    "sha256": "80d578f791b1f5e30820ba65d4145905074688b83d0e5d892d6059f6e9c5dea5",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_jugular_internal_right": {
+    "status": "educational_limited",
+    "sha256": "a3a3ba1d5e0c18880c7627c4909d2535ac071ae7a946a0ac55ffe898d8fa468b",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_jugular_internal_left": {
+    "status": "educational_limited",
+    "sha256": "7797411c6c8b65b6a6941f2be8e7cd3f09ffc1a694705da72e3a2dca935acc0d",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_subclavian_right": {
+    "status": "educational_limited",
+    "sha256": "3d4981a61bc278d48e02ce2b0b27e258e76cd20aaf933ed94e3f8ccf1a5c74da",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_subclavian_left": {
+    "status": "educational_limited",
+    "sha256": "3ba83ab80d3c32e0b7a9452031ffaef7d6806873ad112e4e34eab76cc1c86825",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_renal_right": {
+    "status": "educational_limited",
+    "sha256": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_renal_left": {
+    "status": "educational_limited",
+    "sha256": "aa34afc9f7e0cc0a93c3f0b66b751ab5f389c88ee26e588ad4b51a8aa54034c7",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_common_right": {
+    "status": "educational_limited",
+    "sha256": "112d661ea0bd960bdc15e3ad7a2a00cde136eff8f2ce1d237a0ebf0c810a8746",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_common_left": {
+    "status": "educational_limited",
+    "sha256": "57b9aa91c90b2b571b1315a474a7437d3d2a92fabe3d69f69106059e24e152de",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_external_right": {
+    "status": "educational_limited",
+    "sha256": "6978fbcde76dc8c6ca28169e00003f995a40575e61d0b0431027de1b77d66884",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_external_left": {
+    "status": "educational_limited",
+    "sha256": "2d395d3b3204f62aaf57b0be29b140e1e3b331f4a78970c8224beec5c48c4e79",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_internal_right": {
+    "status": "educational_limited",
+    "sha256": "c9739be3f978a587ce3083912b805b48f97e249837709fccd0ab8b8178f69d99",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_iliac_internal_left": {
+    "status": "educational_limited",
+    "sha256": "e9e920b24d4999a8c0f94791439f42969b8130eb493003402801d04ef7d4c87d",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_splenic": {
+    "status": "educational_limited",
+    "sha256": "da515963a6fa20fb21f31d18f6ad1fa13cdd2b5c6f89b1f54078dd8512ce86bb",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_v_mesenteric_superior": {
+    "status": "educational_limited",
+    "sha256": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_gastric_left": {
+    "status": "educational_limited",
+    "sha256": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_hepatic_common": {
+    "status": "educational_limited",
+    "sha256": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  },
+  "cv_a_splenic": {
+    "status": "educational_limited",
+    "sha256": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9",
+    "evidence": [
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+      "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+      "build_cardiovascular/blender-import.json",
+      "build_cardiovascular/review-final.blend",
+      "build_cardiovascular/heart-anterior.png",
+      "build_cardiovascular/heart-posterior.png",
+      "build_cardiovascular/heart-thorax-context.png",
+      "build_cardiovascular/valves-oblique.png",
+      "build_cardiovascular/abdominal-pelvic.png"
+    ],
+    "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+    "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+  }
+}
