@@ -1,0 +1,631 @@
+{
+  "status": "passed",
+  "sourceCommit": "abda77aace05bdbf1638f3494bd423829554f1b0",
+  "files": 89,
+  "elapsedSeconds": 17.02,
+  "results": [
+    {
+      "path": "atlas-systems.js",
+      "status": "passed",
+      "bytes": 1622,
+      "sha256": "c88a09f2c380139961c689749decc765a82952cbcd9300f715a4dcfca5a1aa32",
+      "expected": "c88a09f2c380139961c689749decc765a82952cbcd9300f715a4dcfca5a1aa32"
+    },
+    {
+      "path": "atlas-regions.js",
+      "status": "passed",
+      "bytes": 5943,
+      "sha256": "697983bf111c0747d8bf0aae07a5ca46707875feb7bd7610c392ff7dcb5257fa",
+      "expected": "697983bf111c0747d8bf0aae07a5ca46707875feb7bd7610c392ff7dcb5257fa"
+    },
+    {
+      "path": "atlas-runtime.js",
+      "status": "passed",
+      "bytes": 3152,
+      "sha256": "3ea79796e7f78014af77ca7f140e468d5f949f25e28f694929a672a91ab13078",
+      "expected": "3ea79796e7f78014af77ca7f140e468d5f949f25e28f694929a672a91ab13078"
+    },
+    {
+      "path": "atlas-controls.js",
+      "status": "passed",
+      "bytes": 1034,
+      "sha256": "a96a77ffe3f4435f1756758052ccb257a0220583c7ba27b7a682542d25e1e913",
+      "expected": "a96a77ffe3f4435f1756758052ccb257a0220583c7ba27b7a682542d25e1e913"
+    },
+    {
+      "path": "data-cardiovascular.js",
+      "status": "passed",
+      "bytes": 143487,
+      "sha256": "43c523d73f179fcf85ca7831ac4dfa9d1fabd347b25c9774afa277afea69ec99",
+      "expected": "43c523d73f179fcf85ca7831ac4dfa9d1fabd347b25c9774afa277afea69ec99"
+    },
+    {
+      "path": "data-muscle-recovery.js",
+      "status": "passed",
+      "bytes": 12529,
+      "sha256": "4bf97ac5ad45d2200dd59a25ef98c8f06bc08a855eaa48858e043f1f7d28a927",
+      "expected": "4bf97ac5ad45d2200dd59a25ef98c8f06bc08a855eaa48858e043f1f7d28a927"
+    },
+    {
+      "path": "data-neck-recovery.js",
+      "status": "passed",
+      "bytes": 12343,
+      "sha256": "81aa202e5b67231641d193c6ce41833f03a1046dfd5c2ef2d9e6ae77bf80e434",
+      "expected": "81aa202e5b67231641d193c6ce41833f03a1046dfd5c2ef2d9e6ae77bf80e434"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/ATTRIBUTION.md",
+      "status": "passed",
+      "bytes": 736,
+      "sha256": "2917e14873ea75fff8221d1bce9ead07e7cec8b2518c2f7505c0446abd5b5504",
+      "expected": "2917e14873ea75fff8221d1bce9ead07e7cec8b2518c2f7505c0446abd5b5504"
+    },
+    {
+      "path": "data-context-bones.js",
+      "status": "passed",
+      "bytes": 311604,
+      "sha256": "3259fad369129a3198e6f87247b48413860123583c9902d82aacc8a20051cef4",
+      "expected": "3259fad369129a3198e6f87247b48413860123583c9902d82aacc8a20051cef4"
+    },
+    {
+      "path": "index.html",
+      "status": "passed",
+      "bytes": 208804,
+      "sha256": "dd5fd698082849125d9272945c055d6d8c1b33856e1996c1fbcd2329726430cb",
+      "expected": "dd5fd698082849125d9272945c055d6d8c1b33856e1996c1fbcd2329726430cb"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_arch.glb",
+      "status": "passed",
+      "bytes": 79864,
+      "sha256": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c",
+      "expected": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c"
+    },
+    {
+      "path": "local.html",
+      "status": "passed",
+      "bytes": 208804,
+      "sha256": "dd5fd698082849125d9272945c055d6d8c1b33856e1996c1fbcd2329726430cb",
+      "expected": "dd5fd698082849125d9272945c055d6d8c1b33856e1996c1fbcd2329726430cb"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_ascending.glb",
+      "status": "passed",
+      "bytes": 52852,
+      "sha256": "4e8f5a84bdaae04ccf5521086367aee877651edf3a28ea6d47d423ea5fe5bf90",
+      "expected": "4e8f5a84bdaae04ccf5521086367aee877651edf3a28ea6d47d423ea5fe5bf90"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_brachiocephalic.glb",
+      "status": "passed",
+      "bytes": 30140,
+      "sha256": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921",
+      "expected": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_left.glb",
+      "status": "passed",
+      "bytes": 17856,
+      "sha256": "54873fa7b82afac4e362b9fee4ee65c63d7e968af7a1cc41bed0a1eec446e362",
+      "expected": "54873fa7b82afac4e362b9fee4ee65c63d7e968af7a1cc41bed0a1eec446e362"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_celiac.glb",
+      "status": "passed",
+      "bytes": 11976,
+      "sha256": "dfe166bbe591833c837a5eb5cbb8b2d95567d8dba4e88d866eb9c424fd0597d5",
+      "expected": "dfe166bbe591833c837a5eb5cbb8b2d95567d8dba4e88d866eb9c424fd0597d5"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
+      "status": "passed",
+      "bytes": 572508,
+      "sha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+      "expected": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_right.glb",
+      "status": "passed",
+      "bytes": 107296,
+      "sha256": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240",
+      "expected": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_left.glb",
+      "status": "passed",
+      "bytes": 7136,
+      "sha256": "7427494bcf3098ce8baec842d8a0eb96ec6b9cf08883e453775dabc74673f79f",
+      "expected": "7427494bcf3098ce8baec842d8a0eb96ec6b9cf08883e453775dabc74673f79f"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_circumflex.glb",
+      "status": "passed",
+      "bytes": 86120,
+      "sha256": "c572e0a4b4c17c782684f2a855b516cb9b82f563b40aee92c34f7cfcd685c71c",
+      "expected": "c572e0a4b4c17c782684f2a855b516cb9b82f563b40aee92c34f7cfcd685c71c"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_anterior_interventricular.glb",
+      "status": "passed",
+      "bytes": 222428,
+      "sha256": "52b5503c115ec23b3d9a2cc92bf629897bebd93fc04d422a23475dc268751e26",
+      "expected": "52b5503c115ec23b3d9a2cc92bf629897bebd93fc04d422a23475dc268751e26"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_gastric_left.glb",
+      "status": "passed",
+      "bytes": 6656,
+      "sha256": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f",
+      "expected": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_hepatic_common.glb",
+      "status": "passed",
+      "bytes": 20492,
+      "sha256": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663",
+      "expected": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right.glb",
+      "status": "passed",
+      "bytes": 124800,
+      "sha256": "f2f78688c8d7e643011b91c40c82442392522e423718b7fa77681ddffa5785d7",
+      "expected": "f2f78688c8d7e643011b91c40c82442392522e423718b7fa77681ddffa5785d7"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_left.glb",
+      "status": "passed",
+      "bytes": 20448,
+      "sha256": "107e04bbbff8bdeec17c76be3bd30124b494b873f17e17d6ed66909f79ac3a0b",
+      "expected": "107e04bbbff8bdeec17c76be3bd30124b494b873f17e17d6ed66909f79ac3a0b"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_right.glb",
+      "status": "passed",
+      "bytes": 22612,
+      "sha256": "dc702310615f14e908728b982c0f3021f5d616c7c3a3a066a0a4c41da8446cf4",
+      "expected": "dc702310615f14e908728b982c0f3021f5d616c7c3a3a066a0a4c41da8446cf4"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_left.glb",
+      "status": "passed",
+      "bytes": 32020,
+      "sha256": "a942547a8435283b3d745475bdd67bc3548d0164fccad2bc6999418d7103c164",
+      "expected": "a942547a8435283b3d745475bdd67bc3548d0164fccad2bc6999418d7103c164"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_right.glb",
+      "status": "passed",
+      "bytes": 33368,
+      "sha256": "bfb5041d44abb889bfe9fc360e310a3cb52a013bc054efbe7635e06e719d0716",
+      "expected": "bfb5041d44abb889bfe9fc360e310a3cb52a013bc054efbe7635e06e719d0716"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_right.glb",
+      "status": "passed",
+      "bytes": 12100,
+      "sha256": "8e8ac278246beb543f96162b744ca4411c9ab6e19fc6a55213bf850e76df055e",
+      "expected": "8e8ac278246beb543f96162b744ca4411c9ab6e19fc6a55213bf850e76df055e"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_left.glb",
+      "status": "passed",
+      "bytes": 13104,
+      "sha256": "2e8e7293ab26363932e1b5fb484e754264e7c7b111b59311a7e4594933ecf9ca",
+      "expected": "2e8e7293ab26363932e1b5fb484e754264e7c7b111b59311a7e4594933ecf9ca"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_inferior.glb",
+      "status": "passed",
+      "bytes": 15552,
+      "sha256": "32779c90c9c6444d48fb1e4f5d570983d35de9915d2f441ee3b95d946685d2a6",
+      "expected": "32779c90c9c6444d48fb1e4f5d570983d35de9915d2f441ee3b95d946685d2a6"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_superior.glb",
+      "status": "passed",
+      "bytes": 9504,
+      "sha256": "7f988137e2067b183d6d4453fa7986029673c435fdf1889811d3ba627f5da832",
+      "expected": "7f988137e2067b183d6d4453fa7986029673c435fdf1889811d3ba627f5da832"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_right.glb",
+      "status": "passed",
+      "bytes": 43192,
+      "sha256": "e694ff52290e655dc2b60e14fd4df8ba234dffa71afbf248c7697988dc484e90",
+      "expected": "e694ff52290e655dc2b60e14fd4df8ba234dffa71afbf248c7697988dc484e90"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_left.glb",
+      "status": "passed",
+      "bytes": 32480,
+      "sha256": "37a9b9e001dd3f68d0f690be35c2a89dcf93f5ae72984e3eb7386442e608f885",
+      "expected": "37a9b9e001dd3f68d0f690be35c2a89dcf93f5ae72984e3eb7386442e608f885"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_left.glb",
+      "status": "passed",
+      "bytes": 78720,
+      "sha256": "1056a73683e8562fd074f2a62dbc87cb25b6f0c394810a24ad2cfcaf44805b72",
+      "expected": "1056a73683e8562fd074f2a62dbc87cb25b6f0c394810a24ad2cfcaf44805b72"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_splenic.glb",
+      "status": "passed",
+      "bytes": 80912,
+      "sha256": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9",
+      "expected": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_right.glb",
+      "status": "passed",
+      "bytes": 55348,
+      "sha256": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07",
+      "expected": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_left.glb",
+      "status": "passed",
+      "bytes": 47144,
+      "sha256": "80d578f791b1f5e30820ba65d4145905074688b83d0e5d892d6059f6e9c5dea5",
+      "expected": "80d578f791b1f5e30820ba65d4145905074688b83d0e5d892d6059f6e9c5dea5"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_right.glb",
+      "status": "passed",
+      "bytes": 34712,
+      "sha256": "71964aa3eb0fc69a21df0f34c565095e10ca0781b53c465241c86fe651d76d8a",
+      "expected": "71964aa3eb0fc69a21df0f34c565095e10ca0781b53c465241c86fe651d76d8a"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_a_pulmonary_arteries.glb",
+      "status": "passed",
+      "bytes": 2807800,
+      "sha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+      "expected": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_inferior.glb",
+      "status": "passed",
+      "bytes": 185572,
+      "sha256": "9b68140a4346d0085df1dbb0718ac4374170d007d9a1cf5b0390824303b31918",
+      "expected": "9b68140a4346d0085df1dbb0718ac4374170d007d9a1cf5b0390824303b31918"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_left.glb",
+      "status": "passed",
+      "bytes": 24912,
+      "sha256": "57b9aa91c90b2b571b1315a474a7437d3d2a92fabe3d69f69106059e24e152de",
+      "expected": "57b9aa91c90b2b571b1315a474a7437d3d2a92fabe3d69f69106059e24e152de"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_superior.glb",
+      "status": "passed",
+      "bytes": 37868,
+      "sha256": "04b6e3625c6af4585d5e24e9c6b3c78217f5dcef394719c92d40a741518cfbb0",
+      "expected": "04b6e3625c6af4585d5e24e9c6b3c78217f5dcef394719c92d40a741518cfbb0"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_left.glb",
+      "status": "passed",
+      "bytes": 12576,
+      "sha256": "e9e920b24d4999a8c0f94791439f42969b8130eb493003402801d04ef7d4c87d",
+      "expected": "e9e920b24d4999a8c0f94791439f42969b8130eb493003402801d04ef7d4c87d"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_right.glb",
+      "status": "passed",
+      "bytes": 22372,
+      "sha256": "112d661ea0bd960bdc15e3ad7a2a00cde136eff8f2ce1d237a0ebf0c810a8746",
+      "expected": "112d661ea0bd960bdc15e3ad7a2a00cde136eff8f2ce1d237a0ebf0c810a8746"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_right.glb",
+      "status": "passed",
+      "bytes": 32936,
+      "sha256": "6978fbcde76dc8c6ca28169e00003f995a40575e61d0b0431027de1b77d66884",
+      "expected": "6978fbcde76dc8c6ca28169e00003f995a40575e61d0b0431027de1b77d66884"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_left.glb",
+      "status": "passed",
+      "bytes": 35860,
+      "sha256": "2d395d3b3204f62aaf57b0be29b140e1e3b331f4a78970c8224beec5c48c4e79",
+      "expected": "2d395d3b3204f62aaf57b0be29b140e1e3b331f4a78970c8224beec5c48c4e79"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_left.glb",
+      "status": "passed",
+      "bytes": 18388,
+      "sha256": "7797411c6c8b65b6a6941f2be8e7cd3f09ffc1a694705da72e3a2dca935acc0d",
+      "expected": "7797411c6c8b65b6a6941f2be8e7cd3f09ffc1a694705da72e3a2dca935acc0d"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_right.glb",
+      "status": "passed",
+      "bytes": 13828,
+      "sha256": "c9739be3f978a587ce3083912b805b48f97e249837709fccd0ab8b8178f69d99",
+      "expected": "c9739be3f978a587ce3083912b805b48f97e249837709fccd0ab8b8178f69d99"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_mesenteric_superior.glb",
+      "status": "passed",
+      "bytes": 5952,
+      "sha256": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362",
+      "expected": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_right.glb",
+      "status": "passed",
+      "bytes": 15032,
+      "sha256": "a3a3ba1d5e0c18880c7627c4909d2535ac071ae7a946a0ac55ffe898d8fa468b",
+      "expected": "a3a3ba1d5e0c18880c7627c4909d2535ac071ae7a946a0ac55ffe898d8fa468b"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_left.glb",
+      "status": "passed",
+      "bytes": 14864,
+      "sha256": "aa34afc9f7e0cc0a93c3f0b66b751ab5f389c88ee26e588ad4b51a8aa54034c7",
+      "expected": "aa34afc9f7e0cc0a93c3f0b66b751ab5f389c88ee26e588ad4b51a8aa54034c7"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_splenic.glb",
+      "status": "passed",
+      "bytes": 33532,
+      "sha256": "da515963a6fa20fb21f31d18f6ad1fa13cdd2b5c6f89b1f54078dd8512ce86bb",
+      "expected": "da515963a6fa20fb21f31d18f6ad1fa13cdd2b5c6f89b1f54078dd8512ce86bb"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_right.glb",
+      "status": "passed",
+      "bytes": 38000,
+      "sha256": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6",
+      "expected": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_left.glb",
+      "status": "passed",
+      "bytes": 27788,
+      "sha256": "3ba83ab80d3c32e0b7a9452031ffaef7d6806873ad112e4e34eab76cc1c86825",
+      "expected": "3ba83ab80d3c32e0b7a9452031ffaef7d6806873ad112e4e34eab76cc1c86825"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_right.glb",
+      "status": "passed",
+      "bytes": 23804,
+      "sha256": "3d4981a61bc278d48e02ce2b0b27e258e76cd20aaf933ed94e3f8ccf1a5c74da",
+      "expected": "3d4981a61bc278d48e02ce2b0b27e258e76cd20aaf933ed94e3f8ccf1a5c74da"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_v_pulmonary_veins.glb",
+      "status": "passed",
+      "bytes": 1742396,
+      "sha256": "4fd24a8b5fd382dcc7833e3f4dc44fc9bcbed75789697f30c96a2d4eff25fa64",
+      "expected": "4fd24a8b5fd382dcc7833e3f4dc44fc9bcbed75789697f30c96a2d4eff25fa64"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_valve_mitral.glb",
+      "status": "passed",
+      "bytes": 458972,
+      "sha256": "648b76dc1ce284811c3bb833676d0bd66c0fc2d283fe5c67c3ea0ab14f70514a",
+      "expected": "648b76dc1ce284811c3bb833676d0bd66c0fc2d283fe5c67c3ea0ab14f70514a"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+      "status": "passed",
+      "bytes": 8040148,
+      "sha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+      "expected": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+      "status": "passed",
+      "bytes": 1886,
+      "sha256": "0bbe838ef980cf1dfacc7611226011c4269e7d023ec3171cca9116b6afa780c2",
+      "expected": "0bbe838ef980cf1dfacc7611226011c4269e7d023ec3171cca9116b6afa780c2"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_valve_pulmonary.glb",
+      "status": "passed",
+      "bytes": 438100,
+      "sha256": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf",
+      "expected": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/provenance.json",
+      "status": "passed",
+      "bytes": 209233,
+      "sha256": "67d14264cfb7c6e9575d7c875a0115503db3c57e191bca877ac11cd6e3178712",
+      "expected": "67d14264cfb7c6e9575d7c875a0115503db3c57e191bca877ac11cd6e3178712"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/cardiovascular/cv_valve_tricuspid.glb",
+      "status": "passed",
+      "bytes": 1134876,
+      "sha256": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581",
+      "expected": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/left-tarsals/cuneiform_int_left.glb",
+      "status": "passed",
+      "bytes": 40672,
+      "sha256": "f1fa724dfe9cea73de8273cb2884b15dc46c705afa2747d21a3d5fd05631f703",
+      "expected": "f1fa724dfe9cea73de8273cb2884b15dc46c705afa2747d21a3d5fd05631f703"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/left-tarsals/provenance.json",
+      "status": "passed",
+      "bytes": 5581,
+      "sha256": "49952b6930eddcc1030e6eaf548e6888bea3539c445b31629832d635d6a1b581",
+      "expected": "49952b6930eddcc1030e6eaf548e6888bea3539c445b31629832d635d6a1b581"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/left-tarsals/cuneiform_med_left.glb",
+      "status": "passed",
+      "bytes": 78760,
+      "sha256": "48c72a5410e7fae3e82fb10da3ed83f170cd5b539b3054ed12794bda37a7d538",
+      "expected": "48c72a5410e7fae3e82fb10da3ed83f170cd5b539b3054ed12794bda37a7d538"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/provenance.json",
+      "status": "passed",
+      "bytes": 3371,
+      "sha256": "41faca5440009f19d5d0e159fedd1cad5fd7c55b9859764f9366078f6344ff9b",
+      "expected": "41faca5440009f19d5d0e159fedd1cad5fd7c55b9859764f9366078f6344ff9b"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+      "status": "passed",
+      "bytes": 1458,
+      "sha256": "11cb80bb81c264443ffe0bb031729abab1ab76b3851d2aaf0b93f0e2bb823b9d",
+      "expected": "11cb80bb81c264443ffe0bb031729abab1ab76b3851d2aaf0b93f0e2bb823b9d"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/left-tarsals/navicular_left.glb",
+      "status": "passed",
+      "bytes": 60260,
+      "sha256": "f31adf17f74b4c4f809d26f1af28613d27cc64851b7f1118b35b872bd514a7fc",
+      "expected": "f31adf17f74b4c4f809d26f1af28613d27cc64851b7f1118b35b872bd514a7fc"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/sesamoid_pedis_left.glb",
+      "status": "passed",
+      "bytes": 11512,
+      "sha256": "76b92997aff5c71ff35e171b7919f532d4b4290f36a0d7d96e709c602469f990",
+      "expected": "76b92997aff5c71ff35e171b7919f532d4b4290f36a0d7d96e709c602469f990"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_2_left.glb",
+      "status": "passed",
+      "bytes": 9464,
+      "sha256": "10b026309aec6727c58aaf405f7a856af2cc3bab02d68577077ff498bd5be159",
+      "expected": "10b026309aec6727c58aaf405f7a856af2cc3bab02d68577077ff498bd5be159"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_3_left.glb",
+      "status": "passed",
+      "bytes": 7092,
+      "sha256": "ddc8ca6a071f1a8ddf63296e044ef155fa05b3bf7c76741631f00df432c55c5b",
+      "expected": "ddc8ca6a071f1a8ddf63296e044ef155fa05b3bf7c76741631f00df432c55c5b"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_4_left.glb",
+      "status": "passed",
+      "bytes": 7596,
+      "sha256": "fbab89442f578b1178b6d888c6aa227846048327de7979c1ffd952b37d5d8417",
+      "expected": "fbab89442f578b1178b6d888c6aa227846048327de7979c1ffd952b37d5d8417"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_2_left.glb",
+      "status": "passed",
+      "bytes": 12812,
+      "sha256": "869e4e9569aef05972bc8b7d3b35a523cc9e870880a7190853d70688d263b514",
+      "expected": "869e4e9569aef05972bc8b7d3b35a523cc9e870880a7190853d70688d263b514"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_4_left.glb",
+      "status": "passed",
+      "bytes": 10436,
+      "sha256": "5af40993d84a3e2ac9b69297013a5a141d3dcdd9c8e20cb69d9d40edde2d8b59",
+      "expected": "5af40993d84a3e2ac9b69297013a5a141d3dcdd9c8e20cb69d9d40edde2d8b59"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_3_left.glb",
+      "status": "passed",
+      "bytes": 12488,
+      "sha256": "f5218ab8670f1cfdb659f9eeb572f0604f7f77b0154bcbbbf5f723b06090e91f",
+      "expected": "f5218ab8670f1cfdb659f9eeb572f0604f7f77b0154bcbbbf5f723b06090e91f"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_2_left.glb",
+      "status": "passed",
+      "bytes": 25596,
+      "sha256": "3b8baa66cbf42ad978e83a71eacfd339c252faa062c35bd2a78881145bd7360d",
+      "expected": "3b8baa66cbf42ad978e83a71eacfd339c252faa062c35bd2a78881145bd7360d"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_3_left.glb",
+      "status": "passed",
+      "bytes": 23080,
+      "sha256": "d4ed9b8f2b1b8e3b6e9932ae27951d51a7b3c2d52b744eb06ab71feaad5cad67",
+      "expected": "d4ed9b8f2b1b8e3b6e9932ae27951d51a7b3c2d52b744eb06ab71feaad5cad67"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/muscles-stage7/ATTRIBUTION.html",
+      "status": "passed",
+      "bytes": 2454,
+      "sha256": "fa5b7d97164e09214ffee9809c21dfdd11727e8c60c8c5aaded9547f3b367658",
+      "expected": "fa5b7d97164e09214ffee9809c21dfdd11727e8c60c8c5aaded9547f3b367658"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_4_left.glb",
+      "status": "passed",
+      "bytes": 20768,
+      "sha256": "b7ddabd04a510e199d4263a3613b7567df393337160c79df5f1c644965745a9c",
+      "expected": "b7ddabd04a510e199d4263a3613b7567df393337160c79df5f1c644965745a9c"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/muscles-stage7/provenance.json",
+      "status": "passed",
+      "bytes": 1461,
+      "sha256": "5a99206968fa6118a32b0df2676c9c09b78d6b4550b5de234c743087920a7c55",
+      "expected": "5a99206968fa6118a32b0df2676c9c09b78d6b4550b5de234c743087920a7c55"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/neck-stage7/ATTRIBUTION.html",
+      "status": "passed",
+      "bytes": 2373,
+      "sha256": "b4251875941dbca9769e681029e87ab0d0752dfdd695e8afa4cbacb70a5db7b1",
+      "expected": "b4251875941dbca9769e681029e87ab0d0752dfdd695e8afa4cbacb70a5db7b1"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/neck-stage7/provenance.json",
+      "status": "passed",
+      "bytes": 28777,
+      "sha256": "51eb8aefe42bd7700d033239f9fa58d98c25ca88c6dbbf7f0338d21fef2e65b8",
+      "expected": "51eb8aefe42bd7700d033239f9fa58d98c25ca88c6dbbf7f0338d21fef2e65b8"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/neck-stage7/interspinales_cervicis_right.glb",
+      "status": "passed",
+      "bytes": 51448,
+      "sha256": "e6394fef1dd6db9d3afe25654d248e27fe901ccee01749c54d081ee23acc36a5",
+      "expected": "e6394fef1dd6db9d3afe25654d248e27fe901ccee01749c54d081ee23acc36a5"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/muscles-stage7/puborectalis_left.glb",
+      "status": "passed",
+      "bytes": 428356,
+      "sha256": "7fcbb093552fd54b7f213b1d3fc413d412af331f4efe60229043097d79b5e984",
+      "expected": "7fcbb093552fd54b7f213b1d3fc413d412af331f4efe60229043097d79b5e984"
+    },
+    {
+      "path": "models/bodyparts3d-3.0/muscles-stage7/puborectalis_right.glb",
+      "status": "passed",
+      "bytes": 430232,
+      "sha256": "0c0ac7879ee4e1a81a262d40e958358d71a74b48ad64b6f0ef594559417476e5",
+      "expected": "0c0ac7879ee4e1a81a262d40e958358d71a74b48ad64b6f0ef594559417476e5"
+    },
+    {
+      "path": "release.json",
+      "status": "passed",
+      "bytes": 349,
+      "sha256": "b9d737e5edf96136b0fac28b941b669588188ae415e62c9afaf05660cc56585f",
+      "expected": "b9d737e5edf96136b0fac28b941b669588188ae415e62c9afaf05660cc56585f"
+    },
+    {
+      "path": "skull-region-masks.json",
+      "status": "passed",
+      "bytes": 42460,
+      "sha256": "d771e8f587b1c90ce8848869d92eb472c23de2c80c885d8f694b6dee0eed2002",
+      "expected": "d771e8f587b1c90ce8848869d92eb472c23de2c80c885d8f694b6dee0eed2002"
+    },
+    {
+      "path": "pins-context-bones.js",
+      "status": "passed",
+      "bytes": 1876702,
+      "sha256": "81600119f8a2b31f314d8d91e98823a75b03927a8aae9407bc7be95660c41e16",
+      "expected": "81600119f8a2b31f314d8d91e98823a75b03927a8aae9407bc7be95660c41e16"
+    }
+  ]
+}

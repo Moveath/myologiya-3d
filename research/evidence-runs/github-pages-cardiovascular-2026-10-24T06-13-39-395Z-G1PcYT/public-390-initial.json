@@ -1,0 +1,26 @@
+{
+  "status": "failed",
+  "width": 390,
+  "url": "https://moveath.github.io/myologiya-3d/?v=abda77a&theme=light",
+  "checks": [
+    {
+      "name": "Five systems in mobile settings",
+      "passed": true
+    },
+    {
+      "name": "Left side excludes right structures",
+      "passed": true
+    },
+    {
+      "name": "Search selects heart and opens mobile card",
+      "passed": true
+    },
+    {
+      "name": "Mobile isolation",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "error": "locator.fill: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#structureOpacity')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"15\" max=\"100\" value=\"100\" type=\"range\" id=\"structureOpacity\" aria-label=\"Непрозрачность выбранной структуры\"/>\u001b[22m\n\u001b[2m    - fill(\"60\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    12 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+  "elapsedMs": 18283
+}
