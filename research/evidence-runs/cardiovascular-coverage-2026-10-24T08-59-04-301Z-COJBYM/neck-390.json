@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "name": "arm explains 16 cards without models",
+      "passed": true
+    },
+    {
+      "name": "arm scene honestly has no vascular models",
+      "passed": true
+    },
+    {
+      "name": "bone coverage not shown in vessels-only view",
+      "passed": true
+    },
+    {
+      "name": "catalogue button selects arterial filter",
+      "passed": true
+    },
+    {
+      "name": "missing arm vessel card remains honest",
+      "passed": true
+    },
+    {
+      "name": "neck link displays eight vessels",
+      "passed": true
+    },
+    {
+      "name": "no model loading errors",
+      "passed": true
+    },
+    {
+      "name": "neck vessels retain BVH",
+      "passed": true
+    },
+    {
+      "name": "left excludes right",
+      "passed": true
+    },
+    {
+      "name": "left coverage reflects four neck models",
+      "passed": true
+    },
+    {
+      "name": "right excludes left",
+      "passed": true
+    }
+  ],
+  "visible": [
+    "cv_a_carotid_common_right",
+    "cv_a_carotid_common_left",
+    "cv_a_subclavian_right",
+    "cv_a_subclavian_left",
+    "cv_v_jugular_internal_right",
+    "cv_v_subclavian_right",
+    "cv_v_jugular_internal_left",
+    "cv_v_subclavian_left"
+  ]
+}
