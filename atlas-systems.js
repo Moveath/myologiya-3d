@@ -27,3 +27,13 @@ export function structureRelations(id,catalogue) {
 export function admittedModel(card) {
   return !!card&&!card.noModel&&card.modelStatus==='educational_limited'&&typeof card.modelFile==='string';
 }
+
+// Catalogue availability, not a claim that a file has loaded or a surface is verified.
+export function systemCoverage(cards, groups, section, side, systems) {
+  const keys = ['heart','arteries','veins'].filter(key=>systems[key]);
+  const entries = Object.entries(cards).filter(([,card])=>
+    groups[card.g]?.sec===section && keys.includes(card.system) &&
+    (side==='both' || !['left','right'].includes(card.side) || card.side===side));
+  const models = entries.filter(([,card])=>admittedModel(card)).map(([id])=>id);
+  return {keys, ids:entries.map(([id])=>id), models, missing:entries.length-models.length};
+}

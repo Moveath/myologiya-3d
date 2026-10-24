@@ -423,6 +423,10 @@ dt .term { text-decoration-color: var(--ink-2); }
 .systems { flex-wrap:wrap; }
 .systems button[aria-pressed="true"] { box-shadow:inset 0 -3px var(--teal); }
 #systemStatus { display:block; max-width:720px; margin:4px 0; font-size:12px; }
+.system-coverage { margin-top:10px; padding:10px 12px; border:1px solid var(--rule); border-radius:12px; background:var(--paper); max-width:720px; font-size:13px; }
+.system-coverage p { margin:0 0 8px; line-height:1.4; }
+.system-coverage .row { flex-wrap:wrap; }
+.system-coverage .chip { white-space:normal; }
 .card-opacity { display:flex;align-items:center;gap:10px;flex-wrap:wrap; }
 .card-opacity input { max-width:180px; }
 .cv-links { display:grid;gap:6px; }
@@ -444,7 +448,7 @@ dt .term { text-decoration-color: var(--ink-2); }
     "./atlas-performance.js": "./atlas-performance.js?v=005f155b9e134da6",
     "./atlas-regions.js": "./atlas-regions.js?v=697983bf111c0747",
     "./atlas-runtime.js": "./atlas-runtime.js?v=3ea79796e7f78014",
-    "./atlas-systems.js": "./atlas-systems.js?v=c88a09f2c3801399",
+    "./atlas-systems.js": "./atlas-systems.js?v=07ecf4b5e2495ce7",
     "./atlas-visibility.js": "./atlas-visibility.js?v=2a5af956d8b0c670"
   }
 }
@@ -516,6 +520,10 @@ dt .term { text-decoration-color: var(--ink-2); }
       <div class="mobile-only" id="mobileMoreActions"></div>
     </div>
     <p class="hint" id="modelCoverage" aria-live="polite" hidden></p>
+    <div class="system-coverage" id="vascularCoverage" hidden>
+      <p id="vascularCoverageText" role="status"></p>
+      <div class="row" id="vascularCoverageActions"></div>
+    </div>
     <div class="cut-controls" id="headCutControls" hidden>
       <label>Плоскость <select id="headCutAxis" aria-label="Плоскость среза"><option value="y">Горизонтальная</option><option value="x">Сагиттальная</option><option value="z">Фронтальная</option></select></label>
       <label class="cut-position">Срез <input id="headCutPosition" type="range" min="0" max="100" value="50" aria-label="Положение среза"><output id="headCutValue">50%</output></label>
@@ -667,7 +675,7 @@ import { indexLandmarks, relatedBoneIds, isSharedLandmark, landmarkBelongsTo, is
 import { structureSide, sideAllows, muscleBoneIds, selectionVisibility } from './atlas-visibility.js?v=2a5af956d8b0c670';
 import { normalizeSearch, catalogueMatches, typicalThumbSesamoid, catalogueVariant, musclePartLatin, upperLimbCoverage } from './atlas-catalogue.js?v=bb155d25f659265f';
 import { AnatomicalRegions, sha256 } from './atlas-regions.js?v=697983bf111c0747';
-import { ANATOMICAL_SYSTEMS, systemOf, systemDefaults, structureRelations, admittedModel } from './atlas-systems.js?v=c88a09f2c3801399';
+import { ANATOMICAL_SYSTEMS, systemOf, systemDefaults, structureRelations, admittedModel, systemCoverage } from './atlas-systems.js?v=07ecf4b5e2495ce7';
 
 let anatomicalRegions = null;
 let regionManifestPromise = null;
@@ -1180,7 +1188,7 @@ async function ensureSystemModels(section) {
     }));
   })();
   try{await systemLoading[section];}finally{delete systemLoading[section];}
-  if(state.sec===section){applyVisibility();renderSheet();if(curSub()==='cardiovascular'&&!state.sel)frameSub(false);}
+  if(state.sec===section){applyVisibility();renderSheet();if(!state.sel&&!state.isolate&&(curSub()==='cardiovascular'||(!state.systems.bones&&!state.systems.muscles)))frameSub(false);}
   const failed=ids.filter(id=>systemErrors.has(id));
   $('#systemStatus').hidden=!failed.length;
   $('#systemStatus').textContent=failed.length?`Не загружено моделей: ${failed.length}. Карточки доступны; повторите загрузку из карточки.`:'';
@@ -1192,7 +1200,49 @@ async function setSystem(key,enabled) {
   if(!enabled&&selected&&systemOf(selected)===key){state.sel=null;state.selPart=null;state.pin=null;state.isolate=null;}
   applyVisibility();renderSheet();
   if(enabled&&['heart','arteries','veins'].includes(key)&&state.sec)await ensureSystemModels(state.sec);
+  if(state.sec&&!state.sel&&!state.isolate&&!state.systems.bones&&!state.systems.muscles)frameSub(false);
 }
+
+function renderSystemCoverage() {
+  const coverage=systemCoverage(A.structures||{},groupById,state.sec,curSide(),state.systems);
+  $('#vascularCoverage').hidden=!coverage.keys.length;
+  if(!coverage.keys.length)return;
+  const label=coverage.keys.map(k=>ANATOMICAL_SYSTEMS[k].label).join(' / ');
+  const visible=coverage.models.filter(id=>structs.get(id)?.meshes.some(m=>m.visible)).length;
+  const pending=coverage.models.some(id=>!structs.has(id)&&!systemErrors.has(id));
+  let text=label+': ';
+  if(!coverage.models.length) {
+    text+=coverage.ids.length?`3D-моделей в этом разделе для выбранной стороны пока нет. Доступно только карточек: ${coverage.ids.length}.`:'Для выбранной стороны в этом разделе пока нет карточек и 3D-моделей.';
+    if(![...structs.values()].some(s=>s.meshes.some(m=>m.visible)))text+=' Поэтому сцена пуста.';
+  } else {
+    text+=`В разделе доступно моделей: ${coverage.models.length}; только карточек: ${coverage.missing}. Сейчас видно моделей: ${visible}.`;
+    if(pending)text+=' Модели загружаются…';
+    else if(coverage.models.some(id=>systemErrors.has(id)))text+=' Часть моделей не загрузилась; повторите загрузку из карточки.';
+    else if(!visible)text+=' Модели скрыты подразделом, изоляцией или настройками видимости.';
+  }
+  $('#vascularCoverageText').textContent=text;
+  let actions=coverage.keys.filter(k=>coverage.ids.some(id=>A.structures[id].system===k))
+    .map(k=>`<button class="chip" data-system-catalog="${k}">Карточки: ${ANATOMICAL_SYSTEMS[k].label.toLowerCase()}</button>`).join('');
+  if(coverage.models.length&&!visible)actions+='<button class="chip" data-system-view>Показать в 3D</button>';
+  if(!coverage.models.length)for(const section of SECTIONS.filter(s=>s.ready&&s.id!==state.sec)) {
+    const other=systemCoverage(A.structures||{},groupById,section.id,curSide(),state.systems);
+    if(other.models.length)actions+=`<button class="chip" data-system-region="${section.id}">${esc(section.ru)} · 3D: ${other.models.length}</button>`;
+  }
+  $('#vascularCoverageActions').innerHTML=actions;
+}
+$('#vascularCoverageActions').addEventListener('click',async event=>{
+  const button=event.target.closest('button');if(!button)return;
+  if(button.dataset.systemCatalog){
+    $('#q').value='';openList();
+    document.querySelector(`[data-list-type="${button.dataset.systemCatalog}"]`).click();
+  }else if(button.hasAttribute('data-system-view')){
+    for(const [id,card]of Object.entries(A.structures||{}))if(state.systems[card.system])state.hidden.delete(id);
+    setSub('cardiovascular',{keepSystems:true});
+  }else if(button.dataset.systemRegion){
+    const side=curSide();
+    if(await enterSection(button.dataset.systemRegion)){setSide(side);setSub('cardiovascular',{keepSystems:true});}
+  }
+});
 $('#systemControls').innerHTML=Object.entries(ANATOMICAL_SYSTEMS).map(([key,s])=>`<button data-system="${key}" aria-pressed="${state.systems[key]}">${esc(s.label)}</button>`).join('');
 $('#systemControls').addEventListener('click',event=>{const b=event.target.closest('[data-system]');if(b)setSystem(b.dataset.system,!state.systems[b.dataset.system]);});
 
@@ -1262,9 +1312,10 @@ function applyVisibility() {
   if (policy.muscle) notes.push(policy.related.length ? 'Кости показаны по связям прикреплений в каталоге; это не подтверждение координат.' : 'Костные связи этой мышцы или части в каталоге не указаны.');
   $('#sideViewNote').hidden = !notes.length; $('#sideViewNote').textContent = notes.join(' ');
   const educational = [...structs.values()].filter(s=>s.data?.modelStatus==='educational_limited' && s.meshes.some(m=>m.visible));
-  const coverage = [state.sec === 'arm' ? upperLimbCoverage(curSide(), curSub(), structs.values()) : '',
+  const coverage = [state.sec === 'arm' && (state.systems.bones || state.systems.muscles) ? upperLimbCoverage(curSide(), curSub(), structs.values()) : '',
     educational.length ? [...new Set(educational.map(s=>s.data.modelRegionLabel || 'Левое предплечье'))].join(', ')+'. '+(educational.find(s=>s.data.modelRegionLabel)?.data.modelNotice || educational[0].data.modelNotice) : ''].filter(Boolean).join(' ');
   $('#modelCoverage').hidden = !coverage; $('#modelCoverage').textContent = coverage;
+  renderSystemCoverage();
   $('#bRestore').classList.toggle('on', !!state.isolate || state.hidden.size > 0);
   $('#bRestore').textContent = state.isolate ? 'Показать все' : `Вернуть скрытые (${state.hidden.size})`;
   updateBoneColorControls();
@@ -1372,7 +1423,9 @@ function frameSub(instant) {
     ? ['atlas','axis','cervical_7','hyoid','sternocleidomastoid_right','sternocleidomastoid_left'].filter(id=>structs.has(id))
     : state.sec === 'trunk' && curSub() === 'all' && !state.isolate
       ? [...structs.values()].filter(s=>s.kind==='b').map(s=>s.id) : shownIds();
-  frame(ids.filter(id => structs.has(id) && visState(structs.get(id)) > 0), def.v, instant);
+  const visible=ids.filter(id => structs.has(id) && visState(structs.get(id)) > 0);
+  // Bone/muscle framing anchors may all be disabled in a vessels-only view.
+  frame(visible.length ? visible : shownIds().filter(id=>structs.has(id)&&visState(structs.get(id))>0), def.v, instant);
   resetView();
 }
 function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Повернуть'; }
@@ -1600,7 +1653,7 @@ function setSub(sub, opts = {}) {
   if (!state.sec) return;
   state.subs[state.sec] = sub;
   if(sub==='cardiovascular') {
-    for(const key of ['heart','arteries','veins'])state.systems[key]=true;
+    if(!opts.keepSystems)for(const key of ['heart','arteries','veins'])state.systems[key]=true;
     ensureSystemModels(state.sec);
   }
   prefs.subs = Object.assign({}, prefs.subs || {}, { [state.sec]: sub }); savePrefs();
