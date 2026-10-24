@@ -20,5 +20,17 @@
     canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();fail('context');});
     canvas.addEventListener('webglcontextrestored',()=>{if(reason==='context')clear();onRestore();});
   }
-  window.__atlasRuntime={fail,watch,get reason(){return reason;}};
+  let stopStartup = null;
+  function watchStartup() {
+    stopStartup?.();
+    const failed = () => { if (!window.__ready && !reason) fail('module'); };
+    window.addEventListener('error', failed);
+    window.addEventListener('unhandledrejection', failed);
+    stopStartup = () => {
+      window.removeEventListener('error', failed);
+      window.removeEventListener('unhandledrejection', failed);
+      stopStartup = null;
+    };
+  }
+  window.__atlasRuntime={fail,watch,watchStartup,ready(){stopStartup?.();},get reason(){return reason;}};
 })();

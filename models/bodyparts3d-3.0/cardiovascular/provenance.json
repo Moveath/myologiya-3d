@@ -1,0 +1,4415 @@
+[
+  {
+    "id": "cv_heart",
+    "ru": "Сердце",
+    "lat": "cor",
+    "system": "heart",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+    "candidate": {
+      "id": "cv_heart",
+      "source": {
+        "fma": "FMA7274",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA7274.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA7274.obj",
+        "bytes": 28962764,
+        "sha256": "7f178b7d40bdaa4980e7c85c92e1fd6cd04569dfa8eeab6c7e626d96b1765ff8",
+        "crc": 4266735101,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_heart.glb",
+      "sha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+      "triangles": 331592,
+      "vertices": 169170,
+      "boundsM": [
+        [
+          -0.03633550000000001,
+          1.18434,
+          0.06706659999999999
+        ],
+        [
+          0.07918009999999999,
+          1.2896800000000002,
+          0.17662899999999998
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 0.0002306193572428558,
+      "degenerate": 88,
+      "duplicateFaces": 37,
+      "normalFallbackVertices": 147,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
+      "technicalExceptions": {
+        "degenerateRetained": 88,
+        "duplicateFacesRetained": 37,
+        "normalFallbackVertices": 147,
+        "decision": "Source triangles retained; scale-stable shading normals only. Exterior readable in multi-view review; not suitable for exact interior morphometry. Local defects remain open."
+      }
+    },
+    "relations": {},
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NHLBI — What the Heart Looks Like",
+        "url": "https://www.nhlbi.nih.gov/health/heart/anatomy",
+        "locator": "Heart chambers; heart tissue; labelled interior diagram"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_valve_tricuspid",
+    "ru": "Правый предсердно-желудочковый клапан",
+    "lat": "valva atrioventricularis dextra; valva tricuspidalis",
+    "system": "heart",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_tricuspid.glb",
+    "candidate": {
+      "id": "cv_valve_tricuspid",
+      "source": {
+        "fma": "FMA7234",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA7234.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA7234.obj",
+        "bytes": 3234084,
+        "sha256": "e511e7eecfc23f0e5f7f7eaeb93c6fec9bb040e34262564162668221fddddc53",
+        "crc": 1463885137,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_valve_tricuspid.glb",
+      "sha256": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581",
+      "triangles": 47268,
+      "vertices": 23608,
+      "boundsM": [
+        [
+          -0.0189725,
+          1.19881,
+          0.113547
+        ],
+        [
+          0.0295173,
+          1.2466700000000002,
+          0.14526599999999998
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.379215855132631e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "f02530d86ced666df05c4453f3cb1c706ffe0f0f11f1876b89913d6da98c1581",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "partOf": "cv_heart"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NHLBI — How Blood Flows",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "locator": "Chambers, valves and pulmonary/systemic circuits"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_valve_mitral",
+    "ru": "Левый предсердно-желудочковый клапан",
+    "lat": "valva atrioventricularis sinistra; valva mitralis",
+    "system": "heart",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_mitral.glb",
+    "candidate": {
+      "id": "cv_valve_mitral",
+      "source": {
+        "fma": "FMA7235",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA7235.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA7235.obj",
+        "bytes": 1240722,
+        "sha256": "2962ec220e871b93571bd07f918e295080c73afed7e00ced7fe9f7b74a45f8bf",
+        "crc": 977534688,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_valve_mitral.glb",
+      "sha256": "648b76dc1ce284811c3bb833676d0bd66c0fc2d283fe5c67c3ea0ab14f70514a",
+      "triangles": 19102,
+      "vertices": 9529,
+      "boundsM": [
+        [
+          0.0135166,
+          1.20974,
+          0.08536339999999999
+        ],
+        [
+          0.0628823,
+          1.24186,
+          0.123279
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.457690852557253e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "648b76dc1ce284811c3bb833676d0bd66c0fc2d283fe5c67c3ea0ab14f70514a",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "partOf": "cv_heart"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NHLBI — How Blood Flows",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "locator": "Chambers, valves and pulmonary/systemic circuits"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_valve_pulmonary",
+    "ru": "Клапан лёгочного ствола",
+    "lat": "valva trunci pulmonalis",
+    "system": "heart",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_pulmonary.glb",
+    "candidate": {
+      "id": "cv_valve_pulmonary",
+      "source": {
+        "fma": "FMA7246",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA7246.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA7246.obj",
+        "bytes": 1193477,
+        "sha256": "a7f560cb9d68b8fe135dea2499c8dd5026cfe66064241a0fcf87d81abbf6b0ea",
+        "crc": 3823045485,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_valve_pulmonary.glb",
+      "sha256": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf",
+      "triangles": 18202,
+      "vertices": 9109,
+      "boundsM": [
+        [
+          0.008740050000000001,
+          1.25498,
+          0.127544
+        ],
+        [
+          0.0409914,
+          1.27546,
+          0.159636
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.5708775662572324e-06,
+      "degenerate": 0,
+      "duplicateFaces": 1,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "040dfee5795b62f7aef4da531015212c48896a0df3ae7b454d9438c670f057bf",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
+      "technicalExceptions": {
+        "degenerateRetained": 0,
+        "duplicateFacesRetained": 1,
+        "normalFallbackVertices": 0,
+        "decision": "Source triangles retained; scale-stable shading normals only. Exterior readable in multi-view review; not suitable for exact interior morphometry. Local defects remain open."
+      }
+    },
+    "relations": {
+      "partOf": "cv_heart"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NHLBI — How Blood Flows",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "locator": "Chambers, valves and pulmonary/systemic circuits"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_aorta_ascending",
+    "ru": "Восходящая аорта",
+    "lat": "aorta ascendens",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_ascending.glb",
+    "candidate": {
+      "id": "cv_a_aorta_ascending",
+      "source": {
+        "fma": "FMA3736",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3736.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3736.obj",
+        "bytes": 138310,
+        "sha256": "ad56b14a6ee9035bf4fb9591798a619e8f027878264c83758656a06c819da4e6",
+        "crc": 4043761275,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_aorta_ascending.glb",
+      "sha256": "4e8f5a84bdaae04ccf5521086367aee877651edf3a28ea6d47d423ea5fe5bf90",
+      "triangles": 2156,
+      "vertices": 1080,
+      "boundsM": [
+        [
+          -0.008136870000000001,
+          1.2518399999999998,
+          0.105365
+        ],
+        [
+          0.0265604,
+          1.30299,
+          0.13944700000000002
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.4642915826350563e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "4e8f5a84bdaae04ccf5521086367aee877651edf3a28ea6d47d423ea5fe5bf90",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "partOf": "cv_a_aorta",
+      "origin": "cv_ventricle_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_aorta_arch",
+    "ru": "Дуга аорты",
+    "lat": "arcus aortae",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_arch.glb",
+    "candidate": {
+      "id": "cv_a_aorta_arch",
+      "source": {
+        "fma": "FMA3768",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3768.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3768.obj",
+        "bytes": 207526,
+        "sha256": "6819f9ffa3c617cee719f04f59fd412c8cd39b951d5d1655d4451d3fb445477a",
+        "crc": 786552733,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_aorta_arch.glb",
+      "sha256": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c",
+      "triangles": 3282,
+      "vertices": 1643,
+      "boundsM": [
+        [
+          -0.008015959999999999,
+          1.30193,
+          0.0543052
+        ],
+        [
+          0.031593699999999995,
+          1.3394300000000001,
+          0.137676
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.637237472160237e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "ce16572b52c71149f8cd73efe8ef0029c0b74a2bcbecdb989d3c4fc2b0d28e7c",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "partOf": "cv_a_aorta",
+      "origin": "cv_a_aorta_ascending"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_aorta_descending",
+    "ru": "Нисходящая аорта",
+    "lat": "aorta descendens",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
+    "candidate": {
+      "id": "cv_a_aorta_descending",
+      "source": {
+        "fma": "FMA3784",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3784.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3784.obj",
+        "bytes": 1553818,
+        "sha256": "c98ccdb28cb27b4c340f1755af58fbde8c844fd587db9a1a7285f3b0cd7cc808",
+        "crc": 1890989084,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_aorta_descending.glb",
+      "sha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+      "triangles": 23808,
+      "vertices": 11906,
+      "boundsM": [
+        [
+          -0.000938308,
+          0.95998,
+          0.048077100000000005
+        ],
+        [
+          0.029936,
+          1.30328,
+          0.13209700000000002
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 9.513758138175405e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "partOf": "cv_a_aorta",
+      "origin": "cv_a_aorta_arch"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_pulmonary_arteries",
+    "ru": "Лёгочные артерии — объединённый набор",
+    "lat": "arteriae pulmonales",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_pulmonary_arteries.glb",
+    "candidate": {
+      "id": "cv_a_pulmonary_arteries",
+      "source": {
+        "fma": "FMA66326",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA66326.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA66326.obj",
+        "bytes": 8393448,
+        "sha256": "b25f29ecfac3b722ea65defcb5b501e00ba5fbf8d4af6d4a37d33b22c0862477",
+        "crc": 1992517307,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_pulmonary_arteries.glb",
+      "sha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+      "triangles": 116948,
+      "vertices": 58474,
+      "boundsM": [
+        [
+          -0.124487,
+          1.13442,
+          0.0226764
+        ],
+        [
+          0.122788,
+          1.3673499999999998,
+          0.18397999999999998
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 0.00014877438448782313,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_pulmonary_trunk"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NHLBI — How Blood Flows",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "locator": "Chambers, valves and pulmonary/systemic circuits"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_coronary_right",
+    "ru": "Правая венечная артерия",
+    "lat": "arteria coronaria dextra",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right.glb",
+    "candidate": {
+      "id": "cv_a_coronary_right",
+      "source": {
+        "fma": "FMA3802",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3802.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3802.obj",
+        "bytes": 319099,
+        "sha256": "2711a020a516d4515b5fbf33e7494790ede414003f8d1650cfda66714e22ade1",
+        "crc": 1988243593,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_right.glb",
+      "sha256": "f2f78688c8d7e643011b91c40c82442392522e423718b7fa77681ddffa5785d7",
+      "triangles": 5154,
+      "vertices": 2579,
+      "boundsM": [
+        [
+          -0.0217668,
+          1.1979300000000002,
+          0.09329470000000001
+        ],
+        [
+          0.0207457,
+          1.27108,
+          0.16251
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 8.707202212657744e-07,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "f2f78688c8d7e643011b91c40c82442392522e423718b7fa77681ddffa5785d7",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_ascending"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_coronary_left",
+    "ru": "Левая венечная артерия",
+    "lat": "arteria coronaria sinistra",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_left.glb",
+    "candidate": {
+      "id": "cv_a_coronary_left",
+      "source": {
+        "fma": "FMA4685",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4685.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4685.obj",
+        "bytes": 14737,
+        "sha256": "e3098b011a587723e89d51b8746b44d61bdde51dcec434c95fdaa701962d5583",
+        "crc": 2598148367,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_left.glb",
+      "sha256": "7427494bcf3098ce8baec842d8a0eb96ec6b9cf08883e453775dabc74673f79f",
+      "triangles": 252,
+      "vertices": 128,
+      "boundsM": [
+        [
+          0.023361999999999997,
+          1.2639500000000001,
+          0.117247
+        ],
+        [
+          0.034463,
+          1.2708599999999999,
+          0.123477
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.2566537640699993e-07,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "7427494bcf3098ce8baec842d8a0eb96ec6b9cf08883e453775dabc74673f79f",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_ascending"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_coronary_anterior_interventricular",
+    "ru": "Передняя межжелудочковая ветвь",
+    "lat": "ramus interventricularis anterior",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_anterior_interventricular.glb",
+    "candidate": {
+      "id": "cv_a_coronary_anterior_interventricular",
+      "source": {
+        "fma": "FMA3862nsn",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3862nsn.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3862nsn.obj",
+        "bytes": 650037,
+        "sha256": "966366e376b00d09de963a17cc574bb39d5210e441de55b19e6b2ec8bf10a773",
+        "crc": 3517769029,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_anterior_interventricular.glb",
+      "sha256": "52b5503c115ec23b3d9a2cc92bf629897bebd93fc04d422a23475dc268751e26",
+      "triangles": 9220,
+      "vertices": 4612,
+      "boundsM": [
+        [
+          0.028820699999999998,
+          1.1894500000000001,
+          0.11963800000000001
+        ],
+        [
+          0.07944570000000001,
+          1.26762,
+          0.172788
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.1313765950296699e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "52b5503c115ec23b3d9a2cc92bf629897bebd93fc04d422a23475dc268751e26",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_coronary_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_coronary_circumflex",
+    "ru": "Огибающая ветвь",
+    "lat": "ramus circumflexus",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_circumflex.glb",
+    "candidate": {
+      "id": "cv_a_coronary_circumflex",
+      "source": {
+        "fma": "FMA3895",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3895.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3895.obj",
+        "bytes": 250060,
+        "sha256": "531a00a8635fd81325cd7d735f2b5e1f6d827356098586dc777d2a0814834319",
+        "crc": 832340606,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_circumflex.glb",
+      "sha256": "c572e0a4b4c17c782684f2a855b516cb9b82f563b40aee92c34f7cfcd685c71c",
+      "triangles": 3542,
+      "vertices": 1773,
+      "boundsM": [
+        [
+          0.034342599999999994,
+          1.1978,
+          0.0869884
+        ],
+        [
+          0.077152,
+          1.26632,
+          0.142901
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.8593752588096593e-07,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "c572e0a4b4c17c782684f2a855b516cb9b82f563b40aee92c34f7cfcd685c71c",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_coronary_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_brachiocephalic",
+    "ru": "Плечеголовной ствол",
+    "lat": "truncus brachiocephalicus",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_brachiocephalic.glb",
+    "candidate": {
+      "id": "cv_a_brachiocephalic",
+      "source": {
+        "fma": "FMA3932nsn",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3932nsn.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3932nsn.obj",
+        "bytes": 73381,
+        "sha256": "8c9bafe5236293262fab89dd8c110f0c6da85484d776c27c7250c70c6cae5b94",
+        "crc": 1130643685,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_brachiocephalic.glb",
+      "sha256": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921",
+      "triangles": 1210,
+      "vertices": 607,
+      "boundsM": [
+        [
+          -0.0193517,
+          1.31557,
+          0.101819
+        ],
+        [
+          0.0182457,
+          1.3536199999999998,
+          0.119894
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 5.24731851810476e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "075804e6fb0ad661649c63b26b6c1f91971be81ebce2cc55501f6eefccc42921",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_arch"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_carotid_common_right",
+    "ru": "Правая общая сонная артерия",
+    "lat": "arteria carotis communis dextra",
+    "system": "arteries",
+    "section": "neck",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_right.glb",
+    "candidate": {
+      "id": "cv_a_carotid_common_right",
+      "source": {
+        "fma": "FMA3941",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3941.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3941.obj",
+        "bytes": 273176,
+        "sha256": "61cf12ead4134447efc5215bca9be7569fce0c3a607cdb850df94d1803427be0",
+        "crc": 2374678859,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_carotid_common_right.glb",
+      "sha256": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240",
+      "triangles": 4424,
+      "vertices": 2214,
+      "boundsM": [
+        [
+          -0.0213163,
+          1.34067,
+          0.105359
+        ],
+        [
+          -0.0085743,
+          1.38469,
+          0.117596
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.190118636708467e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "9b2c8819bfa1a1d11539790d8b12aa26d30165a8b46440ba8837fda7a7cf0240",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_brachiocephalic"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_subclavian_right",
+    "ru": "Правая подключичная артерия",
+    "lat": "arteria subclavia dextra",
+    "system": "arteries",
+    "section": "neck",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_right.glb",
+    "candidate": {
+      "id": "cv_a_subclavian_right",
+      "source": {
+        "fma": "FMA3953",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA3953.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA3953.obj",
+        "bytes": 133686,
+        "sha256": "6a4f427a5f25314e6f85857872905bb40618afb4987990a47eb2ffd4f509e15d",
+        "crc": 2232888071,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_subclavian_right.glb",
+      "sha256": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07",
+      "triangles": 2260,
+      "vertices": 1132,
+      "boundsM": [
+        [
+          -0.0822777,
+          1.34211,
+          0.0940385
+        ],
+        [
+          -0.00968548,
+          1.36469,
+          0.112301
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.1895781380373533e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "33c5ca3353c581b783f8094fc0691b3c224cbdd0b1c71c636bff612d91f92c07",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_brachiocephalic"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_carotid_common_left",
+    "ru": "Левая общая сонная артерия",
+    "lat": "arteria carotis communis sinistra",
+    "system": "arteries",
+    "section": "neck",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_left.glb",
+    "candidate": {
+      "id": "cv_a_carotid_common_left",
+      "source": {
+        "fma": "FMA4058",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4058.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4058.obj",
+        "bytes": 41365,
+        "sha256": "0138c170117724b1c11843232e837be5adb68ab7783197f3617cdbcf8cb29d15",
+        "crc": 760327882,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_carotid_common_left.glb",
+      "sha256": "54873fa7b82afac4e362b9fee4ee65c63d7e968af7a1cc41bed0a1eec446e362",
+      "triangles": 698,
+      "vertices": 351,
+      "boundsM": [
+        [
+          0.0104177,
+          1.31868,
+          0.09599819999999999
+        ],
+        [
+          0.0232561,
+          1.38497,
+          0.11241
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.2914030109227154e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "54873fa7b82afac4e362b9fee4ee65c63d7e968af7a1cc41bed0a1eec446e362",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_arch"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_subclavian_left",
+    "ru": "Левая подключичная артерия",
+    "lat": "arteria subclavia sinistra",
+    "system": "arteries",
+    "section": "neck",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_left.glb",
+    "candidate": {
+      "id": "cv_a_subclavian_left",
+      "source": {
+        "fma": "FMA4694",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4694.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4694.obj",
+        "bytes": 200497,
+        "sha256": "6631de44c0fb30c275486c9911908b8efa7373ad66e1e1d74b69aeaffb148c99",
+        "crc": 68971021,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_subclavian_left.glb",
+      "sha256": "1056a73683e8562fd074f2a62dbc87cb25b6f0c394810a24ad2cfcaf44805b72",
+      "triangles": 3234,
+      "vertices": 1619,
+      "boundsM": [
+        [
+          0.0176231,
+          1.3185499999999999,
+          0.0868478
+        ],
+        [
+          0.0866842,
+          1.3678299999999999,
+          0.105687
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 4.983606305256155e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "1056a73683e8562fd074f2a62dbc87cb25b6f0c394810a24ad2cfcaf44805b72",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_arch"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537319/",
+        "locator": "Structure and Function; arch, thoracic and abdominal divisions"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_celiac",
+    "ru": "Чревный ствол",
+    "lat": "truncus coeliacus",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_celiac.glb",
+    "candidate": {
+      "id": "cv_a_celiac",
+      "source": {
+        "fma": "FMA50737",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA50737.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA50737.obj",
+        "bytes": 25629,
+        "sha256": "15d5d9ce649f8760f52e7d440816e5f25c8863fad7141a6c903f0eaca5065fd3",
+        "crc": 209113720,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_celiac.glb",
+      "sha256": "dfe166bbe591833c837a5eb5cbb8b2d95567d8dba4e88d866eb9c424fd0597d5",
+      "triangles": 454,
+      "vertices": 229,
+      "boundsM": [
+        [
+          -0.0020430500000000002,
+          1.07478,
+          0.111128
+        ],
+        [
+          0.0113967,
+          1.08533,
+          0.135053
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.4109336473729777e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "dfe166bbe591833c837a5eb5cbb8b2d95567d8dba4e88d866eb9c424fd0597d5",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_mesenteric_superior",
+    "ru": "Верхняя брыжеечная артерия",
+    "lat": "arteria mesenterica superior",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_superior.glb",
+    "candidate": {
+      "id": "cv_a_mesenteric_superior",
+      "source": {
+        "fma": "FMA14749",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14749.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14749.obj",
+        "bytes": 20675,
+        "sha256": "0631caae754ec44e8351596ee94d6e08be4ecc6985ee5417cbd769a6e8083180",
+        "crc": 3907549075,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_mesenteric_superior.glb",
+      "sha256": "7f988137e2067b183d6d4453fa7986029673c435fdf1889811d3ba627f5da832",
+      "triangles": 350,
+      "vertices": 177,
+      "boundsM": [
+        [
+          0.0023410600000000003,
+          1.0427899999999999,
+          0.114688
+        ],
+        [
+          0.0113638,
+          1.07026,
+          0.151572
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.0875695726143236e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "7f988137e2067b183d6d4453fa7986029673c435fdf1889811d3ba627f5da832",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_mesenteric_inferior",
+    "ru": "Нижняя брыжеечная артерия",
+    "lat": "arteria mesenterica inferior",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_inferior.glb",
+    "candidate": {
+      "id": "cv_a_mesenteric_inferior",
+      "source": {
+        "fma": "FMA14750",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14750.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14750.obj",
+        "bytes": 36794,
+        "sha256": "51db88fe6e67f4890edbf70ebd1ccf8df243648d7bc79162d922f0711a9b3689",
+        "crc": 1094316539,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_mesenteric_inferior.glb",
+      "sha256": "32779c90c9c6444d48fb1e4f5d570983d35de9915d2f441ee3b95d946685d2a6",
+      "triangles": 602,
+      "vertices": 303,
+      "boundsM": [
+        [
+          0.0024749,
+          0.9544579999999999,
+          0.12379000000000001
+        ],
+        [
+          0.0129496,
+          1.00872,
+          0.14772300000000002
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 4.4015245718914755e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "32779c90c9c6444d48fb1e4f5d570983d35de9915d2f441ee3b95d946685d2a6",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_renal_right",
+    "ru": "Правая почечная артерия",
+    "lat": "arteria renalis dextra",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_right.glb",
+    "candidate": {
+      "id": "cv_a_renal_right",
+      "source": {
+        "fma": "FMA14752",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14752.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14752.obj",
+        "bytes": 109042,
+        "sha256": "1caddaddcb8b0ba7d4b68cae4e6761d3b2863936a4b2bff482e2974da9b9b4fa",
+        "crc": 718637396,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_renal_right.glb",
+      "sha256": "e694ff52290e655dc2b60e14fd4df8ba234dffa71afbf248c7697988dc484e90",
+      "triangles": 1754,
+      "vertices": 879,
+      "boundsM": [
+        [
+          -0.0582185,
+          1.0436500000000002,
+          0.07879040000000001
+        ],
+        [
+          0.0153541,
+          1.06613,
+          0.122352
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 6.502878197990551e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "e694ff52290e655dc2b60e14fd4df8ba234dffa71afbf248c7697988dc484e90",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_common_right",
+    "ru": "Правая общая подвздошная артерия",
+    "lat": "arteria iliaca communis dextra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_right.glb",
+    "candidate": {
+      "id": "cv_a_iliac_common_right",
+      "source": {
+        "fma": "FMA14765",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14765.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14765.obj",
+        "bytes": 53386,
+        "sha256": "af2b2ef1169e9b5e9edd665c3c73a669fd42cefd41289077c41b1082ab7b09d7",
+        "crc": 3354100822,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_common_right.glb",
+      "sha256": "dc702310615f14e908728b982c0f3021f5d616c7c3a3a066a0a4c41da8446cf4",
+      "triangles": 896,
+      "vertices": 450,
+      "boundsM": [
+        [
+          -0.0378633,
+          0.9164650000000001,
+          0.10977500000000001
+        ],
+        [
+          0.011893599999999999,
+          0.976565,
+          0.130162
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 8.134111810933042e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "dc702310615f14e908728b982c0f3021f5d616c7c3a3a066a0a4c41da8446cf4",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_external_right",
+    "ru": "Правая наружная подвздошная артерия",
+    "lat": "arteria iliaca externa dextra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_right.glb",
+    "candidate": {
+      "id": "cv_a_iliac_external_right",
+      "source": {
+        "fma": "FMA18806",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18806.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18806.obj",
+        "bytes": 80641,
+        "sha256": "854ef0ea3a9a46881c07df8fe58724b69512c276b355406ee0f65e1d2afc259d",
+        "crc": 903977232,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_external_right.glb",
+      "sha256": "bfb5041d44abb889bfe9fc360e310a3cb52a013bc054efbe7635e06e719d0716",
+      "triangles": 1344,
+      "vertices": 674,
+      "boundsM": [
+        [
+          -0.0534634,
+          0.826409,
+          0.102616
+        ],
+        [
+          -0.027427,
+          0.921774,
+          0.159982
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.1539056053894766e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "bfb5041d44abb889bfe9fc360e310a3cb52a013bc054efbe7635e06e719d0716",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_iliac_common_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_internal_right",
+    "ru": "Правая внутренняя подвздошная артерия",
+    "lat": "arteria iliaca interna dextra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_right.glb",
+    "candidate": {
+      "id": "cv_a_iliac_internal_right",
+      "source": {
+        "fma": "FMA18809",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18809.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18809.obj",
+        "bytes": 27524,
+        "sha256": "fed09cfd288f9eb45da07a25dd36ae6f22e3b19daec5cdf3465fe4ff58aab1d3",
+        "crc": 1442448984,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_internal_right.glb",
+      "sha256": "8e8ac278246beb543f96162b744ca4411c9ab6e19fc6a55213bf850e76df055e",
+      "triangles": 458,
+      "vertices": 231,
+      "boundsM": [
+        [
+          -0.032009,
+          0.858741,
+          0.037388199999999996
+        ],
+        [
+          -0.0204075,
+          0.920882,
+          0.120357
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.6554788336767576e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "8e8ac278246beb543f96162b744ca4411c9ab6e19fc6a55213bf850e76df055e",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_iliac_common_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_renal_left",
+    "ru": "Левая почечная артерия",
+    "lat": "arteria renalis sinistra",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_left.glb",
+    "candidate": {
+      "id": "cv_a_renal_left",
+      "source": {
+        "fma": "FMA14753",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14753.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14753.obj",
+        "bytes": 82346,
+        "sha256": "65a15e9e4f06d90cfbefc906fd7ba0ceda3d7f3950bdd3527c3ed77f45ecf9d7",
+        "crc": 2594102407,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_renal_left.glb",
+      "sha256": "37a9b9e001dd3f68d0f690be35c2a89dcf93f5ae72984e3eb7386442e608f885",
+      "triangles": 1308,
+      "vertices": 656,
+      "boundsM": [
+        [
+          0.0063679800000000005,
+          1.04656,
+          0.0806228
+        ],
+        [
+          0.0529413,
+          1.07457,
+          0.123012
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 4.712627680708084e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "37a9b9e001dd3f68d0f690be35c2a89dcf93f5ae72984e3eb7386442e608f885",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_common_left",
+    "ru": "Левая общая подвздошная артерия",
+    "lat": "arteria iliaca communis sinistra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_left.glb",
+    "candidate": {
+      "id": "cv_a_iliac_common_left",
+      "source": {
+        "fma": "FMA14766",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14766.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14766.obj",
+        "bytes": 47496,
+        "sha256": "3ee315fae32b421ca22519a0bc113d9cbeccb08c31366119ce4c89d47b077e58",
+        "crc": 896621830,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_common_left.glb",
+      "sha256": "107e04bbbff8bdeec17c76be3bd30124b494b873f17e17d6ed66909f79ac3a0b",
+      "triangles": 806,
+      "vertices": 405,
+      "boundsM": [
+        [
+          -0.00102443,
+          0.913,
+          0.10706600000000001
+        ],
+        [
+          0.0377072,
+          0.976579,
+          0.130186
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 8.058857116556991e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "107e04bbbff8bdeec17c76be3bd30124b494b873f17e17d6ed66909f79ac3a0b",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_aorta_abdominal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_external_left",
+    "ru": "Левая наружная подвздошная артерия",
+    "lat": "arteria iliaca externa sinistra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_left.glb",
+    "candidate": {
+      "id": "cv_a_iliac_external_left",
+      "source": {
+        "fma": "FMA18807",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18807.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18807.obj",
+        "bytes": 78129,
+        "sha256": "9d5dcd0c97f5707f844f2c8a5f79e80c99aec3a0645dce74692e39c07fc0c752",
+        "crc": 3512644923,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_external_left.glb",
+      "sha256": "a942547a8435283b3d745475bdd67bc3548d0164fccad2bc6999418d7103c164",
+      "triangles": 1288,
+      "vertices": 646,
+      "boundsM": [
+        [
+          0.0271361,
+          0.826407,
+          0.0969174
+        ],
+        [
+          0.0544426,
+          0.917727,
+          0.15894
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.1339497057253107e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "a942547a8435283b3d745475bdd67bc3548d0164fccad2bc6999418d7103c164",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_iliac_common_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_iliac_internal_left",
+    "ru": "Левая внутренняя подвздошная артерия",
+    "lat": "arteria iliaca interna sinistra",
+    "system": "arteries",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_left.glb",
+    "candidate": {
+      "id": "cv_a_iliac_internal_left",
+      "source": {
+        "fma": "FMA18810",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18810.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18810.obj",
+        "bytes": 30231,
+        "sha256": "bc6061d825a3078ce41ebd85c4d2e111c34ec2658376988ef56b6c084eaf60ac",
+        "crc": 953201600,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_iliac_internal_left.glb",
+      "sha256": "2e8e7293ab26363932e1b5fb484e754264e7c7b111b59311a7e4594933ecf9ca",
+      "triangles": 500,
+      "vertices": 252,
+      "boundsM": [
+        [
+          0.019236899999999998,
+          0.856268,
+          0.026866499999999998
+        ],
+        [
+          0.0339792,
+          0.9216449999999999,
+          0.117287
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.8526659147041e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "2e8e7293ab26363932e1b5fb484e754264e7c7b111b59311a7e4594933ecf9ca",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_iliac_common_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_cava_superior",
+    "ru": "Верхняя полая вена",
+    "lat": "vena cava superior",
+    "system": "veins",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_superior.glb",
+    "candidate": {
+      "id": "cv_v_cava_superior",
+      "source": {
+        "fma": "FMA4720",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4720.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4720.obj",
+        "bytes": 89957,
+        "sha256": "cfb92b6db44f203c8cd5382aa919448d7eb0c0f2c9eefe61083df9be5be4439a",
+        "crc": 2990480090,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cava_superior.glb",
+      "sha256": "04b6e3625c6af4585d5e24e9c6b3c78217f5dcef394719c92d40a741518cfbb0",
+      "triangles": 1532,
+      "vertices": 768,
+      "boundsM": [
+        [
+          -0.0267313,
+          1.28507,
+          0.103522
+        ],
+        [
+          -0.004063290000000001,
+          1.3202,
+          0.12731900000000002
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.251805638996661e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "04b6e3625c6af4585d5e24e9c6b3c78217f5dcef394719c92d40a741518cfbb0",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_atrium_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_cava_inferior",
+    "ru": "Нижняя полая вена",
+    "lat": "vena cava inferior",
+    "system": "veins",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_inferior.glb",
+    "candidate": {
+      "id": "cv_v_cava_inferior",
+      "source": {
+        "fma": "FMA10951",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA10951.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA10951.obj",
+        "bytes": 493870,
+        "sha256": "2f1608130ab2dba38cb07eececeb4dc534afe8973b2a28f596922493b8b79253",
+        "crc": 3012035726,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cava_inferior.glb",
+      "sha256": "9b68140a4346d0085df1dbb0718ac4374170d007d9a1cf5b0390824303b31918",
+      "triangles": 7686,
+      "vertices": 3845,
+      "boundsM": [
+        [
+          -0.026845300000000002,
+          0.960962,
+          0.103465
+        ],
+        [
+          -0.00311429,
+          1.2008699999999999,
+          0.133439
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 6.493207894923195e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "9b68140a4346d0085df1dbb0718ac4374170d007d9a1cf5b0390824303b31918",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_atrium_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_pulmonary_veins",
+    "ru": "Лёгочные вены — объединённый набор",
+    "lat": "venae pulmonales",
+    "system": "veins",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_pulmonary_veins.glb",
+    "candidate": {
+      "id": "cv_v_pulmonary_veins",
+      "source": {
+        "fma": "FMA66643",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA66643.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA66643.obj",
+        "bytes": 5202159,
+        "sha256": "fbd70db70b177694a48ec7d6c52d2b15f0779dff199d2e8f3f998a209c626ef2",
+        "crc": 2445282098,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_pulmonary_veins.glb",
+      "sha256": "4fd24a8b5fd382dcc7833e3f4dc44fc9bcbed75789697f30c96a2d4eff25fa64",
+      "triangles": 72548,
+      "vertices": 36282,
+      "boundsM": [
+        [
+          -0.123431,
+          1.1336400000000002,
+          0.022528700000000002
+        ],
+        [
+          0.123477,
+          1.36852,
+          0.17102199999999998
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 5.0312295283513246e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "4fd24a8b5fd382dcc7833e3f4dc44fc9bcbed75789697f30c96a2d4eff25fa64",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_atrium_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NHLBI — How Blood Flows",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "locator": "Chambers, valves and pulmonary/systemic circuits"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_brachiocephalic_right",
+    "ru": "Правая плечеголовная вена",
+    "lat": "vena brachiocephalica dextra",
+    "system": "veins",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_right.glb",
+    "candidate": {
+      "id": "cv_v_brachiocephalic_right",
+      "source": {
+        "fma": "FMA4751",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4751.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4751.obj",
+        "bytes": 81155,
+        "sha256": "b519f0bf66aee9a26627bcc747a091a34d9c746797ef0cf0ee5c3e3c5ce49c36",
+        "crc": 3925927753,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_brachiocephalic_right.glb",
+      "sha256": "71964aa3eb0fc69a21df0f34c565095e10ca0781b53c465241c86fe651d76d8a",
+      "triangles": 1400,
+      "vertices": 702,
+      "boundsM": [
+        [
+          -0.0320625,
+          1.30921,
+          0.109273
+        ],
+        [
+          -0.0100547,
+          1.36125,
+          0.131437
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 7.4857625410651656e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "71964aa3eb0fc69a21df0f34c565095e10ca0781b53c465241c86fe651d76d8a",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_superior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_jugular_internal_right",
+    "ru": "Правая внутренняя яремная вена",
+    "lat": "vena jugularis interna dextra",
+    "system": "veins",
+    "section": "neck",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_right.glb",
+    "candidate": {
+      "id": "cv_v_jugular_internal_right",
+      "source": {
+        "fma": "FMA4754",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4754.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4754.obj",
+        "bytes": 35276,
+        "sha256": "b873c5f5ed260c8e727a72916566e4c2d9fa00ec469ee3cedd0b0c322bbedeaf",
+        "crc": 207261364,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_jugular_internal_right.glb",
+      "sha256": "a3a3ba1d5e0c18880c7627c4909d2535ac071ae7a946a0ac55ffe898d8fa468b",
+      "triangles": 580,
+      "vertices": 292,
+      "boundsM": [
+        [
+          -0.0313063,
+          1.35173,
+          0.112748
+        ],
+        [
+          -0.0215407,
+          1.39303,
+          0.122241
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.8886125721824984e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "a3a3ba1d5e0c18880c7627c4909d2535ac071ae7a946a0ac55ffe898d8fa468b",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_brachiocephalic_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_subclavian_right",
+    "ru": "Правая подключичная вена",
+    "lat": "vena subclavia dextra",
+    "system": "veins",
+    "section": "neck",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_right.glb",
+    "candidate": {
+      "id": "cv_v_subclavian_right",
+      "source": {
+        "fma": "FMA4755",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4755.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4755.obj",
+        "bytes": 57155,
+        "sha256": "bbc312e6c1dadc9fdf77b28da82bbc8e4ee4001c9b097dc42b246d44ac1b7027",
+        "crc": 2628093266,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_subclavian_right.glb",
+      "sha256": "3d4981a61bc278d48e02ce2b0b27e258e76cd20aaf933ed94e3f8ccf1a5c74da",
+      "triangles": 946,
+      "vertices": 475,
+      "boundsM": [
+        [
+          -0.0868287,
+          1.33893,
+          0.108359
+        ],
+        [
+          -0.022296800000000002,
+          1.36306,
+          0.122117
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.7499027473848342e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "3d4981a61bc278d48e02ce2b0b27e258e76cd20aaf933ed94e3f8ccf1a5c74da",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_brachiocephalic_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_renal_right",
+    "ru": "Правая почечная вена",
+    "lat": "vena renalis dextra",
+    "system": "veins",
+    "section": "trunk",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_right.glb",
+    "candidate": {
+      "id": "cv_v_renal_right",
+      "source": {
+        "fma": "FMA14335",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14335.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14335.obj",
+        "bytes": 99198,
+        "sha256": "256b622eabca4f844711d6fddf0d31a3cf39213780929de3aa7b87fd1a20bb5e",
+        "crc": 744733078,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_renal_right.glb",
+      "sha256": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6",
+      "triangles": 1538,
+      "vertices": 771,
+      "boundsM": [
+        [
+          -0.0661345,
+          1.04057,
+          0.08095440000000001
+        ],
+        [
+          -0.014266500000000001,
+          1.05902,
+          0.126983
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.8586203926961095e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "c988a6bc091bac6edd6f9bec661ba14b49a739aa1cf8bba85ff1f32a03a3d0e6",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_inferior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_common_right",
+    "ru": "Правая общая подвздошная вена",
+    "lat": "vena iliaca communis dextra",
+    "system": "veins",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_right.glb",
+    "candidate": {
+      "id": "cv_v_iliac_common_right",
+      "source": {
+        "fma": "FMA21387",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA21387.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA21387.obj",
+        "bytes": 53163,
+        "sha256": "a31b64bbd380a3f91718f392c9cadaa4091c062fe21bf9c18ec548115b92f6cb",
+        "crc": 4250590425,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_common_right.glb",
+      "sha256": "112d661ea0bd960bdc15e3ad7a2a00cde136eff8f2ce1d237a0ebf0c810a8746",
+      "triangles": 886,
+      "vertices": 445,
+      "boundsM": [
+        [
+          -0.0335528,
+          0.9134410000000001,
+          0.0970617
+        ],
+        [
+          -0.0039505,
+          0.976611,
+          0.128026
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 9.15291272532054e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "112d661ea0bd960bdc15e3ad7a2a00cde136eff8f2ce1d237a0ebf0c810a8746",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_inferior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_external_right",
+    "ru": "Правая наружная подвздошная вена",
+    "lat": "vena iliaca externa dextra",
+    "system": "veins",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_right.glb",
+    "candidate": {
+      "id": "cv_v_iliac_external_right",
+      "source": {
+        "fma": "FMA18885",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18885.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18885.obj",
+        "bytes": 80057,
+        "sha256": "29e166dcce1740d160cf00de72c8aa500de7c17cafa4b837d7e69052010577c3",
+        "crc": 3664895042,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_external_right.glb",
+      "sha256": "6978fbcde76dc8c6ca28169e00003f995a40575e61d0b0431027de1b77d66884",
+      "triangles": 1326,
+      "vertices": 665,
+      "boundsM": [
+        [
+          -0.0428442,
+          0.826406,
+          0.091757
+        ],
+        [
+          -0.0216528,
+          0.917264,
+          0.154024
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.2570797660918564e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "6978fbcde76dc8c6ca28169e00003f995a40575e61d0b0431027de1b77d66884",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_iliac_common_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_internal_right",
+    "ru": "Правая внутренняя подвздошная вена",
+    "lat": "vena iliaca interna dextra",
+    "system": "veins",
+    "section": "leg",
+    "side": "right",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_right.glb",
+    "candidate": {
+      "id": "cv_v_iliac_internal_right",
+      "source": {
+        "fma": "FMA18887",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18887.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18887.obj",
+        "bytes": 32724,
+        "sha256": "e1aa9558e8c922160a1cdbf22fb6dd985ecd763877f4e6496576205d87346e2e",
+        "crc": 2069358811,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_internal_right.glb",
+      "sha256": "c9739be3f978a587ce3083912b805b48f97e249837709fccd0ab8b8178f69d99",
+      "triangles": 530,
+      "vertices": 267,
+      "boundsM": [
+        [
+          -0.031162299999999997,
+          0.860777,
+          0.041088
+        ],
+        [
+          -0.022627400000000002,
+          0.91904,
+          0.10428
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.739152887620077e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "c9739be3f978a587ce3083912b805b48f97e249837709fccd0ab8b8178f69d99",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_iliac_common_right"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_brachiocephalic_left",
+    "ru": "Левая плечеголовная вена",
+    "lat": "vena brachiocephalica sinistra",
+    "system": "veins",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_left.glb",
+    "candidate": {
+      "id": "cv_v_brachiocephalic_left",
+      "source": {
+        "fma": "FMA4761",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4761.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4761.obj",
+        "bytes": 111087,
+        "sha256": "26140a74dd10079682f4e604a837b60c6a0e99ae8d04f2baa6f8426045c42f8f",
+        "crc": 538090896,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_brachiocephalic_left.glb",
+      "sha256": "80d578f791b1f5e30820ba65d4145905074688b83d0e5d892d6059f6e9c5dea5",
+      "triangles": 1918,
+      "vertices": 961,
+      "boundsM": [
+        [
+          -0.0238359,
+          1.3071199999999998,
+          0.110468
+        ],
+        [
+          0.0280469,
+          1.3593199999999999,
+          0.132437
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.0524451555880303e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "80d578f791b1f5e30820ba65d4145905074688b83d0e5d892d6059f6e9c5dea5",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_superior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_jugular_internal_left",
+    "ru": "Левая внутренняя яремная вена",
+    "lat": "vena jugularis interna sinistra",
+    "system": "veins",
+    "section": "neck",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_left.glb",
+    "candidate": {
+      "id": "cv_v_jugular_internal_left",
+      "source": {
+        "fma": "FMA4762",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4762.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4762.obj",
+        "bytes": 41976,
+        "sha256": "58ad1002430c836ca1816942e49ec229bd4d66849f1a0fe021a670d17f0a83cc",
+        "crc": 20825526,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_jugular_internal_left.glb",
+      "sha256": "7797411c6c8b65b6a6941f2be8e7cd3f09ffc1a694705da72e3a2dca935acc0d",
+      "triangles": 720,
+      "vertices": 362,
+      "boundsM": [
+        [
+          0.0177562,
+          1.3485999999999998,
+          0.111576
+        ],
+        [
+          0.0309828,
+          1.39187,
+          0.122295
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.731492775104667e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "7797411c6c8b65b6a6941f2be8e7cd3f09ffc1a694705da72e3a2dca935acc0d",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_brachiocephalic_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_subclavian_left",
+    "ru": "Левая подключичная вена",
+    "lat": "vena subclavia sinistra",
+    "system": "veins",
+    "section": "neck",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_left.glb",
+    "candidate": {
+      "id": "cv_v_subclavian_left",
+      "source": {
+        "fma": "FMA4763",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA4763.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA4763.obj",
+        "bytes": 67851,
+        "sha256": "904e8b445ea54cbb51df226d3e0e674b2de6f32f4765ae7586200000c680ef51",
+        "crc": 2437580442,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_subclavian_left.glb",
+      "sha256": "3ba83ab80d3c32e0b7a9452031ffaef7d6806873ad112e4e34eab76cc1c86825",
+      "triangles": 1112,
+      "vertices": 558,
+      "boundsM": [
+        [
+          0.0192657,
+          1.3364500000000001,
+          0.105351
+        ],
+        [
+          0.09442350000000001,
+          1.3648900000000002,
+          0.12139
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 3.1095075014071573e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "3ba83ab80d3c32e0b7a9452031ffaef7d6806873ad112e4e34eab76cc1c86825",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_brachiocephalic_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Superior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545255/",
+        "locator": "Formation from brachiocephalic veins; drainage; variations"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_renal_left",
+    "ru": "Левая почечная вена",
+    "lat": "vena renalis sinistra",
+    "system": "veins",
+    "section": "trunk",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_left.glb",
+    "candidate": {
+      "id": "cv_v_renal_left",
+      "source": {
+        "fma": "FMA14336",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14336.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14336.obj",
+        "bytes": 38722,
+        "sha256": "a4924731af9e771e0d949768b78598af8feecd70c18e0607d239a38358e04c53",
+        "crc": 3366916325,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_renal_left.glb",
+      "sha256": "aa34afc9f7e0cc0a93c3f0b66b751ab5f389c88ee26e588ad4b51a8aa54034c7",
+      "triangles": 574,
+      "vertices": 289,
+      "boundsM": [
+        [
+          -0.0153426,
+          1.04286,
+          0.0794735
+        ],
+        [
+          0.0480118,
+          1.0676700000000001,
+          0.13326
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 5.825102142865393e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "aa34afc9f7e0cc0a93c3f0b66b751ab5f389c88ee26e588ad4b51a8aa54034c7",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_inferior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_common_left",
+    "ru": "Левая общая подвздошная вена",
+    "lat": "vena iliaca communis sinistra",
+    "system": "veins",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_left.glb",
+    "candidate": {
+      "id": "cv_v_iliac_common_left",
+      "source": {
+        "fma": "FMA21388",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA21388.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA21388.obj",
+        "bytes": 59163,
+        "sha256": "b0a57da48573c77f900bcf3e938a732bac2f988c4dbe0b742127a6f96d8d2c12",
+        "crc": 3081428577,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_common_left.glb",
+      "sha256": "57b9aa91c90b2b571b1315a474a7437d3d2a92fabe3d69f69106059e24e152de",
+      "triangles": 992,
+      "vertices": 498,
+      "boundsM": [
+        [
+          -0.017141100000000003,
+          0.912103,
+          0.0939008
+        ],
+        [
+          0.0255151,
+          0.976611,
+          0.128135
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 9.967402770255151e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "57b9aa91c90b2b571b1315a474a7437d3d2a92fabe3d69f69106059e24e152de",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_cava_inferior"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_external_left",
+    "ru": "Левая наружная подвздошная вена",
+    "lat": "vena iliaca externa sinistra",
+    "system": "veins",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_left.glb",
+    "candidate": {
+      "id": "cv_v_iliac_external_left",
+      "source": {
+        "fma": "FMA18886",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18886.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18886.obj",
+        "bytes": 86374,
+        "sha256": "ef1dc6ac77877334d8e9adba59de53bb8fc486971c69db87e297de1f9be6557f",
+        "crc": 2993702754,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_external_left.glb",
+      "sha256": "2d395d3b3204f62aaf57b0be29b140e1e3b331f4a78970c8224beec5c48c4e79",
+      "triangles": 1448,
+      "vertices": 726,
+      "boundsM": [
+        [
+          0.0135604,
+          0.826406,
+          0.0840242
+        ],
+        [
+          0.0437698,
+          0.9160170000000001,
+          0.153691
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.3575306382133712e-05,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "2d395d3b3204f62aaf57b0be29b140e1e3b331f4a78970c8224beec5c48c4e79",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_iliac_common_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_iliac_internal_left",
+    "ru": "Левая внутренняя подвздошная вена",
+    "lat": "vena iliaca interna sinistra",
+    "system": "veins",
+    "section": "leg",
+    "side": "left",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_left.glb",
+    "candidate": {
+      "id": "cv_v_iliac_internal_left",
+      "source": {
+        "fma": "FMA18888",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA18888.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA18888.obj",
+        "bytes": 27666,
+        "sha256": "7613a15ca42ad5d69837406484a435e78fc3b1e3fc6648d388b1502c3286628d",
+        "crc": 570140122,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_iliac_internal_left.glb",
+      "sha256": "e9e920b24d4999a8c0f94791439f42969b8130eb493003402801d04ef7d4c87d",
+      "triangles": 478,
+      "vertices": 241,
+      "boundsM": [
+        [
+          0.0142065,
+          0.8606480000000001,
+          0.041526400000000005
+        ],
+        [
+          0.0259303,
+          0.919395,
+          0.10225100000000001
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.2819470814300286e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "e9e920b24d4999a8c0f94791439f42969b8130eb493003402801d04ef7d4c87d",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_iliac_common_left"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Inferior Vena Cava",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/",
+        "locator": "Common iliac formation; renal tributaries; right atrium"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_splenic",
+    "ru": "Селезёночная вена",
+    "lat": "vena splenica",
+    "system": "veins",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_splenic.glb",
+    "candidate": {
+      "id": "cv_v_splenic",
+      "source": {
+        "fma": "FMA14331",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14331.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14331.obj",
+        "bytes": 84584,
+        "sha256": "5ea6124c39758df895e97020d689ed8257b39f617eddbd877f064e8599b8b273",
+        "crc": 746704697,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_splenic.glb",
+      "sha256": "da515963a6fa20fb21f31d18f6ad1fa13cdd2b5c6f89b1f54078dd8512ce86bb",
+      "triangles": 1352,
+      "vertices": 678,
+      "boundsM": [
+        [
+          -0.012424,
+          1.07257,
+          0.08481140000000001
+        ],
+        [
+          0.0955144,
+          1.10463,
+          0.131879
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.0264299600000924e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "da515963a6fa20fb21f31d18f6ad1fa13cdd2b5c6f89b1f54078dd8512ce86bb",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_portal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "Schmidt et al. — Portal vein anatomy and variants",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3036482/",
+        "locator": "Normal anatomy and anatomical variations; original morphologic/imaging review"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_v_mesenteric_superior",
+    "ru": "Верхняя брыжеечная вена",
+    "lat": "vena mesenterica superior",
+    "system": "veins",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_mesenteric_superior.glb",
+    "candidate": {
+      "id": "cv_v_mesenteric_superior",
+      "source": {
+        "fma": "FMA14332",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14332.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14332.obj",
+        "bytes": 14676,
+        "sha256": "6cda0692a092682e024c919b4d40f726d4fc8a9cb2a29ab4e6374a468fbe4d97",
+        "crc": 1000416114,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_mesenteric_superior.glb",
+      "sha256": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362",
+      "triangles": 202,
+      "vertices": 103,
+      "boundsM": [
+        [
+          -0.00726891,
+          1.04383,
+          0.125472
+        ],
+        [
+          0.0024186100000000003,
+          1.0668900000000001,
+          0.150538
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 9.891141422229946e-07,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "a8d6bac6ec5c8bcd2f3c53f3ff8296032cd3bf60d2cd0c47153639c8e37d6362",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "drainsTo": "cv_v_portal"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "Schmidt et al. — Portal vein anatomy and variants",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3036482/",
+        "locator": "Normal anatomy and anatomical variations; original morphologic/imaging review"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_gastric_left",
+    "ru": "Левая желудочная артерия",
+    "lat": "arteria gastrica sinistra",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_gastric_left.glb",
+    "candidate": {
+      "id": "cv_a_gastric_left",
+      "source": {
+        "fma": "FMA14768",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14768.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14768.obj",
+        "bytes": 14239,
+        "sha256": "fc5d6e50f38ed455ad44251739dd607ebea1a2b66bbf482180818b4f72af31df",
+        "crc": 1714404380,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_gastric_left.glb",
+      "sha256": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f",
+      "triangles": 232,
+      "vertices": 118,
+      "boundsM": [
+        [
+          0.00101274,
+          1.08055,
+          0.13059800000000002
+        ],
+        [
+          0.013363400000000001,
+          1.08868,
+          0.143194
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 2.436409693613345e-07,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "629b6c08ceb0b80b2f2ba7f66ac592a755814a91defc19d659c79fe653a4ee1f",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_celiac"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_hepatic_common",
+    "ru": "Общая печёночная артерия",
+    "lat": "arteria hepatica communis",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_hepatic_common.glb",
+    "candidate": {
+      "id": "cv_a_hepatic_common",
+      "source": {
+        "fma": "FMA14771",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14771.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14771.obj",
+        "bytes": 49769,
+        "sha256": "88f5d72904e82ba8b83b40807310eadc724619c85bd686bbd9d3d3101ba331f4",
+        "crc": 3679912534,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_hepatic_common.glb",
+      "sha256": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663",
+      "triangles": 808,
+      "vertices": 406,
+      "boundsM": [
+        [
+          -0.0156324,
+          1.07867,
+          0.128072
+        ],
+        [
+          0.004814860000000001,
+          1.1095,
+          0.145279
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.0160001906050392e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "370cc469e6978bf53c77b99f4245360d4700d4e8d861a4dbb86ed03dc55ba663",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_celiac"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  },
+  {
+    "id": "cv_a_splenic",
+    "ru": "Селезёночная артерия",
+    "lat": "arteria splenica",
+    "system": "arteries",
+    "section": "trunk",
+    "side": "unseparated",
+    "noModel": false,
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_splenic.glb",
+    "candidate": {
+      "id": "cv_a_splenic",
+      "source": {
+        "fma": "FMA14773",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+        "version": "3.0",
+        "entry": "BodyParts3D_3.0_obj_95/FMA14773.obj",
+        "file": "research/cache/cardiovascular-bp3d-3.0/FMA14773.obj",
+        "bytes": 213824,
+        "sha256": "aa172c17a971fc6a3fb28e912da2b799e362bf1e1e5db7cd119da441bf0134f8",
+        "crc": 2386395690,
+        "author": "Database Center for Life Science (DBCLS)",
+        "license": "CC BY-SA 2.1 Japan"
+      },
+      "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_splenic.glb",
+      "sha256": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9",
+      "triangles": 3326,
+      "vertices": 1665,
+      "boundsM": [
+        [
+          -0.0020047700000000003,
+          1.07758,
+          0.0832442
+        ],
+        [
+          0.0859477,
+          1.11107,
+          0.136084
+        ]
+      ],
+      "watertight": true,
+      "winding": true,
+      "volumeM3": 1.0398276188102349e-06,
+      "degenerate": 0,
+      "duplicateFaces": 0,
+      "normalFallbackVertices": 0,
+      "roundtrip": "Exact float32 triangle corners/order",
+      "admission": "candidate",
+      "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+    },
+    "admission": {
+      "status": "educational_limited",
+      "sha256": "82e112460761fbf3cb845f60bf1a7859092baa8bec26f39fd2a4f3d622cc5cf9",
+      "evidence": [
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-trial.json",
+        "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
+        "build_cardiovascular/blender-import.json",
+        "build_cardiovascular/review-final.blend",
+        "build_cardiovascular/heart-anterior.png",
+        "build_cardiovascular/heart-posterior.png",
+        "build_cardiovascular/heart-thorax-context.png",
+        "build_cardiovascular/valves-oblique.png",
+        "build_cardiovascular/abdominal-pelvic.png"
+      ],
+      "basis": "BP3D 3.0 source identity; unchanged specimen axes/scale; Blender views in existing thorax frame; gross form and sided arrangement; exact GLB triangle roundtrip and native/BVH rays. Not exact junction/attachment acceptance.",
+      "limitation": "Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами."
+    },
+    "relations": {
+      "origin": "cv_a_celiac"
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Circulatory Pathways",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+        "locator": "Pulmonary circulation; aorta and branches; systemic veins; hepatic portal system"
+      },
+      {
+        "title": "NCBI Bookshelf — Abdominal Aorta",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
+        "locator": "Major visceral and terminal branches"
+      }
+    ],
+    "issueIds": [
+      "FUT-005",
+      "CV-CATALOG-SOURCES",
+      "CV-GEO-ACCEPTANCE"
+    ],
+    "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+  }
+]

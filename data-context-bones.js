@@ -613,7 +613,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Кость заднего отдела стопы, сочленяющаяся с большеберцовой, малоберцовой, пяточной и ладьевидной костями.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Отражение не устранило конфликт с calcaneus (выборочно до 1,030 мм) и создаёт конфликт с действующей левой navicular (до 0,771 мм). Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -639,7 +639,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "calcaneus_left": {
     "ru": "Пяточная кость · слева",
@@ -650,7 +656,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Кость заднего отдела стопы, сочленяющаяся с таранной и кубовидной костями.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Сохраняется конфликт с talus (выборочно до 1,030 мм); нужна согласованная приёмка подтаранного комплекса. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -676,7 +682,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "navicular_left": {
     "ru": "Ладьевидная кость · слева",
@@ -685,9 +697,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Кость между головкой таранной и тремя клиновидными костями; суставная фасетка для кубовидной кости вариабельна.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сохранены исходные левая сторона, масштаб и система координат. Точные суставные поверхности, хрящи, зазоры и локализация пинов не приняты. Предплюсна представлена частично: таранная, пяточная, кубовидная и латеральная клиновидная модели остаются тестовыми из-за пересечений исходных сеток. Модели не отражались и не подгонялись; независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "foot_gray",
@@ -712,8 +724,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+        "locator": "FMA24501; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24501",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая предплюсна (частично)",
+    "modelFile": "models/bodyparts3d-3.0/left-tarsals/navicular_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-tarsals-report-2026-10-20.md"
+    }
   },
   "cuboid_left": {
     "ru": "Кубовидная кость · слева",
@@ -724,7 +754,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Латеральная кость предплюсны между пяточной и IV–V плюсневыми костями; также сочленяется с латеральной клиновидной.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликт с cuneiform_lat сохраняется (выборочно до 2,655 мм); отражение не восстанавливает корректное сочленение. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -750,7 +780,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "cuneiform_med_left": {
     "ru": "Медиальная клиновидная кость · слева",
@@ -759,9 +795,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Медиальная кость клиновидной группы; сочленяется с ладьевидной, промежуточной клиновидной, I и II плюсневыми костями.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сохранены исходные левая сторона, масштаб и система координат. Точные суставные поверхности, хрящи, зазоры и локализация пинов не приняты. Предплюсна представлена частично: таранная, пяточная, кубовидная и латеральная клиновидная модели остаются тестовыми из-за пересечений исходных сеток. Модели не отражались и не подгонялись; независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "foot_gray",
@@ -786,8 +822,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+        "locator": "FMA24522; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24522",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая предплюсна (частично)",
+    "modelFile": "models/bodyparts3d-3.0/left-tarsals/cuneiform_med_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-tarsals-report-2026-10-20.md"
+    }
   },
   "cuneiform_int_left": {
     "ru": "Промежуточная клиновидная кость · слева",
@@ -796,9 +850,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Кость между медиальной и латеральной клиновидными; сочленяется с ладьевидной и II плюсневой костями.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0/95%, DBCLS; сохранены исходные левая сторона, масштаб и система координат. Точные суставные поверхности, хрящи, зазоры и локализация пинов не приняты. Предплюсна представлена частично: таранная, пяточная, кубовидная и латеральная клиновидная модели остаются тестовыми из-за пересечений исходных сеток. Модели не отражались и не подгонялись; независимый левый скан не подтверждён.",
     "refs": [
       {
         "id": "foot_gray",
@@ -823,8 +877,26 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D 3.0 — DBCLS, CC BY-SA 2.1 Japan",
+        "url": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+        "locator": "FMA24524; производная GLB, учебный допуск",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "sourceId": "FMA24524",
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левая предплюсна (частично)",
+    "modelFile": "models/bodyparts3d-3.0/left-tarsals/cuneiform_int_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/left-tarsals/LICENSE-MODELS.txt",
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-left-tarsals-report-2026-10-20.md"
+    }
   },
   "cuneiform_lat_left": {
     "ru": "Латеральная клиновидная кость · слева",
@@ -835,7 +907,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Кость между промежуточной клиновидной и кубовидной; сочленяется также с ладьевидной и II–IV плюсневыми костями.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликт с cuboid сохраняется (выборочно до 2,655 мм); отражение не восстанавливает корректное сочленение. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -861,7 +933,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "sesamoid_pedis_left": {
     "ru": "Сесамовидные кости большого пальца стопы · слева",
@@ -870,9 +948,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Групповая карточка типичной медиальной и латеральной сесамовидных костей I плюснефалангового сустава. Варианты других суставов не включены в обязательную пару.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -897,8 +975,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA45097; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/sesamoid_pedis_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "sesamoid_pedis",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA45097"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "metatarsal_1_left": {
     "ru": "I плюсневая кость · слева",
@@ -909,7 +1025,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "I плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликт с действующей левой медиальной клиновидной сохраняется (выборочно до 1,264 мм). Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -935,7 +1051,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_prox_1_left": {
     "ru": "Проксимальная фаланга I пальца стопы · слева",
@@ -946,7 +1068,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Проксимальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Широкое пересечение межфалангового сочленения I сохраняется (выборочно до 0,675 мм); обе поверхности требуют проверки. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -972,7 +1094,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_dist_1_left": {
     "ru": "Дистальная фаланга I пальца стопы · слева",
@@ -983,7 +1111,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Дистальная фаланга I пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Широкое пересечение межфалангового сочленения I сохраняется (выборочно до 0,675 мм); обе поверхности требуют проверки. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1009,7 +1137,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "metatarsal_2_left": {
     "ru": "II плюсневая кость · слева",
@@ -1020,7 +1154,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "II плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Сохраняются конфликты основания и головки с соседями, включая проксимальную фалангу II (выборочно до 0,912 мм). Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1046,7 +1180,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_prox_2_left": {
     "ru": "Проксимальная фаланга II пальца стопы · слева",
@@ -1055,9 +1195,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Проксимальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1082,8 +1222,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32634; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_prox_2",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32634"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_mid_2_left": {
     "ru": "Средняя фаланга II пальца стопы · слева",
@@ -1092,9 +1270,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Средняя фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1119,8 +1297,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32642; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_mid_2",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32642"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_dist_2_left": {
     "ru": "Дистальная фаланга II пальца стопы · слева",
@@ -1129,9 +1345,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Дистальная фаланга II пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1156,8 +1372,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32652; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_2_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_dist_2",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32652"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "metatarsal_3_left": {
     "ru": "III плюсневая кость · слева",
@@ -1168,7 +1422,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "III плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликт с IV плюсневой сохраняется (выборочно до 1,264 мм); основание/соседние поверхности не приняты. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1194,7 +1448,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_prox_3_left": {
     "ru": "Проксимальная фаланга III пальца стопы · слева",
@@ -1203,9 +1463,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Проксимальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1230,8 +1490,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32636; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_prox_3",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32636"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_mid_3_left": {
     "ru": "Средняя фаланга III пальца стопы · слева",
@@ -1240,9 +1538,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Средняя фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1267,8 +1565,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32644; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_mid_3",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32644"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_dist_3_left": {
     "ru": "Дистальная фаланга III пальца стопы · слева",
@@ -1277,9 +1613,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Дистальная фаланга III пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1304,8 +1640,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32654; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_3_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_dist_3",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32654"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "metatarsal_4_left": {
     "ru": "IV плюсневая кость · слева",
@@ -1316,7 +1690,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "IV плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликты с III/V плюсневыми сохраняются (выборочно до 1,264/1,040 мм). Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1342,7 +1716,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_prox_4_left": {
     "ru": "Проксимальная фаланга IV пальца стопы · слева",
@@ -1351,9 +1731,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Проксимальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1378,8 +1758,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32638; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_prox_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_prox_4",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32638"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_mid_4_left": {
     "ru": "Средняя фаланга IV пальца стопы · слева",
@@ -1388,9 +1806,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Средняя фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1415,8 +1833,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32646; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_mid_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_mid_4",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32646"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "toe_dist_4_left": {
     "ru": "Дистальная фаланга IV пальца стопы · слева",
@@ -1425,9 +1881,9 @@ Object.assign(window.ATLAS.bones,{
     "sub": "foot",
     "sec": "leg",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "x": "Дистальная фаланга IV пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена. BodyParts3D 3.0, DBCLS, CC BY-SA 2.1 Japan. Отражение относительно X=0 учебной системы атласа; это не независимый левый образец. Крупная форма, сторона и масштаб проверены; точная срединная плоскость образца не принята. Сохранены локальные пересечения исходных сеток: они не изображают физиологический контакт. Подключены фаланги II–IV пальцев и общий ресурс сесамоидов; левая стопа остаётся неполной. Координаты пинов, контуры, площади и индивидуальные маски сесамоидов не переносились.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1452,8 +1908,46 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.5.10–18; номенклатура, не координаты",
         "access": "official_list",
         "checked": "2026-10-19"
+      },
+      {
+        "title": "BodyParts3D — источник зеркальной учебной реконструкции",
+        "url": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+        "locator": "FMA32656; правая исходная кость",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-20"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Зеркальная учебная реконструкция по правой кости. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.",
+    "modelRegionLabel": "Левые фаланги II–IV и сесамоиды (зеркальная реконструкция)",
+    "modelFile": "models/bodyparts3d-3.0/mirrored-left-foot/toe_dist_4_left.glb",
+    "modelLicense": "models/bodyparts3d-3.0/mirrored-left-foot/LICENSE-MODELS.txt",
+    "modelOrigin": {
+      "method": "mirrored_educational_reconstruction",
+      "sourceBone": "toe_dist_4",
+      "sourceSide": "right",
+      "sourceFMA": [
+        "FMA32656"
+      ],
+      "sourceVersion": "BodyParts3D 3.0",
+      "sourceAsset": "leg-glb.txt",
+      "reflectionPlane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset": 0,
+        "space": "atlas_world_metres"
+      },
+      "exactSpecimenPlaneAccepted": false,
+      "independentlyScannedLeft": false
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md"
+    }
   },
   "metatarsal_5_left": {
     "ru": "V плюсневая кость · слева",
@@ -1464,7 +1958,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "V плюсневая кость: основание, тело и головка; дистально сочленяется с проксимальной фалангой соответствующего пальца.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Конфликт с IV плюсневой сохраняется (выборочно до 1,040 мм). Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1490,7 +1984,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_prox_5_left": {
     "ru": "Проксимальная фаланга V пальца стопы · слева",
@@ -1501,7 +2001,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Проксимальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Пересечение с маленькой средней фалангой V (выборочно до 0,788 мм) требует независимой приёмки. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1527,7 +2027,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_mid_5_left": {
     "ru": "Средняя фаланга V пальца стопы · слева",
@@ -1538,7 +2044,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Средняя фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Пересечение с проксимальной фалангой V (выборочно до 0,788 мм) требует независимой приёмки. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1564,7 +2070,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   },
   "toe_dist_5_left": {
     "ru": "Дистальная фаланга V пальца стопы · слева",
@@ -1575,7 +2087,7 @@ Object.assign(window.ATLAS.bones,{
     "side": "left",
     "noModel": true,
     "x": "Дистальная фаланга V пальца стопы. У большого пальца две фаланги, у II–V пальцев типично три; сращения являются вариантами.",
-    "note": "Подтверждённой левой модели стопы в ресурсах проекта не найдено. Нужен лицензированный левый исходник с масштабом, осями и регистрацией. Координаты и геометрия справа не переносились.",
+    "note": "Зеркальная пробная геометрия подготовлена, но не подключена. Четыре вырожденные грани сжатого правого ресурса устранены в отдельной производной из OBJ, но две компоненты исходника и сочленение V пальца не приняты. Дефект не исправлялся произвольным смещением/деформацией. Нужны согласованная сегментация, поза и независимая приёмка; прежние ограничения сохранены в отчётах. Координаты и точные поверхности не подтверждены.",
     "refs": [
       {
         "id": "foot_gray",
@@ -1601,7 +2113,13 @@ Object.assign(window.ATLAS.bones,{
         "access": "official_list",
         "checked": "2026-10-19"
       }
-    ]
+    ],
+    "modelReview": {
+      "educationalAcceptance": false,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-mirrored-recovery-2026-10-20.md",
+      "mirroredCandidateRejected": true
+    }
   }
 });
 window.ATLAS.boneGroups.push({id:"b_hand_sesamoids",title:"Сесамовидные кости кисти",sec:"arm"});
@@ -2266,7 +2784,7 @@ Object.assign(window.ATLAS.bones,{
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников. Без произвольного смещения или деформации.",
+    "note": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников. Проверено отражение правой кости: конфликт с проксимальной фалангой I до 1,258745 мм; зеркальный кандидат также не подключён. Глубины выборочные, не физиологический допуск. Без произвольного смещения или деформации.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2305,7 +2823,8 @@ Object.assign(window.ATLAS.bones,{
       "educationalAcceptance": false,
       "fullAnatomicalAcceptance": false,
       "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
-      "blockedReason": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников."
+      "blockedReason": "Пробная геометрия найдена, но не подключена: проникновение основания в трапецию до 1,153449 мм среди проверенных вершин/центров граней. Нужна независимая приёмка CMC I и исходников.",
+      "mirrorReport": "research/stage6-mirrored-recovery-2026-10-20.md"
     }
   },
   "metacarpal_2_left": {
@@ -2386,7 +2905,7 @@ Object.assign(window.ATLAS.bones,{
       "humerus_left"
     ],
     "x": "Пястная кость левой кисти: основание, тело и головка; суставные площадки выделяются отдельно.",
-    "note": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток. Без произвольного смещения или деформации.",
+    "note": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток. Проверено отражение правой кости: конфликты с trapezoid до 1,317846 мм, II пястной до 1,105602 мм и проксимальной фалангой III до 0,820490 мм; зеркальный кандидат также не подключён. Глубины выборочные, не физиологический допуск. Без произвольного смещения или деформации.",
     "refs": [
       {
         "id": "arm_forearm_hand_gray1918",
@@ -2425,7 +2944,8 @@ Object.assign(window.ATLAS.bones,{
       "educationalAcceptance": false,
       "fullAnatomicalAcceptance": false,
       "report": "research/stage6-left-metacarpals-report-2026-10-20.md",
-      "blockedReason": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток."
+      "blockedReason": "Пробная геометрия найдена, но не подключена: пересечение с трапециевидной костью до 0,545677 мм в проверенной выборке. Этот контакт не принят как нормальное сочленение; нужна проверка основания и соседних фасеток.",
+      "mirrorReport": "research/stage6-mirrored-recovery-2026-10-20.md"
     }
   },
   "metacarpal_4_left": {
@@ -3604,19 +4124,76 @@ Object.assign(window.ATLAS.bones,{
   }
 });
 for(const [id,patch] of Object.entries({
-  "metacarpal_3": {
+  "scaphoid": {
     "side": "right"
   },
-  "trapezoid": {
-    "side": "right"
-  },
-  "metacarpal_2": {
+  "flexor_retinaculum": {
     "side": "right"
   },
   "phalanx_prox_1": {
     "side": "right"
   },
+  "trapezoid": {
+    "side": "right"
+  },
+  "trapezium": {
+    "side": "right"
+  },
+  "metacarpal_5": {
+    "side": "right"
+  },
+  "lunate": {
+    "side": "right"
+  },
+  "phalanx_mid_4": {
+    "side": "right"
+  },
+  "phalanx_dist_2": {
+    "side": "right"
+  },
+  "hamate": {
+    "side": "right"
+  },
+  "metacarpal_4": {
+    "side": "right"
+  },
+  "metacarpal_3": {
+    "side": "right"
+  },
+  "phalanx_dist_5": {
+    "side": "right"
+  },
+  "pisiform": {
+    "side": "right"
+  },
+  "triquetrum": {
+    "side": "right"
+  },
+  "phalanx_mid_2": {
+    "side": "right"
+  },
   "phalanx_mid_5": {
+    "side": "right"
+  },
+  "metacarpal_1": {
+    "side": "right"
+  },
+  "phalanx_mid_3": {
+    "side": "right"
+  },
+  "phalanx_prox_5": {
+    "side": "right"
+  },
+  "metacarpal_2": {
+    "side": "right"
+  },
+  "phalanx_prox_4": {
+    "side": "right"
+  },
+  "phalanx_dist_4": {
+    "side": "right"
+  },
+  "phalanx_prox_2": {
     "side": "right"
   },
   "phalanx_prox_3": {
@@ -3628,128 +4205,11 @@ for(const [id,patch] of Object.entries({
   "phalanx_dist_3": {
     "side": "right"
   },
-  "phalanx_mid_2": {
-    "side": "right"
-  },
-  "phalanx_dist_5": {
-    "side": "right"
-  },
-  "triquetrum": {
-    "side": "right"
-  },
-  "hamate": {
-    "side": "right"
-  },
-  "metacarpal_5": {
-    "side": "right"
-  },
-  "flexor_retinaculum": {
-    "side": "right"
-  },
-  "trapezium": {
-    "side": "right"
-  },
-  "metacarpal_4": {
-    "side": "right"
-  },
-  "phalanx_mid_3": {
-    "side": "right"
-  },
-  "phalanx_prox_4": {
-    "side": "right"
-  },
-  "scaphoid": {
-    "side": "right"
-  },
-  "phalanx_dist_4": {
-    "side": "right"
-  },
   "phalanx_dist_1": {
-    "side": "right"
-  },
-  "pisiform": {
-    "side": "right"
-  },
-  "phalanx_mid_4": {
-    "side": "right"
-  },
-  "phalanx_dist_2": {
-    "side": "right"
-  },
-  "phalanx_prox_2": {
-    "side": "right"
-  },
-  "phalanx_prox_5": {
-    "side": "right"
-  },
-  "metacarpal_1": {
-    "side": "right"
-  },
-  "lunate": {
     "side": "right"
   }
 })) Object.assign(window.ATLAS.bones[id],patch);
 for(const [id,patch] of Object.entries({
-  "fibula": {
-    "side": "right",
-    "ru": "Правая малоберцовая кость",
-    "refs": [
-      {
-        "id": "lower_proximal_gray_fibula",
-        "title": "Gray / Lewis (1918) — fibula",
-        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_sobotta_fibula",
-        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
-        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Fibula, printed p.101, Figs.148–152",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_ta98",
-        "title": "FIPAT / IFAA — TA98, bones of lower limb",
-        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
-        "locator": "A02.5.04–07; names, not specimen geometry",
-        "access": "official_list",
-        "checked": "2026-10-19"
-      }
-    ]
-  },
-  "tibia": {
-    "side": "right",
-    "ru": "Правая большеберцовая кость",
-    "refs": [
-      {
-        "id": "lower_proximal_gray_tibia",
-        "title": "Gray / Lewis (1918) — tibia",
-        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.5: extremities, shaft borders/surfaces; PDF pp.262–270",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_sobotta_tibia",
-        "title": "Sobotta / McMurrich (1914), Vol. I — tibia",
-        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Tibia, printed pp.99–101, Figs.144–147,150–152",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_ta98",
-        "title": "FIPAT / IFAA — TA98, bones of lower limb",
-        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
-        "locator": "A02.5.04–07; names, not specimen geometry",
-        "access": "official_list",
-        "checked": "2026-10-19"
-      }
-    ]
-  },
   "femur": {
     "side": "right",
     "ru": "Правая бедренная кость",
@@ -3780,6 +4240,36 @@ for(const [id,patch] of Object.entries({
       }
     ]
   },
+  "fibula": {
+    "side": "right",
+    "ru": "Правая малоберцовая кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_fibula",
+        "title": "Gray / Lewis (1918) — fibula",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_fibula",
+        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Fibula, printed p.101, Figs.148–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
   "patella": {
     "side": "right",
     "ru": "Правый надколенник",
@@ -3797,6 +4287,36 @@ for(const [id,patch] of Object.entries({
         "title": "Sobotta / McMurrich (1914), Vol. I — patella",
         "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
         "locator": "Patella, printed p.99, Figs.142–143",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "tibia": {
+    "side": "right",
+    "ru": "Правая большеберцовая кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_tibia",
+        "title": "Gray / Lewis (1918) — tibia",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.5: extremities, shaft borders/surfaces; PDF pp.262–270",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_tibia",
+        "title": "Sobotta / McMurrich (1914), Vol. I — tibia",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Tibia, printed pp.99–101, Figs.144–147,150–152",
         "access": "full_text",
         "checked": "2026-10-19"
       },
@@ -4710,6 +5230,18 @@ window.ATLAS.contextBoneSources={
   },
   "fibula_left": {
     "sourceId": "FMA24481",
+    "sec": "leg"
+  },
+  "navicular_left": {
+    "sourceId": "FMA24501",
+    "sec": "leg"
+  },
+  "cuneiform_med_left": {
+    "sourceId": "FMA24522",
+    "sec": "leg"
+  },
+  "cuneiform_int_left": {
+    "sourceId": "FMA24524",
     "sec": "leg"
   }
 };
