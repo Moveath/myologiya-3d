@@ -33,6 +33,12 @@ export function upperLimbCoverage(side, sub, structures) {
     if (!left.some(s => s.kind === 'm')) notes.push('Мышцы левой руки в этом разделе пока без 3D.');
     if (side === 'both') notes.unshift('Обе стороны: показаны доступные модели; набор сторон неполный.');
   }
-  if (['all', 'hand'].includes(sub)) notes.push('Сесамовидные кости большого пальца доступны как карточки без 3D.');
+  if (['all', 'hand'].includes(sub)) {
+    // Loaded thumb sesamoids are an educational CT reconstruction of another body, not BodyParts3D.
+    const sesamoids = relevant.filter(s => s.id.startsWith('sesamoid_mcp1_') && (side === 'both' || s.side === side));
+    notes.push(sesamoids.length === (side === 'both' ? 4 : 2)
+      ? 'Сесамовидные кости большого пальца — учебная реконструкция по КТ другого тела (Visible Human).'
+      : 'Сесамовидные кости большого пальца доступны как карточки без 3D.');
+  }
   return notes.join(' ');
 }

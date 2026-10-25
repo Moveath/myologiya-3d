@@ -2320,7 +2320,7 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "right",
-    "noModel": true,
+    "noModel": false,
     "collectiveCode": "A02.4.11.001",
     "scopeId": "B2",
     "contextTargets": [
@@ -2330,7 +2330,7 @@ Object.assign(window.ATLAS.bones,{
     "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
     "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
     "x": "Лучевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
-    "note": "Именованной и анатомически подтверждённой модели нет. Правая сторона указана по учебному объёму; координаты и зеркальная реконструкция не создавались. Возможна многокомпонентность сесамоида; это не автоматически перелом или дополнительная обязательная кость.",
+    "note": "Источник модели: КТ замороженного тела Visible Human Male (NLM), срезы 1700–1849. Пара узелков у ладонной поверхности головки I пястной кости опознана визуально на срезах; сегментация и поверхность построены автоматически; КТ-кость I пястной совмещена с I пястной BodyParts3D той же стороны (подобие, масштаб 1,003–1,007; медианная ошибка 0,75–0,80 мм). Лучевая/локтевая определены по положению: локтевая ближе ко II пястной кости и к приводящей мышце (её сухожилие прикрепляется к локтевому сесамоиду), лучевая прилежит к короткому сгибателю (прикрепляется к лучевому); в модели сухожилие длинного сгибателя проходит рядом с обеими. Размеры около 4–5 мм. Это не модель образца BodyParts3D и не независимая анатомическая приёмка.",
     "refs": [
       {
         "id": "arm_forearm_sesamoid_chen2015",
@@ -2363,8 +2363,63 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.11.001: collective entry only",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Adductor pollicis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/adductor-pollicis-14218352",
+        "locator": "Insertion: \"primary insertion is onto the ulnar sesamoid bone and the ulnar side of the base of the proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Ebraheim N. — Anatomy of adductor pollicis (Orthopaedic Principles)",
+        "url": "https://orthopaedicprinciples.com/anatomy-of-adductor-pollicis/",
+        "locator": "Insertion: \"The tendon inserts into the ulnar sesamoid bone of the thumb.\"",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Wheeless — Flexor pollicis brevis",
+        "url": "https://www.wheelessonline.com/bones/hand/flexor-pollicis-brevis/",
+        "locator": "Discussion: tendon \"inserts into radial sesamoid & radial tubercle of proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Flexor pollicis brevis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/flexor-pollicis-brevis-14218224",
+        "locator": "Superficial head: sesamoid \"embedded within its insertion tendon\"; insertion on the radial side of the proximal phalanx base.",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Courtesy of the U.S. National Library of Medicine — Visible Human Project (Male CT)",
+        "url": "https://www.nlm.nih.gov/research/visible/getting_data.html",
+        "locator": "radiological/frozenCT, slices 1700–1849; NLM Terms and Conditions",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-25"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная реконструкция по КТ другого тела (Visible Human Male, NLM): форма сглажена разрешением КТ 0,94×0,94×1 мм, положение получено совмещением I пястной кости КТ с моделью атласа. Суставные фасетки, ладонная пластинка и точная форма не подтверждены.",
+    "modelRegionLabel": "Сесамовидные кости I пальца (КТ Visible Human)",
+    "modelFile": "models/vhp-male/thumb-sesamoids/sesamoid_mcp1_radial_right.glb",
+    "modelLicense": "models/vhp-male/thumb-sesamoids/LICENSE-MODELS.txt",
+    "modelAttribution": "Courtesy of the U.S. National Library of Medicine · условия и изменения",
+    "modelOrigin": {
+      "dataset": "NLM Visible Human Project, Male, frozen CT",
+      "slices": [
+        1700,
+        1849
+      ],
+      "registration": "CT I metacarpal -> BodyParts3D I metacarpal, rigid + uniform scale"
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+      "admissionRule": "external_ct_registered_to_atlas_bone"
+    }
   },
   "sesamoid_mcp1_ulnar_right": {
     "ru": "Локтевая сесамовидная кость большого пальца кисти справа",
@@ -2380,7 +2435,7 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "right",
-    "noModel": true,
+    "noModel": false,
     "collectiveCode": "A02.4.11.001",
     "scopeId": "B3",
     "contextTargets": [
@@ -2390,7 +2445,7 @@ Object.assign(window.ATLAS.bones,{
     "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
     "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
     "x": "Локтевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
-    "note": "Именованной и анатомически подтверждённой модели нет. Правая сторона указана по учебному объёму; координаты и зеркальная реконструкция не создавались. Возможна многокомпонентность сесамоида; это не автоматически перелом или дополнительная обязательная кость.",
+    "note": "Источник модели: КТ замороженного тела Visible Human Male (NLM), срезы 1700–1849. Пара узелков у ладонной поверхности головки I пястной кости опознана визуально на срезах; сегментация и поверхность построены автоматически; КТ-кость I пястной совмещена с I пястной BodyParts3D той же стороны (подобие, масштаб 1,003–1,007; медианная ошибка 0,75–0,80 мм). Лучевая/локтевая определены по положению: локтевая ближе ко II пястной кости и к приводящей мышце (её сухожилие прикрепляется к локтевому сесамоиду), лучевая прилежит к короткому сгибателю (прикрепляется к лучевому); в модели сухожилие длинного сгибателя проходит рядом с обеими. Размеры около 4–5 мм. Это не модель образца BodyParts3D и не независимая анатомическая приёмка.",
     "refs": [
       {
         "id": "arm_forearm_sesamoid_chen2015",
@@ -2423,8 +2478,63 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.11.001: collective entry only",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Adductor pollicis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/adductor-pollicis-14218352",
+        "locator": "Insertion: \"primary insertion is onto the ulnar sesamoid bone and the ulnar side of the base of the proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Ebraheim N. — Anatomy of adductor pollicis (Orthopaedic Principles)",
+        "url": "https://orthopaedicprinciples.com/anatomy-of-adductor-pollicis/",
+        "locator": "Insertion: \"The tendon inserts into the ulnar sesamoid bone of the thumb.\"",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Wheeless — Flexor pollicis brevis",
+        "url": "https://www.wheelessonline.com/bones/hand/flexor-pollicis-brevis/",
+        "locator": "Discussion: tendon \"inserts into radial sesamoid & radial tubercle of proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Flexor pollicis brevis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/flexor-pollicis-brevis-14218224",
+        "locator": "Superficial head: sesamoid \"embedded within its insertion tendon\"; insertion on the radial side of the proximal phalanx base.",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Courtesy of the U.S. National Library of Medicine — Visible Human Project (Male CT)",
+        "url": "https://www.nlm.nih.gov/research/visible/getting_data.html",
+        "locator": "radiological/frozenCT, slices 1700–1849; NLM Terms and Conditions",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-25"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная реконструкция по КТ другого тела (Visible Human Male, NLM): форма сглажена разрешением КТ 0,94×0,94×1 мм, положение получено совмещением I пястной кости КТ с моделью атласа. Суставные фасетки, ладонная пластинка и точная форма не подтверждены.",
+    "modelRegionLabel": "Сесамовидные кости I пальца (КТ Visible Human)",
+    "modelFile": "models/vhp-male/thumb-sesamoids/sesamoid_mcp1_ulnar_right.glb",
+    "modelLicense": "models/vhp-male/thumb-sesamoids/LICENSE-MODELS.txt",
+    "modelAttribution": "Courtesy of the U.S. National Library of Medicine · условия и изменения",
+    "modelOrigin": {
+      "dataset": "NLM Visible Human Project, Male, frozen CT",
+      "slices": [
+        1700,
+        1849
+      ],
+      "registration": "CT I metacarpal -> BodyParts3D I metacarpal, rigid + uniform scale"
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+      "admissionRule": "external_ct_registered_to_atlas_bone"
+    }
   },
   "scaphoid_left": {
     "ru": "Ладьевидная кость слева",
@@ -4224,7 +4334,7 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "collectiveCode": "A02.4.11.001",
     "scopeId": "B2",
     "contextTargets": [
@@ -4233,7 +4343,7 @@ Object.assign(window.ATLAS.bones,{
     "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
     "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
     "x": "Лучевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Источник модели: КТ замороженного тела Visible Human Male (NLM), срезы 1700–1849. Пара узелков у ладонной поверхности головки I пястной кости опознана визуально на срезах; сегментация и поверхность построены автоматически; КТ-кость I пястной совмещена с I пястной BodyParts3D той же стороны (подобие, масштаб 1,003–1,007; медианная ошибка 0,75–0,80 мм). Лучевая/локтевая определены по положению: локтевая ближе ко II пястной кости и к приводящей мышце (её сухожилие прикрепляется к локтевому сесамоиду), лучевая прилежит к короткому сгибателю (прикрепляется к лучевому); в модели сухожилие длинного сгибателя проходит рядом с обеими. Размеры около 4–5 мм. Это не модель образца BodyParts3D и не независимая анатомическая приёмка.",
     "refs": [
       {
         "id": "arm_forearm_sesamoid_chen2015",
@@ -4266,8 +4376,63 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.11.001: collective entry only",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Adductor pollicis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/adductor-pollicis-14218352",
+        "locator": "Insertion: \"primary insertion is onto the ulnar sesamoid bone and the ulnar side of the base of the proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Ebraheim N. — Anatomy of adductor pollicis (Orthopaedic Principles)",
+        "url": "https://orthopaedicprinciples.com/anatomy-of-adductor-pollicis/",
+        "locator": "Insertion: \"The tendon inserts into the ulnar sesamoid bone of the thumb.\"",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Wheeless — Flexor pollicis brevis",
+        "url": "https://www.wheelessonline.com/bones/hand/flexor-pollicis-brevis/",
+        "locator": "Discussion: tendon \"inserts into radial sesamoid & radial tubercle of proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Flexor pollicis brevis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/flexor-pollicis-brevis-14218224",
+        "locator": "Superficial head: sesamoid \"embedded within its insertion tendon\"; insertion on the radial side of the proximal phalanx base.",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Courtesy of the U.S. National Library of Medicine — Visible Human Project (Male CT)",
+        "url": "https://www.nlm.nih.gov/research/visible/getting_data.html",
+        "locator": "radiological/frozenCT, slices 1700–1849; NLM Terms and Conditions",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-25"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная реконструкция по КТ другого тела (Visible Human Male, NLM): форма сглажена разрешением КТ 0,94×0,94×1 мм, положение получено совмещением I пястной кости КТ с моделью атласа. Суставные фасетки, ладонная пластинка и точная форма не подтверждены.",
+    "modelRegionLabel": "Сесамовидные кости I пальца (КТ Visible Human)",
+    "modelFile": "models/vhp-male/thumb-sesamoids/sesamoid_mcp1_radial_left.glb",
+    "modelLicense": "models/vhp-male/thumb-sesamoids/LICENSE-MODELS.txt",
+    "modelAttribution": "Courtesy of the U.S. National Library of Medicine · условия и изменения",
+    "modelOrigin": {
+      "dataset": "NLM Visible Human Project, Male, frozen CT",
+      "slices": [
+        1700,
+        1849
+      ],
+      "registration": "CT I metacarpal -> BodyParts3D I metacarpal, rigid + uniform scale"
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+      "admissionRule": "external_ct_registered_to_atlas_bone"
+    }
   },
   "sesamoid_mcp1_ulnar_left": {
     "ru": "Локтевая сесамовидная кость большого пальца кисти слева",
@@ -4283,7 +4448,7 @@ Object.assign(window.ATLAS.bones,{
     "sub": "hand",
     "sec": "arm",
     "side": "left",
-    "noModel": true,
+    "noModel": false,
     "collectiveCode": "A02.4.11.001",
     "scopeId": "B3",
     "contextTargets": [
@@ -4292,7 +4457,7 @@ Object.assign(window.ATLAS.bones,{
     "nomenclatureStatus": "descriptive_individual_name_collective_TA98_term",
     "termScopeNote": "Латынь и код TA98 относятся к группе сесамовидных костей, не к отдельному официально кодированному лучевому/локтевому экземпляру. Русское название описательное.",
     "x": "Локтевая кость типичной пары на ладонной стороне I пястно-фалангового сустава. Эти кости включены в комплекс ладонной пластинки. Наличие пары в типичном учебном каталоге не доказывает её форму на данном образце.",
-    "note": "Подтверждённой 3D-модели этой левой кости нет. Координаты, размеры и маски не назначены; правая геометрия не отражалась. Плечевая кость слева служит только для ориентации, не заменяет кисть.",
+    "note": "Источник модели: КТ замороженного тела Visible Human Male (NLM), срезы 1700–1849. Пара узелков у ладонной поверхности головки I пястной кости опознана визуально на срезах; сегментация и поверхность построены автоматически; КТ-кость I пястной совмещена с I пястной BodyParts3D той же стороны (подобие, масштаб 1,003–1,007; медианная ошибка 0,75–0,80 мм). Лучевая/локтевая определены по положению: локтевая ближе ко II пястной кости и к приводящей мышце (её сухожилие прикрепляется к локтевому сесамоиду), лучевая прилежит к короткому сгибателю (прикрепляется к лучевому); в модели сухожилие длинного сгибателя проходит рядом с обеими. Размеры около 4–5 мм. Это не модель образца BodyParts3D и не независимая анатомическая приёмка.",
     "refs": [
       {
         "id": "arm_forearm_sesamoid_chen2015",
@@ -4325,48 +4490,109 @@ Object.assign(window.ATLAS.bones,{
         "locator": "A02.4.11.001: collective entry only",
         "access": "official_list",
         "checked": "2026-10-18"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Adductor pollicis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/adductor-pollicis-14218352",
+        "locator": "Insertion: \"primary insertion is onto the ulnar sesamoid bone and the ulnar side of the base of the proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Ebraheim N. — Anatomy of adductor pollicis (Orthopaedic Principles)",
+        "url": "https://orthopaedicprinciples.com/anatomy-of-adductor-pollicis/",
+        "locator": "Insertion: \"The tendon inserts into the ulnar sesamoid bone of the thumb.\"",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Wheeless — Flexor pollicis brevis",
+        "url": "https://www.wheelessonline.com/bones/hand/flexor-pollicis-brevis/",
+        "locator": "Discussion: tendon \"inserts into radial sesamoid & radial tubercle of proximal phalanx\".",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "IMAIOS e-Anatomy — Flexor pollicis brevis",
+        "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/flexor-pollicis-brevis-14218224",
+        "locator": "Superficial head: sesamoid \"embedded within its insertion tendon\"; insertion on the radial side of the proximal phalanx base.",
+        "scope": "sesamoid_muscle_relation",
+        "checked": "2026-10-25"
+      },
+      {
+        "title": "Courtesy of the U.S. National Library of Medicine — Visible Human Project (Male CT)",
+        "url": "https://www.nlm.nih.gov/research/visible/getting_data.html",
+        "locator": "radiological/frozenCT, slices 1700–1849; NLM Terms and Conditions",
+        "scope": "geometry_provenance",
+        "checked": "2026-10-25"
       }
-    ]
+    ],
+    "modelStatus": "educational_limited",
+    "modelNotice": "Учебная реконструкция по КТ другого тела (Visible Human Male, NLM): форма сглажена разрешением КТ 0,94×0,94×1 мм, положение получено совмещением I пястной кости КТ с моделью атласа. Суставные фасетки, ладонная пластинка и точная форма не подтверждены.",
+    "modelRegionLabel": "Сесамовидные кости I пальца (КТ Visible Human)",
+    "modelFile": "models/vhp-male/thumb-sesamoids/sesamoid_mcp1_ulnar_left.glb",
+    "modelLicense": "models/vhp-male/thumb-sesamoids/LICENSE-MODELS.txt",
+    "modelAttribution": "Courtesy of the U.S. National Library of Medicine · условия и изменения",
+    "modelOrigin": {
+      "dataset": "NLM Visible Human Project, Male, frozen CT",
+      "slices": [
+        1700,
+        1849
+      ],
+      "registration": "CT I metacarpal -> BodyParts3D I metacarpal, rigid + uniform scale"
+    },
+    "modelReview": {
+      "educationalAcceptance": true,
+      "fullAnatomicalAcceptance": false,
+      "report": "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+      "admissionRule": "external_ct_registered_to_atlas_bone"
+    }
   }
 });
 for(const [id,patch] of Object.entries({
-  "phalanx_dist_5": {
+  "metacarpal_4": {
     "side": "right"
   },
-  "capitate": {
+  "hamate": {
     "side": "right"
   },
-  "phalanx_mid_4": {
-    "side": "right"
-  },
-  "pisiform": {
-    "side": "right"
-  },
-  "trapezium": {
-    "side": "right"
-  },
-  "metacarpal_5": {
-    "side": "right"
-  },
-  "phalanx_dist_1": {
-    "side": "right"
-  },
-  "phalanx_dist_2": {
-    "side": "right"
-  },
-  "phalanx_dist_3": {
-    "side": "right"
-  },
-  "trapezoid": {
+  "triquetrum": {
     "side": "right"
   },
   "flexor_retinaculum": {
     "side": "right"
   },
-  "phalanx_mid_2": {
+  "trapezium": {
+    "side": "right"
+  },
+  "metacarpal_1": {
+    "side": "right"
+  },
+  "phalanx_dist_5": {
+    "side": "right"
+  },
+  "phalanx_dist_1": {
     "side": "right"
   },
   "phalanx_prox_5": {
+    "side": "right"
+  },
+  "phalanx_dist_4": {
+    "side": "right"
+  },
+  "metacarpal_3": {
+    "side": "right"
+  },
+  "phalanx_prox_3": {
+    "side": "right"
+  },
+  "metacarpal_2": {
+    "side": "right"
+  },
+  "capitate": {
+    "side": "right"
+  },
+  "phalanx_prox_2": {
     "side": "right"
   },
   "lunate": {
@@ -4375,107 +4601,41 @@ for(const [id,patch] of Object.entries({
   "phalanx_mid_3": {
     "side": "right"
   },
-  "phalanx_prox_2": {
-    "side": "right"
-  },
-  "phalanx_dist_4": {
-    "side": "right"
-  },
   "phalanx_mid_5": {
-    "side": "right"
-  },
-  "metacarpal_3": {
-    "side": "right"
-  },
-  "metacarpal_4": {
     "side": "right"
   },
   "phalanx_prox_1": {
     "side": "right"
   },
-  "scaphoid": {
-    "side": "right"
-  },
-  "phalanx_prox_3": {
-    "side": "right"
-  },
-  "triquetrum": {
+  "phalanx_mid_4": {
     "side": "right"
   },
   "phalanx_prox_4": {
     "side": "right"
   },
-  "hamate": {
+  "pisiform": {
     "side": "right"
   },
-  "metacarpal_1": {
+  "phalanx_dist_3": {
     "side": "right"
   },
-  "metacarpal_2": {
+  "phalanx_dist_2": {
+    "side": "right"
+  },
+  "scaphoid": {
+    "side": "right"
+  },
+  "trapezoid": {
+    "side": "right"
+  },
+  "metacarpal_5": {
+    "side": "right"
+  },
+  "phalanx_mid_2": {
     "side": "right"
   }
 })) Object.assign(window.ATLAS.bones[id],patch);
 for(const [id,patch] of Object.entries({
-  "fibula": {
-    "side": "right",
-    "ru": "Правая малоберцовая кость",
-    "refs": [
-      {
-        "id": "lower_proximal_gray_fibula",
-        "title": "Gray / Lewis (1918) — fibula",
-        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_sobotta_fibula",
-        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
-        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Fibula, printed p.101, Figs.148–152",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_ta98",
-        "title": "FIPAT / IFAA — TA98, bones of lower limb",
-        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
-        "locator": "A02.5.04–07; names, not specimen geometry",
-        "access": "official_list",
-        "checked": "2026-10-19"
-      }
-    ]
-  },
-  "patella": {
-    "side": "right",
-    "ru": "Правый надколенник",
-    "refs": [
-      {
-        "id": "lower_proximal_gray_patella",
-        "title": "Gray / Lewis (1918) — patella",
-        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
-        "locator": "6c.4: surfaces, borders, apex; PDF pp.260–262",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_sobotta_patella",
-        "title": "Sobotta / McMurrich (1914), Vol. I — patella",
-        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
-        "locator": "Patella, printed p.99, Figs.142–143",
-        "access": "full_text",
-        "checked": "2026-10-19"
-      },
-      {
-        "id": "lower_proximal_ta98",
-        "title": "FIPAT / IFAA — TA98, bones of lower limb",
-        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
-        "locator": "A02.5.04–07; names, not specimen geometry",
-        "access": "official_list",
-        "checked": "2026-10-19"
-      }
-    ]
-  },
   "femur": {
     "side": "right",
     "ru": "Правая бедренная кость",
@@ -4506,6 +4666,36 @@ for(const [id,patch] of Object.entries({
       }
     ]
   },
+  "fibula": {
+    "side": "right",
+    "ru": "Правая малоберцовая кость",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_fibula",
+        "title": "Gray / Lewis (1918) — fibula",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.6: extremities, borders/surfaces; PDF pp.270–273",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_fibula",
+        "title": "Sobotta / McMurrich (1914), Vol. I — fibula",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Fibula, printed p.101, Figs.148–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
   "tibia": {
     "side": "right",
     "ru": "Правая большеберцовая кость",
@@ -4523,6 +4713,36 @@ for(const [id,patch] of Object.entries({
         "title": "Sobotta / McMurrich (1914), Vol. I — tibia",
         "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
         "locator": "Tibia, printed pp.99–101, Figs.144–147,150–152",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_ta98",
+        "title": "FIPAT / IFAA — TA98, bones of lower limb",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH1027%20A2F%20EN.htm",
+        "locator": "A02.5.04–07; names, not specimen geometry",
+        "access": "official_list",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "patella": {
+    "side": "right",
+    "ru": "Правый надколенник",
+    "refs": [
+      {
+        "id": "lower_proximal_gray_patella",
+        "title": "Gray / Lewis (1918) — patella",
+        "url": "https://resources.saylor.org/wwwresources/archived/site/wp-content/uploads/2011/07/BIO302-ch2with6c6d.pdf",
+        "locator": "6c.4: surfaces, borders, apex; PDF pp.260–262",
+        "access": "full_text",
+        "checked": "2026-10-19"
+      },
+      {
+        "id": "lower_proximal_sobotta_patella",
+        "title": "Sobotta / McMurrich (1914), Vol. I — patella",
+        "url": "https://archive.org/download/atlastextbookofh01sobouoft/atlastextbookofh01sobouoft_djvu.txt",
+        "locator": "Patella, printed p.99, Figs.142–143",
         "access": "full_text",
         "checked": "2026-10-19"
       },
