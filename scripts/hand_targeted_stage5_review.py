@@ -4,6 +4,7 @@ from left_carpals1_stage6 import admit, review_geometry
 from left_carpals2_stage6 import admit as admit_distal, review_geometry as review_distal_geometry
 from left_phalanges_stage6 import admit as admit_phalanges, review_geometry as review_phalange_geometry
 from left_metacarpals_stage6 import admit as admit_metacarpals, review_geometry as review_metacarpal_geometry
+from left_baseline_stage6 import admit as admit_baseline
 from hand_stage5_review import (CARPALS, METACARPALS, PHALANGES, SESAMOID_BONES,
     GRAY, SOB, NCBI, CARPAL, TA, ref as base_ref, extra, joint)
 
@@ -150,6 +151,7 @@ admit(LEFT_BONES)
 admit_distal(LEFT_BONES)
 admit_metacarpals(LEFT_BONES)
 admit_phalanges(LEFT_BONES)
+admit_baseline(LEFT_BONES, 'hand')
 
 def left_records(right_records):
     """Only reviewed anatomical definitions; every geometric and muscle link discarded."""

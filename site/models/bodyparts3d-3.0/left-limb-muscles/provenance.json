@@ -1,0 +1,2568 @@
+{
+  "release": "BodyParts3D 3.0 / STL mirror f0eeb6e8",
+  "author": "The Database Center for Life Science (DBCLS)",
+  "license": "CC BY-SA 2.1 Japan",
+  "derivativeLicense": "CC BY-SA 2.1 Japan",
+  "evidence": "research/evidence-runs/stage7-left-limb-muscles-2026-10-25T07-58-23-340Z-lYgS3n",
+  "files": [
+    {
+      "id": "deltoid_left",
+      "right": "deltoid",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/deltoid_left.glb",
+      "sha256": "731c3f7aa8fb44c7914c00bf3b111af51d8483d638383fd065a22f8371c5fbe8",
+      "bytes": 139920,
+      "rawSHA256": "f50b8210669a7d9c878fe61fe3e0a197e3a21d701f8a9bd77d119655574c9a0a",
+      "parts": [
+        {
+          "part": "clav",
+          "node": "m|deltoid_left|clav",
+          "leftFMA": "FMA34681",
+          "leftName": "clavicular part of left deltoid",
+          "sourceSHA256": "74a6b52b59635579a69047bd98c544a6f4427f270ecc5abe78b70109304342d4",
+          "sourceTriangles": 28486,
+          "triangles": 3780,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA34680",
+          "rightTriangles": 3780
+        },
+        {
+          "part": "acrom",
+          "node": "m|deltoid_left|acrom",
+          "leftFMA": "FMA34683",
+          "leftName": "acromial part of left deltoid",
+          "sourceSHA256": "82c39b100f36dd92ea51bf00cd233486d5b2e1c7dfdd265a85b8185faa0e07ae",
+          "sourceTriangles": 29076,
+          "triangles": 3856,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA34682",
+          "rightTriangles": 3856
+        },
+        {
+          "part": "spin",
+          "node": "m|deltoid_left|spin",
+          "leftFMA": "FMA34685",
+          "leftName": "spinal part of left deltoid",
+          "sourceSHA256": "d87ce42e4e42b8332e1677d35d59201fbc825de745ca77f9740741ef8bd42b3a",
+          "sourceTriangles": 44628,
+          "triangles": 5720,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA34684",
+          "rightTriangles": 5720
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "supraspinatus_left",
+      "right": "supraspinatus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/supraspinatus_left.glb",
+      "sha256": "7602da308c7799da6194b8e58b7099160db8e9c7d28f65241e21be1e8d9b5222",
+      "bytes": 21148,
+      "rawSHA256": "e4d817156a606c098790332da9c162e531b5c82ae39cd56390632e66b0ad4491",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|supraspinatus_left|",
+          "leftFMA": "FMA32545",
+          "leftName": "left supraspinatus",
+          "sourceSHA256": "7f31433db96863dc73bb33bfddb779d24fed88634c011a768d60c21b6153d0fe",
+          "sourceTriangles": 14820,
+          "triangles": 1860,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA32544",
+          "rightTriangles": 1860
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "infraspinatus_left",
+      "right": "infraspinatus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/infraspinatus_left.glb",
+      "sha256": "07ae240d5589fe1c14a991f80be6cdfa28c3b995f1837f2a0298e244aa617469",
+      "bytes": 44932,
+      "rawSHA256": "cf676d195fa7ec63e1f57f044826ffc34a0451df453ba9f581ef0044818905d5",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|infraspinatus_left|",
+          "leftFMA": "FMA32548",
+          "leftName": "left infraspinatus muscle",
+          "sourceSHA256": "f25e37c4b771627d7c11ca5fc45d1ba50705971eae4d64c8f66e50804826bf98",
+          "sourceTriangles": 31898,
+          "triangles": 4118,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA32547",
+          "rightTriangles": 4118
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "teres_minor_left",
+      "right": "teres_minor",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/teres_minor_left.glb",
+      "sha256": "57d46029713b5b1cb456d3c68c49eddb229d2284c88c92237e9dcec3619a18ed",
+      "bytes": 22188,
+      "rawSHA256": "3a9b9add0cf902c165810f9e3212ae6548a734b128a2805eb51f74516bbc3e08",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|teres_minor_left|",
+          "leftFMA": "FMA32554",
+          "leftName": "left teres minor",
+          "sourceSHA256": "adeb7d2af8c9cdb3e5a8294159efb73f53eba54861a6649c268cc8663e01af62",
+          "sourceTriangles": 15150,
+          "triangles": 1978,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA32553",
+          "rightTriangles": 1978
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "teres_major_left",
+      "right": "teres_major",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/teres_major_left.glb",
+      "sha256": "adb7b027fb7823413f4485c6c6d97b0a975eb5ded8cf8581ee5d186c3bdaf842",
+      "bytes": 24992,
+      "rawSHA256": "015fc07e081f8c803faadc5047d69b6db20bc7ccf22848c06fc22a488c51bf7f",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|teres_major_left|",
+          "leftFMA": "FMA32552",
+          "leftName": "left teres major",
+          "sourceSHA256": "e3cf329ff6453080967cb3a220d4f514095e52774b5c53470b947e969bb18744",
+          "sourceTriangles": 17112,
+          "triangles": 2228,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA32551",
+          "rightTriangles": 2228
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "subscapularis_left",
+      "right": "subscapularis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/subscapularis_left.glb",
+      "sha256": "3b58e0211d9d77dfcad1a81b34710882db8a4d0080f407a76459e59416405e6e",
+      "bytes": 42064,
+      "rawSHA256": "22613a5552b57694c7bdcd32d2d894e5f650b86552f23ecf7500151d562aad0b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|subscapularis_left|",
+          "leftFMA": "FMA13415",
+          "leftName": "left subscapularis",
+          "sourceSHA256": "0b9ac7108dd886892ebbe2f852f86ee1dca43a956333865fe144fd4ecc739d7b",
+          "sourceTriangles": 30670,
+          "triangles": 3980,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA13414",
+          "rightTriangles": 3980
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "coracobrachialis_left",
+      "right": "coracobrachialis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/coracobrachialis_left.glb",
+      "sha256": "57d28b5aa966d3658de9c4308e0a75ce21ce9b1d14e5377399bc9078d0c5e3b3",
+      "bytes": 17004,
+      "rawSHA256": "0bc6729d4434385cf17732a12144f286e146659180111091826b331c340152aa",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|coracobrachialis_left|",
+          "leftFMA": "FMA37666",
+          "leftName": "left coracobrachialis",
+          "sourceSHA256": "ae84a84b5e10b0494b381e43ecff5fd92ffb462bb30bfb07283dde68191472de",
+          "sourceTriangles": 11112,
+          "triangles": 1514,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37665",
+          "rightTriangles": 1514
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "biceps_brachii_left",
+      "right": "biceps_brachii",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/biceps_brachii_left.glb",
+      "sha256": "877b7426e87a9903afe00b75de1b01e009ef11516edbac83dff311063e6c29d0",
+      "bytes": 81416,
+      "rawSHA256": "c84fc8cbb863b4aec62ec5b4b80b78f7bbe7735f99d7999dbfdbefcfaf3e1a72",
+      "parts": [
+        {
+          "part": "long",
+          "node": "m|biceps_brachii_left|long",
+          "leftFMA": "FMA37687",
+          "leftName": "long head of left biceps brachii",
+          "sourceSHA256": "8a0d8998ec26224e8f3ef63c36190bcf6b187007bd2d4b62c60c898f0ba12c2c",
+          "sourceTriangles": 32906,
+          "triangles": 4194,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37686",
+          "rightTriangles": 4194
+        },
+        {
+          "part": "short",
+          "node": "m|biceps_brachii_left|short",
+          "leftFMA": "FMA37685",
+          "leftName": "short head of left biceps brachii",
+          "sourceSHA256": "dcffdccfcbde15923e92aca1a56a006f911921f8fe4d66b7dd57408fdb792406",
+          "sourceTriangles": 28708,
+          "triangles": 3618,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37684",
+          "rightTriangles": 3618
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "brachialis_left",
+      "right": "brachialis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/brachialis_left.glb",
+      "sha256": "2f3582595d0c7be5d67fbaa2983c77b61050664c44f062fcf1c523e43890e877",
+      "bytes": 47816,
+      "rawSHA256": "bbddff8cc9cb14f8ba8a3e6a69899dcc9de128f679bb8d4486e46f0d46ec5c9b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|brachialis_left|",
+          "leftFMA": "FMA37669",
+          "leftName": "left brachialis",
+          "sourceSHA256": "ebada57b7f34fac71abc0a17c5c91c531778997b7a698be66e9c5879c241b143",
+          "sourceTriangles": 34686,
+          "triangles": 4548,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37668",
+          "rightTriangles": 4548
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "triceps_brachii_left",
+      "right": "triceps_brachii",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/triceps_brachii_left.glb",
+      "sha256": "529a3af15919780af49dcc31bd09093bafcf2f2ebd683abdf5bba23b312add97",
+      "bytes": 139748,
+      "rawSHA256": "82cdcb5fbcec6b0a1433730303c4d2a82a755cff39eacae975961cfd1feb62df",
+      "parts": [
+        {
+          "part": "long",
+          "node": "m|triceps_brachii_left|long",
+          "leftFMA": "FMA37700",
+          "leftName": "long head of left triceps brachii",
+          "sourceSHA256": "8f289dc2825e02602c3b7e42b2831c582e6958b74788c28acaa7c765c8c4acd9",
+          "sourceTriangles": 38128,
+          "triangles": 5134,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37699",
+          "rightTriangles": 5134
+        },
+        {
+          "part": "lat",
+          "node": "m|triceps_brachii_left|lat",
+          "leftFMA": "FMA37698",
+          "leftName": "lateral head of left triceps brachii",
+          "sourceSHA256": "8bda791fe4d142e9a9a0060027328bd88734e95d6be4651fe82b111446e6b43a",
+          "sourceTriangles": 35974,
+          "triangles": 4718,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37697",
+          "rightTriangles": 4718
+        },
+        {
+          "part": "med",
+          "node": "m|triceps_brachii_left|med",
+          "leftFMA": "FMA37696",
+          "leftName": "medial head of left triceps brachii",
+          "sourceSHA256": "fc0ec8d87af90596edec36ddc35ddccb06787c9db53c439e10c6bd7811a7c4e2",
+          "sourceTriangles": 26226,
+          "triangles": 3492,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37695",
+          "rightTriangles": 3492
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "anconeus_left",
+      "right": "anconeus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/anconeus_left.glb",
+      "sha256": "b47ccf94041ba230b50fc24680e031bbf8fa47221a1f0946b380513eb31a760f",
+      "bytes": 20848,
+      "rawSHA256": "4e4283ce2fc006ece7dbc7d5f503ccb99f065a7a662108388772ede2f00c489d",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|anconeus_left|",
+          "leftFMA": "FMA37706",
+          "leftName": "left anconeus",
+          "sourceSHA256": "c5117d467b7d31c9026fabe8a5d9e8f3d91d4a5f993fedc95a8678f45a0d6786",
+          "sourceTriangles": 14182,
+          "triangles": 1872,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37705",
+          "rightTriangles": 1874
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "pronator_teres_left",
+      "right": "pronator_teres",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/pronator_teres_left.glb",
+      "sha256": "ce9a1be056c6f980e0ea1ea98af5a9ea540a75da9907929fe84a02295ec7e50b",
+      "bytes": 51696,
+      "rawSHA256": "847409369b73a53fac7c45020f02612bd40dd3ca21395fa5c5ec9762f1b53552",
+      "parts": [
+        {
+          "part": "hum",
+          "node": "m|pronator_teres_left|hum",
+          "leftFMA": "FMA38561",
+          "leftName": "humeral head of left pronator teres",
+          "sourceSHA256": "8953ea578efe952acad81d69b41867d966079fc2b790ae2c076b86655c2f2317",
+          "sourceTriangles": 25376,
+          "triangles": 3374,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38560",
+          "rightTriangles": 3376
+        },
+        {
+          "part": "uln",
+          "node": "m|pronator_teres_left|uln",
+          "leftFMA": "FMA38563",
+          "leftName": "ulnar head of left pronator teres",
+          "sourceSHA256": "83f26ebbe573f4714bb210670a2d395f75a794d8bbc1d7587aea596215c6b322",
+          "sourceTriangles": 11406,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38562",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_carpi_radialis_left",
+      "right": "flexor_carpi_radialis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_radialis_left.glb",
+      "sha256": "c6e3fcc85e3112ea75c0ee64f62256efb7990eb1085ab308a2da91635b689b2b",
+      "bytes": 23832,
+      "rawSHA256": "f6606ea5e68b8284ca8d47d5e276a1becd5acafc712268540588bab018883ccf",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_carpi_radialis_left|",
+          "leftFMA": "FMA38461",
+          "leftName": "left flexor carpi radialis",
+          "sourceSHA256": "4448471c7a1a3df8f1986a562cd5e4ab8b686d20f140e7cd0fbec0e848fde517",
+          "sourceTriangles": 15930,
+          "triangles": 2172,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38460",
+          "rightTriangles": 2172
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "palmaris_longus_left",
+      "right": "palmaris_longus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/palmaris_longus_left.glb",
+      "sha256": "97d3bd3f2b8b399160a2df2dd742eccfa4a4aa2bcff4e705efbd7db9f8c8c656",
+      "bytes": 60324,
+      "rawSHA256": "42512c09e47b9dac9a87ada6bc618d6f61f0ab42298bb86681f6f2ab941aa466",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|palmaris_longus_left|",
+          "leftFMA": "FMA38464",
+          "leftName": "left palmaris longus",
+          "sourceSHA256": "d82e2758042c12d9917c73bec724b7cb72e2ed05b120289ef714c9216e0df535",
+          "sourceTriangles": 43062,
+          "triangles": 5770,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38463",
+          "rightTriangles": 5770
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_carpi_ulnaris_left",
+      "right": "flexor_carpi_ulnaris",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_ulnaris_left.glb",
+      "sha256": "77b44daf68dba3c063c2f2278f76de12b438c797a31f7c20153c99e00ba0ab39",
+      "bytes": 73780,
+      "rawSHA256": "6ca3ff666fa92f3297b049886940e2308c0339d66e97cf49e24e51c88b3ef0e8",
+      "parts": [
+        {
+          "part": "hum",
+          "node": "m|flexor_carpi_ulnaris_left|hum",
+          "leftFMA": "FMA38618",
+          "leftName": "humeral head of left flexor carpi ulnaris",
+          "sourceSHA256": "a10bfb3a19b5f12cd5ac63d32bceff636351a8fb278ceb68bb60db33b800918d",
+          "sourceTriangles": 40366,
+          "triangles": 5084,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38617",
+          "rightTriangles": 5084
+        },
+        {
+          "part": "uln",
+          "node": "m|flexor_carpi_ulnaris_left|uln",
+          "leftFMA": "FMA38620",
+          "leftName": "ulnar head of left flexor carpi ulnaris",
+          "sourceSHA256": "c46c956491ed9cc6bbf29147ccbcdbdf6ca4122896b1cf5923fd479278cc0001",
+          "sourceTriangles": 14676,
+          "triangles": 1976,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38619",
+          "rightTriangles": 1976
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digitorum_superficialis_left",
+      "right": "flexor_digitorum_superficialis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_superficialis_left.glb",
+      "sha256": "f435deb4d4cf752ba1fe0b0e5d4438ade344ec67ad61a51b04e03e8f4c0fcfc9",
+      "bytes": 160628,
+      "rawSHA256": "b7ae6c87c98af08411204665f65a1b9147d8d3894ef769151f8e846a262372fb",
+      "parts": [
+        {
+          "part": "humuln",
+          "node": "m|flexor_digitorum_superficialis_left|humuln",
+          "leftFMA": "FMA38639",
+          "leftName": "humeroulnar head of left flexor digitorum superficialis",
+          "sourceSHA256": "2e3ce8a8256968a9181f2e3a3d22c0c50a2e3c79d053f576f207e30af9786fb0",
+          "sourceTriangles": 130822,
+          "triangles": 13998,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38638",
+          "rightTriangles": 13998
+        },
+        {
+          "part": "rad",
+          "node": "m|flexor_digitorum_superficialis_left|rad",
+          "leftFMA": "FMA38641",
+          "leftName": "radial head of left flexor digitorum superficialis",
+          "sourceSHA256": "4b3809d0e9223a21449f8e92807d328a7717a29f3fc8d1e2bb071f3e65b480b6",
+          "sourceTriangles": 12766,
+          "triangles": 1658,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38640",
+          "rightTriangles": 1658
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digitorum_profundus_left",
+      "right": "flexor_digitorum_profundus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_profundus_left.glb",
+      "sha256": "22b90e945c64b93cdd27ccb5eabeea87a846cd2a24a34ff74a7571dcc7e4f530",
+      "bytes": 95920,
+      "rawSHA256": "63056629d80d85cf1642052eff166b23adefb821ad92abf1b09b611f4d11fc90",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_digitorum_profundus_left|",
+          "leftFMA": "FMA38480",
+          "leftName": "left flexor digitorum profundus",
+          "sourceSHA256": "26b7554bdb1d0fdf62a007603b796b80c79ddf10c19fb580bdbe604984eceba9",
+          "sourceTriangles": 72594,
+          "triangles": 9264,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA38479",
+          "rightTriangles": 9268
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_pollicis_longus_left",
+      "right": "flexor_pollicis_longus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_longus_left.glb",
+      "sha256": "d70637ebf1124b030f3d279625e82380048342bb20f1537fa8c4bf7ce09658e9",
+      "bytes": 26756,
+      "rawSHA256": "99d28fdd5fee065c1aeb795f0df7134bbec29103a73850f4a1ca544528d7a8fe",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_pollicis_longus_left|",
+          "leftFMA": "FMA38484",
+          "leftName": "left flexor pollicis longus",
+          "sourceSHA256": "5a5716817c923ae59d72f27719e95b36c6386d7ea930b633feb20650cd2d1a00",
+          "sourceTriangles": 18698,
+          "triangles": 2476,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38482",
+          "rightTriangles": 2476
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "pronator_quadratus_left",
+      "right": "pronator_quadratus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/pronator_quadratus_left.glb",
+      "sha256": "f958706c8daf794d3767e9eea1984f31c1d5f0affa39e9326c389b025f0c4f21",
+      "bytes": 20664,
+      "rawSHA256": "25ff8a5079c97089476304fc296cc8601b74cd974bf8aed3215ee1519d6ff2d7",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|pronator_quadratus_left|",
+          "leftFMA": "FMA38455",
+          "leftName": "left pronator quadratus",
+          "sourceSHA256": "ee4b92fa77c6f54e949005cdcc396190fc07268fe7f01e9fe32f751db2667aa4",
+          "sourceTriangles": 14436,
+          "triangles": 1906,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38454",
+          "rightTriangles": 1906
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "brachioradialis_left",
+      "right": "brachioradialis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/brachioradialis_left.glb",
+      "sha256": "9e5f44817286c00df291c15b406ee95bec21cdb2c2f5b81d58cdc54b419b90ee",
+      "bytes": 97228,
+      "rawSHA256": "5ce9076b0143a5cc232e2ea6480ba5f683bfd83a1c43f8a37cd356dea339eb5b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|brachioradialis_left|",
+          "leftFMA": "FMA38487",
+          "leftName": "left brachioradialis",
+          "sourceSHA256": "c0c57bd4b20d9bf241e26d54a8d509fe64920a037e8001f6da2f226f3906ee24",
+          "sourceTriangles": 73558,
+          "triangles": 9510,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38486",
+          "rightTriangles": 9510
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_carpi_radialis_longus_left",
+      "right": "extensor_carpi_radialis_longus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_longus_left.glb",
+      "sha256": "9f794004ed1031b35e69ab81be26ba57dfcc057172241f1033e7df32e98ca392",
+      "bytes": 50452,
+      "rawSHA256": "1e0c6e64c6036bb2261f072994eb45af94eb4afb561ccd52c7733c048f5fd25b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_carpi_radialis_longus_left|",
+          "leftFMA": "FMA38496",
+          "leftName": "left extensor carpi radialis longus",
+          "sourceSHA256": "0dbbcfa65637b54f2052246cb975b5180055346c4caa960a2ccc4ae221e0337f",
+          "sourceTriangles": 38276,
+          "triangles": 4828,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38495",
+          "rightTriangles": 4828
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_carpi_radialis_brevis_left",
+      "right": "extensor_carpi_radialis_brevis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_brevis_left.glb",
+      "sha256": "b8fc559c1f52c9717414d80d470bb065d083d23527585d2a6a2dd88032f7d42a",
+      "bytes": 43240,
+      "rawSHA256": "d527ec248abe229532d8993a16cf1f869516b16192d814f96248e21f95b29c5b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_carpi_radialis_brevis_left|",
+          "leftFMA": "FMA38499",
+          "leftName": "left extensor carpi radialis brevis",
+          "sourceSHA256": "28e8aaf6e6e40a4d9938971fc540217acf916c1568a9e19e2d843745aea8acc1",
+          "sourceTriangles": 33894,
+          "triangles": 4094,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38498",
+          "rightTriangles": 4094
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_digitorum_left",
+      "right": "extensor_digitorum",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_left.glb",
+      "sha256": "54217ea15360f77a02f0a09ef3ceae43246323d04861dedae755ea2582519635",
+      "bytes": 86376,
+      "rawSHA256": "1d9b631a8c1b8123da7b118902d1897fe7b3eca841f8ac302edd9ce5de5dc180",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_digitorum_left|",
+          "leftFMA": "FMA38502",
+          "leftName": "left extensor digitorum",
+          "sourceSHA256": "0c88672b10eb9bd1f934a3193a3bbb6a93150b76cc49e7e535eab2fa91d9f94c",
+          "sourceTriangles": 63656,
+          "triangles": 8376,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38501",
+          "rightTriangles": 8376
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_digiti_minimi_left",
+      "right": "extensor_digiti_minimi",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digiti_minimi_left.glb",
+      "sha256": "86cffcd90125335d506f4d456aa6d407bc4a048eb4d7e5ba80d668f590b8cec9",
+      "bytes": 30212,
+      "rawSHA256": "ec1dad72a8104ba7a4546b83ddfd63919ccb114f60d237d1c8d1bce183777776",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_digiti_minimi_left|",
+          "leftFMA": "FMA38505",
+          "leftName": "left extensor digiti minimi",
+          "sourceSHA256": "c42ccf99fc6b22e4b9c166e19e08763c8314c756a12f73c24f0f9e1dad91b16c",
+          "sourceTriangles": 21510,
+          "triangles": 2800,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38504",
+          "rightTriangles": 2800
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_carpi_ulnaris_left",
+      "right": "extensor_carpi_ulnaris",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_ulnaris_left.glb",
+      "sha256": "b4916172af3d47d0f458c206f54b4983e7d7633b535de13b350778cc3ba19c33",
+      "bytes": 66308,
+      "rawSHA256": "bd8e7ea884c4a95282a8e04dbdd5f2e698cab2b451d4ba64e211814639879972",
+      "parts": [
+        {
+          "part": "hum",
+          "node": "m|extensor_carpi_ulnaris_left|hum",
+          "leftFMA": "BP44",
+          "leftName": "humeral head of left extensor carpi ulnaris",
+          "sourceSHA256": "0a6289b261c457558b2302ccfeb9cc4eaade28f953365db0770dd4c454b1e8b9",
+          "sourceTriangles": 31700,
+          "triangles": 4112,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "BP45",
+          "rightTriangles": 4112
+        },
+        {
+          "part": "uln",
+          "node": "m|extensor_carpi_ulnaris_left|uln",
+          "leftFMA": "BP46",
+          "leftName": "ulnar head of left extensor carpi ulnaris",
+          "sourceSHA256": "1953b4716243383cc0fb5e20c97289171a21fda0b4e45c8e32537eba2907d82f",
+          "sourceTriangles": 17424,
+          "triangles": 2234,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "BP47",
+          "rightTriangles": 2234
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "supinator_left",
+      "right": "supinator",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/supinator_left.glb",
+      "sha256": "1bdcfa1f8c2c27f152841faee624130c3c9b8f0ef95051fa6d4a13ddb678de7b",
+      "bytes": 38568,
+      "rawSHA256": "d0deb41854d239cb0c6bc5ee629df7500b198d2133983e518fb41ef5604d826d",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|supinator_left|",
+          "leftFMA": "FMA38514",
+          "leftName": "left supinator",
+          "sourceSHA256": "d872f546e3fa8f3353fbfaa416d763cc2aa9f0395486a272bce9b2a36267e4cc",
+          "sourceTriangles": 26072,
+          "triangles": 3592,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38513",
+          "rightTriangles": 3592
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "abductor_pollicis_longus_left",
+      "right": "abductor_pollicis_longus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_longus_left.glb",
+      "sha256": "144caaba913026ac7065582cfb431545eb84c47d8637a2523efc4102f5d8fa2e",
+      "bytes": 34204,
+      "rawSHA256": "097035e3cb43352693e58e82dd785af9bd421fe9b3635d92dd8641745ea6e6f9",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|abductor_pollicis_longus_left|",
+          "leftFMA": "FMA38517",
+          "leftName": "left abductor pollicis longus",
+          "sourceSHA256": "3ad8239d2f981034872d9eab989fff201825ecedadf427d7dbfae6cdb0291c05",
+          "sourceTriangles": 23666,
+          "triangles": 3218,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38516",
+          "rightTriangles": 3218
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_pollicis_brevis_left",
+      "right": "extensor_pollicis_brevis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_brevis_left.glb",
+      "sha256": "07f2771b12416d5db476ef306cf43a5fdd65951154e539e34d55d8285f8100ab",
+      "bytes": 17184,
+      "rawSHA256": "19a9f7f4419f996331654bb19ff46a6fd5d5a5177f3c238a61c50510b738fb30",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_pollicis_brevis_left|",
+          "leftFMA": "FMA38520",
+          "leftName": "left extensor pollicis brevis",
+          "sourceSHA256": "f2c378ea72e9c96df0fddd8b5635b4088a783af2ab16ce2c689891842b256afd",
+          "sourceTriangles": 11624,
+          "triangles": 1522,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38519",
+          "rightTriangles": 1524
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_pollicis_longus_left",
+      "right": "extensor_pollicis_longus",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_longus_left.glb",
+      "sha256": "c1618273bff7a027c0751dd30c1b5e856564999bd6615d6718cf9cd8df863ce9",
+      "bytes": 23176,
+      "rawSHA256": "5e107dd5390738f2078e8ab2ebdb144b2cecf1b613c57ab89e9f9f68511472af",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_pollicis_longus_left|",
+          "leftFMA": "FMA38523",
+          "leftName": "left extensor pollicis longus",
+          "sourceSHA256": "1427d3b21389564faf41b9287a735107694fca326f022348d973fd1e06cf10c0",
+          "sourceTriangles": 16072,
+          "triangles": 2108,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38522",
+          "rightTriangles": 2108
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_indicis_left",
+      "right": "extensor_indicis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_indicis_left.glb",
+      "sha256": "417d585d18e1eec295d633c598b74cd071ab6cd6bcfb22123b8f1ce49c08a30b",
+      "bytes": 17172,
+      "rawSHA256": "b6ca0dcaf06772e71fd74a4eef432671809b2dfeebe399af19a223b453a149be",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_indicis_left|",
+          "leftFMA": "FMA38526",
+          "leftName": "left extensor indicis",
+          "sourceSHA256": "9ecb6dbd15fcbacaeb38f370b991630ef707b7f9dd29444a260127622bb4b2f4",
+          "sourceTriangles": 11518,
+          "triangles": 1516,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38525",
+          "rightTriangles": 1516
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "abductor_pollicis_brevis_left",
+      "right": "abductor_pollicis_brevis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_brevis_left.glb",
+      "sha256": "b547b1579c7da46b8ac05d688884c21ec8d44c5fa7594d0055d85d670e7d1b2d",
+      "bytes": 16716,
+      "rawSHA256": "93d79970f363895bedeffd96f04aadeba0bf78ab8d2899266946f159fdb3454e",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|abductor_pollicis_brevis_left|",
+          "leftFMA": "FMA37387",
+          "leftName": "left abductor pollicis brevis",
+          "sourceSHA256": "9f136ba0687c81f8783f68f94adbf5fe972d1e898c1d1235bd2877c908b88fe6",
+          "sourceTriangles": 6040,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37386",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_pollicis_brevis_left",
+      "right": "flexor_pollicis_brevis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_brevis_left.glb",
+      "sha256": "4cbbdb369e6e109c7c870b8387e87afd7d9d6ae58d9ec40d9a36920417440744",
+      "bytes": 32196,
+      "rawSHA256": "76dd6c8ad9d65289cbfd19ee922f4499f60ff84f80ad05ccc2d845d41367a8e7",
+      "parts": [
+        {
+          "part": "sup",
+          "node": "m|flexor_pollicis_brevis_left|sup",
+          "leftFMA": "FMA65199",
+          "leftName": "superficial head of left flexor pollicis brevis",
+          "sourceSHA256": "278be28df3df71757c84d38c94268c96f2417137a64fd48a487b11f7a05b6a56",
+          "sourceTriangles": 3764,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA65198",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "deep",
+          "node": "m|flexor_pollicis_brevis_left|deep",
+          "leftFMA": "FMA46111",
+          "leftName": "deep head of left flexor pollicis brevis",
+          "sourceSHA256": "ecad429e5ad839ee5178ef38e196a79b80cf0f445e86001706c7eb22a9dad91a",
+          "sourceTriangles": 3904,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA46110",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "opponens_pollicis_left",
+      "right": "opponens_pollicis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/opponens_pollicis_left.glb",
+      "sha256": "4292072a762e463158567530989a9a546496b11ed77150d738759a4da2d17907",
+      "bytes": 16608,
+      "rawSHA256": "f8cc7404c97dffb729412db06963a8dca810570e50c3acd72161d6a2da03c88f",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|opponens_pollicis_left|",
+          "leftFMA": "FMA37391",
+          "leftName": "left opponens pollicis",
+          "sourceSHA256": "f380ad869685ab500d8fb73feddfb198f7f9eff680055730972292afd19d6d04",
+          "sourceTriangles": 7582,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37390",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "adductor_pollicis_left",
+      "right": "adductor_pollicis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/adductor_pollicis_left.glb",
+      "sha256": "19614fb2c2631712aaf940d995b2f4d7dcf5f2fd51f703147420ae4767517064",
+      "bytes": 32528,
+      "rawSHA256": "565f0832766c297e6917fd9c8aaecf9181de7e68e2e3f129b8e42b00fa3f011a",
+      "parts": [
+        {
+          "part": "obl",
+          "node": "m|adductor_pollicis_left|obl",
+          "leftFMA": "FMA46122",
+          "leftName": "oblique head of left adductor pollicis",
+          "sourceSHA256": "662b10edbc3377bef1bae5b4587e5b8cac5f91b2d70309b0a605549917cc3e57",
+          "sourceTriangles": 4322,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA46121",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "transv",
+          "node": "m|adductor_pollicis_left|transv",
+          "leftFMA": "FMA46124",
+          "leftName": "transverse head of left adductor pollicis",
+          "sourceSHA256": "c1cc682d310a63e0cb6daf7292c2be30c44dc2fafde53dacb5be5709119d5324",
+          "sourceTriangles": 9282,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA46123",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "abductor_digiti_minimi_left",
+      "right": "abductor_digiti_minimi",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_left.glb",
+      "sha256": "beeef53fda8d84acb19f056164c7dcad32ebfba5a903389348e6336f072c8ecf",
+      "bytes": 16596,
+      "rawSHA256": "690ac28c5450ba65d38c424ac6e863ca7b50be19c2ac47a304a3fa0474c3f735",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|abductor_digiti_minimi_left|",
+          "leftFMA": "FMA37397",
+          "leftName": "abductor digiti minimi of left hand",
+          "sourceSHA256": "629e68dbc0c94c1414005fbbff57cdc7f115b4e6a7c016f53a65a44a7b896382",
+          "sourceTriangles": 6870,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37396",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis_left",
+      "right": "flexor_digiti_minimi_brevis",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_left.glb",
+      "sha256": "28f6dba41c03542917d4e5a05911c5d03476d8ac74e722cda838a3ad336dec6a",
+      "bytes": 16484,
+      "rawSHA256": "7b421866455b9d00cf7539f083078199aa965b5ad025451f3202316c83ccd4a5",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_digiti_minimi_brevis_left|",
+          "leftFMA": "FMA37399",
+          "leftName": "flexor digiti minimi brevis of left hand",
+          "sourceSHA256": "4523dc43c155c5cca8adb12507ecbb4f88f78446996496627565628192281ece",
+          "sourceTriangles": 3044,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37398",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "opponens_digiti_minimi_left",
+      "right": "opponens_digiti_minimi",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_left.glb",
+      "sha256": "1428aa11ad9a32175b94af0859697db247ce0e2c9455060a84bda7d197017009",
+      "bytes": 16536,
+      "rawSHA256": "769f6966ca4ecd4b1a14ed35add85647e2ec2c2dd7be542e5be3a341e977439a",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|opponens_digiti_minimi_left|",
+          "leftFMA": "FMA37401",
+          "leftName": "opponens digiti minimi of left hand",
+          "sourceSHA256": "d6e2d5ec949d5f8be7f7d79bc652c366e1b9bcb11f48de05784f2c1d995b302b",
+          "sourceTriangles": 4570,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37400",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "lumbricals_left",
+      "right": "lumbricals",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/lumbricals_left.glb",
+      "sha256": "16bec51ca886a4064e9351fc8ef1aa63afcb007f637b3b242238646e135cd083",
+      "bytes": 21824,
+      "rawSHA256": "070c9e4e7c7f4da609aff8326597e003276b8419b2ff535d4c2a7b3e0c2626a8",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|lumbricals_left|",
+          "leftFMA": "FMA42399",
+          "leftName": "set of lumbricals of left hand",
+          "sourceSHA256": "1438cbd065a9ecdf9d177a2abe78893e28c37c65505d0f181c1f7d5773bd82b5",
+          "sourceTriangles": 14930,
+          "triangles": 1978,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA42398",
+          "rightTriangles": 1978
+        }
+      ],
+      "reviewedException": "Левая сетка BP3D подходит к проксимальным фалангам II–V (зона перехода в тыльный апоневроз пальца), но не к средней фаланге II, которой касается правая (0,47 против 10,95 мм). Это различие дистальной протяжённости сухожильной части, а не другая топография; площадки прикрепления не приняты."
+    },
+    {
+      "id": "palmar_interossei_left",
+      "right": "palmar_interossei",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/palmar_interossei_left.glb",
+      "sha256": "d4df6440351bf87555f71444f0a4549e93de5f75a6fe5c0fe0e9f4c2e4acdf8c",
+      "bytes": 17056,
+      "rawSHA256": "fdf540cb6d257b4e9f18be8ef135df2238af03e6c061141d8c054bc4b7ef3fcd",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|palmar_interossei_left|",
+          "leftFMA": "FMA42403",
+          "leftName": "set of palmar interossei of left hand",
+          "sourceSHA256": "9ab209d12129da920ab21d03dbd8adb2007b86ea8e26141058f0a6a1a448306c",
+          "sourceTriangles": 5364,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA42402",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "dorsal_interossei_left",
+      "right": "dorsal_interossei",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_left.glb",
+      "sha256": "4163cc384c07d9038af4cf0b393b0d80f89bd9bbfd6a758658f23c1a50e7ffb4",
+      "bytes": 24812,
+      "rawSHA256": "ec85723cffbd8c992b2e2037f87882973201ad2fc6b202d5fc1a1578fdc42656",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|dorsal_interossei_left|",
+          "leftFMA": "FMA42405",
+          "leftName": "set of dorsal interossei of left hand",
+          "sourceSHA256": "8c13f56242804b309e6d8dbe98879e91f3e042138bae06dbb5d844831907d5f0",
+          "sourceTriangles": 16992,
+          "triangles": 2252,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA42404",
+          "rightTriangles": 2252
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "iliopsoas_left",
+      "right": "iliopsoas",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/iliopsoas_left.glb",
+      "sha256": "e28475cacdc6be78ece046a2fc4c1a2ed445251bdca0311ce2dab1025343f0a8",
+      "bytes": 138068,
+      "rawSHA256": "007887b9aed1a23d15c4cf288f7abeda953383d7a3a318f7fe09b994b49440f1",
+      "parts": [
+        {
+          "part": "psoas",
+          "node": "m|iliopsoas_left|psoas",
+          "leftFMA": "FMA22343",
+          "leftName": "left psoas major",
+          "sourceSHA256": "df2024fdff4cd7cb971bd7cb6c8eb98b707ab2e482b782f7cd7fc7ed0d165597",
+          "sourceTriangles": 55766,
+          "triangles": 7358,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22342",
+          "rightTriangles": 7358
+        },
+        {
+          "part": "iliacus",
+          "node": "m|iliopsoas_left|iliacus",
+          "leftFMA": "FMA22323",
+          "leftName": "left iliacus",
+          "sourceSHA256": "9976995e732c3fa1d2502f47d13c2ac23fc8bedc964b8d4617a3f6f8763f3008",
+          "sourceTriangles": 44306,
+          "triangles": 5753,
+          "removedDecimationFlapTriangles": 18,
+          "rightFMA": "FMA22322",
+          "rightTriangles": 5772
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "obturator_internus_left",
+      "right": "obturator_internus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/obturator_internus_left.glb",
+      "sha256": "6c20751f274e14369102f89cfe2b4bd3ea98fe9738515cdb014ba7dc2c9ebfd0",
+      "bytes": 52496,
+      "rawSHA256": "60e404cdbca18471a3c3595462aca78bed75fb89abf9642505d86b74fd320913",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|obturator_internus_left|",
+          "leftFMA": "FMA22325",
+          "leftName": "left obturator internus",
+          "sourceSHA256": "c41ec4556c3d9470a91d95a90be9bd1a40ef1852dfe0ce8391169094b2a4baa8",
+          "sourceTriangles": 35424,
+          "triangles": 4904,
+          "removedDecimationFlapTriangles": 6,
+          "rightFMA": "FMA22324",
+          "rightTriangles": 4910
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "piriformis_left",
+      "right": "piriformis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/piriformis_left.glb",
+      "sha256": "38ff5801ef3381487c898d49aafd7b4703b04ced6fb3ec77c18976dbc3d4a691",
+      "bytes": 22288,
+      "rawSHA256": "8e954ab362210070a6b05ee01fa7c94a8c69ec5c77fb8a54c45494c12ba80d14",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|piriformis_left|",
+          "leftFMA": "FMA22341",
+          "leftName": "left piriformis",
+          "sourceSHA256": "afa50751ce709f599e280ffd8db968fb7ed2591353f228d39d18eeb0b58cfc86",
+          "sourceTriangles": 14248,
+          "triangles": 1960,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA22340",
+          "rightTriangles": 1962
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gluteus_maximus_left",
+      "right": "gluteus_maximus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_maximus_left.glb",
+      "sha256": "65fb817986f868ecde6ef7bd01875868571b19729b6c3111d5564ac881a3fdee",
+      "bytes": 49296,
+      "rawSHA256": "7f1b9503a5a2685c01ae7df1dd9f95f922cedb3fd75b0a4ca7930a546eb0fb8e",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gluteus_maximus_left|",
+          "leftFMA": "FMA22329",
+          "leftName": "left gluteus maximus",
+          "sourceSHA256": "9309ac20cadd8fc4aeaf0418aeacc06f3117b08eee3aa8233915711ccde6259b",
+          "sourceTriangles": 33008,
+          "triangles": 4448,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22328",
+          "rightTriangles": 4448
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gluteus_medius_left",
+      "right": "gluteus_medius",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_medius_left.glb",
+      "sha256": "eb6e2dddf41a40a71e2ca6d53a9130f37360548f61eb386fb4e6cc71cdb1e521",
+      "bytes": 70836,
+      "rawSHA256": "c9d14f48a6fa870c30f7900578b6697cdedc28cec054c28710c75fc29e9e01fc",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gluteus_medius_left|",
+          "leftFMA": "FMA22331",
+          "leftName": "left gluteus medius",
+          "sourceSHA256": "9143928da7800681c53ea4c0c63a3599442066ebb7bb81c88e6b3cbe2f8e9e14",
+          "sourceTriangles": 50630,
+          "triangles": 6732,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA22330",
+          "rightTriangles": 6736
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gluteus_minimus_left",
+      "right": "gluteus_minimus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_minimus_left.glb",
+      "sha256": "5f8daa9797dd363aa55589154af2b4991e4f907c5ec882b2858bd44c417f9bf9",
+      "bytes": 84660,
+      "rawSHA256": "c4bc227850874973a37ee824cddb5b436e0bb85c82e657cd9182eddebddc4a3f",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gluteus_minimus_left|",
+          "leftFMA": "FMA22333",
+          "leftName": "left gluteus minimus",
+          "sourceSHA256": "a1f15d93563ba5d8de17d5fbc559cea2adcfedfe41374c6104d1fc3129add3e3",
+          "sourceTriangles": 62686,
+          "triangles": 8202,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA22332",
+          "rightTriangles": 8204
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "tensor_fasciae_latae_left",
+      "right": "tensor_fasciae_latae",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/tensor_fasciae_latae_left.glb",
+      "sha256": "aa40ba66e5df3852e300ec6b0dd34175f1f1824f44caf2bbd83c57e99fb210b0",
+      "bytes": 26592,
+      "rawSHA256": "c4f2ed6b0e70de3d23a7abc50ed2ac844ac9c5c97a730a1b4dce4f237840f651",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|tensor_fasciae_latae_left|",
+          "leftFMA": "FMA22426",
+          "leftName": "left tensor fasciae latae",
+          "sourceSHA256": "f5a4a5b57f2d93f4834a8a466b5939574695b0f30a80873a396d83b2115c9854",
+          "sourceTriangles": 18514,
+          "triangles": 2426,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA22425",
+          "rightTriangles": 2428
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "quadratus_femoris_left",
+      "right": "quadratus_femoris",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/quadratus_femoris_left.glb",
+      "sha256": "a3d2387b2d62a47574dd8d0e6561eccb2d99733123cea3ba98c4397b8b33f88b",
+      "bytes": 24000,
+      "rawSHA256": "e689efe3b6ac69ea87c604ebc03cf1a8d662dd4791f0b4dad129e60340a369d9",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|quadratus_femoris_left|",
+          "leftFMA": "FMA22339",
+          "leftName": "left quadratus femoris",
+          "sourceSHA256": "d6dc273b6b428f01cf834bd1b0acb7f9fb12270b4066d5ca1ee81523ae2fafe0",
+          "sourceTriangles": 16760,
+          "triangles": 2180,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22338",
+          "rightTriangles": 2180
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "obturator_externus_left",
+      "right": "obturator_externus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/obturator_externus_left.glb",
+      "sha256": "a54b97b65b3e62ebd7a411fd8b5496f707ad479934d446de9cade59dea05f869",
+      "bytes": 17568,
+      "rawSHA256": "4b9dba95d18da582eae263d93f06047a97d3f0e9de42e76595e77e6f7fbaf424",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|obturator_externus_left|",
+          "leftFMA": "FMA22327",
+          "leftName": "left obturator externus",
+          "sourceSHA256": "42dca3707ae8f81e184feca4a98bafb617114289a5f29070763a5c4307939f0a",
+          "sourceTriangles": 11562,
+          "triangles": 1524,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22326",
+          "rightTriangles": 1526
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gemellus_superior_left",
+      "right": "gemellus_superior",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gemellus_superior_left.glb",
+      "sha256": "07700567e7e729dc151d5efa7e264ae4df4d480e4a24611a17dfbd6b5a587b2e",
+      "bytes": 17124,
+      "rawSHA256": "63249517b03aef819fccff3217a0147c692006618d86586a1d8a0ac4abeba103",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gemellus_superior_left|",
+          "leftFMA": "FMA22335",
+          "leftName": "left gemellus superior",
+          "sourceSHA256": "71b171167d353a3e147e5bfde7394a5e2934c3e71c70e936148df24e4e60fafc",
+          "sourceTriangles": 4306,
+          "triangles": 1496,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA22334",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gemellus_inferior_left",
+      "right": "gemellus_inferior",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gemellus_inferior_left.glb",
+      "sha256": "84d304741f307ea865056bc9d6d1660b08a174a5c73068b1e71a8f9226f9a6d8",
+      "bytes": 17116,
+      "rawSHA256": "8e4b53655baec5f3549e066289c0331aba0768a92aee60035937f6a6f6577695",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gemellus_inferior_left|",
+          "leftFMA": "FMA22337",
+          "leftName": "left gemellus inferior",
+          "sourceSHA256": "0cc82918e9f15eb812bf50c61212b25d9e7ca029f5575da6b8071c3ba762f290",
+          "sourceTriangles": 9424,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22336",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "sartorius_left",
+      "right": "sartorius",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/sartorius_left.glb",
+      "sha256": "c1b929b0868bcb087776e4cf1b77d228f655e0ce1ad5e1f173205fd875927112",
+      "bytes": 71252,
+      "rawSHA256": "b33fb794c525a1fd3b2bf03ff25028a31005b97fcd3ec830f78ff46de0aafcc6",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|sartorius_left|",
+          "leftFMA": "FMA22355",
+          "leftName": "left sartorius",
+          "sourceSHA256": "ab886e99821a39465767d511a362b19f7d1611a85a748e5ed67da72f997ac717",
+          "sourceTriangles": 51474,
+          "triangles": 6768,
+          "removedDecimationFlapTriangles": 46,
+          "rightFMA": "FMA22354",
+          "rightTriangles": 6814
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "quadriceps_femoris_left",
+      "right": "quadriceps_femoris",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/quadriceps_femoris_left.glb",
+      "sha256": "117fa0b668716fecc9bce7d651b901e92c86b42bcb87eb3941e298e983f4dd41",
+      "bytes": 414152,
+      "rawSHA256": "460f878a9d5bfb9b4ea6e9ad1e5b1f509f453d1dc17f66b2891d7152c69b1d2d",
+      "parts": [
+        {
+          "part": "rectus",
+          "node": "m|quadriceps_femoris_left|rectus",
+          "leftFMA": "FMA38929",
+          "leftName": "left rectus femoris",
+          "sourceSHA256": "e62a73519e1dc961b1c8445214b040d09f0f0743afa60e73e0f9f9a7aab30bbb",
+          "sourceTriangles": 82050,
+          "triangles": 10786,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA38928",
+          "rightTriangles": 10788
+        },
+        {
+          "part": "vlat",
+          "node": "m|quadriceps_femoris_left|vlat",
+          "leftFMA": "FMA38931",
+          "leftName": "left vastus lateralis",
+          "sourceSHA256": "4110ab5278beac2d4b2ccf7b41ed86093ad139a7a5c404676c8f33bb8abd7d1c",
+          "sourceTriangles": 94474,
+          "triangles": 12410,
+          "removedDecimationFlapTriangles": 12,
+          "rightFMA": "FMA38930",
+          "rightTriangles": 12422
+        },
+        {
+          "part": "vmed",
+          "node": "m|quadriceps_femoris_left|vmed",
+          "leftFMA": "FMA38933",
+          "leftName": "left vastus medialis",
+          "sourceSHA256": "ac5380c7d0b0852a7dc50085c3bc7cafe48b25cb716eded4a515c3fb1af4136a",
+          "sourceTriangles": 64980,
+          "triangles": 8552,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA38932",
+          "rightTriangles": 8554
+        },
+        {
+          "part": "vint",
+          "node": "m|quadriceps_femoris_left|vint",
+          "leftFMA": "FMA38935",
+          "leftName": "left vastus intermedius",
+          "sourceSHA256": "97a5db5d80ab75c1ed1e88f8cfabc043aa20bef63346a20e525ac1f91a852b80",
+          "sourceTriangles": 61374,
+          "triangles": 8040,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA38934",
+          "rightTriangles": 8040
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "pectineus_left",
+      "right": "pectineus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/pectineus_left.glb",
+      "sha256": "916da779df32faece715231014d072afcd3003e41f860af87b1a9517f1275c6d",
+      "bytes": 28884,
+      "rawSHA256": "995cc1197a64d0c4c124e55aa384b4c7df1d930d0827ebc6d6b87fe7b7209d7b",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|pectineus_left|",
+          "leftFMA": "FMA22451",
+          "leftName": "left pectineus",
+          "sourceSHA256": "86cbd8c0185c10391096161053f5f0950e5a9271bd30f8c0b04dc90ea20b2dbc",
+          "sourceTriangles": 20614,
+          "triangles": 2612,
+          "removedDecimationFlapTriangles": 6,
+          "rightFMA": "FMA22450",
+          "rightTriangles": 2618
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "adductor_longus_left",
+      "right": "adductor_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/adductor_longus_left.glb",
+      "sha256": "af6b8d6cdbc58a124c3ad313b9cd27b1e45a587ce1e817381479bd6bbfa43681",
+      "bytes": 51528,
+      "rawSHA256": "83a42e764f2e6902727d1df41ef9d5949210fe1c2d1b8b6075e50a08eb71da80",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|adductor_longus_left|",
+          "leftFMA": "FMA22457",
+          "leftName": "left adductor longus",
+          "sourceSHA256": "6a2039abd0495943c4c572df88a6e04906cea68f1d587e62165748f63ee62f42",
+          "sourceTriangles": 37878,
+          "triangles": 4828,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22456",
+          "rightTriangles": 4828
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "adductor_brevis_left",
+      "right": "adductor_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/adductor_brevis_left.glb",
+      "sha256": "65cf25fefe926c0d56ab124140fd125e53e062594fce52b2b3a90e9f4b1c4677",
+      "bytes": 30976,
+      "rawSHA256": "e7863b5ac59be7f0509279df48eda5fe12789783133884c748c69de899768f7f",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|adductor_brevis_left|",
+          "leftFMA": "FMA22454",
+          "leftName": "left adductor brevis",
+          "sourceSHA256": "cce2cc4cbddf5d3f1bc11798a6f23dc9219cb57a5438289d8c410a6eb586cd6e",
+          "sourceTriangles": 21726,
+          "triangles": 2808,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22452",
+          "rightTriangles": 2808
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "adductor_magnus_left",
+      "right": "adductor_magnus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/adductor_magnus_left.glb",
+      "sha256": "d12d90aae247c65ebd60be81b31e5677928fa29175d908c116499fdb3b56c015",
+      "bytes": 128380,
+      "rawSHA256": "3628624f7539f4c4bd3ed20372233b2b89f476d36982a206cfcfb053fc14672a",
+      "parts": [
+        {
+          "part": "main",
+          "node": "m|adductor_magnus_left|main",
+          "leftFMA": "FMA22460",
+          "leftName": "left adductor magnus",
+          "sourceSHA256": "497dc825eda5297f2ac12690d96435064a5d1c7e40ce82eaff2919d9875531f9",
+          "sourceTriangles": 82490,
+          "triangles": 10656,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22459",
+          "rightTriangles": 10656
+        },
+        {
+          "part": "minimus",
+          "node": "m|adductor_magnus_left|minimus",
+          "leftFMA": "FMA43887",
+          "leftName": "left adductor minimus",
+          "sourceSHA256": "2795c8c391689ea799a75a4c98e1f9da495d5e3c936055336b85d81b2839839f",
+          "sourceTriangles": 9702,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA43886",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "gracilis_left",
+      "right": "gracilis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/gracilis_left.glb",
+      "sha256": "f7bb54807d5c46dd4db34c071dd6824497678f20c912e9bead4a946678a9df13",
+      "bytes": 67984,
+      "rawSHA256": "0dd099c332a1d5ce1c0047f804f75b010676f2f1bba5efdffc00ff7e39ace2ae",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|gracilis_left|",
+          "leftFMA": "FMA43884",
+          "leftName": "left gracilis",
+          "sourceSHA256": "1c5eeda3d421f0fee4320a986758098c4712e9833fbc9708a07be6676bdbc10b",
+          "sourceTriangles": 49194,
+          "triangles": 6376,
+          "removedDecimationFlapTriangles": 26,
+          "rightFMA": "FMA43883",
+          "rightTriangles": 6402
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "biceps_femoris_left",
+      "right": "biceps_femoris",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/biceps_femoris_left.glb",
+      "sha256": "b695e4f1a41c1a985e30cc3f111da286f52ecbd0da1d2751fcad26e047a520d2",
+      "bytes": 134700,
+      "rawSHA256": "beca7d36211c960526594add81d961accd4a8c4e23db030f040b4f193db7ed4c",
+      "parts": [
+        {
+          "part": "long",
+          "node": "m|biceps_femoris_left|long",
+          "leftFMA": "FMA45889",
+          "leftName": "long head of left biceps femoris",
+          "sourceSHA256": "86ba0cadc8abf3dfe090d8fa20e9585a849ff6357a10a13cc735b9239a20a4b5",
+          "sourceTriangles": 74180,
+          "triangles": 9486,
+          "removedDecimationFlapTriangles": 16,
+          "rightFMA": "FMA45888",
+          "rightTriangles": 9502
+        },
+        {
+          "part": "short",
+          "node": "m|biceps_femoris_left|short",
+          "leftFMA": "FMA45892",
+          "leftName": "short head of left biceps femoris",
+          "sourceSHA256": "4db28fce1e0a0a30ce410d88b9c72cf5712b6051a6dba74677929613a2b512d2",
+          "sourceTriangles": 24698,
+          "triangles": 3310,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA45891",
+          "rightTriangles": 3312
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "semitendinosus_left",
+      "right": "semitendinosus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/semitendinosus_left.glb",
+      "sha256": "fda0187cfb4ebb0b2f7f038099fc612a9458d2fad39aff732eefd0615d1be213",
+      "bytes": 60548,
+      "rawSHA256": "d232077b3721442b0499790525ebb7a725556551eeac64b845639339ee1206a1",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|semitendinosus_left|",
+          "leftFMA": "FMA22359",
+          "leftName": "left semitendinosus",
+          "sourceSHA256": "40ef8fd12d52b3ff3f9f7817cbb2d86ad3099666767fb497d03f945dee66e2df",
+          "sourceTriangles": 42538,
+          "triangles": 5658,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA22358",
+          "rightTriangles": 5660
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "semimembranosus_left",
+      "right": "semimembranosus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/semimembranosus_left.glb",
+      "sha256": "5a4286a55594d2811ca583586b4cf69f6ec33a9554b3d03ad27647ff9a790628",
+      "bytes": 102868,
+      "rawSHA256": "801d62fbf6b67235463d5380200000b7fbaf49c476f780429f62272cd7c5d5a2",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|semimembranosus_left|",
+          "leftFMA": "FMA22449",
+          "leftName": "left semimembranosus",
+          "sourceSHA256": "8405a594cd01b629c14d6490e5378dc731bdb8855934a9b8f5785fbd0938dd79",
+          "sourceTriangles": 72126,
+          "triangles": 9684,
+          "removedDecimationFlapTriangles": 8,
+          "rightFMA": "FMA22448",
+          "rightTriangles": 9692
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "tibialis_anterior_left",
+      "right": "tibialis_anterior",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/tibialis_anterior_left.glb",
+      "sha256": "b2f699c9351fc9d90914596b7aa289f22a902ade83e45498e41708f98fc6fd9f",
+      "bytes": 49608,
+      "rawSHA256": "53142c1a8dc319538578a35646a901a114e394729266c0729517cc561b444771",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|tibialis_anterior_left|",
+          "leftFMA": "FMA22545",
+          "leftName": "left tibialis anterior",
+          "sourceSHA256": "0920f19d682472e7e8cdbd7b319cb068342ee862ed733f1a38e879458ce17b5d",
+          "sourceTriangles": 34522,
+          "triangles": 4644,
+          "removedDecimationFlapTriangles": 24,
+          "rightFMA": "FMA22544",
+          "rightTriangles": 4668
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_digitorum_longus_left",
+      "right": "extensor_digitorum_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_longus_left.glb",
+      "sha256": "61471af0cbe2b448c60e34852d57bdbb3368290f005c43da20dcb84cda235882",
+      "bytes": 87068,
+      "rawSHA256": "ff8b9e337d13c6db0effa6088372d1116852c99a19e0db0202e65bae783e585d",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_digitorum_longus_left|",
+          "leftFMA": "FMA22549",
+          "leftName": "left extensor digitorum longus",
+          "sourceSHA256": "083fdf0009519189f840007a29c38ce445a321d7ede967f2a98dd56aea6ca907",
+          "sourceTriangles": 62008,
+          "triangles": 8112,
+          "removedDecimationFlapTriangles": 22,
+          "rightFMA": "FMA22548",
+          "rightTriangles": 8134
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "fibularis_tertius_left",
+      "right": "fibularis_tertius",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_tertius_left.glb",
+      "sha256": "e407d9beff1c7cf25983a4ed74ad7d190f1ce5216dad88d3bf1a06db4ed404db",
+      "bytes": 17276,
+      "rawSHA256": "7879bb979f806e187a3b29297edfc298ff20f0d5a4defb16b329056aa65ed69c",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|fibularis_tertius_left|",
+          "leftFMA": "FMA22551",
+          "leftName": "left fibularis tertius",
+          "sourceSHA256": "4d2efae86e1748460be945ac7006eee9a0638ff5395aa802e96e0f4465e85779",
+          "sourceTriangles": 6116,
+          "triangles": 1492,
+          "removedDecimationFlapTriangles": 8,
+          "rightFMA": "FMA22550",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_hallucis_longus_left",
+      "right": "extensor_hallucis_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_longus_left.glb",
+      "sha256": "36f6f0174aed39a2a59c877033a9e512cd854fde884c7ddfe18800cab4b3fbc1",
+      "bytes": 34000,
+      "rawSHA256": "975c111f3f951579c46fcc114c6ea9a97283a234ceb12e22184857314714ea30",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_hallucis_longus_left|",
+          "leftFMA": "FMA22547",
+          "leftName": "left extensor hallucis longus",
+          "sourceSHA256": "940c89920f98b8dba06bc9a0cfdc8f0a6110a4c25ed746f8b8746420aacc0697",
+          "sourceTriangles": 23146,
+          "triangles": 3094,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22546",
+          "rightTriangles": 3094
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "fibularis_longus_left",
+      "right": "fibularis_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_longus_left.glb",
+      "sha256": "ee3ee195c121d9417803b66f636e4515cb0648e89cb840adf48883f2a9c56a61",
+      "bytes": 79652,
+      "rawSHA256": "4f63f812fef4d5c287201353b891493860c7da7a88f7188669c59052697d73ba",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|fibularis_longus_left|",
+          "leftFMA": "FMA22553",
+          "leftName": "left fibularis longus",
+          "sourceSHA256": "fa35fd7ae211b26266d4636be0cbf3630e1450770e1f40d551b21804fa48ece9",
+          "sourceTriangles": 58314,
+          "triangles": 7528,
+          "removedDecimationFlapTriangles": 38,
+          "rightFMA": "FMA22552",
+          "rightTriangles": 7566
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "fibularis_brevis_left",
+      "right": "fibularis_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_brevis_left.glb",
+      "sha256": "3f9533b8ad310ee50558d812d0684b0eb5c78b03ba809fcf061a383a17c64a68",
+      "bytes": 50044,
+      "rawSHA256": "f5137d1ed402611e0fe78743492e420ee1ac536385c9abb49d0780595de7187c",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|fibularis_brevis_left|",
+          "leftFMA": "FMA22555",
+          "leftName": "left fibularis brevis",
+          "sourceSHA256": "37efbb8830cb9fc76f930bbf81159a2b6aeec2e671e0dd9f778e83d44cb2d005",
+          "sourceTriangles": 35814,
+          "triangles": 4636,
+          "removedDecimationFlapTriangles": 8,
+          "rightFMA": "FMA22554",
+          "rightTriangles": 4644
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "triceps_surae_left",
+      "right": "triceps_surae",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/triceps_surae_left.glb",
+      "sha256": "9854a5ad7feec6a250ff9775ce66ea42c8cc00cb21613b9c529211d7f12152f1",
+      "bytes": 250140,
+      "rawSHA256": "10edcb15051e107a7dd8b8ef65e25037b5605f946c8ab4df28735eb4e3775749",
+      "parts": [
+        {
+          "part": "gmed",
+          "node": "m|triceps_surae_left|gmed",
+          "leftFMA": "FMA45958",
+          "leftName": "medial head of left gastrocnemius",
+          "sourceSHA256": "278fc8bdc4aa5da6388f670375f524e3e48b540eeed19cbff2f569d815a540c5",
+          "sourceTriangles": 65138,
+          "triangles": 8406,
+          "removedDecimationFlapTriangles": 14,
+          "rightFMA": "FMA45957",
+          "rightTriangles": 8420
+        },
+        {
+          "part": "glat",
+          "node": "m|triceps_surae_left|glat",
+          "leftFMA": "FMA45961",
+          "leftName": "lateral head of left gastrocnemius",
+          "sourceSHA256": "772a1eb100f4eeb4ddba49fb7018520a64347874d1a8693612c43f246f6e3203",
+          "sourceTriangles": 48710,
+          "triangles": 6382,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA45960",
+          "rightTriangles": 6382
+        },
+        {
+          "part": "soleus",
+          "node": "m|triceps_surae_left|soleus",
+          "leftFMA": "FMA22559",
+          "leftName": "left soleus",
+          "sourceSHA256": "f08e879d77b48c7848cd621c270be6bfbc6ac7d40ad22705538ba9ede279c134",
+          "sourceTriangles": 69368,
+          "triangles": 8878,
+          "removedDecimationFlapTriangles": 34,
+          "rightFMA": "FMA22558",
+          "rightTriangles": 8912
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "plantaris_left",
+      "right": "plantaris",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/plantaris_left.glb",
+      "sha256": "fb15e1ee5dca581d1fb751223ae72c894e27a340022580221e5724e21bb93cca",
+      "bytes": 65464,
+      "rawSHA256": "9875733a187cd834aec54ba73b0bc0bdfb37997e178dfac1726c4ff8cdacb9d6",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|plantaris_left|",
+          "leftFMA": "FMA22561",
+          "leftName": "left plantaris",
+          "sourceSHA256": "4464e3b5e469dfe9f0f7fd7c69c73901ec07f421b2004f9ed33e03f800350f45",
+          "sourceTriangles": 46702,
+          "triangles": 6110,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22560",
+          "rightTriangles": 6110
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "popliteus_left",
+      "right": "popliteus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/popliteus_left.glb",
+      "sha256": "0d39e897161e9cf2eb11b36568841b83e22c6de9df203f63227fa80209e7b161",
+      "bytes": 17456,
+      "rawSHA256": "c31bf34246c25c84dc30ec78398e342d0f0368edd1df7d3a5e1430ad4bc16634",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|popliteus_left|",
+          "leftFMA": "FMA22592",
+          "leftName": "left popliteus",
+          "sourceSHA256": "af4f70b4874ab476cf79feb0e8b791d9ded2a024c3466b2f8551acfbd230a740",
+          "sourceTriangles": 11178,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA22591",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digitorum_longus_left",
+      "right": "flexor_digitorum_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_longus_left.glb",
+      "sha256": "34e5b41ea2af67f9db0e8ceafa1646b27b1e270eb36a914fbea72422d87c6b7e",
+      "bytes": 97976,
+      "rawSHA256": "2cd57111d1acda5cd4161a19255f3a8d5595a588cdf28833ad29a2471c764e35",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_digitorum_longus_left|",
+          "leftFMA": "FMA65017",
+          "leftName": "left flexor digitorum longus",
+          "sourceSHA256": "bd2840148e1c063dd8334e1189fab5bbea873f764da9ce338dff2f861f954e10",
+          "sourceTriangles": 71366,
+          "triangles": 9086,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA65016",
+          "rightTriangles": 9086
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "tibialis_posterior_left",
+      "right": "tibialis_posterior",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/tibialis_posterior_left.glb",
+      "sha256": "98b04f3b8abcd21f9d227ba2e038ee75f9d0353c4cacf7ba1e1bde3d75faadfd",
+      "bytes": 83012,
+      "rawSHA256": "56421459fc1c1f3604b6cac1adc05182939d0a72fb76a13a9d52f576119788ba",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|tibialis_posterior_left|",
+          "leftFMA": "FMA65019",
+          "leftName": "left tibialis posterior",
+          "sourceSHA256": "d9893f314184d1d0d72a2abbd5c5e8f7280730531489489f3a7efdc365c17173",
+          "sourceTriangles": 58062,
+          "triangles": 7841,
+          "removedDecimationFlapTriangles": 14,
+          "rightFMA": "FMA65018",
+          "rightTriangles": 7856
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_hallucis_longus_left",
+      "right": "flexor_hallucis_longus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_longus_left.glb",
+      "sha256": "5c0897f8deb16ecd263d505c9747864ec892bab22544f41aba2e82ccc1c9469c",
+      "bytes": 81768,
+      "rawSHA256": "0ef870c85d6766dc98abe544513e89e57df1ef66df5f7002037c6882fa0f824e",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_hallucis_longus_left|",
+          "leftFMA": "FMA65015",
+          "leftName": "left flexor hallucis longus",
+          "sourceSHA256": "cd2d1a115e12053f881831b575d177b0be1745ca7d28fea6f4c8cdef0289d059",
+          "sourceTriangles": 59858,
+          "triangles": 7648,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA65014",
+          "rightTriangles": 7652
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_digitorum_brevis_left",
+      "right": "extensor_digitorum_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_brevis_left.glb",
+      "sha256": "8d6ec8763a8b306d1e3388567cdc39dbc44d47f003d69a7b361d10a38563dc31",
+      "bytes": 46236,
+      "rawSHA256": "4dabe8d82142b7b1071151f5bf8b2f52cc69c60912896b24d471bce8be749b2f",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_digitorum_brevis_left|",
+          "leftFMA": "FMA51143",
+          "leftName": "left extensor digitorum brevis",
+          "sourceSHA256": "63cf9cf4eb66dd36cb2087d78760a1e29ea27c02a85764909396048873fe4d5e",
+          "sourceTriangles": 32280,
+          "triangles": 4180,
+          "removedDecimationFlapTriangles": 6,
+          "rightFMA": "FMA51142",
+          "rightTriangles": 4186
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "extensor_hallucis_brevis_left",
+      "right": "extensor_hallucis_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_brevis_left.glb",
+      "sha256": "045434448ab2a9336ea1af9bf26fd7e7935b539b638b9601c2c8d07870f9ddbd",
+      "bytes": 17488,
+      "rawSHA256": "b389a43d0a799b1511aca9cbf4062245da84321a5c49c46e4cd09cc2f7e0ad30",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|extensor_hallucis_brevis_left|",
+          "leftFMA": "FMA51145",
+          "leftName": "left extensor hallucis brevis",
+          "sourceSHA256": "8f4dacefbc3d4b600631f3377eb9bc076b79213eb35f4fde70efd11d5f735f11",
+          "sourceTriangles": 10778,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA51144",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "abductor_hallucis_left",
+      "right": "abductor_hallucis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/abductor_hallucis_left.glb",
+      "sha256": "bd016b953e85c411765b13f962d03cf31ead902faee9250af13858c4fde2318f",
+      "bytes": 25364,
+      "rawSHA256": "8f7f2a546a0414e08c94e65c76bc6200b49f056d4c3750a2702c32acaa80acda",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|abductor_hallucis_left|",
+          "leftFMA": "FMA37460",
+          "leftName": "left abductor hallucis",
+          "sourceSHA256": "5e65c8ff54cd0a7d26a32bc43295102b59bfbab937d6fc02a50731405082c1c4",
+          "sourceTriangles": 17098,
+          "triangles": 2230,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37459",
+          "rightTriangles": 2230
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_hallucis_brevis_left",
+      "right": "flexor_hallucis_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_brevis_left.glb",
+      "sha256": "cead27458f968a627e0cd9b8c14cf722c1fb58ff2bc577aed511f1e73f49b489",
+      "bytes": 34092,
+      "rawSHA256": "692b5fc245769e4df1c26bbcd70e5d618c4199e702f93c7ae48db4496a87879f",
+      "parts": [
+        {
+          "part": "medh",
+          "node": "m|flexor_hallucis_brevis_left|medh",
+          "leftFMA": "FMA45972",
+          "leftName": "medial head of left flexor hallucis brevis",
+          "sourceSHA256": "a043526387ba488a352a80992e3c974cc74eb2d2b12aa5083c655bfc971528f0",
+          "sourceTriangles": 7438,
+          "triangles": 1498,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA45971",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "lath",
+          "node": "m|flexor_hallucis_brevis_left|lath",
+          "leftFMA": "FMA45974",
+          "leftName": "lateral head of left flexor hallucis brevis",
+          "sourceSHA256": "fa153b66bafbc39ff9de3799d989516d75c22fe1c149d37575566924910837bf",
+          "sourceTriangles": 10772,
+          "triangles": 1486,
+          "removedDecimationFlapTriangles": 12,
+          "rightFMA": "FMA45973",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "adductor_hallucis_left",
+      "right": "adductor_hallucis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/adductor_hallucis_left.glb",
+      "sha256": "9f717b234f45cf4535170e1cf89b05854385a17bb654fc79dba26ac12903fc0e",
+      "bytes": 34172,
+      "rawSHA256": "e01d4b0b5c2d5074f903f388fbfab53f5fbec3580986063bc1a31ee09a53debc",
+      "parts": [
+        {
+          "part": "obl",
+          "node": "m|adductor_hallucis_left|obl",
+          "leftFMA": "FMA46019",
+          "leftName": "oblique head of left adductor hallucis",
+          "sourceSHA256": "8ea41048dcd085510676f0eb0887613b740e2c174f4408f31cda9a22763c782b",
+          "sourceTriangles": 9792,
+          "triangles": 1496,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA46018",
+          "rightTriangles": 1498
+        },
+        {
+          "part": "transv",
+          "node": "m|adductor_hallucis_left|transv",
+          "leftFMA": "FMA46021",
+          "leftName": "transverse head of left adductor hallucis",
+          "sourceSHA256": "fe2fa95a7989e53b49fed0f3244880c98de66f83f2a64eb6345d8d4e8eac795f",
+          "sourceTriangles": 3936,
+          "triangles": 1499,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA46020",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "abductor_digiti_minimi_pedis_left",
+      "right": "abductor_digiti_minimi_pedis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_pedis_left.glb",
+      "sha256": "1747769e52f93f22228efbf3f01e8c2c0c5c5718511d92c72bcb6dab9f7873e9",
+      "bytes": 20292,
+      "rawSHA256": "ef1d2c0ad2a7129347e0ffef11728fa737b9c31fb7e3100c9568683b1d5ad846",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|abductor_digiti_minimi_pedis_left|",
+          "leftFMA": "FMA37464",
+          "leftName": "abductor digiti minimi of left foot",
+          "sourceSHA256": "b2a02fefbc2418a0133f7b684aae73452fa1e826fa0e33e1ff003ac2099db77f",
+          "sourceTriangles": 13906,
+          "triangles": 1714,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37463",
+          "rightTriangles": 1718
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digiti_minimi_brevis_pedis_left",
+      "right": "flexor_digiti_minimi_brevis_pedis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_pedis_left.glb",
+      "sha256": "c60427ef437608b2b41adf7334e0a9b25631eb8f024279c8187aef5544fc2602",
+      "bytes": 17728,
+      "rawSHA256": "8b94482986419270cc2b90bcbe914376b483b2c8cf77ff01088bb0209fc13d04",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_digiti_minimi_brevis_pedis_left|",
+          "leftFMA": "FMA37472",
+          "leftName": "flexor digiti minimi brevis of left foot",
+          "sourceSHA256": "775ff080e5d423e73706fd58b7d3be42aab1fcd7f74d7efff91e982ee4e93bdc",
+          "sourceTriangles": 5124,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37471",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "opponens_digiti_minimi_pedis_left",
+      "right": "opponens_digiti_minimi_pedis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_pedis_left.glb",
+      "sha256": "7e987590f15c1579c3b1d12d92df5ef6cb2691586583f22c4ce050c672d42727",
+      "bytes": 17412,
+      "rawSHA256": "c38ed09d37353b571349321fc70875ce3918e7533aacaafe31c91abd7c192351",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|opponens_digiti_minimi_pedis_left|",
+          "leftFMA": "FMA86035",
+          "leftName": "opponens digiti minimi of left foot",
+          "sourceSHA256": "4019d3273277db4b473521dab37c330d0eea8d3fd5ca24981c880617691f66b8",
+          "sourceTriangles": 2522,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA86034",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "flexor_digitorum_brevis_left",
+      "right": "flexor_digitorum_brevis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_brevis_left.glb",
+      "sha256": "8373397c08f71b67139d709a63a21ff60133bcbea648ab7898f50fd4b1c99289",
+      "bytes": 47720,
+      "rawSHA256": "768073bdd9ccf6ba6a07c9d2910d087d0d724539a278dcd5795cd9671b8834f5",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|flexor_digitorum_brevis_left|",
+          "leftFMA": "FMA37462",
+          "leftName": "left flexor digitorum brevis",
+          "sourceSHA256": "8a362cf621a4990e256f445230321689bb6add3d5d868a4c7e4babf8c9cb81bf",
+          "sourceTriangles": 34126,
+          "triangles": 4226,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37461",
+          "rightTriangles": 4230
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "quadratus_plantae_left",
+      "right": "quadratus_plantae",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/quadratus_plantae_left.glb",
+      "sha256": "e8e6f82d7170a62254d50bf6c4e6348e1e41ac07dcfc965a4fbe3d457e91eb01",
+      "bytes": 18052,
+      "rawSHA256": "5065c5cb6f785bf3e2c27a6bd595fef431006ed16f21e94009381da6cb80bbc9",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|quadratus_plantae_left|",
+          "leftFMA": "FMA37466",
+          "leftName": "left flexor accessorius",
+          "sourceSHA256": "d2dafcdc32ea670cacbf4b85ed2d386d085d8dcb063fa4de5a8757436d0391d2",
+          "sourceTriangles": 12506,
+          "triangles": 1528,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37465",
+          "rightTriangles": 1532
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "lumbricals_pedis_left",
+      "right": "lumbricals_pedis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/lumbricals_pedis_left.glb",
+      "sha256": "0ed157b427514f47aed0a482def60a3778e27d3e453a8abe168e69250708517d",
+      "bytes": 67224,
+      "rawSHA256": "29759adcc2b447cc4bf19d75b6760da4db5b21c69493c614e6138badec954ee8",
+      "parts": [
+        {
+          "part": "l1",
+          "node": "m|lumbricals_pedis_left|l1",
+          "leftFMA": "FMA37718",
+          "leftName": "first lumbrical of left foot",
+          "sourceSHA256": "9201f450a073e8384de6da5694d287e5275c5616cf6f245fc336d9a179f66767",
+          "sourceTriangles": 4760,
+          "triangles": 1492,
+          "removedDecimationFlapTriangles": 8,
+          "rightFMA": "FMA37717",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "l2",
+          "node": "m|lumbricals_pedis_left|l2",
+          "leftFMA": "FMA37720",
+          "leftName": "second lumbrical of left foot",
+          "sourceSHA256": "10f6ce6b3fdecdd4d1c1a621b7bc4651730a15cc5906829cb620505b394bb9db",
+          "sourceTriangles": 3308,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37719",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "l3",
+          "node": "m|lumbricals_pedis_left|l3",
+          "leftFMA": "FMA37486",
+          "leftName": "third lumbrical of left foot",
+          "sourceSHA256": "9d19a10b83e321943dfe47d99717b124e96c2ee32d6944df2742de8a112257f2",
+          "sourceTriangles": 3522,
+          "triangles": 1495,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37485",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "l4",
+          "node": "m|lumbricals_pedis_left|l4",
+          "leftFMA": "FMA37484",
+          "leftName": "fourth lumbrical of left foot",
+          "sourceSHA256": "4860e129b0b161b06dff3609ec93c8ef2ab0ee2249529192b15781d1d3d0d0e3",
+          "sourceTriangles": 3226,
+          "triangles": 1496,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37483",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": "III червеобразная слева лежит между III плюсневой и III–IV пальцами, как справа; до зеркальной проксимальной фаланги IV 4,39 мм против пограничных 2,42 мм справа (смешанный стык исходной мышцы и отражённой фаланги)."
+    },
+    {
+      "id": "plantar_interossei_left",
+      "right": "plantar_interossei",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/plantar_interossei_left.glb",
+      "sha256": "2d116d313287ae66d80805feb8db13439112fb03cb8ad2bca7e4e9e409c0e79c",
+      "bytes": 49652,
+      "rawSHA256": "fe56f962bb9ddeb691b1ead7ef7355a0306a3f8be784d9be268b00e96c1a61b1",
+      "parts": [
+        {
+          "part": "p1",
+          "node": "m|plantar_interossei_left|p1",
+          "leftFMA": "FMA37746",
+          "leftName": "first plantar interosseous of left foot",
+          "sourceSHA256": "bf944da888bde435009fa3e83c46b8fe6d6a5636ab4d69e63b9f73d48d678110",
+          "sourceTriangles": 4388,
+          "triangles": 1496,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA37745",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "p2",
+          "node": "m|plantar_interossei_left|p2",
+          "leftFMA": "FMA37744",
+          "leftName": "second plantar interosseous of left foot",
+          "sourceSHA256": "f5e62b71f9998c7fe7885ddc8614cfc17fc6b2500ad3f83f45230d1146dd36cb",
+          "sourceTriangles": 4338,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37743",
+          "rightTriangles": 1500
+        },
+        {
+          "part": "p3",
+          "node": "m|plantar_interossei_left|p3",
+          "leftFMA": "FMA37742",
+          "leftName": "third plantar interosseous of left foot",
+          "sourceSHA256": "13eeb6b1011a4c254d814543e3491476cf2450ab768bf6aa7a723e8fc87cbe84",
+          "sourceTriangles": 4066,
+          "triangles": 1500,
+          "removedDecimationFlapTriangles": 0,
+          "rightFMA": "FMA37741",
+          "rightTriangles": 1500
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "dorsal_interossei_pedis_left",
+      "right": "dorsal_interossei_pedis",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_pedis_left.glb",
+      "sha256": "c09b5528122dbb47a6a04dcfb668aa52933f2d5da4d070a20218f842bbac85da",
+      "bytes": 25544,
+      "rawSHA256": "59da0d17bc8a69608203707bc00c2e70c3882fc44117cc351a31ae39bd0cd615",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|dorsal_interossei_pedis_left|",
+          "leftFMA": "FMA74141",
+          "leftName": "set of dorsal interossei of left foot",
+          "sourceSHA256": "006e798677b00af15dce6f072d52c4533e76253478bd7214abac76cd0ecade54",
+          "sourceTriangles": 16230,
+          "triangles": 2224,
+          "removedDecimationFlapTriangles": 10,
+          "rightFMA": "FMA74140",
+          "rightTriangles": 2234
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "levator_ani_left",
+      "right": "levator_ani",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/levator_ani_left.glb",
+      "sha256": "cf9d06dde36921bbf98cb2db4f0c5f1efbc542808e15f5e1f44a94fc4476f9e2",
+      "bytes": 58704,
+      "rawSHA256": "e388023e460683312f3c58cc6f841b90bfbc9f4059e6126b92e018c24ee678ef",
+      "parts": [
+        {
+          "part": "pubo",
+          "node": "m|levator_ani_left|pubo",
+          "leftFMA": "FMA45855",
+          "leftName": "left pubococcygeus",
+          "sourceSHA256": "56c653bef5f824891e3838e173475654804217d04f62ceaa6493660f7f6edc3a",
+          "sourceTriangles": 23362,
+          "triangles": 2990,
+          "removedDecimationFlapTriangles": 10,
+          "rightFMA": "FMA45854",
+          "rightTriangles": 3000
+        },
+        {
+          "part": "ilio",
+          "node": "m|levator_ani_left|ilio",
+          "leftFMA": "FMA45859",
+          "leftName": "left iliococcygeus",
+          "sourceSHA256": "3cdf17ea22e821e9ea976ebaaba24800df880e88753fb67634f738e91a95fb94",
+          "sourceTriangles": 18342,
+          "triangles": 2398,
+          "removedDecimationFlapTriangles": 4,
+          "rightFMA": "FMA45858",
+          "rightTriangles": 2402
+        }
+      ],
+      "reviewedException": null
+    },
+    {
+      "id": "coccygeus_left",
+      "right": "coccygeus",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-limb-muscles/coccygeus_left.glb",
+      "sha256": "33af19eb78b8e6254ddffc572612844bbf2c86c2f65efa9f62e6e1af6f6c23e7",
+      "bytes": 17632,
+      "rawSHA256": "b05f72074360d893c780cce444694a76ac1a39372c63dfb694163cd69631c865",
+      "parts": [
+        {
+          "part": null,
+          "node": "m|coccygeus_left|",
+          "leftFMA": "FMA46444",
+          "leftName": "left coccygeus",
+          "sourceSHA256": "13f20a798a9ee4e403c1b05a2d8cbb3dea4b25fca801fc5ba7f9fdcc245b1512",
+          "sourceTriangles": 9702,
+          "triangles": 1496,
+          "removedDecimationFlapTriangles": 2,
+          "rightFMA": "FMA46443",
+          "rightTriangles": 1498
+        }
+      ],
+      "reviewedException": null
+    }
+  ],
+  "productionInstalled": true,
+  "educationalAcceptance": true,
+  "fullAnatomicalAcceptance": false,
+  "report": "research/stage7-left-limb-muscles-2026-10-25.md",
+  "admission": {
+    "admitted": [
+      "deltoid_left",
+      "supraspinatus_left",
+      "infraspinatus_left",
+      "teres_minor_left",
+      "teres_major_left",
+      "subscapularis_left",
+      "coracobrachialis_left",
+      "biceps_brachii_left",
+      "brachialis_left",
+      "triceps_brachii_left",
+      "anconeus_left",
+      "pronator_teres_left",
+      "flexor_carpi_radialis_left",
+      "palmaris_longus_left",
+      "flexor_carpi_ulnaris_left",
+      "flexor_digitorum_superficialis_left",
+      "flexor_digitorum_profundus_left",
+      "flexor_pollicis_longus_left",
+      "pronator_quadratus_left",
+      "brachioradialis_left",
+      "extensor_carpi_radialis_longus_left",
+      "extensor_carpi_radialis_brevis_left",
+      "extensor_digitorum_left",
+      "extensor_digiti_minimi_left",
+      "extensor_carpi_ulnaris_left",
+      "supinator_left",
+      "abductor_pollicis_longus_left",
+      "extensor_pollicis_brevis_left",
+      "extensor_pollicis_longus_left",
+      "extensor_indicis_left",
+      "abductor_pollicis_brevis_left",
+      "flexor_pollicis_brevis_left",
+      "opponens_pollicis_left",
+      "adductor_pollicis_left",
+      "abductor_digiti_minimi_left",
+      "flexor_digiti_minimi_brevis_left",
+      "opponens_digiti_minimi_left",
+      "lumbricals_left",
+      "palmar_interossei_left",
+      "dorsal_interossei_left",
+      "iliopsoas_left",
+      "obturator_internus_left",
+      "piriformis_left",
+      "gluteus_maximus_left",
+      "gluteus_medius_left",
+      "gluteus_minimus_left",
+      "tensor_fasciae_latae_left",
+      "quadratus_femoris_left",
+      "obturator_externus_left",
+      "gemellus_superior_left",
+      "gemellus_inferior_left",
+      "sartorius_left",
+      "quadriceps_femoris_left",
+      "pectineus_left",
+      "adductor_longus_left",
+      "adductor_brevis_left",
+      "adductor_magnus_left",
+      "gracilis_left",
+      "biceps_femoris_left",
+      "semitendinosus_left",
+      "semimembranosus_left",
+      "tibialis_anterior_left",
+      "extensor_digitorum_longus_left",
+      "fibularis_tertius_left",
+      "extensor_hallucis_longus_left",
+      "fibularis_longus_left",
+      "fibularis_brevis_left",
+      "triceps_surae_left",
+      "plantaris_left",
+      "popliteus_left",
+      "flexor_digitorum_longus_left",
+      "tibialis_posterior_left",
+      "flexor_hallucis_longus_left",
+      "extensor_digitorum_brevis_left",
+      "extensor_hallucis_brevis_left",
+      "abductor_hallucis_left",
+      "flexor_hallucis_brevis_left",
+      "adductor_hallucis_left",
+      "abductor_digiti_minimi_pedis_left",
+      "flexor_digiti_minimi_brevis_pedis_left",
+      "opponens_digiti_minimi_pedis_left",
+      "flexor_digitorum_brevis_left",
+      "quadratus_plantae_left",
+      "lumbricals_pedis_left",
+      "plantar_interossei_left",
+      "dorsal_interossei_pedis_left",
+      "levator_ani_left",
+      "coccygeus_left"
+    ],
+    "trialOnly": [],
+    "level": "educational_limited",
+    "fullAnatomicalAcceptance": false,
+    "reviewedExceptions": {
+      "lumbricals_left": "Левая сетка BP3D подходит к проксимальным фалангам II–V (зона перехода в тыльный апоневроз пальца), но не к средней фаланге II, которой касается правая (0,47 против 10,95 мм). Это различие дистальной протяжённости сухожильной части, а не другая топография; площадки прикрепления не приняты.",
+      "lumbricals_pedis_left": "III червеобразная слева лежит между III плюсневой и III–IV пальцами, как справа; до зеркальной проксимальной фаланги IV 4,39 мм против пограничных 2,42 мм справа (смешанный стык исходной мышцы и отражённой фаланги)."
+    },
+    "report": "research/stage7-left-limb-muscles-2026-10-25.md",
+    "rule": "technical + left centroid + shape vs reflected right (median <=3 mm, extents 0.8-1.25) + no clear one-sided bone contact (<=2.5 mm on one side and >0.5 mm farther and >2.5 mm on the other)",
+    "evidence": [
+      "left-sources.json",
+      "decimation-targets.json",
+      "blender-decimation.json",
+      "left-muscle-review.json",
+      "left-muscle-review-v2.json"
+    ],
+    "stats": {
+      "parts": 115,
+      "maxMedianSymmetricMM": 1.808,
+      "maxP95SymmetricMM": 4.424,
+      "extentRatioRange": [
+        0.9383,
+        1.011
+      ],
+      "minFractionPositiveX": 0.9892
+    },
+    "limitation": "Native left BodyParts3D 3.0 surfaces reduced to the face budget of the accepted right part. Origins/insertions, attachment areas, fibre directions, part boundaries and pins are not accepted for the left side; card text repeats the verified paired right description. No independent left specimen."
+  }
+}

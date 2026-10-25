@@ -10,9 +10,9 @@ SOURCES = {
 BASE = "models/bodyparts3d-3.0/left-tarsals"
 NOTE = (NOTICE + " BodyParts3D 3.0/95%, DBCLS; сохранены исходные левая сторона, масштаб и система координат. "
         "Точные суставные поверхности, хрящи, зазоры и локализация пинов не приняты. "
-        "Предплюсна представлена частично: таранная, пяточная, кубовидная и латеральная клиновидная модели "
-        "остаются тестовыми из-за пересечений исходных сеток. Модели не отражались и не подгонялись; "
-        "независимый левый скан не подтверждён.")
+        "Таранная, пяточная, кубовидная и латеральная клиновидная модели подключены 25.10.2026 отдельной "
+        "партией по контрольной правой стороне; пересечения исходных сеток сохранены. Модели не отражались "
+        "и не подгонялись; независимый левый скан не подтверждён.")
 TRIAL = {
     "talus_left": "Таранная и пяточная сетки пересекаются: 329 пар треугольников, выборочная глубина до 1,004 мм.",
     "calcaneus_left": "Таранная и пяточная сетки пересекаются: 329 пар треугольников, выборочная глубина до 1,004 мм.",
@@ -27,8 +27,9 @@ TRIAL = {
 
 
 def model_note(bone, fallback):
+    from left_baseline_stage6 import note as baseline_note
     from mirrored_foot_stage6 import model_note as mirrored_note
-    reviewed = mirrored_note(bone)
+    reviewed = baseline_note(bone) or mirrored_note(bone)
     if reviewed:
         return reviewed
     if bone in SOURCES:
@@ -44,7 +45,7 @@ def model_note(bone, fallback):
 def admit(cards):
     for bone, source in SOURCES.items():
         cards[bone].update(noModel=False, sourceId=source, modelStatus="educational_limited",
-            modelNotice=NOTICE, modelRegionLabel="Левая предплюсна (частично)",
+            modelNotice=NOTICE, modelRegionLabel="Левая стопа (исходные модели BodyParts3D)",
             modelFile=f"{BASE}/{bone}.glb", modelLicense=f"{BASE}/LICENSE-MODELS.txt",
             modelReview=dict(educationalAcceptance=True, fullAnatomicalAcceptance=False, report=REPORT),
             note=NOTE)
@@ -57,3 +58,5 @@ def admit(cards):
                 report="research/stage6-left-metatarsals-report-2026-10-20.md" if bone.startswith("metatarsal_") else REPORT))
     from mirrored_foot_stage6 import admit as admit_mirrored
     admit_mirrored(cards)
+    from left_baseline_stage6 import admit as admit_baseline
+    admit_baseline(cards, "foot")

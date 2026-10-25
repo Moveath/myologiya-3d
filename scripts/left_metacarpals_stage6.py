@@ -22,7 +22,7 @@ BLOCKED = {
 def admit(cards):
     for bone, source in SOURCES.items():
         cards[bone].update(noModel=False, sourceId=source, modelStatus='educational_limited',
-            modelNotice=NOTICE, modelRegionLabel='Левая пясть (II, IV, V)',
+            modelNotice=NOTICE, modelRegionLabel='Левая пясть',
             modelFile=f'{BASE}/{bone}.glb', modelLicense=f'{BASE}/LICENSE-MODELS.txt',
             modelReview=dict(educationalAcceptance=True, fullAnatomicalAcceptance=False, report=REPORT),
             note=NOTE)
@@ -47,10 +47,10 @@ def review_geometry(record):
     hand = set(PROXIMAL) | set(DISTAL) | set(SOURCES) | set(BLOCKED)
     if not related.intersection(hand):
         return record
-    available = set(PROXIMAL) | set(DISTAL) | set(SOURCES) | {'radius_left', 'ulna_left'}
-    text = (NOTICE + ' Доступны восемь костей левого запястья, II/IV/V пястные и предплечье. '
-            'I и III пястные остались тестовыми из-за дефектов совмещения. Фаланги, сесамоиды большого '
-            'пальца и мягкие ткани слева пока без моделей. Координаты и протяжённость этого образования не приняты.')
+    available = set(PROXIMAL) | set(DISTAL) | set(SOURCES) | set(BLOCKED) | {'radius_left', 'ulna_left'}
+    text = (NOTICE + ' Доступны восемь костей левого запястья, все пять пястных и предплечье; I и III пястные '
+            'подключены 25.10.2026 по контрольной правой стороне с сохранёнными пересечениями исходных сеток. '
+            'Сесамоиды большого пальца и мягкие ткани слева пока без моделей. Координаты и протяжённость этого образования не приняты.')
     record.update(modelNote=text,
         geometryReview=dict(coordinateAcceptance=False, extentAcceptance=False, report=REPORT),
         geometryRequirements=dict(status='unverified_extent' if related <= available else 'missing_model',

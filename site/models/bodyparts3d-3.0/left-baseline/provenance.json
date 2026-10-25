@@ -1,0 +1,535 @@
+{
+  "release": "BodyParts3D 3.0 / 20110915 / OBJ 95%",
+  "author": "The Database Center for Life Science (DBCLS)",
+  "archive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+  "license": "CC BY-SA 2.1 Japan",
+  "derivativeLicense": "CC BY-SA 2.1 Japan",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "transform": "[bp.x,bp.z,-bp.y]/1000; no reflection, fitting, mesh repair or decimation",
+  "evidence": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3",
+  "files": [
+    {
+      "id": "talus_left",
+      "sourceId": "FMA24483",
+      "sourceSHA256": "4c8f262a33f96045578cba926a21ae8afab114f667dd40e9a571e7ff03d0f9de",
+      "derivative": "build_stage6/left_tarsals_v1/talus_left.glb",
+      "derivativeSHA256": "acac2f828ac3415298506299021221691bed04f7858cd13b09278ef05ac1e8fc",
+      "vertices": 3048,
+      "triangles": 5924,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          1292,
+          1296
+        ],
+        [
+          2328,
+          2886
+        ],
+        [
+          2706,
+          2724
+        ],
+        [
+          3755,
+          3762
+        ],
+        [
+          4794,
+          4801
+        ],
+        [
+          4802,
+          5156
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json"
+    },
+    {
+      "id": "calcaneus_left",
+      "sourceId": "FMA24498",
+      "sourceSHA256": "64d82261ec8ffba2c536da5fdd7f9ac6d8855504ff7eb28030fbc4a299816d7b",
+      "derivative": "build_stage6/left_tarsals_v1/calcaneus_left.glb",
+      "derivativeSHA256": "8992792b13cff741fb0a731af80dcc29004c46202c905aac908fd8cbb213321d",
+      "vertices": 2896,
+      "triangles": 5652,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          2624,
+          2625
+        ],
+        [
+          2663,
+          2664
+        ],
+        [
+          3164,
+          3706
+        ],
+        [
+          4538,
+          4539
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json"
+    },
+    {
+      "id": "cuboid_left",
+      "sourceId": "FMA24529",
+      "sourceSHA256": "c235f1dc59dfba5e31a574f48de41e1be9e3b24a9ab4e0d16f9df9ac07434b29",
+      "derivative": "build_stage6/left_tarsals_v1/cuboid_left.glb",
+      "derivativeSHA256": "2530459d75741c014a18acbfe3cafa4cf8155b0d9a308470fd6cb593698aecf4",
+      "vertices": 1957,
+      "triangles": 3804,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          2522,
+          2577
+        ],
+        [
+          2574,
+          2575
+        ],
+        [
+          3768,
+          3769
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json"
+    },
+    {
+      "id": "cuneiform_lat_left",
+      "sourceId": "FMA24526",
+      "sourceSHA256": "981c3361de875fbf56694e4bb63460ce3a45aebdac602ec3d1249cc5427e511b",
+      "derivative": "build_stage6/left_tarsals_v1/cuneiform_lat_left.glb",
+      "derivativeSHA256": "58056ee2a4ed0a87a3930c059350e6e42aa6e44d3ecdb4904dca8daab73b1d8b",
+      "vertices": 1538,
+      "triangles": 2968,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          606,
+          639
+        ],
+        [
+          1668,
+          1670
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json"
+    },
+    {
+      "id": "metatarsal_1_left",
+      "sourceId": "FMA24508",
+      "sourceSHA256": "5867825022c98465b222e5c523dc189e501fd49bf9d8f78b8815db20468d7fc6",
+      "derivative": "build_stage6/left_metatarsals_v1/metatarsal_1_left.glb",
+      "derivativeSHA256": "c99d5c01bd37b7f995cfce8b56b02f9c4149aeccf826dc3641de9a792940798d",
+      "vertices": 2465,
+      "triangles": 4860,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          1896,
+          1898
+        ],
+        [
+          3258,
+          3260
+        ],
+        [
+          3259,
+          3262
+        ],
+        [
+          4745,
+          4746
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json"
+    },
+    {
+      "id": "metatarsal_2_left",
+      "sourceId": "FMA24510",
+      "sourceSHA256": "6164b8902ec5a4a96557688c0c2fe12ca1e6c5227882dcd49a30fa7eb8390f14",
+      "derivative": "build_stage6/left_metatarsals_v1/metatarsal_2_left.glb",
+      "derivativeSHA256": "b34ca9c3d70c372a6efbb401879e81d5f578d81786647c2f2567aa2ad910f466",
+      "vertices": 1837,
+      "triangles": 3388,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          90,
+          91
+        ],
+        [
+          1776,
+          1777
+        ],
+        [
+          1886,
+          1887
+        ],
+        [
+          1902,
+          1905
+        ],
+        [
+          2026,
+          2044
+        ],
+        [
+          2365,
+          2377
+        ],
+        [
+          2367,
+          2368
+        ],
+        [
+          2380,
+          2382
+        ],
+        [
+          2541,
+          2543
+        ],
+        [
+          2541,
+          2546
+        ],
+        [
+          2542,
+          2543
+        ],
+        [
+          2557,
+          2558
+        ],
+        [
+          2808,
+          2809
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json"
+    },
+    {
+      "id": "metatarsal_3_left",
+      "sourceId": "FMA24512",
+      "sourceSHA256": "d5ce0bfbec2c955128456f273d44565402b7b3cb6d486c1b40792a73a59566d1",
+      "derivative": "build_stage6/left_metatarsals_v1/metatarsal_3_left.glb",
+      "derivativeSHA256": "f0b02c7030f74f944b99f9b30dd0fe871a0d849f0e70b3c564a9f71e744cf32f",
+      "vertices": 1647,
+      "triangles": 3228,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          674,
+          683
+        ],
+        [
+          883,
+          885
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json"
+    },
+    {
+      "id": "metatarsal_4_left",
+      "sourceId": "FMA24514",
+      "sourceSHA256": "9f6dfc2ec72333328b511098bb0c09e93b35f39bba5b80dd4b4d73704fd83f2a",
+      "derivative": "build_stage6/left_metatarsals_v1/metatarsal_4_left.glb",
+      "derivativeSHA256": "14bdca625a4e5a41675b4ebf9a47b3d8154c091e5910b895b63e316313b797aa",
+      "vertices": 1589,
+      "triangles": 3118,
+      "blenderNonadjacentOverlapCandidates": [],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json"
+    },
+    {
+      "id": "metatarsal_5_left",
+      "sourceId": "FMA24516",
+      "sourceSHA256": "5e11681619427ee451e6bf5afa4b9416a98a4d43b0c04bc86518798be6fa4526",
+      "derivative": "build_stage6/left_metatarsals_v1/metatarsal_5_left.glb",
+      "derivativeSHA256": "c41d57ce154ab9918b4203cf6ddcf1c3024a65e39896fa9f6c81bb224d1692f4",
+      "vertices": 1866,
+      "triangles": 3688,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          1159,
+          1160
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json"
+    },
+    {
+      "id": "toe_prox_1_left",
+      "sourceId": "FMA43254",
+      "sourceSHA256": "f8c4d0830a0ba6878e602c9eaf330288c0b875fdce1dac5718c9669e3c868b10",
+      "derivative": "build_stage6/left_toes_native_v1/toe_prox_1_left.glb",
+      "derivativeSHA256": "d134fdb97173d735c26b645448c32d8995884fe3ef2661ae553f7e538dc3d13a",
+      "vertices": 1138,
+      "triangles": 2194,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          858,
+          859
+        ],
+        [
+          1224,
+          1227
+        ],
+        [
+          1228,
+          1242
+        ],
+        [
+          2078,
+          2079
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/blender-export.json"
+    },
+    {
+      "id": "toe_dist_1_left",
+      "sourceId": "FMA32651",
+      "sourceSHA256": "32eb582d7a1740054fb84cd07bd29fe1c142face782987584569025d038b7f5d",
+      "derivative": "build_stage6/left_toes_native_v1/toe_dist_1_left.glb",
+      "derivativeSHA256": "640a7e03f02ed64a55a293fa2292c6afd062973254c589639c4c193f177c2836",
+      "vertices": 825,
+      "triangles": 1594,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          1249,
+          1339
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/blender-export.json"
+    },
+    {
+      "id": "toe_prox_5_left",
+      "sourceId": "FMA32641",
+      "sourceSHA256": "6f6cff98b381ccc2e748456f1ad5f10007fc12e05b43b6dadd4f19b5b1f070fc",
+      "derivative": "build_stage6/left_toes_native_v1/toe_prox_5_left.glb",
+      "derivativeSHA256": "c0c53c06980d1e4b94d2d5bd259e40d81406fcbd1e5fd259d2b910dfbd734e44",
+      "vertices": 614,
+      "triangles": 1206,
+      "blenderNonadjacentOverlapCandidates": [],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/blender-export.json"
+    },
+    {
+      "id": "toe_mid_5_left",
+      "sourceId": "FMA230988",
+      "sourceSHA256": "c4ddacd5ff579c7d936b4fe4ddbc93d595a78a6cae12dcefb5080469cf2e4a11",
+      "derivative": "build_stage6/left_toes_native_v1/toe_mid_5_left.glb",
+      "derivativeSHA256": "4936f80800eb54ac89cb8a777fbbdbfab63b0493a256cd953d69317c088bc2e7",
+      "vertices": 166,
+      "triangles": 302,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          74,
+          160
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/blender-export.json"
+    },
+    {
+      "id": "toe_dist_5_left",
+      "sourceId": "FMA32659",
+      "sourceSHA256": "fea03b86099528410efdf4bc72eba90601af86564afe71ed0a1f24873ff1d932",
+      "derivative": "build_stage6/left_toes_native_v1/toe_dist_5_left.glb",
+      "derivativeSHA256": "6e75c71195bc3822c1bf35dece0d787d78b7b8d55228bc62bf26b9fd0d67eca0",
+      "vertices": 154,
+      "triangles": 284,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          6,
+          7
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/blender-export.json"
+    },
+    {
+      "id": "metacarpal_1_left",
+      "sourceId": "FMA24465",
+      "sourceSHA256": "1688e69a708fbd6db940f97e362edb7c93c013d4af5e8f400204109783c652bd",
+      "derivative": "build_stage6/left_metacarpals_v1/metacarpal_1_left.glb",
+      "derivativeSHA256": "e4f0c4300fcc944f807ae76e1bad6fabedd4d18c6104dd3fa5a17695d6da952a",
+      "vertices": 1253,
+      "triangles": 2480,
+      "blenderNonadjacentOverlapCandidates": [],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metacarpals-2026-10-20T09-46-20-675Z-MCCbpl/blender-export.json"
+    },
+    {
+      "id": "metacarpal_3_left",
+      "sourceId": "FMA24469",
+      "sourceSHA256": "090a59745c4193bd716fb4c388df9c4fb797f825622df05cb9298864a46b37d1",
+      "derivative": "build_stage6/left_metacarpals_v1/metacarpal_3_left.glb",
+      "derivativeSHA256": "8e46be6d39084b0d67ed5826fe4f19218ac712db2439b20309ff8446525c517b",
+      "vertices": 1555,
+      "triangles": 3040,
+      "blenderNonadjacentOverlapCandidates": [
+        [
+          598,
+          599
+        ],
+        [
+          842,
+          843
+        ]
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "determinant": 1.0000001937626735e-09,
+      "methods": "BVHTree candidates are diagnostic, not exact intersection proof. No repair, decimation, reflection or pin edits.",
+      "exportRecord": "research/evidence-runs/stage6-left-metacarpals-2026-10-20T09-46-20-675Z-MCCbpl/blender-export.json"
+    }
+  ],
+  "productionInstalled": true,
+  "educationalAcceptance": true,
+  "fullAnatomicalAcceptance": false,
+  "report": "research/stage6-left-baseline-admission-2026-10-25.md",
+  "admission": {
+    "admitted": [
+      "talus_left",
+      "calcaneus_left",
+      "cuboid_left",
+      "cuneiform_lat_left",
+      "metatarsal_1_left",
+      "metatarsal_2_left",
+      "metatarsal_3_left",
+      "metatarsal_4_left",
+      "metatarsal_5_left",
+      "toe_prox_1_left",
+      "toe_dist_1_left",
+      "toe_prox_5_left",
+      "toe_mid_5_left",
+      "toe_dist_5_left",
+      "metacarpal_1_left",
+      "metacarpal_3_left"
+    ],
+    "trialOnly": [],
+    "level": "educational_limited",
+    "fullAnatomicalAcceptance": false,
+    "report": "research/stage6-left-baseline-admission-2026-10-25.md",
+    "rule": "Contralateral baseline: every sampled source-mesh penetration of the final left configuration reproduces the same pair of the accepted right BodyParts3D 3.0 model within 0.15 mm, or (at four boundaries with admitted mirrored neighbours) stays within the deepest accepted right MTP/MCP pair (0.912 mm).",
+    "newEvidence": [
+      "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+      "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+      "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/trimesh-check.json"
+    ],
+    "reusedEvidence": [
+      "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+      "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json",
+      "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json",
+      "research/evidence-runs/stage6-left-metacarpals-2026-10-20T09-46-20-675Z-MCCbpl/blender-export.json"
+    ],
+    "limitation": "Same-source BodyParts3D 3.0 intersections are retained exactly as in the accepted right model (largest cuboid-lateral cuneiform about 2.66 mm, talus-calcaneus about 1.0 mm, MC I-trapezium about 1.15 mm); four boundaries with mirrored phalanges II-IV/sesamoids differ from the right pair by up to 0.41 mm. These are source defects, not physiological contacts. Exact facets, cartilage, joint spaces, pins, sinus tarsi and an independent left specimen are not accepted.",
+    "reason": "Previous rejection used absolute sampled depth only. The identical diagnostic on the accepted right hand/foot shows the same depths; the defect is a property of the shared source, not of the left derivatives. Educational admission therefore follows the standard already applied to the right side; GEO-LOWER-LEFT-FOOT / GEO-HAND-LEFT-MODELS full criteria stay open."
+  }
+}

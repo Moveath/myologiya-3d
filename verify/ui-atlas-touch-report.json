@@ -1,11 +1,11 @@
 {
-  "created_at": "2026-10-13T10:03:21.392Z",
+  "created_at": "2026-10-25T08:17:01.299Z",
   "status": "passed",
   "method": "Chromium CDP Input.dispatchTouchEvent with hasTouch/isMobile; read-only camera instrumentation; no synthetic DOM events",
   "limitation": "Mobile browser emulation at 390 × 844 CSS pixels, not a physical phone or Safari test.",
   "sourceHashes": {
-    "local.html": "464edc5050cbe66c907ed78257de26ec73f01f85e9821701900871585b8be050",
-    "skull-detail.html": "352ef26c9a565b897c1fce0f3164a6ccb7a86ec469514a4574dcca738bc8eaae"
+    "local.html": "3f0ccf49bd1320a0c525125b9fcc074e391fff24cdb38702732bf49d3d514f97",
+    "skull-detail.html": "63209527e2f6d57ce6625af726cd4e6d9a6ea231e8536631fc4002d6d2a0b56b"
   },
   "cases": [
     {
@@ -17,20 +17,20 @@
         "x": 195,
         "y": 425
       },
-      "rotationDelta": 0.6255908214879956,
-      "zoomRatio": 0.3999999999999983,
+      "rotationDelta": 0.625589212836208,
+      "zoomRatio": 0.39999999999999947,
       "initial": {
         "position": [
-          -0.8358867882363766,
-          1.6573159121434538,
-          0.9307472161846767
+          -0.7391408929660553,
+          1.6434950699619792,
+          0.8340013209143555
         ],
         "target": [
           -0.0006686073150999893,
           1.5379990291546999,
           0.0955290352634
         ],
-        "distance": 1.1871879960853062,
+        "distance": 1.0496723526773029,
         "zoom": 1,
         "triangles": 410286,
         "drawCalls": 102,
@@ -54,16 +54,16 @@
       },
       "rotated": {
         "position": [
-          -1.1438950122494533,
-          1.805449188332178,
-          0.2713674197698906
+          -1.0114713898880179,
+          1.774469263384878,
+          0.2510012547788862
         ],
         "target": [
           -0.0006686073150999893,
           1.5379990291546999,
           0.0955290352634
         ],
-        "distance": 1.1871879960853027,
+        "distance": 1.0496723526773013,
         "zoom": 1,
         "triangles": 410286,
         "drawCalls": 102,
@@ -87,19 +87,19 @@
       },
       "pinched": {
         "position": [
-          -0.4580263688408382,
-          1.6449790940095703,
-          0.1654274843168982
+          -0.40504942996231286,
+          1.63258726348327,
+          0.15732950258639944
         ],
         "target": [
-          -0.0007358062377846611,
+          -0.0007282421744735973,
           1.5379990291547008,
-          0.0950921364065148
+          0.09514131473331829
         ],
-        "distance": 0.4748751984341191,
+        "distance": 0.41986894107091993,
         "zoom": 1,
-        "triangles": 386952,
-        "drawCalls": 80,
+        "triangles": 379256,
+        "drawCalls": 69,
         "contextLost": false,
         "scroll": [
           0,
@@ -121,15 +121,15 @@
       "images": [
         {
           "file": "shots/atlas-touch/main-390-light-before.png",
-          "sha256": "c8e68e0b5ceebfebda0eed07f247f3805068096bb8ae9aed08ba393597f1ce3a"
+          "sha256": "8d64c09c77c53600b549c1f7e0a7c34bb580880d8fc5f1a080fcc198c6cf81ed"
         },
         {
           "file": "shots/atlas-touch/main-390-light-rotated.png",
-          "sha256": "9ce5368cc3960e7a7eeb2c296aad6d7b7e9ec920ad136e9fb3b38b39f27a292a"
+          "sha256": "5e664696d37c905bd63427a2552b0198ba157d727bae16efcf2013729bcfe87b"
         },
         {
           "file": "shots/atlas-touch/main-390-light-pinched.png",
-          "sha256": "cd04b6eb1f430f964b2773ac3fc58fd1b620fb24785916622e8c5657f9d45ae0"
+          "sha256": "6738b1a47630079a0b17cd58b81045570fdf5565388cf21a876115db9b716fbb"
         }
       ],
       "errors": []
@@ -141,22 +141,22 @@
       "status": "passed",
       "point": {
         "x": 195,
-        "y": 352.6875
+        "y": 450.890625
       },
-      "rotationDelta": 1.0001383083031614,
-      "zoomRatio": 0.39999999999999897,
+      "rotationDelta": 0.726310119204205,
+      "zoomRatio": 0.40000000000000013,
       "initial": {
         "position": [
-          -0.1854240457957441,
-          1.5954170239699834,
-          0.2745340372158469
+          -0.2623316772503846,
+          1.6194506587995587,
+          0.3706685765341475
         ],
         "target": [
           0,
           1.5374720096588135,
           0.0427539799711667
         ],
-        "distance": 0.302426348685314,
+        "distance": 0.4278625835978227,
         "zoom": 1,
         "triangles": 112343,
         "drawCalls": 22,
@@ -205,16 +205,16 @@
       },
       "rotated": {
         "position": [
-          -0.27275237717901635,
-          1.6577412596237688,
-          -0.008267041531679765
+          -0.3988801048473467,
+          1.6818490791577225,
+          0.09857793721964624
         ],
         "target": [
           0,
           1.5374720096588135,
           0.0427539799711667
         ],
-        "distance": 0.3024263486853142,
+        "distance": 0.427862583597822,
         "zoom": 1,
         "triangles": 112343,
         "drawCalls": 22,
@@ -263,19 +263,19 @@
       },
       "pinched": {
         "position": [
-          -0.10906087202068654,
-          1.5855797098329238,
-          0.022131315002690527
+          -0.15958213785797307,
+          1.5952229497075487,
+          0.06486822554686408
         ],
         "target": [
-          0.00004007859781276532,
-          1.5374720096588133,
-          0.042539724513443115
+          -0.000030057979595951577,
+          1.537472009658815,
+          0.04253920405347877
         ],
-        "distance": 0.12097053947412537,
+        "distance": 0.17114503343912885,
         "zoom": 1,
-        "triangles": 112051,
-        "drawCalls": 21,
+        "triangles": 111759,
+        "drawCalls": 20,
         "contextLost": false,
         "scroll": [
           0,
@@ -322,15 +322,15 @@
       "images": [
         {
           "file": "shots/atlas-touch/detail-390-light-before.png",
-          "sha256": "6d557a15ba47828cef341960c5dc703898aee1c59eda0818f1bdab6228d395d7"
+          "sha256": "da75c6f8cccd4fa1f58bbeab111971afb2b487a4bd89c2d80aa22fe6ccd0a918"
         },
         {
           "file": "shots/atlas-touch/detail-390-light-rotated.png",
-          "sha256": "7f316bc466e06e2d907a8f067c7ebdf4ec52d5985cd95bb543f92d20fcb97e7b"
+          "sha256": "a0f6269ef5184b7d0b60482bb064a5b40b646f214ce8f0f62492a498da1b9e1e"
         },
         {
           "file": "shots/atlas-touch/detail-390-light-pinched.png",
-          "sha256": "97662a1118137a2edc4a9fd154cb3c2d6e1b0f57e75601f9dcef3000da9b904c"
+          "sha256": "6d5435fd5b0a57940fe93c880aea4931978d2b8599934a2c115b86d988ff0785"
         }
       ],
       "errors": []
@@ -344,20 +344,20 @@
         "x": 195,
         "y": 425
       },
-      "rotationDelta": 0.6255908109158649,
-      "zoomRatio": 0.3999999999999999,
+      "rotationDelta": 0.6255892608398576,
+      "zoomRatio": 0.3999999999999994,
       "initial": {
         "position": [
-          -0.8358867882363766,
-          1.6573159121434538,
-          0.9307472161846767
+          -0.7391408929660553,
+          1.6434950699619792,
+          0.8340013209143555
         ],
         "target": [
           -0.0006686073150999893,
           1.5379990291546999,
           0.0955290352634
         ],
-        "distance": 1.1871879960853062,
+        "distance": 1.0496723526773029,
         "zoom": 1,
         "triangles": 410286,
         "drawCalls": 102,
@@ -381,16 +381,16 @@
       },
       "rotated": {
         "position": [
-          -1.143895010870597,
-          1.805449185738236,
-          0.2713674326800251
+          -1.0114713954237144,
+          1.7744692737986287,
+          0.2510012029494453
         ],
         "target": [
           -0.0006686073150999893,
           1.5379990291546999,
           0.0955290352634
         ],
-        "distance": 1.1871879960853047,
+        "distance": 1.049672352677304,
         "zoom": 1,
         "triangles": 410286,
         "drawCalls": 102,
@@ -414,19 +414,19 @@
       },
       "pinched": {
         "position": [
-          -0.4580263638643459,
-          1.644979094009567,
-          0.1654275166774036
+          -0.40504942996230925,
+          1.6325872634832705,
+          0.15732950258639827
         ],
         "target": [
-          -0.0007358012612894854,
-          1.537999029154699,
-          0.09509216876701913
+          -0.0007282421744689953,
+          1.5379990291547003,
+          0.09514131473331769
         ],
-        "distance": 0.47487519843412174,
+        "distance": 0.419868941070921,
         "zoom": 1,
-        "triangles": 386952,
-        "drawCalls": 80,
+        "triangles": 379256,
+        "drawCalls": 69,
         "contextLost": false,
         "scroll": [
           0,
@@ -448,15 +448,15 @@
       "images": [
         {
           "file": "shots/atlas-touch/main-390-dark-before.png",
-          "sha256": "c588544bf03236878ed8baa7bc301f11dd1ffeeefcf22e75d09add829ebf41c8"
+          "sha256": "bb4028d33a884c668f8fda74984deb81d15627163be7416b7f3d5ede31bb1ccb"
         },
         {
           "file": "shots/atlas-touch/main-390-dark-rotated.png",
-          "sha256": "e255473144c9795542e0f42d10ab82c85e83083d2f830742782f07ac3b01b382"
+          "sha256": "adea1f300323257a674dd709ad4ef818a8074aa3ca3b98c5325570251abc1700"
         },
         {
           "file": "shots/atlas-touch/main-390-dark-pinched.png",
-          "sha256": "1196f5f7343ac88bdb12a5bf77aab7ceb0cfebb6edc3c678939a6a08e02ccb68"
+          "sha256": "5cc65e78d776e0cd07f2513153254990942a686f952ca2ef1b1d01431b435479"
         }
       ],
       "errors": []
@@ -468,22 +468,22 @@
       "status": "passed",
       "point": {
         "x": 195,
-        "y": 352.6875
+        "y": 450.890625
       },
-      "rotationDelta": 1.0001383033809066,
-      "zoomRatio": 0.399999999999999,
+      "rotationDelta": 0.7263113892569909,
+      "zoomRatio": 0.3999999999999997,
       "initial": {
         "position": [
-          -0.1854240457957441,
-          1.5954170239699834,
-          0.2745340372158469
+          -0.2623316772503846,
+          1.6194506587995587,
+          0.3706685765341475
         ],
         "target": [
           0,
           1.5374720096588135,
           0.0427539799711667
         ],
-        "distance": 0.302426348685314,
+        "distance": 0.4278625835978227,
         "zoom": 1,
         "triangles": 112343,
         "drawCalls": 22,
@@ -532,16 +532,16 @@
       },
       "rotated": {
         "position": [
-          -0.2727523776406681,
-          1.657741259280632,
-          -0.0082670398725996
+          -0.39888014369181246,
+          1.6818491940827165,
+          0.09857736243074677
         ],
         "target": [
           0,
           1.5374720096588135,
           0.0427539799711667
         ],
-        "distance": 0.30242634868531365,
+        "distance": 0.427862583597822,
         "zoom": 1,
         "triangles": 112343,
         "drawCalls": 22,
@@ -590,19 +590,19 @@
       },
       "pinched": {
         "position": [
-          -0.10906088372909331,
-          1.5855797098329245,
-          0.022131377593588738
+          -0.15958213769581622,
+          1.5952229497099288,
+          0.06486822551214384
         ],
         "target": [
-          0.0000400668894063867,
-          1.5374720096588153,
-          0.042539787104341295
+          -0.00003005781663436566,
+          1.5374720096588126,
+          0.04253920403067229
         ],
-        "distance": 0.12097053947412517,
+        "distance": 0.17114503343912865,
         "zoom": 1,
-        "triangles": 112051,
-        "drawCalls": 21,
+        "triangles": 111759,
+        "drawCalls": 20,
         "contextLost": false,
         "scroll": [
           0,
@@ -649,15 +649,15 @@
       "images": [
         {
           "file": "shots/atlas-touch/detail-390-dark-before.png",
-          "sha256": "5e785e19bb4ea196195cb8775aa18e42468b8d559237c50dcf22cbfb41d1570e"
+          "sha256": "6112876f125877dcaff31f27d6f4389e22d7a613a001ac53751ae26e4f2bd7fe"
         },
         {
           "file": "shots/atlas-touch/detail-390-dark-rotated.png",
-          "sha256": "70f7eac1ab414015b530ec225279a21503f990e966b430ee8487b5b2834e1e72"
+          "sha256": "0db3669a01bf1076b8fb58a02881d6269440f1d482b77f7fdc0db83343ab0d2f"
         },
         {
           "file": "shots/atlas-touch/detail-390-dark-pinched.png",
-          "sha256": "516d6ecebb93d8bfeb9c7fd5975637b4a0d5e33bfcd520a26fcabf8e8064391d"
+          "sha256": "57df1ca16e0ab7a659cb2cdef88da3e2dbe50ec9bcf88250ee9b3531ecd63bc1"
         }
       ],
       "errors": []

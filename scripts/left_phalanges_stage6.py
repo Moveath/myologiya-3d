@@ -8,8 +8,8 @@ SOURCES = {'phalanx_prox_1_left': 'FMA65470', 'phalanx_prox_2_left': 'FMA71915',
 BASE = 'models/bodyparts3d-3.0/left-phalanges'
 NOTE = (NOTICE + ' BodyParts3D 3.0/95%, DBCLS; проверены исходная сторона, нумерация, масштаб и крупная форма. '
         'Есть локальные пересечения соседних сеток фаланг и пясти; они не считаются физиологическим контактом. '
-        'Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные остаются '
-        'тестовыми: соответствующие пястно-фаланговые сборки неполны. Модели не отражались; '
+        'Точная форма суставных фасеток и дистальных бугристостей не принята. I и III пястные подключены '
+        '25.10.2026 по контрольной правой стороне; пястно-фаланговые пересечения исходника сохранены. Модели не отражались; '
         'независимое сканирование левого образца не подтверждено.')
 
 
@@ -28,11 +28,11 @@ def admit(cards):
 def review_geometry(record):
     related = {record['b'], *record.get('sh', []), *record.get('catalogueBones', [])}
     related.update(r['bone'] for r in record.get('relations', []))
-    available = set(PROXIMAL) | set(DISTAL) | set(METACARPALS) | set(SOURCES) | {'radius_left', 'ulna_left'}
-    if not related.intersection(available | set(BLOCKED)):
+    available = set(PROXIMAL) | set(DISTAL) | set(METACARPALS) | set(BLOCKED) | set(SOURCES) | {'radius_left', 'ulna_left'}
+    if not related.intersection(available):
         return record
-    text = (NOTICE + ' Доступны 25 обычных костей левой кисти и предплечье; I/III пястные '
-            'остаются тестовыми, два сесамоида MCP I и мягкие ткани без моделей. Пересечения исходных '
+    text = (NOTICE + ' Доступны все 27 обычных костей левой кисти и предплечье; I/III пястные подключены '
+            'по контрольной правой стороне, два сесамоида MCP I и мягкие ткани без моделей. Пересечения исходных '
             'сеток сохраняются. Координаты и протяжённость этого образования не приняты.')
     record.update(modelNote=text,
         geometryReview=dict(coordinateAcceptance=False, extentAcceptance=False, report=REPORT),

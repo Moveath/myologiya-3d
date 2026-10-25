@@ -1,0 +1,523 @@
+{
+  "leftEvidence": "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+  "rightEvidence": "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+  "sameSourceToleranceMM": 0.15,
+  "rightClassMaximaMM": {
+    "other": 2.654432831085847,
+    "MTP/MCP": 0.9115741326014395
+  },
+  "pairs": [
+    {
+      "pair": [
+        "calcaneus",
+        "cuboid"
+      ],
+      "leftDepthMM": 0.497471,
+      "rightBaselineMM": 0.437177,
+      "differenceMM": 0.060293,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.587177,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "calcaneus",
+        "talus"
+      ],
+      "leftDepthMM": 1.003467,
+      "rightBaselineMM": 1.029954,
+      "differenceMM": -0.026487,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 1.179954,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "capitate",
+        "metacarpal_3"
+      ],
+      "leftDepthMM": 0.063492,
+      "rightBaselineMM": 0.051691,
+      "differenceMM": 0.011801,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.201691,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuboid",
+        "cuneiform_lat"
+      ],
+      "leftDepthMM": 2.662395,
+      "rightBaselineMM": 2.654433,
+      "differenceMM": 0.007962,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 2.804433,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuboid",
+        "metatarsal_4"
+      ],
+      "leftDepthMM": 0.189331,
+      "rightBaselineMM": 0.140649,
+      "differenceMM": 0.048682,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.290649,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuboid",
+        "metatarsal_5"
+      ],
+      "leftDepthMM": 0.47777,
+      "rightBaselineMM": 0.428743,
+      "differenceMM": 0.049027,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.578743,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuboid",
+        "navicular"
+      ],
+      "leftDepthMM": 0.180473,
+      "rightBaselineMM": 0.148713,
+      "differenceMM": 0.03176,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.298713,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuneiform_lat",
+        "metatarsal_2"
+      ],
+      "leftDepthMM": 0.720364,
+      "rightBaselineMM": 0.758623,
+      "differenceMM": -0.038259,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.908623,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuneiform_med",
+        "metatarsal_1"
+      ],
+      "leftDepthMM": 1.196105,
+      "rightBaselineMM": 1.231548,
+      "differenceMM": -0.035442,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 1.381548,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "cuneiform_med",
+        "metatarsal_2"
+      ],
+      "leftDepthMM": 0.471175,
+      "rightBaselineMM": 0.512472,
+      "differenceMM": -0.041297,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.662472,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metacarpal_1",
+        "phalanx_prox_1"
+      ],
+      "leftDepthMM": 0.451154,
+      "rightBaselineMM": 0.419702,
+      "differenceMM": 0.031451,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.569702,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metacarpal_1",
+        "trapezium"
+      ],
+      "leftDepthMM": 1.153458,
+      "rightBaselineMM": 1.142849,
+      "differenceMM": 0.010609,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 1.292849,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metacarpal_3",
+        "phalanx_prox_3"
+      ],
+      "leftDepthMM": 0.238592,
+      "rightBaselineMM": 0.2486,
+      "differenceMM": -0.010008,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.3986,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metacarpal_3",
+        "trapezoid"
+      ],
+      "leftDepthMM": 0.545629,
+      "rightBaselineMM": 0.591811,
+      "differenceMM": -0.046183,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.741811,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_1",
+        "sesamoid_pedis"
+      ],
+      "leftDepthMM": 0.679961,
+      "rightBaselineMM": 0.271377,
+      "differenceMM": 0.408584,
+      "mixedWithMirroredNeighbour": true,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.911574,
+      "rule": "mixed_boundary_within_deepest_accepted_right_class",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_1",
+        "toe_prox_1"
+      ],
+      "leftDepthMM": 0.02758,
+      "rightBaselineMM": 0.048626,
+      "differenceMM": -0.021046,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.198626,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_2",
+        "metatarsal_3"
+      ],
+      "leftDepthMM": 0.530039,
+      "rightBaselineMM": 0.573513,
+      "differenceMM": -0.043474,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.723513,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_2",
+        "toe_prox_2"
+      ],
+      "leftDepthMM": 0.514652,
+      "rightBaselineMM": 0.911574,
+      "differenceMM": -0.396922,
+      "mixedWithMirroredNeighbour": true,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.911574,
+      "rule": "mixed_boundary_within_deepest_accepted_right_class",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_3",
+        "metatarsal_4"
+      ],
+      "leftDepthMM": 1.262426,
+      "rightBaselineMM": 1.264261,
+      "differenceMM": -0.001835,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 1.414261,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_3",
+        "toe_prox_3"
+      ],
+      "leftDepthMM": 0.28009,
+      "rightBaselineMM": 0.169743,
+      "differenceMM": 0.110347,
+      "mixedWithMirroredNeighbour": true,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.911574,
+      "rule": "mixed_boundary_within_deepest_accepted_right_class",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_4",
+        "metatarsal_5"
+      ],
+      "leftDepthMM": 0.997026,
+      "rightBaselineMM": 1.038774,
+      "differenceMM": -0.041748,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 1.188774,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_4",
+        "toe_prox_4"
+      ],
+      "leftDepthMM": 0.867154,
+      "rightBaselineMM": 0.500113,
+      "differenceMM": 0.367042,
+      "mixedWithMirroredNeighbour": true,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.911574,
+      "rule": "mixed_boundary_within_deepest_accepted_right_class",
+      "passed": true
+    },
+    {
+      "pair": [
+        "metatarsal_5",
+        "toe_prox_5"
+      ],
+      "leftDepthMM": 0.508019,
+      "rightBaselineMM": 0.470168,
+      "differenceMM": 0.037851,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "MTP/MCP",
+      "limitMM": 0.620168,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "navicular",
+        "talus"
+      ],
+      "leftDepthMM": 0.206938,
+      "rightBaselineMM": 0.119295,
+      "differenceMM": 0.087643,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.269295,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "talus",
+        "tibia"
+      ],
+      "leftDepthMM": 0.057743,
+      "rightBaselineMM": 0.081639,
+      "differenceMM": -0.023896,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.231639,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "toe_dist_1",
+        "toe_prox_1"
+      ],
+      "leftDepthMM": 0.64169,
+      "rightBaselineMM": 0.67445,
+      "differenceMM": -0.03276,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.82445,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "toe_dist_5",
+        "toe_mid_5"
+      ],
+      "leftDepthMM": 0.42615,
+      "rightBaselineMM": 0.398496,
+      "differenceMM": 0.027654,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.548496,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    },
+    {
+      "pair": [
+        "toe_mid_5",
+        "toe_prox_5"
+      ],
+      "leftDepthMM": 0.752984,
+      "rightBaselineMM": 0.787279,
+      "differenceMM": -0.034295,
+      "mixedWithMirroredNeighbour": false,
+      "jointClass": "other",
+      "limitMM": 0.937279,
+      "rule": "same_source_reproduces_right_baseline",
+      "passed": true
+    }
+  ],
+  "decisions": {
+    "talus_left": {
+      "pairs": 3,
+      "passed": true,
+      "maxLeftDepthMM": 1.003467,
+      "mixedBoundaries": []
+    },
+    "calcaneus_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 1.003467,
+      "mixedBoundaries": []
+    },
+    "cuboid_left": {
+      "pairs": 5,
+      "passed": true,
+      "maxLeftDepthMM": 2.662395,
+      "mixedBoundaries": []
+    },
+    "cuneiform_lat_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 2.662395,
+      "mixedBoundaries": []
+    },
+    "metatarsal_1_left": {
+      "pairs": 3,
+      "passed": true,
+      "maxLeftDepthMM": 1.196105,
+      "mixedBoundaries": [
+        [
+          "metatarsal_1",
+          "sesamoid_pedis"
+        ]
+      ]
+    },
+    "metatarsal_2_left": {
+      "pairs": 4,
+      "passed": true,
+      "maxLeftDepthMM": 0.720364,
+      "mixedBoundaries": [
+        [
+          "metatarsal_2",
+          "toe_prox_2"
+        ]
+      ]
+    },
+    "metatarsal_3_left": {
+      "pairs": 3,
+      "passed": true,
+      "maxLeftDepthMM": 1.262426,
+      "mixedBoundaries": [
+        [
+          "metatarsal_3",
+          "toe_prox_3"
+        ]
+      ]
+    },
+    "metatarsal_4_left": {
+      "pairs": 4,
+      "passed": true,
+      "maxLeftDepthMM": 1.262426,
+      "mixedBoundaries": [
+        [
+          "metatarsal_4",
+          "toe_prox_4"
+        ]
+      ]
+    },
+    "metatarsal_5_left": {
+      "pairs": 3,
+      "passed": true,
+      "maxLeftDepthMM": 0.997026,
+      "mixedBoundaries": []
+    },
+    "toe_prox_1_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 0.64169,
+      "mixedBoundaries": []
+    },
+    "toe_dist_1_left": {
+      "pairs": 1,
+      "passed": true,
+      "maxLeftDepthMM": 0.64169,
+      "mixedBoundaries": []
+    },
+    "toe_prox_5_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 0.752984,
+      "mixedBoundaries": []
+    },
+    "toe_mid_5_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 0.752984,
+      "mixedBoundaries": []
+    },
+    "toe_dist_5_left": {
+      "pairs": 1,
+      "passed": true,
+      "maxLeftDepthMM": 0.42615,
+      "mixedBoundaries": []
+    },
+    "metacarpal_1_left": {
+      "pairs": 2,
+      "passed": true,
+      "maxLeftDepthMM": 1.153458,
+      "mixedBoundaries": []
+    },
+    "metacarpal_3_left": {
+      "pairs": 3,
+      "passed": true,
+      "maxLeftDepthMM": 0.545629,
+      "mixedBoundaries": []
+    }
+  },
+  "allPassed": true,
+  "scope": "Educational consistency with the accepted right model of the same BodyParts3D 3.0 source. Not cartilage, joint-space, clinical or full anatomical acceptance; intersections remain source defects."
+}

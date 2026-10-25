@@ -1,0 +1,38 @@
+{
+  "admitted": [
+    "talus_left",
+    "calcaneus_left",
+    "cuboid_left",
+    "cuneiform_lat_left",
+    "metatarsal_1_left",
+    "metatarsal_2_left",
+    "metatarsal_3_left",
+    "metatarsal_4_left",
+    "metatarsal_5_left",
+    "toe_prox_1_left",
+    "toe_dist_1_left",
+    "toe_prox_5_left",
+    "toe_mid_5_left",
+    "toe_dist_5_left",
+    "metacarpal_1_left",
+    "metacarpal_3_left"
+  ],
+  "trialOnly": [],
+  "level": "educational_limited",
+  "fullAnatomicalAcceptance": false,
+  "report": "research/stage6-left-baseline-admission-2026-10-25.md",
+  "rule": "Contralateral baseline: every sampled source-mesh penetration of the final left configuration reproduces the same pair of the accepted right BodyParts3D 3.0 model within 0.15 mm, or (at four boundaries with admitted mirrored neighbours) stays within the deepest accepted right MTP/MCP pair (0.912 mm).",
+  "newEvidence": [
+    "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+    "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+    "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/trimesh-check.json"
+  ],
+  "reusedEvidence": [
+    "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+    "research/evidence-runs/stage6-left-tarsals-2026-10-20T11-22-52-873Z-6rEIlo/blender-export.json",
+    "research/evidence-runs/stage6-left-metatarsals-2026-10-20T11-37-52-033Z-JqSVPJ/blender-export.json",
+    "research/evidence-runs/stage6-left-metacarpals-2026-10-20T09-46-20-675Z-MCCbpl/blender-export.json"
+  ],
+  "limitation": "Same-source BodyParts3D 3.0 intersections are retained exactly as in the accepted right model (largest cuboid-lateral cuneiform about 2.66 mm, talus-calcaneus about 1.0 mm, MC I-trapezium about 1.15 mm); four boundaries with mirrored phalanges II-IV/sesamoids differ from the right pair by up to 0.41 mm. These are source defects, not physiological contacts. Exact facets, cartilage, joint spaces, pins, sinus tarsi and an independent left specimen are not accepted.",
+  "reason": "Previous rejection used absolute sampled depth only. The identical diagnostic on the accepted right hand/foot shows the same depths; the defect is a property of the shared source, not of the left derivatives. Educational admission therefore follows the standard already applied to the right side; GEO-LOWER-LEFT-FOOT / GEO-HAND-LEFT-MODELS full criteria stay open."
+}

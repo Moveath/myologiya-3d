@@ -1,0 +1,1463 @@
+{
+  "id": "left-bones-contralateral-baseline-admission",
+  "at": "2026-10-25T07:54:05.470830+00:00",
+  "integrated": 16,
+  "evidence": [
+    "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+    "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+    "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+    "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+    "research/stage6-left-baseline-admission-2026-10-25.md"
+  ],
+  "inventory": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/inventory.json",
+  "updates": [
+    {
+      "key": "bone:talus_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/talus_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:calcaneus_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/calcaneus_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:cuboid_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/cuboid_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:cuneiform_lat_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/cuneiform_lat_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metatarsal_1_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metatarsal_1_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metatarsal_2_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metatarsal_2_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metatarsal_3_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metatarsal_3_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metatarsal_4_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metatarsal_4_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metatarsal_5_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metatarsal_5_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:toe_prox_1_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/toe_prox_1_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:toe_dist_1_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/toe_dist_1_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:toe_prox_5_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/toe_prox_5_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:toe_mid_5_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/toe_mid_5_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:toe_dist_5_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/toe_dist_5_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_retrieved_partial_assessment",
+          "summary": "New BoneHub male STL retrieved at pinned commit with CC BY4.0. Technical inventory done; anatomical registration to BP3D remains unverified. ",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-retrieval.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "new_candidate_inspected_blocked",
+          "summary": "BoneHub grouped toe is one connected component; splitting along guessed joint planes would invent boundaries.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-quality.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "image_header_checked_full_volume_not_processed",
+          "summary": "Pinned FOOT_LEFT.seg.nrrd:17 labels, LPS, spacing0.9375×0.9375×1mm; five digit groups still combine phalanges. Header only64KiB. Matching male CT418636727bytes identified, not downloaded.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/foot-header-retrieval.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metacarpal_1_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metacarpal_1_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/trial-glb-node-checks.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_registered_not_admitted",
+          "summary": "New donor shape can be rigidly aligned approximately, but residual intersections with working base/head neighbours remain. Surface assignment and anatomical pose not independently confirmed; choosing another transform solely to remove collisions would be unsupported. This is not a claim that the source bone is intrinsically pathological or unusable as a separately identified specimen.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/trial-glb-node-checks.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/metacarpal_1_left-blender.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    },
+    {
+      "key": "bone:metacarpal_3_left",
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
+      "currentNoModel": false,
+      "integratedFile": "site/models/bodyparts3d-3.0/left-baseline/metacarpal_3_left.glb",
+      "admissionChecks": {
+        "rights": true,
+        "anatomicalBasics": true,
+        "Blender": true,
+        "Node": true,
+        "BVH": true,
+        "browser1280": true,
+        "browser390": true
+      },
+      "admissionLevel": "educational_limited",
+      "fullAnatomicalAcceptance": false,
+      "evidence": [
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
+        "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json",
+        "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/trial-glb-node-checks.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+        "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+        "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json",
+        "research/evidence-runs/stage6-left-baseline-ui-2026-10-25T07-47-34-009Z-9icCrg/ui-report.json",
+        "research/stage6-left-baseline-admission-2026-10-25.md"
+      ],
+      "methods": [
+        {
+          "code": "A",
+          "status": "completed_admitted_educational_contralateral_baseline",
+          "summary": "Original left BP3D 3.0 derivative admitted 25.10: the same sampled source-mesh penetrations exist in the accepted right model (same-source differences <=0.088 mm).",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/authored-left-quality.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/admission.json",
+            "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/baseline-comparison.json",
+            "research/evidence-runs/stage6-right-baseline-depth-2026-10-25T07-33-45-756Z-GD8rHT/right-baseline-depth.json"
+          ]
+        },
+        {
+          "code": "B",
+          "status": "new_candidate_registered_not_admitted",
+          "summary": "New donor shape can be rigidly aligned approximately, but residual intersections with working base/head neighbours remain. Surface assignment and anatomical pose not independently confirmed; choosing another transform solely to remove collisions would be unsupported. This is not a claim that the source bone is intrinsically pathological or unusable as a separately identified specimen.",
+          "evidence": [
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/decision.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/trial-glb-node-checks.json",
+            "research/evidence-runs/bonehub-metacarpal-registration-2026-10-22T07-22-32-957Z-wWtQcl/metacarpal_3_left-blender.json"
+          ]
+        },
+        {
+          "code": "C",
+          "status": "completed_candidate_not_admitted",
+          "summary": "Original versus mirrored BP3D was already compared; new permission does not remove recorded joint conflicts.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-pairs.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json"
+          ]
+        },
+        {
+          "code": "D",
+          "status": "not_attempted_requires_image_boundaries",
+          "summary": "Each bone already has an individual mesh. Surface repair/segmentation requires independent articular boundaries; removing intersection triangles alone is not anatomical correction.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "E",
+          "status": "assessed_insufficient_parameters_not_generated",
+          "summary": "Closed candidate shape already exists. No validated shape/pose constraints identify which intersecting surface is wrong; arbitrary shift/scale/deformation is not justified.",
+          "evidence": [
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/comparison-depth.json",
+            "research/evidence-runs/stage6-remaining20-2026-10-20T13-36-25-228Z-lOkasj/owner-decisions.json"
+          ]
+        },
+        {
+          "code": "F",
+          "status": "new_licensed_image_route_identified_not_executed",
+          "summary": "BoneHub exposes aligned CT and region seg.nrrd of one donor under source license. Not downloaded or segmented in this bounded pass. Same-source images could resolve fused phalanges/islands; cannot be assumed already validated or compatible with BP3D.",
+          "evidence": [
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-api.json",
+            "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bonehub-candidates/DATASET_README.md"
+          ],
+          "nextStep": "Inspect spacing/directions and relevant CT slices of one licensed donor, independently label joint boundaries; then evaluate a coherent regional replacement or separate educational specimen, preserving working BP3D models until justified."
+        }
+      ],
+      "blocker": "Full acceptance only: no independent left specimen; exact facets, cartilage, joint spaces, pins and sinus tarsi unaccepted; shared-source intersections retained.",
+      "nextStep": "Full acceptance requires licensed imaging of one specimen with articular surface masks and independent anatomical review; do not re-run the absolute-depth rejection without new evidence."
+    }
+  ],
+  "resume": {
+    "activeBatch": "left_limb_muscles_bilateral_completeness",
+    "stage8Started": false,
+    "completed": [
+      "55 current owners/parts consolidated; unchanged GLB evidence reused",
+      "PB and4omohyoid parts not repeated",
+      "New BoneHub candidates and two registered metacarpals",
+      "Two independent reflection planes for left interspinales",
+      "Actual Z-Anatomy parts and targeted source review",
+      "1280/390 research browser check",
+      "16 left bones admitted by contralateral baseline (25.10)"
+    ],
+    "next": "Bones: only 4 MCP I sesamoids remain (need licensed identified geometry). Next: CAT-MUSCLE-BILATERAL left limb muscles from BP3D left files; then multifidus/rotatores and diaphragm constraints.",
+    "doNotRepeat": [
+      "PB/omohyoid without new boundaries or method",
+      "Known BP3D original/mirrored bone conflicts without new source or landmark registration",
+      "Absolute-depth rejection of the 16 left BP3D bones without a contralateral comparison"
+    ],
+    "remainingWork": "4 bone owners, 14 muscles, 21 parts without geometry; full acceptance of all admitted educational models remains open."
+  }
+}

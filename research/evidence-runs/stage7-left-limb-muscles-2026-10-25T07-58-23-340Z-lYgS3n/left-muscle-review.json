@@ -1,0 +1,6286 @@
+{
+ "contactThresholdMM": 2.5,
+ "rule": "technical + left centroid + shape vs reflected right (median <=3 mm, extents 0.8-1.25) + identical set of approached bones",
+ "limitation": "Nearest-vertex proximity and reflected-right similarity show gross identity/topography only; attachment areas, fibre directions and part boundaries are not accepted.",
+ "muscles": [
+  {
+   "region": "arm",
+   "right": "deltoid",
+   "left": "deltoid_left",
+   "parts": [
+    {
+     "part": "clav",
+     "leftFMA": "FMA34681",
+     "rightFMA": "FMA34680",
+     "triangles": 3780,
+     "rightTriangles": 3780,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.1532868091430019,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.7812262939698585,
+     "extentRatio": [
+      0.9976,
+      0.9965,
+      0.9986
+     ],
+     "medianSymmetricDistanceMM": 1.3372457413113101,
+     "p95SymmetricDistanceMM": 2.666476461883056,
+     "leftContacts": {
+      "clavicle": 0.236,
+      "scapula": 0.118,
+      "humerus": 0.105
+     },
+     "rightContacts": {
+      "clavicle": 0.298,
+      "scapula": 0.09,
+      "humerus": 0.311
+     }
+    },
+    {
+     "part": "acrom",
+     "leftFMA": "FMA34683",
+     "rightFMA": "FMA34682",
+     "triangles": 3856,
+     "rightTriangles": 3856,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.1973130455293804,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.4800912557302382,
+     "extentRatio": [
+      0.9992,
+      0.9997,
+      1.0
+     ],
+     "medianSymmetricDistanceMM": 1.4642571784566905,
+     "p95SymmetricDistanceMM": 2.8837294091962122,
+     "leftContacts": {
+      "scapula": 0.053,
+      "humerus": 0.147
+     },
+     "rightContacts": {
+      "scapula": 0.073,
+      "humerus": 0.073
+     }
+    },
+    {
+     "part": "spin",
+     "leftFMA": "FMA34685",
+     "rightFMA": "FMA34684",
+     "triangles": 5720,
+     "rightTriangles": 5720,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.17415322259387128,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.900197265386178,
+     "extentRatio": [
+      1.0006,
+      0.9985,
+      0.999
+     ],
+     "medianSymmetricDistanceMM": 1.3868517694110472,
+     "p95SymmetricDistanceMM": 2.764246388856793,
+     "leftContacts": {
+      "scapula": 0.047,
+      "humerus": 0.342
+     },
+     "rightContacts": {
+      "scapula": 0.09,
+      "humerus": 0.351
+     }
+    }
+   ],
+   "leftBones": [
+    "clavicle",
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "clavicle",
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "supraspinatus",
+   "left": "supraspinatus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA32545",
+     "rightFMA": "FMA32544",
+     "triangles": 1860,
+     "rightTriangles": 1860,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.14019701101651755,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.356813701320016,
+     "extentRatio": [
+      0.9972,
+      1.0076,
+      0.9992
+     ],
+     "medianSymmetricDistanceMM": 1.2049092169196403,
+     "p95SymmetricDistanceMM": 2.8284564121695155,
+     "leftContacts": {
+      "clavicle": 0.237,
+      "scapula": 0.03,
+      "humerus": 0.166
+     },
+     "rightContacts": {
+      "clavicle": 0.394,
+      "scapula": 0.172,
+      "humerus": 0.319
+     }
+    }
+   ],
+   "leftBones": [
+    "clavicle",
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "clavicle",
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "infraspinatus",
+   "left": "infraspinatus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA32548",
+     "rightFMA": "FMA32547",
+     "triangles": 4118,
+     "rightTriangles": 4118,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.125162578558702,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.436176139118768,
+     "extentRatio": [
+      0.9985,
+      1.0001,
+      1.0011
+     ],
+     "medianSymmetricDistanceMM": 1.2412287413331582,
+     "p95SymmetricDistanceMM": 2.585770780222393,
+     "leftContacts": {
+      "scapula": 0.039,
+      "humerus": 0.079
+     },
+     "rightContacts": {
+      "scapula": 0.187,
+      "humerus": 0.155
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "teres_minor",
+   "left": "teres_minor_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA32554",
+     "rightFMA": "FMA32553",
+     "triangles": 1978,
+     "rightTriangles": 1978,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.14701691699292657,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.030059002812961,
+     "extentRatio": [
+      1.0,
+      0.9993,
+      0.9961
+     ],
+     "medianSymmetricDistanceMM": 1.3386410023866637,
+     "p95SymmetricDistanceMM": 2.7560545178543925,
+     "leftContacts": {
+      "scapula": 0.093,
+      "humerus": 0.071
+     },
+     "rightContacts": {
+      "scapula": 0.155,
+      "humerus": 0.052
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "teres_major",
+   "left": "teres_major_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA32552",
+     "rightFMA": "FMA32551",
+     "triangles": 2228,
+     "rightTriangles": 2228,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.1345956229616664,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.3312480871991834,
+     "extentRatio": [
+      0.9972,
+      0.9981,
+      1.0001
+     ],
+     "medianSymmetricDistanceMM": 1.37936927647437,
+     "p95SymmetricDistanceMM": 2.78379524039139,
+     "leftContacts": {
+      "scapula": 0.1,
+      "humerus": 0.232
+     },
+     "rightContacts": {
+      "scapula": 0.127,
+      "humerus": 0.259
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "subscapularis",
+   "left": "subscapularis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA13415",
+     "rightFMA": "FMA13414",
+     "triangles": 3980,
+     "rightTriangles": 3980,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.11291156262405648,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.621548125054298,
+     "extentRatio": [
+      0.9992,
+      1.0035,
+      0.9971
+     ],
+     "medianSymmetricDistanceMM": 1.2167643984129835,
+     "p95SymmetricDistanceMM": 2.6686856195456516,
+     "leftContacts": {
+      "scapula": 0.048,
+      "humerus": 0.063
+     },
+     "rightContacts": {
+      "scapula": 0.179,
+      "humerus": 0.116
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "coracobrachialis",
+   "left": "coracobrachialis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37666",
+     "rightFMA": "FMA37665",
+     "triangles": 1514,
+     "rightTriangles": 1514,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.1578349512273615,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 8.259760686997032,
+     "extentRatio": [
+      0.9976,
+      0.9942,
+      0.9995
+     ],
+     "medianSymmetricDistanceMM": 1.476965511432096,
+     "p95SymmetricDistanceMM": 3.0479020663154017,
+     "leftContacts": {
+      "scapula": 0.105,
+      "humerus": 0.418
+     },
+     "rightContacts": {
+      "scapula": 0.127,
+      "humerus": 0.214
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "biceps_brachii",
+   "left": "biceps_brachii_left",
+   "parts": [
+    {
+     "part": "long",
+     "leftFMA": "FMA37687",
+     "rightFMA": "FMA37686",
+     "triangles": 4194,
+     "rightTriangles": 4194,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.19758563939022306,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 18.789617326345475,
+     "extentRatio": [
+      0.9998,
+      1.0,
+      0.9939
+     ],
+     "medianSymmetricDistanceMM": 1.4638051066182816,
+     "p95SymmetricDistanceMM": 2.794726936110362,
+     "leftContacts": {
+      "scapula": 0.14,
+      "humerus": 0.182,
+      "radius": 0.237
+     },
+     "rightContacts": {
+      "scapula": 0.127,
+      "humerus": 0.155,
+      "radius": 0.48
+     }
+    },
+    {
+     "part": "short",
+     "leftFMA": "FMA37685",
+     "rightFMA": "FMA37684",
+     "triangles": 3618,
+     "rightTriangles": 3618,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.17656589104396156,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 20.50127077061651,
+     "extentRatio": [
+      0.9476,
+      0.9973,
+      0.9924
+     ],
+     "medianSymmetricDistanceMM": 1.5049003071144764,
+     "p95SymmetricDistanceMM": 2.967015665026724,
+     "leftContacts": {
+      "scapula": 0.095,
+      "humerus": 0.57
+     },
+     "rightContacts": {
+      "scapula": 0.127,
+      "humerus": 0.302
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "radius",
+    "scapula"
+   ],
+   "rightBones": [
+    "humerus",
+    "radius",
+    "scapula"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "brachialis",
+   "left": "brachialis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37669",
+     "rightFMA": "FMA37668",
+     "triangles": 4548,
+     "rightTriangles": 4548,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.20752947507298478,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.8759462241431586,
+     "extentRatio": [
+      0.9998,
+      0.9992,
+      0.9951
+     ],
+     "medianSymmetricDistanceMM": 1.345628906924258,
+     "p95SymmetricDistanceMM": 2.7016157000399628,
+     "leftContacts": {
+      "humerus": 0.135,
+      "radius": 0.146,
+      "ulna": 0.093
+     },
+     "rightContacts": {
+      "humerus": 0.116,
+      "radius": 0.528,
+      "ulna": 0.127
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "triceps_brachii",
+   "left": "triceps_brachii_left",
+   "parts": [
+    {
+     "part": "long",
+     "leftFMA": "FMA37700",
+     "rightFMA": "FMA37699",
+     "triangles": 5134,
+     "rightTriangles": 5134,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.17525695683680298,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 12.88021977966916,
+     "extentRatio": [
+      0.9989,
+      1.0003,
+      1.0031
+     ],
+     "medianSymmetricDistanceMM": 1.4379307863682662,
+     "p95SymmetricDistanceMM": 2.833499805942012,
+     "leftContacts": {
+      "scapula": 0.15,
+      "ulna": 0.249
+     },
+     "rightContacts": {
+      "scapula": 0.264,
+      "ulna": 0.298
+     }
+    },
+    {
+     "part": "lat",
+     "leftFMA": "FMA37698",
+     "rightFMA": "FMA37697",
+     "triangles": 4718,
+     "rightTriangles": 4718,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.20360255375902112,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 7.12344425372264,
+     "extentRatio": [
+      1.0,
+      0.9999,
+      0.9971
+     ],
+     "medianSymmetricDistanceMM": 1.503193678669323,
+     "p95SymmetricDistanceMM": 2.7493983085281406,
+     "leftContacts": {
+      "humerus": 0.474,
+      "ulna": 0.299
+     },
+     "rightContacts": {
+      "humerus": 0.164,
+      "ulna": 0.859
+     }
+    },
+    {
+     "part": "med",
+     "leftFMA": "FMA37696",
+     "rightFMA": "FMA37695",
+     "triangles": 3492,
+     "rightTriangles": 3492,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.18792284925796893,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.002423663086848,
+     "extentRatio": [
+      0.9966,
+      0.9991,
+      1.0007
+     ],
+     "medianSymmetricDistanceMM": 1.3777799738083087,
+     "p95SymmetricDistanceMM": 2.737630433597932,
+     "leftContacts": {
+      "humerus": 0.155,
+      "ulna": 0.176
+     },
+     "rightContacts": {
+      "humerus": 0.155,
+      "ulna": 0.232
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "scapula",
+    "ulna"
+   ],
+   "rightBones": [
+    "humerus",
+    "scapula",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "anconeus",
+   "left": "anconeus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37706",
+     "rightFMA": "FMA37705",
+     "triangles": 1872,
+     "rightTriangles": 1874,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2187473699085748,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.0025188735960517,
+     "extentRatio": [
+      0.9941,
+      0.9976,
+      0.9933
+     ],
+     "medianSymmetricDistanceMM": 1.15438555226923,
+     "p95SymmetricDistanceMM": 1.8973839017964529,
+     "leftContacts": {
+      "humerus": 0.174,
+      "ulna": 0.237
+     },
+     "rightContacts": {
+      "humerus": 0.319,
+      "ulna": 0.194
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "ulna"
+   ],
+   "rightBones": [
+    "humerus",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "pronator_teres",
+   "left": "pronator_teres_left",
+   "parts": [
+    {
+     "part": "hum",
+     "leftFMA": "FMA38561",
+     "rightFMA": "FMA38560",
+     "triangles": 3374,
+     "rightTriangles": 3376,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.23084203197807515,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.5958736489944214,
+     "extentRatio": [
+      0.9991,
+      0.9888,
+      0.9977
+     ],
+     "medianSymmetricDistanceMM": 1.1056191388568264,
+     "p95SymmetricDistanceMM": 1.9305489980015873,
+     "leftContacts": {
+      "humerus": 0.083,
+      "radius": 0.195
+     },
+     "rightContacts": {
+      "humerus": 0.164,
+      "radius": 0.254
+     }
+    },
+    {
+     "part": "uln",
+     "leftFMA": "FMA38563",
+     "rightFMA": "FMA38562",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.23618939375370107,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.8145389623267265,
+     "extentRatio": [
+      0.9991,
+      0.9987,
+      0.9977
+     ],
+     "medianSymmetricDistanceMM": 1.1860954105221566,
+     "p95SymmetricDistanceMM": 1.8717914140313248,
+     "leftContacts": {
+      "radius": 0.202,
+      "ulna": 0.104
+     },
+     "rightContacts": {
+      "radius": 0.127,
+      "ulna": 0.421
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_carpi_radialis",
+   "left": "flexor_carpi_radialis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38461",
+     "rightFMA": "FMA38460",
+     "triangles": 2172,
+     "rightTriangles": 2172,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2223441220451804,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 5.843917559963736,
+     "extentRatio": [
+      0.9965,
+      1.0001,
+      0.9999
+     ],
+     "medianSymmetricDistanceMM": 1.370809802682453,
+     "p95SymmetricDistanceMM": 2.8427716121322337,
+     "leftContacts": {
+      "humerus": 0.515,
+      "metacarpal_2": 0.225
+     },
+     "rightContacts": {
+      "humerus": 0.311,
+      "metacarpal_2": 0.187
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "metacarpal_2"
+   ],
+   "rightBones": [
+    "humerus",
+    "metacarpal_2"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "palmaris_longus",
+   "left": "palmaris_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38464",
+     "rightFMA": "FMA38463",
+     "triangles": 5770,
+     "rightTriangles": 5770,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2317528622701385,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.933544927008364,
+     "extentRatio": [
+      1.0021,
+      1.0,
+      0.9985
+     ],
+     "medianSymmetricDistanceMM": 1.1278549353005898,
+     "p95SymmetricDistanceMM": 2.0030203419234818,
+     "leftContacts": {
+      "humerus": 0.195,
+      "phalanx_prox_5": 1.419
+     },
+     "rightContacts": {
+      "humerus": 0.116,
+      "phalanx_prox_5": 1.403
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "phalanx_prox_5"
+   ],
+   "rightBones": [
+    "humerus",
+    "phalanx_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_carpi_ulnaris",
+   "left": "flexor_carpi_ulnaris_left",
+   "parts": [
+    {
+     "part": "hum",
+     "leftFMA": "FMA38618",
+     "rightFMA": "FMA38617",
+     "triangles": 5084,
+     "rightTriangles": 5084,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.20287911930234412,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 9.313768073183589,
+     "extentRatio": [
+      0.9994,
+      0.9993,
+      0.9993
+     ],
+     "medianSymmetricDistanceMM": 1.3271053693402166,
+     "p95SymmetricDistanceMM": 2.1392717563673473,
+     "leftContacts": {
+      "humerus": 0.125,
+      "pisiform": 0.123,
+      "triquetrum": 0.044,
+      "hamate": 0.296,
+      "ulna": 0.289,
+      "metacarpal_5": 0.171
+     },
+     "rightContacts": {
+      "humerus": 0.052,
+      "ulna": 0.226,
+      "triquetrum": 0.306,
+      "pisiform": 0.104,
+      "hamate": 0.269,
+      "metacarpal_5": 0.116
+     }
+    },
+    {
+     "part": "uln",
+     "leftFMA": "FMA38620",
+     "rightFMA": "FMA38619",
+     "triangles": 1976,
+     "rightTriangles": 1976,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2083235314038335,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 9.0380496045797,
+     "extentRatio": [
+      1.0055,
+      1.002,
+      1.0005
+     ],
+     "medianSymmetricDistanceMM": 1.3954366745890963,
+     "p95SymmetricDistanceMM": 2.717750151186048,
+     "leftContacts": {
+      "humerus": 1.358,
+      "ulna": 0.303
+     },
+     "rightContacts": {
+      "humerus": 1.422,
+      "ulna": 0.179
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_5",
+    "pisiform",
+    "triquetrum",
+    "ulna"
+   ],
+   "rightBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_5",
+    "pisiform",
+    "triquetrum",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digitorum_superficialis",
+   "left": "flexor_digitorum_superficialis_left",
+   "parts": [
+    {
+     "part": "humuln",
+     "leftFMA": "FMA38639",
+     "rightFMA": "FMA38638",
+     "triangles": 13998,
+     "rightTriangles": 13998,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.23155724537302777,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 27.466385695436838,
+     "extentRatio": [
+      0.9999,
+      0.9996,
+      0.9992
+     ],
+     "medianSymmetricDistanceMM": 1.017641494833508,
+     "p95SymmetricDistanceMM": 1.8733078999171489,
+     "leftContacts": {
+      "humerus": 0.076,
+      "hamate": 0.303,
+      "radius": 2.495,
+      "ulna": 0.271,
+      "metacarpal_2": 1.327,
+      "metacarpal_4": 1.623,
+      "metacarpal_5": 1.515,
+      "phalanx_mid_2": 0.212,
+      "phalanx_mid_3": 0.191,
+      "phalanx_mid_4": 0.138,
+      "phalanx_mid_5": 0.265,
+      "phalanx_prox_2": 1.694,
+      "phalanx_prox_3": 0.941,
+      "phalanx_prox_4": 1.454,
+      "phalanx_prox_5": 0.643
+     },
+     "rightContacts": {
+      "humerus": 0.052,
+      "ulna": 0.194,
+      "hamate": 0.279,
+      "metacarpal_2": 1.322,
+      "metacarpal_4": 1.436,
+      "metacarpal_5": 1.377,
+      "phalanx_prox_2": 1.615,
+      "phalanx_prox_3": 0.816,
+      "phalanx_prox_4": 1.666,
+      "phalanx_prox_5": 0.634,
+      "phalanx_mid_2": 0.226,
+      "phalanx_mid_3": 0.164,
+      "phalanx_mid_4": 0.147,
+      "phalanx_mid_5": 0.194
+     }
+    },
+    {
+     "part": "rad",
+     "leftFMA": "FMA38641",
+     "rightFMA": "FMA38640",
+     "triangles": 1658,
+     "rightTriangles": 1658,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.24127030131267554,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.1083426301553647,
+     "extentRatio": [
+      0.987,
+      0.9976,
+      1.0064
+     ],
+     "medianSymmetricDistanceMM": 1.4821672844011908,
+     "p95SymmetricDistanceMM": 2.819975148263533,
+     "leftContacts": {
+      "radius": 0.301
+     },
+     "rightContacts": {
+      "radius": 0.09
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_2",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_2",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digitorum_profundus",
+   "left": "flexor_digitorum_profundus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38480",
+     "rightFMA": "FMA38479",
+     "triangles": 9268,
+     "rightTriangles": 9268,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 6,
+     "centroidX": 0.24461851172605942,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 16.293205951691466,
+     "extentRatio": [
+      1.0006,
+      0.9997,
+      1.0007
+     ],
+     "medianSymmetricDistanceMM": 1.045256161847327,
+     "p95SymmetricDistanceMM": 2.1040389254653875,
+     "leftContacts": {
+      "metacarpal_3": 0.832,
+      "lunate": 0.725,
+      "capitate": 1.831,
+      "hamate": 0.349,
+      "radius": 0.367,
+      "ulna": 0.174,
+      "metacarpal_2": 0.123,
+      "metacarpal_4": 0.412,
+      "metacarpal_5": 0.327,
+      "phalanx_dist_2": 0.086,
+      "phalanx_dist_3": 0.181,
+      "phalanx_dist_4": 0.142,
+      "phalanx_dist_5": 0.056,
+      "phalanx_mid_2": 0.126,
+      "phalanx_mid_3": 0.172,
+      "phalanx_mid_4": 0.116,
+      "phalanx_mid_5": 0.085,
+      "phalanx_prox_2": 0.052,
+      "phalanx_prox_3": 0.243,
+      "phalanx_prox_4": 0.405,
+      "phalanx_prox_5": 0.183
+     },
+     "rightContacts": {
+      "radius": 0.269,
+      "ulna": 0.194,
+      "lunate": 0.543,
+      "capitate": 1.801,
+      "hamate": 0.243,
+      "metacarpal_2": 0.226,
+      "metacarpal_3": 0.77,
+      "metacarpal_4": 0.172,
+      "metacarpal_5": 0.264,
+      "phalanx_prox_2": 0.147,
+      "phalanx_prox_3": 0.363,
+      "phalanx_prox_4": 0.279,
+      "phalanx_prox_5": 0.22,
+      "phalanx_mid_2": 0.127,
+      "phalanx_mid_3": 0.194,
+      "phalanx_mid_4": 0.116,
+      "phalanx_mid_5": 0.073,
+      "phalanx_dist_2": 0.172,
+      "phalanx_dist_3": 0.214,
+      "phalanx_dist_4": 0.164,
+      "phalanx_dist_5": 0.214
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "hamate",
+    "lunate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_dist_2",
+    "phalanx_dist_3",
+    "phalanx_dist_4",
+    "phalanx_dist_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "capitate",
+    "hamate",
+    "lunate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_dist_2",
+    "phalanx_dist_3",
+    "phalanx_dist_4",
+    "phalanx_dist_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_pollicis_longus",
+   "left": "flexor_pollicis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38484",
+     "rightFMA": "FMA38482",
+     "triangles": 2476,
+     "rightTriangles": 2476,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.26120722132629987,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.4804572406574685,
+     "extentRatio": [
+      1.0004,
+      0.9981,
+      0.9984
+     ],
+     "medianSymmetricDistanceMM": 1.196798479104935,
+     "p95SymmetricDistanceMM": 1.9286691291120621,
+     "leftContacts": {
+      "metacarpal_1": 0.308,
+      "trapezium": 0.987,
+      "radius": 0.166,
+      "phalanx_dist_1": 0.157,
+      "phalanx_prox_1": 0.634
+     },
+     "rightContacts": {
+      "radius": 0.164,
+      "trapezium": 0.856,
+      "metacarpal_1": 0.408,
+      "phalanx_prox_1": 0.491,
+      "phalanx_dist_1": 0.164
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "phalanx_dist_1",
+    "phalanx_prox_1",
+    "radius",
+    "trapezium"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "phalanx_dist_1",
+    "phalanx_prox_1",
+    "radius",
+    "trapezium"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "pronator_quadratus",
+   "left": "pronator_quadratus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38455",
+     "rightFMA": "FMA38454",
+     "triangles": 1906,
+     "rightTriangles": 1906,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.24468848523040806,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.251308968934031,
+     "extentRatio": [
+      0.9898,
+      1.0055,
+      1.004
+     ],
+     "medianSymmetricDistanceMM": 0.9525156914810187,
+     "p95SymmetricDistanceMM": 1.7511492121126768,
+     "leftContacts": {
+      "radius": 0.13,
+      "ulna": 0.198
+     },
+     "rightContacts": {
+      "radius": 0.302,
+      "ulna": 0.09
+     }
+    }
+   ],
+   "leftBones": [
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "brachioradialis",
+   "left": "brachioradialis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38487",
+     "rightFMA": "FMA38486",
+     "triangles": 9510,
+     "rightTriangles": 9510,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.24925128023389362,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 9.420281521832653,
+     "extentRatio": [
+      0.9956,
+      1.0005,
+      1.0004
+     ],
+     "medianSymmetricDistanceMM": 1.2760858676032265,
+     "p95SymmetricDistanceMM": 2.0357135810096803,
+     "leftContacts": {
+      "humerus": 0.165,
+      "radius": 0.248
+     },
+     "rightContacts": {
+      "humerus": 0.116,
+      "radius": 0.172
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "radius"
+   ],
+   "rightBones": [
+    "humerus",
+    "radius"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_radialis_longus",
+   "left": "extensor_carpi_radialis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38496",
+     "rightFMA": "FMA38495",
+     "triangles": 4828,
+     "rightTriangles": 4828,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2557179100908191,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.959091638285179,
+     "extentRatio": [
+      0.9975,
+      0.9994,
+      1.0004
+     ],
+     "medianSymmetricDistanceMM": 1.3266242329608275,
+     "p95SymmetricDistanceMM": 2.1543766569501144,
+     "leftContacts": {
+      "humerus": 0.104,
+      "trapezium": 0.573,
+      "trapezoid": 0.742,
+      "radius": 0.495,
+      "metacarpal_2": 0.15
+     },
+     "rightContacts": {
+      "humerus": 0.226,
+      "radius": 0.269,
+      "trapezium": 0.452,
+      "trapezoid": 0.659,
+      "metacarpal_2": 0.259
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "metacarpal_2",
+    "radius",
+    "trapezium",
+    "trapezoid"
+   ],
+   "rightBones": [
+    "humerus",
+    "metacarpal_2",
+    "radius",
+    "trapezium",
+    "trapezoid"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_radialis_brevis",
+   "left": "extensor_carpi_radialis_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38499",
+     "rightFMA": "FMA38498",
+     "triangles": 4094,
+     "rightTriangles": 4094,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2519802003160709,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 10.572783149341083,
+     "extentRatio": [
+      0.9993,
+      0.9997,
+      0.9979
+     ],
+     "medianSymmetricDistanceMM": 1.2420373206182602,
+     "p95SymmetricDistanceMM": 2.19188568710646,
+     "leftContacts": {
+      "humerus": 0.121,
+      "metacarpal_3": 0.153,
+      "capitate": 1.015,
+      "trapezoid": 0.249,
+      "radius": 0.141,
+      "metacarpal_2": 2.236
+     },
+     "rightContacts": {
+      "humerus": 0.164,
+      "radius": 0.363,
+      "trapezoid": 0.531,
+      "capitate": 1.049,
+      "metacarpal_2": 2.174,
+      "metacarpal_3": 0.147
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "humerus",
+    "metacarpal_2",
+    "metacarpal_3",
+    "radius",
+    "trapezoid"
+   ],
+   "rightBones": [
+    "capitate",
+    "humerus",
+    "metacarpal_2",
+    "metacarpal_3",
+    "radius",
+    "trapezoid"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_digitorum",
+   "left": "extensor_digitorum_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38502",
+     "rightFMA": "FMA38501",
+     "triangles": 8376,
+     "rightTriangles": 8376,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.25085232383768163,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 21.14347456719353,
+     "extentRatio": [
+      1.0007,
+      0.9998,
+      1.0008
+     ],
+     "medianSymmetricDistanceMM": 1.0660673263883813,
+     "p95SymmetricDistanceMM": 2.048716060733207,
+     "leftContacts": {
+      "humerus": 0.198,
+      "metacarpal_3": 0.157,
+      "lunate": 1.283,
+      "capitate": 0.467,
+      "hamate": 0.119,
+      "trapezoid": 1.758,
+      "radius": 2.062,
+      "metacarpal_2": 0.782,
+      "metacarpal_4": 0.023,
+      "metacarpal_5": 1.04,
+      "phalanx_mid_2": 0.095,
+      "phalanx_mid_3": 0.103,
+      "phalanx_mid_4": 0.109,
+      "phalanx_mid_5": 0.185,
+      "phalanx_prox_2": 0.142,
+      "phalanx_prox_3": 0.295,
+      "phalanx_prox_4": 0.162,
+      "phalanx_prox_5": 0.631
+     },
+     "rightContacts": {
+      "humerus": 0.651,
+      "radius": 1.903,
+      "lunate": 1.305,
+      "trapezoid": 1.906,
+      "capitate": 0.306,
+      "hamate": 0.214,
+      "metacarpal_2": 0.579,
+      "metacarpal_3": 0.214,
+      "metacarpal_4": 0.116,
+      "metacarpal_5": 0.9,
+      "phalanx_prox_2": 0.214,
+      "phalanx_prox_3": 0.194,
+      "phalanx_prox_4": 0.155,
+      "phalanx_prox_5": 0.408,
+      "phalanx_mid_2": 0.172,
+      "phalanx_mid_3": 0.104,
+      "phalanx_mid_4": 0.116,
+      "phalanx_mid_5": 0.319
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "hamate",
+    "humerus",
+    "lunate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "trapezoid"
+   ],
+   "rightBones": [
+    "capitate",
+    "hamate",
+    "humerus",
+    "lunate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5",
+    "radius",
+    "trapezoid"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_digiti_minimi",
+   "left": "extensor_digiti_minimi_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38505",
+     "rightFMA": "FMA38504",
+     "triangles": 2800,
+     "rightTriangles": 2800,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2359967274250896,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.1163235577712025,
+     "extentRatio": [
+      0.9897,
+      0.9996,
+      0.999
+     ],
+     "medianSymmetricDistanceMM": 1.2130967559995167,
+     "p95SymmetricDistanceMM": 2.067808917563483,
+     "leftContacts": {
+      "humerus": 0.245,
+      "lunate": 2.405,
+      "triquetrum": 2.006,
+      "hamate": 0.601,
+      "ulna": 1.874,
+      "metacarpal_4": 2.233,
+      "metacarpal_5": 0.232,
+      "phalanx_prox_5": 0.268
+     },
+     "rightContacts": {
+      "humerus": 0.127,
+      "ulna": 1.666,
+      "triquetrum": 2.303,
+      "hamate": 0.259,
+      "metacarpal_4": 2.316,
+      "metacarpal_5": 0.418,
+      "phalanx_prox_5": 0.351
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "humerus",
+    "lunate",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_5",
+    "triquetrum",
+    "ulna"
+   ],
+   "rightBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_5",
+    "triquetrum",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [
+    "lunate"
+   ],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_ulnaris",
+   "left": "extensor_carpi_ulnaris_left",
+   "parts": [
+    {
+     "part": "hum",
+     "leftFMA": "BP44",
+     "rightFMA": "BP45",
+     "triangles": 4112,
+     "rightTriangles": 4112,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2289582868484691,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.896950421516842,
+     "extentRatio": [
+      1.005,
+      1.0002,
+      0.9986
+     ],
+     "medianSymmetricDistanceMM": 1.2349167788144018,
+     "p95SymmetricDistanceMM": 2.0156558834046465,
+     "leftContacts": {
+      "humerus": 0.178,
+      "triquetrum": 1.645,
+      "hamate": 0.1,
+      "ulna": 0.192,
+      "metacarpal_5": 0.124
+     },
+     "rightContacts": {
+      "humerus": 0.366,
+      "ulna": 0.116,
+      "triquetrum": 1.958,
+      "hamate": 0.172,
+      "metacarpal_5": 0.164
+     }
+    },
+    {
+     "part": "uln",
+     "leftFMA": "BP46",
+     "rightFMA": "BP47",
+     "triangles": 2234,
+     "rightTriangles": 2234,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.22955807329528535,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 7.878297458937972,
+     "extentRatio": [
+      0.9957,
+      1.0,
+      0.9977
+     ],
+     "medianSymmetricDistanceMM": 1.2480769076383376,
+     "p95SymmetricDistanceMM": 2.0072207856962088,
+     "leftContacts": {
+      "triquetrum": 0.769,
+      "hamate": 0.296,
+      "ulna": 0.12,
+      "metacarpal_5": 0.122
+     },
+     "rightContacts": {
+      "ulna": 0.116,
+      "triquetrum": 0.758,
+      "hamate": 0.551,
+      "metacarpal_5": 0.194
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_5",
+    "triquetrum",
+    "ulna"
+   ],
+   "rightBones": [
+    "hamate",
+    "humerus",
+    "metacarpal_5",
+    "triquetrum",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "supinator",
+   "left": "supinator_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38514",
+     "rightFMA": "FMA38513",
+     "triangles": 3592,
+     "rightTriangles": 3592,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2391333125566852,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.5034519091635032,
+     "extentRatio": [
+      1.0046,
+      0.9968,
+      0.9999
+     ],
+     "medianSymmetricDistanceMM": 1.226666141128405,
+     "p95SymmetricDistanceMM": 1.8821966737270233,
+     "leftContacts": {
+      "humerus": 0.154,
+      "radius": 0.202,
+      "ulna": 0.247
+     },
+     "rightContacts": {
+      "humerus": 0.243,
+      "radius": 0.254,
+      "ulna": 0.194
+     }
+    }
+   ],
+   "leftBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "humerus",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "abductor_pollicis_longus",
+   "left": "abductor_pollicis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38517",
+     "rightFMA": "FMA38516",
+     "triangles": 3218,
+     "rightTriangles": 3218,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.25039059738434194,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.7317910761907007,
+     "extentRatio": [
+      1.0004,
+      0.9989,
+      0.999
+     ],
+     "medianSymmetricDistanceMM": 1.173830387516652,
+     "p95SymmetricDistanceMM": 1.9311727436547859,
+     "leftContacts": {
+      "metacarpal_1": 0.277,
+      "radius": 0.14,
+      "ulna": 0.298
+     },
+     "rightContacts": {
+      "radius": 0.264,
+      "ulna": 0.116,
+      "metacarpal_1": 0.328
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "radius",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_pollicis_brevis",
+   "left": "extensor_pollicis_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38520",
+     "rightFMA": "FMA38519",
+     "triangles": 1522,
+     "rightTriangles": 1524,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2636816588513328,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.9287266199600137,
+     "extentRatio": [
+      0.9993,
+      0.9989,
+      0.9983
+     ],
+     "medianSymmetricDistanceMM": 1.1551661798756434,
+     "p95SymmetricDistanceMM": 1.8512533115956031,
+     "leftContacts": {
+      "metacarpal_1": 0.123,
+      "radius": 0.123,
+      "phalanx_prox_1": 0.081
+     },
+     "rightContacts": {
+      "radius": 0.588,
+      "metacarpal_1": 0.155,
+      "phalanx_prox_1": 0.116
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "phalanx_prox_1",
+    "radius"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "phalanx_prox_1",
+    "radius"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_pollicis_longus",
+   "left": "extensor_pollicis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38523",
+     "rightFMA": "FMA38522",
+     "triangles": 2108,
+     "rightTriangles": 2108,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.258074797655693,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.745450054712647,
+     "extentRatio": [
+      1.0,
+      0.9985,
+      1.0002
+     ],
+     "medianSymmetricDistanceMM": 1.2198561605258957,
+     "p95SymmetricDistanceMM": 1.9739202068351906,
+     "leftContacts": {
+      "metacarpal_1": 0.359,
+      "trapezium": 1.604,
+      "radius": 0.927,
+      "ulna": 0.32,
+      "phalanx_dist_1": 0.193,
+      "phalanx_prox_1": 0.369
+     },
+     "rightContacts": {
+      "radius": 1.609,
+      "ulna": 0.22,
+      "trapezium": 1.565,
+      "metacarpal_1": 0.723,
+      "phalanx_prox_1": 0.22,
+      "phalanx_dist_1": 0.104
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "phalanx_dist_1",
+    "phalanx_prox_1",
+    "radius",
+    "trapezium",
+    "ulna"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "phalanx_dist_1",
+    "phalanx_prox_1",
+    "radius",
+    "trapezium",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "extensor_indicis",
+   "left": "extensor_indicis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA38526",
+     "rightFMA": "FMA38525",
+     "triangles": 1516,
+     "rightTriangles": 1516,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.25878693267420716,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 13.066250921854818,
+     "extentRatio": [
+      0.9998,
+      1.0007,
+      1.0015
+     ],
+     "medianSymmetricDistanceMM": 1.2101081458222342,
+     "p95SymmetricDistanceMM": 2.0289958314954055,
+     "leftContacts": {
+      "metacarpal_3": 0.786,
+      "scaphoid": 1.966,
+      "capitate": 2.068,
+      "trapezoid": 0.257,
+      "radius": 0.541,
+      "ulna": 0.461,
+      "metacarpal_2": 0.399,
+      "phalanx_dist_2": 0.168,
+      "phalanx_mid_2": 0.355,
+      "phalanx_prox_2": 0.274
+     },
+     "rightContacts": {
+      "radius": 0.194,
+      "ulna": 0.298,
+      "scaphoid": 1.748,
+      "trapezoid": 0.332,
+      "capitate": 2.086,
+      "metacarpal_2": 0.491,
+      "metacarpal_3": 0.918,
+      "phalanx_prox_2": 0.381,
+      "phalanx_mid_2": 0.214,
+      "phalanx_dist_2": 0.232
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "phalanx_dist_2",
+    "phalanx_mid_2",
+    "phalanx_prox_2",
+    "radius",
+    "scaphoid",
+    "trapezoid",
+    "ulna"
+   ],
+   "rightBones": [
+    "capitate",
+    "metacarpal_2",
+    "metacarpal_3",
+    "phalanx_dist_2",
+    "phalanx_mid_2",
+    "phalanx_prox_2",
+    "radius",
+    "scaphoid",
+    "trapezoid",
+    "ulna"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "abductor_pollicis_brevis",
+   "left": "abductor_pollicis_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37387",
+     "rightFMA": "FMA37386",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2786272901575616,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.02940422362814,
+     "extentRatio": [
+      1.0039,
+      0.9988,
+      1.0047
+     ],
+     "medianSymmetricDistanceMM": 0.8140925821434524,
+     "p95SymmetricDistanceMM": 1.4859013842935591,
+     "leftContacts": {
+      "metacarpal_1": 0.159,
+      "scaphoid": 0.203,
+      "trapezium": 0.192
+     },
+     "rightContacts": {
+      "scaphoid": 0.116,
+      "trapezium": 0.214,
+      "metacarpal_1": 0.147
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "scaphoid",
+    "trapezium"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "scaphoid",
+    "trapezium"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_pollicis_brevis",
+   "left": "flexor_pollicis_brevis_left",
+   "parts": [
+    {
+     "part": "sup",
+     "leftFMA": "FMA65199",
+     "rightFMA": "FMA65198",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.27651770085337346,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.4669540618358305,
+     "extentRatio": [
+      0.9954,
+      0.997,
+      0.9383
+     ],
+     "medianSymmetricDistanceMM": 0.7604105296884511,
+     "p95SymmetricDistanceMM": 1.3516633724058298,
+     "leftContacts": {
+      "metacarpal_1": 0.091
+     },
+     "rightContacts": {
+      "metacarpal_1": 0.073
+     }
+    },
+    {
+     "part": "deep",
+     "leftFMA": "FMA46111",
+     "rightFMA": "FMA46110",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.2751348866604744,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.857629870929006,
+     "extentRatio": [
+      0.989,
+      0.9977,
+      0.975
+     ],
+     "medianSymmetricDistanceMM": 0.8296960746051201,
+     "p95SymmetricDistanceMM": 1.3905733056938139,
+     "leftContacts": {
+      "metacarpal_1": 0.058,
+      "capitate": 0.249,
+      "trapezium": 0.085,
+      "trapezoid": 0.024,
+      "metacarpal_2": 0.758
+     },
+     "rightContacts": {
+      "trapezium": 0.127,
+      "trapezoid": 0.09,
+      "capitate": 0.172,
+      "metacarpal_1": 0.073,
+      "metacarpal_2": 0.792
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "metacarpal_1",
+    "metacarpal_2",
+    "trapezium",
+    "trapezoid"
+   ],
+   "rightBones": [
+    "capitate",
+    "metacarpal_1",
+    "metacarpal_2",
+    "trapezium",
+    "trapezoid"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "opponens_pollicis",
+   "left": "opponens_pollicis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37391",
+     "rightFMA": "FMA37390",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.27991779482824986,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.2669090971606813,
+     "extentRatio": [
+      0.9944,
+      0.9985,
+      1.0057
+     ],
+     "medianSymmetricDistanceMM": 0.8576614636444556,
+     "p95SymmetricDistanceMM": 1.5775912933863878,
+     "leftContacts": {
+      "metacarpal_1": 0.141,
+      "trapezium": 0.144
+     },
+     "rightContacts": {
+      "trapezium": 0.09,
+      "metacarpal_1": 0.09
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "trapezium"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "trapezium"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "adductor_pollicis",
+   "left": "adductor_pollicis_left",
+   "parts": [
+    {
+     "part": "obl",
+     "leftFMA": "FMA46122",
+     "rightFMA": "FMA46121",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.27305150953252266,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.7908739920453187,
+     "extentRatio": [
+      0.9956,
+      1.0002,
+      0.9937
+     ],
+     "medianSymmetricDistanceMM": 0.8248004694248897,
+     "p95SymmetricDistanceMM": 1.3687218048437741,
+     "leftContacts": {
+      "metacarpal_1": 0.087,
+      "metacarpal_3": 0.027,
+      "capitate": 0.11,
+      "trapezoid": 0.156,
+      "metacarpal_2": 0.037,
+      "phalanx_prox_1": 0.093
+     },
+     "rightContacts": {
+      "trapezoid": 0.116,
+      "capitate": 0.116,
+      "metacarpal_1": 0.073,
+      "metacarpal_2": 0.052,
+      "metacarpal_3": 0.052,
+      "phalanx_prox_1": 0.398
+     }
+    },
+    {
+     "part": "transv",
+     "leftFMA": "FMA46124",
+     "rightFMA": "FMA46123",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.27529094524358144,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.549708336199001,
+     "extentRatio": [
+      0.9922,
+      0.9999,
+      1.0074
+     ],
+     "medianSymmetricDistanceMM": 1.0124561792620663,
+     "p95SymmetricDistanceMM": 1.651456985958729,
+     "leftContacts": {
+      "metacarpal_1": 0.084,
+      "metacarpal_3": 0.087,
+      "metacarpal_2": 0.177,
+      "phalanx_prox_1": 0.128
+     },
+     "rightContacts": {
+      "metacarpal_1": 0.179,
+      "metacarpal_2": 0.172,
+      "metacarpal_3": 0.052,
+      "phalanx_prox_1": 0.073
+     }
+    }
+   ],
+   "leftBones": [
+    "capitate",
+    "metacarpal_1",
+    "metacarpal_2",
+    "metacarpal_3",
+    "phalanx_prox_1",
+    "trapezoid"
+   ],
+   "rightBones": [
+    "capitate",
+    "metacarpal_1",
+    "metacarpal_2",
+    "metacarpal_3",
+    "phalanx_prox_1",
+    "trapezoid"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "abductor_digiti_minimi",
+   "left": "abductor_digiti_minimi_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37397",
+     "rightFMA": "FMA37396",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.22763738806152345,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.910201354048339,
+     "extentRatio": [
+      1.0005,
+      0.9891,
+      0.9946
+     ],
+     "medianSymmetricDistanceMM": 1.1275056017799743,
+     "p95SymmetricDistanceMM": 1.822347978202383,
+     "leftContacts": {
+      "pisiform": 0.116,
+      "triquetrum": 2.186,
+      "metacarpal_5": 1.553,
+      "phalanx_prox_5": 0.067
+     },
+     "rightContacts": {
+      "triquetrum": 1.792,
+      "pisiform": 0.127,
+      "metacarpal_5": 1.481,
+      "phalanx_prox_5": 0.073
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_5",
+    "phalanx_prox_5",
+    "pisiform",
+    "triquetrum"
+   ],
+   "rightBones": [
+    "metacarpal_5",
+    "phalanx_prox_5",
+    "pisiform",
+    "triquetrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digiti_minimi_brevis",
+   "left": "flexor_digiti_minimi_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37399",
+     "rightFMA": "FMA37398",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.23256626425398158,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.655750530537556,
+     "extentRatio": [
+      0.9921,
+      0.995,
+      0.9959
+     ],
+     "medianSymmetricDistanceMM": 1.0008964508687488,
+     "p95SymmetricDistanceMM": 1.440712402303331,
+     "leftContacts": {
+      "hamate": 0.157,
+      "metacarpal_5": 0.249,
+      "phalanx_prox_5": 0.129
+     },
+     "rightContacts": {
+      "hamate": 0.172,
+      "metacarpal_5": 0.194,
+      "phalanx_prox_5": 0.116
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "metacarpal_5",
+    "phalanx_prox_5"
+   ],
+   "rightBones": [
+    "hamate",
+    "metacarpal_5",
+    "phalanx_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "opponens_digiti_minimi",
+   "left": "opponens_digiti_minimi_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37401",
+     "rightFMA": "FMA37400",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.23434420510555837,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.938789308271644,
+     "extentRatio": [
+      0.9909,
+      0.9851,
+      0.9947
+     ],
+     "medianSymmetricDistanceMM": 1.143984931694559,
+     "p95SymmetricDistanceMM": 1.5525351254067774,
+     "leftContacts": {
+      "hamate": 0.238,
+      "metacarpal_5": 0.051
+     },
+     "rightContacts": {
+      "hamate": 0.298,
+      "metacarpal_5": 0.116
+     }
+    }
+   ],
+   "leftBones": [
+    "hamate",
+    "metacarpal_5"
+   ],
+   "rightBones": [
+    "hamate",
+    "metacarpal_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "lumbricals",
+   "left": "lumbricals_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA42399",
+     "rightFMA": "FMA42398",
+     "triangles": 1978,
+     "rightTriangles": 1978,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 4,
+     "centroidX": 0.25890579226743676,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.2995247838012025,
+     "extentRatio": [
+      0.9665,
+      0.9983,
+      0.9967
+     ],
+     "medianSymmetricDistanceMM": 1.2326507679497805,
+     "p95SymmetricDistanceMM": 2.0353173912541873,
+     "leftContacts": {
+      "metacarpal_3": 0.449,
+      "metacarpal_2": 0.134,
+      "metacarpal_4": 0.848,
+      "metacarpal_5": 0.567,
+      "phalanx_mid_3": 0.632,
+      "phalanx_mid_4": 2.24,
+      "phalanx_mid_5": 0.081,
+      "phalanx_prox_2": 0.225,
+      "phalanx_prox_3": 0.062,
+      "phalanx_prox_4": 0.226,
+      "phalanx_prox_5": 0.116
+     },
+     "rightContacts": {
+      "metacarpal_2": 0.632,
+      "metacarpal_3": 0.683,
+      "metacarpal_4": 0.786,
+      "metacarpal_5": 0.804,
+      "phalanx_prox_2": 0.116,
+      "phalanx_prox_3": 0.127,
+      "phalanx_prox_4": 0.127,
+      "phalanx_prox_5": 0.194,
+      "phalanx_mid_2": 0.469,
+      "phalanx_mid_3": 0.528,
+      "phalanx_mid_4": 2.144,
+      "phalanx_mid_5": 0.155
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5"
+   ],
+   "rightBones": [
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_mid_2",
+    "phalanx_mid_3",
+    "phalanx_mid_4",
+    "phalanx_mid_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "phalanx_prox_5"
+   ],
+   "missingOnLeft": [
+    "phalanx_mid_2"
+   ],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "arm",
+   "right": "palmar_interossei",
+   "left": "palmar_interossei_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA42403",
+     "rightFMA": "FMA42402",
+     "triangles": 1498,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 3,
+     "centroidX": 0.25529213709547033,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.8413103856423934,
+     "extentRatio": [
+      0.9979,
+      0.99,
+      0.9947
+     ],
+     "medianSymmetricDistanceMM": 1.0594668060141055,
+     "p95SymmetricDistanceMM": 1.6324244364234344,
+     "leftContacts": {
+      "metacarpal_2": 0.174,
+      "metacarpal_4": 0.015,
+      "metacarpal_5": 0.104,
+      "phalanx_prox_2": 0.126,
+      "phalanx_prox_4": 0.193,
+      "phalanx_prox_5": 0.163
+     },
+     "rightContacts": {
+      "metacarpal_2": 0.214,
+      "metacarpal_4": 0.104,
+      "metacarpal_5": 0.09,
+      "phalanx_prox_2": 0.214,
+      "phalanx_prox_4": 0.147,
+      "phalanx_prox_5": 0.104
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_2",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_2",
+    "phalanx_prox_4",
+    "phalanx_prox_5"
+   ],
+   "rightBones": [
+    "metacarpal_2",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_2",
+    "phalanx_prox_4",
+    "phalanx_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "dorsal_interossei",
+   "left": "dorsal_interossei_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA42405",
+     "rightFMA": "FMA42404",
+     "triangles": 2252,
+     "rightTriangles": 2252,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 4,
+     "centroidX": 0.2663624109152798,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.4311654021942575,
+     "extentRatio": [
+      0.9983,
+      0.9996,
+      1.0057
+     ],
+     "medianSymmetricDistanceMM": 1.2007134912113469,
+     "p95SymmetricDistanceMM": 1.9423504070887698,
+     "leftContacts": {
+      "metacarpal_1": 0.122,
+      "metacarpal_3": 0.146,
+      "trapezium": 1.899,
+      "metacarpal_2": 0.093,
+      "metacarpal_4": 0.132,
+      "metacarpal_5": 0.191,
+      "phalanx_prox_2": 0.218,
+      "phalanx_prox_3": 0.188,
+      "phalanx_prox_4": 0.134
+     },
+     "rightContacts": {
+      "trapezium": 1.907,
+      "metacarpal_1": 0.127,
+      "metacarpal_2": 0.073,
+      "metacarpal_3": 0.243,
+      "metacarpal_4": 0.194,
+      "metacarpal_5": 0.366,
+      "phalanx_prox_2": 0.155,
+      "phalanx_prox_3": 0.155,
+      "phalanx_prox_4": 0.104
+     }
+    }
+   ],
+   "leftBones": [
+    "metacarpal_1",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "trapezium"
+   ],
+   "rightBones": [
+    "metacarpal_1",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5",
+    "phalanx_prox_2",
+    "phalanx_prox_3",
+    "phalanx_prox_4",
+    "trapezium"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "iliopsoas",
+   "left": "iliopsoas_left",
+   "parts": [
+    {
+     "part": "psoas",
+     "leftFMA": "FMA22343",
+     "rightFMA": "FMA22342",
+     "triangles": 7358,
+     "rightTriangles": 7358,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.042916916880221825,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 21.240799679615666,
+     "extentRatio": [
+      0.9974,
+      1.0004,
+      0.9993
+     ],
+     "medianSymmetricDistanceMM": 1.3646449722511622,
+     "p95SymmetricDistanceMM": 2.8616380670155728,
+     "leftContacts": {
+      "hip_bone": 0.425,
+      "femur": 0.122,
+      "sacrum": 0.473,
+      "lumbar_1": 0.241,
+      "lumbar_2": 0.053,
+      "lumbar_3": 0.265,
+      "lumbar_4": 0.081,
+      "lumbar_5": 0.283
+     },
+     "rightContacts": {
+      "hip_bone": 0.557,
+      "femur": 0.194,
+      "sacrum": 0.517,
+      "lumbar_1": 0.083,
+      "lumbar_2": 0.131,
+      "lumbar_3": 0.113,
+      "lumbar_4": 0.187,
+      "lumbar_5": 0.061
+     }
+    },
+    {
+     "part": "iliacus",
+     "leftFMA": "FMA22323",
+     "rightFMA": "FMA22322",
+     "triangles": 5771,
+     "rightTriangles": 5772,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 9,
+     "components": 11,
+     "centroidX": 0.08278677670443597,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.5273532948249295,
+     "extentRatio": [
+      0.9982,
+      0.999,
+      0.9985
+     ],
+     "medianSymmetricDistanceMM": 1.3476837496536156,
+     "p95SymmetricDistanceMM": 2.5573193103232974,
+     "leftContacts": {
+      "hip_bone": 0.366,
+      "femur": 0.047
+     },
+     "rightContacts": {
+      "hip_bone": 0.153,
+      "femur": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone",
+    "lumbar_1",
+    "lumbar_2",
+    "lumbar_3",
+    "lumbar_4",
+    "lumbar_5",
+    "sacrum"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone",
+    "lumbar_1",
+    "lumbar_2",
+    "lumbar_3",
+    "lumbar_4",
+    "lumbar_5",
+    "sacrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "obturator_internus",
+   "left": "obturator_internus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22325",
+     "rightFMA": "FMA22324",
+     "triangles": 4910,
+     "rightTriangles": 4910,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 3,
+     "components": 4,
+     "centroidX": 0.04742429592995952,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 5.579136358421196,
+     "extentRatio": [
+      0.9996,
+      0.9997,
+      0.9995
+     ],
+     "medianSymmetricDistanceMM": 1.253276185339411,
+     "p95SymmetricDistanceMM": 1.9898149571872226,
+     "leftContacts": {
+      "hip_bone": 0.26,
+      "femur": 0.123
+     },
+     "rightContacts": {
+      "hip_bone": 0.168,
+      "femur": 0.069
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "piriformis",
+   "left": "piriformis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22341",
+     "rightFMA": "FMA22340",
+     "triangles": 1962,
+     "rightTriangles": 1962,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.06789097546516581,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.4827788898402736,
+     "extentRatio": [
+      1.0003,
+      0.9951,
+      1.0006
+     ],
+     "medianSymmetricDistanceMM": 1.2803120920871607,
+     "p95SymmetricDistanceMM": 2.587113548308798,
+     "leftContacts": {
+      "hip_bone": 0.508,
+      "femur": 0.276,
+      "sacrum": 0.604
+     },
+     "rightContacts": {
+      "hip_bone": 0.299,
+      "femur": 0.356,
+      "sacrum": 0.247
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone",
+    "sacrum"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone",
+    "sacrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_maximus",
+   "left": "gluteus_maximus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22329",
+     "rightFMA": "FMA22328",
+     "triangles": 4448,
+     "rightTriangles": 4448,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.0776885967808763,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.1403003066111133,
+     "extentRatio": [
+      1.0023,
+      1.0001,
+      0.9992
+     ],
+     "medianSymmetricDistanceMM": 1.8077392140728004,
+     "p95SymmetricDistanceMM": 4.424017093249985,
+     "leftContacts": {
+      "hip_bone": 0.372,
+      "femur": 0.32,
+      "sacrum": 0.202
+     },
+     "rightContacts": {
+      "hip_bone": 0.119,
+      "femur": 0.314,
+      "sacrum": 0.069
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone",
+    "sacrum"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone",
+    "sacrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_medius",
+   "left": "gluteus_medius_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22331",
+     "rightFMA": "FMA22330",
+     "triangles": 6736,
+     "rightTriangles": 6736,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.11166321182024853,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.731680679131392,
+     "extentRatio": [
+      1.0021,
+      1.0001,
+      1.0009
+     ],
+     "medianSymmetricDistanceMM": 1.3539350296028685,
+     "p95SymmetricDistanceMM": 2.7323299334335873,
+     "leftContacts": {
+      "hip_bone": 0.314,
+      "femur": 0.2
+     },
+     "rightContacts": {
+      "hip_bone": 0.256,
+      "femur": 0.256
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_minimus",
+   "left": "gluteus_minimus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22333",
+     "rightFMA": "FMA22332",
+     "triangles": 8204,
+     "rightTriangles": 8204,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.1149363897317105,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.972418302388326,
+     "extentRatio": [
+      0.9983,
+      1.0006,
+      0.9994
+     ],
+     "medianSymmetricDistanceMM": 1.0837465465294707,
+     "p95SymmetricDistanceMM": 1.8701928449817558,
+     "leftContacts": {
+      "hip_bone": 0.233,
+      "femur": 0.172
+     },
+     "rightContacts": {
+      "hip_bone": 0.069,
+      "femur": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "tensor_fasciae_latae",
+   "left": "tensor_fasciae_latae_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22426",
+     "rightFMA": "FMA22425",
+     "triangles": 2428,
+     "rightTriangles": 2428,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.12782457947652848,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 7.725109032850817,
+     "extentRatio": [
+      0.9989,
+      0.9996,
+      0.9978
+     ],
+     "medianSymmetricDistanceMM": 1.454226096539777,
+     "p95SymmetricDistanceMM": 2.998369472572865,
+     "leftContacts": {
+      "hip_bone": 0.433
+     },
+     "rightContacts": {
+      "hip_bone": 0.517
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone"
+   ],
+   "rightBones": [
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "quadratus_femoris",
+   "left": "quadratus_femoris_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22339",
+     "rightFMA": "FMA22338",
+     "triangles": 2180,
+     "rightTriangles": 2180,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.08702750898068581,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.9688293996039894,
+     "extentRatio": [
+      1.0056,
+      1.0029,
+      0.9974
+     ],
+     "medianSymmetricDistanceMM": 0.9057796992312985,
+     "p95SymmetricDistanceMM": 1.9346854247713454,
+     "leftContacts": {
+      "hip_bone": 0.356,
+      "femur": 0.088
+     },
+     "rightContacts": {
+      "hip_bone": 0.153,
+      "femur": 0.206
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "obturator_externus",
+   "left": "obturator_externus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22327",
+     "rightFMA": "FMA22326",
+     "triangles": 1524,
+     "rightTriangles": 1526,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 2,
+     "centroidX": 0.06550774736280565,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.5129228231136986,
+     "extentRatio": [
+      0.9978,
+      0.9916,
+      0.9974
+     ],
+     "medianSymmetricDistanceMM": 1.1763229038432987,
+     "p95SymmetricDistanceMM": 2.7101530596855574,
+     "leftContacts": {
+      "hip_bone": 0.422,
+      "femur": 0.186
+     },
+     "rightContacts": {
+      "hip_bone": 0.097,
+      "femur": 0.349
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gemellus_superior",
+   "left": "gemellus_superior_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22335",
+     "rightFMA": "FMA22334",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.0740259763639954,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.6613005662205445,
+     "extentRatio": [
+      0.9946,
+      0.9914,
+      0.9949
+     ],
+     "medianSymmetricDistanceMM": 0.8744893300392055,
+     "p95SymmetricDistanceMM": 1.7976629829714492,
+     "leftContacts": {
+      "hip_bone": 0.2,
+      "femur": 0.28
+     },
+     "rightContacts": {
+      "hip_bone": 0.0,
+      "femur": 0.283
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gemellus_inferior",
+   "left": "gemellus_inferior_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22337",
+     "rightFMA": "FMA22336",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.07954517494536907,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.2384769445542474,
+     "extentRatio": [
+      0.9997,
+      1.011,
+      1.001
+     ],
+     "medianSymmetricDistanceMM": 1.0032392670135146,
+     "p95SymmetricDistanceMM": 1.7675928401491048,
+     "leftContacts": {
+      "hip_bone": 0.26,
+      "femur": 0.099
+     },
+     "rightContacts": {
+      "hip_bone": 0.256,
+      "femur": 0.206
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "sartorius",
+   "left": "sartorius_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22355",
+     "rightFMA": "FMA22354",
+     "triangles": 6814,
+     "rightTriangles": 6814,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 23,
+     "components": 25,
+     "centroidX": 0.0591821795099875,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 30.488208587575826,
+     "extentRatio": [
+      0.9999,
+      1.0008,
+      0.9967
+     ],
+     "medianSymmetricDistanceMM": 1.385330529424454,
+     "p95SymmetricDistanceMM": 3.0049621827749524,
+     "leftContacts": {
+      "hip_bone": 0.291
+     },
+     "rightContacts": {
+      "hip_bone": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone"
+   ],
+   "rightBones": [
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "quadriceps_femoris",
+   "left": "quadriceps_femoris_left",
+   "parts": [
+    {
+     "part": "rectus",
+     "leftFMA": "FMA38929",
+     "rightFMA": "FMA38928",
+     "triangles": 10788,
+     "rightTriangles": 10788,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.09889844580407403,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 25.39606909569444,
+     "extentRatio": [
+      0.9975,
+      1.0001,
+      0.9989
+     ],
+     "medianSymmetricDistanceMM": 1.3075650636931524,
+     "p95SymmetricDistanceMM": 3.0081096884880174,
+     "leftContacts": {
+      "hip_bone": 0.039,
+      "femur": 1.417,
+      "patella": 0.087,
+      "tibia": 0.691
+     },
+     "rightContacts": {
+      "hip_bone": 0.137,
+      "femur": 1.846,
+      "patella": 0.168,
+      "tibia": 0.597
+     }
+    },
+    {
+     "part": "vlat",
+     "leftFMA": "FMA38931",
+     "rightFMA": "FMA38930",
+     "triangles": 12422,
+     "rightTriangles": 12422,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 6,
+     "components": 8,
+     "centroidX": 0.12126723583142408,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 17.817567075784787,
+     "extentRatio": [
+      0.9974,
+      0.9994,
+      0.9983
+     ],
+     "medianSymmetricDistanceMM": 1.4750604098821705,
+     "p95SymmetricDistanceMM": 2.8973736951045437,
+     "leftContacts": {
+      "femur": 0.181,
+      "patella": 0.812,
+      "tibia": 0.466
+     },
+     "rightContacts": {
+      "femur": 0.097,
+      "patella": 1.037,
+      "tibia": 0.314
+     }
+    },
+    {
+     "part": "vmed",
+     "leftFMA": "FMA38933",
+     "rightFMA": "FMA38932",
+     "triangles": 8554,
+     "rightTriangles": 8554,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.0674262746243478,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.8556421062341815,
+     "extentRatio": [
+      1.0007,
+      1.0006,
+      1.0055
+     ],
+     "medianSymmetricDistanceMM": 1.4711112645785949,
+     "p95SymmetricDistanceMM": 2.731505184672191,
+     "leftContacts": {
+      "femur": 0.143,
+      "patella": 0.257,
+      "tibia": 0.148
+     },
+     "rightContacts": {
+      "femur": 0.256,
+      "patella": 0.217,
+      "tibia": 0.513
+     }
+    },
+    {
+     "part": "vint",
+     "leftFMA": "FMA38935",
+     "rightFMA": "FMA38934",
+     "triangles": 8040,
+     "rightTriangles": 8040,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.09907262394463838,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 12.24207195168953,
+     "extentRatio": [
+      1.0031,
+      1.0006,
+      1.005
+     ],
+     "medianSymmetricDistanceMM": 1.397991215794722,
+     "p95SymmetricDistanceMM": 2.833673776618316,
+     "leftContacts": {
+      "femur": 0.114,
+      "patella": 0.041,
+      "tibia": 0.355
+     },
+     "rightContacts": {
+      "femur": 0.247,
+      "patella": 0.168,
+      "tibia": 0.206
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone",
+    "patella",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone",
+    "patella",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "pectineus",
+   "left": "pectineus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22451",
+     "rightFMA": "FMA22450",
+     "triangles": 2618,
+     "rightTriangles": 2618,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 3,
+     "components": 4,
+     "centroidX": 0.05645996126412072,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.913410365664202,
+     "extentRatio": [
+      0.9929,
+      1.0023,
+      1.0015
+     ],
+     "medianSymmetricDistanceMM": 1.1862478379811845,
+     "p95SymmetricDistanceMM": 2.941930190560926,
+     "leftContacts": {
+      "hip_bone": 0.164,
+      "femur": 0.326
+     },
+     "rightContacts": {
+      "hip_bone": 0.069,
+      "femur": 0.848
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "adductor_longus",
+   "left": "adductor_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22457",
+     "rightFMA": "FMA22456",
+     "triangles": 4828,
+     "rightTriangles": 4828,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.053405374769544246,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 5.764664780030024,
+     "extentRatio": [
+      0.9993,
+      0.9999,
+      1.0015
+     ],
+     "medianSymmetricDistanceMM": 1.3620862182328712,
+     "p95SymmetricDistanceMM": 2.8998981254646203,
+     "leftContacts": {
+      "hip_bone": 0.32,
+      "femur": 0.45
+     },
+     "rightContacts": {
+      "hip_bone": 0.206,
+      "femur": 0.405
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "adductor_brevis",
+   "left": "adductor_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22454",
+     "rightFMA": "FMA22452",
+     "triangles": 2808,
+     "rightTriangles": 2808,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.06640956792260846,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.5316953660914963,
+     "extentRatio": [
+      0.9999,
+      1.0002,
+      0.9982
+     ],
+     "medianSymmetricDistanceMM": 1.274572344162557,
+     "p95SymmetricDistanceMM": 2.8352858049911247,
+     "leftContacts": {
+      "hip_bone": 0.894,
+      "femur": 0.266
+     },
+     "rightContacts": {
+      "hip_bone": 0.526,
+      "femur": 0.439
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "adductor_magnus",
+   "left": "adductor_magnus_left",
+   "parts": [
+    {
+     "part": "main",
+     "leftFMA": "FMA22460",
+     "rightFMA": "FMA22459",
+     "triangles": 10656,
+     "rightTriangles": 10656,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.05831264778428388,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 11.202813781896893,
+     "extentRatio": [
+      1.0036,
+      0.9998,
+      1.0027
+     ],
+     "medianSymmetricDistanceMM": 1.3073489269592322,
+     "p95SymmetricDistanceMM": 3.0241036961518803,
+     "leftContacts": {
+      "hip_bone": 0.638,
+      "femur": 0.242
+     },
+     "rightContacts": {
+      "hip_bone": 0.168,
+      "femur": 0.194
+     }
+    },
+    {
+     "part": "minimus",
+     "leftFMA": "FMA43887",
+     "rightFMA": "FMA43886",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.0689903232746936,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.355455604514482,
+     "extentRatio": [
+      1.0009,
+      1.001,
+      1.0037
+     ],
+     "medianSymmetricDistanceMM": 1.2418171111248455,
+     "p95SymmetricDistanceMM": 2.756520884733225,
+     "leftContacts": {
+      "hip_bone": 1.471,
+      "femur": 0.096
+     },
+     "rightContacts": {
+      "hip_bone": 0.922,
+      "femur": 0.465
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "gracilis",
+   "left": "gracilis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA43884",
+     "rightFMA": "FMA43883",
+     "triangles": 6402,
+     "rightTriangles": 6402,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 13,
+     "components": 14,
+     "centroidX": 0.02423741383996773,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 22.809825138162296,
+     "extentRatio": [
+      1.0068,
+      1.0018,
+      0.9953
+     ],
+     "medianSymmetricDistanceMM": 1.544166843002427,
+     "p95SymmetricDistanceMM": 2.970165907683583,
+     "leftContacts": {
+      "hip_bone": 0.655
+     },
+     "rightContacts": {
+      "hip_bone": 0.168
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone"
+   ],
+   "rightBones": [
+    "hip_bone"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "biceps_femoris",
+   "left": "biceps_femoris_left",
+   "parts": [
+    {
+     "part": "long",
+     "leftFMA": "FMA45889",
+     "rightFMA": "FMA45888",
+     "triangles": 9502,
+     "rightTriangles": 9502,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 8,
+     "components": 9,
+     "centroidX": 0.0898811270173557,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 13.810694403788213,
+     "extentRatio": [
+      0.9991,
+      1.001,
+      1.0016
+     ],
+     "medianSymmetricDistanceMM": 1.5157640008759223,
+     "p95SymmetricDistanceMM": 2.876455019362564,
+     "leftContacts": {
+      "hip_bone": 0.37,
+      "fibula": 0.394,
+      "tibia": 2.233
+     },
+     "rightContacts": {
+      "hip_bone": 0.535,
+      "tibia": 2.287,
+      "fibula": 0.605
+     }
+    },
+    {
+     "part": "short",
+     "leftFMA": "FMA45892",
+     "rightFMA": "FMA45891",
+     "triangles": 3312,
+     "rightTriangles": 3312,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.10237076039705877,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.703668923162527,
+     "extentRatio": [
+      0.9989,
+      0.9976,
+      0.9979
+     ],
+     "medianSymmetricDistanceMM": 1.5175514581451837,
+     "p95SymmetricDistanceMM": 2.914931898548226,
+     "leftContacts": {
+      "femur": 0.133,
+      "fibula": 0.187
+     },
+     "rightContacts": {
+      "femur": 0.153,
+      "tibia": 2.475,
+      "fibula": 0.349
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "fibula",
+    "hip_bone",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "fibula",
+    "hip_bone",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "semitendinosus",
+   "left": "semitendinosus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22359",
+     "rightFMA": "FMA22358",
+     "triangles": 5660,
+     "rightTriangles": 5660,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.04790199952464947,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 5.893878098933819,
+     "extentRatio": [
+      0.9984,
+      0.9991,
+      0.9997
+     ],
+     "medianSymmetricDistanceMM": 1.3632359131608671,
+     "p95SymmetricDistanceMM": 3.1275107957838,
+     "leftContacts": {
+      "hip_bone": 0.259,
+      "tibia": 0.363
+     },
+     "rightContacts": {
+      "hip_bone": 0.097,
+      "tibia": 0.569
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone",
+    "tibia"
+   ],
+   "rightBones": [
+    "hip_bone",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "semimembranosus",
+   "left": "semimembranosus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22449",
+     "rightFMA": "FMA22448",
+     "triangles": 9692,
+     "rightTriangles": 9692,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 4,
+     "components": 5,
+     "centroidX": 0.044172220616711354,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.2716667608841465,
+     "extentRatio": [
+      1.0005,
+      0.9986,
+      1.0034
+     ],
+     "medianSymmetricDistanceMM": 1.4890818243493098,
+     "p95SymmetricDistanceMM": 2.8332723853214548,
+     "leftContacts": {
+      "hip_bone": 0.251,
+      "femur": 0.305,
+      "tibia": 0.146
+     },
+     "rightContacts": {
+      "hip_bone": 0.314,
+      "femur": 0.291,
+      "tibia": 0.689
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "hip_bone",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "hip_bone",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "tibialis_anterior",
+   "left": "tibialis_anterior_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22545",
+     "rightFMA": "FMA22544",
+     "triangles": 4668,
+     "rightTriangles": 4668,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 12,
+     "components": 15,
+     "centroidX": 0.09015569158157849,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 15.445335247293679,
+     "extentRatio": [
+      0.9997,
+      0.998,
+      0.9967
+     ],
+     "medianSymmetricDistanceMM": 1.4450292501544875,
+     "p95SymmetricDistanceMM": 2.8145474840518565,
+     "leftContacts": {
+      "metatarsal_1": 2.464,
+      "tibia": 0.305,
+      "cuneiform_med": 2.236,
+      "navicular": 1.412
+     },
+     "rightContacts": {
+      "tibia": 0.375,
+      "navicular": 1.789,
+      "cuneiform_med": 2.359
+     }
+    }
+   ],
+   "leftBones": [
+    "cuneiform_med",
+    "metatarsal_1",
+    "navicular",
+    "tibia"
+   ],
+   "rightBones": [
+    "cuneiform_med",
+    "navicular",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [
+    "metatarsal_1"
+   ],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "leg",
+   "right": "extensor_digitorum_longus",
+   "left": "extensor_digitorum_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22549",
+     "rightFMA": "FMA22548",
+     "triangles": 8134,
+     "rightTriangles": 8134,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 11,
+     "components": 12,
+     "centroidX": 0.10526617216088265,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 27.837931975053067,
+     "extentRatio": [
+      0.9994,
+      0.9994,
+      0.9983
+     ],
+     "medianSymmetricDistanceMM": 1.2215812696885275,
+     "p95SymmetricDistanceMM": 2.2355547709788355,
+     "leftContacts": {
+      "metatarsal_2": 1.505,
+      "metatarsal_3": 1.561,
+      "metatarsal_4": 2.016,
+      "metatarsal_5": 1.575,
+      "toe_dist_5": 0.38,
+      "toe_mid_5": 0.324,
+      "toe_prox_5": 0.154,
+      "fibula": 0.388,
+      "tibia": 0.216,
+      "toe_dist_2": 1.211,
+      "toe_dist_3": 1.831,
+      "toe_dist_4": 1.581,
+      "toe_mid_2": 0.263,
+      "toe_mid_3": 0.405,
+      "toe_mid_4": 0.144,
+      "toe_prox_2": 1.057,
+      "toe_prox_3": 1.256,
+      "toe_prox_4": 1.332
+     },
+     "rightContacts": {
+      "tibia": 0.349,
+      "fibula": 0.388,
+      "cuneiform_lat": 2.419,
+      "metatarsal_2": 1.165,
+      "toe_prox_2": 0.283,
+      "toe_mid_2": 0.168,
+      "toe_dist_2": 0.484,
+      "metatarsal_3": 1.485,
+      "toe_prox_3": 0.624,
+      "toe_mid_3": 0.375,
+      "toe_dist_3": 1.066,
+      "metatarsal_4": 1.961,
+      "toe_prox_4": 0.85,
+      "toe_mid_4": 0.206,
+      "toe_dist_4": 0.962,
+      "metatarsal_5": 1.32,
+      "toe_prox_5": 0.283,
+      "toe_mid_5": 0.439,
+      "toe_dist_5": 0.217
+     }
+    }
+   ],
+   "leftBones": [
+    "fibula",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "tibia",
+    "toe_dist_2",
+    "toe_dist_3",
+    "toe_dist_4",
+    "toe_dist_5",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "cuneiform_lat",
+    "fibula",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "tibia",
+    "toe_dist_2",
+    "toe_dist_3",
+    "toe_dist_4",
+    "toe_dist_5",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [
+    "cuneiform_lat"
+   ],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_tertius",
+   "left": "fibularis_tertius_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22551",
+     "rightFMA": "FMA22550",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 4,
+     "components": 5,
+     "centroidX": 0.09995317956415146,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.7928223228194075,
+     "extentRatio": [
+      0.9965,
+      0.9996,
+      0.9983
+     ],
+     "medianSymmetricDistanceMM": 1.1693169688286165,
+     "p95SymmetricDistanceMM": 1.6974265811347247,
+     "leftContacts": {
+      "cuboid": 0.248,
+      "metatarsal_4": 0.155,
+      "metatarsal_5": 0.141,
+      "tibia": 0.234
+     },
+     "rightContacts": {
+      "tibia": 0.153,
+      "cuboid": 0.411,
+      "metatarsal_4": 0.153,
+      "metatarsal_5": 0.206
+     }
+    }
+   ],
+   "leftBones": [
+    "cuboid",
+    "metatarsal_4",
+    "metatarsal_5",
+    "tibia"
+   ],
+   "rightBones": [
+    "cuboid",
+    "metatarsal_4",
+    "metatarsal_5",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "extensor_hallucis_longus",
+   "left": "extensor_hallucis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22547",
+     "rightFMA": "FMA22546",
+     "triangles": 3094,
+     "rightTriangles": 3094,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.08920643986038297,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 13.635493909179726,
+     "extentRatio": [
+      1.0026,
+      0.9981,
+      0.9996
+     ],
+     "medianSymmetricDistanceMM": 1.2115757205025715,
+     "p95SymmetricDistanceMM": 2.042805839775465,
+     "leftContacts": {
+      "metatarsal_1": 0.73,
+      "toe_prox_1": 0.191,
+      "fibula": 1.767,
+      "tibia": 0.573,
+      "cuneiform_med": 1.591
+     },
+     "rightContacts": {
+      "tibia": 0.299,
+      "fibula": 1.784,
+      "cuneiform_med": 1.471,
+      "metatarsal_1": 0.646,
+      "toe_prox_1": 0.069
+     }
+    }
+   ],
+   "leftBones": [
+    "cuneiform_med",
+    "fibula",
+    "metatarsal_1",
+    "tibia",
+    "toe_prox_1"
+   ],
+   "rightBones": [
+    "cuneiform_med",
+    "fibula",
+    "metatarsal_1",
+    "tibia",
+    "toe_prox_1"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_longus",
+   "left": "fibularis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22553",
+     "rightFMA": "FMA22552",
+     "triangles": 7566,
+     "rightTriangles": 7566,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 19,
+     "components": 21,
+     "centroidX": 0.10707229638655875,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 31.74663542831715,
+     "extentRatio": [
+      1.0013,
+      0.9996,
+      0.9977
+     ],
+     "medianSymmetricDistanceMM": 1.1976570891785852,
+     "p95SymmetricDistanceMM": 2.378873255788281,
+     "leftContacts": {
+      "calcaneus": 0.15,
+      "cuboid": 0.1,
+      "cuneiform_lat": 1.349,
+      "metatarsal_1": 0.248,
+      "talus": 1.552,
+      "fibula": 0.133,
+      "tibia": 2.282,
+      "cuneiform_med": 0.24
+     },
+     "rightContacts": {
+      "tibia": 2.236,
+      "fibula": 0.356,
+      "talus": 1.714,
+      "calcaneus": 0.153,
+      "cuboid": 0.097,
+      "cuneiform_med": 0.206,
+      "cuneiform_lat": 1.541,
+      "metatarsal_1": 0.069
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "fibula",
+    "metatarsal_1",
+    "talus",
+    "tibia"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "fibula",
+    "metatarsal_1",
+    "talus",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_brevis",
+   "left": "fibularis_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22555",
+     "rightFMA": "FMA22554",
+     "triangles": 4644,
+     "rightTriangles": 4644,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 4,
+     "components": 5,
+     "centroidX": 0.10087944958687649,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.975051153156635,
+     "extentRatio": [
+      1.0016,
+      0.9973,
+      0.9957
+     ],
+     "medianSymmetricDistanceMM": 1.1977954355291651,
+     "p95SymmetricDistanceMM": 2.112689681217382,
+     "leftContacts": {
+      "calcaneus": 0.128,
+      "cuboid": 1.14,
+      "metatarsal_5": 0.209,
+      "talus": 0.262,
+      "fibula": 0.177,
+      "tibia": 0.554
+     },
+     "rightContacts": {
+      "tibia": 0.291,
+      "fibula": 0.299,
+      "talus": 0.194,
+      "calcaneus": 0.097,
+      "cuboid": 1.243,
+      "metatarsal_5": 0.206
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuboid",
+    "fibula",
+    "metatarsal_5",
+    "talus",
+    "tibia"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuboid",
+    "fibula",
+    "metatarsal_5",
+    "talus",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "triceps_surae",
+   "left": "triceps_surae_left",
+   "parts": [
+    {
+     "part": "gmed",
+     "leftFMA": "FMA45958",
+     "rightFMA": "FMA45957",
+     "triangles": 8420,
+     "rightTriangles": 8420,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 7,
+     "components": 10,
+     "centroidX": 0.05727140593185335,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 31.986922649165827,
+     "extentRatio": [
+      1.0011,
+      0.9985,
+      1.0005
+     ],
+     "medianSymmetricDistanceMM": 1.367352755415306,
+     "p95SymmetricDistanceMM": 3.2423069226122547,
+     "leftContacts": {
+      "femur": 0.072,
+      "tibia": 0.063
+     },
+     "rightContacts": {
+      "femur": 0.119,
+      "tibia": 0.153
+     }
+    },
+    {
+     "part": "glat",
+     "leftFMA": "FMA45961",
+     "rightFMA": "FMA45960",
+     "triangles": 6382,
+     "rightTriangles": 6382,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.10230287363235756,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 14.592925944152459,
+     "extentRatio": [
+      0.9934,
+      0.9997,
+      0.9995
+     ],
+     "medianSymmetricDistanceMM": 1.4406528412167492,
+     "p95SymmetricDistanceMM": 2.959533345757495,
+     "leftContacts": {
+      "femur": 0.301,
+      "fibula": 1.921
+     },
+     "rightContacts": {
+      "femur": 0.314,
+      "fibula": 1.787
+     }
+    },
+    {
+     "part": "soleus",
+     "leftFMA": "FMA22559",
+     "rightFMA": "FMA22558",
+     "triangles": 8912,
+     "rightTriangles": 8912,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 17,
+     "components": 18,
+     "centroidX": 0.08158570778035672,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 7.32682502675257,
+     "extentRatio": [
+      1.002,
+      0.9997,
+      1.0008
+     ],
+     "medianSymmetricDistanceMM": 1.4281403116770428,
+     "p95SymmetricDistanceMM": 2.857350579630174,
+     "leftContacts": {
+      "fibula": 0.337,
+      "tibia": 0.866
+     },
+     "rightContacts": {
+      "tibia": 0.617,
+      "fibula": 0.646
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "fibula",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "fibula",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "plantaris",
+   "left": "plantaris_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22561",
+     "rightFMA": "FMA22560",
+     "triangles": 6110,
+     "rightTriangles": 6110,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.07259473294528591,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.12780673624707,
+     "extentRatio": [
+      1.0006,
+      0.9996,
+      0.9984
+     ],
+     "medianSymmetricDistanceMM": 1.1948221331711564,
+     "p95SymmetricDistanceMM": 2.038213824868364,
+     "leftContacts": {
+      "calcaneus": 0.548,
+      "femur": 0.154
+     },
+     "rightContacts": {
+      "femur": 0.168,
+      "calcaneus": 0.484
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "femur"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "femur"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "popliteus",
+   "left": "popliteus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA22592",
+     "rightFMA": "FMA22591",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.08309209014568354,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.059679596939897,
+     "extentRatio": [
+      0.9991,
+      1.0001,
+      0.9898
+     ],
+     "medianSymmetricDistanceMM": 1.410605589967742,
+     "p95SymmetricDistanceMM": 2.5464709060920314,
+     "leftContacts": {
+      "femur": 0.085,
+      "tibia": 0.517
+     },
+     "rightContacts": {
+      "femur": 0.153,
+      "tibia": 0.422
+     }
+    }
+   ],
+   "leftBones": [
+    "femur",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digitorum_longus",
+   "left": "flexor_digitorum_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA65017",
+     "rightFMA": "FMA65016",
+     "triangles": 9086,
+     "rightTriangles": 9086,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.07725096487311167,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 12.516555715189392,
+     "extentRatio": [
+      1.0005,
+      0.9997,
+      0.9994
+     ],
+     "medianSymmetricDistanceMM": 1.1428359295786965,
+     "p95SymmetricDistanceMM": 2.107236074111637,
+     "leftContacts": {
+      "metatarsal_2": 1.743,
+      "metatarsal_3": 0.453,
+      "metatarsal_4": 1.261,
+      "metatarsal_5": 2.197,
+      "toe_dist_5": 1.021,
+      "toe_mid_5": 0.184,
+      "toe_prox_5": 0.308,
+      "tibia": 0.87,
+      "sesamoid_pedis": 0.377,
+      "toe_dist_2": 0.236,
+      "toe_dist_3": 0.3,
+      "toe_dist_4": 2.431,
+      "toe_mid_2": 0.616,
+      "toe_mid_3": 0.153,
+      "toe_mid_4": 2.416,
+      "toe_prox_2": 1.465,
+      "toe_prox_3": 0.294,
+      "toe_prox_4": 1.77
+     },
+     "rightContacts": {
+      "tibia": 0.754,
+      "sesamoid_pedis": 0.971,
+      "metatarsal_2": 2.034,
+      "toe_prox_2": 0.439,
+      "toe_mid_2": 0.646,
+      "toe_dist_2": 0.247,
+      "metatarsal_3": 0.848,
+      "toe_prox_3": 0.168,
+      "toe_mid_3": 0.299,
+      "toe_dist_3": 0.283,
+      "metatarsal_4": 1.204,
+      "toe_prox_4": 1.107,
+      "toe_mid_4": 1.392,
+      "toe_dist_4": 1.685,
+      "metatarsal_5": 2.315,
+      "toe_prox_5": 0.206,
+      "toe_mid_5": 0.283,
+      "toe_dist_5": 1.019
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "sesamoid_pedis",
+    "tibia",
+    "toe_dist_2",
+    "toe_dist_3",
+    "toe_dist_4",
+    "toe_dist_5",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "sesamoid_pedis",
+    "tibia",
+    "toe_dist_2",
+    "toe_dist_3",
+    "toe_dist_4",
+    "toe_dist_5",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "tibialis_posterior",
+   "left": "tibialis_posterior_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA65019",
+     "rightFMA": "FMA65018",
+     "triangles": 7855,
+     "rightTriangles": 7856,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 7,
+     "components": 10,
+     "centroidX": 0.07514147326841324,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 10.933857783237405,
+     "extentRatio": [
+      1.0018,
+      0.999,
+      0.9986
+     ],
+     "medianSymmetricDistanceMM": 1.1300857971171097,
+     "p95SymmetricDistanceMM": 2.0652534914149614,
+     "leftContacts": {
+      "cuneiform_lat": 0.318,
+      "metatarsal_1": 0.253,
+      "metatarsal_2": 0.237,
+      "metatarsal_3": 0.747,
+      "talus": 1.667,
+      "tibia": 0.191,
+      "cuneiform_int": 0.321,
+      "cuneiform_med": 0.23,
+      "navicular": 0.177
+     },
+     "rightContacts": {
+      "tibia": 0.422,
+      "talus": 1.629,
+      "navicular": 0.314,
+      "cuneiform_med": 0.137,
+      "cuneiform_int": 0.153,
+      "cuneiform_lat": 0.194,
+      "metatarsal_1": 0.256,
+      "metatarsal_2": 0.119,
+      "metatarsal_3": 0.635
+     }
+    }
+   ],
+   "leftBones": [
+    "cuneiform_int",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "navicular",
+    "talus",
+    "tibia"
+   ],
+   "rightBones": [
+    "cuneiform_int",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "navicular",
+    "talus",
+    "tibia"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "flexor_hallucis_longus",
+   "left": "flexor_hallucis_longus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA65015",
+     "rightFMA": "FMA65014",
+     "triangles": 7652,
+     "rightTriangles": 7652,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.08189048098225041,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 23.922055066260505,
+     "extentRatio": [
+      1.0004,
+      1.0001,
+      0.9995
+     ],
+     "medianSymmetricDistanceMM": 1.1401388728914468,
+     "p95SymmetricDistanceMM": 2.117464161748349,
+     "leftContacts": {
+      "calcaneus": 1.756,
+      "talus": 1.815,
+      "toe_dist_1": 0.154,
+      "toe_prox_1": 0.426,
+      "fibula": 0.476,
+      "tibia": 0.569,
+      "cuneiform_med": 2.242,
+      "sesamoid_pedis": 0.218
+     },
+     "rightContacts": {
+      "tibia": 0.728,
+      "fibula": 0.869,
+      "talus": 1.77,
+      "calcaneus": 1.783,
+      "cuneiform_med": 2.136,
+      "sesamoid_pedis": 0.256,
+      "toe_prox_1": 0.299,
+      "toe_dist_1": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuneiform_med",
+    "fibula",
+    "sesamoid_pedis",
+    "talus",
+    "tibia",
+    "toe_dist_1",
+    "toe_prox_1"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuneiform_med",
+    "fibula",
+    "sesamoid_pedis",
+    "talus",
+    "tibia",
+    "toe_dist_1",
+    "toe_prox_1"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "extensor_digitorum_brevis",
+   "left": "extensor_digitorum_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA51143",
+     "rightFMA": "FMA51142",
+     "triangles": 4186,
+     "rightTriangles": 4186,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 3,
+     "components": 6,
+     "centroidX": 0.10080157144247834,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.8931516805472017,
+     "extentRatio": [
+      1.006,
+      0.9989,
+      1.0015
+     ],
+     "medianSymmetricDistanceMM": 1.2013657835446516,
+     "p95SymmetricDistanceMM": 1.9185182671165877,
+     "leftContacts": {
+      "calcaneus": 0.227,
+      "cuboid": 0.157,
+      "cuneiform_lat": 0.221,
+      "metatarsal_2": 0.159,
+      "metatarsal_3": 0.158,
+      "metatarsal_4": 0.069,
+      "cuneiform_int": 0.726,
+      "toe_mid_2": 0.437,
+      "toe_mid_3": 0.222,
+      "toe_mid_4": 0.269,
+      "toe_prox_2": 0.381,
+      "toe_prox_3": 1.51,
+      "toe_prox_4": 0.427
+     },
+     "rightContacts": {
+      "calcaneus": 0.283,
+      "cuboid": 0.119,
+      "cuneiform_int": 0.256,
+      "cuneiform_lat": 0.314,
+      "metatarsal_2": 0.168,
+      "toe_prox_2": 0.227,
+      "toe_mid_2": 0.299,
+      "metatarsal_3": 0.369,
+      "toe_prox_3": 0.934,
+      "toe_mid_3": 0.349,
+      "metatarsal_4": 0.069,
+      "toe_prox_4": 0.405,
+      "toe_mid_4": 0.153
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_int",
+    "cuneiform_lat",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_int",
+    "cuneiform_lat",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "extensor_hallucis_brevis",
+   "left": "extensor_hallucis_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA51145",
+     "rightFMA": "FMA51144",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.08134600067138673,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.8630436850119634,
+     "extentRatio": [
+      1.0006,
+      0.9998,
+      1.0006
+     ],
+     "medianSymmetricDistanceMM": 1.049512276648273,
+     "p95SymmetricDistanceMM": 2.03020286837639,
+     "leftContacts": {
+      "calcaneus": 0.416,
+      "cuboid": 0.261,
+      "cuneiform_lat": 0.627,
+      "metatarsal_1": 0.291,
+      "metatarsal_2": 0.277,
+      "talus": 0.293,
+      "toe_prox_1": 0.267,
+      "cuneiform_int": 0.205,
+      "cuneiform_med": 0.075,
+      "navicular": 0.246
+     },
+     "rightContacts": {
+      "talus": 0.617,
+      "calcaneus": 0.291,
+      "navicular": 0.314,
+      "cuboid": 0.119,
+      "cuneiform_med": 0.194,
+      "cuneiform_int": 0.206,
+      "cuneiform_lat": 0.552,
+      "metatarsal_1": 0.0,
+      "toe_prox_1": 0.097,
+      "metatarsal_2": 0.65
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_int",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "navicular",
+    "talus",
+    "toe_prox_1"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_int",
+    "cuneiform_lat",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "navicular",
+    "talus",
+    "toe_prox_1"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "abductor_hallucis",
+   "left": "abductor_hallucis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37460",
+     "rightFMA": "FMA37459",
+     "triangles": 2230,
+     "rightTriangles": 2230,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.059728433024636915,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 8.490619363849214,
+     "extentRatio": [
+      1.0055,
+      0.9959,
+      0.9996
+     ],
+     "medianSymmetricDistanceMM": 1.2439959498563944,
+     "p95SymmetricDistanceMM": 2.1037804077322884,
+     "leftContacts": {
+      "calcaneus": 0.746,
+      "toe_prox_1": 1.977,
+      "cuneiform_med": 1.866
+     },
+     "rightContacts": {
+      "calcaneus": 0.336,
+      "cuneiform_med": 1.821,
+      "metatarsal_1": 2.269,
+      "toe_prox_1": 1.869
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "cuneiform_med",
+    "toe_prox_1"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuneiform_med",
+    "metatarsal_1",
+    "toe_prox_1"
+   ],
+   "missingOnLeft": [
+    "metatarsal_1"
+   ],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "leg",
+   "right": "flexor_hallucis_brevis",
+   "left": "flexor_hallucis_brevis_left",
+   "parts": [
+    {
+     "part": "medh",
+     "leftFMA": "FMA45972",
+     "rightFMA": "FMA45971",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 3,
+     "centroidX": 0.06195311464077581,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 4.435691945672271,
+     "extentRatio": [
+      0.9943,
+      1.002,
+      0.9922
+     ],
+     "medianSymmetricDistanceMM": 1.123827780395385,
+     "p95SymmetricDistanceMM": 1.7269778692748226,
+     "leftContacts": {
+      "metatarsal_1": 0.099,
+      "toe_prox_1": 1.213,
+      "cuneiform_med": 1.685,
+      "sesamoid_pedis": 0.662
+     },
+     "rightContacts": {
+      "cuneiform_med": 1.809,
+      "sesamoid_pedis": 0.552,
+      "metatarsal_1": 0.405,
+      "toe_prox_1": 1.136
+     }
+    },
+    {
+     "part": "lath",
+     "leftFMA": "FMA45974",
+     "rightFMA": "FMA45973",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 6,
+     "components": 9,
+     "centroidX": 0.06948895100463244,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.0459288178335446,
+     "extentRatio": [
+      1.0036,
+      1.0036,
+      0.9919
+     ],
+     "medianSymmetricDistanceMM": 1.0703101336029088,
+     "p95SymmetricDistanceMM": 1.8730123366772058,
+     "leftContacts": {
+      "metatarsal_1": 0.406,
+      "toe_prox_1": 0.426,
+      "cuneiform_med": 0.031,
+      "sesamoid_pedis": 0.294
+     },
+     "rightContacts": {
+      "cuneiform_med": 0.256,
+      "sesamoid_pedis": 0.433,
+      "metatarsal_1": 0.439,
+      "toe_prox_1": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "cuneiform_med",
+    "metatarsal_1",
+    "sesamoid_pedis",
+    "toe_prox_1"
+   ],
+   "rightBones": [
+    "cuneiform_med",
+    "metatarsal_1",
+    "sesamoid_pedis",
+    "toe_prox_1"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "adductor_hallucis",
+   "left": "adductor_hallucis_left",
+   "parts": [
+    {
+     "part": "obl",
+     "leftFMA": "FMA46019",
+     "rightFMA": "FMA46018",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 4,
+     "centroidX": 0.08733340523821877,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.5956834229236547,
+     "extentRatio": [
+      1.0098,
+      1.0037,
+      0.9989
+     ],
+     "medianSymmetricDistanceMM": 1.130098249065876,
+     "p95SymmetricDistanceMM": 1.8399886761985735,
+     "leftContacts": {
+      "cuboid": 0.603,
+      "cuneiform_lat": 0.291,
+      "metatarsal_1": 0.298,
+      "metatarsal_2": 0.33,
+      "metatarsal_3": 0.302,
+      "metatarsal_4": 1.766,
+      "sesamoid_pedis": 0.426
+     },
+     "rightContacts": {
+      "cuboid": 0.744,
+      "cuneiform_lat": 0.227,
+      "sesamoid_pedis": 0.119,
+      "metatarsal_1": 0.153,
+      "metatarsal_2": 0.168,
+      "metatarsal_3": 0.168,
+      "metatarsal_4": 1.46
+     }
+    },
+    {
+     "part": "transv",
+     "leftFMA": "FMA46021",
+     "rightFMA": "FMA46020",
+     "triangles": 1499,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 2,
+     "centroidX": 0.09746467069869347,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.1029403887196483,
+     "extentRatio": [
+      1.0037,
+      0.9752,
+      0.996
+     ],
+     "medianSymmetricDistanceMM": 0.5743514879023203,
+     "p95SymmetricDistanceMM": 1.3527989314999174,
+     "leftContacts": {
+      "metatarsal_1": 0.186,
+      "metatarsal_2": 0.141,
+      "metatarsal_3": 0.556,
+      "metatarsal_4": 0.224,
+      "sesamoid_pedis": 0.153
+     },
+     "rightContacts": {
+      "sesamoid_pedis": 0.206,
+      "metatarsal_1": 0.069,
+      "metatarsal_2": 0.153,
+      "metatarsal_3": 0.522,
+      "metatarsal_4": 0.504
+     }
+    }
+   ],
+   "leftBones": [
+    "cuboid",
+    "cuneiform_lat",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "sesamoid_pedis"
+   ],
+   "rightBones": [
+    "cuboid",
+    "cuneiform_lat",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "sesamoid_pedis"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "abductor_digiti_minimi_pedis",
+   "left": "abductor_digiti_minimi_pedis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37464",
+     "rightFMA": "FMA37463",
+     "triangles": 1718,
+     "rightTriangles": 1718,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.10186371323916601,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.722210348640113,
+     "extentRatio": [
+      0.9986,
+      1.0019,
+      1.0005
+     ],
+     "medianSymmetricDistanceMM": 1.1155071236875134,
+     "p95SymmetricDistanceMM": 1.9490334179320767,
+     "leftContacts": {
+      "calcaneus": 0.228,
+      "metatarsal_5": 0.151,
+      "toe_prox_5": 0.097
+     },
+     "rightContacts": {
+      "calcaneus": 0.153,
+      "metatarsal_5": 0.137,
+      "toe_prox_5": 0.369
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "metatarsal_5",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "metatarsal_5",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digiti_minimi_brevis_pedis",
+   "left": "flexor_digiti_minimi_brevis_pedis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37472",
+     "rightFMA": "FMA37471",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.11720089092660456,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.9991812740096977,
+     "extentRatio": [
+      0.9977,
+      0.9916,
+      0.9994
+     ],
+     "medianSymmetricDistanceMM": 0.8693177311427773,
+     "p95SymmetricDistanceMM": 1.510414848122434,
+     "leftContacts": {
+      "metatarsal_5": 0.192,
+      "toe_prox_5": 0.066
+     },
+     "rightContacts": {
+      "metatarsal_5": 0.153,
+      "toe_prox_5": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_5",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "metatarsal_5",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "opponens_digiti_minimi_pedis",
+   "left": "opponens_digiti_minimi_pedis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA86035",
+     "rightFMA": "FMA86034",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.1143214797567814,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.678711873164036,
+     "extentRatio": [
+      0.9935,
+      0.9899,
+      0.9955
+     ],
+     "medianSymmetricDistanceMM": 0.8923428852010166,
+     "p95SymmetricDistanceMM": 1.3479695378477585,
+     "leftContacts": {
+      "metatarsal_5": 0.15
+     },
+     "rightContacts": {
+      "metatarsal_5": 0.369
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_5"
+   ],
+   "rightBones": [
+    "metatarsal_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digitorum_brevis",
+   "left": "flexor_digitorum_brevis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37462",
+     "rightFMA": "FMA37461",
+     "triangles": 4230,
+     "rightTriangles": 4230,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.09419947863544273,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.5461356172186882,
+     "extentRatio": [
+      1.0003,
+      0.9993,
+      0.9999
+     ],
+     "medianSymmetricDistanceMM": 1.1240621804629807,
+     "p95SymmetricDistanceMM": 1.9875068669827864,
+     "leftContacts": {
+      "calcaneus": 0.283,
+      "toe_mid_5": 0.131,
+      "toe_prox_5": 0.458,
+      "toe_mid_2": 0.655,
+      "toe_mid_3": 0.429,
+      "toe_mid_4": 1.319,
+      "toe_prox_2": 0.805,
+      "toe_prox_3": 1.816
+     },
+     "rightContacts": {
+      "calcaneus": 0.411,
+      "toe_prox_2": 0.46,
+      "toe_mid_2": 0.097,
+      "toe_prox_3": 1.791,
+      "toe_mid_3": 0.306,
+      "toe_mid_4": 1.075,
+      "toe_prox_5": 0.291,
+      "toe_mid_5": 0.692
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "toe_mid_2",
+    "toe_mid_3",
+    "toe_mid_4",
+    "toe_mid_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "quadratus_plantae",
+   "left": "quadratus_plantae_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA37466",
+     "rightFMA": "FMA37465",
+     "triangles": 1532,
+     "rightTriangles": 1532,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.08250609966160095,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 0.8876290065010338,
+     "extentRatio": [
+      1.0017,
+      0.9947,
+      0.9968
+     ],
+     "medianSymmetricDistanceMM": 1.0752414511766133,
+     "p95SymmetricDistanceMM": 1.9303055167063554,
+     "leftContacts": {
+      "calcaneus": 0.49
+     },
+     "rightContacts": {
+      "calcaneus": 0.356
+     }
+    }
+   ],
+   "leftBones": [
+    "calcaneus"
+   ],
+   "rightBones": [
+    "calcaneus"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "lumbricals_pedis",
+   "left": "lumbricals_pedis_left",
+   "parts": [
+    {
+     "part": "l1",
+     "leftFMA": "FMA37718",
+     "rightFMA": "FMA37717",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 4,
+     "components": 6,
+     "centroidX": 0.07675545744371663,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 6.877406810254445,
+     "extentRatio": [
+      0.9955,
+      0.9954,
+      0.9965
+     ],
+     "medianSymmetricDistanceMM": 1.1298200933085372,
+     "p95SymmetricDistanceMM": 1.6935221270901237,
+     "leftContacts": {
+      "metatarsal_1": 0.2,
+      "toe_prox_1": 0.297,
+      "sesamoid_pedis": 0.232
+     },
+     "rightContacts": {
+      "sesamoid_pedis": 0.256,
+      "metatarsal_1": 0.444,
+      "toe_prox_1": 0.119
+     }
+    },
+    {
+     "part": "l2",
+     "leftFMA": "FMA37720",
+     "rightFMA": "FMA37719",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.08678380237741672,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 3.321583903594248,
+     "extentRatio": [
+      0.9972,
+      0.9964,
+      0.9988
+     ],
+     "medianSymmetricDistanceMM": 0.9834331569545142,
+     "p95SymmetricDistanceMM": 1.4695840034274466,
+     "leftContacts": {
+      "metatarsal_2": 0.3,
+      "toe_prox_2": 0.909
+     },
+     "rightContacts": {
+      "metatarsal_2": 0.394,
+      "toe_prox_2": 1.731
+     }
+    },
+    {
+     "part": "l3",
+     "leftFMA": "FMA37486",
+     "rightFMA": "FMA37485",
+     "triangles": 1499,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 4,
+     "centroidX": 0.09631005244004101,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 2.4389062525565124,
+     "extentRatio": [
+      0.9454,
+      0.9789,
+      0.972
+     ],
+     "medianSymmetricDistanceMM": 0.9850426783891801,
+     "p95SymmetricDistanceMM": 1.485191066306325,
+     "leftContacts": {
+      "metatarsal_3": 0.098,
+      "toe_prox_3": 1.955
+     },
+     "rightContacts": {
+      "metatarsal_3": 0.206,
+      "toe_prox_3": 0.484,
+      "toe_prox_4": 2.418
+     }
+    },
+    {
+     "part": "l4",
+     "leftFMA": "FMA37484",
+     "rightFMA": "FMA37483",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 6,
+     "centroidX": 0.10619274289997574,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.0990531428828152,
+     "extentRatio": [
+      0.9901,
+      0.9962,
+      0.9938
+     ],
+     "medianSymmetricDistanceMM": 0.901406901299691,
+     "p95SymmetricDistanceMM": 1.3852569819964857,
+     "leftContacts": {
+      "metatarsal_4": 1.517,
+      "metatarsal_5": 2.39
+     },
+     "rightContacts": {
+      "metatarsal_4": 1.555,
+      "metatarsal_5": 2.35
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "sesamoid_pedis",
+    "toe_prox_1",
+    "toe_prox_2",
+    "toe_prox_3"
+   ],
+   "rightBones": [
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "sesamoid_pedis",
+    "toe_prox_1",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4"
+   ],
+   "missingOnLeft": [
+    "toe_prox_4"
+   ],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": false,
+   "passed": false
+  },
+  {
+   "region": "leg",
+   "right": "plantar_interossei",
+   "left": "plantar_interossei_left",
+   "parts": [
+    {
+     "part": "p1",
+     "leftFMA": "FMA37746",
+     "rightFMA": "FMA37745",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.09443356506912798,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.2280314959469907,
+     "extentRatio": [
+      0.9975,
+      1.0046,
+      0.9982
+     ],
+     "medianSymmetricDistanceMM": 0.7786811235896854,
+     "p95SymmetricDistanceMM": 1.3519412552561683,
+     "leftContacts": {
+      "metatarsal_2": 0.126,
+      "metatarsal_3": 2.11,
+      "toe_prox_2": 0.066,
+      "toe_prox_3": 0.943
+     },
+     "rightContacts": {
+      "metatarsal_2": 0.137,
+      "toe_prox_2": 0.526,
+      "metatarsal_3": 2.038,
+      "toe_prox_3": 0.449
+     }
+    },
+    {
+     "part": "p2",
+     "leftFMA": "FMA37744",
+     "rightFMA": "FMA37743",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.10429680038005748,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.2949410504360233,
+     "extentRatio": [
+      0.9987,
+      1.002,
+      0.9993
+     ],
+     "medianSymmetricDistanceMM": 0.8101559662159356,
+     "p95SymmetricDistanceMM": 1.31852674369642,
+     "leftContacts": {
+      "metatarsal_3": 0.159,
+      "metatarsal_4": 2.391,
+      "toe_prox_3": 0.127,
+      "toe_prox_4": 2.408
+     },
+     "rightContacts": {
+      "metatarsal_3": 0.069,
+      "toe_prox_3": 0.247,
+      "metatarsal_4": 2.355,
+      "toe_prox_4": 1.316
+     }
+    },
+    {
+     "part": "p3",
+     "leftFMA": "FMA37742",
+     "rightFMA": "FMA37741",
+     "triangles": 1500,
+     "rightTriangles": 1500,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 0,
+     "components": 1,
+     "centroidX": 0.11358931931028975,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.2227969245406871,
+     "extentRatio": [
+      0.9972,
+      1.0059,
+      1.0006
+     ],
+     "medianSymmetricDistanceMM": 0.7824289521093345,
+     "p95SymmetricDistanceMM": 1.311134112441611,
+     "leftContacts": {
+      "metatarsal_4": 0.201,
+      "metatarsal_5": 2.489,
+      "toe_prox_5": 0.588
+     },
+     "rightContacts": {
+      "metatarsal_4": 0.119,
+      "metatarsal_5": 2.437,
+      "toe_prox_5": 0.635
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "rightBones": [
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4",
+    "toe_prox_5"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "dorsal_interossei_pedis",
+   "left": "dorsal_interossei_pedis_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA74141",
+     "rightFMA": "FMA74140",
+     "triangles": 2234,
+     "rightTriangles": 2234,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 5,
+     "components": 10,
+     "centroidX": 0.09756988111772712,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.877481085867989,
+     "extentRatio": [
+      0.9964,
+      0.9952,
+      0.9949
+     ],
+     "medianSymmetricDistanceMM": 1.1368085042989007,
+     "p95SymmetricDistanceMM": 1.7948332245551704,
+     "leftContacts": {
+      "metatarsal_1": 0.137,
+      "metatarsal_2": 0.233,
+      "metatarsal_3": 0.323,
+      "metatarsal_4": 0.058,
+      "metatarsal_5": 0.425,
+      "toe_prox_1": 1.793,
+      "toe_prox_2": 1.082,
+      "toe_prox_3": 0.6,
+      "toe_prox_4": 0.355
+     },
+     "rightContacts": {
+      "metatarsal_1": 0.256,
+      "toe_prox_1": 0.227,
+      "metatarsal_2": 0.168,
+      "toe_prox_2": 0.744,
+      "metatarsal_3": 0.206,
+      "toe_prox_3": 0.585,
+      "metatarsal_4": 0.375,
+      "toe_prox_4": 0.893,
+      "metatarsal_5": 0.526
+     }
+    }
+   ],
+   "leftBones": [
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "toe_prox_1",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4"
+   ],
+   "rightBones": [
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5",
+    "toe_prox_1",
+    "toe_prox_2",
+    "toe_prox_3",
+    "toe_prox_4"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "levator_ani",
+   "left": "levator_ani_left",
+   "parts": [
+    {
+     "part": "pubo",
+     "leftFMA": "FMA45855",
+     "rightFMA": "FMA45854",
+     "triangles": 3000,
+     "rightTriangles": 3000,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 5,
+     "components": 6,
+     "centroidX": 0.015770992314047366,
+     "fractionPositiveX": 0.991424802110818,
+     "centroidOffsetFromMirroredRightMM": 1.437459250741411,
+     "extentRatio": [
+      1.0036,
+      0.996,
+      0.999
+     ],
+     "medianSymmetricDistanceMM": 1.1865352020421895,
+     "p95SymmetricDistanceMM": 1.9091017019847005,
+     "leftContacts": {
+      "hip_bone": 0.268,
+      "sacrum": 0.321
+     },
+     "rightContacts": {
+      "hip_bone": 0.097,
+      "sacrum": 0.168
+     }
+    },
+    {
+     "part": "ilio",
+     "leftFMA": "FMA45859",
+     "rightFMA": "FMA45858",
+     "triangles": 2402,
+     "rightTriangles": 2402,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 2,
+     "components": 3,
+     "centroidX": 0.02663102097774216,
+     "fractionPositiveX": 0.9891936824605154,
+     "centroidOffsetFromMirroredRightMM": 2.033151533277744,
+     "extentRatio": [
+      0.9965,
+      0.9978,
+      0.995
+     ],
+     "medianSymmetricDistanceMM": 1.2129745649494583,
+     "p95SymmetricDistanceMM": 1.9618999362615401,
+     "leftContacts": {
+      "hip_bone": 1.32,
+      "sacrum": 0.888
+     },
+     "rightContacts": {
+      "hip_bone": 0.394,
+      "sacrum": 0.137
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone",
+    "sacrum"
+   ],
+   "rightBones": [
+    "hip_bone",
+    "sacrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "coccygeus",
+   "left": "coccygeus_left",
+   "parts": [
+    {
+     "part": null,
+     "leftFMA": "FMA46444",
+     "rightFMA": "FMA46443",
+     "triangles": 1498,
+     "rightTriangles": 1498,
+     "finite": true,
+     "degenerateFaces": 0,
+     "duplicateFaces": 1,
+     "components": 2,
+     "centroidX": 0.020913404816808614,
+     "fractionPositiveX": 1.0,
+     "centroidOffsetFromMirroredRightMM": 1.5906416333621498,
+     "extentRatio": [
+      0.9983,
+      0.9994,
+      1.0023
+     ],
+     "medianSymmetricDistanceMM": 0.9777942471655958,
+     "p95SymmetricDistanceMM": 1.7962701624153532,
+     "leftContacts": {
+      "hip_bone": 0.427,
+      "sacrum": 0.221
+     },
+     "rightContacts": {
+      "hip_bone": 0.256,
+      "sacrum": 0.097
+     }
+    }
+   ],
+   "leftBones": [
+    "hip_bone",
+    "sacrum"
+   ],
+   "rightBones": [
+    "hip_bone",
+    "sacrum"
+   ],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  }
+ ],
+ "passed": 82,
+ "total": 88
+}

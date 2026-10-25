@@ -1,0 +1,1863 @@
+{
+ "issue": "CAT-MUSCLE-BILATERAL",
+ "rightMuscles": 97,
+ "crossRegion": 9,
+ "newLeftCards": 88,
+ "rows": [
+  {
+   "region": "arm",
+   "right": "deltoid",
+   "left": "deltoid_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "clav",
+     "rightFMA": "FMA34680",
+     "leftFMA": "FMA34681",
+     "leftName": "clavicular part of left deltoid"
+    },
+    {
+     "part": "acrom",
+     "rightFMA": "FMA34682",
+     "leftFMA": "FMA34683",
+     "leftName": "acromial part of left deltoid"
+    },
+    {
+     "part": "spin",
+     "rightFMA": "FMA34684",
+     "leftFMA": "FMA34685",
+     "leftName": "spinal part of left deltoid"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/deltoid_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "supraspinatus",
+   "left": "supraspinatus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA32544",
+     "leftFMA": "FMA32545",
+     "leftName": "left supraspinatus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/supraspinatus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "infraspinatus",
+   "left": "infraspinatus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA32547",
+     "leftFMA": "FMA32548",
+     "leftName": "left infraspinatus muscle"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/infraspinatus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "teres_minor",
+   "left": "teres_minor_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA32553",
+     "leftFMA": "FMA32554",
+     "leftName": "left teres minor"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/teres_minor_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "teres_major",
+   "left": "teres_major_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA32551",
+     "leftFMA": "FMA32552",
+     "leftName": "left teres major"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/teres_major_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "subscapularis",
+   "left": "subscapularis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13414",
+     "leftFMA": "FMA13415",
+     "leftName": "left subscapularis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/subscapularis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "coracobrachialis",
+   "left": "coracobrachialis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37665",
+     "leftFMA": "FMA37666",
+     "leftName": "left coracobrachialis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/coracobrachialis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "biceps_brachii",
+   "left": "biceps_brachii_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "long",
+     "rightFMA": "FMA37686",
+     "leftFMA": "FMA37687",
+     "leftName": "long head of left biceps brachii"
+    },
+    {
+     "part": "short",
+     "rightFMA": "FMA37684",
+     "leftFMA": "FMA37685",
+     "leftName": "short head of left biceps brachii"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/biceps_brachii_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "brachialis",
+   "left": "brachialis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37668",
+     "leftFMA": "FMA37669",
+     "leftName": "left brachialis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/brachialis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "triceps_brachii",
+   "left": "triceps_brachii_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "long",
+     "rightFMA": "FMA37699",
+     "leftFMA": "FMA37700",
+     "leftName": "long head of left triceps brachii"
+    },
+    {
+     "part": "lat",
+     "rightFMA": "FMA37697",
+     "leftFMA": "FMA37698",
+     "leftName": "lateral head of left triceps brachii"
+    },
+    {
+     "part": "med",
+     "rightFMA": "FMA37695",
+     "leftFMA": "FMA37696",
+     "leftName": "medial head of left triceps brachii"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/triceps_brachii_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "anconeus",
+   "left": "anconeus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37705",
+     "leftFMA": "FMA37706",
+     "leftName": "left anconeus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/anconeus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "pronator_teres",
+   "left": "pronator_teres_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "hum",
+     "rightFMA": "FMA38560",
+     "leftFMA": "FMA38561",
+     "leftName": "humeral head of left pronator teres"
+    },
+    {
+     "part": "uln",
+     "rightFMA": "FMA38562",
+     "leftFMA": "FMA38563",
+     "leftName": "ulnar head of left pronator teres"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/pronator_teres_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_carpi_radialis",
+   "left": "flexor_carpi_radialis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38460",
+     "leftFMA": "FMA38461",
+     "leftName": "left flexor carpi radialis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_radialis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "palmaris_longus",
+   "left": "palmaris_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38463",
+     "leftFMA": "FMA38464",
+     "leftName": "left palmaris longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/palmaris_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_carpi_ulnaris",
+   "left": "flexor_carpi_ulnaris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "hum",
+     "rightFMA": "FMA38617",
+     "leftFMA": "FMA38618",
+     "leftName": "humeral head of left flexor carpi ulnaris"
+    },
+    {
+     "part": "uln",
+     "rightFMA": "FMA38619",
+     "leftFMA": "FMA38620",
+     "leftName": "ulnar head of left flexor carpi ulnaris"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_ulnaris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digitorum_superficialis",
+   "left": "flexor_digitorum_superficialis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "humuln",
+     "rightFMA": "FMA38638",
+     "leftFMA": "FMA38639",
+     "leftName": "humeroulnar head of left flexor digitorum superficialis"
+    },
+    {
+     "part": "rad",
+     "rightFMA": "FMA38640",
+     "leftFMA": "FMA38641",
+     "leftName": "radial head of left flexor digitorum superficialis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_superficialis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digitorum_profundus",
+   "left": "flexor_digitorum_profundus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38479",
+     "leftFMA": "FMA38480",
+     "leftName": "left flexor digitorum profundus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_profundus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_pollicis_longus",
+   "left": "flexor_pollicis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38482",
+     "leftFMA": "FMA38484",
+     "leftName": "left flexor pollicis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "pronator_quadratus",
+   "left": "pronator_quadratus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38454",
+     "leftFMA": "FMA38455",
+     "leftName": "left pronator quadratus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/pronator_quadratus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "brachioradialis",
+   "left": "brachioradialis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38486",
+     "leftFMA": "FMA38487",
+     "leftName": "left brachioradialis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/brachioradialis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_radialis_longus",
+   "left": "extensor_carpi_radialis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38495",
+     "leftFMA": "FMA38496",
+     "leftName": "left extensor carpi radialis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_radialis_brevis",
+   "left": "extensor_carpi_radialis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38498",
+     "leftFMA": "FMA38499",
+     "leftName": "left extensor carpi radialis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_digitorum",
+   "left": "extensor_digitorum_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38501",
+     "leftFMA": "FMA38502",
+     "leftName": "left extensor digitorum"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_digiti_minimi",
+   "left": "extensor_digiti_minimi_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38504",
+     "leftFMA": "FMA38505",
+     "leftName": "left extensor digiti minimi"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digiti_minimi_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_carpi_ulnaris",
+   "left": "extensor_carpi_ulnaris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "hum",
+     "rightFMA": "BP45",
+     "leftFMA": "BP44",
+     "leftName": "humeral head of left extensor carpi ulnaris"
+    },
+    {
+     "part": "uln",
+     "rightFMA": "BP47",
+     "leftFMA": "BP46",
+     "leftName": "ulnar head of left extensor carpi ulnaris"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_ulnaris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "supinator",
+   "left": "supinator_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38513",
+     "leftFMA": "FMA38514",
+     "leftName": "left supinator"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/supinator_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "abductor_pollicis_longus",
+   "left": "abductor_pollicis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38516",
+     "leftFMA": "FMA38517",
+     "leftName": "left abductor pollicis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_pollicis_brevis",
+   "left": "extensor_pollicis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38519",
+     "leftFMA": "FMA38520",
+     "leftName": "left extensor pollicis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_pollicis_longus",
+   "left": "extensor_pollicis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38522",
+     "leftFMA": "FMA38523",
+     "leftName": "left extensor pollicis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "extensor_indicis",
+   "left": "extensor_indicis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA38525",
+     "leftFMA": "FMA38526",
+     "leftName": "left extensor indicis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_indicis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "abductor_pollicis_brevis",
+   "left": "abductor_pollicis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37386",
+     "leftFMA": "FMA37387",
+     "leftName": "left abductor pollicis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_pollicis_brevis",
+   "left": "flexor_pollicis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "sup",
+     "rightFMA": "FMA65198",
+     "leftFMA": "FMA65199",
+     "leftName": "superficial head of left flexor pollicis brevis"
+    },
+    {
+     "part": "deep",
+     "rightFMA": "FMA46110",
+     "leftFMA": "FMA46111",
+     "leftName": "deep head of left flexor pollicis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "opponens_pollicis",
+   "left": "opponens_pollicis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37390",
+     "leftFMA": "FMA37391",
+     "leftName": "left opponens pollicis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/opponens_pollicis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "adductor_pollicis",
+   "left": "adductor_pollicis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "obl",
+     "rightFMA": "FMA46121",
+     "leftFMA": "FMA46122",
+     "leftName": "oblique head of left adductor pollicis"
+    },
+    {
+     "part": "transv",
+     "rightFMA": "FMA46123",
+     "leftFMA": "FMA46124",
+     "leftName": "transverse head of left adductor pollicis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/adductor_pollicis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "abductor_digiti_minimi",
+   "left": "abductor_digiti_minimi_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37396",
+     "leftFMA": "FMA37397",
+     "leftName": "abductor digiti minimi of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "flexor_digiti_minimi_brevis",
+   "left": "flexor_digiti_minimi_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37398",
+     "leftFMA": "FMA37399",
+     "leftName": "flexor digiti minimi brevis of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "opponens_digiti_minimi",
+   "left": "opponens_digiti_minimi_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37400",
+     "leftFMA": "FMA37401",
+     "leftName": "opponens digiti minimi of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "lumbricals",
+   "left": "lumbricals_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA42398",
+     "leftFMA": "FMA42399",
+     "leftName": "set of lumbricals of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/lumbricals_left.glb",
+   "reviewPassed": false,
+   "reviewedException": "Левая сетка BP3D подходит к проксимальным фалангам II–V (зона перехода в тыльный апоневроз пальца), но не к средней фаланге II, которой касается правая (0,47 против 10,95 мм). Это различие дистальной протяжённости сухожильной части, а не другая топография; площадки прикрепления не приняты."
+  },
+  {
+   "region": "arm",
+   "right": "palmar_interossei",
+   "left": "palmar_interossei_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA42402",
+     "leftFMA": "FMA42403",
+     "leftName": "set of palmar interossei of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/palmar_interossei_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "dorsal_interossei",
+   "left": "dorsal_interossei_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA42404",
+     "leftFMA": "FMA42405",
+     "leftName": "set of dorsal interossei of left hand"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "pectoralis_major",
+   "left": "thorax_pectoralis_major_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": "clav",
+     "rightFMA": "FMA34690",
+     "leftFMA": "FMA34691",
+     "leftName": "clavicular part of left pectoralis major"
+    },
+    {
+     "part": "stern",
+     "rightFMA": "FMA79979",
+     "leftFMA": "FMA79980",
+     "leftName": "sternocostal part of left pectoralis major"
+    },
+    {
+     "part": "abd",
+     "rightFMA": "FMA45874",
+     "leftFMA": "FMA45875",
+     "leftName": "abdominal part of left pectoralis major"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "pectoralis_minor",
+   "left": "thorax_pectoralis_minor_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13375",
+     "leftFMA": "FMA13376",
+     "leftName": "left pectoralis minor"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "subclavius",
+   "left": "thorax_subclavius_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13412",
+     "leftFMA": "FMA13411",
+     "leftName": "left subclavius"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "serratus_anterior",
+   "left": "thorax_serratus_anterior_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13398",
+     "leftFMA": "FMA13399",
+     "leftName": "left serratus anterior"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "latissimus_dorsi",
+   "left": "thorax_latissimus_dorsi_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13358",
+     "leftFMA": "FMA13359",
+     "leftName": "left latissimus dorsi"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "trapezius",
+   "left": "thorax_trapezius_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": "desc",
+     "rightFMA": "FMA33586",
+     "leftFMA": "FMA33587",
+     "leftName": "descending part of left trapezius"
+    },
+    {
+     "part": "transv",
+     "rightFMA": "FMA33584",
+     "leftFMA": "FMA33585",
+     "leftName": "transverse part of left trapezius"
+    },
+    {
+     "part": "asc",
+     "rightFMA": "FMA33581",
+     "leftFMA": "FMA33583",
+     "leftName": "ascending part of left trapezius"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "rhomboid_major",
+   "left": "thorax_rhomboid_major_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13381",
+     "leftFMA": "FMA13382",
+     "leftName": "left rhomboid major"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "rhomboid_minor",
+   "left": "thorax_rhomboid_minor_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA13383",
+     "leftFMA": "FMA13384",
+     "leftName": "left rhomboid minor"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "arm",
+   "right": "levator_scapulae",
+   "left": "neck_levator_scapulae_left",
+   "resolution": "existing_left_card_in_other_region",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA32540",
+     "leftFMA": "FMA32541",
+     "leftName": "left levator scapulae"
+    }
+   ],
+   "model": null,
+   "reviewPassed": null,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "iliopsoas",
+   "left": "iliopsoas_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "psoas",
+     "rightFMA": "FMA22342",
+     "leftFMA": "FMA22343",
+     "leftName": "left psoas major"
+    },
+    {
+     "part": "iliacus",
+     "rightFMA": "FMA22322",
+     "leftFMA": "FMA22323",
+     "leftName": "left iliacus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/iliopsoas_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "obturator_internus",
+   "left": "obturator_internus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22324",
+     "leftFMA": "FMA22325",
+     "leftName": "left obturator internus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/obturator_internus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "piriformis",
+   "left": "piriformis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22340",
+     "leftFMA": "FMA22341",
+     "leftName": "left piriformis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/piriformis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_maximus",
+   "left": "gluteus_maximus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22328",
+     "leftFMA": "FMA22329",
+     "leftName": "left gluteus maximus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_maximus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_medius",
+   "left": "gluteus_medius_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22330",
+     "leftFMA": "FMA22331",
+     "leftName": "left gluteus medius"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_medius_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gluteus_minimus",
+   "left": "gluteus_minimus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22332",
+     "leftFMA": "FMA22333",
+     "leftName": "left gluteus minimus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gluteus_minimus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "tensor_fasciae_latae",
+   "left": "tensor_fasciae_latae_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22425",
+     "leftFMA": "FMA22426",
+     "leftName": "left tensor fasciae latae"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/tensor_fasciae_latae_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "quadratus_femoris",
+   "left": "quadratus_femoris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22338",
+     "leftFMA": "FMA22339",
+     "leftName": "left quadratus femoris"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/quadratus_femoris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "obturator_externus",
+   "left": "obturator_externus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22326",
+     "leftFMA": "FMA22327",
+     "leftName": "left obturator externus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/obturator_externus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gemellus_superior",
+   "left": "gemellus_superior_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22334",
+     "leftFMA": "FMA22335",
+     "leftName": "left gemellus superior"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gemellus_superior_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gemellus_inferior",
+   "left": "gemellus_inferior_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22336",
+     "leftFMA": "FMA22337",
+     "leftName": "left gemellus inferior"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gemellus_inferior_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "sartorius",
+   "left": "sartorius_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22354",
+     "leftFMA": "FMA22355",
+     "leftName": "left sartorius"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/sartorius_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "quadriceps_femoris",
+   "left": "quadriceps_femoris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "rectus",
+     "rightFMA": "FMA38928",
+     "leftFMA": "FMA38929",
+     "leftName": "left rectus femoris"
+    },
+    {
+     "part": "vlat",
+     "rightFMA": "FMA38930",
+     "leftFMA": "FMA38931",
+     "leftName": "left vastus lateralis"
+    },
+    {
+     "part": "vmed",
+     "rightFMA": "FMA38932",
+     "leftFMA": "FMA38933",
+     "leftName": "left vastus medialis"
+    },
+    {
+     "part": "vint",
+     "rightFMA": "FMA38934",
+     "leftFMA": "FMA38935",
+     "leftName": "left vastus intermedius"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/quadriceps_femoris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "pectineus",
+   "left": "pectineus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22450",
+     "leftFMA": "FMA22451",
+     "leftName": "left pectineus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/pectineus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "adductor_longus",
+   "left": "adductor_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22456",
+     "leftFMA": "FMA22457",
+     "leftName": "left adductor longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/adductor_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "adductor_brevis",
+   "left": "adductor_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22452",
+     "leftFMA": "FMA22454",
+     "leftName": "left adductor brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/adductor_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "adductor_magnus",
+   "left": "adductor_magnus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "main",
+     "rightFMA": "FMA22459",
+     "leftFMA": "FMA22460",
+     "leftName": "left adductor magnus"
+    },
+    {
+     "part": "minimus",
+     "rightFMA": "FMA43886",
+     "leftFMA": "FMA43887",
+     "leftName": "left adductor minimus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/adductor_magnus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "gracilis",
+   "left": "gracilis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA43883",
+     "leftFMA": "FMA43884",
+     "leftName": "left gracilis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/gracilis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "biceps_femoris",
+   "left": "biceps_femoris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "long",
+     "rightFMA": "FMA45888",
+     "leftFMA": "FMA45889",
+     "leftName": "long head of left biceps femoris"
+    },
+    {
+     "part": "short",
+     "rightFMA": "FMA45891",
+     "leftFMA": "FMA45892",
+     "leftName": "short head of left biceps femoris"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/biceps_femoris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "semitendinosus",
+   "left": "semitendinosus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22358",
+     "leftFMA": "FMA22359",
+     "leftName": "left semitendinosus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/semitendinosus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "semimembranosus",
+   "left": "semimembranosus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22448",
+     "leftFMA": "FMA22449",
+     "leftName": "left semimembranosus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/semimembranosus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "tibialis_anterior",
+   "left": "tibialis_anterior_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22544",
+     "leftFMA": "FMA22545",
+     "leftName": "left tibialis anterior"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/tibialis_anterior_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "extensor_digitorum_longus",
+   "left": "extensor_digitorum_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22548",
+     "leftFMA": "FMA22549",
+     "leftName": "left extensor digitorum longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_tertius",
+   "left": "fibularis_tertius_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22550",
+     "leftFMA": "FMA22551",
+     "leftName": "left fibularis tertius"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_tertius_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "extensor_hallucis_longus",
+   "left": "extensor_hallucis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22546",
+     "leftFMA": "FMA22547",
+     "leftName": "left extensor hallucis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_longus",
+   "left": "fibularis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22552",
+     "leftFMA": "FMA22553",
+     "leftName": "left fibularis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "fibularis_brevis",
+   "left": "fibularis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22554",
+     "leftFMA": "FMA22555",
+     "leftName": "left fibularis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/fibularis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "triceps_surae",
+   "left": "triceps_surae_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "gmed",
+     "rightFMA": "FMA45957",
+     "leftFMA": "FMA45958",
+     "leftName": "medial head of left gastrocnemius"
+    },
+    {
+     "part": "glat",
+     "rightFMA": "FMA45960",
+     "leftFMA": "FMA45961",
+     "leftName": "lateral head of left gastrocnemius"
+    },
+    {
+     "part": "soleus",
+     "rightFMA": "FMA22558",
+     "leftFMA": "FMA22559",
+     "leftName": "left soleus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/triceps_surae_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "plantaris",
+   "left": "plantaris_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22560",
+     "leftFMA": "FMA22561",
+     "leftName": "left plantaris"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/plantaris_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "popliteus",
+   "left": "popliteus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA22591",
+     "leftFMA": "FMA22592",
+     "leftName": "left popliteus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/popliteus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digitorum_longus",
+   "left": "flexor_digitorum_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA65016",
+     "leftFMA": "FMA65017",
+     "leftName": "left flexor digitorum longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "tibialis_posterior",
+   "left": "tibialis_posterior_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA65018",
+     "leftFMA": "FMA65019",
+     "leftName": "left tibialis posterior"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/tibialis_posterior_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "flexor_hallucis_longus",
+   "left": "flexor_hallucis_longus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA65014",
+     "leftFMA": "FMA65015",
+     "leftName": "left flexor hallucis longus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_longus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "extensor_digitorum_brevis",
+   "left": "extensor_digitorum_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA51142",
+     "leftFMA": "FMA51143",
+     "leftName": "left extensor digitorum brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "extensor_hallucis_brevis",
+   "left": "extensor_hallucis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA51144",
+     "leftFMA": "FMA51145",
+     "leftName": "left extensor hallucis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "abductor_hallucis",
+   "left": "abductor_hallucis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37459",
+     "leftFMA": "FMA37460",
+     "leftName": "left abductor hallucis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/abductor_hallucis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "flexor_hallucis_brevis",
+   "left": "flexor_hallucis_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "medh",
+     "rightFMA": "FMA45971",
+     "leftFMA": "FMA45972",
+     "leftName": "medial head of left flexor hallucis brevis"
+    },
+    {
+     "part": "lath",
+     "rightFMA": "FMA45973",
+     "leftFMA": "FMA45974",
+     "leftName": "lateral head of left flexor hallucis brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "adductor_hallucis",
+   "left": "adductor_hallucis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "obl",
+     "rightFMA": "FMA46018",
+     "leftFMA": "FMA46019",
+     "leftName": "oblique head of left adductor hallucis"
+    },
+    {
+     "part": "transv",
+     "rightFMA": "FMA46020",
+     "leftFMA": "FMA46021",
+     "leftName": "transverse head of left adductor hallucis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/adductor_hallucis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "abductor_digiti_minimi_pedis",
+   "left": "abductor_digiti_minimi_pedis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37463",
+     "leftFMA": "FMA37464",
+     "leftName": "abductor digiti minimi of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_pedis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digiti_minimi_brevis_pedis",
+   "left": "flexor_digiti_minimi_brevis_pedis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37471",
+     "leftFMA": "FMA37472",
+     "leftName": "flexor digiti minimi brevis of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_pedis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "opponens_digiti_minimi_pedis",
+   "left": "opponens_digiti_minimi_pedis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA86034",
+     "leftFMA": "FMA86035",
+     "leftName": "opponens digiti minimi of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_pedis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "flexor_digitorum_brevis",
+   "left": "flexor_digitorum_brevis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37461",
+     "leftFMA": "FMA37462",
+     "leftName": "left flexor digitorum brevis"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_brevis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "quadratus_plantae",
+   "left": "quadratus_plantae_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA37465",
+     "leftFMA": "FMA37466",
+     "leftName": "left flexor accessorius"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/quadratus_plantae_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "lumbricals_pedis",
+   "left": "lumbricals_pedis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "l1",
+     "rightFMA": "FMA37717",
+     "leftFMA": "FMA37718",
+     "leftName": "first lumbrical of left foot"
+    },
+    {
+     "part": "l2",
+     "rightFMA": "FMA37719",
+     "leftFMA": "FMA37720",
+     "leftName": "second lumbrical of left foot"
+    },
+    {
+     "part": "l3",
+     "rightFMA": "FMA37485",
+     "leftFMA": "FMA37486",
+     "leftName": "third lumbrical of left foot"
+    },
+    {
+     "part": "l4",
+     "rightFMA": "FMA37483",
+     "leftFMA": "FMA37484",
+     "leftName": "fourth lumbrical of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/lumbricals_pedis_left.glb",
+   "reviewPassed": false,
+   "reviewedException": "III червеобразная слева лежит между III плюсневой и III–IV пальцами, как справа; до зеркальной проксимальной фаланги IV 4,39 мм против пограничных 2,42 мм справа (смешанный стык исходной мышцы и отражённой фаланги)."
+  },
+  {
+   "region": "leg",
+   "right": "plantar_interossei",
+   "left": "plantar_interossei_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "p1",
+     "rightFMA": "FMA37745",
+     "leftFMA": "FMA37746",
+     "leftName": "first plantar interosseous of left foot"
+    },
+    {
+     "part": "p2",
+     "rightFMA": "FMA37743",
+     "leftFMA": "FMA37744",
+     "leftName": "second plantar interosseous of left foot"
+    },
+    {
+     "part": "p3",
+     "rightFMA": "FMA37741",
+     "leftFMA": "FMA37742",
+     "leftName": "third plantar interosseous of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/plantar_interossei_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "dorsal_interossei_pedis",
+   "left": "dorsal_interossei_pedis_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA74140",
+     "leftFMA": "FMA74141",
+     "leftName": "set of dorsal interossei of left foot"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_pedis_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "levator_ani",
+   "left": "levator_ani_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": "pubo",
+     "rightFMA": "FMA45854",
+     "leftFMA": "FMA45855",
+     "leftName": "left pubococcygeus"
+    },
+    {
+     "part": "ilio",
+     "rightFMA": "FMA45858",
+     "leftFMA": "FMA45859",
+     "leftName": "left iliococcygeus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/levator_ani_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  },
+  {
+   "region": "leg",
+   "right": "coccygeus",
+   "left": "coccygeus_left",
+   "resolution": "new_left_card_and_model",
+   "parts": [
+    {
+     "part": null,
+     "rightFMA": "FMA46443",
+     "leftFMA": "FMA46444",
+     "leftName": "left coccygeus"
+    }
+   ],
+   "model": "models/bodyparts3d-3.0/left-limb-muscles/coccygeus_left.glb",
+   "reviewPassed": true,
+   "reviewedException": null
+  }
+ ],
+ "outside": {
+  "unseparated": [
+   "palmaris_brevis — карточка без стороны, noModel; MG-palmaris_brevis, в BP3D нет"
+  ],
+  "alreadyLeft": [
+   "puborectalis_left — уже подключена (LOG-20261021-05)"
+  ],
+  "fut011": {
+   "availableInBP3D": [
+    "iliocostalis lumborum right/left: FMA22740/FMA22741",
+    "set of interspinales lumborum: FMA71307 (без разделения сторон)"
+   ],
+   "notInBP3D": [
+    "spinalis capitis",
+    "intertransversarii laterales/mediales lumborum",
+    "psoas minor (вариант)"
+   ],
+   "note": "Кандидаты расширения каталога: нужны новые карточки с двумя независимыми источниками и решение о разделе (подраздел «Поясница» сейчас костный). В этой партии не добавлялись."
+  }
+ }
+}
