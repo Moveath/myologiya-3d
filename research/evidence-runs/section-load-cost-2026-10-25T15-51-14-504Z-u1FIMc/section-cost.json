@@ -1,0 +1,110 @@
+{
+  "rows": [
+    {
+      "sec": "head",
+      "withoutLeftMuscles": false,
+      "sectionBytes": 2342485,
+      "loadMs": 337,
+      "triangles": 410286,
+      "meshes": 74,
+      "heapMB": 38.1,
+      "heapDeltaMB": 17.5,
+      "geometries": 102,
+      "frames": {
+        "medianMs": 125.9,
+        "p95Ms": 236.5
+      }
+    },
+    {
+      "sec": "neck",
+      "withoutLeftMuscles": false,
+      "sectionBytes": 1596708,
+      "loadMs": 202,
+      "triangles": 276108,
+      "meshes": 81,
+      "heapMB": 36.6,
+      "heapDeltaMB": 15.9,
+      "geometries": 102,
+      "frames": {
+        "medianMs": 96.5,
+        "p95Ms": 111.9
+      }
+    },
+    {
+      "sec": "trunk",
+      "withoutLeftMuscles": false,
+      "sectionBytes": 7500684,
+      "loadMs": 919,
+      "triangles": 1542808,
+      "meshes": 91,
+      "heapMB": 68,
+      "heapDeltaMB": 47.3,
+      "geometries": 118,
+      "frames": {
+        "medianMs": 404.2,
+        "p95Ms": 417.5
+      }
+    },
+    {
+      "sec": "arm",
+      "withoutLeftMuscles": false,
+      "sectionBytes": 3178564,
+      "loadMs": 583,
+      "triangles": 771152,
+      "meshes": 172,
+      "heapMB": 53,
+      "heapDeltaMB": 32.3,
+      "geometries": 214,
+      "frames": {
+        "medianMs": 195.5,
+        "p95Ms": 375.9
+      }
+    },
+    {
+      "sec": "arm",
+      "withoutLeftMuscles": true,
+      "sectionBytes": 2264276,
+      "loadMs": 418,
+      "triangles": 598230,
+      "meshes": 121,
+      "heapMB": 43.7,
+      "heapDeltaMB": 23.4,
+      "geometries": 163,
+      "frames": {
+        "medianMs": 153.3,
+        "p95Ms": 290
+      }
+    },
+    {
+      "sec": "leg",
+      "withoutLeftMuscles": false,
+      "sectionBytes": 2956568,
+      "loadMs": 679,
+      "triangles": 895916,
+      "meshes": 204,
+      "heapMB": 62.8,
+      "heapDeltaMB": 42,
+      "geometries": 210,
+      "frames": {
+        "medianMs": 247.1,
+        "p95Ms": 480.7
+      }
+    },
+    {
+      "sec": "leg",
+      "withoutLeftMuscles": true,
+      "sectionBytes": 2294116,
+      "loadMs": 471,
+      "triangles": 614662,
+      "meshes": 140,
+      "heapMB": 44.2,
+      "heapDeltaMB": 23.8,
+      "geometries": 146,
+      "frames": {
+        "medianMs": 176,
+        "p95Ms": 335.3
+      }
+    }
+  ],
+  "scope": "Chromium headless shell, SwiftShader CPU rasteriser, 1280x860, DPR 1; relative cost only, not device FPS."
+}

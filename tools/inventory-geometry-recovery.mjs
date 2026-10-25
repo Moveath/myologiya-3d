@@ -4,7 +4,7 @@ import vm from 'node:vm';
 import crypto from 'node:crypto';
 const run=process.argv[2],box={window:{}},hashes={};vm.createContext(box);
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
-for(const file of ['data','data-leg','data-head','data-neck','data-thorax','data-context-bones','data-muscle-recovery','data-neck-recovery']){
+for(const file of ['data','data-leg','data-head','data-neck','data-thorax','data-context-bones','data-muscle-recovery','data-neck-recovery','data-left-limb-muscles']){
  const name='site/'+file+'.js',b=await fs.readFile(name);hashes[name]=hash(b);vm.runInContext(b.toString(),box);
 }
 const A=box.window.ATLAS;

@@ -1,0 +1,286 @@
+{
+ "left": {
+  "seed": {
+   "nodules": {
+    "A": [
+     352.3,
+     113.8,
+     1798.5
+    ],
+    "B": [
+     360.0,
+     106.8,
+     1801.0
+    ]
+   },
+   "R": -94.2,
+   "A": 136.4,
+   "slice": 1800
+  },
+  "crop": {
+   "slices": [
+    1740,
+    1812
+   ]
+  },
+  "sweep": [
+   {
+    "threshold": 1250,
+    "A": "merged with bone",
+    "B": "separate 60 vox"
+   },
+   {
+    "threshold": 1275,
+    "A": "merged with bone",
+    "B": "separate 49 vox"
+   },
+   {
+    "threshold": 1300,
+    "A": "merged with bone",
+    "B": "separate 44 vox"
+   },
+   {
+    "threshold": 1325,
+    "A": "merged with bone",
+    "B": "separate 39 vox"
+   },
+   {
+    "threshold": 1350,
+    "A": "merged with bone",
+    "B": "separate 35 vox"
+   },
+   {
+    "threshold": 1375,
+    "A": "merged with bone",
+    "B": "separate 30 vox"
+   },
+   {
+    "threshold": 1400,
+    "A": "merged with bone",
+    "B": "separate 24 vox"
+   },
+   {
+    "threshold": 1425,
+    "A": "merged with bone",
+    "B": "separate 18 vox"
+   },
+   {
+    "threshold": 1450,
+    "A": "separate 31 vox",
+    "B": "separate 14 vox"
+   },
+   {
+    "threshold": 1475,
+    "A": "separate 30 vox",
+    "B": "separate 13 vox"
+   },
+   {
+    "threshold": 1500,
+    "A": "separate 26 vox",
+    "B": "separate 9 vox"
+   },
+   {
+    "threshold": 1525,
+    "A": "separate 25 vox",
+    "B": "separate 6 vox"
+   },
+   {
+    "threshold": 1550,
+    "A": "separate 23 vox",
+    "B": "separate 5 vox"
+   },
+   {
+    "threshold": 1575,
+    "A": "separate 18 vox",
+    "B": "separate 1 vox"
+   },
+   {
+    "threshold": 1600,
+    "A": "separate 17 vox",
+    "B": "below threshold"
+   }
+  ],
+  "chosenThreshold": 1250,
+  "softTissue": 983,
+  "nodules": [
+   {
+    "k": 1,
+    "nodule": "A",
+    "voxels": 39,
+    "voxelsAboveLevel": 39,
+    "peak": 1835,
+    "level": 1409,
+    "extentsMM": [
+     5.68,
+     3.9,
+     3.39
+    ],
+    "volumeMM3": 30.3,
+    "triangles": 9144,
+    "droppedIslandsMM3": [
+     0.0,
+     1.726
+    ]
+   },
+   {
+    "k": 2,
+    "nodule": "B",
+    "voxels": 46,
+    "voxelsAboveLevel": 46,
+    "peak": 1576,
+    "level": 1280,
+    "extentsMM": [
+     5.05,
+     4.82,
+     3.98
+    ],
+    "volumeMM3": 42.3,
+    "triangles": 9720,
+    "droppedIslandsMM3": []
+   }
+  ],
+  "mc1Voxels": 3352
+ },
+ "right": {
+  "seed": {
+   "nodules": {
+    "A": [
+     200.5,
+     104.3,
+     1790.0
+    ],
+    "B": [
+     193.6,
+     96.6,
+     1794.0
+    ]
+   },
+   "R": 54.8,
+   "A": 145.8,
+   "slice": 1792
+  },
+  "crop": {
+   "slices": [
+    1732,
+    1804
+   ]
+  },
+  "sweep": [
+   {
+    "threshold": 1250,
+    "A": "merged with bone",
+    "B": "separate 50 vox"
+   },
+   {
+    "threshold": 1275,
+    "A": "merged with bone",
+    "B": "separate 31 vox"
+   },
+   {
+    "threshold": 1300,
+    "A": "merged with bone",
+    "B": "separate 23 vox"
+   },
+   {
+    "threshold": 1325,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1350,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1375,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1400,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1425,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1450,
+    "A": "merged with bone",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1475,
+    "A": "separate 28 vox",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1500,
+    "A": "separate 22 vox",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1525,
+    "A": "separate 18 vox",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1550,
+    "A": "separate 14 vox",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1575,
+    "A": "separate 12 vox",
+    "B": "below threshold"
+   },
+   {
+    "threshold": 1600,
+    "A": "separate 8 vox",
+    "B": "below threshold"
+   }
+  ],
+  "chosenThreshold": 1250,
+  "softTissue": 979,
+  "nodules": [
+   {
+    "k": 1,
+    "nodule": "A",
+    "voxels": 43,
+    "voxelsAboveLevel": 43,
+    "peak": 1737,
+    "level": 1358,
+    "extentsMM": [
+     5.73,
+     5.16,
+     4.01
+    ],
+    "volumeMM3": 41.0,
+    "triangles": 12256,
+    "droppedIslandsMM3": [
+     0.011,
+     0.145
+    ]
+   },
+   {
+    "k": 2,
+    "nodule": "B",
+    "voxels": 50,
+    "voxelsAboveLevel": 50,
+    "peak": 1485,
+    "level": 1250,
+    "extentsMM": [
+     5.05,
+     4.92,
+     4.42
+    ],
+    "volumeMM3": 37.3,
+    "triangles": 13348,
+    "droppedIslandsMM3": []
+   }
+  ],
+  "mc1Voxels": 2976
+ }
+}

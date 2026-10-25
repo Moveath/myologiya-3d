@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "revision": 6,
+  "revision": 7,
   "createdAt": "2026-10-22T07:23:29.077766+00:00",
-  "updatedAt": "2026-10-25T08:19:00.195791+00:00",
+  "updatedAt": "2026-10-25T15:59:03.719912+00:00",
   "scope": "Execution checkpoint for 20 bone owners, 14 muscles and 21 parts. ANATOMY_ISSUES.md remains the only task-status registry.",
   "issueRegistry": "ANATOMY_ISSUES.md",
-  "inventory": "research/evidence-runs/stage6-left-baseline-admission-2026-10-25T07-39-03-485Z-lu5id3/inventory.json",
+  "inventory": "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json",
   "checkpoint": "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/checkpoint.json",
   "initialCounts": {
     "bones": 20,
@@ -13,7 +13,7 @@
     "parts": 21
   },
   "currentCounts": {
-    "bones": 4,
+    "bones": 0,
     "muscles": 14,
     "parts": 21
   },
@@ -2127,15 +2127,27 @@
       "lat": "ossa sesamoidea",
       "sideInCatalogue": "right",
       "initialNoModel": true,
-      "currentNoModel": true,
-      "status": "research_only_not_admitted",
-      "admitted": false,
+      "currentNoModel": false,
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
       "fullAnatomicalAcceptance": false,
-      "integratedFile": null,
+      "integratedFile": "site/models/vhp-male/thumb-sesamoids/sesamoid_mcp1_radial_right.glb",
       "evidence": [
         "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
         "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
-        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+        "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+        "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+        "site/models/vhp-male/thumb-sesamoids/provenance.json",
+        "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json"
       ],
       "resources": [
         {
@@ -2149,6 +2161,10 @@
         },
         {
           "sourceId": "Basel-upperbody-CT"
+        },
+        {
+          "sourceId": "NLM-VHP-Male-frozenCT-1700-1849",
+          "terms": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html"
         }
       ],
       "history": [
@@ -2169,6 +2185,24 @@
             "research/evidence-runs/stage7-interspinales-local-plane-2026-10-22T07-25-20-358Z-RCXRLB/admission-decision.json",
             "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/mcp-z-multifidus-scene-review.json",
             "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/decision.json"
+          ]
+        },
+        {
+          "at": "2026-10-25T15:59:03.718919+00:00",
+          "event": "vhp-thumb-sesamoids-2026-10-25",
+          "previousStatus": "research_only_not_admitted",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
           ]
         }
       ],
@@ -2224,15 +2258,35 @@
         },
         {
           "code": "F",
-          "status": "new_imaging_lead_unverified_not_executed",
-          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
-          "evidence": [],
-          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+          "status": "completed_admitted_educational_external_ct",
+          "summary": "NLM Visible Human Male frozen CT 1700-1849 (0.9375 mm, 1 mm; NLM Terms: attribution, no endorsement). Two nodules per thumb MCP identified visually, seeded watershed, half-voxel isosurface; CT I metacarpal registered to the BP3D I metacarpal of the same side (median 0.75-0.80 mm, scale 1.003-1.007); no bone penetration; radial at FPB, ulnar at adductor (two sources each). Educational only.",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
+          ]
         }
       ],
-      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Supplementary STL 2019: нынешняя политика CC BY/CC BY-NC действует для подач с сентября2024 и не устанавливает права на этот старый файл.",
-      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
-      "allApplicableMethodsExhausted": false
+      "blocker": "Full acceptance: different body placed by registration; 1 mm CT smooths shape; facets/palmar plate not seen; identification not by an anatomist.",
+      "nextStep": "Teacher review of *-joint.png overlays (identity, radial/ulnar); open CT/MRI <=0.5 mm or micro-CT of a hand for facets.",
+      "allApplicableMethodsExhausted": false,
+      "admissionChecks": {
+        "rights": "NLM Terms and Conditions; Courtesy line in card, LICENSE-MODELS.txt and site sources",
+        "anatomicalBasics": "pair on palmar MC-I head; radial/ulnar by MC-II proximity; FPB/adductor relations with two sources each",
+        "Blender": "scene vhp_sesamoid_review, 8 renders",
+        "Node": "scripts/vhp_thumb_sesamoids.py placement checks",
+        "BVH": "tools/verify-vhp-sesamoids.mjs BVH/native ray agreement",
+        "browser1280": true,
+        "browser390": true
+      }
     },
     {
       "key": "bone:sesamoid_mcp1_ulnar_right",
@@ -2243,15 +2297,27 @@
       "lat": "ossa sesamoidea",
       "sideInCatalogue": "right",
       "initialNoModel": true,
-      "currentNoModel": true,
-      "status": "research_only_not_admitted",
-      "admitted": false,
+      "currentNoModel": false,
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
       "fullAnatomicalAcceptance": false,
-      "integratedFile": null,
+      "integratedFile": "site/models/vhp-male/thumb-sesamoids/sesamoid_mcp1_ulnar_right.glb",
       "evidence": [
         "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
         "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
-        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+        "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+        "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+        "site/models/vhp-male/thumb-sesamoids/provenance.json",
+        "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json"
       ],
       "resources": [
         {
@@ -2265,6 +2331,10 @@
         },
         {
           "sourceId": "Basel-upperbody-CT"
+        },
+        {
+          "sourceId": "NLM-VHP-Male-frozenCT-1700-1849",
+          "terms": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html"
         }
       ],
       "history": [
@@ -2285,6 +2355,24 @@
             "research/evidence-runs/stage7-interspinales-local-plane-2026-10-22T07-25-20-358Z-RCXRLB/admission-decision.json",
             "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/mcp-z-multifidus-scene-review.json",
             "research/evidence-runs/stage7-targeted-muscle-sources-2026-10-22T07-14-12-363Z-LR6EiF/decision.json"
+          ]
+        },
+        {
+          "at": "2026-10-25T15:59:03.718919+00:00",
+          "event": "vhp-thumb-sesamoids-2026-10-25",
+          "previousStatus": "research_only_not_admitted",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
           ]
         }
       ],
@@ -2340,15 +2428,35 @@
         },
         {
           "code": "F",
-          "status": "new_imaging_lead_unverified_not_executed",
-          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
-          "evidence": [],
-          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+          "status": "completed_admitted_educational_external_ct",
+          "summary": "NLM Visible Human Male frozen CT 1700-1849 (0.9375 mm, 1 mm; NLM Terms: attribution, no endorsement). Two nodules per thumb MCP identified visually, seeded watershed, half-voxel isosurface; CT I metacarpal registered to the BP3D I metacarpal of the same side (median 0.75-0.80 mm, scale 1.003-1.007); no bone penetration; radial at FPB, ulnar at adductor (two sources each). Educational only.",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
+          ]
         }
       ],
-      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Supplementary STL 2019: нынешняя политика CC BY/CC BY-NC действует для подач с сентября2024 и не устанавливает права на этот старый файл.",
-      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
-      "allApplicableMethodsExhausted": false
+      "blocker": "Full acceptance: different body placed by registration; 1 mm CT smooths shape; facets/palmar plate not seen; identification not by an anatomist.",
+      "nextStep": "Teacher review of *-joint.png overlays (identity, radial/ulnar); open CT/MRI <=0.5 mm or micro-CT of a hand for facets.",
+      "allApplicableMethodsExhausted": false,
+      "admissionChecks": {
+        "rights": "NLM Terms and Conditions; Courtesy line in card, LICENSE-MODELS.txt and site sources",
+        "anatomicalBasics": "pair on palmar MC-I head; radial/ulnar by MC-II proximity; FPB/adductor relations with two sources each",
+        "Blender": "scene vhp_sesamoid_review, 8 renders",
+        "Node": "scripts/vhp_thumb_sesamoids.py placement checks",
+        "BVH": "tools/verify-vhp-sesamoids.mjs BVH/native ray agreement",
+        "browser1280": true,
+        "browser390": true
+      }
     },
     {
       "key": "bone:metacarpal_1_left",
@@ -2677,15 +2785,27 @@
       "lat": "ossa sesamoidea",
       "sideInCatalogue": "left",
       "initialNoModel": true,
-      "currentNoModel": true,
-      "status": "research_only_not_admitted",
-      "admitted": false,
+      "currentNoModel": false,
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
       "fullAnatomicalAcceptance": false,
-      "integratedFile": null,
+      "integratedFile": "site/models/vhp-male/thumb-sesamoids/sesamoid_mcp1_radial_left.glb",
       "evidence": [
         "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
         "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
-        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+        "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+        "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+        "site/models/vhp-male/thumb-sesamoids/provenance.json",
+        "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json"
       ],
       "resources": [
         {
@@ -2699,6 +2819,10 @@
         },
         {
           "sourceId": "Basel-upperbody-CT"
+        },
+        {
+          "sourceId": "NLM-VHP-Male-frozenCT-1700-1849",
+          "terms": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html"
         }
       ],
       "history": [
@@ -2716,6 +2840,24 @@
           "previousStatus": "research_only_not_admitted",
           "evidence": [
             "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+          ]
+        },
+        {
+          "at": "2026-10-25T15:59:03.718919+00:00",
+          "event": "vhp-thumb-sesamoids-2026-10-25",
+          "previousStatus": "research_only_not_admitted",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
           ]
         }
       ],
@@ -2772,15 +2914,35 @@
         },
         {
           "code": "F",
-          "status": "new_imaging_lead_unverified_not_executed",
-          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
-          "evidence": [],
-          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+          "status": "completed_admitted_educational_external_ct",
+          "summary": "NLM Visible Human Male frozen CT 1700-1849 (0.9375 mm, 1 mm; NLM Terms: attribution, no endorsement). Two nodules per thumb MCP identified visually, seeded watershed, half-voxel isosurface; CT I metacarpal registered to the BP3D I metacarpal of the same side (median 0.75-0.80 mm, scale 1.003-1.007); no bone penetration; radial at FPB, ulnar at adductor (two sources each). Educational only.",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
+          ]
         }
       ],
-      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Human right STL2019 is a possible source for a controlled left derivative, but file-specific commercial derivative rights remain unconfirmed. Policy effective2024 is not retrospective. Source identity and positioning must be accepted before reflection.",
-      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
-      "allApplicableMethodsExhausted": false
+      "blocker": "Full acceptance: different body placed by registration; 1 mm CT smooths shape; facets/palmar plate not seen; identification not by an anatomist.",
+      "nextStep": "Teacher review of *-joint.png overlays (identity, radial/ulnar); open CT/MRI <=0.5 mm or micro-CT of a hand for facets.",
+      "allApplicableMethodsExhausted": false,
+      "admissionChecks": {
+        "rights": "NLM Terms and Conditions; Courtesy line in card, LICENSE-MODELS.txt and site sources",
+        "anatomicalBasics": "pair on palmar MC-I head; radial/ulnar by MC-II proximity; FPB/adductor relations with two sources each",
+        "Blender": "scene vhp_sesamoid_review, 8 renders",
+        "Node": "scripts/vhp_thumb_sesamoids.py placement checks",
+        "BVH": "tools/verify-vhp-sesamoids.mjs BVH/native ray agreement",
+        "browser1280": true,
+        "browser390": true
+      }
     },
     {
       "key": "bone:sesamoid_mcp1_ulnar_left",
@@ -2791,15 +2953,27 @@
       "lat": "ossa sesamoidea",
       "sideInCatalogue": "left",
       "initialNoModel": true,
-      "currentNoModel": true,
-      "status": "research_only_not_admitted",
-      "admitted": false,
+      "currentNoModel": false,
+      "status": "educational_admitted_full_acceptance_open",
+      "admitted": true,
       "fullAnatomicalAcceptance": false,
-      "integratedFile": null,
+      "integratedFile": "site/models/vhp-male/thumb-sesamoids/sesamoid_mcp1_ulnar_left.glb",
       "evidence": [
         "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/inventory.json",
         "research/evidence-runs/geometry-recovery-bone-methods-2026-10-22T07-10-36-377Z-kDATcr/bone-method-decisions.json",
-        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+        "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+        "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+        "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+        "site/models/vhp-male/thumb-sesamoids/provenance.json",
+        "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json"
       ],
       "resources": [
         {
@@ -2813,6 +2987,10 @@
         },
         {
           "sourceId": "Basel-upperbody-CT"
+        },
+        {
+          "sourceId": "NLM-VHP-Male-frozenCT-1700-1849",
+          "terms": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html"
         }
       ],
       "history": [
@@ -2830,6 +3008,24 @@
           "previousStatus": "research_only_not_admitted",
           "evidence": [
             "research/evidence-runs/geometry-recovery-autonomous-2026-10-22T07-11-57-857Z-AaUbRQ/sesamoid-license-followup.json"
+          ]
+        },
+        {
+          "at": "2026-10-25T15:59:03.718919+00:00",
+          "event": "vhp-thumb-sesamoids-2026-10-25",
+          "previousStatus": "research_only_not_admitted",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
           ]
         }
       ],
@@ -2886,15 +3082,35 @@
         },
         {
           "code": "F",
-          "status": "new_imaging_lead_unverified_not_executed",
-          "summary": "Embodi3D handScan NRRD page declares CC Attribution but exact version, download, side, spacing and sesamoid visibility are unverified. Basel scans available by request, not public download. Licensed calibrated images could support segmentation; method not exhausted.",
-          "evidence": [],
-          "nextStep": "Obtain one specific lawful CT/MRI volume with scale and confirmed MCP-I sesamoids, mark radial/ulnar identity and joint relationship; confirm file license before redistribution."
+          "status": "completed_admitted_educational_external_ct",
+          "summary": "NLM Visible Human Male frozen CT 1700-1849 (0.9375 mm, 1 mm; NLM Terms: attribution, no endorsement). Two nodules per thumb MCP identified visually, seeded watershed, half-voxel isosurface; CT I metacarpal registered to the BP3D I metacarpal of the same side (median 0.75-0.80 mm, scale 1.003-1.007); no bone penetration; radial at FPB, ulnar at adductor (two sources each). Educational only.",
+          "evidence": [
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+            "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+            "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+            "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+            "site/models/vhp-male/thumb-sesamoids/provenance.json"
+          ]
         }
       ],
-      "blocker": "No specific identified MCP-I sesamoid surface has both sufficient geometry/provenance and commercial derivative rights. New human STL supplement rights and file remain unverified.  Human right STL2019 is a possible source for a controlled left derivative, but file-specific commercial derivative rights remain unconfirmed. Policy effective2024 is not retrospective. Source identity and positioning must be accepted before reflection.",
-      "nextStep": "Resolve rights/access for Nakatsukasa2019 human supplement1 or Steer2026, or obtain verified CT NRRD. Do not substitute nonhuman sample or infer shape from a keyword.",
-      "allApplicableMethodsExhausted": false
+      "blocker": "Full acceptance: different body placed by registration; 1 mm CT smooths shape; facets/palmar plate not seen; identification not by an anatomist.",
+      "nextStep": "Teacher review of *-joint.png overlays (identity, radial/ulnar); open CT/MRI <=0.5 mm or micro-CT of a hand for facets.",
+      "allApplicableMethodsExhausted": false,
+      "admissionChecks": {
+        "rights": "NLM Terms and Conditions; Courtesy line in card, LICENSE-MODELS.txt and site sources",
+        "anatomicalBasics": "pair on palmar MC-I head; radial/ulnar by MC-II proximity; FPB/adductor relations with two sources each",
+        "Blender": "scene vhp_sesamoid_review, 8 renders",
+        "Node": "scripts/vhp_thumb_sesamoids.py placement checks",
+        "BVH": "tools/verify-vhp-sesamoids.mjs BVH/native ray agreement",
+        "browser1280": true,
+        "browser390": true
+      }
     },
     {
       "key": "muscle:palmaris_brevis",
@@ -7092,7 +7308,7 @@
     "full": "Separate confirmed geometry/attachments/regions and scientific acceptance; educational admission never closes it."
   },
   "resume": {
-    "activeBatch": "after_left_limb_muscles",
+    "activeBatch": "after_vhp_thumb_sesamoids",
     "stage8Started": false,
     "completed": [
       "55 current owners/parts consolidated; unchanged GLB evidence reused",
@@ -7102,15 +7318,18 @@
       "Actual Z-Anatomy parts and targeted source review",
       "1280/390 research browser check",
       "16 left bones admitted by contralateral baseline (25.10)",
-      "CAT-MUSCLE-BILATERAL: 88 left limb muscles added with educational BP3D models (25.10); outside the 55 checkpoint rows"
+      "CAT-MUSCLE-BILATERAL: 88 left limb muscles added with educational BP3D models (25.10); outside the 55 checkpoint rows",
+      "4 MCP I sesamoids admitted educationally from the NLM Visible Human Male CT (25.10); bone noModel 0",
+      "Left limb landmarks: 382 approximate contralateral transfers and 312 muscle links (outside the 55 rows)"
     ],
-    "next": "Remaining in this checkpoint: 4 MCP I sesamoids (licensed identified geometry), 14 muscles, 21 parts. Next useful: multifidus/rotatores endpoint identity on saved Z-Anatomy scene (C7-T12), diaphragm attachment constraints; FUT-011 iliocostalis/interspinales lumborum cards need two-source scientific review.",
+    "next": "Remaining in this checkpoint: 14 muscles, 21 parts. Next useful: omohyoid intermediate tendon length ratio from VHP colour cryosections (new data for MP-omohyoid), multifidus/rotatores endpoint identity, diaphragm attachment constraints.",
     "doNotRepeat": [
       "PB/omohyoid without new boundaries or method",
       "Known BP3D original/mirrored bone conflicts without new source or landmark registration",
-      "Absolute-depth rejection of the 16 left BP3D bones without a contralateral comparison"
+      "Absolute-depth rejection of the 16 left BP3D bones without a contralateral comparison",
+      "Automatic two-component sesamoid detection at 1 mm voxels (one nodule touches the joint); use the recorded seeds"
     ],
-    "remainingWork": "4 bone owners, 14 muscles, 21 parts without geometry; full acceptance of all educational models (incl. 88 left limb muscles, GEO-LEFT-LIMB-MUSCLES) open."
+    "remainingWork": "0 bone owners, 14 muscles, 21 parts without geometry; full acceptance of all educational models open (incl. 4 VHP sesamoids, 88 left limb muscles, 382 approximate left landmarks)."
   },
   "batches": [
     {
@@ -7249,6 +7468,50 @@
         ],
         "remainingWork": "4 bone owners, 14 muscles, 21 parts without geometry; full acceptance of all educational models (incl. 88 left limb muscles, GEO-LEFT-LIMB-MUSCLES) open."
       }
+    },
+    {
+      "id": "vhp-thumb-sesamoids-2026-10-25",
+      "at": "2026-10-25T16:00:00+00:00",
+      "integrated": 4,
+      "evidence": [
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/headers.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/segmentation.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/registration.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/placement.json",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/left-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/right-joint.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-right-palmar.png",
+        "research/evidence-runs/vhp-thumb-sesamoids-2026-10-25T15-54-03-937Z-jFgb8E/blender-left-palmar.png",
+        "research/evidence-runs/vhp-sesamoids-ui-2026-10-25T15-58-25-970Z-zDVSQd/ui-report.json",
+        "research/stage6-vhp-thumb-sesamoids-2026-10-25.md",
+        "site/models/vhp-male/thumb-sesamoids/provenance.json"
+      ],
+      "inventory": "research/evidence-runs/geometry-recovery-vhp-sesamoids-2026-10-25T15-58-43-420Z-v2J4xr/inventory.json",
+      "resume": {
+        "activeBatch": "after_vhp_thumb_sesamoids",
+        "stage8Started": false,
+        "completed": [
+          "55 current owners/parts consolidated; unchanged GLB evidence reused",
+          "PB and4omohyoid parts not repeated",
+          "New BoneHub candidates and two registered metacarpals",
+          "Two independent reflection planes for left interspinales",
+          "Actual Z-Anatomy parts and targeted source review",
+          "1280/390 research browser check",
+          "16 left bones admitted by contralateral baseline (25.10)",
+          "CAT-MUSCLE-BILATERAL: 88 left limb muscles added with educational BP3D models (25.10); outside the 55 checkpoint rows",
+          "4 MCP I sesamoids admitted educationally from the NLM Visible Human Male CT (25.10); bone noModel 0",
+          "Left limb landmarks: 382 approximate contralateral transfers and 312 muscle links (outside the 55 rows)"
+        ],
+        "next": "Remaining in this checkpoint: 14 muscles, 21 parts. Next useful: omohyoid intermediate tendon length ratio from VHP colour cryosections (new data for MP-omohyoid), multifidus/rotatores endpoint identity, diaphragm attachment constraints.",
+        "doNotRepeat": [
+          "PB/omohyoid without new boundaries or method",
+          "Known BP3D original/mirrored bone conflicts without new source or landmark registration",
+          "Absolute-depth rejection of the 16 left BP3D bones without a contralateral comparison",
+          "Automatic two-component sesamoid detection at 1 mm voxels (one nodule touches the joint); use the recorded seeds"
+        ],
+        "remainingWork": "0 bone owners, 14 muscles, 21 parts without geometry; full acceptance of all educational models open (incl. 4 VHP sesamoids, 88 left limb muscles, 382 approximate left landmarks)."
+      },
+      "note": "Method F completed for the four MCP-I sesamoid rows; educational admission only."
     }
   ]
 }

@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-25T15:58:34.255Z",
+  "method": "Current generated catalogue + hash-guarded reuse of the real published GLB inventory",
+  "hashes": {
+    "site/data.js": "35b595d0df8e437ca4865bd4abf87524e3eacc19c2015895e5943fc394c07cd2",
+    "site/data-leg.js": "4343fd9ba03843138a6400e1ece4218c7107013e243500dcc6f786c3957690f0",
+    "site/data-head.js": "d9516de651fd7d72d17d241d9a6f731aea81837ee527948142d70a6ca19017d1",
+    "site/data-neck.js": "70c566e9ac12700dc3d2eb226218039e6a043a89e8781d79f0f45bf299a4b554",
+    "site/data-thorax.js": "35b57ba46277062c2e6586f4efcdd4e16229fbcd5ff761452aadc2cfafed4fe2",
+    "site/data-context-bones.js": "ea8073bd3ecbc87d470613119c4080f44dffcef9d05045a024e2bd856e201733",
+    "site/data-muscle-recovery.js": "aa8d08d9f3d9f48fe5cee450162b1992d2df6dfe0d32b82c7c1c43e78d3f1d77",
+    "site/data-neck-recovery.js": "b47c80938b7c239771bb8f98e5f0d5ed82651dd62c825c81a444590db1901103",
+    "site/arm-glb.txt": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+    "site/leg-glb.txt": "61f70a3367a1e08a959c0f8c089151b1535c6d4e0990121f68ad37df1903a3e3",
+    "site/head-glb.txt": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+    "site/neck-glb.txt": "c4fe237c90a636aa38f030ac2eb33572cee2fb0729271c7aee0fd1d59c7c3b63",
+    "site/thorax-glb.txt": "d298b15b626f55172c8b270497ffb1fe272f1932c34dd99299c8ce7f04369a13",
+    "site/arm-extra-glb.txt": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+    "site/leg-extra-glb.txt": "cf2ecfdb50bca2820a889f5b4cbee0c938a161192ec1ed5b2aad4f3c978b3165",
+    "site/models/bodyparts3d-3.0/muscles-stage7/puborectalis_right.glb": "0c0ac7879ee4e1a81a262d40e958358d71a74b48ad64b6f0ef594559417476e5",
+    "site/models/bodyparts3d-3.0/muscles-stage7/puborectalis_left.glb": "7fcbb093552fd54b7f213b1d3fc413d412af331f4efe60229043097d79b5e984",
+    "site/models/bodyparts3d-3.0/neck-stage7/interspinales_cervicis_right.glb": "e6394fef1dd6db9d3afe25654d248e27fe901ccee01749c54d081ee23acc36a5"
+  },
+  "unchangedSourceGLBs": [
+    {
+      "file": "site/arm-glb.txt",
+      "sha256": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/leg-glb.txt",
+      "sha256": "61f70a3367a1e08a959c0f8c089151b1535c6d4e0990121f68ad37df1903a3e3",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/head-glb.txt",
+      "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/neck-glb.txt",
+      "sha256": "c4fe237c90a636aa38f030ac2eb33572cee2fb0729271c7aee0fd1d59c7c3b63",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/thorax-glb.txt",
+      "sha256": "d298b15b626f55172c8b270497ffb1fe272f1932c34dd99299c8ce7f04369a13",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/arm-extra-glb.txt",
+      "sha256": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/leg-extra-glb.txt",
+      "sha256": "cf2ecfdb50bca2820a889f5b4cbee0c938a161192ec1ed5b2aad4f3c978b3165",
+      "matchesPriorRealInventory": true
+    }
+  ],
+  "cards": {
+    "bones": 214,
+    "muscles": 259
+  },
+  "missing": {
+    "bones": [],
+    "muscles": [
+      {
+        "id": "palmaris_brevis",
+        "ru": "Короткая ладонная мышца",
+        "lat": "m. palmaris brevis",
+        "side": null,
+        "group": "hand_hypo"
+      },
+      {
+        "id": "auricularis_anterior_right",
+        "ru": "Передняя ушная мышца · правая",
+        "lat": "m. auricularis anterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_anterior_left",
+        "ru": "Передняя ушная мышца · левая",
+        "lat": "m. auricularis anterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_superior_right",
+        "ru": "Верхняя ушная мышца · правая",
+        "lat": "m. auricularis superior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_superior_left",
+        "ru": "Верхняя ушная мышца · левая",
+        "lat": "m. auricularis superior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_posterior_right",
+        "ru": "Задняя ушная мышца · правая",
+        "lat": "m. auricularis posterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_posterior_left",
+        "ru": "Задняя ушная мышца · левая",
+        "lat": "m. auricularis posterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "depressor_supercilii_right",
+        "ru": "Мышца, опускающая бровь · правая",
+        "lat": "m. depressor supercilii",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "depressor_supercilii_left",
+        "ru": "Мышца, опускающая бровь · левая",
+        "lat": "m. depressor supercilii",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "transversus_menti",
+        "ru": "Поперечная мышца подбородка",
+        "lat": "m. transversus menti",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "thorax_subcostales",
+        "ru": "Подрёберные мышцы",
+        "lat": "mm. subcostales",
+        "side": null,
+        "group": "thorax_wall"
+      },
+      {
+        "id": "thorax_intertransversarii_thoracis",
+        "ru": "Межпоперечные мышцы груди",
+        "lat": "mm. intertransversarii thoracis",
+        "side": null,
+        "group": "thorax_deep_back"
+      },
+      {
+        "id": "thorax_sternalis",
+        "ru": "Грудинная мышца — вариант",
+        "lat": "m. sternalis",
+        "side": null,
+        "group": "thorax_pectoral"
+      },
+      {
+        "id": "interspinales_cervicis_left",
+        "ru": "Межостистые мышцы шеи · слева",
+        "lat": "mm. interspinales cervicis",
+        "side": "left",
+        "group": "neck_posterior"
+      }
+    ],
+    "parts": [
+      {
+        "id": "orbicularis_oculi_right",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_right",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_left",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_left",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "side": null
+      },
+      {
+        "id": "nasalis_right",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "side": null
+      },
+      {
+        "id": "nasalis_right",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "side": null
+      },
+      {
+        "id": "nasalis_left",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "side": null
+      },
+      {
+        "id": "nasalis_left",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oris",
+        "part": "marginal",
+        "ru": "Краевая часть",
+        "lat": "pars marginalis",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oris",
+        "part": "labial",
+        "ru": "Губная часть",
+        "lat": "pars labialis",
+        "side": null
+      },
+      {
+        "id": "omohyoid_right",
+        "part": "superior",
+        "ru": "Верхнее брюшко",
+        "lat": "venter superior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_right",
+        "part": "inferior",
+        "ru": "Нижнее брюшко",
+        "lat": "venter inferior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_left",
+        "part": "superior",
+        "ru": "Верхнее брюшко",
+        "lat": "venter superior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_left",
+        "part": "inferior",
+        "ru": "Нижнее брюшко",
+        "lat": "venter inferior",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "sternal",
+        "ru": "Грудинная часть диафрагмы",
+        "lat": "pars sternalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "costal",
+        "ru": "Рёберная часть диафрагмы",
+        "lat": "pars costalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "lumbar",
+        "ru": "Поясничная часть диафрагмы",
+        "lat": "pars lumbalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_multifidus_right",
+        "part": "thoracic",
+        "ru": "Многораздельные мышцы груди",
+        "lat": "m. multifidus thoracis",
+        "side": null
+      },
+      {
+        "id": "thorax_multifidus_left",
+        "part": "thoracic",
+        "ru": "Многораздельные мышцы груди",
+        "lat": "m. multifidus thoracis",
+        "side": null
+      },
+      {
+        "id": "thorax_rotatores_thoracis",
+        "part": "longi",
+        "ru": "Длинные пучки вращателей",
+        "lat": "rotatores longi",
+        "side": null
+      },
+      {
+        "id": "thorax_rotatores_thoracis",
+        "part": "breves",
+        "ru": "Короткие пучки вращателей",
+        "lat": "rotatores breves",
+        "side": null
+      }
+    ]
+  },
+  "counts": {
+    "bones": 0,
+    "muscles": 14,
+    "parts": 21
+  },
+  "previousMeshInventory": "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json"
+}

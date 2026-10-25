@@ -1,0 +1,13 @@
+Thumb MCP-I sesamoid models (4 files) — educational reconstruction.
+Source data: Courtesy of the U.S. National Library of Medicine. Visible Human Project, Male,
+radiological/frozenCT PNG slices 1700-1849 (https://www.nlm.nih.gov/research/visible/getting_data.html).
+Use and redistribution follow the NLM Terms and Conditions
+(https://www.nlm.nih.gov/databases/download/terms_and_conditions.html): acknowledge NLM with the phrase
+above; NLM does not endorse this atlas; these files do not represent the most current or accurate data.
+Changes: visual identification of the two nodules at each thumb MCP joint; seeded watershed segmentation;
+cubic upsampling to half a CT voxel and marching-tetrahedra isosurface at the local half-maximum; Taubin smoothing; largest
+shell kept; similarity registration of the CT I metacarpal to the BodyParts3D I metacarpal of the same side
+(placement only — no BodyParts3D geometry is contained in these files); gltfpack meshopt without quantisation.
+Educational visualisation only: articular facets, palmar plate, exact shape and clinical accuracy are unaccepted.
+Учебная реконструкция по КТ другого тела; точная форма и фасетки не подтверждены.
+Files: sesamoid_mcp1_radial_right.glb (CT nodule A); sesamoid_mcp1_ulnar_right.glb (CT nodule B); sesamoid_mcp1_radial_left.glb (CT nodule A); sesamoid_mcp1_ulnar_left.glb (CT nodule B)

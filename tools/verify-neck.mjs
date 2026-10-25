@@ -38,7 +38,8 @@ try{
       terms:ATLAS.pins.filter(p=>p.id.startsWith('neck_')).length,
       located:ATLAS.pins.filter(p=>p.id.startsWith('neck_')&&p.p).length,
     }));
-    assert.equal(counts.muscles,62);assert.equal(counts.bones,8);assert.ok(counts.terms>80);assert.ok(counts.located>0);
+    // 62 original neck muscles + interspinales cervicis right/left cards of the stage 7 neck recovery.
+    assert.equal(counts.muscles,64);assert.equal(counts.bones,8);assert.ok(counts.terms>80);assert.ok(counts.located>0);
     assert.equal(assets.filter(u=>!u.includes('/neck-')).length,0,'Only requested section loads');
     await page.screenshot({path:path.join(out,`${width}-${theme}-overview.png`)});
     for(const sub of ['cervical','superficial','hyoid','deep','posterior','girdle']){

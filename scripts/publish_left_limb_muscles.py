@@ -97,7 +97,9 @@ for muscle in table():
     card = {k: v for k, v in right.items() if k != 'noModel'}
     exception = decision['reviewedExceptions'].get(left)
     note = ' '.join(x for x in [right.get('note'),
-        'Описание повторяет проверенную карточку парной правой мышцы; пины начала и прикрепления на левой стороне не размечены.',
+        'Описание повторяет проверенную карточку парной правой мышцы. Ориентиры начала и прикрепления на левых костях '
+        'перенесены с правой разметки той же модели и показаны как ориентировочные; точки, не прошедшие проверку формы, '
+        'остаются в списке без маркера (scripts/make_left_limb_landmarks.py).',
         'Модель: исходная левая сетка BodyParts3D 3.0, упрощённая до плотности правой; соседство с костями проверено по сторонам.',
         exception] if x)
     if left == 'levator_ani_left':
@@ -107,7 +109,8 @@ for muscle in table():
                 modelFile=f'{BASE}/{left}.glb', modelLicense=f'{BASE}/LICENSE-MODELS.txt',
                 modelSource=', '.join(p['leftFMA'] for p in parts),
                 modelReview=dict(educationalAcceptance=True, fullAnatomicalAcceptance=False, report=decision['report'],
-                                 pairedCard=muscle['right'], textCopiedFromPairedCard=True, leftPins=False),
+                                 pairedCard=muscle['right'], textCopiedFromPairedCard=True,
+                                 leftPins='approximate_contralateral_transfer'),
                 relatedMuscles=[muscle['right']] + (['puborectalis_left'] if left == 'levator_ani_left' else []))
     if right.get('parts'):
         assert sorted(right['parts']) == sorted(p['part'] for p in parts), left

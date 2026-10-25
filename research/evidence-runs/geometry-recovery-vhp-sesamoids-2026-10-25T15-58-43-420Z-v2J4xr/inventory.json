@@ -1,0 +1,412 @@
+{
+  "date": "2026-10-25T15:58:43.583Z",
+  "method": "Current generated catalogue + hash-guarded reuse of the real published GLB inventory",
+  "hashes": {
+    "site/data.js": "35b595d0df8e437ca4865bd4abf87524e3eacc19c2015895e5943fc394c07cd2",
+    "site/data-leg.js": "4343fd9ba03843138a6400e1ece4218c7107013e243500dcc6f786c3957690f0",
+    "site/data-head.js": "d9516de651fd7d72d17d241d9a6f731aea81837ee527948142d70a6ca19017d1",
+    "site/data-neck.js": "70c566e9ac12700dc3d2eb226218039e6a043a89e8781d79f0f45bf299a4b554",
+    "site/data-thorax.js": "35b57ba46277062c2e6586f4efcdd4e16229fbcd5ff761452aadc2cfafed4fe2",
+    "site/data-context-bones.js": "ea8073bd3ecbc87d470613119c4080f44dffcef9d05045a024e2bd856e201733",
+    "site/data-muscle-recovery.js": "aa8d08d9f3d9f48fe5cee450162b1992d2df6dfe0d32b82c7c1c43e78d3f1d77",
+    "site/data-neck-recovery.js": "b47c80938b7c239771bb8f98e5f0d5ed82651dd62c825c81a444590db1901103",
+    "site/data-left-limb-muscles.js": "493d9b51900c6e1f20054bad76d5a4d5eb475d9fc61408ca0a0b2631802d5d12",
+    "site/arm-glb.txt": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+    "site/leg-glb.txt": "61f70a3367a1e08a959c0f8c089151b1535c6d4e0990121f68ad37df1903a3e3",
+    "site/head-glb.txt": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+    "site/neck-glb.txt": "c4fe237c90a636aa38f030ac2eb33572cee2fb0729271c7aee0fd1d59c7c3b63",
+    "site/thorax-glb.txt": "d298b15b626f55172c8b270497ffb1fe272f1932c34dd99299c8ce7f04369a13",
+    "site/arm-extra-glb.txt": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+    "site/leg-extra-glb.txt": "cf2ecfdb50bca2820a889f5b4cbee0c938a161192ec1ed5b2aad4f3c978b3165",
+    "site/models/bodyparts3d-3.0/muscles-stage7/puborectalis_right.glb": "0c0ac7879ee4e1a81a262d40e958358d71a74b48ad64b6f0ef594559417476e5",
+    "site/models/bodyparts3d-3.0/muscles-stage7/puborectalis_left.glb": "7fcbb093552fd54b7f213b1d3fc413d412af331f4efe60229043097d79b5e984",
+    "site/models/bodyparts3d-3.0/neck-stage7/interspinales_cervicis_right.glb": "e6394fef1dd6db9d3afe25654d248e27fe901ccee01749c54d081ee23acc36a5",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/deltoid_left.glb": "731c3f7aa8fb44c7914c00bf3b111af51d8483d638383fd065a22f8371c5fbe8",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/supraspinatus_left.glb": "7602da308c7799da6194b8e58b7099160db8e9c7d28f65241e21be1e8d9b5222",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/infraspinatus_left.glb": "07ae240d5589fe1c14a991f80be6cdfa28c3b995f1837f2a0298e244aa617469",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/teres_minor_left.glb": "57d46029713b5b1cb456d3c68c49eddb229d2284c88c92237e9dcec3619a18ed",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/teres_major_left.glb": "adb7b027fb7823413f4485c6c6d97b0a975eb5ded8cf8581ee5d186c3bdaf842",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/subscapularis_left.glb": "3b58e0211d9d77dfcad1a81b34710882db8a4d0080f407a76459e59416405e6e",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/coracobrachialis_left.glb": "57d28b5aa966d3658de9c4308e0a75ce21ce9b1d14e5377399bc9078d0c5e3b3",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/biceps_brachii_left.glb": "877b7426e87a9903afe00b75de1b01e009ef11516edbac83dff311063e6c29d0",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/brachialis_left.glb": "2f3582595d0c7be5d67fbaa2983c77b61050664c44f062fcf1c523e43890e877",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/triceps_brachii_left.glb": "529a3af15919780af49dcc31bd09093bafcf2f2ebd683abdf5bba23b312add97",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/anconeus_left.glb": "b47ccf94041ba230b50fc24680e031bbf8fa47221a1f0946b380513eb31a760f",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/pronator_teres_left.glb": "ce9a1be056c6f980e0ea1ea98af5a9ea540a75da9907929fe84a02295ec7e50b",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_radialis_left.glb": "c6e3fcc85e3112ea75c0ee64f62256efb7990eb1085ab308a2da91635b689b2b",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/palmaris_longus_left.glb": "97d3bd3f2b8b399160a2df2dd742eccfa4a4aa2bcff4e705efbd7db9f8c8c656",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_carpi_ulnaris_left.glb": "77b44daf68dba3c063c2f2278f76de12b438c797a31f7c20153c99e00ba0ab39",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_superficialis_left.glb": "f435deb4d4cf752ba1fe0b0e5d4438ade344ec67ad61a51b04e03e8f4c0fcfc9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_profundus_left.glb": "22b90e945c64b93cdd27ccb5eabeea87a846cd2a24a34ff74a7571dcc7e4f530",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_longus_left.glb": "d70637ebf1124b030f3d279625e82380048342bb20f1537fa8c4bf7ce09658e9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/pronator_quadratus_left.glb": "f958706c8daf794d3767e9eea1984f31c1d5f0affa39e9326c389b025f0c4f21",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/brachioradialis_left.glb": "9e5f44817286c00df291c15b406ee95bec21cdb2c2f5b81d58cdc54b419b90ee",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_longus_left.glb": "9f794004ed1031b35e69ab81be26ba57dfcc057172241f1033e7df32e98ca392",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_radialis_brevis_left.glb": "b8fc559c1f52c9717414d80d470bb065d083d23527585d2a6a2dd88032f7d42a",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_left.glb": "54217ea15360f77a02f0a09ef3ceae43246323d04861dedae755ea2582519635",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_digiti_minimi_left.glb": "86cffcd90125335d506f4d456aa6d407bc4a048eb4d7e5ba80d668f590b8cec9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_carpi_ulnaris_left.glb": "b4916172af3d47d0f458c206f54b4983e7d7633b535de13b350778cc3ba19c33",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/supinator_left.glb": "1bdcfa1f8c2c27f152841faee624130c3c9b8f0ef95051fa6d4a13ddb678de7b",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_longus_left.glb": "144caaba913026ac7065582cfb431545eb84c47d8637a2523efc4102f5d8fa2e",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_brevis_left.glb": "07f2771b12416d5db476ef306cf43a5fdd65951154e539e34d55d8285f8100ab",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_pollicis_longus_left.glb": "c1618273bff7a027c0751dd30c1b5e856564999bd6615d6718cf9cd8df863ce9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_indicis_left.glb": "417d585d18e1eec295d633c598b74cd071ab6cd6bcfb22123b8f1ce49c08a30b",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/abductor_pollicis_brevis_left.glb": "b547b1579c7da46b8ac05d688884c21ec8d44c5fa7594d0055d85d670e7d1b2d",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_pollicis_brevis_left.glb": "4cbbdb369e6e109c7c870b8387e87afd7d9d6ae58d9ec40d9a36920417440744",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/opponens_pollicis_left.glb": "4292072a762e463158567530989a9a546496b11ed77150d738759a4da2d17907",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/adductor_pollicis_left.glb": "19614fb2c2631712aaf940d995b2f4d7dcf5f2fd51f703147420ae4767517064",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_left.glb": "beeef53fda8d84acb19f056164c7dcad32ebfba5a903389348e6336f072c8ecf",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_left.glb": "28f6dba41c03542917d4e5a05911c5d03476d8ac74e722cda838a3ad336dec6a",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_left.glb": "1428aa11ad9a32175b94af0859697db247ce0e2c9455060a84bda7d197017009",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/lumbricals_left.glb": "16bec51ca886a4064e9351fc8ef1aa63afcb007f637b3b242238646e135cd083",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/palmar_interossei_left.glb": "d4df6440351bf87555f71444f0a4549e93de5f75a6fe5c0fe0e9f4c2e4acdf8c",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_left.glb": "4163cc384c07d9038af4cf0b393b0d80f89bd9bbfd6a758658f23c1a50e7ffb4",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/iliopsoas_left.glb": "e28475cacdc6be78ece046a2fc4c1a2ed445251bdca0311ce2dab1025343f0a8",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/obturator_internus_left.glb": "6c20751f274e14369102f89cfe2b4bd3ea98fe9738515cdb014ba7dc2c9ebfd0",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/piriformis_left.glb": "38ff5801ef3381487c898d49aafd7b4703b04ced6fb3ec77c18976dbc3d4a691",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gluteus_maximus_left.glb": "65fb817986f868ecde6ef7bd01875868571b19729b6c3111d5564ac881a3fdee",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gluteus_medius_left.glb": "eb6e2dddf41a40a71e2ca6d53a9130f37360548f61eb386fb4e6cc71cdb1e521",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gluteus_minimus_left.glb": "5f8daa9797dd363aa55589154af2b4991e4f907c5ec882b2858bd44c417f9bf9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/tensor_fasciae_latae_left.glb": "aa40ba66e5df3852e300ec6b0dd34175f1f1824f44caf2bbd83c57e99fb210b0",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/quadratus_femoris_left.glb": "a3d2387b2d62a47574dd8d0e6561eccb2d99733123cea3ba98c4397b8b33f88b",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/obturator_externus_left.glb": "a54b97b65b3e62ebd7a411fd8b5496f707ad479934d446de9cade59dea05f869",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gemellus_superior_left.glb": "07700567e7e729dc151d5efa7e264ae4df4d480e4a24611a17dfbd6b5a587b2e",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gemellus_inferior_left.glb": "84d304741f307ea865056bc9d6d1660b08a174a5c73068b1e71a8f9226f9a6d8",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/sartorius_left.glb": "c1b929b0868bcb087776e4cf1b77d228f655e0ce1ad5e1f173205fd875927112",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/quadriceps_femoris_left.glb": "117fa0b668716fecc9bce7d651b901e92c86b42bcb87eb3941e298e983f4dd41",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/pectineus_left.glb": "916da779df32faece715231014d072afcd3003e41f860af87b1a9517f1275c6d",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/adductor_longus_left.glb": "af6b8d6cdbc58a124c3ad313b9cd27b1e45a587ce1e817381479bd6bbfa43681",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/adductor_brevis_left.glb": "65cf25fefe926c0d56ab124140fd125e53e062594fce52b2b3a90e9f4b1c4677",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/adductor_magnus_left.glb": "d12d90aae247c65ebd60be81b31e5677928fa29175d908c116499fdb3b56c015",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/gracilis_left.glb": "f7bb54807d5c46dd4db34c071dd6824497678f20c912e9bead4a946678a9df13",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/biceps_femoris_left.glb": "b695e4f1a41c1a985e30cc3f111da286f52ecbd0da1d2751fcad26e047a520d2",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/semitendinosus_left.glb": "fda0187cfb4ebb0b2f7f038099fc612a9458d2fad39aff732eefd0615d1be213",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/semimembranosus_left.glb": "5a4286a55594d2811ca583586b4cf69f6ec33a9554b3d03ad27647ff9a790628",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/tibialis_anterior_left.glb": "b2f699c9351fc9d90914596b7aa289f22a902ade83e45498e41708f98fc6fd9f",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_longus_left.glb": "61471af0cbe2b448c60e34852d57bdbb3368290f005c43da20dcb84cda235882",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/fibularis_tertius_left.glb": "e407d9beff1c7cf25983a4ed74ad7d190f1ce5216dad88d3bf1a06db4ed404db",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_longus_left.glb": "36f6f0174aed39a2a59c877033a9e512cd854fde884c7ddfe18800cab4b3fbc1",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/fibularis_longus_left.glb": "ee3ee195c121d9417803b66f636e4515cb0648e89cb840adf48883f2a9c56a61",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/fibularis_brevis_left.glb": "3f9533b8ad310ee50558d812d0684b0eb5c78b03ba809fcf061a383a17c64a68",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/triceps_surae_left.glb": "9854a5ad7feec6a250ff9775ce66ea42c8cc00cb21613b9c529211d7f12152f1",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/plantaris_left.glb": "fb15e1ee5dca581d1fb751223ae72c894e27a340022580221e5724e21bb93cca",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/popliteus_left.glb": "0d39e897161e9cf2eb11b36568841b83e22c6de9df203f63227fa80209e7b161",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_longus_left.glb": "34e5b41ea2af67f9db0e8ceafa1646b27b1e270eb36a914fbea72422d87c6b7e",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/tibialis_posterior_left.glb": "98b04f3b8abcd21f9d227ba2e038ee75f9d0353c4cacf7ba1e1bde3d75faadfd",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_longus_left.glb": "5c0897f8deb16ecd263d505c9747864ec892bab22544f41aba2e82ccc1c9469c",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_digitorum_brevis_left.glb": "8d6ec8763a8b306d1e3388567cdc39dbc44d47f003d69a7b361d10a38563dc31",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/extensor_hallucis_brevis_left.glb": "045434448ab2a9336ea1af9bf26fd7e7935b539b638b9601c2c8d07870f9ddbd",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/abductor_hallucis_left.glb": "bd016b953e85c411765b13f962d03cf31ead902faee9250af13858c4fde2318f",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_hallucis_brevis_left.glb": "cead27458f968a627e0cd9b8c14cf722c1fb58ff2bc577aed511f1e73f49b489",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/adductor_hallucis_left.glb": "9f717b234f45cf4535170e1cf89b05854385a17bb654fc79dba26ac12903fc0e",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/abductor_digiti_minimi_pedis_left.glb": "1747769e52f93f22228efbf3f01e8c2c0c5c5718511d92c72bcb6dab9f7873e9",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digiti_minimi_brevis_pedis_left.glb": "c60427ef437608b2b41adf7334e0a9b25631eb8f024279c8187aef5544fc2602",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/opponens_digiti_minimi_pedis_left.glb": "7e987590f15c1579c3b1d12d92df5ef6cb2691586583f22c4ce050c672d42727",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/flexor_digitorum_brevis_left.glb": "8373397c08f71b67139d709a63a21ff60133bcbea648ab7898f50fd4b1c99289",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/quadratus_plantae_left.glb": "e8e6f82d7170a62254d50bf6c4e6348e1e41ac07dcfc965a4fbe3d457e91eb01",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/lumbricals_pedis_left.glb": "0ed157b427514f47aed0a482def60a3778e27d3e453a8abe168e69250708517d",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/plantar_interossei_left.glb": "2d116d313287ae66d80805feb8db13439112fb03cb8ad2bca7e4e9e409c0e79c",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/dorsal_interossei_pedis_left.glb": "c09b5528122dbb47a6a04dcfb668aa52933f2d5da4d070a20218f842bbac85da",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/levator_ani_left.glb": "cf9d06dde36921bbf98cb2db4f0c5f1efbc542808e15f5e1f44a94fc4476f9e2",
+    "site/models/bodyparts3d-3.0/left-limb-muscles/coccygeus_left.glb": "33af19eb78b8e6254ddffc572612844bbf2c86c2f65efa9f62e6e1af6f6c23e7"
+  },
+  "unchangedSourceGLBs": [
+    {
+      "file": "site/arm-glb.txt",
+      "sha256": "02da74d7e244075b4ba3546f499c07618d93231f17815ebb4fca8fe15e261878",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/leg-glb.txt",
+      "sha256": "61f70a3367a1e08a959c0f8c089151b1535c6d4e0990121f68ad37df1903a3e3",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/head-glb.txt",
+      "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/neck-glb.txt",
+      "sha256": "c4fe237c90a636aa38f030ac2eb33572cee2fb0729271c7aee0fd1d59c7c3b63",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/thorax-glb.txt",
+      "sha256": "d298b15b626f55172c8b270497ffb1fe272f1932c34dd99299c8ce7f04369a13",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/arm-extra-glb.txt",
+      "sha256": "161974dab91a04cff5410a8ed84e12a2e9aa25df7280d49eb372e079a9ea3bb8",
+      "matchesPriorRealInventory": true
+    },
+    {
+      "file": "site/leg-extra-glb.txt",
+      "sha256": "cf2ecfdb50bca2820a889f5b4cbee0c938a161192ec1ed5b2aad4f3c978b3165",
+      "matchesPriorRealInventory": true
+    }
+  ],
+  "cards": {
+    "bones": 214,
+    "muscles": 347
+  },
+  "missing": {
+    "bones": [],
+    "muscles": [
+      {
+        "id": "palmaris_brevis",
+        "ru": "Короткая ладонная мышца",
+        "lat": "m. palmaris brevis",
+        "side": null,
+        "group": "hand_hypo"
+      },
+      {
+        "id": "auricularis_anterior_right",
+        "ru": "Передняя ушная мышца · правая",
+        "lat": "m. auricularis anterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_anterior_left",
+        "ru": "Передняя ушная мышца · левая",
+        "lat": "m. auricularis anterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_superior_right",
+        "ru": "Верхняя ушная мышца · правая",
+        "lat": "m. auricularis superior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_superior_left",
+        "ru": "Верхняя ушная мышца · левая",
+        "lat": "m. auricularis superior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_posterior_right",
+        "ru": "Задняя ушная мышца · правая",
+        "lat": "m. auricularis posterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "auricularis_posterior_left",
+        "ru": "Задняя ушная мышца · левая",
+        "lat": "m. auricularis posterior",
+        "side": null,
+        "group": "head_ear"
+      },
+      {
+        "id": "depressor_supercilii_right",
+        "ru": "Мышца, опускающая бровь · правая",
+        "lat": "m. depressor supercilii",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "depressor_supercilii_left",
+        "ru": "Мышца, опускающая бровь · левая",
+        "lat": "m. depressor supercilii",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "transversus_menti",
+        "ru": "Поперечная мышца подбородка",
+        "lat": "m. transversus menti",
+        "side": null,
+        "group": "head_face"
+      },
+      {
+        "id": "thorax_subcostales",
+        "ru": "Подрёберные мышцы",
+        "lat": "mm. subcostales",
+        "side": null,
+        "group": "thorax_wall"
+      },
+      {
+        "id": "thorax_intertransversarii_thoracis",
+        "ru": "Межпоперечные мышцы груди",
+        "lat": "mm. intertransversarii thoracis",
+        "side": null,
+        "group": "thorax_deep_back"
+      },
+      {
+        "id": "thorax_sternalis",
+        "ru": "Грудинная мышца — вариант",
+        "lat": "m. sternalis",
+        "side": null,
+        "group": "thorax_pectoral"
+      },
+      {
+        "id": "interspinales_cervicis_left",
+        "ru": "Межостистые мышцы шеи · слева",
+        "lat": "mm. interspinales cervicis",
+        "side": "left",
+        "group": "neck_posterior"
+      }
+    ],
+    "parts": [
+      {
+        "id": "orbicularis_oculi_right",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_right",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_left",
+        "part": "deep",
+        "ru": "Глубокая часть",
+        "lat": "pars profunda",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oculi_left",
+        "part": "ciliary",
+        "ru": "Ресничный пучок",
+        "lat": "fasciculus ciliaris",
+        "side": null
+      },
+      {
+        "id": "nasalis_right",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "side": null
+      },
+      {
+        "id": "nasalis_right",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "side": null
+      },
+      {
+        "id": "nasalis_left",
+        "part": "transverse",
+        "ru": "Поперечная часть",
+        "lat": "pars transversa",
+        "side": null
+      },
+      {
+        "id": "nasalis_left",
+        "part": "alar",
+        "ru": "Крыльная часть",
+        "lat": "pars alaris",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oris",
+        "part": "marginal",
+        "ru": "Краевая часть",
+        "lat": "pars marginalis",
+        "side": null
+      },
+      {
+        "id": "orbicularis_oris",
+        "part": "labial",
+        "ru": "Губная часть",
+        "lat": "pars labialis",
+        "side": null
+      },
+      {
+        "id": "omohyoid_right",
+        "part": "superior",
+        "ru": "Верхнее брюшко",
+        "lat": "venter superior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_right",
+        "part": "inferior",
+        "ru": "Нижнее брюшко",
+        "lat": "venter inferior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_left",
+        "part": "superior",
+        "ru": "Верхнее брюшко",
+        "lat": "venter superior",
+        "side": null
+      },
+      {
+        "id": "omohyoid_left",
+        "part": "inferior",
+        "ru": "Нижнее брюшко",
+        "lat": "venter inferior",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "sternal",
+        "ru": "Грудинная часть диафрагмы",
+        "lat": "pars sternalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "costal",
+        "ru": "Рёберная часть диафрагмы",
+        "lat": "pars costalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_diaphragm",
+        "part": "lumbar",
+        "ru": "Поясничная часть диафрагмы",
+        "lat": "pars lumbalis diaphragmatis",
+        "side": null
+      },
+      {
+        "id": "thorax_multifidus_right",
+        "part": "thoracic",
+        "ru": "Многораздельные мышцы груди",
+        "lat": "m. multifidus thoracis",
+        "side": null
+      },
+      {
+        "id": "thorax_multifidus_left",
+        "part": "thoracic",
+        "ru": "Многораздельные мышцы груди",
+        "lat": "m. multifidus thoracis",
+        "side": null
+      },
+      {
+        "id": "thorax_rotatores_thoracis",
+        "part": "longi",
+        "ru": "Длинные пучки вращателей",
+        "lat": "rotatores longi",
+        "side": null
+      },
+      {
+        "id": "thorax_rotatores_thoracis",
+        "part": "breves",
+        "ru": "Короткие пучки вращателей",
+        "lat": "rotatores breves",
+        "side": null
+      }
+    ]
+  },
+  "counts": {
+    "bones": 0,
+    "muscles": 14,
+    "parts": 21
+  },
+  "previousMeshInventory": "research/evidence-runs/stage7-muscle-batch2-2026-10-21T11-24-13-460Z-zNgJ41/node-integration.json"
+}

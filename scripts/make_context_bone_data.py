@@ -14,8 +14,10 @@ from hand_stage5_review import SESAMOID_BONES, BONE_PATCHES as HAND_PATCHES
 from hand_targeted_stage5_review import LEFT_BONES
 from lower_proximal_stage5_review import LEFT_BONES as LEFT_LOWER, RIGHT_PATCHES as LOWER_PATCHES, left_records as lower_left_records, additional_records as lower_additional
 from foot_stage5_review import LEFT_BONES as LEFT_FOOT, RIGHT_PATCHES as FOOT_PATCHES, left_records as foot_left_records, additional_records as foot_additional
+from vhp_sesamoids_stage6 import admit as admit_vhp_sesamoids
 
 ROOT=Path(__file__).resolve().parents[1]
+admit_vhp_sesamoids({**SESAMOID_BONES,**LEFT_BONES})  # same card objects that are written below
 def dump(value): return json.dumps(value,ensure_ascii=False,indent=2)
 cards={**CONTEXT_BONE_CARDS,**BONES,**LEFT_FOREARM,**LEFT_LOWER,**LEFT_FOOT}
 for i in range(1,6):

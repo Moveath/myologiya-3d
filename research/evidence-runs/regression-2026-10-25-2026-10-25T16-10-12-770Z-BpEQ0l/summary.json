@@ -1,0 +1,8 @@
+{
+  "scope": "Chromium headless shell + SwiftShader, 1280/390 where the test covers it; not a physical phone",
+  "passedFirstRun": ["verify-atlas", "verify-navigation", "verify-atlas-performance", "verify-atlas-touch", "verify-mobile-layout", "verify-context-bone-models", "verify-thorax", "verify-neck-data", "verify-thorax-data", "verify-thorax-performance", "verify-skull-detail", "verify-skull-detail-mobile", "verify-atlas-runtime", "verify-system-coverage", "verify-left-limb-muscles", "verify-left-limb-landmarks", "verify-mesh-normals", "verify-vhp-sesamoids", "verify-region-framing", "verify-atlas-systems"],
+  "staleExpectationFixedThenPassed": {"verify-neck": "62 -> 64 neck muscle cards (interspinales cervicis right/left, stage 7)", "verify-left-baseline": "MCP I sesamoids no longer noModel", "verify-side-isolation": "MCP I sesamoids no longer noModel"},
+  "notRun": {"verify-mobile-device": "needs a phone over USB/adb (physical device)"},
+  "knownStale": {"verify-shared-landmarks": "expects 141 cards and refs on every relation; QA-STALE-TESTS"},
+  "alsoPassed": ["tools/test-forearm-coverage.mjs (8 cases)", "verify/verify_ta98.py (3 known differences)", "tools/geometry-recovery-state.py validate (revision 7)"]
+}

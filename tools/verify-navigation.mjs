@@ -68,7 +68,8 @@ try{
     const snapshot=await page.evaluate(()=>__navSnapshot());
     assert.ok(snapshot.bones.some(b=>b.id===id&&b.v===2));
     assert.ok(!snapshot.context.some(c=>c.name==='c|'+source.sourceId),'Old context duplicate removed');
-    assert.equal(await page.evaluate(b=>ATLAS.pins.filter(p=>p.b===b&&p.p).length,id),0);
+    // Only explicitly approximate contralateral transfers may carry positions on these owners.
+    assert.equal(await page.evaluate(b=>ATLAS.pins.filter(p=>p.b===b&&p.p&&!(p.anchorStatus==='contralateral_transfer'&&p.transferReview?.coordinateAcceptance===false)).length,id),0);
     assert.ok(!(await page.locator('#sheet').innerText()).includes('undefined'));
    }
   }

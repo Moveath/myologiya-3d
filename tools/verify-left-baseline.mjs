@@ -53,8 +53,10 @@ try {
     await page.goto(`http://127.0.0.1:8791/local.html?theme=${theme}`, {waitUntil: 'domcontentloaded', timeout: 60000});
     await page.waitForFunction(() => window.__ready === true, null, {timeout: 60000});
     await page.evaluate(async r => {await __atlas.enterSection(r); __atlas.setSub('all');}, region);
-    check(await page.evaluate(() => Object.entries(ATLAS.bones).filter(([, b]) => b.noModel).map(([id]) => id).sort().join()) ===
-      'sesamoid_mcp1_radial_left,sesamoid_mcp1_radial_right,sesamoid_mcp1_ulnar_left,sesamoid_mcp1_ulnar_right', 'Only four hand sesamoids keep noModel');
+    // Since LOG-20261025-04 the four MCP I sesamoids carry the NLM Visible Human CT reconstruction.
+    check(await page.evaluate(() => Object.values(ATLAS.bones).filter(b => b.noModel).length === 0 &&
+      Object.entries(ATLAS.bones).filter(([id]) => id.startsWith('sesamoid_mcp1_')).every(([, b]) => b.modelAttribution?.startsWith('Courtesy of the U.S. National Library of Medicine'))),
+      'No bone keeps noModel; MCP I sesamoids carry the NLM CT model');
     const loaded = await page.evaluate(ids => __atlas.inspect().structures.filter(s => ids.includes(s.id)), ids);
     check(loaded.length === ids.length && loaded.every(s => s.bvh && s.kind === 'b' && s.side === 'left'), 'All admitted owners loaded as left bones with BVH');
     check(loaded.every(s => s.triangles === triangles[s.id]), 'Loaded triangle counts equal published GLB');

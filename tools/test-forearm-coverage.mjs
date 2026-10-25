@@ -19,5 +19,13 @@ for(const [ids,required,forbidden] of [
  assert.ok(!upperLimbCoverage('right','forearm',ids.map(bone)).includes('Левая'));
  checks.push({ids,status:'passed'});
 }
+// Thumb sesamoids: CT reconstruction note only when every sesamoid of the shown sides is loaded.
+const ses=(id,side)=>({id,side,kind:'b',meshes:[{}],data:{sub:'hand'}});
+const all=[ses('sesamoid_mcp1_radial_right','right'),ses('sesamoid_mcp1_ulnar_right','right'),ses('sesamoid_mcp1_radial_left','left'),ses('sesamoid_mcp1_ulnar_left','left')];
+assert.ok(upperLimbCoverage('both','hand',all).includes('реконструкция по КТ'));
+assert.ok(upperLimbCoverage('right','hand',all.slice(0,2)).includes('реконструкция по КТ'));
+assert.ok(upperLimbCoverage('both','hand',all.slice(0,2)).includes('карточки без 3D'));
+assert.ok(upperLimbCoverage('left','hand',[]).includes('карточки без 3D'));
+checks.push({ids:'thumb sesamoids',status:'passed'});
 await fs.writeFile(path.join(process.argv[2],'coverage-unit.json'),JSON.stringify({status:'passed',checks},null,2)+'\n',{flag:'wx'});
 console.log(JSON.stringify({status:'passed',cases:checks.length}));

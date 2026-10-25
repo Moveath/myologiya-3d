@@ -57,7 +57,11 @@ test('Normal layers are delegated; unilateral filter applies before all override
   assert.equal(selectionVisibility(s('humerus'),{...p,muscle:'biceps_brachii',related:['radius']}),0);
 });
 test('No coordinates or geometry created for missing left bones',()=>{
-  for(const id of ['radius_left','ulna_left','scaphoid_left','sesamoid_mcp1_radial_left'])assert.equal(A.bones[id].noModel,true);
+  // Left forearm/carpals were admitted as labelled educational models in stage 6; MCP I sesamoids carry the
+  // labelled NLM Visible Human CT reconstruction since LOG-20261025-04. No landmark coordinates on sesamoids.
+  for(const id of ['sesamoid_mcp1_radial_left','sesamoid_mcp1_ulnar_left'])assert.ok(!A.bones[id].noModel&&A.bones[id].modelAttribution?.startsWith('Courtesy of the U.S. National Library of Medicine'));
+  for(const id of ['radius_left','ulna_left','scaphoid_left'])assert.ok(!A.bones[id].noModel&&A.bones[id].modelFile&&A.bones[id].modelNotice);
+  assert.equal(A.pins.filter(q=>q.b.startsWith('sesamoid_mcp1')&&q.p).length,0);
 });
 if(process.argv[2]){
  const before=JSON.parse(await fs.readFile(process.argv[2]+'/hashes-before.json','utf8'));
