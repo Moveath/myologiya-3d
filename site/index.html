@@ -130,6 +130,14 @@ button { cursor: pointer; }
 
 /* landmark pins over the model */
 #pinLayer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
+.fly-pad { position: absolute; z-index: 6; left: 16px; bottom: 16px; display: grid; grid-template-columns: repeat(2, minmax(76px, 1fr)); gap: 6px;
+  width: min(250px, calc(100% - 32px)); padding: 10px; border: 1px solid var(--rule); border-radius: 16px; background: var(--paper-glass); box-shadow: 0 4px 20px var(--shade); }
+.fly-pad[hidden] { display: none; }
+.fly-pad button { min-height: 44px; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); color: var(--ink); font: inherit; font-size: 13px;
+  cursor: pointer; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.fly-pad button[data-active] { background: var(--teal-soft); border-color: var(--teal); }
+.fly-pad .fly-exit { grid-column: 1 / -1; min-height: 38px; }
+.fly-hint { grid-column: 1 / -1; margin: 2px 0 0; font-size: 11.5px; line-height: 1.35; color: var(--ink-2); }
 .pin { position: absolute; left: 0; top: 0; width: 30px; height: 30px; margin: -15px 0 0 -15px; padding: 0; border: 0;
   background: transparent; pointer-events: auto; display: grid; place-items: center; }
 .pin i { width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2.5px solid var(--teal);
@@ -407,6 +415,7 @@ dt .term { text-decoration-color: var(--ink-2); }
   #app[data-options-open="true"] #headCutControls:not([hidden]) { display:flex; }
   .mobile-scrim { position:absolute;inset:0;z-index:20;background:rgba(0,0,0,.3);border:0; }
   #optionsScrim { z-index:24; }
+  .fly-pad { left:12px;bottom:calc(78px + env(safe-area-inset-bottom,0px));width:min(250px,calc(100% - 24px)); }
   .mobile-dock { position:absolute;z-index:5;bottom:calc(12px + env(safe-area-inset-bottom,0px));left:12px;right:12px;display:flex;align-items:center;gap:12px;min-height:54px;padding:10px 14px;border:1px solid var(--rule);border-radius:16px;background:var(--paper);box-shadow:0 4px 20px var(--shade);text-align:left; }
   .mobile-dock span { flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px; }
   .mobile-dock b { font-size:13px;color:var(--teal);white-space:nowrap; }
@@ -449,6 +458,14 @@ dt .term { text-decoration-color: var(--ink-2); }
   <canvas id="stage" aria-label="3D-модель"></canvas>
   <div class="fade" aria-hidden="true"></div>
   <div id="pinLayer"></div>
+  <div class="fly-pad" id="flyPad" hidden role="group" aria-label="Свободная камера">
+    <button data-fly="up" title="Вверх (E)">Вверх</button>
+    <button data-fly="forward" title="Вперёд (W)">Вперёд</button>
+    <button data-fly="down" title="Вниз (Q)">Вниз</button>
+    <button data-fly="back" title="Назад (S)">Назад</button>
+    <button class="fly-exit" id="bFlyExit">Обычная камера</button>
+    <p class="fly-hint" id="flyHint"></p>
+  </div>
 
   <header class="bar">
     <button class="btn icon" id="bHome" aria-label="Все разделы тела" title="Все разделы тела">
@@ -495,6 +512,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip nocheck" id="bView" title="Повернуть модель другой стороной">
         <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span id="viewLabel">Повернуть</span>
       </button>
+      <button class="chip" id="bFly" aria-pressed="false" aria-controls="flyPad" title="Свободная камера: осматриваться и перемещаться вперёд, назад, в стороны, вверх и вниз">Свободная камера</button>
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
       <button class="chip" id="bRegions" aria-pressed="true" hidden title="Показывать только размеченные участки выбранного ориентира">Область ориентира</button>
@@ -599,6 +617,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       </div>
       <p>Кнопка с человечком слева вверху возвращает к схеме тела, где выбираются разделы. Под заголовком раздела — подразделы: например, у руки это плечевой пояс, плечо, предплечье и кисть. В подразделе остаются только его мышцы, а остальные кости видны бледно, чтобы было понятно, где ты находишься.</p>
       <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы, шеи и грудного отдела доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
+      <p>«Свободная камера» (в настройках вида) позволяет облетать модель: кнопки «Вверх», «Вниз», «Вперёд», «Назад» перемещают камеру, а движение пальцем или мышью поворачивает взгляд на месте. Двумя пальцами или правой кнопкой мыши камеру можно сдвинуть, щипком или колесом — подлететь ближе. На клавиатуре: W A S D, E — вверх, Q — вниз. «Обычная камера» снова вращает модель вокруг того, что сейчас перед тобой.</p>
       <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
       <p>«Слои» снимают мышцы по глубине: −1 убирает поверхностный слой, −2 ещё один, «Кости» оставляет скелет. «Тест» подсвечивает мышцу и предлагает четыре варианта.</p>
@@ -661,7 +680,7 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script>window.__atlasRuntime.watchStartup();</script>
 <script type="module" onerror="window.__atlasRuntime?.fail('module')">
 import * as THREE from 'three';
-import { AtlasOrbitControls as OrbitControls, framingBasis } from './atlas-controls.js';
+import { AtlasOrbitControls as OrbitControls, AtlasFlyControls, framingBasis } from './atlas-controls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { prepareRaycasts, createRenderQuality } from './atlas-performance.js?v=mobile-20261013';
@@ -862,7 +881,7 @@ const state = {
   sides: Object.assign({}, prefs.sides || {}), muscleBones: prefs.muscleBones === true,
   quality: ['auto','detail','battery'].includes(prefs.quality) ? prefs.quality : 'auto',
   headCut: { active: false, axis: 'y', value: 50, flip: false },
-  mode: 'study', viewIdx: -1,
+  mode: 'study', viewIdx: -1, fly: false,
   quiz: { scope: 'all', target: null, options: [], answered: null, right: 0, total: 0, streak: 0, best: prefs.best || 0, recent: [] }
 };
 const curSub = () => (state.sec && state.subs[state.sec]) || 'all';
@@ -918,8 +937,14 @@ controls.minDistance = 0.06; controls.maxDistance = 3.5; controls.screenSpacePan
 let needsRender = true;
 let tween = null;
 const requestRender = () => { needsRender = true; };
-controls.addEventListener('change', () => { renderQuality.motion(); requestRender(); });
-controls.addEventListener('start', () => { tween = null; resetView(); hideTip(); hideGloss(); });
+// free camera shares the orbit target; only one of the two takes input at a time
+const fly = new AtlasFlyControls(camera, controls.target, canvas);
+// panels keep their scrolling keys; letters still fly while a card or list has focus
+fly.keyFilter = e => !(/^(Arrow|Page)|^Space$/.test(e.code) && e.target.closest?.('#drawer,#boneLegend,#sheet,#about,#home,dialog'));
+for (const c of [controls, fly]) {
+  c.addEventListener('change', () => { renderQuality.motion(); requestRender(); });
+  c.addEventListener('start', () => { tween = null; resetView(); hideTip(); hideGloss(); });
+}
 
 // screen insets so framing avoids the controls on top and the sheet below
 let inset = { top: 0, bottom: 0, right: 0 };
@@ -1434,9 +1459,13 @@ function resetView() { state.viewIdx = -1; $('#viewLabel').textContent = 'Пов
 
 // ---------- loop ----------
 window.__atlasRuntime.watch(canvas,()=>{needsRender=true;resize();});
+let lastFrame = 0;
 function loop(now) {
   requestAnimationFrame(loop);
+  const dt = lastFrame ? Math.min((now - lastFrame) / 1000, 0.1) : 0;
+  lastFrame = now;
   if(document.hidden || $('#headDetailDialog').open || renderer.getContext().isContextLost())return;
+  if (fly.update(dt)) needsRender = true;
   if (tween) {
     const k = Math.min(1, (now - tween.t0) / tween.dur);
     const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
@@ -1486,7 +1515,7 @@ const pinLayer = $('#pinLayer');
 let pinEls = [], occDirty = false, occAt = 0, pinLabel = null;
 const occRay = new THREE.Raycaster();
 const _pv = new THREE.Vector3();
-controls.addEventListener('end', () => { occDirty = true; });
+for (const c of [controls, fly]) c.addEventListener('end', () => { occDirty = true; });
 // pins for the current selection: a bone shows its landmarks, a muscle shows where it attaches
 function currentPins() {
   if (!state.pinsOn || state.mode === 'quiz' || !state.sel || !state.sec) return [];
@@ -2498,6 +2527,7 @@ home.addEventListener('click', (e) => {
 ['pointerout', 'focusout'].forEach(t => home.addEventListener(t, (e) => { const el = e.target.closest('.seccard, .flabel'); if (el) hot(el.dataset.sec, false); }));
 function showHome() {
   closeMobilePanels();
+  setFly(false);
   if (state.mode === 'quiz') setMode('study');
   closeList(); hideGloss();
   closeBoneLegend(false);
@@ -2655,6 +2685,42 @@ $('#bHeadCut').addEventListener('click', () => {
 $('#headCutAxis').addEventListener('change', e => { state.headCut.axis = e.target.value; updateHeadCut(); });
 $('#headCutPosition').addEventListener('input', e => { state.headCut.value = +e.target.value; updateHeadCut(); });
 $('#headCutFlip').addEventListener('click', () => { state.headCut.flip = !state.headCut.flip; updateHeadCut(); });
+// ---------- free camera ----------
+function setFly(on) {
+  on = !!on;
+  if (state.fly === on) return;
+  state.fly = on;
+  controls.stopMotion();
+  controls.enabled = !on; fly.enabled = on;
+  if (!on) {
+    // orbit around the surface straight ahead, so leaving the free camera keeps the view
+    const dir = controls.target.clone().sub(camera.position).normalize();
+    ray.set(camera.position, dir); ray.firstHitOnly = !headCutActive();
+    const hit = ray.intersectObjects(pickables, false).find(h => !pointClipped(h.point));
+    if (hit && hit.distance >= controls.minDistance && hit.distance <= controls.maxDistance) controls.target.copy(hit.point);
+    controls.update(); occDirty = true;
+  }
+  $('#bFly').setAttribute('aria-pressed', String(on));
+  $('#flyPad').hidden = !on;
+  requestRender();
+}
+$('#flyHint').textContent = finePointer
+  ? 'Тяни мышью — осмотреться, колесо — вперёд и назад, правая кнопка — сдвиг. Клавиши W A S D, E — вверх, Q — вниз, Shift — быстрее.'
+  : 'Один палец — осмотреться, два пальца — сдвиг, щипок — вперёд и назад.';
+$('#bFly').addEventListener('click', () => setFly(!state.fly));
+$('#bFlyExit').addEventListener('click', () => setFly(false));
+for (const b of document.querySelectorAll('#flyPad [data-fly]')) {
+  const stop = e => { fly.release('pad' + e.pointerId); delete b.dataset.active; };
+  b.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    try { b.setPointerCapture(e.pointerId); } catch (err) { /* synthetic pointer */ }
+    fly.hold('pad' + e.pointerId, b.dataset.fly); b.dataset.active = '';
+  });
+  for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) b.addEventListener(type, stop);
+  // keyboard activation has no pointer: move one step
+  b.addEventListener('click', e => { if (e.detail === 0) fly.nudge(b.dataset.fly); });
+  b.addEventListener('contextmenu', e => e.preventDefault());
+}
 $('#bQuiz').addEventListener('click', () => setMode(state.mode === 'quiz' ? 'study' : 'quiz'));
 $('#bHome').addEventListener('click', showHome);
 $('#bBrand').addEventListener('click', showHome);
@@ -2673,6 +2739,7 @@ addEventListener('keydown', e => {
   else if (state.pin) activatePin(null);
   else if (state.mode === 'quiz') setMode('study');
   else if (state.sel) select(null);
+  else if (state.fly) setFly(false);
 });
 
 // ---------- start ----------
@@ -2721,7 +2788,7 @@ $('#mobileFit').addEventListener('click',()=>{state.isolate=null;applyVisibility
 $('#bOptions').addEventListener('click',()=>setMobilePanel('options',$('#app').dataset.optionsOpen!=='true'));
 $('#mobileCard').addEventListener('click',()=>setMobilePanel('card',true));
 for(const id of ['closeOptions','closeMobileCard','optionsScrim','cardScrim'])$('#'+id).addEventListener('click',()=>closeMobilePanels(true));
-for(const id of ['bView','bRestore','bHeadDetail','bBoneLegend','bAbout','bHome','bBrand'])$('#'+id).addEventListener('click',()=>closeMobilePanels());
+for(const id of ['bView','bFly','bRestore','bHeadDetail','bBoneLegend','bAbout','bHome','bBrand'])$('#'+id).addEventListener('click',()=>closeMobilePanels());
 $('#bQuiz').addEventListener('click',()=>{closeMobilePanels();setMobilePanel('card',true);});
 $('#renderQualityChoice').value=state.quality;
 $('#renderQualityChoice').addEventListener('change',e=>{
@@ -2745,7 +2812,8 @@ resize();
 requestAnimationFrame(loop);
 const deep = location.hash.replace('#', '');
 if (SEC[deep] && SEC[deep].ready) enterSection(deep).then(()=>{if(deep==='head'){const query=new URLSearchParams(location.search);applyStudyAction(query.get('study'),query.get('value'));}});
-window.__atlas = { enterSection, setSub, setSide, select, goTo, activatePin, showHome, setSystem, state,
+window.__atlas = { enterSection, setSub, setSide, select, goTo, activatePin, showHome, setSystem, setFly, state,
+  view:()=>({position:camera.position.toArray(),target:controls.target.toArray(),orbit:controls.enabled,fly:fly.enabled,moving:fly.moving}),
   inspect:()=>({systems:{...state.systems},loading:Object.keys(systemLoading),errors:Object.fromEntries(systemErrors),drawCalls:renderer.info.render.calls,
     structures:[...structs.values()].map(s=>({id:s.id,kind:s.kind,system:systemOf(s),side:s.side,visible:s.meshes.some(m=>m.visible),opacity:s.meshes[0]?.material.opacity,bvh:s.meshes.every(m=>!!m.geometry.boundsTree),triangles:s.meshes.reduce((n,m)=>n+(m.geometry.index?.count||m.geometry.attributes.position.count)/3,0)}))}) };
 window.__ready = true;

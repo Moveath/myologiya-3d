@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-25",
+  "change": "UX-FREE-CAMERA",
+  "build": "site/local.html before the final key-filter/help-text edit; final build rechecked by verify-free-camera twice",
+  "results": [
+    {
+      "test": "verify-atlas",
+      "exit": 0,
+      "sec": 39
+    },
+    {
+      "test": "verify-atlas-touch",
+      "exit": 0,
+      "sec": 79
+    },
+    {
+      "test": "verify-navigation",
+      "exit": 0,
+      "sec": 68
+    },
+    {
+      "test": "verify-mobile-layout",
+      "exit": 0,
+      "sec": 116
+    },
+    {
+      "test": "verify-atlas-performance",
+      "exit": 0,
+      "sec": 9
+    },
+    {
+      "test": "verify-left-baseline",
+      "exit": 0,
+      "sec": 19
+    },
+    {
+      "test": "verify-atlas-runtime",
+      "exit": 0,
+      "sec": 17
+    },
+    {
+      "test": "verify-side-isolation",
+      "exit": 0
+    }
+  ],
+  "freeCamera": [
+    "research/evidence-runs/free-camera-ui-2026-10-25T18-59-49-756Z-qsDkaH",
+    "research/evidence-runs/free-camera-ui-2026-10-25T19-00-29-033Z-89kSdg"
+  ],
+  "note": "Tests that rewrite tracked verify/*.json were copied here as rewritten-*.json; tracked files restored with git checkout. Chromium headless shell 1228 + SwiftShader; not a physical phone or GPU benchmark."
+}
