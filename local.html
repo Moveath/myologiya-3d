@@ -648,17 +648,18 @@ dt .term { text-decoration-color: var(--ink-2); }
 <script src="data-head.js?v=d9516de651fd7d72"></script>
 <script src="data-neck.js?v=70c566e9ac12700d"></script>
 <script src="data-thorax.js?v=35b57ba46277062c"></script>
-<script src="data-context-bones.js?v=3259fad369129a31"></script>
+<script src="data-context-bones.js?v=1dc04994ba9076f8"></script>
 <script src="data-muscle-recovery.js?v=aa8d08d9f3d9f48f"></script>
 <script src="data-neck-recovery.js?v=b47c80938b7c2397"></script>
+<script src="data-left-limb-muscles.js?v=1fef1095f8cb346d"></script>
 <script src="data-cardiovascular.js?v=5eaaec7eeb903b28"></script>
-<script src="pins.js?v=c826508dd87c030a"></script>
+<script src="pins.js?v=e909b0a13dc79f68"></script>
 <script src="pins-leg.js?v=81208d5c89673f9c"></script>
 <script src="pins-head.js?v=eaa2f90fa3e09dee"></script>
 <script src="pins-head-extra.js?v=fb58984e585ed632"></script>
 <script src="pins-neck.js?v=5a50445603dfbea8"></script>
 <script src="pins-thorax.js?v=92ba853dc5aab431"></script>
-<script src="pins-context-bones.js?v=81600119f8a2b31f"></script>
+<script src="pins-context-bones.js?v=bfd8bde0fdabc19c"></script>
 <script src="pins-shared.js?v=92679c680c15e094"></script>
 <script src="skull-evidence-index.js?v=17c47a1bcb56bdb7"></script>
 <script src="skull-geometry-index.js?v=a7e433caf1dd27e5"></script>
@@ -743,19 +744,19 @@ const SECTIONS = [
       { id: 'back', ru: 'Поверхностные мышцы спины', hint: 'Связь с плечевым поясом и задние зубчатые мышцы', v: 'post' },
       { id: 'deepback', ru: 'Глубокие мышцы спины', hint: 'Мышцы грудного отдела спины и сегментарные группы', v: 'post' }
     ] },
-  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Левое предплечье и часть запястья — учебные модели; левая кисть неполная', ready: true, file: 'arm', extraFile: 'arm-extra', supplementalBones: ['radius_left','ulna_left','scaphoid_left','lunate_left','triquetrum_left','pisiform_left','trapezium_left','trapezoid_left','capitate_left','hamate_left','metacarpal_2_left','metacarpal_4_left','metacarpal_5_left','phalanx_prox_1_left','phalanx_prox_2_left','phalanx_prox_3_left','phalanx_prox_4_left','phalanx_prox_5_left','phalanx_mid_2_left','phalanx_mid_3_left','phalanx_mid_4_left','phalanx_mid_5_left','phalanx_dist_1_left','phalanx_dist_2_left','phalanx_dist_3_left','phalanx_dist_4_left','phalanx_dist_5_left'],
+  { id: 'arm', ru: 'Верхняя конечность', short: 'Рука', hint: 'Обе стороны; левые кости и мышцы — учебные модели BodyParts3D, без 3D: сесамоиды I пальца', ready: true, file: 'arm', extraFile: 'arm-extra', supplementalBones: ['radius_left','ulna_left','scaphoid_left','lunate_left','triquetrum_left','pisiform_left','trapezium_left','trapezoid_left','capitate_left','hamate_left','metacarpal_1_left','metacarpal_2_left','metacarpal_3_left','metacarpal_4_left','metacarpal_5_left','phalanx_prox_1_left','phalanx_prox_2_left','phalanx_prox_3_left','phalanx_prox_4_left','phalanx_prox_5_left','phalanx_mid_2_left','phalanx_mid_3_left','phalanx_mid_4_left','phalanx_mid_5_left','phalanx_dist_1_left','phalanx_dist_2_left','phalanx_dist_3_left','phalanx_dist_4_left','phalanx_dist_5_left'],
     tries: ['deltoid', 'biceps_brachii', 'pronator_teres'],
     subs: [
-      { id: 'all', ru: 'Весь раздел', hint: 'Правая верхняя конечность, плечевой пояс и плечевые кости обеих сторон', v: 'antlat' },
+      { id: 'all', ru: 'Весь раздел', hint: 'Обе верхние конечности; левые мышцы плечевого пояса — в разделе груди', v: 'antlat' },
       { id: 'shoulder', ru: 'Плечевой пояс', hint: 'Лопатка, ключица и мышцы вокруг плечевого сустава', v: 'antlat' },
       { id: 'arm', ru: 'Плечо', hint: 'От плечевого сустава до локтя', v: 'antlat' },
       { id: 'forearm', ru: 'Предплечье', hint: 'От локтя до запястья', v: 'ant' },
       { id: 'hand', ru: 'Кисть', hint: 'Запястье, ладонь и пальцы', v: 'ant' }
     ] },
-  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и нижние конечности; 3D слева неполное', ready: true, file: 'leg', extraFile: 'leg-extra', supplementalBones: ['femur_left', 'patella_left', 'tibia_left', 'fibula_left','navicular_left','cuneiform_med_left','cuneiform_int_left','sesamoid_pedis_left','toe_prox_2_left','toe_prox_3_left','toe_prox_4_left','toe_mid_2_left','toe_mid_3_left','toe_mid_4_left','toe_dist_2_left','toe_dist_3_left','toe_dist_4_left'],
+  { id: 'leg', ru: 'Поясница, таз и нижняя конечность', short: 'Таз и нога', hint: 'Поясничные позвонки, таз и нижние конечности обеих сторон; левые модели учебные', ready: true, file: 'leg', extraFile: 'leg-extra', supplementalBones: ['femur_left', 'patella_left', 'tibia_left', 'fibula_left','navicular_left','cuneiform_med_left','cuneiform_int_left','sesamoid_pedis_left','toe_prox_2_left','toe_prox_3_left','toe_prox_4_left','toe_mid_2_left','toe_mid_3_left','toe_mid_4_left','toe_dist_2_left','toe_dist_3_left','toe_dist_4_left','talus_left','calcaneus_left','cuboid_left','cuneiform_lat_left','metatarsal_1_left','metatarsal_2_left','metatarsal_3_left','metatarsal_4_left','metatarsal_5_left','toe_prox_1_left','toe_dist_1_left','toe_prox_5_left','toe_mid_5_left','toe_dist_5_left'],
     tries: ['gluteus_maximus', 'quadriceps_femoris', 'triceps_surae'],
     subs: [
-      { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и нижние конечности; 3D слева неполное', v: 'antlat' },
+      { id: 'all', ru: 'Весь раздел', hint: 'Поясница, таз и нижние конечности обеих сторон', v: 'antlat' },
       { id: 'lumbar', ru: 'Поясница L1–L5', hint: 'Пять поясничных позвонков; костный подраздел', v: 'postlat' },
       { id: 'pelvis', ru: 'Таз, крестец и копчик', hint: 'Тазовые кости, крестцово-копчиковая область и мышцы таза', v: 'antlat' },
       { id: 'thigh', ru: 'Бедро', hint: 'От тазобедренного сустава до колена', v: 'ant' },
@@ -1129,13 +1130,16 @@ async function fetchSupplementalMuscle(id) {
     throw new Error(`Нет допуска дополнительной мышцы ${id}`);
   const response = await fetch(card.modelFile);
   if (!response.ok) throw new Error(`Не удалось загрузить мышцу ${id}: HTTP ${response.status}`);
-  const gltf = await new GLTFLoader().parseAsync(await response.arrayBuffer(), '');
+  await MeshoptDecoder.ready;
+  const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(await response.arrayBuffer(), '');
+  // Whole muscle `m|id|` or one of the card's declared parts `m|id|part`.
+  const owners = new Set([`m|${id}|`, ...Object.keys(card.parts || {}).map(part => `m|${id}|${part}`)]);
   let meshes = 0;
   gltf.scene.traverse(o => {
     if (!o.isMesh) return;
     let owner = o;
     while (owner && !owner.name.startsWith('m|')) owner = owner.parent;
-    if (owner?.name !== `m|${id}|`) throw new Error(`Неверный владелец мышцы ${id}`);
+    if (!owners.has(owner?.name)) throw new Error(`Неверный владелец мышцы ${id}`);
     meshes++;
   });
   if (!meshes) throw new Error(`Пустая модель мышцы ${id}`);
@@ -2337,7 +2341,8 @@ function renderBoneLegend() {
   $('#boneLegendTitle').textContent='Цвета костей · '+SEC[state.sec].ru;
   let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
   for (const group of A.boneGroups.filter(g => g.sec === state.sec && !isSoft(g.id))) {
-    const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)]);
+    // Only loaded geometry has a colour to explain; card-only bones stay in the catalogue.
+    const bones = Object.entries(A.bones).filter(([id, d]) => d.g === group.id && HEAD_BONE_PALETTE[headBoneKey(id)] && structs.has(id));
     if (!bones.length) continue;
     html += `<h3>${esc(group.title)}</h3>`;
     const keys = [...new Set(bones.map(([id]) => headBoneKey(id)))];

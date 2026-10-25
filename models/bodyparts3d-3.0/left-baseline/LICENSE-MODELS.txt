@@ -1,0 +1,19 @@
+BodyParts3D, Copyright© The Database Center for Life Science licensed by CC Attribution-Share Alike 2.1 Japan.
+Title/release: BodyParts3D 3.0 / 20110915 / OBJ 95%.
+Source: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip
+Release terms: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/README_e.html
+Licence: https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+Legal code: https://creativecommons.org/licenses/by-sa/2.1/jp/legalcode.ja
+Changes: OBJ to GLB with Blender; [bp.x,bp.z,-bp.y]/1000 (mm to metres, Z-up to Y-up).
+No additional decimation, reflection, mesh repair, deformation or fitted registration.
+The original archive was already reduced by its author. Source version and hashes: provenance.json.
+These derivative geometry files remain CC BY-SA 2.1 Japan. Commercial use is permitted under its terms.
+Preserve attribution, licence and change notices; distribute adaptations under the same licence.
+Do not impose incompatible legal/technical restrictions on this geometry. No endorsement by DBCLS is implied.
+Educational visualisation only; exact joint surfaces/gaps, cartilage, pin locations and clinical accuracy are unaccepted.
+Source intersections are not physiological contacts. No independent left scan is established. No warranties.
+Учебная 3D-модель. Точная геометрия суставных поверхностей, границ и зазоров не подтверждена.
+
+Files: talus_left.glb (FMA24483); calcaneus_left.glb (FMA24498); cuboid_left.glb (FMA24529); cuneiform_lat_left.glb (FMA24526); metatarsal_1_left.glb (FMA24508); metatarsal_2_left.glb (FMA24510); metatarsal_3_left.glb (FMA24512); metatarsal_4_left.glb (FMA24514); metatarsal_5_left.glb (FMA24516); toe_prox_1_left.glb (FMA43254); toe_dist_1_left.glb (FMA32651); toe_prox_5_left.glb (FMA32641); toe_mid_5_left.glb (FMA230988); toe_dist_5_left.glb (FMA32659); metacarpal_1_left.glb (FMA24465); metacarpal_3_left.glb (FMA24469)
+Admission rule: Contralateral baseline: every sampled source-mesh penetration of the final left configuration reproduces the same pair of the accepted right BodyParts3D 3.0 model within 0.15 mm, or (at four boundaries with admitted mirrored neighbours) stays within the deepest accepted right MTP/MCP pair (0.912 mm).
+Batch limitations: Same-source BodyParts3D 3.0 intersections are retained exactly as in the accepted right model (largest cuboid-lateral cuneiform about 2.66 mm, talus-calcaneus about 1.0 mm, MC I-trapezium about 1.15 mm); four boundaries with mirrored phalanges II-IV/sesamoids differ from the right pair by up to 0.41 mm. These are source defects, not physiological contacts. Exact facets, cartilage, joint spaces, pins, sinus tarsi and an independent left specimen are not accepted.
