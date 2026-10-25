@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-26",
+  "change": "CAT-STRUCTURE-TEXTBOOK",
+  "results": [
+    {
+      "test": "verify-catalogue-taxonomy",
+      "exit": 0,
+      "sec": 0
+    },
+    {
+      "test": "verify-catalogue-ui",
+      "exit": 0,
+      "sec": 8
+    },
+    {
+      "test": "verify-atlas",
+      "exit": 0,
+      "sec": 18
+    },
+    {
+      "test": "verify-navigation",
+      "exit": 0,
+      "sec": 24
+    },
+    {
+      "test": "verify-mobile-layout",
+      "exit": 0,
+      "sec": 51
+    },
+    {
+      "test": "verify-left-baseline",
+      "exit": 0,
+      "sec": 20
+    },
+    {
+      "test": "verify-left-limb-muscles",
+      "exit": 0,
+      "sec": 27
+    },
+    {
+      "test": "verify-neck",
+      "exit": 0,
+      "sec": 13
+    },
+    {
+      "test": "verify-thorax",
+      "exit": 0,
+      "sec": 36
+    },
+    {
+      "test": "verify-stage5-neck-links",
+      "exit": 0,
+      "sec": 1
+    },
+    {
+      "test": "verify-stage5-neck",
+      "exit": 1,
+      "sec": 1,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-stage5-skull",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch3",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch4",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch5",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch6",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch7",
+      "exit": 1,
+      "sec": 1,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-skull-batch8",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS."
+    },
+    {
+      "test": "verify-ux-catalogue",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Before/after snapshot tool from an earlier stage; requires its historical evidence directory argument. Not a regression check for this change."
+    },
+    {
+      "test": "verify-vhp-sesamoids",
+      "exit": 0,
+      "sec": 9
+    },
+    {
+      "test": "verify-stage6-sesamoid-group",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Before/after snapshot tool from an earlier stage; requires its historical evidence directory argument. Not a regression check for this change."
+    },
+    {
+      "test": "verify-atlas-systems",
+      "exit": 1,
+      "sec": 0,
+      "classification": "Before/after snapshot tool from an earlier stage; requires its historical evidence directory argument. Not a regression check for this change."
+    },
+    {
+      "test": "verify-cardiovascular",
+      "exit": 1,
+      "sec": 2,
+      "classification": "Historical snapshot assertion fails before any page loads; site data/pins files are identical to commit fa13105 (only index.html, local.html changed, atlas-taxonomy.js added). QA-STALE-TESTS. Expects 20 bone noModel blockers; there are 0 since LOG-20261025-04."
+    },
+    {
+      "test": "verify-system-coverage",
+      "exit": 0,
+      "sec": 1
+    },
+    {
+      "test": "verify-free-camera",
+      "exit": 0,
+      "sec": 31
+    },
+    {
+      "test": "verify-atlas-performance",
+      "exit": 1,
+      "sec": 7,
+      "classification": "Timing flake in the \"covered atlas paused\" frame-count check under back-to-back load; rerun passed 3/3 (tools/ once, repo root twice)."
+    },
+    {
+      "test": "verify-side-isolation",
+      "exit": 0
+    }
+  ],
+  "passedFirstRun": [
+    "verify-catalogue-taxonomy",
+    "verify-catalogue-ui",
+    "verify-atlas",
+    "verify-navigation",
+    "verify-mobile-layout",
+    "verify-left-baseline",
+    "verify-left-limb-muscles",
+    "verify-neck",
+    "verify-thorax",
+    "verify-stage5-neck-links",
+    "verify-vhp-sesamoids",
+    "verify-system-coverage",
+    "verify-free-camera",
+    "verify-side-isolation"
+  ],
+  "flakyRerunPassed": [
+    "verify-atlas-performance"
+  ],
+  "finalBuild": "research/evidence-runs/catalogue-ui-2026-10-25T19-31-10-869Z-pFiuMU (after the help-text edit)",
+  "note": "Chromium headless shell 1228 + SwiftShader; not a physical phone. Tests that rewrite tracked verify/*.json were copied here as rewritten-*.json and restored with git checkout."
+}

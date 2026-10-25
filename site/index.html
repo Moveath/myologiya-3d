@@ -264,7 +264,7 @@ dt .term { text-decoration-color: var(--ink-2); }
 .verdict p { margin: 4px 0 0; }
 
 /* list drawer */
-.drawer { position: absolute; inset: 0; z-index: 8; display: flex; flex-direction: column; background: var(--paper); }
+.drawer { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; background: var(--paper); }
 .dhead { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--rule); }
 .dhead input { flex: 1 1 auto; min-width: 0; height: 42px; padding: 0 12px; border: 1px solid var(--rule); border-radius: var(--r-ctl); background: var(--drape); font-size: 16px; }
 .dlist { flex: 1 1 auto; overflow-y: auto; padding: 4px 16px 24px; }
@@ -281,6 +281,27 @@ dt .term { text-decoration-color: var(--ink-2); }
 .item.sub::before { content: ""; position: absolute; left: 17px; top: 7px; bottom: 7px; width: 2px; border-radius: 2px; background: var(--rule); }
 .item.sub b { font-weight: 400; }
 .empty { color: var(--ink-2); margin-top: 18px; }
+.item-row { display: flex; align-items: center; gap: 6px; }
+.item-row .item { flex: 1 1 auto; min-width: 0; margin-right: 0; }
+.item-sides { display: flex; gap: 4px; flex: none; }
+.item-sides .side { min-height: 32px; padding: 0 9px; border: 1px solid var(--rule); border-radius: 999px; background: transparent; color: var(--ink-2); font-size: 12px; }
+.item-sides .side:hover { background: var(--drape); }
+.item-sides .side[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-soft); color: var(--ink); }
+.item-sides .side-only { font: 500 10px var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.item-alt { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 8px; font-size: 12px; color: var(--ink-2); }
+.item-alt .chip { height: 30px; padding: 0 10px; font-size: 12px; }
+.missing { margin: 8px 0; padding: 8px 10px; border: 1px dashed var(--rule); border-radius: 10px; font-size: 13px; color: var(--ink-2); }
+.group-note { margin: 2px 0 6px; font-size: 12.5px; color: var(--ink-2); }
+.home-catalogue h2 { margin: 8px 0 4px; font-size: 20px; }
+.home-catalogue h3 { margin: 14px 0 8px; font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.cat-tiles { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); }
+.cat-tile { display: grid; gap: 4px; align-content: start; text-align: left; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 14px;
+  background: var(--paper); box-shadow: 0 1px 0 var(--shade); color: var(--ink); cursor: pointer; }
+.cat-tile:hover { border-color: var(--teal); }
+.cat-tile b { font-size: 15px; }
+.cat-tile span { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+.cat-tile em { font: 500 10px var(--f-mono); font-style: normal; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.cat-tile.soon { border-style: dashed; box-shadow: none; background: transparent; }
 .bone-legend .dhead h2 { flex: 1; margin: 0; font-size: 18px; }
 .bone-legend .hint { margin-bottom: 16px; font-size: 13px; }
 .bone-color-item { display: grid; grid-template-columns: 18px minmax(0,1fr); gap: 10px; padding-block: 10px; border-bottom: 1px solid var(--rule); }
@@ -516,6 +537,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       <button class="chip" id="bTrunk" aria-pressed="false" title="Мышцы груди и спины, которые двигают лопатку и плечо">Грудь и спина</button>
       <button class="chip" id="bBoneColors" aria-pressed="true" hidden title="У каждой кости свой учебный цвет"><span class="palette-icon" aria-hidden="true"></span>Цвета костей</button>
       <button class="chip" id="bRegions" aria-pressed="true" hidden title="Показывать только размеченные участки выбранного ориентира">Область ориентира</button>
+      <button class="chip" id="bBoneGroups" aria-pressed="false" hidden title="Один цвет на группу костей по учебнику: запястье, пясть, фаланги, отделы позвоночника">По группам</button>
       <button class="chip nocheck" id="bBoneLegend" hidden aria-controls="boneLegend" aria-expanded="false">Легенда</button>
       <button class="chip" id="bContext" aria-pressed="true" title="Показать или скрыть окружающие полупрозрачные структуры; выбранная группа остаётся">Окружение</button>
       <button class="chip" id="bMuscleBones" aria-pressed="false" title="При выборе мышцы оставить только кости, указанные в её прикреплениях; при изоляции показывать их вместе с мышцей">Кости мышцы</button>
@@ -597,7 +619,11 @@ dt .term { text-decoration-color: var(--ink-2); }
         </div>
         <div class="seclist" id="seclist"></div>
       </div>
-      <p class="home-note">Модели показывают правую сторону тела. Разделы с пометкой «скоро» появятся позже.</p>
+      <section class="home-catalogue" aria-labelledby="homeCatalogueTitle">
+        <h2 id="homeCatalogueTitle">Каталог по учебнику</h2>
+        <p class="home-note">Кости и мышцы по группам, как в учебнике анатомии. Группы, для которых моделей ещё нет, помечены «пока нет моделей».</p>
+        <div id="homeCatalogue"></div>
+      </section>
     </div>
   </div>
 
@@ -617,6 +643,7 @@ dt .term { text-decoration-color: var(--ink-2); }
       </div>
       <p>Кнопка с человечком слева вверху возвращает к схеме тела, где выбираются разделы. Под заголовком раздела — подразделы: например, у руки это плечевой пояс, плечо, предплечье и кисть. В подразделе остаются только его мышцы, а остальные кости видны бледно, чтобы было понятно, где ты находишься.</p>
       <p>Крути модель одним пальцем, приближай двумя. Нажми на мышцу или кость, чтобы открыть карточку. Кнопка «Повернуть» переключает стандартные ракурсы. Для головы, шеи и грудного отдела доступны виды спереди, справа, сзади, слева, сверху и снизу.</p>
+      <p>Лупа вверху открывает каталог по учебнику: кости и мышцы разложены по областям и группам, как в учебнике анатомии. Парная структура занимает одну строку, кнопки «справа» и «слева» открывают нужную сторону. Если мышца есть в нескольких разделах, строка «Также в разделе» ведёт к другим моделям. Группы, для которых моделей ещё нет, помечены «пока нет моделей». Тот же каталог открывается плитками на главном экране. Кнопка «По группам» рядом с «Цветами костей» красит кости одной группы одним цветом.</p>
       <p>«Свободная камера» (в настройках вида) позволяет облетать модель: кнопки «Вверх», «Вниз», «Вперёд», «Назад» перемещают камеру, а движение пальцем или мышью поворачивает взгляд на месте. Двумя пальцами или правой кнопкой мыши камеру можно сдвинуть, щипком или колесом — подлететь ближе. На клавиатуре: W A S D, E — вверх, Q — вниз. «Обычная камера» снова вращает модель вокруг того, что сейчас перед тобой.</p>
       <p>Подчёркнутые слова в карточках можно нажать: появится простое объяснение термина. Все термины собраны в словарике ниже.</p>
       <p>У мышц из нескольких частей или головок в карточке есть кнопки частей. В карточке кости перечислены её образования TA98: бугорки, ямки, края, отростки и поверхности. Точки показывают подтверждённые ориентиры на модели. У выбранной мышцы бирюзовые точки обозначают начало, фиолетовые — прикрепление.</p>
@@ -687,6 +714,7 @@ import { prepareRaycasts, createRenderQuality } from './atlas-performance.js?v=m
 import { indexLandmarks, relatedBoneIds, isSharedLandmark, landmarkBelongsTo, isOwnBoneTerm, landmarkSearchOwner, contributingBoneIds, hasLandmarkPosition, isApproximateLandmark, relationLabel } from './atlas-landmarks.js';
 import { structureSide, sideAllows, muscleBoneIds, selectionVisibility } from './atlas-visibility.js';
 import { normalizeSearch, catalogueMatches, typicalThumbSesamoid, catalogueVariant, musclePartLatin, upperLimbCoverage } from './atlas-catalogue.js';
+import { buildCatalogue, catalogueLeaves } from './atlas-taxonomy.js';
 import { AnatomicalRegions, sha256 } from './atlas-regions.js';
 import { ANATOMICAL_SYSTEMS, systemOf, systemDefaults, structureRelations, admittedModel, systemCoverage } from './atlas-systems.js';
 
@@ -875,7 +903,7 @@ const state = {
   trunk: !!prefs.trunk,
   sel: null, selPart: null, isolate: null, hidden: new Set(), hover: null, xrayBone: null,
   pinsOn: prefs.pins !== false, pin: null, pinGroup: null,
-  boneColors: prefs.boneColors !== false,
+  boneColors: prefs.boneColors !== false, boneColorGroups: prefs.boneColorGroups === true,
   regionHighlight: prefs.regionHighlight !== false,
   context: prefs.context !== false,
   sides: Object.assign({}, prefs.sides || {}), muscleBones: prefs.muscleBones === true,
@@ -999,6 +1027,19 @@ const headBoneKey = id => id.replace(/_(?:right|left)$/, '');
 Object.assign(HEAD_BONE_PALETTE, {clavicle:'#e8c04c',scapula:'#689ddd',humerus:'#e88762',radius:'#91b95b',ulna:'#b488c9',hip_bone:'#689ddd',sacrum:'#e8c04c',femur:'#e88762',patella:'#b488c9',tibia:'#91b95b',fibula:'#4fa7a1'});
 const limbPalette=['#689ddd','#e88762','#91b95b','#b488c9','#4fa7a1','#d988b0','#cfa847','#86ced8','#b98665','#959fe0','#a4bf71','#e99c4a'];
 Object.entries(A.bones).filter(([,b])=>!isSoft(b.g)).forEach(([id],i)=>{const key=headBoneKey(id);HEAD_BONE_PALETTE[key] ||= limbPalette[i%limbPalette.length];});
+// Textbook catalogue (atlas-taxonomy.js); "by group" colours give every catalogue group of bones one colour.
+const CATALOGUE_TREE = buildCatalogue(A, (id, sec) => structureSide(sec, id, cardOf(id))).tree;
+const boneLeafOf = {};
+for (const region of CATALOGUE_TREE.filter(r => r.system !== 'muscles'))
+  catalogueLeaves([region]).forEach((leaf, i) => { HEAD_BONE_PALETTE['grp:' + leaf.id] = limbPalette[i % limbPalette.length]; for (const id of leaf.ids) boneLeafOf[id] = leaf; });
+// card label: textbook group (and part); the region when the group is the structure itself, e.g. "Плечевая кость"
+const catalogueLabelOf = {};
+for (const region of CATALOGUE_TREE) for (const group of region.groups) for (const part of group.parts) for (const pair of part.pairs) {
+  const label = part.ru ? `${group.ru} · ${part.ru}` : group.ru === pair.name ? region.ru : group.ru;
+  for (const id of [...Object.values(pair.members), ...pair.alternates.flatMap(a => Object.values(a.members))]) catalogueLabelOf[id] = label;
+}
+const colorKey = id => state.boneColorGroups && boneLeafOf[id] ? 'grp:' + boneLeafOf[id].id : headBoneKey(id);
+const boneHex = id => HEAD_BONE_PALETTE[colorKey(id)];
 const headBoneColors = Object.fromEntries(Object.entries(HEAD_BONE_PALETTE).map(([id, hex]) => [id, new THREE.Color(hex)]));
 const WHITE = new THREE.Color('#ffffff');
 const headCutPlane = new THREE.Plane();
@@ -1041,7 +1082,7 @@ const headBoneGhosts = Object.fromEntries(Object.entries(headBoneColors).map(([i
   const material = GHOST.clone(); material.color.copy(color); return [id, material];
 }));
 const boneColorsActive = () => !!state.sec && state.boneColors && state.mode !== 'quiz';
-const boneColor = id => boneColorsActive() ? headBoneColors[headBoneKey(id)] || BONE : BONE;
+const boneColor = id => boneColorsActive() ? headBoneColors[colorKey(id)] || BONE : BONE;
 function updateBoneColorControls() {
   const head = state.sec === 'head', quiz = state.mode === 'quiz';
   const colored = !!state.sec;
@@ -1050,6 +1091,8 @@ function updateBoneColorControls() {
   $('#bBoneColors').setAttribute('aria-pressed', String(boneColorsActive()));
   $('#bBoneColors').title = quiz ? 'Цвета временно отключены на время теста' : 'У каждой кости свой учебный цвет';
   $('#bBoneLegend').hidden = !colored || quiz || !state.boneColors;
+  $('#bBoneGroups').hidden = !colored || quiz || !state.boneColors;
+  $('#bBoneGroups').setAttribute('aria-pressed', String(state.boneColorGroups));
   $('#bRegions').hidden = !head || quiz;
   $('#bRegions').setAttribute('aria-pressed',String(state.regionHighlight));
   $('#bHeadDetail').hidden = !colored || quiz;
@@ -1317,7 +1360,7 @@ function applyVisibility() {
     for (const m of s.meshes) {
       m.visible = v > 0;
       const xray = xrayBones.includes(s.id) && s.kind === 'b';
-      const ghost = s.kind === 'b' && boneColorsActive() ? headBoneGhosts[headBoneKey(s.id)] || GHOST : GHOST;
+      const ghost = s.kind === 'b' && boneColorsActive() ? headBoneGhosts[colorKey(s.id)] || GHOST : GHOST;
       const contextOnly = s.contextBone && s.kind === 'c';
       m.material = contextOnly ? m.userData.contextMat : v === 1 ? ghost : xray ? XRAY : m.userData.mat;
       if(m.material===m.userData.mat) {
@@ -1360,7 +1403,7 @@ function paint() {
     const hov = !on && s.id === state.hover;
     for (const m of s.meshes) {
       const mat = m.userData.mat, base = s.kind === 'b' ? boneColor(s.id) : m.userData.base;
-      const coloredBone = s.kind === 'b' && boneColorsActive() && headBoneColors[headBoneKey(s.id)];
+      const coloredBone = s.kind === 'b' && boneColorsActive() && headBoneColors[colorKey(s.id)];
       // a chosen part glows fully; the rest of the same muscle gets a faint tint
       const full = !selPart || m.userData.part === selPart;
       if (on && coloredBone) { mat.color.copy(base).lerp(WHITE, 0.28); mat.emissive.copy(base).multiplyScalar(0.24); }
@@ -1811,7 +1854,7 @@ function renderSheet() {
   const g = groupById[d.g];
   const p = state.selPart && d.parts ? d.parts[state.selPart] : null;
   const noModel = d.noModel || !s;
-  const kicker = isMuscle ? `${esc(g.title)}${d.L ? ' · ' + esc(d.L) : ''}` : esc(g.title);
+  const kicker = `${esc(catalogueLabelOf[id] || g.title)}${isMuscle && d.L ? ' · ' + esc(d.L) : ''}`;
   // with a part chosen, its own data replaces the muscle's; shared fields are marked
   const facts = isMuscle ? [
     ['Начало', 'origo', p && p.o ? p.o : d.o, p && !p.o ? 'всей мышцы' : ''],
@@ -1882,7 +1925,7 @@ function renderSheet() {
     <button class="grab togglemore" aria-label="${sheet.dataset.state === 'open' ? 'Свернуть карточку' : 'Развернуть карточку'}"></button>
     <div class="head">
       <div class="t">
-        <div class="kicker">${noModel ? '' : `<span class="swatch" aria-hidden="true"${!isMuscle && boneColorsActive() && HEAD_BONE_PALETTE[headBoneKey(id)] ? ` style="background:${HEAD_BONE_PALETTE[headBoneKey(id)]}"` : ''}></span>`}<span>${kicker}</span></div>
+        <div class="kicker">${noModel ? '' : `<span class="swatch" aria-hidden="true"${!isMuscle && boneColorsActive() && boneHex(id) ? ` style="background:${boneHex(id)}"` : ''}></span>`}<span>${kicker}</span></div>
         <h2 class="name">${esc(d.ru)}</h2>
         <p class="lat">${esc(isMuscle ? musclePartLatin(d, p) : d.lat)}</p>
       </div>
@@ -2274,7 +2317,7 @@ function setMode(m) {
 
 // ---------- list drawer ----------
 const drawer = $('#drawer');
-let listType='all';
+let listType='all', catalogueFocus=null;
 const norm = normalizeSearch;
 function renderList() {
   const term = norm($('#q').value.trim());
@@ -2301,47 +2344,63 @@ function renderList() {
     }
   }
   const variants = [];
-  const order = SECTIONS.filter(S => S.ready).sort((a,b) => (b.id === state.sec) - (a.id === state.sec));
-  for (const S of order) {
-    let sec = '';
-    for (const g of A.groups.filter(g => g.sec === S.id && ['all','muscles'].includes(listType))) {
-      const items = Object.entries(A.muscles).filter(([id,d]) => d.g === g.id && allowed(id,S.id)).map(([id,d]) => {
-        const own = match(d), parts = d.parts ? Object.entries(d.parts).filter(([,p]) => own || match(p)) : [];
-        return {id,d,parts,show:own || parts.length > 0};
-      }).filter(x => x.show);
-      if (!items.length) continue;
-      sec += `<details class="list-group" ${term || S.id === state.sec ? 'open' : ''}><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
-      for (const {id,d,parts} of items) {
-        n++;
-        sec += `<button class="item ${id === state.sel && !state.selPart ? 'cur' : ''}" data-id="${id}"><b>${esc(d.ru)}</b><i>${esc(d.lat)}</i>${d.noModel ? '<span class="tag">только карточка</span>' : ''}${sideTag(id)}</button>`;
-        for (const [pk,p] of parts) sec += `<button class="item sub ${id === state.sel && state.selPart === pk ? 'cur' : ''}" data-id="${id}" data-part="${pk}"><b>${esc(p.ru)}</b><i>${esc(d.lat === 'm. trapezius' ? musclePartLatin(d,p) : p.lat)}</i>${sideTag(id)}</button>`;
+  // Textbook catalogue (atlas-taxonomy.js): one row per left/right pair; a muscle modelled in several
+  // sections is listed once and links to its other models. Sections and models stay as they are.
+  const systems = listType === 'all' ? ['bones', 'soft', 'muscles'] : listType === 'bones' ? ['bones'] : listType === 'muscles' ? ['muscles'] : [];
+  const sideFor = sec => sec === state.sec ? curSide() : ['left','right'].includes(state.sides[sec]) ? state.sides[sec] : 'both';
+  const pick = (members, sec, ok) => [sideFor(sec) === 'left' ? members.left : members.right, members.right, members.single, members.left].find(id => id && ok(id));
+  const pairRow = pair => {
+    const ids = Object.values(pair.members).filter(id => allowed(id, pair.sec) && !primary.has(id));
+    if (!ids.length) return '';
+    const main = pick(pair.members, pair.sec, id => ids.includes(id)), d = cardOf(main);
+    const own = ids.some(id => match(cardOf(id)));
+    const parts = d.parts ? Object.entries(d.parts).filter(([,p]) => own || match(p)) : [];
+    let pins = [];
+    if (term && pair.kind === 'b') for (const id of ids) {
+      const found = (pinsByBone[id] || []).filter(q => landmarkSearchOwner(q,state.sel) === id && match(q));
+      for (const q of found.filter(catalogueVariant)) variants.push({id,q});
+      if (!pins.length) pins = found.filter(q => !catalogueVariant(q)).map(q => [id, q]);
+    }
+    if (!own && !parts.length && !pins.length) return '';
+    n++;
+    const {left, right, single} = pair.members;
+    const sides = !single && !(left && right) ? `<span class="item-sides"><span class="side-only">${right ? 'только справа' : 'только слева'}</span></span>`
+      : left && right && ids.length === 2 ? `<span class="item-sides" role="group" aria-label="Сторона">${[['right','справа'],['left','слева']].map(([s, ru]) => `<button class="side" data-id="${pair.members[s]}" aria-pressed="${state.sel === pair.members[s]}" title="${esc(cardOf(pair.members[s]).ru)}">${ru}</button>`).join('')}</span>` : '';
+    let row = `<div class="item-row"><button class="item ${ids.includes(state.sel) && !state.selPart && !state.pin ? 'cur' : ''}" data-id="${main}"><b>${esc(pair.name)}</b><i>${esc(d.lat)}</i>${typicalThumbSesamoid(d) ? '<span class="tag">Типичная пара большого пальца</span>' : ''}${d.noModel ? '<span class="tag">только карточка</span>' : ''}${sideTag(main)}</button>${sides}</div>`;
+    const others = pair.alternates.map(a => pick(a.members, a.sec, id => allowed(id, a.sec))).filter(Boolean);
+    if (others.length) row += `<div class="item-alt">Также в разделе ${others.map(id => `<button class="chip" data-id="${id}" title="${esc(cardOf(id).ru)}">${esc(SEC[secOf(id)].ru)}</button>`).join('')}</div>`;
+    for (const [pk,p] of parts) row += `<button class="item sub ${main === state.sel && state.selPart === pk ? 'cur' : ''}" data-id="${main}" data-part="${pk}"><b>${esc(p.ru)}</b><i>${esc(d.lat === 'm. trapezius' ? musclePartLatin(d,p) : p.lat)}</i>${sideTag(main)}</button>`;
+    for (const [id,q] of pins) row += pinItem(id,q);
+    return row;
+  };
+  for (const region of CATALOGUE_TREE.filter(r => systems.includes(r.system))) {
+    let block = '', rows = 0;
+    for (const group of region.groups) {
+      const before = n;
+      let body = '';
+      for (const part of group.parts) {
+        let partHtml = part.pairs.map(pairRow).join('');
+        if (part.missing && !term) partHtml += `<p class="missing">${esc(part.missing)}</p>`;
+        if (partHtml && part.ru) partHtml = `<h3>${esc(part.ru)}</h3>${partHtml}`;
+        body += partHtml;
       }
-      sec += '</details>';
+      if (group.missing && !term) body += `<p class="missing">${esc(group.missing)}</p>`;
+      if (!body) continue;
+      const count = n - before; rows += count;
+      const open = !!term || (catalogueFocus ? catalogueFocus === region.id : group.parts.some(p => p.pairs.some(x => x.sec === state.sec)));
+      block += `<details class="list-group" data-group="${group.id}" ${open ? 'open' : ''}><summary>${esc(group.ru)} <small>${count || 'пока нет моделей'}</small></summary>${group.note && !term ? `<p class="group-note">${esc(group.note)}</p>` : ''}${body}</details>`;
     }
-    for (const g of A.boneGroups.filter(g => g.sec === S.id && ['all','bones'].includes(listType) && (listType !== 'bones' || !isSoft(g.id)))) {
-      const items = Object.entries(A.bones).filter(([id,d]) => d.g === g.id && !primary.has(id) && allowed(id,S.id)).map(([id,d]) => {
-        const found = term ? (pinsByBone[id] || []).filter(q => landmarkSearchOwner(q,state.sel) === id && match(q)) : [];
-        for (const q of found.filter(catalogueVariant)) variants.push({id,q});
-        const pins = found.filter(q => !catalogueVariant(q));
-        return {id,d,pins,show:match(d) || pins.length > 0};
-      }).filter(x => x.show);
-      if (!items.length) continue;
-      sec += `<details class="list-group" ${term || S.id === state.sec ? 'open' : ''}><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
-      for (const {id,d,pins} of items) {
-        n++; sec += boneItem(id,d,typicalThumbSesamoid(d));
-        for (const q of pins) sec += pinItem(id,q);
-      }
-      sec += '</details>';
-    }
-    for(const g of (A.structureGroups||[]).filter(g=>g.sec===S.id)) {
-      const items=Object.entries(A.structures).filter(([id,d])=>d.g===g.id&&allowed(id,S.id)&&match(d)&&(listType==='all'||listType===d.system));
-      if(!items.length)continue;
-      sec+=`<details class="list-group" open><summary>${esc(g.title)} <small>${items.length}</small></summary>`;
-      for(const [id,d]of items){n++;sec+=boneItem(id,d);}
-      sec+='</details>';
-    }
-    if (sec) html += `<h2>${esc(S.ru)}${S.id === state.sec ? ' <small>· открыт сейчас</small>' : ''}</h2>${sec}`;
+    if (block) html += `<h2 id="cat-${region.id}">${esc(region.ru)}${rows ? ` <small>${rows}</small>` : ''}</h2>${block}`;
   }
+  let vessels = '';
+  for (const S of SECTIONS.filter(S => S.ready)) for (const g of (A.structureGroups||[]).filter(g=>g.sec===S.id)) {
+    const items=Object.entries(A.structures).filter(([id,d])=>d.g===g.id&&allowed(id,S.id)&&match(d)&&(listType==='all'||listType===d.system));
+    if(!items.length)continue;
+    vessels+=`<details class="list-group" open><summary>${esc(g.title)} · ${esc(S.ru)} <small>${items.length}</small></summary>`;
+    for(const [id,d]of items){n++;vessels+=boneItem(id,d);}
+    vessels+='</details>';
+  }
+  if (vessels) html += `<h2 id="cat-cardiovascular">Сердце и сосуды</h2>${vessels}`;
   if (variants.length) {
     html += '<details class="list-group" data-variant-results open><summary>Анатомические варианты — не обязательные структуры</summary>';
     for (const {id,q} of variants) { html += pinItem(id,q,true); n++; }
@@ -2349,14 +2408,33 @@ function renderList() {
   }
   $('#catalogueScope').textContent = term
     ? 'Поиск по всем разделам и сторонам. Выбор другой стороны переключит 3D-вид. Варианты вынесены отдельно.'
-    : 'Это каталог. Фильтры меняют список; видимость систем настраивается отдельно. Запись «только карточка» не имеет принятой геометрии.';
+    : 'Каталог по учебнику: область → группа. Одна строка — правая и левая структура; «справа» и «слева» открывают нужную сторону. «Только карточка» — нет принятой геометрии, «пока нет моделей» — заготовка группы.';
   $('#dlist').innerHTML = n ? html : '<p class="empty">Ничего не нашлось. Попробуй часть слова: «сгиб», «flexor», «бугор».</p>';
   $('#dlist').querySelectorAll('[data-id]').forEach(b => b.addEventListener('click', () => {
     closeList(); goTo(b.dataset.id,b.dataset.part || null,b.dataset.pinjump || null);
   }));
 }
-function openList() { closeMobilePanels(); closeBoneLegend(false); drawer.hidden = false; renderList(); if (finePointer) $('#q').focus(); }
+function openList(focus = null) {
+  closeMobilePanels(); closeBoneLegend(false); catalogueFocus = focus; drawer.hidden = false; renderList();
+  if (!focus) {
+    // regions follow the textbook order; start at the region holding the open section's groups
+    let heading = $('#dlist details[open]');
+    while (heading && heading.tagName !== 'H2') heading = heading.previousElementSibling;
+    if (heading) heading.scrollIntoView({block: 'start'}); else $('#dlist').scrollTop = 0;
+  }
+  if (finePointer && !focus) $('#q').focus();
+}
 function closeList() { drawer.hidden = true; }
+// open the catalogue at one textbook region (home tiles); its groups are expanded
+function openCatalogue(regionId) {
+  const region = CATALOGUE_TREE.find(r => r.id === regionId);
+  if (!region) return;
+  listType = region.system === 'muscles' ? 'muscles' : region.system === 'bones' ? 'bones' : 'all';
+  document.querySelectorAll('[data-list-type]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.listType === listType)));
+  $('#q').value = '';
+  openList(regionId);
+  document.getElementById('cat-' + regionId)?.scrollIntoView({block: 'start'});
+}
 $('#q').addEventListener('input', renderList);
 $('#bList').addEventListener('click', () => (drawer.hidden ? openList() : closeList()));
 $('#bCloseList').addEventListener('click', closeList);
@@ -2369,7 +2447,22 @@ document.querySelectorAll('[data-list-type]').forEach(b=>b.addEventListener('cli
 // ---------- bone colour legend ----------
 const boneLegend = $('#boneLegend');
 function renderBoneLegend() {
-  $('#boneLegendTitle').textContent='Цвета костей · '+SEC[state.sec].ru;
+  $('#boneLegendTitle').textContent=(state.boneColorGroups?'Цвета групп костей · ':'Цвета костей · ')+SEC[state.sec].ru;
+  if (state.boneColorGroups) {
+    // one colour per catalogue group; chips open the bones of that group loaded in this section
+    let html = '<p class="hint">Условные учебные цвета: одна группа костей по учебнику — один цвет. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
+    for (const region of CATALOGUE_TREE.filter(r => r.system === 'bones')) {
+      let block = '';
+      for (const group of region.groups) for (const part of group.parts) {
+        const pairs = part.pairs.map(p => ({p, id: [p.members.right, p.members.single, p.members.left].find(id => id && structs.has(id))})).filter(x => x.id);
+        if (!pairs.length) continue;
+        block += `<div class="bone-color-item" data-bone-group="${part.id}"><span class="bone-color-dot" style="--bone-color:${HEAD_BONE_PALETTE['grp:' + part.id]}" aria-hidden="true"></span><div><b>${esc(part.ru || group.ru)}</b><div class="bone-color-actions">${pairs.map(({p, id}) => `<button class="chip" data-color-bone="${id}" aria-pressed="${Object.values(p.members).includes(state.sel)}">${esc(p.name)}</button>`).join('')}</div></div></div>`;
+      }
+      if (block) html += `<h3>${esc(region.ru)}</h3>${block}`;
+    }
+    $('#boneLegendList').innerHTML = html;
+    return;
+  }
   let html = '<p class="hint">Условные учебные цвета. Парные кости окрашены одинаково. Выбери кость, чтобы приблизить её и открыть карточку.</p>';
   for (const group of A.boneGroups.filter(g => g.sec === state.sec && !isSoft(g.id))) {
     // Only loaded geometry has a colour to explain; card-only bones stay in the catalogue.
@@ -2434,6 +2527,16 @@ function renderHome() {
   entry.addEventListener('click',async()=>{state.systems.bones=false;state.systems.muscles=false;state.systems.heart=true;state.systems.arteries=true;state.systems.veins=true;await goTo('cv_heart');setSub('cardiovascular',{keepSel:true,noFrame:true});applyVisibility();});
   $('#seclist').prepend(entry);
   renderFigure();
+  renderHomeCatalogue();
+}
+function renderHomeCatalogue() {
+  const tile = r => {
+    const empty = !r.groups.some(g => g.parts.some(p => p.pairs.length));
+    return `<button class="cat-tile${empty ? ' soon' : ''}" data-catalogue="${r.id}"><b>${esc(r.ru)}</b><span>${esc(r.groups.map(g => g.ru).join(' · '))}</span>${empty ? '<em>пока нет моделей</em>' : ''}</button>`;
+  };
+  $('#homeCatalogue').innerHTML = [['bones', 'Кости'], ['muscles', 'Мышцы']].map(([system, ru]) =>
+    `<h3>${ru}</h3><div class="cat-tiles">${CATALOGUE_TREE.filter(r => r.system === system || system === 'bones' && r.system === 'soft').map(tile).join('')}</div>`).join('');
+  $('#homeCatalogue').querySelectorAll('[data-catalogue]').forEach(b => b.addEventListener('click', () => openCatalogue(b.dataset.catalogue)));
 }
 
 // ---------- skeleton figure: labels, leader lines, hover map ----------
@@ -2632,6 +2735,12 @@ $('#bBoneColors').addEventListener('click', () => {
   state.boneColors = !state.boneColors; prefs.boneColors = state.boneColors; savePrefs();
   closeBoneLegend(false); applyVisibility(); renderSheet();
 });
+$('#bBoneGroups').addEventListener('click', () => {
+  if (!state.sec || state.mode === 'quiz') return;
+  state.boneColorGroups = !state.boneColorGroups; prefs.boneColorGroups = state.boneColorGroups; savePrefs();
+  applyVisibility(); renderSheet();
+  if (!boneLegend.hidden) renderBoneLegend();
+});
 function toggleRegionHighlight() {
   state.regionHighlight=!state.regionHighlight;prefs.regionHighlight=state.regionHighlight;savePrefs();
   paint();updateBoneColorControls();renderSheet();
@@ -2734,8 +2843,8 @@ addEventListener('keydown', e => {
   if (!boneLegend.hidden) closeBoneLegend();
   else if (!gloss.hidden) hideGloss();
   else if (!$('#about').hidden) $('#about').hidden = true;
-  else if (!home.hidden) { if (state.sec) home.hidden = true; }
   else if (!drawer.hidden) closeList();
+  else if (!home.hidden) { if (state.sec) home.hidden = true; }
   else if (state.pin) activatePin(null);
   else if (state.mode === 'quiz') setMode('study');
   else if (state.sel) select(null);
