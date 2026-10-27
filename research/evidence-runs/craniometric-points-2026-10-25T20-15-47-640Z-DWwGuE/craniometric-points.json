@@ -1,0 +1,224 @@
+{
+ "summary": {
+  "records": 7,
+  "accepted": 4,
+  "statuses": {
+   "accepted_approximate": 4,
+   "rejected": 1,
+   "no_junction": 2
+  },
+  "thresholds": {
+   "junctionMM": 1.0,
+   "outerClusterMM": 4.0,
+   "midlineMM": 3.0,
+   "mirrorMM": 3.0,
+   "outwardClearanceMM": 1.0,
+   "samplesPerBone": 400000
+  },
+  "vaultCentre": [
+   -0.00064,
+   1.56232,
+   0.09002
+  ],
+  "geometry": [
+   {
+    "file": "site/head-glb.txt",
+    "sha256": "857c8a33df70b12a212eb34f481d4cad5179cd0fff380739802614e8cc6ebd97"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "shared_skull_015",
+   "lat": "nasion",
+   "bones": [
+    "frontal",
+    "nasal_right",
+    "nasal_left"
+   ],
+   "owner": "frontal",
+   "minJunctionMM": 0.134,
+   "point": [
+    -0.001,
+    1.54022,
+    0.1793
+   ],
+   "normal": [
+    0.041,
+    -0.732,
+    0.68
+   ],
+   "junctionMM": 0.668,
+   "snapMM": 0.84,
+   "candidates": 710,
+   "outerClusterSpreadMM": 5.28,
+   "outwardClearanceMM": 0.42,
+   "outwardNormal": true,
+   "midlineOffsetMM": 0.37,
+   "status": "rejected",
+   "reasons": [
+    "not on the outer surface"
+   ]
+  },
+  {
+   "id": "shared_skull_016",
+   "lat": "bregma",
+   "bones": [
+    "frontal",
+    "parietal_right",
+    "parietal_left"
+   ],
+   "owner": "frontal",
+   "minJunctionMM": 0.197,
+   "point": [
+    -0.0021,
+    1.63224,
+    0.11959
+   ],
+   "normal": [
+    0.0,
+    1.0,
+    0.03
+   ],
+   "junctionMM": 0.868,
+   "snapMM": 0.0,
+   "candidates": 194,
+   "outerClusterSpreadMM": 4.21,
+   "outwardClearanceMM": 3.0,
+   "outwardNormal": true,
+   "midlineOffsetMM": 1.46,
+   "status": "accepted_approximate"
+  },
+  {
+   "id": "shared_skull_017",
+   "lat": "lambda",
+   "bones": [
+    "occipital",
+    "parietal_right",
+    "parietal_left"
+   ],
+   "owner": "occipital",
+   "minJunctionMM": 0.219,
+   "point": [
+    -0.00155,
+    1.58883,
+    0.00628
+   ],
+   "normal": [
+    0.06,
+    0.591,
+    -0.804
+   ],
+   "junctionMM": 1.172,
+   "snapMM": 0.855,
+   "candidates": 179,
+   "outerClusterSpreadMM": 2.78,
+   "outwardClearanceMM": 2.04,
+   "outwardNormal": true,
+   "midlineOffsetMM": 0.91,
+   "status": "accepted_approximate"
+  },
+  {
+   "id": "shared_skull_019_right",
+   "lat": "pterion",
+   "bones": [
+    "frontal",
+    "parietal_right",
+    "temporal_right",
+    "sphenoid"
+   ],
+   "owner": "frontal",
+   "minJunctionMM": 3.896,
+   "status": "no_junction",
+   "reason": "Участвующие кости не сходятся в одной точке сетки (минимум 3.896 мм > 1.0 мм); для H-образного стыка нужен выбор определения точки и анатомическая приёмка.",
+   "pairMinimaMM": {
+    "frontal-parietal_right": 0.0,
+    "frontal-temporal_right": 7.13,
+    "frontal-sphenoid": 0.01,
+    "parietal_right-temporal_right": 0.01,
+    "parietal_right-sphenoid": 0.02,
+    "temporal_right-sphenoid": 0.02
+   }
+  },
+  {
+   "id": "shared_skull_019_left",
+   "lat": "pterion",
+   "bones": [
+    "frontal",
+    "parietal_left",
+    "temporal_left",
+    "sphenoid"
+   ],
+   "owner": "frontal",
+   "minJunctionMM": 4.747,
+   "status": "no_junction",
+   "reason": "Участвующие кости не сходятся в одной точке сетки (минимум 4.747 мм > 1.0 мм); для H-образного стыка нужен выбор определения точки и анатомическая приёмка.",
+   "pairMinimaMM": {
+    "frontal-parietal_left": 0.01,
+    "frontal-temporal_left": 9.27,
+    "frontal-sphenoid": 0.01,
+    "parietal_left-temporal_left": 0.0,
+    "parietal_left-sphenoid": 0.03,
+    "temporal_left-sphenoid": 0.01
+   }
+  },
+  {
+   "id": "shared_skull_020_right",
+   "lat": "asterion",
+   "bones": [
+    "occipital",
+    "parietal_right",
+    "temporal_right"
+   ],
+   "owner": "occipital",
+   "minJunctionMM": 0.914,
+   "point": [
+    -0.05807,
+    1.52528,
+    0.04733
+   ],
+   "normal": [
+    -0.984,
+    0.105,
+    0.147
+   ],
+   "junctionMM": 1.432,
+   "snapMM": 0.942,
+   "candidates": 6,
+   "outerClusterSpreadMM": 2.6,
+   "outwardClearanceMM": 1.55,
+   "outwardNormal": true,
+   "status": "accepted_approximate",
+   "mirrorMismatchMM": 0.16
+  },
+  {
+   "id": "shared_skull_020_left",
+   "lat": "asterion",
+   "bones": [
+    "occipital",
+    "parietal_left",
+    "temporal_left"
+   ],
+   "owner": "occipital",
+   "minJunctionMM": 0.876,
+   "point": [
+    0.05671,
+    1.52531,
+    0.04746
+   ],
+   "normal": [
+    0.986,
+    0.137,
+    0.099
+   ],
+   "junctionMM": 1.398,
+   "snapMM": 0.908,
+   "candidates": 5,
+   "outerClusterSpreadMM": 2.29,
+   "outwardClearanceMM": 1.48,
+   "outwardNormal": true,
+   "status": "accepted_approximate",
+   "mirrorMismatchMM": 0.16
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "created": "2026-10-25T20:21:53.528Z",
+ "method": "vm load of generated data in page order; structural checks only",
+ "files": [
+  "data",
+  "data-leg",
+  "data-head",
+  "data-neck",
+  "data-thorax",
+  "data-context-bones",
+  "data-muscle-recovery",
+  "data-neck-recovery",
+  "data-left-limb-muscles",
+  "data-left-soft-tissues",
+  "pins",
+  "pins-leg",
+  "pins-head",
+  "pins-head-extra",
+  "pins-neck",
+  "pins-thorax",
+  "pins-context-bones",
+  "pins-shared",
+  "pins-craniometric",
+  "pins-left-transfer"
+ ],
+ "counts": {
+  "bones": 220,
+  "bonesNoModel": 0,
+  "bonesBySide": {
+   "left": 93,
+   "right": 93,
+   "null": 34
+  },
+  "muscles": 347,
+  "musclesNoModel": 14,
+  "musclesBySide": {
+   "left": 163,
+   "right": 163,
+   "null": 21
+  },
+  "muscleParts": 167,
+  "musclePartsNoModel": 21,
+  "musclesWithoutFieldRefs": 186,
+  "musclesWithoutAnyRefs": 186,
+  "musclesWithoutPins": 142,
+  "leftMusclesWithoutPins": 61,
+  "pins": 2663,
+  "pinsWithP": 1715,
+  "pinsWithoutP": 948,
+  "pinsWithMuscle": 355,
+  "leftCoverage": {
+   "leftPins": 909,
+   "withP": 611,
+   "withoutP": 298,
+   "withoutPButRightHasP": 83
+  },
+  "replacedDefinitions": 0
+ },
+ "byType": {},
+ "replaced": [],
+ "findings": []
+}

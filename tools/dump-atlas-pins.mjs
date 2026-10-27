@@ -12,7 +12,7 @@ vm.createContext(ctx);
 for (const f of FILES) vm.runInContext(fs.readFileSync(`site/${f}.js`, 'utf8'), ctx, {filename: f});
 const A = ctx.window.ATLAS;
 const KEEP = ['id', 'b', 't', 'c', 'ru', 'lat', 'p', 'n', 'm', 'loc', 'geometryKind', 'anchorStatus', 'templateRecord', 'side', 'part', 'inc',
-  'x', 'refs', 'geometryKindReason', 'anatomicalDefinition', 'note', 'modelNote'];
+  'x', 'refs', 'geometryKindReason', 'anatomicalDefinition', 'note', 'modelNote', 'relations'];
 process.stdout.write(JSON.stringify({
   pins: A.pins.map(p => Object.fromEntries(KEEP.filter(k => p[k] !== undefined).map(k => [k, p[k]]))),
   muscles: Object.fromEntries(Object.entries(A.muscles).map(([id, c]) => [id, {ru: c.ru, side: c.side ?? null, parts: Object.fromEntries(Object.entries(c.parts || {}).map(([k, p]) => [k, p.lat])), noModel: !!c.noModel}])),

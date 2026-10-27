@@ -1,0 +1,133 @@
+{
+ "review": {
+  "heart": {
+   "faces": 331592,
+   "confident": 244013,
+   "ambiguous": 58015,
+   "tooFar": 9893,
+   "vesselContact": 28365,
+   "registration": {
+    "medianMM": 1.138,
+    "p95MM": 1.875,
+    "shiftFromTrunkMM": [
+     -9.62,
+     6.14,
+     0.93
+    ],
+    "rotationFromTrunkDeg": 0.46
+   }
+  },
+  "aorta": {
+   "planeY": 1.071,
+   "aortaY": [
+    0.96,
+    1.3033
+   ],
+   "zAnatomyThoracicEndY": 1.1535,
+   "diaphragmContact": {
+    "lowestContactY": 1.0329,
+    "highestContactY": 1.1862
+   }
+  }
+ },
+ "masks": {
+  "cv_atrium_right": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_right.json",
+   "sha256": "39ba9219858b9a37587d5f554af6241d942a4bd93bd8a021b36877e8ec2c1828",
+   "parent": "cv_heart",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+   "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+   "parentFaces": 331592,
+   "faceCount": 57398,
+   "method": "nearest registered Z-Anatomy chamber surface",
+   "zObject": "Right atrium",
+   "marginMM": 1.0,
+   "maxDistanceMM": 3.0,
+   "excludedNearVesselModelsMM": 1.5,
+   "areaCm2": 184.5
+  },
+  "cv_ventricle_right": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_right.json",
+   "sha256": "852b4c130125692cc24e19454637d319365f7369607314259baff61c9b49d1fd",
+   "parent": "cv_heart",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+   "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+   "parentFaces": 331592,
+   "faceCount": 77242,
+   "method": "nearest registered Z-Anatomy chamber surface",
+   "zObject": "Right ventricle",
+   "marginMM": 1.0,
+   "maxDistanceMM": 3.0,
+   "excludedNearVesselModelsMM": 1.5,
+   "areaCm2": 216.8
+  },
+  "cv_atrium_left": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_left.json",
+   "sha256": "4ecd5ffda918125e00168858eec103500bb23db63243724fbce5233fe6f4df4f",
+   "parent": "cv_heart",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+   "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+   "parentFaces": 331592,
+   "faceCount": 33125,
+   "method": "nearest registered Z-Anatomy chamber surface",
+   "zObject": "Left atrium",
+   "marginMM": 1.0,
+   "maxDistanceMM": 3.0,
+   "excludedNearVesselModelsMM": 1.5,
+   "areaCm2": 141.1
+  },
+  "cv_ventricle_left": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_left.json",
+   "sha256": "91b32f0c159cac1e96996703da1bc7ac5bf9de4b4ad429939c368bfdb76c65d3",
+   "parent": "cv_heart",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+   "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+   "parentFaces": 331592,
+   "faceCount": 76248,
+   "method": "nearest registered Z-Anatomy chamber surface",
+   "zObject": "Left ventricle",
+   "marginMM": 1.0,
+   "maxDistanceMM": 3.0,
+   "excludedNearVesselModelsMM": 1.5,
+   "areaCm2": 216.1
+  },
+  "cv_a_pulmonary_trunk": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_pulmonary_trunk.json",
+   "sha256": "b8f2cfc188eb26031d18ce0d92ffff7cf533bbe6792ad2e512af76613937cfdc",
+   "parent": "cv_a_pulmonary_arteries",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_pulmonary_arteries.glb",
+   "parentSha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+   "parentFaces": 116948,
+   "faceCount": 2503,
+   "method": "faces of the combined tree within 4 mm of the registered Z-Anatomy pulmonary trunk and inside its axial extent",
+   "zObject": "Pulmonary trunk",
+   "maxDistanceMM": 4.0,
+   "lengthMM": 37.8,
+   "areaCm2": 23.8
+  },
+  "cv_a_aorta_thoracic": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_thoracic.json",
+   "sha256": "eccb2a2fc3aa01141b646857200c71a308c71d6ca82c98376666b580fafd1ec6",
+   "parent": "cv_a_aorta_descending",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
+   "parentSha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+   "parentFaces": 23808,
+   "faceCount": 16101,
+   "method": "descending aorta divided by the horizontal plane at the lower border of the atlas T12 vertebral body",
+   "planeY": 1.071,
+   "areaCm2": 154.5
+  },
+  "cv_a_aorta_abdominal": {
+   "file": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_abdominal.json",
+   "sha256": "e3c2dda19602591dcec827c144f0b15c95e3a6c8a644cac801608b4c32eea0b9",
+   "parent": "cv_a_aorta_descending",
+   "parentFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
+   "parentSha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+   "parentFaces": 23808,
+   "faceCount": 7707,
+   "method": "descending aorta divided by the horizontal plane at the lower border of the atlas T12 vertebral body",
+   "planeY": 1.071,
+   "areaCm2": 54.2
+  }
+ }
+}

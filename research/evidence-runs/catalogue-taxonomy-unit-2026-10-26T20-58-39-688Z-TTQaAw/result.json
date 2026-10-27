@@ -1,0 +1,418 @@
+{
+  "status": "passed",
+  "tests": [
+    "Every bone and muscle record is listed once or as an alternate",
+    "Paired members share one Latin term; names differ only by finger naming style",
+    "Alternates are the same muscle (same Latin name) in other sections",
+    "Hyoid is a bone of the facial skull; sacrum belongs to the vertebral column",
+    "Mixed data groups are split by textbook group",
+    "Placeholder groups carry a visible note and no structures",
+    "Abdominal muscles follow Gray/Loyola: anterolateral and posterior walls (ABD-MUSCLES)",
+    "Bones of every catalogue leaf are coloured as one group",
+    "Side-free names"
+  ],
+  "records": 579,
+  "rows": 307,
+  "alternates": 11,
+  "namingStyle": [
+    {
+      "right": "phalanx_prox_1",
+      "left": "phalanx_prox_1_left",
+      "rightName": "Проксимальная фаланга большого пальца",
+      "leftName": "Проксимальная фаланга I пальца слева"
+    },
+    {
+      "right": "phalanx_dist_1",
+      "left": "phalanx_dist_1_left",
+      "rightName": "Дистальная фаланга большого пальца",
+      "leftName": "Дистальная фаланга I пальца слева"
+    },
+    {
+      "right": "phalanx_prox_2",
+      "left": "phalanx_prox_2_left",
+      "rightName": "Проксимальная фаланга указательного пальца",
+      "leftName": "Проксимальная фаланга II пальца слева"
+    },
+    {
+      "right": "phalanx_mid_2",
+      "left": "phalanx_mid_2_left",
+      "rightName": "Средняя фаланга указательного пальца",
+      "leftName": "Средняя фаланга II пальца слева"
+    },
+    {
+      "right": "phalanx_dist_2",
+      "left": "phalanx_dist_2_left",
+      "rightName": "Дистальная фаланга указательного пальца",
+      "leftName": "Дистальная фаланга II пальца слева"
+    },
+    {
+      "right": "phalanx_prox_3",
+      "left": "phalanx_prox_3_left",
+      "rightName": "Проксимальная фаланга среднего пальца",
+      "leftName": "Проксимальная фаланга III пальца слева"
+    },
+    {
+      "right": "phalanx_mid_3",
+      "left": "phalanx_mid_3_left",
+      "rightName": "Средняя фаланга среднего пальца",
+      "leftName": "Средняя фаланга III пальца слева"
+    },
+    {
+      "right": "phalanx_dist_3",
+      "left": "phalanx_dist_3_left",
+      "rightName": "Дистальная фаланга среднего пальца",
+      "leftName": "Дистальная фаланга III пальца слева"
+    },
+    {
+      "right": "phalanx_prox_4",
+      "left": "phalanx_prox_4_left",
+      "rightName": "Проксимальная фаланга безымянного пальца",
+      "leftName": "Проксимальная фаланга IV пальца слева"
+    },
+    {
+      "right": "phalanx_mid_4",
+      "left": "phalanx_mid_4_left",
+      "rightName": "Средняя фаланга безымянного пальца",
+      "leftName": "Средняя фаланга IV пальца слева"
+    },
+    {
+      "right": "phalanx_dist_4",
+      "left": "phalanx_dist_4_left",
+      "rightName": "Дистальная фаланга безымянного пальца",
+      "leftName": "Дистальная фаланга IV пальца слева"
+    },
+    {
+      "right": "phalanx_prox_5",
+      "left": "phalanx_prox_5_left",
+      "rightName": "Проксимальная фаланга мизинца",
+      "leftName": "Проксимальная фаланга V пальца слева"
+    },
+    {
+      "right": "phalanx_mid_5",
+      "left": "phalanx_mid_5_left",
+      "rightName": "Средняя фаланга мизинца",
+      "leftName": "Средняя фаланга V пальца слева"
+    },
+    {
+      "right": "phalanx_dist_5",
+      "left": "phalanx_dist_5_left",
+      "rightName": "Дистальная фаланга мизинца",
+      "leftName": "Дистальная фаланга V пальца слева"
+    }
+  ],
+  "regions": [
+    {
+      "id": "skull-bones",
+      "system": "bones",
+      "ru": "Кости черепа",
+      "groups": [
+        {
+          "id": "neurocranium",
+          "ru": "Мозговой череп",
+          "rows": 6,
+          "missing": null
+        },
+        {
+          "id": "viscerocranium",
+          "ru": "Лицевой череп",
+          "rows": 9,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "trunk-bones",
+      "system": "bones",
+      "ru": "Кости туловища",
+      "groups": [
+        {
+          "id": "spine",
+          "ru": "Позвоночный столб",
+          "rows": 25,
+          "missing": null
+        },
+        {
+          "id": "thoracic-cage",
+          "ru": "Грудная клетка",
+          "rows": 14,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "upper-limb-bones",
+      "system": "bones",
+      "ru": "Кости верхней конечности",
+      "groups": [
+        {
+          "id": "upper-girdle-bones",
+          "ru": "Пояс верхней конечности",
+          "rows": 2,
+          "missing": null
+        },
+        {
+          "id": "humerus",
+          "ru": "Плечевая кость",
+          "rows": 1,
+          "missing": null
+        },
+        {
+          "id": "forearm-bones",
+          "ru": "Кости предплечья",
+          "rows": 2,
+          "missing": null
+        },
+        {
+          "id": "hand-bones",
+          "ru": "Кости кисти",
+          "rows": 29,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "lower-limb-bones",
+      "system": "bones",
+      "ru": "Кости нижней конечности",
+      "groups": [
+        {
+          "id": "lower-girdle-bones",
+          "ru": "Пояс нижней конечности",
+          "rows": 1,
+          "missing": null
+        },
+        {
+          "id": "femur-patella",
+          "ru": "Бедренная кость и надколенник",
+          "rows": 2,
+          "missing": null
+        },
+        {
+          "id": "leg-bones",
+          "ru": "Кости голени",
+          "rows": 2,
+          "missing": null
+        },
+        {
+          "id": "foot-bones",
+          "ru": "Кости стопы",
+          "rows": 27,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "connective",
+      "system": "soft",
+      "ru": "Связки, сухожилия и апоневрозы",
+      "groups": [
+        {
+          "id": "connective-tissue",
+          "ru": "Связки, сухожилия, апоневрозы и перепонки",
+          "rows": 7,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "head-muscles",
+      "system": "muscles",
+      "ru": "Мышцы головы",
+      "groups": [
+        {
+          "id": "mimetic",
+          "ru": "Мимические мышцы",
+          "rows": 23,
+          "missing": null
+        },
+        {
+          "id": "mastication",
+          "ru": "Жевательные мышцы",
+          "rows": 4,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "neck-muscles",
+      "system": "muscles",
+      "ru": "Мышцы шеи",
+      "groups": [
+        {
+          "id": "neck-superficial",
+          "ru": "Поверхностные мышцы шеи",
+          "rows": 2,
+          "missing": null
+        },
+        {
+          "id": "suprahyoid",
+          "ru": "Надподъязычные мышцы",
+          "rows": 4,
+          "missing": null
+        },
+        {
+          "id": "infrahyoid",
+          "ru": "Подподъязычные мышцы",
+          "rows": 4,
+          "missing": null
+        },
+        {
+          "id": "neck-deep",
+          "ru": "Глубокие мышцы шеи",
+          "rows": 7,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "back-muscles",
+      "system": "muscles",
+      "ru": "Мышцы спины",
+      "groups": [
+        {
+          "id": "back-superficial",
+          "ru": "Поверхностные мышцы спины",
+          "rows": 7,
+          "missing": null
+        },
+        {
+          "id": "back-deep",
+          "ru": "Глубокие мышцы спины",
+          "rows": 17,
+          "missing": "Пока нет моделей: поясничные межостистые мышцы, шейные и поясничные межпоперечные мышцы."
+        },
+        {
+          "id": "suboccipital",
+          "ru": "Подзатылочные мышцы",
+          "rows": 4,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "chest-muscles",
+      "system": "muscles",
+      "ru": "Мышцы груди",
+      "groups": [
+        {
+          "id": "chest-limb",
+          "ru": "Мышцы груди, связанные с верхней конечностью",
+          "rows": 5,
+          "missing": null
+        },
+        {
+          "id": "chest-own",
+          "ru": "Собственные мышцы груди",
+          "rows": 6,
+          "missing": null
+        },
+        {
+          "id": "diaphragm",
+          "ru": "Диафрагма",
+          "rows": 1,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "abdomen-muscles",
+      "system": "muscles",
+      "ru": "Мышцы живота",
+      "groups": [
+        {
+          "id": "abdomen-anterolateral",
+          "ru": "Мышцы переднебоковой стенки живота",
+          "rows": 5,
+          "missing": "Пока нет модели: мышца, поднимающая яичко, — она описана в карточке внутренней косой мышцы."
+        },
+        {
+          "id": "abdomen-posterior",
+          "ru": "Мышцы задней стенки живота",
+          "rows": 1,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "perineum-muscles",
+      "system": "muscles",
+      "ru": "Мышцы промежности",
+      "groups": [
+        {
+          "id": "pelvic-diaphragm",
+          "ru": "Диафрагма таза",
+          "rows": 3,
+          "missing": null
+        },
+        {
+          "id": "perineum-other",
+          "ru": "Другие мышцы промежности",
+          "rows": 0,
+          "missing": "Пока нет моделей: поверхностная и глубокая поперечные мышцы промежности, луковично-губчатая и седалищно-пещеристая мышцы, наружный сфинктер мочеиспускательного канала, наружный сфинктер заднего прохода."
+        }
+      ]
+    },
+    {
+      "id": "upper-limb-muscles",
+      "system": "muscles",
+      "ru": "Мышцы верхней конечности",
+      "groups": [
+        {
+          "id": "upper-girdle-muscles",
+          "ru": "Мышцы пояса верхней конечности",
+          "rows": 6,
+          "missing": null
+        },
+        {
+          "id": "arm-muscles",
+          "ru": "Мышцы плеча",
+          "rows": 5,
+          "missing": null
+        },
+        {
+          "id": "forearm-muscles",
+          "ru": "Мышцы предплечья",
+          "rows": 19,
+          "missing": null
+        },
+        {
+          "id": "hand-muscles",
+          "ru": "Мышцы кисти",
+          "rows": 11,
+          "missing": null
+        }
+      ]
+    },
+    {
+      "id": "lower-limb-muscles",
+      "system": "muscles",
+      "ru": "Мышцы нижней конечности",
+      "groups": [
+        {
+          "id": "pelvis-muscles",
+          "ru": "Мышцы таза",
+          "rows": 11,
+          "missing": null
+        },
+        {
+          "id": "thigh-muscles",
+          "ru": "Мышцы бедра",
+          "rows": 10,
+          "missing": null
+        },
+        {
+          "id": "shank-muscles",
+          "ru": "Мышцы голени",
+          "rows": 12,
+          "missing": null
+        },
+        {
+          "id": "foot-muscles",
+          "ru": "Мышцы стопы",
+          "rows": 13,
+          "missing": null
+        }
+      ]
+    }
+  ]
+}

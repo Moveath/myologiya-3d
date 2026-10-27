@@ -1,0 +1,40 @@
+{
+  "id": "cv_papillary_lv_unspecified",
+  "source": {
+    "fma": "FMA9352nsn",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA9352nsn.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA9352nsn.obj",
+    "bytes": 256750,
+    "sha256": "f0318480ca79ee1370fa13dd3a1b5f3223abec546d9c29eec663594652ffaf8f",
+    "crc": 282947201,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_lv_unspecified.glb",
+  "sha256": "a76abac5cbf1b5170075b881186f3e90383297ff8c2d5543eb940726434e0d56",
+  "triangles": 4084,
+  "vertices": 2046,
+  "boundsM": [
+    [
+      0.031485,
+      1.20184,
+      0.124487
+    ],
+    [
+      0.0566502,
+      1.23493,
+      0.160084
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 5.766545854315502e-06,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

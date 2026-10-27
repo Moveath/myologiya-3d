@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-27",
+  "change": "LOG-20261027-01: abdominal muscles (12 BodyParts3D models and cards in the trunk section, catalogue groups, modelNote on muscle cards, section renamed)",
+  "results": [
+    {
+      "test": "verify-catalogue-taxonomy",
+      "exit": 0
+    },
+    {
+      "test": "verify-catalogue-ui",
+      "exit": 0
+    },
+    {
+      "test": "verify-thorax",
+      "exit": 0
+    },
+    {
+      "test": "verify-thorax-data",
+      "exit": 0
+    },
+    {
+      "test": "verify-thorax-performance",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas",
+      "exit": 0
+    },
+    {
+      "test": "verify-navigation",
+      "exit": 0
+    },
+    {
+      "test": "verify-mobile-layout",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-touch",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-runtime",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-performance",
+      "exit": 0
+    },
+    {
+      "test": "verify-cardiovascular-ui",
+      "exit": 0
+    },
+    {
+      "test": "verify-system-coverage",
+      "exit": 0
+    },
+    {
+      "test": "verify-neck",
+      "exit": 0
+    },
+    {
+      "test": "verify-free-camera",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-soft-tissues",
+      "exit": 0
+    },
+    {
+      "test": "verify-approximate-landmarks",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-limb-muscles",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-limb-landmarks",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-baseline",
+      "exit": 0
+    },
+    {
+      "test": "verify-context-bone-models",
+      "exit": 0
+    },
+    {
+      "test": "verify-mesh-normals",
+      "exit": 0
+    },
+    {
+      "test": "verify-vhp-sesamoids",
+      "exit": 0
+    },
+    {
+      "test": "verify-side-isolation",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-systems",
+      "exit": 0
+    },
+    {
+      "test": "verify-shared-landmarks",
+      "exit": 0
+    },
+    {
+      "test": "verify-cardiovascular",
+      "exit": 0
+    },
+    {
+      "test": "verify_ta98",
+      "exit": 0
+    },
+    {
+      "test": "verify_thorax_positions",
+      "exit": 0
+    }
+  ],
+  "passedFirstRun": [
+    "verify-catalogue-taxonomy",
+    "verify-catalogue-ui",
+    "verify-thorax",
+    "verify-thorax-data",
+    "verify-thorax-performance",
+    "verify-atlas",
+    "verify-navigation",
+    "verify-mobile-layout",
+    "verify-atlas-touch",
+    "verify-atlas-runtime",
+    "verify-atlas-performance",
+    "verify-cardiovascular-ui",
+    "verify-system-coverage",
+    "verify-neck",
+    "verify-free-camera",
+    "verify-left-soft-tissues",
+    "verify-approximate-landmarks",
+    "verify-left-limb-muscles",
+    "verify-left-limb-landmarks",
+    "verify-left-baseline",
+    "verify-context-bone-models",
+    "verify-mesh-normals",
+    "verify-vhp-sesamoids",
+    "verify-side-isolation",
+    "verify-atlas-systems",
+    "verify-shared-landmarks",
+    "verify-cardiovascular",
+    "verify_ta98",
+    "verify_thorax_positions"
+  ],
+  "failed": [],
+  "rewrittenTrackedReports": [
+    "verify/performance-thorax.json",
+    "verify/ui-atlas-performance-report.json",
+    "verify/ui-atlas-runtime-report.json",
+    "verify/ui-atlas-touch-report.json",
+    "verify/ui-neck-report.json"
+  ],
+  "updatedExpectations": {
+    "verify-catalogue-taxonomy": "Abdomen placeholder removed from the empty-group list; new test of the two abdominal groups.",
+    "verify-catalogue-ui": "No placeholder tile; abdomen groups 5 + 1 with the cremaster gap; 307 rows (label text corrected afterwards from 573 to 579 records, as counted by the taxonomy unit test).",
+    "verify-thorax": "The abdomen subsection added to the subsection walk."
+  },
+  "note": "Chromium headless shell 1228 + SwiftShader; not a physical phone. Tracked verify/*.json rewritten by tests were copied here and restored with git checkout."
+}

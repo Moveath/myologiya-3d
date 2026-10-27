@@ -46,7 +46,8 @@ try {
     await page.waitForFunction(() => window.__ready === true, null, {timeout: 60000});
 
     const tiles = await page.locator('#homeCatalogue [data-catalogue]').evaluateAll(xs => xs.map(x => [x.dataset.catalogue, x.classList.contains('soon')]));
-    check(tiles.length === 13 && tiles.filter(([, soon]) => soon).map(([id]) => id).join() === 'abdomen-muscles', 'Home shows 13 textbook regions; only the abdomen is a placeholder');
+    // ABD-MUSCLES (LOG-20261027-01): the abdomen tile has models now, so no textbook region is a placeholder.
+    check(tiles.length === 13 && !tiles.some(([, soon]) => soon), 'Home shows 13 textbook regions, none of them a placeholder');
     await page.locator('#homeCatalogue').scrollIntoViewIfNeeded();
     await page.screenshot({path: path.join(run.dir, `${width}-${theme}-home-catalogue.png`)});
     await page.locator('[data-catalogue="upper-limb-bones"]').click();
@@ -91,10 +92,10 @@ try {
     const boneIds = await ids();
     check(boneIds.length > 0 && await page.evaluate(xs => xs.every(id => !!ATLAS.bones[id]), boneIds), 'Bones filter lists only bones');
     await page.locator('#q').fill(''); await listType('muscles');
-    check((await page.locator('[data-group="abdomen"] .missing').textContent()).includes('наружная и внутренняя косые') && (await page.locator('[data-group="abdomen"] summary small').textContent()) === 'пока нет моделей', 'Abdomen placeholder names the missing muscles');
+    check((await page.locator('[data-group="abdomen-anterolateral"] .missing').textContent()).includes('поднимающая яичко') && (await page.locator('[data-group="abdomen-anterolateral"] summary small').textContent()) === '5' && (await page.locator('[data-group="abdomen-posterior"] summary small').textContent()) === '1', 'Abdomen groups list 5 + 1 muscles and name the cremaster gap');
     check(await page.locator('[data-group="perineum-other"] .missing').count() === 1 && await page.locator('[data-group="back-deep"] .missing').count() === 1, 'Perineum and back placeholders are shown');
     await listType('all');
-    check(await page.locator('#dlist .item-row').count() === 301, 'Browsing all lists 301 rows for 561 bone and muscle records');
+    check(await page.locator('#dlist .item-row').count() === 307, 'Browsing all lists 307 rows for 579 bone and muscle records');
     await page.locator('#q').fill('ключица');
     check(await page.locator('#dlist .item-row').count() === 1, 'Search returns one row for a paired bone');
     await page.locator('#q').fill(''); await page.locator('#bCloseList').click();

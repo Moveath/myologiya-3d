@@ -8,8 +8,8 @@ import path from 'node:path';
 import vm from 'node:vm';
 
 const FILES = ['data', 'data-leg', 'data-head', 'data-neck', 'data-thorax', 'data-context-bones', 'data-muscle-recovery',
-  'data-neck-recovery', 'data-left-limb-muscles', 'pins', 'pins-leg', 'pins-head', 'pins-head-extra', 'pins-neck',
-  'pins-thorax', 'pins-context-bones', 'pins-shared', 'pins-left-transfer'];
+  'data-neck-recovery', 'data-left-limb-muscles', 'data-left-soft-tissues', 'data-abdomen', 'pins', 'pins-leg', 'pins-head', 'pins-head-extra', 'pins-neck',
+  'pins-thorax', 'pins-context-bones', 'pins-shared', 'pins-craniometric', 'pins-left-transfer'];
 const run = process.argv[2];
 const ctx = {window: {}};
 ctx.window.window = ctx.window;

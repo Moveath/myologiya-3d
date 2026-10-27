@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-26",
+  "change": "LOG-20261026-03 part 2: cardiovascular expansion (BodyParts3D heart parts, Z-Anatomy vessels and valve, face masks, UI fixes)",
+  "results": [
+    {
+      "test": "verify-cardiovascular-ui",
+      "exit": 0
+    },
+    {
+      "test": "verify-system-coverage",
+      "exit": 1,
+      "classification": "Data-snapshot expectations of the first integration (arm 16/0, leg 30/12, trunk 33/26) changed deliberately by LOG-20261026-03; expectations updated with a comment and the test passes: verify-system-coverage-rerun.log."
+    },
+    {
+      "test": "verify-catalogue-taxonomy",
+      "exit": 0
+    },
+    {
+      "test": "verify-catalogue-ui",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas",
+      "exit": 0
+    },
+    {
+      "test": "verify-navigation",
+      "exit": 0
+    },
+    {
+      "test": "verify-mobile-layout",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-touch",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-runtime",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-performance",
+      "exit": 1,
+      "classification": "Known timing flake of the \"covered atlas paused\" frame-count check (44 vs 46 frames) under back-to-back load, seen before in LOG-20261026-01; standalone reruns: verify-atlas-performance-rerun*.log."
+    },
+    {
+      "test": "verify-thorax",
+      "exit": 0
+    },
+    {
+      "test": "verify-neck",
+      "exit": 0
+    },
+    {
+      "test": "verify-free-camera",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-soft-tissues",
+      "exit": 0
+    },
+    {
+      "test": "verify-approximate-landmarks",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-limb-muscles",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-limb-landmarks",
+      "exit": 0
+    },
+    {
+      "test": "verify-left-baseline",
+      "exit": 0
+    },
+    {
+      "test": "verify-context-bone-models",
+      "exit": 0
+    },
+    {
+      "test": "verify-mesh-normals",
+      "exit": 0
+    },
+    {
+      "test": "verify-vhp-sesamoids",
+      "exit": 0
+    },
+    {
+      "test": "verify-side-isolation",
+      "exit": 0
+    },
+    {
+      "test": "verify-atlas-systems",
+      "exit": 0
+    },
+    {
+      "test": "verify-shared-landmarks",
+      "exit": 0
+    }
+  ],
+  "passedFirstRun": [
+    "verify-cardiovascular-ui",
+    "verify-catalogue-taxonomy",
+    "verify-catalogue-ui",
+    "verify-atlas",
+    "verify-navigation",
+    "verify-mobile-layout",
+    "verify-atlas-touch",
+    "verify-atlas-runtime",
+    "verify-thorax",
+    "verify-neck",
+    "verify-free-camera",
+    "verify-left-soft-tissues",
+    "verify-approximate-landmarks",
+    "verify-left-limb-muscles",
+    "verify-left-limb-landmarks",
+    "verify-left-baseline",
+    "verify-context-bone-models",
+    "verify-mesh-normals",
+    "verify-vhp-sesamoids",
+    "verify-side-isolation",
+    "verify-atlas-systems",
+    "verify-shared-landmarks"
+  ],
+  "rewrittenTrackedReports": [
+    "verify/ui-atlas-performance-report.json",
+    "verify/ui-atlas-runtime-report.json",
+    "verify/ui-atlas-touch-report.json",
+    "verify/ui-neck-report.json"
+  ],
+  "note": "Chromium headless shell 1228 + SwiftShader; not a physical phone. Tracked verify/*.json rewritten by tests were copied here and restored with git checkout."
+}

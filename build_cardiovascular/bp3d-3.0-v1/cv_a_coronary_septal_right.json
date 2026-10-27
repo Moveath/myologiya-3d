@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_coronary_septal_right",
+  "source": {
+    "fma": "FMA71669",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA71669.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA71669.obj",
+    "bytes": 56483,
+    "sha256": "3f5e358eb07333e90c69f55982e075546bf97dd28dc60a4e12dd5dc3438d8309",
+    "crc": 847941868,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_septal_right.glb",
+  "sha256": "57b4eeb1162a2cdfa3dc42b2b7f7af1d2c21c4c10b3f93b58a573069348911c8",
+  "triangles": 754,
+  "vertices": 381,
+  "boundsM": [
+    [
+      0.009282299999999999,
+      1.1890699999999998,
+      0.11865600000000001
+    ],
+    [
+      0.0300045,
+      1.2098900000000001,
+      0.131823
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 6.293079918933261e-08,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

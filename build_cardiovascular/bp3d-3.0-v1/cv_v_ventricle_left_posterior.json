@@ -1,0 +1,40 @@
+{
+  "id": "cv_v_ventricle_left_posterior",
+  "source": {
+    "fma": "FMA76751",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA76751.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA76751.obj",
+    "bytes": 353364,
+    "sha256": "13b48da12a2159fa62c3060413dbe5348320a6b8d1069f7a676512debace64cd",
+    "crc": 2116976166,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_ventricle_left_posterior.glb",
+  "sha256": "c0c5998ab9f4fb02ff9d4d2937276755a04fb42d3c1f19e54943922cbef8bde2",
+  "triangles": 4318,
+  "vertices": 2163,
+  "boundsM": [
+    [
+      0.0161395,
+      1.18508,
+      0.0827884
+    ],
+    [
+      0.0774551,
+      1.2274,
+      0.144317
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 3.1501083880158125e-07,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

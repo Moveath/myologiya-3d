@@ -41,7 +41,7 @@ try{
     assert.equal(counts.muscles,43);assert.equal(counts.bones,37);assert.ok(counts.terms===458);assert.ok(counts.located>0);
     assert.equal(assets.filter(u=>!u.includes('/thorax-')).length,0,'Only requested section loads');
     await page.screenshot({path:path.join(out,`${width}-${theme}-overview.png`)});
-    for(const sub of ['spine','ribs','sternum','pectoral','wall','diaphragm','back','deepback']){
+    for(const sub of ['spine','ribs','sternum','pectoral','wall','diaphragm','abdomen','back','deepback']){
       await page.evaluate(s=>window.__atlas.setSub(s),sub);
       assert.equal(await page.locator(`[data-sub="${sub}"]`).getAttribute('aria-pressed'),'true');
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);

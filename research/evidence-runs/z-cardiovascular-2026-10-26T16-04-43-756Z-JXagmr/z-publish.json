@@ -1,0 +1,1618 @@
+{
+ "rule": {
+  "maxCentrelineDepthInBoneMM": 2.0,
+  "maxGapToParentMM": 10.0,
+  "sourceDefectsKept": true
+ },
+ "admitted": {
+  "cv_a_axillary_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_axillary_right.glb",
+   "sha256": "7a0defb803fbd36fef39b3e046d13ee78fd36f6f687b34cbb48678ee47e74398",
+   "zObject": "Axillary artery.r",
+   "triangles": 1152,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_a_subclavian_right» около 4.6 мм."
+   ],
+   "review": {
+    "zObject": "Axillary artery.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Scapula",
+     "ribs"
+    ],
+    "vertices": 588,
+    "triangles": 1152,
+    "centroidXmm": -105.9,
+    "diameterMM": [
+     5.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 5,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "clavicle": 3.3,
+     "scapula": 9.8,
+     "humerus": 17.5
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_subclavian_right",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 7.1,
+     "gapMM": 4.6,
+     "nearestSurfaceMM": 4.6
+    }
+   }
+  },
+  "cv_a_brachial_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_brachial_right.glb",
+   "sha256": "3fd491e2ff3ece0d9033bbcce60043596552b2c80e5a47ff856406beaa3bcd0a",
+   "zObject": "Brachial artery.r",
+   "triangles": 2880,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Brachial artery.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Scapula"
+    ],
+    "vertices": 1452,
+    "triangles": 2880,
+    "centroidXmm": -173.0,
+    "diameterMM": [
+     4.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 11,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "ulna": 10.3,
+     "radius": 12.6,
+     "humerus": 14.4
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_axillary_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.4,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_a_radial_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_radial_right.glb",
+   "sha256": "edf6404fc03440eaf20eb3753293be8d42ac46dc53548640dbc1de20462d6123",
+   "zObject": "Radial artery.r",
+   "triangles": 3168,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Radial artery.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Radius",
+     "Trapezium bone"
+    ],
+    "vertices": 1596,
+    "triangles": 3168,
+    "centroidXmm": -257.5,
+    "diameterMM": [
+     2.2,
+     4.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 12,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "radius": 0.8,
+     "trapezium": 3.5,
+     "trapezoid": 4.9
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_brachial_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.8,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_a_ulnar_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_ulnar_right.glb",
+   "sha256": "7b77a8b80020a185e2eca4d8c14789cb7458744ef868c70c72483b5be7e2a376",
+   "zObject": "Ulnar artery.r",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Ulnar artery.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Ulna",
+     "Radius"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": -225.2,
+    "diameterMM": [
+     2.5,
+     4.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "lunate": 2.4,
+     "ulna": 5.0,
+     "triquetrum": 7.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_brachial_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.8,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_v_axillary_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_axillary_right.glb",
+   "sha256": "b891783b787838066d3e695f01a234da1b4b6b8abc179de271dc6878f76d1b1a",
+   "zObject": "Axillary vein.r",
+   "triangles": 1728,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_subclavian_right» около 8.5 мм."
+   ],
+   "review": {
+    "zObject": "Axillary vein.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Scapula"
+    ],
+    "vertices": 876,
+    "triangles": 1728,
+    "centroidXmm": -128.3,
+    "diameterMM": [
+     6.0,
+     7.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 7,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "clavicle": 5.1,
+     "scapula": 13.0,
+     "humerus": 22.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_subclavian_right",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 12.0,
+     "gapMM": 8.5,
+     "nearestSurfaceMM": 9.3
+    }
+   }
+  },
+  "cv_v_cephalic_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_cephalic_right.glb",
+   "sha256": "cdd40b391b07c21aaac0cf04d84408c9e168937779e5a4a1f1c873359e03b5d6",
+   "zObject": "Cephalic vein.r",
+   "triangles": 6912,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Cephalic vein.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Radius"
+    ],
+    "vertices": 3468,
+    "triangles": 6912,
+    "centroidXmm": -221.3,
+    "diameterMM": [
+     3.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 25,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "metacarpal_2": 3.6,
+     "radius": 4.1,
+     "trapezoid": 6.3
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.1,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_v_basilic_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_basilic_right.glb",
+   "sha256": "0f6b60faabddc7260d91ba15b1a76015e4bbd2557582a8ffbe78d77b04cd05e4",
+   "zObject": "Basilic vein.r",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Basilic vein.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Ulna"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": -188.9,
+    "diameterMM": [
+     2.7,
+     6.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "triquetrum": 1.6,
+     "hamate": 4.2,
+     "ulna": 4.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.6
+    }
+   }
+  },
+  "cv_v_brachial_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_brachial_right.glb",
+   "sha256": "a2615cac051d4301d0de1443b251775a4f5bad9256e919fded3cc6886c025163",
+   "zObject": "Brachial veins.r",
+   "triangles": 2304,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_axillary_right» около 0.2 мм."
+   ],
+   "review": {
+    "zObject": "Brachial veins.r",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Radius"
+    ],
+    "vertices": 1164,
+    "triangles": 2304,
+    "centroidXmm": -188.9,
+    "diameterMM": [
+     4.0,
+     5.5
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 9,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "ulna": 8.6,
+     "radius": 8.7,
+     "humerus": 8.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.2,
+     "nearestSurfaceMM": 0.6
+    }
+   }
+  },
+  "cv_a_femoral_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_femoral_right.glb",
+   "sha256": "24be37b8fd42503c2d5ee5d17af2ac7858f1a74ac4017390c918a0784131b058",
+   "zObject": "Femoral artery.r",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Femoral artery.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Hip bone"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": -59.1,
+    "diameterMM": [
+     9.3,
+     9.3
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur": 9.5,
+     "hip_bone": 13.7,
+     "sacrum": 54.2
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_iliac_external_right",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 0.6,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.2
+    }
+   }
+  },
+  "cv_a_popliteal_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_popliteal_right.glb",
+   "sha256": "1d32cd77e973c9fd40aa66e9cb304f753f60a2a09e767831fcfcd9c9ec41e8f9",
+   "zObject": "Popliteal artery.r",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Popliteal artery.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Tibia"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": -77.6,
+    "diameterMM": [
+     6.0,
+     9.3
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "tibia": 3.7,
+     "femur": 6.8,
+     "fibula": 9.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_femoral_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 4.6,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_a_tibial_anterior_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_right.glb",
+   "sha256": "d27acba71d9a327096e83da565e351fffcd4c7d6a587e68264b4904d408b2aad",
+   "zObject": "Anterior tibial artery.r",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_a_popliteal_right» около 0.4 мм."
+   ],
+   "review": {
+    "zObject": "Anterior tibial artery.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Fibula"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": -101.6,
+    "diameterMM": [
+     3.0,
+     3.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "tibia": 1.4,
+     "fibula": 1.9,
+     "talus": 2.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_popliteal_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.9,
+     "gapMM": 0.4,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_a_tibial_posterior_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_right.glb",
+   "sha256": "6eb1e8db0f3c7a84629fea387d5acb95a04181c6ac738aec9438f198d82188c7",
+   "zObject": "Posterior tibial artery.r",
+   "triangles": 4032,
+   "kind": "vessel-curve",
+   "notes": [
+    "В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.5 мм; после переноса — 4.27 мм."
+   ],
+   "review": {
+    "zObject": "Posterior tibial artery.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Talus"
+    ],
+    "vertices": 2028,
+    "triangles": 4032,
+    "centroidXmm": -69.9,
+    "diameterMM": [
+     2.0,
+     6.0
+    ],
+    "centrelineInsideBone": 2,
+    "centrelinePoints": 15,
+    "maxDepthInBoneMM": 4.27,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "talus": 0.7,
+     "tibia": 0.9,
+     "calcaneus": 5.9
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_popliteal_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.5
+    },
+    "sourcePenetrationMM": 4.5
+   }
+  },
+  "cv_a_fibular_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_fibular_right.glb",
+   "sha256": "a05e70f4a75d70639921b6461234af9efa051f0785a5ae761dce36bbb35347e4",
+   "zObject": "Fibular artery.r",
+   "triangles": 6336,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Fibular artery.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Fibula",
+     "Tibia"
+    ],
+    "vertices": 3228,
+    "triangles": 6336,
+    "centroidXmm": -101.5,
+    "diameterMM": [
+     0.4,
+     6.0
+    ],
+    "centrelineInsideBone": 1,
+    "centrelinePoints": 27,
+    "maxDepthInBoneMM": 0.38,
+    "splineEnds": 10,
+    "nearestBonesMM": {
+     "fibula": 0.4,
+     "tibia": 3.4,
+     "calcaneus": 9.6
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_tibial_posterior_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_v_femoral_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_femoral_right.glb",
+   "sha256": "bddccd77fb577dc1b80870b10b53202dd9d67e6bf1b17aa3a4875cd4cc09fcbf",
+   "zObject": "Femoral vein.r",
+   "triangles": 4032,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Femoral vein.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Hip bone"
+    ],
+    "vertices": 2028,
+    "triangles": 4032,
+    "centroidXmm": -55.3,
+    "diameterMM": [
+     10.0,
+     10.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 15,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur": 6.7,
+     "hip_bone": 8.9,
+     "hip_bone_left": 45.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_iliac_external_right",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 2.3,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.2
+    }
+   }
+  },
+  "cv_v_popliteal_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_popliteal_right.glb",
+   "sha256": "25908b2107a21260ad48835a052dc19adf6975b880fb0cd9dfa5167d3886d646",
+   "zObject": "Popliteal vein.r",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Popliteal vein.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Tibia"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": -78.5,
+    "diameterMM": [
+     6.0,
+     10.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur": 3.7,
+     "tibia": 7.2,
+     "fibula": 15.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_femoral_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 5.0,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 1.0
+    }
+   }
+  },
+  "cv_v_saphenous_great_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_right.glb",
+   "sha256": "fcb95c92c603780dc0656ed93b1c37def00fc6fa164b9d374ea8649ee04cbbb2",
+   "zObject": "Great saphenous vein.r",
+   "triangles": 8352,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_femoral_right» около 2.5 мм."
+   ],
+   "review": {
+    "zObject": "Great saphenous vein.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Femur"
+    ],
+    "vertices": 4200,
+    "triangles": 8352,
+    "centroidXmm": -43.8,
+    "diameterMM": [
+     1.0,
+     5.0
+    ],
+    "centrelineInsideBone": 2,
+    "centrelinePoints": 31,
+    "maxDepthInBoneMM": 0.96,
+    "splineEnds": 4,
+    "nearestBonesMM": {
+     "tibia": 0.4,
+     "metatarsal_1": 1.7,
+     "cuneiform_med": 3.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_femoral_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 5.0,
+     "gapMM": 2.5,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_v_saphenous_small_right": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_right.glb",
+   "sha256": "446326137863493d9bdf8e235cafc66bfa8c95e35cc34bf30920be8aee77348e",
+   "zObject": "Small saphenous vein.r",
+   "triangles": 5760,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_popliteal_right» около 0.2 мм."
+   ],
+   "review": {
+    "zObject": "Small saphenous vein.r",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Fibula",
+     "Calcaneus"
+    ],
+    "vertices": 2892,
+    "triangles": 5760,
+    "centroidXmm": -89.2,
+    "diameterMM": [
+     2.2,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 21,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "calcaneus": 1.1,
+     "cuboid": 8.3,
+     "fibula": 11.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_popliteal_right",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.7,
+     "gapMM": 0.2,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_a_axillary_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_axillary_left.glb",
+   "sha256": "41c017dd7ea748eaf4cdb6b53f5be34a6f56ea5bc217653525b597ea14002096",
+   "zObject": "Axillary artery.l",
+   "triangles": 1152,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_a_subclavian_left» около 1.8 мм."
+   ],
+   "review": {
+    "zObject": "Axillary artery.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Scapula",
+     "ribs"
+    ],
+    "vertices": 588,
+    "triangles": 1152,
+    "centroidXmm": 104.1,
+    "diameterMM": [
+     5.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 5,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "clavicle_left": 3.4,
+     "scapula_left": 9.9,
+     "humerus_left": 17.5
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_subclavian_left",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 4.3,
+     "gapMM": 1.8,
+     "nearestSurfaceMM": 1.8
+    }
+   }
+  },
+  "cv_a_brachial_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_brachial_left.glb",
+   "sha256": "a4e8409be232f6b4cd62c187f6547007e3de42938662e940ed2382a7342684d4",
+   "zObject": "Brachial artery.l",
+   "triangles": 2880,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Brachial artery.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Scapula"
+    ],
+    "vertices": 1452,
+    "triangles": 2880,
+    "centroidXmm": 171.7,
+    "diameterMM": [
+     4.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 11,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "ulna_left": 10.4,
+     "radius_left": 12.6,
+     "humerus_left": 14.4
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_axillary_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.4,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_a_radial_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_radial_left.glb",
+   "sha256": "9c619b2a9979d7e96f060bc04ae91f2d3d52b13054e7298722183cb43af9c3a3",
+   "zObject": "Radial artery.l",
+   "triangles": 3168,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Radial artery.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Radius",
+     "Trapezium bone"
+    ],
+    "vertices": 1596,
+    "triangles": 3168,
+    "centroidXmm": 256.2,
+    "diameterMM": [
+     2.2,
+     4.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 12,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "radius_left": 0.8,
+     "trapezium_left": 3.5,
+     "trapezoid_left": 4.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_brachial_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_a_ulnar_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_ulnar_left.glb",
+   "sha256": "dd83d140852c30a1bbf91210c8c070b1fd0a59e593b7393bd95368f3efe99ed8",
+   "zObject": "Ulnar artery.l",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Ulnar artery.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Ulna",
+     "Radius"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": 223.9,
+    "diameterMM": [
+     2.5,
+     4.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "lunate_left": 2.4,
+     "ulna_left": 4.9,
+     "triquetrum_left": 7.0
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_brachial_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_v_axillary_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_axillary_left.glb",
+   "sha256": "8b98b7fd9844a35fbb4830db7e9e00356339c3805dca6c7a7003102401b2fb03",
+   "zObject": "Axillary vein.l",
+   "triangles": 1728,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_subclavian_left» около 4.2 мм."
+   ],
+   "review": {
+    "zObject": "Axillary vein.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Scapula"
+    ],
+    "vertices": 876,
+    "triangles": 1728,
+    "centroidXmm": 126.8,
+    "diameterMM": [
+     6.0,
+     7.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 7,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "clavicle_left": 4.7,
+     "scapula_left": 13.2,
+     "humerus_left": 22.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_subclavian_left",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 7.7,
+     "gapMM": 4.2,
+     "nearestSurfaceMM": 4.0
+    }
+   }
+  },
+  "cv_v_cephalic_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_cephalic_left.glb",
+   "sha256": "536dc0313ea35a50b9e3b038d740d3e5016a6f5017c83214769f464e915c3d79",
+   "zObject": "Cephalic vein.l",
+   "triangles": 6912,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Cephalic vein.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Radius"
+    ],
+    "vertices": 3468,
+    "triangles": 6912,
+    "centroidXmm": 220.0,
+    "diameterMM": [
+     3.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 25,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "metacarpal_2_left": 3.6,
+     "radius_left": 4.1,
+     "trapezoid_left": 6.3
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.3,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_v_basilic_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_basilic_left.glb",
+   "sha256": "2f5547c35b0d2e4a1f5543a4e5cc51902980e84a217b48bdeb6e8e60f8a2d798",
+   "zObject": "Basilic vein.l",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Basilic vein.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Ulna"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": 187.6,
+    "diameterMM": [
+     2.7,
+     6.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "triquetrum_left": 1.7,
+     "hamate_left": 4.5,
+     "ulna_left": 4.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.6
+    }
+   }
+  },
+  "cv_v_brachial_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_brachial_left.glb",
+   "sha256": "a2829be184435e39e64d32c62dab18feda9ea3cbeb112c1d3bddaa1593ea6708",
+   "zObject": "Brachial veins.l",
+   "triangles": 2304,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_axillary_left» около 0.2 мм."
+   ],
+   "review": {
+    "zObject": "Brachial veins.l",
+    "section": "arm",
+    "carrier": "arm",
+    "dominantCarriers": [
+     "Humerus",
+     "Radius"
+    ],
+    "vertices": 1164,
+    "triangles": 2304,
+    "centroidXmm": 187.6,
+    "diameterMM": [
+     4.0,
+     5.5
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 9,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "ulna_left": 8.6,
+     "radius_left": 8.8,
+     "humerus_left": 8.9
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_axillary_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.2,
+     "nearestSurfaceMM": 0.6
+    }
+   }
+  },
+  "cv_a_femoral_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_femoral_left.glb",
+   "sha256": "c1d78d561cc410aac39205a6f3693afcace53248f81174303a7883267daef2c7",
+   "zObject": "Femoral artery.l",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Femoral artery.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Hip bone"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": 58.4,
+    "diameterMM": [
+     9.3,
+     9.3
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur_left": 9.4,
+     "hip_bone_left": 13.9,
+     "hip_bone": 54.6
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_iliac_external_left",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 2.5,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_a_popliteal_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_popliteal_left.glb",
+   "sha256": "7d9d6e839ff39056a181de579b03daac3bd7cf0d77540ffb32e4943723aaae7e",
+   "zObject": "Popliteal artery.l",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Popliteal artery.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Tibia"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": 76.2,
+    "diameterMM": [
+     6.0,
+     9.3
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "tibia_left": 3.6,
+     "femur_left": 6.7,
+     "fibula_left": 9.6
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_femoral_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 4.6,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_a_tibial_anterior_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_left.glb",
+   "sha256": "55313cdc635079af04a6f1c6bb647e46732201e561eb5f55d314ef3413af56ca",
+   "zObject": "Anterior tibial artery.l",
+   "triangles": 4320,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_a_popliteal_left» около 0.5 мм."
+   ],
+   "review": {
+    "zObject": "Anterior tibial artery.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Fibula"
+    ],
+    "vertices": 2172,
+    "triangles": 4320,
+    "centroidXmm": 100.2,
+    "diameterMM": [
+     3.0,
+     3.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 16,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "tibia_left": 1.4,
+     "fibula_left": 2.0,
+     "talus_left": 2.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_popliteal_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.0,
+     "gapMM": 0.5,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_a_tibial_posterior_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_left.glb",
+   "sha256": "535bffdabb2482bfeab30c609cb1cf0bcdff9e7f5706c2995517bc0592d50c58",
+   "zObject": "Posterior tibial artery.l",
+   "triangles": 4032,
+   "kind": "vessel-curve",
+   "notes": [
+    "В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.51 мм; после переноса — 4.38 мм."
+   ],
+   "review": {
+    "zObject": "Posterior tibial artery.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Talus"
+    ],
+    "vertices": 2028,
+    "triangles": 4032,
+    "centroidXmm": 68.6,
+    "diameterMM": [
+     2.0,
+     6.0
+    ],
+    "centrelineInsideBone": 2,
+    "centrelinePoints": 15,
+    "maxDepthInBoneMM": 4.38,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "tibia_left": 0.6,
+     "talus_left": 0.7,
+     "calcaneus_left": 6.0
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_popliteal_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 3.0,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.5
+    },
+    "sourcePenetrationMM": 4.51
+   }
+  },
+  "cv_a_fibular_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_a_fibular_left.glb",
+   "sha256": "716d3b8df503917e0db910e8d15906983d031124e55996097a712bb6490f27dd",
+   "zObject": "Fibular artery.l",
+   "triangles": 6336,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Fibular artery.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Fibula",
+     "Tibia"
+    ],
+    "vertices": 3228,
+    "triangles": 6336,
+    "centroidXmm": 100.8,
+    "diameterMM": [
+     0.4,
+     6.0
+    ],
+    "centrelineInsideBone": 1,
+    "centrelinePoints": 27,
+    "maxDepthInBoneMM": 0.18,
+    "splineEnds": 10,
+    "nearestBonesMM": {
+     "fibula_left": 0.2,
+     "tibia_left": 3.8,
+     "calcaneus_left": 9.9
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_a_tibial_posterior_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.3
+    }
+   }
+  },
+  "cv_v_femoral_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_femoral_left.glb",
+   "sha256": "d165bf8e8285a7e0953de9f4ce81799d748dabd937ef754f98ae50a12eb5e844",
+   "zObject": "Femoral vein.l",
+   "triangles": 4032,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Femoral vein.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Hip bone"
+    ],
+    "vertices": 2028,
+    "triangles": 4032,
+    "centroidXmm": 54.6,
+    "diameterMM": [
+     10.0,
+     10.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 15,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur_left": 6.6,
+     "hip_bone_left": 8.9,
+     "hip_bone": 45.7
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_iliac_external_left",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 2.8,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_v_popliteal_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_popliteal_left.glb",
+   "sha256": "619d426019584bc22daf09b2d37e49c08ab54a499b07e2171e23e3f43d7044f0",
+   "zObject": "Popliteal vein.l",
+   "triangles": 2016,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Popliteal vein.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Femur",
+     "Tibia"
+    ],
+    "vertices": 1020,
+    "triangles": 2016,
+    "centroidXmm": 77.1,
+    "diameterMM": [
+     6.0,
+     10.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 8,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "femur_left": 3.6,
+     "tibia_left": 7.3,
+     "fibula_left": 15.9
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_femoral_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 5.0,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 1.0
+    }
+   }
+  },
+  "cv_v_saphenous_great_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_left.glb",
+   "sha256": "301b24bc80719a259a5d3a5c12c5e15b3e2b8060026b5dc4e1fa80446ade495c",
+   "zObject": "Great saphenous vein.l",
+   "triangles": 8352,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_femoral_left» около 2.5 мм."
+   ],
+   "review": {
+    "zObject": "Great saphenous vein.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Tibia",
+     "Femur"
+    ],
+    "vertices": 4200,
+    "triangles": 8352,
+    "centroidXmm": 42.8,
+    "diameterMM": [
+     1.0,
+     5.0
+    ],
+    "centrelineInsideBone": 2,
+    "centrelinePoints": 31,
+    "maxDepthInBoneMM": 1.13,
+    "splineEnds": 4,
+    "nearestBonesMM": {
+     "tibia_left": 0.4,
+     "metatarsal_1_left": 1.7,
+     "cuneiform_med_left": 3.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_femoral_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 5.0,
+     "gapMM": 2.5,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_v_saphenous_small_left": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_left.glb",
+   "sha256": "6c1f64267ce49bef8ed3cc0087a3df5aa7696aa55b6ead98dae9460cd4ccd5fe",
+   "zObject": "Small saphenous vein.l",
+   "triangles": 5760,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_popliteal_left» около 0.2 мм."
+   ],
+   "review": {
+    "zObject": "Small saphenous vein.l",
+    "section": "leg",
+    "carrier": "leg",
+    "dominantCarriers": [
+     "Fibula",
+     "Calcaneus"
+    ],
+    "vertices": 2892,
+    "triangles": 5760,
+    "centroidXmm": 88.5,
+    "diameterMM": [
+     2.2,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 21,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "calcaneus_left": 1.1,
+     "cuboid_left": 8.3,
+     "fibula_left": 11.6
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_popliteal_left",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 2.7,
+     "gapMM": 0.2,
+     "nearestSurfaceMM": 0.5
+    }
+   }
+  },
+  "cv_v_azygos": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_azygos.glb",
+   "sha256": "b7b5c287aa3eda88328f20019bffd647d841b5c5427f3e29073bf8844a7e64e3",
+   "zObject": "Azygos vein",
+   "triangles": 5472,
+   "kind": "vessel-curve",
+   "notes": [
+    "Зазор до модели «cv_v_cava_superior» около 0.9 мм."
+   ],
+   "review": {
+    "zObject": "Azygos vein",
+    "section": "trunk",
+    "carrier": "trunk",
+    "dominantCarriers": [
+     "trunk"
+    ],
+    "vertices": 2748,
+    "triangles": 5472,
+    "centroidXmm": -12.6,
+    "diameterMM": [
+     6.0,
+     6.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 20,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "thoracic_11": 2.4,
+     "thoracic_6": 3.0,
+     "thoracic_8": 3.1
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_cava_superior",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 3.9,
+     "gapMM": 0.9,
+     "nearestSurfaceMM": 0.1
+    }
+   }
+  },
+  "cv_v_hemiazygos": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_hemiazygos.glb",
+   "sha256": "660cf7c960c876f23d682a48dfa620fc9f4ef8b8ef2e5c247f64b9e634f31d12",
+   "zObject": "Hemi-azygos vein",
+   "triangles": 3456,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Hemi-azygos vein",
+    "section": "trunk",
+    "carrier": "trunk",
+    "dominantCarriers": [
+     "trunk"
+    ],
+    "vertices": 1740,
+    "triangles": 3456,
+    "centroidXmm": 12.7,
+    "diameterMM": [
+     2.4,
+     2.4
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 13,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "rib_12_left": 0.6,
+     "thoracic_11": 0.7,
+     "thoracic_10": 1.8
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_azygos",
+     "parentKind": "registered Z-Anatomy vessel",
+     "nearestEndToParentMM": 1.2,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.2
+    }
+   }
+  },
+  "cv_v_coronary_sinus": {
+   "file": "models/z-anatomy/cardiovascular/cv_v_coronary_sinus.glb",
+   "sha256": "9e00767a7c61c7c87b7e84f4bba70ed9c24c667834e00266519fb7fe6ccde2c5",
+   "zObject": "Coronary sinus",
+   "triangles": 1440,
+   "kind": "vessel-curve",
+   "notes": [],
+   "review": {
+    "zObject": "Coronary sinus",
+    "section": "trunk",
+    "carrier": "heart",
+    "dominantCarriers": [
+     "heart"
+    ],
+    "vertices": 732,
+    "triangles": 1440,
+    "centroidXmm": 13.5,
+    "diameterMM": [
+     5.0,
+     5.0
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 6,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "thoracic_8": 27.0,
+     "thoracic_9": 27.4,
+     "thoracic_7": 35.2
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_heart",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 0.9,
+     "gapMM": 0.0,
+     "nearestSurfaceMM": 0.2
+    }
+   }
+  },
+  "cv_valve_aortic": {
+   "file": "models/z-anatomy/cardiovascular/cv_valve_aortic.glb",
+   "sha256": "dffdc2d71032d9a3f2ff2aaf68aa513340113628171efe99fca2bcd14452f897",
+   "zObject": "Right coronary leaflet + Left coronary leaflet + Non-coronary leaflet",
+   "triangles": 2148,
+   "kind": "leaflet-meshes",
+   "notes": [
+    "Три полулунные заслонки Z-Anatomy, совмещённые со стенкой сердца атласа; лежат у корня восходящей аорты."
+   ],
+   "review": {
+    "cusps": [
+     "Right coronary leaflet",
+     "Left coronary leaflet",
+     "Non-coronary leaflet"
+    ],
+    "toAscendingAortaMedianMM": 1.3,
+    "toAscendingAortaMinMM": 0.02,
+    "toLeftVentricleMedianMM": 3.85,
+    "heartRegistration": {
+     "medianMM": 1.138,
+     "p95MM": 1.875
+    }
+   }
+  }
+ },
+ "excluded": {
+  "cv_v_portal": {
+   "reasons": [
+    "24.3 mm from its parent vessel cv_v_mesenteric_superior"
+   ],
+   "review": {
+    "zObject": "Hepatic portal vein",
+    "section": "trunk",
+    "carrier": "trunk",
+    "dominantCarriers": [
+     "trunk"
+    ],
+    "vertices": 300,
+    "triangles": 576,
+    "centroidXmm": -7.2,
+    "diameterMM": [
+     5.5,
+     5.5
+    ],
+    "centrelineInsideBone": 0,
+    "centrelinePoints": 3,
+    "maxDepthInBoneMM": 0.0,
+    "splineEnds": 2,
+    "nearestBonesMM": {
+     "thoracic_12": 29.0,
+     "thoracic_11": 38.9,
+     "thoracic_10": 47.1
+    },
+    "sideOK": true,
+    "continuity": {
+     "parent": "cv_v_mesenteric_superior",
+     "parentKind": "atlas BodyParts3D model",
+     "nearestEndToParentMM": 27.0,
+     "gapMM": 24.3,
+     "nearestSurfaceMM": 27.0
+    }
+   }
+  }
+ }
+}

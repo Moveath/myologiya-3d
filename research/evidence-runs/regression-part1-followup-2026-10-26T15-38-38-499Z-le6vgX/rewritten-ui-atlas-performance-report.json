@@ -1,0 +1,285 @@
+{
+  "status": "passed",
+  "method": "Software Chromium regression checks; no physical-device FPS claim.",
+  "cases": [
+    {
+      "name": "whole-skull zoom",
+      "movingRatios": [
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25
+      ],
+      "settled": {
+        "frames": 17,
+        "ratio": 3,
+        "distance": 0.9992367991779679,
+        "triangles": 254752,
+        "models": [
+          "head"
+        ],
+        "pins": 0
+      }
+    },
+    {
+      "name": "temporal ray and clipping equivalence",
+      "rays": [
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0.5,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0,
+          "hits": 3
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0.5,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": -0.5,
+          "hits": 1
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0,
+          "hits": 4
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0.5,
+          "hits": 2
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": 0,
+          "hits": 4
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": 0,
+          "hits": 6
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": -0.5,
+          "hits": 2
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": 0,
+          "hits": 8
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": 0.5,
+          "hits": 0
+        }
+      ],
+      "unchangedBuffers": 306
+    },
+    {
+      "name": "sphenoid ray and clipping equivalence",
+      "rays": [
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": -0.5,
+          "hits": 1
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0,
+          "hits": 3
+        },
+        {
+          "clip": false,
+          "x": -0.5,
+          "y": 0.5,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0,
+          "hits": 5
+        },
+        {
+          "clip": false,
+          "x": 0,
+          "y": 0.5,
+          "hits": 2
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": -0.5,
+          "hits": 1
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0,
+          "hits": 5
+        },
+        {
+          "clip": false,
+          "x": 0.5,
+          "y": 0.5,
+          "hits": 3
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": -0.5,
+          "hits": 2
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": 0,
+          "hits": 6
+        },
+        {
+          "clip": true,
+          "x": -0.5,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": -0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": 0,
+          "hits": 10
+        },
+        {
+          "clip": true,
+          "x": 0,
+          "y": 0.5,
+          "hits": 0
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": -0.5,
+          "hits": 2
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": 0,
+          "hits": 10
+        },
+        {
+          "clip": true,
+          "x": 0.5,
+          "y": 0.5,
+          "hits": 0
+        }
+      ]
+    },
+    {
+      "name": "covered atlas paused",
+      "frames": 48
+    },
+    {
+      "name": "detail zoom",
+      "movingRatios": [
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25
+      ],
+      "settled": {
+        "frames": 13,
+        "ratio": 3,
+        "triangles": 112343,
+        "bvh": 30
+      },
+      "unchangedBuffers": 90
+    },
+    {
+      "name": "education has no renderer or model downloads",
+      "canvasCount": 0
+    }
+  ],
+  "errors": []
+}

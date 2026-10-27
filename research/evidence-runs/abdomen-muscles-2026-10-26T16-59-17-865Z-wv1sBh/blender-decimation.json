@@ -1,0 +1,150 @@
+{
+ "blender": "5.2.2 LTS",
+ "method": "STL import (Y forward, Z up, scale 1) -> exact weld 1e-4 mm -> Decimate COLLAPSE (triangulate) to the target face count of decimation-targets.json",
+ "rows": [
+  {
+   "fma": "FMA13377",
+   "id": "abdomen_rectus_abdominis_right",
+   "part": "",
+   "sourceTriangles": 191206,
+   "weldedFaces": 191203,
+   "target": 14000,
+   "ratio": 0.07322061061859131,
+   "triangles": 14000,
+   "vertices": 7010,
+   "output": "build_abdomen/decimated/FMA13377.npz"
+  },
+  {
+   "fma": "FMA13378",
+   "id": "abdomen_rectus_abdominis_left",
+   "part": "",
+   "sourceTriangles": 188862,
+   "weldedFaces": 188861,
+   "target": 14000,
+   "ratio": 0.07412859052419662,
+   "triangles": 14000,
+   "vertices": 7010,
+   "output": "build_abdomen/decimated/FMA13378.npz"
+  },
+  {
+   "fma": "FMA22346",
+   "id": "abdomen_pyramidalis_right",
+   "part": "",
+   "sourceTriangles": 11214,
+   "weldedFaces": 11208,
+   "target": 1500,
+   "ratio": 0.13383297622203827,
+   "triangles": 1500,
+   "vertices": 734,
+   "output": "build_abdomen/decimated/FMA22346.npz"
+  },
+  {
+   "fma": "FMA22347",
+   "id": "abdomen_pyramidalis_left",
+   "part": "",
+   "sourceTriangles": 11044,
+   "weldedFaces": 11040,
+   "target": 1500,
+   "ratio": 0.135869562625885,
+   "triangles": 1500,
+   "vertices": 744,
+   "output": "build_abdomen/decimated/FMA22347.npz"
+  },
+  {
+   "fma": "FMA13336",
+   "id": "abdomen_obliquus_externus_abdominis_right",
+   "part": "",
+   "sourceTriangles": 549294,
+   "weldedFaces": 549290,
+   "target": 14000,
+   "ratio": 0.025487447157502174,
+   "triangles": 14000,
+   "vertices": 7058,
+   "output": "build_abdomen/decimated/FMA13336.npz"
+  },
+  {
+   "fma": "FMA13337",
+   "id": "abdomen_obliquus_externus_abdominis_left",
+   "part": "",
+   "sourceTriangles": 546370,
+   "weldedFaces": 546360,
+   "target": 14000,
+   "ratio": 0.02562412992119789,
+   "triangles": 14000,
+   "vertices": 7062,
+   "output": "build_abdomen/decimated/FMA13337.npz"
+  },
+  {
+   "fma": "FMA13892",
+   "id": "abdomen_obliquus_internus_abdominis_right",
+   "part": "",
+   "sourceTriangles": 266412,
+   "weldedFaces": 266411,
+   "target": 14000,
+   "ratio": 0.052550382912158966,
+   "triangles": 14000,
+   "vertices": 6914,
+   "output": "build_abdomen/decimated/FMA13892.npz"
+  },
+  {
+   "fma": "FMA13893",
+   "id": "abdomen_obliquus_internus_abdominis_left",
+   "part": "",
+   "sourceTriangles": 264182,
+   "weldedFaces": 264181,
+   "target": 14000,
+   "ratio": 0.05299397185444832,
+   "triangles": 14000,
+   "vertices": 6960,
+   "output": "build_abdomen/decimated/FMA13893.npz"
+  },
+  {
+   "fma": "FMA22344",
+   "id": "abdomen_transversus_abdominis_right",
+   "part": "",
+   "sourceTriangles": 313270,
+   "weldedFaces": 313267,
+   "target": 14000,
+   "ratio": 0.04469031095504761,
+   "triangles": 14000,
+   "vertices": 7000,
+   "output": "build_abdomen/decimated/FMA22344.npz"
+  },
+  {
+   "fma": "FMA22345",
+   "id": "abdomen_transversus_abdominis_left",
+   "part": "",
+   "sourceTriangles": 312862,
+   "weldedFaces": 312856,
+   "target": 14000,
+   "ratio": 0.04474902153015137,
+   "triangles": 14000,
+   "vertices": 7038,
+   "output": "build_abdomen/decimated/FMA22345.npz"
+  },
+  {
+   "fma": "FMA22348",
+   "id": "abdomen_quadratus_lumborum_right",
+   "part": "",
+   "sourceTriangles": 25896,
+   "weldedFaces": 25892,
+   "target": 3366,
+   "ratio": 0.13000154495239258,
+   "triangles": 3366,
+   "vertices": 1693,
+   "output": "build_abdomen/decimated/FMA22348.npz"
+  },
+  {
+   "fma": "FMA22349",
+   "id": "abdomen_quadratus_lumborum_left",
+   "part": "",
+   "sourceTriangles": 25602,
+   "weldedFaces": 25596,
+   "target": 3328,
+   "ratio": 0.13002032041549683,
+   "triangles": 3328,
+   "vertices": 1676,
+   "output": "build_abdomen/decimated/FMA22349.npz"
+  }
+ ]
+}

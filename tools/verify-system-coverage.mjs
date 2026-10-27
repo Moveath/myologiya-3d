@@ -9,7 +9,9 @@ for(const name of ['data','data-leg','data-head','data-neck','data-thorax','data
   vm.runInContext(await fs.readFile('site/'+name+'.js','utf8'),c);
 const A=c.window.ATLAS,groups=Object.fromEntries(A.structureGroups.map(g=>[g.id,g]));
 const systems={arteries:true,veins:true},regions={};
-for(const [sec,cards,models]of [['arm',16,0],['neck',8,8],['leg',30,12],['trunk',33,26]]){
+// LOG-20261026-03: limb vessels, azygos system, aortic parts and the coronary sinus gained models; the trunk keeps
+// two vessel cards without geometry (the aggregate aorta and the portal vein). Earlier: arm 16/0, leg 30/12, trunk 33/26.
+for(const [sec,cards,models]of [['arm',16,16],['neck',8,8],['leg',30,30],['trunk',43,41]]){
   const result=systemCoverage(A.structures,groups,sec,'both',systems);
   check(result.ids.length===cards,sec+' actual cards');check(result.models.length===models,sec+' admitted models');
   check(result.missing===cards-models,sec+' missing geometry');regions[sec]={cards,models};
@@ -19,7 +21,8 @@ check(systemCoverage(A.structures,groups,'neck','left',systems).models.length===
 check(systemCoverage(A.structures,groups,'arm','both',{}).ids.length===0,'disabled systems do not report missing geometry');
 check(systemCoverage(A.structures,groups,'arm','both',{heart:true}).ids.length===0,'heart not invented in arm');
 const leftHeart=systemCoverage(A.structures,groups,'trunk','left',{heart:true}).models;
-check(leftHeart.length===3&&leftHeart.includes('cv_heart')&&!leftHeart.includes('cv_valve_tricuspid'),'heart side filter retains unseparated models and excludes the right valve');
+check(leftHeart.length===8&&leftHeart.includes('cv_heart')&&leftHeart.includes('cv_ventricle_left')&&!leftHeart.includes('cv_valve_tricuspid')&&!leftHeart.includes('cv_ventricle_right')
+  &&leftHeart.every(id=>['left','unseparated'].includes(A.structures[id].side)),'heart side filter retains unseparated and left models and excludes right ones');
 const html=await fs.readFile('site/index.html','utf8');
 const script=html.match(/<script type="module"[^>]*>([\s\S]*?)<\/script>/)[1];
 new vm.Script(script.replace(/^import .*;$/gm,''));check(true,'main module syntax');

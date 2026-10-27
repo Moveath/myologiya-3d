@@ -1,0 +1,663 @@
+{
+  "status": "passed",
+  "mode": "production",
+  "checks": 2814,
+  "models": [
+    {
+      "id": "cv_a_aorta_arch",
+      "kind": "bodyparts3d",
+      "triangles": 3282,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_aorta_ascending",
+      "kind": "bodyparts3d",
+      "triangles": 2156,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_aorta_descending",
+      "kind": "bodyparts3d",
+      "triangles": 23808,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_brachiocephalic",
+      "kind": "bodyparts3d",
+      "triangles": 1210,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_carotid_common_left",
+      "kind": "bodyparts3d",
+      "triangles": 698,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_carotid_common_right",
+      "kind": "bodyparts3d",
+      "triangles": 4424,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_celiac",
+      "kind": "bodyparts3d",
+      "triangles": 454,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_anterior_interventricular",
+      "kind": "bodyparts3d",
+      "triangles": 9220,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_circumflex",
+      "kind": "bodyparts3d",
+      "triangles": 3542,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_left",
+      "kind": "bodyparts3d",
+      "triangles": 252,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_posterior_interventricular",
+      "kind": "bodyparts3d",
+      "triangles": 3086,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_right",
+      "kind": "bodyparts3d",
+      "triangles": 5154,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_right_marginal",
+      "kind": "bodyparts3d",
+      "triangles": 4908,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_right_posterolateral",
+      "kind": "bodyparts3d",
+      "triangles": 2246,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_septal_left",
+      "kind": "bodyparts3d",
+      "triangles": 1214,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_coronary_septal_right",
+      "kind": "bodyparts3d",
+      "triangles": 754,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_gastric_left",
+      "kind": "bodyparts3d",
+      "triangles": 232,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_hepatic_common",
+      "kind": "bodyparts3d",
+      "triangles": 808,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_common_left",
+      "kind": "bodyparts3d",
+      "triangles": 806,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_common_right",
+      "kind": "bodyparts3d",
+      "triangles": 896,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_external_left",
+      "kind": "bodyparts3d",
+      "triangles": 1288,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_external_right",
+      "kind": "bodyparts3d",
+      "triangles": 1344,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_internal_left",
+      "kind": "bodyparts3d",
+      "triangles": 500,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_iliac_internal_right",
+      "kind": "bodyparts3d",
+      "triangles": 458,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_mesenteric_inferior",
+      "kind": "bodyparts3d",
+      "triangles": 602,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_mesenteric_superior",
+      "kind": "bodyparts3d",
+      "triangles": 350,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_pulmonary_arteries",
+      "kind": "bodyparts3d",
+      "triangles": 116948,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_renal_left",
+      "kind": "bodyparts3d",
+      "triangles": 1308,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_renal_right",
+      "kind": "bodyparts3d",
+      "triangles": 1754,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_splenic",
+      "kind": "bodyparts3d",
+      "triangles": 3326,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_subclavian_left",
+      "kind": "bodyparts3d",
+      "triangles": 3234,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_subclavian_right",
+      "kind": "bodyparts3d",
+      "triangles": 2260,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_heart",
+      "kind": "bodyparts3d",
+      "triangles": 331592,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_papillary_lv_posterior",
+      "kind": "bodyparts3d",
+      "triangles": 3902,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_papillary_lv_unspecified",
+      "kind": "bodyparts3d",
+      "triangles": 4084,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_papillary_rv_anterior",
+      "kind": "bodyparts3d",
+      "triangles": 3860,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_papillary_rv_posterior",
+      "kind": "bodyparts3d",
+      "triangles": 2730,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_papillary_rv_septal",
+      "kind": "bodyparts3d",
+      "triangles": 1898,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_valve_mitral",
+      "kind": "bodyparts3d",
+      "triangles": 19102,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_valve_pulmonary",
+      "kind": "bodyparts3d",
+      "triangles": 18202,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_valve_tricuspid",
+      "kind": "bodyparts3d",
+      "triangles": 47268,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_brachiocephalic_left",
+      "kind": "bodyparts3d",
+      "triangles": 1918,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_brachiocephalic_right",
+      "kind": "bodyparts3d",
+      "triangles": 1400,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cardiac_anterior",
+      "kind": "bodyparts3d",
+      "triangles": 5712,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cardiac_great",
+      "kind": "bodyparts3d",
+      "triangles": 7476,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cardiac_middle",
+      "kind": "bodyparts3d",
+      "triangles": 4326,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cava_inferior",
+      "kind": "bodyparts3d",
+      "triangles": 7686,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cava_superior",
+      "kind": "bodyparts3d",
+      "triangles": 1532,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_common_left",
+      "kind": "bodyparts3d",
+      "triangles": 992,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_common_right",
+      "kind": "bodyparts3d",
+      "triangles": 886,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_external_left",
+      "kind": "bodyparts3d",
+      "triangles": 1448,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_external_right",
+      "kind": "bodyparts3d",
+      "triangles": 1326,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_internal_left",
+      "kind": "bodyparts3d",
+      "triangles": 478,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_iliac_internal_right",
+      "kind": "bodyparts3d",
+      "triangles": 530,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_jugular_internal_left",
+      "kind": "bodyparts3d",
+      "triangles": 720,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_jugular_internal_right",
+      "kind": "bodyparts3d",
+      "triangles": 580,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_mesenteric_superior",
+      "kind": "bodyparts3d",
+      "triangles": 202,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_pulmonary_veins",
+      "kind": "bodyparts3d",
+      "triangles": 72548,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_renal_left",
+      "kind": "bodyparts3d",
+      "triangles": 574,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_renal_right",
+      "kind": "bodyparts3d",
+      "triangles": 1538,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_splenic",
+      "kind": "bodyparts3d",
+      "triangles": 1352,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_subclavian_left",
+      "kind": "bodyparts3d",
+      "triangles": 1112,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_subclavian_right",
+      "kind": "bodyparts3d",
+      "triangles": 946,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_ventricle_left_posterior",
+      "kind": "bodyparts3d",
+      "triangles": 4318,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_axillary_right",
+      "kind": "z-anatomy",
+      "triangles": 1152,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_brachial_right",
+      "kind": "z-anatomy",
+      "triangles": 2880,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_radial_right",
+      "kind": "z-anatomy",
+      "triangles": 3168,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_ulnar_right",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_axillary_right",
+      "kind": "z-anatomy",
+      "triangles": 1728,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cephalic_right",
+      "kind": "z-anatomy",
+      "triangles": 6912,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_basilic_right",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_brachial_right",
+      "kind": "z-anatomy",
+      "triangles": 2304,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_femoral_right",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_popliteal_right",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_tibial_anterior_right",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_tibial_posterior_right",
+      "kind": "z-anatomy",
+      "triangles": 4032,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_fibular_right",
+      "kind": "z-anatomy",
+      "triangles": 6336,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_femoral_right",
+      "kind": "z-anatomy",
+      "triangles": 4032,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_popliteal_right",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_saphenous_great_right",
+      "kind": "z-anatomy",
+      "triangles": 8352,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_saphenous_small_right",
+      "kind": "z-anatomy",
+      "triangles": 5760,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_axillary_left",
+      "kind": "z-anatomy",
+      "triangles": 1152,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_brachial_left",
+      "kind": "z-anatomy",
+      "triangles": 2880,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_radial_left",
+      "kind": "z-anatomy",
+      "triangles": 3168,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_ulnar_left",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_axillary_left",
+      "kind": "z-anatomy",
+      "triangles": 1728,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_cephalic_left",
+      "kind": "z-anatomy",
+      "triangles": 6912,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_basilic_left",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_brachial_left",
+      "kind": "z-anatomy",
+      "triangles": 2304,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_femoral_left",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_popliteal_left",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_tibial_anterior_left",
+      "kind": "z-anatomy",
+      "triangles": 4320,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_tibial_posterior_left",
+      "kind": "z-anatomy",
+      "triangles": 4032,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_a_fibular_left",
+      "kind": "z-anatomy",
+      "triangles": 6336,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_femoral_left",
+      "kind": "z-anatomy",
+      "triangles": 4032,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_popliteal_left",
+      "kind": "z-anatomy",
+      "triangles": 2016,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_saphenous_great_left",
+      "kind": "z-anatomy",
+      "triangles": 8352,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_saphenous_small_left",
+      "kind": "z-anatomy",
+      "triangles": 5760,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_azygos",
+      "kind": "z-anatomy",
+      "triangles": 5472,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_hemiazygos",
+      "kind": "z-anatomy",
+      "triangles": 3456,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_v_coronary_sinus",
+      "kind": "z-anatomy",
+      "triangles": 1440,
+      "rayHits": 3
+    },
+    {
+      "id": "cv_valve_aortic",
+      "kind": "z-anatomy",
+      "triangles": 2148,
+      "rayHits": 3
+    }
+  ],
+  "masks": [
+    {
+      "id": "cv_atrium_right",
+      "parent": "cv_heart",
+      "faces": 57398
+    },
+    {
+      "id": "cv_ventricle_right",
+      "parent": "cv_heart",
+      "faces": 77242
+    },
+    {
+      "id": "cv_atrium_left",
+      "parent": "cv_heart",
+      "faces": 33125
+    },
+    {
+      "id": "cv_ventricle_left",
+      "parent": "cv_heart",
+      "faces": 76248
+    },
+    {
+      "id": "cv_a_pulmonary_trunk",
+      "parent": "cv_a_pulmonary_arteries",
+      "faces": 2503
+    },
+    {
+      "id": "cv_a_aorta_thoracic",
+      "parent": "cv_a_aorta_descending",
+      "faces": 16101
+    },
+    {
+      "id": "cv_a_aorta_abdominal",
+      "parent": "cv_a_aorta_descending",
+      "faces": 7707
+    }
+  ],
+  "retainedOriginalFiles": 296,
+  "checkpoint": ".codex/checkpoints/cardiovascular-expansion-checkpoint-2026-10-26T16-28-24-063Z-k3BL3R/manifest.json",
+  "legacyCounts": {
+    "boneNoModel": 0,
+    "muscleNoModel": 14,
+    "partNoModel": 21
+  }
+}

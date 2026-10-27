@@ -1,0 +1,40 @@
+{
+  "id": "cv_v_cardiac_anterior",
+  "source": {
+    "fma": "FMA71567",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA71567.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA71567.obj",
+    "bytes": 375630,
+    "sha256": "3f93da3d85c9e327e01e1e8d818e8a65b6b6c7c365e30b689291cd2dc5927bf8",
+    "crc": 3989934845,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cardiac_anterior.glb",
+  "sha256": "542799d84b6da3b4051e909c9c7ed73afc42649a653a228fb75b3c8699e5a2a4",
+  "triangles": 5712,
+  "vertices": 2858,
+  "boundsM": [
+    [
+      -0.020848,
+      1.18866,
+      0.114345
+    ],
+    [
+      0.054845700000000004,
+      1.25304,
+      0.176623
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 5.824069658968389e-07,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

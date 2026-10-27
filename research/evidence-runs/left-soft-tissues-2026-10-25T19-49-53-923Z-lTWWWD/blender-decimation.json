@@ -1,0 +1,78 @@
+{
+ "blender": "5.2.2 LTS",
+ "method": "STL import (Y forward, Z up, scale 1) -> exact weld 1e-4 mm -> Decimate COLLAPSE (triangulate) to right-part face count",
+ "rows": [
+  {
+   "leftFMA": "FMA23708",
+   "left": "interosseous_membrane_left",
+   "part": "",
+   "sourceTriangles": 13808,
+   "weldedFaces": 13808,
+   "target": 2160,
+   "ratio": 0.15643104910850525,
+   "triangles": 2160,
+   "vertices": 1078,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA23708.npz"
+  },
+  {
+   "leftFMA": "FMA40121",
+   "left": "flexor_retinaculum_left",
+   "part": "",
+   "sourceTriangles": 10634,
+   "weldedFaces": 10634,
+   "target": 1596,
+   "ratio": 0.15008462965488434,
+   "triangles": 1596,
+   "vertices": 794,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA40121.npz"
+  },
+  {
+   "leftFMA": "FMA58777",
+   "left": "iliotibial_tract_left",
+   "part": "",
+   "sourceTriangles": 244884,
+   "weldedFaces": 244881,
+   "target": 6000,
+   "ratio": 0.024501696228981018,
+   "triangles": 6000,
+   "vertices": 3008,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA58777.npz"
+  },
+  {
+   "leftFMA": "FMA21965",
+   "left": "inguinal_ligament_left",
+   "part": "",
+   "sourceTriangles": 11704,
+   "weldedFaces": 11688,
+   "target": 1808,
+   "ratio": 0.15468856692314148,
+   "triangles": 1808,
+   "vertices": 946,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA21965.npz"
+  },
+  {
+   "leftFMA": "FMA44250",
+   "left": "long_plantar_ligament_left",
+   "part": "",
+   "sourceTriangles": 35210,
+   "weldedFaces": 35204,
+   "target": 5318,
+   "ratio": 0.15106238424777985,
+   "triangles": 5318,
+   "vertices": 2659,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA44250.npz"
+  },
+  {
+   "leftFMA": "FMA264844",
+   "left": "calcaneal_tendon_left",
+   "part": "",
+   "sourceTriangles": 47238,
+   "weldedFaces": 47225,
+   "target": 5998,
+   "ratio": 0.12700900435447693,
+   "triangles": 5997,
+   "vertices": 3025,
+   "output": "build_stage7/left_soft_tissues_v1/decimated/FMA264844.npz"
+  }
+ ]
+}

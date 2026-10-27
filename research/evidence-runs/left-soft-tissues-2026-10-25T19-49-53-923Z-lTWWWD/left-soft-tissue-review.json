@@ -1,0 +1,348 @@
+{
+ "contactThresholdMM": 2.5,
+ "marginMM": 0.5,
+ "rule": "technical + left side (centroid x>0, >99% vertices x>0) + shape vs reflected right (median <=3 mm, extents 0.8-1.25) + no clear one-sided bone contact (<=2.5 mm on one side and >0.5 mm farther and >2.5 mm on the other)",
+ "limitation": "Proximity and reflected-right similarity show gross identity/topography only; ligament/tendon boundaries, attachment areas and fibre directions are not accepted.",
+ "structures": [
+  {
+   "region": "arm",
+   "right": "interosseous_membrane",
+   "left": "interosseous_membrane_left",
+   "leftFMA": "FMA23708",
+   "rightFMA": "FMA23707",
+   "triangles": 2160,
+   "rightTriangles": 2160,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 0,
+   "components": 1,
+   "rightComponents": 31,
+   "centroidX": 0.23859858842329543,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 1.6231778618290442,
+   "extentRatio": [
+    0.9986,
+    1.0003,
+    0.9993
+   ],
+   "areaRatio": 1.0088,
+   "medianSymmetricDistanceMM": 1.0649832952973657,
+   "p95SymmetricDistanceMM": 1.7747125225761877,
+   "leftContacts": {
+    "radius": 0.171,
+    "ulna": 0.245
+   },
+   "rightContacts": {
+    "radius": 0.09,
+    "ulna": 0.052
+   },
+   "leftBones": [
+    "radius",
+    "ulna"
+   ],
+   "rightBones": [
+    "radius",
+    "ulna"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "arm",
+   "right": "flexor_retinaculum",
+   "left": "flexor_retinaculum_left",
+   "leftFMA": "FMA40121",
+   "rightFMA": "FMA40120",
+   "triangles": 1596,
+   "rightTriangles": 1596,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 0,
+   "components": 1,
+   "rightComponents": 5,
+   "centroidX": 0.25211957200288176,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 0.3043462288699523,
+   "extentRatio": [
+    0.9994,
+    0.9949,
+    1.0056
+   ],
+   "areaRatio": 1.0039,
+   "medianSymmetricDistanceMM": 0.7416105678950514,
+   "p95SymmetricDistanceMM": 1.3430261681246083,
+   "leftContacts": {
+    "scaphoid": 0.421,
+    "triquetrum": 3.351,
+    "pisiform": 0.266,
+    "trapezium": 0.201,
+    "hamate": 2.746,
+    "metacarpal_2": 5.465,
+    "metacarpal_5": 4.303
+   },
+   "rightContacts": {
+    "scaphoid": 0.194,
+    "triquetrum": 3.541,
+    "pisiform": 0.226,
+    "trapezium": 0.073,
+    "hamate": 2.752,
+    "metacarpal_2": 5.395,
+    "metacarpal_5": 4.298
+   },
+   "leftBones": [
+    "pisiform",
+    "scaphoid",
+    "trapezium"
+   ],
+   "rightBones": [
+    "pisiform",
+    "scaphoid",
+    "trapezium"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "iliotibial_tract",
+   "left": "iliotibial_tract_left",
+   "leftFMA": "FMA58777",
+   "rightFMA": "FMA58776",
+   "triangles": 6000,
+   "rightTriangles": 6000,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 6,
+   "components": 7,
+   "rightComponents": 18,
+   "centroidX": 0.1330903326374419,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 7.926928483455732,
+   "extentRatio": [
+    0.9972,
+    1.0003,
+    0.9996
+   ],
+   "areaRatio": 1.0057,
+   "medianSymmetricDistanceMM": 1.7353807621591024,
+   "p95SymmetricDistanceMM": 3.8167938612030308,
+   "leftContacts": {
+    "hip_bone": 0.797,
+    "femur": 0.57,
+    "patella": 0.749,
+    "tibia": 0.557,
+    "fibula": 2.292
+   },
+   "rightContacts": {
+    "hip_bone": 0.314,
+    "femur": 0.314,
+    "patella": 0.369,
+    "tibia": 0.417,
+    "fibula": 2.132
+   },
+   "leftBones": [
+    "femur",
+    "fibula",
+    "hip_bone",
+    "patella",
+    "tibia"
+   ],
+   "rightBones": [
+    "femur",
+    "fibula",
+    "hip_bone",
+    "patella",
+    "tibia"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "inguinal_ligament",
+   "left": "inguinal_ligament_left",
+   "leftFMA": "FMA21965",
+   "rightFMA": "FMA21964",
+   "triangles": 1808,
+   "rightTriangles": 1808,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 10,
+   "components": 11,
+   "rightComponents": 97,
+   "centroidX": 0.07375308960940823,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 3.640135147523331,
+   "extentRatio": [
+    0.9992,
+    1.0011,
+    0.9905
+   ],
+   "areaRatio": 1.0063,
+   "medianSymmetricDistanceMM": 1.0211832968059684,
+   "p95SymmetricDistanceMM": 1.8749858289247472,
+   "leftContacts": {
+    "hip_bone": 0.119
+   },
+   "rightContacts": {
+    "hip_bone": 0.069
+   },
+   "leftBones": [
+    "hip_bone"
+   ],
+   "rightBones": [
+    "hip_bone"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "long_plantar_ligament",
+   "left": "long_plantar_ligament_left",
+   "leftFMA": "FMA44250",
+   "rightFMA": "FMA44249",
+   "triangles": 5318,
+   "rightTriangles": 5318,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 2,
+   "components": 3,
+   "rightComponents": 40,
+   "centroidX": 0.08297337106315207,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 1.4382695168727098,
+   "extentRatio": [
+    0.9995,
+    1.0012,
+    0.9984
+   ],
+   "areaRatio": 1.0065,
+   "medianSymmetricDistanceMM": 0.8635505510411898,
+   "p95SymmetricDistanceMM": 1.4544878924211044,
+   "leftContacts": {
+    "cuneiform_med": 0.189,
+    "cuneiform_int": 3.961,
+    "calcaneus": 0.337,
+    "cuboid": 2.172,
+    "cuneiform_lat": 4.105,
+    "metatarsal_1": 0.193,
+    "metatarsal_2": 0.949,
+    "metatarsal_3": 0.415,
+    "metatarsal_4": 0.788,
+    "metatarsal_5": 0.683
+   },
+   "rightContacts": {
+    "calcaneus": 0.356,
+    "cuboid": 2.198,
+    "cuneiform_med": 0.153,
+    "cuneiform_int": 3.881,
+    "cuneiform_lat": 4.634,
+    "metatarsal_1": 0.217,
+    "metatarsal_2": 0.825,
+    "metatarsal_3": 0.336,
+    "metatarsal_4": 0.654,
+    "metatarsal_5": 0.757
+   },
+   "leftBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5"
+   ],
+   "rightBones": [
+    "calcaneus",
+    "cuboid",
+    "cuneiform_med",
+    "metatarsal_1",
+    "metatarsal_2",
+    "metatarsal_3",
+    "metatarsal_4",
+    "metatarsal_5"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  },
+  {
+   "region": "leg",
+   "right": "calcaneal_tendon",
+   "left": "calcaneal_tendon_left",
+   "leftFMA": "FMA264844",
+   "rightFMA": "FMA258847",
+   "triangles": 5997,
+   "rightTriangles": 5998,
+   "finite": true,
+   "degenerateFaces": 0,
+   "duplicateFaces": 13,
+   "components": 15,
+   "rightComponents": 38,
+   "centroidX": 0.07451070717425387,
+   "fractionPositiveX": 1.0,
+   "centroidOffsetFromMirroredRightMM": 13.84751203481949,
+   "extentRatio": [
+    1.0048,
+    1.0006,
+    0.9954
+   ],
+   "areaRatio": 1.0048,
+   "medianSymmetricDistanceMM": 1.0103360044931962,
+   "p95SymmetricDistanceMM": 2.0417728903569365,
+   "leftContacts": {
+    "calcaneus": 0.425
+   },
+   "rightContacts": {
+    "calcaneus": 0.227
+   },
+   "leftBones": [
+    "calcaneus"
+   ],
+   "rightBones": [
+    "calcaneus"
+   ],
+   "thresholdNoise": [],
+   "missingOnLeft": [],
+   "extraOnLeft": [],
+   "technical": true,
+   "side": true,
+   "shape": true,
+   "relation": true,
+   "passed": true
+  }
+ ],
+ "passed": 6,
+ "total": 6
+}

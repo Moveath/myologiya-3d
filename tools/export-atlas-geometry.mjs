@@ -1,5 +1,5 @@
 // Read-only world-space geometry of every section exactly as loadSection() assembles it:
-// main GLB + extra GLB (minus replaced context nodes) + supplemental bones + supplemental muscles.
+// main GLB + extra GLB (minus replaced context nodes) + supplemental bones and soft tissues + supplemental muscles.
 // Writes research/cache/atlas-geometry/<section>.bin (float32 vertices, uint32 faces) and an index
 // with per-node offsets and source hashes; the cache is outside git and never feeds the site.
 // Usage: node tools/export-atlas-geometry.mjs [section ...]
@@ -18,7 +18,7 @@ const ctx = {window: {}};
 ctx.window.window = ctx.window;
 vm.createContext(ctx);
 for (const f of ['data', 'data-leg', 'data-head', 'data-neck', 'data-thorax', 'data-context-bones', 'data-muscle-recovery',
-  'data-neck-recovery', 'data-left-limb-muscles'])
+  'data-neck-recovery', 'data-left-limb-muscles', 'data-left-soft-tissues', 'data-abdomen'])
   vm.runInContext(readFileSync(`site/${f}.js`, 'utf8'), ctx, {filename: f});
 const A = ctx.window.ATLAS;
 // Mirrors SECTIONS in site/index.html (file, extraFile, supplementalBones); checked against the HTML below.
@@ -54,7 +54,7 @@ for (const sec of wanted) {
     remove.forEach(o => o.removeFromParent());
     main.add(extra);
   }
-  for (const id of S.bones) main.add(await load('site/' + A.bones[id].modelFile, false));
+  for (const id of [...S.bones, ...(A.supplementalSoftTissues?.[sec] || [])]) main.add(await load('site/' + A.bones[id].modelFile, false));
   for (const id of A.supplementalMuscles?.[sec] || []) main.add(await load('site/' + A.muscles[id].modelFile, false));
   main.updateMatrixWorld(true);
   const nodes = [], vertexChunks = [], faceChunks = [];

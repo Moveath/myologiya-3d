@@ -1,0 +1,421 @@
+{
+ "rule": "surface: median distance to the heart wall <= 1 mm; wall: >=70% of vertices inside the myocardial wall; cavity: >=99% inside the heart hull and <=60% inside the wall; expected parent vessels/valves within 1 mm",
+ "limitation": "Signed distance and convex hull are coarse topographic tests on one specimen; course, branching pattern and dominance are not accepted.",
+ "rows": [
+  {
+   "id": "cv_a_coronary_right_marginal",
+   "fma": "FMA3818",
+   "triangles": 4908,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_right"
+   ],
+   "wallDistanceMedianMM": 0.45,
+   "wallDistanceMaxMM": 1.45,
+   "insideWallShare": 0.528,
+   "insideHullShare": 0.684,
+   "nearestMM": {
+    "cv_a_coronary_right": 0.19,
+    "cv_a_coronary_left": 34.7,
+    "cv_a_coronary_anterior_interventricular": 2.03,
+    "cv_a_coronary_circumflex": 23.08,
+    "cv_valve_tricuspid": 8.18,
+    "cv_valve_mitral": 36.52,
+    "cv_valve_pulmonary": 2.66
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_a_coronary_posterior_interventricular",
+   "fma": "FMA3840nsn",
+   "triangles": 3086,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_right"
+   ],
+   "wallDistanceMedianMM": 0.42,
+   "wallDistanceMaxMM": 1.12,
+   "insideWallShare": 0.5,
+   "insideHullShare": 0.88,
+   "nearestMM": {
+    "cv_a_coronary_right": 0.0,
+    "cv_a_coronary_left": 68.02,
+    "cv_a_coronary_anterior_interventricular": 0.21,
+    "cv_a_coronary_circumflex": 14.84,
+    "cv_valve_tricuspid": 11.19,
+    "cv_valve_mitral": 22.82,
+    "cv_valve_pulmonary": 61.06
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_a_coronary_right_posterolateral",
+   "fma": "FMA76994",
+   "triangles": 2246,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_right"
+   ],
+   "wallDistanceMedianMM": 0.39,
+   "wallDistanceMaxMM": 0.83,
+   "insideWallShare": 0.58,
+   "insideHullShare": 0.7,
+   "nearestMM": {
+    "cv_a_coronary_right": 0.04,
+    "cv_a_coronary_left": 66.35,
+    "cv_a_coronary_anterior_interventricular": 5.45,
+    "cv_a_coronary_circumflex": 2.9,
+    "cv_valve_tricuspid": 32.78,
+    "cv_valve_mitral": 10.31,
+    "cv_valve_pulmonary": 64.81
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_a_coronary_septal_right",
+   "fma": "FMA71669",
+   "triangles": 754,
+   "expected": "wall",
+   "expectedContacts": [],
+   "wallDistanceMedianMM": 2.19,
+   "wallDistanceMaxMM": 4.96,
+   "insideWallShare": 0.95,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 5.88,
+    "cv_a_coronary_left": 58.33,
+    "cv_a_coronary_anterior_interventricular": 33.48,
+    "cv_a_coronary_circumflex": 43.36,
+    "cv_valve_tricuspid": 6.71,
+    "cv_valve_mitral": 17.55,
+    "cv_valve_pulmonary": 49.57
+   },
+   "checks": {
+    "side": true,
+    "insideWall": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_a_coronary_septal_left",
+   "fma": "FMA71670",
+   "triangles": 1214,
+   "expected": "wall",
+   "expectedContacts": [
+    "cv_a_coronary_anterior_interventricular"
+   ],
+   "wallDistanceMedianMM": 2.24,
+   "wallDistanceMaxMM": 5.06,
+   "insideWallShare": 0.723,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 36.37,
+    "cv_a_coronary_left": 23.53,
+    "cv_a_coronary_anterior_interventricular": 0.16,
+    "cv_a_coronary_circumflex": 23.34,
+    "cv_valve_tricuspid": 17.51,
+    "cv_valve_mitral": 29.05,
+    "cv_valve_pulmonary": 5.38
+   },
+   "checks": {
+    "side": true,
+    "insideWall": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_v_cardiac_great",
+   "fma": "FMA4707",
+   "triangles": 7476,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_anterior_interventricular",
+    "cv_a_coronary_circumflex"
+   ],
+   "wallDistanceMedianMM": 0.54,
+   "wallDistanceMaxMM": 3.73,
+   "insideWallShare": 0.539,
+   "insideHullShare": 0.894,
+   "nearestMM": {
+    "cv_a_coronary_right": 29.95,
+    "cv_a_coronary_left": 10.82,
+    "cv_a_coronary_anterior_interventricular": 0.0,
+    "cv_a_coronary_circumflex": 0.03,
+    "cv_valve_tricuspid": 28.59,
+    "cv_valve_mitral": 5.55,
+    "cv_valve_pulmonary": 8.61
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_v_cardiac_middle",
+   "fma": "FMA4713",
+   "triangles": 4326,
+   "expected": "surface",
+   "expectedContacts": [],
+   "wallDistanceMedianMM": 0.41,
+   "wallDistanceMaxMM": 3.21,
+   "insideWallShare": 0.543,
+   "insideHullShare": 0.854,
+   "nearestMM": {
+    "cv_a_coronary_right": 0.22,
+    "cv_a_coronary_left": 54.74,
+    "cv_a_coronary_anterior_interventricular": 0.03,
+    "cv_a_coronary_circumflex": 9.72,
+    "cv_valve_tricuspid": 7.1,
+    "cv_valve_mitral": 11.95,
+    "cv_valve_pulmonary": 51.91
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_v_ventricle_left_posterior",
+   "fma": "FMA76751",
+   "triangles": 4318,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_circumflex"
+   ],
+   "wallDistanceMedianMM": 0.4,
+   "wallDistanceMaxMM": 1.51,
+   "insideWallShare": 0.568,
+   "insideHullShare": 0.693,
+   "nearestMM": {
+    "cv_a_coronary_right": 1.87,
+    "cv_a_coronary_left": 52.24,
+    "cv_a_coronary_anterior_interventricular": 2.22,
+    "cv_a_coronary_circumflex": 0.1,
+    "cv_valve_tricuspid": 29.33,
+    "cv_valve_mitral": 3.85,
+    "cv_valve_pulmonary": 54.76
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_v_cardiac_anterior",
+   "fma": "FMA71567",
+   "triangles": 5712,
+   "expected": "surface",
+   "expectedContacts": [
+    "cv_a_coronary_right"
+   ],
+   "wallDistanceMedianMM": 0.51,
+   "wallDistanceMaxMM": 3.68,
+   "insideWallShare": 0.542,
+   "insideHullShare": 0.747,
+   "nearestMM": {
+    "cv_a_coronary_right": 0.06,
+    "cv_a_coronary_left": 49.1,
+    "cv_a_coronary_anterior_interventricular": 3.94,
+    "cv_a_coronary_circumflex": 24.51,
+    "cv_valve_tricuspid": 6.64,
+    "cv_valve_mitral": 18.74,
+    "cv_valve_pulmonary": 17.87
+   },
+   "checks": {
+    "side": true,
+    "onEpicardium": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_papillary_rv_anterior",
+   "fma": "FMA7260",
+   "triangles": 3860,
+   "expected": "cavity",
+   "expectedContacts": [],
+   "wallDistanceMedianMM": 1.32,
+   "wallDistanceMaxMM": 15.44,
+   "insideWallShare": 0.206,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 30.28,
+    "cv_a_coronary_left": 58.34,
+    "cv_a_coronary_anterior_interventricular": 0.28,
+    "cv_a_coronary_circumflex": 35.66,
+    "cv_valve_tricuspid": 12.31,
+    "cv_valve_mitral": 43.15,
+    "cv_valve_pulmonary": 40.35
+   },
+   "checks": {
+    "side": true,
+    "inCavity": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_papillary_rv_posterior",
+   "fma": "FMA7261",
+   "triangles": 2730,
+   "expected": "cavity",
+   "expectedContacts": [
+    "cv_valve_tricuspid"
+   ],
+   "wallDistanceMedianMM": 1.44,
+   "wallDistanceMaxMM": 9.23,
+   "insideWallShare": 0.282,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 17.42,
+    "cv_a_coronary_left": 64.9,
+    "cv_a_coronary_anterior_interventricular": 11.57,
+    "cv_a_coronary_circumflex": 37.9,
+    "cv_valve_tricuspid": 0.05,
+    "cv_valve_mitral": 30.18,
+    "cv_valve_pulmonary": 54.35
+   },
+   "checks": {
+    "side": true,
+    "inCavity": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_papillary_rv_septal",
+   "fma": "FMA7262",
+   "triangles": 1898,
+   "expected": "cavity",
+   "expectedContacts": [
+    "cv_valve_tricuspid"
+   ],
+   "wallDistanceMedianMM": 1.46,
+   "wallDistanceMaxMM": 5.01,
+   "insideWallShare": 0.318,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 15.9,
+    "cv_a_coronary_left": 19.45,
+    "cv_a_coronary_anterior_interventricular": 18.94,
+    "cv_a_coronary_circumflex": 20.57,
+    "cv_valve_tricuspid": 0.03,
+    "cv_valve_mitral": 27.36,
+    "cv_valve_pulmonary": 5.79
+   },
+   "checks": {
+    "side": true,
+    "inCavity": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_papillary_lv_posterior",
+   "fma": "FMA7266",
+   "triangles": 3902,
+   "expected": "cavity",
+   "expectedContacts": [
+    "cv_valve_mitral"
+   ],
+   "wallDistanceMedianMM": 3.84,
+   "wallDistanceMaxMM": 14.12,
+   "insideWallShare": 0.368,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 34.08,
+    "cv_a_coronary_left": 41.04,
+    "cv_a_coronary_anterior_interventricular": 3.69,
+    "cv_a_coronary_circumflex": 3.52,
+    "cv_valve_tricuspid": 33.73,
+    "cv_valve_mitral": 0.04,
+    "cv_valve_pulmonary": 39.32
+   },
+   "checks": {
+    "side": true,
+    "inCavity": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  },
+  {
+   "id": "cv_papillary_lv_unspecified",
+   "fma": "FMA9352nsn",
+   "triangles": 4084,
+   "expected": "cavity",
+   "expectedContacts": [],
+   "wallDistanceMedianMM": 2.76,
+   "wallDistanceMaxMM": 7.24,
+   "insideWallShare": 0.52,
+   "insideHullShare": 1.0,
+   "nearestMM": {
+    "cv_a_coronary_right": 30.3,
+    "cv_a_coronary_left": 33.18,
+    "cv_a_coronary_anterior_interventricular": 4.81,
+    "cv_a_coronary_circumflex": 21.02,
+    "cv_valve_tricuspid": 8.92,
+    "cv_valve_mitral": 15.54,
+    "cv_valve_pulmonary": 22.05
+   },
+   "checks": {
+    "side": true,
+    "inCavity": true,
+    "parentContact": true
+   },
+   "passed": true,
+   "degenerate": 0,
+   "duplicateFaces": 0
+  }
+ ],
+ "passed": 14,
+ "total": 14
+}

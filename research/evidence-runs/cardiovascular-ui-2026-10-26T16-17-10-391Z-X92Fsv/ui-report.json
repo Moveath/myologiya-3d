@@ -1,0 +1,31 @@
+{
+  "report": [
+    {
+      "width": 1280,
+      "theme": "light",
+      "status": "passed",
+      "checks": 60,
+      "sectionLoadMs": {
+        "trunk": 1821,
+        "neck": 305,
+        "arm": 769,
+        "leg": 937
+      },
+      "secondClickPart": "cv_atrium_right"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "status": "passed",
+      "checks": 60,
+      "sectionLoadMs": {
+        "trunk": 1827,
+        "neck": 271,
+        "arm": 742,
+        "leg": 990
+      },
+      "secondClickPart": "cv_atrium_right"
+    }
+  ],
+  "scope": "Chromium/SwiftShader emulation; not a physical phone or GPU benchmark. Educational models, not anatomical acceptance."
+}

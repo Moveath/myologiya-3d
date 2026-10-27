@@ -67,7 +67,14 @@ test('Mixed data groups are split by textbook group', () => {
 });
 test('Placeholder groups carry a visible note and no structures', () => {
   const empty = tree.flatMap(r => r.groups.filter(g => !g.parts.some(p => p.pairs.length)).map(g => [r.id, g.id, !!g.missing]));
-  assert.deepEqual(empty, [['abdomen-muscles', 'abdomen', true], ['perineum-muscles', 'perineum-other', true]]);
+  assert.deepEqual(empty, [['perineum-muscles', 'perineum-other', true]]);
+});
+test('Abdominal muscles follow Gray/Loyola: anterolateral and posterior walls (ABD-MUSCLES)', () => {
+  const rowsOf = id => pairs.filter(p => p.group === id).map(p => p.base);
+  assert.deepEqual(rowsOf('abdomen-anterolateral'), ['abdomen_obliquus_externus_abdominis', 'abdomen_obliquus_internus_abdominis',
+    'abdomen_transversus_abdominis', 'abdomen_rectus_abdominis', 'abdomen_pyramidalis']);
+  assert.deepEqual(rowsOf('abdomen-posterior'), ['abdomen_quadratus_lumborum']);
+  assert.ok(pairs.filter(p => p.base.startsWith('abdomen_')).every(p => p.members.right && p.members.left && p.sec === 'trunk'));
 });
 test('Bones of every catalogue leaf are coloured as one group', () => {
   const leaves = catalogueLeaves(tree).filter(l => l.system !== 'muscles');

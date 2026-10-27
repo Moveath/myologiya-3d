@@ -1,0 +1,40 @@
+{
+  "id": "cv_a_coronary_posterior_interventricular",
+  "source": {
+    "fma": "FMA3840nsn",
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+    "version": "3.0",
+    "entry": "BodyParts3D_3.0_obj_95/FMA3840nsn.obj",
+    "file": "research/cache/cardiovascular-bp3d-3.0/FMA3840nsn.obj",
+    "bytes": 239890,
+    "sha256": "0f627ea296db92d011693e906bf07c4929217d9c44be609f2f805ad539f89c3f",
+    "crc": 1950954016,
+    "author": "Database Center for Life Science (DBCLS)",
+    "license": "CC BY-SA 2.1 Japan"
+  },
+  "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_posterior_interventricular.glb",
+  "sha256": "4b4e3a60ee29da52b6dd9456f8a415a3b1fafdba03dd9391da459f8b82c92a46",
+  "triangles": 3086,
+  "vertices": 1545,
+  "boundsM": [
+    [
+      -0.0009136389999999999,
+      1.1849,
+      0.117554
+    ],
+    [
+      0.06687850000000001,
+      1.20141,
+      0.15587
+    ]
+  ],
+  "watertight": true,
+  "winding": true,
+  "volumeM3": 2.3517721569124265e-07,
+  "degenerate": 0,
+  "duplicateFaces": 0,
+  "normalFallbackVertices": 0,
+  "roundtrip": "Exact float32 triangle corners/order",
+  "admission": "candidate",
+  "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+}

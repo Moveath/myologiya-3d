@@ -11,6 +11,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_heart",
         "source": {
@@ -101,10 +103,25 @@
       "system": "heart",
       "section": "trunk",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_right.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_heart",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_right.json",
+        "sha256": "39ba9219858b9a37587d5f554af6241d942a4bd93bd8a021b36877e8ec2c1828",
+        "segmentOf": "cv_heart",
+        "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "nearest registered Z-Anatomy chamber surface; 57398 of 331592 faces of cv_heart.",
+        "limitation": "Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены."
+      },
       "relations": {
         "partOf": "cv_heart"
       },
@@ -123,9 +140,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_atrium_left",
@@ -134,10 +151,25 @@
       "system": "heart",
       "section": "trunk",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_left.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_heart",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_left.json",
+        "sha256": "4ecd5ffda918125e00168858eec103500bb23db63243724fbce5233fe6f4df4f",
+        "segmentOf": "cv_heart",
+        "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "nearest registered Z-Anatomy chamber surface; 33125 of 331592 faces of cv_heart.",
+        "limitation": "Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены."
+      },
       "relations": {
         "partOf": "cv_heart"
       },
@@ -156,9 +188,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_ventricle_right",
@@ -167,10 +199,25 @@
       "system": "heart",
       "section": "trunk",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_right.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_heart",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_right.json",
+        "sha256": "852b4c130125692cc24e19454637d319365f7369607314259baff61c9b49d1fd",
+        "segmentOf": "cv_heart",
+        "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "nearest registered Z-Anatomy chamber surface; 77242 of 331592 faces of cv_heart.",
+        "limitation": "Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены."
+      },
       "relations": {
         "partOf": "cv_heart"
       },
@@ -189,9 +236,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_ventricle_left",
@@ -200,10 +247,25 @@
       "system": "heart",
       "section": "trunk",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_left.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_heart",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_left.json",
+        "sha256": "91b32f0c159cac1e96996703da1bc7ac5bf9de4b4ad429939c368bfdb76c65d3",
+        "segmentOf": "cv_heart",
+        "parentSha256": "308a9818a7ab479361af8a5a4bef7f83c0535adc5ddf68be160cf0af122b20d5",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "nearest registered Z-Anatomy chamber surface; 76248 of 331592 faces of cv_heart.",
+        "limitation": "Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены."
+      },
       "relations": {
         "partOf": "cv_heart"
       },
@@ -222,9 +284,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_septum_atrial",
@@ -235,6 +297,8 @@
       "side": "unseparated",
       "noModel": true,
       "modelFile": null,
+      "modelKind": null,
+      "segmentOf": null,
       "candidate": null,
       "admission": null,
       "relations": {
@@ -268,6 +332,8 @@
       "side": "unseparated",
       "noModel": true,
       "modelFile": null,
+      "modelKind": null,
+      "segmentOf": null,
       "candidate": null,
       "admission": null,
       "relations": {
@@ -301,6 +367,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_tricuspid.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_valve_tricuspid",
         "source": {
@@ -389,6 +457,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_mitral.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_valve_mitral",
         "source": {
@@ -475,10 +545,24 @@
       "system": "heart",
       "section": "trunk",
       "side": "unseparated",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_valve_aortic.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_valve_aortic.glb",
+        "sha256": "dffdc2d71032d9a3f2ff2aaf68aa513340113628171efe99fca2bcd14452f897",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Right coronary leaflet + Left coronary leaflet + Non-coronary leaflet», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Модель створок Z-Anatomy, совмещённая со стенкой сердца атласа. Форма створок и их соотношение с синусами аорты не приняты; не для морфометрии. Три полулунные заслонки Z-Anatomy, совмещённые со стенкой сердца атласа; лежат у корня восходящей аорты."
+      },
       "relations": {
         "partOf": "cv_heart"
       },
@@ -497,9 +581,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_valve_pulmonary",
@@ -510,6 +594,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_pulmonary.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_valve_pulmonary",
         "source": {
@@ -604,6 +690,8 @@
       "side": "unseparated",
       "noModel": true,
       "modelFile": null,
+      "modelKind": null,
+      "segmentOf": null,
       "candidate": null,
       "admission": null,
       "relations": {
@@ -637,6 +725,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_ascending.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_aorta_ascending",
         "source": {
@@ -726,6 +816,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_arch.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_aorta_arch",
         "source": {
@@ -815,6 +907,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_aorta_descending",
         "source": {
@@ -902,10 +996,25 @@
       "system": "arteries",
       "section": "trunk",
       "side": "unseparated",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_thoracic.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_a_aorta_descending",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_thoracic.json",
+        "sha256": "eccb2a2fc3aa01141b646857200c71a308c71d6ca82c98376666b580fafd1ec6",
+        "segmentOf": "cv_a_aorta_descending",
+        "parentSha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "descending aorta divided by the horizontal plane at the lower border of the atlas T12 vertebral body; 16101 of 23808 faces of cv_a_aorta_descending.",
+        "limitation": "Граница проведена по уровню нижнего края тела T12 атласа (аортальное отверстие диафрагмы); положение отверстия на образце не размечалось."
+      },
       "relations": {
         "partOf": "cv_a_aorta_descending",
         "origin": "cv_a_aorta_arch"
@@ -925,9 +1034,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_aorta_abdominal",
@@ -936,10 +1045,25 @@
       "system": "arteries",
       "section": "trunk",
       "side": "unseparated",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_abdominal.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_a_aorta_descending",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_abdominal.json",
+        "sha256": "e3c2dda19602591dcec827c144f0b15c95e3a6c8a644cac801608b4c32eea0b9",
+        "segmentOf": "cv_a_aorta_descending",
+        "parentSha256": "20f80bc14ceff1bc3c8fa8b1332447f88609ef57388fd7d6eb41f78baa8229a3",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "descending aorta divided by the horizontal plane at the lower border of the atlas T12 vertebral body; 7707 of 23808 faces of cv_a_aorta_descending.",
+        "limitation": "Граница проведена по уровню нижнего края тела T12 атласа (аортальное отверстие диафрагмы); положение отверстия на образце не размечалось."
+      },
       "relations": {
         "partOf": "cv_a_aorta_descending",
         "origin": "cv_a_aorta_thoracic"
@@ -959,9 +1083,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_pulmonary_trunk",
@@ -970,10 +1094,25 @@
       "system": "arteries",
       "section": "trunk",
       "side": "unseparated",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_pulmonary_trunk.json",
+      "modelKind": "face-mask",
+      "segmentOf": "cv_a_pulmonary_arteries",
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "face-mask",
+        "maskFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_pulmonary_trunk.json",
+        "sha256": "b8f2cfc188eb26031d18ce0d92ffff7cf533bbe6792ad2e512af76613937cfdc",
+        "segmentOf": "cv_a_pulmonary_arteries",
+        "parentSha256": "3f7691167980af9dbf6730724476551701ee19c111c2be1c59340889300c0b01",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json"
+        ],
+        "basis": "faces of the combined tree within 4 mm of the registered Z-Anatomy pulmonary trunk and inside its axial extent; 2503 of 116948 faces of cv_a_pulmonary_arteries.",
+        "limitation": "Ствол выделен по совмещённой модели Z-Anatomy до бифуркации; точная граница с ветвями не принята."
+      },
       "relations": {
         "origin": "cv_ventricle_right"
       },
@@ -992,9 +1131,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_pulmonary_arteries",
@@ -1005,6 +1144,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_pulmonary_arteries.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_pulmonary_arteries",
         "source": {
@@ -1093,6 +1234,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_coronary_right",
         "source": {
@@ -1181,6 +1324,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_coronary_left",
         "source": {
@@ -1269,6 +1414,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_anterior_interventricular.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_coronary_anterior_interventricular",
         "source": {
@@ -1357,6 +1504,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_circumflex.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_coronary_circumflex",
         "source": {
@@ -1445,6 +1594,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_brachiocephalic.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_brachiocephalic",
         "source": {
@@ -1533,6 +1684,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_carotid_common_right",
         "source": {
@@ -1621,6 +1774,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_subclavian_right",
         "source": {
@@ -1709,6 +1864,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_carotid_common_left",
         "source": {
@@ -1797,6 +1954,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_subclavian_left",
         "source": {
@@ -1885,6 +2044,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_celiac.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_celiac",
         "source": {
@@ -1973,6 +2134,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_superior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_mesenteric_superior",
         "source": {
@@ -2061,6 +2224,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_inferior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_mesenteric_inferior",
         "source": {
@@ -2149,6 +2314,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_renal_right",
         "source": {
@@ -2237,6 +2404,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_common_right",
         "source": {
@@ -2325,6 +2494,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_external_right",
         "source": {
@@ -2413,6 +2584,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_internal_right",
         "source": {
@@ -2501,6 +2674,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_renal_left",
         "source": {
@@ -2589,6 +2764,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_common_left",
         "source": {
@@ -2677,6 +2854,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_external_left",
         "source": {
@@ -2765,6 +2944,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_iliac_internal_left",
         "source": {
@@ -2853,6 +3034,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_superior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_cava_superior",
         "source": {
@@ -2941,6 +3124,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_inferior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_cava_inferior",
         "source": {
@@ -3029,6 +3214,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_pulmonary_veins.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_pulmonary_veins",
         "source": {
@@ -3117,6 +3304,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_brachiocephalic_right",
         "source": {
@@ -3205,6 +3394,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_jugular_internal_right",
         "source": {
@@ -3293,6 +3484,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_subclavian_right",
         "source": {
@@ -3381,6 +3574,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_renal_right",
         "source": {
@@ -3469,6 +3664,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_common_right",
         "source": {
@@ -3557,6 +3754,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_external_right",
         "source": {
@@ -3645,6 +3844,8 @@
       "side": "right",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_internal_right",
         "source": {
@@ -3733,6 +3934,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_brachiocephalic_left",
         "source": {
@@ -3821,6 +4024,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_jugular_internal_left",
         "source": {
@@ -3909,6 +4114,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_subclavian_left",
         "source": {
@@ -3997,6 +4204,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_renal_left",
         "source": {
@@ -4085,6 +4294,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_common_left",
         "source": {
@@ -4173,6 +4384,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_external_left",
         "source": {
@@ -4261,6 +4474,8 @@
       "side": "left",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_iliac_internal_left",
         "source": {
@@ -4347,10 +4562,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_right.glb",
+        "sha256": "7a0defb803fbd36fef39b3e046d13ee78fd36f6f687b34cbb48678ee47e74398",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Axillary artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_subclavian_right» около 4.6 мм."
+      },
       "relations": {
         "origin": "cv_a_subclavian_right"
       },
@@ -4369,9 +4598,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_brachial_right",
@@ -4380,10 +4609,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_right.glb",
+        "sha256": "3fd491e2ff3ece0d9033bbcce60043596552b2c80e5a47ff856406beaa3bcd0a",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Brachial artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_axillary_right"
       },
@@ -4402,9 +4645,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_radial_right",
@@ -4413,10 +4656,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_right.glb",
+        "sha256": "edf6404fc03440eaf20eb3753293be8d42ac46dc53548640dbc1de20462d6123",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Radial artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_brachial_right"
       },
@@ -4435,9 +4692,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_ulnar_right",
@@ -4446,10 +4703,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_right.glb",
+        "sha256": "7b77a8b80020a185e2eca4d8c14789cb7458744ef868c70c72483b5be7e2a376",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Ulnar artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_brachial_right"
       },
@@ -4468,9 +4739,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_femoral_right",
@@ -4479,10 +4750,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_right.glb",
+        "sha256": "24be37b8fd42503c2d5ee5d17af2ac7858f1a74ac4017390c918a0784131b058",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Femoral artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_iliac_external_right"
       },
@@ -4501,9 +4786,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_popliteal_right",
@@ -4512,10 +4797,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_right.glb",
+        "sha256": "1d32cd77e973c9fd40aa66e9cb304f753f60a2a09e767831fcfcd9c9ec41e8f9",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Popliteal artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_femoral_right"
       },
@@ -4534,9 +4833,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_tibial_anterior_right",
@@ -4545,10 +4844,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_right.glb",
+        "sha256": "d27acba71d9a327096e83da565e351fffcd4c7d6a587e68264b4904d408b2aad",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Anterior tibial artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_popliteal_right» около 0.4 мм."
+      },
       "relations": {
         "origin": "cv_a_popliteal_right"
       },
@@ -4567,9 +4880,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_tibial_posterior_right",
@@ -4578,10 +4891,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_right.glb",
+        "sha256": "6eb1e8db0f3c7a84629fea387d5acb95a04181c6ac738aec9438f198d82188c7",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Posterior tibial artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.5 мм; после переноса — 4.27 мм."
+      },
       "relations": {
         "origin": "cv_a_popliteal_right"
       },
@@ -4600,9 +4927,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_fibular_right",
@@ -4611,10 +4938,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_right.glb",
+        "sha256": "a05e70f4a75d70639921b6461234af9efa051f0785a5ae761dce36bbb35347e4",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Fibular artery.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_tibial_posterior_right"
       },
@@ -4633,9 +4974,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_axillary_right",
@@ -4644,10 +4985,24 @@
       "system": "veins",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_right.glb",
+        "sha256": "b891783b787838066d3e695f01a234da1b4b6b8abc179de271dc6878f76d1b1a",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Axillary vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_subclavian_right» около 8.5 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_subclavian_right"
       },
@@ -4666,9 +5021,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_cephalic_right",
@@ -4677,10 +5032,24 @@
       "system": "veins",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_right.glb",
+        "sha256": "cdd40b391b07c21aaac0cf04d84408c9e168937779e5a4a1f1c873359e03b5d6",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Cephalic vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_right"
       },
@@ -4699,9 +5068,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_basilic_right",
@@ -4710,10 +5079,24 @@
       "system": "veins",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_right.glb",
+        "sha256": "0f6b60faabddc7260d91ba15b1a76015e4bbd2557582a8ffbe78d77b04cd05e4",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Basilic vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_right"
       },
@@ -4732,9 +5115,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_brachial_right",
@@ -4743,10 +5126,24 @@
       "system": "veins",
       "section": "arm",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_right.glb",
+        "sha256": "a2615cac051d4301d0de1443b251775a4f5bad9256e919fded3cc6886c025163",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Brachial veins.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_axillary_right» около 0.2 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_right"
       },
@@ -4765,9 +5162,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_femoral_right",
@@ -4776,10 +5173,24 @@
       "system": "veins",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_right.glb",
+        "sha256": "bddccd77fb577dc1b80870b10b53202dd9d67e6bf1b17aa3a4875cd4cc09fcbf",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Femoral vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_iliac_external_right"
       },
@@ -4798,9 +5209,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_popliteal_right",
@@ -4809,10 +5220,24 @@
       "system": "veins",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_right.glb",
+        "sha256": "25908b2107a21260ad48835a052dc19adf6975b880fb0cd9dfa5167d3886d646",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Popliteal vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_femoral_right"
       },
@@ -4831,9 +5256,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_saphenous_great_right",
@@ -4842,10 +5267,24 @@
       "system": "veins",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_right.glb",
+        "sha256": "fcb95c92c603780dc0656ed93b1c37def00fc6fa164b9d374ea8649ee04cbbb2",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Great saphenous vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_femoral_right» около 2.5 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_femoral_right"
       },
@@ -4864,9 +5303,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_saphenous_small_right",
@@ -4875,10 +5314,24 @@
       "system": "veins",
       "section": "leg",
       "side": "right",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_right.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_right.glb",
+        "sha256": "446326137863493d9bdf8e235cafc66bfa8c95e35cc34bf30920be8aee77348e",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Small saphenous vein.r», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_popliteal_right» около 0.2 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_popliteal_right"
       },
@@ -4897,9 +5350,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_axillary_left",
@@ -4908,10 +5361,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_left.glb",
+        "sha256": "41c017dd7ea748eaf4cdb6b53f5be34a6f56ea5bc217653525b597ea14002096",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Axillary artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_subclavian_left» около 1.8 мм."
+      },
       "relations": {
         "origin": "cv_a_subclavian_left"
       },
@@ -4930,9 +5397,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_brachial_left",
@@ -4941,10 +5408,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_left.glb",
+        "sha256": "a4e8409be232f6b4cd62c187f6547007e3de42938662e940ed2382a7342684d4",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Brachial artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_axillary_left"
       },
@@ -4963,9 +5444,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_radial_left",
@@ -4974,10 +5455,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_left.glb",
+        "sha256": "9c619b2a9979d7e96f060bc04ae91f2d3d52b13054e7298722183cb43af9c3a3",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Radial artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_brachial_left"
       },
@@ -4996,9 +5491,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_ulnar_left",
@@ -5007,10 +5502,24 @@
       "system": "arteries",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_left.glb",
+        "sha256": "dd83d140852c30a1bbf91210c8c070b1fd0a59e593b7393bd95368f3efe99ed8",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Ulnar artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_brachial_left"
       },
@@ -5029,9 +5538,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_femoral_left",
@@ -5040,10 +5549,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_left.glb",
+        "sha256": "c1d78d561cc410aac39205a6f3693afcace53248f81174303a7883267daef2c7",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Femoral artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_iliac_external_left"
       },
@@ -5062,9 +5585,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_popliteal_left",
@@ -5073,10 +5596,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_left.glb",
+        "sha256": "7d9d6e839ff39056a181de579b03daac3bd7cf0d77540ffb32e4943723aaae7e",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Popliteal artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_femoral_left"
       },
@@ -5095,9 +5632,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_tibial_anterior_left",
@@ -5106,10 +5643,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_left.glb",
+        "sha256": "55313cdc635079af04a6f1c6bb647e46732201e561eb5f55d314ef3413af56ca",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Anterior tibial artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_popliteal_left» около 0.5 мм."
+      },
       "relations": {
         "origin": "cv_a_popliteal_left"
       },
@@ -5128,9 +5679,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_tibial_posterior_left",
@@ -5139,10 +5690,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_left.glb",
+        "sha256": "535bffdabb2482bfeab30c609cb1cf0bcdff9e7f5706c2995517bc0592d50c58",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Posterior tibial artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.51 мм; после переноса — 4.38 мм."
+      },
       "relations": {
         "origin": "cv_a_popliteal_left"
       },
@@ -5161,9 +5726,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_a_fibular_left",
@@ -5172,10 +5737,24 @@
       "system": "arteries",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_left.glb",
+        "sha256": "716d3b8df503917e0db910e8d15906983d031124e55996097a712bb6490f27dd",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Fibular artery.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "origin": "cv_a_tibial_posterior_left"
       },
@@ -5194,9 +5773,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_axillary_left",
@@ -5205,10 +5784,24 @@
       "system": "veins",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_left.glb",
+        "sha256": "8b98b7fd9844a35fbb4830db7e9e00356339c3805dca6c7a7003102401b2fb03",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Axillary vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_subclavian_left» около 4.2 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_subclavian_left"
       },
@@ -5227,9 +5820,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_cephalic_left",
@@ -5238,10 +5831,24 @@
       "system": "veins",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_left.glb",
+        "sha256": "536dc0313ea35a50b9e3b038d740d3e5016a6f5017c83214769f464e915c3d79",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Cephalic vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_left"
       },
@@ -5260,9 +5867,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_basilic_left",
@@ -5271,10 +5878,24 @@
       "system": "veins",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_left.glb",
+        "sha256": "2f5547c35b0d2e4a1f5543a4e5cc51902980e84a217b48bdeb6e8e60f8a2d798",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Basilic vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_left"
       },
@@ -5293,9 +5914,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_brachial_left",
@@ -5304,10 +5925,24 @@
       "system": "veins",
       "section": "arm",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_left.glb",
+        "sha256": "a2829be184435e39e64d32c62dab18feda9ea3cbeb112c1d3bddaa1593ea6708",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Brachial veins.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_axillary_left» около 0.2 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_axillary_left"
       },
@@ -5326,9 +5961,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_femoral_left",
@@ -5337,10 +5972,24 @@
       "system": "veins",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_left.glb",
+        "sha256": "d165bf8e8285a7e0953de9f4ce81799d748dabd937ef754f98ae50a12eb5e844",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Femoral vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_iliac_external_left"
       },
@@ -5359,9 +6008,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_popliteal_left",
@@ -5370,10 +6019,24 @@
       "system": "veins",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_left.glb",
+        "sha256": "619d426019584bc22daf09b2d37e49c08ab54a499b07e2171e23e3f43d7044f0",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Popliteal vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_femoral_left"
       },
@@ -5392,9 +6055,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_saphenous_great_left",
@@ -5403,10 +6066,24 @@
       "system": "veins",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_left.glb",
+        "sha256": "301b24bc80719a259a5d3a5c12c5e15b3e2b8060026b5dc4e1fa80446ade495c",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Great saphenous vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_femoral_left» около 2.5 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_femoral_left"
       },
@@ -5425,9 +6102,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_saphenous_small_left",
@@ -5436,10 +6113,24 @@
       "system": "veins",
       "section": "leg",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_left.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_left.glb",
+        "sha256": "6c1f64267ce49bef8ed3cc0087a3df5aa7696aa55b6ead98dae9460cd4ccd5fe",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Small saphenous vein.l», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_popliteal_left» около 0.2 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_popliteal_left"
       },
@@ -5458,9 +6149,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_azygos",
@@ -5469,10 +6160,24 @@
       "system": "veins",
       "section": "trunk",
       "side": "unseparated",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_azygos.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_azygos.glb",
+        "sha256": "b7b5c287aa3eda88328f20019bffd647d841b5c5427f3e29073bf8844a7e64e3",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Azygos vein», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_cava_superior» около 0.9 мм."
+      },
       "relations": {
         "drainsTo": "cv_v_cava_superior"
       },
@@ -5491,9 +6196,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_hemiazygos",
@@ -5502,10 +6207,24 @@
       "system": "veins",
       "section": "trunk",
       "side": "left",
-      "noModel": true,
-      "modelFile": null,
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_hemiazygos.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
       "candidate": null,
-      "admission": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_hemiazygos.glb",
+        "sha256": "660cf7c960c876f23d682a48dfa620fc9f4ef8b8ef2e5c247f64b9e634f31d12",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Hemi-azygos vein», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
       "relations": {
         "drainsTo": "cv_v_azygos"
       },
@@ -5524,9 +6243,9 @@
       "issueIds": [
         "FUT-005",
         "CV-CATALOG-SOURCES",
-        "CV-GEO-MISSING"
+        "CV-GEO-ACCEPTANCE"
       ],
-      "nextAction": "Найти лицензированный отдельный меш или зарегистрированную сегментацию; для объединяющей карточки определить необходимость самостоятельного меша. Не создавать границы по названию."
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     },
     {
       "id": "cv_v_portal",
@@ -5537,6 +6256,8 @@
       "side": "unseparated",
       "noModel": true,
       "modelFile": null,
+      "modelKind": null,
+      "segmentOf": null,
       "candidate": null,
       "admission": null,
       "relations": {},
@@ -5568,6 +6289,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_splenic.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_splenic",
         "source": {
@@ -5656,6 +6379,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_mesenteric_superior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_v_mesenteric_superior",
         "source": {
@@ -5744,6 +6469,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_gastric_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_gastric_left",
         "source": {
@@ -5832,6 +6559,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_hepatic_common.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_hepatic_common",
         "source": {
@@ -5920,6 +6649,8 @@
       "side": "unseparated",
       "noModel": false,
       "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_splenic.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
       "candidate": {
         "id": "cv_a_splenic",
         "source": {
@@ -5998,14 +6729,1317 @@
         "CV-GEO-ACCEPTANCE"
       ],
       "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_papillary_rv_anterior",
+      "ru": "Передняя сосочковая мышца правого желудочка",
+      "lat": "musculus papillaris anterior (ventriculi dextri)",
+      "system": "heart",
+      "section": "trunk",
+      "side": "right",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_anterior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_papillary_rv_anterior",
+        "source": {
+          "fma": "FMA7260",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA7260.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA7260.obj",
+          "bytes": 245812,
+          "sha256": "450380527080cd4f0a3348e789d1166b13d8ef8b06b567c2929423859fd14d27",
+          "crc": 669067089,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_rv_anterior.glb",
+        "sha256": "443f22063eb93bfd1bd2deee94a258f926ece8b39c2d9b8ce9204a0f64100518",
+        "triangles": 3860,
+        "vertices": 1932,
+        "boundsM": [
+          [
+            0.0120052,
+            1.18988,
+            0.151131
+          ],
+          [
+            0.04729270000000001,
+            1.21923,
+            0.17271
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 3.653279057686651e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "443f22063eb93bfd1bd2deee94a258f926ece8b39c2d9b8ce9204a0f64100518",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA7260-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "partOf": "cv_ventricle_right"
+      },
+      "refs": [
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+          "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+        },
+        {
+          "title": "FIPAT — TA98: heart (A12.1)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+          "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_papillary_rv_posterior",
+      "ru": "Задняя сосочковая мышца правого желудочка",
+      "lat": "musculus papillaris posterior (ventriculi dextri)",
+      "system": "heart",
+      "section": "trunk",
+      "side": "right",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_posterior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_papillary_rv_posterior",
+        "source": {
+          "fma": "FMA7261",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA7261.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA7261.obj",
+          "bytes": 172537,
+          "sha256": "99e4e3e1b71140514bf29b16e84ba8160932ef610b8a949af3799c235af46b24",
+          "crc": 3663517934,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_rv_posterior.glb",
+        "sha256": "515484a4c37ff4c65f4f05ccab1fce38562f04057aef93e960dfafa29ba0f1f3",
+        "triangles": 2730,
+        "vertices": 1367,
+        "boundsM": [
+          [
+            0.00712708,
+            1.18851,
+            0.131821
+          ],
+          [
+            0.0367766,
+            1.20305,
+            0.160517
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 2.2989505867793627e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "515484a4c37ff4c65f4f05ccab1fce38562f04057aef93e960dfafa29ba0f1f3",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA7261-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "partOf": "cv_ventricle_right"
+      },
+      "refs": [
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+          "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+        },
+        {
+          "title": "FIPAT — TA98: heart (A12.1)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+          "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_papillary_rv_septal",
+      "ru": "Перегородочная сосочковая мышца правого желудочка",
+      "lat": "musculus papillaris septalis",
+      "system": "heart",
+      "section": "trunk",
+      "side": "right",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_septal.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_papillary_rv_septal",
+        "source": {
+          "fma": "FMA7262",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA7262.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA7262.obj",
+          "bytes": 115747,
+          "sha256": "3900d5c973a699a1e0ca6a2ae955e37741a65ef15a98d0c077bd324f672d866e",
+          "crc": 3489181281,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_rv_septal.glb",
+        "sha256": "34f46fe2e47cef9db2d5b2334e5c2659e17180d285d578b837b10fedf944450e",
+        "triangles": 1898,
+        "vertices": 951,
+        "boundsM": [
+          [
+            0.012872999999999999,
+            1.2234800000000001,
+            0.128195
+          ],
+          [
+            0.0323644,
+            1.25049,
+            0.14366
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 2.125409696379664e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "34f46fe2e47cef9db2d5b2334e5c2659e17180d285d578b837b10fedf944450e",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA7262-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "partOf": "cv_ventricle_right"
+      },
+      "refs": [
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+          "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+        },
+        {
+          "title": "FIPAT — TA98: heart (A12.1)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+          "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_papillary_lv_posterior",
+      "ru": "Задняя сосочковая мышца левого желудочка",
+      "lat": "musculus papillaris posterior (ventriculi sinistri)",
+      "system": "heart",
+      "section": "trunk",
+      "side": "left",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_lv_posterior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_papillary_lv_posterior",
+        "source": {
+          "fma": "FMA7266",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA7266.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA7266.obj",
+          "bytes": 247575,
+          "sha256": "789c3ff4f5049d75b62633c6b5a0cc5240cc36f09e846bc6654e1fa3f2cd5892",
+          "crc": 1340040351,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_lv_posterior.glb",
+        "sha256": "df1d91ad0668649ef76792dadc53cfe8eda54a4f989afdcb3f0545658e8ef64d",
+        "triangles": 3902,
+        "vertices": 1953,
+        "boundsM": [
+          [
+            0.046427100000000006,
+            1.19843,
+            0.10465300000000001
+          ],
+          [
+            0.0749556,
+            1.22851,
+            0.147007
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 5.462331633179496e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "df1d91ad0668649ef76792dadc53cfe8eda54a4f989afdcb3f0545658e8ef64d",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA7266-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "partOf": "cv_ventricle_left"
+      },
+      "refs": [
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+          "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+        },
+        {
+          "title": "FIPAT — TA98: heart (A12.1)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+          "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_papillary_lv_unspecified",
+      "ru": "Сосочковая мышца левого желудочка (без уточнения в источнике)",
+      "lat": "musculus papillaris (ventriculi sinistri)",
+      "system": "heart",
+      "section": "trunk",
+      "side": "left",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_lv_unspecified.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_papillary_lv_unspecified",
+        "source": {
+          "fma": "FMA9352nsn",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA9352nsn.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA9352nsn.obj",
+          "bytes": 256750,
+          "sha256": "f0318480ca79ee1370fa13dd3a1b5f3223abec546d9c29eec663594652ffaf8f",
+          "crc": 282947201,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_papillary_lv_unspecified.glb",
+        "sha256": "a76abac5cbf1b5170075b881186f3e90383297ff8c2d5543eb940726434e0d56",
+        "triangles": 4084,
+        "vertices": 2046,
+        "boundsM": [
+          [
+            0.031485,
+            1.20184,
+            0.124487
+          ],
+          [
+            0.0566502,
+            1.23493,
+            0.160084
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 5.766545854315502e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "a76abac5cbf1b5170075b881186f3e90383297ff8c2d5543eb940726434e0d56",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA9352nsn-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "partOf": "cv_ventricle_left"
+      },
+      "refs": [
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+          "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+        },
+        {
+          "title": "FIPAT — TA98: heart (A12.1)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+          "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_a_coronary_right_marginal",
+      "ru": "Правая краевая ветвь",
+      "lat": "ramus marginalis dexter",
+      "system": "arteries",
+      "section": "trunk",
+      "side": "right",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right_marginal.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_a_coronary_right_marginal",
+        "source": {
+          "fma": "FMA3818",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA3818.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA3818.obj",
+          "bytes": 370159,
+          "sha256": "7561bf7941c2ffbf674a02cf28f8c24191eb4fbd31568fa9e47a96b6e0706174",
+          "crc": 3870630924,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_right_marginal.glb",
+        "sha256": "ff6888b123ee8004c2c57398ef35c4211b6d63eb78ee3e08a1b05509191447b5",
+        "triangles": 4908,
+        "vertices": 2462,
+        "boundsM": [
+          [
+            -0.0209386,
+            1.18798,
+            0.147313
+          ],
+          [
+            0.0560832,
+            1.26908,
+            0.17652600000000002
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 3.6749634300573256e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "ff6888b123ee8004c2c57398ef35c4211b6d63eb78ee3e08a1b05509191447b5",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA3818-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "origin": "cv_a_coronary_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Coronary Circulation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+          "locator": "Coronary origins, anterior interventricular and circumflex branches"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+          "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_a_coronary_posterior_interventricular",
+      "ru": "Задняя межжелудочковая ветвь",
+      "lat": "ramus interventricularis posterior",
+      "system": "arteries",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_posterior_interventricular.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_a_coronary_posterior_interventricular",
+        "source": {
+          "fma": "FMA3840nsn",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA3840nsn.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA3840nsn.obj",
+          "bytes": 239890,
+          "sha256": "0f627ea296db92d011693e906bf07c4929217d9c44be609f2f805ad539f89c3f",
+          "crc": 1950954016,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_posterior_interventricular.glb",
+        "sha256": "4b4e3a60ee29da52b6dd9456f8a415a3b1fafdba03dd9391da459f8b82c92a46",
+        "triangles": 3086,
+        "vertices": 1545,
+        "boundsM": [
+          [
+            -0.0009136389999999999,
+            1.1849,
+            0.117554
+          ],
+          [
+            0.06687850000000001,
+            1.20141,
+            0.15587
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 2.3517721569124265e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "4b4e3a60ee29da52b6dd9456f8a415a3b1fafdba03dd9391da459f8b82c92a46",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA3840nsn-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "origin": "cv_a_coronary_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Coronary Circulation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+          "locator": "Coronary origins, anterior interventricular and circumflex branches"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+          "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_a_coronary_right_posterolateral",
+      "ru": "Правая заднебоковая ветвь",
+      "lat": "ramus posterolateralis dexter",
+      "system": "arteries",
+      "section": "trunk",
+      "side": "right",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right_posterolateral.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_a_coronary_right_posterolateral",
+        "source": {
+          "fma": "FMA76994",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA76994.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA76994.obj",
+          "bytes": 187002,
+          "sha256": "d3e62f2c5bb0fc0b10a2f5c8e2328740373d83418e59a4867c5641138358b455",
+          "crc": 429436992,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_right_posterolateral.glb",
+        "sha256": "4e0d60b4036385b7b9f47a98fab6e7221896d63963c97bea91a0e46a01084310",
+        "triangles": 2246,
+        "vertices": 1125,
+        "boundsM": [
+          [
+            0.0193114,
+            1.18554,
+            0.08861029999999999
+          ],
+          [
+            0.07361140000000001,
+            1.20503,
+            0.139126
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 1.0859726395908273e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "4e0d60b4036385b7b9f47a98fab6e7221896d63963c97bea91a0e46a01084310",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA76994-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "origin": "cv_a_coronary_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Coronary Circulation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+          "locator": "Coronary origins, anterior interventricular and circumflex branches"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+          "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_a_coronary_septal_right",
+      "ru": "Межжелудочковые перегородочные ветви правой венечной артерии",
+      "lat": "rami interventriculares septales (arteriae coronariae dextrae)",
+      "system": "arteries",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_septal_right.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_a_coronary_septal_right",
+        "source": {
+          "fma": "FMA71669",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA71669.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA71669.obj",
+          "bytes": 56483,
+          "sha256": "3f5e358eb07333e90c69f55982e075546bf97dd28dc60a4e12dd5dc3438d8309",
+          "crc": 847941868,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_septal_right.glb",
+        "sha256": "57b4eeb1162a2cdfa3dc42b2b7f7af1d2c21c4c10b3f93b58a573069348911c8",
+        "triangles": 754,
+        "vertices": 381,
+        "boundsM": [
+          [
+            0.009282299999999999,
+            1.1890699999999998,
+            0.11865600000000001
+          ],
+          [
+            0.0300045,
+            1.2098900000000001,
+            0.131823
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 6.293079918933261e-08,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "57b4eeb1162a2cdfa3dc42b2b7f7af1d2c21c4c10b3f93b58a573069348911c8",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA71669-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "origin": "cv_a_coronary_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Coronary Circulation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+          "locator": "Coronary origins, anterior interventricular and circumflex branches"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+          "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_a_coronary_septal_left",
+      "ru": "Межжелудочковые перегородочные ветви передней межжелудочковой ветви",
+      "lat": "rami interventriculares septales (rami interventricularis anterioris)",
+      "system": "arteries",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_septal_left.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_a_coronary_septal_left",
+        "source": {
+          "fma": "FMA71670",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA71670.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA71670.obj",
+          "bytes": 92530,
+          "sha256": "c86e7afe1265ab6f303a9811f47ff8e218b9a5e05fe3aabbffcb2029d6880c60",
+          "crc": 2411587664,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_a_coronary_septal_left.glb",
+        "sha256": "79f10de280adc3fcbe58f2554efc54723568e6fa24f6116a64d8a4e9ff51227e",
+        "triangles": 1214,
+        "vertices": 613,
+        "boundsM": [
+          [
+            0.0419587,
+            1.21519,
+            0.138084
+          ],
+          [
+            0.055746699999999996,
+            1.2534100000000001,
+            0.16673400000000002
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 1.0274033375833396e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "79f10de280adc3fcbe58f2554efc54723568e6fa24f6116a64d8a4e9ff51227e",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA71670-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "origin": "cv_a_coronary_anterior_interventricular"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Coronary Circulation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+          "locator": "Coronary origins, anterior interventricular and circumflex branches"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+          "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+          "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_v_coronary_sinus",
+      "ru": "Венечная пазуха",
+      "lat": "sinus coronarius",
+      "system": "veins",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/z-anatomy/cardiovascular/cv_v_coronary_sinus.glb",
+      "modelKind": "z-anatomy",
+      "segmentOf": null,
+      "candidate": null,
+      "admission": {
+        "status": "educational_limited",
+        "kind": "z-anatomy",
+        "modelFile": "models/z-anatomy/cardiovascular/cv_v_coronary_sinus.glb",
+        "sha256": "9e00767a7c61c7c87b7e84f4bba70ed9c24c667834e00266519fb7fe6ccde2c5",
+        "evidence": [
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+          "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json"
+        ],
+        "basis": "Z-Anatomy object «Coronary sinus», CC BY-SA 4.0; admission rule of z-publish.json (side, bone penetration, continuity).",
+        "limitation": "Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны."
+      },
+      "relations": {
+        "drainsTo": "cv_atrium_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+          "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+          "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_v_cardiac_great",
+      "ru": "Большая вена сердца",
+      "lat": "vena cardiaca magna",
+      "system": "veins",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_great.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_v_cardiac_great",
+        "source": {
+          "fma": "FMA4707",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA4707.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA4707.obj",
+          "bytes": 495345,
+          "sha256": "80d6e4b0473385bd2def192a52487436f219802a203faad4a1800e6747ac860f",
+          "crc": 2991162003,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cardiac_great.glb",
+        "sha256": "2af4b645d565071f0d427c9bf2d71ddb10dff4edbe9b336fb84c2f0cc011aea8",
+        "triangles": 7476,
+        "vertices": 3740,
+        "boundsM": [
+          [
+            0.0382426,
+            1.1898,
+            0.0818634
+          ],
+          [
+            0.0746426,
+            1.26349,
+            0.17282
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 1.1090017325817488e-06,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "2af4b645d565071f0d427c9bf2d71ddb10dff4edbe9b336fb84c2f0cc011aea8",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA4707-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "drainsTo": "cv_v_coronary_sinus"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+          "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+          "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_v_cardiac_middle",
+      "ru": "Средняя вена сердца",
+      "lat": "vena cardiaca media; vena interventricularis posterior",
+      "system": "veins",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_middle.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_v_cardiac_middle",
+        "source": {
+          "fma": "FMA4713",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA4713.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA4713.obj",
+          "bytes": 351557,
+          "sha256": "4a8b759e0f1bdd861ad026a03c5f3bda94240bfd20a555eec3da47604f9fdc53",
+          "crc": 450204102,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cardiac_middle.glb",
+        "sha256": "8d0be3ae7ad9da3e49f13b8af84a6c24f13593c069ace15a3915f9e9e8b4db22",
+        "triangles": 4326,
+        "vertices": 2165,
+        "boundsM": [
+          [
+            0.00156449,
+            1.18451,
+            0.107973
+          ],
+          [
+            0.0706114,
+            1.2174200000000002,
+            0.15652000000000002
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 4.348559076001322e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "8d0be3ae7ad9da3e49f13b8af84a6c24f13593c069ace15a3915f9e9e8b4db22",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA4713-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "drainsTo": "cv_v_coronary_sinus"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+          "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+          "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_v_ventricle_left_posterior",
+      "ru": "Задние вены левого желудочка",
+      "lat": "venae ventriculi sinistri posteriores",
+      "system": "veins",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_ventricle_left_posterior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_v_ventricle_left_posterior",
+        "source": {
+          "fma": "FMA76751",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA76751.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA76751.obj",
+          "bytes": 353364,
+          "sha256": "13b48da12a2159fa62c3060413dbe5348320a6b8d1069f7a676512debace64cd",
+          "crc": 2116976166,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_ventricle_left_posterior.glb",
+        "sha256": "c0c5998ab9f4fb02ff9d4d2937276755a04fb42d3c1f19e54943922cbef8bde2",
+        "triangles": 4318,
+        "vertices": 2163,
+        "boundsM": [
+          [
+            0.0161395,
+            1.18508,
+            0.0827884
+          ],
+          [
+            0.0774551,
+            1.2274,
+            0.144317
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 3.1501083880158125e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "c0c5998ab9f4fb02ff9d4d2937276755a04fb42d3c1f19e54943922cbef8bde2",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA76751-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "drainsTo": "cv_v_coronary_sinus"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+          "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+          "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
+    },
+    {
+      "id": "cv_v_cardiac_anterior",
+      "ru": "Передние вены правого желудочка",
+      "lat": "venae ventriculi dextri anteriores; venae cardiacae anteriores",
+      "system": "veins",
+      "section": "trunk",
+      "side": "unseparated",
+      "noModel": false,
+      "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_anterior.glb",
+      "modelKind": "bodyparts3d",
+      "segmentOf": null,
+      "candidate": {
+        "id": "cv_v_cardiac_anterior",
+        "source": {
+          "fma": "FMA71567",
+          "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/BodyParts3D_3.0_obj_95.zip",
+          "version": "3.0",
+          "entry": "BodyParts3D_3.0_obj_95/FMA71567.obj",
+          "file": "research/cache/cardiovascular-bp3d-3.0/FMA71567.obj",
+          "bytes": 375630,
+          "sha256": "3f93da3d85c9e327e01e1e8d818e8a65b6b6c7c365e30b689291cd2dc5927bf8",
+          "crc": 3989934845,
+          "author": "Database Center for Life Science (DBCLS)",
+          "license": "CC BY-SA 2.1 Japan"
+        },
+        "trial": "build_cardiovascular/bp3d-3.0-v1/cv_v_cardiac_anterior.glb",
+        "sha256": "542799d84b6da3b4051e909c9c7ed73afc42649a653a228fb75b3c8699e5a2a4",
+        "triangles": 5712,
+        "vertices": 2858,
+        "boundsM": [
+          [
+            -0.020848,
+            1.18866,
+            0.114345
+          ],
+          [
+            0.054845700000000004,
+            1.25304,
+            0.176623
+          ]
+        ],
+        "watertight": true,
+        "winding": true,
+        "volumeM3": 5.824069658968389e-07,
+        "degenerate": 0,
+        "duplicateFaces": 0,
+        "normalFallbackVertices": 0,
+        "roundtrip": "Exact float32 triangle corners/order",
+        "admission": "candidate",
+        "transform": "(x,z,-y)/1000; exact welding; area-weighted normals, largest adjacent face for cancellation; no fitting, mirroring, smoothing or decimation"
+      },
+      "admission": {
+        "status": "educational_limited",
+        "kind": "bodyparts3d",
+        "sha256": "542799d84b6da3b4051e909c9c7ed73afc42649a653a228fb75b3c8699e5a2a4",
+        "evidence": [
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+          "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/FMA71567-source.json"
+        ],
+        "basis": "BP3D 3.0 source identity matched to the TA98 entity FMA identifier; unchanged axes/scale; topography against the heart wall, parent vessels and valves (surface/wall/cavity rule); exact GLB triangle roundtrip.",
+        "limitation": "Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты."
+      },
+      "relations": {
+        "drainsTo": "cv_atrium_right"
+      },
+      "refs": [
+        {
+          "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+          "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+        },
+        {
+          "title": "OpenStax — Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+          "locator": "Location; chambers, septa, valves; coronary circulation"
+        },
+        {
+          "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+          "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+          "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+        }
+      ],
+      "issueIds": [
+        "FUT-005",
+        "CV-CATALOG-SOURCES",
+        "CV-GEO-ACCEPTANCE"
+      ],
+      "nextAction": "Проверить заявленную протяжённость, внутренние границы и соединения по зарегистрированным данным и независимой анатомической приёмке; учебный допуск не закрывает полную приёмку."
     }
   ],
   "counts": {
-    "cards": 98,
-    "educational": 50,
-    "noModel": 48,
+    "cards": 113,
+    "educational": 109,
+    "noModel": 4,
     "fullAnatomicalAcceptance": 0,
-    "proceduralReconstructions": 0
+    "proceduralReconstructions": 0,
+    "byModelKind": {
+      "bodyparts3d": 64,
+      "z-anatomy": 38,
+      "face-mask": 7
+    }
   },
   "sources": {
     "heart": {
@@ -6097,30 +8131,56 @@
       "title": "Schmidt et al. — Portal vein anatomy and variants",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3036482/",
       "locator": "Normal anatomy and anatomical variations; original morphologic/imaging review"
+    },
+    "papillary": {
+      "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+      "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+    },
+    "cardiacveins": {
+      "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+      "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+    },
+    "ta_heart": {
+      "title": "FIPAT — TA98: heart (A12.1)",
+      "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+      "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+    },
+    "ta_coronary": {
+      "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+      "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+      "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+    },
+    "ta_cardiacveins": {
+      "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+      "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+      "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
     }
   },
   "bySystem": {
     "heart": {
-      "cards": 11,
-      "educational": 4,
-      "noModel": 7
+      "cards": 16,
+      "educational": 14,
+      "noModel": 2
     },
     "arteries": {
-      "cards": 49,
-      "educational": 27,
-      "noModel": 22
+      "cards": 54,
+      "educational": 53,
+      "noModel": 1
     },
     "veins": {
-      "cards": 38,
-      "educational": 19,
-      "noModel": 19
+      "cards": 43,
+      "educational": 42,
+      "noModel": 1
     }
   },
   "checkpoint": {
-    "report": "research/cardiovascular-first-integration-2026-10-24.md",
-    "implementationStatus": "first_local_educational_batch",
-    "testsDate": "2026-10-22",
-    "registryDate": "2026-10-24",
+    "report": "research/cardiovascular-expansion-2026-10-26.md",
+    "firstReport": "research/cardiovascular-first-integration-2026-10-24.md",
+    "implementationStatus": "second_local_educational_batch",
+    "testsDate": "2026-10-26",
+    "registryDate": "2026-10-26",
     "evidence": [
       "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/node-production.json",
       "research/evidence-runs/cardiovascular-first-integration-2026-10-22T11-41-39-801Z-wDXHnD/geometry-measurements.json",
@@ -6133,12 +8193,22 @@
       "research/evidence-runs/cardiovascular-ui-r2-2026-10-22T12-24-27-891Z-4dzKc9/cv-regression-390-result.json",
       "research/evidence-runs/cardiovascular-ui-r2-2026-10-22T12-24-27-891Z-4dzKc9/canvas-raycast.json"
     ],
-    "testLimit": "Mobile heart scenario reached its time budget after 12 successful checks; remaining checks passed in a separately saved continuation. No full anatomical acceptance or physical-phone test.",
+    "evidenceBatch2": [
+      "research/evidence-runs/cardiovascular-batch2-2026-10-26T15-47-23-638Z-t6EBhW/batch2-topography.json",
+      "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-registration.json",
+      "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-vessel-review.json",
+      "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-mask-review.json",
+      "research/evidence-runs/z-cardiovascular-2026-10-26T16-04-43-756Z-JXagmr/z-publish.json",
+      "research/evidence-runs/cardiovascular-node-2026-10-26T16-19-04-440Z-xN5ser/node-production.json",
+      "research/evidence-runs/cardiovascular-ui-2026-10-26T16-20-37-157Z-8mRBgG/ui-report.json",
+      "research/evidence-runs/regression-part2-cardiovascular-2026-10-26T16-27-43-726Z-giAP4y/summary.json"
+    ],
+    "testLimit": "Batch 2: Chromium/SwiftShader 1280/390 and Node r170 checks passed; no physical phone, no anatomist acceptance. First batch: Mobile heart scenario reached its time budget after 12 successful checks; remaining checks passed in a separately saved continuation. No full anatomical acceptance or physical-phone test.",
     "preservedLegacy": {
-      "boneNoModel": 20,
+      "boneNoModel": 0,
       "muscleNoModel": 14,
       "musclePartsNoModel": 21
     },
-    "next": "CV-GEO-MISSING and CV-CATALOG-SOURCES: separate heart anatomy and named distal vessels; preserve current limited models. No nervous system or automatic release."
+    "next": "CV-GEO-MISSING: septa, portal vein and aggregate aorta card; CV-GEO-ACCEPTANCE: expert review of masks, Z-Anatomy courses and junctions. No nervous system or automatic release."
   }
 }

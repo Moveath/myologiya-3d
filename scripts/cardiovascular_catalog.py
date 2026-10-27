@@ -22,6 +22,11 @@ SOURCES = {
  'greatsaphenous':dict(title='NCBI Bookshelf — Saphenous Vein',url='https://www.ncbi.nlm.nih.gov/books/NBK532880/',locator='Great saphenous course and femoral junction'),
  'azygos':dict(title='NCBI Bookshelf — Azygos Veins',url='https://www.ncbi.nlm.nih.gov/books/NBK554430/',locator='Azygos and hemiazygos drainage'),
  'portal':dict(title='Schmidt et al. — Portal vein anatomy and variants',url='https://pmc.ncbi.nlm.nih.gov/articles/PMC3036482/',locator='Normal anatomy and anatomical variations; original morphologic/imaging review'),
+ 'papillary':dict(title='NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles',url='https://www.ncbi.nlm.nih.gov/books/NBK557802/',locator='Structure and Function: papillary muscles of both ventricles, chordae tendineae'),
+ 'cardiacveins':dict(title='NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus',url='https://www.ncbi.nlm.nih.gov/books/NBK557566/',locator='Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins'),
+ 'ta_heart':dict(title='FIPAT — TA98: heart (A12.1)',url='https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm',locator='A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only'),
+ 'ta_coronary':dict(title='FIPAT — TA98: coronary arteries (A12.2.03)',url='https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm',locator='A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only'),
+ 'ta_cardiacveins':dict(title='FIPAT — TA98: veins of heart (A12.3.01)',url='https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm',locator='A12.3.01.002–012 entity pages; term and FMA identity only'),
 }
 NOTICE='Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены.'
 CARDS={}
@@ -32,7 +37,7 @@ def add(key,ru,lat,system='heart',fma=None,sec='trunk',side='unseparated',facts=
         facts=facts or {},refs=[SOURCES[k] for k in (refs or ['heart','nih'])],fma=fma,**kw)
     return id
 
-add('heart','Сердце','cor',fma='FMA7274',facts={'Положение':'Средостение; позади грудины.','Модель':'Общая стенка сердца. Камеры и перегородки не сегментированы.'})
+add('heart','Сердце','cor',fma='FMA7274',facts={'Положение':'Средостение; позади грудины.','Модель':'Общая стенка сердца. Камеры выделены масками граней этой модели по разметке Z-Anatomy; перегородки отдельно не выделены.'})
 for key,ru,lat,side,role in [
  ('atrium_right','Правое предсердие','atrium dextrum','right','Принимает системный венозный возврат.'),
  ('atrium_left','Левое предсердие','atrium sinistrum','left','Принимает кровь лёгочных вен.'),
@@ -54,7 +59,7 @@ def artery(key,ru,lat,fma=None,origin=None,supply='',sec='trunk',side='unseparat
 artery('aorta','Аорта','aorta',origin='ventricle_left',supply='Большой круг кровообращения.')
 artery('aorta_ascending','Восходящая аорта','aorta ascendens','FMA3736','ventricle_left',partOf='cv_aorta')
 artery('aorta_arch','Дуга аорты','arcus aortae','FMA3768','aorta_ascending',partOf='cv_aorta')
-artery('aorta_descending','Нисходящая аорта','aorta descendens','FMA3784','aorta_arch',partOf='cv_aorta',factsNote='Исходный меш объединяет грудной и брюшной отделы; граница не сегментирована.')
+artery('aorta_descending','Нисходящая аорта','aorta descendens','FMA3784','aorta_arch',partOf='cv_aorta',factsNote='Исходный меш объединяет грудной и брюшной отделы; они выделены масками граней по уровню нижнего края тела T12 (аортальное отверстие диафрагмы).')
 artery('aorta_thoracic','Грудная часть аорты','pars thoracica aortae',origin='aorta_arch',partOf='cv_aorta_descending')
 artery('aorta_abdominal','Брюшная часть аорты','pars abdominalis aortae',origin='aorta_thoracic',partOf='cv_aorta_descending',refs=['vessels','abdomen'])
 artery('pulmonary_trunk','Лёгочный ствол','truncus pulmonalis',origin='ventricle_right',supply='Малый круг; лёгочные артерии.',refs=['vessels','flow'])
@@ -131,6 +136,32 @@ vein('splenic','Селезёночная вена','vena splenica','FMA14331','p
 vein('mesenteric_superior','Верхняя брыжеечная вена','vena mesenterica superior','FMA14332','portal',refs=['vessels','portal'])
 for key,ru,lat,fma in [('gastric_left','Левая желудочная артерия','arteria gastrica sinistra','FMA14768'),('hepatic_common','Общая печёночная артерия','arteria hepatica communis','FMA14771'),('splenic','Селезёночная артерия','arteria splenica','FMA14773')]:
     artery(key,ru,lat,fma,'celiac',refs=['vessels','abdomen'])
+
+# LOG-20261026-03: further BodyParts3D 3.0 heart parts. TA98 entity pages give the same FMA identifiers.
+for key,ru,lat,fma,side,ventricle,code in [
+ ('papillary_rv_anterior','Передняя сосочковая мышца правого желудочка','musculus papillaris anterior (ventriculi dextri)','FMA7260','right','ventricle_right','A12.1.02.017'),
+ ('papillary_rv_posterior','Задняя сосочковая мышца правого желудочка','musculus papillaris posterior (ventriculi dextri)','FMA7261','right','ventricle_right','A12.1.02.018'),
+ ('papillary_rv_septal','Перегородочная сосочковая мышца правого желудочка','musculus papillaris septalis','FMA7262','right','ventricle_right','A12.1.02.019'),
+ ('papillary_lv_posterior','Задняя сосочковая мышца левого желудочка','musculus papillaris posterior (ventriculi sinistri)','FMA7266','left','ventricle_left','A12.1.04.008'),
+ ('papillary_lv_unspecified','Сосочковая мышца левого желудочка (без уточнения в источнике)','musculus papillaris (ventriculi sinistri)','FMA9352nsn','left','ventricle_left',None)]:
+    add(key,ru,lat,fma=fma,side=side,partOf='cv_'+ventricle,refs=['heart','papillary','ta_heart'],taCode=code,
+        facts={'Отношение':'Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана.'},
+        **({'factsNote':'Источник называет её «papillary muscle of left ventricle, nsn» без уточнения передней или задней. По положению она лежит кпереди от задней сосочковой мышцы, но название по положению не присваивается.'} if fma=='FMA9352nsn' else {}))
+for key,ru,lat,fma,origin,supply,side,code,note in [
+ ('coronary_right_marginal','Правая краевая ветвь','ramus marginalis dexter','FMA3818','coronary_right','Правый желудочек по правому краю сердца.','right','A12.2.03.106',None),
+ ('coronary_posterior_interventricular','Задняя межжелудочковая ветвь','ramus interventricularis posterior','FMA3840nsn','coronary_right','Задние отделы обоих желудочков и перегородки.','unseparated','A12.2.03.108','Отходит от правой венечной артерии при правом типе кровоснабжения; источник модели — правая венечная артерия.'),
+ ('coronary_right_posterolateral','Правая заднебоковая ветвь','ramus posterolateralis dexter','FMA76994','coronary_right','Задняя стенка левого желудочка.','right','A12.2.03.111','В TA98 термин в скобках: ветвь непостоянная и зависит от типа кровоснабжения сердца.'),
+ ('coronary_septal_right','Межжелудочковые перегородочные ветви правой венечной артерии','rami interventriculares septales (arteriae coronariae dextrae)','FMA71669','coronary_right','Задняя часть межжелудочковой перегородки.','unseparated','A12.2.03.109',None),
+ ('coronary_septal_left','Межжелудочковые перегородочные ветви передней межжелудочковой ветви','rami interventriculares septales (rami interventricularis anterioris)','FMA71670','coronary_anterior_interventricular','Передние две трети межжелудочковой перегородки.','unseparated','A12.2.03.205',None)]:
+    artery(key,ru,lat,fma,origin,supply,side=side,refs=['coronary','heart','ta_coronary'],taCode=code,**({'factsNote':note} if note else {}))
+vein('coronary_sinus','Венечная пазуха','sinus coronarius',drains='atrium_right',area='Большая часть венозной крови стенки сердца.',refs=['cardiacveins','heart','ta_cardiacveins'],taCode='A12.3.01.002',
+     factsNote='Лежит в задней части венечной борозды и открывается в правое предсердие.')
+for key,ru,lat,fma,dest,area,code in [
+ ('cardiac_great','Большая вена сердца','vena cardiaca magna','FMA4707','coronary_sinus','Передняя межжелудочковая борозда, затем венечная борозда; продолжается в венечную пазуху.','A12.3.01.003'),
+ ('cardiac_middle','Средняя вена сердца','vena cardiaca media; vena interventricularis posterior','FMA4713','coronary_sinus','Задняя межжелудочковая борозда от верхушки к венечной пазухе.','A12.3.01.009'),
+ ('ventricle_left_posterior','Задние вены левого желудочка','venae ventriculi sinistri posteriores','FMA76751','coronary_sinus','Задняя стенка левого желудочка.','A12.3.01.006'),
+ ('cardiac_anterior','Передние вены правого желудочка','venae ventriculi dextri anteriores; venae cardiacae anteriores','FMA71567','atrium_right','Передняя стенка правого желудочка; впадают прямо в правое предсердие.','A12.3.01.012')]:
+    vein(key,ru,lat,fma,dest,area,refs=['cardiacveins','heart','ta_cardiacveins'],taCode=code)
 
 def validate():
     for id,c in CARDS.items():
