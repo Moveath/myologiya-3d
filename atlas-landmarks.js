@@ -13,8 +13,10 @@ export const isOwnBoneTerm = (pin, bone) => pin.t === 'ta' &&
 export const contributingBoneIds = pin => [...new Set((pin.relations || [])
   .filter(r => ['boundaryContribution', 'component'].includes(r.role)).map(r => r.bone))];
 export const hasLandmarkPosition = pin => !!pin?.p && pin.anchorStatus !== 'unverified';
-// Shown, but only as an educational approximation transferred from the reviewed right record.
-export const isApproximateLandmark = pin => hasLandmarkPosition(pin) && pin.anchorStatus === 'contralateral_transfer';
+// Shown, but only as an educational approximation: transferred from the reviewed right record, or computed
+// as the junction of the participating bone meshes (craniometric points).
+export const APPROXIMATE_ANCHORS = new Set(['contralateral_transfer', 'mesh_suture_junction']);
+export const isApproximateLandmark = pin => hasLandmarkPosition(pin) && APPROXIMATE_ANCHORS.has(pin.anchorStatus);
 export const relationLabel = role => ({boundaryContribution:'образует границу',component:'участвует в образовании',
   adjacentContext:'контекст',variantOf:'связь с вариантом'}[role] || 'связь каталога');
 

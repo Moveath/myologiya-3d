@@ -1,0 +1,12 @@
+BodyParts3D, Copyright© The Database Center for Life Science licensed by CC Attribution-Share Alike 2.1 Japan.
+Title/release: BodyParts3D 3.0 (DBCLS), STL files from https://github.com/Kevin-Mattheus-Moerman/BodyParts3D at commit f0eeb6e843380cfe6b83797cf8c3e1af74de5e61.
+Licence: https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+Changes: exact vertex weld; Blender 5.2 collapse decimation to the default muscle face budget of the atlas (min(max(0.13 n, min(n, 1500)), 14000));
+removal of isolated zero-volume two-triangle flaps created by decimation and of unused vertices; [bp.x,bp.z,-bp.y]/1000 (mm to metres, Z-up to Y-up);
+smooth normals; gltfpack meshopt compression without quantisation. No reflection, fitting or deformation: each side is its own source file.
+These derivative geometry files remain CC BY-SA 2.1 Japan; commercial use is permitted under its terms.
+Preserve attribution, licence and change notices; distribute adaptations under the same licence. No endorsement by DBCLS is implied.
+Educational visualisation only; attachment areas, aponeurotic boundaries, fibre directions and clinical accuracy are unaccepted.
+Учебные 3D-модели мышц живота. Точные площади прикреплений и граница мышечной и апоневротической частей не подтверждены.
+
+Files: abdomen_rectus_abdominis_right.glb (FMA13377); abdomen_rectus_abdominis_left.glb (FMA13378); abdomen_pyramidalis_right.glb (FMA22346); abdomen_pyramidalis_left.glb (FMA22347); abdomen_obliquus_externus_abdominis_right.glb (FMA13336); abdomen_obliquus_externus_abdominis_left.glb (FMA13337); abdomen_obliquus_internus_abdominis_right.glb (FMA13892); abdomen_obliquus_internus_abdominis_left.glb (FMA13893); abdomen_transversus_abdominis_right.glb (FMA22344); abdomen_transversus_abdominis_left.glb (FMA22345); abdomen_quadratus_lumborum_right.glb (FMA22348); abdomen_quadratus_lumborum_left.glb (FMA22349)

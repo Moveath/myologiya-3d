@@ -16,7 +16,7 @@ export const CATALOGUE = [
       {id: 'thoracic-vertebrae', ru: 'Грудные позвонки', g: ['thorax_spine']},
       {id: 'lumbar-vertebrae', ru: 'Поясничные позвонки', g: ['b_lumbar']},
       {id: 'sacrum', ru: 'Крестец', g: ['b_pelvis'], bases: ['sacrum']},
-    ], note: 'Отделы открываются в разных разделах: «Шея», «Грудной отдел», «Поясница, таз и нижняя конечность». Копчик отдельной модели не имеет — он отмечен ориентиром на модели крестца.'},
+    ], note: 'Отделы открываются в разных разделах: «Шея», «Грудь и живот», «Поясница, таз и нижняя конечность». Копчик отдельной модели не имеет — он отмечен ориентиром на модели крестца.'},
     {id: 'thoracic-cage', ru: 'Грудная клетка', parts: [
       {id: 'ribs', ru: 'Рёбра', g: ['thorax_ribs']},
       {id: 'costal-cartilages', ru: 'Рёберные хрящи', g: ['b_soft_thorax']},
@@ -89,8 +89,13 @@ export const CATALOGUE = [
     {id: 'diaphragm', ru: 'Диафрагма', g: ['thorax_diaphragm']},
   ]},
   {system: 'muscles', id: 'abdomen-muscles', ru: 'Мышцы живота', groups: [
-    {id: 'abdomen', ru: 'Мышцы живота',
-      missing: 'Пока нет моделей: наружная и внутренняя косые мышцы живота, поперечная мышца живота, прямая и пирамидальная мышцы живота, квадратная мышца поясницы.'},
+    // Gray (1918) and Loyola: anterolateral and posterior muscles of the abdomen; TA98 A04.5.01.
+    {id: 'abdomen-anterolateral', ru: 'Мышцы переднебоковой стенки живота', g: ['abdomen_anterolateral'],
+      bases: ['abdomen_obliquus_externus_abdominis', 'abdomen_obliquus_internus_abdominis', 'abdomen_transversus_abdominis',
+        'abdomen_rectus_abdominis', 'abdomen_pyramidalis'],
+      missing: 'Пока нет модели: мышца, поднимающая яичко, — она описана в карточке внутренней косой мышцы.'},
+    {id: 'abdomen-posterior', ru: 'Мышцы задней стенки живота', g: ['abdomen_posterior'],
+      note: 'Gray и Loyola относят к задней стенке живота также большую и малую поясничные и подвздошную мышцы; в атласе подвздошно-поясничная мышца стоит в мышцах таза.'},
   ]},
   {system: 'muscles', id: 'perineum-muscles', ru: 'Мышцы промежности', groups: [
     {id: 'pelvic-diaphragm', ru: 'Диафрагма таза', g: ['pelvic_floor']},

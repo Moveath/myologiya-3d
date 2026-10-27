@@ -1,0 +1,262 @@
+{
+  "release": "BodyParts3D 3.0 / STL mirror f0eeb6e8",
+  "author": "The Database Center for Life Science (DBCLS)",
+  "license": "CC BY-SA 2.1 Japan",
+  "derivativeLicense": "CC BY-SA 2.1 Japan",
+  "evidence": "research/evidence-runs/abdomen-muscles-2026-10-26T16-59-17-865Z-wv1sBh",
+  "review": {
+    "file": "abdomen-topography-v3.json",
+    "passed": 12,
+    "total": 12,
+    "rule": "technical (finite, no degenerate faces) + side (centroid on its side, <1% of vertices >5 mm past the midline) + every bone named by the attachment fields within 5 mm + no vertices >2 mm inside a bone (within 10 mm of its surface) unless the original STL has the same entry (recorded, not corrected) + flat muscles: external > internal > transversus radius in >=80% of shared 10 deg x 2 cm cells",
+    "limitation": "Proximity, side and layer order show gross identity and topography only; attachment areas, aponeurotic boundaries (how far each source mesh includes the aponeurosis is not established), fibre directions and the rectus sheath are not accepted. Costal cartilages of the atlas are partial aggregates.",
+    "layers": {
+      "right": {
+        "sharedCells": 105,
+        "orderedCells": 103,
+        "fraction": 0.981,
+        "medianGapExternalInternalMM": 5.99,
+        "medianGapInternalTransversusMM": 6.54
+      },
+      "left": {
+        "sharedCells": 104,
+        "orderedCells": 104,
+        "fraction": 1.0,
+        "medianGapExternalInternalMM": 6.38,
+        "medianGapInternalTransversusMM": 6.45
+      }
+    }
+  },
+  "files": [
+    {
+      "id": "abdomen_rectus_abdominis_right",
+      "fma": "FMA13377",
+      "sourceName": "right rectus abdominis",
+      "sourceSHA256": "4349d30019c36fc1823c1473b9c5ea5e06275f1d1f50b62ded4c2989ad6233a9",
+      "sourceTriangles": 191206,
+      "triangles": 13994,
+      "removedDecimationFlapTriangles": 6,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_rectus_abdominis_right.glb",
+      "sha256": "795bfe53c6c40d0ff93552fb5b0dd7b356804617a97d4ec444e8631ae272920c",
+      "bytes": 145500,
+      "rawSHA256": "c0ed27b85e2b80721c9013fb777f882f8e38f6adf0ea58e59b72147206969283",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_rectus_abdominis_left",
+      "fma": "FMA13378",
+      "sourceName": "left rectus abdominis",
+      "sourceSHA256": "ae21dee8f0c8be12b817a8c6eb06c4ebd009e297e584844a71d4751d60452437",
+      "sourceTriangles": 188862,
+      "triangles": 13996,
+      "removedDecimationFlapTriangles": 4,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_rectus_abdominis_left.glb",
+      "sha256": "bdcd4581dd644fcf552e74b6c077be4b91ef7ffb58a440c93b1a178d7d4cad79",
+      "bytes": 145516,
+      "rawSHA256": "56dcfe2b784d3498c29a7484b1cb32ee6eef03a493d4fd8062b8dab172a089e7",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_pyramidalis_right",
+      "fma": "FMA22346",
+      "sourceName": "right pyramidalis",
+      "sourceSHA256": "4fcdeae46ac20a941ef7f7c81b07f39a935cd362dbc351b351a3c98637622a74",
+      "sourceTriangles": 11214,
+      "triangles": 1498,
+      "removedDecimationFlapTriangles": 2,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_pyramidalis_right.glb",
+      "sha256": "33388d983bac0194ab6e1fe86898822864255377e83882ddd34114fbe88687be",
+      "bytes": 16764,
+      "rawSHA256": "761b937e9e61098eee9b691c6192ef95b9ceedb431a4fcadf3bafbe4f6ecbc91",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_pyramidalis_left",
+      "fma": "FMA22347",
+      "sourceName": "left pyramidalis",
+      "sourceSHA256": "269ea5aab5ea16c39a6b6c5a3e70995d3cbe025bd7eba689317901b517f23faf",
+      "sourceTriangles": 11044,
+      "triangles": 1498,
+      "removedDecimationFlapTriangles": 2,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_pyramidalis_left.glb",
+      "sha256": "0d22c463ff774ad42b532c45650b67705c237186d258a595b161ba327299bbed",
+      "bytes": 16912,
+      "rawSHA256": "35502cf8029745d666470738328254a71a2b25f300887304d7e92e98f9fb7b49",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_obliquus_externus_abdominis_right",
+      "fma": "FMA13336",
+      "sourceName": "right external oblique",
+      "sourceSHA256": "740cb96e8156ee5fb15ad333398e0166d3a6da08dcd5184ef6505d1287a21c82",
+      "sourceTriangles": 549294,
+      "triangles": 13926,
+      "removedDecimationFlapTriangles": 74,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_obliquus_externus_abdominis_right.glb",
+      "sha256": "2653879c8e507edee2b62d553495076a54faeac80f246a19618eecbc7cce7bbd",
+      "bytes": 146724,
+      "rawSHA256": "012c63e26fddace107091c919084d3d00dc3855326b480d3696eb4389e8625c5",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_obliquus_externus_abdominis_left",
+      "fma": "FMA13337",
+      "sourceName": "left external oblique",
+      "sourceSHA256": "e547f9c79f38054909b408b2b1c6a2bb3ca11cf1eb605ef3e6a919888ea64e1b",
+      "sourceTriangles": 546370,
+      "triangles": 13936,
+      "removedDecimationFlapTriangles": 64,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_obliquus_externus_abdominis_left.glb",
+      "sha256": "a460b9807f7db15e8af95da14d7496a938674f936bd7fdc66a20be4380b3ddd0",
+      "bytes": 146856,
+      "rawSHA256": "23e4c49ae39cf74a47ba8be6f15eebf89bc82319f4ea614aa84189d97a908c87",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_obliquus_internus_abdominis_right",
+      "fma": "FMA13892",
+      "sourceName": "right internal oblique",
+      "sourceSHA256": "40a5e17cfcb701b95139d0be4a4d6d6abe9be5444a693e8019344661ff186425",
+      "sourceTriangles": 266412,
+      "triangles": 13998,
+      "removedDecimationFlapTriangles": 2,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_obliquus_internus_abdominis_right.glb",
+      "sha256": "fed5c01e2cf22db060108a2c0aab5bfe60dca3f64195e779262215530e3f3472",
+      "bytes": 145732,
+      "rawSHA256": "0b7196990e2546fd399e8434ef41ba1bcb0a713b38a3316824ac2ef07383ca7b",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_obliquus_internus_abdominis_left",
+      "fma": "FMA13893",
+      "sourceName": "left internal oblique",
+      "sourceSHA256": "d73d78bf6703f3423a4241dfc63a3a065f306287bb05dc10a25b3a830b563503",
+      "sourceTriangles": 264182,
+      "triangles": 14000,
+      "removedDecimationFlapTriangles": 0,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_obliquus_internus_abdominis_left.glb",
+      "sha256": "b73b6b0269f8e33698afd0922a0a4ecbe97ad018551b1702d39bc7613550620a",
+      "bytes": 146420,
+      "rawSHA256": "23c0db5854215d993501fd8188dce741431396df231772d626f0eacc1b39e14f",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_transversus_abdominis_right",
+      "fma": "FMA22344",
+      "sourceName": "right transversus abdominis",
+      "sourceSHA256": "0dd051312779e2dbd842ff3d5ddff9e39f181250cc94f1775ffc0b66385b311e",
+      "sourceTriangles": 313270,
+      "triangles": 14000,
+      "removedDecimationFlapTriangles": 0,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_transversus_abdominis_right.glb",
+      "sha256": "b9cc8485ebdcc8d236717364fb95b3b9376d721d2d08eb3a7fe2c87ad3efaca5",
+      "bytes": 147688,
+      "rawSHA256": "01e0af0aba87d524a9b1ffa7001c9d7eee25d74ad254c1c6008a9a2e1c7894cf",
+      "inheritedBoneEntries": {
+        "rib_11": {
+          "maxDepthMM": 2.64,
+          "sourceMaxDepthMM": 2.64,
+          "verticesDeeperThan2mm": 8
+        },
+        "rib_12": {
+          "maxDepthMM": 2.14,
+          "sourceMaxDepthMM": 2.2,
+          "verticesDeeperThan2mm": 2
+        },
+        "costal_cartilages": {
+          "maxDepthMM": 7.99,
+          "sourceMaxDepthMM": 8.75,
+          "verticesDeeperThan2mm": 2
+        },
+        "hip_bone": {
+          "maxDepthMM": 6.01,
+          "sourceMaxDepthMM": 6.21,
+          "verticesDeeperThan2mm": 110
+        }
+      }
+    },
+    {
+      "id": "abdomen_transversus_abdominis_left",
+      "fma": "FMA22345",
+      "sourceName": "left transversus abdominis",
+      "sourceSHA256": "48d4271a2e38edf1f9ca59acf655bb966ea179b395c87f6eb537174d4e5e04df",
+      "sourceTriangles": 312862,
+      "triangles": 13970,
+      "removedDecimationFlapTriangles": 30,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_transversus_abdominis_left.glb",
+      "sha256": "27d5e0ce3dc665d02eb9933cf6c4570bbce35b6c1943c895290289202dd04ba3",
+      "bytes": 147580,
+      "rawSHA256": "c8e5862817fd7100c3488f79ab07877ed951648b1b034fa42598f88c564bec15",
+      "inheritedBoneEntries": {
+        "rib_7": {
+          "maxDepthMM": 2.3,
+          "sourceMaxDepthMM": 2.28,
+          "verticesDeeperThan2mm": 5
+        },
+        "rib_8": {
+          "maxDepthMM": 2.67,
+          "sourceMaxDepthMM": 2.66,
+          "verticesDeeperThan2mm": 10
+        },
+        "rib_9": {
+          "maxDepthMM": 2.29,
+          "sourceMaxDepthMM": 2.36,
+          "verticesDeeperThan2mm": 1
+        },
+        "rib_11": {
+          "maxDepthMM": 2.79,
+          "sourceMaxDepthMM": 3.03,
+          "verticesDeeperThan2mm": 12
+        },
+        "rib_12": {
+          "maxDepthMM": 2.16,
+          "sourceMaxDepthMM": 2.26,
+          "verticesDeeperThan2mm": 2
+        },
+        "hip_bone": {
+          "maxDepthMM": 5.97,
+          "sourceMaxDepthMM": 6.29,
+          "verticesDeeperThan2mm": 117
+        }
+      }
+    },
+    {
+      "id": "abdomen_quadratus_lumborum_right",
+      "fma": "FMA22348",
+      "sourceName": "right quadratus lumborum",
+      "sourceSHA256": "8c21623781466c87c16fa03b93cd00322f3a20afa4d5439c799978d4b5ce70c4",
+      "sourceTriangles": 25896,
+      "triangles": 3364,
+      "removedDecimationFlapTriangles": 2,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_quadratus_lumborum_right.glb",
+      "sha256": "83e51b703978a4eaa51b1399be1b30f15010e76fb225aae83112226707ea1a77",
+      "bytes": 36972,
+      "rawSHA256": "4ac701a101032901fa30778f219e475b1931778c463a67fed03441489afe1d35",
+      "inheritedBoneEntries": {}
+    },
+    {
+      "id": "abdomen_quadratus_lumborum_left",
+      "fma": "FMA22349",
+      "sourceName": "left quadratus lumborum",
+      "sourceSHA256": "1761bf8813a1585d108260e16522c4f07088a9607c57dda16d05d3a854428212",
+      "sourceTriangles": 25602,
+      "triangles": 3328,
+      "removedDecimationFlapTriangles": 0,
+      "file": "models/bodyparts3d-3.0/abdomen-muscles/abdomen_quadratus_lumborum_left.glb",
+      "sha256": "5d0e3b2da624868274119d36ce492c26eb9bde545d7232fda5732a9dfe2f7c2b",
+      "bytes": 36668,
+      "rawSHA256": "1c411cdd6e2383e22ad49f0f67e30e0fbdb1a32c45be7662ebb6089652e02412",
+      "inheritedBoneEntries": {
+        "lumbar_3": {
+          "maxDepthMM": 2.38,
+          "sourceMaxDepthMM": 2.49,
+          "verticesDeeperThan2mm": 1
+        }
+      }
+    }
+  ],
+  "productionInstalled": true,
+  "educationalAcceptance": true,
+  "fullAnatomicalAcceptance": false,
+  "report": "research/abdomen-muscles-2026-10-26.md"
+}

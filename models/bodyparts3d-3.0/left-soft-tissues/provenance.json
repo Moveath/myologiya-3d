@@ -1,0 +1,234 @@
+{
+  "release": "BodyParts3D 3.0 / STL mirror f0eeb6e8",
+  "author": "The Database Center for Life Science (DBCLS)",
+  "license": "CC BY-SA 2.1 Japan",
+  "derivativeLicense": "CC BY-SA 2.1 Japan",
+  "evidence": "research/evidence-runs/left-soft-tissues-2026-10-25T19-49-53-923Z-lTWWWD",
+  "files": [
+    {
+      "id": "interosseous_membrane_left",
+      "right": "interosseous_membrane",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/interosseous_membrane_left.glb",
+      "sha256": "76f627be20024c12992f68141c741bf7d43e2b5cfce4290505f65828fb5368fd",
+      "bytes": 23616,
+      "rawSHA256": "b26fae9331a9711283ba69b30c26f8962cb137a04ac387643cf83fafff5ba8a9",
+      "leftFMA": "FMA23708",
+      "leftName": "interosseous membrane of left forearm",
+      "sourceSHA256": "1676829ef5ccb54aebefb22488cf036717d79563801540fd721551f56dbc1cc0",
+      "sourceTriangles": 13808,
+      "triangles": 2160,
+      "removedDecimationFlapTriangles": 0,
+      "rightFMA": "FMA23707",
+      "rightTriangles": 2160,
+      "review": {
+        "medianSymmetricDistanceMM": 1.0649832952973657,
+        "extentRatio": [
+          0.9986,
+          1.0003,
+          0.9993
+        ],
+        "areaRatio": 1.0088,
+        "leftBones": [
+          "radius",
+          "ulna"
+        ],
+        "rightBones": [
+          "radius",
+          "ulna"
+        ]
+      }
+    },
+    {
+      "id": "flexor_retinaculum_left",
+      "right": "flexor_retinaculum",
+      "region": "arm",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/flexor_retinaculum_left.glb",
+      "sha256": "0caec992a24653f700d73122c8a3c3e85c13bb7dc065e49079509f043820e86b",
+      "bytes": 17832,
+      "rawSHA256": "c2b2d370aed690ac89873084b679759492ed425faf3824e770900541cf2efda4",
+      "leftFMA": "FMA40121",
+      "leftName": "flexor retinaculum of left wrist",
+      "sourceSHA256": "153ca4739d563df2b66912be0c35d383d4c628cf08d0676c10cfe6a0b209b6af",
+      "sourceTriangles": 10634,
+      "triangles": 1596,
+      "removedDecimationFlapTriangles": 0,
+      "rightFMA": "FMA40120",
+      "rightTriangles": 1596,
+      "review": {
+        "medianSymmetricDistanceMM": 0.7416105678950514,
+        "extentRatio": [
+          0.9994,
+          0.9949,
+          1.0056
+        ],
+        "areaRatio": 1.0039,
+        "leftBones": [
+          "pisiform",
+          "scaphoid",
+          "trapezium"
+        ],
+        "rightBones": [
+          "pisiform",
+          "scaphoid",
+          "trapezium"
+        ]
+      }
+    },
+    {
+      "id": "iliotibial_tract_left",
+      "right": "iliotibial_tract",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/iliotibial_tract_left.glb",
+      "sha256": "f36bdc1302587680a44d1a23babec0706a5c2f38eca5271663e0437d2762093f",
+      "bytes": 63124,
+      "rawSHA256": "f1c7578a7965640597528de584ab6ea47e0950eef75739578b44693ed11d1ea6",
+      "leftFMA": "FMA58777",
+      "leftName": "left iliotibial tract",
+      "sourceSHA256": "545bc8da8c2e62cf6bfb61659d680bcf074d429b78b21f7c42cf5985be01118f",
+      "sourceTriangles": 244884,
+      "triangles": 5988,
+      "removedDecimationFlapTriangles": 12,
+      "rightFMA": "FMA58776",
+      "rightTriangles": 6000,
+      "review": {
+        "medianSymmetricDistanceMM": 1.7353807621591024,
+        "extentRatio": [
+          0.9972,
+          1.0003,
+          0.9996
+        ],
+        "areaRatio": 1.0057,
+        "leftBones": [
+          "femur",
+          "fibula",
+          "hip_bone",
+          "patella",
+          "tibia"
+        ],
+        "rightBones": [
+          "femur",
+          "fibula",
+          "hip_bone",
+          "patella",
+          "tibia"
+        ]
+      }
+    },
+    {
+      "id": "inguinal_ligament_left",
+      "right": "inguinal_ligament",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/inguinal_ligament_left.glb",
+      "sha256": "87be84a7198ac5721418cbc38cbd4577b829a177cc24f10ddfbc35261a888df7",
+      "bytes": 19960,
+      "rawSHA256": "2ae4131b29d6438635db49d5190a632115a308ce3b288653c4199ad52e86533a",
+      "leftFMA": "FMA21965",
+      "leftName": "left inguinal ligament",
+      "sourceSHA256": "63102856cfe49804cbed0b2e2807d5d8243ba4ac81036b61b5348b924c84283e",
+      "sourceTriangles": 11704,
+      "triangles": 1788,
+      "removedDecimationFlapTriangles": 20,
+      "rightFMA": "FMA21964",
+      "rightTriangles": 1808,
+      "review": {
+        "medianSymmetricDistanceMM": 1.0211832968059684,
+        "extentRatio": [
+          0.9992,
+          1.0011,
+          0.9905
+        ],
+        "areaRatio": 1.0063,
+        "leftBones": [
+          "hip_bone"
+        ],
+        "rightBones": [
+          "hip_bone"
+        ]
+      }
+    },
+    {
+      "id": "long_plantar_ligament_left",
+      "right": "long_plantar_ligament",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/long_plantar_ligament_left.glb",
+      "sha256": "15b23fd0f130c0a6a69ef755783ee029f82db4d51849abb31067e921ce8e9a8e",
+      "bytes": 57464,
+      "rawSHA256": "3d9b74f3d915202d25492c11556975f969b2351dc4bee36e80b901867b0afba4",
+      "leftFMA": "FMA44250",
+      "leftName": "left long plantar ligament",
+      "sourceSHA256": "1a4d06e89639adf0d42ac990df2f4222dfc74f41b1b37f765c72428e2385fcf7",
+      "sourceTriangles": 35210,
+      "triangles": 5314,
+      "removedDecimationFlapTriangles": 4,
+      "rightFMA": "FMA44249",
+      "rightTriangles": 5318,
+      "review": {
+        "medianSymmetricDistanceMM": 0.8635505510411898,
+        "extentRatio": [
+          0.9995,
+          1.0012,
+          0.9984
+        ],
+        "areaRatio": 1.0065,
+        "leftBones": [
+          "calcaneus",
+          "cuboid",
+          "cuneiform_med",
+          "metatarsal_1",
+          "metatarsal_2",
+          "metatarsal_3",
+          "metatarsal_4",
+          "metatarsal_5"
+        ],
+        "rightBones": [
+          "calcaneus",
+          "cuboid",
+          "cuneiform_med",
+          "metatarsal_1",
+          "metatarsal_2",
+          "metatarsal_3",
+          "metatarsal_4",
+          "metatarsal_5"
+        ]
+      }
+    },
+    {
+      "id": "calcaneal_tendon_left",
+      "right": "calcaneal_tendon",
+      "region": "leg",
+      "file": "models/bodyparts3d-3.0/left-soft-tissues/calcaneal_tendon_left.glb",
+      "sha256": "16fcfef2ce535a5fc3d8d9c9e3877e66ebe08a4d5e22e9c018e6eecd06855e2c",
+      "bytes": 64356,
+      "rawSHA256": "69abe47045f3178afd7f3ee8254f07c0df71858592c6631687bd8b2835b02e95",
+      "leftFMA": "FMA264844",
+      "leftName": "left calcaneal tendon",
+      "sourceSHA256": "17d02aa8d931d667c93892815ece5a8030c383a7379f932e628c230c2a81a33e",
+      "sourceTriangles": 47238,
+      "triangles": 5971,
+      "removedDecimationFlapTriangles": 26,
+      "rightFMA": "FMA258847",
+      "rightTriangles": 5998,
+      "review": {
+        "medianSymmetricDistanceMM": 1.0103360044931962,
+        "extentRatio": [
+          1.0048,
+          1.0006,
+          0.9954
+        ],
+        "areaRatio": 1.0048,
+        "leftBones": [
+          "calcaneus"
+        ],
+        "rightBones": [
+          "calcaneus"
+        ]
+      }
+    }
+  ],
+  "productionInstalled": true,
+  "educationalAcceptance": true,
+  "fullAnatomicalAcceptance": false,
+  "report": "research/BONES_MUSCLES_FULL_AUDIT.md",
+  "admissionRule": "technical + left side (centroid x>0, >99% vertices x>0) + shape vs reflected right (median <=3 mm, extents 0.8-1.25) + no clear one-sided bone contact (<=2.5 mm on one side and >0.5 mm farther and >2.5 mm on the other)"
+}

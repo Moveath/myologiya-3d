@@ -433,7 +433,8 @@
       a: "Отводят II–IV пальцы от оси, проходящей через II палец. Участвуют в сгибании проксимальных фаланг.",
       n: "Латеральный подошвенный нерв (S2–S3).",
       s: "Тыльные и подошвенные плюсневые артерии.",
-      note: "Их четыре. Ось отведения на стопе проходит через II палец, а на кисти — через III."
+      note: "Их четыре. Ось отведения на стопе проходит через II палец, а на кисти — через III. Латынь по TA2 (FIPAT, 2019, ID 2686): musculi interossei dorsales pedis. В TA98 (A04.7.02.070) — mm. interossei dorsales без «pedis»; область задана разделом «Мышцы стопы». Подошвенные межкостные мышцы (TA2 2687) названы без «pedis» в обеих номенклатурах.",
+      noteRefs: [{"title": "IFAA — TA98, A04.7.02 Musculi pedis", "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.7.02%20TA98%20EN.htm", "locator": "A04.7.02.070–071"}, {"title": "FIPAT — Terminologia Anatomica, 2nd ed. (TA2, 2019)", "url": "https://neuron.mefst.hr/docs/katedre/anatomija/medicina/Terminologia%20anatomica/Terminologia-Anatomica-2nd-Ed-2019.pdf", "locator": "Musculi pedis, ID 2686–2687"}]
     },
 
     // ---------- стопа: медиальная группа ----------
@@ -485,7 +486,9 @@
       i: "Латеральная сторона основания проксимальной фаланги мизинца.",
       a: "Отводит и сгибает мизинец, поддерживает латеральную часть свода.",
       n: "Латеральный подошвенный нерв (S2–S3).",
-      s: "Латеральная подошвенная артерия."
+      s: "Латеральная подошвенная артерия.",
+      note: "Латынь по TA2 (FIPAT, 2019, ID 2679): musculus abductor digiti minimi pedis. В TA98 (A04.7.02.063) та же мышца названа m. abductor digiti minimi — без «pedis»: область задана разделом «Мышцы стопы».",
+      noteRefs: [{"title": "IFAA — TA98, A04.7.02 Musculi pedis", "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.7.02%20TA98%20EN.htm", "locator": "A04.7.02.063"}, {"title": "FIPAT — Terminologia Anatomica, 2nd ed. (TA2, 2019)", "url": "https://neuron.mefst.hr/docs/katedre/anatomija/medicina/Terminologia%20anatomica/Terminologia-Anatomica-2nd-Ed-2019.pdf", "locator": "Musculi pedis, ID 2679"}]
     },
     flexor_digiti_minimi_brevis_pedis: {
       lat: "m. flexor digiti minimi brevis pedis", ru: "Короткий сгибатель мизинца стопы", g: "foot_lat", d: 3, v: "plantar", L: "3-й слой подошвы",
@@ -493,7 +496,9 @@
       i: "Основание проксимальной фаланги мизинца.",
       a: "Сгибает проксимальную фалангу мизинца.",
       n: "Латеральный подошвенный нерв (S2–S3).",
-      s: "Латеральная подошвенная артерия."
+      s: "Латеральная подошвенная артерия.",
+      note: "Латынь по TA2 (FIPAT, 2019, ID 2682): musculus flexor digiti minimi brevis pedis. В TA98 (A04.7.02.066) — m. flexor digiti minimi brevis без «pedis»; область задана разделом «Мышцы стопы».",
+      noteRefs: [{"title": "IFAA — TA98, A04.7.02 Musculi pedis", "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.7.02%20TA98%20EN.htm", "locator": "A04.7.02.066"}, {"title": "FIPAT — Terminologia Anatomica, 2nd ed. (TA2, 2019)", "url": "https://neuron.mefst.hr/docs/katedre/anatomija/medicina/Terminologia%20anatomica/Terminologia-Anatomica-2nd-Ed-2019.pdf", "locator": "Musculi pedis, ID 2682"}]
     },
     opponens_digiti_minimi_pedis: {
       lat: "m. opponens digiti minimi pedis", ru: "Мышца, противопоставляющая мизинец стопы", g: "foot_lat", d: 3, v: "plantar", L: "3-й слой подошвы",
@@ -502,7 +507,8 @@
       a: "Подтягивает V плюсневую кость к подошве, поддерживает латеральную часть свода.",
       n: "Латеральный подошвенный нерв.",
       s: "Латеральная подошвенная артерия.",
-      note: "Непостоянная мышца, часто считается частью короткого сгибателя мизинца."
+      note: "Непостоянная мышца, часто считается частью короткого сгибателя мизинца. Латынь по TA2 (FIPAT, 2019, ID 2681): (musculus opponens digiti minimi pedis). В TA98 (A04.7.02.065) — (m. opponens digiti minimi) без «pedis». Обе номенклатуры дают термин в скобках: мышца непостоянная.",
+      noteRefs: [{"title": "IFAA — TA98, A04.7.02 Musculi pedis", "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.7.02%20TA98%20EN.htm", "locator": "A04.7.02.065"}, {"title": "FIPAT — Terminologia Anatomica, 2nd ed. (TA2, 2019)", "url": "https://neuron.mefst.hr/docs/katedre/anatomija/medicina/Terminologia%20anatomica/Terminologia-Anatomica-2nd-Ed-2019.pdf", "locator": "Musculi pedis, ID 2681"}]
     },
 
     // ---------- стопа: средняя группа ----------
@@ -539,7 +545,9 @@
       i: "Медиальные стороны проксимальных фаланг II–V пальцев и их тыльные апоневрозы.",
       a: "Сгибают проксимальные фаланги II–V пальцев и разгибают средние и дистальные.",
       n: "I мышца — медиальный подошвенный нерв, II–IV — латеральный подошвенный нерв.",
-      s: "Подошвенные плюсневые артерии."
+      s: "Подошвенные плюсневые артерии.",
+      note: "Латынь по TA2 (FIPAT, 2019, ID 2685): musculi lumbricales pedis. В TA98 (A04.7.02.069) — mm. lumbricales без «pedis»; область задана разделом «Мышцы стопы».",
+      noteRefs: [{"title": "IFAA — TA98, A04.7.02 Musculi pedis", "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/TA98%20EN/04.7.02%20TA98%20EN.htm", "locator": "A04.7.02.069"}, {"title": "FIPAT — Terminologia Anatomica, 2nd ed. (TA2, 2019)", "url": "https://neuron.mefst.hr/docs/katedre/anatomija/medicina/Terminologia%20anatomica/Terminologia-Anatomica-2nd-Ed-2019.pdf", "locator": "Musculi pedis, ID 2685"}]
     },
     plantar_interossei: {
       lat: "mm. interossei plantares", ru: "Подошвенные межкостные мышцы", g: "foot_mid", d: 3, v: "plantar", L: "4-й слой подошвы, самый глубокий",

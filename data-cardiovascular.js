@@ -10,7 +10,7 @@ A.structures={
     "side": "unseparated",
     "facts": {
       "Положение": "Средостение; позади грудины.",
-      "Модель": "Общая стенка сердца. Камеры и перегородки не сегментированы."
+      "Модель": "Общая стенка сердца. Камеры выделены масками граней этой модели по разметке Z-Anatomy; перегородки отдельно не выделены."
     },
     "refs": [
       {
@@ -29,6 +29,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_heart.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -56,8 +57,14 @@ A.structures={
     ],
     "fma": null,
     "partOf": "cv_heart",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_right.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_heart"
   },
   "cv_atrium_left": {
     "ru": "Левое предсердие",
@@ -83,8 +90,14 @@ A.structures={
     ],
     "fma": null,
     "partOf": "cv_heart",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_atrium_left.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_heart"
   },
   "cv_ventricle_right": {
     "ru": "Правый желудочек",
@@ -110,8 +123,14 @@ A.structures={
     ],
     "fma": null,
     "partOf": "cv_heart",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_right.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_heart"
   },
   "cv_ventricle_left": {
     "ru": "Левый желудочек",
@@ -137,8 +156,14 @@ A.structures={
     ],
     "fma": null,
     "partOf": "cv_heart",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница части приблизительна: грани у стыков с неоднозначной принадлежностью не включены. Камера выделена по совмещённой разметке Z-Anatomy; перегородки отдельно не выделены.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_ventricle_left.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_heart"
   },
   "cv_septum_atrial": {
     "ru": "Межпредсердная перегородка",
@@ -223,6 +248,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_tricuspid.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -255,6 +281,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_mitral.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -283,8 +310,13 @@ A.structures={
     "fma": null,
     "partOf": "cv_heart",
     "modelScope": "Статическая модель. Для предсердно-желудочковых клапанов исходный набор включает хорды; их отдельные границы не размечены.",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Модель створок Z-Anatomy, совмещённая со стенкой сердца атласа. Форма створок и их соотношение с синусами аорты не приняты; не для морфометрии. Три полулунные заслонки Z-Anatomy, совмещённые со стенкой сердца атласа; лежат у корня восходящей аорты.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_valve_aortic.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_valve_pulmonary": {
     "ru": "Клапан лёгочного ствола",
@@ -315,6 +347,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами. Сохранены локальные дефекты исходной сетки; модель не предназначена для точной морфометрии.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_valve_pulmonary.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -372,6 +405,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_ascending.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -402,6 +436,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_arch.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -428,11 +463,12 @@ A.structures={
     "fma": "FMA3784",
     "origin": "cv_a_aorta_arch",
     "partOf": "cv_a_aorta",
-    "factsNote": "Исходный меш объединяет грудной и брюшной отделы; граница не сегментирована.",
+    "factsNote": "Исходный меш объединяет грудной и брюшной отделы; они выделены масками граней по уровню нижнего края тела T12 (аортальное отверстие диафрагмы).",
     "noModel": false,
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_aorta_descending.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -459,8 +495,14 @@ A.structures={
     "fma": null,
     "origin": "cv_a_aorta_arch",
     "partOf": "cv_a_aorta_descending",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница проведена по уровню нижнего края тела T12 атласа (аортальное отверстие диафрагмы); положение отверстия на образце не размечалось.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_thoracic.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_a_aorta_descending"
   },
   "cv_a_aorta_abdominal": {
     "ru": "Брюшная часть аорты",
@@ -485,8 +527,14 @@ A.structures={
     "fma": null,
     "origin": "cv_a_aorta_thoracic",
     "partOf": "cv_a_aorta_descending",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Граница проведена по уровню нижнего края тела T12 атласа (аортальное отверстие диафрагмы); положение отверстия на образце не размечалось.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_aorta_abdominal.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_a_aorta_descending"
   },
   "cv_a_pulmonary_trunk": {
     "ru": "Лёгочный ствол",
@@ -512,8 +560,14 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_ventricle_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна. Ствол выделен по совмещённой модели Z-Anatomy до бифуркации; точная граница с ветвями не принята.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/masks/cv_a_pulmonary_trunk.json",
+    "modelStatus": "educational_limited",
+    "modelKind": "face-mask",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Часть общей модели BodyParts3D, выделенная списком её граней. Граница части приблизительна.",
+    "segmentOf": "cv_a_pulmonary_arteries"
   },
   "cv_a_pulmonary_arteries": {
     "ru": "Лёгочные артерии — объединённый набор",
@@ -544,6 +598,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_pulmonary_arteries.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -575,6 +630,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -606,6 +662,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -637,6 +694,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_anterior_interventricular.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -668,6 +726,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_circumflex.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -697,6 +756,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_brachiocephalic.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -728,6 +788,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -759,6 +820,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -790,6 +852,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_carotid_common_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -821,6 +884,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_subclavian_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -852,6 +916,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_celiac.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -883,6 +948,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_superior.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -914,6 +980,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_mesenteric_inferior.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -945,6 +1012,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -976,6 +1044,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1005,6 +1074,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1036,6 +1106,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1067,6 +1138,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_renal_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1098,6 +1170,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_common_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1127,6 +1200,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_external_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1158,6 +1232,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_iliac_internal_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1189,6 +1264,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_superior.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1220,6 +1296,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cava_inferior.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1252,6 +1329,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_pulmonary_veins.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1281,6 +1359,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1312,6 +1391,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1343,6 +1423,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1374,6 +1455,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1405,6 +1487,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1434,6 +1517,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1465,6 +1549,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_right.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1494,6 +1579,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_brachiocephalic_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1525,6 +1611,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_jugular_internal_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1556,6 +1643,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_subclavian_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1587,6 +1675,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_renal_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1618,6 +1707,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_common_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1647,6 +1737,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_external_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1678,6 +1769,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_iliac_internal_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -1705,8 +1797,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_subclavian_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_subclavian_right» около 4.6 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_brachial_right": {
     "ru": "Правая плечевая артерия",
@@ -1732,8 +1829,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_axillary_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_radial_right": {
     "ru": "Правая лучевая артерия",
@@ -1759,8 +1861,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_brachial_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_ulnar_right": {
     "ru": "Правая локтевая артерия",
@@ -1786,8 +1893,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_brachial_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_femoral_right": {
     "ru": "Правая бедренная артерия",
@@ -1811,8 +1923,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_iliac_external_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_popliteal_right": {
     "ru": "Правая подколенная артерия",
@@ -1836,8 +1953,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_femoral_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_tibial_anterior_right": {
     "ru": "Правая передняя большеберцовая артерия",
@@ -1861,8 +1983,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_popliteal_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_popliteal_right» около 0.4 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_tibial_posterior_right": {
     "ru": "Правая задняя большеберцовая артерия",
@@ -1886,8 +2013,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_popliteal_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.5 мм; после переноса — 4.27 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_fibular_right": {
     "ru": "Правая малоберцовая артерия",
@@ -1911,8 +2043,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_tibial_posterior_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_axillary_right": {
     "ru": "Правая подмышечная вена",
@@ -1936,8 +2073,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_subclavian_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_subclavian_right» около 8.5 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_cephalic_right": {
     "ru": "Правая латеральная подкожная вена руки",
@@ -1961,8 +2103,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_basilic_right": {
     "ru": "Правая медиальная подкожная вена руки",
@@ -1986,8 +2133,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_brachial_right": {
     "ru": "Правые плечевые вены",
@@ -2011,8 +2163,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_axillary_right» около 0.2 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_femoral_right": {
     "ru": "Правая бедренная вена",
@@ -2036,8 +2193,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_iliac_external_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_popliteal_right": {
     "ru": "Правая подколенная вена",
@@ -2061,8 +2223,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_femoral_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_saphenous_great_right": {
     "ru": "Правая большая подкожная вена",
@@ -2086,8 +2253,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_femoral_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_femoral_right» около 2.5 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_saphenous_small_right": {
     "ru": "Правая малая подкожная вена",
@@ -2111,8 +2283,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_popliteal_right",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_popliteal_right» около 0.2 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_axillary_left": {
     "ru": "Левая подмышечная артерия",
@@ -2138,8 +2315,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_subclavian_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_subclavian_left» около 1.8 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_axillary_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_brachial_left": {
     "ru": "Левая плечевая артерия",
@@ -2165,8 +2347,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_axillary_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_brachial_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_radial_left": {
     "ru": "Левая лучевая артерия",
@@ -2192,8 +2379,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_brachial_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_radial_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_ulnar_left": {
     "ru": "Левая локтевая артерия",
@@ -2219,8 +2411,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_brachial_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_ulnar_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_femoral_left": {
     "ru": "Левая бедренная артерия",
@@ -2244,8 +2441,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_iliac_external_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_femoral_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_popliteal_left": {
     "ru": "Левая подколенная артерия",
@@ -2269,8 +2471,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_femoral_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_popliteal_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_tibial_anterior_left": {
     "ru": "Левая передняя большеберцовая артерия",
@@ -2294,8 +2501,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_popliteal_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_a_popliteal_left» около 0.5 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_anterior_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_tibial_posterior_left": {
     "ru": "Левая задняя большеберцовая артерия",
@@ -2319,8 +2531,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_popliteal_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. В источнике Z-Anatomy осевая линия сосуда сама проходит в кости на 4.51 мм; после переноса — 4.38 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_tibial_posterior_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_a_fibular_left": {
     "ru": "Левая малоберцовая артерия",
@@ -2344,8 +2561,13 @@ A.structures={
     ],
     "fma": null,
     "origin": "cv_a_tibial_posterior_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_a_fibular_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_axillary_left": {
     "ru": "Левая подмышечная вена",
@@ -2369,8 +2591,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_subclavian_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_subclavian_left» около 4.2 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_axillary_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_cephalic_left": {
     "ru": "Левая латеральная подкожная вена руки",
@@ -2394,8 +2621,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_cephalic_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_basilic_left": {
     "ru": "Левая медиальная подкожная вена руки",
@@ -2419,8 +2651,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_basilic_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_brachial_left": {
     "ru": "Левые плечевые вены",
@@ -2444,8 +2681,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_axillary_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_axillary_left» около 0.2 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_brachial_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_femoral_left": {
     "ru": "Левая бедренная вена",
@@ -2469,8 +2711,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_iliac_external_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_femoral_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_popliteal_left": {
     "ru": "Левая подколенная вена",
@@ -2494,8 +2741,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_femoral_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_popliteal_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_saphenous_great_left": {
     "ru": "Левая большая подкожная вена",
@@ -2519,8 +2771,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_femoral_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_femoral_left» около 2.5 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_great_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_saphenous_small_left": {
     "ru": "Левая малая подкожная вена",
@@ -2544,8 +2801,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_popliteal_left",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_popliteal_left» около 0.2 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_saphenous_small_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_azygos": {
     "ru": "Непарная вена",
@@ -2569,8 +2831,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_cava_superior",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны. Зазор до модели «cv_v_cava_superior» около 0.9 мм.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_azygos.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_hemiazygos": {
     "ru": "Полунепарная вена",
@@ -2594,8 +2861,13 @@ A.structures={
     ],
     "fma": null,
     "drainsTo": "cv_v_azygos",
-    "noModel": true,
-    "modelNote": "Отдельная принятая геометрия отсутствует. Карточка не обозначает подтверждённую 3D-границу."
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_hemiazygos.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
   },
   "cv_v_portal": {
     "ru": "Воротная вена печени",
@@ -2651,6 +2923,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_splenic.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -2680,6 +2953,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_mesenteric_superior.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -2709,6 +2983,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_gastric_left.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -2738,6 +3013,7 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_hepatic_common.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   },
@@ -2767,6 +3043,581 @@ A.structures={
     "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Полная протяжённость, просвет, точность стенки и места соединений не подтверждены; срезанные окончания не являются естественными границами.",
     "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_splenic.glb",
     "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_papillary_rv_anterior": {
+    "ru": "Передняя сосочковая мышца правого желудочка",
+    "lat": "musculus papillaris anterior (ventriculi dextri)",
+    "system": "heart",
+    "g": "cv_trunk_heart",
+    "sub": "cardiovascular",
+    "side": "right",
+    "facts": {
+      "Отношение": "Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана."
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+        "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+      },
+      {
+        "title": "FIPAT — TA98: heart (A12.1)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+        "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA7260",
+    "partOf": "cv_ventricle_right",
+    "taCode": "A12.1.02.017",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_anterior.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_papillary_rv_posterior": {
+    "ru": "Задняя сосочковая мышца правого желудочка",
+    "lat": "musculus papillaris posterior (ventriculi dextri)",
+    "system": "heart",
+    "g": "cv_trunk_heart",
+    "sub": "cardiovascular",
+    "side": "right",
+    "facts": {
+      "Отношение": "Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана."
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+        "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+      },
+      {
+        "title": "FIPAT — TA98: heart (A12.1)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+        "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA7261",
+    "partOf": "cv_ventricle_right",
+    "taCode": "A12.1.02.018",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_posterior.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_papillary_rv_septal": {
+    "ru": "Перегородочная сосочковая мышца правого желудочка",
+    "lat": "musculus papillaris septalis",
+    "system": "heart",
+    "g": "cv_trunk_heart",
+    "sub": "cardiovascular",
+    "side": "right",
+    "facts": {
+      "Отношение": "Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана."
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+        "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+      },
+      {
+        "title": "FIPAT — TA98: heart (A12.1)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+        "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA7262",
+    "partOf": "cv_ventricle_right",
+    "taCode": "A12.1.02.019",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_rv_septal.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_papillary_lv_posterior": {
+    "ru": "Задняя сосочковая мышца левого желудочка",
+    "lat": "musculus papillaris posterior (ventriculi sinistri)",
+    "system": "heart",
+    "g": "cv_trunk_heart",
+    "sub": "cardiovascular",
+    "side": "left",
+    "facts": {
+      "Отношение": "Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана."
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+        "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+      },
+      {
+        "title": "FIPAT — TA98: heart (A12.1)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+        "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA7266",
+    "partOf": "cv_ventricle_left",
+    "taCode": "A12.1.04.008",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_lv_posterior.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_papillary_lv_unspecified": {
+    "ru": "Сосочковая мышца левого желудочка (без уточнения в источнике)",
+    "lat": "musculus papillaris (ventriculi sinistri)",
+    "system": "heart",
+    "g": "cv_trunk_heart",
+    "sub": "cardiovascular",
+    "side": "left",
+    "facts": {
+      "Отношение": "Отходит от стенки желудочка; через сухожильные хорды удерживает створки предсердно-желудочкового клапана."
+    },
+    "refs": [
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Heart Papillary Muscles",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557802/",
+        "locator": "Structure and Function: papillary muscles of both ventricles, chordae tendineae"
+      },
+      {
+        "title": "FIPAT — TA98: heart (A12.1)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/LAEN/TAH3614%20A2F%20EN.htm",
+        "locator": "A12.1.02.017–019, A12.1.04.007–008, A12.1.04.012–015; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA9352nsn",
+    "partOf": "cv_ventricle_left",
+    "taCode": null,
+    "factsNote": "Источник называет её «papillary muscle of left ventricle, nsn» без уточнения передней или задней. По положению она лежит кпереди от задней сосочковой мышцы, но название по положению не присваивается.",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_papillary_lv_unspecified.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_a_coronary_right_marginal": {
+    "ru": "Правая краевая ветвь",
+    "lat": "ramus marginalis dexter",
+    "system": "arteries",
+    "g": "cv_trunk_arteries",
+    "sub": "cardiovascular",
+    "side": "right",
+    "facts": {
+      "Область кровоснабжения": "Правый желудочек по правому краю сердца."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+        "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+      }
+    ],
+    "fma": "FMA3818",
+    "origin": "cv_a_coronary_right",
+    "taCode": "A12.2.03.106",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right_marginal.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_a_coronary_posterior_interventricular": {
+    "ru": "Задняя межжелудочковая ветвь",
+    "lat": "ramus interventricularis posterior",
+    "system": "arteries",
+    "g": "cv_trunk_arteries",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Область кровоснабжения": "Задние отделы обоих желудочков и перегородки."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+        "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+      }
+    ],
+    "fma": "FMA3840nsn",
+    "origin": "cv_a_coronary_right",
+    "taCode": "A12.2.03.108",
+    "factsNote": "Отходит от правой венечной артерии при правом типе кровоснабжения; источник модели — правая венечная артерия.",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_posterior_interventricular.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_a_coronary_right_posterolateral": {
+    "ru": "Правая заднебоковая ветвь",
+    "lat": "ramus posterolateralis dexter",
+    "system": "arteries",
+    "g": "cv_trunk_arteries",
+    "sub": "cardiovascular",
+    "side": "right",
+    "facts": {
+      "Область кровоснабжения": "Задняя стенка левого желудочка."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+        "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+      }
+    ],
+    "fma": "FMA76994",
+    "origin": "cv_a_coronary_right",
+    "taCode": "A12.2.03.111",
+    "factsNote": "В TA98 термин в скобках: ветвь непостоянная и зависит от типа кровоснабжения сердца.",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_right_posterolateral.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_a_coronary_septal_right": {
+    "ru": "Межжелудочковые перегородочные ветви правой венечной артерии",
+    "lat": "rami interventriculares septales (arteriae coronariae dextrae)",
+    "system": "arteries",
+    "g": "cv_trunk_arteries",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Область кровоснабжения": "Задняя часть межжелудочковой перегородки."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+        "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+      }
+    ],
+    "fma": "FMA71669",
+    "origin": "cv_a_coronary_right",
+    "taCode": "A12.2.03.109",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_septal_right.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_a_coronary_septal_left": {
+    "ru": "Межжелудочковые перегородочные ветви передней межжелудочковой ветви",
+    "lat": "rami interventriculares septales (rami interventricularis anterioris)",
+    "system": "arteries",
+    "g": "cv_trunk_arteries",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Область кровоснабжения": "Передние две трети межжелудочковой перегородки."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Coronary Circulation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482413/",
+        "locator": "Coronary origins, anterior interventricular and circumflex branches"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: coronary arteries (A12.2.03)",
+        "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/TA98/EN/TAH3774%20A4%20EN.htm",
+        "locator": "A12.2.03.101–111 (right), A12.2.03.201–214 (left; list TAH3785); term and FMA identity only"
+      }
+    ],
+    "fma": "FMA71670",
+    "origin": "cv_a_coronary_anterior_interventricular",
+    "taCode": "A12.2.03.205",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_a_coronary_septal_left.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_v_coronary_sinus": {
+    "ru": "Венечная пазуха",
+    "lat": "sinus coronarius",
+    "system": "veins",
+    "g": "cv_trunk_veins",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Венозный отток": "Большая часть венозной крови стенки сердца."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+        "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+        "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+        "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+      }
+    ],
+    "fma": null,
+    "drainsTo": "cv_atrium_right",
+    "taCode": "A12.3.01.002",
+    "factsNote": "Лежит в задней части венечной борозды и открывается в правое предсердие.",
+    "noModel": false,
+    "modelNote": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца. Схематическая модель Z-Anatomy: ход и диаметр — по авторской кривой источника, перенесённой на кости атласа; это не сегментация образца. Стыки с моделями BodyParts3D и соотношения с мышцами приблизительны.",
+    "modelFile": "models/z-anatomy/cardiovascular/cv_v_coronary_sinus.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "z-anatomy",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебная схематическая модель Z-Anatomy. Ход и диаметр — по авторской кривой источника; это не сегментация реального образца."
+  },
+  "cv_v_cardiac_great": {
+    "ru": "Большая вена сердца",
+    "lat": "vena cardiaca magna",
+    "system": "veins",
+    "g": "cv_trunk_veins",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Венозный отток": "Передняя межжелудочковая борозда, затем венечная борозда; продолжается в венечную пазуху."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+        "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+        "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+        "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA4707",
+    "drainsTo": "cv_v_coronary_sinus",
+    "taCode": "A12.3.01.003",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_great.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_v_cardiac_middle": {
+    "ru": "Средняя вена сердца",
+    "lat": "vena cardiaca media; vena interventricularis posterior",
+    "system": "veins",
+    "g": "cv_trunk_veins",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Венозный отток": "Задняя межжелудочковая борозда от верхушки к венечной пазухе."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+        "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+        "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+        "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA4713",
+    "drainsTo": "cv_v_coronary_sinus",
+    "taCode": "A12.3.01.009",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_middle.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_v_ventricle_left_posterior": {
+    "ru": "Задние вены левого желудочка",
+    "lat": "venae ventriculi sinistri posteriores",
+    "system": "veins",
+    "g": "cv_trunk_veins",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Венозный отток": "Задняя стенка левого желудочка."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+        "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+        "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+        "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA76751",
+    "drainsTo": "cv_v_coronary_sinus",
+    "taCode": "A12.3.01.006",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_ventricle_left_posterior.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
+    "modelRegionLabel": "Сердечно-сосудистая система",
+    "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
+  },
+  "cv_v_cardiac_anterior": {
+    "ru": "Передние вены правого желудочка",
+    "lat": "venae ventriculi dextri anteriores; venae cardiacae anteriores",
+    "system": "veins",
+    "g": "cv_trunk_veins",
+    "sub": "cardiovascular",
+    "side": "unseparated",
+    "facts": {
+      "Венозный отток": "Передняя стенка правого желудочка; впадают прямо в правое предсердие."
+    },
+    "refs": [
+      {
+        "title": "NCBI Bookshelf — Anatomy, Thorax, Coronary Sinus",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557566/",
+        "locator": "Structure and Function: great, middle cardiac and posterior left ventricular veins; anterior cardiac veins"
+      },
+      {
+        "title": "OpenStax — Heart Anatomy",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "locator": "Location; chambers, septa, valves; coronary circulation"
+      },
+      {
+        "title": "FIPAT — TA98: veins of heart (A12.3.01)",
+        "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/12.3.01.003%20Entity%20TA98%20EN.htm",
+        "locator": "A12.3.01.002–012 entity pages; term and FMA identity only"
+      }
+    ],
+    "fma": "FMA71567",
+    "drainsTo": "cv_atrium_right",
+    "taCode": "A12.3.01.012",
+    "noModel": false,
+    "modelNote": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены. Показан исходный фрагмент BodyParts3D. Ход, ветвление и тип кровоснабжения на одном образце; границы и прикрепления не приняты.",
+    "modelFile": "models/bodyparts3d-3.0/cardiovascular/cv_v_cardiac_anterior.glb",
+    "modelStatus": "educational_limited",
+    "modelKind": "bodyparts3d",
     "modelRegionLabel": "Сердечно-сосудистая система",
     "modelNotice": "Учебные модели BodyParts3D. Точные внутренние границы, просветы и соединения не подтверждены."
   }
